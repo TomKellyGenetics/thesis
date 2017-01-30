@@ -1,0 +1,2782 @@
+\chapter{Literature Review: Bioinformatics Analysis of Empirical Biological and
+Molecular Networks}
+\label{chap:lit_review}
+
+\section{Abstract}
+Genomics technologies, including various techniques involving
+microarrays, massively parallel sequencing of DNA or RNA, have
+stimulated genetic interaction research and screens in mammalian or
+yeast cells. \ A vast amount of data on genotype, mutations, gene
+expression, genetic interactions, and protein abundance or binding for
+normal and cancerous cells is publicly available from databases such as
+The Cancer Genome Atlas (TCGA), The International of Cancer Genome
+Consortium (ICGC), Gene Expression Omnibus (GEO), ArrayExpress,
+Encyclopaedia of DNA Elements (ENCODE), the Cancer Cell Line
+Encyclopaedia (CCLE), BioGrid, and the Human Interactome database.
+\ Saccharomyces Genome Database (SGD) and Data Repository of Yeast
+Genetic Interactions (DRYGIN) provide genomic and genetic interaction
+data for species comparison. \ 
+
+
+Examples of gene interactions include the synthetic lethal interaction
+of BRCA1 or BRCA2 with PARP1 in breast cancer and the unexpected
+synergistic effect of BRAF\textsuperscript{V600E} and EGFR inhibitors
+in colon cancer. \ PARP inhibitors are one of the first targeted
+therapeutics against a tumour suppressor mutation with success in
+clinical trials. \ BRAF\textsuperscript{V600E} and EGFR inhibitors
+block a feedback regulation loop and enable use of BRAF inhibitors
+beyond melanomas. \ Thus we can develop targeted anticancer
+therapeutics which exploit complex interactions to distinguish normal
+and cancerous cells. \ Investigation of such interactions at a network
+level could enable deeper understanding of their impact on cancers and
+prediction of novel drug targets.
+
+
+Genetic and chemical high-throughput screens have already identified
+unexpected, functionally informative, and clinically relevant synthetic
+lethal interactions; including synthetic lethal partners of genes
+recurrently mutated in cancer or attributed to familial early-onset
+cancer syndromes. \ While screening presents an appealing strategy for
+synthetic lethal discovery, computational approaches are becoming
+popular as an alternative or complement to experimental methods to
+overcome inherent bias and limitations of experimental screens. \ An
+array of novel computational methods show the need for synthetic lethal
+discovery in the fundamental genetics and translational cancer research
+community. \ However, existing computational methods are complex,
+error-prone, and difficult to understand, interpret or adopt for
+biologically trained researchers. \ A robust prediction of gene
+interactions is an effective and practical approach at a scale of the
+entire genome for ideal translational applications, analysis of
+biological systems, and constructing functional gene networks.
+
+
+Network theory is an interdisciplinary field which combines the
+approaches of in computer science with the metrics and fundamental
+principles of graph theory, an area of pure mathematics dealing with
+relationships between sets of discrete elements. \ The first large
+networks were generated randomly and exhibited interesting small-world
+and scale-free properties. \ Application of network theory in the life
+sciences has, until recently, been largely restricted to small networks
+in sociology or ecology. \ The vast amounts of molecular and cellular
+data from high-throughput technologies have raised the need for
+systems-level, network-based, and genome-wide bioinformatics analysis
+to capture the complexity of a cell at the molecular level and
+understand aberrations in cancer. 
+
+
+
+\section{Literature Review}
+\subsection{Network Theory}
+
+Graph theory is a branch of pure
+mathematics which deals with the properties of sets of discrete objects
+(referred to as a {\textquoteleft}node{\textquoteright} or
+{\textquoteleft}vertex{\textquoteright}) with some pairs are joined (by
+a {\textquoteleft}link{\textquoteright} or an
+{\textquoteleft}edge{\textquoteright}). \ Originally conceived as a
+reductionist abstraction to solve problems in mathematics and more
+complex problems later in computer science, graph theory serves as the
+fundamental basis for a wide range of studies including material
+physics, traffic analysis, computer architecture, and phylogenetic
+trees. \ Applications vary depending on the situation modelled,
+particularly in how the edges between vertices are defined, whether
+they are directed or weighted, and whether multiple redundant edges
+between a pair of vertices (referred to as {\textquoteleft}parallel
+edges{\textquoteright}) or edges connecting a vertex to itself
+(referred to as {\textquoteleft}loops{\textquoteright}) are permitted
+in the model. \ Networks are defined such that the edges represent a
+relationship between the vertices and may be directed, weighted, or
+contain parallel edges or loops depending on the application. \ 
+
+
+Network theory is the sub-discipline of graph theory which deals with
+networks which has become popular due to the vast potential for
+applications of networks. \ The properties of large networks were
+studied by constructing random networks by randomly linking a fixed
+number of nodes (Erd\H{o}s \& R\'enyi 1959; Erd\H{o}s \& R\'enyi 1960).
+\ Despite the random nature of these networks, properties such as their
+connectivity were well characterised. \ The vertex degree of random
+network follows a Poisson distribution, however this property does not
+hold in nature, suggesting that natural networks are non-random or not
+formed in this way (Barab\'asi \& Oltvai 2004). \ 
+
+
+This work formed the foundation for studying complex networks which
+model features of real world networks not found in Erd\H{o}s and
+R\'enyi{\textquoteright}s random networks. \ The small world property,
+made popular by findings in social networks (Milgram 1967; Travers \&
+Milgram 1969), is the remarkably short path lengths between any nodes
+in a small world network. \ A small world network is well-connected
+with a characteristic path length proportional to the logarithm of the
+number of nodes (Watts \& Strogatz 1998). \ \hyperlink{ENREF112}{Watts
+and Strogatz (1998)} developed a model of random rewiring of a regular
+network to construct random networks with the small world property and
+a high clustering coefficient. \ While these properties are more
+representative of networks occurring in nature, their model is limited
+by the degree distribution which converges to a Poisson distribution as
+it is rewired (Barrat \& Weigt 2000). \ 
+
+
+The degree distribution of naturally occurring networks often follows a
+power law distribution with the majority of nodes having far fewer
+connections than average and a small subset of highly connected network
+{\textquoteleft}hubs{\textquoteright}. \ \hyperlink{ENREF7}{Barab\'asi
+and Albert (1999)} constructed a network model in an entirely different
+way to randomly generate scale-free networks which have a power law
+degree distribution. \ They constructed random networks by preferential
+attachment, modelling growth of a network by sequentially adding nodes
+with links to existing nodes. \ The scale-free nature of the random
+networks was ensured by adding new nodes with an increasing probability
+of attachment to an existing node if it has higher degree. \ These
+networks successfully capture the scale-free nature of many real world
+networks with short characteristic path length and low eccentricity
+resulting in super small worlds. \ The \hyperlink{ENREF7}{Barab\'asi
+and Albert (1999)} scale-free networks are limited by a low clustering
+coefficient and lack of modular structure; however, they have enabled
+the study of scale-free network topology and served as a basis for
+modified scale-free models (Dorogovtsev \& Mendes 2003; Holme \& Kim
+2002). \ 
+
+
+\hyperlink{ENREF47}{Han}\hyperlink{ENREF47}{\textit{ et
+al.}}\hyperlink{ENREF47}{ (2004)} observed dynamic modularity in
+biological networks and suggested the network structure may underpin
+genetic robustness and plasticity. \ They focus on network hubs which
+are more likely to be essential genes and define the subgroups of hubs
+based on correlation of gene expression with protein-protein
+interaction partners: {\textquoteleft}party{\textquoteright} hubs
+(which interact simultaneously with many partners) and
+{\textquoteleft}date{\textquoteright} hubs (which interact with
+different partners in different conditions). \ Party and date hubs
+occurred most frequently within and between network modules
+respectively. \ Party hubs were considered local regulators, whereas
+date hubs were considered important to network connectivity as global
+regulators. \ This distinction between classes of network hubs was
+supported by differences in tissue specificity and clinical relevance
+as a proposed predictor of clinical outcome in breast cancer with an
+AUROC of 0.784 (Taylor\textit{ et al.} 2009). \ However, correlation
+between expression and protein interactions were not robustly
+reproduced. \ The importance of date hubs has been criticised for
+assuming a bimodal distribution and basing the global importance of
+data hubs on a small subset (Agarwal\textit{ et al.} 2010). \ As an
+alternative interpretation,
+\hyperlink{ENREF2}{Agarwal}\hyperlink{ENREF2}{\textit{ et
+al.}}\hyperlink{ENREF2}{ (2010)} suggest the importance of interactions
+rather than network hubs as interactions important to the network were
+between functionally similar proteins. \ Network hubs can also be
+classed as associative or dissociative depending on whether they tend
+toward or away from connecting directly to other network hubs (van
+Steen 2010). \ The associative and dissociative properties can also be
+used to test whether nodes of a particular subgroup (e.g., gene
+function) associate with each other. \ 
+
+Applications of network theory are diverse, including uses in social
+sciences, engineering, and computer science. \ Due to their complexity
+and difficulty of gathering sufficient empirical data, biological
+applications of network theory are relatively unexplored.
+\ High-throughput technologies such as siRNA screens, two-hybrid
+screens, microarrays and massively parallel sequencing have made
+generating genome-scale molecular data feasible and enabled analysis of
+biological networks at the molecular level. \ Many types of
+inter-related molecular networks can be constructed and analysed,
+depending on the biological application, the way interactions between
+molecular components are defined and the data used to generate them as
+shown in Table 1. \ 
+
+\textbf{Table 1. \ }Types of biological network based on molecular data
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{4.0490003cm}|m{2.55cm}|m{4.301cm}|m{4.201cm}}
+\multicolumn{1}{m{4.0490003cm}}{\cellcolor{white}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Network Type}}} &
+\multicolumn{1}{m{2.55cm}}{\cellcolor{white}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Node}}} &
+\multicolumn{1}{m{4.301cm}}{\cellcolor{white}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Interaction}}} &
+\cellcolor{white}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Data
+Generation}}\\\hline
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Co-expression}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Gene}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Correlation of
+expression}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Array,
+RNA-Seq}}\\\hline
+\bfseries {\fontsize{10pt}{12.0pt}\selectfont Protein (Physical)} &
+{\fontsize{10pt}{12.0pt}\selectfont Protein} &
+{\fontsize{10pt}{12.0pt}\selectfont Protein-protein binding} &
+{\fontsize{10pt}{12.0pt}\selectfont Two-Hybrid}\\\hline
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Signal
+Transduction}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Protein}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Protein mediated
+signalling}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Curate known
+pathways}}\\\hline
+\bfseries {\fontsize{10pt}{12.0pt}\selectfont Metabolic} &
+{\fontsize{10pt}{12.0pt}\selectfont Metabolite or cofactor} &
+{\fontsize{10pt}{12.0pt}\selectfont Involved in same reaction (links by
+reactions/enzymes)} &
+{\fontsize{10pt}{12.0pt}\selectfont Curate known pathways}\\\hline
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Chemical or
+Drug}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Protein}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Targets of the
+same drug}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Curate known drug
+targets}}\\\hline
+\bfseries {\fontsize{10pt}{12.0pt}\selectfont Regulation} &
+{\fontsize{10pt}{12.0pt}\selectfont Gene} &
+{\fontsize{10pt}{12.0pt}\selectfont Regulate each other by encoded
+proteins} &
+{\fontsize{10pt}{12.0pt}\selectfont Array, RNA-Seq, ChIP}\\\hline
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{RNA or DNA
+binding}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Gene or miRNA}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Binding of
+encoded RNA or protein or DNA or mRNA}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{ChIP,
+RIP}}\\\hline
+\bfseries {\fontsize{10pt}{12.0pt}\selectfont Functional} &
+{\fontsize{10pt}{12.0pt}\selectfont Gene} &
+{\fontsize{10pt}{12.0pt}\selectfont Shared gene function} &
+{\fontsize{10pt}{12.0pt}\selectfont Curate known pathways}\\\hline
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Genetic
+Interaction}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Gene}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Unexpected
+phenotype with combined loss of function}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{SGA, EMAP, DAmP,
+siRNA}}\\\hline
+\end{supertabular}
+\end{flushleft}
+
+\subsection[Biological Networks]{Biological Networks}
+
+Genetic interaction networks will be the focus of this project because
+they are relatively unexplored compared to other molecular networks,
+have potential for applications in drug discovery (particularly cancer
+treatment), and may lead to better understanding of the role of
+genetics in cellular function and disease. \ Genetic interactions are
+usually studied at a high-throughput scale in simple model organisms
+such as bacteria, yeasts or the nematode worm; studies in humans,
+mammals, and non-model organisms (where applications would have the
+most societal impact) are limited by cost, time and labour constraints.
+\ Computational approaches with effective predictive models are the
+only feasible approach to study the connectivity of a biological
+network in a complex metazoan cell at the genome-scale.
+
+
+Genetic interactions are a core concept of molecular biology, discovered
+in some of the earliest experiments investigating Mendelian genetics.
+\ Epistasis was biologically defined as the effect of an allele at one
+locus may mask the phenotype of another (Bateson \& Mendel 1909).
+\ Statistically, epistasis is defined by significant disparity between
+the observed and expected phenotype of a double mutant, compared to the
+respective phenotypes of single mutants and the wild-type (Fisher
+1919). \ Fisher{\textquoteright}s broader definition lends itself well
+to quantitative traits and also encompasses Synthetic genetic
+interactions (SGIs) which have become popular for studies in yeast
+genetics and cancer drug design (Boone\textit{ et al.} 2007; Kaelin
+2005). \ 
+
+
+Synthetic genetic interactions are substantial deviations from the
+expected null mutant phenotype (usually measured by organism or
+cellular growth or viability) rather than the expected additive effects
+of the single mutants. \ Unlike biological epistasis, this deviation
+does not necessarily constitute a single mutant phenotype (as shown in
+Figure 1). \ SGIs of interest tend to be more viable than either single
+mutant or less viable than the expected double mutant. \ In negative
+SGIs, mutations are {\textquoteleft}synergistic{\textquoteright},
+resulting in more deviation from the wild-type than expected. \ For
+yeast viability phenotypes, the terms {\textquoteleft}synthetic
+sick{\textquoteright} (SSL) and {\textquoteleft}synthetic
+lethal{\textquoteright} (SL) refer to negative SGIs giving growth
+inhibition and inviability respectively. \ In cancer research synthetic
+lethality is used to describe any negative synthetic genetic
+interaction with specific killing or growth inhibition of a mutant
+cell, even though these may be formally classed as SSL interactions.
+\ In positive SGIs, mutations are
+{\textquoteleft}alleviating{\textquoteright}, resulting in less
+deviation from the wild-type than expected. \ For yeast viability
+phenotypes, the terms {\textquoteleft}synthetic
+suppression{\textquoteright} (SS) and {\textquoteleft}synthetic
+rescue{\textquoteright} (SR) are used to refer to positive SGIs giving
+partial or complete restoration of the wild-type growth rate from
+single mutants with growth impairment and lethal phenotypes
+respectively. \ Yeast studies have found that negative SGIs are
+markedly more common than positive SGIs (Tong\textit{ et al.} 2004);
+this has since been replicated in a number of model systems (Boucher \&
+Jenna 2013). \ 
+
+
+\includegraphics[width=12.912cm,height=10.922cm]{TomKellyLiteratureReview2015v7notrack-img1.png}
+\textbf{Figure 1. \ }Impact of various negative (a) and positive (b, c)
+SGIs on growth viability fitness in yeast. \ Adapted from
+(Costanzo\textit{ et al.} 2011). \ 
+
+
+\subsection[Experimental Studies of Synthetic Lethality]{Experimental
+Studies of Synthetic Lethality}
+
+A high-throughput method, the synthetic gene array (SGA), has been
+developed specifically to test for SGIs in the budding yeast
+\textit{Saccharomyces cerevisiae} (Tong\textit{ et al.} 2001).
+\ Automated mating experiments are used to generate and measure the
+viability of haploid double null mutants for a query gene and a library
+of \~{}4700 deletion mutants. \ A proof of concept experiment with 8
+query genes found SGIs within and between biological pathways
+(Tong\textit{ et al.} 2001). \ This approach was later extended to 132
+query genes to experimentally map \~{}4100 SGIs between \~{}1000 genes
+with each query gene involved in an average of 34 SGIs (0.6\% of the
+genome) with high variation: up to 146 partners (Tong\textit{ et al.}
+2004). \ They noted that this was 4-fold higher than interactions
+discovered with yeast-2-hybrid studies of protein-protein interactions.
+\ The network is scale-free with power-law vertex degree distribution
+and low average shortest path length (3.3). \ 
+
+
+These observations are consistent with a larger network (\~{}170,000
+SGIs out of 5.4 million gene pairs) constructed from SGA analysis of
+1712 query genes in \textit{S. cerevisiae} which showed high functional
+organisation, genetic redundancy, and pleiotropy (Baryshnikova\textit{
+et al.} 2010b; Costanzo\textit{ et al.} 2010). \ Hub genes were
+functionally important with many negative SGI hubs involved in cell
+cycle regulation and many positive SGI hubs involved in translation.
+\ Negative SGIs were far more common than positive SGIs. \ The
+modularity of the \textit{S. cerevisiae} SGI network is pronounced
+enough to predict function of novel genes (Costanzo\textit{ et al.}
+2011). \ The supplementary data for this network has been updated to
+support SGA data for 1897 query genes. \ 
+
+
+\hyperlink{ENREF15}{Boone}\hyperlink{ENREF15}{\textit{ et
+al.}}\hyperlink{ENREF15}{ (2007)} predicted \~{}200,000 SGIs in the
+yeast genome of \~{}6200 genes; the number of genes individually
+essential for life is vastly outnumbered by the number of genes
+essential in combination due to synthetic lethality. \ This is
+consistent with the chemical genomic screens finding 97\% of yeast
+genes are conditionally essential for optimal growth in some
+environmental stress condition (Hillenmeyer 2008). \ Together this
+gives an evolutionary rationale for the abundance of SGIs and
+surprisingly low number of essential genes in a genome due to the
+genetic redundancy and network robustness of a cell. \ 
+
+
+The SGA methodology has been adapted to screen deletion or gene
+knockdown libraries for SGIs using SpSGA with mating in fission yeast,
+\textit{Schizosaccharomyces pombe }\textit{(Dixon et al. 2008)}; using
+eSGA or GIANT-coli with conjugation in bacteria, \textit{Escherichia
+coli} (Babu\textit{ et al.} 2014; Butland\textit{ et al.} 2008;
+Typas\textit{ et al.} 2008); or using RNA interference (RNAi) in the
+nematode worm, \textit{Caenorhabdiits elegans} (Lehner\textit{ et al.}
+2006; Tischler\textit{ et al.} 2008). \ The SGA methodology has also
+been modified for the analysis of essential genes in \textit{S.
+cerevisiae} by using hypomorphic promoter replacement alleles rather
+than (lethal) null mutants (Davierwala\textit{ et al.} 2005). \ The SGA
+method has been combined with microarray technologies for the
+high-throughput diploid based synthetic lethality analysis of
+microarrays (dSLAM) and epistatic miniarray profiles (EMAP) approaches
+which enable pooled mating experiments and increased sensitivity in
+gene subsets respectively in \textit{S. cerevisiae} (Collins\textit{ et
+al.} 2006; Ooi\textit{ et al.} 2003; Schuldiner\textit{ et al.} 2005;
+Schuldiner\textit{ et al.} 2006). \ The EMAP approach has also been
+successfully adapted for comparative analysis of the distantly related
+\textit{S. pombe} (Roguev\textit{ et al.} 2008; Roguev\textit{ et al.}
+2007). \ \hyperlink{ENREF28}{Davierwala}\hyperlink{ENREF28}{\textit{ et
+al.}}\hyperlink{ENREF28}{ (2005)} used conditional (tet regulated) or
+temperature sensitive alleles to study essential genes with SGA,
+whereas \hyperlink{ENREF87}{Schuldiner}\hyperlink{ENREF87}{\textit{ et
+al.}}\hyperlink{ENREF87}{ (2005)} developed the decreased abundance of
+mRNA perturbation (DAmP) method for high-throughput generation of
+partial disruption in essential genes. \ This enables SGI screening in
+various species at the genomic-scale, including essential genes, by
+gene knockdown or non-lethal mutation. \ 
+
+
+\hyperlink{ENREF28}{Davierwala}\hyperlink{ENREF28}{\textit{ et
+al.}}\hyperlink{ENREF28}{ (2005)} found that the SGI network (30 query
+genes against 575 essential genes) for essential genes was 5x denser
+than the non-essential network in \textit{S. cerevisiae
+}\textit{(Costanzo et al. 2010; Tong et al. 2004)}. \ Therefore
+essential genes are SGI network hubs and are involved in the majority
+of SGIs, despite comprising only \~{}18\% of the \textit{S. cerevisiae}
+genome. \ Essential pathways are therefore highly buffered consistent
+with strong selection for survival with partial loss of essential gene
+function. \ The essential gene network also presented with scale-free
+topology and rarely contained interactions found in a protein-protein
+interaction network. \ While interacting essential genes were likely to
+have related functions, this was less evident than in non-essential
+networks. \ Around the same proportion of essential genes are found in
+other Eukaryotes indicating that mammalian SGI networks may have
+similar levels of SGIs. \ 
+
+
+While distantly related, by millions of years of evolution, the budding
+yeast \textit{S. cerevisiae} and the fission yeast \textit{S. pombe}
+SGI networks are comparable (Dixon\textit{ et al.} 2009b). \ These
+yeasts are both single-celled, were analysed by similar SGA methodology
+with colony growth phenotypes, and used null or hypomorphic mutation to
+inactivate genes. \ The RNAi based SGI screens in \textit{C. elegans
+}or \textit{Drosophila melanogaster} are less comparable to the yeast
+models due to differences from phenotyping diploid multicellular
+organisms and the potential residual wild-type gene activity in an RNAi
+experiment. \ Relatively poor conservation of specific SGIs in
+\textit{S. cerevisiae} were replicated in \textit{S. pombe} (222
+queries against a library of 2663 genes); however, around \~{}29\% of
+the interactions tested in both species form a conserved SGI network
+(Dixon\textit{ et al.} 2008). \ The rest of the interactions reveal
+species specific differences expected in distantly related species,
+however many of the species specific interactions were still conserved
+between biological pathways, protein complexes, or protein-protein
+interaction modules. \ Negative SGIs were likely to be conserved
+between biological pathways, whereas positive SGIs were more likely to
+be conserved within a pathway or protein complex (Roguev\textit{ et
+al.} 2008). \ Conservation of pathway redundancy was also found between
+\textit{S. cerevisiae} and prokaryotes with \textit{E. coli}
+experiments (Butland\textit{ et al.} 2008). \ 
+
+
+\subsection[RNAi Studies in Mammals]{RNAi Studies in Mammals}
+
+Despite reasons difficulties comparing yeast SGA data and metazoan RNAi
+screens for SGIs, \~{}5\% of interactions in \textit{C. elegans} were
+conserved in \textit{S. cerevisiae,} and the nematode SGI network
+showed similar scale-free topology and modularity (Bussey\textit{ et
+al.} 2006). \ The nematode SGI screen also identified network hubs and
+implicated their importance via interaction with orthologues of known
+human disease genes (Lehner\textit{ et al.} 2006). \ However, genetic
+redundancy at the gene or pathway level fails to account for the lack
+of direct conservation of SGIs between yeasts and nematode worms,
+consistent with an induced essentiality model of SGIs which allows for
+conservation of gene function with network restructuring over
+evolutionary time (Tischler\textit{ et al.} 2008). \ While Eukaryotic
+models are more closely related to human cells, cancer cells can
+present growth and viability phenotypes more comparable to yeast
+models. \ Therefore findings from both SGA and RNAi models are relevant
+to understanding cellular network structure and in healthy and
+cancerous human cells. \ RNAi has also been applied to human and mouse
+cancer cells in cell culture and genetic screening experiments. \ 
+
+
+\subsection[Examples of Clinical Impact]{Examples of Clinical Impact}
+
+Many genes are lost in cancer and yet few interventions target these
+tumour suppressor mutations compared to targeted therapies for gain of
+function mutation in oncogenes. \ Synthetic lethality, also known as
+{\textquoteleft}non-oncogene addiction{\textquoteright} or
+{\textquoteleft}induced essentiality{\textquoteright} in the context of
+cancer therapy, is a powerful design strategy for therapies selective
+against loss of gene function with potential for application against a
+range of genes and diseases. \ There are several examples of clinically
+relevant applications of genetic interactions including specific
+targeting of mutations in BRCA tumour suppressor genes with PARP
+inhibitors by inducing synthetic lethality in breast cancer
+(Farmer\textit{ et al.} 2005) and the synergy between inhibitors of the
+oncogenes BRAF\textsuperscript{V600E} and EGFR in colorectal cancers
+(Prahallad\textit{ et al.} 2012).
+
+
+BRCA and PARP genes demonstrate the application of the synthetic lethal
+approach to cancer therapy (Ashworth 2008; Kaelin 2005). \ BRCA1 and
+BRCA1 are homologous DNA repair genes which have been popularised for
+their role as tumour suppressors; mutation carriers have high risk of
+breast and ovarian cancers. \ The BRCA genes, which usually repair DNA
+or destroy the cell if it cannot be repaired, have inactivating somatic
+mutations in some familial and sporadic cancers. \ Poly-ADP-ribose
+polymerase (PARP) genes are tumour suppressor genes involved in base
+excision DNA repair. \ Loss of PARP activity results in single-stranded
+DNA breaks. \ However, PARP1\textsuperscript{{}-/-}\textsubscript{
+}knockout mice are viable and healthy indicating low toxicity from PARP
+inhibition (Bryant\textit{ et al.} 2005). \ 
+
+
+\hyperlink{ENREF19}{Bryant}\hyperlink{ENREF19}{\textit{ et
+al.}}\hyperlink{ENREF19}{ (2005)} showed that
+BRCA2\textsuperscript{{}-/-} cells were sensitive to PARP inhibition by
+siRNA of PARP1 or drug inhibition (which targets PARP1 and PARP2) using
+Chinese hamster ovary cells, MCF7 and MDA-MB-231 breast cell lines.
+\ This effect was sufficient to kill mouse tumour xenografts and showed
+high specificity to BRCA2 deficient cells in culture and xenografts.
+\ \hyperlink{ENREF39}{Farmer}\hyperlink{ENREF39}{\textit{ et
+al.}}\hyperlink{ENREF39}{ (2005)} replicated these results in embryonic
+stem cells and showed that BRCA1\textsuperscript{{}-/-} cells were also
+sensitive to PARP inhibition relative to the wild-type with siRNA and
+drug experiments in cell culture and drug activity against BRCA
+deficient embryonic stem cell mouse xenografts. \ They found evidence
+that PARP inhibition causes DNA lesions, usually repaired in wild-type
+cells, which lead to chromosomal instability, cell cycle arrest, and
+induction of apoptosis in BRCA deficient cells. \ Therefore, the
+pathways cooperate to repair DNA giving a plausible mechanism for
+combined loss as an effective anti-cancer treatment. \ 
+
+
+Thus PARP inhibitors have potential to clinical uses against BRCA
+mutations in hereditary and sporadic cancers (Ashworth 2008; Kaelin
+2005). \ PARP inhibition has been found to be effective in cancer
+patients carrying BRCA mutations and some non-BRCA mutant ovarian
+cancers, suggesting synthetic lethality between PARP and other DNA
+repair pathways (Str\"om \& Helleday 2012). \ This supports the
+potential for PARP inhibition as a chemo-preventative alternative to
+prophylactic surgery for high risk individuals with BRCA mutations
+(Str\"om \& Helleday 2012). \ Hormone-based therapy has also been
+suggested as a chemo-preventative in such high risk individuals and
+aromatase inhibitors have completed phase I clinical trials for this
+purpose (Bozovic-Spasojevic\textit{ et al.} 2012).
+\ \hyperlink{ENREF91}{Str\"om and Helleday (2012)} also postulate
+increased efficacy of PARP inhibitors in the hypoxic DNA-damaging
+tumour micro-environment. \ 
+
+
+A PARP inhibitor, olaparib, showed fewer adverse effects than cytotoxic
+chemotherapy and anti-tumour activity in phase I trials against BRCA
+deficient familial breast, ovarian, and prostate cancers (Fong\textit{
+et al.} 2009) and sporadic ovarian cancer (Fong\textit{ et al.} 2010).
+\ AstraZeneca has reported phase II trials showing the treatment is
+effective in BRCA deficient breast (Tutt\textit{ et al.} 2010) and
+ovarian cancers (Audeh\textit{ et al.} 2010) with a favourable
+therapeutic window and similar toxicity between carriers of BRCA
+mutations and sporadic cases. \ AstraZeneca announced that olaparib has
+begun phase III trials for breast and ovarian cancers in 2013. \ Mixed
+results in phase II trials in ovarian cancer are behind the delays
+addressed by retrospective analysis of the cohort subgroup with
+confirmed mutation of BRCA genes in the tumour; unsurprisingly, these
+patients, benefit most from the PARP inhibitor treatment and have
+increased platinum sensitivity in combination treatment. \ This
+demonstrates the clinical impact of a well characterised system of
+synthetic lethality with known cancer risk genes. \ Synthetic lethality
+has the benefit of being effective against inactivation of tumour
+suppressor genes by any means, broader than targeting a particular
+oncogenic mutation (Kaelin 2005). \ The targeted therapy is effective
+in both sporadic and hereditary BRCA deficient tumours acting against
+an oncogenic molecular aberration across several tissues. \ 
+
+
+Oncogene targeted therapies have also been developed but have problems
+with resistance, recurrence, tissue specificity, and design of a drug
+which selectively inhibits the oncogenic variant rather than the
+normally functional proto-oncogene. \ BRAF is a serine/threonine kinase
+gene in the MAP kinase pathway with several oncogenic mutations
+including the V600E mutation implicated as a driver in some colorectal,
+hairy cell leukaemia, lung, melanoma, non-Hodgkin{\textquoteright}s
+lymphoma, and thyroid cancers (Entrez Gene). \ EGFR is the epidermal
+growth factor receptor gene which detects extracellular signal ligands
+including EGF and TGF$\alpha $. \ Mutations resulting in overexpression
+of EGFR are oncogenic in brain, colorectal, and lung cancers (Entrez
+Gene). \ Both oncogenes have been explored in some detail as separate
+drug targets with successful development of drugs acting against
+BRAF\textsuperscript{V600E} in melanoma and drugs against EGFR in lungs
+cancers, however they have limited efficacy separately in colorectal
+cancer. \ 
+
+
+BRAF V600 mutations are a feasible target for anticancer therapy,
+occurring in 8\% of all solid tumours including substantial numbers of
+melanomas, thyroid, and 10-15\% of colorectal cancers (Davies\textit{
+et al.} 2002). \ BRAF mutant tumours use the MAPK/ERK (extracellular
+signal-regulated kinase signalling cascade) pathway to induce tumour
+growth (Dienstmann \& Tabernero 2011). \ Specific inhibitors, such as
+the drug vemurafenib, have shown efficacy against melanoma and slowed
+cell growth in culture. \ Specific BRAF inhibition is more effective
+than non-selective inhibition of the RAF kinase family of the MEK
+downstream targets (Dienstmann \& Tabernero 2011). \ Vermurafenib is
+effective for treatment of BRAF\textsuperscript{V600E} mutant
+melanomas, shown by success in phase I-III clinical trials and FDA
+approval (Ravnan \& Matalka 2012). \ BRAF inhibitors are effective with
+regard to efficacy and toxicity; however, acquired drug resistance is a
+serious problem for this treatment in melanoma, the mechanisms of which
+need to be explored to ensure optimal clinical outcomes (Dienstmann \&
+Tabernero 2011). \ \hyperlink{ENREF82}{Ravnan and Matalka (2012)}
+suggest combination therapy as a solution to vemurafenib resistance in
+melanoma. \ 
+
+
+\hyperlink{ENREF115}{Yang}\hyperlink{ENREF115}{\textit{ et
+al.}}\hyperlink{ENREF115}{ (2012)} tested vemurafenib as a single-agent
+BRAF\textsuperscript{V600E} inhibitor in preclinical models of
+colorectal cancer cell lines and mouse xenografts. \ Vemurafenib
+showeddose-dependent inhibition of the MEK and MAPK/ERK signalling
+pathways which arrested cell proliferation; however, clinical activity
+was limited in single-agent experiments. \ Enhanced anti-tumour
+activity and xenograft survival were found when combined with
+clinically approved drugs, including EGFR inhibitors, suggesting
+combination with standard or other targeted treatments is most
+effective approach for clinical treatment of advanced
+BRAF\textsuperscript{V600E} mutant colorectal cancers. \ This is
+consistent with known association of BRAF mutations with resistance to
+EGFR inhibitors in colorectal cancer (Di Nicolantonio\textit{ et al.}
+2008; Yuan\textit{ et al.} 2013). \ Understanding the mechanism of EGFR
+inhibitor resistance in colorectal cancer is needed for improved
+application of the drug as a personalised medicine to refine patient
+selection for single-agent treatment and to develop novel drug
+combinations; notably, markers of EGFR inhibitor resistance notably
+include KRAS and BRAF mutations (Loupakis\textit{ et al.} 2009;
+Shaib\textit{ et al.} 2013; Siena\textit{ et al.} 2009). \ 
+
+
+Despite successful application of vemurafenib against
+BRAF\textsuperscript{V600E} in melanomas, colorectal cancers with
+BRAF\textsuperscript{V600E} muations have poor prognosis and lack drug
+response. \ \hyperlink{ENREF80}{Prahallad}\hyperlink{ENREF80}{\textit{
+et al.}}\hyperlink{ENREF80}{ (2012)} approached this with an RNAi
+screen of the kinome (a library of 518 genes) in the WiDr colon cell
+line. \ Blocking EGFR with shRNA or EGFR inhibiting drugs has shown
+strong synergy with vemurafenib in cell line experiments; drug synergy
+was replicated in xenografts. \ This synergy arises mechanistically
+from feedback activation of EGFR in response to BRAF inhibition,
+consistent with higher EGFR expression in colorectal and thyroid cancer
+cell lines compared to melanoma cell lines and vemurafenib resistance
+induced from ectopic EGFR expression in melanomas.
+\ \hyperlink{ENREF24}{Corcoran}\hyperlink{ENREF24}{\textit{ et
+al.}}\hyperlink{ENREF24}{ (2012)} supported this mechanism with
+transient inhibition of BRAF\textsuperscript{V600E} by vemurafenib
+which induced rapid reactivation of MAPK/ERK signalling via EGFR in
+colorectal cell lines. \ This did not occur in melanoma cell lines
+suggesting colorectal tissue-specific regulation of EGFR and supporting
+the use of combined BRAF\textsuperscript{V600E} and EGFR inhibitors
+which effectively block MAPK/ERK signalling in cell lines and
+xenografts. \ Across these studies, synergy between vemurafenib and
+EGFR inhibitors was replicated for multiple BRAF mutant colorectal cell
+lines with both antibody (cetuximab) and small-molecule drugs
+(gefitinib and erlotinib) giving a mechanistically derived means to
+overcome vemurafenib resistance. \ 
+
+
+\hyperlink{ENREF92}{Sun}\hyperlink{ENREF92}{\textit{ et
+al.}}\hyperlink{ENREF92}{ (2014)} applied these findings to understand
+vemurafenib resistance in BRAF\textsuperscript{V600E} melanomas. \ EGFR
+expression was found to be an adaptive response to BRAF or MEK
+inhibition in BRAF mutant biopsies and cell lines. \ An RNAi screen of
+chromatin regulators (a library of 661 genes) was performed on the A375
+melanoma cell line with low initial EGFR expression and selection for
+vemurafenib resistance. \ This showed that both gene silencing and drug
+selection were required for high EGFR expression to emerge. \ SOX10 was
+identified as the only gene for which multiple shRNAs could induce EGFR
+expression and was sufficient for increased EGFR expression and
+TGF$\beta $ signalling by transcriptome analysis. \ EGFR overexpression
+or TGF$\beta $ treatment also cause a slow growth phenotype, showing
+oncogene-induced senescence and so are only beneficial to melanomas
+under drug selection. \ Therefore, Heterogeneous SOX10 expression
+levels in melanoma cell lines account for variation in selection and
+vemurafenib resistance. \ If BRAF inhibition is removed, SOX10
+expression and drug sensitivity are restored giving support to a drug
+holiday and retreatment approach to counter drug resistance. \ 
+
+
+Combination treatment of vemurafenib (as a BRAF inhibitor) and various
+FDA approved EGFR inhibitors entered phase I clinical trials for
+treatment of BRAF\textsuperscript{V600E} mutant tumours in 2014.
+\ Vemurafenib and panitumamab are being trialled in colorectal cancers
+by the Memorial Sloan Kettering Cancer Center, New York. \ Combination
+treatment of vemurafenib, cetuximab (an EGFR inhibitor) and irinotecan
+(a topoisomerase inhibitor) are being trialled in advanced solid
+cancers by the MD Anderson Cancer Centre, Houston. \ Combination
+vemurafenib and erlotinib are being trialled in BRAF mutant cancers
+including colorectal and lung by the Peter MacCallum Cancer Centre,
+Melbourne. \ 
+
+
+\subsection[Network Drug Design]{Network Drug Design}
+
+While targeted therapeutics have shown some levels of success for drug
+discovery, particularly in anticancer applications, exploiting the
+connectivity of molecular networks or designing combination therapies
+are alternatives that may yield more effective results using a network
+pharmacology framework (Hopkins 2008). \ Rational design of drugs
+selective to a single target has largely failed to deliver clinical
+efficacy. \ In fact, many existing effective drugs modulate multiple
+proteins and were selected for biological effects or clinical outcome
+rather than molecular targets. \ Network biology and polypharmacology
+(specific binding to multiple targets) are a possible way to develop
+drugs with a desired target profile designed for the target topology.
+\ Multi-target treatments aim to achieve a clinical outcome through
+modulation of molecular networks since the genetic robustness of a cell
+often compensates for loss of a single molecular target. \ 
+
+
+[Warning: Draw object ignored]While multi-target drugs may be more
+difficult to design, they are faster to test clinically than drug
+combinations which are usually required to be tested separately first
+(Hopkins 2008). \ Networks have already been exploited to design
+synthetic lethal treatments for cancer, drug combinations and
+multi-target drugs to combat resistance to chemotherapy and
+antibiotics. \ Nevertheless, further optimisation of timing and dosing
+of drug combinations may increase efficacy and needs to be explored for
+combination effects with low efficacy as separate treatments. \ Low
+doses and drug holidays are other counter intuitive approaches which
+may increase clinical efficacy, reduce adverse effects, and reduce drug
+resistance (Sun\textit{ et al.} 2014; Tsai\textit{ et al.} 2012). \ 
+
+
+Thus a network understanding of a cell has the potential to impact upon
+drug design and clinical practice, particularly in treatment of cancer
+and infectious disease. \ Characterisation of the target system and
+impact of existing treatments, such as PARP inhibitors or
+BRAF\textsuperscript{V600E} and EGFR inhibitor combination therapy,
+could enable the understanding of the mechanisms of such interventions
+which exploit genetic interactions, protein interactions, cell
+signalling or gene regulation pathways. \ This could lead to
+development of more effective treatment interventions for these systems
+and prediction of similar molecular systems for development of novel
+drug targets and combinations. \ 
+
+
+\subsection[High{}-throughput Screening for Synthetic
+Lethality]{High-throughput Screening for Synthetic Lethality}
+
+The function of signalling pathways and combinations of interacting
+genes are important in cancer research but classical genetics
+approaches have been limited to non-redundant pathways (Fraser 2004).
+\ The emerging RNAi technologies have vastly expanded the potential for
+studying genetic redundancy in mammalian experimental models including
+testing experimentally for synthetic lethality (Fraser 2004).
+\ Identifying synthetic lethality is crucial to study gene function,
+drug mechanisms, and design novel therapies (Lum\textit{ et al.} 2004).
+\ Candidate selection of synthetic lethal gene pairs relevant to cancer
+has shown some success but is limited because interactions are
+difficult to predict; they can occur between seemingly unrelated
+pathways in model organisms (Costanzo\textit{ et al.} 2011). \ While
+biologically informed hypotheses have had some success in synthetic
+lethal discovery (Bitler\textit{ et al.} 2015; Bryant\textit{ et al.}
+2005; Farmer\textit{ et al.} 2005), interactions occurring indirectly
+between distinct pathways would be missed (Boone\textit{ et al.} 2007;
+Costanzo\textit{ et al.} 2011). \ Scanning the entire genome for
+interactions against a clinically relevant gene is an emerging strategy
+being explored with high-throughput screens (Fece de la Cruz\textit{ et
+al.} 2015) and computational approaches (Boucher \& Jenna 2013; van
+Steen 2011). \ 
+
+
+Experimental screening for synthetic lethality is an appealing strategy
+for wider discovery of functional interactions \textit{in vivo} despite
+many potential sources of error which must be considered. \ The
+synthetic lethal concept has both genetic and pharmacological screening
+applications to cancer research. \ Genetic screens, with RNAi to
+discover the specific genes involved, inform development of targeted
+therapies with a known mode of action, anticipated mechanisms of
+resistance, and biomarkers for treatment response. \ RNAi is a
+transient knockdown of gene expression more similar to the effect of
+drugs than complete gene loss and makes comparison to screens in model
+organisms difficult (Bussey\textit{ et al.} 2006). \ The RNAi gene
+knockdown process has inherent toxicity to some cells, potential
+off-target effects, and issues with a high false positive rate.
+\ Therefore, it is important to validate any candidates in a secondary
+screen and replicate knockdown experiments with a number of independent
+shRNAs. \ Alternative gene knockout procedures have also been proposed
+for synthetic lethal screening including a genome-wide application of
+the CRIPR/Cas9/sgRNA genome editing technology (Sander \& Joung 2014),
+episomal gene transfer (Vargas\textit{ et al.} 2004), or RNAi with
+lentiviral transfection for delivery of shRNA (Telford\textit{ et al.}
+2015). \ Genetic screens have potential for quantitative gene
+disruption experiments to selectively target overexpressed genes in
+cancer via synthetic dosage lethality. \ While powerful for
+understanding fundamental cellular function, analysis of isogenic cell
+lines is inherently limited by assuming only a single mutation differs
+between them despite susceptibility to {\textquoteleft}genetic
+drift{\textquoteright} and cannot account for diverse genetic
+backgrounds or tumour heterogeneity (Fece de la Cruz\textit{ et al.}
+2015). \ Genetic screens thus identify targets to develop or repurpose
+targeted therapies for disease but alone will not directly identify a
+lead compound to develop for the market or clinical translation. \ 
+
+
+Chemical screens are immediately applicable to the clinic by directly
+screening for \ selective lead compounds with suitable pharmacological
+properties. \ However chemical screens lack a known mode of action, may
+affect many targets, and screen a narrow range of genes with existing
+drugs. \ With either approach there are many challenges translating
+candidates into the clinic such as finding targets relevant to a range
+of patients, validation of targets, accounting for a range of genetic
+(and epigenetic) contexts or tumour micro-environment, identifying
+effective synergistic combinations, enhancers of existing radiation or
+cytotoxic treatments, avoiding inherent or acquired drug resistance,
+and developing biomarkers for patients which will respond to synthetic
+lethal treatment, including integrating these into clinical trials and
+clinical practice. \ Identifying specific target genes is an effective
+way to anticipate such challenges, which can be approached with genetic
+screens, so we will focus on these and computational alternatives.
+\ Screening methods have proven a fruitful area of research, despite
+being costly, laborious, and having many different sources of error.
+\ These limitations suggest a need for complementary computational
+approaches to synthetic lethal discovery. \ 
+
+
+\subsection[Examples of High{}-throughput Synthetic Lethal
+Screens]{Examples of High-throughput Synthetic Lethal Screens}
+
+Overexpression of genes is another suitable application for synthetic
+lethality since overexpressed genes cannot be distinguished from the
+wild-type by direct sequence specific targeted therapy.
+\ Overexpression of oncogenes, such as EGFR, MYC, and PIM1, has been
+found to drive many cancers. \ PIM1 is a candidate for synthetic lethal
+drug design in lymphomas and prostate cancers, where it interacts with
+MYC to drive cancer growth. \hyperlink{ENREF103}{van der
+Meer}\hyperlink{ENREF103}{\textit{ et al.}}\hyperlink{ENREF103}{
+(2014)} performed an RNAi screen to for synthetic lethality between
+PIM1 overexpression and gene knockdown in RWPE prostate cancer cell
+lines. \ They recognise RNAi screens are valuable for finding
+therapeutic targets and biomarkers for therapeutic response. \ PLK1
+gene knockdown and drug inhibition was an effective as a specific
+inhibitor of PIM1 overexpressing prostate cells in cell culture and
+mouse tumour xenografts. \ PLK1 inhibition reduced MYC expression in
+pre-clinical models, consistent with expression in human tumours which
+PIM1 and PLK1 are co-expressed and correlated with tumour grade.
+\ Therefore PLK1 is justified as a candidate for drug target against
+prostate cancer progression. \ 
+
+
+Hereditary leiomyomatosis and renal cell carcinoma (HLRCC) is a cancer
+syndrome of predisposition to benign tumours in the uterus and risk of
+malignant cancer of the kidney attributed to inherited mutations in
+fumarate hydratase (FH).
+\ \hyperlink{ENREF14}{Boettcher}\hyperlink{ENREF14}{\textit{ et
+al.}}\hyperlink{ENREF14}{ (2014)} performed an RNAi screen on HEK293T
+renal cells for synthetic lethality with FH. \ They found enrichment of
+haem metabolism (consistent with the literature) and adenylate cyclase
+pathways (consistent with cAMP dysregulation in FH mutant cells).
+\ Synthetic lethality between FH mutation and adenylate cyclases was
+validated with gene knockdown, drug experiments, and replicated across
+both HEK293T renal cells and VOK262 cells derived from a HLRCC patient,
+suggesting new potential treatments against the disease. \ Therefore,
+synthetic lethality is applicable to metabolic dysregulation in cancer,
+consistent with the Warburg hypothesis (Warburg 1956), and successfully
+identifies specific anti-cancer drugs, even when the mechanism is
+unclear. \
+
+
+Similarly, hereditary diffuse gastric cancer (HDGC) is a cancer syndrome
+of predisposition to early-onset malignant stomach and breast cancers
+attributed to mutations in E-Cadherin (CDH1).
+\ \hyperlink{ENREF94}{Telford}\hyperlink{ENREF94}{\textit{ et
+al.}}\hyperlink{ENREF94}{ (2015)} performed an RNAi screen on MCF10A
+breast cells for synthetic lethality with CDH1. \ They found enrichment
+of G-protein coupled receptors (GPCRs) and cytoskeletal gene functions.
+\ The results were consistent with a concurrent drug compound screen
+with a number of candidates validated by lentiviral shRNA gene
+knockdown and drug testing including inhibitors of Janus kinase,
+histone deacetylases, phosphoinositide 3-kinase, aurora kinase, and
+tyrosine kinases. \ Therefore the synthetic lethal strategy has
+potential for clinical impact against HDGC, with particular interest in
+interventions with low adverse effects for chemo-prevention, including
+repurposing existing approved drugs for activity against CDH1 deficient
+cancers. \ 
+
+
+RNAi screening for synthetic lethality is also useful for functional
+genetics to understand drug sensitivity.
+\ \hyperlink{ENREF1}{Aarts}\hyperlink{ENREF1}{\textit{ et
+al.}}\hyperlink{ENREF1}{ (2015)} screened WiDr colorectal cells for
+synthetic lethality between WEE1 inhibitor treatment and an RNAi
+library of 1206 genes with functions known to be amenable to drug
+treatment or important in cancer such as kinases, phosphatases, tumour
+suppressors, and DNA repair (a pathway WEE1 regulates). \ Screening
+identified a number of synthetic lethal candidates including genes
+involved in cell cycle regulation, DNA replication, repair, homologous
+recombination, and Fanconi anaemia. \ Synthetic lethality with
+cell-cycle and DNA repair genes was consistent with the literature and
+validation in a panel of breast and colorectal cell lines supported
+checkpoint kinases, Fanconi anaemia, and homologous recombination as
+synthetic lethal partners of WEE1. \ These results show that synthetic
+lethality can be used to improve drug sensitivity as a combination
+treatment, especially to exploit genomic instability and DNA repair,
+which are known to be clinically applicable from previous results with
+BRCA genes and PARP inhibitors (Lord\textit{ et al.} 2014).
+\ Therefore, WEE1 inhibitors are an example of treatment which could be
+repurposed with the synthetic lethal strategy and similar findings
+would be valuable to clinicians as a source of biomarkers and novel
+treatments. \ While using a panel of cell lines to replicate findings
+across genetic background is a promising approach to ensure wide
+clinical application of validated synthetic lethal partners, a
+computational approach may be more effective as it could account for
+wider patient variation than scaling up intensive experiments on a wide
+array of cell lines and could screen beyond limited candidates from an
+RNAi library. \ 
+
+
+Chemical genetic screens are also a viable strategy to identify
+therapeutically relevant synthetic lethal interactions.
+\ \hyperlink{ENREF13}{Bitler}\hyperlink{ENREF13}{\textit{ et
+al.}}\hyperlink{ENREF13}{ (2015)} investigated ARID1A mutations,
+aberrations in chromatin remodelling known to be common in ovarian
+cancers, for drug response. \ Ovarian RMG1 cells were screened for drug
+response specific to ARID1A knockdown cells. \ They used ARID1A gene
+knockdown for consistent genetic background, with control experiments
+and 3D cell culture to ensure relevance to drug activity in the tumour
+micro-environment. \ Screening a panel of commercially available drugs
+targeting epigenetic regulators found EZH2 methyltransferase inhibitors
+effective and specific against ARID1A mutation with validation in a
+panel of ovarian cell lines. \ Synthetic lethality between ARID1A and
+EZH2 was supported by decreases in H3K27Me3 epigenetic marks and
+markers of apoptosis in response to EZH2 inhibitors. \ This was
+mechanistically supported with differential expression of PIK3IP1 and
+association of both synthetic lethal genes with the PIK3IP1 promoter
+identifying the P1I3K-AKT signalling pathway as disrupted when both
+genes are inhibited. \ This successfully demonstrates the importance of
+synthetic lethality in epigenetic regulators, identifies a
+therapeutically relevant synthetic lethal interaction, and shows that
+chemical genetic screens could model drug response and combination
+therapy in cancer cells. \ However this approach is limited to finding
+synthetic lethal interactions between genes with known similar
+function, which may not be the most suitable for treatment. \ Further
+limiting experiments to genes with existing targeted drugs reduces the
+number of synthetic lethal interactions detected, assumes on their drug
+specificity to a particular target, and many of these drugs are not
+clinically available yet anyway as they are still in clinical trials
+for other diseases or are not supported by healthcare systems in many
+countries. \ 
+
+
+\hyperlink{ENREF53}{Jerby-Arnon}\hyperlink{ENREF53}{\textit{ et
+al.}}\hyperlink{ENREF53}{ (2014)} combined a computational approach to
+triage candidates with a conventional RNAi screen to validate synthetic
+lethal partners. \ They screened a selection of computationally
+predicted candidates and randomly selected genes with RNAi against VHL
+loss of function mutation in RCC4 renal cell lines. \ The computational
+method had a high AUROC of 0.779 and predictions were enriched 4x for
+validated RNAi hits over randomly selected genes. \ This approach
+detected known synthetic lethal pairs such as BRCA genes with PARP1 and
+MSH2 with DHFR. \ The synthetic lethal candidates identified with both
+RNAi screening and computational prediction formed an extensive network
+of 2077 genes with 2816 synthetic lethal interactions and similar
+network of 3158 genes with 3635 synthetic dosage lethal interactions
+(for synthetic lethality with over-expression). \ Each network was
+scale-free as expected of a biological network and was enriched for
+known cancer genes, essential genes in mice, and could be harnessed for
+predicting prognosis and drug response. \ While demonstrating the
+feasibility of combining experimental and computational approaches to
+synthetic lethality in cancer, there remain challenges in predicting
+synthetic lethal genes, novel drug targets, and translation into the
+clinic. \ 
+
+
+The examples above show that high-throughput screens are an effective
+approach to discover synthetic lethality in cancer with a wide range of
+applications. \ Screens are more comprehensive than hypothesis-driven
+candidate gene approaches and successfully find known and novel
+synthetic lethal interactions with potential for rapid clinical
+application. \ They have the power to test mode of action of drugs,
+find unexpected synthetic lethal interactions between pathways, or
+identify effective treatment strategies without needing a clear
+mechanism. \ However, synthetic lethal screens are costly,
+labour-intensive, error-prone, and biased towards genes with effective
+RNAi knockdown libraries. \ Limited genetic background, lethality to
+wild-type cell during gene knockdown, off-target effects, and
+difficultly replicating synthetic lethality across different cell
+lines, tissues, laboratories, or conditions stems from a high false
+positive rate and a lack of standardised thresholds to identify
+synthetic lethality in a high-throughput screen. \ Therefore there is a
+need for replication, validation, and alternative approaches to
+identify synthetic lethal candidates. \ Varied conditions between
+experimental screens and differences between RNAi or drug screens makes
+meta-analysis difficult. Thus genome-scale synthetic lethal experiments
+are not feasible, even in model organisms, so a computational approach
+would be more suitable for this task. \ 
+
+
+\subsection[Computational Prediction of Synthetic
+Lethality]{Computational Prediction of Synthetic Lethality}
+
+Prediction of gene interaction networks is a feasible alternative to
+high-throughput screening with biological importance and clinical
+relevance. \ There are many existing methods to predict gene networks,
+as reviewed by \hyperlink{ENREF104}{van Steen (2011)} and
+\ \hyperlink{ENREF16}{Boucher and Jenna (2013)}, summarised in Table 2
+below. \ However, many of these methods have limitations including the
+requirement for existing SGI data, several data inputs, and reliability
+of gene function annotation. \ Many of the existing methods also assume
+conservation of individual interactions between species, which has been
+found not to hold in yeast studies (Dixon\textit{ et al.} 2008).
+\ Tissue specificity is important in gene regulation and gene
+expression, which are used as predictors of genetic interaction.
+\ However, tissue specificity of genetic interactions cannot be
+explored in yeast studies and has not been considered in any of the
+following studies of multicellular model organisms, human networks, or
+cancers. \ Similarly, investigation into tissue specificity of
+protein-protein interactions (PPIs) , an important predictor of genetic
+interactions, is difficult given the high-throughput two-hybrid screens
+occur out of cellular context for multicellular organisms. \ 
+
+
+\textbf{Table 2. \ }Existing prediction methods for Genetic Interaction
+Networks in Model Organisms
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{4.421cm}|m{2.342cm}|m{2.388cm}|m{4.552cm}|m{2.299cm}}
+\multicolumn{1}{m{4.421cm}}{\cellcolor{white}\bfseries\color{black}
+Method} &
+\multicolumn{1}{m{2.342cm}}{\cellcolor{white}\color{black}
+\textcolor{black}{Input Data}} &
+\multicolumn{1}{m{2.388cm}}{\cellcolor{white}\color{black}
+\textcolor{black}{Species}} &
+\multicolumn{1}{m{4.552cm}}{\cellcolor{white}\bfseries\color{black}
+Source} &
+\cellcolor{white}\bfseries\color{black} Tool Offered\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Between Pathways Model} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} PPI, SGI &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{S. cerevisiae}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF56}{Kelley and Ideker (2005)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+Within Pathways Model &
+PPI, SGI &
+\textit{S. cerevisiae} &
+\hyperlink{ENREF56}{Kelley and Ideker (2005)} &
+~
+\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Decision Tree} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} PPI,
+expression, phenotype &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{S. cerevisiae}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF113}{Wong}\hyperlink{ENREF113}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF113}{ (2004)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} 2
+Hop\\\hline
+Logistic Regression &
+SGI, PPI, co-expression, phenotype &
+\textit{C. elegans} &
+\hyperlink{ENREF118}{Zhong and Sternberg (2006)} &
+Gene Orienteer\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Network Sampling} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} SGI, PPI, GO
+&
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{S. cerevisiae}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\hyperlink{ENREF61}{Le Meur and Gentleman (2008)}}
+
+\color{black}
+\hyperlink{ENREF67}{LeMeur}\hyperlink{ENREF67}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF67}{ (2014)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+SLGI(R)\\\hline
+Random Walk &
+GO, PPI, expression &
+\textit{S. cerevisiae}
+
+\textit{C. elegans} &
+\hyperlink{ENREF22}{Chipman and Singh (2009)} &
+~
+\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Shared Function} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+Co-expression, PPI, text mining, phylogeny &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{C. elegans}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF63}{Lee}\hyperlink{ENREF63}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF63}{ (2010b)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+WormNet\\\hline
+Logistic Regression &
+Co-expression, PPI, phenotype &
+\textit{C. elegans} &
+\hyperlink{ENREF62}{Lee}\hyperlink{ENREF62}{\textit{ et
+al.}}\hyperlink{ENREF62}{ (2010a)} &
+GI Finder\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Jaccard Index} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} GO, SGI,
+PPI, phenotype &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Eukarya &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF50}{Hoehndorf}\hyperlink{ENREF50}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF50}{ (2013)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+Bimodal Statistics &
+~
+ &
+~
+ &
+\hyperlink{ENREF110}{Wappett (2014)} &
+BiSEp(R)\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Machine Learning} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Discussed by
+\hyperlink{ENREF6}{Babyak (2004)} and \hyperlink{ENREF64}{Lee and
+Marcotte (2009)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+\textbf{Machine Learning as discussed by
+}\hyperlink{ENREF114}{\textbf{Wu}}\hyperlink{ENREF114}{\textbf{\textit{
+et al.}}}\hyperlink{ENREF114}{\textbf{ (2014)}} &
+~
+ &
+~
+ &
+\hyperlink{ENREF81}{Qi}\hyperlink{ENREF81}{\textit{ et
+al.}}\hyperlink{ENREF81}{ (2008)}
+
+\hyperlink{ENREF78}{Paladugu}\hyperlink{ENREF78}{\textit{ et
+al.}}\hyperlink{ENREF78}{ (2008)}
+
+\hyperlink{ENREF68}{Li}\hyperlink{ENREF68}{\textit{ et
+al.}}\hyperlink{ENREF68}{ (2011)} &
+~
+\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Machine Learning} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF79}{Pandey}\hyperlink{ENREF79}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF79}{ (2010)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} MNMC\\\hline
+Machine Learning Meta-Analysis &
+~
+ &
+~
+ &
+\hyperlink{ENREF114}{Wu}\hyperlink{ENREF114}{\textit{ et
+al.}}\hyperlink{ENREF114}{ (2014)} &
+MetaSL\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\textcolor{black}{Flux Variability Analysis}}
+
+{\color{black} \textcolor{black}{Flux Balance Analysis}}
+
+\color{black} \textcolor{black}{Network Simulation} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Metabolism &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\textit{\textcolor{black}{E. coli}}}
+
+\color{black} \textit{\textcolor{black}{Mycoplasma pneumoniae}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF45}{G\"uell}\hyperlink{ENREF45}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF45}{ (2014)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+\end{supertabular}
+\end{flushleft}
+
+
+
+
+\textbf{Table 3. \ }Existing prediction methods for Synthetic Lethality
+in Cancer
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{4.421cm}|m{2.342cm}|m{2.388cm}|m{4.552cm}|m{2.299cm}}
+\multicolumn{1}{m{4.421cm}}{\cellcolor{white}\bfseries\color{black}
+Method} &
+\multicolumn{1}{m{2.342cm}}{\cellcolor{white}\color{black}
+\textcolor{black}{Input Data}} &
+\multicolumn{1}{m{2.388cm}}{\cellcolor{white}\color{black}
+\textcolor{black}{Species}} &
+\multicolumn{1}{m{4.552cm}}{\cellcolor{white}\bfseries\color{black}
+Source} &
+\cellcolor{white}\bfseries\color{black} Tool Offered\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Network Centrality} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} PPI &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{H. sapiens}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF59}{Kranthi}\hyperlink{ENREF59}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF59}{ (2013)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+Differential Expression &
+Expression, Mutation &
+\textit{H. sapiens} &
+\hyperlink{ENREF109}{Wang and Simon (2013)} &
+~
+\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\textcolor{black}{Comparative Genomics}}
+
+\color{black} \textcolor{black}{Chemical-Genomics} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Yeast SGI,
+Homology &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{H. sapiens}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF48}{Heiskanen and Aittokallio (2012)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+Comparative Genomics &
+Yeast SGI, Homology &
+\textit{H. sapiens} &
+\hyperlink{ENREF30}{Deshpande}\hyperlink{ENREF30}{\textit{ et
+al.}}\hyperlink{ENREF30}{ (2013)} &
+~
+\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Genome Evolution} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF73}{Lu}\hyperlink{ENREF73}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF73}{ (2013)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+Machine Learning &
+~
+ &
+~
+ &
+Discussed by \hyperlink{ENREF6}{Babyak (2004)} and
+\hyperlink{ENREF64}{Lee and Marcotte (2009)} &
+~
+\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Differential Expression} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF95}{Tiong}\hyperlink{ENREF95}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF95}{ (2014)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+Literature Database &
+~
+ &
+~
+ &
+\hyperlink{ENREF69}{Li}\hyperlink{ENREF69}{\textit{ et
+al.}}\hyperlink{ENREF69}{ (2014)} &
+Syn-Lethality\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Meta-Analysis} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+Meta-Analysis Machine Learning &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF114}{Wu}\hyperlink{ENREF114}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF114}{ (2014)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+MetaSL\\\hline
+Pathway Analysis &
+~
+ &
+~
+ &
+\hyperlink{ENREF117}{Zhang}\hyperlink{ENREF117}{\textit{ et
+al.}}\hyperlink{ENREF117}{ (2015)} &
+~
+\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Protein Domains} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Homology &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF58}{Kozlov}\hyperlink{ENREF58}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF58}{ (2015)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+Data-Mining &
+~
+ &
+~
+ &
+\hyperlink{ENREF53}{Jerby-Arnon}\hyperlink{ENREF53}{\textit{ et
+al.}}\hyperlink{ENREF53}{ (2014)}
+
+\hyperlink{ENREF85}{Ryan}\hyperlink{ENREF85}{\textit{ et
+al.}}\hyperlink{ENREF85}{ (2014)}
+
+\hyperlink{ENREF27}{Crunkhorn (2014)}
+
+\hyperlink{ENREF70}{Lokody (2014)} &
+DAISY (method)\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\textcolor{black}{Cancer Genome Evolution}}
+
+{\color{black} \textcolor{black}{Hypothesis Test}}
+
+\color{black} \textcolor{black}{Machine Learning} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black} Expression,
+DNA CNV, }
+
+\color{black} Known SL &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{H. sapiens}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF74}{Lu}\hyperlink{ENREF74}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF74}{ (2015)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+Chi-Squared Test &
+Expression, DNA CNV, Methylation, or Mutation &
+\textit{H. sapiens} &
+Tom Kelly, Parry Guilford, and Mik Black
+
+Dissertation (Kelly 2013)
+
+Manuscript in Preparation &
+SLIPT\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Survival Analysis} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Expression,
+Clinical &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{H. sapiens}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Mik Black
+(personal communication) &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+\end{supertabular}
+\end{flushleft}
+
+
+There are a number of existing computational methods for predicting
+synthetic lethal gene pairs. \ While these demonstrate the power and
+need for predictions of synthetic lethality in human and cancer
+contexts, limitations of previous methods \ could be met with a
+different approach. \ For instance, computational approaches to
+synthetic lethal prediction are often difficult to interpret, replicate
+for new genes, or reliant on data types not available for genes that
+other cancer researchers work on. \ 
+
+
+\hyperlink{ENREF59}{Kranthi}\hyperlink{ENREF59}{\textit{ et
+al.}}\hyperlink{ENREF59}{ (2013)} took a network approach to discovery
+of synthetic lethal candidate selection applying the concept to
+{\textquoteleft}centrality{\textquoteright} to a human PPI network
+involving interacting partners of known cancer genes. \ The effect of
+removing pairs of genes on connectivity of the network was used as a
+surrogate for viability which is supported by observations that the PPI
+and synthetic lethal networks are orthogonal in \textit{S. cerevisiae}
+studies (Tong\textit{ et al.} 2004). \ While they showed the power law
+distribution expected of a scale-free synthetic lethal network with
+centrality measures, their approach was limited to known cancer genes
+and is not applicable to genes without PPI data. \ Other nucleotide
+sequencing data types are more commonly available for cancer studies at
+a genomic scale. \ Of further concern is that the results were enriched
+for p53 synthetic lethal partners which is relevant to many cancer
+researchers but makes using this approach for other cancer genes
+difficult with respect to multiple testing. \ This enrichment may be
+due to the known drastic effect of removing p53 itself from the network
+as a master regulator, cancer driving tumour suppressor gene, and
+highly connected network {\textquoteleft}hub{\textquoteright}. \ The
+focus on cancer genes is useful for translation into therapeutics but
+does not account for variable genetic backgrounds or effect of protein
+removal on the whole cellular network. \ 
+
+
+A comparative genomics approach by
+\hyperlink{ENREF30}{Deshpande}\hyperlink{ENREF30}{\textit{ et
+al.}}\hyperlink{ENREF30}{ (2013)} used the results of well
+characterised high-throughput mutation screens in \textit{S. cerevisiae
+}as candidates for synthetic lethality in humans (Baryshnikova\textit{
+et al.} 2010a; Boone\textit{ et al.} 2007; Costanzo\textit{ et al.}
+2010; Costanzo\textit{ et al.} 2011; Tong\textit{ et al.} 2001;
+Tong\textit{ et al.} 2004). \ Yeast synthetic lethal partners were
+compared to human orthologues to find cancer relevant synthetic lethal
+candidate pairs with direct therapeutic potential. \ Proposed as a
+complementary approach to siRNA screens, several synthetic lethal
+candidates were successfully validated in cell culture; however, this
+methodology is limited to application on human genes with known yeast
+orthologues. \ Synthetic lethal interactions themselves may not be
+conserved between species (Dixon\textit{ et al.} 2009a), although
+synthetic lethal interactions between pathways may are more comparable.
+\ There have been many gene duplications in the separate evolutionary
+histories of humans and yeast which may lead to differences in genetic
+redundancy. \ Yeast are further not an ideal human cancer model because
+they are do not have tissue specificity, multicellular gene regulation,
+or orthologues to a number of known cancer genes such as p53. \ 
+
+
+Differential gene expression has also been explored to predict synthetic
+lethal pairs in cancer which would be widely applicable due to the
+availability of public gene expression data for a large number of
+samples and cancer types. \ \hyperlink{ENREF109}{Wang and Simon (2013)}
+found differentially expressed genes between tumours with or without
+functional p53 mutations in Cancer Genome Atlas (TCGA) and Cell Line
+Encyclopaedia (CCLE) RNA-Seq gene expression data as candidate
+synthetic lethal partner pathways of p53. \ Some of these pathways were
+consistent with the literature and drug sensitivity cell-line screens
+demonstrating the potential of gene expression as a surrogate for gene
+function and use of public genomic data to predict synthetic lethal
+gene pairs in cancer. \ However, the analyses were limited to kinase
+genes and focused on currently druggable genes, lacking wider
+application of synthetic lethal prediction methodology. \ This approach
+may not be feasible or applicable in cancer genes with a lower mutation
+rate than p53. \ 
+
+
+\hyperlink{ENREF95}{Tiong}\hyperlink{ENREF95}{\textit{ et
+al.}}\hyperlink{ENREF95}{ (2014)} also investigated gene expression as
+a predictor of synthetic lethal pairs with colorectal cancer
+microarrays. \ Simultaneously differentially expressed
+{\textquotedblleft}tumour dependent{\textquotedblright} gene pairs
+between cancer and normal tissue were used as candidate synthetic
+lethal interactions. \ The top 20 genes were tested for differential
+expression at the protein level with immunohistochemistry staining and
+correlation with clinical characteristics. \ Some of the predicted
+synthetic lethal pairs were consistent with the literature and 2 novel
+synthetic lethal interactions with p53 were validated in pre-clinical
+models. \ While a valuable proof-of-concept for integration of
+\textit{in silico} approaches to synthetic lethal discovery in cancer,
+the results again focus on p53 rather than the wider application of
+synthetic lethal prediction. \ The gene expression analyses were
+conducted in a Han Chinese population with a small sample size (70
+tumour, 12 normal) and may not be applicable to other populations. \ 
+
+
+Another approach to systematic synthetic lethality discovery specific to
+human cancer (in contrast to the plethora of yeast synthetic lethality
+data) was to build a database as done by
+\hyperlink{ENREF69}{Li}\hyperlink{ENREF69}{\textit{ et
+al.}}\hyperlink{ENREF69}{ (2014)}. \ In their relational database,
+called {\textquotedblleft}Syn-lethality{\textquotedblright}, they have
+curated both known experimentally discovered synthetic lethal pairs in
+humans (113 pairs) from the literature and those predicted from
+synthetic lethality between orthologous genes in \textit{S. cerevisiae}
+yeast (1114 pairs). \ This knowledge-based database is the first known
+dedicated to human cancer synthetic lethal interactions and integrates
+gene functional, annotation, pathway and molecular mechanism data with
+experimental and predicted synthetic lethal gene pairs. \ This
+combination of data sources is intended to tackle the trade-off between
+more conclusive synthetic lethal experiments in yeast and more
+clinically relevant synthetic lethal experiments in human cancer
+models, such as RNAi, especially when high-throughput screens are
+costly and prone to false positives in either system and difficult to
+replicate across gene backgrounds. \ This database centralises a wealth
+of knowledge scattered in the literature including cancer relevant
+genes (BRCA, PARP, PTEN, VHL, MYC, EGFR, MSH2, KRAS, and TP53) and is
+publicly available as a Java App. \ However, the methodology was not
+released to replicate or add to the findings with new datasets.
+\ Suggested future directions were promising, such as constructing
+networks of known synthetic lethality, applying known synthetic
+lethality to cancer treatment, data mining, replicating the approach
+for synthetic lethality in model organisms, signalling pathways, and
+develop a complete global network in human cancer or yeast (both of
+which are still incomplete with experimental data). \ 
+
+
+From the same group,
+\hyperlink{ENREF114}{Wu}\hyperlink{ENREF114}{\textit{ et
+al.}}\hyperlink{ENREF114}{ (2014)} developed a meta-analysis method
+(based on the machine learning methods in Table 4) for synthetic lethal
+gene pairs relevant to developing selective drugs against human cancer.
+\ They note that computational approaches scale-up across the genome at
+lower cost than experimental screens but existing methods are limited
+by noise and overfitting to a particular predictive feature. \ Their
+{\textquotedblleft}metaSL{\textquotedblright} approach performs well
+with an AUROC of 0.871 with the claimed strengths of existing machine
+learning methods and the results are shared on the web. \ However, once
+again, the method is not available for analysis of other genes studied
+by the cancer research community and the method lacks mechanisms,
+reproducibility, and interpretation by researchers. \ While machine
+learning has great potential as a predictor, it is difficult to
+interpret which features are being used for prediction and their
+mechanistic significance, particularly for biologists with limited
+exposure to computational concepts. \ 
+
+
+Focusing on the potential for synthetic lethality to be an effective
+anti-cancer drug target,
+\hyperlink{ENREF117}{Zhang}\hyperlink{ENREF117}{\textit{ et
+al.}}\hyperlink{ENREF117}{ (2015)} used modelling signalling pathways
+to identify synthetic lethal interactions between known drug targets
+and cancer genes. \ A computational approach was again used here to
+tackle the limitations of experimental RNAi screens such as scale,
+instability of knockdown, and off-target effects. \ Strangely, they
+seemed more concerned with the needs of the pharmaceutical companies
+than those of the patients. \ However, their
+{\textquotesingle}hybrid{\textquotesingle} method of a data-driven
+model and known signalling pathways showed potential as a means to
+predict cell death in single and combination gene knockouts. \ They
+used time series gene expression data (Lee\textit{ et al.} 2012) and
+pathways (the Gene Ontology system). \ This approach successfully
+detected many known essential genes in the human gene essentiality
+database, known synthetic lethal partners in the Syn-Lethality
+database, and predicted novel synthetic lethal gene pairs. \ Novel
+results were enriched for TP53 and AKT synthetic lethal partners, genes
+known to be important in many cancers but also predicted to be
+essential by single gene disruption having a large impact on the
+signalling pathways. \ Notably, they claim to be able to detect all 3
+types of functionally related pathways or protein complexes. \ The
+results are consistent with the experimental results in the literature
+but the group has not shown validation for novel synthetic lethal
+interactions. \ 
+
+
+\textbf{Table 4. \ }Existing Computational Methods used for
+meta-analysis by \hyperlink{ENREF114}{Wu}\hyperlink{ENREF114}{\textit{
+et al.}}\hyperlink{ENREF114}{ (2014)}
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{4.421cm}|m{2.342cm}|m{2.388cm}|m{4.552cm}|m{2.299cm}}
+\multicolumn{1}{m{4.421cm}}{\cellcolor{white}\bfseries\color{black}
+Method} &
+\multicolumn{1}{m{2.342cm}}{\cellcolor{white}\color{black}
+\textcolor{black}{Input Data}} &
+\multicolumn{1}{m{2.388cm}}{\cellcolor{white}\color{black}
+\textcolor{black}{Species}} &
+\multicolumn{1}{m{4.552cm}}{\cellcolor{white}\bfseries\color{black}
+Source} &
+\cellcolor{white}\bfseries\color{black} Tool Offered\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Random Forest} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Machine
+Learning &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{H. sapiens}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\hyperlink{ENREF46}{Hall}\hyperlink{ENREF46}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF46}{ (2009)}}
+
+\color{black} \hyperlink{ENREF18}{Breiman (2001)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} WEKA\\\hline
+J48 (decision tree) &
+Machine Learning &
+\textit{H. sapiens} &
+\hyperlink{ENREF46}{Hall}\hyperlink{ENREF46}{\textit{ et
+al.}}\hyperlink{ENREF46}{ (2009)}
+
+~
+ &
+WEKA\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Bayes (Log Regression)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Machine
+Learning &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{H. sapiens}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\hyperlink{ENREF46}{Hall}\hyperlink{ENREF46}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF46}{ (2009)}}
+
+~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} WEKA\\\hline
+Bayes (Network) &
+Machine Learning &
+\textit{H. sapiens} &
+\hyperlink{ENREF46}{Hall}\hyperlink{ENREF46}{\textit{ et
+al.}}\hyperlink{ENREF46}{ (2009)}
+
+~
+ &
+WEKA\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{PART (Rule-based)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Machine
+Learning &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{H. sapiens}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\hyperlink{ENREF46}{Hall}\hyperlink{ENREF46}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF46}{ (2009)}}
+
+~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} WEKA\\\hline
+RBF Network &
+Machine Learning &
+\textit{H. sapiens} &
+\hyperlink{ENREF46}{Hall}\hyperlink{ENREF46}{\textit{ et
+al.}}\hyperlink{ENREF46}{ (2009)}
+
+~
+ &
+WEKA\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Bagging / Bootstrap} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Machine
+Learning &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{H. sapiens}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\hyperlink{ENREF46}{Hall}\hyperlink{ENREF46}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF46}{ (2009)}}
+
+~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} WEKA\\\hline
+Classification via Regression &
+Machine Learning &
+\textit{H. sapiens} &
+\hyperlink{ENREF46}{Hall}\hyperlink{ENREF46}{\textit{ et
+al.}}\hyperlink{ENREF46}{ (2009)}
+
+~
+ &
+WEKA\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Support Vector Machine (Linear)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Machine
+Learning &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{H. sapiens}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF106}{Vapnik (1995)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+Support Vector Machine (RBF -- Gaussian) &
+Machine Learning &
+\textit{H. sapiens} &
+\hyperlink{ENREF54}{Joachims (1999)} &
+~
+\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Multi-Network Multi-Class (MNMC)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Machine
+Learning &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{H. sapiens}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF79}{Pandey}\hyperlink{ENREF79}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF79}{ (2010)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+MetaSL (Meta-Analysis) &
+Machine Learning &
+\textit{H. sapiens} &
+\hyperlink{ENREF114}{Wu}\hyperlink{ENREF114}{\textit{ et
+al.}}\hyperlink{ENREF114}{ (2014)} &
+MetaSL\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Pathway Analysis} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Pathway
+Model &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textit{\textcolor{black}{H. sapiens}} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\hyperlink{ENREF117}{Zhang}\hyperlink{ENREF117}{\textit{\textcolor{black}{
+et al.}}}\hyperlink{ENREF117}{ (2015)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\\\hline
+\end{supertabular}
+\end{flushleft}
+
+While the mathematical reasoning and algorithms are given, code was not
+released and it is unlikely that the wider biologically trained
+research community will be able to reproduce or apply the findings
+beyond the signalling pathways discussed by
+\hyperlink{ENREF117}{Zhang}\hyperlink{ENREF117}{\textit{ et
+al.}}\hyperlink{ENREF117}{ (2015)}. \ The authors note limitations as
+directions for further research including the potential of their method
+to detect mechanisms, types of interactions, impact of activation or
+inhibition of proteins, and improve performance with a Boolean network
+or differential equation approach, all of which have been claimed but
+not shown. \ Further, this approach is limited by existing pathway data
+with limited scale, scope, and reliability coming from a range of
+sources. \ So far, modelling has been restricted to signalling pathways
+which are immediately applicable to cancer; while important, the
+approach lacks broader application to other diseases and pathway types.
+\ Zhang et al. \ (2015) also lack validation, replication, or
+application of findings and are heavily reliant on existing literature
+for testing their predictions. \ 
+
+
+Recognising the utility of synthetic lethality to drug inhibition and
+specificity of anti-cancer treatments,
+\hyperlink{ENREF53}{Jerby-Arnon}\hyperlink{ENREF53}{\textit{ et
+al.}}\hyperlink{ENREF53}{ (2014)} also saw the need for effective
+prediction of gene essentiality and synthetic lethality to augment
+experimental studies of SL. \ They have developed a data-driven
+pipeline called DAISY (data mining synthetic lethality identification
+pipeline) and tested for genome-wide analysis of synthetic lethality in
+public cancer genomics data from TCGA and CCLE. \ DAISY is intended to
+predict the candidate synthetic lethal partners of a query gene such as
+genes recurrently mutated in cancer. \ 
+
+
+DAISY compares the results of analysis of several data types to predict
+synthetic lethality, namely: DNA copy number, mutation and gene
+expression profiles for clinical samples and cell lines. \ The cell
+lines data also analysed gene essentiality profiles from shRNA screens.
+\ Genes are classed as inactivated by copy number deletion, somatic
+loss of function mutation, or low expression and tested for synthetic
+lethal gene partners which are either essential in screens or not
+deleted with copy number variants. \ Co-expression is also used for
+synthetic lethality prediction based on studies in yeast
+(Costanzo\textit{ et al.} 2010; Kelley \& Ideker 2005). \ Copy number,
+gene expression and, essentiality analyses are stringently compared by
+adjusting each for multiple tests with Bonferroni correction and only
+taking hits which occur in all analyses. \ This methodology was also
+adapted for synthetic dosage lethality by testing for partner genes
+where genes are overactive with high copy number or expression. \ As
+discussed above, the predictions performed well and an RNAi screen for
+the example of VHL in renal cancer validated predicted synthetic lethal
+partners of VHL demonstrating the feasibility of combining approaches
+to synthetic lethal discovery in cancer and using computational
+predictions to enable more efficient high-throughput screening.
+\ However, this methodology is very stringent, missing potentially
+valuable synthetic lethal candidates, may not be applicable to genes of
+interest to other groups and the software for the procedure is not
+publicly released for replication. 
+
+
+Although the DAISY procedure performs well and has been well received by
+the scientific community (Crunkhorn 2014; Lokody 2014; Ryan\textit{ et
+al.} 2014), showing a need for such methodology, there is no indication
+of adoption of the methodology in the community yet. \ The
+co-expression analysis may not be the most effective way to test gene
+expression for directional synthetic lethal interactions (where inverse
+correlation would be expected). \ Presumably in the interests of a
+large sample size, little care is taken to test tissue types separately
+for tissue specific synthetic lethality (of interest since expression,
+isoforms, gene function, and clinical characteristics of cancers are
+tissue-dependent). \ Some data forms and analyses used, such as gene
+essentiality, may not be available for all cancers, genes, or tissues,
+and may not be reproduced. \ 
+
+
+\hyperlink{ENREF74}{Lu}\hyperlink{ENREF74}{\textit{ et
+al.}}\hyperlink{ENREF74}{ (2015)} critique the reliance of DAISY on
+co-expression and propose an alternative computational prediction of
+synthetic lethality based on machine learning methods and a cancer
+genome evolution hypothesis. Using both DNA copy number and gene
+expression data from TCGA, a cancer genome evolution model assumes that
+synthetic lethal gene pairs behave in 2 distinct ways in response to an
+inactive synthetic lethal partner gene, either a
+{\textquoteleft}compensation{\textquoteright} pattern where the other
+synthetic lethal partner is overactive or a {\textquoteleft}co-loss
+underrepresentation{\textquoteright} pattern where the other synthetic
+lethal partner is less likely to be lost, since loss of both genes
+would cause death of the cancer cell. \ During the cancer genome
+evolution as the cell becomes addicted to the remaining synthetic
+lethal partner due to induced gene essentiality. \ These patterns would
+explain why DAISY detects only a small number of synthetic lethal
+pairs, compared to the large number expected based on model organism
+studies (Boone\textit{ et al.} 2007), and the disparity between
+screening and computationally predicted synthetic lethal candidates due
+to testing different classes of synthetic lethal gene pairs.
+
+
+\hyperlink{ENREF74}{Lu}\hyperlink{ENREF74}{\textit{ et
+al.}}\hyperlink{ENREF74}{ (2015)} compared a genome-wide computational
+model of genome evolution and gene expression patterns to the
+experimental data of
+\hyperlink{ENREF108}{Vizeacoumar}\hyperlink{ENREF108}{\textit{ et
+al.}}\hyperlink{ENREF108}{ (2013)} and
+\hyperlink{ENREF60}{Laufer}\hyperlink{ENREF60}{\textit{ et
+al.}}\hyperlink{ENREF60}{ (2013)}. \ The model had an AUROC of 0.751,
+performing well for a simpler method than DAISY. \ They predict a
+larger comprehensive list of 591,000 human synthetic lethal partners
+with a probability score threshold of 0.81, giving a precision of 67\%
+and 14x enrichment of synthetic lethal true positives compared to
+randomly selected gene pairs. \ \ Discovery of such a vast number of
+cancer-relevant synthetic lethal interactions in humans would not be
+feasible experimentally and is a valuable resource for research and
+clinical applications. \ These predictions are not limited by assuming
+co-expression of synthetic lethal partners or evolutionary conservation
+with model organisms enabling wider synthetic lethal discovery.
+\ However, there remains a lack of basis for an expectation of how many
+synthetic lethal partners a particular gene will have, how many pairs
+there are in the human genome, and whether pathways or correlation
+structure would influence predicted synthetic lethal partners.
+
+
+Large scale, computational approaches have yet to determine whether
+synthetic lethal interactions are tissue-specific since
+\hyperlink{ENREF74}{Lu}\hyperlink{ENREF74}{\textit{ et
+al.}}\hyperlink{ENREF74}{ (2015)} used pan-cancer data for 14136
+patients with 31 cancer types. \ Experimental data used for comparison
+was a small training dataset specific to colorectal cancer, and based
+on screens for other phenotypes, which may limit performance of the
+model or application to other cancers. \ Proposed expansion of the
+computational approach to mutation, microRNA, or epigenetic modulation
+of gene function and tumour micro-environment or heterogeneity suggests
+that synthetic lethal discovery could be widely applied to the current
+challenges in cancer genomics. \ This approach was also based on
+machine learning methodology and not supported by a software released
+for the community to develop, contribute to, or reproduce beyond the
+gene pairs given in the supplementary results.
+
+
+To address these needs and concerns raised by recent computational
+approaches to synthetic lethal discovery in cancer (Jerby-Arnon\textit{
+et al.} 2014; Lu\textit{ et al.} 2015), we propose similar analysis
+using solely gene expression data which is widely available for a large
+number of samples in many different cancers. \ To firmly understand the
+limitations and implications of synthetic lethal predictions, we
+propose modelling and simulation of the statistical behaviour of
+synthetic lethal gene pairs in genomics data. \ Comparison of synthetic
+lethal gene candidates from public data analysis, predictions, and
+networks across datasets will address tissue-specificity concerns.
+\ Release of R codes used for simulation, prediction, and analysis will
+enable adoption of the methodology in the cancer research community and
+comparison to existing methods.
+
+
+\clearpage\subsection[Data Sources]{Data Sources}
+
+As summarised in Table 5, there is are a vast array of publicly
+available resources for model organism, human, and cancer genomics
+analysis. These will be used as a resource for bioinformatics analysis
+of genetic interactions and networks in addition to modelling and
+simulation approaches. 
+
+
+\textbf{Table 5. }Data sources for Research
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{2.299cm}|m{3.8009999cm}|m{3.552cm}|m{6.5490003cm}}
+\multicolumn{1}{m{2.299cm}}{\cellcolor{white}\bfseries\color{black}
+Database} &
+\multicolumn{1}{m{3.8009999cm}}{\cellcolor{white}~
+} &
+\multicolumn{1}{m{3.552cm}}{\cellcolor{white}\bfseries\color{black}
+Study Type} &
+\cellcolor{white}\bfseries\color{black} Data Types Supported\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{TCGA} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Cancer
+Genome Atlas &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Cancer &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Sequence,
+Mutation, CNV, SNP, expression, DNA Methylation, Clinical,
+RNA-Seq\\\hline
+ICGC &
+International Cancer Genome Consortium &
+Cancer &
+Sequence, Mutation, CNV, SNP, expression, DNA Methylation, Clinical,
+RNA-Seq\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{ENCODE} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+Encyclopaedia of DNA Elements &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black} Human
+Normal Tissue}
+
+\color{black} Cancer Cell Line &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black} Sequence,
+expression, DNA/RNA binding}
+
+\color{black} RNA-Seq, ChIP-Seq, RIP-Seq\\\hline
+CCLE &
+Cell Line Encyclopaedia &
+Cancer Cell Line &
+DNA CNV, expression, mutation, drug sensitivity\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{GEO} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Gene
+Expression Omnibus &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Various &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Gene
+Expression, RNA-Seq\\\hline
+GENT &
+Gene Expression Atlas &
+Human Normal Tissue and Cancer &
+Gene Expression\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{BIND} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Biomolecular
+interaction network database &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black} Model
+Organisms}
+
+\color{black} Human &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black} DNA, RNA,
+ligand, or protein binding}
+
+\color{black} Two-hybrid data, ChIP, CLIP, RIP\\\hline
+STRING &
+Search Tool for retrieving interacting genes/proteins &
+Various &
+Protein-protein interactions: curated and predicted from MINT, PPRD,
+BIND, DIP, BioGRID, KEGG, Reactome, IntAct, EcoCyc, NCI, and GO\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{BioGRID} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Biological
+General Repository for Interaction Datasets  &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\textit{\textcolor{black}{S. cerevisiae}},}
+
+{\color{black} \textit{\textcolor{black}{S. pombe}},}
+
+\color{black} \textit{\textcolor{black}{A. thaliana}}, etc &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Protein and
+Genetic Interaction\\\hline
+Human Interactome &
+Human Interactome &
+Human &
+Protein Interactions\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{DRYGIN} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Data
+Repository of Yeast Genetic Interactions &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Yeast &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Genetic
+Interactions\\\hline
+SGD &
+Saccharomyces Genome Database &
+Yeast &
+Sequence, Expression, Protein and Genetic Interactions\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{GO} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Gene
+Ontology &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Various &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Gene
+Function\\\hline
+KEGG &
+Kyoto Encyclopedia of Genes and Genomes &
+Various &
+Gene Function and Pathway\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Reactome} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Various &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Gene
+Function and Pathway\\\hline
+DrugBank &
+~
+ &
+Human &
+Chemical and drug target sequence/structure\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{TTD} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Therapeutic
+Target &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Human &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Protein and
+Nucleic Acid drug targets\\\hline
+TDR &
+Targets database &
+Human &
+Chemical Genomics (Tropical Disease)\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{BindingDB} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Protein-drug
+binding affinity\\\hline
+\end{supertabular}
+\end{flushleft}
+
+
+\clearpage\section{Conclusion and Research Question}
+
+Synthetic lethality is an important genetic interaction to study
+fundamental cellular functions and exploit them for biomarkers and
+cancer treatment. \ While there are a wide range of experimental and
+computational approaches to synthetic lethal discovery, many are
+limited to particular applications, prone to false positives, and
+inconsistent across independent approaches to different genes of
+interest. \ Therefore synthetic lethal interactions are difficult to
+replicate or apply in the clinic. \ Computational approaches to
+synthetic lethality are not widely adopted by the cancer research
+community and experimental approaches cannot be combined to study
+synthetic lethality at a genome-wide scale. \ However, these show
+interest in synthetic lethal discovery in the community and the need
+for robust predictions of synthetic lethal interactions in cancer and
+human tissues. \ My thesis aims to develop such predictions with a
+focus on the example of E-Cadherin to compare to the findings of
+\hyperlink{ENREF94}{Telford}\hyperlink{ENREF94}{\textit{ et
+al.}}\hyperlink{ENREF94}{ (2015)} and development of network approaches
+to tissue specificity with the following bioinformatics and
+computational biology investigations:
+
+\begin{itemize}
+
+\item 
+
+Simulate gene expression data, construct a statistical model for
+synthetic lethality, and measure performance of testing for synthetic
+lethal genes. \ 
+
+\item 
+
+Apply Synthetic lethal prediction to public genomics data
+
+
+%\setcounter{listWWNumviilevelii}{0}
+
+\item 
+
+Gene expression
+
+\item 
+
+DNA copy number
+
+\item 
+
+DNA methylation
+
+\item 
+
+Somatic Mutation
+
+\item 
+
+Select candidates for synthetic lethality with CDH1 in breast cancer,
+compare to RNAi data for validation, and triage candidates for drug
+development against HDGC and sporadic breast cancers
+
+\item 
+
+Release a synthetic lethal prediction methodology to the research
+community for wider application 
+
+\item 
+
+Construct and analyse genome-scale synthetic lethal networks, tissue
+specificity, or drug response using synthetic lethal predictions
+
+\end{itemize}
+
+\clearpage\section{References}
+A\hypertarget{ENREF1}{}arts M, Bajrami I, Herrera-Abreu MT\textit{, et
+al.} (2015) Functional Genetic Screen Identifies Increased Sensitivity
+to WEE1 Inhibition in Cells with Defects in Fanconi Anemia and HR
+Pathways. \textit{Mol Cancer Ther} \textbf{14}, 865-876.
+
+
+
+\hypertarget{ENREF2}{}Agarwal S, Deane CM, Porter MA, Jones NS (2010)
+Revisiting Date and Party Hubs: Novel Approaches to Role Assignment in
+Protein Interaction Networks. \textit{PLoS Comput Biol} \textbf{6},
+e1000817.
+
+
+
+Ashworth A (2008) A synthetic lethal therapeutic approach: poly(ADP)
+ribose polymerase inhibitors for the treatment of cancers deficient in
+DNA double-strand break repair. \textit{J Clin Oncol} \textbf{26},
+3785-3790.
+
+
+
+Audeh MW, Carmichael J, Penson RT\textit{, et al.} (2010) Oral
+poly(ADP-ribose) polymerase inhibitor olaparib in patients with BRCA1
+or BRCA2 mutations and recurrent ovarian cancer: a proof-of-concept
+trial. \textit{Lancet} \textbf{376}, 245-251.
+
+
+
+Babu M, Arnold R, Bundalovic-Torma C\textit{, et al.} (2014)
+Quantitative genome-wide genetic interaction screens reveal global
+epistatic relationships of protein complexes in\textit{ Escherichia
+coli}. \textit{PLoS Genet} \textbf{10}, e1004120.
+
+
+
+\hypertarget{ENREF6}{}Babyak MA (2004) What you see may not be what you
+get: a brief, nontechnical introduction to overfitting in
+regression-type models. \textit{Psychosom Med} \textbf{66}, 411-421.
+
+
+
+\hypertarget{ENREF7}{}Barab\'asi AL, Albert R (1999) Emergence of
+scaling in random networks. \textit{Science} \textbf{286}, 509-512.
+
+
+
+Barab\'asi AL, Oltvai ZN (2004) Network biology: understanding the
+cell{\textquotesingle}s functional organization. \textit{Nat Rev Genet}
+\textbf{5}, 101-113.
+
+
+
+Barrat A, Weigt M (2000) On the properties of small-world network
+models. \textit{The European Physical Journal B - Condensed Matter and
+Complex Systems} \textbf{13}, 547-560.
+
+
+
+Baryshnikova A, Costanzo M, Dixon S\textit{, et al.} (2010a) Synthetic
+genetic array (SGA) analysis in \textit{Saccharomyces cerevisiae} and
+\textit{Schizosaccharomyces pombe}. \textit{Methods Enzymol}
+\textbf{470}, 145-179.
+
+
+
+Baryshnikova A, Costanzo M, Kim Y\textit{, et al.} (2010b) Quantitative
+analysis of fitness and genetic interactions in yeast on a genome
+scale. \textit{Nat Meth} \textbf{7}, 1017-1024.
+
+
+
+Bateson W, Mendel G (1909) \textit{Mendel{\textquotesingle}s principles
+of heredity, by W. Bateson} University Press, Cambridge [Eng.].
+
+
+
+\hypertarget{ENREF13}{}Bitler BG, Aird KM, Garipov A\textit{, et al.}
+(2015) Synthetic lethality by targeting EZH2 methyltransferase activity
+in ARID1A-mutated cancers. \textit{Nat Med} \textbf{21}, 231-238.
+
+
+
+\hypertarget{ENREF14}{}Boettcher M, Lawson A, Ladenburger V\textit{, et
+al.} (2014) High throughput synthetic lethality screen reveals a
+tumorigenic role of adenylate cyclase in fumarate hydratase-deficient
+cancer cells. \textit{BMC Genomics} \textbf{15}, 158.
+
+
+
+\hypertarget{ENREF15}{}Boone C, Bussey H, Andrews BJ (2007) Exploring
+genetic interactions and networks with yeast. \textit{Nat Rev Genet}
+\textbf{8}, 437-449.
+
+
+
+\hypertarget{ENREF16}{}Boucher B, Jenna S (2013) Genetic interaction
+networks: better understand to better predict. \textit{Front Genet}
+\textbf{4}, 290.
+
+
+
+Bozovic-Spasojevic I, Azambuja E, McCaskill-Stevens W, Dinh P, Cardoso F
+(2012) Chemoprevention for breast cancer. \textit{Cancer treatment
+reviews} \textbf{38}, 329-339.
+
+
+
+\hypertarget{ENREF18}{}Breiman L (2001) Random Forests. \textit{Machine
+Learning} \textbf{45}, 5-32.
+
+
+
+\hypertarget{ENREF19}{}Bryant HE, Schultz N, Thomas HD\textit{, et al.}
+(2005) Specific killing of BRCA2-deficient tumours with inhibitors of
+poly(ADP-ribose) polymerase. \textit{Nature} \textbf{434}, 913-917.
+
+
+
+Bussey H, Andrews B, Boone C (2006) From worm genetic networks to
+complex human diseases. \textit{Nat Genet} \textbf{38}, 862-863.
+
+
+
+Butland G, Babu M, Diaz-Mejia JJ\textit{, et al.} (2008) eSGA:
+\textit{E. coli }synthetic genetic array analysis. \textit{Nat Methods}
+\textbf{5}, 789-795.
+
+
+
+\hypertarget{ENREF22}{}Chipman K, Singh A (2009) Predicting genetic
+interactions with random walks on biological networks. \textit{BMC
+Bioinformatics} \textbf{10}, 17.
+
+
+
+Collins S, Schuldiner M, Krogan N, Weissman J (2006) A strategy for
+extracting and analyzing large-scale quantitative epistatic interaction
+data. \textit{Genome Biol} \textbf{7}, R63.
+
+
+
+\hypertarget{ENREF24}{}Corcoran RB, Ebi H, Turke AB\textit{, et al.}
+(2012) EGFR-Mediated Reactivation of MAPK Signaling Contributes to
+Insensitivity of BRAF-Mutant Colorectal Cancers to RAF Inhibition with
+Vemurafenib. \textit{Cancer Discovery} \textbf{2}, 227-235.
+
+
+
+Costanzo M, Baryshnikova A, Bellay J\textit{, et al.} (2010) The genetic
+landscape of a cell. \textit{Science} \textbf{327}, 425-431.
+
+
+
+Costanzo M, Baryshnikova A, Myers CL, Andrews B, Boone C (2011) Charting
+the genetic interaction map of a cell. \textit{Curr Opin Biotechnol}
+\textbf{22}, 66-74.
+
+
+
+\hypertarget{ENREF27}{}Crunkhorn S (2014) Cancer: Predicting synthetic
+lethal interactions. \textit{Nat Rev Drug Discov} \textbf{13}, 812.
+
+
+
+\hypertarget{ENREF28}{}Davierwala AP, Haynes J, Li Z\textit{, et al.}
+(2005) The synthetic genetic interaction spectrum of essential genes.
+\textit{Nat Genet} \textbf{37}, 1147-1152.
+
+
+
+Davies H, Bignell GR, Cox C\textit{, et al.} (2002) Mutations of the
+BRAF gene in human cancer. \textit{Nature} \textbf{417}, 949-954.
+
+
+
+\hypertarget{ENREF30}{}Deshpande R, Asiedu MK, Klebig M\textit{, et al.}
+(2013) A comparative genomic approach for identifying synthetic lethal
+interactions in human cancer. \textit{Cancer Res} \textbf{73},
+6128-6136.
+
+
+
+Di Nicolantonio F, Martini M, Molinari F\textit{, et al.} (2008)
+Wild-type BRAF is required for response to panitumumab or cetuximab in
+metastatic colorectal cancer. \textit{J Clin Oncol} \textbf{26},
+5705-5712.
+
+
+
+Dienstmann R, Tabernero J (2011) BRAF as a target for cancer therapy.
+\textit{Anticancer Agents Med Chem} \textbf{11}, 285-295.
+
+
+
+Dixon SJ, Andrews BJ, Boone C (2009a) Exploring the conservation of
+synthetic lethal genetic interaction networks. \textit{Commun Integr
+Biol} \textbf{2}, 78-81.
+
+
+
+Dixon SJ, Costanzo M, Baryshnikova A, Andrews B, Boone C (2009b)
+Systematic mapping of genetic interaction networks. \textit{Annu Rev
+Genet} \textbf{43}, 601-625.
+
+
+
+Dixon SJ, Fedyshyn Y, Koh JL\textit{, et al.} (2008) Significant
+conservation of synthetic lethal genetic interaction networks between
+distantly related eukaryotes. \textit{Proc Natl Acad Sci U S A}
+\textbf{105}, 16653-16658.
+
+
+
+Dorogovtsev SN, Mendes JF (2003) \textit{Evolution of networks: From
+biological nets to the Internet and WWW} Oxford University Press, USA.
+
+
+
+Erd\H{o}s P, R\'enyi A (1959) On Random Graphs I. \textit{Publ. Math.
+\ Debrecen} \textbf{6}, 290-297.
+
+
+
+Erd\H{o}s P, R\'enyi A (1960) On the Evolution of Random Graphs, 17-61.
+
+
+
+\hypertarget{ENREF39}{}Farmer H, McCabe N, Lord CJ\textit{, et al.}
+(2005) Targeting the DNA repair defect in BRCA mutant cells as a
+therapeutic strategy. \textit{Nature} \textbf{434}, 917-921.
+
+
+
+Fece de la Cruz F, Gapp BV, Nijman SM (2015) Synthetic Lethal
+Vulnerabilities of Cancer. \textit{Annu Rev Pharmacol Toxicol}
+\textbf{55}, 513-531.
+
+
+
+Fisher RA (1919) XV.---The Correlation between Relatives on the
+Supposition of Mendelian Inheritance. \textit{Earth and Environmental
+Science Transactions of the Royal Society of Edinburgh} \textbf{52},
+399-433.
+
+
+
+Fong PC, Boss DS, Yap TA\textit{, et al.} (2009) Inhibition of
+poly(ADP-ribose) polymerase in tumors from BRCA mutation carriers.
+\textit{N Engl J Med} \textbf{361}, 123-134.
+
+
+
+Fong PC, Yap TA, Boss DS\textit{, et al.} (2010) Poly(ADP)-ribose
+polymerase inhibition: frequent durable responses in BRCA carrier
+ovarian cancer correlating with platinum-free interval. \textit{J Clin
+Oncol} \textbf{28}, 2512-2519.
+
+
+
+Fraser A (2004) Towards full employment: using RNAi to find roles for
+the redundant. \textit{Oncogene} \textbf{23}, 8346-8352.
+
+
+
+\hypertarget{ENREF45}{}G\"uell O, Sagu\'es F, Serrano M\'A (2014)
+Essential Plasticity and Redundancy of Metabolism Unveiled by Synthetic
+Lethality Analysis. \textit{PLoS Comput Biol} \textbf{10}, e1003637.
+
+
+
+\hypertarget{ENREF46}{}Hall M, Frank E, Holmes G\textit{, et al.} (2009)
+The WEKA data mining software: an update. \textit{SIGKDD Explor.
+Newsl.} \textbf{11}, 10-18.
+
+
+
+\hypertarget{ENREF47}{}Han J-DJ, Bertin N, Hao T\textit{, et al.} (2004)
+Evidence for dynamically organized modularity in the yeast
+protein-protein interaction network. \textit{Nature} \textbf{430},
+88-93.
+
+
+
+\hypertarget{ENREF48}{}Heiskanen MA, Aittokallio T (2012) Mining
+high-throughput screens for cancer drug targets-lessons from yeast
+chemical-genomic profiling and synthetic lethality. \textit{Wiley
+Interdisciplinary Reviews: Data Mining and Knowledge Discovery}
+\textbf{2}, 263-272.
+
+
+
+Hillenmeyer ME (2008) The chemical genomic portrait of yeast: uncovering
+a phenotype for all genes. \textit{Science} \textbf{320}, 362-365.
+
+
+
+\hypertarget{ENREF50}{}Hoehndorf R, Hardy NW, Osumi-Sutherland
+D\textit{, et al.} (2013) Systematic Analysis of Experimental Phenotype
+Data Reveals Gene Functions. \textit{PLoS One} \textbf{8}, e60847.
+
+
+
+Holme P, Kim BJ (2002) Growing scale-free networks with tunable
+clustering. \textit{Physical Review E} \textbf{65}, 026107.
+
+
+
+\hypertarget{ENREF52}{}Hopkins AL (2008) Network pharmacology: the next
+paradigm in drug discovery. \textit{Nat Chem Biol} \textbf{4}, 682-690.
+
+
+
+\hypertarget{ENREF53}{}Jerby-Arnon L, Pfetzer N, Waldman
+Yedael~Y\textit{, et al.} (2014) Predicting Cancer-Specific
+Vulnerability via Data-Driven Detection of Synthetic Lethality.
+\textit{Cell} \textbf{158}, 1199-1209.
+
+
+
+\hypertarget{ENREF54}{}Joachims T (1999) Making large-scale support
+vector machine learning practical. In: \textit{Advances in kernel
+methods} (eds. Bernhard S, lkopf, Christopher JCB, Alexander JS), pp.
+169-184. MIT Press.
+
+
+
+\hypertarget{ENREF55}{}Kaelin WG, Jr. (2005) The concept of synthetic
+lethality in the context of anticancer therapy. \textit{Nat Rev Cancer}
+\textbf{5}, 689-698.
+
+
+
+\hypertarget{ENREF56}{}Kelley R, Ideker T (2005) Systematic
+interpretation of genetic interactions using protein networks.
+\textit{Nat Biotech} \textbf{23}, 561-566.
+
+
+
+Kelly ST (2013) \textit{Statistical Predictions of Synthetic Lethal
+Interactions in Cancer} Dissertation, University of Otago.
+
+
+
+\hypertarget{ENREF58}{}Kozlov KN, Gursky VV, Kulakovskiy IV, Samsonova
+MG (2015) Sequence-based model of gap gene regulation network.
+\textit{BMC Genomics} \textbf{15}, S6.
+
+
+
+\hypertarget{ENREF59}{}Kranthi T, Rao SB, Manimaran P (2013)
+Identification of synthetic lethal pairs in biological systems through
+network information centrality. \textit{Mol Biosyst} \textbf{9},
+2163-2167.
+
+
+
+\hypertarget{ENREF60}{}Laufer C, Fischer B, Billmann M, Huber W, Boutros
+M (2013) Mapping genetic interactions in human cancer cells with RNAi
+and multiparametric phenotyping. \textit{Nat Methods} \textbf{10},
+427-431.
+
+
+
+\hypertarget{ENREF61}{}Le Meur N, Gentleman R (2008) Modeling synthetic
+lethality. \textit{Genome Biol} \textbf{9}, R135.
+
+
+
+\hypertarget{ENREF62}{}Lee AY, Perreault R, Harel S\textit{, et al.}
+(2010a) Searching for Signaling Balance through the Identification of
+Genetic Interactors of the Rab Guanine-Nucleotide Dissociation
+Inhibitor \textit{gdi-1}. \textit{PLoS One} \textbf{5}, e10624.
+
+
+
+\hypertarget{ENREF63}{}Lee I, Lehner B, Vavouri T\textit{, et al.}
+(2010b) Predicting genetic modifier loci using functional gene
+networks. \textit{Genome Res} \textbf{20}, 1143-1153.
+
+
+
+\hypertarget{ENREF64}{}Lee I, Marcotte EM (2009) Effects of functional
+bias on supervised learning of a gene network model. \textit{Methods
+Mol Biol} \textbf{541}, 463-475.
+
+
+
+Lee MJ, Ye AS, Gardino AK\textit{, et al.} (2012) Sequential application
+of anticancer drugs enhances cell death by rewiring apoptotic signaling
+networks. \textit{Cell} \textbf{149}, 780-794.
+
+
+
+Lehner B, Crombie C, Tischler J, Fortunato A, Fraser AG (2006)
+Systematic mapping of genetic interactions in \textit{Caenorhabditis
+elegan}s identifies common modifiers of diverse signaling pathways.
+\textit{Nat Genet} \textbf{38}, 896-903.
+
+
+
+\hypertarget{ENREF67}{}LeMeur N, Jiang Z, Liu T, Mar J, Gentleman RC
+(2014) SLGI: Synthetic Lethal Genetic Interaction. R package version
+1.26.0.
+
+
+
+\hypertarget{ENREF68}{}Li B, Cao W, Zhou J, Luo F (2011) Understanding
+and predicting synthetic lethal genetic interactions in Saccharomyces
+cerevisiae using domain genetic interactions. \textit{BMC Syst Biol}
+\textbf{5}, 73.
+
+
+
+\hypertarget{ENREF69}{}Li XJ, Mishra SK, Wu M, Zhang F, Zheng J (2014)
+Syn-Lethality: An Integrative Knowledge Base of Synthetic Lethality
+towards Discovery of Selective Anticancer Therapies. \textit{Biomed Res
+Int} \textbf{2014}, 196034.
+
+
+
+\hypertarget{ENREF70}{}Lokody I (2014) Computational modelling: A
+computational crystal ball. \textit{Nature Reviews Cancer} \textbf{14},
+649-649.
+
+
+
+Lord CJ, Tutt AN, Ashworth A (2014) Synthetic Lethality and Cancer
+Therapy: Lessons Learned from the Development of PARP Inhibitors.
+\textit{Annu Rev Med}.
+
+
+
+Loupakis F, Ruzzo A, Cremolini C\textit{, et al.} (2009) KRAS codon 61,
+146 and BRAF mutations predict resistance to cetuximab plus irinotecan
+in KRAS codon 12 and 13 wild-type metastatic colorectal cancer.
+\textit{Br J Cancer} \textbf{101}, 715-721.
+
+
+
+\hypertarget{ENREF73}{}Lu X, Kensche PR, Huynen MA, Notebaart RA (2013)
+Genome evolution predicts genetic interactions in protein complexes and
+reveals cancer drug targets. \textit{Nat Commun} \textbf{4}.
+
+
+
+\hypertarget{ENREF74}{}Lu X, Megchelenbrink W, Notebaart RA, Huynen MA
+(2015) Predicting human genetic interactions from cancer genome
+evolution. \textit{PLoS One} \textbf{10}, e0125795.
+
+
+
+Lum P, Armour C, Stepaniants S\textit{, et al.} (2004) Discovering modes
+of action for therapeutic compounds using a genome-wide screen of yeast
+heterozygotes. \ \textbf{116}, 121-137.
+
+
+
+Milgram S (1967) The Small World Problem. \textit{Psychology Today}
+\textbf{2}, 60-67.
+
+
+
+Ooi SL, Shoemaker DD, Boeke JD (2003) DNA helicase gene interaction
+network defined using synthetic lethality analyzed by microarray.
+\textit{Nat Genet} \textbf{35}, 277-286.
+
+
+
+\hypertarget{ENREF78}{}Paladugu S, Zhao S, Ray A, Raval A (2008) Mining
+protein networks for synthetic genetic interactions. \textit{BMC
+Bioinformatics} \textbf{9}, 426.
+
+
+
+\hypertarget{ENREF79}{}Pandey G, Zhang B, Chang AN\textit{, et al.}
+(2010) An integrative multi-network and multi-classifier approach to
+predict genetic interactions. \textit{PLoS Comput Biol} \textbf{6}.
+
+
+
+\hypertarget{ENREF80}{}Prahallad A, Sun C, Huang S\textit{, et al.}
+(2012) Unresponsiveness of colon cancer to BRAF(V600E) inhibition
+through feedback activation of EGFR. \textit{Nature} \textbf{483},
+100-103.
+
+
+
+\hypertarget{ENREF81}{}Qi Y, Suhail Y, Lin Y-y, Boeke JD, Bader JS
+(2008) Finding friends and enemies in an enemies-only network: A graph
+diffusion kernel for predicting novel genetic interactions and
+co-complex membership from yeast genetic interactions. \textit{Genome
+Res} \textbf{18}, 1991-2004.
+
+
+
+\hypertarget{ENREF82}{}Ravnan MC, Matalka MS (2012) Vemurafenib in
+patients with BRAF V600E mutation-positive advanced melanoma.
+\textit{Clin Ther} \textbf{34}, 1474-1486.
+
+
+
+Roguev A, Bandyopadhyay S, Zofall M\textit{, et al.} (2008) Conservation
+and rewiring of functional modules revealed by an epistasis map in
+fission yeast. \textit{Science} \textbf{322}, 405-410.
+
+
+
+Roguev A, Wiren M, Weissman JS, Krogan NJ (2007) High-throughput genetic
+interaction mapping in the fission yeast \textit{Schizosaccharomyces
+pombe}. \textit{Nat Meth} \textbf{4}, 861-866.
+
+
+
+\hypertarget{ENREF85}{}Ryan Colm~J, Lord Christopher~J, Ashworth A
+(2014) DAISY: Picking Synthetic Lethals from Cancer Genomes.
+\textit{Cancer Cell} \textbf{26}, 306-308.
+
+
+
+Sander JD, Joung JK (2014) CRISPR-Cas systems for editing, regulating
+and targeting genomes. \textit{Nat Biotechnol} \textbf{32}, 347-355.
+
+
+
+\hypertarget{ENREF87}{}Schuldiner M, Collins SR, Thompson NJ\textit{, et
+al.} (2005) Exploration of the function and organization of the yeast
+early secretory pathway through an epistatic miniarray profile.
+\textit{Cell} \textbf{123}, 507-519.
+
+
+
+Schuldiner M, Collins SR, Weissman JS, Krogan NJ (2006) Quantitative
+genetic analysis in\textit{ Saccharomyces cerevisiae }using epistatic
+miniarray profiles (E-MAPs) and its application to chromatin functions.
+\textit{Methods} \textbf{40}, 344-352.
+
+
+
+Shaib W, Mahajan R, El-Rayes B (2013) Markers of resistance to anti-EGFR
+therapy in colorectal cancer. \textit{J Gastrointest Oncol} \textbf{4},
+308-318.
+
+
+
+Siena S, Sartore-Bianchi A, Di Nicolantonio F, Balfour J, Bardelli A
+(2009) Biomarkers predicting clinical outcome of epidermal growth
+factor receptor-targeted therapy in metastatic colorectal cancer.
+\textit{J Natl Cancer Inst} \textbf{101}, 1308-1324.
+
+
+
+\hypertarget{ENREF91}{}Str\"om C, Helleday T (2012) Strategies for the
+Use of Poly(adenosine diphosphate ribose) Polymerase (PARP) Inhibitors
+in Cancer Therapy. \textit{Biomolecules} \textbf{2}, 635-649.
+
+
+
+\hypertarget{ENREF92}{}Sun C, Wang L, Huang S\textit{, et al.} (2014)
+Reversible and adaptive resistance to BRAF(V600E) inhibition in
+melanoma. \textit{Nature} \textbf{508}, 118-122.
+
+
+
+Taylor IW, Linding R, Warde-Farley D\textit{, et al.} (2009) Dynamic
+modularity in protein interaction networks predicts breast cancer
+outcome. \textit{Nat Biotechnol} \textbf{27}, 199-204.
+
+
+
+\hypertarget{ENREF94}{}Telford BJ, Chen A, Beetham H\textit{, et al.}
+(2015) Synthetic lethal screens identify vulnerabilities in GPCR
+signalling and cytoskeletal organization in E-cadherin-deficient cells.
+\textit{Mol Cancer Ther}.
+
+
+
+\hypertarget{ENREF95}{}Tiong KL, Chang KC, Yeh KT\textit{, et al.}
+(2014) CSNK1E/CTNNB1 are synthetic lethal to TP53 in colorectal cancer
+and are markers for prognosis. \textit{Neoplasia} \textbf{16}, 441-450.
+
+
+
+Tischler J, Lehner B, Fraser AG (2008) Evolutionary plasticity of
+genetic interaction networks. \textit{Nat Genet} \textbf{40}, 390-391.
+
+
+
+Tong AH, Evangelista M, Parsons AB\textit{, et al.} (2001) Systematic
+genetic analysis with ordered arrays of yeast deletion mutants.
+\textit{Science} \textbf{294}, 2364-2368.
+
+
+
+Tong AH, Lesage G, Bader GD\textit{, et al.} (2004) Global mapping of
+the yeast genetic interaction network. \textit{Science} \textbf{303},
+808-813.
+
+
+
+Travers J, Milgram S (1969) An Experimental Study of the Small World
+Problem. \textit{Sociometry} \textbf{32}, 425-{}-443.
+
+
+
+Tsai HC, Li H, Van Neste L\textit{, et al.} (2012) Transient low doses
+of DNA-demethylating agents exert durable antitumor effects on
+hematological and epithelial tumor cells. \textit{Cancer Cell}
+\textbf{21}, 430-446.
+
+
+
+Tutt A, Robson M, Garber JE\textit{, et al.} (2010) Oral
+poly(ADP-ribose) polymerase inhibitor olaparib in patients with BRCA1
+or BRCA2 mutations and advanced breast cancer: a proof-of-concept
+trial. \textit{Lancet} \textbf{376}, 235-244.
+
+
+
+Typas A, Nichols RJ, Siegele DA\textit{, et al.} (2008) High-throughput,
+quantitative analyses of genetic interactions in \textit{E. coli}.
+\textit{Nat Methods} \textbf{5}, 781-787.
+
+
+
+\hypertarget{ENREF103}{}van der Meer R, Song HY, Park S-H, Abdulkadir
+SA, Roh M (2014) RNAi screen identifies a synthetic lethal interaction
+between PIM1 overexpression and PLK1 inhibition. \textit{Clinical
+Cancer Research}.
+
+
+
+\hypertarget{ENREF104}{}van Steen K (2011) Travelling the world of
+gene--gene interactions. \textit{Brief Bioinform}.
+
+
+
+\hypertarget{ENREF105}{}van Steen M (2010) \textit{Graph Theory and
+Complex Networks: An Introduction} Maarten van Steen, VU Amsterdam.
+
+
+
+\hypertarget{ENREF106}{}Vapnik VN (1995) \textit{The nature of
+statistical learning theory} Springer-Verlag New York, Inc.
+
+
+
+Vargas JJ, Gusella GL, Najfeld V, Klotman ME, Cara A (2004) Novel
+integrase-defective lentiviral episomal vectors for gene transfer.
+\textit{Hum Gene Ther} \textbf{15}, 361-372.
+
+
+
+\hypertarget{ENREF108}{}Vizeacoumar FJ, Arnold R, Vizeacoumar
+FS\textit{, et al.} (2013) A negative genetic interaction map in
+isogenic cancer cell lines reveals cancer cell vulnerabilities.
+\textit{Mol Syst Biol} \textbf{9}, 696.
+
+
+
+\hypertarget{ENREF109}{}Wang X, Simon R (2013) Identification of
+potential synthetic lethal genes to p53 using a computational biology
+approach. \textit{BMC Medical Genomics} \textbf{6}, 30.
+
+
+
+\hypertarget{ENREF110}{}Wappett M (2014) BiSEp: Toolkit To Identify
+Candidate Synthetic Lethality. R package version 2.0.
+
+
+
+Warburg O (1956) On the Origin of Cancer Cells. \textit{Science}
+\textbf{123}, 390-314.
+
+
+
+\hypertarget{ENREF112}{}Watts DJ, Strogatz SH (1998) Collective dynamics
+of {\textquotesingle}small-world{\textquotesingle} networks.
+\textit{Nature} \textbf{393}, 440-442.
+
+
+
+\hypertarget{ENREF113}{}Wong SL, Zhang LV, Tong AHY\textit{, et al.}
+(2004) Combining biological networks to predict genetic interactions.
+\textit{Proc Natl Acad Sci U S A} \textbf{101}, 15682-15687.
+
+
+
+\hypertarget{ENREF114}{}Wu M, Li X, Zhang F\textit{, et al.} (2014) In
+silico prediction of synthetic lethality by meta-analysis of genetic
+interactions, functions, and pathways in yeast and human cancer.
+\textit{Cancer Inform} \textbf{13}, 71-80.
+
+
+
+\hypertarget{ENREF115}{}Yang H, Higgins B, Kolinsky K\textit{, et al.}
+(2012) Antitumor activity of BRAF inhibitor vemurafenib in preclinical
+models of BRAF-mutant colorectal cancer. \textit{Cancer Res}
+\textbf{72}, 779-789.
+
+
+
+Yuan Z-X, Wang X-Y, Qin Q-Y\textit{, et al.} (2013) The Prognostic Role
+of \textit{BRAF} Mutation in Metastatic Colorectal Cancer Receiving
+Anti-\textit{EGFR} Monoclonal Antibodies: A Meta-Analysis. \textit{PLoS
+One} \textbf{8}, e65995.
+
+
+
+\hypertarget{ENREF117}{}Zhang F, Wu M, Li XJ\textit{, et al.} (2015)
+Predicting essential genes and synthetic lethality via influence
+propagation in signaling pathways of cancer cell fates. \textit{J
+Bioinform Comput Biol}, 1541002.
+
+
+
+\hypertarget{ENREF118}{}Zhong W, Sternberg PW (2006) Genome-Wide
+Prediction of \textit{C. elegans} Genetic Interactions.
+\textit{Science} \textbf{311}, 1481-1484.
+
+
+
+%\bigskip
+%\end{document}
