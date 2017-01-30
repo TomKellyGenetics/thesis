@@ -9,7 +9,7 @@
 \BOOKMARK [3][-]{section*.8}{Massively Parallel ``Next Generation'' Sequencing Technologies}{subsection.1.1.2}% 9
 \BOOKMARK [4][-]{section*.9}{Established Sequencing Technologies}{section*.8}% 10
 \BOOKMARK [4][-]{section*.10}{Emerging Sequencing Technologies}{section*.8}% 11
-\BOOKMARK [3][-]{section*.11}{Bioinformatics to Enable Genomics Research}{subsection.1.1.2}% 12
+\BOOKMARK [3][-]{section*.11}{Bioinformatics as an Interdisciplinary Approach to Genomics Data}{subsection.1.1.2}% 12
 \BOOKMARK [2][-]{subsection.1.1.3}{Follow-up Large-Scale Genomics Projects}{section.1.1}% 13
 \BOOKMARK [2][-]{subsection.1.1.4}{Cancer Genomes}{section.1.1}% 14
 \BOOKMARK [3][-]{section*.12}{The Cancer Genome Atlas Project}{subsection.1.1.4}% 15
@@ -73,88 +73,127 @@
 \BOOKMARK [2][-]{subsection.1.3.5}{Models of CDH1 loss in cell lines}{section.1.3}% 73
 \BOOKMARK [1][-]{section.1.4}{Summary and Research Direction of Thesis}{chapter.1}% 74
 \BOOKMARK [0][-]{chapter.2}{Methods, Techniques, and Resources}{}% 75
-\BOOKMARK [1][-]{subsection.2.0.1}{Network Theory}{chapter.2}% 76
-\BOOKMARK [2][-]{subsection.2.0.2}{Biological Networks}{subsection.2.0.1}% 77
-\BOOKMARK [3][-]{section*.58}{Public Data and Software Packages}{subsection.2.0.2}% 78
-\BOOKMARK [3][-]{section*.59}{Computational Tools for Biological Research}{subsection.2.0.2}% 79
-\BOOKMARK [4][-]{section*.60}{High Performance and Parallel Computing in Biology}{section*.59}% 80
-\BOOKMARK [3][-]{section*.61}{Gene Expression Analysis and Statistical Challenges in Bioinformatics}{subsection.2.0.2}% 81
-\BOOKMARK [4][-]{section*.62}{Hypothesis Testing and Multiple Comparisons Procedures}{section*.61}% 82
-\BOOKMARK [4][-]{section*.63}{Candidate Triage and Integration with Experimental Data}{section*.61}% 83
-\BOOKMARK [3][-]{section*.64}{Mathematical Challenges in Bioinformatics}{subsection.2.0.2}% 84
-\BOOKMARK [4][-]{section*.65}{Graph Theory, Systems, and Network Biology}{section*.64}% 85
-\BOOKMARK [4][-]{section*.66}{Matrix Operations and Pathway ``Metagenes''}{section*.64}% 86
-\BOOKMARK [2][-]{subsection.2.0.3}{Data Sources}{subsection.2.0.1}% 87
-\BOOKMARK [0][-]{chapter.3}{Synthetic Lethal Analysis of Gene Expression Data}{}% 88
-\BOOKMARK [1][-]{section.3.1}{Abstract}{chapter.3}% 89
-\BOOKMARK [1][-]{section.3.2}{Aims and Significance}{chapter.3}% 90
-\BOOKMARK [1][-]{section.3.3}{Background}{chapter.3}% 91
-\BOOKMARK [1][-]{section.3.4}{Background}{chapter.3}% 92
-\BOOKMARK [1][-]{section.3.5}{Sourcing TCGA data}{chapter.3}% 93
-\BOOKMARK [1][-]{section.3.6}{Quality checking}{chapter.3}% 94
-\BOOKMARK [1][-]{section.3.7}{Global Synthetic Lethality}{chapter.3}% 95
-\BOOKMARK [1][-]{section.3.8}{CDH1 Analysis with Subgroups}{chapter.3}% 96
-\BOOKMARK [1][-]{section.3.9}{Cell Line Analysis}{chapter.3}% 97
-\BOOKMARK [1][-]{section.3.10}{Mutation, Copy Number, and Methylation}{chapter.3}% 98
-\BOOKMARK [1][-]{section.3.11}{ANOVA of Expression Predictors}{chapter.3}% 99
-\BOOKMARK [1][-]{section.3.12}{Mutation Analysis, Pathway Expression, and Metagene Synthetic Lethality}{chapter.3}% 100
-\BOOKMARK [1][-]{section.3.13}{Data clean up, gene SL, and pathway SL}{chapter.3}% 101
-\BOOKMARK [1][-]{section.3.14}{Overview of Challenges}{chapter.3}% 102
-\BOOKMARK [1][-]{section.3.15}{Comparison of gene SL predictions and siRNA screen candidates}{chapter.3}% 103
-\BOOKMARK [1][-]{section.3.16}{Permutation or Re-Sampling of genes for pathway enrichment.}{chapter.3}% 104
-\BOOKMARK [1][-]{section.3.17}{Comparison of candidate SL Pathways}{chapter.3}% 105
-\BOOKMARK [1][-]{section.3.18}{Future Directions}{chapter.3}% 106
-\BOOKMARK [1][-]{section.3.19}{Hub Genes}{chapter.3}% 107
-\BOOKMARK [1][-]{section.3.20}{Metagene pathway expression}{chapter.3}% 108
-\BOOKMARK [1][-]{section.3.21}{Metagene synthetic lethality}{chapter.3}% 109
-\BOOKMARK [1][-]{section.3.22}{Replication in stomach cancer}{chapter.3}% 110
-\BOOKMARK [1][-]{section.3.23}{Important Results}{chapter.3}% 111
-\BOOKMARK [0][-]{chapter.4}{Pathway Structure of Synthetic Lethal Genes}{}% 112
-\BOOKMARK [1][-]{section.4.1}{Abstract}{chapter.4}% 113
-\BOOKMARK [1][-]{section.4.2}{Background}{chapter.4}% 114
-\BOOKMARK [1][-]{section.4.3}{Reactome Network structure and Information Centrality as a measure of gene essentiality}{chapter.4}% 115
-\BOOKMARK [1][-]{section.4.4}{Synthetic lethal genes in synthetic lethal pathways}{chapter.4}% 116
-\BOOKMARK [1][-]{section.4.5}{Methods}{chapter.4}% 117
-\BOOKMARK [2][-]{subsection.4.5.1}{Sourcing graph structure data}{section.4.5}% 118
-\BOOKMARK [2][-]{subsection.4.5.2}{Constructing pathway subgraphs}{section.4.5}% 119
-\BOOKMARK [2][-]{subsection.4.5.3}{Centrality Measures}{section.4.5}% 120
-\BOOKMARK [2][-]{subsection.4.5.4}{upstream and downstream gene detection}{section.4.5}% 121
-\BOOKMARK [2][-]{subsection.4.5.5}{permutation analysis}{section.4.5}% 122
-\BOOKMARK [1][-]{section.4.6}{Centrality and connectivity of synthetic lethal genes}{chapter.4}% 123
-\BOOKMARK [1][-]{section.4.7}{Upstream or downstream synthetic lethal candidates}{chapter.4}% 124
-\BOOKMARK [1][-]{section.4.8}{Hierachical approach}{chapter.4}% 125
-\BOOKMARK [1][-]{section.4.9}{Discussion}{chapter.4}% 126
-\BOOKMARK [1][-]{section.4.10}{Conclusion}{chapter.4}% 127
-\BOOKMARK [0][-]{chapter.5}{Simulation and Modeling of Synthetic Lethal Pathways}{}% 128
-\BOOKMARK [1][-]{section.5.1}{Abstract}{chapter.5}% 129
-\BOOKMARK [1][-]{section.5.2}{Background}{chapter.5}% 130
-\BOOKMARK [1][-]{section.5.3}{Simulations and Modelling Synthetic Lethality in Expression Data}{chapter.5}% 131
-\BOOKMARK [1][-]{section.5.4}{Developing a Synthetic Lethal detection methodology}{chapter.5}% 132
-\BOOKMARK [2][-]{subsection.5.4.1}{Testing Multivariate Normal Simulation of Synthetic lethality}{section.5.4}% 133
-\BOOKMARK [2][-]{subsection.5.4.2}{Receiver Operating Characteristic Curves}{section.5.4}% 134
-\BOOKMARK [2][-]{subsection.5.4.3}{Simulated Expression Heatmaps}{section.5.4}% 135
-\BOOKMARK [2][-]{subsection.5.4.4}{Replication Simulation Heatmap}{section.5.4}% 136
-\BOOKMARK [1][-]{section.5.5}{Simulation of synthetic lethality in graph structures}{chapter.5}% 137
-\BOOKMARK [2][-]{subsection.5.5.1}{Developing a multivariate normal expression from graph structures}{section.5.5}% 138
-\BOOKMARK [2][-]{subsection.5.5.2}{Simulations over simple graph structures}{section.5.5}% 139
-\BOOKMARK [3][-]{section*.67}{Performance}{subsection.5.5.2}% 140
-\BOOKMARK [3][-]{section*.68}{Synthetic lethality across graph stuctures}{subsection.5.5.2}% 141
-\BOOKMARK [3][-]{section*.69}{Performance with inhibition links}{subsection.5.5.2}% 142
-\BOOKMARK [3][-]{section*.70}{Performance with 20,000 genes}{subsection.5.5.2}% 143
-\BOOKMARK [2][-]{subsection.5.5.3}{Simulations over pathway-based graphs}{section.5.5}% 144
-\BOOKMARK [2][-]{subsection.5.5.4}{Comparing methods}{section.5.5}% 145
-\BOOKMARK [3][-]{section*.71}{SLIPT and Chi-Squared}{subsection.5.5.4}% 146
-\BOOKMARK [4][-]{section*.72}{Correlated query genes}{section*.71}% 147
-\BOOKMARK [3][-]{section*.73}{Correlation}{subsection.5.5.4}% 148
-\BOOKMARK [3][-]{section*.74}{Linear models}{subsection.5.5.4}% 149
-\BOOKMARK [2][-]{subsection.5.5.5}{Developing a linear model predictor of synthetic lethality}{section.5.5}% 150
-\BOOKMARK [3][-]{section*.75}{Linear models}{subsection.5.5.5}% 151
-\BOOKMARK [3][-]{section*.76}{Polynomial models}{subsection.5.5.5}% 152
-\BOOKMARK [3][-]{section*.77}{Conditioning}{subsection.5.5.5}% 153
-\BOOKMARK [3][-]{section*.78}{SLIPTv2}{subsection.5.5.5}% 154
-\BOOKMARK [1][-]{section.5.6}{Significance}{chapter.5}% 155
-\BOOKMARK [1][-]{section.5.7}{Future Directions}{chapter.5}% 156
-\BOOKMARK [1][-]{section.5.8}{Conclusion}{chapter.5}% 157
-\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 158
-\BOOKMARK [0][-]{chapter.7}{Conclusion}{}% 159
-\BOOKMARK [0][-]{chapter.7}{References}{}% 160
+\BOOKMARK [1][-]{section.2.1}{Overview/meta-text}{chapter.2}% 76
+\BOOKMARK [1][-]{section.2.2}{Bioinformatics to Enable Genomics Research}{chapter.2}% 77
+\BOOKMARK [2][-]{subsection.2.2.1}{Public Data and Software Packages}{section.2.2}% 78
+\BOOKMARK [3][-]{section*.58}{[more detail e.g., TCGA, Reactome]}{subsection.2.2.1}% 79
+\BOOKMARK [2][-]{subsection.2.2.2}{Computational Tools and Enabling Biological Research \(remove/state assumptions only\)}{section.2.2}% 80
+\BOOKMARK [3][-]{section*.59}{High Performance and Parallel Computing}{subsection.2.2.2}% 81
+\BOOKMARK [2][-]{subsection.2.2.3}{Gene Expression Analysis and Statistical Challenges}{section.2.2}% 82
+\BOOKMARK [3][-]{section*.60}{Hypothesis Testing and Multiple Comparisons Procedures}{subsection.2.2.3}% 83
+\BOOKMARK [3][-]{section*.61}{Candidate Triage and Integration with Experimental Data}{subsection.2.2.3}% 84
+\BOOKMARK [2][-]{subsection.2.2.4}{Mathematical Challenges in Bioinformatics}{section.2.2}% 85
+\BOOKMARK [3][-]{section*.62}{Graph Theory, Systems, and Network Biology}{subsection.2.2.4}% 86
+\BOOKMARK [3][-]{section*.63}{Matrix Operations and Pathway “Metagenes”}{subsection.2.2.4}% 87
+\BOOKMARK [1][-]{section.2.3}{Data Handling}{chapter.2}% 88
+\BOOKMARK [2][-]{subsection.2.3.1}{Normalisation \(voom\)}{section.2.3}% 89
+\BOOKMARK [2][-]{subsection.2.3.2}{Sample triage}{section.2.3}% 90
+\BOOKMARK [2][-]{subsection.2.3.3}{SVD/mg}{section.2.3}% 91
+\BOOKMARK [1][-]{section.2.4}{Techniques}{chapter.2}% 92
+\BOOKMARK [2][-]{subsection.2.4.1}{Clustering}{section.2.4}% 93
+\BOOKMARK [2][-]{subsection.2.4.2}{Heatmap}{section.2.4}% 94
+\BOOKMARK [2][-]{subsection.2.4.3}{Modeling and Simulations}{section.2.4}% 95
+\BOOKMARK [3][-]{section*.64}{\(AU\)ROC}{subsection.2.4.3}% 96
+\BOOKMARK [2][-]{subsection.2.4.4}{Permutation / Resampling}{section.2.4}% 97
+\BOOKMARK [2][-]{subsection.2.4.5}{Network Metrics / Techniques}{section.2.4}% 98
+\BOOKMARK [1][-]{section.2.5}{Pathway Structure Methods}{chapter.2}% 99
+\BOOKMARK [2][-]{subsection.2.5.1}{Sourcing graph structure data}{section.2.5}% 100
+\BOOKMARK [2][-]{subsection.2.5.2}{Constructing pathway subgraphs}{section.2.5}% 101
+\BOOKMARK [2][-]{subsection.2.5.3}{Centrality Measures}{section.2.5}% 102
+\BOOKMARK [2][-]{subsection.2.5.4}{Data Sources}{section.2.5}% 103
+\BOOKMARK [0][-]{chapter.3}{Methods Developed During Thesis}{}% 104
+\BOOKMARK [1][-]{section.3.1}{Overview/meta-text}{chapter.3}% 105
+\BOOKMARK [1][-]{section.3.2}{Developing a Synthetic Lethal Detection Methodology}{chapter.3}% 106
+\BOOKMARK [2][-]{subsection.3.2.1}{Rationale and Design of Test}{section.3.2}% 107
+\BOOKMARK [2][-]{subsection.3.2.2}{Synthetic Lethal Detection Method}{section.3.2}% 108
+\BOOKMARK [1][-]{section.3.3}{Simulations and Modelling Synthetic Lethality in Expression Data}{chapter.3}% 109
+\BOOKMARK [2][-]{subsection.3.3.1}{Synthetic Lethal Modeling}{section.3.3}% 110
+\BOOKMARK [2][-]{subsection.3.3.2}{Simulation Procedure}{section.3.3}% 111
+\BOOKMARK [1][-]{section.3.4}{Assessing the Synthetic Lethal detection methodology \(simulation results part 1\)}{chapter.3}% 112
+\BOOKMARK [2][-]{subsection.3.4.1}{Binomial Simulation of Synthetic lethality[?]}{section.3.4}% 113
+\BOOKMARK [2][-]{subsection.3.4.2}{Multivariate Normal Simulation of Synthetic lethality[+dir?]}{section.3.4}% 114
+\BOOKMARK [3][-]{section*.65}{Receiver Operating Characteristic Curves}{subsection.3.4.2}% 115
+\BOOKMARK [3][-]{section*.66}{Simulated Expression Heatmaps}{subsection.3.4.2}% 116
+\BOOKMARK [2][-]{subsection.3.4.3}{Replication Simulation Heatmap}{section.3.4}% 117
+\BOOKMARK [1][-]{section.3.5}{Graph Structure Methods}{chapter.3}% 118
+\BOOKMARK [2][-]{subsection.3.5.1}{Upstream and downstream gene detection}{section.3.5}% 119
+\BOOKMARK [2][-]{subsection.3.5.2}{Permutation analysis}{section.3.5}% 120
+\BOOKMARK [2][-]{subsection.3.5.3}{Simulating gene expression from graph structure}{section.3.5}% 121
+\BOOKMARK [1][-]{section.3.6}{Customised methods and R packages developed}{chapter.3}% 122
+\BOOKMARK [2][-]{subsection.3.6.1}{slipt}{section.3.6}% 123
+\BOOKMARK [2][-]{subsection.3.6.2}{plotting}{section.3.6}% 124
+\BOOKMARK [2][-]{subsection.3.6.3}{simulation from graph structures}{section.3.6}% 125
+\BOOKMARK [2][-]{subsection.3.6.4}{igraph methods}{section.3.6}% 126
+\BOOKMARK [0][-]{chapter.4}{Synthetic Lethal Analysis of Gene Expression Data}{}% 127
+\BOOKMARK [1][-]{section.4.1}{Abstract}{chapter.4}% 128
+\BOOKMARK [1][-]{section.4.2}{Aims and Significance}{chapter.4}% 129
+\BOOKMARK [1][-]{section.4.3}{Background}{chapter.4}% 130
+\BOOKMARK [1][-]{section.4.4}{Background}{chapter.4}% 131
+\BOOKMARK [1][-]{section.4.5}{Sourcing TCGA data}{chapter.4}% 132
+\BOOKMARK [1][-]{section.4.6}{Quality checking}{chapter.4}% 133
+\BOOKMARK [1][-]{section.4.7}{Global Synthetic Lethality}{chapter.4}% 134
+\BOOKMARK [1][-]{section.4.8}{CDH1 Analysis with Subgroups}{chapter.4}% 135
+\BOOKMARK [1][-]{section.4.9}{Cell Line Analysis}{chapter.4}% 136
+\BOOKMARK [1][-]{section.4.10}{Mutation, Copy Number, and Methylation}{chapter.4}% 137
+\BOOKMARK [1][-]{section.4.11}{ANOVA of Expression Predictors}{chapter.4}% 138
+\BOOKMARK [1][-]{section.4.12}{Mutation Analysis, Pathway Expression, and Metagene Synthetic Lethality}{chapter.4}% 139
+\BOOKMARK [1][-]{section.4.13}{Data clean up, gene SL, and pathway SL}{chapter.4}% 140
+\BOOKMARK [1][-]{section.4.14}{Overview of Challenges}{chapter.4}% 141
+\BOOKMARK [1][-]{section.4.15}{Comparison of gene SL predictions and siRNA screen candidates}{chapter.4}% 142
+\BOOKMARK [1][-]{section.4.16}{Permutation or Re-Sampling of genes for pathway enrichment.}{chapter.4}% 143
+\BOOKMARK [1][-]{section.4.17}{Comparison of candidate SL Pathways}{chapter.4}% 144
+\BOOKMARK [1][-]{section.4.18}{Future Directions}{chapter.4}% 145
+\BOOKMARK [1][-]{section.4.19}{Hub Genes}{chapter.4}% 146
+\BOOKMARK [1][-]{section.4.20}{Metagene pathway expression}{chapter.4}% 147
+\BOOKMARK [1][-]{section.4.21}{Metagene synthetic lethality}{chapter.4}% 148
+\BOOKMARK [1][-]{section.4.22}{Replication in stomach cancer}{chapter.4}% 149
+\BOOKMARK [1][-]{section.4.23}{Important Results}{chapter.4}% 150
+\BOOKMARK [0][-]{chapter.5}{Pathway Structure of Synthetic Lethal Genes}{}% 151
+\BOOKMARK [1][-]{section.5.1}{Abstract}{chapter.5}% 152
+\BOOKMARK [1][-]{section.5.2}{Background}{chapter.5}% 153
+\BOOKMARK [1][-]{section.5.3}{Reactome Network structure and Information Centrality as a measure of gene essentiality}{chapter.5}% 154
+\BOOKMARK [1][-]{section.5.4}{Synthetic lethal genes in synthetic lethal pathways}{chapter.5}% 155
+\BOOKMARK [1][-]{section.5.5}{Methods}{chapter.5}% 156
+\BOOKMARK [2][-]{subsection.5.5.1}{Sourcing graph structure data}{section.5.5}% 157
+\BOOKMARK [2][-]{subsection.5.5.2}{Constructing pathway subgraphs}{section.5.5}% 158
+\BOOKMARK [2][-]{subsection.5.5.3}{Centrality Measures}{section.5.5}% 159
+\BOOKMARK [2][-]{subsection.5.5.4}{upstream and downstream gene detection}{section.5.5}% 160
+\BOOKMARK [2][-]{subsection.5.5.5}{permutation analysis}{section.5.5}% 161
+\BOOKMARK [1][-]{section.5.6}{Centrality and connectivity of synthetic lethal genes}{chapter.5}% 162
+\BOOKMARK [1][-]{section.5.7}{Upstream or downstream synthetic lethal candidates}{chapter.5}% 163
+\BOOKMARK [1][-]{section.5.8}{Hierachical approach}{chapter.5}% 164
+\BOOKMARK [1][-]{section.5.9}{Discussion}{chapter.5}% 165
+\BOOKMARK [1][-]{section.5.10}{Conclusion}{chapter.5}% 166
+\BOOKMARK [0][-]{chapter.6}{Simulation and Modeling of Synthetic Lethal Pathways}{}% 167
+\BOOKMARK [1][-]{section.6.1}{Abstract}{chapter.6}% 168
+\BOOKMARK [1][-]{section.6.2}{Background}{chapter.6}% 169
+\BOOKMARK [1][-]{section.6.3}{Simulations and Modelling Synthetic Lethality in Expression Data}{chapter.6}% 170
+\BOOKMARK [1][-]{section.6.4}{Developing a Synthetic Lethal detection methodology}{chapter.6}% 171
+\BOOKMARK [2][-]{subsection.6.4.1}{Testing Multivariate Normal Simulation of Synthetic lethality}{section.6.4}% 172
+\BOOKMARK [2][-]{subsection.6.4.2}{Receiver Operating Characteristic Curves}{section.6.4}% 173
+\BOOKMARK [2][-]{subsection.6.4.3}{Simulated Expression Heatmaps}{section.6.4}% 174
+\BOOKMARK [2][-]{subsection.6.4.4}{Replication Simulation Heatmap}{section.6.4}% 175
+\BOOKMARK [1][-]{section.6.5}{Simulation of synthetic lethality in graph structures}{chapter.6}% 176
+\BOOKMARK [2][-]{subsection.6.5.1}{Developing a multivariate normal expression from graph structures}{section.6.5}% 177
+\BOOKMARK [2][-]{subsection.6.5.2}{Simulations over simple graph structures}{section.6.5}% 178
+\BOOKMARK [3][-]{section*.67}{Performance}{subsection.6.5.2}% 179
+\BOOKMARK [3][-]{section*.68}{Synthetic lethality across graph stuctures}{subsection.6.5.2}% 180
+\BOOKMARK [3][-]{section*.69}{Performance with inhibition links}{subsection.6.5.2}% 181
+\BOOKMARK [3][-]{section*.70}{Performance with 20,000 genes}{subsection.6.5.2}% 182
+\BOOKMARK [2][-]{subsection.6.5.3}{Simulations over pathway-based graphs}{section.6.5}% 183
+\BOOKMARK [2][-]{subsection.6.5.4}{Comparing methods}{section.6.5}% 184
+\BOOKMARK [3][-]{section*.71}{SLIPT and Chi-Squared}{subsection.6.5.4}% 185
+\BOOKMARK [4][-]{section*.72}{Correlated query genes}{section*.71}% 186
+\BOOKMARK [3][-]{section*.73}{Correlation}{subsection.6.5.4}% 187
+\BOOKMARK [3][-]{section*.74}{Linear models}{subsection.6.5.4}% 188
+\BOOKMARK [2][-]{subsection.6.5.5}{Developing a linear model predictor of synthetic lethality}{section.6.5}% 189
+\BOOKMARK [3][-]{section*.75}{Linear models}{subsection.6.5.5}% 190
+\BOOKMARK [3][-]{section*.76}{Polynomial models}{subsection.6.5.5}% 191
+\BOOKMARK [3][-]{section*.77}{Conditioning}{subsection.6.5.5}% 192
+\BOOKMARK [3][-]{section*.78}{SLIPTv2}{subsection.6.5.5}% 193
+\BOOKMARK [1][-]{section.6.6}{Significance}{chapter.6}% 194
+\BOOKMARK [1][-]{section.6.7}{Future Directions}{chapter.6}% 195
+\BOOKMARK [1][-]{section.6.8}{Conclusion}{chapter.6}% 196
+\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 197
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 198
+\BOOKMARK [0][-]{chapter.8}{References}{}% 199

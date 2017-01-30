@@ -1,7 +1,43 @@
 \chapter{Methods, Techniques, and Resources}
 \label{chap:methods}
 
-\subsection{Network Theory}
+\section{Overview/meta-text}
+\section{Bioinformatics to Enable Genomics Research}
+\subsection{Public Data and Software Packages}
+Bioinformatics resources, such as databases and methods, have become an integral part of genetics and genomics research. Reference genomes are used routinely to facilitate more effective experiments and for mapping reads from later genomics and transcriptomics studies. These include studies of large-scale genetic variation, including risk factors for disease, and gene expression studies, including those in cancers.
+
+Similarly, various gene expression databases have been developed for sharing gene expression data from previous studies, including Gene Expression Omnibus (GEO), caArray, and arrayExpress. These were originally developed to share microarray gene expression data but now many support RNA-Seq data (with the benefits discussed previously) and have set a precedent for data sharing, data mining, and the wider benefits of publicly available data for enabling the scientific community further utilise the data compared to a single research group or consortium. Such practices of integrating findings from publicly available genomics data with the research questions and experimental results of individual research groups has carried over into RNA-Seq datasets including the large-scale cancer genomics projects (such as TCGA). The thesis is one such example of an investigation enabled by this wider movement and tools developed in various disciplines to generate, disseminate, and process genomic-scale data.
+ 
+Along with databases, it is also becoming common practice for Bioinformatics researcher to release their code open-source or provide a software package to enable replication of the findings or further applications of the methods. This is part of a wider movement in software and data analysis with many tools to facilitate such work being released for use in Linux or the R programming environment. In addition to the R packages hosted on CRAN, the Bioconductor repositories also contain many packages specifically for applications in Bioinformatics, and the GitHub site hosts many packages in various stages of development and early release. Packages from these various sources have been used throughout this project and cited where possible. Several R packages have been developed during this thesis project and either publicly released on GitHub or prepared to accompany a publication.
+
+
+\subsubsection{[more detail e.g., TCGA, Reactome]}
+\subsection{Computational Tools and Enabling Biological Research (remove/state assumptions only)}
+%\subsubsection{Computational Tools for Biological Research}
+%In addition to hosting data repositories on the web, tools developed with computational expertise have had wider benefit in  genetics research. One of the main impacts of a techniques developed from computer science is the alignment of reads, to either assemble a genome \textit{de novo} from it's reads or map reads to a pre-existing reference genome. Mapping reads is commonplace to call variants between samples, this is useful for studies of human disease interested in risks of these variants or wider application such as comparing populations or species in an evolution phylogeny. Mapping reads has further utility in functional genetics to identify which regions or a genome are expressed or have DNA methylation. Similarly, mapping is used to map RNA-Seq or Bisulfite-Seq reads to measure gene expression or DNA methylation across the genome in a cohort or sample. While mapping is not performed in this thesis, it has performed an important role in the adoption of genomics in genetics research.
+
+There remains debate regarding the optimal methods to perform an alignment. However, the statistical and biological aspects of Bioinformatics are the focus of this thesis, comparing alignment methods is outside the scope of this investigations. The TCGA project used the widely adopted ''Bowtie`` tools for alignment, with ''mapslice`` to detect splice sites, and the Reads Per Kilobase per Million mapped reads (RPKM) approach to qualify reads per transcript as a measure of gene expression. These are widely acceptable tools for processing RNA-Seq data and this is the raw data publicly available from TCGA.
+
+\paragraph{High Performance and Parallel Computing}
+Another significant development in computer science for bioinformatics is parallel computing, performing independent operations in separate cores, such ''multithreading`` is widely used to increase the time to compute results. Bioinformatics is particularly amenable to this since performing multiple iterations of a simulation or testing separate genes is often ''embarrassingly parallel``, being completely independent of the results of each other. As such parallel computing is offered by many high-performance ''supercomputers`` including national research infrastructure. The New Zealand eScience Infrastructure (NeSI) is once such computational resource providing the Intel Pan cluster (hosted by the University of Auckland) used throughout this thesis project to optimise and perform computations which would have otherwise been infeasible in the timeframe of thesis. This is another example of how technological developments and infrastructure has enabled research including this project.  
+
+\subsection{Gene Expression Analysis and Statistical Challenges}
+\subsubsection{Hypothesis Testing and Multiple Comparisons Procedures}
+\subsubsection{Candidate Triage and Integration with Experimental Data}
+\subsection{Mathematical Challenges in Bioinformatics}
+\subsubsection{Graph Theory, Systems, and Network Biology}
+\subsubsection{Matrix Operations and Pathway “Metagenes”}
+\section{Data Handling}
+\subsection{Normalisation (voom)}
+\subsection{Sample triage}
+\subsection{SVD/mg}
+\section{Techniques}
+\subsection{Clustering}
+\subsection{Heatmap}
+\subsection{Modeling and Simulations}
+\subsubsection{(AU)ROC}
+\subsection{Permutation / Resampling}
+\subsection{Network Metrics / Techniques}
 
 Network theory is an interdisciplinary field which combines the approaches of in computer science with the metrics and fundamental principles of graph theory, an area of pure mathematics dealing with relationships between sets of discrete elements. \ The first large networks were generated randomly and exhibited interesting small-world and scale-free properties. \ Application of network theory in the life sciences has, until recently, been largely restricted to small networks in sociology or ecology. \ The vast amounts of molecular and cellular data from high-throughput technologies have raised the need for systems-level, network-based, and genome-wide bioinformatics analysis to capture the complexity of a cell at the molecular level and understand aberrations in cancer. 
 
@@ -108,35 +144,13 @@ siRNA}}\\\hline
 \end{supertabular}
 \end{flushleft}
 
-\subsection[Biological Networks]{Biological Networks}
-
 Genetic interaction networks will be the focus of this project because they are relatively unexplored compared to other molecular networks, have potential for applications in drug discovery (particularly cancer treatment), and may lead to better understanding of the role of genetics in cellular function and disease. \ Genetic interactions are usually studied at a high-throughput scale in simple model organisms such as bacteria, yeasts or the nematode worm; studies in humans, mammals, and non-model organisms (where applications would have the most societal impact) are limited by cost, time and labour constraints. \ Computational approaches with effective predictive models are the only feasible approach to study the connectivity of a biological network in a complex metazoan cell at the genome-scale.
 
 
-\subsubsection{Public Data and Software Packages}
-Bioinformatics resources, such as databases and methods, have become an integral part of genetics and genomics research. Reference genomes are used routinely to facilitate more effective experiments and for mapping reads from later genomics and transcriptomics studies. These include studies of large-scale genetic variation, including risk factors for disease, and gene expression studies, including those in cancers.
-
-Similarly, various gene expression databases have been developed for sharing gene expression data from previous studies, including Gene Expression Omnibus (GEO), caArray, and arrayExpress. These were originally developed to share microarray gene expression data but now many support RNA-Seq data (with the benefits discussed previously) and have set a precedent for data sharing, data mining, and the wider benefits of publicly available data for enabling the scientific community further utilise the data compared to a single research group or consortium. Such practices of integrating findings from publicly available genomics data with the research questions and experimental results of individual research groups has carried over into RNA-Seq datasets including the large-scale cancer genomics projects (such as TCGA). The thesis is one such example of an investigation enabled by this wider movement and tools developed in various disciplines to generate, disseminate, and process genomic-scale data.
- 
-Along with databases, it is also becoming common practice for Bioinformatics researcher to release their code open-source or provide a software package to enable replication of the findings or further applications of the methods. This is part of a wider movement in software and data analysis with many tools to facilitate such work being released for use in Linux or the R programming environment. In addition to the R packages hosted on CRAN, the Bioconductor repositories also contain many packages specifically for applications in Bioinformatics, and the GitHub site hosts many packages in various stages of development and early release. Packages from these various sources have been used throughout this project and cited where possible. Several R packages have been developed during this thesis project and either publicly released on GitHub or prepared to accompany a publication.
-
-\subsubsection{Computational Tools for Biological Research}
-In addition to hosting data repositories on the web, tools developed with computational expertise have had wider benefit in  genetics research. One of the main impacts of a techniques developed from computer science is the alignment of reads, to either assemble a genome \textit{de novo} from it's reads or map reads to a pre-existing reference genome. Mapping reads is commonplace to call variants between samples, this is useful for studies of human disease interested in risks of these variants or wider application such as comparing populations or species in an evolution phylogeny. Mapping reads has further utility in functional genetics to identify which regions or a genome are expressed or have DNA methylation. Similarly, mapping is used to map RNA-Seq or Bisulfite-Seq reads to measure gene expression or DNA methylation across the genome in a cohort or sample. While mapping is not performed in this thesis, it has performed an important role in the adoption of genomics in genetics research.
-
-There remains debate regarding the optimal methods to perform an alignment. However, the statistical and biological aspects of Bioinformatics are the focus of this thesis, comparing alignment methods is outside the scope of this investigations. The TCGA project used the widely adopted ''Bowtie`` tools for alignment, with ''mapslice`` to detect splice sites, and the Reads Per Kilobase per Million mapped reads (RPKM) approach to qualify reads per transcript as a measure of gene expression. These are widely acceptable tools for processing RNA-Seq data and this is the raw data publicly available from TCGA.
-
-
-\paragraph{High Performance and Parallel Computing in Biology}
-Another significant development in computer science for bioinformatics is parallel computing, performing independent operations in separate cores, such ''multithreading`` is widely used to increase the time to compute results. Bioinformatics is particularly amenable to this since performing multiple iterations of a simulation or testing separate genes is often ''embarrassingly parallel``, being completely independent of the results of each other. As such parallel computing is offered by many high-performance ''supercomputers`` including national research infrastructure. The New Zealand eScience Infrastructure (NeSI) is once such computational resource providing the Intel Pan cluster (hosted by the University of Auckland) used throughout this thesis project to optimise and perform computations which would have otherwise been infeasible in the timeframe of thesis. This is another example of how technological developments and infrastructure has enabled research including this project.  
-
-\subsubsection{Gene Expression Analysis and Statistical Challenges in Bioinformatics}
-Gene expression analysis is the focus of many bioinformatics research groups, drawing upon statistical approaches to appropriately handle microarray and RNA-Seq data along with making biological inferences from a large number of statistical tests. This presents various challenges from normalising sample data and accounting for batch effects to developing or applying statistical tests tailored to biological hypotheses and testing them at a genome-wide scale, generally across thousands of genes. 
-\paragraph{Hypothesis Testing and Multiple Comparisons Procedures}
-\paragraph{Candidate Triage and Integration with Experimental Data}
-
-\subsubsection{Mathematical Challenges in Bioinformatics}
-\paragraph{Graph Theory, Systems, and Network Biology}
-\paragraph{Matrix Operations and Pathway ``Metagenes''}
+\section{Pathway Structure Methods}
+\subsection{Sourcing graph structure data}
+\subsection{Constructing pathway subgraphs}
+\subsection{Centrality Measures}
 
 
 \subsection[Data Sources]{Data Sources}
@@ -282,3 +296,29 @@ Chemical Genomics (Tropical Disease)\\\hline
 binding affinity\\\hline
 \end{supertabular}
 \end{flushleft}
+
+
+\chapter{Methods Developed During Thesis}
+\label{chap:methods_dev}
+\section{Overview/meta-text}
+\section{Developing a Synthetic Lethal Detection Methodology}
+\subsection{Rationale and Design of Test}
+\subsection{Synthetic Lethal Detection Method}
+\section{Simulations and Modelling Synthetic Lethality in Expression Data}
+\subsection{Synthetic Lethal Modeling}
+\subsection{Simulation Procedure}
+\section{Assessing the Synthetic Lethal detection methodology (simulation results part 1)}
+\subsection{Binomial Simulation of Synthetic lethality[?]}
+\subsection{Multivariate Normal Simulation of Synthetic lethality[+dir?]}
+\subsubsection{Receiver Operating Characteristic Curves}
+\subsubsection{Simulated Expression Heatmaps}
+\subsection{Replication Simulation Heatmap}
+\section{Graph Structure Methods}
+\subsection{Upstream and downstream gene detection}
+\subsection{Permutation analysis}
+\subsection{Simulating gene expression from graph structure}
+\section{Customised methods and R packages developed}
+\subsection{slipt}
+\subsection{plotting}
+\subsection{simulation from graph structures}
+\subsection{igraph methods}
