@@ -1,0 +1,284 @@
+\chapter{Methods, Techniques, and Resources}
+\label{chap:methods}
+
+\subsection{Network Theory}
+
+Network theory is an interdisciplinary field which combines the approaches of in computer science with the metrics and fundamental principles of graph theory, an area of pure mathematics dealing with relationships between sets of discrete elements. \ The first large networks were generated randomly and exhibited interesting small-world and scale-free properties. \ Application of network theory in the life sciences has, until recently, been largely restricted to small networks in sociology or ecology. \ The vast amounts of molecular and cellular data from high-throughput technologies have raised the need for systems-level, network-based, and genome-wide bioinformatics analysis to capture the complexity of a cell at the molecular level and understand aberrations in cancer. 
+
+Graph theory is a branch of pure mathematics which deals with the properties of sets of discrete objects (referred to as a {\textquoteleft}node{\textquoteright} or {\textquoteleft}vertex{\textquoteright}) with some pairs are joined (by a {\textquoteleft}link{\textquoteright} or an {\textquoteleft}edge{\textquoteright}). \ Originally conceived as a reductionist abstraction to solve problems in mathematics and more complex problems later in computer science, graph theory serves as the fundamental basis for a wide range of studies including material physics, traffic analysis, computer architecture, and phylogenetic trees. \ Applications vary depending on the situation modelled, particularly in how the edges between vertices are defined, whether they are directed or weighted, and whether multiple redundant edges between a pair of vertices (referred to as {\textquoteleft}parallel edges{\textquoteright}) or edges connecting a vertex to itself (referred to as {\textquoteleft}loops{\textquoteright}) are permitted in the model. \ Networks are defined such that the edges represent a relationship between the vertices and may be directed, weighted, or contain parallel edges or loops depending on the application. \ 
+
+Network theory is the sub-discipline of graph theory which deals with networks which has become popular due to the vast potential for applications of networks. \ The properties of large networks were studied by constructing random networks by randomly linking a fixed number of nodes (Erd\H{o}s \& R\'enyi 1959; Erd\H{o}s \& R\'enyi 1960). \ Despite the random nature of these networks, properties such as their connectivity were well characterised. \ The vertex degree of random network follows a Poisson distribution, however this property does not hold in nature, suggesting that natural networks are non-random or not formed in this way (Barab\'asi \& Oltvai 2004). \ 
+
+
+This work formed the foundation for studying complex networks which model features of real world networks not found in Erd\H{o}s and R\'enyi{\textquoteright}s random networks. \ The small world property, made popular by findings in social networks (Milgram 1967; Travers \& Milgram 1969), is the remarkably short path lengths between any nodes in a small world network. \ A small world network is well-connected with a characteristic path length proportional to the logarithm of thenumber of nodes (Watts \& Strogatz 1998). \ \hyperlink{ENREF112}{Watts and Strogatz (1998)} developed a model of random rewiring of a regular network to construct random networks with the small world property and a high clustering coefficient. \ While these properties are more representative of networks occurring in nature, their model is limited by the degree distribution which converges to a Poisson distribution as it is rewired (Barrat \& Weigt 2000). \ 
+
+
+The degree distribution of naturally occurring networks often follows a power law distribution with the majority of nodes having far fewer connections than average and a small subset of highly connected network {\textquoteleft}hubs{\textquoteright}. \ \hyperlink{ENREF7}{Barab\'asi and Albert (1999)} constructed a network model in an entirely different way to randomly generate scale-free networks which have a power law degree distribution. \ They constructed random networks by preferential attachment, modelling growth of a network by sequentially adding nodes with links to existing nodes. \ The scale-free nature of the random networks was ensured by adding new nodes with an increasing probability of attachment to an existing node if it has higher degree. \ These networks successfully capture the scale-free nature of many real world networks with short characteristic path length and low eccentricity resulting in super small worlds. \ The \hyperlink{ENREF7}{Barab\'asi and Albert (1999)} scale-free networks are limited by a low clustering coefficient and lack of modular structure; however, they have enabled the study of scale-free network topology and served as a basis for modified scale-free models (Dorogovtsev \& Mendes 2003; Holme \& Kim 2002). \ 
+
+
+\hyperlink{ENREF47}{Han}\hyperlink{ENREF47}{\textit{ et al.}}\hyperlink{ENREF47}{ (2004)} observed dynamic modularity in biological networks and suggested the network structure may underpin genetic robustness and plasticity. \ They focus on network hubs which are more likely to be essential genes and define the subgroups of hubs based on correlation of gene expression with protein-protein interaction partners: {\textquoteleft}party{\textquoteright} hubs (which interact simultaneously with many partners) and {\textquoteleft}date{\textquoteright} hubs (which interact with different partners in different conditions). \ Party and date hubs occurred most frequently within and between network modules respectively. \ Party hubs were considered local regulators, whereas date hubs were considered important to network connectivity as global regulators. \ This distinction between classes of network hubs was supported by differences in tissue specificity and clinical relevance as a proposed predictor of clinical outcome in breast cancer with an AUROC of 0.784 (Taylor\textit{ et al.} 2009). \ However, correlation between expression and protein interactions were not robustly reproduced. \ The importance of date hubs has been criticised for assuming a bimodal distribution and basing the global importance of data hubs on a small subset (Agarwal\textit{ et al.} 2010). \ As an alternative interpretation, \hyperlink{ENREF2}{Agarwal}\hyperlink{ENREF2}{\textit{ et al.}}\hyperlink{ENREF2}{ (2010)} suggest the importance of interactions rather than network hubs as interactions important to the network were between functionally similar proteins. \ Network hubs can also be classed as associative or dissociative depending on whether they tend toward or away from connecting directly to other network hubs (van Steen 2010). \ The associative and dissociative properties can also be used to test whether nodes of a particular subgroup (e.g., gene function) associate with each other. \ 
+
+Applications of network theory are diverse, including uses in social sciences, engineering, and computer science. \ Due to their complexity and difficulty of gathering sufficient empirical data, biological applications of network theory are relatively unexplored. \ High-throughput technologies such as siRNA screens, two-hybrid screens, microarrays and massively parallel sequencing have made generating genome-scale molecular data feasible and enabled analysis of biological networks at the molecular level. \ Many types of inter-related molecular networks can be constructed and analysed, depending on the biological application, the way interactions between molecular components are defined and the data used to generate them as shown in Table 1. \ 
+
+\textbf{Table 1. \ }Types of biological network based on molecular data
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{4.0490003cm}|m{2.55cm}|m{4.301cm}|m{4.201cm}}
+\multicolumn{1}{m{4.0490003cm}}{\cellcolor{white}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Network Type}}} &
+\multicolumn{1}{m{2.55cm}}{\cellcolor{white}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Node}}} &
+\multicolumn{1}{m{4.301cm}}{\cellcolor{white}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Interaction}}} &
+\cellcolor{white}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Data
+Generation}}\\\hline
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Co-expression}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Gene}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Correlation of
+expression}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Array,
+RNA-Seq}}\\\hline
+\bfseries {\fontsize{10pt}{12.0pt}\selectfont Protein (Physical)} &
+{\fontsize{10pt}{12.0pt}\selectfont Protein} &
+{\fontsize{10pt}{12.0pt}\selectfont Protein-protein binding} &
+{\fontsize{10pt}{12.0pt}\selectfont Two-Hybrid}\\\hline
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Signal
+Transduction}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Protein}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Protein mediated
+signalling}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Curate known
+pathways}}\\\hline
+\bfseries {\fontsize{10pt}{12.0pt}\selectfont Metabolic} &
+{\fontsize{10pt}{12.0pt}\selectfont Metabolite or cofactor} &
+{\fontsize{10pt}{12.0pt}\selectfont Involved in same reaction (links by
+reactions/enzymes)} &
+{\fontsize{10pt}{12.0pt}\selectfont Curate known pathways}\\\hline
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Chemical or
+Drug}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Protein}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Targets of the
+same drug}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Curate known drug
+targets}}\\\hline
+\bfseries {\fontsize{10pt}{12.0pt}\selectfont Regulation} &
+{\fontsize{10pt}{12.0pt}\selectfont Gene} &
+{\fontsize{10pt}{12.0pt}\selectfont Regulate each other by encoded
+proteins} &
+{\fontsize{10pt}{12.0pt}\selectfont Array, RNA-Seq, ChIP}\\\hline
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{RNA or DNA
+binding}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Gene or miRNA}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Binding of
+encoded RNA or protein or DNA or mRNA}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{ChIP,
+RIP}}\\\hline
+\bfseries {\fontsize{10pt}{12.0pt}\selectfont Functional} &
+{\fontsize{10pt}{12.0pt}\selectfont Gene} &
+{\fontsize{10pt}{12.0pt}\selectfont Shared gene function} &
+{\fontsize{10pt}{12.0pt}\selectfont Curate known pathways}\\\hline
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\bfseries\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Genetic
+Interaction}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Gene}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{Unexpected
+phenotype with combined loss of function}} &
+\cellcolor[rgb]{0.87058824,0.91764706,0.9647059}\color{black}
+{\fontsize{10pt}{12.0pt}\selectfont \textcolor{black}{SGA, EMAP, DAmP,
+siRNA}}\\\hline
+\end{supertabular}
+\end{flushleft}
+
+\subsection[Biological Networks]{Biological Networks}
+
+Genetic interaction networks will be the focus of this project because they are relatively unexplored compared to other molecular networks, have potential for applications in drug discovery (particularly cancer treatment), and may lead to better understanding of the role of genetics in cellular function and disease. \ Genetic interactions are usually studied at a high-throughput scale in simple model organisms such as bacteria, yeasts or the nematode worm; studies in humans, mammals, and non-model organisms (where applications would have the most societal impact) are limited by cost, time and labour constraints. \ Computational approaches with effective predictive models are the only feasible approach to study the connectivity of a biological network in a complex metazoan cell at the genome-scale.
+
+
+\subsubsection{Public Data and Software Packages}
+Bioinformatics resources, such as databases and methods, have become an integral part of genetics and genomics research. Reference genomes are used routinely to facilitate more effective experiments and for mapping reads from later genomics and transcriptomics studies. These include studies of large-scale genetic variation, including risk factors for disease, and gene expression studies, including those in cancers.
+
+Similarly, various gene expression databases have been developed for sharing gene expression data from previous studies, including Gene Expression Omnibus (GEO), caArray, and arrayExpress. These were originally developed to share microarray gene expression data but now many support RNA-Seq data (with the benefits discussed previously) and have set a precedent for data sharing, data mining, and the wider benefits of publicly available data for enabling the scientific community further utilise the data compared to a single research group or consortium. Such practices of integrating findings from publicly available genomics data with the research questions and experimental results of individual research groups has carried over into RNA-Seq datasets including the large-scale cancer genomics projects (such as TCGA). The thesis is one such example of an investigation enabled by this wider movement and tools developed in various disciplines to generate, disseminate, and process genomic-scale data.
+ 
+Along with databases, it is also becoming common practice for Bioinformatics researcher to release their code open-source or provide a software package to enable replication of the findings or further applications of the methods. This is part of a wider movement in software and data analysis with many tools to facilitate such work being released for use in Linux or the R programming environment. In addition to the R packages hosted on CRAN, the Bioconductor repositories also contain many packages specifically for applications in Bioinformatics, and the GitHub site hosts many packages in various stages of development and early release. Packages from these various sources have been used throughout this project and cited where possible. Several R packages have been developed during this thesis project and either publicly released on GitHub or prepared to accompany a publication.
+
+\subsubsection{Computational Tools for Biological Research}
+In addition to hosting data repositories on the web, tools developed with computational expertise have had wider benefit in  genetics research. One of the main impacts of a techniques developed from computer science is the alignment of reads, to either assemble a genome \textit{de novo} from it's reads or map reads to a pre-existing reference genome. Mapping reads is commonplace to call variants between samples, this is useful for studies of human disease interested in risks of these variants or wider application such as comparing populations or species in an evolution phylogeny. Mapping reads has further utility in functional genetics to identify which regions or a genome are expressed or have DNA methylation. Similarly, mapping is used to map RNA-Seq or Bisulfite-Seq reads to measure gene expression or DNA methylation across the genome in a cohort or sample. While mapping is not performed in this thesis, it has performed an important role in the adoption of genomics in genetics research.
+
+There remains debate regarding the optimal methods to perform an alignment. However, the statistical and biological aspects of Bioinformatics are the focus of this thesis, comparing alignment methods is outside the scope of this investigations. The TCGA project used the widely adopted ''Bowtie`` tools for alignment, with ''mapslice`` to detect splice sites, and the Reads Per Kilobase per Million mapped reads (RPKM) approach to qualify reads per transcript as a measure of gene expression. These are widely acceptable tools for processing RNA-Seq data and this is the raw data publicly available from TCGA.
+
+
+\paragraph{High Performance and Parallel Computing in Biology}
+Another significant development in computer science for bioinformatics is parallel computing, performing independent operations in separate cores, such ''multithreading`` is widely used to increase the time to compute results. Bioinformatics is particularly amenable to this since performing multiple iterations of a simulation or testing separate genes is often ''embarrassingly parallel``, being completely independent of the results of each other. As such parallel computing is offered by many high-performance ''supercomputers`` including national research infrastructure. The New Zealand eScience Infrastructure (NeSI) is once such computational resource providing the Intel Pan cluster (hosted by the University of Auckland) used throughout this thesis project to optimise and perform computations which would have otherwise been infeasible in the timeframe of thesis. This is another example of how technological developments and infrastructure has enabled research including this project.  
+
+\subsubsection{Gene Expression Analysis and Statistical Challenges in Bioinformatics}
+Gene expression analysis is the focus of many bioinformatics research groups, drawing upon statistical approaches to appropriately handle microarray and RNA-Seq data along with making biological inferences from a large number of statistical tests. This presents various challenges from normalising sample data and accounting for batch effects to developing or applying statistical tests tailored to biological hypotheses and testing them at a genome-wide scale, generally across thousands of genes. 
+\paragraph{Hypothesis Testing and Multiple Comparisons Procedures}
+\paragraph{Candidate Triage and Integration with Experimental Data}
+
+\subsubsection{Mathematical Challenges in Bioinformatics}
+\paragraph{Graph Theory, Systems, and Network Biology}
+\paragraph{Matrix Operations and Pathway ``Metagenes''}
+
+
+\subsection[Data Sources]{Data Sources}
+
+As summarised in Table 5, there is are a vast array of publicly available resources for model organism, human, and cancer genomics analysis. These will be used as a resource for bioinformatics analysis of genetic interactions and networks in addition to modelling and simulation approaches.  
+
+\textbf{Table 5. }Data sources for Research
+\begin{flushleft}
+\tablehead{}
+\begin{supertabular}{m{2.299cm}|m{3.8009999cm}|m{3.552cm}|m{6.5490003cm}}
+\multicolumn{1}{m{2.299cm}}{\cellcolor{white}\bfseries\color{black}
+Database} &
+\multicolumn{1}{m{3.8009999cm}}{\cellcolor{white}~
+} &
+\multicolumn{1}{m{3.552cm}}{\cellcolor{white}\bfseries\color{black}
+Study Type} &
+\cellcolor{white}\bfseries\color{black} Data Types Supported\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{TCGA} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Cancer
+Genome Atlas &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Cancer &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Sequence,
+Mutation, CNV, SNP, expression, DNA Methylation, Clinical,
+RNA-Seq\\\hline
+ICGC &
+International Cancer Genome Consortium &
+Cancer &
+Sequence, Mutation, CNV, SNP, expression, DNA Methylation, Clinical,
+RNA-Seq\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{ENCODE} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+Encyclopaedia of DNA Elements &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black} Human
+Normal Tissue}
+
+\color{black} Cancer Cell Line &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black} Sequence,
+expression, DNA/RNA binding}
+
+\color{black} RNA-Seq, ChIP-Seq, RIP-Seq\\\hline
+CCLE &
+Cell Line Encyclopaedia &
+Cancer Cell Line &
+DNA CNV, expression, mutation, drug sensitivity\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{GEO} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Gene
+Expression Omnibus &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Various &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Gene
+Expression, RNA-Seq\\\hline
+GENT &
+Gene Expression Atlas &
+Human Normal Tissue and Cancer &
+Gene Expression\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{BIND} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Biomolecular
+interaction network database &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black} Model
+Organisms}
+
+\color{black} Human &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black} DNA, RNA,
+ligand, or protein binding}
+
+\color{black} Two-hybrid data, ChIP, CLIP, RIP\\\hline
+STRING &
+Search Tool for retrieving interacting genes/proteins &
+Various &
+Protein-protein interactions: curated and predicted from MINT, PPRD,
+BIND, DIP, BioGRID, KEGG, Reactome, IntAct, EcoCyc, NCI, and GO\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{BioGRID} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Biological
+General Repository for Interaction Datasets  &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\textit{\textcolor{black}{S. cerevisiae}},}
+
+{\color{black} \textit{\textcolor{black}{S. pombe}},}
+
+\color{black} \textit{\textcolor{black}{A. thaliana}}, etc &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Protein and
+Genetic Interaction\\\hline
+Human Interactome &
+Human Interactome &
+Human &
+Protein Interactions\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{DRYGIN} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Data
+Repository of Yeast Genetic Interactions &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Yeast &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Genetic
+Interactions\\\hline
+SGD &
+Saccharomyces Genome Database &
+Yeast &
+Sequence, Expression, Protein and Genetic Interactions\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{GO} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Gene
+Ontology &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Various &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Gene
+Function\\\hline
+KEGG &
+Kyoto Encyclopedia of Genes and Genomes &
+Various &
+Gene Function and Pathway\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{Reactome} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Various &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Gene
+Function and Pathway\\\hline
+DrugBank &
+~
+ &
+Human &
+Chemical and drug target sequence/structure\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{TTD} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Therapeutic
+Target &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Human &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Protein and
+Nucleic Acid drug targets\\\hline
+TDR &
+Targets database &
+Human &
+Chemical Genomics (Tropical Disease)\\\hline
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\textcolor{black}{BindingDB} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Protein-drug
+binding affinity\\\hline
+\end{supertabular}
+\end{flushleft}
