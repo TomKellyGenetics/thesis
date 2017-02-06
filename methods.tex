@@ -12,6 +12,11 @@ Along with databases, it is also becoming common practice for Bioinformatics res
 
 
 \subsubsection{[more detail e.g., TCGA, Reactome]}
+Gene expression data from normal and tumour samples was analysed from publicly available sources, using the TCGA \cite{TCGA2012} and the International Cancer Genome Consortium (ICGC) \cite{Zhang2011} web portals.
+%%The Cancer Genome Altas project supports a wide range of cancers including gene expression for breast invasive adenocarcinoma with 600 samples (63 normal, 534 primary tumour, and 3 metastases) available the AligentG4502 244K cDNA microarray mapping 17811 genes \cite{TCGA2012}. TCGA provides microarray expression data processed with loess normalisation and integrated to give an expression call for each gene. %% Array data removed
+Raw count and RSEM normalised TCGA expression data from Illumina RNA-Seq protocols were available from 1,177 samples (113 normal, 1,057 primary tumour, and 7 metastases) for 20,501 genes. TCGA somatic mutation data for 981 samples (976 primary tumours and 5 metastases) across 25,836 genes were available including 969 samples (964 primary tumours and 5 metastases) with corresponding RNA-Seq expression data and 19,166 genes mapped from Ensembl identifiers to gene symbols, of which 16,156 had corresponding gene expression information.
+
+
 \subsection{Computational Tools and Enabling Biological Research (remove/state assumptions only)}
 %\subsubsection{Computational Tools for Biological Research}
 %In addition to hosting data repositories on the web, tools developed with computational expertise have had wider benefit in  genetics research. One of the main impacts of a techniques developed from computer science is the alignment of reads, to either assemble a genome \textit{de novo} from it's reads or map reads to a pre-existing reference genome. Mapping reads is commonplace to call variants between samples, this is useful for studies of human disease interested in risks of these variants or wider application such as comparing populations or species in an evolution phylogeny. Mapping reads has further utility in functional genetics to identify which regions or a genome are expressed or have DNA methylation. Similarly, mapping is used to map RNA-Seq or Bisulfite-Seq reads to measure gene expression or DNA methylation across the genome in a cohort or sample. While mapping is not performed in this thesis, it has performed an important role in the adoption of genomics in genetics research.
@@ -28,7 +33,17 @@ Another significant development in computer science for bioinformatics is parall
 \subsubsection{Graph Theory, Systems, and Network Biology}
 \subsubsection{Matrix Operations and Pathway “Metagenes”}
 \section{Data Handling}
+
+The TCGA RNA-Seq data were assessed for batch effects using a correlation matrix of the log-transformed raw counts for which a heatmap (Euclidean distance, complete linkage) is shown in Figure \ref{fig:corr_map}. While no major batch effects were detectable between the samples, 9 samples were excluded due to poor correlation with the remaining samples as detailed in Table \ref{tab:qc}. These samples show unusual density plots compared to the rest of the dataset and low mean read count in Figures \ref{fig:density} and \ref{fig:boxplot}. A heatmap showing key clinical properties of these excluded samples and their correlation with other rest of the samples is shown in Figure \ref{fig:corr_map_part}.
+%In both of these cases, a shared tissue source site or patient donor indicates that variations in sample preparation are likely behind the outlying expression profiles. The Christiana Healthcare patients were sequenced in triplicate when replicate samples were rare in this dataset suggesting there were suspected errors in these samples during data generation which have lower mean read count than most of the dataset. %tangent
+%Clinical characteristics over-represented in removed samples were ER+, ductal, state 2, luminal A or basal type tumours but these are the most common in the dataset. %relevance
+After removal of these samples, the TCGA dataset used for analysis consisted of the remaining 1168 samples (from 1040 patients): 1049 tumour samples, 112 normal tissue for matched samples, and 7 metastases.
+
 \subsection{Normalisation (voom)}
+
+Apart from the PAM50 subtyping procedure \cite{Parker2009} which required RSEM normalised data as (J.S. Parker personal communication), the analysis of the RNA-Seq data presented here was based on raw read count data. Raw read counts were log-scaled, samples were trimmed as described above based on a correlation matrix (Euclidean distance), and the final dataset was TMM normalised \cite{Robinson2010} and then processed using the \texttt{voom} function \cite{Law2014} in the \texttt{limma} R package \cite{limma}. Standardised z-scores of the data were used to plot heatmaps on an appropriate scale.
+
+
 \subsection{Sample triage}
 \subsection{SVD/mg}
 \section{Techniques}
@@ -304,6 +319,17 @@ binding affinity\\\hline
 \section{Developing a Synthetic Lethal Detection Methodology}
 \subsection{Rationale and Design of Test}
 \subsection{Synthetic Lethal Detection Method}
+The SLIPT methodology identifies gene expression patterns consistent with synthetic lethal interactions between a query gene and a panel of candidate interacting partners. Gene expression is called low, medium, or high by separating samples into tertiles (3-quantiles) for each gene. Genes with insufficient expression across all samples were excluded by requiring that the first tertile of raw counts is above zero. Then a $\chi^2$ test is performed between the query gene and each candidate partner, the p-values for the $\chi^2$ test were corrected for multiple testing using false discovery rate (FDR) error control to reduce false positives for large candidate gene panels \cite{fdr1995}. Significance was called only if FDR adjusted p-values were below the threshold $p < 0.05$. A synthetic lethal interaction is predicted  (as shown in Figure \ref{fig:SLIPT_Method}) when (i) the $\chi^2$ test is significant; (ii) observed low-query, low-candidate samples are less frequent than expected; and (iii) observed low-query, high-candidate and high-query, low-candidate samples are more frequent than expected.
+%The query and candidate genes are swapped to replicate the directional condition. %redundant
+%Where synthetic lethality is scored SL-Q if it is predicted in query-low samples and SL-C if it is predicted in candidate-low samples (as shown in Figure \ref{fig:SLIPT_Method}). Synthetic lethality is only reported in this text if it meets both of these conditions and a significant p-value where it is scored SL-2. %too detailed
+
+
+%This methodology was adapted to used pathway metagene quantiles rather than gene expression as an input for pathway synthetic lethality testing. The p-values for $\chi^2$ tests were also corrected for multiple testing with the false discovery rate \cite{fdr1995} across all pathways tested from the same database and with significance defined as a FDR adjusted p-values $p < 0.05$ as above.
+
+%mtSLIPT method
+%A similar methodology was developed in both cases to test for synthetic lethality where the query gene has an inactivating mutation in some patients. Since most mutations, particularly in tumour suppressor genes, are deleterious all somatic non-synonymous mutations were counted as mutant and synthetic lethality was tested with the query gene changed accordingly (as shown in Figure \ref{fig:mtSLIPT_Method}. To distinguish these methods they are abbreviated to exprSLIPT and mtSLIPT respectively depending on the molecular property used to define low gene activity of the query gene.
+
+
 \section{Simulations and Modelling Synthetic Lethality in Expression Data}
 \subsection{Synthetic Lethal Modeling}
 \subsection{Simulation Procedure}
@@ -322,3 +348,41 @@ binding affinity\\\hline
 \subsection{plotting}
 \subsection{simulation from graph structures}
 \subsection{igraph methods}
+
+
+%\subsection*{Comparison Subsetting}
+%\subsubsection*{Comparison to Experimental Screen}
+% Comparison to screen validation data utilised primary screen data from a cell line experiment by Telford \textit{et al.} \cite{Telford2015} using the synthetic lethal selection criteria defined by the authors based on gene knockout viability in isogenic MCF10A breast cell lines. A direct comparison was implemented using Venn diagrams from the \texttt{limma} package in R \cite{limma}. This comparison used a `universe' of all 16,298 genes tested by both methods, which had sufficient non-zero variation to define 3-quantiles in the TCGA expression dataset \cite{TCGA2012} and had siRNA targets in the primary screen \cite{Telford2015}, excluding any genes not tested by one of these approaches. A $\chi^2$ test was performed on this reduced universe to test for association between each synthetic lethal identification approach.
+
+%\subsubsection*{Gene Set Analysis}
+%Gene set over-represent\-ation was tested for genes within each sector of the Venn diagram to compare pathways specific to each approach to those identified by both. This over-represent\-ation analysis was performed using the hypergeometric test implemented in R as described below \cite{HyperGeo, R_core}. Further analysis of the intersection of these approaches was performed using the resampling procedure as described below.
+
+%\subsection*{Pathway Analysis}
+%\subsubsection*{Pathway Over-representation Analysis}
+%Pathway over-represent\-ation analysis was performed using the \texttt{phyper} function of the R stats package unless specified otherwise \cite{HyperGeo, R_core}. This performs a hypergeometric test for over-represent\-ation of members of a pathway in a given group of genes as suggested by Rivals \textit{et al.} \cite{Rivals2007}. 1,652 pathways were defined using the Reactome database \cite{Reactome} (version 52). Pathway over-represent\-ation used a `universe' of genes tested by both approaches for the intersection, as in the Venn analysis above, and otherwise used all of the genes tested by the respective approach. 1,030 Reactome pathways were used with a size filtering criteria of containing at least 10 genes and no more than 500 genes, as recommended by Araki \textit{et al.} \cite{genesetdb}.
+
+%\subsubsection*{Pathway Resampling Analysis}
+%Resamping was performed to test whether over-represented pathways were to be expected between the two methods by chance. The number of predicted genes from SLIPT (4,629) was sampled randomly without replacement from the gene `universe' as defined by the Venn diagram in Figure \ref{fig:Venn_allgenes}, and as described above.  This sample was compared to the 2,203 experimental synthetic lethal candidates from screen data \cite{Telford2015} that were tested by SLIPT to resample the intersection between computationally and experimentally identified synthetic lethal candidates. For both the sample from universe gene set and the intersection with experimental screen candidates, a $\chi^2$ test was performed for association with each of the Reactome pathways for a computationally feasible measure of pathway over-represent\-ation.
+
+%This procedure was repeated in parallel over 1 million replicates using the \texttt{snow} and \texttt{Rmpi} R packages \cite{snow, Rmpi} to generate a null distribution of $\chi^2$ values for each Reactome pathway. An estimate of significance for each pathway was generated as a empirical p-value from the proportion of 1 million $\chi^2$ expected values from random samples that exceeded the $\chi^2$ value observed performing the same over-represent\-ation procedure on the predicted synthetic lethal candidates for \textit{CDH1} from SLIPT. Note that the above procedure does not assume a fixed intersection size and the expected distribution also can be compared to the observed number of intersection genes in a similar manner. 
+
+%\subsubsection*{Pathway Metagene Analysis}
+%insert text
+
+%\subsection*{Heatmap Procedure}
+%\subsubsection*{Parameters}
+%Heatmaps were generated in R using modifications to the \texttt{heatmap.2} from the \texttt{gplots} package \cite{gplots} (with annotation modifications documented in the \texttt{heatmap.2x} R package on GitHub: \url{https://github.com/TomKellyGenetics/heatmap.2x}.
+
+%\subsubsection*{Correlation matrix}
+%Pairwise Pearson correlation between samples (log-scale) were plotted with Euclidean distance and complete linkage on a $[-1,1]$ blue-red scale.
+%\subsubsection*{Expression (gene) matrix}
+%Raw (log-scale) read counts or voom normalised counts per gene (as specified) were plotted with correlation (Pearson) distance and complete linkage as normalised z-scores on a $[-3,+3]$ blue-red scale.
+%\subsubsection*{Expression (metagene) matrix}
+%raw (log-scale) read counts or voom normalised counts per gene (as specified) were as normalised z-scores on a $[-3,+3]$ scale and used for generating pathway metagenes which were plotted with Correlation (Pearson) distance and complete linkage on a ranked $[0,1]$ blue-red scale.
+%\subsubsection*{Annotation}
+%TCGA clinical and mutation data is plotted as colour bars above heatmaps on a continuous red-blue spectrum, or as discrete colours as described in legends or figure captions. All clinical and molecular data comes from TCGA \cite{TCGA2012} or ICGC \cite{Zhang2011} sources apart from PAM50 intrinsic subtype which was %<downloaded from the University of California Santa Cruz website from microarray data in 2012> OR 
+%calculated using the PAM50 methodology as described by Parker \textit{et al.} \cite{Parker2009} from RSEM normalised RNA-Seq data using centroids provided by J.S. Parker (personal communication). %in 2015
+%Row annotation bars contain similar colours, which correspond to genes in expression data, factors including genes in pathway datasets, experimental, and computational results again on a red-blue colour spectrum or discrete colours as described accompanying each figure. 
+
+%\subsection*{Implementation}
+%All analyses were performed via R \cite{R_core} and custom shell scripts using local and national computing infrastructure. Novel analysis approaches for synthetic lethality are available in the \texttt{slipt} R package on GitHub (\url{http://github.com/TomKellyGenetics/slipt}) while other analyses used various Bioconductor packages to annotate and process genetic data \cite{Gentleman2004} (\url{http://bioconductor.org}).
