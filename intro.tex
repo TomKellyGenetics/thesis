@@ -322,12 +322,15 @@ The examples above show that high-throughput screens are an effective approach t
 %R code for our synthetic lethal analysis will be avaialable on our \href{https://github.com/TomKellyGenetics/slipt}{GitHub repository} as an R package. 
 
 
-Prediction of gene interaction networks is a feasible alternative to high-throughput screening with biological importance and clinical relevance. There are many existing methods to predict gene networks, as reviewed by \hyperlink{ENREF104}{van Steen (2011)} and \ \hyperlink{ENREF16}{Boucher and Jenna (2013)}, summarised in Table 2 below. However, many of these methods have limitations including the requirement for existing SGI data, several data inputs, and reliability of gene function annotation. Many of the existing methods also assume conservation of individual interactions between species, which has been found not to hold in yeast studies (Dixon\textit{ et al.} 2008). Tissue specificity is important in gene regulation and gene expression, which are used as predictors of genetic interaction. However, tissue specificity of genetic interactions cannot be explored in yeast studies and has not been considered in any of the following studies of multicellular model organisms, human networks, or cancers. Similarly, investigation into tissue specificity of protein-protein interactions (PPIs) , an important predictor of genetic interactions, is difficult given the high-throughput two-hybrid screens occur out of cellular context for multicellular organisms.  
+Prediction of gene interaction networks is a feasible alternative to high-throughput screening with biological importance and clinical relevance. There are many existing methods to predict gene networks, as reviewed by \hyperlink{ENREF104}{van Steen (2011)} and \ \hyperlink{ENREF16}{Boucher and Jenna (2013)}, summarised in Table \ref{tab:methods_model} below. However, many of these methods have limitations including the requirement for existing SGI data, several data inputs, and reliability of gene function annotation. Many of the existing methods also assume conservation of individual interactions between species, which has been found not to hold in yeast studies (Dixon\textit{ et al.} 2008). Tissue specificity is important in gene regulation and gene expression, which are used as predictors of genetic interaction. However, tissue specificity of genetic interactions cannot be explored in yeast studies and has not been considered in any of the following studies of multicellular model organisms, human networks, or cancers. Similarly, investigation into tissue specificity of protein-protein interactions (PPIs) , an important predictor of genetic interactions, is difficult given the high-throughput two-hybrid screens occur out of cellular context for multicellular organisms.  
 
-\textbf{Table 2. }Existing prediction methods for Genetic Interaction Networks in Model Organisms
-\begin{flushleft}
-\tablehead{}
-\begin{supertabular}{m{4.421cm}|m{2.342cm}|m{2.388cm}|m{4.552cm}|m{2.299cm}}
+\begin{table*}[!ht]
+\caption{Existing prediction methods for Genetic Interaction Networks in Model Organisms}
+\label{tab:methods_model}
+%\begin{center}
+\resizebox{ \textwidth}{!}{
+\begin{supertabular}{l|l|l|l|l}
+
 \multicolumn{1}{m{4.421cm}}{\cellcolor{white}\bfseries\color{black}
 Method} &
 \multicolumn{1}{m{2.342cm}}{\cellcolor{white}\color{black}
@@ -374,19 +377,16 @@ Gene Orienteer\\\hline
 &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
 \textit{\textcolor{black}{S. cerevisiae}} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
-\hyperlink{ENREF61}{Le Meur and Gentleman (2008)}}
-
-\color{black}
-\hyperlink{ENREF67}{LeMeur}\hyperlink{ENREF67}{\textit{\textcolor{black}{
-et al.}}}\hyperlink{ENREF67}{ (2014)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{
+\begin{tabular}{l@{}l@{}}\color{black}\hyperlink{ENREF61}{Le Meur and Gentleman (2008)} \\ \color{black}\hyperlink{ENREF67}{LeMeur}\hyperlink{ENREF67}{\textit{\textcolor{black}{et al.}}}\hyperlink{ENREF67}{ (2014)}\end{tabular}}
+&
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
 SLGI(R)\\\hline
 Random Walk &
 GO, PPI, expression &
-\textit{S. cerevisiae}
 
-\textit{C. elegans} &
+\begin{tabular}{l@{}l@{}}\textit{S. cerevisiae} \\ \textit{C. elegans}\end{tabular}
+ &
 \hyperlink{ENREF22}{Chipman and Singh (2009)} &
 ~
 \\\hline
@@ -430,26 +430,25 @@ BiSEp(R)\\\hline
  &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
  &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Discussed by
-\hyperlink{ENREF6}{Babyak (2004)} and \hyperlink{ENREF64}{Lee and
-Marcotte (2009)} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}
+\begin{tabular}{l@{}l@{}}\color{black} Discussed by \hyperlink{ENREF6}{Babyak (2004)} \\and \hyperlink{ENREF64}{Lee and Marcotte (2009)} \end{tabular}
+
+ &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
 \\\hline
-\textbf{Machine Learning as discussed by
-}\hyperlink{ENREF114}{\textbf{Wu}}\hyperlink{ENREF114}{\textbf{\textit{
-et al.}}}\hyperlink{ENREF114}{\textbf{ (2014)}} &
+\begin{tabular}{l@{}l@{}}\color{black} \textbf{Machine Learning} \\as discussed by \hyperlink{ENREF114}{\textbf{Wu}}\hyperlink{ENREF114}{\textbf{\textit{et al.}}}\hyperlink{ENREF114}{\textbf{ (2014)}}  \end{tabular}
+&
 ~
  &
 ~
  &
-\hyperlink{ENREF81}{Qi}\hyperlink{ENREF81}{\textit{ et
-al.}}\hyperlink{ENREF81}{ (2008)}
 
-\hyperlink{ENREF78}{Paladugu}\hyperlink{ENREF78}{\textit{ et
-al.}}\hyperlink{ENREF78}{ (2008)}
-
-\hyperlink{ENREF68}{Li}\hyperlink{ENREF68}{\textit{ et
-al.}}\hyperlink{ENREF68}{ (2011)} &
+\begin{tabular}{l@{}l@{}l@{}}
+\hyperlink{ENREF81}{Qi}\hyperlink{ENREF81}{\textit{ et al.}}\hyperlink{ENREF81}{ (2008)} \\
+\hyperlink{ENREF78}{Paladugu}\hyperlink{ENREF78}{\textit{ et al.}}\hyperlink{ENREF78}{ (2008)} \\
+\hyperlink{ENREF68}{Li}\hyperlink{ENREF68}{\textit{ et al.}}\hyperlink{ENREF68}{ (2011)}
+\end{tabular}
+&
 ~
 \\\hline
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
@@ -467,36 +466,50 @@ Machine Learning Meta-Analysis &
  &
 ~
  &
-\hyperlink{ENREF114}{Wu}\hyperlink{ENREF114}{\textit{ et
-al.}}\hyperlink{ENREF114}{ (2014)} &
+\hyperlink{ENREF114}{Wu}\hyperlink{ENREF114}{\textit{ et al.}}\hyperlink{ENREF114}{ (2014)} &
 MetaSL\\\hline
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
-\textcolor{black}{Flux Variability Analysis}}
-
-{\color{black} \textcolor{black}{Flux Balance Analysis}}
-
-\color{black} \textcolor{black}{Network Simulation} &
+\begin{tabular}{l@{}l@{}l@{}}
+\textcolor{black}{Flux Variability Analysis} \\
+\textcolor{black}{Flux Balance Analysis} \\
+\textcolor{black}{Network Simulation}
+\end{tabular}
+} &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Metabolism &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
-\textit{\textcolor{black}{E. coli}}}
 
-\color{black} \textit{\textcolor{black}{Mycoplasma pneumoniae}} &
+\begin{tabular}{l@{}l@{}}
+\textit{\textcolor{black}{E. coli}} \\
+\color{black} \textit{\textcolor{black}{Mycoplasma pneumoniae}}
+\end{tabular}
+} &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
 \hyperlink{ENREF45}{G\"uell}\hyperlink{ENREF45}{\textit{\textcolor{black}{
 et al.}}}\hyperlink{ENREF45}{ (2014)} &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
 \\\hline
 \end{supertabular}
-\end{flushleft}
+}
+%\end{center}
+\end{table*}
 
+%\begin{flushleft}
+%\resizebox{\textwidth}{!}{
+%\begin{tabular}{m|m|m|m|m}
 
+%\begin{table*}[!ht]
+%\caption{Existing prediction methods for Synthetic Lethality}
+%\label{tab:methods_SL}
+%\begin{center}
+%\resizebox{ \textwidth}{!}{
+%\begin{supertabular}{l|l|l|l|l}
 
-
-\textbf{Table 3. }Existing prediction methods for Synthetic Lethality
-in Cancer
-\begin{flushleft}
-\tablehead{}
-\begin{supertabular}{m{4.421cm}|m{2.342cm}|m{2.388cm}|m{4.552cm}|m{2.299cm}}
+\begin{table*}[!ht]
+\caption{Existing prediction methods for Synthetic Lethality}
+\label{tab:methods_SL}
+%\begin{center}
+\resizebox{ \textwidth}{!}{
+\begin{tabular}{l|l|l|l|l}
 \multicolumn{1}{m{4.421cm}}{\cellcolor{white}\bfseries\color{black}
 Method} &
 \multicolumn{1}{m{2.342cm}}{\cellcolor{white}\color{black}
@@ -517,17 +530,30 @@ et al.}}}\hyperlink{ENREF59}{ (2013)} &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
 \\\hline
 Differential Expression &
-Expression, Mutation &
+\begin{tabular}{l@{}l@{}}
+Expression \\
+Mutation
+\end{tabular}
+&
 \textit{H. sapiens} &
 \hyperlink{ENREF109}{Wang and Simon (2013)} &
 ~
 \\\hline
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
-\textcolor{black}{Comparative Genomics}}
 
-\color{black} \textcolor{black}{Chemical-Genomics} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Yeast SGI,
-Homology &
+\begin{tabular}{l@{}l@{}}
+\textcolor{black}{Comparative Genomics} \\
+\color{black} \textcolor{black}{Chemical-Genomics}
+\end{tabular}
+}
+ &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}
+
+\begin{tabular}{l@{}l@{}}
+Yeast SGI \\
+Homology
+\end{tabular}
+ &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
 \textit{\textcolor{black}{H. sapiens}} &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
@@ -535,7 +561,11 @@ Homology &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
 \\\hline
 Comparative Genomics &
-Yeast SGI, Homology &
+\begin{tabular}{l@{}l@{}}
+Yeast SGI \\
+Homology
+\end{tabular}
+ &
 \textit{H. sapiens} &
 \hyperlink{ENREF30}{Deshpande}\hyperlink{ENREF30}{\textit{ et
 al.}}\hyperlink{ENREF30}{ (2013)} &
@@ -557,8 +587,9 @@ Machine Learning &
  &
 ~
  &
-Discussed by \hyperlink{ENREF6}{Babyak (2004)} and
-\hyperlink{ENREF64}{Lee and Marcotte (2009)} &
+\begin{tabular}{l@{}l@{}}\color{black} Discussed by \hyperlink{ENREF6}{Babyak (2004)} \\and \hyperlink{ENREF64}{Lee and Marcotte (2009)} \end{tabular}
+
+ &
 ~
 \\\hline
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
@@ -583,7 +614,11 @@ Syn-Lethality\\\hline
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
 \textcolor{black}{Meta-Analysis} &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
-Meta-Analysis Machine Learning &
+\begin{tabular}{l@{}l@{}}
+Meta-Analysis \\
+Machine Learning
+\end{tabular}
+ &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
  &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
@@ -615,26 +650,29 @@ Data-Mining &
  &
 ~
  &
-\hyperlink{ENREF53}{Jerby-Arnon}\hyperlink{ENREF53}{\textit{ et
-al.}}\hyperlink{ENREF53}{ (2014)}
+\begin{tabular}{l@{}l@{}l@{}l@{}}
+\hyperlink{ENREF53}{Jerby-Arnon}\hyperlink{ENREF53}{\textit{ et al.}}\hyperlink{ENREF53}{ (2014)}\\
+\hyperlink{ENREF85}{Ryan}\hyperlink{ENREF85}{\textit{ et al.}}\hyperlink{ENREF85}{ (2014)} \\
+\hyperlink{ENREF27}{Crunkhorn (2014)} \\
+\hyperlink{ENREF70}{Lokody (2014)}\end{tabular}
 
-\hyperlink{ENREF85}{Ryan}\hyperlink{ENREF85}{\textit{ et
-al.}}\hyperlink{ENREF85}{ (2014)}
-
-\hyperlink{ENREF27}{Crunkhorn (2014)}
-
-\hyperlink{ENREF70}{Lokody (2014)} &
+&
 DAISY (method)\\\hline
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
-\textcolor{black}{Cancer Genome Evolution}}
 
-{\color{black} \textcolor{black}{Hypothesis Test}}
-
-\color{black} \textcolor{black}{Machine Learning} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black} Expression,
-DNA CNV, }
-
-\color{black} Known SL &
+\begin{tabular}{l@{}l@{}l@{}}
+\textcolor{black}{Cancer Genome Evolution} \\
+{\color{black} \textcolor{black}{Hypothesis Test}} \\
+\color{black} \textcolor{black}{Machine Learning}
+\end{tabular}
+} &
+\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{
+\begin{tabular}{l@{}l@{}l@{}}
+Expression \\
+DNA CNV \\
+Known SL
+\end{tabular}
+} &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
 \textit{\textcolor{black}{H. sapiens}} &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
@@ -643,13 +681,19 @@ et al.}}}\hyperlink{ENREF74}{ (2015)} &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
 \\\hline
 Chi-Squared Test &
-Expression, DNA CNV, Methylation, or Mutation &
+\begin{tabular}{l@{}l@{}l@{}}
+Expression \\
+DNA CNV \\
+Methylation or Mutation
+\end{tabular}
+ &
 \textit{H. sapiens} &
-Tom Kelly, Parry Guilford, and Mik Black
-
-Dissertation (Kelly 2013)
-
-Manuscript in Preparation &
+\begin{tabular}{l@{}l@{}l@{}}
+Tom Kelly, Parry Guilford, and Mik Black \\
+Dissertation (Kelly 2013) \\
+Manuscript in Preparation (2015-2017)
+\end{tabular}
+&
 SLIPT\\\hline
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
 \textcolor{black}{Survival Analysis} &
@@ -661,9 +705,10 @@ Clinical &
 (personal communication) &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
 \\\hline
-\end{supertabular}
-\end{flushleft}
-
+\end{tabular}
+}
+%\end{center}
+\end{table*}
 
 There are a number of existing computational methods for predicting synthetic lethal gene pairs. While these demonstrate the power and need for predictions of synthetic lethality in human and cancer contexts, limitations of previous methods \ could be met with a different approach. For instance, computational approaches to synthetic lethal prediction are often difficult to interpret, replicate for new genes, or reliant on data types not available for genes that other cancer researchers work on.  
 
@@ -677,14 +722,16 @@ Differential gene expression has also been explored to predict synthetic lethal 
 
 Another approach to systematic synthetic lethality discovery specific to human cancer (in contrast to the plethora of yeast synthetic lethality data) was to build a database as done by \hyperlink{ENREF69}{Li}\hyperlink{ENREF69}{\textit{ et al.}}\hyperlink{ENREF69}{ (2014)}. In their relational database, called {\textquotedblleft}Syn-lethality{\textquotedblright}, they have curated both known experimentally discovered synthetic lethal pairs in humans (113 pairs) from the literature and those predicted from synthetic lethality between orthologous genes in \textit{S. cerevisiae} yeast (1114 pairs). This knowledge-based database is the first known dedicated to human cancer synthetic lethal interactions and integrates gene functional, annotation, pathway and molecular mechanism data with experimental and predicted synthetic lethal gene pairs. This combination of data sources is intended to tackle the trade-off between more conclusive synthetic lethal experiments in yeast and more clinically relevant synthetic lethal experiments in human cancer models, such as RNAi, especially when high-throughput screens are costly and prone to false positives in either system and difficult to replicate across gene backgrounds. This database centralises a wealth of knowledge scattered in the literature including cancer relevant genes (\textit{BRCA1}, \textit{BRCA2}, \textit{PARP1}, \textit{PTEN}, \textit{VHL}, \textit{MYC}, \textit{EGFR}, \textit{MSH2}, \textit{KRAS}, and \textit{TP53}) and is publicly available as a Java App. However, the methodology was not released to replicate or add to the findings with new datasets. Suggested future directions were promising, such as constructing networks of known synthetic lethality, applying known synthetic lethality to cancer treatment, data mining, replicating the approach for synthetic lethality in model organisms, signalling pathways, and develop a complete global network in human cancer or yeast (both of which are still incomplete with experimental data).  
 
-From the same group, \hyperlink{ENREF114}{Wu}\hyperlink{ENREF114}{\textit{ et al.}}\hyperlink{ENREF114}{ (2014)} developed a meta-analysis method (based on the machine learning methods in Table 4) for synthetic lethal gene pairs relevant to developing selective drugs against human cancer. They note that computational approaches scale-up across the genome at lower cost than experimental screens but existing methods are limited by noise and overfitting to a particular predictive feature. Their {\textquotedblleft}metaSL{\textquotedblright} approach performs well with an AUROC of 0.871 with the claimed strengths of existing machine learning methods and the results are shared on the web. However, once again, the method is not available for analysis of other genes studied by the cancer research community and the method lacks mechanisms, reproducibility, and interpretation by researchers. While machine learning has great potential as a predictor, it is difficult to interpret which features are being used for prediction and their mechanistic significance, particularly for biologists with limited exposure to computational concepts.  
+From the same group, \hyperlink{ENREF114}{Wu}\hyperlink{ENREF114}{\textit{ et al.}}\hyperlink{ENREF114}{ (2014)} developed a meta-analysis method (based on the machine learning methods in Table \ref{tab:tab:methods_meta}) for synthetic lethal gene pairs relevant to developing selective drugs against human cancer. They note that computational approaches scale-up across the genome at lower cost than experimental screens but existing methods are limited by noise and overfitting to a particular predictive feature. Their {\textquotedblleft}metaSL{\textquotedblright} approach performs well with an AUROC of 0.871 with the claimed strengths of existing machine learning methods and the results are shared on the web. However, once again, the method is not available for analysis of other genes studied by the cancer research community and the method lacks mechanisms, reproducibility, and interpretation by researchers. While machine learning has great potential as a predictor, it is difficult to interpret which features are being used for prediction and their mechanistic significance, particularly for biologists with limited exposure to computational concepts.  
 
 Focusing on the potential for synthetic lethality to be an effective anti-cancer drug target, \hyperlink{ENREF117}{Zhang}\hyperlink{ENREF117}{\textit{ et al.}}\hyperlink{ENREF117}{ (2015)} used modelling signalling pathways to identify synthetic lethal interactions between known drug targets and cancer genes. A computational approach was again used here to tackle the limitations of experimental RNAi screens such as scale, instability of knockdown, and off-target effects. Strangely, they seemed more concerned with the needs of the pharmaceutical companies than those of the patients. However, their {\textquotesingle}hybrid{\textquotesingle} method of a data-driven model and known signalling pathways showed potential as a means to predict cell death in single and combination gene knockouts. They used time series gene expression data (Lee\textit{ et al.} 2012) and pathways (the Gene Ontology system). This approach successfully detected many known essential genes in the human gene essentiality database, known synthetic lethal partners in the Syn-Lethality database, and predicted novel synthetic lethal gene pairs. Novel results were enriched for \textit{TP53} and AKT synthetic lethal partners, genes known to be important in many cancers but also predicted to be essential by single gene disruption having a large impact on the signalling pathways. Notably, they claim to be able to detect all 3 types of functionally related pathways or protein complexes. The results are consistent with the experimental results in the literature but the group has not shown validation for novel synthetic lethal interactions.  
 
-\textbf{Table 4. }Existing Computational Methods used for meta-analysis by \hyperlink{ENREF114}{Wu}\hyperlink{ENREF114}{\textit{ et al.}}\hyperlink{ENREF114}{ (2014)}
-\begin{flushleft}
-\tablehead{}
-\begin{supertabular}{m{4.421cm}|m{2.342cm}|m{2.388cm}|m{4.552cm}|m{2.299cm}}
+\begin{table*}[!ht]
+\caption{Existing Computational Methods used for meta-analysis by Wu et al. (2014)}
+\label{tab:methods_meta}
+%\begin{center}
+\resizebox{ \textwidth}{!}{
+\begin{tabular}{l|l|l|l|l}
 \multicolumn{1}{m{4.421cm}}{\cellcolor{white}\bfseries\color{black}
 Method} &
 \multicolumn{1}{m{2.342cm}}{\cellcolor{white}\color{black}
@@ -825,8 +872,10 @@ Model &
 et al.}}}\hyperlink{ENREF117}{ (2015)} &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
 \\\hline
-\end{supertabular}
-\end{flushleft}
+\end{tabular}
+}
+%\end{center}
+\end{table*}
 
 While the mathematical reasoning and algorithms are given, code was not released and it is unlikely that the wider biologically trained research community will be able to reproduce or apply the findings beyond the signalling pathways discussed by \hyperlink{ENREF117}{Zhang}\hyperlink{ENREF117}{\textit{ et al.}}\hyperlink{ENREF117}{ (2015)}. The authors note limitations as directions for further research including the potential of their method to detect mechanisms, types of interactions, impact of activation or inhibition of proteins, and improve performance with a Boolean network or differential equation approach, all of which have been claimed but not shown. Further, this approach is limited by existing pathway data with limited scale, scope, and reliability coming from a range of sources. So far, modelling has been restricted to signalling pathways which are immediately applicable to cancer; while important, the approach lacks broader application to other diseases and pathway types. Zhang et al. (2015) also lack validation, replication, or application of findings and are heavily reliant on existing literature for testing their predictions.  
 

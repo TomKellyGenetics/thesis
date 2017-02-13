@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  13 FEB 2017 00:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  13 FEB 2017 13:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -229,6 +229,9 @@ Package: supertabular 2004/02/20 v4.1e the supertabular environment
 \ST@dimen=\dimen119
 \ST@pbox=\box26
 )
+(/usr/share/texlive/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2014/10/28 v2.10 `tabularx' package (DPC)
+
 (/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen120
@@ -237,25 +240,33 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip49
 \backup@length=\skip50
 )
+\TX@col@width=\dimen122
+\TX@old@table=\dimen123
+\TX@old@col=\dimen124
+\TX@target=\dimen125
+\TX@delta=\dimen126
+\TX@cols=\count104
+\TX@ftn=\toks18
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
-\c@tracingmulticols=\count104
+\c@tracingmulticols=\count105
 \mult@box=\box27
-\multicol@leftmargin=\dimen122
-\c@unbalance=\count105
-\c@collectmore=\count106
-\doublecol@number=\count107
-\multicoltolerance=\count108
-\multicolpretolerance=\count109
-\full@width=\dimen123
-\page@free=\dimen124
-\premulticols=\dimen125
-\postmulticols=\dimen126
+\multicol@leftmargin=\dimen127
+\c@unbalance=\count106
+\c@collectmore=\count107
+\doublecol@number=\count108
+\multicoltolerance=\count109
+\multicolpretolerance=\count110
+\full@width=\dimen128
+\page@free=\dimen129
+\premulticols=\dimen130
+\postmulticols=\dimen131
 \multicolsep=\skip51
 \multicolbaselineskip=\skip52
 \partial@page=\box28
 \last@line=\box29
-\maxbalancingoverflow=\dimen127
+\maxbalancingoverflow=\dimen132
 \mult@rightbox=\box30
 \mult@grightbox=\box31
 \mult@gfirstbox=\box32
@@ -277,18 +288,18 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \@tempa=\box48
 \@tempa=\box49
 \@tempa=\box50
-\c@columnbadness=\count110
-\c@finalcolumnbadness=\count111
-\last@try=\dimen128
-\multicolovershoot=\dimen129
-\multicolundershoot=\dimen130
+\c@columnbadness=\count111
+\c@finalcolumnbadness=\count112
+\last@try=\dimen133
+\multicolovershoot=\dimen134
+\multicolundershoot=\dimen135
 \mult@nat@firstbox=\box51
 \colbreak@box=\box52
-\mc@col@check@num=\count112
+\mc@col@check@num=\count113
 )
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-\everycr=\toks18
+\everycr=\toks19
 \minrowclearance=\skip53
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
@@ -375,49 +386,49 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/nomencl/nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen131
-\nom@tempdim=\dimen132
+\nomlabelwidth=\dimen136
+\nom@tempdim=\dimen137
 \nomitemsep=\skip54
 ) (./thesis.aux
 (./intro.aux) (./methods.aux) (./chapt3.aux) (./chapt4.aux) (./chapt5.aux)
 (./chapt6.aux) (./conclusion.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 69.
-LaTeX Font Info:    ... okay on input line 69.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 69.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 69.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 70.
+LaTeX Font Info:    ... okay on input line 70.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 70.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 69.
+LaTeX Font Info:    ... okay on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count113
-\scratchdimen=\dimen133
+\scratchcounter=\count114
+\scratchdimen=\dimen138
 \scratchbox=\box53
-\nofMPsegments=\count114
-\nofMParguments=\count115
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count116
-\MPscratchDim=\dimen134
-\MPnumerator=\count117
-\makeMPintoPDFobject=\count118
-\everyMPtoPDFconversion=\toks20
+\nofMPsegments=\count115
+\nofMParguments=\count116
+\everyMPshowfont=\toks20
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen139
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
+\everyMPtoPDFconversion=\toks21
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -434,7 +445,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box54
-Package hyperref Info: Link coloring OFF on input line 69.
+Package hyperref Info: Link coloring OFF on input line 70.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -442,11 +453,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count119
+\c@section@level=\count120
 )
-LaTeX Info: Redefining \ref on input line 69.
-LaTeX Info: Redefining \pageref on input line 69.
-LaTeX Info: Redefining \nameref on input line 69.
+LaTeX Info: Redefining \ref on input line 70.
+LaTeX Info: Redefining \pageref on input line 70.
+LaTeX Info: Redefining \nameref on input line 70.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write3
@@ -456,40 +467,40 @@ LaTeX Info: Redefining \nameref on input line 69.
 File: logo.pdf Graphic file (type pdf)
 
 <use logo.pdf>
-Package pdftex.def Info: logo.pdf used on input line 76.
+Package pdftex.def Info: logo.pdf used on input line 77.
 (pdftex.def)             Requested size: 39.35307pt x 56.9055pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--76
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 
  []
 
@@ -497,11 +508,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--76
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./logo.pdf>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 76.
+(Font)              <12> on input line 77.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 76.
+(Font)              <8> on input line 77.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 76.
+(Font)              <6> on input line 77.
  [1
 
 ]
@@ -576,7 +587,7 @@ Overfull \hbox (14.29991pt too wide) in paragraph at lines 188--188
 []\OT1/cmr/bx/n/17.28 A Syn-thetic Lethal Ap-proach to Can-cer Medicine 
  []
 
-[23] <Costanzo_2011_SL_mega_no_border.pdf, id=1094, 456.12408pt x 201.64696pt>
+[23] <Costanzo_2011_SL_mega_no_border.pdf, id=1102, 456.12408pt x 201.64696pt>
 File: Costanzo_2011_SL_mega_no_border.pdf Graphic file (type pdf)
 
 <use Costanzo_2011_SL_mega_no_border.pdf>
@@ -584,362 +595,57 @@ Package pdftex.def Info: Costanzo_2011_SL_mega_no_border.pdf used on input line
  208.
 (pdftex.def)             Requested size: 456.12296pt x 201.64645pt.
  [24] [25 <./Costanzo_2011_SL_mega_no_border.pdf>] [26] [27] <SL_Concept_no_bor
-der.png, id=1130, 803.0pt x 602.25pt>
+der.png, id=1138, 803.0pt x 602.25pt>
 File: SL_Concept_no_border.png Graphic file (type png)
 
 <use SL_Concept_no_border.png>
 Package pdftex.def Info: SL_Concept_no_border.png used on input line 244.
 (pdftex.def)             Requested size: 802.99805pt x 602.24852pt.
  [28] [29 <./SL_Concept_no_border.png>] [30]
-[31] [32] [33] [34] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 339--339
-[]\OT1/cmr/bx/n/12 Tool Of-
- []
+[31] [32] [33] [34] [35] [36] [37] [38]
 
+LaTeX Warning: Reference `tab:tab:methods_meta' on page 39 undefined on input l
+ine 725.
 
-Underfull \hbox (badness 10000) in paragraph at lines 341--341
-[][]\OT1/cmr/m/n/12 Between Path-ways
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--367
-[]\OT1/cmr/m/n/12 SGI,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--367
-\OT1/cmr/m/n/12 PPI, co-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 367--367
-\OT1/cmr/m/n/12 expression,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 369--369
-[][]\OT1/cmr/m/n/12 Zhong and Stern-berg
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
-[]\OT1/cmr/m/n/12 SGI, PPI,
- []
-
-
-Overfull \hbox (75.88321pt too wide) in paragraph at lines 330--384
-[]  
- []
-
-[36]
-Underfull \hbox (badness 10000) in paragraph at lines 390--390
-[][]\OT1/cmr/m/n/12 Chipman and Singh
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 396--396
-[]\OT1/cmr/m/n/12 Co-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 396--396
-\OT1/cmr/m/n/12 expression,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 396--396
-\OT1/cmr/m/n/12 PPI, text
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 396--396
-\OT1/cmr/m/n/12 min-ing,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--405
-[]\OT1/cmr/m/n/12 Co-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 405--405
-\OT1/cmr/m/n/12 expression,
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 405--405
-\OT1/cmr/m/n/12 PPI, phe-no-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 412--413
-[]\OT1/cmr/m/n/12 GO, SGI,
- []
-
-
-Underfull \hbox (badness 1320) in paragraph at lines 412--413
-\OT1/cmr/m/n/12 PPI, phe-no-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 433--435
-[]\OT1/cmr/m/n/12 Discussed by []Babyak
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 433--435
-\OT1/cmr/m/n/12 (2004)[] and []Lee and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 483--483
-[][]\OT1/cmr/m/it/12 Mycoplasma
- []
-
-
-Overfull \hbox (75.88321pt too wide) in paragraph at lines 384--490
-[]  
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 508--508
-[]\OT1/cmr/bx/n/12 Tool Of-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 520--520
-[]\OT1/cmr/m/n/12 Expression,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 529--530
-[]\OT1/cmr/m/n/12 Yeast SGI,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 534--534
-[][]\OT1/cmr/m/n/12 Heiskanen and Ait-
- []
-
-
-Overfull \hbox (75.88321pt too wide) in paragraph at lines 499--536
-[]  
- []
-
-[37]
-Underfull \hbox (badness 10000) in paragraph at lines 538--538
-[]\OT1/cmr/m/n/12 Yeast SGI,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
-[]\OT1/cmr/m/n/12 Discussed by []Babyak
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 560--561
-\OT1/cmr/m/n/12 (2004)[] and []Lee and
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 582--582
-[]\OT1/cmr/m/n/12 Syn-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--586
-[]\OT1/cmr/m/n/12 Meta-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--586
-\OT1/cmr/m/n/12 Analysis
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 586--586
-\OT1/cmr/m/n/12 Ma-chine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 618--620
-[][]\OT1/cmr/m/n/12 Jerby-Arnon[][] \OT1/cmr/m/it/12 et al.[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 627--627
-[]\OT1/cmr/m/n/12 DAISY
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 634--636
-[]\OT1/cmr/m/n/12 Expression,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 646--646
-[]\OT1/cmr/m/n/12 Expression,
- []
-
-
-Underfull \hbox (badness 4120) in paragraph at lines 646--646
-\OT1/cmr/m/n/12 DNA CNV,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 646--646
-\OT1/cmr/m/n/12 Methy-la-tion,
- []
-
-
-Underfull \hbox (badness 1286) in paragraph at lines 652--652
-[]\OT1/cmr/m/n/12 Manuscript in Prepa-ra-
- []
-
-
-Overfull \hbox (75.88321pt too wide) in paragraph at lines 536--653
-[]  
- []
-
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 656--657
-[]\OT1/cmr/m/n/12 Expression,
- []
-
-
-Overfull \hbox (75.88321pt too wide) in paragraph at lines 653--665
-[]  
- []
-
-[39] [40] [41]
-Underfull \hbox (badness 10000) in paragraph at lines 696--696
-[]\OT1/cmr/bx/n/12 Tool Of-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 699--700
-[]\OT1/cmr/m/n/12 Machine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 710--710
-[]\OT1/cmr/m/n/12 Machine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 720--721
-[]\OT1/cmr/m/n/12 Machine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 732--732
-[]\OT1/cmr/m/n/12 Machine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 742--743
-[]\OT1/cmr/m/n/12 Machine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
-[]\OT1/cmr/m/n/12 Machine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 764--765
-[]\OT1/cmr/m/n/12 Machine
- []
-
-
-Underfull \hbox (badness 7888) in paragraph at lines 775--775
-[]\OT1/cmr/m/n/12 Classification via Re-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 776--776
-[]\OT1/cmr/m/n/12 Machine
- []
-
-
-Overfull \hbox (75.88321pt too wide) in paragraph at lines 687--783
-[]  
- []
-
-[42]
-Underfull \hbox (badness 10000) in paragraph at lines 786--787
-[]\OT1/cmr/m/n/12 Machine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 795--795
-[]\OT1/cmr/m/n/12 Machine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 801--801
-[][]\OT1/cmr/m/n/12 Multi-Network Multi-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 802--803
-[]\OT1/cmr/m/n/12 Machine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 812--812
-[]\OT1/cmr/m/n/12 Machine
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 819--820
-[]\OT1/cmr/m/n/12 Pathway
- []
-
-
-Overfull \hbox (75.88321pt too wide) in paragraph at lines 783--829
-[]  
- []
-
-[43] [44] [45]
+[39] [40] [41] [42] [43]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
- [46] [47]
+ [44] [45]
 
-Package natbib Warning: Citation `Hanahan2011' on page 48 undefined on input li
-ne 870.
+Package natbib Warning: Citation `Hanahan2011' on page 46 undefined on input li
+ne 919.
 
-[48]
-Overfull \hbox (57.87178pt too wide) in paragraph at lines 877--878
+[46]
+Overfull \hbox (57.87178pt too wide) in paragraph at lines 926--927
 []\OT1/cmr/m/n/12 HDGC af-fects less than 1 in a mil-lion peo-ple glob-ally (GL
 OBO-CAN at http://globocan.iarc.fr/)
  []
 
-[49] [50]
+[47] [48]
 
-Package natbib Warning: Citation `Chen2014' on page 51 undefined on input line 
-895.
-
-
-Package natbib Warning: Citation `Chen2014' on page 51 undefined on input line 
-895.
+Package natbib Warning: Citation `Chen2014' on page 49 undefined on input line 
+944.
 
 
-Package natbib Warning: Citation `Clark2004' on page 51 undefined on input line
- 897.
+Package natbib Warning: Citation `Chen2014' on page 49 undefined on input line 
+944.
 
-[51] [52]) [53]
+
+Package natbib Warning: Citation `Clark2004' on page 49 undefined on input line
+ 946.
+
+[49]) [50]
 \openout2 = `methods.aux'.
 
  (./methods.tex
 Chapter 2.
-[54
+[51
 
 
 
 ]
 
-Package natbib Warning: Citation `Zhang2011' on page 55 undefined on input line
+Package natbib Warning: Citation `Zhang2011' on page 52 undefined on input line
  15.
 
 
@@ -948,7 +654,7 @@ Overfull \hbox (5.75554pt too wide) in paragraph at lines 15--18
  the In-ter-na-tional Can-cer Genome
  []
 
-[55]
+[52]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 27.
@@ -960,31 +666,31 @@ Missing character: There is no â in font cmbx12!
 Missing character: There is no € in font cmbx12!
 Missing character: There is no  in font cmbx12!
 
-LaTeX Warning: Reference `fig:corr_map' on page 56 undefined on input line 37.
+LaTeX Warning: Reference `fig:corr_map' on page 53 undefined on input line 37.
 
 
-LaTeX Warning: Reference `tab:qc' on page 56 undefined on input line 37.
+LaTeX Warning: Reference `tab:qc' on page 53 undefined on input line 37.
 
 
-LaTeX Warning: Reference `fig:density' on page 56 undefined on input line 37.
+LaTeX Warning: Reference `fig:density' on page 53 undefined on input line 37.
 
 
-LaTeX Warning: Reference `fig:boxplot' on page 56 undefined on input line 37.
+LaTeX Warning: Reference `fig:boxplot' on page 53 undefined on input line 37.
 
 
-LaTeX Warning: Reference `fig:corr_map_part' on page 56 undefined on input line
+LaTeX Warning: Reference `fig:corr_map_part' on page 53 undefined on input line
  37.
 
-[56]
+[53]
 
-Package natbib Warning: Citation `Robinson2010' on page 57 undefined on input l
+Package natbib Warning: Citation `Robinson2010' on page 54 undefined on input l
 ine 44.
 
 
-Package natbib Warning: Citation `Law2014' on page 57 undefined on input line 4
+Package natbib Warning: Citation `Law2014' on page 54 undefined on input line 4
 4.
 
-[57] [58] [59]
+[54] [55] [56]
 Underfull \hbox (badness 10000) in paragraph at lines 113--113
 []\OT1/cmr/m/n/10 Metabolite or
  []
@@ -1009,7 +715,7 @@ Overfull \hbox (37.84726pt too wide) in paragraph at lines 77--160
 []  
  []
 
-[60]
+[57]
 Underfull \hbox (badness 10000) in paragraph at lines 202--202
 []\OT1/cmr/m/n/12 Encyclopaedia of
  []
@@ -1054,7 +760,7 @@ Overfull \hbox (69.14502pt too wide) in paragraph at lines 178--237
 []  
  []
 
-[61]
+[58]
 Underfull \hbox (badness 10000) in paragraph at lines 239--239
 \OT1/cmr/m/n/12 triev-ing in-ter-act-ing
  []
@@ -1119,7 +825,7 @@ Overfull \hbox (69.14502pt too wide) in paragraph at lines 237--313
 []  
  []
 
-[62]
+[59]
 Chapter 3.
 
 Overfull \hbox (17.95201pt too wide) in paragraph at lines 319--319
@@ -1127,7 +833,7 @@ Overfull \hbox (17.95201pt too wide) in paragraph at lines 319--319
  []
 
 
-LaTeX Warning: Reference `fig:SLIPT_Method' on page 63 undefined on input line 
+LaTeX Warning: Reference `fig:SLIPT_Method' on page 60 undefined on input line 
 322.
 
 
@@ -1141,25 +847,25 @@ Overfull \hbox (31.1149pt too wide) in paragraph at lines 338--338
 y[+dir?] 
  []
 
-) [63
+) [60
 
-] [64]
+] [61]
 \openout2 = `chapt3.aux'.
 
  (./chapt3.tex
 Chapter 4.
-[65
+[62
 
 
 
-] [66]
+] [63]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [67]
+ [64]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ˜ in font cmr12!
@@ -1172,7 +878,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [68]
+ [65]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ˜ in font cmr12!
@@ -1182,14 +888,14 @@ Missing character: There is no ™ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [69]
+ [66]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [70] [71]
+ [67] [68]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ˜ in font cmr12!
@@ -1202,7 +908,7 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [72] [73] [74] [75] [76] [77] [78]
+ [69] [70] [71] [72] [73] [74] [75]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no œ in font cmr12!
@@ -1215,7 +921,7 @@ Missing character: There is no œ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no  in font cmr12!
- [79]
+ [76]
 Overfull \hbox (1.76003pt too wide) in paragraph at lines 141--141
 []\OT1/cmr/bx/n/17.28 Permutation or Re-Sampling of genes for path-
  []
@@ -1226,7 +932,7 @@ Overfull \hbox (20.81776pt too wide) in paragraph at lines 149--150
 ys by gene set over-representation,
  []
 
-[80] [81] [82]
+[77] [78] [79]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ˜ in font cmr12!
@@ -1235,21 +941,21 @@ Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
- [83]) [84]
+ [80]) [81]
 \openout2 = `chapt4.aux'.
 
  (./chapt4.tex
 Chapter 5.
-[85
+[82
 
 
 
-]) [86] [87]
+]) [83] [84]
 \openout2 = `chapt5.aux'.
 
  (./chapt5.tex
 Chapter 6.
-[88
+[85
 
 
 
@@ -1272,28 +978,28 @@ Missing character: There is no ˜ in font cmr12!
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
- [89] [90]
+ [86] [87]
 Overfull \hbox (11.61197pt too wide) in paragraph at lines 34--34
 []\OT1/cmr/bx/n/17.28 Developing a Syn-thetic Lethal de-tec-tion method-
  []
 
-[91] [92] [93]
+[88] [89] [90]
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
 Missing character: There is no Â in font cmr12!
 Missing character: There is no ­ in font cmr12!
- [94] [95] [96] [97] [98] [99]
+ [91] [92] [93] [94] [95] [96]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ™ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
- [100] [101]) [102]
+ [97] [98]) [99]
 \openout2 = `chapt6.aux'.
 
  (./chapt6.tex
 Chapter 7.
-) [103
+) [100
 
 
 
@@ -1302,44 +1008,44 @@ Chapter 7.
 
  (./conclusion.tex
 Chapter 8.
-) [104
+) [101
 
 
 
 ] (./thesis.bbl
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
- [105
+ [102
 
 
 
-] [106])
+] [103])
 
 Package natbib Warning: There were undefined citations.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
-[107]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
+[104]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
  (./thesis.aux (./intro.aux) (./methods.aux) (./chapt3.aux) (./chapt4.aux) (./c
 hapt5.aux) (./chapt6.aux) (./conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 94F0B70CE83007CA9180A7FC6EF73085;14313.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 7560 strings out of 494497
- 107640 string characters out of 6172400
- 202723 words of memory out of 5000000
- 10463 multiletter control sequences out of 15000+600000
+ 7609 strings out of 494497
+ 108269 string characters out of 6172400
+ 229687 words of memory out of 5000000
+ 10509 multiletter control sequences out of 15000+600000
  10678 words of font info for 37 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 34i,12n,35p,2164b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,17n,35p,2164b,445s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{ENREF2} has been referenced but does not exist, r
 eplaced by a fixed one
 
@@ -1524,10 +1230,10 @@ msfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/
 share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb>
-Output written on thesis.pdf (122 pages, 641557 bytes).
+Output written on thesis.pdf (119 pages, 639681 bytes).
 PDF statistics:
- 1971 PDF objects out of 2073 (max. 8388607)
- 1805 compressed objects within 19 object streams
+ 1952 PDF objects out of 2073 (max. 8388607)
+ 1790 compressed objects within 18 object streams
  382 named destinations out of 1000 (max. 500000)
  1400 words of extra memory for PDF output out of 10000 (max. 10000000)
 
