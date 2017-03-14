@@ -42,6 +42,7 @@
 \usepackage{colortbl}
 \usepackage{textcomp}
 \usepackage{nomencl}
+
 \usepackage{tikz} %arrows
 \usepackage{mathtools}
 \usepackage{pstricks}
@@ -52,10 +53,6 @@
 \usepackage{multirow}
 %\usepackage{booktabs}
 \usepackage{longtable}
-
-%\newcommand\cropped[1]{%
-%    \immediate\write{convert -trim #1.png #1cropped.png}%
-%    \includegraphics[width=\linewidth]{#1cropped.png}}
 
 %%
 %% Set title, author and date.
@@ -88,11 +85,11 @@
 %%
 \setcounter{tocdepth}{4} %%display subsubsubheadings
 
-\frontstuff
+%\frontstuff
 
-%\tableofcontents
-%\listoffigures
-%\listoftables
+\tableofcontents
+\listoffigures
+\listoftables
 
 %%
 %% Set to one-and-a-half line-spacing
@@ -105,26 +102,7 @@
 %%
 
 %%intro & lit review
-\include{intro}
-%\include{lit_review}
-
-%methods
 \include{methods}
-
-%slipt
-\include{chapt3}
-
-%pathway structure
-\include{chapt4}
-
-%simulations
-\include{chapt5}
-
-%discussion
-\include{chapt6}
-
-%conclusion
-\include{conclusion}
 
 %%
 %% Make certain the ``references'' section begins on a recto page when

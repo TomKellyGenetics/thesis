@@ -11,52 +11,48 @@ A level-1 auxiliary file: conclusion.aux
 The style file: otago.bst
 Database file #1: thesis.bib
 Warning--I didn't find a database entry for "Hanahan2011"
-Warning--I didn't find a database entry for "Chen2014"
 Warning--I didn't find a database entry for "Clark2004"
-Warning--I didn't find a database entry for "Zhang2011"
-Warning--I didn't find a database entry for "Robinson2010"
-Warning--I didn't find a database entry for "Law2014"
-Warning--no number and no volume in Telford2015
-Warning--page numbers missing in Telford2015
-You've used 23 entries,
+Warning--empty organization in safe
+Warning--empty organization in gplots
+You've used 38 entries,
             2855 wiz_defined-function locations,
-            798 strings with 11005 characters,
-and the built_in function-call counts, 25641 in all, are:
-= -- 1672
-> -- 3106
+            892 strings with 14202 characters,
+and the built_in function-call counts, 40805 in all, are:
+= -- 2699
+> -- 4849
 < -- 0
-+ -- 1022
-- -- 1054
-* -- 2923
-:= -- 4916
-add.period$ -- 69
-call.type$ -- 23
-change.case$ -- 259
-chr.to.int$ -- 23
-cite$ -- 25
-duplicate$ -- 410
-empty$ -- 989
-format.name$ -- 1134
-if$ -- 4615
++ -- 1604
+- -- 1650
+* -- 4583
+:= -- 7821
+add.period$ -- 115
+call.type$ -- 38
+change.case$ -- 411
+chr.to.int$ -- 38
+cite$ -- 40
+duplicate$ -- 668
+empty$ -- 1606
+format.name$ -- 1778
+if$ -- 7334
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 24
-newline$ -- 118
-num.names$ -- 230
-pop$ -- 216
+missing$ -- 36
+newline$ -- 194
+num.names$ -- 380
+pop$ -- 337
 preamble$ -- 1
-purify$ -- 420
+purify$ -- 677
 quote$ -- 0
-skip$ -- 418
+skip$ -- 697
 stack$ -- 0
-substring$ -- 893
-swap$ -- 134
+substring$ -- 1453
+swap$ -- 220
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 450
+type$ -- 750
 warning$ -- 2
-while$ -- 192
+while$ -- 323
 width$ -- 0
-write$ -- 302
-(There were 8 warnings)
+write$ -- 500
+(There were 4 warnings)
