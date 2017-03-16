@@ -25,8 +25,10 @@
 %%
 \usepackage[phd]{otagothesis}     %% Use Otago page layout
 
+%\usepackage[natbib, mincitenames=3, maxcitenames=11, style=apa]{biblatex}
 %\usepackage[longnamesfirst,round]{natbib} %% Use Natural Sciences bibliography
 \usepackage[round]{natbib} %% Use Natural Sciences bibliography
+
 
 %%\usepackage{times}              %% Times PostScript font. Don't use
 				  %% if thesis contains lots of math.
@@ -43,6 +45,7 @@
 \usepackage{colortbl}
 \usepackage{textcomp}
 \usepackage{nomencl}
+
 \usepackage{tikz} %arrows
 \usepackage{mathtools}
 \usepackage{pstricks}
@@ -54,10 +57,6 @@
 %\usepackage{booktabs}
 \usepackage{longtable}
 
-
-%\newcommand\cropped[1]{%
-%    \immediate\write{convert -trim #1.png #1cropped.png}%
-%    \includegraphics[width=\linewidth]{#1cropped.png}}
 
 %%
 %% Set title, author and date.
@@ -90,11 +89,11 @@
 %%
 \setcounter{tocdepth}{4} %%display subsubsubheadings
 
-\frontstuff
+%\frontstuff
 
-%\tableofcontents
-%\listoffigures
-%\listoftables
+\tableofcontents
+\listoffigures
+\listoftables
 
 %%
 %% Set to one-and-a-half line-spacing
@@ -106,27 +105,9 @@
 %% These lines assume there are files called intro.tex, literature.tex etc.
 %%
 
-%%intro & lit review
-\include{intro}
-%\include{lit_review}
-
-%methods
+%%methods
+\setcounter{chapter}{1}
 \include{methods}
-
-%slipt
-\include{chapt3}
-
-%pathway structure
-\include{chapt4}
-
-%simulations
-\include{chapt5}
-
-%discussion
-\include{chapt6}
-
-%conclusion
-\include{conclusion}
 
 %%
 %% Make certain the ``references'' section begins on a recto page when
