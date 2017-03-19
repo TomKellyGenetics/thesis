@@ -2,10 +2,6 @@ This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 A level-1 auxiliary file: intro.aux
-White space in argument---line 49 of file intro.aux
- : \citation{Hopkins
- :                   2008,Barabasi2004}
-I'm skipping whatever remains of this command
 A level-1 auxiliary file: methods.aux
 A level-1 auxiliary file: chapt3.aux
 A level-1 auxiliary file: chapt4.aux
@@ -15,70 +11,58 @@ A level-1 auxiliary file: conclusion.aux
 The style file: otago.bst
 A level-1 auxiliary file: appendices.aux
 Database file #1: thesis.bib
-Warning--I didn't find a database entry for "Lander2001"
-Warning--I didn't find a database entry for "Venter2001"
-Warning--I didn't find a database entry for "Paabo2006"
-Warning--I didn't find a database entry for "Paabo2009"
-Warning--I didn't find a database entry for "Dickson1999"
-Warning--I didn't find a database entry for "Collins2007"
-Warning--I didn't find a database entry for "Bamford2004"
-Warning--I didn't find a database entry for "Li2014)"
-Warning--I didn't find a database entry for "Jerby-Arnon2014"
-Warning--I didn't find a database entry for "Kranthi2013)"
-Warning--I didn't find a database entry for "Deshpande2013)"
-Warning--I didn't find a database entry for "Tiong2014)"
-Warning--I didn't find a database entry for "Jerby-Arnon2014)"
-Warning--I didn't find a database entry for "Lu2015)"
-Warning--I didn't find a database entry for "Hanahan2011"
 Warning--empty organization in safe
 Warning--no number and no volume in Lord2014
 Warning--page numbers missing in Lord2014
 Warning--page numbers missing in Lu2013
 Warning--no journal in Lum2004
 Warning--page numbers missing in Pandey2010
+Warning--no journal in Pharmac2016
+Warning--no number and no volume in Pharmac2016
+Warning--page numbers missing in Pharmac2016
 Warning--no number and no volume in vanSteen2011
 Warning--page numbers missing in vanSteen2011
 Warning--empty organization in gplots
 Warning--no number and no volume in Zhang2015
-You've used 123 entries,
+You've used 155 entries,
             2855 wiz_defined-function locations,
-            1447 strings with 37134 characters,
-and the built_in function-call counts, 143680 in all, are:
-= -- 9097
-> -- 18085
-< -- 1
-+ -- 6014
-- -- 6154
-* -- 16545
-:= -- 27757
-add.period$ -- 369
-call.type$ -- 123
-change.case$ -- 1473
-chr.to.int$ -- 123
-cite$ -- 133
-duplicate$ -- 2186
-empty$ -- 5197
-format.name$ -- 6566
-if$ -- 25697
+            1625 strings with 49408 characters,
+and the built_in function-call counts, 205374 in all, are:
+= -- 12374
+> -- 27581
+< -- 2
++ -- 9272
+- -- 9480
+* -- 24199
+:= -- 40127
+add.period$ -- 464
+call.type$ -- 155
+change.case$ -- 2136
+chr.to.int$ -- 155
+cite$ -- 168
+duplicate$ -- 2767
+empty$ -- 6569
+format.name$ -- 9992
+if$ -- 36348
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 121
-newline$ -- 617
-num.names$ -- 1232
-pop$ -- 1244
+missing$ -- 155
+newline$ -- 776
+num.names$ -- 1552
+pop$ -- 1857
 preamble$ -- 1
-purify$ -- 2334
+purify$ -- 3221
 quote$ -- 0
-skip$ -- 2227
+skip$ -- 2838
 stack$ -- 0
-substring$ -- 4593
-swap$ -- 719
-text.length$ -- 1
+substring$ -- 5856
+swap$ -- 909
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2430
-warning$ -- 10
-while$ -- 1026
+type$ -- 3050
+warning$ -- 13
+while$ -- 1334
 width$ -- 0
-write$ -- 1604
-(There was 1 error message)
+write$ -- 2020
+(There were 13 warnings)

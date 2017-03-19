@@ -25,10 +25,8 @@
 %%
 \usepackage[phd]{otagothesis}     %% Use Otago page layout
 
-%\usepackage[natbib, mincitenames=3, maxcitenames=11, style=apa]{biblatex}
 %\usepackage[longnamesfirst,round]{natbib} %% Use Natural Sciences bibliography
 \usepackage[round]{natbib} %% Use Natural Sciences bibliography
-
 
 %%\usepackage{times}              %% Times PostScript font. Don't use
 				  %% if thesis contains lots of math.
@@ -46,17 +44,7 @@
 \usepackage{textcomp}
 \usepackage{nomencl}
 
-\usepackage{tikz} %arrows
-\usepackage{mathtools}
-\usepackage{pstricks}
-\usepackage{subfigure}
-\usepackage{subcaption}
-\usepackage{cleveref}
-%\usepackage{mwe}
-\usepackage{multirow}
-%\usepackage{booktabs}
-\usepackage{longtable}
-
+\input{subsubsubsection}
 
 %%
 %% Set title, author and date.
@@ -105,9 +93,8 @@
 %% These lines assume there are files called intro.tex, literature.tex etc.
 %%
 
-%%methods
-\setcounter{chapter}{1}
-\include{methods}
+%%intro & lit review
+\include{intro}
 
 %%
 %% Make certain the ``references'' section begins on a recto page when
@@ -120,7 +107,7 @@
 \bibliographystyle{otago}
 \bibliography{thesis}
 
-\include{appendices}
+%\include{appendices}
 
 \end{document}
 %% All Done!

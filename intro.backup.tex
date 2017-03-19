@@ -72,7 +72,7 @@ Applying NGS technologies varies in cost depending on the platform but is genera
 
 There is ongoing technology in development to overcome the various drawbacks to established NGS technologies. These emerging technologies, sometimes called ``3 generation'' sequencing aim to introduce radically different approaches to sequencing with distinct advantages. Long reads are the focus of several technologies, accuracy and read length of NGS platforms has improved over time but it is still difficult to assemble or map highly repetious sequences. Another refinement is the sequencing of single molecules in real time, with the potential benefits of low input material and studying 3D structure of nucleic acids. Many of these technologies focus on improving the quality and accuracy of sequences, with higher throughput, read depth, more accurate methodology, avoiding PCR bias or sequencing RNA directly for quantitative studies. Another benefit to highly sensitive sequencing platforms is the potential application in forensic, ancient DNA, and single cell samples where the amount or quality of nucelic acids is low. Single cell applications are of particular interest in cancer research due to the heterogeneity of cells within tumours and their role in diagnostics or drug resistance.
 
-\paragraph{Established Sequencing Technologies}
+\subsubsubsection{Established Sequencing Technologies}
 
 454 sequencing (acquired by Roche) commercially released from 2005 to 2013 was the first NGS technology, generating a vast 1 million reads per day or 400-600Mbp in a 10 hour run. This technology used the ``pyrosequencing'' method of sequencing by synthesis, detecting phosphates released when a compatible nucleotide reacts and extends the DNA synthesis of a complementary strand. This technology popularised NGS with the first complete genome from a single individual (James Watson, 2007) and the Neanderthal ancient DNA studies (Svaante Paabo, 2006 \& 2009). While this technology was capable of reads up to 1kb, reads of 400-500bp were more typical and the error rate was higher for sequences of the same base consecutively. This is still relatively long reads for an NGS technology but it has been discontinued due to competing short read technologies being more cost-effective with lower running costs.
 
@@ -80,7 +80,7 @@ SOLiD sequencing (acquired by Life Technologies) released in 2006 employs a vast
 
 Illumina sequencing (developed by Solexa and later acquired by Illumina) was also released in 2006. It utilises reversible terminating dyes to sequence by synthesis with a lower accuracy (98\%) and read lengths of 150-250bp. Illumina more than makes up for relatively short reads (along with improving the read length of the technology) and low accuracy with high-throughput and cost effectiveness, with a Hi-Seq 2500 platform producing up to 3 billion reads (600Gbp) in a 3-10 days run. Illumina has further reduced the cost of sequencing with the economies of scale with the HiSeq 10X claiming to produce a human genome for less than US\$1000, the first platform to achieve this long-standing goal in genomics. The high-throughput of Illumina sequencing also makes deep sequencing for high coverage, high quality consensus reads, and sensitive RNA-Seq experiments feasible. Illumina sequencing now has a dominating market share of the NGS technologies.
 
-\paragraph{Emerging Sequencing Technologies}
+\subsubsubsection{Emerging Sequencing Technologies}
 
 Ion Torrent (also acquired by Life Technologies) released in 2010 employs ``sequencing by synthesis'' but in a drastically different way with ion semiconductor sequencing, detecting $H^+$ ions released when bases during DNA synthesis. Without the use of optical detection, the Ion Torrent system is compact offering rapid, cost-effective sequencing with the potential to scale with the future development of silicon semiconductors with have historically doubled in density every 2 years (Moore's Law). It is capable of reads of 100-200bp in only an hour (as fast as 4 seconds per base) and up to 400bp in a 2 hour run with an accuracy of 99.6\% (dropping to 98\% for consecutive sequences of 5 bases). While fast, cost effective, and accurate, Ion Torrent has short reads and modest throughput (depending on the platform 100Mbp to 32Gbp) compared to other sequencing technologies.
 
@@ -148,7 +148,7 @@ While the importance of genomics is still recognised in translational cancer res
 
 More recently the term ``Genomic medicine'' has been preffered the describe the paradigm of treating cancers by their genomic features, particularly grouping patients by the mutation, expression, or DNA methylation profiles of their cancers. Radical proponents advocate for these molecular subtypes to superceed tissue or cell type specific diagnosis of cancers. However, in practice they are often used in combination, with clinical and pathological factors being informative of prognosis and surgical training specialising by organ system. The related term of ``precision medicine'' also stems from this trend with the rationale to target these molecular subtypes with separate treatment strategies, particularly in developing and applying treaments targeted against a particular mutation specific to cancers. To this end much research in this field is focused on identifying mutations and gene expression signatures amenable to distinguishing cancers, particularly oncogenic driver mutations, and developing treatments against them.
 
-\paragraph{Molecular Diagnostics and Pan-Cancer Medicine}
+\subsubsubsection{Molecular Diagnostics and Pan-Cancer Medicine}
 There is growing support for the use of molecular tools such as mutations or gene expression signatures to diagnose tumour subtypes in replacement or addition to tissue of origin or histology. This is particularly important is breast cancer where several distinct ``intrinsic subtypes'' have been identified from molecular data with differences in malignancy and patient outcome (Parker/Perou). These have been popularised with the idea of ``Pan cancer'' studies such as those conducted by the TCGA and ICGC projects, combining molecular profiles across tissue types. The molecular subtypes could feasibly be included in clinic testing as a panel of biomarkers for diagnostics and prognosis. Such biomarkers also have the potential to monitor drug response or risk of recurrence. This is also raises the need for development of treatments for targeting these molecular subtypes.  
 
 \subsubsection{Targeted Therapeutics and Pharmacogenomics}
@@ -158,8 +158,8 @@ Monoclonal antibodies have been developed against several oncogenes but small co
 
 Another potential application is pharmacogenomics where variants in the genome may be applied to predict whether patients have adverse effects with either conventional treatments or targeted therapies. Patient variation is a major challenge in cancer therapy and anticipating adverse effects, drug resistance, and dosing effectively are all ways in which genomics would facilitate more effective usage of existing treatments and development of novel treatments with molecular targets in mind.
 
-\paragraph{Targeting Oncogenic Driver Mutations}
-%\paragraph{Tissue Specificity and Genetics Background Effects}
+\subsubsubsection{Targeting Oncogenic Driver Mutations}
+%\subsubsubsection{Tissue Specificity and Genetics Background Effects}
 
 and the unexpected synergistic effect of BRAF\textsuperscript{V600E} and EGFR inhibitors in colon cancer
 
@@ -179,7 +179,7 @@ Despite successful application of vemurafenib against BRAF\textsuperscript{V600E
 
 Combination treatment of vemurafenib (as a BRAF inhibitor) and various FDA approved EGFR inhibitors entered phase I clinical trials for treatment of BRAF\textsuperscript{V600E} mutant tumours in 2014. \ Vemurafenib and panitumamab are being trialled in colorectal cancers by the Memorial Sloan Kettering Cancer Center, New York. \ Combination treatment of vemurafenib, cetuximab (an EGFR inhibitor) and irinotecan (a topoisomerase inhibitor) are being trialled in advanced solid cancers by the MD Anderson Cancer Centre, Houston. \ Combination vemurafenib and erlotinib are being trialled in BRAF mutant cancers including colorectal and lung by the Peter MacCallum Cancer Centre, Melbourne. \  
 
-\paragraph{ Network Medicine, and Polypharmacology}
+\subsubsubsection{ Network Medicine, and Polypharmacology}
 
 While targeted therapeutics have shown some levels of success for drug discovery, particularly in anticancer applications, exploiting the connectivity of molecular networks or designing combination therapies are alternatives that may yield more effective results using a network pharmacology framework (Hopkins 2008). \ Rational design of drugs selective to a single target has largely failed to deliver clinical efficacy. \ In fact, many existing effective drugs modulate multiple proteins and were selected for biological effects or clinical outcome rather than molecular targets. \ Network biology and polypharmacology (specific binding to multiple targets) are a possible way to develop drugs with a desired target profile designed for the target topology. \ Multi-target treatments aim to achieve a clinical outcome through modulation of molecular networks since the genetic robustness of a cell often compensates for loss of a single molecular target. \  
 
@@ -215,12 +215,12 @@ Synthetic genetic interactions are substantial deviations from the expected null
 
 \subsection{Synthetic Lethal Concepts in Genetics}
 \subsubsection{Functional Genetics}
-\paragraph{Conditional and Induced Essentiality}
-\paragraph{Functional Redundancy}
+\subsubsubsection{Conditional and Induced Essentiality}
+\subsubsubsection{Functional Redundancy}
 \subsubsection{Evolutionary and Developmental Biology}
-\paragraph{Genetic Robustness and Network ``Re-wiring''}
+\subsubsubsection{Genetic Robustness and Network ``Re-wiring''}
 \subsubsection{Cancer and Translational Biology}
-\paragraph{Non-Oncogene Addiction}
+\subsubsubsection{Non-Oncogene Addiction}
 
 \subsection{Synthetic Lethal Concepts in Genetics}
 \subsubsection{Synthetic Lethal Pathways}
@@ -229,9 +229,9 @@ Synthetic genetic interactions are substantial deviations from the expected null
 
 \subsection{The Potential of Synthetic Lethality for Anti-Cancer Medicine}
 \subsubsection{Rationale of Exploiting Synthetic Lethality in Cancers}
-\paragraph{Indirect Targeting and Tumour Suppressor Genes}
-\paragraph{Synthetic Interactions and Gene Dosage}
-\paragraph{Homology and Indirect Targeting for Anti-Cancer Specificity}
+\subsubsubsection{Indirect Targeting and Tumour Suppressor Genes}
+\subsubsubsection{Synthetic Interactions and Gene Dosage}
+\subsubsubsection{Homology and Indirect Targeting for Anti-Cancer Specificity}
 
 \subsection{Prior Studies on Synthetic Lethality}
 \subsubsection[Experimental Studies of Synthetic Lethality]{Experimental Studies of Synthetic Lethality}
@@ -249,7 +249,7 @@ The SGA methodology has been adapted to screen deletion or gene knockdown librar
 
 While distantly related, by millions of years of evolution, the budding yeast \textit{S. cerevisiae} and the fission yeast \textit{S. pombe} SGI networks are comparable (Dixon\textit{ et al.} 2009b). \ These yeasts are both single-celled, were analysed by similar SGA methodology with colony growth phenotypes, and used null or hypomorphic mutation to inactivate genes. \ The RNAi based SGI screens in \textit{C. elegans }or \textit{Drosophila melanogaster} are less comparable to the yeast models due to differences from phenotyping diploid multicellular organisms and the potential residual wild-type gene activity in an RNAi experiment. \ Relatively poor conservation of specific SGIs in \textit{S. cerevisiae} were replicated in \textit{S. pombe} (222 queries against a library of 2663 genes); however, around \~{}29\% of the interactions tested in both species form a conserved SGI network (Dixon\textit{ et al.} 2008). \ The rest of the interactions reveal species specific differences expected in distantly related species, however many of the species specific interactions were still conserved between biological pathways, protein complexes, or protein-protein interaction modules. \ Negative SGIs were likely to be conserved between biological pathways, whereas positive SGIs were more likely to be conserved within a pathway or protein complex (Roguev\textit{ et al.} 2008). \ Conservation of pathway redundancy was also found between \textit{S. cerevisiae} and prokaryotes with \textit{E. coli} experiments (Butland\textit{ et al.} 2008). \
 
-\paragraph{RNA interference in Eukaryotes}
+\subsubsubsection{RNA interference in Eukaryotes}
 Despite reasons difficulties comparing yeast SGA data and metazoan RNAi screens for SGIs, \~{}5\% of interactions in \textit{C. elegans} were conserved in \textit{S. cerevisiae,} and the nematode SGI network showed similar scale-free topology and modularity (Bussey\textit{ et al.} 2006). \ The nematode SGI screen also identified network hubs and implicated their importance via interaction with orthologues of known human disease genes (Lehner\textit{ et al.} 2006). \ However, genetic redundancy at the gene or pathway level fails to account for the lack of direct conservation of SGIs between yeasts and nematode worms, consistent with an induced essentiality model of SGIs which allows for conservation of gene function with network restructuring over evolutionary time (Tischler\textit{ et al.} 2008). \ While Eukaryotic models are more closely related to human cells, cancer cells can present growth and viability phenotypes more comparable to yeast models. \ Therefore findings from both SGA and RNAi models are relevant to understanding cellular network structure and in healthy and cancerous human cells. \ RNAi has also been applied to human and mouse cancer cells in cell culture and genetic screening experiments. \ 
 
 \subsubsection[Examples of Clinical Impact]{Examples of Clinical Impact}
@@ -293,7 +293,7 @@ Experimental screening for synthetic lethality is an appealing strategy for wide
 
 Chemical screens are immediately applicable to the clinic by directly screening for \ selective lead compounds with suitable pharmacological properties. \ However chemical screens lack a known mode of action, may affect many targets, and screen a narrow range of genes with existing drugs. \ With either approach there are many challenges translating candidates into the clinic such as finding targets relevant to a range of patients, validation of targets, accounting for a range of genetic (and epigenetic) contexts or tumour micro-environment, identifying effective synergistic combinations, enhancers of existing radiation or cytotoxic treatments, avoiding inherent or acquired drug resistance, and developing biomarkers for patients which will respond to synthetic lethal treatment, including integrating these into clinical trials and clinical practice. \ Identifying specific target genes is an effective way to anticipate such challenges, which can be approached with genetic screens, so we will focus on these and computational alternatives. \ Screening methods have proven a fruitful area of research, despite being costly, laborious, and having many different sources of error. \ These limitations suggest a need for complementary computational approaches to synthetic lethal discovery. \  
 
-\paragraph[Examples of High{}-throughput Synthetic Lethal Screens]{Examples of High-throughput Synthetic Lethal Screens}
+\subsubsubsection[Examples of High{}-throughput Synthetic Lethal Screens]{Examples of High-throughput Synthetic Lethal Screens}
 
 Overexpression of genes is another suitable application for synthetic lethality since overexpressed genes cannot be distinguished from the wild-type by direct sequence specific targeted therapy. \ Overexpression of oncogenes, such as EGFR, MYC, and PIM1, has been found to drive many cancers. \ PIM1 is a candidate for synthetic lethal drug design in lymphomas and prostate cancers, where it interacts with MYC to drive cancer growth. \hyperlink{ENREF103}{van der Meer}\hyperlink{ENREF103}{\textit{ et al.}}\hyperlink{ENREF103}{ (2014)} performed an RNAi screen to for synthetic lethality between PIM1 overexpression and gene knockdown in RWPE prostate cancer cell lines. \ They recognise RNAi screens are valuable for finding therapeutic targets and biomarkers for therapeutic response. \ PLK1 gene knockdown and drug inhibition was an effective as a specific inhibitor of PIM1 overexpressing prostate cells in cell culture and mouse tumour xenografts. \ PLK1 inhibition reduced MYC expression in pre-clinical models, consistent with expression in human tumours which PIM1 and PLK1 are co-expressed and correlated with tumour grade. \ Therefore PLK1 is justified as a candidate for drug target against prostate cancer progression. \  
 
@@ -314,19 +314,19 @@ The examples above show that high-throughput screens are an effective approach t
 %Computational approaches to identifying synthetic lethal interactions are rapidly developing into a feasible addition to genomic screens due to the low cost, reliable automated reproducible workflows, ability to account for distinct genetic backgrounds, and lack of off-target effects or bias towards particular genes \cite{Boucher2013, Thompson2015}. 
 %%%%%%%%relevance
 %Synthetic lethal prediction has been widely explored in model organisms - a key example is the task of inferring the entire gene network from incomplete synthetic lethal networks and functional genomics data in \textit{Saccharomyces cerevisiae} \cite{Boucher2013}. However, synthetic lethal interactions are difficult to reproduce across species \cite{Dixon2009,Lehner2006}, not all of the data types used for prediction of synthetic lethal interactions in available in humans, and the methods assuming conserved network structure may not be applicable to unstable cancer systems. Computational approaches to discovery of synthetic lethal interactions tailored to mammals, or specifically to human cancers, are therefore needed for applicable results. However, many existing computational approaches are difficult to apply to novel genes having been trained on known gene functions, using complex machine learning methods, or are over-represented for genes where single gene aberrations have large effects on cellular phenotypes such as \textit{TP53} or \textit{AKT}.
-%%%%%%% join to next paragraph
+%%%%%%% join to next subsubsubsection
 %Analysis of gene expression is an appealing strategy for discovery of synthetic lethal interactions in cancer due to the widespread availability of data for different cancers, lack of bias towards well characterised genes, and potential further use for expression of interacting partners as biomarkers for treatment with drugs designed to exploit them.
 
 %A recent example of a computational tool for identification of synthetic lethal interactions using gene expression analysis is the DAISY methodology \cite{Ryan2014,Crunkhorn2014}, which combines predictions from patient samples  of The Cancer Genome Atlas (TCGA), cell lines of the Cancer Cell Line Encyclopaedia (CCLE), and RNAi validation experiments \cite{Jerby2014}. The predictors of synthetic lethality were genomic `survival of the fittest' (using DNA copy number and somatic mutation in patient and cell lines data), `functional examination' of gene essentiality (using RNA interference data in cell cell lines), and pairwise `gene co-expression' (in cell lines).
 
-%%%%%%%% edit to tone down anti-DAISY message // restructure paragraphs to fewer ideas apiece
+%%%%%%%% edit to tone down anti-DAISY message // restructure subsubsubsections to fewer ideas apiece
 %As a proof-of-concept, DAISY demonstrates the potential of bioinformatics approaches to generate synthetic lethal candidates against the tumour suppressor \textit{VHL} in a renal cancer cell line, along with reasonable statistical performance and generalisation to gene essentiality, genetic dosage, or drug analyses \cite{Jerby2014}. However, DAISY partners of \textit{VHL} showed only modest 4-fold over-represent\-ation in validated shRNA screening than a screen of random genes and the method has not been widely adopted in studies of other cancer genes.
 %%criticism of DAISY moved to discussion
 
 %An alternative to the approach is the use of `cancer genome evolution' to predict synthetic lethal genes from their behaviour in genomics data\cite{Lu2015}, as the induced essentiality of remaining synthetic lethal partners takes effect in the tumour progression. Lu \textit{et al.} \cite{Lu2015} postulate that, in response to loss of a gene function, a tumour would would either resist by maintaining low expression or compensate by increasing the activity of synthetic lethal partner genes. This model predicted far more genes than previous attempts at discovery of synthetic lethal interactions, performed well at a genome-wide scale, and produced a higher 14-fold over-represent\-ation of validated synthetic lethal pairs. While Lu \textit{et al.} \cite{Lu2015} provide a comprehensive list of their strongest candidate synthetic lethal pairs across cancer types, these do not include \textit{CDH1}, thus there remains a need for computational predictions for this gene and a tool other researchers may use for similar screen triage purposes against a candidate gene in a specific cancer.  
 
 
-%% (Re)move the below paragraph? Too negative / irrelevant?
+%% (Re)move the below subsubsubsection? Too negative / irrelevant?
 %These prior approaches used complex cutting-edge machine learning techniques which may be difficult for the biological community to adopt and DNA copy number which may not be available for many  applications \cite{Jerby2014, Lu2015}. %% may be speculation
 %Here, we present a synthetic lethal analysis based solely on gene expression data which could feasibly be applied to studies of other genes to utilise the large number of samples collected for many genes in diseases such as cancers.  We use the example of \textit{CDH1} as a tumour suppressor gene in breast cancer samples from TCGA \cite{TCGA2012} to highlight the importance of synthetic lethal interactions, potential relationships between them, and the biological pathways involved.
 %R code for our synthetic lethal analysis will be avaialable on our \href{https://github.com/TomKellyGenetics/slipt}{GitHub repository} as an R package. 
