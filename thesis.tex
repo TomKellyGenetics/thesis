@@ -27,6 +27,14 @@
 
 %\usepackage[longnamesfirst,round]{natbib} %% Use Natural Sciences bibliography
 \usepackage[round]{natbib} %% Use Natural Sciences bibliography
+%enable abbreviated in text citations
+\usepackage{etoolbox}
+\newif\ifabbreviation
+\pretocmd{\thebibliography}{\abbreviationfalse}{}{}
+\AtBeginDocument{\abbreviationtrue}
+\DeclareRobustCommand\acroauthor[2]{%
+  \ifabbreviation #2\else #1 (\mbox{#2})\fi}
+
 
 %%\usepackage{times}              %% Times PostScript font. Don't use
 				  %% if thesis contains lots of math.
@@ -36,13 +44,14 @@
 \usepackage{hyperref}             %% hyperlinks
 %\usepackage{color}
 \usepackage{xcolor}
-\usepackage{supertabular}
+%\usepackage{supertabular}
 \usepackage{tabularx}
 \usepackage{array}
 \usepackage{multicol}
 \usepackage{colortbl}
 \usepackage{textcomp}
 \usepackage{nomencl}
+
 \usepackage{tikz} %arrows
 \usepackage{mathtools}
 \usepackage{pstricks}
@@ -54,10 +63,8 @@
 %\usepackage{booktabs}
 \usepackage{longtable}
 
-
+\usepackage{titlesec}
 \input{subsubsubsection}
-
-
 
 %\newcommand\cropped[1]{%
 %    \immediate\write{convert -trim #1.png #1cropped.png}%

@@ -50,19 +50,19 @@
   \makeatother%
   \begin{picture}(1,0.38523449)%
     \put(0,0){\includegraphics[width=\unitlength]{SL_Method.pdf}}%
-    \put(0.51,0.3366347){\makebox(0,0)[lb]{\smash{Candidate Gene (e.g. \textit{SVIL})}}}%
+    \put(0.575,0.3366347){\makebox(0,0)[lb]{\smash{Candidate Gene}}}%
     \put(0.3983879,0.259899){\makebox(0,0)[lb]{\smash{Low}}}%
     \put(0.60617005,0.259899){\makebox(0,0)[lb]{\smash{Medium}}}%
     \put(0.85672859,0.259899){\makebox(0,0)[lb]{\smash{High}}}%
-    \put(0.03219592,0.04085038){\rotatebox{90}{\makebox(0,0)[lb]{\smash{Query Gene}}}}%
+    \put(0.03219592,0.04340591){\rotatebox{90}{\makebox(0,0)[lb]{\smash{Query Gene}}}}%
     \put(0.06472097,0.04340591){\rotatebox{90}{\makebox(0,0)[lb]{\smash{(e.g. \textit{CDH1})}}}}%
     \put(0.16777489,0.18302155){\makebox(0,0)[lb]{\smash{Low}}}%
     \put(0.14500212,0.10616346){\makebox(0,0)[lb]{\smash{Medium}}}%
     \put(0.16498638,0.029286){\makebox(0,0)[lb]{\smash{High}}}%
     \put(0.3383412,0.2007557){\makebox(0,0)[lb]{\smash{Observed less}}}%
     \put(0.3364023,0.16822318){\makebox(0,0)[lb]{\smash{than expected}}}%
-    \put(0.565,0.185){\big{\textbf{$\xrightarrow{\makebox[3cm]{}}$}}}%
-    \put(0.4,0.153){\rotatebox{270}{\big{\textbf{$\xrightarrow{\makebox[1.125cm]{}}$}}}}%
+    \put(0.565,0.185){\large{\textbf{$\xrightarrow{\makebox[3cm]{}}$}}}%
+    \put(0.4,0.153){\rotatebox{270}{\large{\textbf{$\xrightarrow{\makebox[1.125cm]{}}$}}}}%
     \put(0.79757275,0.2007557){\makebox(0,0)[lb]{\smash{Observed more}}}%
     \put(0.80067108,0.16822318){\makebox(0,0)[lb]{\smash{than expected}}}%
     \put(0.32904627,0.04702015){\makebox(0,0)[lb]{\smash{Observed more}}}%

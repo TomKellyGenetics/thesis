@@ -25,15 +25,36 @@ A model of synthetic lethality was developed and was sucessfully implemented to 
 
 Thus my thesis has developed, evaluated and refined a bioinformatics approach to discovery of synthetic lethal genes solely from gene expression data.  
 
-\textit{Publications during Candidature}
+\iffalse
 
-Several publications have been prepared during the candidature of this thesis, including some findings related to the thesis topic on which we elaborate in more depth here. Please see the original article for the results which have been accepted for publication by peer-review:
+\clearpage
 
-Kelly, S. T. and Spencer, H. G. (2017) Population-Genetics Models of Sex-Limited Genomic Imprinting. \textit{Theoretical Population Biology}
+\begin{center}
+ \textbf{Research Contributions During Candidature}
+\end{center}
 
-Kelly, S. T., Chen, A., Guilford, P. J., and Black, M. A. (2017) Synthetic lethal interaction prediction of target pathways in E-cadherin deficient breast cancers. (Manuscript in Preparation for \textit{BMC Genomics})
+\textbf{Publications Under Peer-Review}
 
-\textit{Software Packages during Candidature}
+%Several publications have been prepared during the candidature of this thesis, including some findings related to the thesis topic on which we elaborate in more depth here. Please see the original article for the results which have been accepted for publication by peer-review:
+
+Kelly, S. T. and Spencer, H. G. (2017) Population-Genetics Models of Sex-Limited Genomic Imprinting. Accepted by minor revisions by \textit{Theoretical Population Biology}.
+
+Kelly, S. T., Single, A. B., Telford, B. J., Beetham, H. G, Godwin, T. D., Chen, A., Black, M., A., and Guilford, P. J. (2017) Towards HDGC chemoprevention: vulnerabilities in E-cadherin-negative cells identified by genomic interrogation of isogenic cell lines and whole tumors.  Submitted to \textit{Cancer Prevention Research}.
+
+Kelly, S. T., Chen, A., Guilford, P. J., and Black, M. A. (2017) Synthetic lethal interaction prediction of target pathways in E-cadherin deficient breast cancers. Submitted to \textit{BMC Genomics}.
+
+\textbf{Community Blog Posts}
+
+Black, M. A., Kelly, S. T., and Cadzow, M.
+Posted on the \textit{Software Carpentry} website 2016 July 4\textsuperscript{th}: 
+``Software Carpentry workshop at the University of Otago, New Zealand''
+\url{https://software-carpentry.org/blog/2016/07/otago-workshop.html}
+
+Kelly, S. T., Black, M., A., Bae, S., Hayek, W., and Pawlik, A. Posted on the \textit{Software Carpentry} website 2016 September 28\textsuperscript{th}:  ``Software Carpentry Workshop Attendance: a New Zealand Perspective``
+\url{https://software-carpentry.org/blog/2016/09/attendance-nz.html}
+
+
+\textbf{Software Packages}
 
 Several software packages in the R language have been released on GitHub while preparing this thesis. Please see the appropriate GitHub repository for more information on installing and running these packages, on the following account: \url{https://github.com/TomKellyGenetics}
 
@@ -42,4 +63,77 @@ Several software packages in the R language have been released on GitHub while p
 Several plotting functions were customised for the Figures in this thesis (and the above publications), notably \href{https://github.com/TomKellyGenetics/heatmap.2x}{\texttt{heatmap.2x}} and \href{https://github.com/TomKellyGenetics/vioplotx}{\texttt{vioplotx}} have been prepared largely for use during this project but are also documented and available to other R users. These are enhancements to the CRAN \texttt{gplots} and \texttt{vioplot} packages respectively and are intended be user-friendly for those familiar with \texttt{heatmap.2} or \texttt{vioplot} and \texttt{boxplot} (base R) functions. These are backwards compatible with these functions, taking similar imputs as demonstrated in the appropriate vignettes.
 
 The use of iGraph (the R \texttt{igraph} package) operations of graph-network structure in the analysis and simulations of pathways involved several original or customised functions to manipuate or plot \texttt{igraph} objects and adjacency matrices. These can be install separately from their respective repositories of with the metapackage: \href{https://github.com/TomKellyGenetics/igraph.extensions}{\texttt{igraph.extensions}}. \href{https://github.com/TomKellyGenetics/plot.igraph}{\texttt{plot.igraph}} enables plotting graph networks with customised inhibitor arrow and node colours.\href{https://github.com/TomKellyGenetics/info.centrality}{\texttt{info.centrality}} enables the calculation of additional node and network centrality metrics not available in the \texttt{igraph} package. \href{https://github.com/TomKellyGenetics/pathway.structure.permutation}{\texttt{pathway\-.structure\-.permutation}} enables testing of related states or node groups in a network by directionality of shortest paths. The \href{https://github.com/TomKellyGenetics/graphsim}{\texttt{graphsim}} package has been set up to simulate a multi-variate normal gene expression dataset with \texttt{mvtnorm} while deriving the correlation structure, $\Sigma$, from a graph structure. Note that these require various packages for graph theory, statistics and matrix operations and these will be installed as dependencies.
+
+\textbf{Conference Participation}
+
+eResearch 2017 (Queenstown) Speaker February 20\textsuperscript{th}-22\textsuperscript{nd}
+``Detecting Synthetic Lethality from Cancer Gene Expression: A PhD project on genetic interactions with CDH1 inactivation in TCGA data''
+
+RIKEN Division of Genomic Technologies (Yokohama, Japan) Seminar 2016 October 20\textsuperscript{th};
+National Institute of Genetics (Mishima, Japan) Seminar 2016 October 21\textsuperscript{st};
+Tokyo University Institute of Medical Science (Shirokanedai Campus, Japan) Seminar 2016 October 24\textsuperscript{th};
+Sokendai Graduate University (Hayama, Japan) Seminar 2016 October 25\textsuperscript{th}
+``Analysis of Synthetic Lethal Pathways in Breast Cancer: A PhD project on genetic interactions with CDH1 inactivation in TCGA data''
+
+Next Generation Sequencing Asia 2016 (Singapore) Poster October 11\textsuperscript{th}-12\textsuperscript{th}
+``Bioinformatic Investigations of Synthetic Lethal Interactions with E-cadherin in Breast Cancer''
+(Supported by the University of Otago Division of Health Sciences; Maurice and Phyllis Paykel Trust)
+
+eResearch 2016 (Queenstown, New Zealand) Speaker February 9\textsuperscript{th}-11\textsuperscript{th}
+``Sifting the Needles in the Haystack: Permutation Resampling Biological Pathways in Cancer Genomic Interaction Data'' (Supported by REANNZ)
+
+Genetics Otago Symposium 2016 (Dunedin, New Zealand) Student Speaker March 7\textsuperscript{th}-8\textsuperscript{th} 
+``A Bioinformatics approach to Genetic Interactions: Synthetic Lethal Pathways with E-cadherin in Breast Cancer Genomics Data''
+
+Research Bazaar 2015 (Melbourne, Australia) February 16\textsuperscript{th}-18\textsuperscript{th}
+``My digital research toolkit'' (Supported by the New Zealand eScience Infrastructure)
+
+
+QMB Cancer Drugs Satellite 2014 (Queenstown, New Zealand) Poster August 24\textsuperscript{th}-25\textsuperscript{th};
+Otago School of Medical Sciences 2015 (Dunedin, New Zealand) Poster Postgraduate Symposium April 28\textsuperscript{th}-29\textsuperscript{th}
+“Bioinformatics Prioritisation of Synthetic Lethal Targets for Drug Activity Against E-Cadherin Deficient Cancers”
+
+DunDead: Zombie Science and Popular Culture Festival 2014 (Dunedin, New Zealand) Ignite Speaker August 16\textsuperscript{th}-17\textsuperscript{th}
+``Hidden in Plain Sight - The Genetics of Zombies''
+
+
+eResearch 2014 (Waikato University, Hamilton, New Zealand) Ignite Speaker June 30\textsuperscript{th}-July 2\textsuperscript{nd}
+``Bioinformatic analysis of synthetic lethal genetic interactions in breast cancer'' (Supported by Google)
+
+\fi
+
+\iffalse
+Presentations within University of Otago Departments
+Department of Biochemistry 2017 PhD Seminar
+Upcoming Seminar (to schedule later upon completion of thesis)
+``Synthetic Lethal Interactions in Cancer Genomics Data: Prediction and Simulation''
+
+Department of Biochemistry 2016 Colloquia July 22nd
+``Analysis of Synthetic Lethal Pathways in Breast Cancer: A PhD project on genetic interactions with CDH1 inactivation in TCGA data''
+``Demonstration of R data visualization packages: vioplotx and heatmap.2x''
+
+Otago Mozilla Study Group 2016 June 9th
+``Taking Advantage of Online Communities: Getting the most out of StackExchange and StackOverflow Q&A Sites''
+
+Genetics Otago Journal Club 2016 March 23rd 
+Day T, Read AF (2016) Does High-Dose Antimicrobial Chemotherapy Prevent the Evolution of Resistance? PLoS Comp Biol 12(1): e1004689
+
+Otago Mozilla Study Group 2015 October 22nd
+``Data is Beautiful: An Introduction to Data Visualization in R''
+
+Department of Biochemistry 2015 Colloquia August 27th
+``A Demonstration of Statistical Analysis in R: Antibiotic Resistance in Biofilms'' (collaborator data)
+
+Otago Mozilla Study Group 2015 June 9th
+``Literature Tools: Bibliometrics and Reference Management''
+
+Biochemistry Department Journal Club 2015 April 25th
+``Quelling the Flames: Order Matters in Cancer''
+Ortmann CA, Kent DG, Nangalia J, et al. (2015) Effect of mutation order on myeloproliferative neoplasms. N Engl J Med 372, 601-612.
+
+Genetics Otago Journal Club 2014 September 3rd
+Peris et al. (2014) Population structure and reticulate evolution of Saccharomyces eubayanus and its lager-brewing hybrids. Molecular Ecology 23(8):2031-2045
+
+\fi
+
 

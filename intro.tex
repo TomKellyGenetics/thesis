@@ -8,7 +8,7 @@
 %% meta-text / overview %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%
 
-The thesis presents research into genetic interactions based on genomics data and bioinformatics approaches. Here we introduce the recent developments in genomics and Bioinformatics, particularly in their applications to cancer research. Synthetic lethal interactions are a long standing area of interest to genetics in both model organisms and cancer biology. A bioinformatics approach to synthetic lethal interactions enables much wider exploration of the potential inter-connected nature than previous candidate-based approaches. An alternative approach is experimental screening which will be presented and contrasted with bioinformatics approaches in more detail in the literature review chapter. We outline some of the reasons why these interactions are of interest in fundamental and translational biology but we must first define these and similar interactions. A particularly novel application of synthetic lethal interactions is design of treatments with specificity against loss of function mutations in tumour suppressor genes. We focus on E-cadherin (encoded by \textit{CDH1} as a prime example of this and as such briefly review the role of this gene in cellular and cancer biology.   
+The thesis presents research into genetic interactions based on genomics data and bioinformatics approaches. This chapter introduces the recent developments in genomics and bioinformatics, particularly in their application to cancer research. Synthetic lethal interactions are a long standing area of research in genetics in both model organisms and cancer biology. Various reasons why these interactions are of interest in fundamental and translational biology will be outlined but first these and similar interactions will be defined. A bioinformatics approach to synthetic lethal interactions enables much wider exploration of the inter-connected nature of genes and proteins within a cancer cell than previous candidate-based approaches. An alternative approach is experimental screening which will be presented and contrasted with bioinformatics approaches in more detail.  An emerging application of synthetic lethality is the design of treatments with specificity against loss of function mutations in tumour suppressor genes. E-cadherin (encoded by \textit{CDH1}) is a prime example of this which will be the focus of the analysis in this thesis and as such the role of this gene in cellular and cancer biology will be briefly reviewed.   
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -16,7 +16,7 @@ The thesis presents research into genetic interactions based on genomics data an
 
 \section{Cancer Research in the Post-Genomic Era}
 
-Genomics technologies have the potential to vastly impact upon various areas including health and cancer medicine. Considering the progress in recent genomics research, it could soon impact greatly upon clinical and wider applications of genetics either directly or by enabling more focused genetics research from candidates selected from genomics or bioinformatics analysis. The completion of the draft Human Genome marks a major accomplishment in genetics research and raises new challenges to utilise this genomic scale information effectively. Technologies in this area have rapidly developed since and many global large-scale projects have to expanded upon the human genome, to populations, to cancers, and to deeper functional understanding. However, impact on the clinic has been slower than initially anticipated following the completion of the ``draft'' genome with genomics technologies yet to become widely adopted in healthcare and oncology. Here we outline the genomics technologies and bioinformatics approaches which have led to availability of genomics data and techiques used in this thesis and potential for applications in cancer research or the clinic in the future. 
+Genomics technologies have the potential to vastly impact upon various areas including health and cancer medicine. Considering the progress in recent genomics research, it could soon impact greatly upon clinical and wider applications of genetics either directly or by enabling more focused genetics research from candidates selected from genomics or bioinformatics analysis. The completion of the draft Human Genome \citep{Lander2001} marks a major accomplishment in genetics research and raises new challenges to utilise this genomic scale information effectively. Technologies in this area have rapidly developed since completion of the human genome project and many global large-scale projects have to expanded upon the human genome, to populations \citep{1000Genomes2010}, to cancers \citep{Dickson1999, ICGC2011}, and to deeper functional understanding \citep{ENCODE2004, FANTOM2001}. However, impact on the clinic has been slower than initially anticipated following the completion of the ``draft'' genome with genomics technologies yet to become widely adopted in healthcare and oncology. Here we outline the genomics technologies and bioinformatics approaches which have led to availability of genomics data and techiques used in this thesis and potential for applications in cancer research or the clinic in the future. 
 
 \subsection{Cancer as a Global Health Concern}
 
@@ -43,7 +43,7 @@ The advent of the Human Genome sequence has transformed genetics research \citep
 \subsubsection{The First Human Genome Sequence}
 The first human genome is a good example of a large-scale genomics project for it's success as an international collaboration and releasing their data as a resource for the wider scientific community. This particular project generated significant public interest due to it being a landmark achievement, the first of it's scale, and some controversial findings. Namely, the number of genes discovered (particularly those specific to vertbrates) was much lower than most estimates of a genome of it's size and the number of repetious transposon elements was very high. Even the figure of 30-40,000 genes given by the original publication is now widely viewed as an overestimate. 
 
-Accounting for the ``complexity'' encoded by the human genome with so few genes has led to investigations into the molecular function, expression profile, and population variation. When publishing the genome, the author's themselves concede that genomic information alone is not biological understanding and that there is much that remains to be done, with their main goal being to share the raw genome data is available for further inquiry rather than interpreting it themselves. While genomics technologies and genomics projects have flourished since then, the need in turn for systematic means of interpreting data of such scale and for the interdisciplinary expertise to do so has only grown. 
+Accounting for the ``complexity'' encoded by the human genome with so few genes has led to investigations into molecular function, expression profiling, and population variation. When publishing the genome, the authors conceded that genomic information alone is not biological understanding and that many investigations remain to be done, with their main goal being to share the raw genome data so that it was available for further inquiry rather than interpreting it themselves. While genomics technologies and genomics projects have flourished since then, the need in turn for systematic means of interpreting data of such scale and for the interdisciplinary expertise to do so has only grown. 
 
 %The project originally set out to isolate sections of the genome with labour intensive cloning techniques and individually sequencing DNA with a known locus in the genome by the Sanger methodology scaled up with the capillary sequencing approach. However it became apparent that this would take an incredibly long time and the project shifted to the ``shotgun'' sequencing approach: cutting the genome into many small sections and reconstructing their locus by aligning them by overlapping sections after the sequencing was performed. While sequencing technologies have changed since this project, this paradigm shift in sequencing at the genome-scale stands, with the ``shotgun'' approach being the norm for most sequencing. This represents a shift in genome biology from meticulously tracing the cloned DNA segments to relying on computational approaches to handle the data afterwards, to either assemble genomes \textit{de novo} or map DNA segments to a known reference sequence. This approach was largely successful with the majority (80\%) of the genome being sequenced over 15 months, a relatively short period in the project which began a decade before the announcement of the draft sequence (covering 94\% of the genome). However, it has some shortcomings including handling the repetious regions of a genome.
 
@@ -60,7 +60,7 @@ An area of particularly high interest for the clinical impact of genomics is onc
 
 %Despite significant advances in genomics technologies, including an unprecedented decrease in costs, the most immediate benefit of genomics to patients is indirect usage of the technologies to identify specific biomarkers and drugs to become adopted into clinical practice: diagnostic testing and pharmacological treatment. Clinical adoption of genomics directly raises far more difficult translational challenges. A key issue is ensuring comparable reliability to current genotyping, gene expression, and molecular pathology based on technologies such as polymerase chain reaction (PCR), Sanger Sequencing, or antibody staining. The debatable issue of incidental findings much also be addressed: that is, how to handle or report the additional genetic data gathered from a genome other than that intended to be tested for, such as variants with unknown, potential, or even established malignant implications for the health of the patient.
 
-Along with the overhead costs of genomics being prohibitive to personal usage, the computational demands and genetics expertise required to assemble and interpret a genome have made genomics still largely used for research purposes by institutions. However, some companies are offering direct-to-consumer genetics testing, pushing for public awareness of genetic risks, testing of outwardly healthy people, and preventative medicine. Due to ethical and legal concerns, companies (such as 23andMe) offering genetic testing directly to consumers without clinical consultation have been restricted to reporting on traits for interest and ancestry rather than for healthcare.
+%Along with the overhead costs of genomics being prohibitive to personal usage, the computational demands and genetics expertise required to assemble and interpret a genome have made genomics still largely used for research purposes by institutions. However, some companies are offering direct-to-consumer genetics testing, pushing for public awareness of genetic risks, testing of outwardly healthy people, and preventative medicine. Due to ethical and legal concerns, companies (such as 23andMe) offering genetic testing directly to consumers without clinical consultation have been restricted to reporting on traits for interest and ancestry rather than for healthcare.
 
 \subsection{Technologies to Enable Genetics Research}
 \subsubsection{DNA Sequencing and Genotyping Technologies}
@@ -70,7 +70,7 @@ The Sanger (dideoxy) chain termination method enabled DNA sequencing and genotyp
 
 
 \subsubsection{Microarrays and Quantitative Technologies}
-Real-time or quantitative PCR (pPCR) is another adaptation of genetic technologies to quantitatively study nucleic acids, often reverse transcribed ``cDNA'' or messenger ``mRNA'' to measure (relative) gene expression or transcript abundance. While numerous quality control measures are required to correctly interpret a qPCR experiment, these have similarly become widely adopted as are still used for smaller scale experiments and as a ``gold standard'' for measuring gene expression. This also represents a shift in the application of PCR and sequencing technology, where the primary interest is quantifying the amount of input material (by the rate of amplification to a certain level) rather than the qualitative nature of the sequence itself. The more recent technologies of microarrays and RNA-Seq have similarly embraced this application to quantify DNA copy number, RNA expression, and DNA methylation levels. Due to results of comparable or arguably better quality from these newer technologies this ``gold standard'' status has started to come under scrutiny.
+Real-time or quantitative PCR (pPCR) is another adaptation of genetic technologies to quantitatively study nucleic acids, often reverse transcribed ``cDNA'' or messenger ``mRNA'' to measure (relative) gene expression or transcript abundance. While numerous quality control measures are required to correctly interpret a qPCR experiment, these have similarly become widely adopted as are still used for smaller scale experiments and as a ``gold standard'' for measuring gene expression \citep{Adamski2014}. This also represents a shift in the application of PCR and sequencing technology, where the primary interest is quantifying the amount of input material (by the rate of amplification to a certain level) rather than the qualitative nature of the sequence itself. The more recent technologies of microarrays and RNA-Seq have similarly embraced this application to quantify DNA copy number, RNA expression, and DNA methylation levels. Due to results of comparable or arguably better quality from these newer technologies \citep{Robin2016, Beck2016, McCourt2013, Git2010}, this ``gold standard'' status has started to come under scrutiny.
 
 Microarrays represent a truly high-throughput molecular technique, reducing the cost, time, and labour required to study molecular factors such as genotype, expression, or methylation across many genes, making it feasible to do so over a statistically meaningful number of samples. Microarrays are manufactured with probes which measure binding of particular nucleotide sequences to either quantitatively detect the presence of a sequence such as a single nucleotide polymorphism (SNP) or quantify DNA copy number, gene expression, or DNA CpG methylation. Microarray technologies have popularised ``genome scale'' studies of genetic variation and expression.
 
@@ -131,7 +131,7 @@ Genomics technologies have given rise to data at a scale previously rarely encou
 
 In practice, many researchers identify with both bioinformatics and computational biology, or draw upon the findings and methods of the other field. This thesis uses many approaches in bioinformatics to biological research questions and established mathematical or bioinformatics reseources.
 
-Gene expression analysis is the focus of many bioinformatics research groups, drawing upon statistical approaches to appropriately handle microarray and RNA-Seq data along with making biological inferences from a large number of statistical tests. This presents various challenges from normalising sample data and accounting for batch effects to developing or applying statistical tests tailored to biological hypotheses and testing them at a genome-wide scale, generally across thousands of genes. There are numerous approaches for dealing with these challenges, some of which will be described in chapter \ref{chap:methods}.
+Gene expression analysis is the focus of many bioinformatics research groups, drawing upon statistical approaches to appropriately handle microarray and RNA-Seq data along with making biological inferences from a large number of statistical tests. This presents various challenges from normalising sample data and accounting for batch effects to developing or applying statistical tests tailored to biological hypotheses and testing them at a genome-wide scale, generally across thousands of genes. There are numerous approaches for dealing with these challenges, some of which will be described in chapter 2.
 
 \subsubsection{Gene Expression Studies with Microarrays}
 Text
@@ -146,7 +146,7 @@ Similarly, international projects and consortiums have begun to release data gat
 \subsection{Cancer Genomes}
 It's importance in the future of cancer research was noticed, even in the early days of genomics \citep{Dickson1999}. The Cancer Genome Project (CGP) based at Wellcome Trust Sanger Institute in the UK were among the first to launch investigations into cancer after the publication of the Human Genome, using this genome sequence, consensus across the cancer reserach literature, and sequencing the genes of cancers themselves. Initially, the Sanger Institute set out to sequence 20 genes across 378 samples while the Human Genome project was still ongoing \citep{Collins2007}, optimising sequencing and computation infrastructure for a larger project while doing so. The main aim of the Cancer Genome Project was to discover ``cancer genes'', those frequently mutated in cancers by comparing the genes of cancer and normal tissue samples, both ``oncogenes'' and ``tumour suppressors'' which are activated and inactivated respectively in cancers. This project is ongoing and the UK continues to be involved in international sequencing initiatives and those focused on particular tissue types.
 
-The Sanger Institute also hosts the Catalogue of Somatic Mutations in Cancer (COSMIC), a database and website of cancer genes. This launch with 66,634 samples and 10,647 mutations from initial investigations into \textit{BRAF}, HRAS, \textit{KRAS}2, and NRAS \citep{Bamford2004}. It has since expanded to include 1,257,487 samples with 4,175,8787 gene mutations curated from 23,870 publications, including 29,112 whole genomes (Release v79 (23/08/2016 \url{http://cancer.sanger.ac.uk/cosmic}). This database now also identifies cancer genes from DNA copy number, differential gene expression and differential DNA methylation.
+The Sanger Institute also hosts the Catalogue of Somatic Mutations in Cancer \citet{COSMICdb}, a database and website of cancer genes. This launchws with 66,634 samples and 10,647 mutations from initial investigations into \textit{BRAF}, HRAS, \textit{KRAS}2, and NRAS \citep{Bamford2004}. It has since expanded to include 1,257,487 samples with 4,175,8787 gene mutations curated from 23,870 publications, including 29,112 whole genomes \citep{COSMICdb}. This database now also identifies cancer genes from DNA copy number, differential gene expression and differential DNA methylation.
 
 \subsubsection{The Cancer Genome Atlas Project}
 Based in the US, the Cancer Genome Atlas (TCGA) project was established in 2005, a combined effort of the National Cancer Institute (NCI) and the National Human Genome Research Institute (NHGRI) of the National Institutes of Health (NIH). They first set out to demonstrate the pilot project on brain (2008), ovarian (2011), and lung (2012) cancers. In 2009, the project expanded aiming to analyse 500 samples each for 20-25 tumour tissue types. They have since exceeded that goal, with data available for 33 cancer types including 10 ``rare'' cancers, a total of over 10,000 samples.
@@ -388,22 +388,20 @@ The examples above show that high-throughput screens are an effective approach t
 
 Prediction of gene interaction networks is a feasible alternative to high-throughput screening with biological importance and clinical relevance. There are many existing methods to predict gene networks, as reviewed by \citet{vanSteen2011} and \citet{Boucher2013} and summarised in Table \ref{tab:methods_model} below. However, many of these methods have limitations including the requirement for existing SGI data, several data inputs, and reliability of gene function annotation. Many of the existing methods also assume conservation of individual interactions between species, which has been found not to hold in yeast studies \citep{Dixon2008}. Tissue specificity is important in gene regulation and gene expression, which are used as predictors of genetic interaction. However, tissue specificity of genetic interactions cannot be explored in yeast studies and has not been considered in any of the following studies of multicellular model organisms, human networks, or cancers. Similarly, investigation into tissue specificity of protein-protein interactions (PPIs) , an important predictor of genetic interactions, is difficult given the high-throughput two-hybrid screens occur out of cellular context for multicellular organisms.  
 
-\begin{table*}[!ht]
+\begin{table}[!ht]
 \caption{Methods for predicting genetic interactions}
 \label{tab:methods_model}
-%\begin{center}
-\resizebox{ \textwidth}{!}{
-\begin{supertabular}{l|l|l|l|l}
+\makebox[\textwidth][c]{
+\resizebox{1.15 \textwidth}{!}{
+%\setlength\LTleft{0pt}
+%\setlength\LTright{0pt}
+\begin{tabular}{l|l|l|l|l}
 
-\multicolumn{1}{m{4.421cm}}{\cellcolor{white}\bfseries\color{black}
-Method} &
-\multicolumn{1}{m{2.342cm}}{\cellcolor{white}\bfseries\color{black}
-\textcolor{black}{Input Data}} &
-\multicolumn{1}{m{2.388cm}}{\cellcolor{white}\bfseries\color{black}
-\textcolor{black}{Species}} &
-\multicolumn{1}{m{4.552cm}}{\cellcolor{white}\bfseries\color{black}
-Source} &
-\cellcolor{white}\bfseries\color{black} Tool Offered\\\hline
+\multicolumn{1}{l}{\textbf{Method}} &
+\multicolumn{1}{l}{\textbf{Input Data}} &
+\multicolumn{1}{l}{\textbf{Species}} &
+\multicolumn{1}{l}{\textbf{Source}} &
+\multicolumn{1}{l}{\textbf{Tool Offered}} \\ \hline
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
 \textcolor{black}{Between Pathways Model} &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} PPI, SGI &
@@ -546,25 +544,13 @@ MetaSL\\\hline
 \citet{Guell2014} &
 \cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
 \\\hline
-\end{supertabular}
+\end{tabular}
 }
-%\end{center}
-\end{table*}
-
-%\begin{flushleft}
-%\resizebox{\textwidth}{!}{
-%\begin{tabular}{m|m|m|m|m}
-
-%\begin{table*}[!ht]
-%\caption{Existing prediction methods for Synthetic Lethality}
-%\label{tab:methods_SL}
-%\begin{center}
-%\resizebox{ \textwidth}{!}{
-%\begin{supertabular}{l|l|l|l|l}
+}
+\end{table}
 
 \begin{table*}[!ht]
 \caption{Methods for predicting synthetic lethality in cancer}
-
 \label{tab:methods_SL}
 %\begin{center}
 \resizebox{ \textwidth}{!}{
@@ -886,9 +872,9 @@ The current clinical management of HDGC still has significant risks for patients
 \subsection{Somatic Mutations}
 \subsubsection{Mutation Rate}
 
-Estimates for the prevalence of \textit{CDH1} somatic mutations  in sporadic cancers varies. The Cancer Gene Census detected 994 distinct mutations in 10,143 tumour samples (at a rate of 7.52\%), COSMIC detected 632 distinct mutations in 43,865 tumour samples (at a rate of 1.71\%), and the NCI60 detected mutations in 13.2\% of 53 cancer cell lines. While there is no consensus on the prevalence of \textit{CDH1} mutations, the vast variability of mutations is consistent with it's role as a tumour supressor and it has been found to be recurrently mutated in a wide range of cancers of epithelial tissues.
+Estimates for the prevalence of \textit{CDH1} somatic mutations  in sporadic cancers varies. The Cancer Gene Census detected 994 distinct mutations in 10,143 tumour samples (at a rate of 7.52\%), \citet{COSMICdb} detected 632 distinct mutations in 43,865 tumour samples (at a rate of 1.71\%), and the NCI60 detected mutations in 13.2\% of 53 cancer cell lines. While there is no consensus on the prevalence of \textit{CDH1} mutations, the vast variability of mutations is consistent with it's role as a tumour supressor and it has been found to be recurrently mutated in a wide range of cancers of epithelial tissues.
 
-COSMIC reports \textit{CDH1} mutations in 40 cancer tissue types including stomach (11.40\% in N=1342), breast (10.29\% in N=3343), large colon (2.87\%), skin (2.83\%), endometrial (2.81\%), and bladder (1.9\%) cancer. ICGC reports \textit{CDH1} mutations in 29 cancer tissue types including skin (23.41\% in N=598), breast (14.50\% in N=1696), ovary (13.98\%, N=93), and stomach (11.41\% in N=289) cancer samples. \textit{CDH1} mutations are reported at similar rates in breast and stomach cancer in other cancer genomics projects and studies across distinct populations. cBioPortal reports \textit{CDH1} mutation prevalence in stomach cancer at 16.7\% (Tokyo Univ., Kakiuchi, 2014, N=30), 15\% (Pfizer/UHK,  Wang, 2014, N=100), 14.1\% (Tianjin Medical University, Chen, 2015, N=78), and 9.4\% (TCGA , 2017 prov, N=393). cBioPortal also reports \textit{CDH1} mutation prevalence in breast cancer at 12.7\% (TCGA, 2017 prov, N=963) and 10.8\% (METABRIC, 2012/2016, N=2051). The rare plasmacytoid bladder cancer subtype also has a high prevalence of \textit{CDH1} mutations in COSMIC at a rate of 81.8\% (N=33). These demonstrate that \textit{CDH1} is important in many cancers and targeting \textit{CDH1} may be widely applied against sporadic cancers in addition to hereditary cancers. However, some of these studies have focused on disease subgroups (such as lobular subtype or estogren receptor negative breast cancers) with poor patient outcomes which may have inflated the prevalence of \textit{CDH1} mutations which are more common in some of these subtypes.
+\citet{COSMICdb} reports \textit{CDH1} mutations in 40 cancer tissue types including stomach (11.40\% in N=1342), breast (10.29\% in N=3343), large colon (2.87\%), skin (2.83\%), endometrial (2.81\%), and bladder (1.9\%) cancer. ICGC reports \textit{CDH1} mutations in 29 cancer tissue types including skin (23.41\% in N=598), breast (14.50\% in N=1696), ovary (13.98\%, N=93), and stomach (11.41\% in N=289) cancer samples. \textit{CDH1} mutations are reported at similar rates in breast and stomach cancer in other cancer genomics projects and studies across distinct populations. cBioPortal reports \textit{CDH1} mutation prevalence in stomach cancer at 16.7\% (Tokyo Univ., Kakiuchi, 2014, N=30), 15\% (Pfizer/UHK,  Wang, 2014, N=100), 14.1\% (Tianjin Medical University, Chen, 2015, N=78), and 9.4\% (TCGA , 2017 prov, N=393). cBioPortal also reports \textit{CDH1} mutation prevalence in breast cancer at 12.7\% (TCGA, 2017 prov, N=963) and 10.8\% (METABRIC, 2012/2016, N=2051). The rare plasmacytoid bladder cancer subtype also has a high prevalence of \textit{CDH1} mutations in \citet{COSMICdb} at a rate of 81.8\% (N=33). These demonstrate that \textit{CDH1} is important in many cancers and targeting \textit{CDH1} may be widely applied against sporadic cancers in addition to hereditary cancers. However, some of these studies have focused on disease subgroups (such as lobular subtype or estogren receptor negative breast cancers) with poor patient outcomes which may have inflated the prevalence of \textit{CDH1} mutations which are more common in some of these subtypes.
 
 \subsubsection{Co-occuring Mutations}
 
