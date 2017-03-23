@@ -27,6 +27,7 @@
 
 %\usepackage[longnamesfirst,round]{natbib} %% Use Natural Sciences bibliography
 \usepackage[round]{natbib} %% Use Natural Sciences bibliography
+%\usepackage{apacite}
 %enable abbreviated in text citations
 \usepackage{etoolbox}
 \newif\ifabbreviation
@@ -42,6 +43,7 @@
 \usepackage{graphicx}             %% jpg, gif, tiff, and pdf graphics
 \usepackage{moreverb}             %% Verbatim Code Listings
 \usepackage{hyperref}             %% hyperlinks
+\usepackage{doi}  
 %\usepackage{color}
 \usepackage{xcolor}
 %\usepackage{supertabular}
@@ -147,7 +149,7 @@
 %% cited something from it.
 %%
 \cleardoublepage
-\bibliographystyle{otago}
+\bibliographystyle{mycustom}
 \bibliography{thesis}
 
 \include{appendices}

@@ -8,7 +8,7 @@ A level-1 auxiliary file: chapt4.aux
 A level-1 auxiliary file: chapt5.aux
 A level-1 auxiliary file: chapt6.aux
 A level-1 auxiliary file: conclusion.aux
-The style file: otago.bst
+The style file: mycustom.bst
 A level-1 auxiliary file: appendices.aux
 Database file #1: thesis.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
@@ -17,53 +17,49 @@ Warning--I didn't find a database entry for "TCGA2008GBM"
 Warning--I didn't find a database entry for "TCGA2011OV"
 Warning--I didn't find a database entry for "TCGA2012LUSC"
 Warning--I didn't find a database entry for "ICGC2017web"
-Warning--empty organization in safe
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--can't use both volume and number fields in Erdos1960
 Warning--empty booktitle in CIX2013
 Warning--can't use both volume and number fields in CIX2013
-Warning--page numbers missing in Pandey2010
-Warning--no journal in Pharmac2016
-Warning--no number and no volume in Pharmac2016
-Warning--page numbers missing in Pharmac2016
-Warning--empty organization in gplots
-You've used 182 entries,
-            2855 wiz_defined-function locations,
-            1809 strings with 66246 characters,
-and the built_in function-call counts, 283861 in all, are:
-= -- 16062
-> -- 40913
-< -- 4
-+ -- 13890
-- -- 14144
-* -- 34403
-:= -- 56189
-add.period$ -- 554
-call.type$ -- 182
-change.case$ -- 3012
+You've used 181 entries,
+            3131 wiz_defined-function locations,
+            1849 strings with 66482 characters,
+and the built_in function-call counts, 174130 in all, are:
+= -- 15484
+> -- 7183
+< -- 146
++ -- 6955
+- -- 1959
+* -- 13462
+:= -- 20612
+add.period$ -- 386
+call.type$ -- 181
+change.case$ -- 1890
 chr.to.int$ -- 182
-cite$ -- 190
-duplicate$ -- 3250
-empty$ -- 7699
-format.name$ -- 14724
-if$ -- 49671
-int.to.chr$ -- 1
-int.to.str$ -- 0
-missing$ -- 175
-newline$ -- 919
-num.names$ -- 1822
-pop$ -- 2680
+cite$ -- 365
+duplicate$ -- 14184
+empty$ -- 11895
+format.name$ -- 2610
+if$ -- 34828
+int.to.chr$ -- 3
+int.to.str$ -- 1
+missing$ -- 2386
+newline$ -- 937
+num.names$ -- 726
+pop$ -- 6909
 preamble$ -- 1
-purify$ -- 4286
+purify$ -- 1701
 quote$ -- 0
-skip$ -- 3320
+skip$ -- 5996
 stack$ -- 0
-substring$ -- 6935
-swap$ -- 1076
-text.length$ -- 4
+substring$ -- 12478
+swap$ -- 5750
+text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 3590
-warning$ -- 8
-while$ -- 1585
+type$ -- 1617
+warning$ -- 3
+while$ -- 724
 width$ -- 0
-write$ -- 2390
-(There were 13 warnings)
+write$ -- 2574
+(There were 8 warnings)

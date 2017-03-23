@@ -667,13 +667,13 @@ This is model suggests that synthetic lethality is detectable in measures of gen
 \begin{figure*}[!ht]
   \begin{center}
   \fbox{
-  \resizebox{1 \textwidth}{!}{
+  \resizebox{0.84375 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \includegraphics{{"SL_Model"}}
    }
    }
    \end{center}
-   \caption[A model of Synthetic Lethality]{\textbf{A model of Synthetic Lethality.} A conceptual model of synthetic lethal interactions between a Query gene (Q) and partner gene ($G_1$). Genes that are synthetic lethal may not be non-functional in the same sample without another gene compensating for the loss of function. This is most likely to be detectable as lowly expressed gene, whether they are lost by mutation, copy number loss, DNA methylation, or supressing regulatory signals. This could manifest as coexpression, mutual exclusivity, or directional shifts in sample frequency. Thus the alternative hypothesis ($H_{A}$) is that synthetic lethal genes will exclude co-loss samples while the null hypothesis ($H_{0}$) is that in non-synthetic lethal gene pairs would show no such relationship, even if they may be correlated for other means such as pathway relationships. In this model synthetic lethal genes may compensate for the loss of each other but this is not assumed, only that loss of both is unfavourable to cell viability and probably of detecting samples with combined gene loss.
+   \caption[A model of synthetic lethal gene expression]{\textbf{A model of synthetic lethal gene expresion.} A conceptual model of synthetic lethal interactions between a Query gene and partner gene ($G_X$). Genes that are synthetic lethal may not both be non-functional in the same sample without another gene compensating for the loss of function. This is most likely to be detectable as low gene expression, whether they are lost by mutation, deletion, DNA methylation, or supressing regulatory signals. This could manifest as coexpression, mutual exclusivity, or directional shifts in sample frequency. Thus the alternative hypothesis ($H_{A}$) is that synthetic lethal genes will have a reduced frequency of co-loss samples while the null hypothesis ($H_{0}$) is that non-synthetic lethal gene pairs would show no such relationship, even if they may be correlated for other means such as pathway relationships. In this model synthetic lethal genes may compensate for the loss of each other but this is not assumed, only that loss of both is unfavourable to cell viability and probability of detecting samples with combined gene loss.
 }
 \label{fig:SL_Model}
 \end{figure*}
@@ -684,13 +684,13 @@ The first condition of the synthetic lethal model is that if there are only 2 sy
 \begin{figure*}[!ht]
   \begin{center}
   \fbox{
-  \resizebox{1 \textwidth}{!}{
+  \resizebox{0.9 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \includegraphics{{"SL_Model_Higher"}}
    }
    }
    \end{center}
-   \caption[Modeling Higher-order Synthetic Lethality]{\textbf{Modeling Higher-order Synthetic Lethality.} Higher order synthetic lethal interactions may occur between 3 or more genes, which may impact the simulated expression pattern (or observed synthetic lethal preditions) whether or not that these higher-order interactions are known to a pair-wise observer. This situation is illustrated with synthetic lethal interactions between a Query gene (Q) two partner genes ($G_1$ and $G_2$). Each partner gene may interact with Q pairwise with synthetic lethality manifesting as cellular inviability when either gene pair is lost. Alternatively, the synthetic lethal genes may form a higher-order interaction such as the ``synthetic lethal triplet'' presented here. In this case, any of the genes are able to provide the essential function of the synthetic lethal group, with loss of all required for synthetic lethality to manifest as cellualr inviability. Both of these higher-order interactions are biological plausible, for instance depending on whether the partner genes are directly upstream or downstream of each other in a biological pathway.
+   \caption[Synthetic lethality with multiple genes]{\textbf{Synthetic lethality with multiple genes.} Higher order synthetic lethal interactions may occur between 3 or more genes, affecting the simulated expression (or synthetic lethal predictions) even if unknown to a pairwise observer. Consider interactions between a Query gene and two partner genes ($G_X$ and $G_Y$). They may interact with the Query pairwise (inviable when either gene pair is lost) or form a higher-order interaction such as the ``synthetic lethal triplet''  if any of the genes provide an essential function (inviable only when all are lost). Either is plausible with the potential pathway structures. A synthetic lethal triple has 8 potential combinations of gene functional but one is not expected to be observed (due to inviability) but pairwise inactivation may be observed if additional partner genes are functional. The proportion of these combinations vary depending on the functional threshold.
 }
 \label{fig:SL_Model_Higher}
 \end{figure*}
@@ -701,12 +701,12 @@ A synthetic lethal pair of genes is unlikely to act in isolation, higher-order s
 \begin{figure*}[!ht]
   \begin{center}
   \fbox{
-  \resizebox{1 \textwidth}{!}{
+  \resizebox{0.675 \textwidth}{!}{
     \includegraphics{{"SL_Model_Expression"}}
    }
    }
    \end{center}
-   \caption[Modeling Synthetic Lethal Gene Expression]{\textbf{\textbf{Modeling Synthetic Lethal Gene Expression.}} Here we model synthetic lethal interactions between a Query gene (Q) two partner genes ($G_1$ and $G_2$) where any of the triplet are able to maintain cellular viability when the other genes are lost. Expression is modeled a normally (Gaussian) distributed continuous data which could be RNA (microarray or RNA-Seq) or Protein expression levels. Expression below a threshold is used as a model of loss of function, where genes are regarded as non-functional for the purposes of modelling synthetic lethality. Genes with loss of function may also lead to cancer specific phenotypes if they are tumour suppressors (although these thresholds are not necessarily the same). In the case of a synthetic lethal triple there are 8 potential combinations of functional groups, however only 7 of these are permitted under the SL model as inactivation of all genes in inviable. However, pairwise inactivation may be observed if the additional partner genes are functional, whether or not these are known or observed. Note that these combinations will not be observed in equal proportions but will depend on the functional threshold ($pr$).
+   \caption[Modeling synthetic lethal gene expression]{\textbf{Modeling synthetic lethal gene expression.} When modeling synthetic lethal interactions between a Query gene with partner genes ($G_X$ and $G_Y$) above,  cellular viability requires that at least of genes is not inactivated. Expression below a threshold is used as a model of loss of function, where genes are regarded as non-functional for the purposes of modelling synthetic lethality. Genes with loss of function may also lead to cancer specific phenotypes if they are tumour suppressors (although these thresholds are not necessarily the same). Expression is modeled a normally (Gaussian) distributed continuous data which could be expression data (on a logarithmic scale) from RNA (microarray or RNA-Seq), Protein levels, or pathway metagenes. This rationale generalises for several genes on a multivariate normal distribution.
 }
 \label{fig:SL_Model_Expression}
 \end{figure*}
