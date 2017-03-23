@@ -11,51 +11,59 @@ A level-1 auxiliary file: conclusion.aux
 The style file: otago.bst
 A level-1 auxiliary file: appendices.aux
 Database file #1: thesis.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Warning--I didn't find a database entry for "TCGA2017web"
+Warning--I didn't find a database entry for "TCGA2008GBM"
+Warning--I didn't find a database entry for "TCGA2011OV"
+Warning--I didn't find a database entry for "TCGA2012LUSC"
+Warning--I didn't find a database entry for "ICGC2017web"
 Warning--empty organization in safe
+Warning--empty booktitle in CIX2013
+Warning--can't use both volume and number fields in CIX2013
 Warning--page numbers missing in Pandey2010
 Warning--no journal in Pharmac2016
 Warning--no number and no volume in Pharmac2016
 Warning--page numbers missing in Pharmac2016
 Warning--empty organization in gplots
-You've used 164 entries,
+You've used 182 entries,
             2855 wiz_defined-function locations,
-            1685 strings with 53046 characters,
-and the built_in function-call counts, 220719 in all, are:
-= -- 13228
-> -- 29827
-< -- 2
-+ -- 10032
-- -- 10254
-* -- 26099
-:= -- 43165
-add.period$ -- 492
-call.type$ -- 164
-change.case$ -- 2299
-chr.to.int$ -- 164
-cite$ -- 170
-duplicate$ -- 2932
-empty$ -- 6976
-format.name$ -- 10790
-if$ -- 39021
+            1809 strings with 66246 characters,
+and the built_in function-call counts, 283861 in all, are:
+= -- 16062
+> -- 40913
+< -- 4
++ -- 13890
+- -- 14144
+* -- 34403
+:= -- 56189
+add.period$ -- 554
+call.type$ -- 182
+change.case$ -- 3012
+chr.to.int$ -- 182
+cite$ -- 190
+duplicate$ -- 3250
+empty$ -- 7699
+format.name$ -- 14724
+if$ -- 49671
 int.to.chr$ -- 1
 int.to.str$ -- 0
-missing$ -- 163
-newline$ -- 822
-num.names$ -- 1642
-pop$ -- 2002
+missing$ -- 175
+newline$ -- 919
+num.names$ -- 1822
+pop$ -- 2680
 preamble$ -- 1
-purify$ -- 3447
+purify$ -- 4286
 quote$ -- 0
-skip$ -- 2991
+skip$ -- 3320
 stack$ -- 0
-substring$ -- 6275
-swap$ -- 965
-text.length$ -- 2
+substring$ -- 6935
+swap$ -- 1076
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 3230
-warning$ -- 6
-while$ -- 1418
+type$ -- 3590
+warning$ -- 8
+while$ -- 1585
 width$ -- 0
-write$ -- 2139
-(There were 6 warnings)
+write$ -- 2390
+(There were 13 warnings)
