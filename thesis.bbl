@@ -1,4 +1,4 @@
-\begin{thebibliography}{181}
+\begin{thebibliography}{207}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibAnnoteFile}[1]{%
   \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
@@ -28,6 +28,13 @@ Agarwal, S., Deane, C.M., Porter, M.A., and Jones, N.S. (2010) Revisiting date
   networks.
 \newblock \emph{PLoS Comput Biol}, \textbf{6}(6): e1000817.
 \bibAnnoteFile{Agarwal2010}
+
+\bibitem[\protect\astroncite{Akobeng}{2007}]{Akobeng2007}
+Akobeng, A.K. (2007) Understanding diagnostic tests 3: receiver operating
+  characteristic curves.
+\newblock \emph{Acta Pædiatrica}, \textbf{96}(5): 644--647.
+\newblock \doi{10.1111/j.1651-2227.2006.00178.x}.
+\bibAnnoteFile{Akobeng2007}
 
 \bibitem[\protect\astroncite{{American Cancer Society}}{2017}]{ACS2017}
 {American Cancer Society} (2017) Genetics and cancer.
@@ -207,6 +214,12 @@ Boone, C., Bussey, H., and Andrews, B.J. (2007) Exploring genetic interactions
 \newblock \emph{Nat Rev Genet}, \textbf{8}(6): 437--49.
 \bibAnnoteFile{Boone2007}
 
+\bibitem[\protect\astroncite{Borgatti}{2005}]{Borgatti2005}
+Borgatti, S.P. (2005) Centrality and network flow.
+\newblock \emph{Social Networks}, \textbf{27}(1): 55 -- 71.
+\newblock \doi{http://dx.doi.org/10.1016/j.socnet.2004.11.008}.
+\bibAnnoteFile{Borgatti2005}
+
 \bibitem[\protect\astroncite{Boucher and Jenna}{2013}]{Boucher2013}
 Boucher, B. and Jenna, S. (2013) Genetic interaction networks: better
   understand to better predict.
@@ -254,6 +267,13 @@ Butland, G., Babu, M., Diaz-Mejia, J.J., Bohdana, F., Phanse, S., Gold, B.,
 \newblock Accessed: 22/03/2017.
 \bibAnnoteFile{CancerResearchUK2017}
 
+\bibitem[\protect\astroncite{Cerami \emph{et~al.}}{2011}]{PathwayCommons}
+Cerami, E.G., Gross, B.E., Demir, E., Rodchenkov, I., Babur, O., Anwar, N.,
+  Schultz, N., Bader, G.D., and Sander, C. (2011) {{P}athway {C}ommons, a web
+  resource for biological pathway data}.
+\newblock \emph{Nucleic Acids Res}, \textbf{39}(Database issue): D685--690.
+\bibAnnoteFile{PathwayCommons}
+
 \bibitem[\protect\astroncite{Chen \emph{et~al.}}{2014}]{Chen2014}
 Chen, A., Beetham, H., Black, M.A., Priya, R., Telford, B.J., Guest, J.,
   Wiggins, G.A.R., Godwin, T.D., Yap, A.S., and Guilford, P.J. (2014)
@@ -269,6 +289,12 @@ Chen, S. and Parmigiani, G. (2007) {{M}eta-analysis of {B}{R}{C}{A}1 and
   {B}{R}{C}{A}2 penetrance}.
 \newblock \emph{J Clin Oncol}, \textbf{25}(11): 1329--1333.
 \bibAnnoteFile{Chen2007}
+
+\bibitem[\protect\astroncite{Chen and Tompa}{2010}]{Chen2010}
+Chen, X. and Tompa, M. (2010) {{C}omparative assessment of methods for aligning
+  multiple genome sequences}.
+\newblock \emph{Nat Biotechnol}, \textbf{28}(6): 567--572.
+\bibAnnoteFile{Chen2010}
 
 \bibitem[\protect\astroncite{Chipman and Singh}{2009}]{Chipman2009}
 Chipman, K. and Singh, A. (2009) Predicting genetic interactions with random
@@ -300,6 +326,19 @@ Clark, M.J. (2004) {Endogenous Regulator of G Protein Signaling Proteins
 \newblock \doi{10.1124/jpet.103.064824}.
 \bibAnnoteFile{Clark2004}
 
+\bibitem[\protect\astroncite{Clough and Barrett}{2016}]{GEO2016}
+Clough, E. and Barrett, T. (2016) {{T}he {G}ene {E}xpression {O}mnibus
+  {D}atabase}.
+\newblock \emph{Methods Mol Biol}, \textbf{1418}: 93--110.
+\bibAnnoteFile{GEO2016}
+
+\bibitem[\protect\astroncite{Collingridge}{2013}]{Collingridge2013}
+Collingridge, D.S. (2013) A primer on quantitized data analysis and permutation
+  testing.
+\newblock \emph{Journal of Mixed Methods Research}, \textbf{7}(1): 81--97.
+\newblock \doi{10.1177/1558689812454457}.
+\bibAnnoteFile{Collingridge2013}
+
 \bibitem[\protect\astroncite{Collins and Barker}{2007}]{Collins2007}
 Collins, F.S. and Barker, A.D. (2007) {{M}apping the cancer genome.
   {P}inpointing the genes involved in cancer will help chart a new course
@@ -329,13 +368,13 @@ Costanzo, M., Baryshnikova, A., Myers, C.L., Andrews, B., and Boone, C. (2011)
 \newblock \emph{Curr Opin Biotechnol}, \textbf{22}(1): 66--74.
 \bibAnnoteFile{Costanzo2011}
 
-\bibitem[\protect\astroncite{Croft \emph{et~al.}}{2014}]{reactome}
+\bibitem[\protect\astroncite{Croft \emph{et~al.}}{2014}]{Reactome}
 Croft, D., Mundo, A.F., Haw, R., Milacic, M., Weiser, J., Wu, G., Caudy, M.,
   Garapati, P., Gillespie, M., Kamdar, M.R., \emph{et~al.} (2014) {The Reactome
   pathway knowledgebase}.
 \newblock \emph{Nucleic Acids Res}, \textbf{42}(database issue): D472–D477.
 \newblock \doi{10.1093/nar/gkt1102}.
-\bibAnnoteFile{reactome}
+\bibAnnoteFile{Reactome}
 
 \bibitem[\protect\astroncite{Crunkhorn}{2014}]{Crunkhorn2014}
 Crunkhorn, S. (2014) Cancer: Predicting synthetic lethal interactions.
@@ -370,6 +409,13 @@ De~Leeuw, W.J., Berx, G., Vos, C.B., Peterse, J.L., Van~de Vijver, M.J.,
 \newblock \emph{J Pathol}, \textbf{183}(4): 404--11.
 \bibAnnoteFile{DeLeeuw1997}
 
+\bibitem[\protect\astroncite{Demir \emph{et~al.}}{2013}]{paxtools}
+Demir, E., Babur, O., Rodchenkov, I., Aksoy, B.A., Fukuda, K.I., Gross, B.,
+  Sumer, O.S., Bader, G.D., and Sander, C. (2013) {{U}sing biological pathway
+  data with {P}axtools}.
+\newblock \emph{PLoS Comput Biol}, \textbf{9}(9): e1003194.
+\bibAnnoteFile{paxtools}
+
 \bibitem[\protect\astroncite{Deshpande \emph{et~al.}}{2013}]{Deshpande2013}
 Deshpande, R., Asiedu, M.K., Klebig, M., Sutor, S., Kuzmin, E., Nelson, J.,
   Piotrowski, J., Shin, S.H., Yoshida, M., Costanzo, M., \emph{et~al.} (2013) A
@@ -387,6 +433,12 @@ Dickson, D. (1999) {{W}ellcome funds cancer database}.
 Dienstmann, R. and Tabernero, J. (2011) Braf as a target for cancer therapy.
 \newblock \emph{Anticancer Agents Med Chem}, \textbf{11}(3): 285--95.
 \bibAnnoteFile{Dienstmann2011}
+
+\bibitem[\protect\astroncite{Dijkstra}{1959}]{Dijkstra1959}
+Dijkstra, E.W. (1959) A note on two problems in connexion with graphs.
+\newblock \emph{Numerische Mathematik}, \textbf{1}(1): 269--271.
+\newblock \doi{10.1007/BF01386390}.
+\bibAnnoteFile{Dijkstra1959}
 
 \bibitem[\protect\astroncite{Dixon \emph{et~al.}}{2009}]{Dixon2009a}
 Dixon, S.J., Andrews, B.J., and Boone, C. (2009) Exploring the conservation of
@@ -425,6 +477,13 @@ Farmer, H., McCabe, N., Lord, C.J., Tutt, A.N., Johnson, D.A., Richardson,
   strategy.
 \newblock \emph{Nature}, \textbf{434}(7035): 917--21.
 \bibAnnoteFile{Farmer2005}
+
+\bibitem[\protect\astroncite{Fawcett}{2006}]{Fawcett2006}
+Fawcett, T. (2006) An introduction to {ROC} analysis.
+\newblock \emph{Pattern Recognition Letters}, \textbf{27}(8): 861 -- 874.
+\newblock \doi{http://dx.doi.org/10.1016/j.patrec.2005.10.010}.
+\newblock \{ROC\} Analysis in Pattern Recognition.
+\bibAnnoteFile{Fawcett2006}
 
 \bibitem[\protect\astroncite{Fece de~la Cruz \emph{et~al.}}{2015}]{Fece2015}
 Fece de~la Cruz, F., Gapp, B.V., and Nijman, S.M. (2015) Synthetic lethal
@@ -469,6 +528,15 @@ Fraser, A. (2004) Towards full employment: using rnai to find roles for the
 \newblock \emph{Oncogene}, \textbf{23}(51): 8346--52.
 \bibAnnoteFile{Fraser2004}
 
+\bibitem[\protect\astroncite{Gentleman \emph{et~al.}}{2004}]{Gentleman2004}
+Gentleman, R.C., Carey, V.J., Bates, D.M., Bolstad, B., Dettling, M., Dudoit,
+  S., Ellis, B., Gautier, L., Ge, Y., Gentry, J., \emph{et~al.} (2004)
+  Bioconductor: open software development for computational biology and
+  bioinformatics.
+\newblock \emph{Genome Biol}, \textbf{5}(10): R80.
+\newblock \doi{10.1186/gb-2004-5-10-r80}.
+\bibAnnoteFile{Gentleman2004}
+
 \bibitem[\protect\astroncite{Git \emph{et~al.}}{2010}]{Git2010}
 Git, A., Dvinge, H., Salmon-Divon, M., Osborne, M., Kutter, C., Hadfield, J.,
   Bertone, P., and Caldas, C. (2010) {{S}ystematic comparison of microarray
@@ -476,6 +544,12 @@ Git, A., Dvinge, H., Salmon-Divon, M., Osborne, M., Kutter, C., Hadfield, J.,
   for measuring differential micro{R}{N}{A} expression}.
 \newblock \emph{RNA}, \textbf{16}(5): 991--1006.
 \bibAnnoteFile{Git2010}
+
+\bibitem[\protect\astroncite{{\acroauthor{Globus}{Globus}}}{2017}]{Globus}
+{\acroauthor{Globus}{Globus}} (2017) {Research data management simplified}.
+\newblock \url{https://www.globus.org/}.
+\newblock Accessed: 25/03/2017.
+\bibAnnoteFile{Globus}
 
 \bibitem[\protect\astroncite{Graziano \emph{et~al.}}{2003}]{Graziano2003}
 Graziano, F., Humar, B., and Guilford, P. (2003) The role of the e-cadherin
@@ -525,6 +599,12 @@ Guilford, P.J., Hopkins, J.B., Grady, W.M., Markowitz, S.D., Willis, J., Lynch,
 \newblock \emph{Hum Mutat}, \textbf{14}(3): 249--55.
 \bibAnnoteFile{HDGC}
 
+\bibitem[\protect\astroncite{Hajian-Tilaki}{2013}]{Hajian-Tilaki2013}
+Hajian-Tilaki, K. (2013) {{R}eceiver {O}perating {C}haracteristic ({R}{O}{C})
+  {C}urve {A}nalysis for {M}edical {D}iagnostic {T}est {E}valuation}.
+\newblock \emph{Caspian J Intern Med}, \textbf{4}(2): 627--635.
+\bibAnnoteFile{Hajian-Tilaki2013}
+
 \bibitem[\protect\astroncite{Hall \emph{et~al.}}{2009}]{Hall2009}
 Hall, M., Frank, E., Holmes, G., Pfahringer, B., Reutemann, P., and Witten,
   I.H. (2009) The weka data mining software: an update.
@@ -556,6 +636,13 @@ Hanna, S. (2003) Cancer incidence in new zealand (2003-2007).
   International Agency for Research on Cancer, Lyon, France.
 \newblock Electronic version \url{http://ci5.iarc.fr} Accessed 22/03/2017.
 \bibAnnoteFile{CIX2013}
+
+\bibitem[\protect\astroncite{Heiskanen \emph{et~al.}}{2014}]{caArray2014}
+Heiskanen, M., Bian, X., Swan, D., and Basu, A. (2014) {caArray} microarray
+  database in the cancer biomedical informatics grid\textsuperscript{TM}
+  ({caBIG}\textsuperscript{TM}).
+\newblock \emph{Cancer Research}, \textbf{67}(9 Supplement): 3712--3712.
+\bibAnnoteFile{caArray2014}
 
 \bibitem[\protect\astroncite{Heiskanen and Aittokallio}{2012}]{Heiskanen2012}
 Heiskanen, M.A. and Aittokallio, T. (2012) Mining high-throughput screens for
@@ -677,6 +764,12 @@ Lander, E.S., Linton, L.M., Birren, B., Nusbaum, C., Zody, M.C., Baldwin, J.,
   sequencing and analysis of the human genome.
 \newblock \emph{Nature}, \textbf{409}(6822): 860--921.
 \bibAnnoteFile{Lander2001}
+
+\bibitem[\protect\astroncite{Langmead \emph{et~al.}}{2009}]{bowtie}
+Langmead, B., Trapnell, C., Pop, M., and Salzberg, S.L. (2009) {{U}ltrafast and
+  memory-efficient alignment of short {D}{N}{A} sequences to the human genome}.
+\newblock \emph{Genome Biol}, \textbf{10}(3): R25.
+\bibAnnoteFile{bowtie}
 
 \bibitem[\protect\astroncite{Latora and Marchiori}{2001}]{Latora2001}
 Latora, V. and Marchiori, M. (2001) Efficient behavior of small-world networks.
@@ -833,6 +926,12 @@ Miles, D.W. (2001) {{U}pdate on {H}{E}{R}-2 as a target for cancer therapy:
 \newblock \emph{Breast Cancer Res}, \textbf{3}(6): 380--384.
 \bibAnnoteFile{Miles2001}
 
+\bibitem[\protect\astroncite{Mortazavi \emph{et~al.}}{2008}]{Mortazavi2008}
+Mortazavi, A., Williams, B.A., McCue, K., Schaeffer, L., and Wold, B. (2008)
+  {{M}apping and quantifying mammalian transcriptomes by {R}{N}{A}-{S}eq}.
+\newblock \emph{Nat Methods}, \textbf{5}(7): 621--628.
+\bibAnnoteFile{Mortazavi2008}
+
 \bibitem[\protect\astroncite{Noonan \emph{et~al.}}{2006}]{Paabo2006}
 Noonan, J.P., Coop, G., Kudaravalli, S., Smith, D., Krause, J., Alessi, J.,
   Chen, F., Platt, D., P\"a\"abo, S., Pritchard, J.K., \emph{et~al.} (2006)
@@ -940,6 +1039,20 @@ Roguev, A., Bandyopadhyay, S., Zofall, M., Zhang, K., Fischer, T., Collins,
 \newblock \emph{Science}, \textbf{322}(5900): 405--10.
 \bibAnnoteFile{Roguev2008}
 
+\bibitem[\protect\astroncite{Rung and Brazma}{2013}]{Rung2013}
+Rung, J. and Brazma, A. (2013) {{R}euse of public genome-wide gene expression
+  data}.
+\newblock \emph{Nat Rev Genet}, \textbf{14}(2): 89--99.
+\bibAnnoteFile{Rung2013}
+
+\bibitem[\protect\astroncite{Rustici \emph{et~al.}}{2013}]{ArrayExpress2013}
+Rustici, G., Kolesnikov, N., Brandizi, M., Burdett, T., Dylag, M., Emam, I.,
+  Farne, A., Hastings, E., Ison, J., Keays, M., \emph{et~al.} (2013)
+  {{A}rray{E}xpress update--trends in database growth and links to data
+  analysis tools}.
+\newblock \emph{Nucleic Acids Res}, \textbf{41}(Database issue): D987--990.
+\bibAnnoteFile{ArrayExpress2013}
+
 \bibitem[\protect\astroncite{Ryan \emph{et~al.}}{2014}]{Ryan2014}
 Ryan, C., Lord, C., and Ashworth, A. (2014) Daisy: Picking synthetic lethals
   from cancer genomes.
@@ -966,6 +1079,19 @@ Semb, H. and Christofori, G. (1998) The tumor-suppressor function of
 \newblock \emph{Am J Hum Genet}, \textbf{63}(6): 1588--93.
 \bibAnnoteFile{Semb1998}
 
+\bibitem[\protect\astroncite{Sing \emph{et~al.}}{2005}]{ROCR}
+Sing, T., Sander, O., Beerenwinkel, N., and Lengauer, T. (2005) Rocr:
+  visualizing classifier performance in r.
+\newblock \emph{Bioinformatics}, \textbf{21}(20): 7881.
+\bibAnnoteFile{ROCR}
+
+\bibitem[\protect\astroncite{{\acroauthor{Slurm development
+  team}{Slurm}}}{2017}]{slurm}
+{\acroauthor{Slurm development team}{Slurm}} (2017) {Slurm workload manager}.
+\newblock \url{https://slurm.schedmd.com/}.
+\newblock Accessed: 25/03/2017.
+\bibAnnoteFile{slurm}
+
 \bibitem[\protect\astroncite{S{\o}rlie \emph{et~al.}}{2001}]{Sorlie2001}
 S{\o}rlie, T., Perou, C.M., Tibshirani, R., Aas, T., Geisler, S., Johnsen, H.,
   Hastie, T., Eisen, M.B., van~de Rijn, M., Jeffrey, S.S., \emph{et~al.} (2001)
@@ -973,6 +1099,12 @@ S{\o}rlie, T., Perou, C.M., Tibshirani, R., Aas, T., Geisler, S., Johnsen, H.,
   with clinical implications}.
 \newblock \emph{Proc Natl Acad Sci USA}, \textbf{98}(19): 10869--10874.
 \bibAnnoteFile{Sorlie2001}
+
+\bibitem[\protect\astroncite{Stajich and Lapp}{2006}]{Stajich2006}
+Stajich, J.E. and Lapp, H. (2006) {{O}pen source tools and toolkits for
+  bioinformatics: significance, and where are we?}
+\newblock \emph{Brief Bioinformatics}, \textbf{7}(3): 287--296.
+\bibAnnoteFile{Stajich2006}
 
 \bibitem[\protect\astroncite{Str\"om and Helleday}{2012}]{Strom2012}
 Str\"om, C. and Helleday, T. (2012) Strategies for the use of poly(adenosine
@@ -1033,6 +1165,13 @@ Telford, B.J., Chen, A., Beetham, H., Frick, J., Brew, T.P., Gould, C.M.,
 \newblock Release 79 (23/08/2016), Accessed: 05/02/2017.
 \bibAnnoteFile{COSMICdb}
 
+\bibitem[\protect\astroncite{{\acroauthor{The Comprehensive R Archive
+  Network}{CRAN}}}{2017}]{CRAN}
+{\acroauthor{The Comprehensive R Archive Network}{CRAN}} (2017) Cran.
+\newblock \url{https://cran.r-project.org/}.
+\newblock Accessed: 24/03/2017.
+\bibAnnoteFile{CRAN}
+
 \bibitem[\protect\astroncite{{\acroauthor{The ENCODE Project
   Consortium}{ENCODE}}}{2004}]{ENCODE2004}
 {\acroauthor{The ENCODE Project Consortium}{ENCODE}} (2004) {{T}he
@@ -1048,11 +1187,24 @@ Telford, B.J., Chen, A., Beetham, H., Frick, J., Brew, T.P., Gould, C.M.,
 \newblock Published: 22/04/2015, Accessed: 22/03/2017.
 \bibAnnoteFile{NCI2015}
 
+\bibitem[\protect\astroncite{{\acroauthor{The New Zealand eScience
+  Infrastructure}{NeSI}}}{2017}]{NeSI}
+{\acroauthor{The New Zealand eScience Infrastructure}{NeSI}} (2017) {NeSI}.
+\newblock \url{https://www.nesi.org.nz/}.
+\newblock Accessed: 25/03/2017.
+\bibAnnoteFile{NeSI}
+
 \bibitem[\protect\astroncite{{\acroauthor{The Pharmaceutical Management
   Agency}{PHARMAC}}}{2016}]{Pharmac2016}
 {\acroauthor{The Pharmaceutical Management Agency}{PHARMAC}} (2016) Approval of
   multi-product funding proposal with roche.
 \bibAnnoteFile{Pharmac2016}
+
+\bibitem[\protect\astroncite{Tierney \emph{et~al.}}{2015}]{snow}
+Tierney, L., Rossini, A.J., Li, N., and Sevcikova, H. (2015) \emph{snow: Simple
+  Network of Workstations}.
+\newblock R package version 0.4-2.
+\bibAnnoteFile{snow}
 
 \bibitem[\protect\astroncite{Tiong \emph{et~al.}}{2014}]{Tiong2014}
 Tiong, K.L., Chang, K.C., Yeh, K.T., Liu, T.Y., Wu, J.H., Hsieh, P.H., Lin,
@@ -1162,6 +1314,14 @@ Wadman, M. and Watson, J. (2008) {{J}ames {W}atson's genome sequenced at high
 \newblock \emph{Nature}, \textbf{452}(7189): 788.
 \bibAnnoteFile{Wadman2008}
 
+\bibitem[\protect\astroncite{Wang \emph{et~al.}}{2010}]{mapsplice}
+Wang, K., Singh, D., Zeng, Z., Coleman, S.J., Huang, Y., Savich, G.L., He, X.,
+  Mieczkowski, P., Grimm, S.A., Perou, C.M., \emph{et~al.} (2010)
+  {{M}ap{S}plice: accurate mapping of {R}{N}{A}-seq reads for splice junction
+  discovery}.
+\newblock \emph{Nucleic Acids Res}, \textbf{38}(18): e178.
+\bibAnnoteFile{mapsplice}
+
 \bibitem[\protect\astroncite{Wang and Simon}{2013}]{Wang2013}
 Wang, X. and Simon, R. (2013) Identification of potential synthetic lethal
   genes to p53 using a computational biology approach.
@@ -1236,6 +1396,11 @@ Wu, M., Li, X., Zhang, F., Li, X., Kwoh, C.K., and Zheng, J. (2014) In silico
 \newblock \emph{Cancer Inform}, \textbf{13}(Suppl 3): 71--80.
 \bibAnnoteFile{Wu2014}
 
+\bibitem[\protect\astroncite{Yu}{2002}]{Rmpi}
+Yu, H. (2002) Rmpi: Parallel statistical computing in r.
+\newblock \emph{R News}, \textbf{2}(2): 10--14.
+\bibAnnoteFile{Rmpi}
+
 \bibitem[\protect\astroncite{Zhang \emph{et~al.}}{2015}]{Zhang2015}
 Zhang, F., Wu, M., Li, X.J., Li, X.L., Kwoh, C.K., and Zheng, J. (2015)
   {{P}redicting essential genes and synthetic lethality via influence
@@ -1256,5 +1421,11 @@ Zhong, W. and Sternberg, P.W. (2006) Genome-wide prediction of c. elegans
   genetic interactions.
 \newblock \emph{Science}, \textbf{311}(5766): 1481--1484.
 \bibAnnoteFile{Zhong2006}
+
+\bibitem[\protect\astroncite{Zweig and Campbell}{1993}]{Zweig1993}
+Zweig, M.H. and Campbell, G. (1993) Receiver-operating characteristic (roc)
+  plots: a fundamental evaluation tool in clinical medicine.
+\newblock \emph{Clinical Chemistry}, \textbf{39}(4): 561--577.
+\bibAnnoteFile{Zweig1993}
 
 \end{thebibliography}
