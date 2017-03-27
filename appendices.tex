@@ -359,3 +359,27 @@ zoo                           & CRAN                      & 1.7-13      & 1.7-14
 %%
 
 \fi
+
+\chapter{Secondary Screen Data}
+\label{appendix:secondary_screen}
+
+A series of experimental genome-wide siRNA screens have been performed on synthetic lethal partners of \textit{CDH1} \citep{Telford2015}. The strongest candidates from a primary screen were subject to a further secondary screen for validation by independent replication with 4 gene knockdowns with different targeting siRNA. As shown in Table \ref{tab:secondary_screen}, there is significant ($p=7.49 \times 10^{-3}$ by Fisher's exact test) %$8.67 \times 10^{-3} by \chi^2 (4 df)
+association between SLIPT candidates and stronger validations of siRNA candidates. Since there were more SLIPT$-$ genes among those not validated and more SLIPT$+$ genes among those validated with several siRNAs, this supports the use of SLIPT as a synthetic lethal discovery procedure which may augment such screening experiments.
+
+\begin{table*}[!ht]
+\caption{Candidate synthetic lethal genes against secondary siRNA screen}
+\label{tab:secondary_screen}
+\begin{center}
+%\resizebox{\textwidth}{!}{
+\begin{tabular}{rrcccccl}
+                                             &                               & \multicolumn{5}{c}{Secondary Screen}                                                                                               &                                           \\ \cline{3-7}
+                                             & \multicolumn{1}{r|}{}         & 0/4                      & 1/4                      & 2/4                     & 3/4                     & \multicolumn{1}{c|}{4/4} & Total                                     \\ \cline{2-8} 
+\multicolumn{1}{r|}{\multirow{2}{*}{SLIPT$+$}} & \multicolumn{1}{r|}{Observed} & 70                       & 46                       & 31                      & 8                       & \multicolumn{1}{c|}{2}   & \multicolumn{1}{l|}{\multirow{2}{*}{157}} \\
+\multicolumn{1}{r|}{}                        & \multicolumn{1}{r|}{Expected} & 85                       & 44                       & 10                      & 4                       & \multicolumn{1}{c|}{2}   & \multicolumn{1}{l|}{}                     \\ \cline{2-8} 
+\multicolumn{1}{r|}{\multirow{2}{*}{SLIPT$-$}} & \multicolumn{1}{r|}{Observed} & 190                      & 90                       & 31                      & 10                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{\multirow{2}{*}{325}} \\
+\multicolumn{1}{r|}{}                        & \multicolumn{1}{r|}{Expected} & 175                      & 91                       & 42                      & 12                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{}                     \\ \cline{2-8} 
+                                             & \multicolumn{1}{r|}{Total}    & \multicolumn{1}{c}{280} & \multicolumn{1}{c}{136} & \multicolumn{1}{c}{52} & \multicolumn{1}{c}{18} & \multicolumn{1}{c|}{6}   & \multicolumn{1}{l|}{482}                  \\ \cline{3-8} 
+\end{tabular}
+%}
+\end{center}
+\end{table*}
