@@ -1,4 +1,4 @@
-\begin{thebibliography}{253}
+\begin{thebibliography}{260}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibAnnoteFile}[1]{%
   \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
@@ -28,6 +28,11 @@ Adamski, M.G., Gumann, P., and Baird, A.E. (2014) {{A} method for quantitative
   input sample quantity}.
 \newblock \emph{PLoS ONE}, \textbf{9}(8): e103917.
 \bibAnnoteFile{Adamski2014}
+
+\bibitem[\protect\astroncite{Adler}{2005}]{vioplot}
+Adler, D. (2005) \emph{vioplot: Violin plot}.
+\newblock R package version 0.2.
+\bibAnnoteFile{vioplot}
 
 \bibitem[\protect\astroncite{Agarwal \emph{et~al.}}{2010}]{Agarwal2010}
 Agarwal, S., Deane, C.M., Porter, M.A., and Jones, N.S. (2010) Revisiting date
@@ -170,6 +175,12 @@ Bass, A.J., Thorsson, V., Shmulevich, I., Reynolds, S.M., Miller, M., Bernard,
   {{C}omprehensive molecular characterization of gastric adenocarcinoma}.
 \newblock \emph{Nature}, \textbf{513}(7517): 202--209.
 \bibAnnoteFile{TCGA2014GC}
+
+\bibitem[\protect\astroncite{Bates and Maechler}{2016}]{Matrix}
+Bates, D. and Maechler, M. (2016) \emph{Matrix: Sparse and Dense Matrix Classes
+  and Methods}.
+\newblock R package version 1.2-7.1.
+\bibAnnoteFile{Matrix}
 
 \bibitem[\protect\astroncite{Bateson and Mendel}{1909}]{Bateson1909}
 Bateson, W. and Mendel, G. (1909) \emph{Mendel's principles of heredity, by W.
@@ -648,6 +659,19 @@ Gentleman, R.C., Carey, V.J., Bates, D.M., Bolstad, B., Dettling, M., Dudoit,
 \newblock \emph{Genome Biol}, \textbf{5}(10): R80.
 \bibAnnoteFile{Gentleman2004}
 
+\bibitem[\protect\astroncite{Genz and Bretz}{2009}]{Genz2009}
+Genz, A. and Bretz, F. (2009) {Computation of Multivariate Normal and {t}
+  Probabilities}.
+\newblock In \emph{Lecture Notes in Statistics}, volume 195. Springer-Verlag,
+  Heidelberg.
+\bibAnnoteFile{Genz2009}
+
+\bibitem[\protect\astroncite{Genz \emph{et~al.}}{2016}]{mvtnorm}
+Genz, A., Bretz, F., Miwa, T., Mi, X., Leisch, F., Scheipl, F., and Hothorn, T.
+  (2016) \emph{mvtnorm: Multivariate Normal and t Distributions}.
+\newblock R package version 1.0-5. URL.
+\bibAnnoteFile{mvtnorm}
+
 \bibitem[\protect\astroncite{Gilbert and Maxam}{1973}]{Gilbert1973}
 Gilbert, W. and Maxam, A. (1973) The nucleotide sequence of the lac operator.
 \newblock \emph{Proceedings of the National Academy of Sciences},
@@ -762,7 +786,9 @@ Hanahan, D. and Weinberg, R.A. (2011) {{H}allmarks of cancer: the next
 
 \bibitem[\protect\astroncite{Hanna}{2003}]{CIX2013}
 Hanna, S. (2003) Cancer incidence in new zealand (2003-2007).
-\newblock \emph{Cancer Incidence in Five Continents}, volume~X, 902--907.
+\newblock In D.~Forman, D.~Bray F~Brewster, C.~Gombe~Mbalawa, B.~Kohler,
+  M.~Pi\~{n}eros, E.~Steliarova-Foucher, R.~Swaminathan, and J.~Ferlay
+  (editors), \emph{Cancer Incidence in Five Continents}, volume~X, 902--907.
   International Agency for Research on Cancer, Lyon, France.
 \newblock Electronic version \url{http://ci5.iarc.fr} Accessed 22/03/2017.
 \bibAnnoteFile{CIX2013}
@@ -1143,6 +1169,12 @@ Noonan, J.P., Coop, G., Kudaravalli, S., Smith, D., Krause, J., Alessi, J.,
   {{S}equencing and analysis of {N}eanderthal genomic {D}{N}{A}}.
 \newblock \emph{Science}, \textbf{314}(5802): 1113--1118.
 \bibAnnoteFile{Paabo2006}
+
+\bibitem[\protect\astroncite{Novomestky}{2012}]{matrixcalc}
+Novomestky, F. (2012) \emph{matrixcalc: Collection of functions for matrix
+  calculations}.
+\newblock R package version 1.0-3.
+\bibAnnoteFile{matrixcalc}
 
 \bibitem[\protect\astroncite{Oliveira \emph{et~al.}}{2009}]{Oliveira2009}
 Oliveira, C., Senz, J., Kaurah, P., Pinheiro, H., Sanges, R., Haegert, A.,
@@ -1680,6 +1712,18 @@ Wheeler, D.A., Srinivasan, M., Egholm, M., Shen, Y., Chen, L., McGuire, A., He,
   complete genome of an individual by massively parallel {D}{N}{A} sequencing}.
 \newblock \emph{Nature}, \textbf{452}(7189): 872--876.
 \bibAnnoteFile{Wheeler2008}
+
+\bibitem[\protect\astroncite{Wickham and Chang}{2016}]{devtools}
+Wickham, H. and Chang, W. (2016) \emph{devtools: Tools to Make Developing R
+  Packages Easier}.
+\newblock R package version 1.12.0.
+\bibAnnoteFile{devtools}
+
+\bibitem[\protect\astroncite{Wickham \emph{et~al.}}{2017}]{roxygen}
+Wickham, H., Danenberg, P., and Eugster, M. (2017) \emph{roxygen2: In-Line
+  Documentation for R}.
+\newblock R package version 6.0.1.
+\bibAnnoteFile{roxygen}
 
 \bibitem[\protect\astroncite{Wong \emph{et~al.}}{2004}]{Wong2004}
 Wong, S.L., Zhang, L.V., Tong, A.H.Y., Li, Z., Goldberg, D.S., King, O.D.,

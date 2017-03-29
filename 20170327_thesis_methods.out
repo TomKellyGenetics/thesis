@@ -5,7 +5,7 @@
 \BOOKMARK [3][-]{subsubsection.2.1.1.2}{Reactome and Annotation Data}{subsection.2.1.1}% 5
 \BOOKMARK [1][-]{section.2.2}{Data Handling}{chapter.2}% 6
 \BOOKMARK [2][-]{subsection.2.2.1}{Normalisation \(voom\)}{section.2.2}% 7
-\BOOKMARK [2][-]{subsection.2.2.2}{Sample triage}{section.2.2}% 8
+\BOOKMARK [2][-]{subsection.2.2.2}{Sample Triage}{section.2.2}% 8
 \BOOKMARK [2][-]{subsection.2.2.3}{Pathway Metagenes and the Singular Value Decomposition}{section.2.2}% 9
 \BOOKMARK [3][-]{subsubsection.2.2.3.1}{Candidate Triage and Integration with Screen Data}{subsection.2.2.3}% 10
 \BOOKMARK [1][-]{section.2.3}{Techniques}{chapter.2}% 11
@@ -14,7 +14,7 @@
 \BOOKMARK [2][-]{subsection.2.3.3}{Clustering}{section.2.3}% 14
 \BOOKMARK [2][-]{subsection.2.3.4}{Heatmap}{section.2.3}% 15
 \BOOKMARK [2][-]{subsection.2.3.5}{Modeling and Simulations}{section.2.3}% 16
-\BOOKMARK [3][-]{subsubsection.2.3.5.1}{Reciever Operating Characteristic \(Statistical Performance\)}{subsection.2.3.5}% 17
+\BOOKMARK [3][-]{subsubsection.2.3.5.1}{Reciever Operating Characteristic \(Performance\)}{subsection.2.3.5}% 17
 \BOOKMARK [2][-]{subsection.2.3.6}{Resampling Analysis}{section.2.3}% 18
 \BOOKMARK [1][-]{section.2.4}{Pathway Structure Methods}{chapter.2}% 19
 \BOOKMARK [2][-]{subsection.2.4.1}{Network and Graph Analysis}{section.2.4}% 20
@@ -38,14 +38,19 @@
 \BOOKMARK [2][-]{subsection.3.3.2}{Replication Simulation Heatmap}{section.3.3}% 38
 \BOOKMARK [1][-]{section.3.4}{Graph Structure Methods}{chapter.3}% 39
 \BOOKMARK [2][-]{subsection.3.4.1}{Upstream and Downstream Gene Detection}{section.3.4}% 40
-\BOOKMARK [3][-]{subsubsection.3.4.1.1}{Permutation Analysis for Statisical Significance}{subsection.3.4.1}% 41
-\BOOKMARK [2][-]{subsection.3.4.2}{Simulating Gene Expression from Graph Structures}{section.3.4}% 42
-\BOOKMARK [1][-]{section.3.5}{Customised methods and R packages developed}{chapter.3}% 43
-\BOOKMARK [2][-]{subsection.3.5.1}{slipt}{section.3.5}% 44
-\BOOKMARK [2][-]{subsection.3.5.2}{plotting}{section.3.5}% 45
-\BOOKMARK [2][-]{subsection.3.5.3}{simulation from graph structures}{section.3.5}% 46
-\BOOKMARK [2][-]{subsection.3.5.4}{igraph methods}{section.3.5}% 47
-\BOOKMARK [0][-]{subsection.3.5.4}{References}{}% 48
-\BOOKMARK [0][-]{appendix.A}{Sample Correlation}{}% 49
-\BOOKMARK [0][-]{appendix.B}{Software Used for Thesis}{}% 50
-\BOOKMARK [0][-]{appendix.C}{Secondary Screen Data}{}% 51
+\BOOKMARK [3][-]{subsubsection.3.4.1.1}{Permutation Analysis for Statistical Significance}{subsection.3.4.1}% 41
+\BOOKMARK [3][-]{subsubsection.3.4.1.2}{Ranking Based on Biological Context}{subsection.3.4.1}% 42
+\BOOKMARK [2][-]{subsection.3.4.2}{Simulating Gene Expression from Graph Structures}{section.3.4}% 43
+\BOOKMARK [1][-]{section.3.5}{Customised Functions and Packages Developed}{chapter.3}% 44
+\BOOKMARK [2][-]{subsection.3.5.1}{Synthetic Lethal Interaction Prediction Tool \(SLIPT\)}{section.3.5}% 45
+\BOOKMARK [2][-]{subsection.3.5.2}{Data Visualisation}{section.3.5}% 46
+\BOOKMARK [2][-]{subsection.3.5.3}{Extensions to the iGraph Package}{section.3.5}% 47
+\BOOKMARK [3][-]{subsubsection.3.5.3.1}{Sampling Simulated Data from Graph Structures}{subsection.3.5.3}% 48
+\BOOKMARK [3][-]{subsubsection.3.5.3.2}{Plotting Directed Graph Structures}{subsection.3.5.3}% 49
+\BOOKMARK [3][-]{subsubsection.3.5.3.3}{Computing Information Centrality}{subsection.3.5.3}% 50
+\BOOKMARK [3][-]{subsubsection.3.5.3.4}{Testing Pathway Structure with Permutation Testing}{subsection.3.5.3}% 51
+\BOOKMARK [3][-]{subsubsection.3.5.3.5}{Metapackage to Install iGraph Functions}{subsection.3.5.3}% 52
+\BOOKMARK [0][-]{subsubsection.3.5.3.5}{References}{}% 53
+\BOOKMARK [0][-]{appendix.A}{Sample Correlation}{}% 54
+\BOOKMARK [0][-]{appendix.B}{Software Used for Thesis}{}% 55
+\BOOKMARK [0][-]{appendix.C}{Secondary Screen Data}{}% 56

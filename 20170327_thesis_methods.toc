@@ -5,7 +5,7 @@
 \contentsline {subsubsection}{\numberline {2.1.1.2}Reactome and Annotation Data}{7}{subsubsection.2.1.1.2}
 \contentsline {section}{\numberline {2.2}Data Handling}{7}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Normalisation (voom)}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Sample triage}{8}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.2}Sample Triage}{8}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Pathway Metagenes and the Singular Value Decomposition}{9}{subsection.2.2.3}
 \contentsline {subsubsection}{\numberline {2.2.3.1}Candidate Triage and Integration with Screen Data}{10}{subsubsection.2.2.3.1}
 \contentsline {section}{\numberline {2.3}Techniques}{10}{section.2.3}
@@ -14,7 +14,7 @@
 \contentsline {subsection}{\numberline {2.3.3}Clustering}{12}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Heatmap}{12}{subsection.2.3.4}
 \contentsline {subsection}{\numberline {2.3.5}Modeling and Simulations}{13}{subsection.2.3.5}
-\contentsline {subsubsection}{\numberline {2.3.5.1}Reciever Operating Characteristic (Statistical Performance)}{14}{subsubsection.2.3.5.1}
+\contentsline {subsubsection}{\numberline {2.3.5.1}Reciever Operating Characteristic (Performance)}{14}{subsubsection.2.3.5.1}
 \contentsline {subsection}{\numberline {2.3.6}Resampling Analysis}{14}{subsection.2.3.6}
 \contentsline {section}{\numberline {2.4}Pathway Structure Methods}{15}{section.2.4}
 \contentsline {subsection}{\numberline {2.4.1}Network and Graph Analysis}{15}{subsection.2.4.1}
@@ -23,8 +23,8 @@
 \contentsline {subsection}{\numberline {2.4.4}Network Analysis Metrics}{17}{subsection.2.4.4}
 \contentsline {section}{\numberline {2.5}Implementation}{18}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Computational Resources and Linux Utilities}{18}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}R Language and Packages}{18}{subsection.2.5.2}
-\contentsline {subsection}{\numberline {2.5.3}High Performance and Parallel Computing}{21}{subsection.2.5.3}
+\contentsline {subsection}{\numberline {2.5.2}R Language and Packages}{19}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.3}High Performance and Parallel Computing}{22}{subsection.2.5.3}
 \contentsline {chapter}{\numberline {3}Methods Developed During Thesis}{23}{chapter.3}
 \contentsline {section}{\numberline {3.1}A Synthetic Lethal Detection Methodology}{24}{section.3.1}
 \contentsline {section}{\numberline {3.2}Simulations and Modelling of Synthetic Lethality in Expression Data}{26}{section.3.2}
@@ -38,14 +38,19 @@
 \contentsline {subsection}{\numberline {3.3.2}Replication Simulation Heatmap}{34}{subsection.3.3.2}
 \contentsline {section}{\numberline {3.4}Graph Structure Methods}{34}{section.3.4}
 \contentsline {subsection}{\numberline {3.4.1}Upstream and Downstream Gene Detection}{34}{subsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Permutation Analysis for Statisical Significance}{34}{subsubsection.3.4.1.1}
-\contentsline {subsection}{\numberline {3.4.2}Simulating Gene Expression from Graph Structures}{34}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Customised methods and R packages developed}{37}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}slipt}{37}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}plotting}{37}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}simulation from graph structures}{37}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}igraph methods}{37}{subsection.3.5.4}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{40}{subsection.3.5.4}
-\contentsline {chapter}{\numberline {A}Sample Correlation}{45}{appendix.A}
-\contentsline {chapter}{\numberline {B}Software Used for Thesis}{47}{appendix.B}
-\contentsline {chapter}{\numberline {C}Secondary Screen Data}{56}{appendix.C}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Permutation Analysis for Statistical Significance}{35}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Ranking Based on Biological Context}{36}{subsubsection.3.4.1.2}
+\contentsline {subsection}{\numberline {3.4.2}Simulating Gene Expression from Graph Structures}{37}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Customised Functions and Packages Developed}{41}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Synthetic Lethal Interaction Prediction Tool (SLIPT)}{41}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Data Visualisation}{42}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Extensions to the iGraph Package}{44}{subsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.3.1}Sampling Simulated Data from Graph Structures}{44}{subsubsection.3.5.3.1}
+\contentsline {subsubsection}{\numberline {3.5.3.2}Plotting Directed Graph Structures}{44}{subsubsection.3.5.3.2}
+\contentsline {subsubsection}{\numberline {3.5.3.3}Computing Information Centrality}{45}{subsubsection.3.5.3.3}
+\contentsline {subsubsection}{\numberline {3.5.3.4}Testing Pathway Structure with Permutation Testing}{46}{subsubsection.3.5.3.4}
+\contentsline {subsubsection}{\numberline {3.5.3.5}Metapackage to Install iGraph Functions}{46}{subsubsection.3.5.3.5}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{47}{subsubsection.3.5.3.5}
+\contentsline {chapter}{\numberline {A}Sample Correlation}{53}{appendix.A}
+\contentsline {chapter}{\numberline {B}Software Used for Thesis}{55}{appendix.B}
+\contentsline {chapter}{\numberline {C}Secondary Screen Data}{64}{appendix.C}

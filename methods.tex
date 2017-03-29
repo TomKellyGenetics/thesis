@@ -67,7 +67,7 @@ Apart from the PAM50 subtyping procedure \citep{Parker2009} which required RSEM 
 \end{figure*}
 
 
-\subsection{Sample triage} \label{methods:sample_qc}
+\subsection{Sample Triage} \label{methods:sample_qc}
 
 The TCGA RNA-Seq data were assessed for batch effects using a correlation matrix of the log-transformed raw counts for which a heatmap (Euclidean distance, complete linkage) is shown in Figure \ref{fig:corr_map}. While no major batch effects were detectable between the samples, 9 samples were excluded due to poor correlation with the remaining samples, as detailed in Table \ref{tab:qc}. These samples showed unusual density plots compared to the rest of the dataset, and exhibited low mean read count in Figures \ref{fig:density} and \ref{fig:boxplot}. A heatmap showing key clinical properties of these excluded samples and their correlation with the remainder of the samples is shown in Figure \ref{fig:corr_map_part}, and a full correlation heatmap (Figure \ref{fig:corr_map}) shows these samples as relatively poorly correlated outliers in the bottom rows and left columns.
 %In both of these cases, a shared tissue source site or patient donor indicates that variations in sample preparation are likely behind the outlying expression profiles. The Christiana Healthcare patients were sequenced in triplicate when replicate samples were rare in this dataset suggesting there were suspected errors in these samples during data generation which have lower mean read count than most of the dataset. %tangent
@@ -75,7 +75,7 @@ The TCGA RNA-Seq data were assessed for batch effects using a correlation matrix
 After removal of these samples, the TCGA dataset used for analysis consisted of the remaining 1168 samples (from 1040 patients): 1049 tumour samples, 112 normal tissue for matched samples, and 7 metastases.
 
 \begin{table*}[!ht]
-\caption{Excluded samples batch and clinical characteristics.}
+\caption{Excluded Samples by Batch and Clinical Characteristics.}
 \label{tab:qc}
 \resizebox{\textwidth}{!}{
       \begin{tabular}{|c|c|c|c|c|c|c|c|c|ccc|}
@@ -126,13 +126,13 @@ Clustering analysis when performed uses unsupervised hierarchical clustering wit
 Standardised z-scores of the data were used to plot heatmaps on an appropriate scale. Raw (log-scale) read counts or voom normalised counts per gene (as specified) were plotted  as normalised z-scores on a $[-3,+3]$ blue-red scale. Similarly, correlations were plotted on a $[-1,1]$ blue-red scale. These heatmaps were performed using the linkage and distance specified for the clustering performed in Section \ref{methods:clustering}. The \texttt{gplots} R package \citep{gplots} was used to generate many of the heatmaps throughout this thesis, along with a customised heatmap function (released as \texttt{heatmap.2x}). Where clearly specfied, data have been split into subsets with clustering performed separately on each subset with these plotted alongside each other.
 
 \subsection{Modeling and Simulations} \label{methods:simulation}
-Statisical modeling and simulations have been used to test various synthetic lethal detection procedures on simulated data. This involves constructing a statistical model of how synthetic lethality would appear in (continuous normally distributed) gene expression data. Where presented (in section \ref{methods:SL_Model}), the assumptions of the model are stated clearly. The model allows sampling from a multivariate normal distribution (using the \texttt{mvtnorm} R package) to generate simulated data with known underlying synthetic lethal partners (detailed in section \ref{methods:simulating SL}). We can test whether statistical procedures, including those developed in this thesis (presented in section \ref{methods:SLIPT}), are capable of detecting them upon this simulated data. This multivariate normal simulation procedure also enables the inclusion of correlation structure which is either given as correlated blocks of genes or derived from pathway structures (as detailed in section \ref{methods:graphsim}).
+Statisical modeling and simulations have been used to test various synthetic lethal detection procedures on simulated data. This involves constructing a statistical model of how synthetic lethality would appear in (continuous normally distributed) gene expression data. Where presented (in section \ref{methods:SL_Model}), the assumptions of the model are stated clearly. The model allows sampling from a multivariate normal distribution (using the \texttt{mvtnorm} R package \citep{Genz2009, mvtnorm}) to generate simulated data with known underlying synthetic lethal partners (detailed in section \ref{methods:simulating SL}). We can test whether statistical procedures, including those developed in this thesis (presented in section \ref{methods:SLIPT}), are capable of detecting them upon this simulated data. This multivariate normal simulation procedure also enables the inclusion of correlation structure which is either given as correlated blocks of genes or derived from pathway structures (as detailed in section \ref{methods:graphsim}).
 
 If this multivariate normal distribution was sampled once and the procedure to add known synthetic lethal partners was performed, it generates a simulated dataset. Performing this simulation procedure and testing with a synthetic lethal detection procedure iteratively, these simulations can be used to assess the statistical performance of the detection procedure. The number of iterations (\texttt{Reps}) will be given for each simulation result. Typically, these are performed 1000 or 10,000 times depending on computational feasibility of doing so on larger datasets. 
 
 Several measures of statistical performance were used to assess the simulations. The following measures used the final classification of the detection procedure, statistical significance for $\chi^2$, significance and directional criteria met for SLIPT (see section \ref{methods:SLIPT}), and an arbitrary threshold of $>0.2$ and $<-0.2$ for correlation and negative correlation respectively. Sensitivity (or ``true positive rate'') was measured as the proportion of known synthetic lethal partners predicted to be synthetic lethal. Specificity (or ``true negative rate'') was measured as the proportion of known non-synthetic lethal partners predicted not to be synthetic lethal. The ``false discovery rate'' (also important in adjusting for multiple comparisons) was measured here as the proportion of known non-synthetic lethal partners out of all putative partners predicted by the detection procedure. Statistical ``accuracy'' is the proportion of true predictions for a detection procedure, in this case the total correctly predicted known synthetic lethal partners and correctly negative known non-synthetic lethal partners.
 
-\subsubsection{Reciever Operating Characteristic (Statistical Performance)}
+\subsubsection{Reciever Operating Characteristic (Performance)}
 A more general procedure to measure the statistical performance of a simulation is the Reciever Operating Characteristic (ROC) curve which does not assume a threshold for classification of synthetic lethality but demonstrates the trade-off of sensitivity and specificity \citep{Zweig1993, Fawcett2006, Akobeng2007}. These curves (implemented with the \texttt{ROCR} R package \citep{ROCR}) plot the True Positive Rate (sensitivity) against the False Positive Rate ($1-$ specificity) as the prediction threshold is varied. An ideal detection method will have a true positive rate of 1 and a false positive rate of 0, hence the Area Under the ROC curve (AUC or AUROC) is a measure of statistical performance for a detection procedure accounting for this trade-off. AUROC values are typically frange from 0.5 the value expected by random chance to 1 for an optimal detection method, however it possible for an AUROC below 0.5 for a poor detection method that performs worse than random chance. An cancer biology, an AUROC of approximately $0.8$ is a predictive biomarker suitable for publication \citep{Hajian-Tilaki2013} but predictors with lower AUROC values may still be informative depending on the context. In this thesis, the AUROC values varies widely across simulation parameters and a primarily used for comparisons across these parameters, although they can also be used to refine thresholds for optimal classification. 
 
 \subsection{Resampling Analysis} \label{methods:permutation}
@@ -246,10 +246,10 @@ siRNA}}\\\hline
 
 \fi
 
-\subsection{Sourcing Graph Structure Data}
+\subsection{Sourcing Graph Structure Data} \label{methods:graph_data}
 Pathway Commons interaction data was sourced using the paxtools-4.3.0 Java application on October 6th 2015 \citep{PathwayCommons, paxtools}. This utility was used to source `sif' format interaction data into R \citep{R_core}, from which the human Reactome (version 52) dataset of interactions was imported \citep{Reactome}, matching those used for pathway enrichment analysis. These interactions were used to construct an adjacency matrix for the Reactome network and subnetworks corresponding to each relevant bioloigcal pathway. 
 
-\subsection{Constructing Pathway Subgraphs}
+\subsection{Constructing Pathway Subgraphs} \label{methods:subgraphs}
 Subgraphs for each relevant pathway were constructed by matching the nodes in the complete Reactome network to the pathway gene sets (as derived in section \ref{methods:gene_set}). A subgraph with adjacent nodes was constructed by adding nodes which have an edge with a gene in the pathway gene set. The pathways these adjacent nodes belong to were added to form a ``meta-pathway'' to account for the possibility for nodess within the pathway being linked by the surrounding graph structure.
 
 \subsection{Network Analysis Metrics} \label{methods:network_metrics}
@@ -261,7 +261,7 @@ A fundamental concept in network analysis is a ``shortest path'', that is the sh
 
 Network centrality is an alternative measure of the importance or influence of a node to the graph structure \citep{Borgatti2005}. Various strategies are used to derive centrality,  typically based on how connected the node is or the impact of node removal on the conenctivity of the network. One of the most notable is the ``PageRank'' algorithm, a refinement of eigenvector centrality based on the eigenvectors of the adjacency matrix \citep{Brin1998}. This is implemented in the \texttt{igraph} R package \citep{igraph}.
 
-Another network centrality measure that has been previously applied to biological protein interaction networks \citep{Kranthi2013} is the ``information centrality''. The information centrality of a node is the relative impact on efficiency (transmission of information via shortest paths) of the network when the node is removed. That is the centrality ($C$) \citep{Kranthi2013} for node $n$ in graph $G$ is defined as: $$C_n = \frac{E(G)-E(G')}{E(G)}$$ where $G'$ is the subgraph with the node removed and $E$ is the efficiency \citep{Latora2001} derived from shortest paths ($d_{ij}$ between nodes $i$ and $j$) as: $$E(G) = \frac{2}{N(N-1} \sum_{i<j \in G}^{} \frac{1}{d_{ij}}$$ The efficiency of the network is implemented in the \texttt{igraph} R package and the iterative network centrality computation of each node has been released as an R package (\texttt{info.centrality}) and included in the \texttt{igraph.extensions} package.
+Another network centrality measure that has been previously applied to biological protein interaction networks \citep{Kranthi2013} is the ``information centrality''. The information centrality of a node is the relative impact on efficiency (transmission of information via shortest paths) of the network when the node is removed. That is the centrality ($C$) \citep{Kranthi2013} for node $n$ in graph $G$ is defined as: $$C_n = \frac{E(G)-E(G')}{E(G)}$$ where $G'$ is the subgraph with the node removed and $E$ is the efficiency \citep{Latora2001} derived from shortest paths ($d_{ij}$ between nodes $i$ and $j$) as: $$E(G) = \frac{2}{N(N-1} \sum_{i<j \in G}^{} \frac{1}{d_{ij}}$$ The efficiency of the network can be derived from shortest paths implemented in the \texttt{igraph} R package and the iterative network centrality computation of each node has been released as an R package (\texttt{info.centrality}) and included in the \texttt{igraph.extensions} package.
 
 %\subsection[Data Sources]{Data Sources}
 
@@ -418,12 +418,12 @@ binding affinity\\\hline
 
 \subsection{Computational Resources and Linux Utilities}
 
-Several computers were used to process and store data during this thesis (as summarised in Table \ref{tab:computers}), running different versions of Linux operating systems, including a personal laptop computer, laboratory desktop machine, departmental server, and the New Zealand eScience Infrastructure Intel Pan high-performance computing cluster (a supercomputer based at the University of Auckland). Current workflows on local machines use Elementary OS (based on the Ubuntu versions given in Table \ref{tab:computers}) and interacting with these via ZSH shell. However, Ubuntu OS and the Bourne Again SHell (bash) were used at the inception of this project and bash is continues to be used for running scripts. Various Linux applications and command-line utilities were used on these machines (as summarised in Table \ref{tab:computers_linux}). As such, the workflows developed in this project should be backwards-compatible with Ubuntu Linux (and other derivatives). The majority of novel methodology and implementations were performed in R which is a cross-platform language, packages developed in R will be available for users of Linux, Mac, and Windows machines.  
+Several computers were used to process and store data during this thesis (as summarised in Table \ref{tab:computers}), running different versions of Linux operating systems, including a personal laptop computer, laboratory desktop machine, departmental server, and the New Zealand eScience Infrastructure Intel Pan high-performance computing cluster (a supercomputer based at the University of Auckland). Each of these systems support a 64-bit architecture. Current workflows on local machines use Elementary OS (based on the Ubuntu versions given in Table \ref{tab:computers}) and interacting with these via ZSH shell. However, Ubuntu OS and the Bourne Again SHell (bash) were used at the inception of this project and bash is continues to be used for running scripts. Various Linux applications and command-line utilities were used on these machines (as summarised in Table \ref{tab:computers_linux}). As such, the workflows developed in this project should be backwards-compatible with Ubuntu Linux (and other derivatives). The majority of novel methodology and implementations were performed in R which is a cross-platform language, packages developed in R will be available for users of Linux, Mac, and Windows machines.  
 
 
 \begin{table}[!ht]
 \centering
-\caption{Computers Used During Thesis}
+\caption{Computers used during Thesis}
 \label{tab:computers}
 \makebox[\textwidth][c]{
 \resizebox{\textwidth}{!}{
@@ -442,7 +442,7 @@ Several computers were used to process and store data during this thesis (as sum
 
 \begin{table}[!ht]
 \centering
-\caption{Linux Utilities and Applications Used During Thesis}
+\caption{Linux Utilities and Applications used during Thesis}
 \label{tab:computers_linux}
 
 \resizebox{\textwidth}{!}{
@@ -481,7 +481,7 @@ Several computers were used to process and store data during this thesis (as sum
 
 \begin{table}[!ht]
 \centering
-\caption{R Installations Used During Thesis}
+\caption{R Installations used during Thesis}
 \label{tab:computers_r}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{ll|l|l|l|l|}
@@ -499,7 +499,7 @@ Several computers were used to process and store data during this thesis (as sum
 
 \begin{table}[!ht]
 \centering
-\caption{R Packages Developed During Thesis}
+\caption{R Packages Developed during Thesis}
 \label{tab:computers_r_packages_dev}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{l|l|l|l|}
@@ -526,7 +526,7 @@ The R programming language has been used for the majority of this thesis. Curren
 \setlength{\LTright}{\LTleft}
 
 \begin{longtable}{|llll|}
-\caption{R Packages Used During Thesis}
+\caption{R Packages used during Thesis}
 \label{tab:computers_r_packages}
 %\\ hline
 \\
