@@ -30,27 +30,27 @@
 \contentsline {section}{\numberline {3.2}Synthetic Lethal Simulation and Modelling}{26}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}A Model of Synthetic Lethality in Expression Data}{26}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Simulation Procedure}{30}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Detecting Simulated Synthetic Lethal Partners}{32}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Multivariate Normal Simulation of Synthetic lethality}{33}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Simulation with Directional Testing}{33}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Simulation with Query-Correlated Pathways}{33}{subsubsection.3.3.1.2}
-\contentsline {subsubsection}{\numberline {3.3.1.3}Simulated Expression Heatmaps}{33}{subsubsection.3.3.1.3}
-\contentsline {subsection}{\numberline {3.3.2}Replication Simulation Heatmap}{33}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Graph Structure Methods}{34}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Upstream and Downstream Gene Detection}{34}{subsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Permutation Analysis for Statistical Significance}{35}{subsubsection.3.4.1.1}
-\contentsline {subsubsection}{\numberline {3.4.1.2}Ranking Based on Biological Context}{35}{subsubsection.3.4.1.2}
-\contentsline {subsection}{\numberline {3.4.2}Simulating Gene Expression from Graph Structures}{36}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Customised Functions and Packages Developed}{41}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Synthetic Lethal Interaction Prediction Tool}{41}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Data Visualisation}{42}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Extensions to the iGraph Package}{42}{subsection.3.5.3}
-\contentsline {subsubsection}{\numberline {3.5.3.1}Sampling Simulated Data from Graph Structures}{44}{subsubsection.3.5.3.1}
-\contentsline {subsubsection}{\numberline {3.5.3.2}Plotting Directed Graph Structures}{44}{subsubsection.3.5.3.2}
-\contentsline {subsubsection}{\numberline {3.5.3.3}Computing Information Centrality}{44}{subsubsection.3.5.3.3}
-\contentsline {subsubsection}{\numberline {3.5.3.4}Testing Pathway Structure with Permutation Testing}{45}{subsubsection.3.5.3.4}
-\contentsline {subsubsection}{\numberline {3.5.3.5}Metapackage to Install iGraph Functions}{45}{subsubsection.3.5.3.5}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{47}{subsubsection.3.5.3.5}
-\contentsline {chapter}{\numberline {A}Sample Correlation}{53}{appendix.A}
-\contentsline {chapter}{\numberline {B}Software Used for Thesis}{55}{appendix.B}
-\contentsline {chapter}{\numberline {C}Secondary Screen Data}{64}{appendix.C}
+\contentsline {section}{\numberline {3.3}Detecting Simulated Synthetic Lethal Partners}{33}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Binomial Simulation of Synthetic lethality}{33}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Multivariate Normal Simulation of Synthetic lethality}{33}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Multivariate Normal Simulation with Correlated Genes}{33}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Specificity with Query-Correlated Pathways}{37}{subsubsection.3.3.2.2}
+\contentsline {subsubsection}{\numberline {3.3.2.3}Importance of Directional Testing}{37}{subsubsection.3.3.2.3}
+\contentsline {section}{\numberline {3.4}Graph Structure Methods}{37}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Upstream and Downstream Gene Detection}{40}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Permutation Analysis for Statistical Significance}{43}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Ranking Based on Biological Context}{45}{subsubsection.3.4.1.2}
+\contentsline {subsection}{\numberline {3.4.2}Simulating Gene Expression from Graph Structures}{46}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Customised Functions and Packages Developed}{49}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Synthetic Lethal Interaction Prediction Tool}{51}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Data Visualisation}{51}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Extensions to the iGraph Package}{52}{subsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.3.1}Sampling Simulated Data from Graph Structures}{52}{subsubsection.3.5.3.1}
+\contentsline {subsubsection}{\numberline {3.5.3.2}Plotting Directed Graph Structures}{54}{subsubsection.3.5.3.2}
+\contentsline {subsubsection}{\numberline {3.5.3.3}Computing Information Centrality}{54}{subsubsection.3.5.3.3}
+\contentsline {subsubsection}{\numberline {3.5.3.4}Testing Pathway Structure with Permutation Testing}{54}{subsubsection.3.5.3.4}
+\contentsline {subsubsection}{\numberline {3.5.3.5}Metapackage to Install iGraph Functions}{55}{subsubsection.3.5.3.5}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{56}{subsubsection.3.5.3.5}
+\contentsline {chapter}{\numberline {A}Sample Correlation}{62}{appendix.A}
+\contentsline {chapter}{\numberline {B}Software Used for Thesis}{64}{appendix.B}
+\contentsline {chapter}{\numberline {C}Secondary Screen Data}{73}{appendix.C}
