@@ -91,99 +91,100 @@
 \contentsline {section}{\numberline {3.2}Synthetic Lethal Simulation and Modelling}{81}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}A Model of Synthetic Lethality in Expression Data}{81}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Simulation Procedure}{85}{subsection.3.2.2}
-\contentsline {section}{\numberline {3.3}Detecting Simulated Synthetic Lethal Partners}{87}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Multivariate Normal Simulation of Synthetic lethality}{88}{subsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.1.1}Simulation with Directional Testing}{88}{subsubsection.3.3.1.1}
-\contentsline {subsubsection}{\numberline {3.3.1.2}Simulation with Query-Correlated Pathways}{88}{subsubsection.3.3.1.2}
-\contentsline {subsubsection}{\numberline {3.3.1.3}Simulated Expression Heatmaps}{88}{subsubsection.3.3.1.3}
-\contentsline {subsection}{\numberline {3.3.2}Replication Simulation Heatmap}{88}{subsection.3.3.2}
-\contentsline {section}{\numberline {3.4}Graph Structure Methods}{89}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Upstream and Downstream Gene Detection}{89}{subsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Permutation Analysis for Statistical Significance}{90}{subsubsection.3.4.1.1}
-\contentsline {subsubsection}{\numberline {3.4.1.2}Ranking Based on Biological Context}{90}{subsubsection.3.4.1.2}
-\contentsline {subsection}{\numberline {3.4.2}Simulating Gene Expression from Graph Structures}{91}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Customised Functions and Packages Developed}{96}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Synthetic Lethal Interaction Prediction Tool}{96}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Data Visualisation}{97}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Extensions to the iGraph Package}{97}{subsection.3.5.3}
-\contentsline {subsubsection}{\numberline {3.5.3.1}Sampling Simulated Data from Graph Structures}{99}{subsubsection.3.5.3.1}
-\contentsline {subsubsection}{\numberline {3.5.3.2}Plotting Directed Graph Structures}{99}{subsubsection.3.5.3.2}
-\contentsline {subsubsection}{\numberline {3.5.3.3}Computing Information Centrality}{99}{subsubsection.3.5.3.3}
-\contentsline {subsubsection}{\numberline {3.5.3.4}Testing Pathway Structure with Permutation Testing}{100}{subsubsection.3.5.3.4}
-\contentsline {subsubsection}{\numberline {3.5.3.5}Metapackage to Install iGraph Functions}{100}{subsubsection.3.5.3.5}
-\contentsline {chapter}{\numberline {4}Synthetic Lethal Analysis of Gene Expression Data}{102}{chapter.4}
-\contentsline {section}{\numberline {4.1}Abstract}{102}{section.4.1}
-\contentsline {section}{\numberline {4.2}Aims and Significance}{103}{section.4.2}
-\contentsline {section}{\numberline {4.3}Background}{104}{section.4.3}
-\contentsline {section}{\numberline {4.4}Background}{109}{section.4.4}
-\contentsline {section}{\numberline {4.5}Sourcing TCGA data}{110}{section.4.5}
-\contentsline {section}{\numberline {4.6}Quality checking}{110}{section.4.6}
-\contentsline {section}{\numberline {4.7}Global Synthetic Lethality}{110}{section.4.7}
-\contentsline {section}{\numberline {4.8}CDH1 Analysis with Subgroups}{111}{section.4.8}
-\contentsline {section}{\numberline {4.9}Cell Line Analysis}{111}{section.4.9}
-\contentsline {section}{\numberline {4.10}Mutation, Copy Number, and Methylation}{111}{section.4.10}
-\contentsline {section}{\numberline {4.11}ANOVA of Expression Predictors}{112}{section.4.11}
-\contentsline {section}{\numberline {4.12}Mutation Analysis, Pathway Expression, and Metagene Synthetic Lethality}{113}{section.4.12}
-\contentsline {section}{\numberline {4.13}Data clean up, gene SL, and pathway SL}{114}{section.4.13}
-\contentsline {section}{\numberline {4.14}Overview of Challenges}{115}{section.4.14}
-\contentsline {section}{\numberline {4.15}Comparison of gene SL predictions and siRNA screen candidates}{116}{section.4.15}
-\contentsline {section}{\numberline {4.16}Permutation or Re-Sampling of genes for pathway enrichment.}{117}{section.4.16}
-\contentsline {section}{\numberline {4.17}Comparison of candidate SL Pathways}{118}{section.4.17}
-\contentsline {section}{\numberline {4.18}Future Directions}{118}{section.4.18}
-\contentsline {section}{\numberline {4.19}Hub Genes}{119}{section.4.19}
-\contentsline {section}{\numberline {4.20}Metagene pathway expression}{119}{section.4.20}
-\contentsline {section}{\numberline {4.21}Metagene synthetic lethality}{119}{section.4.21}
-\contentsline {section}{\numberline {4.22}Replication in stomach cancer}{119}{section.4.22}
-\contentsline {section}{\numberline {4.23}Important Results}{119}{section.4.23}
-\contentsline {chapter}{\numberline {5}Pathway Structure of Synthetic Lethal Genes}{122}{chapter.5}
-\contentsline {section}{\numberline {5.1}Abstract}{122}{section.5.1}
-\contentsline {section}{\numberline {5.2}Background}{123}{section.5.2}
-\contentsline {section}{\numberline {5.3}Reactome Network structure and Information Centrality as a measure of gene essentiality}{123}{section.5.3}
-\contentsline {section}{\numberline {5.4}Synthetic lethal genes in synthetic lethal pathways}{124}{section.5.4}
-\contentsline {section}{\numberline {5.5}Methods}{124}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Sourcing graph structure data}{124}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Constructing pathway subgraphs}{124}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Centrality Measures}{124}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}upstream and downstream gene detection}{124}{subsection.5.5.4}
-\contentsline {subsection}{\numberline {5.5.5}permutation analysis}{124}{subsection.5.5.5}
-\contentsline {section}{\numberline {5.6}Centrality and connectivity of synthetic lethal genes}{124}{section.5.6}
-\contentsline {section}{\numberline {5.7}Upstream or downstream synthetic lethal candidates}{124}{section.5.7}
-\contentsline {section}{\numberline {5.8}Hierachical approach}{124}{section.5.8}
-\contentsline {section}{\numberline {5.9}Discussion}{124}{section.5.9}
-\contentsline {section}{\numberline {5.10}Conclusion}{124}{section.5.10}
-\contentsline {chapter}{\numberline {6}Simulation and Modeling of Synthetic Lethal Pathways}{125}{chapter.6}
-\contentsline {section}{\numberline {6.1}Abstract}{125}{section.6.1}
-\contentsline {section}{\numberline {6.2}Background}{126}{section.6.2}
-\contentsline {section}{\numberline {6.3}Simulations and Modelling Synthetic Lethality in Expression Data}{128}{section.6.3}
-\contentsline {section}{\numberline {6.4}Developing a Synthetic Lethal detection methodology}{129}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Testing Multivariate Normal Simulation of Synthetic lethality}{129}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Receiver Operating Characteristic Curves}{130}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Simulated Expression Heatmaps}{132}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Replication Simulation Heatmap}{133}{subsection.6.4.4}
-\contentsline {section}{\numberline {6.5}Simulation of synthetic lethality in graph structures}{136}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Developing a multivariate normal expression from graph structures}{136}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Simulations over simple graph structures}{136}{subsection.6.5.2}
-\contentsline {subsubsection}{\numberline {6.5.2.1}Performance}{136}{subsubsection.6.5.2.1}
-\contentsline {subsubsection}{\numberline {6.5.2.2}Synthetic lethality across graph stuctures}{136}{subsubsection.6.5.2.2}
-\contentsline {subsubsection}{\numberline {6.5.2.3}Performance with inhibition links}{136}{subsubsection.6.5.2.3}
-\contentsline {subsubsection}{\numberline {6.5.2.4}Performance with 20,000 genes}{136}{subsubsection.6.5.2.4}
-\contentsline {subsection}{\numberline {6.5.3}Simulations over pathway-based graphs}{136}{subsection.6.5.3}
-\contentsline {subsection}{\numberline {6.5.4}Comparing methods}{136}{subsection.6.5.4}
-\contentsline {subsubsection}{\numberline {6.5.4.1}SLIPT and Chi-Squared}{136}{subsubsection.6.5.4.1}
-\contentsline {subsubsubsection}{\numberline {6.5.4.1.1}Correlated query genes}{136}{subsubsubsection.6.5.4.1.1}
-\contentsline {subsubsection}{\numberline {6.5.4.2}Correlation}{136}{subsubsection.6.5.4.2}
-\contentsline {subsubsection}{\numberline {6.5.4.3}Linear models}{136}{subsubsection.6.5.4.3}
-\contentsline {subsection}{\numberline {6.5.5}Developing a linear model predictor of synthetic lethality}{136}{subsection.6.5.5}
-\contentsline {subsubsection}{\numberline {6.5.5.1}Linear models}{136}{subsubsection.6.5.5.1}
-\contentsline {subsubsection}{\numberline {6.5.5.2}Polynomial models}{136}{subsubsection.6.5.5.2}
-\contentsline {subsubsection}{\numberline {6.5.5.3}Conditioning}{136}{subsubsection.6.5.5.3}
-\contentsline {subsubsection}{\numberline {6.5.5.4}SLIPTv2}{136}{subsubsection.6.5.5.4}
-\contentsline {section}{\numberline {6.6}Significance}{136}{section.6.6}
-\contentsline {section}{\numberline {6.7}Future Directions}{138}{section.6.7}
-\contentsline {section}{\numberline {6.8}Conclusion}{139}{section.6.8}
-\contentsline {chapter}{\numberline {7}Discussion}{140}{chapter.7}
-\contentsline {chapter}{\numberline {8}Conclusion}{141}{chapter.8}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{142}{chapter.8}
-\contentsline {chapter}{\numberline {A}Sample Correlation}{167}{appendix.A}
-\contentsline {chapter}{\numberline {B}Software Used for Thesis}{169}{appendix.B}
-\contentsline {chapter}{\numberline {C}Secondary Screen Data}{178}{appendix.C}
+\contentsline {section}{\numberline {3.3}Detecting Simulated Synthetic Lethal Partners}{88}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Binomial Simulation of Synthetic lethality}{88}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Multivariate Normal Simulation of Synthetic lethality}{90}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Multivariate Normal Simulation with Correlated Genes}{93}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Specificity with Query-Correlated Pathways}{100}{subsubsection.3.3.2.2}
+\contentsline {subsubsubsection}{\numberline {3.3.2.2.1}Importance of Directional Testing}{100}{subsubsubsection.3.3.2.2.1}
+\contentsline {section}{\numberline {3.4}Graph Structure Methods}{102}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Upstream and Downstream Gene Detection}{102}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Permutation Analysis for Statistical Significance}{103}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Ranking Based on Biological Context}{104}{subsubsection.3.4.1.2}
+\contentsline {subsection}{\numberline {3.4.2}Simulating Gene Expression from Graph Structures}{105}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Customised Functions and Packages Developed}{109}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Synthetic Lethal Interaction Prediction Tool}{109}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Data Visualisation}{110}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Extensions to the iGraph Package}{112}{subsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.3.1}Sampling Simulated Data from Graph Structures}{112}{subsubsection.3.5.3.1}
+\contentsline {subsubsection}{\numberline {3.5.3.2}Plotting Directed Graph Structures}{112}{subsubsection.3.5.3.2}
+\contentsline {subsubsection}{\numberline {3.5.3.3}Computing Information Centrality}{113}{subsubsection.3.5.3.3}
+\contentsline {subsubsection}{\numberline {3.5.3.4}Testing Pathway Structure with Permutation Testing}{114}{subsubsection.3.5.3.4}
+\contentsline {subsubsection}{\numberline {3.5.3.5}Metapackage to Install iGraph Functions}{114}{subsubsection.3.5.3.5}
+\contentsline {chapter}{\numberline {4}Synthetic Lethal Analysis of Gene Expression Data}{115}{chapter.4}
+\contentsline {section}{\numberline {4.1}Abstract}{115}{section.4.1}
+\contentsline {section}{\numberline {4.2}Aims and Significance}{116}{section.4.2}
+\contentsline {section}{\numberline {4.3}Background}{117}{section.4.3}
+\contentsline {section}{\numberline {4.4}Background}{122}{section.4.4}
+\contentsline {section}{\numberline {4.5}Sourcing TCGA data}{123}{section.4.5}
+\contentsline {section}{\numberline {4.6}Quality checking}{123}{section.4.6}
+\contentsline {section}{\numberline {4.7}Global Synthetic Lethality}{123}{section.4.7}
+\contentsline {section}{\numberline {4.8}CDH1 Analysis with Subgroups}{124}{section.4.8}
+\contentsline {section}{\numberline {4.9}Cell Line Analysis}{124}{section.4.9}
+\contentsline {section}{\numberline {4.10}Mutation, Copy Number, and Methylation}{124}{section.4.10}
+\contentsline {section}{\numberline {4.11}ANOVA of Expression Predictors}{125}{section.4.11}
+\contentsline {section}{\numberline {4.12}Mutation Analysis, Pathway Expression, and Metagene Synthetic Lethality}{126}{section.4.12}
+\contentsline {section}{\numberline {4.13}Data clean up, gene SL, and pathway SL}{127}{section.4.13}
+\contentsline {section}{\numberline {4.14}Overview of Challenges}{128}{section.4.14}
+\contentsline {section}{\numberline {4.15}Comparison of gene SL predictions and siRNA screen candidates}{129}{section.4.15}
+\contentsline {section}{\numberline {4.16}Permutation or Re-Sampling of genes for pathway enrichment.}{130}{section.4.16}
+\contentsline {section}{\numberline {4.17}Comparison of candidate SL Pathways}{131}{section.4.17}
+\contentsline {section}{\numberline {4.18}Future Directions}{131}{section.4.18}
+\contentsline {section}{\numberline {4.19}Hub Genes}{132}{section.4.19}
+\contentsline {section}{\numberline {4.20}Metagene pathway expression}{132}{section.4.20}
+\contentsline {section}{\numberline {4.21}Metagene synthetic lethality}{132}{section.4.21}
+\contentsline {section}{\numberline {4.22}Replication in stomach cancer}{132}{section.4.22}
+\contentsline {section}{\numberline {4.23}Important Results}{132}{section.4.23}
+\contentsline {chapter}{\numberline {5}Pathway Structure of Synthetic Lethal Genes}{135}{chapter.5}
+\contentsline {section}{\numberline {5.1}Abstract}{135}{section.5.1}
+\contentsline {section}{\numberline {5.2}Background}{136}{section.5.2}
+\contentsline {section}{\numberline {5.3}Reactome Network structure and Information Centrality as a measure of gene essentiality}{136}{section.5.3}
+\contentsline {section}{\numberline {5.4}Synthetic lethal genes in synthetic lethal pathways}{137}{section.5.4}
+\contentsline {section}{\numberline {5.5}Methods}{137}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Sourcing graph structure data}{137}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Constructing pathway subgraphs}{137}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Centrality Measures}{137}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}upstream and downstream gene detection}{137}{subsection.5.5.4}
+\contentsline {subsection}{\numberline {5.5.5}permutation analysis}{137}{subsection.5.5.5}
+\contentsline {section}{\numberline {5.6}Centrality and connectivity of synthetic lethal genes}{137}{section.5.6}
+\contentsline {section}{\numberline {5.7}Upstream or downstream synthetic lethal candidates}{137}{section.5.7}
+\contentsline {section}{\numberline {5.8}Hierachical approach}{137}{section.5.8}
+\contentsline {section}{\numberline {5.9}Discussion}{137}{section.5.9}
+\contentsline {section}{\numberline {5.10}Conclusion}{137}{section.5.10}
+\contentsline {chapter}{\numberline {6}Simulation and Modeling of Synthetic Lethal Pathways}{138}{chapter.6}
+\contentsline {section}{\numberline {6.1}Abstract}{138}{section.6.1}
+\contentsline {section}{\numberline {6.2}Background}{139}{section.6.2}
+\contentsline {section}{\numberline {6.3}Simulations and Modelling Synthetic Lethality in Expression Data}{141}{section.6.3}
+\contentsline {section}{\numberline {6.4}Developing a Synthetic Lethal detection methodology}{142}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Testing Multivariate Normal Simulation of Synthetic lethality}{142}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Receiver Operating Characteristic Curves}{143}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Simulated Expression Heatmaps}{145}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Replication Simulation Heatmap}{146}{subsection.6.4.4}
+\contentsline {section}{\numberline {6.5}Simulation of synthetic lethality in graph structures}{149}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Developing a multivariate normal expression from graph structures}{149}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Simulations over simple graph structures}{149}{subsection.6.5.2}
+\contentsline {subsubsection}{\numberline {6.5.2.1}Performance}{149}{subsubsection.6.5.2.1}
+\contentsline {subsubsection}{\numberline {6.5.2.2}Synthetic lethality across graph stuctures}{149}{subsubsection.6.5.2.2}
+\contentsline {subsubsection}{\numberline {6.5.2.3}Performance with inhibition links}{149}{subsubsection.6.5.2.3}
+\contentsline {subsubsection}{\numberline {6.5.2.4}Performance with 20,000 genes}{149}{subsubsection.6.5.2.4}
+\contentsline {subsection}{\numberline {6.5.3}Simulations over pathway-based graphs}{149}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.4}Comparing methods}{149}{subsection.6.5.4}
+\contentsline {subsubsection}{\numberline {6.5.4.1}SLIPT and Chi-Squared}{149}{subsubsection.6.5.4.1}
+\contentsline {subsubsubsection}{\numberline {6.5.4.1.1}Correlated query genes}{149}{subsubsubsection.6.5.4.1.1}
+\contentsline {subsubsection}{\numberline {6.5.4.2}Correlation}{149}{subsubsection.6.5.4.2}
+\contentsline {subsubsection}{\numberline {6.5.4.3}Bimodality with BiSEp}{149}{subsubsection.6.5.4.3}
+\contentsline {subsubsection}{\numberline {6.5.4.4}Linear models}{149}{subsubsection.6.5.4.4}
+\contentsline {subsection}{\numberline {6.5.5}Developing a linear model predictor of synthetic lethality}{149}{subsection.6.5.5}
+\contentsline {subsubsection}{\numberline {6.5.5.1}Linear models}{149}{subsubsection.6.5.5.1}
+\contentsline {subsubsection}{\numberline {6.5.5.2}Polynomial models}{149}{subsubsection.6.5.5.2}
+\contentsline {subsubsection}{\numberline {6.5.5.3}Conditioning}{149}{subsubsection.6.5.5.3}
+\contentsline {subsubsection}{\numberline {6.5.5.4}SLIPTv2}{149}{subsubsection.6.5.5.4}
+\contentsline {section}{\numberline {6.6}Significance}{149}{section.6.6}
+\contentsline {section}{\numberline {6.7}Future Directions}{151}{section.6.7}
+\contentsline {section}{\numberline {6.8}Conclusion}{152}{section.6.8}
+\contentsline {chapter}{\numberline {7}Discussion}{153}{chapter.7}
+\contentsline {chapter}{\numberline {8}Conclusion}{154}{chapter.8}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{155}{chapter.8}
+\contentsline {chapter}{\numberline {A}Sample Correlation}{180}{appendix.A}
+\contentsline {chapter}{\numberline {B}Software Used for Thesis}{182}{appendix.B}
+\contentsline {chapter}{\numberline {C}Secondary Screen Data}{191}{appendix.C}

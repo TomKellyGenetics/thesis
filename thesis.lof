@@ -14,44 +14,79 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces A model of synthetic lethal gene expression}}{82}{figure.caption.18}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Modeling synthetic lethal gene expression}}{83}{figure.caption.19}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Synthetic lethality with multiple genes}}{84}{figure.caption.20}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Simulating gene expression and function}}{86}{figure.caption.21}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Simulating gene function}}{86}{figure.caption.21}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Simulated expression matrix}}}{86}{figure.caption.21}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corresponding gene function calls}}}{86}{figure.caption.21}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Simulating synthetic lethal genes with gene function}}{87}{figure.caption.22}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Simulating synthetic lethal gene function}}{87}{figure.caption.22}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Simulating synthetic lethal gene expression}}{87}{figure.caption.22}
 \contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Simulated gene function with SL genes}}}{87}{figure.caption.22}
 \contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Query gene added with SL condition}}}{87}{figure.caption.22}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Simulating synthetic lethal gene expression}}{88}{figure.caption.23}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial expression matrix}}}{88}{figure.caption.23}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated synthetic lethal dataset}}}{88}{figure.caption.23}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Simulated graph structures}}{92}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{92}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{92}{figure.caption.24}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Simulating expression from a graph structure}}{93}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{93}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distance matrix }}}{93}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sigma, $\Sigma $ (expected correlation)}}}{93}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated correlation structure}}}{93}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Simulated expression data}}}{93}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Simulated gene function calls}}}{93}{figure.caption.25}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Simulating expression from graph structure with inhibitions}}{95}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pathway structure with inhibition}}}{95}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distance matrix }}}{95}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sigma, $\Sigma $ (expected correlation)}}}{95}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated correlation structure}}}{95}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Simulated expression data}}}{95}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Simulated gene function calls}}}{95}{figure.caption.26}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Demonstration of violin plots with custom features}}{98}{figure.caption.27}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Customised violin plot}}}{98}{figure.caption.27}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Split violin plot}}}{98}{figure.caption.27}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Demonstration of annotated heatmap}}{98}{figure.caption.28}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Simulating graph structures}}{101}{figure.caption.29}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial expression matrix}}}{87}{figure.caption.22}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated synthetic lethal dataset}}}{87}{figure.caption.22}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Performance of binomial simulations}}{89}{figure.caption.23}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparison of statistical performance}}{89}{figure.caption.23}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Performance of multivariate normal simulations}}{91}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{91}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{91}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{91}{figure.caption.24}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Simulating expression with correlated gene blocks}}{94}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Input $\Sigma $ matrix parameter}}}{94}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated correlation matrix}}}{94}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Simulated gene expression}}}{94}{figure.caption.25}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated gene function}}}{94}{figure.caption.25}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Simulating expression with correlated gene blocks}}{95}{figure.caption.26}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Input $\Sigma $ matrix parameter}}}{95}{figure.caption.26}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated correlation matrix}}}{95}{figure.caption.26}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Simulated gene expression}}}{95}{figure.caption.26}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated gene function}}}{95}{figure.caption.26}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Synthetic lethal prediction across simulations}}{96}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Gene category in simulations}}}{96}{figure.caption.27}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corresponding $\chi ^2$ values}}}{96}{figure.caption.27}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Performance with correlations}}{97}{figure.caption.28}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{97}{figure.caption.28}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{97}{figure.caption.28}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{97}{figure.caption.28}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Comparison of statistical performance with correlation structure}}{98}{figure.caption.29}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Performance with query correlations}}{99}{figure.caption.30}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{99}{figure.caption.30}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{99}{figure.caption.30}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{99}{figure.caption.30}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Statistical evaluation of directional criteria}}{100}{figure.caption.31}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\chi ^2$ testing without direction}}}{100}{figure.caption.31}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {SLIPT with directional criteria}}}{100}{figure.caption.31}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Performance of directional criteria}}{101}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\chi ^2$ testing without direction}}}{101}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {SLIPT with directional criteria}}}{101}{figure.caption.32}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{101}{figure.caption.32}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Simulated graph structures}}{105}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{105}{figure.caption.33}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{105}{figure.caption.33}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Simulating expression from a graph structure}}{107}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{107}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distance matrix }}}{107}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sigma, $\Sigma $ (expected correlation)}}}{107}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated correlation structure}}}{107}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Simulated expression data}}}{107}{figure.caption.34}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Simulated gene function calls}}}{107}{figure.caption.34}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Simulating expression from graph structure with inhibitions}}{108}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pathway structure with inhibition}}}{108}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distance matrix }}}{108}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sigma, $\Sigma $ (expected correlation)}}}{108}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated correlation structure}}}{108}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Simulated expression data}}}{108}{figure.caption.35}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Simulated gene function calls}}}{108}{figure.caption.35}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Demonstration of violin plots with custom features}}{111}{figure.caption.36}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Customised violin plot}}}{111}{figure.caption.36}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Split violin plot}}}{111}{figure.caption.36}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Demonstration of annotated heatmap}}{111}{figure.caption.37}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Simulating graph structures}}{113}{figure.caption.38}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Correlation profiles of removed samples}}{167}{figure.caption.31}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Correlation analysis and sample removal}}{168}{figure.caption.32}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Correlation profiles of removed samples}}{180}{figure.caption.40}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Correlation analysis and sample removal}}{181}{figure.caption.41}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

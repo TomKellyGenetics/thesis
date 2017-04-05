@@ -92,11 +92,11 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{A Model of Synthetic Lethality in Expression Data}{section.3.2}% 92
 \BOOKMARK [2][-]{subsection.3.2.2}{Simulation Procedure}{section.3.2}% 93
 \BOOKMARK [1][-]{section.3.3}{Detecting Simulated Synthetic Lethal Partners}{chapter.3}% 94
-\BOOKMARK [2][-]{subsection.3.3.1}{Multivariate Normal Simulation of Synthetic lethality}{section.3.3}% 95
-\BOOKMARK [3][-]{subsubsection.3.3.1.1}{Simulation with Directional Testing}{subsection.3.3.1}% 96
-\BOOKMARK [3][-]{subsubsection.3.3.1.2}{Simulation with Query-Correlated Pathways}{subsection.3.3.1}% 97
-\BOOKMARK [3][-]{subsubsection.3.3.1.3}{Simulated Expression Heatmaps}{subsection.3.3.1}% 98
-\BOOKMARK [2][-]{subsection.3.3.2}{Replication Simulation Heatmap}{section.3.3}% 99
+\BOOKMARK [2][-]{subsection.3.3.1}{Binomial Simulation of Synthetic lethality}{section.3.3}% 95
+\BOOKMARK [2][-]{subsection.3.3.2}{Multivariate Normal Simulation of Synthetic lethality}{section.3.3}% 96
+\BOOKMARK [3][-]{subsubsection.3.3.2.1}{Multivariate Normal Simulation with Correlated Genes}{subsection.3.3.2}% 97
+\BOOKMARK [3][-]{subsubsection.3.3.2.2}{Specificity with Query-Correlated Pathways}{subsection.3.3.2}% 98
+\BOOKMARK [4][-]{subsubsubsection.3.3.2.2.1}{Importance of Directional Testing}{subsubsection.3.3.2.2}% 99
 \BOOKMARK [1][-]{section.3.4}{Graph Structure Methods}{chapter.3}% 100
 \BOOKMARK [2][-]{subsection.3.4.1}{Upstream and Downstream Gene Detection}{section.3.4}% 101
 \BOOKMARK [3][-]{subsubsection.3.4.1.1}{Permutation Analysis for Statistical Significance}{subsection.3.4.1}% 102
@@ -172,18 +172,19 @@
 \BOOKMARK [3][-]{subsubsection.6.5.4.1}{SLIPT and Chi-Squared}{subsection.6.5.4}% 172
 \BOOKMARK [4][-]{subsubsubsection.6.5.4.1.1}{Correlated query genes}{subsubsection.6.5.4.1}% 173
 \BOOKMARK [3][-]{subsubsection.6.5.4.2}{Correlation}{subsection.6.5.4}% 174
-\BOOKMARK [3][-]{subsubsection.6.5.4.3}{Linear models}{subsection.6.5.4}% 175
-\BOOKMARK [2][-]{subsection.6.5.5}{Developing a linear model predictor of synthetic lethality}{section.6.5}% 176
-\BOOKMARK [3][-]{subsubsection.6.5.5.1}{Linear models}{subsection.6.5.5}% 177
-\BOOKMARK [3][-]{subsubsection.6.5.5.2}{Polynomial models}{subsection.6.5.5}% 178
-\BOOKMARK [3][-]{subsubsection.6.5.5.3}{Conditioning}{subsection.6.5.5}% 179
-\BOOKMARK [3][-]{subsubsection.6.5.5.4}{SLIPTv2}{subsection.6.5.5}% 180
-\BOOKMARK [1][-]{section.6.6}{Significance}{chapter.6}% 181
-\BOOKMARK [1][-]{section.6.7}{Future Directions}{chapter.6}% 182
-\BOOKMARK [1][-]{section.6.8}{Conclusion}{chapter.6}% 183
-\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 184
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 185
-\BOOKMARK [0][-]{chapter.8}{References}{}% 186
-\BOOKMARK [0][-]{appendix.A}{Sample Correlation}{}% 187
-\BOOKMARK [0][-]{appendix.B}{Software Used for Thesis}{}% 188
-\BOOKMARK [0][-]{appendix.C}{Secondary Screen Data}{}% 189
+\BOOKMARK [3][-]{subsubsection.6.5.4.3}{Bimodality with BiSEp}{subsection.6.5.4}% 175
+\BOOKMARK [3][-]{subsubsection.6.5.4.4}{Linear models}{subsection.6.5.4}% 176
+\BOOKMARK [2][-]{subsection.6.5.5}{Developing a linear model predictor of synthetic lethality}{section.6.5}% 177
+\BOOKMARK [3][-]{subsubsection.6.5.5.1}{Linear models}{subsection.6.5.5}% 178
+\BOOKMARK [3][-]{subsubsection.6.5.5.2}{Polynomial models}{subsection.6.5.5}% 179
+\BOOKMARK [3][-]{subsubsection.6.5.5.3}{Conditioning}{subsection.6.5.5}% 180
+\BOOKMARK [3][-]{subsubsection.6.5.5.4}{SLIPTv2}{subsection.6.5.5}% 181
+\BOOKMARK [1][-]{section.6.6}{Significance}{chapter.6}% 182
+\BOOKMARK [1][-]{section.6.7}{Future Directions}{chapter.6}% 183
+\BOOKMARK [1][-]{section.6.8}{Conclusion}{chapter.6}% 184
+\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 185
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 186
+\BOOKMARK [0][-]{chapter.8}{References}{}% 187
+\BOOKMARK [0][-]{appendix.A}{Sample Correlation}{}% 188
+\BOOKMARK [0][-]{appendix.B}{Software Used for Thesis}{}% 189
+\BOOKMARK [0][-]{appendix.C}{Secondary Screen Data}{}% 190
