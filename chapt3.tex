@@ -1,183 +1,828 @@
 \chapter{Synthetic Lethal Analysis of Gene Expression Data}
 \label{chap:SLIPT}
 
-\section{Abstract}
+%\section{Aims and Significance}
 
-The study of networks is an interdisciplinary field which combines concepts and approaches in computer science, the fundamental principles of pure mathematics, and the applications in many fields in the social, physical, life sciences, and engineering. High-throughput technologies which gather vast amounts of molecular and cellular data have raised the need for systems-level, network-based, and genome-wide bioinformatics analysis to capture the complexity of a cell at the molecular level.
+\paragraph{Aims}
 
-Genetic interactions (SGIs) are the deviation of a double mutant from the phenotype expected from the respective single mutants. These interactions may also occur through suppression of gene expression or protein activity by epigenetic silencing, RNA interference or drug activity. Genetic interactions have been 
-studied at a genome-wide scale using synthetic gene array (yeast) and siRNA (nematode worm) technologies. Extension of these methods beyond model organisms is limited by the cost and labour involved and predictive models serve as an unbiased alternative to the candidate gene approach currently used in genetic screens with mammalian cell lines.
+  \begin{itemize}
+   \item Pathway Structure of Candidate Synthetic Lethal Genes for \textit{\textit{CDH1}} from TCGA breast data
+   
+   \bigskip
+   
+   \item Comparisons to Experimental siRNA Screen Candidates
+   
+   \bigskip
+   
+   \item Replication of Pathways across in TCGA Stomach data
+  \end{itemize}
 
-Genetic interactions have been shown to have clinical relevance with the application of BRCA1 and BRCA2 mutations with PARP1 inhibitors in Breast and Ovarian cancers, and with drug synergy between targeted therapeutics for BRAFV600E and EGFR inhibitors in Colorectal cancer. Prediction of genetic interactions has been performed in model organisms showing that protein-protein interactions, shared gene function or mutant phenotype, coexpression, or a subset of genetic interactions themselves can be used to predict known genetic interactions.
+\paragraph{Summary}
 
-The main focus of this research is to investigate the tissue specificity of gene networks in normal and cancerous cells. Secondary objectives include investigating the integrative network analysis of gene, protein, drug networks; the translational application of gene network analysis to predict anti-cancer drug targets and synergy; and to understand the evolutionary conservation and mechanisms underlying genetic interaction networks.
+    
+  \begin{itemize}
+   \item We have developed a Synthetic Lethal detection method that generates a high number of synthetic lethal candidates
+   
+   \bigskip
+   
+   \item Pathways in cell signalling, extracellular matrix, and cytoskeletal functions were supported with experimental candidates and the known functions of E-cadherin
+   
+   \bigskip
+   
+   \item Several candidate pathways were supported by mutation analysis and replicated across breast and stomach cancer
+   
+   \bigskip
+   
+   \item Translation and immune functions were uniquely detected by the computational approach which may be explained by differences between patient samples and cell line models
+   
+   \bigskip
+   
+   \item There remains the need to identify actionable genes within these pathways, relationships with experimental candidates, and how these pathways may affect viability when lost
+  \end{itemize}
 
-\section{Aims and Significance}
+\section{Synthetic lethal genes in breast cancer}
 
-We aim to develop a network analysis approach to predict and analyse SGI networks in human cells and cancers. The main focus of this project will be to test SGIs for tissue specificity, of particular interest are SL interactions in tumours. Normal tissue will also be investigated for comparison between tissues and with tumour-specific networks. In contrast to the TCGA Pan-cancer study, which aims to find shared molecular characteristics across tumour subtypes, we aim to find molecular features (e.g., coordinated perturbation of many genes) which is unique to one or very few cell types or tumour. This is a pragmatic approach to find molecular features which, if altered, are less likely to result in adverse drug reactions.
-
-Secondary objectives include integrative network analysis, translational research focus, and fundamental understanding of genetic interactions. Integrative analysis compares many networks across the same cell type to investigate how they are related, for instance gene regulation, genetic interaction, gene coexpression, and protein-protein interactions are known to be related. However, so far integrative analysis of networks has focused on model organisms and has not accounted for tissue specificity.
-
-Translational research involves ensuring that the findings have clinical relevance and potential application in clinical practice. Identification of biomarkers, drug targets, and synergistic drug combinations are possible from molecular networks which can be developed for use in cancer diagnosis, prognosis, and treatment. Tools to develop predict the tissue specificity, therapeutic index, and therapeutic window of a candidate drug could be developed to prioritise RNAi and drug screens in research. If refined, these tools could be used for personalised medicine, to predict whether a particular treatment regime will be effective in a patient from their molecular profiles. Understanding the underlying mechanisms of molecular perturbations targeted for cancer treatment is important to ensure efficacy and minimal toxicity. If anticancer drugs can be developed with drastically lower toxicity than traditional chemotherapy, they may also be feasible as a chemopreventative alternative to prophylactic surgery in high risk patients.
-
-The fundamental understanding of genetic interactions is also important for the role of networks in heredity, cell biology, pharmacogenetics, and developmental biology. The connectivity of a network and the pathways involved in a molecular perturbation between cell types or treatment regimens can inform mechanistic molecular studies. The network properties of a cell will further enable understanding of gene expression and its role in polygenic phenotypes, complex disease, and developmental cellular differentiation. Evolutionary conservation of networks between species is important to ensure relevance of model organism studies to applications in human health and agriculture. The level of conservation between species can also be used to determine the role of gene networks in evolutionary history d identify which network features and substructures were important to be conserved across many species, and which features are unique to humans.
-
-This project will focus on colorectal cancers which have relatively high incidence in New Zealand and are a national tissue banking initiative based in Otago. Melanomas also have high incidence in New Zealand, are a research focus at the University of Auckland, and may be useful for comparison with shared environmental and genetic risk factors (such as BRAF mutations). Breast and Stomach cancers will also be investigated to augment existing studies into synthetic lethality in the Cancer Genetics Laboratory, since CDH1 mutations are involved in both sporadic cancers and hereditary diffuse gastric cancer. Breast and Stomach cancers are cancers with some of the highest global incidence and New Zealand is no exception with typical levels for a developed country.
+\begin{itemize}
+ \item exprSL
+ \item mtSL
+ \item heatmap
+\end{itemize}
 
 
-\section{Background}
+\begin{table*}[!ht]
+\caption{Candidate synthetic lethal genes against E-cadherin from SLIPT}
+\label{tab:gene_SL}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{>{\em}rcccll}
+ \em{Gene} & Observed Low-Low & Expected Low-Low & $\chi^2$ value & raw p-val & p-val (FDR) \\ 
+  \hline
+  \rowcolor{black!10}
+TRIP10 & 62 & 130 & 162 & $5.65 \times 10^{-34}$ & $1.84 \times 10^{-31}$ \\
+  \rowcolor{black!5} 
+  EEF1B2 & 56 & 130 & 158 & $3.10 \times 10^{-33}$ & $9.45 \times 10^{-31}$ \\
+  \rowcolor{black!10} 
+  GBGT1 & 61 & 131 & 156 & $1.08 \times 10^{-32}$ & $3.14 \times 10^{-30}$ \\
+  \rowcolor{black!5} 
+  ELN & 81 & 130 & 149 & $3.46 \times 10^{-31}$ & $8.82 \times 10^{-29}$ \\
+  \rowcolor{black!10} 
+  TSPAN4 & 78 & 130 & 146 & $1.63 \times 10^{-30}$ & $3.79 \times 10^{-28}$ \\
+  \rowcolor{black!5} 
+  GLIPR2 & 72 & 130 & 146 & $1.68 \times 10^{-30}$ & $3.86 \times 10^{-28}$ \\
+  \rowcolor{black!10} 
+  RPS20 & 73 & 131 & 145 & $1.89 \times 10^{-30}$ & $4.28 \times 10^{-28}$ \\
+  \rowcolor{black!5} 
+  RPS27A & 80 & 130 & 143 & $5.53 \times 10^{-30}$ & $1.18 \times 10^{-27}$ \\
+  \rowcolor{black!10} 
+  EEF1A1P9 & 63 & 130 & 141 & $1.91 \times 10^{-29}$ & $3.74 \times 10^{-27}$ \\
+  \rowcolor{black!5} 
+  C1R & 73 & 130 & 141 & $2.05 \times 10^{-29}$ & $3.97 \times 10^{-27}$ \\
+  \rowcolor{black!10} 
+  LYL1 & 73 & 130 & 140 & $2.99 \times 10^{-29}$ & $5.74 \times 10^{-27}$ \\
+  \rowcolor{black!5} 
+  RPLP2 & 71 & 130 & 139 & $4.88 \times 10^{-29}$ & $9.07 \times 10^{-27}$ \\
+  \rowcolor{black!10} 
+  C10orf10 & 73 & 130 & 138 & $6.72 \times 10^{-29}$ & $1.20 \times 10^{-26}$ \\
+  \rowcolor{black!5} 
+  DULLARD & 74 & 131 & 138 & $9.29 \times 10^{-29}$ & $1.61 \times 10^{-26}$ \\
+  \rowcolor{black!10} 
+  PPM1F & 64 & 130 & 136 & $1.61 \times 10^{-28}$ & $2.65 \times 10^{-26}$ \\
+  \rowcolor{black!5} 
+  OBFC2A & 69 & 130 & 136 & $2.49 \times 10^{-28}$ & $3.93 \times 10^{-26}$ \\
+  \rowcolor{black!10} 
+  RPL11 & 70 & 130 & 136 & $2.56 \times 10^{-28}$ & $3.97 \times 10^{-26}$ \\
+  \rowcolor{black!5} 
+  RPL18A & 70 & 130 & 135 & $3.08 \times 10^{-28}$ & $4.70 \times 10^{-26}$ \\
+  \rowcolor{black!10} 
+  MFNG & 76 & 131 & 133 & $7.73 \times 10^{-28}$ & $1.12 \times 10^{-25}$ \\
+  \rowcolor{black!5} 
+  RPS17 & 77 & 131 & 133 & $8.94 \times 10^{-28}$ & $1.29 \times 10^{-25}$ \\
+  \rowcolor{black!10} 
+  MGAT1 & 73 & 130 & 132 & $1.44 \times 10^{-27}$ & $2.03 \times 10^{-25}$ \\
+  \rowcolor{black!5} 
+  RPS12 & 72 & 130 & 128 & $8.57 \times 10^{-27}$ & $1.12 \times 10^{-24}$ \\
+  \rowcolor{black!10} 
+  C10orf54 & 73 & 130 & 127 & $1.37 \times 10^{-26}$ & $1.75 \times 10^{-24}$ \\
+  \rowcolor{black!5} 
+  LOC286367 & 72 & 130 & 126 & $2.20 \times 10^{-26}$ & $2.70 \times 10^{-24}$ \\
+  \rowcolor{black!10} 
+  GMFG & 70 & 130 & 126 & $2.20 \times 10^{-26}$ & $2.70 \times 10^{-24}$ \\ 
+  \hline
+\end{tabular}
+}
+\end{table*}
 
-Synthetic lethality is an emerging anti-cancer drug development approach showing promise in clinical trials as a treatment, preventative, and in combination with standard care (e.g., PARP inhibitors against BRCA mutations in Breast and Ovarian cancers). We are particularly interested in exploiting synthetic lethal interactions (where pairwise gene inactivation kills a cell) which enable development of targeted therapies – so called genomic medicine – informed by systems biology because they show promise as a means to effectively target tumour suppressor genes (with loss of function mutations) to selectively kill cancerous and pre-cancerous cells. The cancer genetics laboratory are currently working on experimental screens and validation of candidate synthetic lethal partners of CDH1 (a gene implicated in hereditary and sporadic breast and stomach cancers). This project serves to develop a predictive methodology to support such experimental work with analysis of public cancer genome data to overcome many of the limitations of experimental models (namely cost, throughput, and variable genetic background). In addition to candidates based on gene expression data, we are currently extending the methodology to use DNA copy number, DNA methylation, and somatic mutation to predict synthetic lethality. Synthetic lethal predictions have the potential to scale up to genome-wide analysis enabling investigation of gene networks and tissue-specificity.
-Background and Methodology:
 
-Synthetic lethality (SL) is the death of a cell or organism with the combined loss of two non-essential genes. This phenomenon was originally used to study genetic interactions and functional redundancy in models organisms (1). While synthetic lethal experiments have been performed in Drosophila melanogaster (2), Caenorhabditis elegans (3), Escherichia coli (4), Schizosaccharomyces pombe (5), and various mammalian cell lines (6), the most extensive synthetic lethal screens have been performed with the synthetic gene array (SGA) technique in Saccharomyces cerevisiae (1, 7, 8). Originally defined by double mutants, a range of mechanisms for gene inactivation of synthetic lethal partners can induce cell death including RNA interference and drug treatment where it is sometimes called ‘induced essentiality’ or ‘non-oncogene addiction’ in cancer research (9). Cellular viability is the main means to measure synthetic lethal effects experimentally because it is quantified and measured consistently, whereas qualitative measures of impaired organism viability are ambiguous and less relevant to yeast or cancer research.
 
-The synthetic lethal approach to cancer therapy is a rapidly developing area of research. It has proven effective against BRCA mutations in breast cancer with the discovery of synthetic lethal interactions of BRCA1 and BRCA2 with PARP1 as distinct DNA repair functions which are mutually necessary for cellular viability (10, 11). This is particularly exciting as a proof of concept that synthetic lethality can be used to indirectly target tumour suppressor gene inactivation to selectively kill cancer cells. PARP inhibitors have been successful in numerous clinical trials in both breast and ovarian cancer against both hereditary cancers and sporadic cases of BRCA mutant cancer (12). Not only do synthetic lethal drugs have the potential to be effective across multiple cancer types, they have could be utilised for chemopreventation against hereditary cancers in high risk individuals with the ability to achieve high therapeutic index with this approach (6, 13). Synthetic lethality has also been explored as a means to target oncogenes which are difficult to selectively target directly due to high sequence homology to their wild-type counterpart or other genes (14).
+\subsection{Synthetic lethal pathways in breast cancer}
 
-The cancer genetics laboratory are currently working on developing a synthetic lethal approach to target the tumour suppressor gene CDH1 which has been found to cause predispose early-onset breast and stomach cancers in mutation carriers, including families of New Zealand M\={a}ori (15, 16). These families are currently closely monitored and offered drastic preventative surgery. If it were developed drug selective against CDH1 mutant tumours would serve not only as a chemopreventative alternative for these families but also benefit the wider community as a treatment for sporadic cases of CDH1 mutant cancer. To augment experimental work on CDH1 with isogenic cell lines, a computational methodology is explored here to exploit public cancer genomic databases.
+Table 5.  Gene set enrichment results for subgroups of \textit{CDH1} SL partners shows functional variation.
 
-Figure 1. Impact of various negative (a) and positive (b, c) synthetic genetic interactions on growth viability fitness in yeast. Adapted from Costanzo, Baryshnikova (8).  
+\subsection{Expression profiles of synthetic lethal partners}
 
-Microarray and massively-parallel sequencing technologies are driving a revolution in molecular biological research, particularly with regard to cancer where the premise of ‘genomic medicine’ is rapidly becoming feasible with the use of genomics to identify cancer genes, diagnose patients with actionable mutations, and use gene expression as a prognostic marker. Genomic data could also be used to identify novel drug targets and synthetic lethal partners of known cancer genes in particular. The Cancer Genome Atlas database (TCGA) and the overarching International Cancer Genome Consortium (ICGC) provide a valuable public cancer genome data resource because they support many different data types for the same samples, for many different cancer types, and for high sample sizes (17-19). They host data of patient clinical factors, gene expression, somatic mutation, DNA copy number, and DNA methylation which could all serve to predict synthetic lethality from frequency of mutually exclusive gene inactivation and it’s impact on patient survival. A number of other databases are given in the Table 6 which may be used to explore gene function, drug target feasibility, or replicate analyses but TCGA and ICGC datasets will be the focus of this project.
+\begin{figure*}[!ht]
+\begin{mdframed}
+  \centering
+  \resizebox{0.99 \textwidth}{!}{
+    \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png}
+   }
+    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in TCGA breast cancer dataset for gene expression of 4,629 candidate partners of E-cadherin (\textit{CDH1}) from SLIPT prediction (with significant FDR adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an siRNA screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably 'normal-like', basal, and estrogen receptor negative samples have elevated expression in one or more distinct clusters showing complexity and variation among candidate synthetic lethal partners. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
+   %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
+}
+\label{fig:slipt_expr}
+\end{mdframed}
+\end{figure*}
 
-Networks are an established research area of pure mathematics producing many applications relevant to biology including evolutionary trees, metabolic pathways, gene regulation, and protein-protein interactions (20). It is a branch of graph theory which deals with the connections between discrete objects which includes terminology for particular interaction patterns, visualisation methods, and algorithms to predict and measure individual interactions and the whole network (21). This established set of mathematical tools could be utilised to use a systems biology approach to using genomic data to predict synthetic lethal interactions or analyse patterns in the resulting predictions or supporting experimental data.
 
-Network medicine is an emerging notion that network analysis of biology could be useful for clinical applications and translational research including identification of disease genes (for diagnostics), biomarkers (for prognosis), identify novel drug targets, and find the biological significance of mutations and SNPs found by genome-wide association and whole-genome sequencing approaches (22). Molecular networks may be useful to understand perturbations of cellular functions in human disease including groups of genes underlying multiple separate or co-occurring diseases and whether they occur in a tissue specific manner. A network understanding of a disease may be relevant not only to genetic risk and mutation but also to the impact of the disease (or causes of it) in abnormalities in metabolic pathways, protein complexes, epigenetic marks, and microRNAs. An understanding of cellular function is important for network pharmacology, a modern approach to drug design where understanding of the effect of the drug on the network is more important than specificity to a single target (23). Combined or synergistic drug targets are a known means to more effectively treat diseases, exploiting the network enables targeting disease genes indirectly (including synthetic lethal partners) and use of drugs with multiple targets (known as ‘polypharmacology’). 
 
-There is a growing need for a robust approach to cost-effective prediction of candidate synthetic lethal interaction, particularly in cancer research. Exploiting existing public genomic databases is an ideal way to utilise existing resources with suitable sample sizes, data types, and different limitations to those of laboratory experiments. A number of computation approaches to synthetic lethality have been developed but many of these rely on data not available to cancer researchers, methods that are difficult to replicate, overfitted to a particular dataset, having mixed validation results, or do not have a software tool accessible to the research community. These methodologies will still be considered to develop an improved synthetic lethal interaction prediction tool (SLIPT). The methodologies summarised below in Table 1 include those reviewed by Van Steen (24) or Boucher and Jenna (25). 
+\begin{table*}[!Hp]
+\caption{Pathway composition for clusters of \textit{CDH1} partners from SLIPT}
+\label{tab:pathway_clusters}
+\centering
+\resizebox{0.72 \textwidth}{!}{
+\begin{tabular}{rccc}
+  Pathways Over-represented in Cluster 1 & Total Genes in Pathway & Genes in SL Cluster & p-val (FDR) \\ %(833 genes)  
+  \hline
+  \rowcolor{Cluster_Blue!20}
+  Collagen formation &  67 &  10 & $4.0 \times 10^{-11}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Extracellular matrix organisation & 238 &  21 & $1.8 \times 10^{-9}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Collagen biosynthesis and modifying enzymes &  56 &   8 & $1.8 \times 10^{-9}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Uptake and actions of bacterial toxins &  22 &   5 & $9.5 \times 10^{-9}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Elastic fibre formation &  37 &   6 & $1.9 \times 10^{-8}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Muscle contraction &  62 &   7 & $2.4 \times 10^{-7}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Fatty acid, triacylglycerol, and ketone body metabolism & 117 &  10 & $4.9 \times 10^{-7}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  XBP1(S) activates chaperone genes &  51 &   6 & $6.6 \times 10^{-7}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  IRE1alpha activates chaperones &  54 &   6 & $1.2 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Neurotoxicity of clostridium toxins &  10 &   3 & $1.3 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Retrograde neurotrophin signalling &  10 &   3 & $1.3 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Assembly of collagen fibrils and other multimeric structures &  40 &   5 & $1.9 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Collagen degradation &  58 &   6 & $2.0 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Arachidonic acid metabolism &  41 &   5 & $2.1 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Synthesis of PA &  26 &   4 & $3.0 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Signaling by NOTCH &  80 &   7 & $3.3 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Signalling to RAS &  27 &   4 & $3.7 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Integrin cell surface interactions &  82 &   7 & $4.2 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Smooth Muscle Contraction &  28 &   4 & $4.4 \times 10^{-6}$ \\
+  %\rowcolor{Cluster_Blue!15} 
+  %ECM proteoglycans &  66 &   6 & $6.3 \times 10^{-6}$ \\ 
+  \hline
+  \\
+  Pathways Over-represented in Cluster 2 & Total Genes in Pathway & Genes in SL Cluster & p-val (FDR) \\ %(1307 genes) 
+  \hline
+  \rowcolor{Cluster_Green!20}
+  Eukaryotic Translation Elongation &  86 &  75 & $1.1 \times 10^{-181}$ \\
+  \rowcolor{Cluster_Green!15} 
+  Viral mRNA Translation &  81 &  72 & $9.8 \times 10^{-179}$ \\
+  \rowcolor{Cluster_Green!20} 
+  Peptide chain elongation &  83 &  72 & $1.9 \times 10^{-175}$ \\
+  \rowcolor{Cluster_Green!15} 
+  Eukaryotic Translation Termination &  83 &  72 & $1.9 \times 10^{-175}$ \\
+  \rowcolor{Cluster_Green!20} 
+  Formation of a pool of free 40S subunits &  93 &  75 & $1.9 \times 10^{-171}$ \\
+  \rowcolor{Cluster_Green!15} 
+  Nonsense Mediated Decay (NMD) independent of the Exon Junction Complex (EJC) &  88 &  72 & $9.9 \times 10^{-168}$ \\
+  \rowcolor{Cluster_Green!20} 
+  L13a-mediated translational silencing of Ceruloplasmin expression & 103 &  75 & $3.0 \times 10^{-159}$ \\
+  \rowcolor{Cluster_Green!15} 
+  3' -UTR-mediated translational regulation & 103 &  75 & $3.0 \times 10^{-159}$ \\
+  \rowcolor{Cluster_Green!20} 
+  Nonsense-Mediated Decay (NMD) & 103 &  75 & $3.0 \times 10^{-159}$ \\
+  \rowcolor{Cluster_Green!15} 
+  Nonsense Mediated Decay (NMD) enhanced by the Exon Junction Complex (EJC) & 103 &  75 & $3.0 \times 10^{-159}$ \\
+  \rowcolor{Cluster_Green!20} 
+  SRP-dependent cotranslational protein targeting to membrane & 104 &  75 & $3.2 \times 10^{-158}$ \\
+  \rowcolor{Cluster_Green!15} 
+  GTP hydrolysis and joining of the 60S ribosomal subunit & 104 &  75 & $3.2 \times 10^{-158}$ \\
+  \rowcolor{Cluster_Green!20} 
+  Eukaryotic Translation Initiation & 111 &  75 & $4.5 \times 10^{-151}$ \\
+  \rowcolor{Cluster_Green!15} 
+  Cap-dependent Translation Initiation & 111 &  75 & $4.5 \times 10^{-151}$ \\
+  \rowcolor{Cluster_Green!20} 
+  Influenza Infection & 117 &  75 & $1.4 \times 10^{-145}$ \\
+  \rowcolor{Cluster_Green!15} 
+  Influenza Viral RNA Transcription and Replication & 108 &  72 & $5.7 \times 10^{-145}$ \\
+  \rowcolor{Cluster_Green!20} 
+  Translation & 141 &  81 & $8.0 \times 10^{-143}$ \\
+  \rowcolor{Cluster_Green!15} 
+  Influenza Life Cycle & 112 &  72 & $2.3 \times 10^{-141}$ \\
+  \rowcolor{Cluster_Green!20} 
+  Infectious disease & 347 & 103 & $2.2 \times 10^{-95}$ \\
+  %\rowcolor{Cluster_Green!15} 
+  %Formation of the ternary complex, and subsequently, the 43S complex &  47 &  33 & $6.8 \times 10^{-80}$ \\
+  \hline
+  \\
+  Pathways Over-represented in Cluster 3 & Total Genes in Pathway & Genes in SL Cluster & p-val (FDR) \\ %(1547 genes) 
+  \hline
+  \rowcolor{Cluster_Orange!30}
+  Adaptive Immune System & 412 &  90 & $6.1 \times 10^{-61}$ \\
+  \rowcolor{Cluster_Orange!20} 
+  Chemokine receptors bind chemokines &  52 &  27 & $6.7 \times 10^{-56}$ \\
+  \rowcolor{Cluster_Orange!30} 
+  Generation of second messenger molecules &  29 &  21 & $6.5 \times 10^{-55}$ \\
+  \rowcolor{Cluster_Orange!20} 
+  Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell &  64 &  29 & $6.5 \times 10^{-55}$ \\
+  \rowcolor{Cluster_Orange!30} 
+  TCR signalling &  62 &  27 & $8.9 \times 10^{-51}$ \\
+  \rowcolor{Cluster_Orange!20} 
+  Peptide ligand-binding receptors & 161 &  40 & $1.5 \times 10^{-45}$ \\
+  \rowcolor{Cluster_Orange!30} 
+  Translocation of ZAP-70 to Immunological synapse &  16 &  14 & $3.1 \times 10^{-43}$ \\
+  \rowcolor{Cluster_Orange!20} 
+  Costimulation by the CD28 family &  51 &  22 & $4.0 \times 10^{-43}$ \\
+  \rowcolor{Cluster_Orange!30} 
+  PD-1 signalling &  21 &  15 & $4.0 \times 10^{-41}$ \\
+  \rowcolor{Cluster_Orange!20} 
+  Class A/1 (Rhodopsin-like receptors) & 258 &  50 & $6.7 \times 10^{-41}$ \\
+  \rowcolor{Cluster_Orange!30} 
+  Phosphorylation of CD3 and TCR zeta chains &  18 &  14 & $1.3 \times 10^{-40}$ \\
+  \rowcolor{Cluster_Orange!20} 
+  Interferon gamma signalling &  74 &  24 & $5.0 \times 10^{-39}$ \\
+  \rowcolor{Cluster_Orange!30} 
+  GPCR ligand binding & 326 &  57 & $1.8 \times 10^{-38}$ \\
+  \rowcolor{Cluster_Orange!20} 
+  Cytokine Signaling in Immune system & 268 &  48 & $8.9 \times 10^{-37}$ \\
+  \rowcolor{Cluster_Orange!30} 
+  Downstream TCR signalling &  45 &  18 & $1.8 \times 10^{-35}$ \\
+  \rowcolor{Cluster_Orange!20} 
+  G$_{\alpha i}$ signalling events & 167 &  33 & $2.2 \times 10^{-33}$ \\
+  \rowcolor{Cluster_Orange!30} 
+  Cell surface interactions at the vascular wall &  99 &  21 & $1.3 \times 10^{-26}$ \\
+  \rowcolor{Cluster_Orange!20} 
+  Interferon Signalling & 164 &  28 & $1.7 \times 10^{-26}$ \\
+  \rowcolor{Cluster_Orange!30} 
+  Extracellular matrix organisation & 238 &  35 & $2.7 \times 10^{-25}$ \\
+  %\rowcolor{Cluster_Orange!20} 
+  %Antigen activates B Cell Receptor (BCR) leading to generation of second messengers &  32 &  12 & $7.2 \times 10^{-25}$ \\
+   \hline
+   \\
+  Pathways Over-represented in Cluster 4 & Total Genes in Pathway & Genes in SL Cluster & p-val (FDR) \\ % (1478 genes) 
+  \hline
+  \rowcolor{Cluster_Red!20}
+  Extracellular matrix organisation & 238 &  48 & $8.0 \times 10^{-41}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Class A/1 (Rhodopsin-like receptors) & 258 &  47 & $2.8 \times 10^{-36}$ \\
+  \rowcolor{Cluster_Red!20} 
+  GPCR ligand binding & 326 &  54 & $2.1 \times 10^{-34}$ \\
+  \rowcolor{Cluster_Red!15} 
+  G$_{\alpha s}$ signalling events &  83 &  22 & $1.4 \times 10^{-31}$ \\
+  \rowcolor{Cluster_Red!20} 
+  GPCR downstream signalling & 472 &  68 & $1.1 \times 10^{-29}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Haemostasis & 423 &  61 & $3.3 \times 10^{-29}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Platelet activation, signalling and aggregation & 180 &  31 & $7.1 \times 10^{-28}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Binding and Uptake of Ligands by Scavenger Receptors &  40 &  14 & $9.9 \times 10^{-27}$ \\
+  \rowcolor{Cluster_Red!20} 
+  RA biosynthesis pathway &  22 &  11 & $2.5 \times 10^{-26}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Response to elevated platelet cytosolic Ca$^{2+}$ &  82 &  19 & $3.0 \times 10^{-26}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Developmental Biology & 420 &  57 & $3.5 \times 10^{-26}$ \\
+  \rowcolor{Cluster_Red!15} 
+  G$_{\alpha i}$ signalling events & 167 &  28 & $7.3 \times 10^{-26}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Platelet degranulation &  77 &  18 & $1.6 \times 10^{-25}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Gastrin-CREB signalling pathway via PKC and MAPK & 171 &  28 & $2.5 \times 10^{-25}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Muscle contraction &  62 &  16 & $4.7 \times 10^{-25}$ \\
+  \rowcolor{Cluster_Red!15} 
+  G$_{\alpha q}$ signalling events & 150 &  25 & $3.2 \times 10^{-24}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Retinoid metabolism and transport &  34 &  12 & $5.0 \times 10^{-24}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Phase 1 - Functionalisation of compounds &  67 &  16 & $6.5 \times 10^{-24}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Signalling by Retinoic Acid &  42 &  13 & $6.7 \times 10^{-24}$ \\
+  %\rowcolor{Cluster_Red!15} 
+  %Degradation of the extracellular matrix & 102 &  19 & $1.4 \times 10^{-22}$ \\ 
+  \hline
+\end{tabular}
+}
+\end{table*}
 
-Table 1. Existing prediction methods for Genetic Interaction Networks
-Therefore the data types considered to be predictive of synthetic lethality and the biological questions that could be addressed by them are summarised in the Figure 2. 
- 
-Figure 2. Mindmap of synthetic lethal predictors and biological areas of relevance. Underlined points have been investigated with preliminary data, italicised points are being considered in the immediate future of this project.
 
-A bioinformatics approach has distinct limitations to experimental methods and would work well combined with genetic screen data and conventional molecular biology laboratory validation techniques to answer biological research questions. Compared with an experimental screen, a bioinformatics approach has the benefits of reduced costs, with the potential for automation, scaling up, and replication of the same gene across populations and cell types. Analysis of public genomic data accounts for real tumour variation showing detection with tumour heterogeneity and genomic instability. Compared with a cell line or xenograft experimental model we are limited by difficulties in establishing validity of a novel method, lack of mechanism, or potential for testing drug activity in the same system. This method may further miss useful therapeutic candidates from variable genetic background and be limited by the population sampled.
 
-It is notable that another group has recently published a methodology with a similar purpose which they have called DAISY (Data Mining Synthetic Lethality Pipeline). Their methodology covers some of research objectives initially planned for this project, however, many findings are yet to be met by the existing methodology and Jerby-Arnon, Pfetzer (41) have yet to provide a means for researchers to replicate their method or a software package to apply it to new datasets. Some of the findings of Jerby-Arnon, Pfetzer (41) are helpful such as the observation that DNA copy number is comparable in power to detect synthetic lethality as gene expression with their methodology. We had not considered this ourselves since our gene of interest, CDH1, is not widely variable in copy number in tumours. This lead to testing whether the current SLIPT methodology could be adapted to work with DNA copy number data and further investigation into whether somatic mutation or DNA methylation could be similarly utilised. Jerby-Arnon, Pfetzer (41) showed not only that publicly available tumour data was able to predict enrichment of shRNA synthetic lethal screen hits for VHL in renal cell lines but also that bioinformatics analysis of cell line data was similarly applicable.
+Table 5.  Gene set enrichment results for subgroups of \textit{CDH1} SL partners shows functional variation.
 
-This project builds upon prior work during my study towards Honours in genetics which involved developing a synthetic lethal interaction prediction tool (SLIPT) from public gene expression microarray data (43). This methodology compares the distribution of samples for pairs of genes with the premise that synthetic lethality would lead to a deficit of samples showing inactivity of both genes. A chi-squared test of quantiles was used to assess significance of the interaction along with a directional criteria as shown in Figure 3. This methodology has been adapted and executed for analysis of RNA-Seq expression data, DNA copy number from SNP microarrays, to run in parallel on high performance computing resources, and for tumour suppressor (TS\_SL) or oncogenes (Onco\_SL analogous to DAISY predicting synthetic dosage lethality; SDL).
+Figure 3.   Heatmap of RNASeq gene expression in predicted SL partners of \textit{CDH1} showing distinct subgroups of SL partners and links between SL partner expression and clinical variables.
 
-Figure 3. Schematic outline of bioinformatic synthetic lethal prediction approach.
+\subsubsection{Subgroup pathway analysis}
 
-\section{Background}
+As discussed previously, \textit{CDH1} (also known as E-Cadherin) is a tumour suppressor gene and the subject of ongoing investigations in the Cancer Genetics Laboratory. Synthetic lethal gene candidates for \textit{CDH1} from RNA-Seq expression data have been the subject of most of my PhD beginning with replication of previous pathway over-representation analyses in RNA-Seq data \citep{genesetdb}.  A novel finding compared to previous analyses in microarray data was correlation structure in the expression of candidates synthetic lethal genes in \textit{CDH1} low tumours (lowest $\sfrac{1}{3}$\textsuperscript{rd} quantile of expression). Subgroups of genes were enriched for distinct biological pathways and elevated in different clusters of samples including some by clinical factors such as estrogen receptor status.
 
-Synthetic lethality (SL) is the death of a cell or organism with the combined loss of two non-essential genes.   This phenomenon was originally used to study genetic interactions and functional redundancy in models organisms (Boone et al. 2007).   While synthetic lethal experiments have been performed in Drosophila melanogaster (Dobzhansky 1946), Caenorhabditis elegans (Lehner et al. 2006), Escherichia coli (Butland et al. 2008), Schizosaccharomyces pombe (Roguev et al. 2007), and various mammalian cell lines (Kaelin 2005), the most extensive synthetic lethal screens have been performed with the synthetic gene array (SGA) technique in Saccharomyces cerevisiae (Boone et al. 2007; Costanzo et al. 2011; Tong et al. 2004).  
+More recent analyses have also investigated intrinsic (PAM50) subtype and somatic mutation (of highest impact genes) against these gene clusters.
 
-Originally defined by double mutants, a range of mechanisms for gene inactivation of synthetic lethal partners can induce cell death including RNA interference and drug treatment where it is sometimes called ‘induced essentiality’ or ‘non-oncogene addiction’ in cancer research (Fece de la Cruz et al. 2015).  Cellular viability is the main means to measure synthetic lethal effects experimentally because it is quantified and measured consistently (as shown in Figure 1), whereas qualitative measures of impaired organism viability are ambiguous and less relevant to yeast or cancer research.
+\section{Comparison of synthetic lethal gene candidates}
 
-The cancer genetics laboratory are currently working on developing a synthetic lethal approach to target the tumour suppressor gene CDH1 which has been found to cause predispose early-onset breast and stomkach cancers in mutation carriers, including families of New Zealand M\={a}ori (Berx et al. 1995; Guilford et al. 1998).  These families are currently closely monitored and offered drastic preventative surgery.  If it were developed, a drug selective against CDH1 mutant tumours would serve not only as a chemopreventative alternative for these families but also benefit the wider community as a treatment for sporadic cases of CDH1 mutant cancer.  To augment experimental work on CDH1 with isogenic cell lines (Telford et al. 2015), a computational methodology is explored here to exploit public cancer genomic databases.
+\subsection{Comparison with differential expression}
 
-There is a growing need for a robust approach to low-cost prediction of candidate synthetic lethal interaction, particularly in cancer research.  Exploiting existing public genomic databases is an ideal way to utilise existing resources with suitable sample sizes, data types, and different limitations to those of laboratory experiments.  A number of computation approaches to synthetic lethality have been developed but many of these rely on data not available to cancer researchers, methods that are difficult to replicate, over-fitted to a particular dataset, having mixed validation results, or do not have a software tool accessible to the research community.  These methodologies have been reviewed in a literature review to inform the development of a synthetic lethal interaction prediction tool (SLIPT) using gene expression or mutation data (as shown in Figure 2) from the Cancer Genome Atlas Project (TCGA) and to inform interpretation of the results.  
+\subsection{Comparison with correlation}
 
-Figure 1.  Impact of various negative synthetic genetic interactions on growth viability fitness in yeast.  Adapted from Costanzo et al. (2011).   
+\subsection{Comparison with primary siRNA screen candidates}
 
-Figure 2.  Schematic outline of bioinformatic approach to synthetic lethal prediction for partners of a query gene with Chi-Square test, directional condition and adjusting for multiple tests.
 
-\section{Sourcing TCGA data}
+\begin{figure}[!ht]
+\begin{mdframed}
+  \centering
+  \resizebox{0.66 \columnwidth}{!}{
+    \includegraphics{Venn_exprSL_siRNA_allgenes_reduced_Pub.png}
+   }
+    \caption[Comparison of SLIPT to siRNA]{\small \textbf{Comparison of SLIPT to siRNA.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
+}
+\label{fig:Venn_allgenes}
+\end{mdframed}
+\end{figure}
 
-\section{Quality checking}
+The overlap between synthetic lethal from bioinformatics SLIPT predictions and siRNA screening has raised other questions including whether the number of genes and pathways enriched would be expected by chance. This of particular concern since the siRNA candidate genes themselves are highly enriched for particular pathways so selecting any intersect with them would be enriched for these pathways. The siRNA data is also based on cell line models which have limitations in application to a genetically variable patient population with a complex tumour microenvironment interacting with immune cells. One approach is to compare the candidate genes is to exclude genes that were not tested in both systems, such as those not expressed in cell lines or those with more than $\sfrac{1}{3}$ of TCGA patients without any RNA Seq reads so the lowest quantile cannot be defined for SLIPT analysis. Another approach is to test whether pathways are enriched in randomly sampled genes, comparing many “resampled” or “permutations” of these genes to the enrichment statistics observed for these pathways in the SLIPT candidates and their intersection with the siRNA hits shows whether we detect these pathways more than we expect by chance.
 
-\section{Global Synthetic Lethality}
-
-Global levels of synthetic lethality were analysed as part of my Honours project to address concerns of high numbers of synthetic lethal candidates for CDH1. This turned out to be typical for most genes in the microarray dataset. Due to newer samples and concerns about sample quality in TCGA microarrays, RNA-Seq datasets were used here. As my PhD will focus on RNA-Seq data for gene expression, this was replicated using the TCGA breast cancer RNA-Seq dataset on the New Zealand eScience Infrastructure Intel Pan supercomputer.
-
-\section{CDH1 Analysis with Subgroups}
-
-As discussed previously, CDH1 (also known as E-Cadherin) is a tumour suppressor gene and the subject of ongoing investigations in the Cancer Genetics Laboratory. Synthetic lethal gene candidates for CDH1 from RNA-Seq expression data have been the subject of most of my PhD beginning with replication of previous pathway over-representation analyses in RNA-Seq data (Araki et al. 2012).  A novel finding compared to previous analyses in microarray data was correlation structure in the expression of candidates synthetic lethal genes in CDH1 low tumours (lowest 1/3rd quantile of expression). Subgroups of genes were enriched for distinct biological pathways and elevated in different clusters of samples including some by clinical factors such as estrogen receptor status.
-
-These results were presented in a poster at the QMB Cancer and Drugs satellite meeting in 2014. More recent analyses have also investigated intrinsic (PAM50) subtype and somatic mutation (of highest impact genes) against these gene clusters.
-
-\section{Cell Line Analysis}
-
-As breast cancer cell lines are the experimental system in which many cancer genetics and drug targets are investigated, these were analysed in addition to patient samples from TCGA. The cancer cell line encyclopaedia (CCLE) is a resource for genomics profiles across a range of cell lines. These have also been used to generate synthetic lethal candidates for comparison to those in experimental screen and predictions from TCGA expression data.
-A transcriptome experiment has been conducted by the Cancer Genetics Laboratory to test their CDH1-/- null MCF10A cell lines compared to an otherwise isogenic wildtype (Chen et al. 2014). While differential expression analysis was inconclusive due to few technical replicates, this data was also useful to determine genes which were not detectable in MCF10A cell lines which would not be expected to detect synthetic lethality in siRNA screen data even if they were predicted to be synthetic lethal in expression data. 
-
-\section{Mutation, Copy Number, and Methylation}
-
-Due to promising synthetic lethal data on mutation and DNA copy number analyses (Jerby-Arnon et al. 2014; Lu et al. 2015), these were also investigated to compare genes for synthetic lethality in an analogous manner to expression analyses in the TCGA data. Due to the low somatic mutation rate (and lack of available) germline mutations for many genes, it was not possible to detect many double mutations with significantly under-representation in cancers. There were also concerns about using rare mutations with unknown significance or excluding functional mutations by only using those in the exons.
-It was possible to compare deletion and duplication of DNA copy number in a manner analogous to expression quantiles. However, these overlapped poorly with candidate interacting partners from expression analyses and concerns were raised that they may not be relevant to CDH1 which is typically inactivated in tumours by loss of function mutations or DNA methylation (PJ Guilford, personal communication).   
-
-DNA methylation data was also prepared for synthetic lethal analysis but was discontinued due to computational challenges, expected similarity to expression results, difficulty defining loss of function methylation at a gene level across CpG sites, and the concerns raised in the next section. 
-
-\section{ANOVA of Expression Predictors}
-
-Another approach was to only use copy number, mutation, or hyper-methylation data for genes in which they would impact on gene function and occur frequently in tumours. Before investigating whether these impact on gene function, they were investigated as predictors of variation in gene expression. If these are not giving variation independent of gene expression, expression would be a more suitable measure of gene function as it is widely generated in studies and useful as a clinical biomarker.
-
-Globally predicting gene expression across all genes from DNA copy number and somatic mutation was attempted by ANOVA. However, this was computationally challenging and gene-specific analyses would be more informative. Gene specific ANOVA and linear regression was performed but was raised more issues than it addressed. There were issues with interaction terms and mutation data, many genes were not tested for these since there were so few mutations for these genes in the dataset.  It was possible to include DNA methylation in gene-specific analyses (despite the concerns raised above) but the R2 values for each gene were still generally very low and issues with insufficient mutant samples for interaction terms became worse. This means that the approach used differs for each gene making it difficult to compare them. The challenges raised here suggested that expression is very difficult to predict with other factors but including these other factors would be difficult and plagued by multiple-testing, particularly comparing between them with the current synthetic lethal prediction method. This led to investigations into the simulation of synthetic lethality.
-
-\section{Mutation Analysis, Pathway Expression, and Metagene Synthetic Lethality}
-
-Pathway data was sourced from a variety of databases including the Kyoto Encyclopaedia of genes and genomes (KEGG), Gene Ontology, and Reactome using their R packages and WikiPathways (by parsing gpml files). These were used to analyse generate Pathway-based gene sets for expression clustering and synthetic lethal analysis. The focus of later analyses are the Reactome results because of their concordance with experimental results (in preliminary analyses), containing a large portion of the genome while being recently updated and curated based on the literature. Gene Signatures were also sourced from (Gatza et al. 2011; Gatza et al. 2014) to check effects known to occur in breast cancer, such as upregulated pathways in particular subtypes behave as expected.
-
-Metagenes (from the first eigenvector of the singular value decomposition) do not necessarily follow the direction of activation of the pathway. Metagenes were multiplied by -1 if they did not positively correlate with the mean centroid of the pathway across samples so the metagenes were in the direction of the majority of genes while preserving the metagene weighting. This assumes that most genes are involved in the activation of the pathway while auxiliary regulators and inhibitors are the minority. The metagenes for the gene signatures were in the direction expected reassuring concerns that direction of metagenes would affect synthetic lethal prediction. Therefore pathway metagenes could be used to predict synthetic lethal pathways using reactome pathways against CDH1.
-
-The metagenes were also used to heatmap pathways and gene signatures across the samples to compare against clinical factors as performed with genes. As alluded to earlier, somatic mutation for the genes with the highest predicted impact and frequency were also added to both the pathway and gene heatmaps. However most mutations were inconclusive apart from p53 which was over-represented in estrogen receptor negative tumours and under-represented in CDH1 deficient tumours. The main groups with drastically different gene expression profiles are estrogen receptor negative tumours and normal samples, both of which have been excluded from some analyses in an attempt to find subtype specific effects.  While estrogen receptor positive and negative tumours have distinct synthetic lethal genes and pathways, these have not been investigated in detail and remain to be revisited once a pathway analysis method has been settled upon.
-
-Another use of mutation data was to investigate gene expression in CDH1 mutant and wildtype samples (as defined by non-synonymous somatic mutation). Differential expression and synthetic lethal analysis have both been performed using this mutation data in addition to the prior CDH1 low analysis using solely gene expression data. 
-
-\section{Data clean up, gene SL, and pathway SL}
-
-Due to concerns about the quality of TCGA data, the latest version of the TCGA breast cancer data from the ICGC data portal in August 2015. This added several hundred sample not contained in previous analysis (up to n=1177). However, clustering analysis of the correlation matrix found a number of samples with poor correlation to the rest of the group. These either had no read count or stem from the same source site or a patient with a rare metaplastic subtype. This suggested issues with sample quality or laboratory handling, many of these sample were done in triplicate (rare from this dataset) and correlated poorly with technical replicate samples. Therefore a final dataset of 1168 samples (112 normal, 1049 primary tumour, and 7 metastasis) were used to repeat many of the above analyses. Clinical and mutation data was also updated for this new analysis including adapting the PAM50 subtyping method (Parker et al. 2009), established for microarrays, to RNA-Seq using the new training centroids on RSEM normalised data (JS Parker, personal communication).
-
-While results presented at this meeting may resemble previous results, they are all based on an entirely new TCGA expression data set using voom normalisation (Smyth 2005) on the raw read counts data, rather than RSEM provided in TCGA tier 3 (apart from the aforementioned PAM50 subtyping).  Synthetic lethal analysis, clustering, and heatmaps have been re-done on this new dataset for synthetic lethal genes and pathways against both CDH1 expression and mutation in all samples, tumour-only, and Estrogen receptor specific. This has generated, not only synthetic lethal gene candidates and those overlapping with siRNA screen candidates but also their over-represented pathways (from genesetDB) and synthetic lethal candidate pathway metagenes. This reproduces some results consistent with experiments of the Cancer Genetics Lab, including a role of GPCR pathways. Also notable are some of the pathways which were not detected in the siRNA screen, including immune signals which we would not expect in isolate cells but are still known to be involved in recent cancer treatment strategies (Olszanski 2014). 
-
-\section{Overview of Challenges}
-
-Previous gene expression analysis and comparisons to experimental screen data (Telford et al., 2015) led to some interesting synthetic lethal candidate genes for CDH1 and enriched pathways in subgroups. Of particular interest was enrichment of G Protein Coupled Receptors and related pathways in some subgroups supporting the hypotheses and experimental results with the MCF10A cell line performed by the Cancer Genetics Laboratory. It has also been noticed that some of the other candidate biological pathways such as immune functions are known to have important roles in breast cancers but would not be detected in the cell line experiments in isolated culture.
-
-However, there remain concerns about the underwhelming overlap between bioinformatics predictions and cell line experiments and inconsistent gene candidates across datasets or analyses. Simulation analysis and multiple testing have also raised statistical concerns, particularly at the gene level. Hence, the current focus of this project is to identify biological pathways with evidence of synthetic interactions in E-Cadherin (CDH1) deficient breast cancers. Biological pathways present fewer issues with multiple testing and are synthetic lethal pathways are known to be conserved more between species than synthetic lethal genes (Dixon et al. 2008). 
-
-There are several approaches to synthetic lethal pathway analysis, I will present results for both gene set over-representation analysis (using GeneSetDB) from predicted synthetic lethal gene partners and synthetic lethal predictions using metagenes (generated by the singular value decomposition). Both of these analyses use the Reactome database to define pathways, this database also has pathway structure data which has also been used to construct a network and perform information centrality analysis as a measure of gene essentiality. These analyses use an updated dataset of 1168 TCGA Breast samples with samples removed using the voom normalised raw count data and due to data quality concerns raised by other students working with TCGA data in our research group. Synthetic lethality has been test against both low CDH1 expression (exprSL) and non-synonymous CDH1 (somatic) mutation (mtSL) in many of these analyses. While low expression is a promising biomarker and a proxy for reduced gene activity (whereas there remain questions around whether mutations are functional, detectable, or expressed), however, mutations have also been considered since null mutations were used for an experimental model and they are relevant to HDGC patients.
-
-The overlap between synthetic lethal from bioinformatics SLIPT predictions and siRNA screening has raised other questions including whether the number of genes and pathways enriched would be expected by chance. This of particular concern since the siRNA candidate genes themselves are highly enriched for particular pathways so selecting any intersect with them would be enriched for these pathways. The siRNA data is also based on cell line models which have limitations in application to a genetically variable patient population with a complex tumour microenvironment interacting with immune cells. One approach is to compare the candidate genes is to exclude genes that were not tested in both systems, such as those not expressed in cell lines or those with more than 1/3 of TCGA patients without any RNA Seq reads so the lowest quantile cannot be defined for SLIPT analysis. Another approach is to test whether pathways are enriched in randomly sampled genes, comparing many “resampled” or “permutations” of these genes to the enrichment statistics observed for these pathways in the SLIPT candidates and their intersection with the siRNA hits shows whether we detect these pathways more than we expect by chance.
 Both of these are being applied with developing a method and overcoming technical challenges for the latter being the focus of recent work. The main challenge at the moment is to compare SLIPT results to experimental candidates and explain why so few genes (and so many pathways) overlap.
-
-\section{Comparison of gene SL predictions and siRNA screen candidates}
 
 As discussed above, comparing genes between experimental screen candidates and prediction from TCGA expression data has been difficult. Figure 3 summarises the approaches to comparing genes accounting for some of the differences between the datasets. Of particular concern are the over-represented pathways in genes detected by both methods. There is no statistical evidence that SLIPT predicted genes or siRNA candidates are enriched in with each other. The siRNA candidates themselves are over-represented with many pathways including GPCRs so any intersection with these would contain some of these pathways. Whether these pathways are contained in the intersection more than expected by chance is the problem the two approaches below were designed to tackle.
 
-Figure 3.  A summary of the challenges and approaches involved in the comparison of synthetic lethal candidates from bioinformatics analyses to siRNA experimental screen data. 
+\subsubsection{Comparison of screen at pathway level}
 
-\section{Permutation or Re-Sampling of genes for pathway enrichment.}
 
-Approach 1: assumes that the size of the intersection is fixed at the observed size of 450 or 335 for exprSL and mtSL respectively. A random sample of this size is taken and tested for enrichment of all 1652 Reactome pathways. This is added to a random sample of the remaining genes of the observed size 3576 or 2233 for exprSL and mt SL respectively and tested again for enrichment of all Reactome pathways. This was repeated 10,000 times on the New Zealand eScience Infrastructure Intel Pan supercomputer to generate a null distribution of expected Chi-Squared values for each pathway to compare to the SLIPT predictions and the intersection with experimental screen genes. Empirical p-values were defined by the proportion of the 10,000 null Chi-Squared values which were greater or equal than the observed before being adjusted for multiple tests by the number of Reactome pathways.
+\begin{table*}[!Hp]
+\caption{Pathway composition for \textit{CDH1} partners from SLIPT and siRNA screening}
+\label{tab:Venn_over-representation}
+\centering
+\resizebox{0.9 \textwidth}{!}{
+\begin{tabular}{rccc}
+  Predicted only by SLIPT (4025 genes) & Total Genes in Pathway & Genes Identified & p-val (FDR) \\ 
+  \hline
+  \rowcolor{Cluster_Red!20}
+  Eukaryotic Translation Elongation &  80 &  75 & $1.5 \times 10^{-182}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Peptide chain elongation &  77 &  72 & $2.9 \times 10^{-176}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Viral mRNA Translation &  75 &  70 & $4.9 \times 10^{-172}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Eukaryotic Translation Termination &  76 &  70 & $5.9 \times 10^{-170}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Formation of a pool of free 40S subunits &  87 &  74 & $9.5 \times 10^{-166}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Nonsense Mediated Decay (NMD) independent of the Exon Junction Complex (EJC) &  81 &  70 & $1.2 \times 10^{-160}$ \\
+  \rowcolor{Cluster_Red!20} 
+  L13a-mediated translational silencing of Ceruloplasmin expression &  97 &  75 & $3.8 \times 10^{-155}$ \\
+  \rowcolor{Cluster_Red!15} 
+  3' -UTR-mediated translational regulation &  97 &  75 & $3.8 \times 10^{-155}$ \\
+  \rowcolor{Cluster_Red!20} 
+  GTP hydrolysis and joining of the 60S ribosomal subunit &  98 &  75 & $6.0 \times 10^{-154}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Nonsense-Mediated Decay (NMD) &  96 &  73 & $5.2 \times 10^{-150}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Nonsense Mediated Decay (NMD) enhanced by the Exon Junction Complex (EJC) &  96 &  73 & $5.2 \times 10^{-150}$ \\
+  \rowcolor{Cluster_Red!15} 
+  SRP-dependent cotranslational protein targeting to membrane &  97 &  73 & $7.8 \times 10^{-149}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Eukaryotic Translation Initiation & 105 &  75 & $4.7 \times 10^{-146}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Cap-dependent Translation Initiation & 105 &  75 & $4.7 \times 10^{-146}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Translation & 133 &  83 & $4.0 \times 10^{-142}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Influenza Viral RNA Transcription and Replication & 102 &  71 & $2.9 \times 10^{-137}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Influenza Infection & 111 &  74 & $3.7 \times 10^{-137}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Influenza Life Cycle & 106 &  71 & $2.3 \times 10^{-133}$ \\
+  \rowcolor{Cluster_Red!20} 
+  Infectious disease & 326 & 125 & $4.2 \times 10^{-120}$ \\
+  \rowcolor{Cluster_Red!15} 
+  Extracellular matrix organisation & 189 &  77 & $5.4 \times 10^{-95}$ \\
+  \hline
+  \\
+  Detected only by siRNA screen (1599 genes) & Total Genes in Pathway & Genes Identified & p-val (FDR) \\ 
+  \hline
+  \rowcolor{Cluster_Blue!20}
+  Class A/1 (Rhodopsin-like receptors) & 282 &  44 & $1.3 \times 10^{-27}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  GPCR ligand binding & 363 &  52 & $5.8 \times 10^{-26}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  G$_{\alpha q}$ signalling events & 159 &  26 & $6.7 \times 10^{-23}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Gastrin-CREB signalling pathway via PKC and MAPK & 180 &  27 & $2.0 \times 10^{-21}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  G$_{\alpha i}$ signalling events & 184 &  27 & $5.3 \times 10^{-21}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Downstream signal transduction & 146 &  23 & $7.6 \times 10^{-21}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Signalling by PDGF & 172 &  25 & $4.0 \times 10^{-20}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Peptide ligand-binding receptors & 175 &  25 & $8.5 \times 10^{-20}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Signalling by ERBB2 & 146 &  22 & $1.3 \times 10^{-19}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  DAP12 interactions & 159 &  23 & $2.6 \times 10^{-19}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  DAP12 signalling & 149 &  22 & $2.7 \times 10^{-19}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Organelle biogenesis and maintenance & 264 &  33 & $5.5 \times 10^{-19}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Signalling by NGF & 266 &  33 & $8.2 \times 10^{-19}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Downstream signalling of activated FGFR1 & 134 &  20 & $1.1 \times 10^{-18}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Downstream signalling of activated FGFR2 & 134 &  20 & $1.1 \times 10^{-18}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Downstream signalling of activated FGFR3 & 134 &  20 & $1.1 \times 10^{-18}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Downstream signalling of activated FGFR4 & 134 &  20 & $1.1 \times 10^{-18}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Signalling by FGFR & 146 &  21 & $1.3 \times 10^{-18}$ \\
+  \rowcolor{Cluster_Blue!20} 
+  Signalling by FGFR1 & 146 &  21 & $1.3 \times 10^{-18}$ \\
+  \rowcolor{Cluster_Blue!15} 
+  Signalling by FGFR2 & 146 &  21 & $1.3 \times 10^{-18}$ \\
+  \hline
+  \\
+  Intersection of SLIPT and siRNA screen (604 genes) & Total Genes in Pathway & Genes Identified & p-val (FDR) \\ 
+  \hline
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}
+  Visual phototransduction &  54 &   9 & $6.9 \times 10^{-10}$ \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  G$_{\alpha s}$ signalling events &  48 &   7 & $1.6 \times 10^{-7}$ \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Retinoid metabolism and transport &  24 &   5 & $1.7 \times 10^{-7}$ \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Acyl chain remodelling of PS &  10 &   3 & $6.5 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Transcriptional regulation of white adipocyte differentiation &  51 &   6 & $6.5 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Chemokine receptors bind chemokines &  22 &   4 & $6.5 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Signalling by NOTCH4 &  11 &   3 & $6.9 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Defective EXT2 causes exostoses 2 &  11 &   3 & $6.9 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Defective EXT1 causes exostoses 1, TRPS2 and CHDS &  11 &   3 & $6.9 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Platelet activation, signalling and aggregation & 146 &  12 & $6.9 \times 10^{-6}$ \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Phase 1 - Functionalisation of compounds &  41 &   5 & $1.3 \times 10^{-5}$ \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Amine ligand-binding receptors &  13 &   3 & $1.7 \times 10^{-5}$ \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Acyl chain remodelling of PE &  14 &   3 & $2.4 \times 10^{-5}$ \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Signalling by GPCR & 300 &  23 & $2.4 \times 10^{-5}$ \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Molecules associated with elastic fibres &  29 &   4 & $2.6 \times 10^{-5}$ \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  DAP12 interactions & 128 &  10 & $2.6 \times 10^{-5}$ \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Cytochrome P$_{450}$ - arranged by substrate type &  30 &   4 & $3.2 \times 10^{-5}$ \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  GPCR ligand binding & 147 &  11 & $3.8 \times 10^{-5}$ \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Acyl chain remodelling of PC &  16 &   3 & $4.0 \times 10^{-5}$ \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Response to elevated platelet cytosolic Ca$^{2+}$ &  66 &   6 & $4.2 \times 10^{-5}$ \\ 
+  \hline
+\end{tabular}
+}
+\end{table*}
 
-Approach 2: assumes that the size of the intersection is varies and tests whether it is significantly enriched or depleted for siRNA genes. A random sample of the observed size for predicted genes of total 4026 or 2568 for exprSL and mtSL respectively is taken and tested for enrichment of all 1652 Reactome pathways. This is also used to derive an intersection with siRNA screen candidates and is tested again for enrichment of all Reactome pathways. This was repeated 10,000 times on the New Zealand eScience Infrastructure Intel Pan supercomputer to generate a null distribution of expected Chi-Squared values for each pathway to compare to the SLIPT predictions and the intersection with experimental screen genes. Empirical p-values were defined by the proportion of the 10,000 null Chi-Squared values which were greater or equal than the observed before being adjusted for multiple tests by the number of Reactome pathways. The size of each sampled intersection was also used to show that more than 5\% of samples contained an intersection lesser and greater than the number of genes. So despite concerns about the number of genes detected, there was no evidence of less genes than expected by chance either, the composition of genes may still yield candidates.
 
-\section{Comparison of candidate SL Pathways}
+
+\subsubsubsection{Resampling of genes for pathway enrichment}
+
+\begin{figure}[!ht]
+\begin{mdframed}
+  \centering
+  \resizebox{0.66 \columnwidth}{!}{
+    \includegraphics{sample_size_dist_exprSL_1M_Pub.png}
+   }
+   \caption[Expected distribution of sample size for intersect with siRNA candidates]{\small \textbf{Expected distribution of sample size for intersect with siRNA candidates.} Resampling analysis of intersect size from genes detected by SLIPT and siRNA screening approaches over 1 million replicates. The proportion of expected intersection sizes for random samples below or above the observed intersection size respectively, lacking significant over-represent\-ation or depletion of siRNA screen candidates within the SLIPT predictions for \textit{CDH1}.
+   %However, the pathway composition of this intersect may still be informative. %%covered in text
+}
+\label{fig:perm_sample}
+\end{mdframed}
+\end{figure}
+
+
+\begin{table*}[!Htp]
+\caption{Pathway Analysis of \textit{CDH1} partners from SLIPT}
+\label{tab:pathway_perm}
+\centering
+\resizebox{0.9 \textwidth}{!}{
+\begin{tabular}{rcc}
+ Reactome Pathway & Over-representation (FDR p-val) & Permutation (FDR p-val) \\ 
+  \hline
+  \rowcolor{Cluster_Red!20} 
+  \textbf{Eukaryotic Translation Elongation} & $1.3 \times 10^{-207}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!15}  
+   \textbf{Peptide chain elongation} & $5.6 \times 10^{-201}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!20}  
+   \textbf{Viral mRNA Translation} & $1.2 \times 10^{-196}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!15}  
+   \textbf{Eukaryotic Translation Termination} & $1.2 \times 10^{-196}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!20}  
+   \textbf{Formation of a pool of free 40S subunits} & $3.7 \times 10^{-194}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!15}  
+   \textbf{Nonsense Mediated Decay (NMD) independent of the Exon Junction Complex (EJC)} & $5.3 \times 10^{-187}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!20}  
+   \textbf{L13a-mediated translational silencing of Ceruloplasmin expression} & $9.6 \times 10^{-183}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!15}  
+   \textbf{3' -UTR-mediated translational regulation} & $9.6 \times 10^{-183}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!20}  
+   \textbf{GTP hydrolysis and joining of the 60S ribosomal subunit} & $1.9 \times 10^{-181}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!15}  
+   \textbf{Nonsense-Mediated Decay (NMD)} & $6.2 \times 10^{-176}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!20}  
+   \textbf{Nonsense Mediated Decay (NMD) enhanced by the Exon Junction Complex (EJC)} & $6.2 \times 10^{-176}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!15}  
+  Adaptive Immune System & $6.5 \times 10^{-174}$ & $0.15753$ \\
+  \rowcolor{Cluster_Red!20}  
+  \textbf{Eukaryotic Translation Initiation} & $5.7 \times 10^{-173}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!15}  
+  \textbf{Cap-dependent Translation Initiation} & $5.7 \times 10^{-173}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!20}  
+  \textbf{SRP-dependent cotranslational protein targeting to membrane} & $2.0 \times 10^{-171}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!15}  
+  \textbf{Translation} & $6.1 \times 10^{-170}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!20}  
+  Infectious disease & $1.6 \times 10^{-166}$ & $0.23231$ \\
+  \rowcolor{Cluster_Red!15}  
+  \textbf{Influenza Infection} & $1.9 \times 10^{-163}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!20}  
+  \textbf{Influenza Viral RNA Transcription and Replication} & $1.9 \times 10^{-160}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!15}  
+  \textbf{Influenza Life Cycle} & $2.5 \times 10^{-156}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!20}  
+  Extracellular matrix organisation & $1.1 \times 10^{-152}$ & $0.071761$ \\
+  \rowcolor{Cluster_Red!15}  
+  GPCR ligand binding & $1.1 \times 10^{-143}$ & $0.55801$ \\
+  \rowcolor{Cluster_Red!20}  
+  Class A/1 (Rhodopsin-like receptors) & $1.5 \times 10^{-142}$ & $0.58901$ \\
+  \rowcolor{Cluster_Red!15}  
+  GPCR downstream signalling & $7.6 \times 10^{-140}$ & $0.098357$ \\
+  \rowcolor{Cluster_Red!20}  
+  Haemostasis & $1.9 \times 10^{-134}$ & $0.27059$ \\
+  \rowcolor{Cluster_Red!15}  
+  Developmental Biology & $2.0 \times 10^{-123}$ & $0.52737$ \\
+  \rowcolor{Cluster_Red!20}  
+  Metabolism of lipids and lipoproteins & $3.3 \times 10^{-120}$ & $0.724$ \\
+  \rowcolor{Cluster_Red!15}  
+  Cytokine Signalling in Immune system & $2.6 \times 10^{-119}$ & $0.39661$ \\
+  \rowcolor{Cluster_Red!20}  
+  Peptide ligand-binding receptors & $3.7 \times 10^{-109}$ & $0.61102$ \\
+  \rowcolor{Cluster_Red!15}  
+  \textbf{G$_{\alpha i}$ signalling events} & $8.9 \times 10^{-100}$ & $< 1.241 \times 10^{-5}$  \\
+  \iffalse
+  \rowcolor{Cluster_Red!20}  
+  Axon guidance & $1.4 \times 10^{-96}$ & $0.66232$ \\
+  \rowcolor{Cluster_Red!15}  
+  Platelet activation, signalling and aggregation & $3.7 \times 10^{-94}$ & $0.29662$ \\
+  \rowcolor{Cluster_Red!20}  
+  Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell & $1.4 \times 10^{-93}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!15}  
+  Formation of the ternary complex, and subsequently, the 43S complex & $7.0 \times 10^{-91}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!20}  
+  Translation initiation complex formation & $9.6 \times 10^{-87}$ & $6.8667 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!15}  
+  Ribosomal scanning and start codon recognition & $9.6 \times 10^{-87}$ & $6.8667 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!20}  
+  Activation of the mRNA upon binding of the cap-binding complex and eIFs, and subsequent binding to 43S & $8.7 \times 10^{-86}$ & $6.8667 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!15}  
+  Chemokine receptors bind chemokines & $5.1 \times 10^{-82}$ & $< 1.241 \times 10^{-5}$  \\
+  \rowcolor{Cluster_Red!20}  
+  Signalling by NGF & $1.2 \times 10^{-81}$ & $0.37142$ \\
+  \rowcolor{Cluster_Red!15}  
+  Toll-Like Receptors Cascades & $5.3 \times 10^{-80}$ & $0.63013$ \\
+  \rowcolor{Cluster_Red!20}  
+  Interferon gamma signalling & $6.3 \times 10^{-80}$ & $0.61493$ \\
+  \rowcolor{Cluster_Red!15}  
+  Transmembrane transport of small molecules & $5.3 \times 10^{-78}$ & $0.21216$ \\
+  \rowcolor{Cluster_Red!20}  
+  Signalling by Rho GTPases & $1.1 \times 10^{-77}$ & $0.078314$ \\
+  \rowcolor{Cluster_Red!15}  
+  Degradation of the extracellular matrix & $7.3 \times 10^{-77}$ & $0.769$ \\
+  \rowcolor{Cluster_Red!20}  
+  Interferon Signalling & $1.1 \times 10^{-76}$ & $0.18211$ \\
+  \rowcolor{Cluster_Red!15}  
+  NGF signalling via TRKA from the plasma membrane & $1.4 \times 10^{-74}$ & $0.60076$ \\
+  \rowcolor{Cluster_Red!20}  
+  Gastrin-CREB signalling pathway via PKC and MAPK & $3.1 \times 10^{-74}$ & $0.93109$ \\
+  \rowcolor{Cluster_Red!15}  
+  Rho GTPase cycle & $3.2 \times 10^{-73}$ & $0.11446$ \\
+  \rowcolor{Cluster_Red!20}  
+  DAP12 interactions & $2.0 \times 10^{-71}$ & $0.57671$ \\
+  \rowcolor{Cluster_Red!15}  
+  Cell surface interactions at the vascular wall & $3.3 \times 10^{-71}$ & $0.66232$ \\ 
+  \fi
+  \hline
+\end{tabular}
+}
+\end{table*}
+
+\begin{table*}[!Htp]
+\caption{Pathway Analysis of \textit{CDH1} partners from SLIPT and siRNA primary screen}
+\label{tab:pathway_perm_overlap}
+\centering
+\resizebox{0.9 \textwidth}{!}{
+\begin{tabular}{rcc}
+ Reactome Pathway & Over-representation (FDR) & Permutation (FDR) \\ 
+  \hline
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Visual phototransduction & $6.9 \times 10^{-10}$ & $0.91116$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  \textbf{G$_{\alpha s}$ signalling events} & $1.6 \times 10^{-7}$ & $0.012988$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Retinoid metabolism and transport & $1.7 \times 10^{-7}$ & $0.20487$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Transcriptional regulation of white adipocyte differentiation & $6.5 \times 10^{-6}$ & $0.38197$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Acyl chain remodelling of PS & $6.5 \times 10^{-6}$ & $0.58485$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Chemokine receptors bind chemokines & $6.5 \times 10^{-6}$ & $0.97255$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  \textit{Defective EXT2 causes exostoses 2} & $6.9 \times 10^{-6}$ & $0.056437$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  \textit{Defective EXT1 causes exostoses 1, TRPS2 and CHDS} & $6.9 \times 10^{-6}$ & $0.056437$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Signalling by NOTCH4 & $6.9 \times 10^{-6}$ & $0.15497$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Platelet activation, signalling and aggregation & $6.9 \times 10^{-6}$ & $0.53358$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Phase 1 - Functionalisation of compounds & $1.3 \times 10^{-5}$ & $0.24836$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Amine ligand-binding receptors & $1.7 \times 10^{-5}$ & $0.3195$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Acyl chain remodelling of PE & $2.4 \times 10^{-5}$ & $0.7307$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Signalling by GPCR & $2.4 \times 10^{-5}$ & $0.9939$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  \textbf{Molecules associated with elastic fibres} & $2.6 \times 10^{-5}$ & $0.0072929$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  DAP12 interactions & $2.6 \times 10^{-5}$ & $0.78273$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Cytochrome P$_{450}$ - arranged by substrate type & $3.2 \times 10^{-5}$ & $0.87019$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  GPCR ligand binding & $3.8 \times 10^{-5}$ & $0.99417$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Acyl chain remodelling of PC & $4.0 \times 10^{-5}$ & $0.65415$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Response to elevated platelet cytosolic Ca$^{2+}$ & $4.2 \times 10^{-5}$ & $0.55461$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  \textit{Arachidonic acid metabolism} & $4.4 \times 10^{-5}$ & $0.060298$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Defective B4GALT7 causes EDS, progeroid type & $4.9 \times 10^{-5}$ & $0.15497$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Defective B3GAT3 causes JDSSDHD & $4.9 \times 10^{-5}$ & $0.15497$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  \textbf{Elastic fibre formation} & $4.9 \times 10^{-5}$ & $0.0019227$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  \textbf{HS-GAG degradation} & $6.2 \times 10^{-5}$ & $0.017747$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Bile acid and bile salt metabolism & $6.2 \times 10^{-5}$ & $0.15497$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Netrin-1 signalling & $7.1 \times 10^{-5}$ & $0.95056$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  \textbf{Integration of energy metabolism} & $7.1 \times 10^{-5}$ & $0.0019287$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  DAP12 signalling & $7.9 \times 10^{-5}$ & $0.67835$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  GPCR downstream signalling & $8.1 \times 10^{-5}$ & $0.88678$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  \textbf{Diseases associated with glycosaminoglycan metabolism} & $8.7 \times 10^{-5}$ & $0.017747$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  \textbf{Diseases of glycosylation} & $8.7 \times 10^{-5}$ & $0.017747$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Signalling by Retinoic Acid & $8.7 \times 10^{-5}$ & $0.13592$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Signalling by Leptin & $8.7 \times 10^{-5}$ & $0.15497$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Signalling by SCF-KIT & $8.7 \times 10^{-5}$ & $0.73399$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Opioid Signalling & $8.7 \times 10^{-5}$ & $0.99417$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Signalling by NOTCH & $0.0001$ & $0.26453$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Platelet homeostasis & $0.0001$ & $0.55912$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Signalling by NOTCH1 & $0.00011$ & $0.13797$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Class B/2 (Secretin family receptors) & $0.00011$ & $0.4659$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Diseases of Immune System & $0.00013$ & $0.15497$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Diseases associated with the TLR signalling cascade & $0.00013$ & $0.15497$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  A tetrasaccharide linker sequence is required for GAG synthesis & $0.00013$ & $0.33566$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Nuclear Receptor transcription pathway & $0.00016$ & $0.22735$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  \textbf{Formation of Fibrin Clot (Clotting Cascade)} & $0.00016$ & $0.0054639$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Syndecan interactions & $0.00016$ & $0.3974$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Class A/1 (Rhodopsin-like receptors) & $0.00016$ & $0.99454$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  HS-GAG biosynthesis & $0.0002$ & $0.37199$  \\
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Platelet degranulation  & $0.0002$ & $0.39003$  \\
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  EPH-ephrin mediated repulsion of cells & $0.00021$ & $0.6193$  \\ 
+  \hline
+\end{tabular}
+}
+\end{table*}
+
+
+
+\subsection{Comparison with secondary screen siRNA screen candidates}
+
+\subsubsection{Comparison of candidate SL Pathways}
 
 Thus we have identified candidate synthetic lethal pathways by gene set over-representation, metagene synthetic lethality, and re-sampled empirical pathway over-representation. The challenge currently under consideration is whether these methods can be compared and which may lead to biologically meaningful or clinically relevant synthetic lethal candidate pathways.
 
-\section{Future Directions}
+\section{Mutation, Copy Number, and Methylation}
 
-As discussed before, there are a number of future directions within the scope of this project. A number are being considered including revisiting simulations to include pathway structure, network-based analyses, and continue investigations into synthetic lethal genes and pathways in clinical subgroups. A number of these are given in as an example in the following Timeline. The synthetic lethal analysis to generate candidate pathways for other genes and in other cancer datasets is another avenue which has been left as an opportunity for a new student since repetition of these methods would not develop more skills or demonstrate the critical understanding of the field. There are a numerous experimental and clinical challenges involved in seeing any synthetic lethal candidates into preclinical models, clinical trials, or understanding the functional and mechanistic basis and implications of these interactions. These approaches are better suited to researchers with different skills as those involved in ongoing synthetic lethal experiments in the Cancer Genetics Laboratory. 
+Due to promising synthetic lethal data on mutation and DNA copy number analyses \citep{Jerby2014, Lu2015}, these were also investigated to compare genes for synthetic lethality in an analogous manner to expression analyses in the TCGA data. Due to the low somatic mutation rate (and lack of available) germline mutations for many genes, it was not possible to detect many double mutations with significantly under-representation in cancers. There were also concerns about using rare mutations with unknown significance or excluding functional mutations by only using those in the exons.
+It was possible to compare deletion and duplication of DNA copy number in a manner analogous to expression quantiles. However, these overlapped poorly with candidate interacting partners from expression analyses and concerns were raised that they may not be relevant to \textit{CDH1} which is typically inactivated in tumours by loss of function mutations or DNA methylation (PJ Guilford, personal communication).   
 
-\section{Hub Genes}
+DNA methylation data was also prepared for synthetic lethal analysis but was discontinued due to computational challenges, expected similarity to expression results, difficulty defining loss of function methylation at a gene level across CpG sites, and the concerns raised in the next section. 
 
-\section{Metagene pathway expression}
+\subsection{Synthetic lethality by DNA copy number}
 
-\section{Metagene synthetic lethality}
+\subsection{Synthetic lethality by somatic mutation}
 
-\section{Replication in stomach cancer}
+\subsubsection{Mutation analysis}
 
-\section{Important Results}
+\subsection{ANOVA of Expression Predictors}
+[include?]
 
+Another approach was to only use copy number, mutation, or hyper-methylation data for genes in which they would impact on gene function and occur frequently in tumours. Before investigating whether these impact on gene function, they were investigated as predictors of variation in gene expression. If these are not giving variation independent of gene expression, expression would be a more suitable measure of gene function as it is widely generated in studies and useful as a clinical biomarker.
+
+Globally predicting gene expression across all genes from DNA copy number and somatic mutation was attempted by ANOVA. However, this was computationally challenging and gene-specific analyses would be more informative. Gene specific ANOVA and linear regression was performed but was raised more issues than it addressed. There were issues with interaction terms and mutation data, many genes were not tested for these since there were so few mutations for these genes in the dataset.  It was possible to include DNA methylation in gene-specific analyses (despite the concerns raised above) but the $R^2$ values for each gene were still generally very low and issues with insufficient mutant samples for interaction terms became worse. This means that the approach used differs for each gene making it difficult to compare them. The challenges raised here suggested that expression is very difficult to predict with other factors but including these other factors would be difficult and plagued by multiple-testing, particularly comparing between them with the current synthetic lethal prediction method. This led to investigations into the simulation of synthetic lethality.
+
+\section{Global Synthetic Lethality}
+[include?]
+
+Global levels of synthetic lethality were analysed as part of my Honours project to address concerns of high numbers of synthetic lethal candidates for \textit{CDH1}. This turned out to be typical for most genes in the microarray dataset. Due to newer samples and concerns about sample quality in TCGA microarrays, RNA-Seq datasets were used here. The focus of this thesis is gene expression data generated by RNA-Seq, this was replicated using the TCGA breast cancer RNA-Seq dataset on the New Zealand eScience Infrastructure Intel Pan supercomputer.
+
+\subsection{Hub Genes}
 Table 1.  Hub gene function in TCGA breast cancer microarray expression SL predictions (n=600).
 
-Table 2 Hub gene function in TCGA breast cancer RNA-Seq expression SL predictions (n=878).
+Table 2 Hub gene function in TCGA breast cancer RNA-Seq expression SL predictions (n=878). [revise for n=1168]
 
 Table 3.  Hub gene function in BC2116 breast cancer microarray expression SL predictions (n=2116).
 
-Figure 3.   Heatmap of RNASeq gene expression in predicted SL partners of CDH1 showing distinct subgroups of SL partners and links between SL partner expression and clinical variables.
 
-Table 5.  Gene set enrichment results for subgroups of CDH1 SL partners shows functional variation.
+\section{Metagene Analysis}
+[include?]
 
-As discussed in the previous committee meeting, we have developed a simple, interpretable, computational approach to predict synthetic lethal partners from genomics data.  Originally developed for microarray gene expression data, it has been expanded to test DNA copy number, or RNA-Seq gene expression data which are both also supported by the TCGA dataset.  DNA copy number was included for comparison with the DAISY tool of Jerby-Arnon et al. (2014).  Predictions based on microarray data were inconclusive when compared with an RNAi screen for CDH1 in MCF10A breast cells as performed by Telford et al. (2015), few predictions replicated between BC2116, CCLE, or TCGA microarray datasets, results with gene expression and DNA copy number were vastly different, and predictions from TCGA microarray and RNA-Seq datasets for the same samples differed were inconsistent.  The Aligent TCGA microarray data in particular is difficult to compare to other datasets and will in the future use Affymetrix microarrays or RNA-Seq platforms for predictions from gene expression data.  The analyses focus on gene expression data as it is widely available for applications in other cancers and current attempts to use gene expression data for synthetic lethal discovery vary widely (Jerby-Arnon et al. 2014; Lu et al. 2015; Tiong et al. 2014).  There is no consensus for which approach is more appropriate since they lack much a basis on biological experimental data or statistical modelling and often use difficult to interpret machine learning methodology.
+\subsection{Pathway expression}
 
-Genomics analyses are prone to false-positives and require statistical caution, particularly where working with gene-pairs scale up the number of multiple tests drastically, at the expense of statistical power.  Experimental SGA and RNAi screens for synthetic lethality are also error-prone, especially with false-positives, raising the need for understanding the expected behaviour and number of functional relationships and genetic interactions in the genome, or in discovery of synthetic lethal partners of a particular query gene.  A characteristic of gene interaction networks is a scale-free topology leading to highly interacting ‘hub’ genes, these represent important genes in a functional network.  As shown in Tables 1-3, Gene Ontology terms for genes important in cancer proliferation, progression, and drug response were enriched in hub genes, showing that synthetic lethal interactions are among important genes in cancer cells.  Gene functions replicated across the breast cancer datasets are highlighted in bold, despite differences in particular hits, gene expression platforms, and only correcting for multiple tests for each gene query separately, there are many gene functions replicated across breast cancer gene expression analyses.  TCGA microarray data was less consistent with the other datasets, as expected from lower sample size, lower concordance of particular hits for the example query of CDH1, and suspected lower quality of data on the Aligent microarray platform.
+\subsection{Somatic mutation}
 
-As specific genes were difficult to replicate across experiments, gene expression profiles for synthetic lethal partners must be more complex than originally expected to directly compensate for loss of query gene or completely lack (or clearly under-represent) co-loss (Jerby-Arnon et al. 2014; Kelly 2013; Lu et al. 2015).  The predicted synthetic lethal partners of CDH1 (with FDR correction) were investigated with gene expression profiles and clinical variables to find relationships in gene expression, gene function, and clinical characteristics.  The large number of hits indicate that synthetic lethality is error-prone and identifying genes or pathways relevant for clinical application will be difficult.
+\subsection{Synthetic lethal metagenes}
 
-The expression profiles of the SL partners of CDH1 predicted from the TCGA breast cancer RNA-Seq data in CDH1 low tumours (where synthetic lethal partners are expected to have compensating high or stable expression) are shown in Figure 7 and their corresponding functional enrichment is given below in Table 5, computed as WikiPathways in GeneSetDB (Araki et al. 2012).  The 3 subgroups of genes are showed functional organisation of expression profiles in CDH1 low breast tumours.  The first group is enriched for G protein coupled receptors, an established drug target and supported in cell line experiments (Telford et al. 2015).  The second group contains genes involved in development and metabolism consistent with cancer cells showing stem cell properties and the Warburg hypothesis (Merlos-Suarez et al. 2011; Warburg 1956).  The third group contains cell signalling and focal adhesion functions, including pathways involved in cancer proliferation, metastasis, and consistent with internal synthetic lethality within the pathways containing CDH1 (Barabási \& Oltvai 2004).
+\section{Replication in stomach cancer}
 
-Ductal breast cancers show higher expression of synthetic lethal partners suggesting treatment would be more effective in this tumour subtype.  However, there is consistently low expression of SL partners in ER negative tumours, although this is independent of tumour stage and consistent with poor prognosis in these patients and could inform other treatment strategies or prevent ineffective treatment further impacting quality of life in these patients.  These results suggest that synthetic lethal partner expression varies between patients; that these different tumour classes would react differently to the same treatment; that treatment of different pathways and combinations in different patients is the most effective approach to target genes compensating for CDH1 gene loss; and the expression of synthetic partners could be a clinically important biomarker.  While these are important clinical implications, the synthetic lethal predictions lack enough confidence for direct translation into pre-clinical models or clinical applications leading to a need for statistical modelling and simulation of synthetic lethality in genomics expression data.
+\begin{itemize}
+ \item exprSL
+ \item mtSL
+ \item heatmap
+ \item Venn
+ \item Pathway enrichment
+ \item Permutations
+\end{itemize}
+
+\section{Replication in cell line encyclopaedia}
+
+As breast cancer cell lines are the experimental system in which many cancer genetics and drug targets are investigated, these were analysed in addition to patient samples from TCGA. The cancer cell line encyclopaedia (CCLE) is a resource for genomics profiles across a range of cell lines. These have also been used to generate synthetic lethal candidates for comparison to those in experimental screen and predictions from TCGA expression data.
+A transcriptome experiment has been conducted by the Cancer Genetics Laboratory to test their \textit{CDH1}$^{-/-}$ null MCF10A cell lines compared to an otherwise isogenic wildtype \citep{Chen2014}. While differential expression analysis was inconclusive due to few technical replicates, this data was also useful to determine genes which were not detectable in MCF10A cell lines which would not be expected to detect synthetic lethality in siRNA screen data even if they were predicted to be synthetic lethal in expression data. 
+
+
+\section{Summary}
+
+We have developed a simple, interpretable, computational approach to predict synthetic lethal partners from genomics data.  Originally developed for microarray gene expression data, it has been expanded to test DNA copy number, or RNA-Seq gene expression data which are both also supported by the TCGA dataset.  DNA copy number was included for comparison with the DAISY tool of \citet{Jerby2014}.  Predictions based on microarray data were inconclusive when compared with an RNAi screen for \textit{CDH1} in MCF10A breast cells as performed by \citet{Telford2015}, few predictions replicated between BC2116, CCLE, or TCGA microarray datasets, results with gene expression and DNA copy number were vastly different, and predictions from TCGA microarray and RNA-Seq datasets for the same samples differed were inconsistent.  The Aligent TCGA microarray data in particular is difficult to compare to other datasets and will in the future use Affymetrix microarrays or RNA-Seq platforms for predictions from gene expression data.  The analyses focus on gene expression data as it is widely available for applications in other cancers and current attempts to use gene expression data for synthetic lethal discovery vary widely \citep{Jerby2014, Lu2015, Tiong2014}.  There is no consensus for which approach is more appropriate since they lack much a basis on biological experimental data or statistical modelling and often use difficult to interpret machine learning methodology.
+
+Genomics analyses are prone to false-positives and require statistical caution, particularly where working with gene-pairs scale up the number of multiple tests drastically, at the expense of statistical power.  Experimental SGA and RNAi screens for synthetic lethality are also error-prone, especially with false-positives, raising the need for understanding the expected behaviour and number of functional relationships and genetic interactions in the genome, or in discovery of synthetic lethal partners of a particular query gene.  A characteristic of gene interaction networks is a scale-free topology leading to highly interacting ‘hub’ genes, these represent important genes in a functional network.  As shown in Tables 1-3, Gene Ontology terms for genes important in cancer proliferation, progression, and drug response were enriched in hub genes, showing that synthetic lethal interactions are among important genes in cancer cells.  Gene functions replicated across the breast cancer datasets are highlighted in bold, despite differences in particular hits, gene expression platforms, and only correcting for multiple tests for each gene query separately, there are many gene functions replicated across breast cancer gene expression analyses.  TCGA microarray data was less consistent with the other datasets, as expected from lower sample size, lower concordance of particular hits for the example query of \textit{CDH1}, and suspected lower quality of data on the Aligent microarray platform.
+
+As specific genes were difficult to replicate across experiments, gene expression profiles for synthetic lethal partners must be more complex than originally expected to directly compensate for loss of query gene or completely lack (or clearly under-represent) co-loss \citep{Kelly2013, Jerby2014, Lu2015}.  The predicted synthetic lethal partners of \textit{CDH1} (with FDR correction) were investigated with gene expression profiles and clinical variables to find relationships in gene expression, gene function, and clinical characteristics.  The large number of hits indicate that synthetic lethality is error-prone and identifying genes or pathways relevant for clinical application will be difficult.
+
+The expression profiles of the SL partners of \textit{CDH1} predicted from the TCGA breast cancer RNA-Seq data in \textit{CDH1} low tumours (where synthetic lethal partners are expected to have compensating high or stable expression) are shown in Figure 7 and their corresponding functional enrichment is given below in Table 5, computed as WikiPathways in GeneSetDB \citep{genesetdb}.  The 3 subgroups of genes are showed functional organisation of expression profiles in \textit{CDH1} low breast tumours.  The first group is enriched for G protein coupled receptors, an established drug target and supported in cell line experiments \citep{Telford2015}.  The second group contains genes involved in development and metabolism consistent with cancer cells showing stem cell properties and the Warburg hypothesis \citep{Merlos-Suarez2011, Warburg1956}.  The third group contains cell signalling and focal adhesion functions, including pathways involved in cancer proliferation, metastasis, and consistent with internal synthetic lethality within the pathways containing \textit{CDH1} \citep{Barabasi2004}.
+
+Ductal breast cancers show higher expression of synthetic lethal partners suggesting treatment would be more effective in this tumour subtype.  However, there is consistently low expression of SL partners in ER negative tumours, although this is independent of tumour stage and consistent with poor prognosis in these patients and could inform other treatment strategies or prevent ineffective treatment further impacting quality of life in these patients.  These results suggest that synthetic lethal partner expression varies between patients; that these different tumour classes would react differently to the same treatment; that treatment of different pathways and combinations in different patients is the most effective approach to target genes compensating for \textit{CDH1} gene loss; and the expression of synthetic partners could be a clinically important biomarker.  While these are important clinical implications, the synthetic lethal predictions lack enough confidence for direct translation into pre-clinical models or clinical applications leading to a need for statistical modelling and simulation of synthetic lethality in genomics expression data.

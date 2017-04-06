@@ -1,10 +1,10 @@
-\chapter{Methods, Techniques, and Resources}
+\chapter{Methods and Resources}
 \label{chap:methods}
 
 %\section{Overview/meta-text}
 In this chapter, I will outline the various existing resources and methods utilised throughout this project. This includes public data repositories, stable and development releases of software packages (mostly for the R programming environment), and implementation of bioinformatics methods and statistical concepts with Shell or R scripts developed for this purpose. Methods and packages developed specifically for this project will be covered in more detail along with preliminary data to demonstrate and support their use in chapter 3. 
 
-\section{Bioinformatics Resources to Enable Genomics Research}
+\section{Bioinformatics Resources for Genomics Research}
 \subsection{Public Data and Software Packages}
 Various bioinformatics resources, such as databases and methods, have become integral parts of genetics and genomics research. Reference genomes, genotyped variants, gene expression, and epigenetics profiles are among the most commonly used resources. Gene expression data in particular is widely available from many microarray and RNA-Seq studies, from repositories such as Gene Expression Omnibus (GEO) \citep{GEO2016}, caArray \citep{caArray2014}, and ArrayExpress \citep{ArrayExpress2013}. Such profiles are excellent resources to examine the changes of gene expression occurring in cancers and the variation between samples. These microarray initiatives have set a precedent for data sharing, data mining, and the wider benefits of publicly available data for enabling the scientific community to further utilise the data rather than a single research group or consortium \citep{Rung2013}. The practice of integrating findings from publicly available genomics data with the research questions and experimental results of individual research groups has carried over into RNA-Seq datasets including the large-scale cancer genomics projects \citep{ICGC2011}. This thesis is one such example of an investigation enabled by this wider movement and tools developed in various disciplines to generate, process, and disseminate genomic-scale data.
  
@@ -24,7 +24,7 @@ Unless otherwise specified, pathway analysis was performed for human pathway ann
 
 \section{Data Handling}
 
-\subsection{Normalisation (voom)}
+\subsection{Normalisation}
 
 Apart from the PAM50 subtyping procedure \citep{Parker2009}, which required RSEM normalised data (J.S. Parker personal communication), the analysis of the RNA-Seq data presented here was based on raw read count data. Raw read counts were log-scaled; samples removed for consistency (based on a Euclidean distance correlation matrix as described in section \ref{methods:sample_qc}); and the final dataset was TMM normalised \citep{Robinson2010} then processed using the \texttt{voom} function \citep{Law2014} in the \texttt{limma} R package \citep{limma}.
 
@@ -101,7 +101,7 @@ After removal of these samples, the TCGA dataset used for analysis consisted of 
 \end{table*}
 
 
-\subsection{Pathway Metagenes and the Singular Value Decomposition} \label{methods:metagene}
+\subsection{Metagenes and the Singular Value Decomposition} \label{methods:metagene}
 A ``metagene'' offers a consistent signal of pathway (expression) activation or inactivation by dimension reduction of a matrix, avoiding negatively correlated genes averaging out the signal of a mean-based centroid \citep{Huang2003}. Constructing these pathway metagenes used gene sets for Reactome and Gatza signatures (Gatza \textit{et al}., 2011; Gatza \textit{et al}., 2014) as specified above (see Section \ref{methods:gene_set}). The singular-value decomposition was performed ($X = U^{T} D V$ where $X$ is the data matrix of the gene set with genes $\times$ samples) and the leading eigenvector (first column of $V$) corresponding to the largest singular value was used as a metagene for the pathway gene set. To ensure consistent directionality of metagene signals, the median of the gene set in each sample was calculated and correlated against the metagene with the (arbitrary) metagene sign adjusted as needed to conform with the majority of the gene set (i.e., positive correlation between metagene and the median-based centroid). To ensure that genes and pathways were weighted equally, metagenes were derived from a z-transformed dataset of gene expression and samples were scaled (by fractional ranking) for each metagene so that they were comparable on a $[0,1]$ scale. 
 
 \subsubsection{Candidate Triage and Integration with Screen Data} \label{methods:venn_analysis}

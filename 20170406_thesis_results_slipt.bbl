@@ -1,0 +1,81 @@
+\begin{thebibliography}{10}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+
+\bibitem[\protect\astroncite{Araki \emph{et~al.}}{2012}]{genesetdb}
+Araki, H., Knapp, C., Tsai, P., and Print, C. (2012) Genesetdb: A comprehensive
+  meta-database, statistical and visualisation framework for gene set analysis.
+\newblock \emph{FEBS Open Bio}, \textbf{2}: 76--82.
+\bibAnnoteFile{genesetdb}
+
+\bibitem[\protect\astroncite{Barab\'asi and Oltvai}{2004}]{Barabasi2004}
+Barab\'asi, A.L. and Oltvai, Z.N. (2004) Network biology: understanding the
+  cell's functional organization.
+\newblock \emph{Nat Rev Genet}, \textbf{5}(2): 101--13.
+\bibAnnoteFile{Barabasi2004}
+
+\bibitem[\protect\astroncite{Chen \emph{et~al.}}{2014}]{Chen2014}
+Chen, A., Beetham, H., Black, M.A., Priya, R., Telford, B.J., Guest, J.,
+  Wiggins, G.A.R., Godwin, T.D., Yap, A.S., and Guilford, P.J. (2014)
+  E-cadherin loss alters cytoskeletal organization and adhesion in
+  non-malignant breast cells but is insufficient to induce an
+  epithelial-mesenchymal transition.
+\newblock \emph{{BMC} Cancer}, \textbf{14}(1): 552.
+\bibAnnoteFile{Chen2014}
+
+\bibitem[\protect\astroncite{Jerby-Arnon \emph{et~al.}}{2014}]{Jerby2014}
+Jerby-Arnon, L., Pfetzer, N., Waldman, Y., McGarry, L., James, D., Shanks, E.,
+  Seashore-Ludlow, B., Weinstock, A., Geiger, T., Clemons, P., \emph{et~al.}
+  (2014) Predicting cancer-specific vulnerability via data-driven detection of
+  synthetic lethality.
+\newblock \emph{Cell}, \textbf{158}(5): 1199--1209.
+\bibAnnoteFile{Jerby2014}
+
+\bibitem[\protect\astroncite{Kelly}{2013}]{Kelly2013}
+Kelly, S.T. (2013) \emph{Statistical Predictions of Synthetic Lethal
+  Interactions in Cancer}.
+\newblock Dissertation, University of Otago.
+\bibAnnoteFile{Kelly2013}
+
+\bibitem[\protect\astroncite{Lu \emph{et~al.}}{2015}]{Lu2015}
+Lu, X., Megchelenbrink, W., Notebaart, R.A., and Huynen, M.A. (2015) Predicting
+  human genetic interactions from cancer genome evolution.
+\newblock \emph{PLoS One}, \textbf{10}(5): e0125795.
+\bibAnnoteFile{Lu2015}
+
+\bibitem[\protect\astroncite{Merlos-Suarez
+  \emph{et~al.}}{2011}]{Merlos-Suarez2011}
+Merlos-Suarez, A., Barriga, F.M., Jung, P., Iglesias, M., Cespedes, M.V.,
+  Rossell, D., Sevillano, M., Hernando-Momblona, X., da~Silva-Diz, V., Munoz,
+  P., \emph{et~al.} (2011) {{T}he intestinal stem cell signature identifies
+  colorectal cancer stem cells and predicts disease relapse}.
+\newblock \emph{Cell Stem Cell}, \textbf{8}(5): 511--524.
+\bibAnnoteFile{Merlos-Suarez2011}
+
+\bibitem[\protect\astroncite{Telford \emph{et~al.}}{2015}]{Telford2015}
+Telford, B.J., Chen, A., Beetham, H., Frick, J., Brew, T.P., Gould, C.M.,
+  Single, A., Godwin, T., Simpson, K.J., and Guilford, P. (2015) Synthetic
+  lethal screens identify vulnerabilities in gpcr signalling and cytoskeletal
+  organization in e-cadherin-deficient cells.
+\newblock \emph{Mol Cancer Ther}, \textbf{14}(5): 1213--1223.
+\bibAnnoteFile{Telford2015}
+
+\bibitem[\protect\astroncite{Tiong \emph{et~al.}}{2014}]{Tiong2014}
+Tiong, K.L., Chang, K.C., Yeh, K.T., Liu, T.Y., Wu, J.H., Hsieh, P.H., Lin,
+  S.H., Lai, W.Y., Hsu, Y.C., Chen, J.Y., \emph{et~al.} (2014) Csnk1e/ctnnb1
+  are synthetic lethal to tp53 in colorectal cancer and are markers for
+  prognosis.
+\newblock \emph{Neoplasia}, \textbf{16}(5): 441--50.
+\bibAnnoteFile{Tiong2014}
+
+\bibitem[\protect\astroncite{Warburg}{1956}]{Warburg1956}
+Warburg, O. (1956) On the origin of cancer cells.
+\newblock \emph{Science}, \textbf{123}(3191): 390--314.
+\bibAnnoteFile{Warburg1956}
+
+\end{thebibliography}
