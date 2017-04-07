@@ -87,6 +87,14 @@
 
 \usepackage{xfrac}
 
+\usepackage{array}
+\newcolumntype{s}{>{\global\let\currentrowstyle\relax}}
+\newcolumntype{^}{>{\currentrowstyle}}
+\newcommand{\rowstyle}[1]{\gdef\currentrowstyle{#1}%
+  #1\ignorespaces
+}
+
+
 %\newcommand\cropped[1]{%
 %    \immediate\write{convert -trim #1.png #1cropped.png}%
 %    \includegraphics[width=\linewidth]{#1cropped.png}}

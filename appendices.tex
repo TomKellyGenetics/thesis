@@ -54,7 +54,7 @@
 \caption{R Packages used during Thesis}
 \label{tab:computers_r_packages_full}
 \\
-\multicolumn{1}{l}{Package}  & \multicolumn{1}{l}{Repository}  & \multicolumn{1}{l}{Laptop}      & \multicolumn{1}{l}{Lab}         & \multicolumn{1}{l}{Server}         & \multicolumn{1}{l}{NeSI} \\ \hline \rowcolor{gray!25}
+\multicolumn{1}{l}{\bfseries Package}  & \multicolumn{1}{l}{\bfseries Repository}  & \multicolumn{1}{l}{\bfseries Laptop}      & \multicolumn{1}{l}{\bfseries Lab}         & \multicolumn{1}{l}{\bfseries Server}         & \multicolumn{1}{l}{\bfseries NeSI} \\ \hline \rowcolor{gray!25}
 base                          & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0            \\ \hline
 abind                         & CRAN                      &             & 1.4-5       &                & 1.4-3             \\ \hline \rowcolor{gray!25}
 acepack                       & CRAN                      &             & 1.4.1       &                & 1.3-3.3          \\ \hline
@@ -375,15 +375,21 @@ association between SLIPT candidates and stronger validations of siRNA candidate
 \label{tab:secondary_screen}
 \begin{center}
 %\resizebox{\textwidth}{!}{
-\begin{tabular}{rrcccccl}
-                                             &                               & \multicolumn{5}{c}{Secondary Screen}                                                                                               &                                           \\ \cline{3-7}
-                                             & \multicolumn{1}{r|}{}         & 0/4                      & 1/4                      & 2/4                     & 3/4                     & \multicolumn{1}{c|}{4/4} & Total                                     \\ \cline{2-8} 
-\multicolumn{1}{r|}{\multirow{2}{*}{SLIPT$+$}} & \multicolumn{1}{r|}{Observed} & 70                       & 46                       & 31                      & 8                       & \multicolumn{1}{c|}{2}   & \multicolumn{1}{l|}{\multirow{2}{*}{157}} \\
-\multicolumn{1}{r|}{}                        & \multicolumn{1}{r|}{Expected} & 85                       & 44                       & 10                      & 4                       & \multicolumn{1}{c|}{2}   & \multicolumn{1}{l|}{}                     \\ \cline{2-8} 
-\multicolumn{1}{r|}{\multirow{2}{*}{SLIPT$-$}} & \multicolumn{1}{r|}{Observed} & 190                      & 90                       & 31                      & 10                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{\multirow{2}{*}{325}} \\
-\multicolumn{1}{r|}{}                        & \multicolumn{1}{r|}{Expected} & 175                      & 91                       & 42                      & 12                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{}                     \\ \cline{2-8} 
-                                             & \multicolumn{1}{r|}{Total}    & \multicolumn{1}{c}{280} & \multicolumn{1}{c}{136} & \multicolumn{1}{c}{52} & \multicolumn{1}{c}{18} & \multicolumn{1}{c|}{6}   & \multicolumn{1}{l|}{482}                  \\ \cline{3-8} 
-\end{tabular}
+\begin{tabular}{>{\cellcolor{white}}rrcccccl}
+                                                                            &                                                           & \multicolumn{5}{c}{\bfseries Secondary Screen}                                                                                     &                                           \\ \cline{3-7}
+\rowcolor{black!10}
+                                                                            & \multicolumn{1}{r|}{\cellcolor{white}}                    & 0/4                      & 1/4                      & 2/4                     & 3/4                     & \multicolumn{1}{c|}{4/4} & \cellcolor{white} \textbf{Total}          \\ \cline{2-8} 
+\rowcolor{black!5}
+\multicolumn{1}{r|}{\cellcolor{white}}                                      & \multicolumn{1}{r|}{Observed}                             & 70                       & 46                       & 31                      & 8                       & \multicolumn{1}{c|}{2}   &  \multicolumn{1}{l|}{}                     \\
+\rowcolor{black!10}
+\multicolumn{1}{r|}{\cellcolor{white} \multirow{-2}{*}{\bfseries SLIPT$+$}} & \multicolumn{1}{r|}{Expected}                             & 85                       & 44                       & 10                      & 4                       & \multicolumn{1}{c|}{2}   & \multicolumn{1}{l|}{\multirow{-2}{*}{157}}    \\ \cline{2-8} 
+\rowcolor{black!5}
+\multicolumn{1}{r|}{\cellcolor{white}}                                      & \multicolumn{1}{r|}{Observed}                             & 190                      & 90                       & 31                      & 10                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{}                     \\
+\rowcolor{black!10}
+\multicolumn{1}{r|}{\cellcolor{white}\multirow{-2}{*}{\bfseries SLIPT$-$}}  & \multicolumn{1}{r|}{Expected}                             & 175                      & 91                       & 42                      & 12                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{\multirow{-2}{*}{325}} \\ \cline{2-8} 
+\rowcolor{black!5}
+\cellcolor{white}                                                           & \multicolumn{1}{r|}{\cellcolor{white} \bfseries Total}    & \multicolumn{1}{c}{280} & \multicolumn{1}{c}{136} & \multicolumn{1}{c}{52} & \multicolumn{1}{c}{18} & \multicolumn{1}{c|}{6}   & \multicolumn{1}{l|}{482}                  \\ \cline{3-8} 
+\end{tabular} 
 %}
 \end{center}
 \end{table*}

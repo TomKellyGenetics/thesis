@@ -82,19 +82,28 @@ After removal of these samples, the TCGA dataset used for analysis consisted of 
 \caption{Excluded Samples by Batch and Clinical Characteristics.}
 \label{tab:qc}
 \resizebox{\textwidth}{!}{
-      \begin{tabular}{|c|c|c|c|c|c|c|c|c|ccc|}
+      \begin{tabular}{sc^c^c^c^c^c^c^c^c^c^c^c^c}
+      \rowstyle{\bfseries}
+        \multicolumn{1}{c}{\bfseries Tissue Source}		& \multicolumn{1}{sc}{\bfseries Type}   & \multicolumn{1}{sc}{\bfseries Batch} & \multicolumn{1}{sc}{\bfseries Plate} & \multicolumn{1}{sc}{\bfseries Patient} & \multicolumn{1}{sc}{\bfseries Samples} & \multicolumn{1}{c}{\bfseries p53}      & \multicolumn{1}{sc}{\bfseries Subtype}   & \multicolumn{2}{sc}{\bfseries Treatment (History)}	& \multicolumn{3}{sc}{\bfseries Clinical Subtypes (Stage)} \\
         \hline
-        Tissue Source		& Type   & Batch & Plate & Patient & Samples & p53      & Subtype   & Treatment (History) 			& \multicolumn{3}{ c| }{Clinical (Stage)} \\
-\hline
-        A7 Christiana		& Tumour & 47	 & A227  & A0DB  &  1 of 3   & NA       & Luminal A & Mastectomy (no)				& ER$+$  &  Ductal   	& (2)        \\
-        A7 Christiana		& Tumour & 96	 & A220  & A13D  &  1 of 3   & Wildtype & Luminal A & Mastectomy (no)				& ER$+$  &  Ductal   	& (2)        \\
-        A7 Christiana		& Tumour & 96	 & A227  & A13E  &  1 of 3   & NA       & Basal     & Lumpectomy (no) 				& ER$-$  &  Ductal   	& (2)        \\
-        A7 Christiana		& Tumour & 142	 & A277  & A26E  &  1 of 3   & NA       & Basal     & Lumpectomy (no) 				& ER$+$  &  Ductal   	& (2)        \\
-        A7 Christiana		& Tumour & 47	 & A277  & A0DC  &  1 of 2   & NA       & Luminal A & Mastectomy (yes)				& ER$+$  &  Lobular   	& (3)        \\
-        A7 Christiana		& Tumour & 142	 & A220  & A26I  &  1 of 2   & Mutant   & Basal     & Lumpectomy (yes) 				& ER$-$  &  Ductal   	& (2)        \\
-        AC Intl Genomics	& Tumour & 177	 & A18M  & A2QH  &  2 of 2   & Mutant   & Basal     & Radical Mastectomy (no) 			& ER$-$  &  Metaplastic   & (2)        \\
-        AC Intl Genomics	& Tumour & 177	 & A220  & A2QH  &  2 of 2   & Mutant   & Basal     & Radical Mastectomy (no) 			& ER$-$  &  Metaplastic   & (2)        \\
-        GI ABS IUPUI		& Normal & 177	 & A16F  & A2C8  &  1 of 1   & NA       & Luminal A & Radical Mastectomy and Neoadjuvant (no) 	& ER$+$  &  Ductal   	& (2)        \\
+       \rowcolor{black!10}
+        A7 Christiana		& Tumour & 47	 & A227  & A0DB  &  1 of 3   & NA       & Luminal A & Mastectomy & (no)				& ER$+$  &  Ductal   	& (2)        \\
+       \rowcolor{black!5}
+        A7 Christiana		& Tumour & 96	 & A220  & A13D  &  1 of 3   & Wildtype & Luminal A & Mastectomy & (no)				& ER$+$  &  Ductal   	& (2)        \\
+       \rowcolor{black!10}
+        A7 Christiana		& Tumour & 96	 & A227  & A13E  &  1 of 3   & NA       & Basal     & Lumpectomy & (no) 				& ER$-$  &  Ductal   	& (2)        \\
+       \rowcolor{black!5}
+        A7 Christiana		& Tumour & 142	 & A277  & A26E  &  1 of 3   & NA       & Basal     & Lumpectomy & (no) 				& ER$+$  &  Ductal   	& (2)        \\
+       \rowcolor{black!10}
+        A7 Christiana		& Tumour & 47	 & A277  & A0DC  &  1 of 2   & NA       & Luminal A & Mastectomy & (yes)				& ER$+$  &  Lobular   	& (3)        \\
+       \rowcolor{black!5}
+        A7 Christiana		& Tumour & 142	 & A220  & A26I  &  1 of 2   & Mutant   & Basal     & Lumpectomy & (yes) 				& ER$-$  &  Ductal   	& (2)        \\
+       \rowcolor{black!10}
+        AC Intl Genomics	& Tumour & 177	 & A18M  & A2QH  &  2 of 2   & Mutant   & Basal     & Radical Mastectomy & (no) 			& ER$-$  &  Metaplastic   & (2)        \\
+       \rowcolor{black!5}
+        AC Intl Genomics	& Tumour & 177	 & A220  & A2QH  &  2 of 2   & Mutant   & Basal     & Radical Mastectomy & (no) 			& ER$-$  &  Metaplastic   & (2)        \\
+       \rowcolor{black!10}
+        GI ABS IUPUI		& Normal & 177	 & A16F  & A2C8  &  1 of 1   & NA       & Luminal A & Radical Mastectomy and Neoadjuvant & (no) 	& ER$+$  &  Ductal   	& (2)        \\
 \hline
       \end{tabular}
 }
@@ -200,9 +209,8 @@ Several computers were used to process and store data during this thesis (as sum
 \resizebox{\textwidth}{!}{
 \begin{tabular}{r|l|l|l|l|}
 %\cline{2-5}
-\multicolumn{1}{r}{}                        & \multicolumn{1}{l}{Viao Laptop}                                     & \multicolumn{1}{l}{Lab Machine}                                   & \multicolumn{1}{l}{Biochem Server}                                     & \multicolumn{1}{l}{NeSI Pan Cluster}                               \\
+\multicolumn{1}{r}{}                        & \multicolumn{1}{l}{\bfseries Viao Laptop}                                     & \multicolumn{1}{l}{\bfseries Lab Machine}                                   & \multicolumn{1}{l}{\bfseries Biochem Server}                                     & \multicolumn{1}{l}{\bfseries NeSI Pan Cluster}                               \\
 \cline{2-5}
-
 \rowcolor{gray!25}
 \multicolumn{1}{r|}{\cellcolor{white}Operating System (OS)}  & \begin{tabular}[c]{@{}l@{}}Elementary OS\\ Freya 0.3.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Elementary OS\\ Loki 0.4\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Red Hat Enterprise\\ Maipo 7.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Cent OS\\ Final 6.4\end{tabular} \\  \cline{2-5}
 \multicolumn{1}{r|}{\cellcolor{white}Upstream OS}            & \begin{tabular}[c]{@{}l@{}}Ubuntu LTS\\ Trusty 14.04\end{tabular}   & \begin{tabular}[c]{@{}l@{}}Ubuntu LTS\\ Xenial 16.04\end{tabular} &                                                                        &                                                             \\  \cline{2-5}
@@ -229,7 +237,7 @@ Several computers were used to process and store data during this thesis (as sum
 \resizebox{\textwidth}{!}{
 \begin{tabular}{ll|l|l|l|l|}
 %\cline{3-6}
-\cellcolor{white}                                                      & \multicolumn{1}{l}{}                         & \multicolumn{1}{l}{Viao Laptop}                                     & \multicolumn{1}{l}{Lab Machine}                                    & \multicolumn{1}{l}{Biochem Server}                                    & \multicolumn{1}{l}{NeSI Pan Cluster}                               \\
+\cellcolor{white}                                                      & \multicolumn{1}{l}{}                         & \multicolumn{1}{l}{\bfseries Viao Laptop}                           & \multicolumn{1}{l}{\bfseries Lab Machine}                         & \multicolumn{1}{l}{\bfseries Biochem Server}                           & \multicolumn{1}{l}{\bfseries NeSI Pan Cluster}                               \\
 \cline{2-6}
 \rowcolor{gray!25}
 \cellcolor{white}                                                      & \multicolumn{1}{|l|}{OS}                     & \begin{tabular}[c]{@{}l@{}}Elementary OS\\ Freya 0.3.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Elementary OS\\ Loki 0.4\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Red Hat Enterprise\\ Maipo 7.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Cent OS\\ Final 6.4\end{tabular} \\
@@ -319,9 +327,8 @@ Several computers were used to process and store data during this thesis (as sum
 \resizebox{\textwidth}{!}{
 \begin{tabular}{ll|l|l|l|l|}
 %\cline{3-6}
-                                        & \multicolumn{1}{l}{}              & \multicolumn{1}{l}{Viao Laptop}                                     & \multicolumn{1}{l}{Lab Machine}                                    & \multicolumn{1}{l}{Biochem Server}                                    & \multicolumn{1}{l}{NeSI Pan Cluster}           \\
+                                        & \multicolumn{1}{l}{}              & \multicolumn{1}{l}{\bfseries Viao Laptop}                           & \multicolumn{1}{l}{\bfseries Lab Machine}                         & \multicolumn{1}{l}{\bfseries Biochem Server}                           & \multicolumn{1}{l}{\bfseries NeSI Pan Cluster}           \\
 \cline{2-6}
-
 \rowcolor{gray!25}
 \cellcolor{white}                       & \multicolumn{1}{|l|}{OS}          & \begin{tabular}[c]{@{}l@{}}Elementary OS\\ Freya 0.3.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Elementary OS\\ Loki 0.4\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Red Hat Enterprise\\ Maipo 7.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Cent OS\\ Final 6.4\end{tabular} \\
 \hline
@@ -338,38 +345,38 @@ Several computers were used to process and store data during this thesis (as sum
 \subsection{R Language and Packages}
 
 
-The R programming language has been used for the majority of this thesis. Current R installations across the machines used are given in Table \ref{tab:computers_r}. Local machines currently run the latest version of the R (at the time of writing) and remote machines run the versions and modules as managed by the system administrator. Various scripts and packages in this thesis were developed or run in previous versions of RStudio and R but these run without error in the current version of R (and the older versions on remote machines). The R packages developed during this thesis are given in Table \ref{tab:computers_r_packages_dev} with the relevant sections describing their implementation and use where appropriate. Various R packages were used throughout this thesis (as detailed in Table \ref{tab:computers_r_packages} with versions specified), which were not updated when they would change the functionality of scripts or functions in packages, in particular imported data from annotation packages (used to define gene sets) have been saved as local files to continue using stable versions of these pathway data (across machines). This is a summary of the key packages which (in addition to their dependencies) have been used throughout this project. Where a package implementation has been central to the methods applied, they are described in more detail in the relevant section. A full table of packages used in this thesis can be found in the Appendix (Table \ref{tab:computers_r_packages_full}).  
+The R programming language has been used for the majority of this thesis. Current R installations across the machines used are given in Table \ref{tab:computers_r}. Local machines currently run the latest version of the R (at the time of writing) and remote machines run the versions and modules as managed by the system administrator. Various scripts and packages in this thesis were developed or run in previous versions of RStudio and R but these run without error in the current version of R (and the older versions on remote machines). The R packages developed during this thesis are given in Table \ref{tab:computers_r_packages_dev} with the relevant sections describing their implementation and use where appropriate, in addition to further details on these functions in section \ref{methods:r_packages}. Various R packages were used throughout this thesis (as detailed in Table \ref{tab:computers_r_packages} with versions specified), which were not updated when they would change the functionality of scripts or functions in packages, in particular imported data from annotation packages (used to define gene sets) have been saved as local files to continue using stable versions of these pathway data (across machines). This is a summary of the key packages which (in addition to their dependencies) have been used throughout this project. Where a package implementation has been central to the methods applied, they are described in more detail in the relevant section. A full table of packages used in this thesis can be found in the Appendix (Table \ref{tab:computers_r_packages_full}).  
 
 \begin{table}[!ht]
 \centering
 \caption{R Packages Developed during Thesis}
 \label{tab:computers_r_packages_dev}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{l|l|l|l|}
+\begin{tabular}{l|l|l|c|}
 %\cline{2-4}
-\multicolumn{1}{l}{}           & \multicolumn{1}{l}{Package Name}         & \multicolumn{1}{l}{Description                                                             and GitHub Repository}                                                                   & \multicolumn{1}{l}{Description in Thesis} \\
+\multicolumn{1}{l}{}           & \multicolumn{1}{l}{\bfseries Package Name} & \multicolumn{1}{l}{\bfseries Description                                                   and GitHub Repository}                                                                   & \multicolumn{1}{c}{\bfseries Section} \\
 \cline{2-4}  \rowcolor{gray!25} \cellcolor{white}
-                               & \multicolumn{1}{l|}{\texttt{slipt}}      & \begin{tabular}[c]{@{}l@{}}Synthetic lethal detection by SLIPT (to accompany publication)  \\ \url{https://github.com/TomKellyGenetics/slipt}                         \end{tabular} & Section \ref{methods:SLIPT}  \\
+                               & \multicolumn{1}{l|}{\texttt{slipt}}        & \begin{tabular}[c]{@{}l@{}}Synthetic lethal detection by SLIPT (to accompany publication)  \\ \url{https://github.com/TomKellyGenetics/slipt}                         \end{tabular} & \ref{methods:SLIPT}  \\
 \hline
-visualisation                  & \texttt{vioplotx}                        & \begin{tabular}[c]{@{}l@{}}Customised violin plots (based on \texttt{vioplot})             \\ \url{https://github.com/TomKellyGenetics/vioplotx}                      \end{tabular} &                              \\
+visualisation                  & \texttt{vioplotx}                          & \begin{tabular}[c]{@{}l@{}}Customised violin plots (based on \texttt{vioplot})             \\ \url{https://github.com/TomKellyGenetics/vioplotx}                      \end{tabular} &                              \\
 \cline{2-4}
 
 \rowcolor{gray!25} \cellcolor{white}
-                               & \texttt{heatmap.2x}                      & \begin{tabular}[c]{@{}l@{}}Customised heatmaps (based on \texttt{gplots})                  \\ \url{https://github.com/TomKellyGenetics/heatmap.2x}                    \end{tabular} & Section \ref{methods:heatmap} \\
+                               & \texttt{heatmap.2x}                      & \begin{tabular}[c]{@{}l@{}}Customised heatmaps (based on \texttt{gplots})                  \\ \url{https://github.com/TomKellyGenetics/heatmap.2x}                    \end{tabular} & \ref{methods:heatmap} \\
 \hline
-\texttt{igraph.extensions}     & \texttt{igraph.extensions}               & \begin{tabular}[c]{@{}l@{}}Meta-package to install the follow iGraph functions             \\ \url{https://github.com/TomKellyGenetics/igraph.extensions}             \end{tabular} & Section \ref{methods:igraph_extensions}    \\
+\texttt{igraph.extensions}     & \texttt{igraph.extensions}               & \begin{tabular}[c]{@{}l@{}}Meta-package to install the follow iGraph functions             \\ \url{https://github.com/TomKellyGenetics/igraph.extensions}             \end{tabular} & \ref{methods:igraph_extensions}    \\
 \cline{2-4}
 
 \rowcolor{gray!25} \cellcolor{white}
-                               & \texttt{plot.igraph}                     & \begin{tabular}[c]{@{}l@{}}Custom plotting of directed graphs                              \\ \url{https://github.com/TomKellyGenetics/plot.igraph}                   \end{tabular} & Section \ref{methods:network_metrics}      \\
+                               & \texttt{plot.igraph}                     & \begin{tabular}[c]{@{}l@{}}Custom plotting of directed graphs                              \\ \url{https://github.com/TomKellyGenetics/plot.igraph}                   \end{tabular} & \ref{methods:network_metrics}      \\
 \cline{2-4}
-                               & \texttt{info.centrality}                 & \begin{tabular}[c]{@{}l@{}}Computing information centrality from network efficiency        \\ \url{https://github.com/TomKellyGenetics/info.centrality}               \end{tabular} & Section \ref{methods:graphsim}\\
+                               & \texttt{info.centrality}                 & \begin{tabular}[c]{@{}l@{}}Computing information centrality from network efficiency        \\ \url{https://github.com/TomKellyGenetics/info.centrality}               \end{tabular} & \ref{methods:graphsim}\\
 \cline{2-4}
 
 \rowcolor{gray!25} \cellcolor{white}
-                               & \texttt{pathway.structure.permutation}   & \begin{tabular}[c]{@{}l@{}}Testing pathway structure with resampling analysis              \\ \url{https://github.com/TomKellyGenetics/pathway.structure.permutation} \end{tabular} & Section \ref{methods:network_permutation}  \\
+                               & \texttt{pathway.structure.permutation}   & \begin{tabular}[c]{@{}l@{}}Testing pathway structure with resampling analysis              \\ \url{https://github.com/TomKellyGenetics/pathway.structure.permutation} \end{tabular} & \ref{methods:network_permutation}  \\
 \cline{2-4}
-                               & \texttt{graphsim}                        & \begin{tabular}[c]{@{}l@{}}Generating simulated expression from graph structures           \\ \url{https://github.com/TomKellyGenetics/graphsim}                      \end{tabular} & Section \ref{methods:graphsim}\\
+                               & \texttt{graphsim}                        & \begin{tabular}[c]{@{}l@{}}Generating simulated expression from graph structures           \\ \url{https://github.com/TomKellyGenetics/graphsim}                      \end{tabular} & \ref{methods:graphsim}\\
 \hline 
 \end{tabular} 
 }
@@ -385,7 +392,7 @@ visualisation                  & \texttt{vioplotx}                        & \beg
 \label{tab:computers_r_packages}
 %\\ hline
 \\
-\multicolumn{1}{l}{Package}      & \multicolumn{1}{l}{Version Used} & \multicolumn{1}{l}{Built} & \multicolumn{1}{l}{Repository}      \\
+\multicolumn{1}{l}{\bfseries Package}      & \multicolumn{1}{l}{\bfseries Version Used} & \multicolumn{1}{l}{\bfseries Built} & \multicolumn{1}{l}{\bfseries Repository}      \\
 \hline  \rowcolor{gray!25}
 colorspace   & 1.3-2          & 3.3.1 & CRAN            \\
 \hline

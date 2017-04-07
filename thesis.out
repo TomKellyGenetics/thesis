@@ -112,51 +112,59 @@
 \BOOKMARK [3][-]{subsubsection.3.5.3.4}{Testing Pathway Structure with Permutation Testing}{subsection.3.5.3}% 112
 \BOOKMARK [3][-]{subsubsection.3.5.3.5}{Metapackage to Install iGraph Functions}{subsection.3.5.3}% 113
 \BOOKMARK [0][-]{chapter.4}{Synthetic Lethal Analysis of Gene Expression Data}{}% 114
-\BOOKMARK [1][-]{section.4.1}{Synthetic lethal gene candidates in breast cancer}{chapter.4}% 115
-\BOOKMARK [1][-]{section.4.2}{CDH1 analysis with subgroups}{chapter.4}% 116
-\BOOKMARK [1][-]{section.4.3}{Cell Line Analysis}{chapter.4}% 117
-\BOOKMARK [1][-]{section.4.4}{Mutation, Copy Number, and Methylation}{chapter.4}% 118
-\BOOKMARK [1][-]{section.4.5}{Mutation Analysis, Pathway Expression, and Metagene Synthetic Lethality}{chapter.4}% 119
-\BOOKMARK [1][-]{section.4.6}{Pathway SL}{chapter.4}% 120
-\BOOKMARK [1][-]{section.4.7}{Comparison of gene SL predictions and siRNA screen candidates}{chapter.4}% 121
-\BOOKMARK [1][-]{section.4.8}{Permutation or Re-Sampling of genes for pathway enrichment.}{chapter.4}% 122
-\BOOKMARK [1][-]{section.4.9}{Comparison of candidate SL Pathways}{chapter.4}% 123
-\BOOKMARK [1][-]{section.4.10}{ANOVA of Expression Predictors}{chapter.4}% 124
-\BOOKMARK [1][-]{section.4.11}{Global Synthetic Lethality}{chapter.4}% 125
-\BOOKMARK [2][-]{subsection.4.11.1}{Hub Genes}{section.4.11}% 126
-\BOOKMARK [1][-]{section.4.12}{Metagene Analysis}{chapter.4}% 127
-\BOOKMARK [2][-]{subsection.4.12.1}{Pathway expression}{section.4.12}% 128
-\BOOKMARK [2][-]{subsection.4.12.2}{Somatic mutation}{section.4.12}% 129
-\BOOKMARK [2][-]{subsection.4.12.3}{Synthetic lethal metagenes}{section.4.12}% 130
-\BOOKMARK [1][-]{section.4.13}{Replication in stomach cancer}{chapter.4}% 131
-\BOOKMARK [1][-]{section.4.14}{Important Results}{chapter.4}% 132
-\BOOKMARK [0][-]{chapter.5}{Synthetic Lethal Pathway Structure}{}% 133
-\BOOKMARK [1][-]{section.5.1}{Reactome Network structure and Information Centrality as a measure of gene essentiality}{chapter.5}% 134
-\BOOKMARK [1][-]{section.5.2}{Synthetic lethal genes in synthetic lethal pathways}{chapter.5}% 135
-\BOOKMARK [1][-]{section.5.3}{Centrality and connectivity of synthetic lethal genes}{chapter.5}% 136
-\BOOKMARK [1][-]{section.5.4}{Upstream or downstream synthetic lethal candidates}{chapter.5}% 137
-\BOOKMARK [1][-]{section.5.5}{Hierachical approach}{chapter.5}% 138
-\BOOKMARK [1][-]{section.5.6}{Discussion}{chapter.5}% 139
-\BOOKMARK [1][-]{section.5.7}{Conclusion}{chapter.5}% 140
-\BOOKMARK [0][-]{chapter.6}{Simulation and Modeling of Synthetic Lethal Pathways}{}% 141
-\BOOKMARK [1][-]{section.6.1}{Simulations and Modelling Synthetic Lethality in Expression Data}{chapter.6}% 142
-\BOOKMARK [1][-]{section.6.2}{Simulations over simple graph structures}{chapter.6}% 143
-\BOOKMARK [2][-]{subsection.6.2.1}{Performance}{section.6.2}% 144
-\BOOKMARK [2][-]{subsection.6.2.2}{Synthetic lethality across graph stuctures}{section.6.2}% 145
-\BOOKMARK [2][-]{subsection.6.2.3}{Performance with inhibition links}{section.6.2}% 146
-\BOOKMARK [2][-]{subsection.6.2.4}{Performance with 20,000 genes}{section.6.2}% 147
-\BOOKMARK [1][-]{section.6.3}{Simulations over pathway-based graphs}{chapter.6}% 148
-\BOOKMARK [1][-]{section.6.4}{Comparing methods}{chapter.6}% 149
-\BOOKMARK [2][-]{subsection.6.4.1}{SLIPT and Chi-Squared}{section.6.4}% 150
-\BOOKMARK [3][-]{subsubsection.6.4.1.1}{Correlated query genes}{subsection.6.4.1}% 151
-\BOOKMARK [2][-]{subsection.6.4.2}{Correlation}{section.6.4}% 152
-\BOOKMARK [2][-]{subsection.6.4.3}{Bimodality with BiSEp}{section.6.4}% 153
-\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 154
-\BOOKMARK [1][-]{section.7.1}{Significance}{chapter.7}% 155
-\BOOKMARK [1][-]{section.7.2}{Future Directions}{chapter.7}% 156
-\BOOKMARK [1][-]{section.7.3}{Conclusion}{chapter.7}% 157
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 158
-\BOOKMARK [0][-]{chapter.8}{References}{}% 159
-\BOOKMARK [0][-]{appendix.A}{Sample Correlation}{}% 160
-\BOOKMARK [0][-]{appendix.B}{Software Used for Thesis}{}% 161
-\BOOKMARK [0][-]{appendix.C}{Secondary Screen Data}{}% 162
+\BOOKMARK [1][-]{section.4.1}{Synthetic lethal genes in breast cancer}{chapter.4}% 115
+\BOOKMARK [2][-]{subsection.4.1.1}{Synthetic lethal pathways in breast cancer}{section.4.1}% 116
+\BOOKMARK [2][-]{subsection.4.1.2}{Expression profiles of synthetic lethal partners}{section.4.1}% 117
+\BOOKMARK [3][-]{subsubsection.4.1.2.1}{Subgroup pathway analysis}{subsection.4.1.2}% 118
+\BOOKMARK [1][-]{section.4.2}{Comparison of synthetic lethal gene candidates}{chapter.4}% 119
+\BOOKMARK [2][-]{subsection.4.2.1}{Comparison with differential expression}{section.4.2}% 120
+\BOOKMARK [2][-]{subsection.4.2.2}{Comparison with correlation}{section.4.2}% 121
+\BOOKMARK [2][-]{subsection.4.2.3}{Comparison with primary siRNA screen candidates}{section.4.2}% 122
+\BOOKMARK [3][-]{subsubsection.4.2.3.1}{Comparison of screen at pathway level}{subsection.4.2.3}% 123
+\BOOKMARK [4][-]{subsubsubsection.4.2.3.1.1}{Resampling of genes for pathway enrichment}{subsubsection.4.2.3.1}% 124
+\BOOKMARK [2][-]{subsection.4.2.4}{Comparison with secondary screen siRNA screen candidates}{section.4.2}% 125
+\BOOKMARK [3][-]{subsubsection.4.2.4.1}{Comparison of candidate SL Pathways}{subsection.4.2.4}% 126
+\BOOKMARK [1][-]{section.4.3}{Mutation, Copy Number, and Methylation}{chapter.4}% 127
+\BOOKMARK [2][-]{subsection.4.3.1}{Synthetic lethality by DNA copy number}{section.4.3}% 128
+\BOOKMARK [2][-]{subsection.4.3.2}{Synthetic lethality by somatic mutation}{section.4.3}% 129
+\BOOKMARK [3][-]{subsubsection.4.3.2.1}{Mutation analysis}{subsection.4.3.2}% 130
+\BOOKMARK [2][-]{subsection.4.3.3}{ANOVA of Expression Predictors}{section.4.3}% 131
+\BOOKMARK [1][-]{section.4.4}{Global Synthetic Lethality}{chapter.4}% 132
+\BOOKMARK [2][-]{subsection.4.4.1}{Hub Genes}{section.4.4}% 133
+\BOOKMARK [1][-]{section.4.5}{Metagene Analysis}{chapter.4}% 134
+\BOOKMARK [2][-]{subsection.4.5.1}{Pathway expression}{section.4.5}% 135
+\BOOKMARK [2][-]{subsection.4.5.2}{Somatic mutation}{section.4.5}% 136
+\BOOKMARK [2][-]{subsection.4.5.3}{Synthetic lethal metagenes}{section.4.5}% 137
+\BOOKMARK [1][-]{section.4.6}{Replication in stomach cancer}{chapter.4}% 138
+\BOOKMARK [1][-]{section.4.7}{Replication in cell line encyclopaedia}{chapter.4}% 139
+\BOOKMARK [1][-]{section.4.8}{Summary}{chapter.4}% 140
+\BOOKMARK [0][-]{chapter.5}{Synthetic Lethal Pathway Structure}{}% 141
+\BOOKMARK [1][-]{section.5.1}{Reactome Network structure and Information Centrality as a measure of gene essentiality}{chapter.5}% 142
+\BOOKMARK [1][-]{section.5.2}{Synthetic lethal genes in synthetic lethal pathways}{chapter.5}% 143
+\BOOKMARK [1][-]{section.5.3}{Centrality and connectivity of synthetic lethal genes}{chapter.5}% 144
+\BOOKMARK [1][-]{section.5.4}{Upstream or downstream synthetic lethal candidates}{chapter.5}% 145
+\BOOKMARK [1][-]{section.5.5}{Hierachical approach}{chapter.5}% 146
+\BOOKMARK [1][-]{section.5.6}{Discussion}{chapter.5}% 147
+\BOOKMARK [1][-]{section.5.7}{Conclusion}{chapter.5}% 148
+\BOOKMARK [0][-]{chapter.6}{Simulation and Modeling of Synthetic Lethal Pathways}{}% 149
+\BOOKMARK [1][-]{section.6.1}{Simulations and Modelling Synthetic Lethality in Expression Data}{chapter.6}% 150
+\BOOKMARK [1][-]{section.6.2}{Simulations over simple graph structures}{chapter.6}% 151
+\BOOKMARK [2][-]{subsection.6.2.1}{Performance}{section.6.2}% 152
+\BOOKMARK [2][-]{subsection.6.2.2}{Synthetic lethality across graph stuctures}{section.6.2}% 153
+\BOOKMARK [2][-]{subsection.6.2.3}{Performance with inhibition links}{section.6.2}% 154
+\BOOKMARK [2][-]{subsection.6.2.4}{Performance with 20,000 genes}{section.6.2}% 155
+\BOOKMARK [1][-]{section.6.3}{Simulations over pathway-based graphs}{chapter.6}% 156
+\BOOKMARK [1][-]{section.6.4}{Comparing methods}{chapter.6}% 157
+\BOOKMARK [2][-]{subsection.6.4.1}{SLIPT and Chi-Squared}{section.6.4}% 158
+\BOOKMARK [3][-]{subsubsection.6.4.1.1}{Correlated query genes}{subsection.6.4.1}% 159
+\BOOKMARK [2][-]{subsection.6.4.2}{Correlation}{section.6.4}% 160
+\BOOKMARK [2][-]{subsection.6.4.3}{Bimodality with BiSEp}{section.6.4}% 161
+\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 162
+\BOOKMARK [1][-]{section.7.1}{Significance}{chapter.7}% 163
+\BOOKMARK [1][-]{section.7.2}{Future Directions}{chapter.7}% 164
+\BOOKMARK [1][-]{section.7.3}{Conclusion}{chapter.7}% 165
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 166
+\BOOKMARK [0][-]{chapter.8}{References}{}% 167
+\BOOKMARK [0][-]{appendix.A}{Sample Correlation}{}% 168
+\BOOKMARK [0][-]{appendix.B}{Software Used for Thesis}{}% 169
+\BOOKMARK [0][-]{appendix.C}{Secondary Screen Data}{}% 170
