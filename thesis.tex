@@ -67,6 +67,8 @@
 \usepackage{textcomp}
 \usepackage{nomencl}
 
+\usepackage[acronym, xindy, toc, acronym, style=super, nonumberlist]{glossaries}
+
 \usepackage{tikz} %arrows
 \usepackage{mathtools}
 \usepackage{pstricks}
@@ -94,6 +96,8 @@
   #1\ignorespaces
 }
 
+\include{glossary}
+\makeglossaries
 
 %\newcommand\cropped[1]{%
 %    \immediate\write{convert -trim #1.png #1cropped.png}%
