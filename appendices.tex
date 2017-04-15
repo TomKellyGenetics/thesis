@@ -892,7 +892,7 @@ A series of experimental genome-wide siRNA screens have been performed on synthe
 association between SLIPT candidates and stronger validations of siRNA candidates. Since there were more SLIPT$-$ genes among those not validated and more SLIPT$+$ genes among those validated with several siRNAs, this supports the use of SLIPT as a synthetic lethal discovery procedure which may augment such screening experiments.
 
 \begin{table*}[!ht]
-\caption{Candidate Synthetic Lethal Genes against Secondary siRNA Screen}
+\caption{Comparing SLIPT genes against Secondary siRNA Screen in breast cancer}
 \label{tab:secondary_screen}
 \begin{center}
 %\resizebox{\textwidth}{!}{
@@ -910,6 +910,58 @@ association between SLIPT candidates and stronger validations of siRNA candidate
 \multicolumn{1}{r|}{\cellcolor{white}\multirow{-2}{*}{\bfseries SLIPT$-$}}  & \multicolumn{1}{r|}{Expected}                             & 175                      & 91                       & 42                      & 12                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{\multirow{-2}{*}{325}} \\ \cline{2-8} 
 \rowcolor{black!5}
 \cellcolor{white}                                                           & \multicolumn{1}{r|}{\cellcolor{white} \bfseries Total}    & \multicolumn{1}{c}{280} & \multicolumn{1}{c}{136} & \multicolumn{1}{c}{52} & \multicolumn{1}{c}{18} & \multicolumn{1}{c|}{6}   & \multicolumn{1}{l|}{482}                  \\ \cline{3-8} 
+\end{tabular} 
+%}
+\end{center}
+\end{table*}
+
+Similar analysis with mtSLIPT, comparing SLIPT against \textit{CDH1} somatic mutation with siRNA validation results was not significant ($p=7.02 \times 10^{-1}$ by Fisher's exact test). However,  as shown in Table \ref{tab:secondary_screen_mtSL}, the observed and expected values were in a direction consistent with that observed above for SLIPT against low \textit{CDH1} expression. It is not unexpected that this result does not have comparable statistical support due to the lower sample size for mutation data. 
+
+\begin{table*}[!ht]
+\caption{Comparing mtSLIPT genes against Secondary siRNA Screen in breast cancer}
+\label{tab:secondary_screen_mtSL}
+\begin{center}
+%\resizebox{\textwidth}{!}{
+\begin{tabular}{>{\cellcolor{white}}rrcccccl}
+                                                                              &                                                           & \multicolumn{5}{c}{\bfseries Secondary Screen}                                                                                     &                                           \\ \cline{3-7}
+\rowcolor{black!10}
+                                                                              & \multicolumn{1}{r|}{\cellcolor{white}}                    & 0/4                      & 1/4                      & 2/4                     & 3/4                     & \multicolumn{1}{c|}{4/4} & \cellcolor{white} \textbf{Total}          \\ \cline{2-8} 
+\rowcolor{black!5}
+\multicolumn{1}{r|}{\cellcolor{white}}                                        & \multicolumn{1}{r|}{Observed}                             & 54                       & 35                       & 17                      & 4                       & \multicolumn{1}{c|}{6}   &  \multicolumn{1}{l|}{}                     \\
+\rowcolor{black!10}
+\multicolumn{1}{r|}{\cellcolor{white} \multirow{-2}{*}{\bfseries mtSLIPT$+$}} & \multicolumn{1}{r|}{Expected}                             & 60                       & 31                       & 14                      & 4                       & \multicolumn{1}{c|}{1}   & \multicolumn{1}{l|}{\multirow{-2}{*}{111}}    \\ \cline{2-8} 
+\rowcolor{black!5}
+\multicolumn{1}{r|}{\cellcolor{white}}                                        & \multicolumn{1}{r|}{Observed}                             & 206                      & 101                      & 45                      & 14                      & \multicolumn{1}{c|}{5}   & \multicolumn{1}{l|}{}                     \\
+\rowcolor{black!10}
+\multicolumn{1}{r|}{\cellcolor{white}\multirow{-2}{*}{\bfseries mtSLIPT$-$}}  & \multicolumn{1}{r|}{Expected}                             & 200                      & 105                      & 48                      & 14                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{\multirow{-2}{*}{371}} \\ \cline{2-8} 
+\rowcolor{black!5}
+\cellcolor{white}                                                             & \multicolumn{1}{r|}{\cellcolor{white} \bfseries Total}    & \multicolumn{1}{c}{269} & \multicolumn{1}{c}{143} & \multicolumn{1}{c}{63} & \multicolumn{1}{c}{19} & \multicolumn{1}{c|}{6}   & \multicolumn{1}{l|}{482}                  \\ \cline{3-8} 
+\end{tabular} 
+%}
+\end{center}
+\end{table*}
+
+This analysis was replicated on a (smaller) stomach cancer dataset but it was less conclusive ($p=2.36 \times 10^{-1}$ by Fisher's exact test). As shown in Table \ref{tab:secondary_screen_stad}, fewer SLIPT candidates were validated than expected statistically. However, these results in stomach cancer may not be directly comparable to experiments in a breast cell line. Genes validated by 0 or 1 siRNA behave consistently with the results above.
+
+\begin{table*}[!ht]
+\caption{Comparing SLIPT genes against Secondary siRNA Screen in stomach cancer}
+\label{tab:secondary_screen_stad}
+\begin{center}
+%\resizebox{\textwidth}{!}{
+\begin{tabular}{>{\cellcolor{white}}rrcccccl}
+                                                                            &                                                           & \multicolumn{5}{c}{\bfseries Secondary Screen}                                                                                     &                                           \\ \cline{3-7}
+\rowcolor{black!10}
+                                                                            & \multicolumn{1}{r|}{\cellcolor{white}}                    & 0/4                      & 1/4                      & 2/4                     & 3/4                     & \multicolumn{1}{c|}{4/4} & \cellcolor{white} \textbf{Total}          \\ \cline{2-8} 
+\rowcolor{black!5}
+\multicolumn{1}{r|}{\cellcolor{white}}                                      & \multicolumn{1}{r|}{Observed}                             & 67                       & 47                       & 13                      & 4                       & \multicolumn{1}{c|}{1}   &  \multicolumn{1}{l|}{}                     \\
+\rowcolor{black!10}
+\multicolumn{1}{r|}{\cellcolor{white} \multirow{-2}{*}{\bfseries SLIPT$+$}} & \multicolumn{1}{r|}{Expected}                             & 71                       & 37                       & 17                      & 5                       & \multicolumn{1}{c|}{2}   & \multicolumn{1}{l|}{\multirow{-2}{*}{132}}    \\ \cline{2-8} 
+\rowcolor{black!5}
+\multicolumn{1}{r|}{\cellcolor{white}}                                      & \multicolumn{1}{r|}{Observed}                             & 195                      & 90                       & 50                      & 14                      & \multicolumn{1}{c|}{5}   & \multicolumn{1}{l|}{}                     \\
+\rowcolor{black!10}
+\multicolumn{1}{r|}{\cellcolor{white}\multirow{-2}{*}{\bfseries SLIPT$-$}}  & \multicolumn{1}{r|}{Expected}                             & 190                      & 100                      & 46                      & 13                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{\multirow{-2}{*}{354}} \\ \cline{2-8} 
+\rowcolor{black!5}
+\cellcolor{white}                                                           & \multicolumn{1}{r|}{\cellcolor{white} \bfseries Total}    & \multicolumn{1}{c}{262} & \multicolumn{1}{c}{137} & \multicolumn{1}{c}{63} & \multicolumn{1}{c}{19} & \multicolumn{1}{c|}{6}   & \multicolumn{1}{l|}{486}                  \\ \cline{3-8} 
 \end{tabular} 
 %}
 \end{center}

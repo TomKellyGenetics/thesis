@@ -74,13 +74,13 @@ Cancer research is an area of particularly high expectations for the clinical im
 
 \subsection{Technologies to Enable Genetics Research}
 \subsubsection{DNA Sequencing and Genotyping Technologies}
-Genotyping was once commonly performed on variable regions of the genome with restriction fragment length polymorphisms (RFLP) or repetious microsatellite regions. These exploited sequence variation at target sites of restriction enzymes or measured the length of repetious regions, using polymorase chain reaction (PCR), restriction enzymes, and gel electrophoresis to measure DNA genotypes at particular sites. This is laborious and limited to well characterised variable regions of the genome, generally genes or nearby marker regions. 
+Genotyping was once commonly performed on variable regions of the genome with restriction fragment length polymorphisms (RFLP) or repetious microsatellite regions. These exploited sequence variation at target sites of restriction enzymes or measured the length of repetious regions, using polymorase chain reaction (PCR), restriction enzymes, and gel electrophoresis to measure \gls{dna} genotypes at particular sites. This is laborious and limited to well characterised variable regions of the genome, generally genes or nearby marker regions. 
 
 The Sanger (dideoxy) chain termination method \citep{Sanger1975} enabled DNA sequencing and genotyping at a widespread scale, being less technically difficult than the Maxam-Gilbert sequencing by degradation method \citep{Gilbert1973, Maxam1977}, which required more radioactive and toxic reactants. The Sanger methodology has relatively long read length (particularly compared to early versions of more recent technologies), with read lengths of 500--700 base pairs accurately sequenced in most applications, usually following targeted amplification with PCR. Sanger sequencing by gel electrophoresis takes around 6-8 hours and has been further refined with the ``capillary'' approach to 1--3 hours and requiring less input DNA and reactants. The capillary approach has been scaled up to run in parallel from a 96 well plate, at 166 kilobases per hour. The 96 well parallel capillary method was one of the main innovations which made the first Human Genome Project feasible and was used throughout \citep{Lander2001}. Due to the quality of the Sanger sequence reads and low cost, it is still widely used in smaller scale applications, clinical testing, and to validate the findings of newer approaches.
 
 
 \subsubsection{Microarrays and Quantitative Technologies}
-Real-time or quantitative PCR (pPCR) is another adaptation of genetic technologies to quantitatively study nucleic acids, often reverse transcribed ``cDNA'' or messenger ``mRNA'' to measure (relative) gene expression or transcript abundance. While numerous quality control measures are required to correctly interpret a qPCR experiment, these have similarly become widely adopted as are still used for smaller scale experiments and as a ``gold standard'' for measuring gene expression \citep{Adamski2014}. This also represents a shift in the application of PCR and sequencing technology, where the primary interest is quantifying the amount of input material (by the rate of amplification to a certain level) rather than the qualitative nature of the sequence itself. The more recent technologies of microarrays and RNA-Seq have similarly embraced this application to quantify DNA copy number, RNA expression, and DNA methylation levels. Due to results of comparable or arguably better quality from these newer technologies \citep{Robin2016, Beck2016, McCourt2013, Git2010}, this ``gold standard'' status has started to come under scrutiny.
+Real-time or quantitative PCR (\gls{pPCR}) is another adaptation of genetic technologies to quantitatively study nucleic acids, often reverse transcribed ``\gls{cDNA}'' or messenger ``\gls{mRNA}'' to measure (relative) gene expression or transcript abundance. While numerous quality control measures are required to correctly interpret a qPCR experiment, these have similarly become widely adopted as are still used for smaller scale experiments and as a ``gold standard'' for measuring gene expression \citep{Adamski2014}. This also represents a shift in the application of PCR and sequencing technology, where the primary interest is quantifying the amount of input material (by the rate of amplification to a certain level) rather than the qualitative nature of the sequence itself. The more recent technologies of microarrays and \gls{rnaseq} have similarly embraced this application to quantify DNA copy number, RNA expression, and DNA methylation levels. Due to results of comparable or arguably better quality from these newer technologies \citep{Robin2016, Beck2016, McCourt2013, Git2010}, this ``gold standard'' status has started to come under scrutiny.
 
 Microarrays represent a truly high-throughput molecular technique, reducing the cost, time, and labour required to study molecular factors such as genotype, expression, or methylation across many genes, making it feasible to do so over a statistically meaningful number of samples. Microarrays are manufactured with probes which measure binding of particular nucleotide sequences to either quantitatively detect the presence of a sequence such as a single nucleotide polymorphism (SNP) or quantify DNA copy number, gene expression, or DNA CpG methylation. Microarray technologies have popularised ``genome scale'' studies of genetic variation and expression.
 
@@ -154,7 +154,7 @@ Similarly, international projects and consortiums have begun to release data gat
 \subsection{Cancer Genomes}
 It's importance in the future of cancer research was noticed, even in the early days of genomics \citep{Dickson1999}. The Cancer Genome Project (CGP) based at Wellcome Trust Sanger Institute in the UK were among the first to launch investigations into cancer after the publication of the Human Genome, using this genome sequence, consensus across the cancer reserach literature, and sequencing the genes of cancers themselves. Initially, the Sanger Institute set out to sequence 20 genes across 378 samples while the Human Genome project was still ongoing \citep{Collins2007}, optimising sequencing and computation infrastructure for a larger project while doing so. The main aim of the Cancer Genome Project was to discover ``cancer genes'', those frequently mutated in cancers by comparing the genes of cancer and normal tissue samples, both ``oncogenes'' and ``tumour suppressors'' which are activated and inactivated respectively in cancers. This project is ongoing and the UK continues to be involved in international sequencing initiatives and those focused on particular tissue types.
 
-The Sanger Institute also hosts the Catalogue of Somatic Mutations in Cancer \citep{COSMICdb}, a database and website of cancer genes. This launched with 66,634 samples and 10,647 mutations from initial investigations into \textit{BRAF}, HRAS, \textit{KRAS}2, and NRAS \citep{Bamford2004}. It has since expanded to include 1,257,487 samples with 4,175,8787 gene mutations curated from 23,870 publications, including 29,112 whole genomes \citep{COSMICdb}. This database now also identifies cancer genes from DNA copy number, differential gene expression and differential DNA methylation.
+The Sanger Institute also hosts the Catalogue of Somatic Mutations in Cancer \citep{COSMICdb}, a database and website of cancer genes. This launched with 66,634 samples and 10,647 mutations from initial investigations into \textit{BRAF}, HRAS, \textit{KRAS}, and NRAS \citep{Bamford2004}. It has since expanded to include 1,257,487 samples with 4,175,8787 gene mutations curated from 23,870 publications, including 29,112 whole genomes \citep{COSMICdb}. This database now also identifies cancer genes from DNA copy number, differential gene expression and differential DNA methylation.
 
 \subsubsection{The Cancer Genome Atlas Project}
 Based in the US, the Cancer Genome Atlas (TCGA) project was established in 2005, a combined effort of the National Cancer Institute (NCI) and the National Human Genome Research Institute (NHGRI) of the National Institutes of Health (NIH) \citep{TCGA2017web}. They first set out to demonstrate the pilot project on brain \citep{TCGA2008GBM}, ovarian \citep{TCGA2011OV}, and squamous cell lung \citep{TCGA2012LUSC} cancers. In 2009, the project expanded aiming to analyse 500 samples each for 20-25 tumour tissue types. They have since exceeded that goal, with data available for 33 cancer types including 10 ``rare'' cancers, a total of over 10,000 samples.
@@ -207,7 +207,7 @@ The notion of using a patient's genome to tailor healthcare to an individual has
 
 While the importance of genomics is still recognised in translational cancer research, it's potential has been emphasised particularly in molecular diagnosis, prognosis, and treaments of patients already presenting with cancers in the clinic rather than preventative medicine. This is in part due to the vast number of variants of unknown clinical significance, the ethical issue of reporting on incidental findings, and the regulatory issues direct-to-consumer genetics companies have encountered offering health risk assessment.
 
-More recently the term ``Genomic medicine'' has been preffered the describe the paradigm of treating cancers by their genomic features, particularly grouping patients by the mutation, expression, or DNA methylation profiles of their cancers. Radical proponents advocate for these molecular subtypes to superceed tissue or cell type specific diagnosis of cancers. However, in practice they are often used in combination, with clinical and pathological factors being informative of prognosis and surgical training specialising by organ system. The related term of ``precision medicine'' also stems from this trend with the rationale to target these molecular subtypes with separate treatment strategies, particularly in developing and applying treaments targeted against a particular mutation specific to cancers. To this end much research in this field is focused on identifying mutations and gene expression signatures amenable to distinguishing cancers, particularly oncogenic driver mutations, and developing treatments against them.
+More recently the term ``genomic medicine'' has been preffered the describe the paradigm of treating cancers by their genomic features, particularly grouping patients by the mutation, expression, or DNA methylation profiles of their cancers. Radical proponents advocate for these molecular subtypes to superceed tissue or cell type specific diagnosis of cancers. However, in practice they are often used in combination, with clinical and pathological factors being informative of prognosis and surgical training specialising by organ system. The related term of ``precision medicine'' also stems from this trend with the rationale to target these molecular subtypes with separate treatment strategies, particularly in developing and applying treaments targeted against a particular mutation specific to cancers. To this end much research in this field is focused on identifying mutations and gene expression signatures amenable to distinguishing cancers, particularly oncogenic driver mutations, and developing treatments against them.
 
 \subsubsubsection{Molecular Diagnostics and Pan-Cancer Medicine}
 There is growing support for the use of molecular tools such as mutations or gene expression signatures to diagnose tumour subtypes in replacement or addition to tissue of origin or histology. This is particularly important in breast cancer where analysis of molecular data detected several distinct ``intrinsic subtypes'' with differences in malignancy and patient outcome which were distinguished by molecular mechanisms rather than tissue or cellular phenotype \citep{Perou2000, Parker2009}. Conversely, common molecular mechanisms may be shared between cancers across tissue types as discovered by the ``Pan cancer'' studies, such as those conducted by the TCGA and ICGC projects, which combined molecular profiles across tissue types \citet{TCGA2013PAN}. The molecular subtypes could feasibly be included in clinic testing as a panel of biomarkers for diagnostics and prognosis. Such biomarkers also have the potential to monitor drug response or risk of recurrence. This is also raises the need for development of treatments for targeting these molecular subtypes.  
@@ -334,9 +334,9 @@ The synthetic lethal approach to cancer medicine is most amenable to loss of fun
 
 The synthetic lethal interaction of \textit{BRCA1} or \textit{BRCA2} with \textit{PARP1} in breast cancer is an example of how gene interactions are important in cancer, including translation to the clinic. These genetic interactions enable specific targeting of mutations in \textit{BRCA1} or \textit{BRCA2} tumour suppressor genes with PARP inhibitors by inducing synthetic lethality in breast cancer \citep{Farmer2005}. PARP inhibitors are one of the first targeted therapeutics against a tumour suppressor mutation with success in clinical trials. 
 
-\textit{BRCA1} or \textit{BRCA2} and \textit{PARP1} genes demonstrate the application of the synthetic lethal approach to cancer therapy \citet{Ashworth2008, Kaelin2005}. \textit{BRCA1} and \textit{BRCA2} are homologous DNA repair genes, widely known as tumour suppressors; mutation carriers have substantially increased risk of breast (risk by age 70 of 57\% for \textit{BRCA1} and 59\% for \textit{BRCA2}) and ovarian cancers (risk by age 70 of 40\% for \textit{BRCA1} and 18\% for \textit{BRCA2}) \citep{Chen2007}. The \textit{BRCA1} or \textit{BRCA2} genes, which usually repair DNA or destroy the cell if it cannot be repaired, have inactivating somatic mutations in some familial and sporadic cancers. Poly-ADP-ribose polymerase (PARP) genes are tumour suppressor genes involved in base excision DNA repair. Loss of PARP activity results in single-stranded DNA breaks. However, \textit{PARP1}\textsuperscript{-/-} knockout mice are viable and healthy indicating low toxicity from PARP inhibition \citep{Bryant2005}.  
+\textit{BRCA1} or \textit{BRCA2} and \textit{PARP1} genes demonstrate the application of the synthetic lethal approach to cancer therapy \citet{Ashworth2008, Kaelin2005}. \textit{BRCA1} and \textit{BRCA2} are homologous DNA repair genes, widely known as tumour suppressors; mutation carriers have substantially increased risk of breast (risk by age 70 of 57\% for \textit{BRCA1} and 59\% for \textit{BRCA2}) and ovarian cancers (risk by age 70 of 40\% for \textit{BRCA1} and 18\% for \textit{BRCA2}) \citep{Chen2007}. The \textit{BRCA1} or \textit{BRCA2} genes, which usually repair DNA or destroy the cell if it cannot be repaired, have inactivating somatic mutations in some familial and sporadic cancers. Poly-ADP-ribose polymerase (PARP) genes are tumour suppressor genes involved in base excision DNA repair. Loss of PARP activity results in single-stranded DNA breaks. However, \textit{PARP1}$^{-/-}$ knockout mice are viable and healthy indicating low toxicity from PARP inhibition \citep{Bryant2005}.  
 
-\citet{Bryant2005} showed that \textit{BRCA2}\textsuperscript{{}-/-} cells were sensitive to PARP inhibition by siRNA of \textit{PARP1} or drug inhibition (which targets \textit{PARP1} and \textit{PARP2}) using Chinese hamster ovary cells, MCF7 and MDA-MB-231 breast cell lines. This effect was sufficient to kill mouse tumour xenografts and showed high specificity to \textit{BRCA2} deficient cells in culture and xenografts. \citet{Farmer2005} replicated these results in embryonic stem cells and showed that \textit{BRCA1}\textsuperscript{{}-/-} cells were also sensitive to PARP inhibition relative to the wild-type with siRNA and drug experiments in cell culture and drug activity against \textit{BRCA1} or \textit{BRCA2} deficient embryonic stem cell mouse xenografts. They found evidence that PARP inhibition causes DNA lesions, usually repaired in wild-type cells, which lead to chromosomal instability, cell cycle arrest, and induction of apoptosis in \textit{BRCA1} or \textit{BRCA2} deficient cells. Therefore, the pathways cooperate to repair DNA giving a plausible mechanism for combined loss as an effective anti-cancer treatment.  
+\citet{Bryant2005} showed that \textit{BRCA2} cells were sensitive to PARP inhibition by siRNA of \textit{PARP1} or drug inhibition (which targets \textit{PARP1} and \textit{PARP2}) using Chinese hamster ovary cells, MCF7 and MDA-MB-231 breast cell lines. This effect was sufficient to kill mouse tumour xenografts and showed high specificity to \textit{BRCA2} deficient cells in culture and xenografts. \citet{Farmer2005} replicated these results in embryonic stem cells and showed that \textit{BRCA1} cells were also sensitive to PARP inhibition relative to the wild-type with siRNA and drug experiments in cell culture and drug activity against \textit{BRCA1} or \textit{BRCA2} deficient embryonic stem cell mouse xenografts. They found evidence that PARP inhibition causes DNA lesions, usually repaired in wild-type cells, which lead to chromosomal instability, cell cycle arrest, and induction of apoptosis in \textit{BRCA1} or \textit{BRCA2} deficient cells. Therefore, the pathways cooperate to repair DNA giving a plausible mechanism for combined loss as an effective anti-cancer treatment.  
 
 Thus PARP inhibitors have potential for clinical use against \textit{BRCA1} or \textit{BRCA2} mutations in hereditary and sporadic cancers (Ashworth 2008; Kaelin2005). PARP inhibition has been found to be effective in cancer patients carrying \textit{BRCA1} or \textit{BRCA2} mutations and some other ovarian cancers, suggesting synthetic lethality between PARP and other DNA repair pathways \citep{Strom2012}. This supports the potential for PARP inhibition as a chemo-preventative alternative to prophylactic surgery for high risk individuals with \textit{BRCA1} or \textit{BRCA2} mutations \citep{Strom2012}. Hormone-based therapy has also been suggested as a chemo-preventative in such high risk individuals and aromatase inhibitors have completed phase I clinical trials for this purpose (Bozovic-Spasojevic2012). \citet{Strom2012} also postulate increased efficacy of PARP inhibitors in the hypoxic DNA-damaging tumour micro-environment.  
 
@@ -415,54 +415,54 @@ Prediction of gene interaction networks is a feasible alternative to high-throug
 \resizebox{1.15 \textwidth}{!}{
 %\setlength\LTleft{0pt}
 %\setlength\LTright{0pt}
-\begin{tabular}{l|l|l|l|l}
+\begin{tabular}{lllll}
 
 \multicolumn{1}{l}{\textbf{Method}} &
 \multicolumn{1}{l}{\textbf{Input Data}} &
 \multicolumn{1}{l}{\textbf{Species}} &
 \multicolumn{1}{l}{\textbf{Source}} &
 \multicolumn{1}{l}{\textbf{Tool Offered}} \\ \hline
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black} %\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}
 \textcolor{black}{Between Pathways Model} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} PPI, SGI &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black} PPI, SGI &
+\cellcolor{black!10}\color{black}
 \textit{\textcolor{black}{S. cerevisiae}} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black}
 \citet{Kelley2005} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
-\\\hline
+\cellcolor{black!10}~
+\\
 Within Pathways Model &
 PPI, SGI &
 \textit{S. cerevisiae} &
 \citet{Kelley2005} &
 ~
-\\\hline
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\\
+\cellcolor{black!10}\color{black}
 \textcolor{black}{Decision Tree} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} PPI,
+\cellcolor{black!10}\color{black} PPI,
 expression, phenotype &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black}
 \textit{\textcolor{black}{S. cerevisiae}} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black}
 \citet{Wong2004} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} 2
-Hop\\\hline
+\cellcolor{black!10}\color{black} 2
+Hop\\
 Logistic Regression &
 SGI, PPI, co-expression, phenotype &
 \textit{C. elegans} &
 \cite{Zhong2006} &
-Gene Orienteer\\\hline
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+Gene Orienteer\\
+\cellcolor{black!10}\color{black}
 \textcolor{black}{Network Sampling} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} SGI, PPI, GO
+\cellcolor{black!10}\color{black} SGI, PPI, GO
 &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black}
 \textit{\textcolor{black}{S. cerevisiae}} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{
+\cellcolor{black!10}{
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}\color{black}\citet{LeMeur2008} \\ \color{black}\citet{LeMeur2014}\end{tabular}}
 &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
-SLGI(R)\\\hline
+\cellcolor{black!10}\color{black}
+SLGI(R)\\
 Random Walk &
 GO, PPI, expression &
 
@@ -470,31 +470,31 @@ GO, PPI, expression &
  &
 \citet{Chipman2009} &
 ~
-\\\hline
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\\
+\cellcolor{black!10}\color{black}
 \textcolor{black}{Shared Function} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black}
 Co-expression, PPI, text mining, phylogeny &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black}
 \textit{\textcolor{black}{C. elegans}} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black}
 \citet{Lee2010b} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
-WormNet\\\hline
+\cellcolor{black!10}\color{black}
+WormNet\\
 Logistic Regression &
 Co-expression, PPI, phenotype &
 \textit{C. elegans} &
 \citet{Lee2010a} &
-GI Finder\\\hline
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+GI Finder\\
+\cellcolor{black!10}\color{black}
 \textcolor{black}{Jaccard Index} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} GO, SGI,
+\cellcolor{black!10}\color{black} GO, SGI,
 PPI, phenotype &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} Eukarya &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black} Eukarya &
+\cellcolor{black!10}\color{black}
 \citet{Hoehndorf2013} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
-\\\hline
+\cellcolor{black!10}~
+\\
 \iffalse
 Bimodal Statistics &
 ~
@@ -502,19 +502,19 @@ Bimodal Statistics &
 ~
  &
 \cite{Wappett2014} &
-BiSEp(R)\\\hline
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+BiSEp(R)\\
+\cellcolor{black!10}\color{black}
 \textcolor{black}{Machine Learning} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\cellcolor{black!10}~
  &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+\cellcolor{black!10}~
  &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}
+\cellcolor{black!10}
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}\color{black} Discussed by \citep{Babyak2004} \\and \citet{Lee2009} \end{tabular}
 
  &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
-\\\hline
+\cellcolor{black!10}~
+\\
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}\color{black} Machine Learning \\as discussed by \citet{Wu2014}  \end{tabular}
 &
 ~
@@ -529,44 +529,44 @@ BiSEp(R)\\\hline
 \end{tabular}
 &
 ~
-\\\hline
+\\
 \fi
-\cellcolor[rgb]{1, 1, 1}\color{black}
+\cellcolor{black!5}\color{black}
 \textcolor{black}{Machine Learning} &
-\cellcolor[rgb]{1, 1, 1}~
+\cellcolor{black!5}~
  &
-\cellcolor[rgb]{1, 1, 1}~
+\cellcolor{black!5}~
  &
-\cellcolor[rgb]{1, 1, 1}\color{black}
+\cellcolor{black!5}\color{black}
 \citet{Pandey2010} &
-\cellcolor[rgb]{1, 1, 1}\color{black} MNMC\\\hline
-\rowcolor[rgb]{0.8509804,0.8862745,0.9529412}
+\cellcolor{black!5}\color{black} MNMC\\
+\rowcolor{black!10}
 Machine Learning Meta-Analysis &
 ~
  &
 ~
  &
 \cite{Wu2014} &
-MetaSL\\\hline
-\cellcolor[rgb]{1, 1, 1}{\color{black}
+MetaSL\\
+\cellcolor{black!5}{\color{black}
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 \textcolor{black}{Flux Variability Analysis} \\
 \textcolor{black}{Flux Balance Analysis} \\
 \textcolor{black}{Network Simulation}
 \end{tabular}
 } &
-\cellcolor[rgb]{1, 1, 1}\color{black} Metabolism &
-\cellcolor[rgb]{1, 1, 1}{\color{black}
+\cellcolor{black!5}\color{black} Metabolism &
+\cellcolor{black!5}{\color{black}
 
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 \textit{\textcolor{black}{E. coli}} \\
-\color{black} \textit{\textcolor{black}{Mycoplasma pneumoniae}}
+\color{black} \textit{\textcolor{black}{M. pneumoniae}}
 \end{tabular}
 } &
-\cellcolor[rgb]{1, 1, 1}\color{black}
+\cellcolor{black!5}\color{black}
 \citet{Guell2014} &
-\cellcolor[rgb]{1, 1, 1}~
-\\\hline
+\cellcolor{black!5}~
+\\ \hline
 \end{tabular}
 }
 }
@@ -577,21 +577,22 @@ MetaSL\\\hline
 \label{tab:methods_SL}
 %\begin{center}
 \resizebox{ \textwidth}{!}{
-\begin{tabular}{l|l|l|l}
+\begin{tabular}{llll}
 \multicolumn{1}{m{4.421cm}}{\cellcolor{white}\bfseries\color{black}
 Method} &
 \multicolumn{1}{m{2.342cm}}{\cellcolor{white}\bfseries\color{black}
 \textcolor{black}{Input Data}} &
 \multicolumn{1}{m{4.552cm}}{\cellcolor{white}\bfseries\color{black}
 Source} &
-\cellcolor{white}\bfseries\color{black} Tool Offered\\\hline
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{white}\bfseries\color{black} Tool Offered\\
+\hline
+\cellcolor{black!10}\color{black}
 \textcolor{black}{Network Centrality} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black} protein-protein interactions &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black} protein-protein interactions &
+\cellcolor{black!10}\color{black}
 \citet{Kranthi2013} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
-\\\hline
+\cellcolor{black!10}~
+\\
 Differential Expression &
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 Expression \\
@@ -600,8 +601,8 @@ Mutation
 &
 \citet{Wang2013} &
 ~
-\\\hline
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\\
+\cellcolor{black!10}{\color{black}
 
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 \textcolor{black}{Comparative Genomics} \\
@@ -609,17 +610,17 @@ Mutation
 \end{tabular}
 }
  &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}
+\cellcolor{black!10}
 
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 Yeast synthetic gene interactions\\
 Homology
 \end{tabular}
  &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black}
 \citet{Heiskanen2012} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
-\\\hline
+\cellcolor{black!10}~
+\\
 Comparative Genomics &
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 Yeast synthetic gene interactions \\
@@ -628,16 +629,16 @@ Homology
  &
 \citet{Deshpande2013} &
 ~
-\\\hline
-%\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\\
+%\cellcolor{black!10}\color{black}
 %\textcolor{black}{Genome Evolution} &
-%\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
+%\cellcolor{black!10}~
 % &
-%\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+%\cellcolor{black!10}\color{black}
 %\citet{Lu2013} &
-%\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
-%\\\hline
-\rowcolor[rgb]{0.8509804,0.8862745,0.9529412}
+%\cellcolor{black!10}~
+%\\
+\rowcolor{black!10}
 
 Machine Learning &
 ~
@@ -646,48 +647,48 @@ Machine Learning &
 
  &
 ~
-\\\hline
-\cellcolor[rgb]{1, 1, 1}\color{black}
+\\
+\cellcolor{black!5}\color{black}
 \textcolor{black}{Differential Expression} &
-\cellcolor[rgb]{1, 1, 1}Expression
+\cellcolor{black!5}Expression
  &
-\cellcolor[rgb]{1, 1, 1}\color{black}
+\cellcolor{black!5}\color{black}
 \citet{Tiong2014} &
-\cellcolor[rgb]{1, 1, 1}~
-\\\hline
-\rowcolor[rgb]{0.8509804,0.8862745,0.9529412}
+\cellcolor{black!5}~
+\\
+\rowcolor{black!10}
 Literature Database &
 ~
  &
 \citet{Li2014} &
-Syn-Lethality\\\hline
-\cellcolor[rgb]{1, 1, 1}\color{black}
+Syn-Lethality\\
+\cellcolor{black!5}\color{black}
 \textcolor{black}{Meta-Analysis} &
-\cellcolor[rgb]{1, 1, 1}\color{black}
+\cellcolor{black!5}\color{black}
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 Meta-Analysis \\
 Machine Learning
 \end{tabular}
  &
-\cellcolor[rgb]{1, 1, 1}\color{black}
+\cellcolor{black!5}\color{black}
 \citet{Wu2014} &
-\cellcolor[rgb]{1, 1, 1}\color{black}
-MetaSL\\\hline
-\rowcolor[rgb]{0.8509804,0.8862745,0.9529412}
+\cellcolor{black!5}\color{black}
+MetaSL\\
+\rowcolor{black!10}
 Pathway Analysis &
 ~
  &
 \citet{Zhang2015} &
 ~
-\\\hline
-\cellcolor[rgb]{1, 1, 1}\color{black}
+\\
+\cellcolor{black!5}\color{black}
 \textcolor{black}{Protein Domains} &
-\cellcolor[rgb]{1, 1, 1}\color{black} Homology &
-\cellcolor[rgb]{1, 1, 1}\color{black}
+\cellcolor{black!5}\color{black} Homology &
+\cellcolor{black!5}\color{black}
 \citet{Kozlov2015} &
-\cellcolor[rgb]{1, 1, 1}~
-\\\hline
-\rowcolor[rgb]{0.8509804,0.8862745,0.9529412}
+\cellcolor{black!5}~
+\\
+\rowcolor{black!10}
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 Data-Mining \\
 Machine Learning
@@ -706,8 +707,8 @@ siRNA in cell lines
 \citet{Lokody2014}\end{tabular}
 
 &
-DAISY (method)\\\hline
-\cellcolor[rgb]{1, 1, 1}{\color{black}
+DAISY (method)\\
+\cellcolor{black!5}{\color{black}
 
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 \textcolor{black}{Genome Evolution} \\
@@ -715,22 +716,22 @@ DAISY (method)\\\hline
 \color{black} \textcolor{black}{Machine Learning}
 \end{tabular}
 } &
-\cellcolor[rgb]{1, 1, 1}{
+\cellcolor{black!5}{
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 Expression \\
 DNA CNV \\
 Known SL
 \end{tabular}
 } &
-\cellcolor[rgb]{1, 1, 1}\color{black}
+\cellcolor{black!5}\color{black}
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 \citet{Lu2013} \\
 \citet{Lu2015}
 \end{tabular}
 &
-\cellcolor[rgb]{1, 1, 1}~
-\\\hline
-\rowcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!5}~
+\\
+\rowcolor{black!10}\color{black}
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 \textcolor{black}{Bimodality}
 \end{tabular}
@@ -749,8 +750,8 @@ Somatic Mutation
 \end{tabular}
 &
 BiSEp
-\\\hline
-\rowcolor[rgb]{1, 1, 1}
+\\
+\rowcolor{black!5}
 Directional Chi-Square &
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 Expression (microarray) \\
@@ -762,7 +763,8 @@ Kelly, S. T., Guilford, P. J., and Black, M. A. \\
 Dissertation (Kelly, 2013) and developed here \\
 \end{tabular}
 &
-SLIPT\\\hline
+SLIPT\\
+\hline
 \end{tabular}
 }
 %\end{center}
@@ -782,19 +784,20 @@ Another approach to systematic synthetic lethality discovery specific to human c
 \label{tab:methods_meta}
 %\begin{center}
 \resizebox{ \textwidth}{!}{
-\begin{tabular}{l|l|l}
+\begin{tabular}{lll}
 \multicolumn{1}{m{4.421cm}}{\cellcolor{white}\bfseries\color{black}
 Method} &
 \multicolumn{1}{m{4.552cm}}{\cellcolor{white}\bfseries\color{black}
 Source} &
-\cellcolor{white}\bfseries\color{black} Tool Offered\\\hline
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{white}\bfseries\color{black} Tool Offered\\
+\hline
+\cellcolor{black!10}\color{black}
 \textcolor{black}{Random Forest} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}{\color{black}
+\cellcolor{black!10}{\color{black}
 \citet{Breiman2001}
 }
 &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~\\\hline
+\cellcolor{black!10}~\\
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 Random Forest \\
 J48 (decision tree) \\
@@ -809,25 +812,26 @@ Classification via Regression
 \citet{Hall2009}
 ~
  &
-WEKA\\\hline
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\textcolor{black}{Support Vector Machine (Linear)} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+WEKA\\
+\cellcolor{black!10}\textcolor{black}{Support Vector Machine (Linear)} &
+\cellcolor{black!10}\color{black}
 \citet{Vapnik1995} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
-\\\hline
+\cellcolor{black!10}~
+\\
 Support Vector Machine (RBF -- Gaussian) &
 \citet{Joachims1999} &
 ~
-\\\hline
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\\
+\cellcolor{black!10}\color{black}
 \textcolor{black}{Multi-Network Multi-Class (MNMC)} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}\color{black}
+\cellcolor{black!10}\color{black}
 \citet{Pandey2010} &
-\cellcolor[rgb]{0.8509804,0.8862745,0.9529412}~
-\\\hline
+\cellcolor{black!10}~
+\\
 MetaSL (Meta-Analysis) &
 \citet{Wu2014} &
-MetaSL\\\hline
+MetaSL\\
+\hline
 \end{tabular}
 }
 %\end{center}
@@ -851,7 +855,7 @@ Focusing on the potential for synthetic lethality to be an effective anti-cancer
 
 Differential gene expression has been explored to predict synthetic lethal pairs in cancer which would be widely applicable due to the availability of public gene expression data for a large number of samples and cancer types. \citet{Wang2013} found differentially expressed genes (by the t-test, adjusted by FDR) between tumours with or without functional p53 mutations in TCGA \citep{TCGA2008GBM} and Cell Line Encyclopaedia (CCLE) RNA-Seq gene expression data as candidate synthetic lethal partner pathways of p53. They identified 2, 8, and 21 candidate synthetic lethal partner genes in 3 microarray datasets from the NCI60 cell lines, 31 partner genes from the CCLE RNA-Seq data, and 50 in TCGA RNA-Seq data. \textit{PLK1} was replicated across 4 of these analyses and 17 other genes were replicated across 2 analyses (including \textit{MTOR}, \textit{PLK4}, \textit{MAST2}, \textit{MAP3K4}, \textit{AURKA}, \textit{BUB1} and 6 CDK genes) with many playing a role in cell cycle regulation. This was supported by a drug sensitivity experiment on the NCI60 cell lines which found that cells which lacked functional p53 were more sensitive to paclitaxel (which targets \textit{PLK1}, \textit{AURKA}, and \textit{BUB1}). This demonstrated the potential of gene expression as a surrogate for gene function and use of public genomic data to predict synthetic lethal gene pairs in cancer. \citet{Wang2013} advocated for pre-screening of expression profiles to augment future RNAi screens. However, the analyses were limited to kinase genes and focused on currently druggable genes, lacking wider application of synthetic lethal prediction methodology. This approach may not be feasible or applicable in cancer genes with a lower mutation rate than p53.  
 
-\citet{Tiong2014} also investigated gene expression as a predictor of synthetic lethal pairs with colorectal cancer microarrays from a Han Chinese population with a sample size of 70 tumour and 12 normal tissue samples. Simultaneously differentially expression of ``tumour dependent'' gene pairs (which includes co-expression) between cancer and normal tissue was used to rank 663 candidate synthetic lethal interactions identified in cell line siRNA experiments. Of the top 20 genes, 17 were tested for testing differential expression at the protein level with immunohistochemistry staining and correlation with clinical characteristics, with 11 pairs exhibiting synergistic effects. Some of the predicted synthetic lethal pairs were consistent with the literature (including \textit{TP53} with \textit{S6K1} and partners of \textit{KRAS},  \textit{PTEN}, \textit{BRCA1}, and \textit{BRCA2}) and two novel synthetic lethal interactions (\textit{TP53} with \textit{CSNK1E} and \textit{CTNNB1}) were validated in pre-clinical models. This serves a valuable proof-of-concept for integration of \textit{in silico} approaches to synthetic lethal discovery in cancer demonstrating it's utility to triage and identify synthetic lethal partners of p53 applicable to colorectal tissues. Although the experimental work was the focus of the paper, these findings show that bioinformatics synthetic lethal candidates can be validated in patient tissue samples (from a non-caucasian population) to find those applicable to colorectal cancers.
+\citet{Tiong2014} also investigated gene expression as a predictor of synthetic lescale-freethal pairs with colorectal cancer microarrays from a Han Chinese population with a sample size of 70 tumour and 12 normal tissue samples. Simultaneously differentially expression of ``tumour dependent'' gene pairs (which includes co-expression) between cancer and normal tissue was used to rank 663 candidate synthetic lethal interactions identified in cell line siRNA experiments. Of the top 20 genes, 17 were tested for testing differential expression at the protein level with immunohistochemistry staining and correlation with clinical characteristics, with 11 pairs exhibiting synergistic effects. Some of the predicted synthetic lethal pairs were consistent with the literature (including \textit{TP53} with \textit{S6K1} and partners of \textit{KRAS},  \textit{PTEN}, \textit{BRCA1}, and \textit{BRCA2}) and two novel synthetic lethal interactions (\textit{TP53} with \textit{CSNK1E} and \textit{CTNNB1}) were validated in pre-clinical models. This serves a valuable proof-of-concept for integration of \textit{in silico} approaches to synthetic lethal discovery in cancer demonstrating it's utility to triage and identify synthetic lethal partners of p53 applicable to colorectal tissues. Although the experimental work was the focus of the paper, these findings show that bioinformatics synthetic lethal candidates can be validated in patient tissue samples (from a non-caucasian population) to find those applicable to colorectal cancers.
 
 \subsubsection{Data Mining and Machine Learning}
 
@@ -1055,3 +1059,56 @@ community for wider application
    \item To release the synthetic lethal detection methodology and pathway simulation procedure as R software packages
    
   \end{itemize}
+
+  
+\iffalse
+%%committee reports
+We aim to develop a network analysis approach to predict and analyse SGI networks in human cells and cancers. The main focus of this project will be to test SGIs for tissue specificity, of particular interest are SL interactions in tumours. Normal tissue will also be investigated for comparison between tissues and with tumour-specific networks. In contrast to the TCGA Pan-cancer study, which aims to find shared molecular characteristics across tumour subtypes, we aim to find molecular features (e.g., coordinated perturbation of many genes) which is unique to one or very few cell types or tumour. This is a pragmatic approach to find molecular features which, if altered, are less likely to result in adverse drug reactions.
+
+Secondary objectives include integrative network analysis, translational research focus, and fundamental understanding of genetic interactions. Integrative analysis compares many networks across the same cell type to investigate how they are related, for instance gene regulation, genetic interaction, gene coexpression, and protein-protein interactions are known to be related. However, so far integrative analysis of networks has focused on model organisms and has not accounted for tissue specificity.
+
+Translational research involves ensuring that the findings have clinical relevance and potential application in clinical practice. Identification of biomarkers, drug targets, and synergistic drug combinations are possible from molecular networks which can be developed for use in cancer diagnosis, prognosis, and treatment. Tools to develop predict the tissue specificity, therapeutic index, and therapeutic window of a candidate drug could be developed to prioritise RNAi and drug screens in research. If refined, these tools could be used for personalised medicine, to predict whether a particular treatment regime will be effective in a patient from their molecular profiles. Understanding the underlying mechanisms of molecular perturbations targeted for cancer treatment is important to ensure efficacy and minimal toxicity. If anticancer drugs can be developed with drastically lower toxicity than traditional chemotherapy, they may also be feasible as a chemopreventative alternative to prophylactic surgery in high risk patients.
+
+The fundamental understanding of genetic interactions is also important for the role of networks in heredity, cell biology, pharmacogenetics, and developmental biology. The connectivity of a network and the pathways involved in a molecular perturbation between cell types or treatment regimens can inform mechanistic molecular studies. The network properties of a cell will further enable understanding of gene expression and its role in polygenic phenotypes, complex disease, and developmental cellular differentiation. Evolutionary conservation of networks between species is important to ensure relevance of model organism studies to applications in human health and agriculture. The level of conservation between species can also be used to determine the role of gene networks in evolutionary history d identify which network features and substructures were important to be conserved across many species, and which features are unique to humans.
+
+This project will focus on colorectal cancers which have relatively high incidence in New Zealand and are a national tissue banking initiative based in Otago. Melanomas also have high incidence in New Zealand, are a research focus at the University of Auckland, and may be useful for comparison with shared environmental and genetic risk factors (such as BRAF mutations). Breast and Stomach cancers will also be investigated to augment existing studies into synthetic lethality in the Cancer Genetics Laboratory, since CDH1 mutations are involved in both sporadic cancers and hereditary diffuse gastric cancer. Breast and Stomach cancers are cancers with some of the highest global incidence and New Zealand is no exception with typical levels for a developed country.
+
+
+%\section{Background}
+
+Synthetic lethality is an emerging anti-cancer drug development approach showing promise in clinical trials as a treatment, preventative, and in combination with standard care (e.g., PARP inhibitors against BRCA mutations in Breast and Ovarian cancers). We are particularly interested in exploiting synthetic lethal interactions (where pairwise gene inactivation kills a cell) which enable development of targeted therapies – so called genomic medicine – informed by systems biology because they show promise as a means to effectively target tumour suppressor genes (with loss of function mutations) to selectively kill cancerous and pre-cancerous cells. The cancer genetics laboratory are currently working on experimental screens and validation of candidate synthetic lethal partners of CDH1 (a gene implicated in hereditary and sporadic breast and stomach cancers). This project serves to develop a predictive methodology to support such experimental work with analysis of public cancer genome data to overcome many of the limitations of experimental models (namely cost, throughput, and variable genetic background). In addition to candidates based on gene expression data, we are currently extending the methodology to use DNA copy number, DNA methylation, and somatic mutation to predict synthetic lethality. Synthetic lethal predictions have the potential to scale up to genome-wide analysis enabling investigation of gene networks and tissue-specificity.
+Background and Methodology:
+
+Synthetic lethality (SL) is the death of a cell or organism with the combined loss of two non-essential genes. This phenomenon was originally used to study genetic interactions and functional redundancy in models organisms (1). While synthetic lethal experiments have been performed in Drosophila melanogaster (2), Caenorhabditis elegans (3), Escherichia coli (4), Schizosaccharomyces pombe (5), and various mammalian cell lines (6), the most extensive synthetic lethal screens have been performed with the synthetic gene array (SGA) technique in Saccharomyces cerevisiae (1, 7, 8). Originally defined by double mutants, a range of mechanisms for gene inactivation of synthetic lethal partners can induce cell death including RNA interference and drug treatment where it is sometimes called ‘induced essentiality’ or ‘non-oncogene addiction’ in cancer research (9). Cellular viability is the main means to measure synthetic lethal effects experimentally because it is quantified and measured consistently, whereas qualitative measures of impaired organism viability are ambiguous and less relevant to yeast or cancer research.
+
+The synthetic lethal approach to cancer therapy is a rapidly developing area of research. It has proven effective against BRCA mutations in breast cancer with the discovery of synthetic lethal interactions of BRCA1 and BRCA2 with PARP1 as distinct DNA repair functions which are mutually necessary for cellular viability (10, 11). This is particularly exciting as a proof of concept that synthetic lethality can be used to indirectly target tumour suppressor gene inactivation to selectively kill cancer cells. PARP inhibitors have been successful in numerous clinical trials in both breast and ovarian cancer against both hereditary cancers and sporadic cases of BRCA mutant cancer (12). Not only do synthetic lethal drugs have the potential to be effective across multiple cancer types, they have could be utilised for chemopreventation against hereditary cancers in high risk individuals with the ability to achieve high therapeutic index with this approach (6, 13). Synthetic lethality has also been explored as a means to target oncogenes which are difficult to selectively target directly due to high sequence homology to their wild-type counterpart or other genes (14).
+
+The cancer genetics laboratory are currently working on developing a synthetic lethal approach to target the tumour suppressor gene CDH1 which has been found to cause predispose early-onset breast and stomach cancers in mutation carriers, including families of New Zealand M\={a}ori (15, 16). These families are currently closely monitored and offered drastic preventative surgery. If it were developed drug selective against CDH1 mutant tumours would serve not only as a chemopreventative alternative for these families but also benefit the wider community as a treatment for sporadic cases of CDH1 mutant cancer. To augment experimental work on CDH1 with isogenic cell lines, a computational methodology is explored here to exploit public cancer genomic databases.
+
+
+Microarray and massively-parallel sequencing technologies are driving a revolution in molecular biological research, particularly with regard to cancer where the premise of ‘genomic medicine’ is rapidly becoming feasible with the use of genomics to identify cancer genes, diagnose patients with actionable mutations, and use gene expression as a prognostic marker. Genomic data could also be used to identify novel drug targets and synthetic lethal partners of known cancer genes in particular. The Cancer Genome Atlas database (TCGA) and the overarching International Cancer Genome Consortium (ICGC) provide a valuable public cancer genome data resource because they support many different data types for the same samples, for many different cancer types, and for high sample sizes (17-19). They host data of patient clinical factors, gene expression, somatic mutation, DNA copy number, and DNA methylation which could all serve to predict synthetic lethality from frequency of mutually exclusive gene inactivation and it’s impact on patient survival. A number of other databases are given in the Table 6 which may be used to explore gene function, drug target feasibility, or replicate analyses but TCGA and ICGC datasets will be the focus of this project.
+
+Networks are an established research area of pure mathematics producing many applications relevant to biology including evolutionary trees, metabolic pathways, gene regulation, and protein-protein interactions (20). It is a branch of graph theory which deals with the connections between discrete objects which includes terminology for particular interaction patterns, visualisation methods, and algorithms to predict and measure individual interactions and the whole network (21). This established set of mathematical tools could be utilised to use a systems biology approach to using genomic data to predict synthetic lethal interactions or analyse patterns in the resulting predictions or supporting experimental data.
+
+Network medicine is an emerging notion that network analysis of biology could be useful for clinical applications and translational research including identification of disease genes (for diagnostics), biomarkers (for prognosis), identify novel drug targets, and find the biological significance of mutations and SNPs found by genome-wide association and whole-genome sequencing approaches (22). Molecular networks may be useful to understand perturbations of cellular functions in human disease including groups of genes underlying multiple separate or co-occurring diseases and whether they occur in a tissue specific manner. A network understanding of a disease may be relevant not only to genetic risk and mutation but also to the impact of the disease (or causes of it) in abnormalities in metabolic pathways, protein complexes, epigenetic marks, and microRNAs. An understanding of cellular function is important for network pharmacology, a modern approach to drug design where understanding of the effect of the drug on the network is more important than specificity to a single target (23). Combined or synergistic drug targets are a known means to more effectively treat diseases, exploiting the network enables targeting disease genes indirectly (including synthetic lethal partners) and use of drugs with multiple targets (known as ‘polypharmacology’). 
+
+There is a growing need for a robust approach to cost-effective prediction of candidate synthetic lethal interaction, particularly in cancer research. Exploiting existing public genomic databases is an ideal way to utilise existing resources with suitable sample sizes, data types, and different limitations to those of laboratory experiments. A number of computation approaches to synthetic lethality have been developed but many of these rely on data not available to cancer researchers, methods that are difficult to replicate, overfitted to a particular dataset, having mixed validation results, or do not have a software tool accessible to the research community. These methodologies will still be considered to develop an improved synthetic lethal interaction prediction tool (SLIPT). The methodologies summarised below in Table 1 include those reviewed by Van Steen (24) or Boucher and Jenna (25). 
+
+A bioinformatics approach has distinct limitations to experimental methods and would work well combined with genetic screen data and conventional molecular biology laboratory validation techniques to answer biological research questions. Compared with an experimental screen, a bioinformatics approach has the benefits of reduced costs, with the potential for automation, scaling up, and replication of the same gene across populations and cell types. Analysis of public genomic data accounts for real tumour variation showing detection with tumour heterogeneity and genomic instability. Compared with a cell line or xenograft experimental model we are limited by difficulties in establishing validity of a novel method, lack of mechanism, or potential for testing drug activity in the same system. This method may further miss useful therapeutic candidates from variable genetic background and be limited by the population sampled.
+
+It is notable that another group has recently published a methodology with a similar purpose which they have called DAISY (Data Mining Synthetic Lethality Pipeline). Their methodology covers some of research objectives initially planned for this project, however, many findings are yet to be met by the existing methodology and Jerby-Arnon, Pfetzer (41) have yet to provide a means for researchers to replicate their method or a software package to apply it to new datasets. Some of the findings of Jerby-Arnon, Pfetzer (41) are helpful such as the observation that DNA copy number is comparable in power to detect synthetic lethality as gene expression with their methodology. We had not considered this ourselves since our gene of interest, CDH1, is not widely variable in copy number in tumours. This lead to testing whether the current SLIPT methodology could be adapted to work with DNA copy number data and further investigation into whether somatic mutation or DNA methylation could be similarly utilised. Jerby-Arnon, Pfetzer (41) showed not only that publicly available tumour data was able to predict enrichment of shRNA synthetic lethal screen hits for VHL in renal cell lines but also that bioinformatics analysis of cell line data was similarly applicable.
+
+This project builds upon prior work during my study towards Honours in genetics which involved developing a synthetic lethal interaction prediction tool (SLIPT) from public gene expression microarray data (43). This methodology compares the distribution of samples for pairs of genes with the premise that synthetic lethality would lead to a deficit of samples showing inactivity of both genes. A chi-squared test of quantiles was used to assess significance of the interaction along with a directional criteria as shown in Figure 3. This methodology has been adapted and executed for analysis of RNA-Seq expression data, DNA copy number from SNP microarrays, to run in parallel on high performance computing resources, and for tumour suppressor (TS\_SL) or oncogenes (Onco\_SL analogous to DAISY predicting synthetic dosage lethality; SDL).
+
+Figure 3. Schematic outline of bioinformatic synthetic lethal prediction approach.
+
+%\section{Background}
+
+Synthetic lethality (SL) is the death of a cell or organism with the combined loss of two non-essential genes.   This phenomenon was originally used to study genetic interactions and functional redundancy in models organisms (Boone et al. 2007).   While synthetic lethal experiments have been performed in Drosophila melanogaster (Dobzhansky 1946), Caenorhabditis elegans (Lehner et al. 2006), Escherichia coli (Butland et al. 2008), Schizosaccharomyces pombe (Roguev et al. 2007), and various mammalian cell lines (Kaelin 2005), the most extensive synthetic lethal screens have been performed with the synthetic gene array (SGA) technique in Saccharomyces cerevisiae (Boone et al. 2007; Costanzo et al. 2011; Tong et al. 2004).  
+
+Originally defined by double mutants, a range of mechanisms for gene inactivation of synthetic lethal partners can induce cell death including RNA interference and drug treatment where it is sometimes called ‘induced essentiality’ or ‘non-oncogene addiction’ in cancer research (Fece de la Cruz et al. 2015).  Cellular viability is the main means to measure synthetic lethal effects experimentally because it is quantified and measured consistently (as shown in Figure 1), whereas qualitative measures of impaired organism viability are ambiguous and less relevant to yeast or cancer research.
+
+The cancer genetics laboratory are currently working on developing a synthetic lethal approach to target the tumour suppressor gene CDH1 which has been found to cause predispose early-onset breast and stomkach cancers in mutation carriers, including families of New Zealand M\={a}ori (Berx et al. 1995; Guilford et al. 1998).  These families are currently closely monitored and offered drastic preventative surgery.  If it were developed, a drug selective against CDH1 mutant tumours would serve not only as a chemopreventative alternative for these families but also benefit the wider community as a treatment for sporadic cases of CDH1 mutant cancer.  To augment experimental work on CDH1 with isogenic cell lines (Telford et al. 2015), a computational methodology is explored here to exploit public cancer genomic databases.
+
+There is a growing need for a robust approach to low-cost prediction of candidate synthetic lethal interaction, particularly in cancer research.  Exploiting existing public genomic databases is an ideal way to utilise existing resources with suitable sample sizes, data types, and different limitations to those of laboratory experiments.  A number of computation approaches to synthetic lethality have been developed but many of these rely on data not available to cancer researchers, methods that are difficult to replicate, over-fitted to a particular dataset, having mixed validation results, or do not have a software tool accessible to the research community.  These methodologies have been reviewed in a literature review to inform the development of a synthetic lethal interaction prediction tool (SLIPT) using gene expression or mutation data (as shown in Figure 2) from the Cancer Genome Atlas Project (TCGA) and to inform interpretation of the results.  
+\fi

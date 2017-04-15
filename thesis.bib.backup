@@ -9,6 +9,46 @@
 %% Use double curly brackets {{}} when you want to maintain your own
 %% capitalisation, otherwise bibtex will follow its own rules.
 %%
+@article{Neeley2009,
+author = {Neeley, E. Shannon and Kornblau, Steven M. and Coombes, Kevin R. and Baggerly, Keith A.},
+title = {Variable slope normalization of reverse phase protein arrays},
+journal = {Bioinformatics},
+volume = {25},
+number = {11},
+pages = {1384},
+year = {2009},
+doi = {10.1093/bioinformatics/btp174},
+URL = { + http://dx.doi.org/10.1093/bioinformatics/btp174},
+eprint = {/oup/backfile/Content_public/Journal/bioinformatics/25/11/10.1093/bioinformatics/btp174/2/btp174.pdf}
+}
+
+
+@article{Ju2015,
+author = {Ju, Zhenlin and Liu, Wenbin and Roebuck, Paul L. and Siwak, Doris R. and Zhang, Nianxiang and Lu, Yiling and Davies, Michael A. and Akbani, Rehan and Weinstein, John N. and Mills, Gordon B. and Coombes, Kevin R.},
+title = {Development of a robust classifier for quality control of reverse-phase protein arrays},
+journal = {Bioinformatics},
+volume = {31},
+number = {6},
+pages = {912},
+year = {2015},
+doi = {10.1093/bioinformatics/btu736},
+URL = { + http://dx.doi.org/10.1093/bioinformatics/btu736},
+eprint = {/oup/backfile/Content_public/Journal/bioinformatics/31/6/10.1093/bioinformatics/btu736/2/btu736.pdf}
+}
+
+@unpublished{KellyHDGC,
+	author	= "S Thomas Kelly and Andrew B Single and Bryony J Telford and Henry G Beetham and Tanis D Godwin and Augustine Chen and Michael A Black and Parry J Guilford",
+	title	= {Towards {HDGC} chemoprevention: vulnerabilities in E-cadherin-negative cells identified by genome-wide interrogation of isogenic cell lines and whole tumors},
+	year	= "2017",
+	note	= "Submitted to \textit{Cancer Prev Res}",
+}
+
+@unpublished{KellyBMC,
+	author	= "Kelly, ST and Chen, A and Guilford, PJ and Black, MA",
+	title	= {Synthetic lethal interaction prediction of target pathways in {E-cadherin} deficient breast cancers},
+	year	= "2017",
+	note	= "Submitted to \textit{BMC Genomics}",
+}
 
 
  @article{Kamada1989,
@@ -1888,7 +1928,7 @@ Amino Acid Sequence
 Animals
 Base Sequence
 Cell Division
-Cell Transformation, Neoplastic/genetics
+Cell Transformation, Neoplastic/geneticsXunpublished
 DNA Mutational Analysis
 Enzyme Activation
 Humans
