@@ -268,7 +268,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 
 \begin{table*}[!ht]
-\caption{Pathways for \textit{CDH1} partners from mtSLIPT}
+\caption{Pathways for \textit{CDH1} partners from mtSLIPT}ay_perm
 \label{tab:pathway_mtSL}
 \centering
 \resizebox{1 \textwidth}{!}{
@@ -3431,6 +3431,399 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 
 As breast cancer cell lines are the experimental system in which many cancer genetics and drug targets are investigated, these were analysed in addition to patient samples from TCGA. The cancer cell line encyclopaedia (CCLE) is a resource for genomics profiles across a range of cell lines. These have also been used to generate synthetic lethal candidates for comparison to those in experimental screen and predictions from TCGA expression data.
 A transcriptome experiment has been conducted by the Cancer Genetics Laboratory to test their \textit{CDH1}$^{-/-}$ null MCF10A cell lines compared to an otherwise isogenic wildtype \citep{Chen2014}. While differential expression analysis was inconclusive due to few technical replicates, this data was also useful to determine genes which were not detectable in MCF10A cell lines which would not be expected to detect synthetic lethality in siRNA screen data even if they were predicted to be synthetic lethal in expression data. 
+
+
+\begin{table*}[!ht]
+\caption{Candidate synthetic lethal genes against E-cadherin from SLIPT in CCLE}
+\label{tab:gene_ccle_SL}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{>{\em}sl^c^c^c^c^c}
+\rowstyle{\bfseries}
+ \em{Gene} & Observed & Expected & $\chi^2$ value & p-value & p-value (FDR) \\ 
+  \hline
+  \rowcolor{black!10}
+  ZEB1 & 24 & 115 & 555 & $7.84 \times 10^{-119}$ & $3.62 \times 10^{-116}$ \\ 
+  \rowcolor{black!5}
+  RP11-620J15.3 & 17 & 115 & 471 & $1.54 \times 10^{-100}$ & $3.68 \times 10^{-98}$ \\ 
+  \rowcolor{black!10}
+  AP1S2 & 20 & 115 & 462 & $1.38 \times 10^{-98}$ & $3.07 \times 10^{-96}$ \\ 
+  \rowcolor{black!5}
+  VIM & 24 & 115 & 424 & $1.73 \times 10^{-90}$ & $3.06 \times 10^{-88}$ \\ 
+  \rowcolor{black!10}
+  CCDC88A & 24 & 115 & 418 & $3.94 \times 10^{-89}$ & $6.86 \times 10^{-87}$ \\ 
+  \rowcolor{black!5}
+  RECK & 28 & 115 & 416 & $8.23 \times 10^{-89}$ & $1.42 \times 10^{-86}$ \\ 
+  \rowcolor{black!10}
+  AP1M1 & 16 & 115 & 414 & $2.42 \times 10^{-88}$ & $4.06 \times 10^{-86}$ \\ 
+  \rowcolor{black!5}
+  ZEB2 & 23 & 115 & 396 & $2.32 \times 10^{-84}$ & $3.4 \times 10^{-82}$ \\ 
+  \rowcolor{black!10}
+  WIPF1 & 25 & 115 & 390 & $4.9 \times 10^{-83}$ & $6.74 \times 10^{-81}$ \\ 
+  \rowcolor{black!5}
+  SLC35B4 & 29 & 115 & 386 & $3.2 \times 10^{-82}$ & $4.38 \times 10^{-80}$ \\ 
+  \rowcolor{black!10}
+  SACS & 28 & 115 & 373 & $2.13 \times 10^{-79}$ & $2.7 \times 10^{-77}$ \\ 
+  \rowcolor{black!5}
+  ST3GAL2 & 25 & 115 & 351 & $9.7 \times 10^{-75}$ & $1.08 \times 10^{-72}$ \\ 
+  \rowcolor{black!10}
+  ATP8B2 & 38 & 115 & 341 & $1.53 \times 10^{-72}$ & $1.61 \times 10^{-70}$ \\ 
+  \rowcolor{black!5}
+  IFFO1 & 39 & 115 & 332 & $1.66 \times 10^{-70}$ & $1.65 \times 10^{-68}$ \\ 
+  \rowcolor{black!10}
+  EMP3 & 38 & 115 & 329 & $5.04 \times 10^{-70}$ & $4.95 \times 10^{-68}$ \\ 
+  \rowcolor{black!5}
+  LEPRE1 & 40 & 115 & 325 & $5.4 \times 10^{-69}$ & $5.22 \times 10^{-67}$ \\ 
+  \rowcolor{black!10}
+  STARD9 & 39 & 115 & 311 & $4.52 \times 10^{-66}$ & $3.96 \times 10^{-64}$ \\ 
+  \rowcolor{black!5}
+  DENND5A & 48 & 115 & 304 & $1.89 \times 10^{-64}$ & $1.59 \times 10^{-62}$ \\ 
+  \rowcolor{black!10}
+  SYT11 & 38 & 115 & 300 & $1.21 \times 10^{-63}$ & $9.89 \times 10^{-62}$ \\ 
+  \rowcolor{black!5}
+  EID2B & 38 & 115 & 299 & $1.99 \times 10^{-63}$ & $1.61 \times 10^{-61}$ \\ 
+  \rowcolor{black!10}
+  NXPE3 & 35 & 115 & 294 & $1.71 \times 10^{-62}$ & $1.35 \times 10^{-60}$ \\ 
+  \rowcolor{black!5}
+  STX2 & 49 & 115 & 293 & $3.83 \times 10^{-62}$ & $3 \times 10^{-60}$ \\ 
+  \rowcolor{black!10}
+  ARHGEF6 & 43 & 115 & 289 & $2.2 \times 10^{-61}$ & $1.71 \times 10^{-59}$ \\ 
+  \rowcolor{black!5}
+  KATNAL1 & 50 & 115 & 283 & $4.45 \times 10^{-60}$ & $3.38 \times 10^{-58}$ \\ 
+  \rowcolor{black!10}
+  ANXA6 & 37 & 115 & 282 & $8.92 \times 10^{-60}$ & $6.67 \times 10^{-58}$ \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+
+
+
+\begin{table*}[!ht]
+\caption{Pathways for \textit{CDH1} partners from SLIPT in CCLE}
+\label{tab:pathway_ccle_exprSL}
+\centering
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccc}
+  \hline
+  \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
+  \hline
+  \rowcolor{black!10}
+  Cell Cycle & 442 & 207 & $1.2 \times 10^{-215}$ \\ 
+  \rowcolor{black!5}
+  Cell Cycle, Mitotic & 365 & 180 & $2.9 \times 10^{-209}$ \\ 
+  \rowcolor{black!10}
+  Signaling by Rho GTPases & 311 & 136 & $9.4 \times 10^{-156}$ \\ 
+  \rowcolor{black!5}
+  M Phase & 212 & 104 & $8.8 \times 10^{-145}$ \\ 
+  \rowcolor{black!10}
+  Infectious disease & 289 & 123 & $1.3 \times 10^{-142}$ \\ 
+  \rowcolor{black!5}
+  RHO GTPase Effectors & 207 &  98 & $5.3 \times 10^{-135}$ \\ 
+  \rowcolor{black!10}
+  HIV Infection & 200 &  94 & $2 \times 10^{-130}$ \\ 
+  \rowcolor{black!5}
+  Separation of Sister Chromatids & 140 &  77 & $5.6 \times 10^{-128}$ \\ 
+  \rowcolor{black!10}
+  Organelle biogenesis and maintenance & 258 & 107 & $1.4 \times 10^{-127}$ \\ 
+  \rowcolor{black!5}
+  Chromatin modifying enzymes & 181 &  87 & $4.7 \times 10^{-126}$ \\ 
+  \rowcolor{black!10}
+  Chromatin organization & 181 &  87 & $4.7 \times 10^{-126}$ \\ 
+  \rowcolor{black!5}
+  Mitotic Metaphase and Anaphase & 149 &  78 & $1.2 \times 10^{-124}$ \\ 
+  \rowcolor{black!10}
+  Mitotic Anaphase & 148 &  77 & $6.3 \times 10^{-123}$ \\ 
+  \rowcolor{black!5}
+  Developmental Biology & 421 & 142 & $1.6 \times 10^{-121}$ \\ 
+  \rowcolor{black!10}
+  RHO GTPases Activate Formins &  94 &  60 & $5.3 \times 10^{-118}$ \\ 
+  \rowcolor{black!5}
+  Mitotic Prometaphase &  93 &  59 & $5.4 \times 10^{-116}$ \\ 
+  \rowcolor{black!10}
+  Hemostasis & 421 & 138 & $7.2 \times 10^{-116}$ \\ 
+  \rowcolor{black!5}
+  Adaptive Immune System & 397 & 132 & $3.2 \times 10^{-115}$ \\ 
+  \rowcolor{black!10}
+  Assembly of the primary cilium & 143 &  72 & $2.4 \times 10^{-114}$ \\ 
+  \rowcolor{black!5}
+  Transcription & 133 &  68 & $6.2 \times 10^{-111}$ \\ 
+   \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+
+\begin{table*}[!ht]
+\caption{Candidate synthetic lethal genes against E-cadherin from SLIPT in breast CCLE}
+\label{tab:gene_ccle_brca_SL}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{>{\em}sl^c^c^c^c^c}
+\rowstyle{\bfseries}
+ \em{Gene} & Observed & Expected & $\chi^2$ value & p-value & p-value (FDR) \\ 
+  \hline
+  \rowcolor{black!10}
+  MIR155HG & 1 & 6.78 & 31.5 & $2.41 \times 10^{-6}$ & 0.00371 \\ 
+  \rowcolor{black!5}
+  ENPP2 & 1 & 6.78 & 30.7 & $3.47 \times 10^{-6}$ & 0.00383 \\ 
+  \rowcolor{black!10}
+  DCLK2 & 3 & 6.78 & 28.3 & $1.08 \times 10^{-5}$ & 0.0071 \\ 
+  \rowcolor{black!5}
+  PID1 & 1 & 6.78 & 27.8 & $1.34 \times 10^{-5}$ & 0.00791 \\ 
+  \rowcolor{black!10}
+  SCFD2 & 5 & 6.78 & 27.7 & $1.42 \times 10^{-5}$ & 0.00791 \\ 
+  \rowcolor{black!5}
+  FAT4 & 4 & 6.78 & 27.3 & $1.69 \times 10^{-5}$ & 0.00865 \\ 
+  \rowcolor{black!10}
+  ILK & 1 & 6.78 & 26.9 & $2.04 \times 10^{-5}$ & 0.00884 \\ 
+  \rowcolor{black!5}
+  RWDD1 & 0 & 6.78 & 26.8 & $2.15 \times 10^{-5}$ & 0.00884 \\ 
+  \rowcolor{black!10}
+  RIC8A & 2 & 6.78 & 26.8 & $2.2 \times 10^{-5}$ & 0.00884 \\ 
+  \rowcolor{black!5}
+  F2RL2 & 1 & 6.78 & 26.6 & $2.34 \times 10^{-5}$ & 0.00901 \\ 
+  \rowcolor{black!10}
+  SDCBP & 5 & 6.78 & 25.9 & $3.26 \times 10^{-5}$ & 0.0108 \\ 
+  \rowcolor{black!5}
+  PPM1F & 4 & 6.78 & 25.8 & $3.41 \times 10^{-5}$ & 0.0108 \\ 
+  \rowcolor{black!10}
+  IKBIP & 5 & 6.78 & 25.8 & $3.49 \times 10^{-5}$ & 0.0108 \\ 
+  \rowcolor{black!5}
+  SPRED1 & 3 & 6.78 & 25.5 & $3.97 \times 10^{-5}$ & 0.0108 \\ 
+  \rowcolor{black!10}
+  RNH1 & 1 & 6.78 & 25.4 & $4.22 \times 10^{-5}$ & 0.0108 \\ 
+  \rowcolor{black!5}
+  SYDE1 & 3 & 6.78 & 25.4 & $4.22 \times 10^{-5}$ & 0.0108 \\ 
+  \rowcolor{black!10}
+  LINC00968 & 1 & 6.78 & 25.2 & $4.63 \times 10^{-5}$ & 0.0109 \\ 
+  \rowcolor{black!5}
+  ARHGEF10 & 5 & 6.78 & 24.5 & $6.22 \times 10^{-5}$ & 0.0116 \\ 
+  \rowcolor{black!10}
+  P4HA1 & 0 & 6.78 & 24.5 & $6.34 \times 10^{-5}$ & 0.0116 \\ 
+  \rowcolor{black!5}
+  AZI2 & 2 & 6.78 & 24.5 & $6.34 \times 10^{-5}$ & 0.0116 \\ 
+  \rowcolor{black!10}
+  TNFAIP6 & 2 & 6.78 & 24.5 & $6.34 \times 10^{-5}$ & 0.0116 \\ 
+  \rowcolor{black!5}
+  CD200 & 4 & 6.78 & 24.5 & $6.37 \times 10^{-5}$ & 0.0116 \\ 
+  \rowcolor{black!10}
+  SMPD1 & 1 & 6.78 & 24.4 & $6.67 \times 10^{-5}$ & 0.0116 \\ 
+  \rowcolor{black!5}
+  ATP6V1G2 & 3 & 6.78 & 24.2 & $7.33 \times 10^{-5}$ & 0.0123 \\ 
+  \rowcolor{black!10}
+  FGF2 & 4 & 6.78 & 24.1 & $7.49 \times 10^{-5}$ & 0.0123 \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+
+
+
+\begin{table*}[!ht]
+\caption{Pathways for \textit{CDH1} partners from SLIPT in breast CCLE}
+\label{tab:pathway_ccle_brca_exprSL}
+\centering
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccc}
+  \hline
+  \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
+  \hline
+  \rowcolor{black!10}
+  Cell junction organization &  71 &   5 & 0.006 \\ 
+  \rowcolor{black!5}
+  Adherens junctions interactions &  29 &   3 & 0.006 \\ 
+  \rowcolor{black!10}
+  Dermatan sulfate biosynthesis &  11 &   2 & 0.006 \\ 
+  \rowcolor{black!5}
+  Non-integrin membrane-ECM interactions &  52 &   4 & 0.006 \\ 
+  \rowcolor{black!10}
+  Regulation of pyruvate dehydrogenase (PDH) complex &  12 &   2 & 0.0069 \\ 
+  \rowcolor{black!5}
+  Cell-extracellular matrix interactions &  17 &   2 & 0.021 \\ 
+  \rowcolor{black!10}
+  Pyruvate metabolism &  17 &   2 & 0.021 \\ 
+  \rowcolor{black!5}
+  Cell-cell junction organization &  46 &   3 & 0.039 \\ 
+  \rowcolor{black!10}
+  Synthesis of substrates in N-glycan biosythesis &  50 &   3 & 0.057 \\ 
+  \rowcolor{black!5}
+  Detoxification of Reactive Oxygen Species &  26 &   2 & 0.082 \\ 
+  \rowcolor{black!10}
+  Keratan sulfate biosynthesis &  28 &   2 & 0.092 \\ 
+  \rowcolor{black!5}
+  Laminin interactions &  28 &   2 & 0.092 \\ 
+  \rowcolor{black!10}
+  Cell-Cell communication & 118 &   5 & 0.12 \\ 
+  \rowcolor{black!5}
+  Keratan sulfate/keratin metabolism &  32 &   2 & 0.12 \\ 
+  \rowcolor{black!10}
+  Opioid Signalling &  63 &   3 & 0.12 \\ 
+  \rowcolor{black!5}
+   \begin{tabular}[c]{@{}l@{}}Biosynthesis of the N-glycan precursor (dolichol lipid-linked oligosaccharide) \\ and transfer to a nascent protein \end{tabular} &  63 &   3 & 0.12 \\ 
+  \rowcolor{black!10}
+  Intraflagellar transport &  34 &   2 & 0.14 \\ 
+  \rowcolor{black!5}
+  Signaling by Retinoic Acid &  36 &   2 & 0.16 \\ 
+  \rowcolor{black!10}
+  Pyruvate metabolism and Citric Acid (TCA) cycle &  36 &   2 & 0.16 \\ 
+  \rowcolor{black!5}
+  Nef mediated downregulation of MHC class I complex cell surface expression &  10 &   1 & 0.22 \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+
+\begin{table*}[!ht]
+\caption{Candidate synthetic lethal genes against E-cadherin from SLIPT in stomach CCLE}
+\label{tab:gene_ccle_stad_SL}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{>{\em}sl^c^c^c^c^c}
+\rowstyle{\bfseries}
+ \em{Gene} & Observed & Expected & $\chi^2$ value & $p-value$ & p-value (FDR) \\ 
+  \hline
+  \rowcolor{black!10}
+  ZEB1 & 1 & 4.45 & 36 & $2.84 \times 10^{-07}$ & 0.00175 \\ 
+  \rowcolor{black!5}
+  WDR47 & 0 & 4.45 & 26.7 & $2.3 \times 10^{-05}$ & 0.013 \\ 
+  \rowcolor{black!10}
+  KANK2 & 1 & 4.45 & 25.1 & $4.81 \times 10^{-05}$ & 0.0222 \\ 
+  \rowcolor{black!5}
+  LEPRE1 & 0 & 4.45 & 24.5 & $6.26 \times 10^{-05}$ & 0.0228 \\ 
+  \rowcolor{black!10}
+  KATNAL1 & 0 & 4.45 & 24.3 & $6.88 \times 10^{-05}$ & 0.0231 \\ 
+  \rowcolor{black!5}
+  TET1 & 0 & 4.45 & 23.9 & $8.23 \times 10^{-05}$ & 0.0249 \\ 
+  \rowcolor{black!10}
+  AP1S2 & 1 & 4.45 & 23.1 & $0.00012$ & 0.0273 \\ 
+  \rowcolor{black!5}
+  CDKN2C & 1 & 4.45 & 22.8 & $0.000136$ & 0.0292 \\ 
+  \rowcolor{black!10}
+  ARMC4 & 1 & 4.45 & 22.4 & $0.000164$ & 0.0315 \\ 
+  \rowcolor{black!5}
+  CSTF3 & 1 & 4.45 & 22.4 & $0.000166$ & 0.0315 \\ 
+  \rowcolor{black!10}
+  FAM216A & 1 & 4.45 & 22.4 & $0.000166$ & 0.0315 \\ 
+  \rowcolor{black!5}
+  ANKRD32 & 1 & 4.45 & 22.4 & $0.000166$ & 0.0315 \\ 
+  \rowcolor{black!10}
+  WDR35 & 1 & 4.45 & 22.4 & $0.000169$ & 0.0315 \\ 
+  \rowcolor{black!5}
+  ECI2 & 0 & 4.45 & 21.7 & $0.000232$ & 0.0378 \\ 
+  \rowcolor{black!10}
+  SAMD8 & 0 & 4.45 & 21.7 & $0.000232$ & 0.0378 \\ 
+  \rowcolor{black!5}
+  CHST12 & 0 & 4.45 & 21.7 & $0.000232$ & 0.0378 \\ 
+  \rowcolor{black!10}
+  RPL23AP32 & 0 & 4.45 & 21.7 & $0.000232$ & 0.0378 \\ 
+  \rowcolor{black!5}
+  STARD9 & 1 & 4.45 & 21.7 & $0.000232$ & 0.0378 \\ 
+  \rowcolor{black!10}
+  MCM8 & 0 & 4.45 & 21.5 & $0.000255$ & 0.0379 \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+
+
+\begin{table*}[!ht]
+\caption{Pathways for \textit{CDH1} partners from SLIPT in stomach CCLE}
+\label{tab:pathway_ccle_stad_exprSL}
+\centering
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccc}
+  \hline
+  \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
+  \hline
+  \rowcolor{black!10}
+  Nef mediated downregulation of MHC class I complex cell surface expression &  10 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Unwinding of DNA &  11 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  Processing of Intronless Pre-mRNAs &  13 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  E2F mediated regulation of DNA replication &  20 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  Chondroitin sulfate biosynthesis &  20 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Post-Elongation Processing of Intronless pre-mRNA &  21 &   1 &   1 \\ 
+  \rowcolor{black!10}
+ \begin{tabular}[c]{@{}l@{}} Nef-mediates down modulation of cell surface receptors by recruiting them \\ to clathrin adapters \end{tabular} &  21 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Processing of Capped Intronless Pre-mRNA &  21 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  Post-Elongation Processing of Intron-Containing pre-mRNA &  23 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Activation of the pre-replicative complex &  23 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  mRNA 3'-end processing &  23 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Golgi Associated Vesicle Biogenesis &  24 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  Lysosome Vesicle Biogenesis &  25 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Oncogene Induced Senescence &  27 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  The role of Nef in HIV-1 replication and disease pathogenesis &  28 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Cyclin D associated events in G1 &  29 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  G1 Phase &  29 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Cleavage of Growing Transcript in the Termination Region &  31 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  Activation of ATR in response to replication stress &  31 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  DNA strand elongation &  31 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+
+
 
 
 \section{Summary}
