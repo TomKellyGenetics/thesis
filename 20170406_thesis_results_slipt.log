@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  16 APR 2017 14:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  17 APR 2017 18:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1329,7 +1329,26 @@ Package: xfrac 2016/01/19 v6377 L3 Experimental split-level fractions
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count295
 )
-(./20170406_thesis_results_slipt.aux (./chapt3.aux) (./appendices.aux))
+(./20170406_thesis_results_slipt.aux (./chapt3.aux
+
+LaTeX Warning: Label `fig:slipt_expr' multiply defined.
+
+
+LaTeX Warning: Label `fig:slipt_expr@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:slipt_expr' multiply defined.
+
+
+LaTeX Warning: Label `fig:slipt_expr@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:slipt_expr' multiply defined.
+
+
+LaTeX Warning: Label `fig:slipt_expr@cref' multiply defined.
+
+) (./appendices.aux))
 \openout1 = `20170406_thesis_results_slipt.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 133.
@@ -1349,8 +1368,7 @@ LaTeX Font Info:    ... okay on input line 133.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 133.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 133.
 
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
+ (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 133.
@@ -1496,7 +1514,7 @@ Overfull \hbox (37.87411pt too wide) in paragraph at lines 271--328
  []
 
 [9] [10]
-<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png, id=351, 146
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png, id=357, 146
 1.46pt x 1461.46pt>
 File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png Graphic
  file (type png)
@@ -1525,8 +1543,23 @@ Package mdframed Info: mdframed inside float
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 347.
 
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png, id=362, 1461.
+46pt x 1461.46pt>
+File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png Graphic f
+ile (type png)
+
+<use CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png>
+Package pdftex.def Info: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordist
+x_Pub.png used on input line 355.
+(pdftex.def)             Requested size: 1461.45645pt x 1461.45645pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 360.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 360.
+
+
 LaTeX Warning: Reference `methods:enrichment' on page 11 undefined on input lin
-e 356.
+e 370.
 
 [11]
 
@@ -1544,12 +1577,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.366 \begin{table*}[!Hp]
+l.380 \begin{table*}[!Hp]
                          
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 2.94676pt on input line 553.
+LaTeX Warning: Float too large for page by 2.94676pt on input line 567.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -1558,14 +1591,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.558 \begin{table*}[!Hp]
+l.572 \begin{table*}[!Hp]
                          
 Option `H' ignored and `p' used.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.744 }
+l.758 }
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1573,7 +1606,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.744 }
+l.758 }
        
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1583,7 +1616,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.744 }
+l.758 }
        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1594,7 +1627,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.744 }
+l.758 }
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1602,7 +1635,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...color {Cluster_Red!15} G_${\alpha q}
                                                   $ signalling events & 149 ...
-l.744 }
+l.758 }
        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1613,39 +1646,39 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.744 }
+l.758 }
        
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-LaTeX Warning: Float too large for page by 8.98923pt on input line 745.
+LaTeX Warning: Float too large for page by 8.98923pt on input line 759.
 
 [13] [14] [15]
-<Venn_exprSL_siRNA_allgenes_reduced_Pub.png, id=390, 540.0175pt x 449.68pt>
+<Venn_exprSL_siRNA_allgenes_reduced_Pub.png, id=401, 540.0175pt x 449.68pt>
 File: Venn_exprSL_siRNA_allgenes_reduced_Pub.png Graphic file (type png)
 
 <use Venn_exprSL_siRNA_allgenes_reduced_Pub.png>
 Package pdftex.def Info: Venn_exprSL_siRNA_allgenes_reduced_Pub.png used on inp
-ut line 765.
+ut line 777.
 (pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 769.
+ mdframed uses option nobreak mdframed on input line 781.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 769.
+ mdframed uses option nobreak mdframed on input line 781.
 
-<Venn_mtSL_siRNA_allgenes_reduced_Pub.png, id=391, 540.0175pt x 449.68pt>
+<Venn_mtSL_siRNA_allgenes_reduced_Pub.png, id=402, 540.0175pt x 449.68pt>
 File: Venn_mtSL_siRNA_allgenes_reduced_Pub.png Graphic file (type png)
 
 <use Venn_mtSL_siRNA_allgenes_reduced_Pub.png>
 Package pdftex.def Info: Venn_mtSL_siRNA_allgenes_reduced_Pub.png used on input
- line 777.
+ line 789.
 (pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 781.
+ mdframed uses option nobreak mdframed on input line 793.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 781.
+ mdframed uses option nobreak mdframed on input line 793.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
@@ -1658,8 +1691,7 @@ Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- [16 <./Venn_exprSL_siRNA_allgenes_reduced_Pub.png>] [17 <./Venn_mtSL_siRNA_all
-genes_reduced_Pub.png>]
+ [16]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -1667,12 +1699,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.796 \begin{table*}[!Hp]
+l.808 \begin{table*}[!Hp]
                          
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 1.7224pt on input line 938.
+LaTeX Warning: Float too large for page by 1.7224pt on input line 950.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -1681,31 +1713,30 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.940 \begin{table*}[!Hp]
+l.952 \begin{table*}[!Hp]
                          
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 1.7224pt on input line 1082.
+LaTeX Warning: Float too large for page by 1.7224pt on input line 1094.
 
-<sample_size_dist_exprSL_1M_Pub.png, id=405, 803.0pt x 803.0pt>
+<sample_size_dist_exprSL_1M_Pub.png, id=412, 803.0pt x 803.0pt>
 File: sample_size_dist_exprSL_1M_Pub.png Graphic file (type png)
 
 <use sample_size_dist_exprSL_1M_Pub.png>
 Package pdftex.def Info: sample_size_dist_exprSL_1M_Pub.png used on input line 
-1093.
+1105.
 (pdftex.def)             Requested size: 802.99805pt x 802.99805pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1098.
+ mdframed uses option nobreak mdframed on input line 1110.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1098.
- [18] [19] [20]
-Overfull \hbox (2.21452pt too wide) in paragraph at lines 1105--1106
+ mdframed uses option nobreak mdframed on input line 1110.
+ [17] [18] [19]
+Overfull \hbox (2.21452pt too wide) in paragraph at lines 1117--1118
 \OT1/cmr/m/n/12 nalling path-ways in-clud-ing G$[]$ sig-nalling, GPCR down-stre
 am sig-nalling, and chemokine
  []
 
-[21 <./sample_size_dist_exprSL_1M_Pub.png>]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -1713,7 +1744,19 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1108 \begin{table*}[!Htp]
+l.1120 \begin{table*}[!Htp]
+                           
+Option `H' ignored and `p' used.
+
+[20]
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1244 \begin{table*}[!Htp]
                            
 Option `H' ignored and `p' used.
 
@@ -1724,19 +1767,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1232 \begin{table*}[!Htp]
-                           
-Option `H' ignored and `p' used.
-
-[22]
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1359 \begin{table*}[!Htp]
+l.1371 \begin{table*}[!Htp]
                            
 Option `H' ignored and `p' used.
 
@@ -1747,17 +1778,45 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1482 \begin{table*}[!Htp]
+l.1494 \begin{table*}[!Htp]
                            
 Option `H' ignored and `p' used.
 
 
-Overfull \hbox (20.81776pt too wide) in paragraph at lines 1644--1645
+Overfull \hbox (20.81776pt too wide) in paragraph at lines 1656--1657
 \OT1/cmr/m/n/12 Thus we have iden-ti-fied can-di-date syn-thetic lethal path-wa
 ys by gene set over-representation,
  []
 
-[23] [24] [25] [26] [27] [28] [29]
+[21] [22] [23] [24] [25] [26]
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png, id=476
+, 1461.46pt x 1461.46pt>
+File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png Gr
+aphic file (type png)
+
+<use CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png>
+Package pdftex.def Info: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordi
+stx_Pub_stad.png used on input line 2122.
+(pdftex.def)             Requested size: 1461.45645pt x 1461.45645pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 2127.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 2127.
+
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png, id=481, 
+1461.46pt x 1461.46pt>
+File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png Grap
+hic file (type png)
+
+<use CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png>
+Package pdftex.def Info: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordist
+x_Pub_stad.png used on input line 2135.
+(pdftex.def)             Requested size: 1461.45645pt x 1461.45645pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 2140.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 2140.
+
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -1765,14 +1824,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2106 \begin{table*}[!Hp]
+l.2146 \begin{table*}[!Hp]
                           
 Option `H' ignored and `p' used.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1780,7 +1839,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.2292 }
+l.2332 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1790,7 +1849,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.2292 }
+l.2332 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1801,7 +1860,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1809,7 +1868,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...or {Cluster_Orange!30} G_${\alpha s}
                                                   $ signalling events & 100 ...
-l.2292 }
+l.2332 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1820,7 +1879,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.2292 }
+l.2332 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -1829,7 +1888,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1840,7 +1899,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1848,7 +1907,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1859,7 +1918,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1867,7 +1926,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1878,7 +1937,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1886,7 +1945,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1897,7 +1956,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1905,7 +1964,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1916,7 +1975,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1924,7 +1983,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1935,7 +1994,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1943,7 +2002,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1954,7 +2013,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1962,7 +2021,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1973,7 +2032,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1981,7 +2040,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1992,13 +2051,13 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2292 }
+l.2332 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Float too large for page by 2.94676pt on input line 2293.
+LaTeX Warning: Float too large for page by 2.94676pt on input line 2333.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -2007,37 +2066,37 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2296 \begin{table*}[!Hp]
+l.2336 \begin{table*}[!Hp]
                           
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 6.98354pt on input line 2484.
+LaTeX Warning: Float too large for page by 6.98354pt on input line 2524.
 
 
-<Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png, id=480, 540.0175pt x 449.68pt
+<Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png, id=486, 540.0175pt x 449.68pt
 >
 File: Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png Graphic file (type png)
  <use Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png>
 Package pdftex.def Info: Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png used o
-n input line 2495.
+n input line 2535.
 (pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 2499.
+ mdframed uses option nobreak mdframed on input line 2539.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 2499.
+ mdframed uses option nobreak mdframed on input line 2539.
 
-<Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png, id=481, 540.0175pt x 449.68pt>
+<Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png, id=487, 540.0175pt x 449.68pt>
 File: Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png Graphic file (type png)
 
 <use Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png>
 Package pdftex.def Info: Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png used on 
-input line 2507.
+input line 2547.
 (pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 2511.
+ mdframed uses option nobreak mdframed on input line 2551.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 2511.
+ mdframed uses option nobreak mdframed on input line 2551.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -2046,14 +2105,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2515 \begin{table*}[!Hp]
+l.2555 \begin{table*}[!Hp]
                           
 Option `H' ignored and `p' used.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2064,7 +2123,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2072,7 +2131,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2083,7 +2142,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2091,7 +2150,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2102,7 +2161,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2110,7 +2169,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2121,7 +2180,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2129,7 +2188,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2140,7 +2199,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2148,7 +2207,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2159,7 +2218,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2167,7 +2226,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2178,7 +2237,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2186,7 +2245,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2197,7 +2256,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2205,7 +2264,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2216,7 +2275,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2224,7 +2283,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2235,13 +2294,13 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2656 }
+l.2696 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Float too large for page by 1.7224pt on input line 2657.
+LaTeX Warning: Float too large for page by 1.7224pt on input line 2697.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -2250,12 +2309,12 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2659 \begin{table*}[!Hp]
+l.2699 \begin{table*}[!Hp]
                           
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 1.7224pt on input line 2801.
+LaTeX Warning: Float too large for page by 1.7224pt on input line 2841.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -2264,14 +2323,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2804 \begin{table*}[!Htp]
+l.2844 \begin{table*}[!Htp]
                            
 Option `H' ignored and `p' used.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2921 }
+l.2961 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2279,7 +2338,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.2921 }
+l.2961 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2289,7 +2348,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.2921 }
+l.2961 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2300,7 +2359,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2921 }
+l.2961 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2308,7 +2367,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...color {Cluster_Red!15} G_${\alpha i}
                                                   $ signalling events & $8.9...
-l.2921 }
+l.2961 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2319,7 +2378,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.2921 }
+l.2961 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2332,14 +2391,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2924 \begin{table*}[!Htp]
+l.2964 \begin{table*}[!Htp]
                            
 Option `H' ignored and `p' used.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3041 }
+l.3081 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2347,7 +2406,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.3041 }
+l.3081 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2357,7 +2416,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3041 }
+l.3081 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2368,7 +2427,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3041 }
+l.3081 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2376,7 +2435,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...ed!15!Cluster_Blue!15} G_${\alpha q}
                                                   $ signalling events & $5.6...
-l.3041 }
+l.3081 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2387,7 +2446,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3041 }
+l.3081 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2396,7 +2455,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3041 }
+l.3081 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2404,7 +2463,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.3041 }
+l.3081 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2414,7 +2473,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3041 }
+l.3081 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2425,7 +2484,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3041 }
+l.3081 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2433,7 +2492,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...ed!15!Cluster_Blue!15} G_${\alpha i}
                                                   $ signalling events & $3.5...
-l.3041 }
+l.3081 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2444,7 +2503,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3041 }
+l.3081 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2453,7 +2512,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3041 }
+l.3081 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2461,7 +2520,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.3041 }
+l.3081 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2471,7 +2530,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3041 }
+l.3081 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2482,7 +2541,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3041 }
+l.3081 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2490,7 +2549,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...ed!20!Cluster_Blue!20} G_${\alpha s}
                                                   $ signalling events & $1.7...
-l.3041 }
+l.3081 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2501,14 +2560,14 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3041 }
+l.3081 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-LaTeX Warning: Float too large for page by 9.62149pt on input line 3042.
+LaTeX Warning: Float too large for page by 9.62149pt on input line 3082.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -2517,14 +2576,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3045 \begin{table*}[!Htp]
+l.3085 \begin{table*}[!Htp]
                            
 Option `H' ignored and `p' used.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3162 }
+l.3202 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2532,7 +2591,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.3162 }
+l.3202 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2542,7 +2601,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3162 }
+l.3202 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2553,7 +2612,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3162 }
+l.3202 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2561,7 +2620,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...color {Cluster_Red!15} G_${\alpha s}
                                                   $ signalling events & $1.1...
-l.3162 }
+l.3202 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2572,7 +2631,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3162 }
+l.3202 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2581,7 +2640,7 @@ Try to go on, since this might almost work.
 ! Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.3163 \end{table*}
+l.3203 \end{table*}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2596,14 +2655,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.3165 \begin{table*}[!Htp]
+l.3205 \begin{table*}[!Htp]
                            
 Option `H' ignored and `p' used.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3282 }
+l.3322 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2611,7 +2670,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.3282 }
+l.3322 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2621,7 +2680,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3282 }
+l.3322 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2632,7 +2691,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3282 }
+l.3322 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2640,7 +2699,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...ed!20!Cluster_Blue!20} G_${\alpha s}
                                                   $ signalling events & $5 \...
-l.3282 }
+l.3322 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2651,7 +2710,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3282 }
+l.3322 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2660,7 +2719,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3282 }
+l.3322 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2668,7 +2727,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.3282 }
+l.3322 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2678,7 +2737,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3282 }
+l.3322 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2689,7 +2748,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3282 }
+l.3322 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2697,7 +2756,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...ed!20!Cluster_Blue!20} G_${\alpha q}
                                                   $ signalling events & $5.1...
-l.3282 }
+l.3322 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2708,7 +2767,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3282 }
+l.3322 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2717,7 +2776,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3282 }
+l.3322 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2725,7 +2784,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.3282 }
+l.3322 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2735,7 +2794,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3282 }
+l.3322 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2746,7 +2805,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.3282 }
+l.3322 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2754,7 +2813,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...ed!15!Cluster_Blue!15} G_${\alpha i}
                                                   $ signalling events & $0.0...
-l.3282 }
+l.3322 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2765,32 +2824,37 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.3282 }
+l.3322 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-[30] [31] [32]
+[27] [28] [29] [30]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ò in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [33] [34] [35] [36] [37] [38] [39] [40] [41] [42 <./Venn_exprSL_siRNA_allgenes
-_reduced_Pub_stad.png>]) [43 <./Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png>]
- [44] [45] [46] [47] [48] [49] [50] [51]
-(./20170406_thesis_results_slipt.bbl [52
+ [31] [32] [33] [34] [35] [36] [37] [38] [39] [40]) [41]
+[42] [43] [44 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.pn
+g (PNG copy)>] [45 <./Venn_exprSL_siRNA_allgenes_reduced_Pub.png>] [46 <./Venn_
+mtSL_siRNA_allgenes_reduced_Pub.png>] [47 <./sample_size_dist_exprSL_1M_Pub.png
+>] [48 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.pn
+g (PNG copy)>] [49 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_P
+ub_stad.png (PNG copy)>] [50 <./Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png
+>] [51 <./Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png>] [52] [53] [54]
+[55] [56] (./20170406_thesis_results_slipt.bbl [57
 
 
 
-]) [53]
+]) [58]
 \openout2 = `appendices.aux'.
 
  (./appendices.tex
 Appendix A.
-<Raw(log)_Corr_eudist_Cut_part_Pub.png, id=633, 752.8125pt x 752.8125pt>
+<Raw(log)_Corr_eudist_Cut_part_Pub.png, id=676, 752.8125pt x 752.8125pt>
 File: Raw(log)_Corr_eudist_Cut_part_Pub.png Graphic file (type png)
 
 <use Raw(log)_Corr_eudist_Cut_part_Pub.png>
@@ -2799,16 +2863,16 @@ ne 24.
 (pdftex.def)             Requested size: 752.81065pt x 752.81065pt.
 
 
-LaTeX Warning: Reference `tab:qc' on page 54 undefined on input line 26.
+LaTeX Warning: Reference `tab:qc' on page 59 undefined on input line 26.
 
 
-LaTeX Warning: Reference `tab:qc' on page 54 undefined on input line 26.
+LaTeX Warning: Reference `tab:qc' on page 59 undefined on input line 26.
 
 Package mdframed Info: mdframed inside float 
  mdframed uses option nobreak mdframed on input line 28.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 28.
-<Raw(log)_Corr_eudist_Ann_Pub.png, id=634, 1606.0pt x 1606.0pt>
+<Raw(log)_Corr_eudist_Ann_Pub.png, id=677, 1606.0pt x 1606.0pt>
 File: Raw(log)_Corr_eudist_Ann_Pub.png Graphic file (type png)
 
 <use Raw(log)_Corr_eudist_Ann_Pub.png>
@@ -2819,19 +2883,19 @@ Package mdframed Info: mdframed inside float
  mdframed uses option nobreak mdframed on input line 40.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 40.
- [54
+ [59
 
 
- <./Raw(log)_Corr_eudist_Cut_part_Pub.png>] [55 <./Raw(log)_Corr_eudist_Ann_Pub
+ <./Raw(log)_Corr_eudist_Cut_part_Pub.png>] [60 <./Raw(log)_Corr_eudist_Ann_Pub
 .png>]
 Appendix B.
-[56
+[61
 
-] [57] [58] [59] [60] [61] [62] [63] [64]
+] [62] [63] [64] [65] [66] [67] [68] [69]
 Appendix C.
-[65
+[70
 
-]) [66]
+]) [71]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 173.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 173.
  (./20170406_thesis_results_slipt.aux (./chapt3.aux)
@@ -2849,12 +2913,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 32180 strings out of 494497
- 603391 string characters out of 6172400
- 1234363 words of memory out of 5000000
- 34890 multiletter control sequences out of 15000+600000
+ 32203 strings out of 494497
+ 604539 string characters out of 6172400
+ 1297268 words of memory out of 5000000
+ 34902 multiletter control sequences out of 15000+600000
  14508 words of font info for 53 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  59i,19n,94p,10463b,746s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2870,10 +2937,10 @@ msfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cms
 y8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb
 ></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on 20170406_thesis_results_slipt.pdf (66 pages, 1559125 bytes).
+Output written on 20170406_thesis_results_slipt.pdf (71 pages, 3411007 bytes).
 PDF statistics:
- 782 PDF objects out of 1000 (max. 8388607)
- 680 compressed objects within 7 object streams
- 190 named destinations out of 1000 (max. 500000)
- 289 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 826 PDF objects out of 1000 (max. 8388607)
+ 709 compressed objects within 8 object streams
+ 198 named destinations out of 1000 (max. 500000)
+ 304 words of extra memory for PDF output out of 10000 (max. 10000000)
 
