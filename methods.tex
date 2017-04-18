@@ -31,7 +31,7 @@ Unless otherwise specified, pathway analysis was performed for human pathway ann
 
 \subsection{Normalisation}
 
-Apart from the PAM50 subtyping procedure \citep{Parker2009}, which required RSEM normalised data (J.S. Parker personal communication), the analysis of the RNA-Seq data presented here was based on raw read count data. Raw read counts were log-scaled; samples removed for consistency (based on a Euclidean distance correlation matrix as described in section \ref{methods:sample_qc}); and the final dataset was TMM normalised \citep{Robinson2010} then processed using the \texttt{voom} function \citep{Law2014} in the \texttt{limma} R package \citep{limma}. Protein expression data generated from RPPA was normalised to dilution curves using the \texttt{SuperCurve} R package \cietp{Neeley2009, Ju2015}.
+Apart from the PAM50 subtyping procedure \citep{Parker2009}, which required RSEM normalised data (J.S. Parker personal communication), the analysis of the RNA-Seq data presented here was based on raw read count data. Raw read counts were log-scaled; samples removed for consistency (based on a Euclidean distance correlation matrix as described in section \ref{methods:sample_qc}); and the final dataset was TMM normalised \citep{Robinson2010} then processed using the \texttt{voom} function \citep{Law2014} in the \texttt{limma} R package \citep{limma}. Protein expression data generated from RPPA was normalised to dilution curves using the \texttt{SuperCurve} R package \citep{Neeley2009, Ju2015}.
 
 \begin{figure}[!ht]
 \begin{mdframed}
