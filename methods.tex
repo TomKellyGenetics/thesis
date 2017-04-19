@@ -75,10 +75,12 @@ Apart from the PAM50 subtyping procedure \citep{Parker2009}, which required RSEM
 \end{mdframed}
 \end{figure*}
 
+\FloatBarrier
 
 \subsection{Sample Triage} \label{methods:sample_qc}
 
 The TCGA breast RNA-Seq data were assessed for batch effects using a correlation matrix of the log-transformed raw counts for which a heatmap (Euclidean distance, complete linkage) is shown in Figure \ref{fig:corr_map}. While no major batch effects were detectable between the samples, 9 samples were excluded due to poor correlation with the remaining samples, as detailed in Table \ref{tab:qc}. These samples showed unusual density plots compared to the rest of the dataset, and exhibited low mean read count in Figures \ref{fig:density} and \ref{fig:boxplot}. A heatmap showing key clinical properties of these excluded samples and their correlation with the remainder of the samples is shown in Figure \ref{fig:corr_map_part}, and a full correlation heatmap (Figure \ref{fig:corr_map}) shows these samples as relatively poorly correlated outliers in the bottom rows and left columns.
+In addition to the clustering analysis (in Appendix \ref{appendix:sample_correlation}), replicate tumour samples were also examined for sample quality in Appendix \ref{appendix:replicate_samples}.
 %In both of these cases, a shared tissue source site or patient donor indicates that variations in sample preparation are likely behind the outlying expression profiles. The Christiana Healthcare patients were sequenced in triplicate when replicate samples were rare in this dataset suggesting there were suspected errors in these samples during data generation which have lower mean read count than most of the dataset. %tangent
 %Clinical characteristics over-represented in removed samples were ER+, ductal, state 2, luminal A or basal type tumours but these are the most common in the dataset. %relevance
 After removal of these samples, the TCGA dataset used for analysis consisted of the remaining 1168 samples (from 1040 patients): 1049 tumour samples, 112 normal tissue for matched samples, and 7 metastases.
@@ -329,6 +331,18 @@ Several computers were used to process and store data during this thesis (as sum
 }
 \end{table}
 
+
+\FloatBarrier
+
+\subsection{R Language and Packages}
+
+
+The R programming language has been used for the majority of this thesis. Current R installations across the machines used are given in Table \ref{tab:computers_r}. Local machines currently run the latest version of the R (at the time of writing) and remote machines run the versions and modules as managed by the system administrator.
+
+Various scripts and packages in this thesis were developed or run in previous versions of RStudio and R but these run without error in the current version of R (and the older versions on remote machines). The R packages which were used throughout this thesis (as detailed in Table \ref{tab:computers_r_packages} with versions specified) were installed from the Comprehensive R Archive Network \citep{CRAN}, Bioconductor \citep[][version 3.4; BiocInstaller 1.24.0]{Gentleman2004}, or GitHub. These packages were not updated when they would change the functionality of scripts or functions in packages, in particular imported data from annotation packages (used to define gene sets) have been saved as local files to continue using stable versions of these pathway data (across machines).
+
+This is a summary of the key packages which (in addition to their dependencies) have been used throughout this project. Where a package implementation has been central to the methods applied, they are described in more detail in the relevant section. A full table of packages used in this thesis can be found in Appendix \ref{appendix:software} (Table \ref{tab:computers_r_packages_full}). The R packages developed during this thesis are given in Table \ref{tab:computers_r_packages_dev} with the relevant sections describing their implementation and use where appropriate, in addition to further details on these functions in section \ref{methods:r_packages}. 
+
 \begin{table}[!ht]
 \centering
 \caption{R Installations used during Thesis}
@@ -351,50 +365,6 @@ Several computers were used to process and store data during this thesis (as sum
 \end{tabular}
 }
 \end{table}
-
-\subsection{R Language and Packages}
-
-
-The R programming language has been used for the majority of this thesis. Current R installations across the machines used are given in Table \ref{tab:computers_r}. Local machines currently run the latest version of the R (at the time of writing) and remote machines run the versions and modules as managed by the system administrator. Various scripts and packages in this thesis were developed or run in previous versions of RStudio and R but these run without error in the current version of R (and the older versions on remote machines). The R packages developed during this thesis are given in Table \ref{tab:computers_r_packages_dev} with the relevant sections describing their implementation and use where appropriate, in addition to further details on these functions in section \ref{methods:r_packages}. Various R packages were used throughout this thesis (as detailed in Table \ref{tab:computers_r_packages} with versions specified) installed from the Comprehensive R Archive Network \citep{CRAN}, Bioconductor \citep[][version 3.4; BiocInstaller 1.24.0]{Gentleman2004} , or GitHub. These packages were not updated when they would change the functionality of scripts or functions in packages, in particular imported data from annotation packages (used to define gene sets) have been saved as local files to continue using stable versions of these pathway data (across machines). This is a summary of the key packages which (in addition to their dependencies) have been used throughout this project. Where a package implementation has been central to the methods applied, they are described in more detail in the relevant section. A full table of packages used in this thesis can be found in the Appendix (Table \ref{tab:computers_r_packages_full}).  
-
-\begin{table}[!ht]
-\centering
-\caption{R Packages Developed during Thesis}
-\label{tab:computers_r_packages_dev}
-\resizebox{\textwidth}{!}{
-\begin{tabular}{|l|llc|}
-%\cline{2-4}
-\multicolumn{1}{l}{}           & \multicolumn{1}{l}{\bfseries Package Name} & \multicolumn{1}{l}{\bfseries Description                                                   and GitHub Repository}                                                                   & \multicolumn{1}{c}{\bfseries Section} \\
-\cline{2-4}  \rowcolor{black!10}
-\multicolumn{1}{l|}{\cellcolor{white}}           & \multicolumn{1}{l}{\texttt{slipt}}        & \begin{tabular}[c]{@{}l@{}}Synthetic lethal detection by SLIPT (to accompany publication)  \\ \url{https://github.com/TomKellyGenetics/slipt}                         \end{tabular} & \ref{methods:SLIPT}  \\
-\hline
-\rowcolor{black!5} \cellcolor{white}
-visualisation                  & \texttt{vioplotx}                          & \begin{tabular}[c]{@{}l@{}}Customised violin plots (based on \texttt{vioplot})             \\ \url{https://github.com/TomKellyGenetics/vioplotx}                      \end{tabular} &                              \\
-%\cline{2-4}
-\rowcolor{black!10} \cellcolor{white}
-                               & \texttt{heatmap.2x}                      & \begin{tabular}[c]{@{}l@{}}Customised heatmaps (based on \texttt{gplots})                  \\ \url{https://github.com/TomKellyGenetics/heatmap.2x}                    \end{tabular} & \ref{methods:heatmap} \\
-\hline
-\rowcolor{black!5} \cellcolor{white}
-\texttt{igraph.extensions}     & \texttt{igraph.extensions}               & \begin{tabular}[c]{@{}l@{}}Meta-package to install the follow iGraph functions             \\ \url{https://github.com/TomKellyGenetics/igraph.extensions}             \end{tabular} & \ref{methods:igraph_extensions}    \\
-%\cline{2-4}
-
-\rowcolor{black!10} \cellcolor{white}
-                               & \texttt{plot.igraph}                     & \begin{tabular}[c]{@{}l@{}}Custom plotting of directed graphs                              \\ \url{https://github.com/TomKellyGenetics/plot.igraph}                   \end{tabular} & \ref{methods:network_metrics}      \\
-%\cline{2-4}
-\rowcolor{black!5} \cellcolor{white}
-                               & \texttt{info.centrality}                 & \begin{tabular}[c]{@{}l@{}}Computing information centrality from network efficiency        \\ \url{https://github.com/TomKellyGenetics/info.centrality}               \end{tabular} & \ref{methods:graphsim}\\
-%\cline{2-4}
-
-\rowcolor{black!10} \cellcolor{white}
-                               & \texttt{pathway.structure.permutation}   & \begin{tabular}[c]{@{}l@{}}Testing pathway structure with resampling analysis              \\ \url{https://github.com/TomKellyGenetics/pathway.structure.permutation} \end{tabular} & \ref{methods:network_permutation}  \\
-%\cline{2-4}
-\rowcolor{black!5} \cellcolor{white}
-                               & \texttt{graphsim}                        & \begin{tabular}[c]{@{}l@{}}Generating simulated expression from graph structures           \\ \url{https://github.com/TomKellyGenetics/graphsim}                      \end{tabular} & \ref{methods:graphsim}\\
-\hline 
-\end{tabular} 
-}
-\end{table}
-
 
 %\resizebox{\textwidth}{!}{
 \setlength{\LTleft}{-20cm plus -1fill}
@@ -537,6 +507,45 @@ stats        & 3.3.2          & 3.3.2 & base            \\
 \hline
 \end{longtable}
 
+\begin{table}[!ht]
+\centering
+\caption{R Packages Developed during Thesis}
+\label{tab:computers_r_packages_dev}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|l|llc|}
+%\cline{2-4}
+\multicolumn{1}{l}{}           & \multicolumn{1}{l}{\bfseries Package Name} & \multicolumn{1}{l}{\bfseries Description                                                   and GitHub Repository}                                                                   & \multicolumn{1}{c}{\bfseries Section} \\
+\cline{2-4}  \rowcolor{black!10}
+\multicolumn{1}{l|}{\cellcolor{white}}           & \multicolumn{1}{l}{\texttt{slipt}}        & \begin{tabular}[c]{@{}l@{}}Synthetic lethal detection by SLIPT (to accompany publication)  \\ \url{https://github.com/TomKellyGenetics/slipt}                         \end{tabular} & \ref{methods:SLIPT}  \\
+\hline
+\rowcolor{black!5} \cellcolor{white}
+visualisation                  & \texttt{vioplotx}                          & \begin{tabular}[c]{@{}l@{}}Customised violin plots (based on \texttt{vioplot})             \\ \url{https://github.com/TomKellyGenetics/vioplotx}                      \end{tabular} &                              \\
+%\cline{2-4}
+\rowcolor{black!10} \cellcolor{white}
+                               & \texttt{heatmap.2x}                      & \begin{tabular}[c]{@{}l@{}}Customised heatmaps (based on \texttt{gplots})                  \\ \url{https://github.com/TomKellyGenetics/heatmap.2x}                    \end{tabular} & \ref{methods:heatmap} \\
+\hline
+\rowcolor{black!5} \cellcolor{white}
+\texttt{igraph.extensions}     & \texttt{igraph.extensions}               & \begin{tabular}[c]{@{}l@{}}Meta-package to install the follow iGraph functions             \\ \url{https://github.com/TomKellyGenetics/igraph.extensions}             \end{tabular} & \ref{methods:igraph_extensions}    \\
+%\cline{2-4}
+
+\rowcolor{black!10} \cellcolor{white}
+                               & \texttt{plot.igraph}                     & \begin{tabular}[c]{@{}l@{}}Custom plotting of directed graphs                              \\ \url{https://github.com/TomKellyGenetics/plot.igraph}                   \end{tabular} & \ref{methods:network_metrics}      \\
+%\cline{2-4}
+\rowcolor{black!5} \cellcolor{white}
+                               & \texttt{info.centrality}                 & \begin{tabular}[c]{@{}l@{}}Computing information centrality from network efficiency        \\ \url{https://github.com/TomKellyGenetics/info.centrality}               \end{tabular} & \ref{methods:graphsim}\\
+%\cline{2-4}
+
+\rowcolor{black!10} \cellcolor{white}
+                               & \texttt{pathway.structure.permutation}   & \begin{tabular}[c]{@{}l@{}}Testing pathway structure with resampling analysis              \\ \url{https://github.com/TomKellyGenetics/pathway.structure.permutation} \end{tabular} & \ref{methods:network_permutation}  \\
+%\cline{2-4}
+\rowcolor{black!5} \cellcolor{white}
+                               & \texttt{graphsim}                        & \begin{tabular}[c]{@{}l@{}}Generating simulated expression from graph structures           \\ \url{https://github.com/TomKellyGenetics/graphsim}                      \end{tabular} & \ref{methods:graphsim}\\
+\hline 
+\end{tabular} 
+}
+\end{table}
+
+\FloatBarrier
 
 \subsection{High Performance and Parallel Computing} \label{methods:HPC}
 Another enabling technology for bioinformatics is parallel computing, performing independent operations in separate cores: this ``multithreading'' is widely used to increase the time to compute results. Bioinformatics is particularly amenable to this since performing multiple iterations of a simulation or testing separate genes is often ``embarrassingly parallel``, being completely independent of the results of each other. As such parallel computing is offered by many high-performance ``supercomputers'' including national research infrastructure.

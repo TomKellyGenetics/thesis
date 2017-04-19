@@ -434,13 +434,14 @@ Based on these results, potential synthetic lethal partners of \textit{CDH1} inc
 %%appendix
 %\label{tab:pathway_clusters_mtSL}
 
-\section{Comparison of synthetic lethal gene candidates}
+\section{Comparison of synthetic lethal gene candidates} \label{chapt3:compare_SL_genes}  
 
-\subsection{Comparison with differential expression}
+\subsection{Comparison with differential expression} \label{chapt3:compare_differential_expression}
 
-\subsection{Comparison with correlation}
 
-\subsection{Comparison with primary siRNA screen candidates}
+\subsection{Comparison with primary siRNA screen candidates} \label{chapt3:primary_screen}
+
+Seconday screen results in Appendix \ref{appendix:secondary_screen}
 
 Gene candidates were compared between computational and experimental screening approaches in Figure \ref{fig:Venn_allgenes}. The number of genes detected by both methods did not produce a significant overlap but these may be difficult to compare due to vast differences between the detection methods. These intersecting genes could be useful in drug triage as they were replicated across both methods and pathway over-represent\-ation differed between the sections of the Venn diagram (see Figure \ref{fig:Venn_allgenes}).
 
@@ -464,6 +465,79 @@ The overlap between synthetic lethal from bioinformatics SLIPT predictions and s
 Both of these are being applied with developing a method and overcoming technical challenges for the latter being the focus of recent work. The main challenge at the moment is to compare SLIPT results to experimental candidates and explain why so few genes (and so many pathways) overlap.
 
 As discussed above, comparing genes between experimental screen candidates and prediction from TCGA expression data has been difficult. Figure 3 summarises the approaches to comparing genes accounting for some of the differences between the datasets. Of particular concern are the over-represented pathways in genes detected by both methods. There is no statistical evidence that SLIPT predicted genes or siRNA candidates are enriched in with each other. The siRNA candidates themselves are over-represented with many pathways including GPCRs so any intersection with these would contain some of these pathways. Whether these pathways are contained in the intersection more than expected by chance is the problem the two approaches below were designed to tackle.
+
+\subsubsection{Comparison with correlation} \label{chapt3:compare_correlation}
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \includegraphics{vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf}
+   }
+   \end{center}
+   \caption[Compare exprSLIPT and siRNA genes with correlation]{\small \textbf{Compare exprSLIPT and siRNA genes with correlation.} Caption, Caption, Caption...
+}
+\label{fig:compare_correlation_SL}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \includegraphics{exprSLIPT_siRNA_vs_Correlation_with_CDH1.png}
+   }
+   \end{center}
+   \caption[Compare exprSLIPT and siRNA genes with correlation]{\small \textbf{Compare exprSLIPT and siRNA genes with correlation.} Caption, Caption, Caption...
+}
+\label{fig:compare_points_correlation_SL}
+\end{mdframed}
+\end{figure*}
+
+\clearpage
+\subsubsection{Comparison with viability} \label{chapt3:compare_viability}
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \includegraphics{vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
+   }
+   \end{center}
+   \caption[Compare exprSLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare exprSLIPT and siRNA genes with siRNA viability.} Caption, Caption, Caption...
+}
+\label{fig:compare_viability_SL}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \includegraphics{exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png}
+   }
+   \end{center}
+   \caption[Compare exprSLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare exprSLIPT and siRNA genes with siRNA viability.} Caption, Caption, Caption...
+}
+\label{fig:compare_points_viability_SL}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!ht]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.5 \textwidth}{!}{
+    \includegraphics{exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
+   }
+   \end{center}
+   \caption[Compare exprSLIPT and siRNA genes with viability]{\small \textbf{Compare exprSLIPT and siRNA genes with viability.} Caption, Caption, Caption...
+}
+\label{fig:compare_pval_points_correlation_SL}
+\end{mdframed}
+\end{figure*}
+
+
+\FloatBarrier
 
 \subsubsection{Comparison of screen at pathway level}
 
@@ -897,6 +971,7 @@ However, we note that several pathways, including some immune functions and neur
 %\label{tab:pathway_perm_overlap_mtSL}
 
 \subsection{Comparison with secondary screen siRNA screen candidates}
+
 
 \subsubsection{Comparison of candidate SL Pathways}
 
@@ -2274,3 +2349,16 @@ As specific genes were difficult to replicate across experiments, gene expressio
 The expression profiles of the SL partners of \textit{CDH1} predicted from the TCGA breast cancer RNA-Seq data in \textit{CDH1} low tumours (where synthetic lethal partners are expected to have compensating high or stable expression) are shown in Figure 7 and their corresponding functional enrichment is given below in Table 5, computed as WikiPathways in GeneSetDB \citep{genesetdb}.  The 3 subgroups of genes are showed functional organisation of expression profiles in \textit{CDH1} low breast tumours.  The first group is enriched for G protein coupled receptors, an established drug target and supported in cell line experiments \citep{Telford2015}.  The second group contains genes involved in development and metabolism consistent with cancer cells showing stem cell properties and the Warburg hypothesis \citep{Merlos-Suarez2011, Warburg1956}.  The third group contains cell signalling and focal adhesion functions, including pathways involved in cancer proliferation, metastasis, and consistent with internal synthetic lethality within the pathways containing \textit{CDH1} \citep{Barabasi2004}.
 
 Ductal breast cancers show higher expression of synthetic lethal partners suggesting treatment would be more effective in this tumour subtype.  However, there is consistently low expression of SL partners in ER negative tumours, although this is independent of tumour stage and consistent with poor prognosis in these patients and could inform other treatment strategies or prevent ineffective treatment further impacting quality of life in these patients.  These results suggest that synthetic lethal partner expression varies between patients; that these different tumour classes would react differently to the same treatment; that treatment of different pathways and combinations in different patients is the most effective approach to target genes compensating for \textit{CDH1} gene loss; and the expression of synthetic partners could be a clinically important biomarker.  While these are important clinical implications, the synthetic lethal predictions lack enough confidence for direct translation into pre-clinical models or clinical applications leading to a need for statistical modelling and simulation of synthetic lethality in genomics expression data.
+
+
+
+
+
+
+
+%CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.pdf
+%CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.pdf
+%CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf
+%CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pdf
+%CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf
+%CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf

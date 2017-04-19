@@ -6,6 +6,12 @@
 %\patchcmd{\ttlh@hang}{\noindent}{}{}{}
 %\makeatother
 
+%%spaceing for chapter headers
+\titleformat{\chapter}[display]   
+{\normalfont\huge\bfseries}{\chaptertitlename\ \thechapter}{10pt}{\Huge}   
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+%add subsubsubsection
 \titleclass{\subsubsubsection}{straight}[\subsection]
 
 \newcounter{subsubsubsection}[subsubsection]
@@ -34,5 +40,6 @@
 \def\l@subparagraph{\@dottedtocline{6}{15em}{6em}}
 \makeatother
 
+%enable subsubsubsection to TOC
 \setcounter{secnumdepth}{4}
 \setcounter{tocdepth}{4}

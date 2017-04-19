@@ -22,11 +22,12 @@
 \begin{figure*}[!ht]
 \begin{mdframed}
   \begin{center}
-  \resizebox{0.7 \textwidth}{!}{
+  \resizebox{0.75 \textwidth}{!}{
     \includegraphics{Raw(log)_Corr_eudist_Cut_part_Pub.png}
    }
    \end{center}
-   \caption[Correlation profiles of removed samples]{\small \textbf{Correlation profiles of removed samples.} Correlation matrix heatmap (Euclidean distance) of all samples in TCGA breast cancer dataset (left) clustered for all samples against removed samples (top): tissue source site (TSS), sample type with reds for tumour and greens for normal, patient (A2QH in pink), with varied analyte and plate (corresponding to batch in Table \ref{tab:qc}). Excluded samples cluster at the bottom and annotation (left) show  shared properties between samples in the dataset.}
+   \caption[Correlation profiles of removed samples]{\small \textbf{Correlation profiles of removed samples.} Correlation matrix heatmap (Euclidean distance) of all samples in TCGA breast cancer dataset (left) clustered for all samples against removed samples (top): tissue source site (TSS), sample type with reds for tumour and greens for normal, patient (A2QH in pink), with varied analyte and plate (corresponding to batch in Table \ref{tab:qc}). Excluded samples cluster at the bottom and annotation (left) show  shared properties between samples in the dataset.
+   }
 \label{fig:corr_map_part}
 \end{mdframed}
 \end{figure*}
@@ -43,6 +44,7 @@
 \end{mdframed}
 \end{figure*}
 
+\clearpage
 
 \section{Replicate Samples in TCGA Breast}
 \label{appendix:replicate_samples}
@@ -51,7 +53,7 @@ Replicate samples were picked where possible from the TCGA breast cancer gene ex
 
 Another consideration are the samples which were removed for quality concerns (in section \ref{methods:sample_qc}). While these were selected by unbiased hierarchical clustering (See Figure \ref{fig:corr_map}), it is notable that many of the exluded (tumour) samples were performed in replicate despite relatively few replicate samples in the overall dataset. These samples correlate poorly with the rest of the dataset, in addition to with replicate samples.
 
-\begin{figure*}[!ht]
+\begin{figure*}[!hb]
 \begin{mdframed}
   \centering
   \resizebox{0.3\textwidth}{!}{

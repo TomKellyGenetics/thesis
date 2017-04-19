@@ -1,4 +1,4 @@
-\begin{thebibliography}{268}
+\begin{thebibliography}{271}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibAnnoteFile}[1]{%
   \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
@@ -77,8 +77,9 @@ Akobeng, A.K. (2007) Understanding diagnostic tests 3: receiver operating
 \bibAnnoteFile{ASCO2017}
 
 \bibitem[\protect\astroncite{Araki \emph{et~al.}}{2012}]{genesetdb}
-Araki, H., Knapp, C., Tsai, P., and Print, C. (2012) Genesetdb: A comprehensive
-  meta-database, statistical and visualisation framework for gene set analysis.
+Araki, H., Knapp, C., Tsai, P., and Print, C. (2012) {GeneSetDB}: A
+  comprehensive meta-database, statistical and visualisation framework for gene
+  set analysis.
 \newblock \emph{FEBS Open Bio}, \textbf{2}: 76--82.
 \bibAnnoteFile{genesetdb}
 
@@ -324,6 +325,14 @@ Butland, G., Babu, M., Diaz-Mejia, J.J., Bohdana, F., Phanse, S., Gold, B.,
   \url{http://www.cancerresearchuk.org/about-cancer/causes-of-cancer/inherited-cancer-genes-and-increased-cancer-risk/family-history-and-inherited-cancer-genes}.
 \newblock Accessed: 22/03/2017.
 \bibAnnoteFile{CancerResearchUK2017}
+
+\bibitem[\protect\astroncite{{\acroauthor{Cancer Cell Line
+  Encyclopedia}{CCLE}}}{2014}]{CCLE}
+{\acroauthor{Cancer Cell Line Encyclopedia}{CCLE}} (2014) {Broad-Novartis
+  Cancer Cell Line Encyclopedia}.
+\newblock \url{http://www.broadinstitute.org/ccle}.
+\newblock Accessed: 07/11/2014.
+\bibAnnoteFile{CCLE}
 
 \bibitem[\protect\astroncite{{\acroauthor{cBioPortal for Cancer
   Genomics}{cBioPortal}}}{2017}]{cBioPortal}
@@ -918,6 +927,13 @@ Joachims, T. (1999) Making large-scale support vector machine learning
   (editors), \emph{Advances in kernel methods}, 169--184. MIT Press.
 \bibAnnoteFile{Joachims1999}
 
+\bibitem[\protect\astroncite{Ju \emph{et~al.}}{2015}]{Ju2015}
+Ju, Z., Liu, W., Roebuck, P.L., Siwak, D.R., Zhang, N., Lu, Y., Davies, M.A.,
+  Akbani, R., Weinstein, J.N., Mills, G.B., \emph{et~al.} (2015) Development of
+  a robust classifier for quality control of reverse-phase protein arrays.
+\newblock \emph{Bioinformatics}, \textbf{31}(6): 912.
+\bibAnnoteFile{Ju2015}
+
 \bibitem[\protect\astroncite{Kaelin, Jr}{2005}]{Kaelin2005}
 Kaelin, Jr, W. (2005) The concept of synthetic lethality in the context of
   anticancer therapy.
@@ -1212,6 +1228,12 @@ Muzny, D.M., Bainbridge, M.N., Chang, K., Dinh, H.H., Drummond, J.A., Fowler,
   cancer}.
 \newblock \emph{Nature}, \textbf{487}(7407): 330--337.
 \bibAnnoteFile{TCGA2012CRC}
+
+\bibitem[\protect\astroncite{Neeley \emph{et~al.}}{2009}]{Neeley2009}
+Neeley, E.S., Kornblau, S.M., Coombes, K.R., and Baggerly, K.A. (2009) Variable
+  slope normalization of reverse phase protein arrays.
+\newblock \emph{Bioinformatics}, \textbf{25}(11): 1384.
+\bibAnnoteFile{Neeley2009}
 
 \bibitem[\protect\astroncite{Noonan \emph{et~al.}}{2006}]{Paabo2006}
 Noonan, J.P., Coop, G., Kudaravalli, S., Smith, D., Krause, J., Alessi, J.,
