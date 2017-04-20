@@ -98,7 +98,9 @@ This analysis was replicated on a (smaller) stomach cancer dataset but it was le
 \chapter{Mutation Analysis in Breast Cancer}
 \label{appendix:mtSL}
 
-\section{Synthetic Lethal Genes and Pathways}
+\section{Synthetic Lethal Genes and Pathways} \label{results:mtSL_genes}
+
+SLIPT expression analysis (described in section \ref{methods:SLIPT}) on TCGA breast cancer data ($n = 969$) found the following genes and pathways, described in sections \ref{results:exprSL_genes} and \ref{results:exprSL_pathways}.
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal genes against E-cadherin from mtSLIPT}
@@ -231,8 +233,16 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 }
 \end{table*}
 
+\FloatBarrier
+
+The genes and pathways identified in Tables \ref{tab:gene_mtSL} and \ref{tab:pathway_mtSL} were derived from comparing the expression profiles of potential partners to the mutation status of \textit{CDH1} (as shown in Figure \ref{fig:SLIPT_Method_mtSL}). Thus the following analysis is only limited the samples for which TCGA provides both expression and somatic mutation data.
+
+\FloatBarrier
+
 %\clearpage
-%\section{Synthetic Lethal Expression Profiles}
+\section{Synthetic Lethal Expression Profiles} \label{results:mtSL_clusters}
+
+Similar to the analysis of synthetic lethal partners against low \textit{CDH1} expression in \ref{results:exprSL_clusters}, the partners detected from \textit{CDH1} were also examined for their expression profiles and the pathway composition of gene clusters.
 
 \begin{figure*}[!ht]
 \begin{mdframed}
@@ -246,6 +256,8 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \label{fig:slipt_expr_mtSL}
 \end{mdframed}
 \end{figure*}
+
+\FloatBarrier
 
 
 \begin{table*}[!Hp]
@@ -441,6 +453,8 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \clearpage
 \section{Comparison to Primary Screen}
 
+The mutation synthetic lethal partners with \textit{CDH1} were also compared to siRNA primary screen data \citep{Telford2015}, as performed in section \ref{chapt3:primary_screen}. These are expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure \ref{fig:Venn_allgenes_mtSL}. This may be affected by lower sample size for mutations in TCGA data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
+
 \begin{figure}[!ht]
 \begin{mdframed}
   \centering
@@ -453,6 +467,10 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{mdframed}
 \end{figure}
 
+\FloatBarrier
+
+Despite a lower sample size (and low number of a predicted partners) for mutation analysis, the pathway composition (Tables \ref{tab:pathway_mtSL} and \ref{tab:Venn_over-representation_mtSL}) is simlar to expression analysis, as described in section \ref{chapt3:compare_pathway}. In particular, the resampling analysis (section \ref{chapt3:compare_pathway_perm_mtSL}) supported many of the results of expression analysis (section \ref{chapt3:compare_pathway_perm}) with Tables \ref{tab:pathway_perm_mtSL} and \ref{tab:pathway_perm_overlap_mtSL} detecting many of the same or functionally-related pathways.
+ 
 
 \begin{table*}[!Hp]
 \caption{Pathway composition for \textit{CDH1} partners from mtSLIPT and siRNA}
@@ -600,7 +618,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 
 \clearpage
-\section{Resampling Analysis}
+\subsection{Resampling Analysis}  \label{chapt3:compare_pathway_perm_mtSL}
 
 \begin{table*}[!htp]
 \caption{Pathways for \textit{CDH1} partners from mtSLIPT}
@@ -883,9 +901,56 @@ Reactome Pathway & Over-representation & Permutation \\
 \end{table}
 \fi
 
+\clearpage
+\section{Compare SLIPT genes} \label{chapt3:compare_mtSL}}
+
+The mutation synthetic lethal partners with \textit{CDH1} were also compared to siRNA primary screen data \citep{Telford2015}, by correlation and siRNA viability as described in sections \ref{chapt3:compare_correlation} and \ref{chapt3:compare_viability}.
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \includegraphics{vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf}
+   }
+   \end{center}
+   \caption[Compare mtSLIPT and siRNA genes with correlation]{\small \textbf{Compare mtSLIPT and siRNA genes with correlation.} Caption, Caption, Caption...
+}
+\label{fig:compare_correlation_mtSL}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \includegraphics{mtSLIPT_siRNA_vs_Correlation_with_CDH1.png}
+   }
+   \end{center}
+   \caption[Compare mtSLIPT and siRNA genes with correlation]{\small \textbf{Compare mtSLIPT and siRNA genes with correlation.} Caption, Caption, Caption...
+}
+\label{fig:compare_points_correlation_mtSL}
+\end{mdframed}
+\end{figure*}
+
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \includegraphics{vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
+   }
+   \end{center}
+   \caption[Compare mtSLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare mtSLIPT and siRNA genes with siRNA viability.} Caption, Caption, Caption...
+}
+\label{fig:compare_viability_mtSL}
+\end{mdframed}
+\end{figure*}
+
 
 \clearpage
-\section{Metagene Analysis}
+\section{Metagene Analysis} \label{chapt3:metagene_mtSL}
+
+Metagene analysis was also performed for synthetic lethal candidates for \textit{CDH1} mutation. These are described and compared to mutation analysis in section \ref{chapt3:metagene_SL}. 
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from mtSLIPT}
@@ -960,6 +1025,8 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 
 \clearpage
 \section{Mutation Variation}
+Mutations have different effects as shown by the following examples in cancer genes.
+
 \subsection{Mutation Frequency}
 
 %Mutation_locus_PIK3CA.pdf
@@ -972,17 +1039,17 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 %
         \subfigure[\textit{PI3KCA}]{%
             \label{fig:simulate_function:first}
-            \includegraphics[width=0.6\textwidth]{Mutation_locus_PIK3CA.pdf}
+            \includegraphics[width=0.75\textwidth]{Mutation_locus_PIK3CA.pdf}
         }
         \subfigure[\textit{PI3KR1}]{%
             \label{fig:simulate_function:first}
-            \includegraphics[width=0.6\textwidth]{Mutation_locus_PIK3R1.pdf}
+            \includegraphics[width=0.75\textwidth]{Mutation_locus_PIK3R1.pdf}
         }
         \subfigure[\textit{CDH1}]{%
-           \includegraphics[width=0.6\textwidth]{Mutation_locus_CDH1.pdf}
+           \includegraphics[width=0.75\textwidth]{Mutation_locus_CDH1.pdf}
         }
         \subfigure[\textit{TP53}]{%
-           \includegraphics[width=0.6\textwidth]{Mutation_locus_TP53.pdf}
+           \includegraphics[width=0.75\textwidth]{Mutation_locus_TP53.pdf}
         }
     \end{center}
     \caption[Somatic mutation locus]{\small \textbf{Somatic mutation locus.} Mutation frequency at each locus in TCGA breast cancer. \textit{PIK3CA} shows clear recurrent E545K and H1047R oncogene mutations consistent with it being an oncogene. \textit{PIK3R1} and \textit{CDH1} are tumour suppressors with inactivating mutations distributed throughout the gene, whereas \textit{TP53} exhibits both of these properties and a very high mutation frequency compared to other genes.
@@ -1126,44 +1193,119 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 \end{mdframed}
 \end{figure*}
 
-\clearpage
-\section{Compare SLIPT genes}
-%vioplot_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.png
-%vioplot_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png
+\chapter{Metagene Expression Profiles}
+\label{results:mg_exprSL_clusters}}
+
 
 \begin{figure*}[!htp]
-\begin{mdframed}
+\noindent\makebox[\textwidth][c]{%               %centering
+\noindent\fbox{\begin{minipage}{1.00 \textwidth}  %frame beyond textwidth
 \begin{center}
-  \resizebox{0.75 \textwidth}{!}{
-    \includegraphics{vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf}
+  \resizebox{1 \textwidth}{!}{
+    \includegraphics{CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf}
    }
    \end{center}
-   \caption[Compare mtSLIPT and siRNA genes with correlation]{\small \textbf{Compare mtSLIPT and siRNA genes with correlation.} Caption, Caption, Caption...
+   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors and cancer gene mutations.
 }
-\label{fig:compare_correlation_mtSL}
-\end{mdframed}
+\label{fig:metagene_expr_Gatza2011}
+\end{minipage}
+} %close fbox
+} %close centering
 \end{figure*}
 
 
 \begin{figure*}[!htp]
-\begin{mdframed}
+\noindent\makebox[\textwidth][c]{%               %centering
+\noindent\fbox{\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
 \begin{center}
-  \resizebox{0.75 \textwidth}{!}{
-    \includegraphics{vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
+  \resizebox{1 \textwidth}{!}{
+    \includegraphics{CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf}
    }
    \end{center}
-   \caption[Compare mtSLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare mtSLIPT and siRNA genes with siRNA viability.} Caption, Caption, Caption...
+   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2014} in TCGA breast data, annotated for clinical factors and cancer gene mutations.
 }
-\label{fig:compare_viability_mtSL}
-\end{mdframed}
+\label{fig:metagene_expr_Gatza2014}
+\end{minipage}
+} %close fbox
+} %close centering
 \end{figure*}
 
-\chapter{Expression Analysis in Stomach Cancer}
+\begin{figure*}[!htp]
+\noindent\makebox[\textwidth][c]{%               %centering
+\noindent\fbox{\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
+\begin{center}
+  \resizebox{1 \textwidth}{!}{
+    \includegraphics{CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pdf}
+   }
+   \end{center}
+   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors and cancer gene mutations.
+}
+\label{fig:metagene_expr_Gatza2011_PI3K}
+\end{minipage}
+} %close fbox
+} %close centering
+\end{figure*}
+
+\begin{figure*}[!htp]
+\noindent\makebox[\textwidth][c]{%               %centering
+\noindent\fbox{\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
+\begin{center}
+  \resizebox{1 \textwidth}{!}{
+    \includegraphics{CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf}
+   }
+   \end{center}
+   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors and cancer gene mutations.
+}
+\label{fig:metagene_expr_Gatza2011_P53}
+\end{minipage}
+} %close fbox
+} %close centering
+\end{figure*}
+
+\begin{figure*}[!htp]
+\noindent\makebox[\textwidth][c]{%               %centering
+\noindent\fbox{\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
+\begin{center}
+  \resizebox{1 \textwidth}{!}{
+    \includegraphics{CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.pdf}
+   }
+   \end{center}
+   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors and cancer gene mutations.
+}
+\label{fig:metagene_expr_Gatza2011_ER}
+\end{minipage}
+} %close fbox
+} %close centering
+\end{figure*}
+
+
+\begin{figure*}[!htp]
+\noindent\makebox[\textwidth][c]{%               %centering
+\noindent\fbox{\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
+\begin{center}
+  \resizebox{1 \textwidth}{!}{
+    \includegraphics{CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.pdf}
+   }
+   \end{center}
+   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2014} in TCGA breast data, annotated for clinical factors and cancer gene mutations.
+}
+\label{fig:metagene_expr_Gatza2014_BRCA}
+\end{minipage}
+} %close fbox
+} %close centering
+\end{figure*}
+
+\FloatBarrier
+
+\chapter{Stomach Cancer Expression Analysis}
 \label{appendix:stad_exprSL}
 
-\chapter{Mutation Analysis in Stomach Cancer}
+\FloatBarrier
+
+\chapter{Stomach Cancer Mutation Analysis}
 \label{appendix:stad_mtSL}
 
+\section{Synthetic Lethal Genes and Pathways} \label{results:stad_mtSL_genes}
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal genes against E-cadherin from mtSLIPT in stomach cancer}
@@ -1297,6 +1439,13 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 }
 \end{table*}
 
+
+\FloatBarrier
+
+%\clearpage
+\section{Synthetic Lethal Expression Profiles} \label{results:stad_mtSL_clusters}
+
+
 \begin{figure*}[!ht]
 \begin{mdframed}
   \centering
@@ -1309,6 +1458,8 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \label{fig:slipt_expr_stad_mtSL}
 \end{mdframed}
 \end{figure*}
+
+\FloatBarrier
 
 
 \begin{table*}[!Hp]

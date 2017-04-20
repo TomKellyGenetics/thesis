@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  11 APR 2017 22:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  21 APR 2017 00:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -235,35 +235,73 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \TX@cols=\count104
 \TX@ftn=\toks18
 )
+(/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
+Package: supertabular 2004/02/20 v4.1e the supertabular environment
+\c@tracingst=\count105
+\ST@wd=\dimen116
+\ST@rightskip=\skip48
+\ST@leftskip=\skip49
+\ST@parfillskip=\skip50
+\ST@pageleft=\dimen117
+\ST@headht=\dimen118
+\ST@tailht=\dimen119
+\ST@pagesofar=\dimen120
+\ST@pboxht=\dimen121
+\ST@lineht=\dimen122
+\ST@stretchht=\dimen123
+\ST@prevht=\dimen124
+\ST@toadd=\dimen125
+\ST@dimen=\dimen126
+\ST@pbox=\box26
+)
+(/usr/share/texlive/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box27
+)
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen127
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip51
+\LTright=\skip52
+\LTpre=\skip53
+\LTpost=\skip54
+\LTchunksize=\count106
+\LTcapwidth=\dimen128
+\LT@head=\box28
+\LT@firsthead=\box29
+\LT@foot=\box30
+\LT@lastfoot=\box31
+\LT@cols=\count107
+\LT@rows=\count108
+\c@LT@tables=\count109
+\c@LT@chunks=\count110
+\LT@p@ftn=\toks19
+)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
-\c@tracingmulticols=\count105
-\mult@box=\box26
-\multicol@leftmargin=\dimen116
-\c@unbalance=\count106
-\c@collectmore=\count107
-\doublecol@number=\count108
-\multicoltolerance=\count109
-\multicolpretolerance=\count110
-\full@width=\dimen117
-\page@free=\dimen118
-\premulticols=\dimen119
-\postmulticols=\dimen120
-\multicolsep=\skip48
-\multicolbaselineskip=\skip49
-\partial@page=\box27
-\last@line=\box28
-\maxbalancingoverflow=\dimen121
-\mult@rightbox=\box29
-\mult@grightbox=\box30
-\mult@gfirstbox=\box31
-\mult@firstbox=\box32
-\@tempa=\box33
-\@tempa=\box34
-\@tempa=\box35
-\@tempa=\box36
-\@tempa=\box37
-\@tempa=\box38
+\c@tracingmulticols=\count111
+\mult@box=\box32
+\multicol@leftmargin=\dimen129
+\c@unbalance=\count112
+\c@collectmore=\count113
+\doublecol@number=\count114
+\multicoltolerance=\count115
+\multicolpretolerance=\count116
+\full@width=\dimen130
+\page@free=\dimen131
+\premulticols=\dimen132
+\postmulticols=\dimen133
+\multicolsep=\skip55
+\multicolbaselineskip=\skip56
+\partial@page=\box33
+\last@line=\box34
+\maxbalancingoverflow=\dimen134
+\mult@rightbox=\box35
+\mult@grightbox=\box36
+\mult@gfirstbox=\box37
+\mult@firstbox=\box38
 \@tempa=\box39
 \@tempa=\box40
 \@tempa=\box41
@@ -275,19 +313,25 @@ Package: multicol 2015/08/19 v1.8n multicolumn formatting (FMi)
 \@tempa=\box47
 \@tempa=\box48
 \@tempa=\box49
-\c@columnbadness=\count111
-\c@finalcolumnbadness=\count112
-\last@try=\dimen122
-\multicolovershoot=\dimen123
-\multicolundershoot=\dimen124
-\mult@nat@firstbox=\box50
-\colbreak@box=\box51
-\mc@col@check@num=\count113
+\@tempa=\box50
+\@tempa=\box51
+\@tempa=\box52
+\@tempa=\box53
+\@tempa=\box54
+\@tempa=\box55
+\c@columnbadness=\count117
+\c@finalcolumnbadness=\count118
+\last@try=\dimen135
+\multicolovershoot=\dimen136
+\multicolundershoot=\dimen137
+\mult@nat@firstbox=\box56
+\colbreak@box=\box57
+\mc@col@check@num=\count119
 )
 (/usr/share/texlive/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
-\everycr=\toks19
-\minrowclearance=\skip50
+\everycr=\toks20
+\minrowclearance=\skip57
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
@@ -373,9 +417,9 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/nomencl/nomencl.sty
 Package: nomencl 2005/09/22 v4.2 Nomenclature package (LN)
-\nomlabelwidth=\dimen125
-\nom@tempdim=\dimen126
-\nomitemsep=\skip51
+\nomlabelwidth=\dimen138
+\nom@tempdim=\dimen139
+\nomitemsep=\skip58
 )
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2016/01/24 v4.21 (NLCT)
@@ -388,16 +432,16 @@ Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
 (/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks20
-\XKV@tempa@toks=\toks21
+\XKV@toks=\toks21
+\XKV@tempa@toks=\toks22
 )
-\XKV@depth=\count114
+\XKV@depth=\count120
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/mfirstuc/mfirstuc.sty
 Package: mfirstuc 2015/12/17 v2.02 (NLCT)
-\@glsmfirst=\toks22
-\@glsmrest=\toks23
+\@glsmfirst=\toks23
+\@glsmrest=\toks24
 )
 (/usr/share/texlive/texmf-dist/tex/latex/textcase/textcase.sty
 Package: textcase 2004/10/07 v0.07 Text only upper/lower case changing (DPC)
@@ -410,7 +454,7 @@ Package: datatool-base 2016/01/18 v2.25 (NLCT)
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/03 v2.15a AMS math features
-\@mathmargin=\skip52
+\@mathmargin=\skip59
 
 For additional information on amsmath, use the `?' option.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -418,57 +462,57 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks24
-\ex@=\dimen127
+\@emptytoks=\toks25
+\ex@=\dimen140
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen128
+\pmbraise@=\dimen141
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count115
+\inf@bad=\count121
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count116
-\leftroot@=\count117
+\uproot@=\count122
+\leftroot@=\count123
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count118
-\DOTSCASE@=\count119
+\classnum@=\count124
+\DOTSCASE@=\count125
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box52
-\strutbox@=\box53
-\big@size=\dimen129
+\Mathstrutbox@=\box58
+\strutbox@=\box59
+\big@size=\dimen142
 LaTeX Font Info:    Redeclaring font encoding OML on input line 630.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 631.
-\macc@depth=\count120
-\c@MaxMatrixCols=\count121
+\macc@depth=\count126
+\c@MaxMatrixCols=\count127
 \dotsspace@=\muskip11
-\c@parentequation=\count122
-\dspbrk@lvl=\count123
-\tag@help=\toks25
-\row@=\count124
-\column@=\count125
-\maxfields@=\count126
-\andhelp@=\toks26
-\eqnshift@=\dimen130
-\alignsep@=\dimen131
-\tagshift@=\dimen132
-\tagwidth@=\dimen133
-\totwidth@=\dimen134
-\lineht@=\dimen135
-\@envbody=\toks27
-\multlinegap=\skip53
-\multlinetaggap=\skip54
-\mathdisplay@stack=\toks28
+\c@parentequation=\count128
+\dspbrk@lvl=\count129
+\tag@help=\toks26
+\row@=\count130
+\column@=\count131
+\maxfields@=\count132
+\andhelp@=\toks27
+\eqnshift@=\dimen143
+\alignsep@=\dimen144
+\tagshift@=\dimen145
+\tagwidth@=\dimen146
+\totwidth@=\dimen147
+\lineht@=\dimen148
+\@envbody=\toks28
+\multlinegap=\skip60
+\multlinetaggap=\skip61
+\mathdisplay@stack=\toks29
 LaTeX Info: Redefining \[ on input line 2735.
 LaTeX Info: Redefining \] on input line 2736.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/substr/substr.sty
 Package: substr 2009/10/20 v1.2 Handle substrings
-\c@su@anzahl=\count127
+\c@su@anzahl=\count133
 )
 (/usr/share/texlive/texmf-dist/tex/latex/datatool/datatool-fp.sty
 Package: datatool-fp 2016/01/18 v2.25 (NLCT)
@@ -479,19 +523,19 @@ Package: fp 1995/04/02
 `Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
 (/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
 Package: defpattern 1994/10/12
-\actioncount=\count128
+\actioncount=\count134
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
 Package: fp-basic 1996/05/13
-\FP@xs=\count129
-\FP@xia=\count130
-\FP@xib=\count131
-\FP@xfa=\count132
-\FP@xfb=\count133
-\FP@rega=\count134
-\FP@regb=\count135
-\FP@regs=\count136
-\FP@times=\count137
+\FP@xs=\count135
+\FP@xia=\count136
+\FP@xib=\count137
+\FP@xfa=\count138
+\FP@xfb=\count139
+\FP@rega=\count140
+\FP@regb=\count141
+\FP@regs=\count142
+\FP@times=\count143
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
 Package: fp-addons 1995/03/15
@@ -510,7 +554,7 @@ Package: fp-pas 1994/08/29
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
 Package: fp-random 1995/02/23
-\FPseed=\count138
+\FPseed=\count144
 )
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
 Package: fp-eqn 1995/04/03
@@ -521,95 +565,54 @@ Package: fp-upn 1996/10/21
 (/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
 Package: fp-eval 1995/04/03
 )))
-\@dtl@toks=\toks29
-\@dtl@tmpcount=\count139
-\dtl@tmplength=\skip55
-\dtl@sortresult=\count140
-\@dtl@numgrpsepcount=\count141
-\@dtl@datatype=\count142
-\dtl@codeA=\count143
-\dtl@codeB=\count144
-\@dtl@foreach@level=\count145
+\@dtl@toks=\toks30
+\@dtl@tmpcount=\count145
+\dtl@tmplength=\skip62
+\dtl@sortresult=\count146
+\@dtl@numgrpsepcount=\count147
+\@dtl@datatype=\count148
+\dtl@codeA=\count149
+\dtl@codeB=\count150
+\@dtl@foreach@level=\count151
 )
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/base/glossaries-compatible-
 307.sty
 Package: glossaries-compatible-307 2016/01/24 v4.21 (NLCT)
 )
-\gls@level=\count146
-\@gls@tmpb=\toks30
-\gls@tmplen=\skip56
-\glskeylisttok=\toks31
-\glslabeltok=\toks32
-\glsshorttok=\toks33
-\glslongtok=\toks34
+\gls@level=\count152
+\@gls@tmpb=\toks31
+\gls@tmplen=\skip63
+\glskeylisttok=\toks32
+\glslabeltok=\toks33
+\glsshorttok=\toks34
+\glslongtok=\toks35
 
 (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-hypernav.st
 y
 Package: glossary-hypernav 2016/01/24 v4.21 (NLCT)
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-list.sty
 Package: glossary-list 2016/01/24 v4.21 (NLCT)
-\glslistdottedwidth=\skip57
+\glslistdottedwidth=\skip64
 ) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-long.sty
 Package: glossary-long 2016/01/24 v4.21 (NLCT)
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip58
-\LTright=\skip59
-\LTpre=\skip60
-\LTpost=\skip61
-\LTchunksize=\count147
-\LTcapwidth=\dimen136
-\LT@head=\box54
-\LT@firsthead=\box55
-\LT@foot=\box56
-\LT@lastfoot=\box57
-\LT@cols=\count148
-\LT@rows=\count149
-\c@LT@tables=\count150
-\c@LT@chunks=\count151
-\LT@p@ftn=\toks35
-)
-\glsdescwidth=\skip62
-\glspagelistwidth=\skip63
-)
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
+\glsdescwidth=\skip65
+\glspagelistwidth=\skip66
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-super.sty
 Package: glossary-super 2016/01/24 v4.21 (NLCT)
-
-(/usr/share/texlive/texmf-dist/tex/latex/supertabular/supertabular.sty
-Package: supertabular 2004/02/20 v4.1e the supertabular environment
-\c@tracingst=\count152
-\ST@wd=\dimen137
-\ST@rightskip=\skip64
-\ST@leftskip=\skip65
-\ST@parfillskip=\skip66
-\ST@pageleft=\dimen138
-\ST@headht=\dimen139
-\ST@tailht=\dimen140
-\ST@pagesofar=\dimen141
-\ST@pboxht=\dimen142
-\ST@lineht=\dimen143
-\ST@stretchht=\dimen144
-\ST@prevht=\dimen145
-\ST@toadd=\dimen146
-\ST@dimen=\dimen147
-\ST@pbox=\box58
-))
-(/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/glossaries/styles/glossary-tree.sty
 Package: glossary-tree 2016/01/24 v4.21 (NLCT)
 \glstreeindent=\skip67
-))
-(/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks36
-\pgfutil@tempdima=\dimen148
-\pgfutil@tempdimb=\dimen149
+\pgfutil@tempdima=\dimen149
+\pgfutil@tempdimb=\dimen150
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box59
+\pgfutil@abb=\box60
 (/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -631,14 +634,14 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 ex
 \pgfkeys@tmptoks=\toks39
 ))
-\pgf@x=\dimen150
-\pgf@y=\dimen151
-\pgf@xa=\dimen152
-\pgf@ya=\dimen153
-\pgf@xb=\dimen154
-\pgf@yb=\dimen155
-\pgf@xc=\dimen156
-\pgf@yc=\dimen157
+\pgf@x=\dimen151
+\pgf@y=\dimen152
+\pgf@xa=\dimen153
+\pgf@ya=\dimen154
+\pgf@xb=\dimen155
+\pgf@yb=\dimen156
+\pgf@xc=\dimen157
+\pgf@yc=\dimen158
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
 \c@pgf@counta=\count153
@@ -677,9 +680,9 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen158
+\pgfmath@dimen=\dimen159
 \pgfmath@count=\count159
-\pgfmath@box=\box60
+\pgfmath@box=\box61
 \pgfmath@toks=\toks43
 \pgfmath@stack@operand=\toks44
 \pgfmath@stack@operation=\toks45
@@ -707,52 +710,52 @@ thmetics.code.tex)))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
 x
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen159
-\pgf@picmaxx=\dimen160
-\pgf@picminy=\dimen161
-\pgf@picmaxy=\dimen162
-\pgf@pathminx=\dimen163
-\pgf@pathmaxx=\dimen164
-\pgf@pathminy=\dimen165
-\pgf@pathmaxy=\dimen166
-\pgf@xx=\dimen167
-\pgf@xy=\dimen168
-\pgf@yx=\dimen169
-\pgf@yy=\dimen170
-\pgf@zx=\dimen171
-\pgf@zy=\dimen172
+\pgf@picminx=\dimen160
+\pgf@picmaxx=\dimen161
+\pgf@picminy=\dimen162
+\pgf@picmaxy=\dimen163
+\pgf@pathminx=\dimen164
+\pgf@pathmaxx=\dimen165
+\pgf@pathminy=\dimen166
+\pgf@pathmaxy=\dimen167
+\pgf@xx=\dimen168
+\pgf@xy=\dimen169
+\pgf@yx=\dimen170
+\pgf@yy=\dimen171
+\pgf@zx=\dimen172
+\pgf@zy=\dimen173
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
 code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen173
-\pgf@path@lasty=\dimen174
+\pgf@path@lastx=\dimen174
+\pgf@path@lasty=\dimen175
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
 .tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen175
-\pgf@shorten@start@additional=\dimen176
+\pgf@shorten@end@additional=\dimen176
+\pgf@shorten@start@additional=\dimen177
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
 x
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box61
-\pgf@hbox=\box62
-\pgf@layerbox@main=\box63
+\pgfpic=\box62
+\pgf@hbox=\box63
+\pgf@layerbox@main=\box64
 \pgf@picture@serial@count=\count161
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
 ode.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen177
+\pgflinewidth=\dimen178
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
 s.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen178
-\pgf@pt@y=\dimen179
-\pgf@pt@temp=\dimen180
+\pgf@pt@x=\dimen179
+\pgf@pt@y=\dimen180
+\pgf@pt@temp=\dimen181
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
@@ -768,11 +771,11 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
 x
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen181
+\pgfarrowsep=\dimen182
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen182
+\pgf@max=\dimen183
 \pgf@sys@shading@range@num=\count162
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
@@ -781,7 +784,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
 tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box64
+\pgfexternal@startupbox=\box65
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
 x
@@ -797,15 +800,15 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box65
+\pgfnodeparttextbox=\box66
 ) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
 .sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen183
-\pgf@nodesepend=\dimen184
+\pgf@nodesepstart=\dimen184
+\pgf@nodesepend=\dimen185
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
 .sty
@@ -819,8 +822,8 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen185
-\pgffor@skip=\dimen186
+\pgffor@iter=\dimen186
+\pgffor@skip=\dimen187
 \pgffor@stack=\toks46
 \pgffor@toks=\toks47
 ))
@@ -831,18 +834,18 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 .code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count163
-\pgfplotmarksize=\dimen187
+\pgfplotmarksize=\dimen188
 )
-\tikz@lastx=\dimen188
-\tikz@lasty=\dimen189
-\tikz@lastxsaved=\dimen190
-\tikz@lastysaved=\dimen191
-\tikzleveldistance=\dimen192
-\tikzsiblingdistance=\dimen193
-\tikz@figbox=\box66
-\tikz@figbox@bg=\box67
-\tikz@tempbox=\box68
-\tikz@tempbox@bg=\box69
+\tikz@lastx=\dimen189
+\tikz@lasty=\dimen190
+\tikz@lastxsaved=\dimen191
+\tikz@lastysaved=\dimen192
+\tikzleveldistance=\dimen193
+\tikzsiblingdistance=\dimen194
+\tikz@figbox=\box67
+\tikz@figbox@bg=\box68
+\tikz@tempbox=\box69
+\tikz@tempbox@bg=\box70
 \tikztreelevel=\count164
 \tikznumberofchildren=\count165
 \tikznumberofcurrentchild=\count166
@@ -867,8 +870,8 @@ Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count172
 \calc@Bcount=\count173
-\calc@Adimen=\dimen194
-\calc@Bdimen=\dimen195
+\calc@Adimen=\dimen195
+\calc@Bdimen=\dimen196
 \calc@Askip=\skip68
 \calc@Bskip=\skip69
 LaTeX Info: Redefining \setlength on input line 80.
@@ -884,14 +887,14 @@ LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count175
-\l_MT_multwidth_dim=\dimen196
+\l_MT_multwidth_dim=\dimen197
 \origjot=\skip71
-\l_MT_shortvdotswithinadjustabove_dim=\dimen197
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen198
-\l_MT_above_intertext_sep=\dimen199
-\l_MT_below_intertext_sep=\dimen256
-\l_MT_above_shortintertext_sep=\dimen257
-\l_MT_below_shortintertext_sep=\dimen258
+\l_MT_shortvdotswithinadjustabove_dim=\dimen198
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen199
+\l_MT_above_intertext_sep=\dimen256
+\l_MT_below_intertext_sep=\dimen257
+\l_MT_above_shortintertext_sep=\dimen258
+\l_MT_below_shortintertext_sep=\dimen259
 )
 (/usr/share/texlive/texmf-dist/tex/latex/pstricks/pstricks.sty
 Package: pstricks 2015/11/14 v0.62 LaTeX wrapper for `PSTricks' (RN,HV)
@@ -914,34 +917,34 @@ File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
 )
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks48
-\pgfutil@tempdima=\dimen259
-\pgfutil@tempdimb=\dimen260
+\pgfutil@tempdima=\dimen260
+\pgfutil@tempdimb=\dimen261
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
 ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen261
-\pgffor@skip=\dimen262
+\pgffor@iter=\dimen262
+\pgffor@skip=\dimen263
 \pgffor@stack=\toks49
 \pgffor@toks=\toks50
 )
 \psLoopIndex=\count185
 
 `PSTricks' v2.64b  <2015/14/11> (tvz)
-\pst@dima=\dimen263
-\pst@dimb=\dimen264
-\pst@dimc=\dimen265
-\pst@dimd=\dimen266
-\pst@dimg=\dimen267
-\pst@dimh=\dimen268
-\pst@dimm=\dimen269
-\pst@dimn=\dimen270
-\pst@dimo=\dimen271
-\pst@dimp=\dimen272
-\pst@hbox=\box70
-\pst@ibox=\box71
-\pst@boxg=\box72
+\pst@dima=\dimen264
+\pst@dimb=\dimen265
+\pst@dimc=\dimen266
+\pst@dimd=\dimen267
+\pst@dimg=\dimen268
+\pst@dimh=\dimen269
+\pst@dimm=\dimen270
+\pst@dimn=\dimen271
+\pst@dimo=\dimen272
+\pst@dimp=\dimen273
+\pst@hbox=\box71
+\pst@ibox=\box72
+\pst@boxg=\box73
 \pst@cnta=\count186
 \pst@cntb=\count187
 \pst@cntc=\count188
@@ -955,24 +958,24 @@ ex)) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
 \@zero=\count196
 \pst@toks=\toks51
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pstricks.con)
-\psunit=\dimen273
-\psxunit=\dimen274
-\psyunit=\dimen275
+\psunit=\dimen274
+\psxunit=\dimen275
+\psyunit=\dimen276
 \pst@C@@rType=\count197
-\pslinewidth=\dimen276
-\psk@startLW=\dimen277
-\psk@endLW=\dimen278
+\pslinewidth=\dimen277
+\psk@startLW=\dimen278
+\psk@endLW=\dimen279
 \pst@customdefs=\toks52
-\pslinearc=\dimen279
-\pst@symbolStep=\dimen280
-\pst@symbolWidth=\dimen281
-\pst@symbolLinewidth=\dimen282
+\pslinearc=\dimen280
+\pst@symbolStep=\dimen281
+\pst@symbolWidth=\dimen282
+\pst@symbolLinewidth=\dimen283
 \everypsbox=\toks53
-\psframesep=\dimen283
-\pslabelsep=\dimen284
-\sh@wgridXunit=\dimen285
-\sh@wgridYunit=\dimen286
-\pst@shift=\dimen287
+\psframesep=\dimen284
+\pslabelsep=\dimen285
+\sh@wgridXunit=\dimen286
+\sh@wgridYunit=\dimen287
+\pst@shift=\dimen288
 )
 File: pstricks.tex 2015/14/11 v2.64b `PSTricks' (tvz,hv)
 
@@ -983,9 +986,9 @@ File: pst-fp.tex 2015/14/11 v2.64b `PST-fp' (hv)
 Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfigtopskip=\skip72
 \subfigcapskip=\skip73
-\subfigcaptopadj=\dimen288
+\subfigcaptopadj=\dimen289
 \subfigbottomskip=\skip74
-\subfigcapmargin=\dimen289
+\subfigcapmargin=\dimen290
 \subfiglabelskip=\skip75
 \c@subfigure=\count198
 \c@lofdepth=\count199
@@ -1008,13 +1011,13 @@ Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
 (/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen290
-\captionmargin@=\dimen291
-\captionwidth=\dimen292
-\caption@tempdima=\dimen293
-\caption@indent=\dimen294
-\caption@parindent=\dimen295
-\caption@hangindent=\dimen296
+\captionmargin=\dimen291
+\captionmargin@=\dimen292
+\captionwidth=\dimen293
+\caption@tempdima=\dimen294
+\caption@indent=\dimen295
+\caption@parindent=\dimen296
+\caption@hangindent=\dimen297
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 )
@@ -1035,6 +1038,7 @@ Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: subfigure package is loaded.
 Package caption Info: supertabular package is loaded.
+Package caption Info: threeparttable package is loaded.
 )
 
 ! Package subcaption Error: This package can't be used in cooperation
@@ -1084,12 +1088,12 @@ L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
 \l__iow_current_word_int=\count278
 \l__iow_current_indentation_int=\count279
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
-\c_zero_dim=\dimen297
-\c_max_dim=\dimen298
-\l_tmpa_dim=\dimen299
-\l_tmpb_dim=\dimen300
-\g_tmpa_dim=\dimen301
-\g_tmpb_dim=\dimen302
+\c_zero_dim=\dimen298
+\c_max_dim=\dimen299
+\l_tmpa_dim=\dimen300
+\l_tmpb_dim=\dimen301
+\g_tmpa_dim=\dimen302
+\g_tmpb_dim=\dimen303
 \c_zero_skip=\skip78
 \c_max_skip=\skip79
 \l_tmpa_skip=\skip80
@@ -1116,50 +1120,50 @@ L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
 \c__fp_Bigg_middle_shift_int=\count289
 \c__fp_Bigg_trailing_shift_int=\count290
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
-\c_empty_box=\box73
-\l_tmpa_box=\box74
-\l_tmpb_box=\box75
-\g_tmpa_box=\box76
-\g_tmpb_box=\box77
+\c_empty_box=\box74
+\l_tmpa_box=\box75
+\l_tmpb_box=\box76
+\g_tmpa_box=\box77
+\g_tmpb_box=\box78
 L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
-\l__coffin_internal_box=\box78
-\l__coffin_internal_dim=\dimen303
-\l__coffin_offset_x_dim=\dimen304
-\l__coffin_offset_y_dim=\dimen305
-\l__coffin_x_dim=\dimen306
-\l__coffin_y_dim=\dimen307
-\l__coffin_x_prime_dim=\dimen308
-\l__coffin_y_prime_dim=\dimen309
-\c_empty_coffin=\box79
-\l__coffin_aligned_coffin=\box80
-\l__coffin_aligned_internal_coffin=\box81
-\l_tmpa_coffin=\box82
-\l_tmpb_coffin=\box83
-\l__coffin_display_coffin=\box84
-\l__coffin_display_coord_coffin=\box85
-\l__coffin_display_pole_coffin=\box86
-\l__coffin_display_offset_dim=\dimen310
-\l__coffin_display_x_dim=\dimen311
-\l__coffin_display_y_dim=\dimen312
+\l__coffin_internal_box=\box79
+\l__coffin_internal_dim=\dimen304
+\l__coffin_offset_x_dim=\dimen305
+\l__coffin_offset_y_dim=\dimen306
+\l__coffin_x_dim=\dimen307
+\l__coffin_y_dim=\dimen308
+\l__coffin_x_prime_dim=\dimen309
+\l__coffin_y_prime_dim=\dimen310
+\c_empty_coffin=\box80
+\l__coffin_aligned_coffin=\box81
+\l__coffin_aligned_internal_coffin=\box82
+\l_tmpa_coffin=\box83
+\l_tmpb_coffin=\box84
+\l__coffin_display_coffin=\box85
+\l__coffin_display_coord_coffin=\box86
+\l__coffin_display_pole_coffin=\box87
+\l__coffin_display_offset_dim=\dimen311
+\l__coffin_display_x_dim=\dimen312
+\l__coffin_display_y_dim=\dimen313
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
 L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen313
-\l__box_bottom_dim=\dimen314
-\l__box_left_dim=\dimen315
-\l__box_right_dim=\dimen316
-\l__box_top_new_dim=\dimen317
-\l__box_bottom_new_dim=\dimen318
-\l__box_left_new_dim=\dimen319
-\l__box_right_new_dim=\dimen320
-\l__box_internal_box=\box87
-\l__coffin_bounding_shift_dim=\dimen321
-\l__coffin_left_corner_dim=\dimen322
-\l__coffin_right_corner_dim=\dimen323
-\l__coffin_bottom_corner_dim=\dimen324
-\l__coffin_top_corner_dim=\dimen325
-\l__coffin_scaled_total_height_dim=\dimen326
-\l__coffin_scaled_width_dim=\dimen327
+\l__box_top_dim=\dimen314
+\l__box_bottom_dim=\dimen315
+\l__box_left_dim=\dimen316
+\l__box_right_dim=\dimen317
+\l__box_top_new_dim=\dimen318
+\l__box_bottom_new_dim=\dimen319
+\l__box_left_new_dim=\dimen320
+\l__box_right_new_dim=\dimen321
+\l__box_internal_box=\box88
+\l__coffin_bounding_shift_dim=\dimen322
+\l__coffin_left_corner_dim=\dimen323
+\l__coffin_right_corner_dim=\dimen324
+\l__coffin_bottom_corner_dim=\dimen325
+\l__coffin_top_corner_dim=\dimen326
+\l__coffin_scaled_total_height_dim=\dimen327
+\l__coffin_scaled_width_dim=\dimen328
 L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
@@ -1233,11 +1237,11 @@ Package: needspace 2010/09/12 v1.3d reserve vertical space
 (/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box88
-\mdf@footnotebox=\box89
-\mdf@splitbox@one=\box90
-\mdf@splitbox@two=\box91
-\mdf@splitbox@save=\box92
+\mdf@frametitlebox=\box89
+\mdf@footnotebox=\box90
+\mdf@splitbox@one=\box91
+\mdf@splitbox@two=\box92
+\mdf@splitbox@save=\box93
 \mdfsplitboxwidth=\skip124
 \mdfsplitboxtotalwidth=\skip125
 \mdfsplitboxheight=\skip126
@@ -1287,59 +1291,6 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@zref@counter=\count303
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
-Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
-
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
-Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
--ends (calc, etex, pgfmath)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
-Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
-
-(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
-Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box93
-)
-\tc@llx=\dimen328
-\tc@lly=\dimen329
-\tc@urx=\dimen330
-\tc@ury=\dimen331
-
-
-! LaTeX Error: Command \clipbox already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99 }
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Package trimclip Info: Using driver 'tc-pdftex.def'.
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
-File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
-))
-\adjbox@Width=\dimen332
-\adjbox@Height=\dimen333
-\adjbox@Depth=\dimen334
-\adjbox@Totalheight=\dimen335
-
-(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
-Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count304
-)
-(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
-Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box94
-\sift@deathcycles=\count305
-\@vwid@loff=\dimen336
-\@vwid@roff=\dimen337
-))
 (/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2230.
@@ -1354,31 +1305,31 @@ LaTeX Info: Redefining \Cpagerefrange on input line 2230.
 LaTeX Info: Redefining \labelcref on input line 2230.
 LaTeX Info: Redefining \labelcpageref on input line 2230.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen338
-)
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box95
+\ttl@box=\box94
 \beforetitleunit=\skip151
 \aftertitleunit=\skip152
-\ttl@plus=\dimen339
-\ttl@minus=\dimen340
+\ttl@plus=\dimen329
+\ttl@minus=\dimen330
 \ttl@toksa=\toks54
-\titlewidth=\dimen341
-\titlewidthlast=\dimen342
-\titlewidthfirst=\dimen343
+\titlewidth=\dimen331
+\titlewidthlast=\dimen332
+\titlewidthfirst=\dimen333
 )
 (./subsubsubsection.tex
-\c@subsubsubsection=\count306
+\c@subsubsubsection=\count304
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count307
+\c@float@type=\count305
 \float@exts=\toks55
-\float@box=\box96
+\float@box=\box95
 \@float@everytoks=\toks56
-\@floatcapt=\box97
+\@floatcapt=\box96
+)
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
@@ -1387,19 +1338,19 @@ Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2016/01/19 v6377 L3 Experimental prototype document function
 s
-\l__xtemplate_tmp_dim=\dimen344
-\l__xtemplate_tmp_int=\count308
+\l__xtemplate_tmp_dim=\dimen334
+\l__xtemplate_tmp_int=\count306
 \l__xtemplate_tmp_muskip=\muskip18
 \l__xtemplate_tmp_skip=\skip153
 )
 Package: xfrac 2016/01/19 v6377 L3 Experimental split-level fractions
-\l__xfrac_slash_box=\box98
-\l__xfrac_tmp_box=\box99
-\l__xfrac_denominator_bot_sep_dim=\dimen345
-\l__xfrac_numerator_bot_sep_dim=\dimen346
-\l__xfrac_numerator_top_sep_dim=\dimen347
-\l__xfrac_slash_left_sep_dim=\dimen348
-\l__xfrac_slash_right_sep_dim=\dimen349
+\l__xfrac_slash_box=\box97
+\l__xfrac_tmp_box=\box98
+\l__xfrac_denominator_bot_sep_dim=\dimen335
+\l__xfrac_numerator_bot_sep_dim=\dimen336
+\l__xfrac_numerator_top_sep_dim=\dimen337
+\l__xfrac_slash_left_sep_dim=\dimen338
+\l__xfrac_slash_right_sep_dim=\dimen339
 \l__xfrac_slash_left_muskip=\muskip19
 \l__xfrac_slash_right_muskip=\muskip20
 .................................................
@@ -1421,50 +1372,113 @@ Package: xfrac 2016/01/19 v6377 L3 Experimental split-level fractions
 \glo@main@file=\write5
 \openout5 = `thesis.glo'.
 
-Package glossaries Info: Writing glossary file thesis.glo on input line 100.
+Package glossaries Info: Writing glossary file thesis.glo on input line 106.
 \glo@acronym@file=\write6
 \openout6 = `thesis.acn'.
 
-Package glossaries Info: Writing glossary file thesis.acn on input line 100.
+Package glossaries Info: Writing glossary file thesis.acn on input line 106.
  (./thesis.aux (./intro.aux) (./methods.aux) (./methods_dev.aux) (./chapt3.aux)
- (./chapt4.aux) (./chapt5.aux) (./chapt6.aux) (./conclusion.aux) (./appendices.
-aux))
+ (./chapt4.aux) (./chapt5.aux) (./chapt6.aux) (./conclusion.aux) (./appendix_me
+thods.aux) (./appendix_chapt3.aux
+
+LaTeX Warning: Label `fig:simulate_function:first' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulate_function:first@cref' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:simulate_function:first' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulate_function:first' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulate_function:first@cref' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:simulate_function:first' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulate_function:first' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulate_function:first@cref' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:simulate_function:first' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulate_function:first' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulate_function:first@cref' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:simulate_function:first' multiply defined.
+
+
+LaTeX Warning: Label `results:stad_exprSL_genes' multiply defined.
+
+
+LaTeX Warning: Label `results:stad_exprSL_genes@cref' multiply defined.
+
+
+LaTeX Warning: Label `results:stad_exprSL_clusters' multiply defined.
+
+
+LaTeX Warning: Label `results:stad_exprSL_clusters@cref' multiply defined.
+
+
+LaTeX Warning: Label `chapt3:compare_pathway_perm_stad_exprSL' multiply defined
+.
+
+
+LaTeX Warning: Label `chapt3:compare_pathway_perm_stad_exprSL@cref' multiply de
+fined.
+
+
+LaTeX Warning: Label `chapt3:metagene_stad_exprSL' multiply defined.
+
+
+LaTeX Warning: Label `chapt3:metagene_stad_exprSL@cref' multiply defined.
+
+))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 130.
-LaTeX Font Info:    ... okay on input line 130.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 130.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 130.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 136.
+LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 136.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 136.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 130.
+LaTeX Font Info:    ... okay on input line 136.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count309
-\scratchdimen=\dimen350
-\scratchbox=\box100
-\nofMPsegments=\count310
-\nofMParguments=\count311
+\scratchcounter=\count307
+\scratchdimen=\dimen340
+\scratchbox=\box99
+\nofMPsegments=\count308
+\nofMParguments=\count309
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count312
-\MPscratchDim=\dimen351
-\MPnumerator=\count313
-\makeMPintoPDFobject=\count314
+\MPscratchCnt=\count310
+\MPscratchDim=\dimen341
+\MPnumerator=\count311
+\makeMPintoPDFobject=\count312
 \everyMPtoPDFconversion=\toks58
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1481,8 +1495,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box101
-Package hyperref Info: Link coloring OFF on input line 130.
+\AtBeginShipoutBox=\box100
+Package hyperref Info: Link coloring OFF on input line 136.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1490,11 +1504,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count315
+\c@section@level=\count313
 )
-LaTeX Info: Redefining \ref on input line 130.
-LaTeX Info: Redefining \pageref on input line 130.
-LaTeX Info: Redefining \nameref on input line 130.
+LaTeX Info: Redefining \ref on input line 136.
+LaTeX Info: Redefining \pageref on input line 136.
+LaTeX Info: Redefining \nameref on input line 136.
 
 (./thesis.out) (./thesis.out)
 \@outlinefile=\write7
@@ -1505,43 +1519,43 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
-<logo.pdf, id=705, 139.52126pt x 201.75375pt>
+<logo.pdf, id=822, 139.52126pt x 201.75375pt>
 File: logo.pdf Graphic file (type pdf)
  <use logo.pdf>
-Package pdftex.def Info: logo.pdf used on input line 137.
+Package pdftex.def Info: logo.pdf used on input line 143.
 (pdftex.def)             Requested size: 39.35307pt x 56.9055pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 137--137
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 
  []
 
@@ -1599,12 +1613,7 @@ Overfull \hbox (9.57076pt too wide) in paragraph at lines 37--38
  []
 
 ) [9] (./thesis.toc
-Overfull \hbox (0.71802pt too wide) detected at line 1
- []\OT1/cmr/m/n/12 xvii
- []
-
-
-Overfull \hbox (3.98187pt too wide) detected at line 3
+Overfull \hbox (3.98187pt too wide) detected at line 1
  []\OT1/cmr/m/n/12 xviii
  []
 
@@ -1614,22 +1623,23 @@ Overfull \hbox (3.98187pt too wide) detected at line 3
 \tf@toc=\write8
 \openout8 = `thesis.toc'.
 
- [14] (./thesis.lot)
+ [14] (./thesis.lot [15
+
+])
 \tf@lot=\write9
 \openout9 = `thesis.lot'.
 
- [15
-
-] (./thesis.lof [16
+ [16] (./thesis.lof [17
 
 ])
 \tf@lof=\write10
 \openout10 = `thesis.lof'.
 
- (./thesis.gls [17]) (./thesis.acr [18
+
+(./thesis.gls [18]) (./thesis.acr [19
 
 
-]) [19
+]) [20
 
 
 ]
@@ -1646,19 +1656,55 @@ l.20
 
 
 
-] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
+] [2] [3] [4] [5] [6]
+
+! Package glossaries Error: Glossary entry `pPCR' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 Real-time or quantitative PCR (\gls{pPCR})
+                                                is another adaptation of gen...
+
+You need to define a glossary entry before you can use it.
+
+
+! Package glossaries Error: Glossary entry `cDNA' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 ...s, often reverse transcribed ``\gls{cDNA}'
+                                                  ' or messenger ``\gls{mRNA...
+
+You need to define a glossary entry before you can use it.
+
+
+! Package glossaries Error: Glossary entry `mRNA' has not been defined.
+
+See the glossaries package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.83 ... ``\gls{cDNA}'' or messenger ``\gls{mRNA}'
+                                                  ' to measure (relative) ge...
+
+You need to define a glossary entry before you can use it.
+
+[7] [8] [9] [10] [11] [12] [13] [14]
 Overfull \hbox (4.29596pt too wide) in paragraph at lines 160--161
 \OT1/cmr/m/n/12 Genome Re-search In-sti-tute (NHGRI) of the Na-tional In-sti-tu
 tes of Health (NIH) ([]TCGA[],
  []
 
-[16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26]
+[15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26]
 Overfull \hbox (14.29991pt too wide) in paragraph at lines 263--263
 |[]\OT1/cmr/bx/n/17.28 A Syn-thetic Lethal Ap-proach to Can-cer Medicine| 
  []
 
-[27] [28]
-<Costanzo_2011_SL_mega_no_border.pdf, id=1771, 456.12408pt x 201.64696pt>
+[27] <Costanzo_2011_SL_mega_no_border.pdf, id=2050, 456.12408pt x 201.64696pt>
 File: Costanzo_2011_SL_mega_no_border.pdf Graphic file (type pdf)
 
 <use Costanzo_2011_SL_mega_no_border.pdf>
@@ -1669,8 +1715,8 @@ Package mdframed Info: mdframed inside float
  mdframed uses option nobreak mdframed on input line 287.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 287.
- [29 <./Costanzo_2011_SL_mega_no_border.pdf>] [30] [31] <SL_Concept_no_border.p
-ng, id=1866, 803.0pt x 602.25pt>
+ [28 <./Costanzo_2011_SL_mega_no_border.pdf>] [29] [30] <SL_Concept_no_border.p
+ng, id=2147, 803.0pt x 602.25pt>
 File: SL_Concept_no_border.png Graphic file (type png)
 
 <use SL_Concept_no_border.png>
@@ -1680,9 +1726,9 @@ Package mdframed Info: mdframed inside float
  mdframed uses option nobreak mdframed on input line 324.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 324.
- [32] [33 <./SL_Concept_no_border.png>] [34]
-[35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48] [49]
-[50] [51] [52] [53] [54] [55] [56] [57] [58] [59]) [60
+ [31] [32 <./SL_Concept_no_border.png>] [33]
+[34] [35] [36] [37] [38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48]
+[49] [50] [51] [52] [53] [54] [55] [56] [57] [58]) [59
 
 ]
 \openout2 = `methods.aux'.
@@ -1694,68 +1740,72 @@ Overfull \hbox (11.25215pt too wide) in paragraph at lines 7--7
 |[]\OT1/cmr/bx/n/17.28 Bioinformatics Re-sources for Ge-nomics Re-search| 
  []
 
-[61
+[60
 
 
 
-] [62] <fig2a.png, id=2519, 602.25pt x 602.25pt>
+] [61] [62] <fig2a.png, id=2817, 602.25pt x 602.25pt>
 File: fig2a.png Graphic file (type png)
  <use fig2a.png>
-Package pdftex.def Info: fig2a.png used on input line 39.
+Package pdftex.def Info: fig2a.png used on input line 44.
 (pdftex.def)             Requested size: 168.08452pt x 168.08665pt.
 
-<fig2b.png, id=2520, 602.25pt x 602.25pt>
+<fig2b.png, id=2818, 602.25pt x 602.25pt>
 File: fig2b.png Graphic file (type png)
  <use fig2b.png>
-Package pdftex.def Info: fig2b.png used on input line 43.
+Package pdftex.def Info: fig2b.png used on input line 48.
 (pdftex.def)             Requested size: 168.08452pt x 168.08665pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 49.
+ mdframed uses option nobreak mdframed on input line 54.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 49.
+ mdframed uses option nobreak mdframed on input line 54.
 
-<fig3a.png, id=2521, 602.25pt x 602.25pt>
+<fig3a.png, id=2819, 602.25pt x 602.25pt>
 File: fig3a.png Graphic file (type png)
  <use fig3a.png>
-Package pdftex.def Info: fig3a.png used on input line 60.
+Package pdftex.def Info: fig3a.png used on input line 65.
 (pdftex.def)             Requested size: 168.08452pt x 168.08665pt.
 
-<fig3b.png, id=2522, 602.25pt x 602.25pt>
+<fig3b.png, id=2820, 602.25pt x 602.25pt>
 File: fig3b.png Graphic file (type png)
  <use fig3b.png>
-Package pdftex.def Info: fig3b.png used on input line 64.
+Package pdftex.def Info: fig3b.png used on input line 69.
 (pdftex.def)             Requested size: 168.08452pt x 168.08665pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 70.
+ mdframed uses option nobreak mdframed on input line 75.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 70.
- [63] [64 <./fig2a.png> <./fig2b.png> <./fig3a.png> <./fig3b.png>]
+ mdframed uses option nobreak mdframed on input line 75.
+ [63 <./fig2a.png> <./fig2b.png> <./fig3a.png> <./fig3b.png>]
 ! Misplaced \omit.
 \multispan ->\omit 
                    \@multispan 
-l.109 }
+l.116 }
        
 I expect to see \omit only after tab marks or the \cr of
 an alignment. Proceed, and I'll ignore this case.
 
-[65]
-Overfull \hbox (14.15533pt too wide) in paragraph at lines 124--125
+[64]
+Overfull \hbox (14.15533pt too wide) in paragraph at lines 132--133
 \OT1/cmr/m/n/12 Various sta-tis-ti-cal, com-pu-ta-tional, and bioin-for-mat-ics
  tech-niques were per-formed through-
  []
 
-[66] [67] [68] [69] [70] [71] [72]
-Overfull \hbox (18.30754pt too wide) in paragraph at lines 190--191
+[65] [66] [67] [68] [69] [70] [71]
+Overfull \hbox (18.30754pt too wide) in paragraph at lines 198--199
 \OT1/cmr/m/n/12 been re-leased as an R pack-age (\OT1/cmtt/m/n/12 info.centrali
 ty\OT1/cmr/m/n/12 ) and in-cluded in the \OT1/cmtt/m/n/12 igraph.extensions
  []
 
-[73] [74] [75] [76] [77]) [78]
+[72] [73] [74] [75] [76] [77]) [78]
 \openout2 = `methods_dev.aux'.
 
  (./methods_dev.tex
 Chapter 3.
-(./SL_Method.pdf_tex <SL_Method.pdf, id=2787, 518.34277pt x 199.68352pt>
+[79
+
+
+
+] (./SL_Method.pdf_tex <SL_Method.pdf, id=3102, 518.34277pt x 199.68352pt>
 File: SL_Method.pdf Graphic file (type pdf)
 
 <use SL_Method.pdf>
@@ -1763,15 +1813,11 @@ Package pdftex.def Info: SL_Method.pdf used on input line 52.
 (pdftex.def)             Requested size: 518.34277pt x 199.69215pt.
 )
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 21.
+ mdframed uses option nobreak mdframed on input line 25.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 21.
- [79
-
-
-
-] [80 <./SL_Method.pdf>] (./SL_Method_mtSL.pdf_tex
-<SL_Method_mtSL.pdf, id=2806, 518.46199pt x 199.68126pt>
+ mdframed uses option nobreak mdframed on input line 25.
+ [80 <./SL_Method.pdf>] (./SL_Method_mtSL.pdf_tex
+<SL_Method_mtSL.pdf, id=3114, 518.46199pt x 199.68126pt>
 File: SL_Method_mtSL.pdf Graphic file (type pdf)
 
 <use SL_Method_mtSL.pdf>
@@ -1783,38 +1829,75 @@ Package mdframed Info: mdframed inside float
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 41.
  [81 <./SL_Method_mtSL.pdf>]
-<"SL_Model".pdf, id=2814, 642.4pt x 602.25pt>
+
+! Package xkeyval Error: `fbox' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67    }
+         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<"SL_Model".pdf, id=3128, 642.4pt x 602.25pt>
 File: "SL_Model".pdf Graphic file (type pdf)
  <use "SL_Model".pdf>
-Package pdftex.def Info: "SL_Model".pdf used on input line 63.
+Package pdftex.def Info: "SL_Model".pdf used on input line 67.
 (pdftex.def)             Requested size: 642.39844pt x 602.24852pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 68.
+ mdframed uses option nobreak mdframed on input line 72.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 68.
+ mdframed uses option nobreak mdframed on input line 72.
+ [82]
+[83 <./SL_Model.pdf>]
 
-<"SL_Model_Expression".pdf, id=2821, 481.8pt x 240.9pt>
+! Package xkeyval Error: `fbox' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.85    }
+         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<"SL_Model_Expression".pdf, id=3331, 481.8pt x 240.9pt>
 File: "SL_Model_Expression".pdf Graphic file (type pdf)
 
 <use "SL_Model_Expression".pdf>
-Package pdftex.def Info: "SL_Model_Expression".pdf used on input line 79.
+Package pdftex.def Info: "SL_Model_Expression".pdf used on input line 85.
 (pdftex.def)             Requested size: 481.79881pt x 240.8994pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 84.
+ mdframed uses option nobreak mdframed on input line 90.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 84.
- [82] [83 <./SL_Model.pdf>]
-<"SL_Model_Higher".pdf, id=3018, 642.4pt x 642.4pt>
+ mdframed uses option nobreak mdframed on input line 90.
+
+
+! Package xkeyval Error: `fbox' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102    }
+          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<"SL_Model_Higher".pdf, id=3333, 642.4pt x 642.4pt>
 File: "SL_Model_Higher".pdf Graphic file (type pdf)
 
 <use "SL_Model_Higher".pdf>
-Package pdftex.def Info: "SL_Model_Higher".pdf used on input line 95.
+Package pdftex.def Info: "SL_Model_Higher".pdf used on input line 102.
 (pdftex.def)             Requested size: 642.39844pt x 642.39844pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 100.
+ mdframed uses option nobreak mdframed on input line 107.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 100.
- [84 <./SL_Model_Expression.pdf>] [85 <./SL_Model_Higher.pdf>]
+ mdframed uses option nobreak mdframed on input line 107.
+ [84 <./SL_Model_Expression.pdf>] [85 <./SL_Model_Higher.pdf>] [86]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -1822,37 +1905,37 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.116 \begin{figure*}[!Htb]
+l.125 \begin{figure*}[!Htb]
                            
 Option `H' ignored and `p' used.
 
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat".pn
-g, id=3073, 803.0pt x 803.0pt>
+g, id=3396, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_ma
 t".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat
 ".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/expr_mat".png used on input line 125.
+_sim_method/expr_mat".png used on input line 134.
 (pdftex.def)             Requested size: 189.0967pt x 189.0971pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_disc_ma
-t".png, id=3074, 803.0pt x 803.0pt>
+t".png, id=3397, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_di
 sc_mat".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_dis
 c_mat".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/expr_disc_mat".png used on input line 130.
+_sim_method/expr_disc_mat".png used on input line 139.
 (pdftex.def)             Requested size: 189.0967pt x 189.0971pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 137.
+ mdframed uses option nobreak mdframed on input line 146.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 137.
- [86]
+ mdframed uses option nobreak mdframed on input line 146.
+
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -1860,62 +1943,62 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.201 \begin{figure*}[!Htb]
+l.178 \begin{figure*}[!Htp]
                            
 Option `H' ignored and `p' used.
 
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL_disc
-_mat".png, id=3085, 803.0pt x 803.0pt>
+_mat".png, id=3399, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL
 _disc_mat".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL_
 disc_mat".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/expr_SL_disc_mat".png used on input line 211.
+_sim_method/expr_SL_disc_mat".png used on input line 188.
 (pdftex.def)             Requested size: 189.0967pt x 189.0971pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_disc_qu
-ery_mat_graph".png, id=3086, 803.0pt x 803.0pt>
+ery_mat_graph".png, id=3400, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_di
 sc_query_mat_graph".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_dis
 c_query_mat_graph".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/expr_disc_query_mat_graph".png used on input line 217.
+_sim_method/expr_disc_query_mat_graph".png used on input line 194.
 (pdftex.def)             Requested size: 189.0967pt x 189.0971pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 225.
+ mdframed uses option nobreak mdframed on input line 202.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 225.
+ mdframed uses option nobreak mdframed on input line 202.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_ma
 t".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat
 ".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/expr_mat".png used on input line 236.
+_sim_method/expr_mat".png used on input line 212.
 (pdftex.def)             Requested size: 189.0967pt x 189.0971pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_query_m
-at_graph".png, id=3087, 803.0pt x 803.0pt>
+at_graph".png, id=3401, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_qu
 ery_mat_graph".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_que
 ry_mat_graph".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/expr_query_mat_graph".png used on input line 241.
+_sim_method/expr_query_mat_graph".png used on input line 217.
 (pdftex.def)             Requested size: 189.0967pt x 189.0971pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 248.
+ mdframed uses option nobreak mdframed on input line 224.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 248.
+ mdframed uses option nobreak mdframed on input line 224.
 
 
-LaTeX Warning: Float too large for page by 11.95222pt on input line 249.
+LaTeX Warning: Float too large for page by 11.95222pt on input line 225.
 
 [87 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat.
 png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_meth
@@ -1931,178 +2014,178 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.261 \begin{figure*}[!Hp]
+l.244 \begin{figure*}[!Hp]
                           
 Option `H' ignored and `p' used.
 
-<"SL_Model_Binomial_1K_AUC_samples_prop".png, id=3107, 602.25pt x 602.25pt>
+<"SL_Model_Binomial_1K_AUC_samples_prop".png, id=3424, 602.25pt x 602.25pt>
 File: "SL_Model_Binomial_1K_AUC_samples_prop".png Graphic file (type png)
 
 <use "SL_Model_Binomial_1K_AUC_samples_prop".png>
 Package pdftex.def Info: "SL_Model_Binomial_1K_AUC_samples_prop".png used on in
-put line 266.
+put line 251.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 270.
+ mdframed uses option nobreak mdframed on input line 255.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 270.
+ mdframed uses option nobreak mdframed on input line 255.
 
 <"SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Binom(Feb)_v_Mvtn(Aprxy)_Full".png
-, id=3108, 602.25pt x 602.25pt>
+, id=3425, 602.25pt x 602.25pt>
 File: "SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Binom(Feb)_v_Mvtn(Aprxy)_Full
 ".png Graphic file (type png)
 
 <use "SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Binom(Feb)_v_Mvtn(Aprxy)_Full"
 .png>
 Package pdftex.def Info: "SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Binom(Feb)
-_v_Mvtn(Aprxy)_Full".png used on input line 276.
+_v_Mvtn(Aprxy)_Full".png used on input line 263.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 280.
+ mdframed uses option nobreak mdframed on input line 267.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 280.
+ mdframed uses option nobreak mdframed on input line 267.
 
 
-LaTeX Warning: Float too large for page by 15.88077pt on input line 281.
+LaTeX Warning: Float too large for page by 9.63562pt on input line 268.
 
 [89] [90 <./SL_Model_Binomial_1K_AUC_samples_prop.png (PNG copy)> <./SL_Model_T
 est_Graph_10K_Graph1_ROC_Compare_Binom(Feb)_v_Mvtn(Aprxy)_Full.png (PNG copy)>]
 
+Overfull \hbox (3.8573pt too wide) in paragraph at lines 278--279
+\OT1/cmr/m/n/12 The mul-ti-vari-ate nor-mal sim-u-la-tion pro-ce-dure was ini-t
+ially per-formed us-ing the \OT1/cmtt/m/n/12 mvtnorm
+ []
+
+
 LaTeX Warning: File `{SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png}' not 
-found on input line 301.
+found on input line 290.
 
 
-<SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png, id=3124, 602.25pt x 602.25
+<SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png, id=3444, 602.25pt x 602.25
 pt>
 File: SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png Graphic file (type png
 )
  <use SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png>
 Package pdftex.def Info: SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png use
-d on input line 301.
+d on input line 290.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_Apr15mvnormCor_1K_ROC2_samplesx_prop".png, id=3125, 602.25pt x 602.2
+<"SL_Model_Apr15mvnormCor_1K_ROC2_samplesx_prop".png, id=3445, 602.25pt x 602.2
 5pt>
 File: "SL_Model_Apr15mvnormCor_1K_ROC2_samplesx_prop".png Graphic file (type pn
 g)
  <use "SL_Model_Apr15mvnormCor_1K_ROC2_samplesx_prop".png>
 Package pdftex.def Info: "SL_Model_Apr15mvnormCor_1K_ROC2_samplesx_prop".png us
-ed on input line 305.
+ed on input line 294.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_Apr15mvnormCor_1K_AUC_samplesx_prop".png, id=3126, 602.25pt x 602.25
+<"SL_Model_Apr15mvnormCor_1K_AUC_samplesx_prop".png, id=3446, 602.25pt x 602.25
 pt>
 File: "SL_Model_Apr15mvnormCor_1K_AUC_samplesx_prop".png Graphic file (type png
 )
  <use "SL_Model_Apr15mvnormCor_1K_AUC_samplesx_prop".png>
 Package pdftex.def Info: "SL_Model_Apr15mvnormCor_1K_AUC_samplesx_prop".png use
-d on input line 310.
+d on input line 299.
 (pdftex.def)             Requested size: 273.13895pt x 273.15117pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 315.
+ mdframed uses option nobreak mdframed on input line 304.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 315.
+ mdframed uses option nobreak mdframed on input line 304.
 
 
-LaTeX Warning: Float too large for page by 11.2572pt on input line 316.
-
-
-Overfull \hbox (3.8573pt too wide) in paragraph at lines 318--319
-\OT1/cmr/m/n/12 The mul-ti-vari-ate nor-mal sim-u-la-tion pro-ce-dure was ini-t
-ially per-formed us-ing the \OT1/cmtt/m/n/12 mvtnorm
- []
+LaTeX Warning: Float too large for page by 11.2572pt on input line 305.
 
 [91] [92 <./SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop.png (PNG copy)> <./SL
 _Model_Apr15mvnormCor_1K_ROC2_samplesx_prop.png (PNG copy)> <./SL_Model_Apr15mv
 normCor_1K_AUC_samplesx_prop.png (PNG copy)>] [93]
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(1)".pdf, id=3163, 481.8pt x 682
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(1)".pdf, id=3477, 481.8pt x 682
 .55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(1)".pdf Graphic file (type
  pdf)
  <use "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(1)".pdf>
 Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(1)".pdf
- used on input line 343.
+ used on input line 330.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(2)".pdf, id=3164, 481.8pt x 682
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(2)".pdf, id=3478, 481.8pt x 682
 .55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(2)".pdf Graphic file (type
  pdf)
  <use "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(2)".pdf>
 Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(2)".pdf
- used on input line 347.
+ used on input line 334.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(4)".pdf, id=3165, 481.8pt x 682
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(4)".pdf, id=3479, 481.8pt x 682
 .55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(4)".pdf Graphic file (type
  pdf)
  <use "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(4)".pdf>
 Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(4)".pdf
- used on input line 352.
+ used on input line 339.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(3)".pdf, id=3166, 481.8pt x 682
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(3)".pdf, id=3480, 481.8pt x 682
 .55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(3)".pdf Graphic file (type
  pdf)
  <use "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(3)".pdf>
 Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(3)".pdf
- used on input line 356.
+ used on input line 343.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 361.
+ mdframed uses option nobreak mdframed on input line 348.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 361.
+ mdframed uses option nobreak mdframed on input line 348.
 
 
-LaTeX Warning: Float too large for page by 8.25864pt on input line 362.
+LaTeX Warning: Float too large for page by 8.25864pt on input line 349.
 
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(1)".pdf, id=3172, 481.8pt x 
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(1)".pdf, id=3486, 481.8pt x 
 682.55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(1)".pdf Graphic file (t
 ype pdf)
  <use "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(1)".pdf>
 Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(1)".
-pdf used on input line 376.
+pdf used on input line 363.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 
 
 LaTeX Warning: File `{""SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".pd
-f}' not found on input line 380.
+f}' not found on input line 367.
 
 
-<""SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".pdf, id=3173, 481.8pt x
+<""SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".pdf, id=3487, 481.8pt x
  682.55pt>
 File: ""SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".pdf Graphic file (
 type pdf)
  <use ""SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".pdf>
 Package pdftex.def Info: ""SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)"
-.pdf used on input line 380.
+.pdf used on input line 367.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(4)".pdf, id=3174, 481.8pt x 
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(4)".pdf, id=3488, 481.8pt x 
 682.55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(4)".pdf Graphic file (t
 ype pdf)
  <use "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(4)".pdf>
 Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(4)".
-pdf used on input line 385.
+pdf used on input line 372.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(3)".pdf, id=3175, 481.8pt x 
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(3)".pdf, id=3489, 481.8pt x 
 682.55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(3)".pdf Graphic file (t
 ype pdf)
  <use "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(3)".pdf>
 Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(3)".
-pdf used on input line 389.
+pdf used on input line 376.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 394.
+ mdframed uses option nobreak mdframed on input line 381.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 394.
+ mdframed uses option nobreak mdframed on input line 381.
 
 [94] [95 <./SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(1).pdf> <./SL_Model_M
 ay15mvnorm_heatmap_4SL_cor_comp_top(2).pdf
@@ -2137,119 +2220,131 @@ pdfTeX warning: /usr/bin/pdflatex (file ./SL_Model_May15mvnorm_heatmap_4SL_cor_
 comp_1K_top(3).pdf): PDF inclusion: multiple pdfs with page group included in a
  single page
 >]
-<"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".png, id=3224, 602.25pt x 752
+<"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".png, id=3538, 602.25pt x 752
 .8125pt>
 File: "SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".png Graphic file (type 
 png)
  <use "SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".png>
 Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".png 
-used on input line 408.
+used on input line 395.
 (pdftex.def)             Requested size: 147.07877pt x 183.84909pt.
 
-<"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(2)".png, id=3225, 602.25pt x 752
+<"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(2)".png, id=3539, 602.25pt x 752
 .8125pt>
 File: "SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(2)".png Graphic file (type 
 png)
  <use "SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(2)".png>
 Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(2)".png 
-used on input line 412.
+used on input line 399.
 (pdftex.def)             Requested size: 147.07877pt x 183.84909pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 418.
+ mdframed uses option nobreak mdframed on input line 405.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 418.
+ mdframed uses option nobreak mdframed on input line 405.
 
 
 LaTeX Warning: File `{SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png}' not fou
-nd on input line 430.
+nd on input line 417.
 
 
-<SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png, id=3226, 602.25pt x 602.25pt>
+<SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png, id=3540, 602.25pt x 602.25pt>
 File: SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png Graphic file (type png)
 <use SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png>
 Package pdftex.def Info: SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png used o
-n input line 430.
+n input line 417.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png, id=3227, 602.25pt x 602.25pt
+<"SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png, id=3541, 602.25pt x 602.25pt
 >
 File: "SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png Graphic file (type png)
  <use "SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png>
 Package pdftex.def Info: "SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png used 
-on input line 434.
+on input line 421.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png, id=3228, 602.25pt x 602.25pt>
+<"SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png, id=3542, 602.25pt x 602.25pt>
 File: "SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png Graphic file (type png)
 <use "SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png>
 Package pdftex.def Info: "SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png used o
-n input line 439.
+n input line 426.
 (pdftex.def)             Requested size: 273.13895pt x 273.15117pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 444.
+ mdframed uses option nobreak mdframed on input line 431.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 444.
+ mdframed uses option nobreak mdframed on input line 431.
 
 
-LaTeX Warning: Float too large for page by 11.2572pt on input line 445.
+LaTeX Warning: Float too large for page by 11.2572pt on input line 432.
+
+
+! Package xkeyval Error: `fbox' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.439    }
+          
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 
 <"SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Apry)_v_Cor(Aprxy)_Full".png,
- id=3229, 602.25pt x 602.25pt>
+ id=3543, 602.25pt x 602.25pt>
 File: "SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Apry)_v_Cor(Aprxy)_Full"
 .png Graphic file (type png)
 
 <use "SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Apry)_v_Cor(Aprxy)_Full".
 png>
 Package pdftex.def Info: "SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Apry)
-_v_Cor(Aprxy)_Full".png used on input line 452.
+_v_Cor(Aprxy)_Full".png used on input line 439.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 456.
+ mdframed uses option nobreak mdframed on input line 443.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 456.
+ mdframed uses option nobreak mdframed on input line 443.
  [97 <./SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1).png> <./SL_Model_May15m
 vnorm_heatmap_10XSL_cor_comp2(2).png>] [98 <./SL_Model_Apr15mvnorm_1K_ROC1_samp
 lesx_prop.png (PNG copy)> <./SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop.png (PN
 G copy)> <./SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop.png (PNG copy)>]
 
 LaTeX Warning: File `{SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}' not
- found on input line 474.
+ found on input line 461.
 
 
-<SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png, id=3249, 602.25pt x 602.2
+<SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png, id=3563, 602.25pt x 602.2
 5pt>
 File: SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png Graphic file (type pn
 g)
  <use SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png>
 Package pdftex.def Info: SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png us
-ed on input line 474.
+ed on input line 461.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png, id=3250, 602.25pt x 602.
+<"SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png, id=3564, 602.25pt x 602.
 25pt>
 File: "SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png Graphic file (type p
 ng)
  <use "SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png>
 Package pdftex.def Info: "SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png u
-sed on input line 478.
+sed on input line 465.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_May15mvnorm_dir_1K_AUC_samplesx_prop".png, id=3251, 602.25pt x 602.2
+<"SL_Model_May15mvnorm_dir_1K_AUC_samplesx_prop".png, id=3565, 602.25pt x 602.2
 5pt>
 File: "SL_Model_May15mvnorm_dir_1K_AUC_samplesx_prop".png Graphic file (type pn
 g)
  <use "SL_Model_May15mvnorm_dir_1K_AUC_samplesx_prop".png>
 Package pdftex.def Info: "SL_Model_May15mvnorm_dir_1K_AUC_samplesx_prop".png us
-ed on input line 483.
+ed on input line 470.
 (pdftex.def)             Requested size: 273.13895pt x 273.15117pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 488.
+ mdframed uses option nobreak mdframed on input line 475.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 488.
+ mdframed uses option nobreak mdframed on input line 475.
 
 
-LaTeX Warning: Float too large for page by 11.2572pt on input line 489.
+LaTeX Warning: Float too large for page by 11.2572pt on input line 476.
 
 [99 <./SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Apry)_v_Cor(Aprxy)_Full.
 png (PNG copy)>] [100 <./SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop.png (PN
@@ -2262,142 +2357,210 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.517 \begin{figure*}[!Hb]
+l.507 \begin{figure*}[!Hb]
                           
 Option `H' ignored and `p' used.
 
 
-<"SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png, id=3268, 602.25pt x 602.25pt
+! Package xkeyval Error: `fbox' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.515         }
+               %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+<"SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png, id=3582, 602.25pt x 602.25pt
 >
 File: "SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png Graphic file (type png)
  <use "SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png>
 Package pdftex.def Info: "SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png used 
-on input line 525.
+on input line 515.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png, id=3269, 602.25pt x 602.
+
+! Package xkeyval Error: `fbox' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.519         }
+               %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+<"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png, id=3583, 602.25pt x 602.
 25pt>
 File: "SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png Graphic file (type p
 ng)
  <use "SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png>
 Package pdftex.def Info: "SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png u
-sed on input line 529.
+sed on input line 519.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
-
-Overfull \hbox (8.2607pt too wide) in paragraph at lines 525--530
- [][][] 
- []
-
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 535.
+ mdframed uses option nobreak mdframed on input line 525.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 535.
+ mdframed uses option nobreak mdframed on input line 525.
 
-<"SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png, id=3270, 602.25pt x 602.25pt
+
+! Package xkeyval Error: `fbox' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.536         }
+               %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+<"SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png, id=3584, 602.25pt x 602.25pt
 >
 File: "SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png Graphic file (type png)
  <use "SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png>
 Package pdftex.def Info: "SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png used 
-on input line 546.
+on input line 536.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
+
+
+! Package xkeyval Error: `fbox' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.540         }
+               %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: "SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png Graphic file (type p
 ng)
-
 <use "SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png>
 Package pdftex.def Info: "SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png u
-sed on input line 550.
+sed on input line 540.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-Overfull \hbox (8.2607pt too wide) in paragraph at lines 546--551
- [][][] 
- []
-
-
 <"SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Mayy)_v_Cor(Mayxy)_Full".png,
- id=3271, 602.25pt x 602.25pt>
+ id=3585, 602.25pt x 602.25pt>
 File: "SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Mayy)_v_Cor(Mayxy)_Full"
 .png Graphic file (type png)
 
 <use "SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Mayy)_v_Cor(Mayxy)_Full".
 png>
 Package pdftex.def Info: "SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Mayy)
-_v_Cor(Mayxy)_Full".png used on input line 556.
+_v_Cor(Mayxy)_Full".png used on input line 546.
 (pdftex.def)             Requested size: 252.1332pt x 252.13458pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 562.
+ mdframed uses option nobreak mdframed on input line 552.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 562.
- [101] [102 <./SL_Model_May15mvnorm_1K_ROC1_samplesx_prop.png (PNG copy)> <./SL
-_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop.png (PNG copy)>] [103 <./SL_Model_
-May15mvnorm_1K_ROC2_samplesx_prop.png (PNG copy)> <./SL_Model_Test_Graph_10K_Gr
-aph1_ROC_Compare_Mvtn(Mayy)_v_Cor(Mayxy)_Full.png (PNG copy)>] [104]
+ mdframed uses option nobreak mdframed on input line 552.
+ [101 <./SL_Model_May15mvnorm_1K_ROC1_samplesx_prop.png (PNG copy)> <./SL_Model
+_May15mvnorm_dir_1K_ROC1_samplesx_prop.png (PNG copy)>] [102 <./SL_Model_May15m
+vnorm_1K_ROC2_samplesx_prop.png (PNG copy)> <./SL_Model_Test_Graph_10K_Graph1_R
+OC_Compare_Mvtn(Mayy)_v_Cor(Mayxy)_Full.png (PNG copy)>] [103] [104]
 [105]
+
+! Package xkeyval Error: `fbox' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.598         }
+               %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph
-".png, id=3307, 803.0pt x 803.0pt>
+".png, id=3621, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_
 graph".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_g
 raph".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/simple_graph".png used on input line 606.
+_sim_method/simple_graph".png used on input line 598.
 (pdftex.def)             Requested size: 189.0967pt x 189.0971pt.
 
+
+! Package xkeyval Error: `fbox' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.602         }
+               %
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph
-_inhibiting".png, id=3308, 803.0pt x 803.0pt>
+_inhibiting".png, id=3622, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_
 graph_inhibiting".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_g
 raph_inhibiting".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/simple_graph_inhibiting".png used on input line 610.
+_sim_method/simple_graph_inhibiting".png used on input line 602.
 (pdftex.def)             Requested size: 189.0967pt x 189.0971pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 616.
+ mdframed uses option nobreak mdframed on input line 608.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 616.
- [106]
+ mdframed uses option nobreak mdframed on input line 608.
+ [106 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_
+graph.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_si
+m_method/simple_graph_inhibiting.png (PNG copy)>]
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_
 graph".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_g
 raph".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/simple_graph".png used on input line 629.
+_sim_method/simple_graph".png used on input line 621.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/dist_mat".pn
-g, id=3321, 803.0pt x 803.0pt>
+g, id=3638, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/dist_ma
 t".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/dist_mat
 ".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/dist_mat".png used on input line 633.
+_sim_method/dist_mat".png used on input line 625.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_mat".p
-ng, id=3322, 803.0pt x 803.0pt>
+ng, id=3639, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_m
 at".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_ma
 t".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/sigma_mat".png used on input line 638.
+_sim_method/sigma_mat".png used on input line 630.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor_mat
-".png, id=3323, 803.0pt x 803.0pt>
+".png, id=3640, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_co
 r_mat".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor
 _mat".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/expr_cor_mat".png used on input line 642.
+_sim_method/expr_cor_mat".png used on input line 634.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_ma
 t".png Graphic file (type png)
@@ -2405,7 +2568,7 @@ t".png Graphic file (type png)
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat
 ".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/expr_mat".png used on input line 647.
+_sim_method/expr_mat".png used on input line 639.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_di
 sc_mat".png Graphic file (type png)
@@ -2413,41 +2576,34 @@ sc_mat".png Graphic file (type png)
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_dis
 c_mat".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/expr_disc_mat".png used on input line 651.
+_sim_method/expr_disc_mat".png used on input line 643.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 656.
+ mdframed uses option nobreak mdframed on input line 648.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 656.
-LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 659
+ mdframed uses option nobreak mdframed on input line 648.
+LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 651
 .
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <4.19998> not available
-(Font)              size <5> substituted on input line 659.
+(Font)              size <5> substituted on input line 651.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.19998> not available
-(Font)              size <5> substituted on input line 659.
+(Font)              size <5> substituted on input line 651.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.19998> not available
-(Font)              size <5> substituted on input line 659.
+(Font)              size <5> substituted on input line 651.
 
-[107 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_g
-raph.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim
-_method/simple_graph_inhibiting.png (PNG copy)>] [108 </home/tomkelly/Documents
-/PhD Otago Uni/SL_Model/graph_sim_method/dist_mat.png (PNG copy)> </home/tomkel
-ly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_mat.png (PNG copy)> 
-</home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor_mat.
-png (PNG copy)>]
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_
 graph_inhibiting".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_g
 raph_inhibiting".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/simple_graph_inhibiting".png used on input line 671.
+_sim_method/simple_graph_inhibiting".png used on input line 663.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/dist_ma
 t".png Graphic file (type png)
@@ -2455,192 +2611,195 @@ t".png Graphic file (type png)
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/dist_mat
 ".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/dist_mat".png used on input line 675.
+_sim_method/dist_mat".png used on input line 667.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_mat_in
-hibiting".png, id=3353, 803.0pt x 803.0pt>
+hibiting".png, id=3653, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_m
 at_inhibiting".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_ma
 t_inhibiting".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/sigma_mat_inhibiting".png used on input line 680.
+_sim_method/sigma_mat_inhibiting".png used on input line 672.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor_mat
-_inhibiting".png, id=3354, 803.0pt x 803.0pt>
+_inhibiting".png, id=3654, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_co
 r_mat_inhibiting".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor
 _mat_inhibiting".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/expr_cor_mat_inhibiting".png used on input line 684.
+_sim_method/expr_cor_mat_inhibiting".png used on input line 676.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat_inh
-ibiting".png, id=3355, 803.0pt x 803.0pt>
+ibiting".png, id=3655, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_ma
 t_inhibiting".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat
 _inhibiting".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/expr_mat_inhibiting".png used on input line 689.
+_sim_method/expr_mat_inhibiting".png used on input line 681.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_d
-isc_mat".png, id=3356, 803.0pt x 803.0pt>
+isc_mat".png, id=3656, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_in
 hib_disc_mat".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inh
 ib_disc_mat".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/expr_inhib_disc_mat".png used on input line 693.
+_sim_method/expr_inhib_disc_mat".png used on input line 685.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 698.
+ mdframed uses option nobreak mdframed on input line 690.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 698.
- [109] [110 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/s
-igma_mat_inhibiting.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_
-Model/graph_sim_method/expr_cor_mat_inhibiting.png (PNG copy)> </home/tomkelly/
-Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat_inhibiting.png (PNG 
-copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_i
-nhib_disc_mat.png (PNG copy)>] [111]
-<"vioplot1".png, id=3401, 632.3625pt x 351.3125pt>
+ mdframed uses option nobreak mdframed on input line 690.
+ [107] [108 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/d
+ist_mat.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_
+sim_method/sigma_mat.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL
+_Model/graph_sim_method/expr_cor_mat.png (PNG copy)>] [109 </home/tomkelly/Docu
+ments/PhD Otago Uni/SL_Model/graph_sim_method/sigma_mat_inhibiting.png (PNG cop
+y)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor_
+mat_inhibiting.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model
+/graph_sim_method/expr_mat_inhibiting.png (PNG copy)> </home/tomkelly/Documents
+/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_disc_mat.png (PNG copy)>] [
+110] <"vioplot1".png, id=3711, 632.3625pt x 351.3125pt>
 File: "vioplot1".png Graphic file (type png)
- <use "vioplot1".png>
-Package pdftex.def Info: "vioplot1".png used on input line 746.
-(pdftex.def)             Requested size: 189.0967pt x 105.05148pt.
 
-<"vioplot2".png, id=3402, 632.3625pt x 351.3125pt>
+<use "vioplot1".png>
+Package pdftex.def Info: "vioplot1".png used on input line 740.
+(pdftex.def)             Requested size: 189.0967pt x 105.05148pt.
+ <"vioplot2".png, id=3712, 632.3625pt x 351.3125pt>
 File: "vioplot2".png Graphic file (type png)
- <use "vioplot2".png>
-Package pdftex.def Info: "vioplot2".png used on input line 750.
+
+<use "vioplot2".png>
+Package pdftex.def Info: "vioplot2".png used on input line 744.
 (pdftex.def)             Requested size: 189.0967pt x 105.05148pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 755.
+ mdframed uses option nobreak mdframed on input line 749.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 755.
-
-<"heatmap2x".png, id=3405, 505.89pt x 361.35pt>
+ mdframed uses option nobreak mdframed on input line 749.
+ <"heatmap2x".png, id=3715, 505.89pt x 361.35pt>
 File: "heatmap2x".png Graphic file (type png)
- <use "heatmap2x".png>
-Package pdftex.def Info: "heatmap2x".png used on input line 764.
+
+<use "heatmap2x".png>
+Package pdftex.def Info: "heatmap2x".png used on input line 758.
 (pdftex.def)             Requested size: 378.19339pt x 270.14066pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 769.
+ mdframed uses option nobreak mdframed on input line 763.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 769.
- [112]
-[113 <./vioplot1.png> <./vioplot2.png> <./heatmap2x.png (PNG copy)>]
+ mdframed uses option nobreak mdframed on input line 763.
+ [111] [112 <./vioplot1.png> <./vioplot2.png> <./heatmap2x.png (PNG copy)>] [11
+3]
+
+! Package xkeyval Error: `fbox' undefined in families `Gin'.
+
+See the xkeyval package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.785 ...sim_method/simple_graph_inhibiting".png}}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_
 graph_inhibiting".png Graphic file (type png)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_g
 raph_inhibiting".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph
-_sim_method/simple_graph_inhibiting".png used on input line 791.
+_sim_method/simple_graph_inhibiting".png used on input line 785.
 (pdftex.def)             Requested size: 210.10886pt x 210.11063pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 796.
+ mdframed uses option nobreak mdframed on input line 790.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 796.
- [114] [115]) [116]
+ mdframed uses option nobreak mdframed on input line 790.
+ [114]) [115]
 \openout2 = `chapt3.aux'.
 
  (./chapt3.tex
 Chapter 4.
-[117
+[116
 
 
 
-] [118]
-Overfull \hbox (4.23738pt too wide) in paragraph at lines 48--49
+]
+Overfull \hbox (4.23738pt too wide) in paragraph at lines 10--11
 []\OT1/cmr/m/n/12 Some of the find-ings pre-sented in this Chap-ter have also b
 een in-cluded in manuscripts
  []
 
-[119] [120] [121]
-<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png, id=3517, 14
+[117] [118] [119]
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png, id=3829, 14
 61.46pt x 1461.46pt>
 File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png Graphic
  file (type png)
 
 <use CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png>
 Package pdftex.def Info: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordi
-stx_Pub.png used on input line 211.
+stx_Pub.png used on input line 171.
 (pdftex.def)             Requested size: 1461.45645pt x 1461.45645pt.
-LaTeX Font Info:    Calculating math sizes for size <7.66495> on input line 214
+LaTeX Font Info:    Calculating math sizes for size <7.66495> on input line 174
 .
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.83247> not available
-(Font)              size <5> substituted on input line 214.
+(Font)              size <5> substituted on input line 174.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.83247> not available
-(Font)              size <5> substituted on input line 214.
+(Font)              size <5> substituted on input line 174.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.83247> not available
-(Font)              size <5> substituted on input line 214.
+(Font)              size <5> substituted on input line 174.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 216.
+ mdframed uses option nobreak mdframed on input line 176.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 216.
+ mdframed uses option nobreak mdframed on input line 176.
+[120]
 
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.220 \begin{table*}[!Hp]
-                         
-Option `H' ignored and `p' used.
-
-
-LaTeX Warning: Float too large for page by 0.89032pt on input line 410.
-
-[122] [123]
-
-LaTeX Warning: Text page 124 contains only floats.
+LaTeX Warning: Text page 121 contains only floats.
 
 
 Overfull \vbox (4.99904pt too high) has occurred while \output is active []
 
 
-[124 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png>]
-[125]
-<Venn_exprSL_siRNA_allgenes_reduced_Pub.png, id=3547, 540.0175pt x 449.68pt>
+[121 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png>]
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.200 \begin{table*}[!Hp]
+                         
+Option `H' ignored and `p' used.
+
+
+LaTeX Warning: Float too large for page by 2.94676pt on input line 387.
+
+<Venn_exprSL_siRNA_allgenes_reduced_Pub.png, id=3852, 540.0175pt x 449.68pt>
 File: Venn_exprSL_siRNA_allgenes_reduced_Pub.png Graphic file (type png)
 
 <use Venn_exprSL_siRNA_allgenes_reduced_Pub.png>
 Package pdftex.def Info: Venn_exprSL_siRNA_allgenes_reduced_Pub.png used on inp
-ut line 444.
+ut line 408.
 (pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 448.
+ mdframed uses option nobreak mdframed on input line 412.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 448.
-
-<Venn_mtSL_siRNA_allgenes_reduced_Pub.png, id=3548, 540.0175pt x 449.68pt>
-File: Venn_mtSL_siRNA_allgenes_reduced_Pub.png Graphic file (type png)
-
-<use Venn_mtSL_siRNA_allgenes_reduced_Pub.png>
-Package pdftex.def Info: Venn_mtSL_siRNA_allgenes_reduced_Pub.png used on input
- line 456.
-(pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 460.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 460.
+ mdframed uses option nobreak mdframed on input line 412.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ú in font cmr12!
@@ -2653,8 +2812,74 @@ Missing character: There is no ú in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ù in font cmr12!
- [126 <./Venn_exprSL_siRNA_allgenes_reduced_Pub.png>] [127 <./Venn_mtSL_siRNA_a
-llgenes_reduced_Pub.png>]
+ [122] [123] [124 <./Venn_exprSL_siRNA_allgenes_reduced_Pub.png>]
+<vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf, id=3867, 578.16pt 
+x 385.44pt>
+File: vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf Graphic file (
+type pdf)
+ <use vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf>
+Package pdftex.def Info: vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1
+.pdf used on input line 431.
+(pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 436.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 436.
+
+<exprSLIPT_siRNA_vs_Correlation_with_CDH1.png, id=3868, 803.0pt x 401.5pt>
+File: exprSLIPT_siRNA_vs_Correlation_with_CDH1.png Graphic file (type png)
+
+<use exprSLIPT_siRNA_vs_Correlation_with_CDH1.png>
+Package pdftex.def Info: exprSLIPT_siRNA_vs_Correlation_with_CDH1.png used on i
+nput line 444.
+(pdftex.def)             Requested size: 802.99805pt x 401.49901pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 449.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 449.
+ [125 <./vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf>] [126 <./e
+xprSLIPT_siRNA_vs_Correlation_with_CDH1.png>]
+<vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf, id=3883, 578.16pt x
+ 385.44pt>
+File: vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf Graphic file (t
+ype pdf)
+ <use vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf>
+Package pdftex.def Info: vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.
+pdf used on input line 460.
+(pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 465.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 465.
+
+<exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png, id=3884, 803.0pt x 401.5pt>
+File: exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png Graphic file (type png)
+
+<use exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png>
+Package pdftex.def Info: exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png used 
+on input line 473.
+(pdftex.def)             Requested size: 802.99805pt x 401.49901pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 478.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 478.
+
+<exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pdf, id=3885, 602.25pt x 5
+62.1pt>
+File: exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pdf Graphic file (typ
+e pdf)
+ <use exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pdf>
+Package pdftex.def Info: exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pd
+f used on input line 486.
+(pdftex.def)             Requested size: 602.24852pt x 562.09863pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 491.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 491.
+ [127
+
+ <./vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf> <./exprSLIPT_siR
+NA_vs_Viability_Ratio_with_CDH1.png>]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -2662,28 +2887,31 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.475 \begin{table*}[!Hp]
+l.503 \begin{table*}[!Hp]
                          
 Option `H' ignored and `p' used.
 
-<sample_size_dist_exprSL_1M_Pub.png, id=3562, 803.0pt x 803.0pt>
+
+LaTeX Warning: Float too large for page by 1.7224pt on input line 645.
+
+<sample_size_dist_exprSL_1M_Pub.png, id=3901, 803.0pt x 803.0pt>
 File: sample_size_dist_exprSL_1M_Pub.png Graphic file (type png)
 
 <use sample_size_dist_exprSL_1M_Pub.png>
 Package pdftex.def Info: sample_size_dist_exprSL_1M_Pub.png used on input line 
-628.
+660.
 (pdftex.def)             Requested size: 802.99805pt x 802.99805pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 633.
+ mdframed uses option nobreak mdframed on input line 665.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 633.
-
-Overfull \hbox (2.21452pt too wide) in paragraph at lines 640--641
+ mdframed uses option nobreak mdframed on input line 665.
+ [128 <./exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pdf>] [129] [130 <
+./sample_size_dist_exprSL_1M_Pub.png>]
+Overfull \hbox (2.21452pt too wide) in paragraph at lines 672--673
 \OT1/cmr/m/n/12 nalling path-ways in-clud-ing G$[]$ sig-nalling, GPCR down-stre
 am sig-nalling, and chemokine
  []
 
-[128] [129]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -2691,11 +2919,11 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.643 \begin{table*}[!Htp]
+l.675 \begin{table*}[!Htp]
                           
 Option `H' ignored and `p' used.
 
-[130 <./sample_size_dist_exprSL_1M_Pub.png>]
+[131]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -2703,39 +2931,320 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.761 \begin{table*}[!Htp]
+l.799 \begin{table*}[!Htp]
                           
 Option `H' ignored and `p' used.
 
-[131] [132]
-Overfull \hbox (20.81776pt too wide) in paragraph at lines 923--924
+
+Overfull \hbox (20.81776pt too wide) in paragraph at lines 933--934
 \OT1/cmr/m/n/12 Thus we have iden-ti-fied can-di-date syn-thetic lethal path-wa
 ys by gene set over-representation,
  []
 
-[133] [134] [135]
-<Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png, id=3612, 540.0175pt x 449.68p
+[132] [133] <MostSL_Summary_CDH1_FDR.pdf, id=3954, 385.44pt x 385.44pt>
+File: MostSL_Summary_CDH1_FDR.pdf Graphic file (type pdf)
+
+<use MostSL_Summary_CDH1_FDR.pdf>
+Package pdftex.def Info: MostSL_Summary_CDH1_FDR.pdf used on input line 970.
+(pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 975.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 975.
+ [134] [135 <./MostSL_Summary_CDH1_FDR.pdf>]
+[136]
+<CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf, 
+id=3975, 867.24pt x 867.24pt>
+File: CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.
+pdf Graphic file (type pdf)
+
+<use CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.p
+df>
+Package pdftex.def Info: CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_
+and_CDH1_Stat_corr.pdf used on input line 1128.
+(pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
+ [137] [138 <./CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_S
+tat_corr.pdf>] [139] [140] [141]
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png, id=402
+0, 1461.46pt x 1461.46pt>
+File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png Gr
+aphic file (type png)
+
+<use CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png>
+Package pdftex.def Info: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordi
+stx_Pub_stad.png used on input line 1362.
+(pdftex.def)             Requested size: 1461.45645pt x 1461.45645pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 1367.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1367.
+
+[142
+
+]
+
+LaTeX Warning: Text page 143 contains only floats.
+
+
+Overfull \vbox (4.99904pt too high) has occurred while \output is active []
+
+
+[143 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png>
+]
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1378 \begin{table*}[!Hp]
+                          
+Option `H' ignored and `p' used.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.1564 }
+        
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1564 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1564 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...or {Cluster_Orange!30} G_${\alpha s}
+                                                  $ signalling events & 100 ...
+l.1564 }
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1564 }
+        
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+
+LaTeX Warning: Float too large for page by 2.94676pt on input line 1565.
+
+[144]
+<Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png, id=4039, 540.0175pt x 449.68p
 t>
 File: Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png Graphic file (type png)
  <use Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png>
 Package pdftex.def Info: Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png used o
-n input line 983.
+n input line 1580.
 (pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 987.
+ mdframed uses option nobreak mdframed on input line 1584.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 987.
-
-<Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png, id=3613, 540.0175pt x 449.68pt>
-File: Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png Graphic file (type png)
-<use Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png>
-Package pdftex.def Info: Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png used on 
-input line 995.
-(pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 999.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 999.
+ mdframed uses option nobreak mdframed on input line 1584.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -2744,9 +3253,273 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1002 \begin{table*}[!Htp]
+l.1593 \begin{table*}[!Hp]
+                          
+Option `H' ignored and `p' used.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1734 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Float too large for page by 1.7224pt on input line 1735.
+
+[145
+
+ <./Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png>] [146]
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1744 \begin{table*}[!Htp]
                            
 Option `H' ignored and `p' used.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1861 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.1861 }
+        
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1861 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1861 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...color {Cluster_Red!15} G_${\alpha i}
+                                                  $ signalling events & $8.9...
+l.1861 }
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1861 }
+        
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -2755,33 +3528,223 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1108 \begin{table*}[!Htp]
+l.1864 \begin{table*}[!Htp]
                            
 Option `H' ignored and `p' used.
 
-[136 <./Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png>] [137] [138] [139 <./V
-enn_mtSL_siRNA_allgenes_reduced_Pub_stad.png>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1981 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.1981 }
+        
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1981 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1981 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...ed!15!Cluster_Blue!15} G_${\alpha q}
+                                                  $ signalling events & $5.6...
+l.1981 }
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1981 }
+        
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1981 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.1981 }
+        
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1981 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1981 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...ed!15!Cluster_Blue!15} G_${\alpha i}
+                                                  $ signalling events & $3.5...
+l.1981 }
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1981 }
+        
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1981 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.1981 }
+        
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1981 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1981 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...ed!20!Cluster_Blue!20} G_${\alpha s}
+                                                  $ signalling events & $1.7...
+l.1981 }
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1981 }
+        
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+
+LaTeX Warning: Float too large for page by 9.62149pt on input line 1982.
+
+[147] [148] [149] [150]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ò in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [140]) [141]
+ [151] [152] [153] [154] [155]) [156]
 \openout2 = `chapt4.aux'.
 
  (./chapt4.tex
 Chapter 5.
-[142
+[157
 
 
 
-]) [143]
+]) [158]
 \openout2 = `chapt5.aux'.
 
  (./chapt5.tex
 Chapter 6.
-[144
+
+Overfull \hbox (12.26474pt too wide) in paragraph at lines 1--1
+|\OT1/cmr/bx/n/24.88 Simulation and Mod-el-ing of Syn-thetic
+ []
+
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ò in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ò in font cmr12!
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ô in font cmr12!
+[159
 
 
 
@@ -2792,39 +3755,27 @@ Missing character: There is no ò in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ò in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ò in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ô in font cmr12!
- [145] [146]) [147]
+ [160] [161]) [162]
 \openout2 = `chapt6.aux'.
 
  (./chapt6.tex
 Chapter 7.
-[148
+[163
 
 
 
-] [149]
+] [164]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ° in font cmr12!
- [150] [151]) [152]
+ [165] [166]) [167]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex
 Chapter 8.
-) [153
+) [168
 
 
 
@@ -2843,49 +3794,49 @@ Underfull \hbox (badness 5592) in paragraph at lines 72--78
 avigating-[]cancer-[]care / cancer-[]basics /
  []
 
-[154
+[169
 
 
 
-] [155]
+] [170]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ∂ in font cmr12!
- [156] [157]
-Underfull \hbox (badness 10000) in paragraph at lines 322--327
+ [171] [172]
+Underfull \hbox (badness 10000) in paragraph at lines 323--328
 []\OT1/cmr/m/n/12 Cancer Re-search UK (2017) Fam-ily his-tory and can-cer
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--327
+Underfull \hbox (badness 10000) in paragraph at lines 323--328
 \OT1/cmr/m/n/12 genes.  []$\OT1/cmtt/m/n/12 http : / / www . cancerresearchuk .
  org / about-[]cancer /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 322--327
+Underfull \hbox (badness 10000) in paragraph at lines 323--328
 \OT1/cmtt/m/n/12 causes-[]of-[]cancer / inherited-[]cancer-[]genes-[]and-[]incr
 eased-[]cancer-[]risk /
  []
 
-[158] [159]
+[173] [174]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
- [160] [161]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 594.
+ [175] [176]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 603.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 594.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 603.
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no î in font cmr12!
- [162]
+ [177] [178]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no © in font cmr12!
- [163] [164] [165] [166] [167] [168] [169] [170] [171]
+ [179] [180] [181] [182] [183] [184] [185] [186]
 Missing character: There is no „ in font cmr12!
 Missing character: There is no Ç in font cmr12!
 Missing character: There is no Ø in font cmr12!
@@ -2925,108 +3876,1392 @@ Missing character: There is no † in font cmr12!
 Missing character: There is no „ in font cmr12!
 Missing character: There is no Ç in font cmr12!
 Missing character: There is no ∫ in font cmr12!
- [172] [173]
-[174]
-Underfull \hbox (badness 4168) in paragraph at lines 1554--1559
+ [187] [188]
+[189]
+Underfull \hbox (badness 4168) in paragraph at lines 1591--1596
 \OT1/cmtt/m/n/12 / / www . cancer . gov / about-[]cancer / causes-[]prevention 
 / genetics$[]\OT1/cmr/m/n/12 .  Pub-lished:
  []
 
-[175]
+[190]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
- [176] [177]
+ [191] [192] [193]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no î in font cmr12!
- [178]) [179]
-\openout2 = `appendices.aux'.
+) [194]
+\openout2 = `appendix_methods.aux'.
 
- (./appendices.tex
+ (./appendix_methods.tex
 Appendix A.
-<Raw(log)_Corr_eudist_Cut_part_Pub.png, id=3872, 752.8125pt x 752.8125pt>
+<Raw(log)_Corr_eudist_Cut_part_Pub.png, id=4341, 752.8125pt x 752.8125pt>
 File: Raw(log)_Corr_eudist_Cut_part_Pub.png Graphic file (type png)
 
 <use Raw(log)_Corr_eudist_Cut_part_Pub.png>
 Package pdftex.def Info: Raw(log)_Corr_eudist_Cut_part_Pub.png used on input li
-ne 24.
+ne 29.
 (pdftex.def)             Requested size: 752.81065pt x 752.81065pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 28.
+ mdframed uses option nobreak mdframed on input line 34.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 28.
+ mdframed uses option nobreak mdframed on input line 34.
 
-<Raw(log)_Corr_eudist_Ann_Pub.png, id=3875, 1606.0pt x 1606.0pt>
+<Raw(log)_Corr_eudist_Ann_Pub.png, id=4344, 1606.0pt x 1606.0pt>
 File: Raw(log)_Corr_eudist_Ann_Pub.png Graphic file (type png)
 
 <use Raw(log)_Corr_eudist_Ann_Pub.png>
-Package pdftex.def Info: Raw(log)_Corr_eudist_Ann_Pub.png used on input line 36
+Package pdftex.def Info: Raw(log)_Corr_eudist_Ann_Pub.png used on input line 42
 .
 (pdftex.def)             Requested size: 1605.99611pt x 1605.99611pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 40.
+ mdframed uses option nobreak mdframed on input line 46.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 40.
- [180
+ mdframed uses option nobreak mdframed on input line 46.
+ [195
 
 
- <./Raw(log)_Corr_eudist_Cut_part_Pub.png>] [181 <./Raw(log)_Corr_eudist_Ann_Pu
+ <./Raw(log)_Corr_eudist_Cut_part_Pub.png>] [196 <./Raw(log)_Corr_eudist_Ann_Pu
 b.png>]
+<Rep_picking_CutCut2.pdf, id=4358, 289.08pt x 289.08pt>
+File: Rep_picking_CutCut2.pdf Graphic file (type pdf)
+
+<use Rep_picking_CutCut2.pdf>
+Package pdftex.def Info: Rep_picking_CutCut2.pdf used on input line 63.
+(pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 67.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 67.
+
+<Rep_picking_KeepKeep(1).pdf, id=4359, 289.08pt x 289.08pt>
+File: Rep_picking_KeepKeep(1).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepKeep(1).pdf>
+Package pdftex.def Info: Rep_picking_KeepKeep(1).pdf used on input line 76.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.77         }
+              %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepKeep(2).pdf, id=4360, 289.08pt x 289.08pt>
+File: Rep_picking_KeepKeep(2).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepKeep(2).pdf>
+Package pdftex.def Info: Rep_picking_KeepKeep(2).pdf used on input line 80.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.81         }
+              %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepKeep(3).pdf, id=4361, 289.08pt x 289.08pt>
+File: Rep_picking_KeepKeep(3).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepKeep(3).pdf>
+Package pdftex.def Info: Rep_picking_KeepKeep(3).pdf used on input line 84.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.85         }
+              %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepKeep(4).pdf, id=4362, 289.08pt x 289.08pt>
+File: Rep_picking_KeepKeep(4).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepKeep(4).pdf>
+Package pdftex.def Info: Rep_picking_KeepKeep(4).pdf used on input line 91.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.92         }
+              %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepKeep(5).pdf, id=4363, 289.08pt x 289.08pt>
+File: Rep_picking_KeepKeep(5).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepKeep(5).pdf>
+Package pdftex.def Info: Rep_picking_KeepKeep(5).pdf used on input line 95.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.96         }
+              %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepKeep(6).pdf, id=4364, 289.08pt x 289.08pt>
+File: Rep_picking_KeepKeep(6).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepKeep(6).pdf>
+Package pdftex.def Info: Rep_picking_KeepKeep(6).pdf used on input line 99.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.100         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 106.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 106.
+<Rep_picking_KeepCut(1).pdf, id=4365, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(1).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(1).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(1).pdf used on input line 116.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.117         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepCut(2).pdf, id=4366, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(2).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(2).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(2).pdf used on input line 120.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.121         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepCut(3).pdf, id=4367, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(3).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(3).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(3).pdf used on input line 124.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.125         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepCut(4).pdf, id=4368, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(4).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(4).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(4).pdf used on input line 131.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.132         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepCut(5).pdf, id=4369, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(5).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(5).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(5).pdf used on input line 135.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.136         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepCut(6).pdf, id=4370, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(6).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(6).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(6).pdf used on input line 139.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.140         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepCut(7).pdf, id=4371, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(7).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(7).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(7).pdf used on input line 146.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.147         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepCut(8).pdf, id=4372, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(8).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(8).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(8).pdf used on input line 150.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.151         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepCut(9).pdf, id=4373, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(9).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(9).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(9).pdf used on input line 154.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.155         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 160.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 160.
+
+! LaTeX Error: \begin{figure*} on input line 110 ended by \end{figure}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 \end{figure}
+                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<Rep_picking_KeepCut(10).pdf, id=4374, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(10).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(10).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(10).pdf used on input line 169.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.170         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepCut(11).pdf, id=4375, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(11).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(11).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(11).pdf used on input line 173.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.174         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepCut(12).pdf, id=4376, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(12).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(12).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(12).pdf used on input line 177.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.178         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepCut(13).pdf, id=4377, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(13).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(13).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(13).pdf used on input line 184.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.185         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+<Rep_picking_KeepCut(14).pdf, id=4378, 289.08pt x 289.08pt>
+File: Rep_picking_KeepCut(14).pdf Graphic file (type pdf)
+
+<use Rep_picking_KeepCut(14).pdf>
+Package pdftex.def Info: Rep_picking_KeepCut(14).pdf used on input line 188.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+! Extra }, or forgotten \endgroup.
+l.189         }
+               %
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 195.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 195.
+
+! LaTeX Error: \begin{figure} on input line 162 ended by \end{figure*}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.196 \end{figure*}
+                   
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[197
+
+ <./Rep_picking_CutCut2.pdf>] [198 <./Rep_picking_KeepKeep(1).pdf> <./Rep_picki
+ng_KeepKeep(2).pdf> <./Rep_picking_KeepKeep(3).pdf> <./Rep_picking_KeepKeep(4).
+pdf> <./Rep_picking_KeepKeep(5).pdf> <./Rep_picking_KeepKeep(6).pdf>]
+[199 <./Rep_picking_KeepCut(1).pdf> <./Rep_picking_KeepCut(2).pdf> <./Rep_picki
+ng_KeepCut(3).pdf> <./Rep_picking_KeepCut(4).pdf> <./Rep_picking_KeepCut(5).pdf
+> <./Rep_picking_KeepCut(6).pdf> <./Rep_picking_KeepCut(7).pdf> <./Rep_picking_
+KeepCut(8).pdf> <./Rep_picking_KeepCut(9).pdf>] [200 <./Rep_picking_KeepCut(10)
+.pdf> <./Rep_picking_KeepCut(11).pdf> <./Rep_picking_KeepCut(12).pdf> <./Rep_pi
+cking_KeepCut(13).pdf> <./Rep_picking_KeepCut(14).pdf>]
 Appendix B.
-[182
+[201
 
-] [183] [184] [185] [186] [187] [188] [189] [190]
+] [202] [203] [204] [205] [206] [207] [208]) [209]
+\openout2 = `appendix_chapt3.aux'.
+
+ (./appendix_chapt3.tex
 Appendix C.
-[191
+[210
 
-]) [192]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 189.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 189.
- (./thesis.aux (./intro.aux) (./methods.aux) (./methods_dev.aux)
-(./chapt3.aux) (./chapt4.aux) (./chapt5.aux) (./chapt6.aux) (./conclusion.aux)
-(./appendices.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 189.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 189.
-Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4A3D6FB24E04ACD6BE3D65DEF6D2BDDA;15204.
 
+
+] [211]
+Appendix D.
+[212
+
+]
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png, id=4629, 1461
+.46pt x 1461.46pt>
+File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png Graphic f
+ile (type png)
+
+<use CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png>
+Package pdftex.def Info: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordist
+x_Pub.png used on input line 251.
+(pdftex.def)             Requested size: 1461.45645pt x 1461.45645pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 256.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 256.
+ [213]
+
+LaTeX Warning: Text page 214 contains only floats.
+
+
+Overfull \vbox (4.99904pt too high) has occurred while \output is active []
+
+
+[214 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png>]
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.262 \begin{table*}[!Hp]
+                         
+Option `H' ignored and `p' used.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.448 }
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.448 }
+       
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.448 }
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.448 }
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...color {Cluster_Red!15} G_${\alpha q}
+                                                  $ signalling events & 149 ...
+l.448 }
+       
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.448 }
+       
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+
+LaTeX Warning: Float too large for page by 8.98923pt on input line 449.
+
+[215]
+<Venn_mtSL_siRNA_allgenes_reduced_Pub.png, id=4653, 540.0175pt x 449.68pt>
+File: Venn_mtSL_siRNA_allgenes_reduced_Pub.png Graphic file (type png)
+
+<use Venn_mtSL_siRNA_allgenes_reduced_Pub.png>
+Package pdftex.def Info: Venn_mtSL_siRNA_allgenes_reduced_Pub.png used on input
+ line 462.
+(pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 466.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 466.
+
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.474 \begin{table*}[!Hp]
+                         
+Option `H' ignored and `p' used.
+
+
+LaTeX Warning: Float too large for page by 1.7224pt on input line 616.
+
+[216
+
+ <./Venn_mtSL_siRNA_allgenes_reduced_Pub.png>] [217] [218
+
+] [219]
+! Too many }'s.
+l.904 ...SLIPT genes} \label{chapt3:compare_mtSL}}
+                                                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+<vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf, id=4686, 578.16pt x 
+385.44pt>
+File: vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf Graphic file (ty
+pe pdf)
+ <use vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf>
+Package pdftex.def Info: vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.p
+df used on input line 913.
+(pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 918.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 918.
+
+<mtSLIPT_siRNA_vs_Correlation_with_CDH1.png, id=4687, 803.0pt x 401.5pt>
+File: mtSLIPT_siRNA_vs_Correlation_with_CDH1.png Graphic file (type png)
+
+<use mtSLIPT_siRNA_vs_Correlation_with_CDH1.png>
+Package pdftex.def Info: mtSLIPT_siRNA_vs_Correlation_with_CDH1.png used on inp
+ut line 926.
+(pdftex.def)             Requested size: 802.99805pt x 401.49901pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 931.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 931.
+
+<vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf, id=4688, 578.16pt x 3
+85.44pt>
+File: vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf Graphic file (typ
+e pdf)
+ <use vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf>
+Package pdftex.def Info: vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pd
+f used on input line 940.
+(pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 945.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 945.
+ [220
+
+ <./vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf> <./mtSLIPT_siRNA_
+vs_Correlation_with_CDH1.png>] [221 <./vioplotx_mtSLIPT_siRNA_vs_Viability_Rati
+o_with_CDH1.pdf>] [222
+
+] <Mutation_locus_PIK3CA.pdf, id=4716, 1156.32pt x 289.08pt>
+File: Mutation_locus_PIK3CA.pdf Graphic file (type pdf)
+
+<use Mutation_locus_PIK3CA.pdf>
+Package pdftex.def Info: Mutation_locus_PIK3CA.pdf used on input line 1042.
+(pdftex.def)             Requested size: 315.16328pt x 78.78928pt.
+
+<Mutation_locus_PIK3R1.pdf, id=4717, 1156.32pt x 289.08pt>
+File: Mutation_locus_PIK3R1.pdf Graphic file (type pdf)
+
+<use Mutation_locus_PIK3R1.pdf>
+Package pdftex.def Info: Mutation_locus_PIK3R1.pdf used on input line 1046.
+(pdftex.def)             Requested size: 315.16328pt x 78.78928pt.
+
+<Mutation_locus_CDH1.pdf, id=4718, 1156.32pt x 289.08pt>
+File: Mutation_locus_CDH1.pdf Graphic file (type pdf)
+
+<use Mutation_locus_CDH1.pdf>
+Package pdftex.def Info: Mutation_locus_CDH1.pdf used on input line 1049.
+(pdftex.def)             Requested size: 315.16328pt x 78.78928pt.
+
+<Mutation_locus_TP53.pdf, id=4719, 1156.32pt x 289.08pt>
+File: Mutation_locus_TP53.pdf Graphic file (type pdf)
+
+<use Mutation_locus_TP53.pdf>
+Package pdftex.def Info: Mutation_locus_TP53.pdf used on input line 1052.
+(pdftex.def)             Requested size: 315.16328pt x 78.78928pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 1057.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1057.
+ [223
+
+ <./Mutation_locus_PIK3CA.pdf> <./Mutation_locus_PIK3R1.pdf> <./Mutation_locus_
+CDH1.pdf> <./Mutation_locus_TP53.pdf>]
+<geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf, id=4748, 289.08pt x 289.08pt>
+File: geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf Graphic file (type pdf)
+
+<use geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf>
+Package pdftex.def Info: geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf used on in
+put line 1070.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+<metagene_vioplotx_Mutation_locus_PIK3CA.pdf, id=4749, 289.08pt x 289.08pt>
+File: metagene_vioplotx_Mutation_locus_PIK3CA.pdf Graphic file (type pdf)
+
+<use metagene_vioplotx_Mutation_locus_PIK3CA.pdf>
+Package pdftex.def Info: metagene_vioplotx_Mutation_locus_PIK3CA.pdf used on in
+put line 1074.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+<geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf, id=4750, 289.08pt x 289.08pt>
+File: geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf Graphic file (type pdf)
+
+<use geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf>
+Package pdftex.def Info: geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf used on in
+put line 1077.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+<protein_vioplotx_Mutation_locus_PIK3CA.pdf, id=4751, 289.08pt x 289.08pt>
+File: protein_vioplotx_Mutation_locus_PIK3CA.pdf Graphic file (type pdf)
+
+<use protein_vioplotx_Mutation_locus_PIK3CA.pdf>
+Package pdftex.def Info: protein_vioplotx_Mutation_locus_PIK3CA.pdf used on inp
+ut line 1081.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+<protein_vioplotx_Mutation_locus_AKT.pdf, id=4752, 289.08pt x 289.08pt>
+File: protein_vioplotx_Mutation_locus_AKT.pdf Graphic file (type pdf)
+
+<use protein_vioplotx_Mutation_locus_AKT.pdf>
+Package pdftex.def Info: protein_vioplotx_Mutation_locus_AKT.pdf used on input 
+line 1084.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+<protein_vioplotx_Mutation_locus_CDH1.pdf, id=4753, 289.08pt x 289.08pt>
+File: protein_vioplotx_Mutation_locus_CDH1.pdf Graphic file (type pdf)
+
+<use protein_vioplotx_Mutation_locus_CDH1.pdf>
+Package pdftex.def Info: protein_vioplotx_Mutation_locus_CDH1.pdf used on input
+ line 1088.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+
+<protein_vioplotx_Mutation_locus_TP53.pdf, id=4754, 289.08pt x 289.08pt>
+File: protein_vioplotx_Mutation_locus_TP53.pdf Graphic file (type pdf)
+
+<use protein_vioplotx_Mutation_locus_TP53.pdf>
+Package pdftex.def Info: protein_vioplotx_Mutation_locus_TP53.pdf used on input
+ line 1091.
+(pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 1096.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1096.
+
+<protein_vioplotx_Mutation_PI3K_PIK3CA.pdf, id=4755, 289.08pt x 289.08pt>
+File: protein_vioplotx_Mutation_PI3K_PIK3CA.pdf Graphic file (type pdf)
+
+<use protein_vioplotx_Mutation_PI3K_PIK3CA.pdf>
+Package pdftex.def Info: protein_vioplotx_Mutation_PI3K_PIK3CA.pdf used on inpu
+t line 1105.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+
+<protein_vioplotx_Mutation_PI3K_PIK3CA_PIK3R1.pdf, id=4756, 289.08pt x 289.08pt
+>
+File: protein_vioplotx_Mutation_PI3K_PIK3CA_PIK3R1.pdf Graphic file (type pdf)
+ <use protein_vioplotx_Mutation_PI3K_PIK3CA_PIK3R1.pdf>
+Package pdftex.def Info: protein_vioplotx_Mutation_PI3K_PIK3CA_PIK3R1.pdf used 
+on input line 1108.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+
+<protein_vioplotx_Mutation_PI3K_CDH1.pdf, id=4757, 289.08pt x 289.08pt>
+File: protein_vioplotx_Mutation_PI3K_CDH1.pdf Graphic file (type pdf)
+
+<use protein_vioplotx_Mutation_PI3K_CDH1.pdf>
+Package pdftex.def Info: protein_vioplotx_Mutation_PI3K_CDH1.pdf used on input 
+line 1112.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+
+<protein_vioplotx_Mutation_PI3K_TP53.pdf, id=4758, 289.08pt x 289.08pt>
+File: protein_vioplotx_Mutation_PI3K_TP53.pdf Graphic file (type pdf)
+
+<use protein_vioplotx_Mutation_PI3K_TP53.pdf>
+Package pdftex.def Info: protein_vioplotx_Mutation_PI3K_TP53.pdf used on input 
+line 1115.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 1120.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1120.
+
+<protein_vioplotx_Mutation_AKT_PIK3CA.pdf, id=4759, 289.08pt x 289.08pt>
+File: protein_vioplotx_Mutation_AKT_PIK3CA.pdf Graphic file (type pdf)
+
+<use protein_vioplotx_Mutation_AKT_PIK3CA.pdf>
+Package pdftex.def Info: protein_vioplotx_Mutation_AKT_PIK3CA.pdf used on input
+ line 1129.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+
+<protein_vioplotx_Mutation_AKT_PIK3CA_PIK3R1.pdf, id=4760, 289.08pt x 289.08pt>
+File: protein_vioplotx_Mutation_AKT_PIK3CA_PIK3R1.pdf Graphic file (type pdf)
+<use protein_vioplotx_Mutation_AKT_PIK3CA_PIK3R1.pdf>
+Package pdftex.def Info: protein_vioplotx_Mutation_AKT_PIK3CA_PIK3R1.pdf used o
+n input line 1132.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+
+<protein_vioplotx_Mutation_AKT_CDH1.pdf, id=4761, 289.08pt x 289.08pt>
+File: protein_vioplotx_Mutation_AKT_CDH1.pdf Graphic file (type pdf)
+
+<use protein_vioplotx_Mutation_AKT_CDH1.pdf>
+Package pdftex.def Info: protein_vioplotx_Mutation_AKT_CDH1.pdf used on input l
+ine 1136.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+
+<protein_vioplotx_Mutation_AKT_TP53.pdf, id=4762, 289.08pt x 289.08pt>
+File: protein_vioplotx_Mutation_AKT_TP53.pdf Graphic file (type pdf)
+
+<use protein_vioplotx_Mutation_AKT_TP53.pdf>
+Package pdftex.def Info: protein_vioplotx_Mutation_AKT_TP53.pdf used on input l
+ine 1139.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 1144.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1144.
+
+<metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf, id=4763, 289.08pt x 28
+9.08pt>
+File: metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf Graphic file (type
+ pdf)
+ <use metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf>
+Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf
+ used on input line 1153.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+
+<metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK3R1.pdf, id=4764, 289.08
+pt x 289.08pt>
+File: metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK3R1.pdf Graphic fil
+e (type pdf)
+
+<use metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK3R1.pdf>
+Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK
+3R1.pdf used on input line 1156.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+
+<metagene(ranked)_vioplotx_Mutation_PI3K2011_CDH1.pdf, id=4765, 289.08pt x 289.
+08pt>
+File: metagene(ranked)_vioplotx_Mutation_PI3K2011_CDH1.pdf Graphic file (type p
+df)
+ <use metagene(ranked)_vioplotx_Mutation_PI3K2011_CDH1.pdf>
+Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PI3K2011_CDH1.pdf u
+sed on input line 1160.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+
+<metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.pdf, id=4766, 289.08pt x 289.
+08pt>
+File: metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.pdf Graphic file (type p
+df)
+ <use metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.pdf>
+Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.pdf u
+sed on input line 1163.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 1168.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1168.
+
+<metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA.pdf, id=4767, 289.08pt x 
+289.08pt>
+File: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA.pdf Graphic file (ty
+pe pdf)
+ <use metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA.pdf>
+Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA.p
+df used on input line 1177.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+
+<metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA_PIK3R1.pdf, id=4768, 289.
+08pt x 289.08pt>
+File: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA_PIK3R1.pdf Graphic f
+ile (type pdf)
+
+<use metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA_PIK3R1.pdf>
+Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA_P
+IK3R1.pdf used on input line 1180.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+
+<metagene(ranked)_vioplotx_Mutation_PIK3CA2014_CDH1.pdf, id=4769, 289.08pt x 28
+9.08pt>
+File: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_CDH1.pdf Graphic file (type
+ pdf)
+ <use metagene(ranked)_vioplotx_Mutation_PIK3CA2014_CDH1.pdf>
+Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_CDH1.pdf
+ used on input line 1184.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+
+<metagene(ranked)_vioplotx_Mutation_PIK3CA2014_TP53.pdf, id=4770, 289.08pt x 28
+9.08pt>
+File: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_TP53.pdf Graphic file (type
+ pdf)
+ <use metagene(ranked)_vioplotx_Mutation_PIK3CA2014_TP53.pdf>
+Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_TP53.pdf
+ used on input line 1187.
+(pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 1192.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1192.
+ [224
+
+ <./geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf> <./metagene_vioplotx_Mutation_
+locus_PIK3CA.pdf> <./geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf> <./protein_vi
+oplotx_Mutation_locus_PIK3CA.pdf> <./protein_vioplotx_Mutation_locus_AKT.pdf> <
+./protein_vioplotx_Mutation_locus_CDH1.pdf> <./protein_vioplotx_Mutation_locus_
+TP53.pdf>] [225 <./protein_vioplotx_Mutation_PI3K_PIK3CA.pdf> <./protein_vioplo
+tx_Mutation_PI3K_PIK3CA_PIK3R1.pdf> <./protein_vioplotx_Mutation_PI3K_CDH1.pdf>
+ <./protein_vioplotx_Mutation_PI3K_TP53.pdf>] [226 <./protein_vioplotx_Mutation
+_AKT_PIK3CA.pdf> <./protein_vioplotx_Mutation_AKT_PIK3CA_PIK3R1.pdf> <./protein
+_vioplotx_Mutation_AKT_CDH1.pdf> <./protein_vioplotx_Mutation_AKT_TP53.pdf>] [2
+27 <./metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf> <./metagene(ranke
+d)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK3R1.pdf> <./metagene(ranked)_vioplotx_M
+utation_PI3K2011_CDH1.pdf> <./metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.
+pdf>]
+[228 <./metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA.pdf> <./metagene(r
+anked)_vioplotx_Mutation_PIK3CA2014_PIK3CA_PIK3R1.pdf> <./metagene(ranked)_viop
+lotx_Mutation_PIK3CA2014_CDH1.pdf> <./metagene(ranked)_vioplotx_Mutation_PIK3CA
+2014_TP53.pdf>]
+Appendix E.
+! Too many }'s.
+l.1196 \label{results:mg_expr_SL}}
+                                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+
+<CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf, 
+id=4955, 867.24pt x 867.24pt>
+File: CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.
+pdf Graphic file (type pdf)
+
+<use CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.p
+df>
+Package pdftex.def Info: CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_
+and_CDH1_Stat_corr.pdf used on input line 1213.
+(pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
+
+<CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pdf, id=4960, 867.24pt x 8
+67.24pt>
+File: CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pdf Graphic file (typ
+e pdf)
+ <use CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pdf>
+Package pdftex.def Info: CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pd
+f used on input line 1229.
+(pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
+
+<CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf, id=4965, 867.24pt x 86
+7.24pt>
+File: CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf Graphic file (type
+ pdf)
+ <use CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf>
+Package pdftex.def Info: CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf
+ used on input line 1245.
+(pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
+
+<CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.pdf, id=4970, 867.24pt x 867
+.24pt>
+File: CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.pdf Graphic file (type 
+pdf)
+ <use CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.pdf>
+Package pdftex.def Info: CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.pdf 
+used on input line 1261.
+(pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
+
+<CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.pdf, id=4975, 867.24pt x 
+867.24pt>
+File: CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.pdf Graphic file (ty
+pe pdf)
+ <use CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.pdf>
+Package pdftex.def Info: CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.p
+df used on input line 1278.
+(pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
+
+[229
+
+] [230 <./CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_and_CDH1_Stat_c
+orr.pdf>] [231 <./CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pdf>] [23
+2 <./CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf>] [233 <./CDH1_Heat
+maps_Gatza2011(ER)_Full_Metagene_mgorder.pdf>] [234 <./CDH1_Heatmaps_Gatza2014(
+BRCA1)_Full_Metagene_mgorder.pdf>]
+Appendix F.
+[235
+
+]
+Appendix G.
+[236
+
+]
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png, id=5068,
+ 1461.46pt x 1461.46pt>
+File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png Grap
+hic file (type png)
+
+<use CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png>
+Package pdftex.def Info: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordist
+x_Pub_stad.png used on input line 1448.
+(pdftex.def)             Requested size: 1461.45645pt x 1461.45645pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 1453.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1453.
+
+[237]
+
+LaTeX Warning: Text page 238 contains only floats.
+
+
+Overfull \vbox (4.99904pt too high) has occurred while \output is active []
+
+
+[238 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png>]
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1459 \begin{table*}[!Hp]
+                          
+Option `H' ignored and `p' used.
+
+
+LaTeX Warning: Float too large for page by 14.3523pt on input line 1648.
+
+[239]
+<Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png, id=5087, 540.0175pt x 449.68pt>
+File: Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png Graphic file (type png)
+<use Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png>
+Package pdftex.def Info: Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png used on 
+input line 1660.
+(pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 1664.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1664.
+
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1668 \begin{table*}[!Hp]
+                          
+Option `H' ignored and `p' used.
+
+
+LaTeX Warning: Float too large for page by 1.7224pt on input line 1810.
+
+[240
+
+ <./Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png>] [241]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1935 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.1935 }
+        
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1935 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.1935 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...color {Cluster_Red!15} G_${\alpha s}
+                                                  $ signalling events & $1.1...
+l.1935 }
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.1935 }
+        
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Extra }, or forgotten \endgroup.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.1936 \end{table*}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! LaTeX Error: Unknown float option `H'.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1938 \begin{table*}[!Htp]
+                           
+Option `H' ignored and `p' used.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2055 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.2055 }
+        
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2055 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2055 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...ed!20!Cluster_Blue!20} G_${\alpha s}
+                                                  $ signalling events & $5 \...
+l.2055 }
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2055 }
+        
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2055 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.2055 }
+        
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2055 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2055 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...ed!20!Cluster_Blue!20} G_${\alpha q}
+                                                  $ signalling events & $5.1...
+l.2055 }
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2055 }
+        
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2055 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.2055 }
+        
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2055 }
+        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.2055 }
+        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<argument> ...ed!15!Cluster_Blue!15} G_${\alpha i}
+                                                  $ signalling events & $0.0...
+l.2055 }
+        
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.2055 }
+        
+I've put in what seems to be necessary to fix
+the current column of the current alignment.
+Try to go on, since this might almost work.
+
+[242] [243] [244]
+Appendix H.
+<MostSL_Summary_CDH1_FDR_stad.pdf, id=5112, 385.44pt x 385.44pt>
+File: MostSL_Summary_CDH1_FDR_stad.pdf Graphic file (type pdf)
+
+<use MostSL_Summary_CDH1_FDR_stad.pdf>
+Package pdftex.def Info: MostSL_Summary_CDH1_FDR_stad.pdf used on input line 21
+42.
+(pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 2147.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 2147.
+ [245
+
+ <./MostSL_Summary_CDH1_FDR_stad.pdf>] [246
+
+]) [247
+
+]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
+ (./thesis.aux (./intro.aux) (./methods.aux) (./methods_dev.aux) (./chapt3.aux)
+ (./chapt4.aux) (./chapt5.aux) (./chapt6.aux) (./conclusion.aux) (./appendix_me
+thods.aux) (./appendix_chapt3.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
+
+
+Package rerunfilecheck Warning: File `thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `thesis.out':
+(rerunfilecheck)             Before: FDC577FF2F535129474D5A06F6C59F34;17356
+(rerunfilecheck)             After:  CD3B1BF593C3E925351DC8D3219065E3;17741.
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 2.90001pt have occurred.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 36848 strings out of 494497
- 690158 string characters out of 6172400
- 869996 words of memory out of 5000000
- 38511 multiletter control sequences out of 15000+600000
- 16569 words of font info for 61 fonts, out of 8000000 for 9000
+ 37285 strings out of 494497
+ 709074 string characters out of 6172400
+ 913349 words of memory out of 5000000
+ 38642 multiletter control sequences out of 15000+600000
+ 16915 words of font info for 62 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 59i,21n,94p,10440b,972s stack positions out of 5000i,500n,10000p,200000b,80000s
- </home/tomkelly/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/
-share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/tex-g
-yre/qhvr.pfb>
-Output written on thesis.pdf (212 pages, 6213174 bytes).
+ 59i,21n,94p,10416b,976s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{table.caption.24} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.22} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.21} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.13} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.7} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.20} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.17} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.10} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.9} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.14} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.4} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.6} has been referenced but does not 
+exist, replaced by a fixed one
+
+ </home/tomkelly/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1200.600pk></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fonts/type1/public/tex-gyr
+e/qhvb.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qhvr.pfb>
+Output written on thesis.pdf (268 pages, 15263054 bytes).
 PDF statistics:
- 4169 PDF objects out of 4296 (max. 8388607)
- 3722 compressed objects within 38 object streams
- 776 named destinations out of 1000 (max. 500000)
- 1708 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 5420 PDF objects out of 6186 (max. 8388607)
+ 4749 compressed objects within 48 object streams
+ 1019 named destinations out of 1200 (max. 500000)
+ 2275 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -83,7 +83,7 @@
 \usepackage{subfigure}
 \usepackage{subcaption}
 \usepackage{mdframed} %frame with caption
-\usepackage[export]{adjustbox} %frame figures
+%\usepackage[export]{adjustbox} %frame figures
 \usepackage{cleveref}
 %\usepackage{mwe}
 
@@ -105,6 +105,8 @@
 \include{glossary}
 \makeglossaries
 \usepackage{bibentry} 
+
+\usepackage{lipsum}
 
 %\newcommand\cropped[1]{%
 %    \immediate\write{convert -trim #1.png #1cropped.png}%
@@ -189,7 +191,7 @@
 %%
 \cleardoublepage
 \bibliographystyle{mycustom}
-%\bibliography{thesis}
+\bibliography{thesis}
 %\nobibliography{thesis}
 
 \appendix

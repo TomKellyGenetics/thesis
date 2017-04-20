@@ -1,45 +1,7 @@
 \chapter{Synthetic Lethal Analysis of Gene Expression Data}
 \label{chap:SLIPT}
 
-\paragraph{Aims}
-
-  \begin{itemize}
-   \item Pathway Structure of Candidate Synthetic Lethal Genes for \textit{\textit{CDH1}} from TCGA breast data
-   
-   \bigskip
-   
-   \item Comparisons to Experimental siRNA Screen Candidates
-   
-   \bigskip
-   
-   \item Replication of Pathways across in TCGA Stomach data
-  \end{itemize}
-
-\paragraph{Summary}
-
-    
-  \begin{itemize}
-   \item We have developed a Synthetic Lethal detection method that generates a high number of synthetic lethal candidates
-   
-   \bigskip
-   
-   \item Pathways in cell signalling, extracellular matrix, and cytoskeletal functions were supported with experimental candidates and the known functions of E-cadherin
-   
-   \bigskip
-   
-   \item Several candidate pathways were supported by mutation analysis and replicated across breast and stomach cancer
-   
-   \bigskip
-   
-   \item Translation and immune functions were uniquely detected by the computational approach which may be explained by differences between patient samples and cell line models
-   
-   \bigskip
-   
-   \item There remains the need to identify actionable genes within these pathways, relationships with experimental candidates, and how these pathways may affect viability when lost
-  \end{itemize}
-
-
-Having developed a statistical synthetic lethal detection methodology (SLIPT), it was applied to empirical (publicly available) cancer gene expression datasets in this chapter. The analysis largely focuses findings from the TCGA breast cancer data which covers a range of clinical subtypes and is more closely modelled by siRNA data \citep{Telford2015} generated from screening experiments conducted in MCF10A breast cells. Although stomach cancer data will also be considered to replicate findings in an independent dataset and for it's relevance to syndromic hereditary diffuse gastric cancer. The TCGA data also has the advantages of other clinical and molecular profiles (e.g., somatic mutation and DNA copy number) for many of the same samples, in addition to a considerable sample size for RNASeq expression data, treated with a rigorous procedure to minimise batch effects. Some findings will be replicated in the Cancer Cell Line Encyclopaedia (CCLE) which may be more comparable to the cell line experiments.
+Having developed a statistical synthetic lethal detection methodology (SLIPT), it was applied to empirical (publicly available) cancer gene expression datasets in this chapter. The analysis largely focuses findings from the TCGA breast cancer data \citep{TCGA2012} which covers a range of clinical subtypes and is more closely modelled by siRNA data \citep{Telford2015} generated from screening experiments conducted in MCF10A breast cells. Although stomach cancer data will also be considered to replicate findings in an independent dataset and for it's relevance to syndromic hereditary diffuse gastric cancer. The TCGA data also has the advantages of other clinical and molecular profiles (e.g., somatic mutation and DNA copy number) for many of the same samples, in addition to a considerable sample size for RNASeq expression data, treated with a rigorous procedure to minimise batch effects. Some findings will be replicated in the Cancer Cell Line Encyclopaedia (CCLE) \citep{Barretina2012} which may be more comparable to the cell line experiments.
 
 Synthetic lethal candidate partners for \textit{CDH1} will be described at both the gene and pathway level. SLIPT gene candidates will be analysed by cluster analysis for common expression profiles across samples and relationships with clinical factors and mutations in key breast cancer genes. These genes will also be compared to the gene candidates from a primary and secondary (validation) screens conducted by \citet{Telford2015} on isogenic cell lines. For comparison, an alternative SLIPT methodology which uses mutation data for \textit{CDH1} against expression of candidate partners will also be presented which may better represent the null mutations in HDGC patients and the experiment cell model \citep{Chen2014}. Pathways will be analysed by over-representation analysis (with resampling for comparisons with siRNA data) and supported by a metagene analysis of pathway gene signatures. The pathway metagene expression profiles will be used to replicate known relationships between clinical and molecular characteristics for breast cancer and to demonstrate application of SLIPT directly on metagenes to detect synthetic lethal pathways.
 
@@ -47,13 +9,7 @@ Together these results will demonstrate the wide range of applications for SLIPT
 
 Some of the findings presented in this Chapter have also been included in manuscripts submitted for publication \citep{KellyHDGC, KellyBMC} and may bear similarity to them, although the results in this thesis have been edited to cohesively fit with additional findings (including consistent data versions). These findings are the result of investigations conducted throughout this thesis project and only these contributions to the articles are included in this chapter, not that conducted by co-authors.
 
-\section{Synthetic lethal genes in breast cancer}
-
-\begin{itemize}
- \item exprSL
- \item mtSL
- \item heatmap
-\end{itemize}
+\section{Synthetic lethal genes in breast cancer} \label{results:exprSL_genes}
 
 The SLIPT methodology (as described in section \ref{methods:SLIPT}) was applied to the normalised TCGA breast cancer gene expression dataset ($n = 1168$). As shown in Table \ref{tab:gene_SL}, the most significant genes had strong evidence of expression-based association with \textit{CDH1} (high $\chi^2$ values) with fewer samples exhibiting low expression of both genes than expected statistically. Eukaryotic translation gene were among the highest gene candidates, including initiation factors, elongation factors, and ribosomal proteins. These are clearly neccessary for cancer cells to grow and proliferate, with sustained gene expression needed to maintain growth signaling pathways and resist apoptosis or immune factors translation may be subject to non-oncogene addiction for \textit{CDH1}-deficient cells.
 
@@ -136,7 +92,7 @@ The mtSLIPT candidates had more genes involved in cell and gene regulation, part
 %%appendix
 %\label{tab:gene_mtSL}
 
-\subsection{Synthetic lethal pathways in breast cancer}
+\subsection{Synthetic lethal pathways in breast cancer} \label{results:exprSL_pathways}
 
 \begin{table*}[!ht]
 \caption{Pathways for \textit{CDH1} partners from SLIPT}
@@ -145,7 +101,6 @@ The mtSLIPT candidates had more genes involved in cell and gene regulation, part
 \resizebox{1 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccc}
-  \hline
   \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
   \hline
   \rowcolor{black!10}
@@ -202,7 +157,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 %\label{tab:pathway_mtSL}
 
 
-\subsection{Expression profiles of synthetic lethal partners}
+\subsection{Expression profiles of synthetic lethal partners} \label{results:exprSL_clusters}
 
 Due to the sheer number of gene candidates, investigations proceeded into correlation structure and pathway over-represent\-ation to explore the functional similarity of the synthetic lethal partners of \textit{CDH1}, with the eventual aim to assess their utility as drug targets. As shown in Figure \ref{fig:slipt_expr}, there were several large clusters of genes among the  expression profiles of the \textit{CDH1} synthetic lethal candidate partners, which suggests co-regulation of genes or pathway correlation. A number of candidates from an experimental RNAi screen study performed by Telford \textit{et al.} \cite{Telford2015} were also identified by this approach. In addition, we identified novel gene candidates, which had little effect on viability in isogenic cell line experiments. %or in some cases, even opposite effects of selective cell death or toxicity to both isogenic cell lines.
 
@@ -466,7 +421,7 @@ Both of these are being applied with developing a method and overcoming technica
 
 As discussed above, comparing genes between experimental screen candidates and prediction from TCGA expression data has been difficult. Figure 3 summarises the approaches to comparing genes accounting for some of the differences between the datasets. Of particular concern are the over-represented pathways in genes detected by both methods. There is no statistical evidence that SLIPT predicted genes or siRNA candidates are enriched in with each other. The siRNA candidates themselves are over-represented with many pathways including GPCRs so any intersection with these would contain some of these pathways. Whether these pathways are contained in the intersection more than expected by chance is the problem the two approaches below were designed to tackle.
 
-\subsubsection{Comparison with correlation} \label{chapt3:compare_correlation}
+\subsubsection{Comparison with correlation} \label{chapt3:compare_correlation} 
 
 \begin{figure*}[!htp]
 \begin{mdframed}
@@ -539,7 +494,7 @@ As discussed above, comparing genes between experimental screen candidates and p
 
 \FloatBarrier
 
-\subsubsection{Comparison of screen at pathway level}
+\subsubsection{Comparison of screen at pathway level}  \label{chapt3:compare_pathway}
 
 These pathway analyses correspond to genes separated into SLIPT or siRNA screen candidates unique to either method or detected by both (Table \ref{tab:Venn_over-representation}). The SLIPT-specific gene candidates were involved most strongly with translational and immune regulatory pathways, which were also identified in the clustering analysis (Table \ref{tab:pathway_clusters}). The genes detected only by the siRNA screen had over-represent\-ation of cell signalling pathways, including many containing genes known to be involved in cancer (e.g., MAPK, PDGF, ERBB2, and FGFR), with the detection of Class A GPCRs supporting the independent analyses by  Telford \textit{et al.} \cite{Telford2015}.
 
@@ -693,7 +648,7 @@ The intersection of computational and experimental synthetic lethal partners of 
 %\label{tab:Venn_over-representation_mtSL}
 
 
-\subsubsubsection{Resampling of genes for pathway enrichment}
+\subsubsubsection{Resampling of genes for pathway enrichment} \label{chapt3:compare_pathway_perm}
 
 As shown in Figure \ref{fig:perm_sample}, resampling did not find evidence of significant depletion or over-represent\-ation for experimental synthetic lethal candidates in the computationally predicted synthetic lethal partners of \textit{CDH1}, which suggested that the overlap across the two methods was no better than by chance.
 
@@ -990,35 +945,194 @@ DNA methylation data was also prepared for synthetic lethal analysis but was dis
 
 \subsubsection{Mutation analysis}
 
+\iffalse
 \subsection{ANOVA of Expression Predictors}
 [include?]
 
 Another approach was to only use copy number, mutation, or hyper-methylation data for genes in which they would impact on gene function and occur frequently in tumours. Before investigating whether these impact on gene function, they were investigated as predictors of variation in gene expression. If these are not giving variation independent of gene expression, expression would be a more suitable measure of gene function as it is widely generated in studies and useful as a clinical biomarker.
 
 Globally predicting gene expression across all genes from DNA copy number and somatic mutation was attempted by ANOVA. However, this was computationally challenging and gene-specific analyses would be more informative. Gene specific ANOVA and linear regression was performed but was raised more issues than it addressed. There were issues with interaction terms and mutation data, many genes were not tested for these since there were so few mutations for these genes in the dataset.  It was possible to include DNA methylation in gene-specific analyses (despite the concerns raised above) but the $R^2$ values for each gene were still generally very low and issues with insufficient mutant samples for interaction terms became worse. This means that the approach used differs for each gene making it difficult to compare them. The challenges raised here suggested that expression is very difficult to predict with other factors but including these other factors would be difficult and plagued by multiple-testing, particularly comparing between them with the current synthetic lethal prediction method. This led to investigations into the simulation of synthetic lethality.
+\fi
+
+
+\FloatBarrier
 
 \section{Global Synthetic Lethality}
 [include?]
 
 Global levels of synthetic lethality were analysed as part of my Honours project \citep{Kelly2013} to address concerns of high numbers of synthetic lethal candidates for \textit{CDH1}. This turned out to be typical for most genes in the microarray dataset. Due to newer samples and concerns about sample quality in TCGA microarrays, RNA-Seq datasets were used here. The focus of this thesis is gene expression data generated by RNA-Seq, this was replicated using the TCGA breast cancer RNA-Seq dataset on the New Zealand eScience Infrastructure Intel Pan supercomputer.
 
+\begin{figure*}[!ht]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \includegraphics{MostSL_Summary_CDH1_FDR.pdf}
+   }
+   \end{center}
+   \caption[Synthetic lethal partners across query genes]{\small \textbf{Synthetic lethal partners across query genes.} Global synthetic lethal pairs were examined across the genome in TCGA breast expression data by applying SLIPT across query genes. The high number of predicted partners for \textit{CDH1} was typical for a human gene and lower than many other genes.
+   }
+\label{fig:global_SL}
+\end{mdframed}
+\end{figure*}
+
+
+\FloatBarrier
+
 \subsection{Hub Genes}
-Table 1.  Hub gene function in TCGA breast cancer microarray expression SL predictions (n=600).
 
-Table 2 Hub gene function in TCGA breast cancer RNA-Seq expression SL predictions (n=878). [revise for n=1168]
 
-Table 3.  Hub gene function in BC2116 breast cancer microarray expression SL predictions (n=2116).
+\begin{table*}[!ht]
+\caption{Query synthetic lethal genes with the most SLIPT partners}
+\label{tab:gene_mostSL}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{>{\em}sl^c^c^c^c^c}
+\rowstyle{\bfseries}
+  \em{Gene} & Direction & raw p-value & p-value (FDR) & SLIPT raw p-value & SLIPT (FDR) \\ 
+  \hline
+  \rowcolor{black!10}
+  TGFBR2 & 8134 & 17982 & 17973 & 8007 & 8006 \\ 
+  \rowcolor{black!5}
+  A2M & 8571 & 17605 & 17583 & 8345 & 8339 \\ 
+  \rowcolor{black!10}
+  TNS1 & 8019 & 17949 & 17934 & 7874 & 7873 \\ 
+  \rowcolor{black!5}
+  PROS1 & 8539 & 17668 & 17642 & 8317 & 8310 \\ 
+  \rowcolor{black!10}
+  ANXA1 & 9085 & 17330 & 17302 & 8689 & 8682 \\ 
+  \rowcolor{black!5}
+  CELF2 & 8665 & 17406 & 17368 & 8370 & 8355 \\ 
+  \rowcolor{black!10}
+  BOC & 8694 & 17371 & 17348 & 8384 & 8381 \\ 
+  \rowcolor{black!5}
+  PLAGL1 & 8792 & 17361 & 17327 & 8448 & 8436 \\ 
+  \rowcolor{black!10}
+  PDGFRA & 8296 & 17650 & 17621 & 8095 & 8087 \\ 
+  \rowcolor{black!5}
+  FAM171A1 & 8874 & 17560 & 17533 & 8567 & 8562 \\ 
+  \rowcolor{black!10}
+  FAM126A & 8510 & 17383 & 17356 & 8184 & 8178 \\ 
+  \rowcolor{black!5}
+  TSHZ2 & 7942 & 17983 & 17976 & 7787 & 7786 \\ 
+  \rowcolor{black!10}
+  KCTD12 & 8366 & 17651 & 17621 & 8115 & 8108 \\ 
+  \rowcolor{black!5}
+  MAML2 & 8336 & 17537 & 17503 & 8069 & 8061 \\ 
+  \rowcolor{black!10}
+  FOXO1 & 8027 & 17753 & 17737 & 7840 & 7836 \\ 
+  \rowcolor{black!5}
+  AMOTL1 & 8425 & 17388 & 17347 & 8147 & 8139 \\ 
+  \rowcolor{black!10}
+  FAT4 & 8111 & 17750 & 17732 & 7925 & 7919 \\ 
+  \rowcolor{black!5}
+  CAV1 & 8645 & 17491 & 17464 & 8342 & 8331 \\ 
+  \rowcolor{black!10}
+  SVEP1 & 7945 & 17859 & 17842 & 7791 & 7784 \\ 
+  \rowcolor{black!5}
+  EPB41L2 & 8415 & 17327 & 17296 & 8097 & 8092 \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Genes with the most candidate SL partners SLIPT in TCGA breast expression data with the number of partner genes predicted by direction criteria and $\chi^2$ testing separately and combined as a SLIPT analysis. Where specified, the p-values for the $\chi^2$ test were adjusted for multiple tests (FDR).
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
 
+\FloatBarrier
+
+\subsection{Hub Pathways}
+
+
+\begin{table*}[!ht]
+\caption{Pathways for genes with the most SLIPT partners}
+\label{tab:pathway_mostSL}
+\centering
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lcccc}
+  \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value} & \textbf{p-value (FDR)} \\
+  \hline
+  \rowcolor{black!10}
+  Constitutive Signaling by Aberrant PI3K in Cancer &  56 &  10 & $8.4 \times 10^{-16}$ & $8.7 \times 10^{-13}$ \\ 
+  \rowcolor{black!5}
+  PI3K/AKT Signaling in Cancer &  78 &  11 & $2.1 \times 10^{-14}$ & $1.1 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  Role of LAT2/NTAL/LAB on calcium mobilization &  96 &  12 & $7.7 \times 10^{-14}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  Complement cascade &  33 &   7 & $1.2 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  Cell surface interactions at the vascular wall &  99 &  12 & $1.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  PI3K events in ERBB4 signaling &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  PIP3 activates AKT signaling &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  PI3K events in ERBB2 signaling &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  PI-3K cascade:FGFR1 &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  PI-3K cascade:FGFR2 &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  PI-3K cascade:FGFR3 &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  PI-3K cascade:FGFR4 &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  Extracellular matrix organization & 238 &  22 & $4.7 \times 10^{-13}$ & $3.6 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  Muscle contraction &  62 &   9 & $4.9 \times 10^{-13}$ & $3.6 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  PI3K/AKT activation &  90 &  11 & $5.5 \times 10^{-13}$ & $3.8 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  GAB1 signalosome &  91 &  11 & $7.1 \times 10^{-13}$ & $4.6 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  Smooth Muscle Contraction &  28 &   6 & $2.4 \times 10^{-12}$ & $1.5 \times 10^{-10}$ \\ 
+  \rowcolor{black!5}
+  Response to elevated platelet cytosolic Ca$^{2+}$ &  82 &  10 & $2.6 \times 10^{-12}$ & $1.5 \times 10^{-10}$ \\ 
+  \rowcolor{black!10}
+  Signaling by SCF-KIT & 126 &  13 & $3.0 \times 10^{-12}$ & $1.6 \times 10^{-10}$ \\ 
+  \rowcolor{black!5}
+  Signaling by FGFR & 143 &  14 & $5.0 \times 10^{-12}$ & $2.2 \times 10^{-10}$ \\ 
+   \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in the top 500 ``hub'' genes with the most candidate synthetic lethal partners by SLIPT analysis of TCGA breast expression data
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+\FloatBarrier
 
 \section{Metagene Analysis}
 [include?]
 
 \subsection{Pathway expression}
 
+\begin{figure*}[!htp]
+\noindent\makebox[\textwidth][c]{%               %centering
+\noindent\fbox{\begin{minipage}{1.00 \textwidth}  %frame beyond textwidth
+\begin{center}
+  \resizebox{1 \textwidth}{!}{
+    \includegraphics{CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf}
+   }
+   \end{center}
+   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors and cancer gene mutations.
+}
+\label{fig:metagene_expr_Gatza2011}
+\end{minipage}
+} %close fbox
+} %close centering
+\end{figure*}
+
+\FloatBarrier
+
 \subsection{Somatic mutation}
 
-\subsection{Synthetic lethal metagenes}
-
+\subsection{Synthetic lethal metagenes} \label{chapt3:metagene_SL}
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from SLIPT}
@@ -1093,17 +1207,11 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 %%appendix
 %\label{tab:metagene_mtSL}
 
+\FloatBarrier
 
 \section{Replication in stomach cancer}
 
-\begin{itemize}
- \item exprSL
- \item mtSL
- \item heatmap
- \item Venn
- \item Pathway enrichment
- \item Permutations
-\end{itemize}
+\section{Synthetic Lethal Genes and Pathways} \label{results:stad_exprSL_genes}
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal genes against E-cadherin from SLIPT in stomach cancer}
@@ -1156,7 +1264,7 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
   \rowcolor{black!5}
   FUNDC2 & 22 & 50.4 & 95.9 & $7.39 \times 10^{-20}$ & $2.91 \times 10^{-17}$ \\ 
   \rowcolor{black!10}
-  CNRIP1 & 21 & 50.4 & 95.3 & $1 \times 10^{-19}$ & $3.66 \times 10^{-17}$ \\ 
+  CNRIP1 & 21 & 50.4 & 95.3 & $1.0 \times 10^{-19}$ & $3.66 \times 10^{-17}$ \\ 
   \rowcolor{black!5}
   CALHM2 & 22 & 50.4 & 93.1 & $2.94 \times 10^{-19}$ & $1.06 \times 10^{-16}$ \\ 
   \rowcolor{black!10}
@@ -1186,7 +1294,6 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 \resizebox{1 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccc}
-  \hline
   \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
   \hline
   \rowcolor{black!10}
@@ -1243,6 +1350,10 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 %%appendix
 %\label{tab:pathway_stad_mtSL}
 
+\FloatBarrier
+
+\section{Synthetic Lethal Expression Profiles} \label{results:stad_exprSL_clusters}
+
 \begin{figure*}[!ht]
 \begin{mdframed}
   \centering
@@ -1258,6 +1369,8 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 %%appendix
 %\label{fig:slipt_expr_stad_mtSL}
+
+\FloatBarrier
 
 
 
@@ -1454,6 +1567,10 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 %%appendix
 %\label{tab:pathway_clusters_stad_mtSL}
 
+\FloatBarrier
+
+\section{Comparison to Primary Screen}
+
 
 \begin{figure}[!ht]
 \begin{mdframed}
@@ -1469,6 +1586,8 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 %%appendix
 %\label{fig:Venn_allgenes_stad_mtSL}
+
+\FloatBarrier
 
 
 \begin{table*}[!Hp]
@@ -1617,6 +1736,10 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 %%appendix
 %\label{tab:Venn_over-representation_stad_mtSL}
+
+\FloatBarrier
+
+\subsection{Resampling Analysis}  \label{chapt3:compare_pathway_perm_stad_exprSL}
 
 \begin{table*}[!Htp]
 \caption{Pathways for \textit{CDH1} partners from SLIPT in stomach cancer}
@@ -1862,7 +1985,9 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 %\label{tab:pathway_perm_stad_mtSL}}
 %\label{tab:pathway_perm_overlap_stad_mtSL}
 
+\FloatBarrier
 
+\section{Metagene Analysis} \label{chapt3:metagene_stad_exprSL}
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from SLIPT in stomach cancer}
@@ -1938,6 +2063,7 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 %%appendix
 %\label{tab:metagene_stad_mtSL}
 
+\FloatBarrier
 
 \section{Replication in cell line encyclopaedia}
 
@@ -2224,17 +2350,17 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
  \em{Gene} & Observed & Expected & $\chi^2$ value & $p-value$ & p-value (FDR) \\ 
   \hline
   \rowcolor{black!10}
-  ZEB1 & 1 & 4.45 & 36 & $2.84 \times 10^{-07}$ & 0.00175 \\ 
+  ZEB1 & 1 & 4.45 & 36 & $2.84 \times 10^{-7}$ & 0.00175 \\ 
   \rowcolor{black!5}
-  WDR47 & 0 & 4.45 & 26.7 & $2.3 \times 10^{-05}$ & 0.013 \\ 
+  WDR47 & 0 & 4.45 & 26.7 & $2.3 \times 10^{-5}$ & 0.013 \\ 
   \rowcolor{black!10}
-  KANK2 & 1 & 4.45 & 25.1 & $4.81 \times 10^{-05}$ & 0.0222 \\ 
+  KANK2 & 1 & 4.45 & 25.1 & $4.81 \times 10^{-5}$ & 0.0222 \\ 
   \rowcolor{black!5}
-  LEPRE1 & 0 & 4.45 & 24.5 & $6.26 \times 10^{-05}$ & 0.0228 \\ 
+  LEPRE1 & 0 & 4.45 & 24.5 & $6.26 \times 10^{-5}$ & 0.0228 \\ 
   \rowcolor{black!10}
-  KATNAL1 & 0 & 4.45 & 24.3 & $6.88 \times 10^{-05}$ & 0.0231 \\ 
+  KATNAL1 & 0 & 4.45 & 24.3 & $6.88 \times 10^{-5}$ & 0.0231 \\ 
   \rowcolor{black!5}
-  TET1 & 0 & 4.45 & 23.9 & $8.23 \times 10^{-05}$ & 0.0249 \\ 
+  TET1 & 0 & 4.45 & 23.9 & $8.23 \times 10^{-5}$ & 0.0249 \\ 
   \rowcolor{black!10}
   AP1S2 & 1 & 4.45 & 23.1 & $0.00012$ & 0.0273 \\ 
   \rowcolor{black!5}
@@ -2350,15 +2476,39 @@ The expression profiles of the SL partners of \textit{CDH1} predicted from the T
 
 Ductal breast cancers show higher expression of synthetic lethal partners suggesting treatment would be more effective in this tumour subtype.  However, there is consistently low expression of SL partners in ER negative tumours, although this is independent of tumour stage and consistent with poor prognosis in these patients and could inform other treatment strategies or prevent ineffective treatment further impacting quality of life in these patients.  These results suggest that synthetic lethal partner expression varies between patients; that these different tumour classes would react differently to the same treatment; that treatment of different pathways and combinations in different patients is the most effective approach to target genes compensating for \textit{CDH1} gene loss; and the expression of synthetic partners could be a clinically important biomarker.  While these are important clinical implications, the synthetic lethal predictions lack enough confidence for direct translation into pre-clinical models or clinical applications leading to a need for statistical modelling and simulation of synthetic lethality in genomics expression data.
 
+\paragraph{Aims}
 
+  \begin{itemize}
+   \item Pathway Structure of Candidate Synthetic Lethal Genes for \textit{\textit{CDH1}} from TCGA breast data
+   
+   \bigskip
+   
+   \item Comparisons to Experimental siRNA Screen Candidates
+   
+   \bigskip
+   
+   \item Replication of Pathways across in TCGA Stomach data
+  \end{itemize}
 
+\paragraph{Summary}
 
-
-
-
-%CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.pdf
-%CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.pdf
-%CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf
-%CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pdf
-%CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf
-%CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf
+    
+  \begin{itemize}
+   \item We have developed a Synthetic Lethal detection method that generates a high number of synthetic lethal candidates
+   
+   \bigskip
+   
+   \item Pathways in cell signalling, extracellular matrix, and cytoskeletal functions were supported with experimental candidates and the known functions of E-cadherin
+   
+   \bigskip
+   
+   \item Several candidate pathways were supported by mutation analysis and replicated across breast and stomach cancer
+   
+   \bigskip
+   
+   \item Translation and immune functions were uniquely detected by the computational approach which may be explained by differences between patient samples and cell line models
+   
+   \bigskip
+   
+   \item There remains the need to identify actionable genes within these pathways, relationships with experimental candidates, and how these pathways may affect viability when lost
+  \end{itemize}

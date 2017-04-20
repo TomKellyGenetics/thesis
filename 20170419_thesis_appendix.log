@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  20 APR 2017 02:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  21 APR 2017 00:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1291,59 +1291,6 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@zref@counter=\count303
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
-Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
-
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
-Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
--ends (calc, etex, pgfmath)
-)
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
-Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
-
-(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
-Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box94
-)
-\tc@llx=\dimen329
-\tc@lly=\dimen330
-\tc@urx=\dimen331
-\tc@ury=\dimen332
-
-
-! LaTeX Error: Command \clipbox already defined.
-               Or name \end... illegal, see p.192 of the manual.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99 }
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Package trimclip Info: Using driver 'tc-pdftex.def'.
-(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
-File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
-))
-\adjbox@Width=\dimen333
-\adjbox@Height=\dimen334
-\adjbox@Depth=\dimen335
-\adjbox@Totalheight=\dimen336
-
-(/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
-Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count304
-)
-(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
-Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box95
-\sift@deathcycles=\count305
-\@vwid@loff=\dimen337
-\@vwid@roff=\dimen338
-))
 (/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2230.
@@ -1360,26 +1307,29 @@ LaTeX Info: Redefining \labelcpageref on input line 2230.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
-\ttl@box=\box96
+\ttl@box=\box94
 \beforetitleunit=\skip151
 \aftertitleunit=\skip152
-\ttl@plus=\dimen339
-\ttl@minus=\dimen340
+\ttl@plus=\dimen329
+\ttl@minus=\dimen330
 \ttl@toksa=\toks54
-\titlewidth=\dimen341
-\titlewidthlast=\dimen342
-\titlewidthfirst=\dimen343
+\titlewidth=\dimen331
+\titlewidthlast=\dimen332
+\titlewidthfirst=\dimen333
 )
 (./subsubsubsection.tex
-\c@subsubsubsection=\count306
+\c@subsubsubsection=\count304
 )
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count307
+\c@float@type=\count305
 \float@exts=\toks55
-\float@box=\box97
+\float@box=\box95
 \@float@everytoks=\toks56
-\@floatcapt=\box98
+\@floatcapt=\box96
+)
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
@@ -1388,19 +1338,19 @@ Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2016/01/19 v6377 L3 Experimental prototype document function
 s
-\l__xtemplate_tmp_dim=\dimen344
-\l__xtemplate_tmp_int=\count308
+\l__xtemplate_tmp_dim=\dimen334
+\l__xtemplate_tmp_int=\count306
 \l__xtemplate_tmp_muskip=\muskip18
 \l__xtemplate_tmp_skip=\skip153
 )
 Package: xfrac 2016/01/19 v6377 L3 Experimental split-level fractions
-\l__xfrac_slash_box=\box99
-\l__xfrac_tmp_box=\box100
-\l__xfrac_denominator_bot_sep_dim=\dimen345
-\l__xfrac_numerator_bot_sep_dim=\dimen346
-\l__xfrac_numerator_top_sep_dim=\dimen347
-\l__xfrac_slash_left_sep_dim=\dimen348
-\l__xfrac_slash_right_sep_dim=\dimen349
+\l__xfrac_slash_box=\box97
+\l__xfrac_tmp_box=\box98
+\l__xfrac_denominator_bot_sep_dim=\dimen335
+\l__xfrac_numerator_bot_sep_dim=\dimen336
+\l__xfrac_numerator_top_sep_dim=\dimen337
+\l__xfrac_slash_left_sep_dim=\dimen338
+\l__xfrac_slash_right_sep_dim=\dimen339
 \l__xfrac_slash_left_muskip=\muskip19
 \l__xfrac_slash_right_muskip=\muskip20
 .................................................
@@ -1423,14 +1373,18 @@ Package: xfrac 2016/01/19 v6377 L3 Experimental split-level fractions
 \openout5 = `20170419_thesis_appendix.glo'.
 
 Package glossaries Info: Writing glossary file 20170419_thesis_appendix.glo on 
-input line 105.
+input line 106.
 \glo@acronym@file=\write6
 \openout6 = `20170419_thesis_appendix.acn'.
 
 Package glossaries Info: Writing glossary file 20170419_thesis_appendix.acn on 
-input line 105.
+input line 106.
  (/usr/share/texlive/texmf-dist/tex/latex/natbib/bibentry.sty
 Package: bibentry 2007/10/30 1.5 (PWD)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count307
 )
 (./20170419_thesis_appendix.aux (./intro.aux) (./methods.aux)
 (./methods_dev.aux) (./chapt3.aux) (./chapt4.aux) (./chapt5.aux) (./chapt6.aux)
@@ -1474,40 +1428,40 @@ LaTeX Warning: Label `sub@fig:simulate_function:first' multiply defined.
 ))
 \openout1 = `20170419_thesis_appendix.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
-LaTeX Font Info:    ... okay on input line 135.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 135.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 135.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 138.
+LaTeX Font Info:    ... okay on input line 138.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 138.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 138.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    ... okay on input line 138.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count309
-\scratchdimen=\dimen350
-\scratchbox=\box101
-\nofMPsegments=\count310
-\nofMParguments=\count311
+\scratchcounter=\count308
+\scratchdimen=\dimen340
+\scratchbox=\box99
+\nofMPsegments=\count309
+\nofMParguments=\count310
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count312
-\MPscratchDim=\dimen351
-\MPnumerator=\count313
-\makeMPintoPDFobject=\count314
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen341
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
 \everyMPtoPDFconversion=\toks58
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1524,8 +1478,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box102
-Package hyperref Info: Link coloring OFF on input line 135.
+\AtBeginShipoutBox=\box100
+Package hyperref Info: Link coloring OFF on input line 138.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1533,11 +1487,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count315
+\c@section@level=\count314
 )
-LaTeX Info: Redefining \ref on input line 135.
-LaTeX Info: Redefining \pageref on input line 135.
-LaTeX Info: Redefining \nameref on input line 135.
+LaTeX Info: Redefining \ref on input line 138.
+LaTeX Info: Redefining \pageref on input line 138.
+LaTeX Info: Redefining \nameref on input line 138.
 
 (./20170419_thesis_appendix.out) (./20170419_thesis_appendix.out)
 \@outlinefile=\write7
@@ -1575,78 +1529,184 @@ Non-PDF special ignored!
 \openout9 = `20170419_thesis_appendix.lof'.
 
  [7]
-(./20170419_thesis_appendix.lot
-
-Package natbib Warning: Citation `Wu2014' on page 8 undefined on input line 4.
-
-[8
+(./20170419_thesis_appendix.lot [8
 
 ])
 \tf@lot=\write10
 \openout10 = `20170419_thesis_appendix.lot'.
 
- [9]
+ [9] (./20170419_thesis_appendix.bbl
+Missing character: There is no √ in font cmti12!
+Missing character: There is no ¶ in font cmti12!
+
+Underfull \hbox (badness 7221) in paragraph at lines 72--78
+[]\OT1/cmr/m/n/12 American So-ci-ety for Clin-i-cal On-col-ogy ([]) (2017) The 
+ge-net-ics of
+ []
+
+
+Underfull \hbox (badness 5592) in paragraph at lines 72--78
+\OT1/cmr/m/n/12 can-cer.  []$\OT1/cmtt/m/n/12 http : / / www . cancer . net / n
+avigating-[]cancer-[]care / cancer-[]basics /
+ []
+
+[167
+
+
+
+
+
+
+
+
+
+
+] [168]
+Missing character: There is no √ in font cmr12!
+Missing character: There is no ∂ in font cmr12!
+ [169] [170]
+Underfull \hbox (badness 10000) in paragraph at lines 323--328
+[]\OT1/cmr/m/n/12 Cancer Re-search UK (2017) Fam-ily his-tory and can-cer
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--328
+\OT1/cmr/m/n/12 genes.  []$\OT1/cmtt/m/n/12 http : / / www . cancerresearchuk .
+ org / about-[]cancer /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--328
+\OT1/cmtt/m/n/12 causes-[]of-[]cancer / inherited-[]cancer-[]genes-[]and-[]incr
+eased-[]cancer-[]risk /
+ []
+
+[171] [172]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ì in font cmr12!
+ [173] [174]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 603.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 603.
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no î in font cmr12!
+ [175] [176]
+Missing character: There is no √ in font cmr12!
+Missing character: There is no © in font cmr12!
+ [177] [178] [179] [180] [181] [182] [183] [184]
+Missing character: There is no „ in font cmr12!
+Missing character: There is no Ç in font cmr12!
+Missing character: There is no Ø in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no Ç in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no É in font cmr12!
+Missing character: There is no ≥ in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no Ç in font cmr12!
+Missing character: There is no ø in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no É in font cmr12!
+Missing character: There is no † in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no É in font cmr12!
+Missing character: There is no ê in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no Ç in font cmr12!
+Missing character: There is no § in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no Ç in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no Ç in font cmr12!
+Missing character: There is no ∑ in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no Ç in font cmr12!
+Missing character: There is no π in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no É in font cmr12!
+Missing character: There is no Ü in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no É in font cmr12!
+Missing character: There is no † in font cmr12!
+Missing character: There is no „ in font cmr12!
+Missing character: There is no Ç in font cmr12!
+Missing character: There is no ∫ in font cmr12!
+ [185] [186]
+[187]
+Underfull \hbox (badness 4168) in paragraph at lines 1591--1596
+\OT1/cmtt/m/n/12 / / www . cancer . gov / about-[]cancer / causes-[]prevention 
+/ genetics$[]\OT1/cmr/m/n/12 .  Pub-lished:
+ []
+
+[188]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no ì in font cmr12!
+ [189] [190] [191]
+Missing character: There is no ‚ in font cmr12!
+Missing character: There is no Ä in font cmr12!
+Missing character: There is no î in font cmr12!
+) [192]
 \openout2 = `appendix_methods.aux'.
 
  (./appendix_methods.tex
 Appendix A.
-<Raw(log)_Corr_eudist_Cut_part_Pub.png, id=641, 752.8125pt x 752.8125pt>
+<Raw(log)_Corr_eudist_Cut_part_Pub.png, id=1193, 752.8125pt x 752.8125pt>
 File: Raw(log)_Corr_eudist_Cut_part_Pub.png Graphic file (type png)
 
 <use Raw(log)_Corr_eudist_Cut_part_Pub.png>
 Package pdftex.def Info: Raw(log)_Corr_eudist_Cut_part_Pub.png used on input li
-ne 27.
+ne 29.
 (pdftex.def)             Requested size: 752.81065pt x 752.81065pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 32.
+ mdframed uses option nobreak mdframed on input line 34.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 32.
+ mdframed uses option nobreak mdframed on input line 34.
 
-<Raw(log)_Corr_eudist_Ann_Pub.png, id=644, 1606.0pt x 1606.0pt>
+<Raw(log)_Corr_eudist_Ann_Pub.png, id=1196, 1606.0pt x 1606.0pt>
 File: Raw(log)_Corr_eudist_Ann_Pub.png Graphic file (type png)
 
 <use Raw(log)_Corr_eudist_Ann_Pub.png>
-Package pdftex.def Info: Raw(log)_Corr_eudist_Ann_Pub.png used on input line 40
+Package pdftex.def Info: Raw(log)_Corr_eudist_Ann_Pub.png used on input line 42
 .
 (pdftex.def)             Requested size: 1605.99611pt x 1605.99611pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 44.
+ mdframed uses option nobreak mdframed on input line 46.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 44.
- [154
+ mdframed uses option nobreak mdframed on input line 46.
+ [193
 
 
-
-
-
-
-
-
-
-
-
- <./Raw(log)_Corr_eudist_Cut_part_Pub.png>] [155 <./Raw(log)_Corr_eudist_Ann_Pu
+ <./Raw(log)_Corr_eudist_Cut_part_Pub.png>] [194 <./Raw(log)_Corr_eudist_Ann_Pu
 b.png>]
-<Rep_picking_CutCut2.pdf, id=659, 289.08pt x 289.08pt>
+<Rep_picking_CutCut2.pdf, id=1212, 289.08pt x 289.08pt>
 File: Rep_picking_CutCut2.pdf Graphic file (type pdf)
 
 <use Rep_picking_CutCut2.pdf>
-Package pdftex.def Info: Rep_picking_CutCut2.pdf used on input line 61.
+Package pdftex.def Info: Rep_picking_CutCut2.pdf used on input line 63.
 (pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 65.
+ mdframed uses option nobreak mdframed on input line 67.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 65.
+ mdframed uses option nobreak mdframed on input line 67.
 
-<Rep_picking_KeepKeep(1).pdf, id=660, 289.08pt x 289.08pt>
+<Rep_picking_KeepKeep(1).pdf, id=1213, 289.08pt x 289.08pt>
 File: Rep_picking_KeepKeep(1).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepKeep(1).pdf>
-Package pdftex.def Info: Rep_picking_KeepKeep(1).pdf used on input line 74.
+Package pdftex.def Info: Rep_picking_KeepKeep(1).pdf used on input line 76.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.75         }
+l.77         }
               %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1654,15 +1714,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepKeep(2).pdf, id=661, 289.08pt x 289.08pt>
+<Rep_picking_KeepKeep(2).pdf, id=1214, 289.08pt x 289.08pt>
 File: Rep_picking_KeepKeep(2).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepKeep(2).pdf>
-Package pdftex.def Info: Rep_picking_KeepKeep(2).pdf used on input line 78.
+Package pdftex.def Info: Rep_picking_KeepKeep(2).pdf used on input line 80.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.79         }
+l.81         }
               %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1670,15 +1730,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepKeep(3).pdf, id=662, 289.08pt x 289.08pt>
+<Rep_picking_KeepKeep(3).pdf, id=1215, 289.08pt x 289.08pt>
 File: Rep_picking_KeepKeep(3).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepKeep(3).pdf>
-Package pdftex.def Info: Rep_picking_KeepKeep(3).pdf used on input line 82.
+Package pdftex.def Info: Rep_picking_KeepKeep(3).pdf used on input line 84.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.83         }
+l.85         }
               %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1686,15 +1746,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepKeep(4).pdf, id=663, 289.08pt x 289.08pt>
+<Rep_picking_KeepKeep(4).pdf, id=1216, 289.08pt x 289.08pt>
 File: Rep_picking_KeepKeep(4).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepKeep(4).pdf>
-Package pdftex.def Info: Rep_picking_KeepKeep(4).pdf used on input line 89.
+Package pdftex.def Info: Rep_picking_KeepKeep(4).pdf used on input line 91.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.90         }
+l.92         }
               %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1702,15 +1762,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepKeep(5).pdf, id=664, 289.08pt x 289.08pt>
+<Rep_picking_KeepKeep(5).pdf, id=1217, 289.08pt x 289.08pt>
 File: Rep_picking_KeepKeep(5).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepKeep(5).pdf>
-Package pdftex.def Info: Rep_picking_KeepKeep(5).pdf used on input line 93.
+Package pdftex.def Info: Rep_picking_KeepKeep(5).pdf used on input line 95.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.94         }
+l.96         }
               %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1718,16 +1778,16 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepKeep(6).pdf, id=665, 289.08pt x 289.08pt>
+<Rep_picking_KeepKeep(6).pdf, id=1218, 289.08pt x 289.08pt>
 File: Rep_picking_KeepKeep(6).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepKeep(6).pdf>
-Package pdftex.def Info: Rep_picking_KeepKeep(6).pdf used on input line 97.
+Package pdftex.def Info: Rep_picking_KeepKeep(6).pdf used on input line 99.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.98         }
-              %
+l.100         }
+               %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
 you forgot something else, as in `\hbox{$x}'. In such cases
@@ -1735,18 +1795,18 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 104.
+ mdframed uses option nobreak mdframed on input line 106.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 104.
-<Rep_picking_KeepCut(1).pdf, id=666, 289.08pt x 289.08pt>
+ mdframed uses option nobreak mdframed on input line 106.
+<Rep_picking_KeepCut(1).pdf, id=1219, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(1).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(1).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(1).pdf used on input line 114.
+Package pdftex.def Info: Rep_picking_KeepCut(1).pdf used on input line 116.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.115         }
+l.117         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1754,15 +1814,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepCut(2).pdf, id=667, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(2).pdf, id=1220, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(2).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(2).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(2).pdf used on input line 118.
+Package pdftex.def Info: Rep_picking_KeepCut(2).pdf used on input line 120.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.119         }
+l.121         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1770,15 +1830,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepCut(3).pdf, id=668, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(3).pdf, id=1221, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(3).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(3).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(3).pdf used on input line 122.
+Package pdftex.def Info: Rep_picking_KeepCut(3).pdf used on input line 124.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.123         }
+l.125         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1786,15 +1846,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepCut(4).pdf, id=669, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(4).pdf, id=1222, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(4).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(4).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(4).pdf used on input line 129.
+Package pdftex.def Info: Rep_picking_KeepCut(4).pdf used on input line 131.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.130         }
+l.132         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1802,15 +1862,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepCut(5).pdf, id=670, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(5).pdf, id=1223, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(5).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(5).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(5).pdf used on input line 133.
+Package pdftex.def Info: Rep_picking_KeepCut(5).pdf used on input line 135.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.134         }
+l.136         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1818,15 +1878,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepCut(6).pdf, id=671, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(6).pdf, id=1224, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(6).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(6).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(6).pdf used on input line 137.
+Package pdftex.def Info: Rep_picking_KeepCut(6).pdf used on input line 139.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.138         }
+l.140         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1834,15 +1894,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepCut(7).pdf, id=672, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(7).pdf, id=1225, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(7).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(7).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(7).pdf used on input line 144.
+Package pdftex.def Info: Rep_picking_KeepCut(7).pdf used on input line 146.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.145         }
+l.147         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1850,15 +1910,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepCut(8).pdf, id=673, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(8).pdf, id=1226, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(8).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(8).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(8).pdf used on input line 148.
+Package pdftex.def Info: Rep_picking_KeepCut(8).pdf used on input line 150.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.149         }
+l.151         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1866,15 +1926,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepCut(9).pdf, id=674, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(9).pdf, id=1227, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(9).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(9).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(9).pdf used on input line 152.
+Package pdftex.def Info: Rep_picking_KeepCut(9).pdf used on input line 154.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.153         }
+l.155         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1883,31 +1943,31 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 158.
+ mdframed uses option nobreak mdframed on input line 160.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 158.
+ mdframed uses option nobreak mdframed on input line 160.
 
-! LaTeX Error: \begin{figure*} on input line 108 ended by \end{figure}.
+! LaTeX Error: \begin{figure*} on input line 110 ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.159 \end{figure}
+l.161 \end{figure}
                   
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<Rep_picking_KeepCut(10).pdf, id=675, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(10).pdf, id=1228, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(10).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(10).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(10).pdf used on input line 167.
+Package pdftex.def Info: Rep_picking_KeepCut(10).pdf used on input line 169.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.168         }
+l.170         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1915,15 +1975,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepCut(11).pdf, id=676, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(11).pdf, id=1229, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(11).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(11).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(11).pdf used on input line 171.
+Package pdftex.def Info: Rep_picking_KeepCut(11).pdf used on input line 173.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.172         }
+l.174         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1931,15 +1991,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepCut(12).pdf, id=677, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(12).pdf, id=1230, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(12).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(12).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(12).pdf used on input line 175.
+Package pdftex.def Info: Rep_picking_KeepCut(12).pdf used on input line 177.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.176         }
+l.178         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1947,15 +2007,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepCut(13).pdf, id=678, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(13).pdf, id=1231, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(13).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(13).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(13).pdf used on input line 182.
+Package pdftex.def Info: Rep_picking_KeepCut(13).pdf used on input line 184.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.183         }
+l.185         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1963,15 +2023,15 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-<Rep_picking_KeepCut(14).pdf, id=679, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(14).pdf, id=1232, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(14).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(14).pdf>
-Package pdftex.def Info: Rep_picking_KeepCut(14).pdf used on input line 186.
+Package pdftex.def Info: Rep_picking_KeepCut(14).pdf used on input line 188.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
 ! Extra }, or forgotten \endgroup.
-l.187         }
+l.189         }
                %
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1980,88 +2040,87 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 193.
+ mdframed uses option nobreak mdframed on input line 195.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 193.
+ mdframed uses option nobreak mdframed on input line 195.
 
-! LaTeX Error: \begin{figure} on input line 160 ended by \end{figure*}.
+! LaTeX Error: \begin{figure} on input line 162 ended by \end{figure*}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.194 \end{figure*}
+l.196 \end{figure*}
                    
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[156
+[195
 
- <./Rep_picking_CutCut2.pdf>] [157 <./Rep_picking_KeepKeep(1).pdf> <./Rep_picki
+ <./Rep_picking_CutCut2.pdf>] [196 <./Rep_picking_KeepKeep(1).pdf> <./Rep_picki
 ng_KeepKeep(2).pdf> <./Rep_picking_KeepKeep(3).pdf> <./Rep_picking_KeepKeep(4).
 pdf> <./Rep_picking_KeepKeep(5).pdf> <./Rep_picking_KeepKeep(6).pdf>]
-[158 <./Rep_picking_KeepCut(1).pdf> <./Rep_picking_KeepCut(2).pdf> <./Rep_picki
+[197 <./Rep_picking_KeepCut(1).pdf> <./Rep_picking_KeepCut(2).pdf> <./Rep_picki
 ng_KeepCut(3).pdf> <./Rep_picking_KeepCut(4).pdf> <./Rep_picking_KeepCut(5).pdf
 > <./Rep_picking_KeepCut(6).pdf> <./Rep_picking_KeepCut(7).pdf> <./Rep_picking_
-KeepCut(8).pdf> <./Rep_picking_KeepCut(9).pdf>] [159 <./Rep_picking_KeepCut(10)
+KeepCut(8).pdf> <./Rep_picking_KeepCut(9).pdf>] [198 <./Rep_picking_KeepCut(10)
 .pdf> <./Rep_picking_KeepCut(11).pdf> <./Rep_picking_KeepCut(12).pdf> <./Rep_pi
 cking_KeepCut(13).pdf> <./Rep_picking_KeepCut(14).pdf>]
 Appendix B.
-[160
+[199
 
-] [161] [162] [163] [164] [165] [166] [167]) [168]
+] [200] [201] [202] [203] [204] [205] [206]) [207]
 \openout2 = `appendix_chapt3.aux'.
 
  (./appendix_chapt3.tex
 Appendix C.
-
-Package natbib Warning: Citation `Telford2015' on page 169 undefined on input l
-ine 19.
-
-[169
+[208
 
 
 
-] [170]
+] [209]
 Appendix D.
+[210
 
-<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png, id=919, 1461.
-46pt x 1461.46pt>
+]
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png, id=1482, 1461
+.46pt x 1461.46pt>
 File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png Graphic f
 ile (type png)
 
 <use CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png>
 Package pdftex.def Info: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordist
-x_Pub.png used on input line 242.
+x_Pub.png used on input line 251.
 (pdftex.def)             Requested size: 1461.45645pt x 1461.45645pt.
-LaTeX Font Info:    Calculating math sizes for size <7.66495> on input line 245
+LaTeX Font Info:    Calculating math sizes for size <7.66495> on input line 254
 .
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <3.83247> not available
-(Font)              size <5> substituted on input line 245.
+(Font)              size <5> substituted on input line 254.
 
 
 LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <3.83247> not available
-(Font)              size <5> substituted on input line 245.
+(Font)              size <5> substituted on input line 254.
 
 
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <3.83247> not available
-(Font)              size <5> substituted on input line 245.
-
-
-Package natbib Warning: Citation `Telford2015' on page 171 undefined on input l
-ine 245.
-
-
-Package natbib Warning: Citation `Telford2015' on page 171 undefined on input l
-ine 245.
+(Font)              size <5> substituted on input line 254.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 247.
+ mdframed uses option nobreak mdframed on input line 256.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 247.
+ mdframed uses option nobreak mdframed on input line 256.
+[211]
+
+LaTeX Warning: Text page 212 contains only floats.
+
+
+Overfull \vbox (4.99904pt too high) has occurred while \output is active []
+
+
+[212 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png>]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -2069,14 +2128,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.251 \begin{table*}[!Hp]
+l.262 \begin{table*}[!Hp]
                          
 Option `H' ignored and `p' used.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.437 }
+l.448 }
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2084,7 +2143,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.437 }
+l.448 }
        
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2094,7 +2153,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.437 }
+l.448 }
        
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2105,7 +2164,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.437 }
+l.448 }
        
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2113,7 +2172,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...color {Cluster_Red!15} G_${\alpha q}
                                                   $ signalling events & 149 ...
-l.437 }
+l.448 }
        
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2124,30 +2183,27 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.437 }
+l.448 }
        
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-LaTeX Warning: Float too large for page by 8.98923pt on input line 438.
+LaTeX Warning: Float too large for page by 8.98923pt on input line 449.
 
-[171
-
-] [172] [173 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png
->] [174]
-<Venn_mtSL_siRNA_allgenes_reduced_Pub.png, id=941, 540.0175pt x 449.68pt>
+[213]
+<Venn_mtSL_siRNA_allgenes_reduced_Pub.png, id=1506, 540.0175pt x 449.68pt>
 File: Venn_mtSL_siRNA_allgenes_reduced_Pub.png Graphic file (type png)
 
 <use Venn_mtSL_siRNA_allgenes_reduced_Pub.png>
 Package pdftex.def Info: Venn_mtSL_siRNA_allgenes_reduced_Pub.png used on input
- line 449.
+ line 462.
 (pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 453.
+ mdframed uses option nobreak mdframed on input line 466.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 453.
+ mdframed uses option nobreak mdframed on input line 466.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -2156,348 +2212,427 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.457 \begin{table*}[!Hp]
+l.474 \begin{table*}[!Hp]
                          
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 1.7224pt on input line 599.
+LaTeX Warning: Float too large for page by 1.7224pt on input line 616.
 
-[175
+[214
 
- <./Venn_mtSL_siRNA_allgenes_reduced_Pub.png>] [176] [177
+ <./Venn_mtSL_siRNA_allgenes_reduced_Pub.png>] [215] [216
 
-] [178] [179
+] [217]
+! Too many }'s.
+l.904 ...SLIPT genes} \label{chapt3:compare_mtSL}}
+                                                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
-]
-<Mutation_locus_PIK3CA.pdf, id=966, 1156.32pt x 289.08pt>
+
+<vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf, id=1536, 578.16pt x 
+385.44pt>
+File: vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf Graphic file (ty
+pe pdf)
+ <use vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf>
+Package pdftex.def Info: vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.p
+df used on input line 913.
+(pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 918.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 918.
+
+<mtSLIPT_siRNA_vs_Correlation_with_CDH1.png, id=1537, 803.0pt x 401.5pt>
+File: mtSLIPT_siRNA_vs_Correlation_with_CDH1.png Graphic file (type png)
+
+<use mtSLIPT_siRNA_vs_Correlation_with_CDH1.png>
+Package pdftex.def Info: mtSLIPT_siRNA_vs_Correlation_with_CDH1.png used on inp
+ut line 926.
+(pdftex.def)             Requested size: 802.99805pt x 401.49901pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 931.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 931.
+
+<vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf, id=1538, 578.16pt x 3
+85.44pt>
+File: vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf Graphic file (typ
+e pdf)
+ <use vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf>
+Package pdftex.def Info: vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pd
+f used on input line 940.
+(pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 945.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 945.
+ [218
+
+ <./vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf> <./mtSLIPT_siRNA_
+vs_Correlation_with_CDH1.png>] [219 <./vioplotx_mtSLIPT_siRNA_vs_Viability_Rati
+o_with_CDH1.pdf>] [220
+
+] <Mutation_locus_PIK3CA.pdf, id=1567, 1156.32pt x 289.08pt>
 File: Mutation_locus_PIK3CA.pdf Graphic file (type pdf)
 
 <use Mutation_locus_PIK3CA.pdf>
-Package pdftex.def Info: Mutation_locus_PIK3CA.pdf used on input line 976.
-(pdftex.def)             Requested size: 252.1332pt x 63.03317pt.
+Package pdftex.def Info: Mutation_locus_PIK3CA.pdf used on input line 1042.
+(pdftex.def)             Requested size: 315.16328pt x 78.78928pt.
 
-<Mutation_locus_PIK3R1.pdf, id=967, 1156.32pt x 289.08pt>
+<Mutation_locus_PIK3R1.pdf, id=1568, 1156.32pt x 289.08pt>
 File: Mutation_locus_PIK3R1.pdf Graphic file (type pdf)
 
 <use Mutation_locus_PIK3R1.pdf>
-Package pdftex.def Info: Mutation_locus_PIK3R1.pdf used on input line 980.
-(pdftex.def)             Requested size: 252.1332pt x 63.03317pt.
+Package pdftex.def Info: Mutation_locus_PIK3R1.pdf used on input line 1046.
+(pdftex.def)             Requested size: 315.16328pt x 78.78928pt.
 
-<Mutation_locus_CDH1.pdf, id=968, 1156.32pt x 289.08pt>
+<Mutation_locus_CDH1.pdf, id=1569, 1156.32pt x 289.08pt>
 File: Mutation_locus_CDH1.pdf Graphic file (type pdf)
 
 <use Mutation_locus_CDH1.pdf>
-Package pdftex.def Info: Mutation_locus_CDH1.pdf used on input line 983.
-(pdftex.def)             Requested size: 252.1332pt x 63.03317pt.
+Package pdftex.def Info: Mutation_locus_CDH1.pdf used on input line 1049.
+(pdftex.def)             Requested size: 315.16328pt x 78.78928pt.
 
-<Mutation_locus_TP53.pdf, id=969, 1156.32pt x 289.08pt>
+<Mutation_locus_TP53.pdf, id=1570, 1156.32pt x 289.08pt>
 File: Mutation_locus_TP53.pdf Graphic file (type pdf)
 
 <use Mutation_locus_TP53.pdf>
-Package pdftex.def Info: Mutation_locus_TP53.pdf used on input line 986.
-(pdftex.def)             Requested size: 252.1332pt x 63.03317pt.
+Package pdftex.def Info: Mutation_locus_TP53.pdf used on input line 1052.
+(pdftex.def)             Requested size: 315.16328pt x 78.78928pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 991.
+ mdframed uses option nobreak mdframed on input line 1057.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 991.
- [180
+ mdframed uses option nobreak mdframed on input line 1057.
+ [221
 
  <./Mutation_locus_PIK3CA.pdf> <./Mutation_locus_PIK3R1.pdf> <./Mutation_locus_
 CDH1.pdf> <./Mutation_locus_TP53.pdf>]
-<geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf, id=998, 289.08pt x 289.08pt>
+<geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf, id=1599, 289.08pt x 289.08pt>
 File: geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf Graphic file (type pdf)
 
 <use geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf>
 Package pdftex.def Info: geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf used on in
-put line 1004.
+put line 1070.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
-<metagene_vioplotx_Mutation_locus_PIK3CA.pdf, id=999, 289.08pt x 289.08pt>
+<metagene_vioplotx_Mutation_locus_PIK3CA.pdf, id=1600, 289.08pt x 289.08pt>
 File: metagene_vioplotx_Mutation_locus_PIK3CA.pdf Graphic file (type pdf)
 
 <use metagene_vioplotx_Mutation_locus_PIK3CA.pdf>
 Package pdftex.def Info: metagene_vioplotx_Mutation_locus_PIK3CA.pdf used on in
-put line 1008.
+put line 1074.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
-<geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf, id=1000, 289.08pt x 289.08pt>
+<geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf, id=1601, 289.08pt x 289.08pt>
 File: geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf Graphic file (type pdf)
 
 <use geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf>
 Package pdftex.def Info: geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf used on in
-put line 1011.
+put line 1077.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
-<protein_vioplotx_Mutation_locus_PIK3CA.pdf, id=1001, 289.08pt x 289.08pt>
+<protein_vioplotx_Mutation_locus_PIK3CA.pdf, id=1602, 289.08pt x 289.08pt>
 File: protein_vioplotx_Mutation_locus_PIK3CA.pdf Graphic file (type pdf)
 
 <use protein_vioplotx_Mutation_locus_PIK3CA.pdf>
 Package pdftex.def Info: protein_vioplotx_Mutation_locus_PIK3CA.pdf used on inp
-ut line 1015.
+ut line 1081.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
-<protein_vioplotx_Mutation_locus_AKT.pdf, id=1002, 289.08pt x 289.08pt>
+<protein_vioplotx_Mutation_locus_AKT.pdf, id=1603, 289.08pt x 289.08pt>
 File: protein_vioplotx_Mutation_locus_AKT.pdf Graphic file (type pdf)
 
 <use protein_vioplotx_Mutation_locus_AKT.pdf>
 Package pdftex.def Info: protein_vioplotx_Mutation_locus_AKT.pdf used on input 
-line 1018.
+line 1084.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
-<protein_vioplotx_Mutation_locus_CDH1.pdf, id=1003, 289.08pt x 289.08pt>
+<protein_vioplotx_Mutation_locus_CDH1.pdf, id=1604, 289.08pt x 289.08pt>
 File: protein_vioplotx_Mutation_locus_CDH1.pdf Graphic file (type pdf)
 
 <use protein_vioplotx_Mutation_locus_CDH1.pdf>
 Package pdftex.def Info: protein_vioplotx_Mutation_locus_CDH1.pdf used on input
- line 1022.
+ line 1088.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 
-<protein_vioplotx_Mutation_locus_TP53.pdf, id=1004, 289.08pt x 289.08pt>
+<protein_vioplotx_Mutation_locus_TP53.pdf, id=1605, 289.08pt x 289.08pt>
 File: protein_vioplotx_Mutation_locus_TP53.pdf Graphic file (type pdf)
 
 <use protein_vioplotx_Mutation_locus_TP53.pdf>
 Package pdftex.def Info: protein_vioplotx_Mutation_locus_TP53.pdf used on input
- line 1025.
+ line 1091.
 (pdftex.def)             Requested size: 126.06659pt x 126.06636pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1030.
+ mdframed uses option nobreak mdframed on input line 1096.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1030.
+ mdframed uses option nobreak mdframed on input line 1096.
 
-<protein_vioplotx_Mutation_PI3K_PIK3CA.pdf, id=1005, 289.08pt x 289.08pt>
+<protein_vioplotx_Mutation_PI3K_PIK3CA.pdf, id=1606, 289.08pt x 289.08pt>
 File: protein_vioplotx_Mutation_PI3K_PIK3CA.pdf Graphic file (type pdf)
 
 <use protein_vioplotx_Mutation_PI3K_PIK3CA.pdf>
 Package pdftex.def Info: protein_vioplotx_Mutation_PI3K_PIK3CA.pdf used on inpu
-t line 1039.
+t line 1105.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 
-<protein_vioplotx_Mutation_PI3K_PIK3CA_PIK3R1.pdf, id=1006, 289.08pt x 289.08pt
+<protein_vioplotx_Mutation_PI3K_PIK3CA_PIK3R1.pdf, id=1607, 289.08pt x 289.08pt
 >
 File: protein_vioplotx_Mutation_PI3K_PIK3CA_PIK3R1.pdf Graphic file (type pdf)
  <use protein_vioplotx_Mutation_PI3K_PIK3CA_PIK3R1.pdf>
 Package pdftex.def Info: protein_vioplotx_Mutation_PI3K_PIK3CA_PIK3R1.pdf used 
-on input line 1042.
+on input line 1108.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 
-<protein_vioplotx_Mutation_PI3K_CDH1.pdf, id=1007, 289.08pt x 289.08pt>
+<protein_vioplotx_Mutation_PI3K_CDH1.pdf, id=1608, 289.08pt x 289.08pt>
 File: protein_vioplotx_Mutation_PI3K_CDH1.pdf Graphic file (type pdf)
 
 <use protein_vioplotx_Mutation_PI3K_CDH1.pdf>
 Package pdftex.def Info: protein_vioplotx_Mutation_PI3K_CDH1.pdf used on input 
-line 1046.
+line 1112.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 
-<protein_vioplotx_Mutation_PI3K_TP53.pdf, id=1008, 289.08pt x 289.08pt>
+<protein_vioplotx_Mutation_PI3K_TP53.pdf, id=1609, 289.08pt x 289.08pt>
 File: protein_vioplotx_Mutation_PI3K_TP53.pdf Graphic file (type pdf)
 
 <use protein_vioplotx_Mutation_PI3K_TP53.pdf>
 Package pdftex.def Info: protein_vioplotx_Mutation_PI3K_TP53.pdf used on input 
-line 1049.
+line 1115.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1054.
+ mdframed uses option nobreak mdframed on input line 1120.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1054.
+ mdframed uses option nobreak mdframed on input line 1120.
 
-<protein_vioplotx_Mutation_AKT_PIK3CA.pdf, id=1009, 289.08pt x 289.08pt>
+<protein_vioplotx_Mutation_AKT_PIK3CA.pdf, id=1610, 289.08pt x 289.08pt>
 File: protein_vioplotx_Mutation_AKT_PIK3CA.pdf Graphic file (type pdf)
 
 <use protein_vioplotx_Mutation_AKT_PIK3CA.pdf>
 Package pdftex.def Info: protein_vioplotx_Mutation_AKT_PIK3CA.pdf used on input
- line 1063.
+ line 1129.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 
-<protein_vioplotx_Mutation_AKT_PIK3CA_PIK3R1.pdf, id=1010, 289.08pt x 289.08pt>
+<protein_vioplotx_Mutation_AKT_PIK3CA_PIK3R1.pdf, id=1611, 289.08pt x 289.08pt>
 File: protein_vioplotx_Mutation_AKT_PIK3CA_PIK3R1.pdf Graphic file (type pdf)
 <use protein_vioplotx_Mutation_AKT_PIK3CA_PIK3R1.pdf>
 Package pdftex.def Info: protein_vioplotx_Mutation_AKT_PIK3CA_PIK3R1.pdf used o
-n input line 1066.
+n input line 1132.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 
-<protein_vioplotx_Mutation_AKT_CDH1.pdf, id=1011, 289.08pt x 289.08pt>
+<protein_vioplotx_Mutation_AKT_CDH1.pdf, id=1612, 289.08pt x 289.08pt>
 File: protein_vioplotx_Mutation_AKT_CDH1.pdf Graphic file (type pdf)
 
 <use protein_vioplotx_Mutation_AKT_CDH1.pdf>
 Package pdftex.def Info: protein_vioplotx_Mutation_AKT_CDH1.pdf used on input l
-ine 1070.
+ine 1136.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 
-<protein_vioplotx_Mutation_AKT_TP53.pdf, id=1012, 289.08pt x 289.08pt>
+<protein_vioplotx_Mutation_AKT_TP53.pdf, id=1613, 289.08pt x 289.08pt>
 File: protein_vioplotx_Mutation_AKT_TP53.pdf Graphic file (type pdf)
 
 <use protein_vioplotx_Mutation_AKT_TP53.pdf>
 Package pdftex.def Info: protein_vioplotx_Mutation_AKT_TP53.pdf used on input l
-ine 1073.
+ine 1139.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1078.
+ mdframed uses option nobreak mdframed on input line 1144.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1078.
+ mdframed uses option nobreak mdframed on input line 1144.
 
-<metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf, id=1013, 289.08pt x 28
+<metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf, id=1614, 289.08pt x 28
 9.08pt>
 File: metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf Graphic file (type
  pdf)
  <use metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf>
 Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf
- used on input line 1087.
+ used on input line 1153.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 
-<metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK3R1.pdf, id=1014, 289.08
+<metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK3R1.pdf, id=1615, 289.08
 pt x 289.08pt>
 File: metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK3R1.pdf Graphic fil
 e (type pdf)
 
 <use metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK3R1.pdf>
 Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK
-3R1.pdf used on input line 1090.
+3R1.pdf used on input line 1156.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 
-<metagene(ranked)_vioplotx_Mutation_PI3K2011_CDH1.pdf, id=1015, 289.08pt x 289.
+<metagene(ranked)_vioplotx_Mutation_PI3K2011_CDH1.pdf, id=1616, 289.08pt x 289.
 08pt>
 File: metagene(ranked)_vioplotx_Mutation_PI3K2011_CDH1.pdf Graphic file (type p
 df)
  <use metagene(ranked)_vioplotx_Mutation_PI3K2011_CDH1.pdf>
 Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PI3K2011_CDH1.pdf u
-sed on input line 1094.
+sed on input line 1160.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 
-<metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.pdf, id=1016, 289.08pt x 289.
+<metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.pdf, id=1617, 289.08pt x 289.
 08pt>
 File: metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.pdf Graphic file (type p
 df)
  <use metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.pdf>
 Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.pdf u
-sed on input line 1097.
+sed on input line 1163.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1102.
+ mdframed uses option nobreak mdframed on input line 1168.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1102.
+ mdframed uses option nobreak mdframed on input line 1168.
 
-<metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA.pdf, id=1017, 289.08pt x 
+<metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA.pdf, id=1618, 289.08pt x 
 289.08pt>
 File: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA.pdf Graphic file (ty
 pe pdf)
  <use metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA.pdf>
 Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA.p
-df used on input line 1111.
+df used on input line 1177.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 
-<metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA_PIK3R1.pdf, id=1018, 289.
+<metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA_PIK3R1.pdf, id=1619, 289.
 08pt x 289.08pt>
 File: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA_PIK3R1.pdf Graphic f
 ile (type pdf)
 
 <use metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA_PIK3R1.pdf>
 Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA_P
-IK3R1.pdf used on input line 1114.
+IK3R1.pdf used on input line 1180.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 
-<metagene(ranked)_vioplotx_Mutation_PIK3CA2014_CDH1.pdf, id=1019, 289.08pt x 28
+<metagene(ranked)_vioplotx_Mutation_PIK3CA2014_CDH1.pdf, id=1620, 289.08pt x 28
 9.08pt>
 File: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_CDH1.pdf Graphic file (type
  pdf)
  <use metagene(ranked)_vioplotx_Mutation_PIK3CA2014_CDH1.pdf>
 Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_CDH1.pdf
- used on input line 1118.
+ used on input line 1184.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 
-<metagene(ranked)_vioplotx_Mutation_PIK3CA2014_TP53.pdf, id=1020, 289.08pt x 28
+<metagene(ranked)_vioplotx_Mutation_PIK3CA2014_TP53.pdf, id=1621, 289.08pt x 28
 9.08pt>
 File: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_TP53.pdf Graphic file (type
  pdf)
  <use metagene(ranked)_vioplotx_Mutation_PIK3CA2014_TP53.pdf>
 Package pdftex.def Info: metagene(ranked)_vioplotx_Mutation_PIK3CA2014_TP53.pdf
- used on input line 1121.
+ used on input line 1187.
 (pdftex.def)             Requested size: 189.0967pt x 189.09514pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1126.
+ mdframed uses option nobreak mdframed on input line 1192.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1126.
- [181
+ mdframed uses option nobreak mdframed on input line 1192.
+ [222
 
  <./geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf> <./metagene_vioplotx_Mutation_
 locus_PIK3CA.pdf> <./geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf> <./protein_vi
 oplotx_Mutation_locus_PIK3CA.pdf> <./protein_vioplotx_Mutation_locus_AKT.pdf> <
 ./protein_vioplotx_Mutation_locus_CDH1.pdf> <./protein_vioplotx_Mutation_locus_
-TP53.pdf>] [182 <./protein_vioplotx_Mutation_PI3K_PIK3CA.pdf> <./protein_vioplo
+TP53.pdf>] [223 <./protein_vioplotx_Mutation_PI3K_PIK3CA.pdf> <./protein_vioplo
 tx_Mutation_PI3K_PIK3CA_PIK3R1.pdf> <./protein_vioplotx_Mutation_PI3K_CDH1.pdf>
- <./protein_vioplotx_Mutation_PI3K_TP53.pdf>] [183 <./protein_vioplotx_Mutation
+ <./protein_vioplotx_Mutation_PI3K_TP53.pdf>] [224 <./protein_vioplotx_Mutation
 _AKT_PIK3CA.pdf> <./protein_vioplotx_Mutation_AKT_PIK3CA_PIK3R1.pdf> <./protein
-_vioplotx_Mutation_AKT_CDH1.pdf> <./protein_vioplotx_Mutation_AKT_TP53.pdf>] [1
-84 <./metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf> <./metagene(ranke
+_vioplotx_Mutation_AKT_CDH1.pdf> <./protein_vioplotx_Mutation_AKT_TP53.pdf>] [2
+25 <./metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf> <./metagene(ranke
 d)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK3R1.pdf> <./metagene(ranked)_vioplotx_M
 utation_PI3K2011_CDH1.pdf> <./metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.
 pdf>]
-[185 <./metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA.pdf> <./metagene(r
+[226 <./metagene(ranked)_vioplotx_Mutation_PIK3CA2014_PIK3CA.pdf> <./metagene(r
 anked)_vioplotx_Mutation_PIK3CA2014_PIK3CA_PIK3R1.pdf> <./metagene(ranked)_viop
 lotx_Mutation_PIK3CA2014_CDH1.pdf> <./metagene(ranked)_vioplotx_Mutation_PIK3CA
 2014_TP53.pdf>]
-<vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf, id=1205, 578.16pt x 
-385.44pt>
-File: vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf Graphic file (ty
-pe pdf)
- <use vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf>
-Package pdftex.def Info: vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.p
-df used on input line 1139.
-(pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1144.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1144.
-
-<vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf, id=1206, 578.16pt x 3
-85.44pt>
-File: vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf Graphic file (typ
-e pdf)
- <use vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf>
-Package pdftex.def Info: vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pd
-f used on input line 1153.
-(pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1158.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1158.
- [186
-
- <./vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf> <./vioplotx_mtSLI
-PT_siRNA_vs_Viability_Ratio_with_CDH1.pdf>]
 Appendix E.
+! Too many }'s.
+l.1196 \label{results:mg_expr_SL}}
+                                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
-Overfull \hbox (5.45744pt too wide) in paragraph at lines 1165--1165
-|\OT1/cmr/bx/n/24.88 Expression Anal-y-sis in Stom-ach Can-
- []
 
-[187
+<CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf, 
+id=1806, 867.24pt x 867.24pt>
+File: CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.
+pdf Graphic file (type pdf)
+
+<use CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.p
+df>
+Package pdftex.def Info: CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_
+and_CDH1_Stat_corr.pdf used on input line 1213.
+(pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
+
+<CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pdf, id=1811, 867.24pt x 8
+67.24pt>
+File: CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pdf Graphic file (typ
+e pdf)
+ <use CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pdf>
+Package pdftex.def Info: CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pd
+f used on input line 1229.
+(pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
+
+<CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf, id=1816, 867.24pt x 86
+7.24pt>
+File: CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf Graphic file (type
+ pdf)
+ <use CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf>
+Package pdftex.def Info: CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf
+ used on input line 1245.
+(pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
+
+<CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.pdf, id=1821, 867.24pt x 867
+.24pt>
+File: CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.pdf Graphic file (type 
+pdf)
+ <use CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.pdf>
+Package pdftex.def Info: CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.pdf 
+used on input line 1261.
+(pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
+
+<CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.pdf, id=1826, 867.24pt x 
+867.24pt>
+File: CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.pdf Graphic file (ty
+pe pdf)
+ <use CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.pdf>
+Package pdftex.def Info: CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.p
+df used on input line 1278.
+(pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
+
+[227
+
+] [228 <./CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_and_CDH1_Stat_c
+orr.pdf>] [229 <./CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.pdf>] [23
+0 <./CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.pdf>] [231 <./CDH1_Heat
+maps_Gatza2011(ER)_Full_Metagene_mgorder.pdf>] [232 <./CDH1_Heatmaps_Gatza2014(
+BRCA1)_Full_Metagene_mgorder.pdf>]
+Appendix F.
+[233
 
 ]
-Appendix F.
+Appendix G.
+[234
 
-<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png, id=1228,
+]
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png, id=1922,
  1461.46pt x 1461.46pt>
 File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png Grap
 hic file (type png)
 
 <use CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png>
 Package pdftex.def Info: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordist
-x_Pub_stad.png used on input line 1309.
+x_Pub_stad.png used on input line 1448.
 (pdftex.def)             Requested size: 1461.45645pt x 1461.45645pt.
-
-
-Package natbib Warning: Citation `Telford2015' on page 188 undefined on input l
-ine 1312.
-
-
-Package natbib Warning: Citation `Telford2015' on page 188 undefined on input l
-ine 1312.
-
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1314.
+ mdframed uses option nobreak mdframed on input line 1453.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1314.
+ mdframed uses option nobreak mdframed on input line 1453.
+
+[235]
+
+LaTeX Warning: Text page 236 contains only floats.
+
+
+Overfull \vbox (4.99904pt too high) has occurred while \output is active []
+
+
+[236 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png>]
 
 ! LaTeX Error: Unknown float option `H'.
 
@@ -2505,24 +2640,24 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1318 \begin{table*}[!Hp]
+l.1459 \begin{table*}[!Hp]
                           
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 14.3523pt on input line 1507.
+LaTeX Warning: Float too large for page by 14.3523pt on input line 1648.
 
-
-<Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png, id=1229, 540.0175pt x 449.68pt>
+[237]
+<Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png, id=1940, 540.0175pt x 449.68pt>
 File: Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png Graphic file (type png)
 <use Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png>
 Package pdftex.def Info: Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png used on 
-input line 1514.
+input line 1660.
 (pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1518.
+ mdframed uses option nobreak mdframed on input line 1664.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1518.
+ mdframed uses option nobreak mdframed on input line 1664.
 
 
 ! LaTeX Error: Unknown float option `H'.
@@ -2531,28 +2666,20 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1522 \begin{table*}[!Hp]
+l.1668 \begin{table*}[!Hp]
                           
 Option `H' ignored and `p' used.
 
 
-LaTeX Warning: Float too large for page by 1.7224pt on input line 1664.
+LaTeX Warning: Float too large for page by 1.7224pt on input line 1810.
 
+[238
 
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1667 \begin{table*}[!Htp]
-                           
-Option `H' ignored and `p' used.
-
+ <./Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png>] [239]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1784 }
+l.1935 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2560,7 +2687,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.1784 }
+l.1935 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2570,7 +2697,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1784 }
+l.1935 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2581,7 +2708,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1784 }
+l.1935 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2589,7 +2716,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...color {Cluster_Red!15} G_${\alpha s}
                                                   $ signalling events & $1.1...
-l.1784 }
+l.1935 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2600,7 +2727,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1784 }
+l.1935 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2609,7 +2736,7 @@ Try to go on, since this might almost work.
 ! Extra }, or forgotten \endgroup.
 \@endfloatbox ...pagefalse \outer@nobreak \egroup 
                                                   \color@endbox 
-l.1785 \end{table*}
+l.1936 \end{table*}
                    
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2624,14 +2751,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1787 \begin{table*}[!Htp]
+l.1938 \begin{table*}[!Htp]
                            
 Option `H' ignored and `p' used.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1904 }
+l.2055 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2639,7 +2766,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.1904 }
+l.2055 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2649,7 +2776,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1904 }
+l.2055 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2660,7 +2787,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1904 }
+l.2055 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2668,7 +2795,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...ed!20!Cluster_Blue!20} G_${\alpha s}
                                                   $ signalling events & $5 \...
-l.1904 }
+l.2055 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2679,7 +2806,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1904 }
+l.2055 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2688,7 +2815,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1904 }
+l.2055 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2696,7 +2823,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.1904 }
+l.2055 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2706,7 +2833,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1904 }
+l.2055 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2717,7 +2844,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1904 }
+l.2055 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2725,7 +2852,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...ed!20!Cluster_Blue!20} G_${\alpha q}
                                                   $ signalling events & $5.1...
-l.1904 }
+l.2055 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2736,7 +2863,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1904 }
+l.2055 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2745,7 +2872,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1904 }
+l.2055 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2753,7 +2880,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.1904 }
+l.2055 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2763,7 +2890,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1904 }
+l.2055 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2774,7 +2901,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1904 }
+l.2055 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2782,7 +2909,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...ed!15!Cluster_Blue!15} G_${\alpha i}
                                                   $ signalling events & $0.0...
-l.1904 }
+l.2055 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2793,35 +2920,47 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1904 }
+l.2055 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-) [188
+[240] [241] [242]
+Appendix H.
+<MostSL_Summary_CDH1_FDR_stad.pdf, id=1964, 385.44pt x 385.44pt>
+File: MostSL_Summary_CDH1_FDR_stad.pdf Graphic file (type pdf)
 
-] [189] [190 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_sta
-d.png>] [191] [192 <./Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png>]
-[193] [194] [195] [196]
+<use MostSL_Summary_CDH1_FDR_stad.pdf>
+Package pdftex.def Info: MostSL_Summary_CDH1_FDR_stad.pdf used on input line 21
+42.
+(pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 2147.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 2147.
+ [243
 
-Package natbib Warning: There were undefined citations.
+ <./MostSL_Summary_CDH1_FDR_stad.pdf>] [244
 
+]) [245
+
+]
 
 Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 198.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 198.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 201.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 201.
 (./20170419_thesis_appendix.aux (./intro.aux) (./methods.aux)
 (./methods_dev.aux) (./chapt3.aux) (./chapt4.aux) (./chapt5.aux) (./chapt6.aux)
 (./conclusion.aux) (./appendix_methods.aux) (./appendix_chapt3.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 198.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 198.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 201.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 201.
 Package rerunfilecheck Info: File `20170419_thesis_appendix.out' has not change
 d.
-(rerunfilecheck)             Checksum: 263612DD084402BF9BE3AEDB9F31B377;1123.
+(rerunfilecheck)             Checksum: EE4E6C20363286F7DAAD51B5F560858E;2295.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2832,56 +2971,113 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 35320 strings out of 494497
- 665348 string characters out of 6172400
- 988106 words of memory out of 5000000
- 37701 multiletter control sequences out of 15000+600000
- 14290 words of font info for 52 fonts, out of 8000000 for 9000
+ 36604 strings out of 494497
+ 686542 string characters out of 6172400
+ 976630 words of memory out of 5000000
+ 38366 multiletter control sequences out of 15000+600000
+ 14459 words of font info for 53 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 59i,19n,94p,10458b,750s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{table.caption.41} has been referenced but does no
+ 59i,19n,94p,10434b,975s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{table.caption.93} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.39} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.91} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.33} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.89} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.31} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.87} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.29} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.85} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.28} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.83} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.19} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.81} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.17} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.79} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.2.6} has been referenced but does not exist, 
+pdfTeX warning (dest): name{table.caption.77} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.76} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.74} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.71} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.69} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.67} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.64} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.62} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.48} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.2.5} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.9} has been referenced but does not e
-xist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.18} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.8} has been referenced but does not e
-xist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.10} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.7} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.6} has been referenced but does not e
-xist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.10} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.75} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.26} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.73} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.66} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.61} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.54} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.53} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.52} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.51} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.50} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.49} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.47} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.42} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.30} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.29} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.25} has been referenced but does not
@@ -2899,28 +3095,10 @@ pdfTeX warning (dest): name{figure.caption.22} has been referenced but does not
 pdfTeX warning (dest): name{figure.caption.21} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.20} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.18} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.16} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.15} has been referenced but does not
- exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{figure.caption.14} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.11} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, 
@@ -3022,14 +3200,14 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{section.4.5} has been referenced but does not exist
 , replaced by a fixed one
 
+pdfTeX warning (dest): name{subsection.4.4.2} has been referenced but does not 
+exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{subsection.4.4.1} has been referenced but does not 
 exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{section.4.4} has been referenced but does not exist
 , replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.3.3} has been referenced but does not 
-exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsubsection.4.3.2.1} has been referenced but does
  not exist, replaced by a fixed one
@@ -3043,20 +3221,23 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsection.4.2.4.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.4.2.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsubsection.4.2.3.1.1} has been referenced but
- does not exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{subsubsection.4.2.3.1} has been referenced but does
  not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.4.2.3} has been referenced but does not 
 exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsubsection.4.2.2.3.1} has been referenced but
+ does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.2.2.3} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.2.2.2} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.4.2.2.1} has been referenced but does
+ not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.4.2.2} has been referenced but does not 
 exist, replaced by a fixed one
@@ -3432,11 +3613,13 @@ blic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti
 10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb
->
-Output written on 20170419_thesis_appendix.pdf (52 pages, 4230696 bytes).
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr
+/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1
+/public/tex-gyre/qhvr.pfb>
+Output written on 20170419_thesis_appendix.pdf (88 pages, 8549374 bytes).
 PDF statistics:
- 1392 PDF objects out of 1440 (max. 8388607)
- 1203 compressed objects within 13 object streams
- 359 named destinations out of 1000 (max. 500000)
- 409 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2182 PDF objects out of 2487 (max. 8388607)
+ 1913 compressed objects within 20 object streams
+ 709 named destinations out of 1000 (max. 500000)
+ 572 words of extra memory for PDF output out of 10000 (max. 10000000)
 
