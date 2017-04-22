@@ -94,6 +94,10 @@ The mtSLIPT candidates had more genes involved in cell and gene regulation, part
 
 \subsection{Synthetic lethal pathways in breast cancer} \label{results:exprSL_pathways}
 
+Translational pathways were strongly over-represented in SLIPT partners, as shown in Table \ref{tab:pathway_exprSL}. These include ribosomal subunits, initiation, peptide elongation, and termination. Regulatory processes involving mRNA including 3' untranslated region (UTR) binding, L13a-mediated translational silencing, and nonsense-mediated decay were also implicated. These are consistent with protein translation being subject to ``non-oncogene addiction'' \citep{Luo2009}, as a core process that is dysregulated to sustain cancer proliferation and survival \citep{Gao2015}.
+
+Immunne pathways, including the adaptive immune system and responses to infectious diseases were also strongly implicated as synthetic lethal with loss of E-cadherin. This is consistent with the alterations of immune response being a hallmark of cancer \cite{Hanahan2000}, since evading the immune system is necessary for cancer survival. Either of these systems are potential means to target \textit{CDH1} deficient cells, although these were not detected in an isolated cell line experimental screen \citep{Telford2015} and the differences between to findings in patient data will be described in more detail in section \ref{chapt3:compare_pathway}.
+
 \begin{table*}[!ht]
 \caption{Pathways for \textit{CDH1} partners from SLIPT}
 \label{tab:pathway_exprSL}
@@ -153,15 +157,17 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 }
 \end{table*}
 
+It is also notable that the pathways over-represented in SLIPT candidate genes have strongly significant over-representation of Reactome pathways from the hypergeometric test (as described in section \ref{methods:enrichment}). Even after adjusting stringently for multiple tests, biologically related pathways give consensus support to these pathways. These pathways are further supported by testing for synthetic lethality against \textit{CDH1} mutations (mtSLIPT) with many of these pathways also among the most strongly supported in this analysis (shown in Table \ref{tab:pathway_mtSL}). This analysis more closely represents the null \textit{CDH1} mutations in HDGC \citep{Guilford1998} and the experimental MCF10A cell model \citep{Chen2014}. Although it still supports translational and immune pathways not detected in the isolated experimental system, G-protein-coupled receptors (GPCRs) were also among the most strongly supported pathways, supporting the experimental findings of \citet{Telford2015} for these intracellular signalling pathways already being targeted for other diseases. 
+
 %%appendix
 %\label{tab:pathway_mtSL}
+
+\FloatBarrier
 
 
 \subsection{Expression profiles of synthetic lethal partners} \label{results:exprSL_clusters}
 
-Due to the sheer number of gene candidates, investigations proceeded into correlation structure and pathway over-represent\-ation to explore the functional similarity of the synthetic lethal partners of \textit{CDH1}, with the eventual aim to assess their utility as drug targets. As shown in Figure \ref{fig:slipt_expr}, there were several large clusters of genes among the  expression profiles of the \textit{CDH1} synthetic lethal candidate partners, which suggests co-regulation of genes or pathway correlation. A number of candidates from an experimental RNAi screen study performed by Telford \textit{et al.} \cite{Telford2015} were also identified by this approach. In addition, we identified novel gene candidates, which had little effect on viability in isogenic cell line experiments. %or in some cases, even opposite effects of selective cell death or toxicity to both isogenic cell lines.
-
-In these expression profiles, a gene with a moderate or high signal across samples exhibiting low \textit{CDH1} expression would represent a potential drug target. However, it appears that several molecular subtypes of cancer have elevation of different clusters of synthetic lethal candidates in samples with low \textit{CDH1}. This clustering suggests that different targets or combinations could be effective in different patients suggesting potential utility for stratification.  In particular, estrogen receptor negative, basal subtype, and ``normal-like'' samples \cite{Eroles2012, Parker2009, Dai2015} have elevation of genes specific to particular clusters which is indicative of some synthetic lethal interactions being specific to a particular molecular subtype or genetic background. Thus synthetic lethal drug therapy against these subtypes may be ineffective if it were designed against genes in another cluster.
+Due to the sheer number of gene candidates and to examine their expression patterns, investigations proceeded into correlation structure and pathway over-represent\-ation. This serves to explore the functional similarity of the synthetic lethal partners of \textit{CDH1}, with the eventual aim to assess their utility as drug targets. As shown in Figure \ref{fig:slipt_expr} (which clusters \textit{CDH1} lowly expressing samples separately), there were several large clusters of genes among the  expression profiles of the \textit{CDH1} synthetic lethal candidate partners. The clustering suggests co-regulation of genes or pathway correlation between partner gene candidates. A number of candidates from an experimental RNAi screen study performed by \citet{Telford2015} were also identified by this approach. In addition, we identified novel gene candidates, which had little effect on viability in isogenic cell line experiments. %or in some cases, even opposite effects of selective cell death or toxicity to both isogenic cell lines.
 
 \begin{figure*}[!ht]
 \begin{mdframed}
@@ -169,32 +175,32 @@ In these expression profiles, a gene with a moderate or high signal across sampl
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png}
    }
-    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in TCGA breast cancer dataset for gene expression of 4,629 candidate partners of E-cadherin (\textit{CDH1}) from SLIPT prediction (with significant FDR adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an siRNA screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably 'normal-like', basal, and estrogen receptor negative samples have elevated expression in one or more distinct clusters showing complexity and variation among candidate synthetic lethal partners. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
+    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in TCGA breast cancer dataset for gene expression of 4,629 candidate partners of E-cadherin (\textit{CDH1}) from SLIPT prediction (with significant FDR adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an siRNA screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably `normal-like', basal, and estrogen receptor negative samples have elevated expression in one or more distinct clusters showing complexity and variation among candidate synthetic lethal partners. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr}
 \end{mdframed}
 \end{figure*}
 
+In these expression profiles, a gene with a moderate or high signal across samples exhibiting low \textit{CDH1} expression would represent a potential drug target. However, it appears that several molecular subtypes of cancer have elevation of different clusters of synthetic lethal candidates in samples with low \textit{CDH1}. This clustering suggests that different targets or combinations could be effective in different patients suggesting potential utility for stratification.  In particular, estrogen receptor negative, basal subtype, and ``normal-like'' samples \cite{Eroles2012, Parker2009, Dai2015} have elevation of genes specific to particular clusters which is indicative of some synthetic lethal interactions being specific to a particular molecular subtype or genetic background. Thus synthetic lethal drug therapy against these subtypes may be ineffective if it were designed against genes in another cluster.
+ 
+
+A similar correlation structure was observed among the candidates tested against \textit{CDH1} mutation (mtSLIPT), as shown in Figure \ref{fig:slipt_expr_mtSL}. This clustering analysis similarly identified several major clusters of putative synthetic lethal partner genes. Although in this case many partner genes had consistently high expression across most of the (predominantly lobular subtype) \textit{CDH1} breast cancer samples. However, a major exception to this in the \textit{CDH1} expression analysis were the normal samples which were excluded from the mutation data (as they were not tested for tumour-specific genotypes). This supports synthetic lethal interventions being more applicable to \textit{CDH1} mutant tumours and genotyping tumours for loss of function will be essential for clinical application. There was still considerable correlation structure, particularly among \textit{CDH1} wildtype samples, sufficient to distinguish gene clusters. In contrast to the expression analysis the (predominantly ductal \textit{CDH1} wildtype) basal subtype and estrogen receptor negative samples have depleted expression among most candidate synthetic lethal partners. This is consistent with synthetic lethal interventions only being effective in lobular estrogen receptor positive breast cancers in which they are a more common, as recurrent (driver) mutation. However, the remaining samples are still informative for synthetic lethal analysis (by SLIPT) as it requires highly expressing \textit{CDH1} samples for comparison.
+
+The \textit{CDH1} mutant samples (in Figure \ref{fig:slipt_expr}) were predominantly among the \textit{CDH1} lowly expressing samples and distributed throughout \textit{CDH1} samples with clustering analysis. Thus the molecular profiles of \textit{CDH1} low samples a indistinguishable from \textit{CDH1} mutant samples with the exception of normal samples (that do not have somatic mutation data as it is inferred from comparison to them to tumour-specific genotypes). Conversely, many of the \textit{CDH1} mutant samples (in Figure \ref{fig:slipt_expr_mtSL}) had among the lowest \textit{CDH1} expression and some of the synthetic lethal partners were also highly expressed in lowly expressing \textit{CDH1} wildtype samples, despite these not being considered as ``inactivated'' by mtSLIPT analysis.
+
+Together these results support the use for low \textit{CDH1} expression as a strategy for detecting \textit{CDH1} inactivation. This has the benefit of increasing sample size (including samples such as normal tissue which do not have somatic mutation data available) and increasing the expected number of mutually inactive (low-low) samples for the directional criteria of (mt)SLIPT which enabling it to better distinguish significant deviations below this (as discussed in section \ref{chap5:compare_ methods}). This also circumvents the assumption that all (detected) mutations are inactivating (although synonymous mutations were excluded from the analysis), which may not the case for several highly expressing \textit{CDH1} mutant samples that do not cluster together in Figures \ref{fig:slipt_expr} or \ref{fig:slipt_expr_mtSL}. One of these exhibits among the lowest expression for many predicted synthetic lethal partners and would not be vulnerable to inactivation of these genes. As such correctly genotyping inactivating mutations will be essential in clinical practice for synthetic lethal targeting tumour suppressor genes, particularly for other genes such as \textit{TP53} where oncogenic and tumour suppressor mutations (with different molecular consequences) are both common in cancers. Using expression as a measure of gene expression also avoids the assumptions that mutations are somatic rather than germline and that gene inactivation is by detectable mutations rather than other mechanisms such as epigenetic changes which is supported by many lowly expressing \textit{CDH1} wildtype samples clustering with similar profiles to mutant samples.
+
 %%appendix
 %\label{fig:slipt_expr_mtSL}
 
+%Figure 3.   Heatmap of RNASeq gene expression in predicted SL partners of \textit{CDH1} showing distinct subgroups of SL partners and links between SL partner expression and clinical variables.
 
-
-Table 5.  Gene set enrichment results for subgroups of \textit{CDH1} SL partners shows functional variation.
-
-Figure 3.   Heatmap of RNASeq gene expression in predicted SL partners of \textit{CDH1} showing distinct subgroups of SL partners and links between SL partner expression and clinical variables.
+\FloatBarrier
 
 \subsubsection{Subgroup pathway analysis}
-%%committee
-Synthetic lethal gene candidates for \textit{CDH1} from SLIPT performed on RNA-Seq expression data were also used for pathway over-representation analyses (as described in section \ref{methods:enrichment}). The correlation structure in the expression of candidates synthetic lethal genes in \textit{CDH1} low tumours (lowest $\sfrac{1}{3}$\textsuperscript{rd} quantile of expression) was examined for distinct biological pathways in subgroups of genes elevated in different clusters of samples including some by clinical factors such as estrogen receptor status, intrinsic (PAM50) subtype \citep{Parker2009}, and somatic mutation (of highest impact genes) against these gene clusters.
 
-
-%%paper
-As shown by the most over-represented pathways in Table \ref{tab:pathway_clusters}, each correlated cluster of candidate synthetic lethal partners of \textit{CDH1} contains functionally different genes. %Each correlated subgroup of synthetic lethal candidate genes has markedly different biological functions.
-Cluster 1 contains genes with less evidence of over-represented pathways than other clusters, corresponding to less correlation between genes within the cluster, and to it being a relatively small group. While there is some indication that collagen biosynthesis, microfibril elastic fibres, extracellular matrix, and metabolic pathways may be over-represent\-ed in Cluster 1, these results are mainly based on small pathways containing few synthetic lethal genes. Genes in Cluster 2 exhibited low expression in normal tissue samples compared to tumour samples (see Figure \ref{fig:slipt_expr}) and show compelling evidence of over-represent\-ation of post-transcriptional gene regulation and protein translation processes. Similarly, Cluster 3 has over-represent\-ation of immune signalling pathways (including chemokines, secondary messenger, and TCR signaling) and downstream intracellular signalling cascades such as G protein coupled receptor (GPCR) and  G$_{\alpha i}$ signalling events. While pathway over-represent\-ation was weaker among genes in Cluster 4, they contained intracellular signalling pathways and were highly expressed in normal samples (in contrast to Cluster 2). Cluster 4 also involved extracellular factors and stimuli such as extracellular matrix, platelet activation, ligand receptors, and retinoic acid signalling.
-
-Based on these results, potential synthetic lethal partners of \textit{CDH1} include processes known to be dysregulated in cancer, such as translational, cytoskeletal, and immune processes. Intracellular signalling cascades such as the GPCRs and extracellular stimuli for these pathways were also implicated in potential synthetic lethality with \textit{CDH1}.
+%Table 5.  Gene set enrichment results for subgroups of \textit{CDH1} SL partners shows functional variation.
 
 
 \begin{table*}[!Hp]
@@ -386,8 +392,22 @@ Based on these results, potential synthetic lethal partners of \textit{CDH1} inc
 }
 \end{table*}
 
+%%committee
+Synthetic lethal gene candidates for \textit{CDH1} from SLIPT performed on RNA-Seq expression data were also used for pathway over-representation analyses (as described in section \ref{methods:enrichment}). The correlation structure in the expression of candidates synthetic lethal genes in \textit{CDH1} low tumours (lowest $\sfrac{1}{3}$\textsuperscript{rd} quantile of expression) was examined for distinct biological pathways in subgroups of genes elevated in different clusters of samples. These gene were highly expressed in different samples with their clinical factors including estrogen receptor status and intrinsic (PAM50) subtype \citep{Parker2009} shown in Figure \ref{fig:slipt_expr}.
+
+%%paper
+As shown by the most over-represented pathways in Table \ref{tab:pathway_clusters}, each correlated cluster of candidate synthetic lethal partners of \textit{CDH1} contains functionally different genes. %Each correlated subgroup of synthetic lethal candidate genes has markedly different biological functions.
+Cluster 1 contains genes with less evidence of over-represented pathways than other clusters, corresponding to less correlation between genes within the cluster, and to it being a relatively small group. While there is some indication that collagen biosynthesis, microfibril elastic fibres, extracellular matrix, and metabolic pathways may be over-represent\-ed in Cluster 1, these results are mainly based on small pathways containing few synthetic lethal genes. Genes in Cluster 2 exhibited low expression in normal tissue samples compared to tumour samples (see Figure \ref{fig:slipt_expr}) and show compelling evidence of over-represent\-ation of post-transcriptional gene regulation and protein translation processes. Similarly, Cluster 3 has over-represent\-ation of immune signalling pathways (including chemokines, secondary messenger, and TCR signaling) and downstream intracellular signalling cascades such as G protein coupled receptor (GPCR) and  G$_{\alpha i}$ signalling events. While pathway over-represent\-ation was weaker among genes in Cluster 4, they contained intracellular signalling pathways and were highly expressed in normal samples (in contrast to Cluster 2). Cluster 4 also involved extracellular factors and stimuli such as extracellular matrix, platelet activation, ligand receptors, and retinoic acid signalling.
+
+Based on these results, potential synthetic lethal partners of \textit{CDH1} include processes known to be dysregulated in cancer, such as translational, cytoskeletal, and immune processes. Intracellular signalling cascades such as the GPCRs and extracellular stimuli for these pathways were also implicated in potential synthetic lethality with \textit{CDH1}.
+
+Similar translational, cytoskeletal, and immune processes were identified among SLIPT partners with respect to \textit{CDH1} mutation, shown in Table \ref{tab:pathway_clusters_mtSL}. While GPCR signalling was replicated in mtSLIPT analysis, there was also stronger over-representation for NOTCH, ERBB2, and PI3K/AKT signalling in mutation analysis consistent with these signals being important for proliferation of \textit{CDH1} deficient tumours. The GCPR and PI3K/AKT pathways are of particular interest as pathways with oncogenic mutations that can be targeted and downstream effects on translation (a strongly supported process across analyses). Extracellular matrix pathways (such as elastic fibre formation) were also supported across analyses (in Tables \ref{tab:pathway_clusters} and \ref{tab:pathway_clusters_mtSL}) consistent with the established cell-cell signalling role of \textit{CDH1} and the importance of the tumour microenvironment for cancer proliferation.
+
 %%appendix
 %\label{tab:pathway_clusters_mtSL}
+
+
+\FloatBarrier
 
 \section{Comparison of synthetic lethal gene candidates} \label{chapt3:compare_SL_genes}  
 
@@ -932,6 +952,8 @@ However, we note that several pathways, including some immune functions and neur
 
 Thus we have identified candidate synthetic lethal pathways by gene set over-representation, metagene synthetic lethality, and re-sampled empirical pathway over-representation. The challenge currently under consideration is whether these methods can be compared and which may lead to biologically meaningful or clinically relevant synthetic lethal candidate pathways.
 
+\iffalse
+
 \section{Mutation, Copy Number, and Methylation}
 
 Due to promising synthetic lethal data on mutation and DNA copy number analyses \citep{Jerby2014, Lu2015}, these were also investigated to compare genes for synthetic lethality in an analogous manner to expression analyses in the TCGA data. Due to the low somatic mutation rate (and lack of available) germline mutations for many genes, it was not possible to detect many double mutations with significantly under-representation in cancers. There were also concerns about using rare mutations with unknown significance or excluding functional mutations by only using those in the exons.
@@ -941,7 +963,11 @@ DNA methylation data was also prepared for synthetic lethal analysis but was dis
 
 \subsection{Synthetic lethality by DNA copy number}
 
+
+\fi
+
 \subsection{Synthetic lethality by somatic mutation}
+
 
 \subsubsection{Mutation analysis}
 

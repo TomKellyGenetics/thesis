@@ -180,7 +180,6 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 \resizebox{1 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccc}
-  \hline
  \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
   \hline
   \rowcolor{black!10}
@@ -242,7 +241,7 @@ The genes and pathways identified in Tables \ref{tab:gene_mtSL} and \ref{tab:pat
 %\clearpage
 \section{Synthetic Lethal Expression Profiles} \label{results:mtSL_clusters}
 
-Similar to the analysis of synthetic lethal partners against low \textit{CDH1} expression in \ref{results:exprSL_clusters}, the partners detected from \textit{CDH1} were also examined for their expression profiles and the pathway composition of gene clusters.
+Similar to the analysis of synthetic lethal partners against low \textit{CDH1} expression in \ref{results:exprSL_clusters}, the partners detected from \textit{CDH1} were also examined for their expression profiles and the pathway composition of gene clusters. Hierachical clustering was performed on mtSLIPT partners for \textit{CDH1} as showing in Figure \ref{fig:slipt_expr_mtSL}. Over-representation for Reactome pathways for each of the gene clusters identified is given in Table \ref{tab:pathway_clusters_mtSL}.
 
 \begin{figure*}[!ht]
 \begin{mdframed}
@@ -250,7 +249,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png}
    }
-    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in TCGA breast cancer dataset for gene expression of 4,629 candidate partners of E-cadherin (\textit{CDH1}) from SLIPT prediction (with significant FDR adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an siRNA screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably 'normal-like', basal, and estrogen receptor negative samples have elevated expression in one or more distinct clusters showing complexity and variation among candidate synthetic lethal partners. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
+    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by \textit{CDH1} somatic mutation status) analysed in TCGA breast cancer dataset for gene expression of 4,629 candidate partners of E-cadherin (\textit{CDH1}) from mtSLIPT prediction (with significant FDR adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an siRNA screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} mutant samples and often lowly expressing \textit{CDH1} wildtype samples (which were not tested for), although many of the \textit{CDH1} mutant samples had among the lowest \textit{CDH1} expression. In contrast to the expression analysis the (predominantly \textit{CDH1} wildtype) basal subtype and estrogen receptor negative samples have depleted expression among most candidate synthetic lethal partners. 
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_mtSL}
@@ -1194,25 +1193,9 @@ Mutations have different effects as shown by the following examples in cancer ge
 \end{figure*}
 
 \chapter{Metagene Expression Profiles}
-\label{results:mg_exprSL_clusters}}
+\label{results:mg_expr_SL}}
 
-
-\begin{figure*}[!htp]
-\noindent\makebox[\textwidth][c]{%               %centering
-\noindent\fbox{\begin{minipage}{1.00 \textwidth}  %frame beyond textwidth
-\begin{center}
-  \resizebox{1 \textwidth}{!}{
-    \includegraphics{CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf}
-   }
-   \end{center}
-   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors and cancer gene mutations.
-}
-\label{fig:metagene_expr_Gatza2011}
-\end{minipage}
-} %close fbox
-} %close centering
-\end{figure*}
-
+%\label{fig:metagene_expr_Gatza2011}
 
 \begin{figure*}[!htp]
 \noindent\makebox[\textwidth][c]{%               %centering
@@ -1300,6 +1283,18 @@ Mutations have different effects as shown by the following examples in cancer ge
 \chapter{Stomach Cancer Expression Analysis}
 \label{appendix:stad_exprSL}
 
+\section{Synthetic Lethal Genes and Pathways} \label{results:stad_exprSL_genes}
+
+\section{Synthetic Lethal Expression Profiles} \label{results:stad_exprSL_clusters}
+
+\section{Comparison to Primary Screen}
+
+\subsection{Resampling Analysis}  \label{chapt3:compare_pathway_perm_stad_exprSL}
+
+\section{Metagene Analysis} \label{chapt3:metagene_stad_exprSL}
+
+
+
 \FloatBarrier
 
 \chapter{Stomach Cancer Mutation Analysis}
@@ -1385,7 +1380,6 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 \resizebox{1 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccc}
-  \hline
  \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
   \hline
   \rowcolor{black!10}
@@ -1653,6 +1647,11 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 }
 \end{table*}
 
+\FloatBarrier
+
+\section{Comparison to Primary Screen}
+
+
 \begin{figure}[!ht]
 \begin{mdframed}
   \centering
@@ -1810,8 +1809,13 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 }
 \end{table*}
 
+\FloatBarrier
 
-\begin{table*}[!Htp]
+\subsection{Resampling Analysis}  \label{chapt3:compare_pathway_perm_stad_mtSL}
+
+\FloatBarrier
+
+\begin{table*}[!htp]
 \caption{Pathways for \textit{CDH1} partners from mtSLIPT in stomach cancer}
 \label{tab:pathway_perm_stad_mtSL}}
 \centering
@@ -2051,6 +2055,11 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 }
 \end{table*}  
 
+\FloatBarrier
+
+\section{Metagene Analysis} \label{chapt3:metagene_stad_mtSL}
+
+
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from mtSLIPT in stomach cancer}
 \label{tab:metagene_stad_mtSL}
@@ -2121,4 +2130,154 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 }
 \end{table*}
 
+\FloatBarrier
 
+\chapter{Global Synthetic Lethality in Stomach Cancer}
+
+\begin{figure*}[!ht]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \includegraphics{MostSL_Summary_CDH1_FDR_stad.pdf}
+   }
+   \end{center}
+   \caption[Synthetic lethal partners across query genes]{\small \textbf{Synthetic lethal partners across query genes.} Global synthetic lethal pairs were examined across the genome in TCGA stomach expression data by applying SLIPT across query genes. The high number of predicted partners for \textit{CDH1} was typical for a human gene and lower than many other genes.
+   }
+\label{fig:global_SL_stad}
+\end{mdframed}
+\end{figure*}
+
+
+\FloatBarrier
+
+\clearpage
+
+\section{Hub Genes}
+
+
+\begin{table*}[!ht]
+\caption{Query synthetic lethal genes with the most SLIPT partners}
+\label{tab:gene_mostSL_stad}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{>{\em}sl^c^c^c^c^c}
+\hline
+\rowstyle{\bfseries}
+  \em{Gene} & Direction & raw p-value & p-value (FDR) & SLIPT raw p-value & SLIPT (FDR) \\ 
+  \hline
+  \rowcolor{black!10}
+  HEG1 & 10719 & 16956 & 16724 & 9616 & 9532 \\ 
+  \rowcolor{black!5}
+  SYNE1 & 10755 & 17210 & 16984 & 9749 & 9676 \\ 
+  \rowcolor{black!10}
+  A2M & 10743 & 16650 & 16378 & 9529 & 9433 \\ 
+  \rowcolor{black!5}
+  ANK2 & 11008 & 16616 & 16355 & 9764 & 9653 \\ 
+  \rowcolor{black!10}
+  TTC28 & 10757 & 16523 & 16248 & 9530 & 9429 \\ 
+  \rowcolor{black!5}
+  FAT4 & 10451 & 16286 & 15978 & 9225 & 9115 \\ 
+  \rowcolor{black!10}
+  MRVI1 & 10904 & 16967 & 16718 & 9775 & 9686 \\ 
+  \rowcolor{black!5}
+  PAPLN & 10483 & 16405 & 16104 & 9305 & 9193 \\ 
+  \rowcolor{black!10}
+  NFASC & 10773 & 16575 & 16307 & 9578 & 9475 \\ 
+  \rowcolor{black!5}
+  MACF1 & 9697 & 16378 & 16058 & 8620 & 8540 \\ 
+  \rowcolor{black!10}
+  HMCN1 & 10475 & 16101 & 15733 & 9156 & 9008 \\ 
+  \rowcolor{black!5}
+  MPDZ & 10878 & 16550 & 16299 & 9599 & 9491 \\ 
+  \rowcolor{black!10}
+  FLRT2 & 10776 & 16760 & 16473 & 9590 & 9464 \\ 
+  \rowcolor{black!5}
+  SETBP1 & 10869 & 16632 & 16349 & 9615 & 9489 \\ 
+  \rowcolor{black!10}
+  LAMA4 & 10463 & 16447 & 16121 & 9273 & 9151 \\ 
+  \rowcolor{black!5}
+  IL1R1 & 10611 & 16185 & 15803 & 9299 & 9174 \\ 
+  \rowcolor{black!10}
+  ABCA6 & 10499 & 16573 & 16318 & 9260 & 9158 \\ 
+  \rowcolor{black!5}
+  LAMC1 & 10238 & 15777 & 15392 & 8837 & 8691 \\ 
+  \rowcolor{black!10}
+  TNS1 & 10920 & 17038 & 16806 & 9836 & 9751 \\ 
+  \rowcolor{black!5}
+  AMOTL1 & 10612 & 16458 & 16178 & 9367 & 9250 \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Genes with the most candidate SL partners SLIPT in TCGA stomach expression data with the number of partner genes predicted by direction criteria and $\chi^2$ testing separately and combined as a SLIPT analysis. Where specified, the p-values for the $\chi^2$ test were adjusted for multiple tests (FDR).
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+
+\FloatBarrier
+
+\clearpage
+
+\section{Hub Pathways}
+
+\begin{table*}[!ht]
+\caption{Pathways for genes with the most SLIPT partners}
+\label{tab:pathway_mostSL_stad}
+\centering
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lcccc}
+  \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value} & \textbf{p-value (FDR)} \\
+  \hline
+  \rowcolor{black!10}
+  Molecules associated with elastic fibres &  34 &  10 & $4.6 \times 10^{-21}$ & $2.7 \times 10^{-18}$ \\ 
+  \rowcolor{black!5}
+  Extracellular matrix organization & 241 &  29 & $5.3 \times 10^{-21}$ & $2.7 \times 10^{-18}$ \\ 
+  \rowcolor{black!10}
+  Smooth Muscle Contraction &  29 &   9 & $5.6 \times 10^{-20}$ & $1.6 \times 10^{-17}$ \\ 
+  \rowcolor{black!5}
+  Elastic fibre formation &  38 &  10 & $6 \times 10^{-20}$ & $1.6 \times 10^{-17}$ \\ 
+  \rowcolor{black!10}
+  Nitric oxide stimulates guanylate cyclase &  24 &   8 & $6.9 \times 10^{-19}$ & $1.4 \times 10^{-16}$ \\ 
+  \rowcolor{black!5}
+  Muscle contraction &  64 &  12 & $8.3 \times 10^{-19}$ & $1.4 \times 10^{-16}$ \\ 
+  \rowcolor{black!10}
+  Platelet homeostasis &  54 &  11 & $1.3 \times 10^{-18}$ & $1.9 \times 10^{-16}$ \\ 
+  \rowcolor{black!5}
+  cGMP effects &  18 &   6 & $3.3 \times 10^{-15}$ & $4.3 \times 10^{-13}$ \\ 
+  \rowcolor{black!10}
+  Laminin interactions &  30 &   7 & $1.3 \times 10^{-14}$ & $1.6 \times 10^{-12}$ \\ 
+  \rowcolor{black!5}
+  Axon guidance & 289 &  25 & $5 \times 10^{-13}$ & $5.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  Signaling by BMP &  23 &   5 & $3.7 \times 10^{-11}$ & $3.2 \times 10^{-9}$ \\ 
+  \rowcolor{black!5}
+  RHO GTPases activate PAKs &  23 &   5 & $3.7 \times 10^{-11}$ & $3.2 \times 10^{-9}$ \\ 
+  \rowcolor{black!10}
+  Non-integrin membrane-ECM interactions &  53 &   7 & $7.2 \times 10^{-11}$ & $5.8 \times 10^{-9}$ \\ 
+  \rowcolor{black!5}
+  Rho GTPase cycle & 120 &  11 & $1.2 \times 10^{-10}$ & $8.7 \times 10^{-9}$ \\ 
+  \rowcolor{black!10}
+  Degradation of the extracellular matrix & 104 &  10 & $1.3 \times 10^{-10}$ & $8.8 \times 10^{-9}$ \\ 
+  \rowcolor{black!5}
+  Netrin-1 signaling &  42 &   6 & $2.5 \times 10^{-10}$ & $1.6 \times 10^{-8}$ \\ 
+  \rowcolor{black!10}
+  Developmental Biology & 432 &  32 & $8.3 \times 10^{-10}$ & $5 \times 10^{-8}$ \\ 
+  \rowcolor{black!5}
+  L1CAM interactions &  80 &   8 & $8.7 \times 10^{-10}$ & $5 \times 10^{-8}$ \\ 
+  \rowcolor{black!10}
+  Semaphorin interactions &  64 &   7 & $1.1 \times 10^{-9}$ & $6.1 \times 10^{-8}$ \\ 
+  \rowcolor{black!5}
+  Cell-extracellular matrix interactions &  18 &   4 & $1.3 \times 10^{-9}$ & $6.6 \times 10^{-8}$ \\ 
+   \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in the top 500 ``hub'' genes with the most candidate synthetic lethal partners by SLIPT analysis of TCGA stomach expression data
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
