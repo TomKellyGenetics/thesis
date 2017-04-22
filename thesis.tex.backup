@@ -61,13 +61,20 @@
 
 %\usepackage{supertabular}
 \usepackage{tabularx}
+\usepackage{supertabular}
+\usepackage{tabularx}
+\usepackage[para,online,flushleft]{threeparttable}
+\usepackage{multirow}
+%\usepackage{booktabs}
+\usepackage{longtable}
+
 \usepackage{array}
 \usepackage{multicol}
 \usepackage{colortbl}
 \usepackage{textcomp}
-%\usepackage{nomencl}
+\usepackage{nomencl}
 
-\usepackage{glossaries} %xindy, toc, acronym, style=super
+\usepackage[acronym, xindy, toc, acronym, style=super, nonumberlist]{glossaries}
 
 \usepackage{tikz} %arrows
 \usepackage{mathtools}
@@ -76,16 +83,15 @@
 \usepackage{subfigure}
 \usepackage{subcaption}
 \usepackage{mdframed} %frame with caption
-\usepackage[export]{adjustbox} %frame figures
+%\usepackage[export]{adjustbox} %frame figures
 \usepackage{cleveref}
 %\usepackage{mwe}
-\usepackage{multirow}
-%\usepackage{booktabs}
-\usepackage{longtable}
 
-\usepackage{titlesec}
+
+\usepackage[compact]{titlesec}
 \input{subsubsubsection}
 \usepackage{float}
+\usepackage{placeins}
 
 \usepackage{xfrac}
 
@@ -96,9 +102,11 @@
   #1\ignorespaces
 }
 
-
 \include{glossary}
 \makeglossaries
+
+\usepackage{lipsum}
+\usepackage[all]{nowidow} % avoid orphan lines
 
 %\newcommand\cropped[1]{%
 %    \immediate\write{convert -trim #1.png #1cropped.png}%
@@ -186,6 +194,8 @@
 \bibliographystyle{mycustom}
 \bibliography{thesis}
 
-\include{appendices}
+\appendix
+\include{appendix_methods}
+\include{appendix_chapt3}
 \end{document}
 %% All Done!

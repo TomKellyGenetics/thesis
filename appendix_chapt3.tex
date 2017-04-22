@@ -909,10 +909,23 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
 \begin{mdframed}
 \begin{center}
   \resizebox{0.75 \textwidth}{!}{
+    \includegraphics{mtSLIPT_siRNA_vs_Correlation_with_CDH1.png}
+   }
+   \end{center}
+   \caption[Compare mtSLIPT and siRNA genes with correlation]{\small \textbf{Compare mtSLIPT and siRNA genes with correlation.} The mtSLIPT p-values were compared against Pearson's correlation of expression with \textit{CDH1}. Genes detected by SLIPT or siRNA are coloured according to the legend. 
+}
+\label{fig:compare_points_correlation_mtSL}
+\end{mdframed}
+%\end{figure*}
+
+%\begin{figure*}[!htp]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.75 \textwidth}{!}{
     \includegraphics{vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf}
    }
    \end{center}
-   \caption[Compare mtSLIPT and siRNA genes with correlation]{\small \textbf{Compare mtSLIPT and siRNA genes with correlation.} Caption, Caption, Caption...
+   \caption[Compare mtSLIPT and siRNA genes with correlation]{\small \textbf{Compare mtSLIPT and siRNA genes with correlation.}  Genes detected by mtSLIPT against \textit{CDH1} mutation and siRNA screening were compared against Pearson's correlation of expression with \textit{CDH1}. There were no differences in correlation between the gene groups. 
 }
 \label{fig:compare_correlation_mtSL}
 \end{mdframed}
@@ -922,24 +935,10 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
 \begin{mdframed}
 \begin{center}
   \resizebox{0.75 \textwidth}{!}{
-    \includegraphics{mtSLIPT_siRNA_vs_Correlation_with_CDH1.png}
-   }
-   \end{center}
-   \caption[Compare mtSLIPT and siRNA genes with correlation]{\small \textbf{Compare mtSLIPT and siRNA genes with correlation.} Caption, Caption, Caption...
-}
-\label{fig:compare_points_correlation_mtSL}
-\end{mdframed}
-\end{figure*}
-
-
-\begin{figure*}[!htp]
-\begin{mdframed}
-\begin{center}
-  \resizebox{0.75 \textwidth}{!}{
     \includegraphics{vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
    }
    \end{center}
-   \caption[Compare mtSLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare mtSLIPT and siRNA genes with siRNA viability.} Caption, Caption, Caption...
+   \caption[Compare mtSLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare mtSLIPT and siRNA genes with siRNA viability.}  Genes detected as candidate synthetic lethal partners by mtSLIPT (in TCGA breast cancer) expression analysis against \textit{CDH1} mutation and experimental screening (with siRNA) were compared against the viability ratio of \textit{CDH1} mutant and wildtype cells in the primary siRNA screen. There were clear no differences in viability between genes detected by mtSLIPT and those not with the differences being primarily due to viability thresholds being used to detect synthetic lethality by \citet{Telford2015}. 
 }
 \label{fig:compare_viability_mtSL}
 \end{mdframed}
@@ -1023,7 +1022,7 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 
 
 \clearpage
-\section{Mutation Variation}
+\section{Mutation Variation} \label{appendix:mutation_analysis}
 Mutations have different effects as shown by the following examples in cancer genes.
 
 \subsection{Mutation Frequency}
@@ -1658,7 +1657,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \resizebox{0.66 \columnwidth}{!}{
     \includegraphics{Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png}
    }
-    \caption[Comparison of mtSLIPT in stomach to siRNA]{\small \textbf{Comparison of mtSLIPT in stomach to siRNA.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
+    \caption[Comparison of mtSLIPT in stomach to siRNA]{\small \textbf{Comparison of mtSLIPT in stomach to siRNA.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (mtSLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.872$). %A Venn diagram of all 16298 genes tested by both approaches.
 }
 \label{fig:Venn_allgenes_stad_mtSL}
 \end{mdframed}

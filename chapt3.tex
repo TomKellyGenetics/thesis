@@ -96,7 +96,7 @@ The mtSLIPT candidates had more genes involved in cell and gene regulation, part
 
 Translational pathways were strongly over-represented in SLIPT partners, as shown in Table \ref{tab:pathway_exprSL}. These include ribosomal subunits, initiation, peptide elongation, and termination. Regulatory processes involving mRNA including 3' untranslated region (UTR) binding, L13a-mediated translational silencing, and nonsense-mediated decay were also implicated. These are consistent with protein translation being subject to ``non-oncogene addiction'' \citep{Luo2009}, as a core process that is dysregulated to sustain cancer proliferation and survival \citep{Gao2015}.
 
-Immunne pathways, including the adaptive immune system and responses to infectious diseases were also strongly implicated as synthetic lethal with loss of E-cadherin. This is consistent with the alterations of immune response being a hallmark of cancer \cite{Hanahan2000}, since evading the immune system is necessary for cancer survival. Either of these systems are potential means to target \textit{CDH1} deficient cells, although these were not detected in an isolated cell line experimental screen \citep{Telford2015} and the differences between to findings in patient data will be described in more detail in section \ref{chapt3:compare_pathway}.
+Immune pathways, including the adaptive immune system and responses to infectious diseases were also strongly implicated as synthetic lethal with loss of E-cadherin. This is consistent with the alterations of immune response being a hallmark of cancer \cite{Hanahan2000}, since evading the immune system is necessary for cancer survival. Either of these systems are potential means to target \textit{CDH1} deficient cells, although these were not detected in an isolated cell line experimental screen \citep{Telford2015} and the differences between to findings in patient data will be described in more detail in section \ref{chapt3:compare_pathway}.
 
 \begin{table*}[!ht]
 \caption{Pathways for \textit{CDH1} partners from SLIPT}
@@ -203,7 +203,7 @@ Together these results support the use for low \textit{CDH1} expression as a str
 %Table 5.  Gene set enrichment results for subgroups of \textit{CDH1} SL partners shows functional variation.
 
 
-\begin{table*}[!Hp]
+\begin{table*}[!hp]
 \caption{Pathway composition for clusters of \textit{CDH1} partners from SLIPT}
 \label{tab:pathway_clusters}
 \centering
@@ -411,14 +411,11 @@ Similar translational, cytoskeletal, and immune processes were identified among 
 
 \section{Comparison of synthetic lethal gene candidates} \label{chapt3:compare_SL_genes}  
 
-\subsection{Comparison with differential expression} \label{chapt3:compare_differential_expression}
+%\subsection{Comparison with differential expression} \label{chapt3:compare_differential_expression}
 
+\subsection{Comparison with siRNA screen candidates} \label{chapt3:primary_screen}
 
-\subsection{Comparison with primary siRNA screen candidates} \label{chapt3:primary_screen}
-
-Seconday screen results in Appendix \ref{appendix:secondary_screen}
-
-Gene candidates were compared between computational and experimental screening approaches in Figure \ref{fig:Venn_allgenes}. The number of genes detected by both methods did not produce a significant overlap but these may be difficult to compare due to vast differences between the detection methods. These intersecting genes could be useful in drug triage as they were replicated across both methods and pathway over-represent\-ation differed between the sections of the Venn diagram (see Figure \ref{fig:Venn_allgenes}).
+Gene candidates were compared between computational (SLIPT in TCGA breast cancer data) and experimental (the primary siRNA screen performed by \citet{Telford2015}) approaches in Figure \ref{fig:Venn_allgenes}. The number of genes detected by both methods did not produce a significant overlap but these may be difficult to compare due to vast differences between the detection methods. There were similar issues comparison of mtSLIPT genes tested against \textit{CDH1} mutations (in Figure \ref{fig:Venn_allgenes_stad_mtSL}), despite exlcuded genes not tested by both methods in either test. However, these intersecting genes may still be functionally informative or amenable to drug triage as they were replicated across both methods and pathway over-represent\-ation differed between the sections of the Venn diagram (see Figure \ref{fig:Venn_allgenes}).
 
 \begin{figure}[!ht]
 \begin{mdframed}
@@ -435,26 +432,9 @@ Gene candidates were compared between computational and experimental screening a
 %%appendix
 %\label{fig:Venn_allgenes_mtSL}
 
-The overlap between synthetic lethal from bioinformatics SLIPT predictions and siRNA screening has raised other questions including whether the number of genes and pathways enriched would be expected by chance. This of particular concern since the siRNA candidate genes themselves are highly enriched for particular pathways so selecting any intersect with them would be enriched for these pathways. The siRNA data is also based on cell line models which have limitations in application to a genetically variable patient population with a complex tumour microenvironment interacting with immune cells. One approach is to compare the candidate genes is to exclude genes that were not tested in both systems, such as those not expressed in cell lines or those with more than $\sfrac{1}{3}$ of TCGA patients without any RNA Seq reads so the lowest quantile cannot be defined for SLIPT analysis. Another approach is to test whether pathways are enriched in randomly sampled genes, comparing many “resampled” or “permutations” of these genes to the enrichment statistics observed for these pathways in the SLIPT candidates and their intersection with the siRNA hits shows whether we detect these pathways more than we expect by chance.
-
-Both of these are being applied with developing a method and overcoming technical challenges for the latter being the focus of recent work. The main challenge at the moment is to compare SLIPT results to experimental candidates and explain why so few genes (and so many pathways) overlap.
-
-As discussed above, comparing genes between experimental screen candidates and prediction from TCGA expression data has been difficult. Figure 3 summarises the approaches to comparing genes accounting for some of the differences between the datasets. Of particular concern are the over-represented pathways in genes detected by both methods. There is no statistical evidence that SLIPT predicted genes or siRNA candidates are enriched in with each other. The siRNA candidates themselves are over-represented with many pathways including GPCRs so any intersection with these would contain some of these pathways. Whether these pathways are contained in the intersection more than expected by chance is the problem the two approaches below were designed to tackle.
+\FloatBarrier
 
 \subsubsection{Comparison with correlation} \label{chapt3:compare_correlation} 
-
-\begin{figure*}[!htp]
-\begin{mdframed}
-\begin{center}
-  \resizebox{0.75 \textwidth}{!}{
-    \includegraphics{vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf}
-   }
-   \end{center}
-   \caption[Compare exprSLIPT and siRNA genes with correlation]{\small \textbf{Compare exprSLIPT and siRNA genes with correlation.} Caption, Caption, Caption...
-}
-\label{fig:compare_correlation_SL}
-\end{mdframed}
-\end{figure*}
 
 \begin{figure*}[!htp]
 \begin{mdframed}
@@ -463,27 +443,38 @@ As discussed above, comparing genes between experimental screen candidates and p
     \includegraphics{exprSLIPT_siRNA_vs_Correlation_with_CDH1.png}
    }
    \end{center}
-   \caption[Compare exprSLIPT and siRNA genes with correlation]{\small \textbf{Compare exprSLIPT and siRNA genes with correlation.} Caption, Caption, Caption...
+   \caption[Compare SLIPT and siRNA genes with correlation]{\small \textbf{Compare SLIPT and siRNA genes with correlation.} The $\chi^2$ p-values for genes tested by SLIPT (in TCGA breast cancer) expression analysis were compared against Pearson's correlation of gene expression with \textit{CDH1}. Genes detected by SLIPT or siRNA are coloured according to the legend. 
 }
 \label{fig:compare_points_correlation_SL}
 \end{mdframed}
-\end{figure*}
+%\end{figure*}
 
-\clearpage
-\subsubsection{Comparison with viability} \label{chapt3:compare_viability}
-
-\begin{figure*}[!htp]
+%\begin{figure*}[!htp]
 \begin{mdframed}
 \begin{center}
   \resizebox{0.75 \textwidth}{!}{
-    \includegraphics{vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
+    \includegraphics{vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf}
    }
    \end{center}
-   \caption[Compare exprSLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare exprSLIPT and siRNA genes with siRNA viability.} Caption, Caption, Caption...
+   \caption[Compare SLIPT and siRNA genes with correlation]{\small \textbf{Compare SLIPT and siRNA genes with correlation.} Genes detected as candidate synthetic lethal partners by SLIPT (in TCGA breast cancer) expression analysis and experimental screening (with siRNA) were compared against Pearson's correlation of gene expression with \textit{CDH1}. There were no differences in correlation between gene groups detected by either approach. 
 }
-\label{fig:compare_viability_SL}
+\label{fig:compare_correlation_SL}
 \end{mdframed}
 \end{figure*}
+
+Another potential means to triage drug target candidates is correlation of expression profiles with \textit{CDH1}. Correlation with \textit{CDH1} was compared to SLIPT and siRNA results in Figure \ref{fig:compare_points_correlation_SL}. The genes not detected by SLIPT (including siRNA candidates) included genes with high (insignificant) SLIPT p-values. As expected, these genes were distributed around a correlation of zero and genes with higher correlation with \textit{CDH1} (either direction) had more significant SLIPT p-values, although there were exceptions to this trend and larger positive correlations were negative correations.
+
+The majority of SLIPT candidates appeared to have negative correlations and moreso for those genes detected by both approaches, although these were typically weak correlations and are unlikely to be sufficient to detect such genes on their own. This is supported by simulation results in section \ref{chap5:compare_ methods}.
+
+There were not strong postive correlations with \textit{CDH1} among siRNA candidates, consistent with previous findings that co-expression is not predictive of synthetic lethality \citep{Jerby2014, Lu2015}. Negative correlation may not be indicative of synthetic lethality either as many siRNA candidates also had positive correlations. The SLIPT methodology has shown to detect genes with both positive and negative correlations, although it does appear to preferentially detect negatively correlated genes to some extent. These findings were replicated with the mtSLIPT approach against \textit{CDH1} mutation (in Figure \ref{fig:compare_points_correlation_mtSL}), although the range of the $\chi^2$ p-values differ due to lower sample size for mutation analysis.
+
+However, the apparent tendancy for genes detected by SLIPT or siRNA to have negative correlations with \textit{CDH1} expression may be due to the smaller number of genes in these groups. The distribution of \textit{CDH1} correations does not differ across these gene groups (as shown by Figures \ref{fig:compare_correlation_SL} and \ref{fig:compare_correlation_mtSL}). Therefore further triage of gene candidates by correaltion is not suitable, nor is use of correlation itself to preduct synthetic lethal partners in the first place.
+
+\FloatBarrier
+
+\subsubsection{Comparison with viability} \label{chapt3:compare_viability}
+
+A similar comparison of SLIPT results was made with the viability ratio (of \textit{CDH1} mutant to wildtype) in the primary siRNA screen performed by \citet{Telford2015}. The significance and viability thresholds used for SLIPT and siRNA detection of synthetic lethal candidate partners of \textit{CDH1} are clear in Figure \ref{fig:compare_points_viability_SL}. However note that not all of the gene below these thresholds are neccessarily selected to be candidate partners as additional criteria were used in each case: directional criteria as for SLIPT (see section \ref{methods:SLIPT}) and minimum wildtype viability for siRNA \citep{Telford2015}.
 
 \begin{figure*}[!htp]
 \begin{mdframed}
@@ -492,35 +483,55 @@ As discussed above, comparing genes between experimental screen candidates and p
     \includegraphics{exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png}
    }
    \end{center}
-   \caption[Compare exprSLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare exprSLIPT and siRNA genes with siRNA viability.} Caption, Caption, Caption...
+   \caption[Compare SLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare SLIPT and siRNA genes with siRNA viability.} The $\chi^2$ p-values for genes tested by SLIPT (in TCGA breast cancer) expression analysis were compared against the viability ratio of \textit{CDH1} mutant and wildtype cells in the primary siRNA screen. Genes detected by SLIPT or siRNA are coloured according to the legend. 
 }
 \label{fig:compare_points_viability_SL}
 \end{mdframed}
-\end{figure*}
+%\end{figure*}
 
-\begin{figure*}[!ht]
+%\begin{figure*}[!ht]
 \begin{mdframed}
 \begin{center}
   \resizebox{0.5 \textwidth}{!}{
     \includegraphics{exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
    }
    \end{center}
-   \caption[Compare exprSLIPT and siRNA genes with viability]{\small \textbf{Compare exprSLIPT and siRNA genes with viability.} Caption, Caption, Caption...
+   \caption[Compare SLIPT and siRNA genes with viability]{\small \textbf{Compare SLIPT and siRNA genes with viability.} The $\chi^2$ p-values for genes tested by SLIPT (in TCGA breast cancer) expression analysis were compared (on a log-scale) against the viability ratio of \textit{CDH1} mutant and wildtype cells in the primary siRNA screen. Genes detected by SLIPT or siRNA are coloured according to the legend with a grey line for $p=0.05$.
 }
 \label{fig:compare_pval_points_correlation_SL}
 \end{mdframed}
 \end{figure*}
 
+There does not appear to be a clear relationship between SLIPT and siRNA candidates. Many genes not detected by both approaches were numerous in Figures \ref{fig:Venn_allgenes} and \ref{fig:Venn_allgenes_mtSL}. These genes detected by either are not neccessarily near the thresholds for the other. In this respect the SLIPT approach with patient data and cell line experiments are independent means to identify synthetic lethal candidates. While genes detected by both approaches were not neccessarily more strongly supported by either, the genes with a viability closer to 1 (no synthetic lethal effect) in siRNA included those with more significant SLIPT p-values whereas more extreme viability ratios tended to be less significant (as shown by a logarithmic plot in Figure \ref{fig:compare_pval_points_correlation_SL}). Although it should be noted that genes with more moderate viability ratios were more common and SLIPT was capable (despite adjusting for multiple testing) of detecting significant genes with extreme viability ratios, particularly those considerably lower than 1. 
+
+However, there was not support for SLIPT candidates or those detected by both approaches having considerably different viability ratios (as shown in Figures \ref{fig:compare_viability_SL} and \ref{fig:compare_viability_mtSL}). The difference between the gene groups stems largely from the viability thresholds used by \citet{Telford2015} to detect synthetic lethal candidates in the primary screen, rather than more extreme viability ratios for genes identified by SLIPT. 
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \includegraphics{vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
+   }
+   \end{center}
+   \caption[Compare SLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare SLIPT and siRNA genes with siRNA viability.} Genes detected as candidate synthetic lethal partners by SLIPT (in TCGA breast cancer) expression analysis and experimental screening (with siRNA) were compared against the viability ratio of \textit{CDH1} mutant and wildtype cells in the primary siRNA screen. There were clear no differences in viability between genes detected by SLIPT and those not with the differences being primarily due to viability thresholds being used to detect synthetic lethality by \citet{Telford2015}. 
+}
+\label{fig:compare_viability_SL}
+\end{mdframed}
+\end{figure*}
+
+\FloatBarrier
+
+\subsubsection{Comparison with secondary screen siRNA screen candidates}
+
+However, it should be noted that genes with a lower viability ratio were not necessarily the strongest supported by experimental screening. The primary screen (with 4 pooled siRNAs) has been used for the majority of comparisons in this thesis because the genome-wide panel of target genes screened enables a large number of genes to be compared with SLIPT results from gene expression and somatic mutation analysis. A secondary screen was also performed by \citet{Telford2015} on the isogenic MCF10A breast cell lines to individually validate the siRNAs separately, with the strongest candidates being those exhibiting synthetic lethal viability ratios replicated across independently targeting siRNAs. This was performed for the top 500 candidates (with the lowest viability ratio) from the primary screen and the 482 of these genes also tested by SLIPT in breast cancer (and the 486 genes tested by SLIPT in stomach cancer).
+
+The seconday screen results are given in Appendix \ref{appendix:secondary_screen} which show that SLIPT candidate genes are more significantly ($p=7.49 \times 10^{-3}$ by Fisher's exact test) more  likely to be validated in the secondary screen and are thus informative of more robust partner genes, in addition to providing support that these interactions are consistent with expression profiles from heterogeneous patient samples across genetic backgrounds. While the individual genes detected by either approach do not neccessarily match (and are potentially false-positives), the biological functions important in \textit{CDH1} deficient cancers and potential mechanisms for specific targeting of them can be further supported by pathway analysis of the gene detected by either method. The genes detected by both approaches may therefore be more informative at the pathway level, where it is unlikely for a pathway to be consistently detected by chance. As the SLIPT candidates differ from the siRNA candidates (and are more likely to be validated), they can provide additional mechanisms by which \textit{CDH1} deficient cancers proliferate and vulnerabilities that may be exploited against them by using the synthetic lethal pathways.
 
 \FloatBarrier
 
 \subsubsection{Comparison of screen at pathway level}  \label{chapt3:compare_pathway}
 
-These pathway analyses correspond to genes separated into SLIPT or siRNA screen candidates unique to either method or detected by both (Table \ref{tab:Venn_over-representation}). The SLIPT-specific gene candidates were involved most strongly with translational and immune regulatory pathways, which were also identified in the clustering analysis (Table \ref{tab:pathway_clusters}). The genes detected only by the siRNA screen had over-represent\-ation of cell signalling pathways, including many containing genes known to be involved in cancer (e.g., MAPK, PDGF, ERBB2, and FGFR), with the detection of Class A GPCRs supporting the independent analyses by  Telford \textit{et al.} \cite{Telford2015}.
-
-The intersection of computational and experimental synthetic lethal partners of \textit{CDH1} has stronger evidence for over-represent\-ation of GPCR pathways and more specific subclasses, such as visual phototransduction ($p=6.9 \times 10^{-10}$) and G$_{\alpha s}$ signalling events ($p=1.7 \times 10^{-7}$), than other signalling pathways
-
-\begin{table*}[!Hp]
+\begin{table*}[!hp]
 \caption{Pathway composition for \textit{CDH1} partners from SLIPT and siRNA screening}
 \label{tab:Venn_over-representation}
 \centering
@@ -664,18 +675,24 @@ The intersection of computational and experimental synthetic lethal partners of 
 }
 \end{table*}
 
+These pathway over-representation analyses (performed as described in section \ref{methods:enrichment}) correspond to genes separated into SLIPT or siRNA screen candidates unique to either method or detected by both (Table \ref{tab:Venn_over-representation}). The SLIPT-specific gene candidates were involved most strongly with translational and immune regulatory pathways, although extracellular matrix pathways were also supported. These pathways were largely consistent with those identified in Tabel \ref{tab:pathway_exprSL} and in the clustering analysis (Table \ref{tab:pathway_clusters}). The genes detected only by the siRNA screen had over-represent\-ation of cell signalling pathways, including many containing genes known to be involved in cancer (e.g., MAPK, PDGF, ERBB2, and FGFR), with the detection of Class A GPCRs supporting the independent analyses by  Telford \textit{et al.} \cite{Telford2015}. The intersection of computational and experimental synthetic lethal partners of \textit{CDH1} has stronger evidence for over-represent\-ation of GPCR pathways and more specific subclasses, such as visual phototransduction ($p=6.9 \times 10^{-10}$) and G$_{\alpha s}$ signalling events ($p=1.7 \times 10^{-7}$), than other signalling pathways.
+
+The pathway analysis for mtSLIPT against \textit{CDH1} mutations (in Table \ref{tab:Venn_over-representation_mtSL}) had concordant results for both mtSLIPT-specific and siRNA-specific pathways. While the specific pathway composition of the intersection of these analyses differed from SLIPT against low \textit{CDH1} expression, signalling pathways including GPCRs, NOTCH, EERB2, PDGF, and SCF-KIT. These findings indicate the signalling pathways are among the most suitable vulnerability to exploit in targeting \textit{CDH1} deficient tumours as they can be detected in both a patient cohort (with TCGA expression data) and tested in a laboratory system. However, it is possible that the isolated experimental system is set up to preferentially detect kinase singalling pathways (which are amenable to pharmacological inhibition and translation to the clinic) and the other pathways identified by SLIPT may still be informative of the role of \textit{CDH1} loss of function in cancers or mechanisms by which further gene loss leads to specific inviability.
+
+
 %%appendix
 %\label{tab:Venn_over-representation_mtSL}
 
+\FloatBarrier
 
 \subsubsubsection{Resampling of genes for pathway enrichment} \label{chapt3:compare_pathway_perm}
 
-As shown in Figure \ref{fig:perm_sample}, resampling did not find evidence of significant depletion or over-represent\-ation for experimental synthetic lethal candidates in the computationally predicted synthetic lethal partners of \textit{CDH1}, which suggested that the overlap across the two methods was no better than by chance.
+Comparing genes between experimental screen candidates and prediction from TCGA expression data has been less consistent than pathways. Although this is not unexpected since synthetic lethal pathways more more robustly conserved \citep{Dixon2008} and the computational approach using patient samples from complex tumour microenvironment has considerably different strengths to an experimental screen \citep{Telford2015} based on genetically homogenous cell line models in an isolated laboratory environment. For instance, it is unlikely for immune signaling to be detected in an isolated cell culture system.
 
 \begin{figure}[!ht]
 \begin{mdframed}
   \centering
-  \resizebox{0.66 \columnwidth}{!}{
+  \resizebox{0.5 \columnwidth}{!}{
     \includegraphics{sample_size_dist_exprSL_1M_Pub.png}
    }
    \caption[Resampled intersection of SLIPT and siRNA candidates]{\small \textbf{Resampled intersection of SLIPT and siRNA candidates.} Resampling analysis of intersect size from genes detected by SLIPT and siRNA screening approaches over 1 million replicates. The proportion of expected intersection sizes for random samples below or above the observed intersection size respectively, lacking significant over-represent\-ation or depletion of siRNA screen candidates within the SLIPT predictions for \textit{CDH1}.
@@ -685,6 +702,12 @@ As shown in Figure \ref{fig:perm_sample}, resampling did not find evidence of si
 \end{mdframed}
 \end{figure}
 
+The overlap between synthetic lethal from bioinformatics SLIPT predictions and siRNA screening has raised other questions including whether the pathways over-represented would be expected by chance. This of particular concern since the siRNA candidate genes themselves are highly over-represented for particular pathways (such as GPCRs) so selecting any intersect with them would be enriched for these pathways. Another pathway approach is to test whether pathways are over-represented in randomly sampled genes, comparing many ``resamplings'' or ``permutations'' of these genes to the enrichment statistics observed for these pathways in the SLIPT candidates and their intersection with the siRNA hits shows whether we detect these pathways more than we expect by chance (as described in section \ref{methods:permutation}). 
+
+Of particular concern are the over-represented pathways in genes detected by both methods. Pathway over-representation alone does not detect whether SLIPT predicted genes or siRNA candidates are enriched within each other. This resampling analysis therefore detects whether over-represented pathways were detected by SLIPT independently of their over-representation among siRNA candidates (without assuming an underlying test statistic distribution).
+
+A resampling approach is also applicable to testing whether the number of genes detected by each approach significantly intersected. As shown in Figure \ref{fig:perm_sample}, resampling did not find evidence of significant depletion or over-represent\-ation for experimental synthetic lethal candidates in the computationally predicted synthetic lethal partners of \textit{CDH1} and the overlap may be observed by chance.
+
 A permutation analysis was performed to resample the genes tested by both approaches to investigate whether the observed pathway over-represent\-ation could have occurred in a randomly selected sample of genes from the experimental candidates, that is, whether the pathway predictions from SLIPT could be expected by chance.
 %The observed 604 genes detected by both approaches (in Figure \ref{fig:Venn_allgenes}) was not a significantly over-represent\-ation ($p = 0.12982$) or depletion ($p = 0.85841$) of computationally predicted synthetic lethal partners of \textit{CDH1} among experimental synthetic lethal candidates (in Figure \ref{fig:perm_sample}). This reinforces the results of the $\chi^2$ analysis,
 While the number of siRNA candidate genes detected by SLIPT was not statistically significant ($p=0.281$), this may be due to the vastly different limitations of the approaches and the correlation structure of gene expression not being independent (as assumed for multiple testing procedures). The  intersection may still be functionally relevant to \textit{CDH1}-deficient cancers, such as the pathway data in Table \ref{tab:Venn_over-representation}. The resampling analysis for pathways was compared to the pathway over-represent\-ation for SLIPT predicted synthetic lethal partners in Table \ref{tab:pathway_perm}. Similarly, the pathway resampling for intersection between SLIPT predictions and experimental screen candidates was compared to pathway over-represent\-ation in Table \ref{tab:pathway_perm_overlap} for intersection with siRNA data.
@@ -692,7 +715,7 @@ While the number of siRNA candidate genes detected by SLIPT was not statisticall
 The pathway resampling approach for SLIPT-specific gene candidates (Table \ref{tab:pathway_perm}) replicates the gene set over-represent\-ation analysis for all SLIPT genes, detecting evidence of synthetic lethal pathways for \textit{CDH1} in translational, immune, and cell signalling pathways including  G$_{\alpha i}$ signalling, GPCR downstream signalling, and chemokine receptor binding. While the immune and signal transduction pathways were not significantly over-represented in the resampling analysis, the results for the two approaches were largely consistent for translation and post-transcriptional gene regulation, supporting gene set over-represent\-ation of the SLIPT-specific pathways in Table \ref{tab:pathway_perm}. In particular, some of the most significantly over-represented pathways had higher observed $\chi^2$ values than any of the 1 million random permutations.
 
 
-\begin{table*}[!Htp]
+\begin{table*}[!ht]
 \caption{Pathways for \textit{CDH1} partners from SLIPT}
 \label{tab:pathway_perm}
 \centering
@@ -816,7 +839,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 
 The intersection between computational and experimental candidates (in Table \ref{tab:pathway_perm_overlap}) differed between over-represent\-ation and resampling analyses. Namely, many of the over-represented pathways were not significant in the resampling analysis, including visual phototransduction and retinoic acid signalling, although pathways involving defective \textit{EXT1} or \textit{EXT2} genes approach significance after FDR adjustment for multiple tests. Of the highest over-represented pathways in the intersection, only G$_{\alpha s}$ signalling events were supported by both over-represent\-ation and resampling analyses. Other pathways supported by both analyses were cytoplasmic elastic fibre formation, associated protein modification pathways, energy metabolism, and the fibrin clotting cascade.
 
-\begin{table*}[!Htp]
+\begin{table*}[!htp]
 \caption{Pathways for \textit{CDH1} partners from SLIPT and siRNA primary screen}
 \label{tab:pathway_perm_overlap}
 \centering
@@ -945,12 +968,13 @@ However, we note that several pathways, including some immune functions and neur
 %\label{tab:pathway_perm_mtSL}
 %\label{tab:pathway_perm_overlap_mtSL}
 
-\subsection{Comparison with secondary screen siRNA screen candidates}
-
+\FloatBarrier
 
 \subsubsection{Comparison of candidate SL Pathways}
 
 Thus we have identified candidate synthetic lethal pathways by gene set over-representation, metagene synthetic lethality, and re-sampled empirical pathway over-representation. The challenge currently under consideration is whether these methods can be compared and which may lead to biologically meaningful or clinically relevant synthetic lethal candidate pathways.
+
+\FloatBarrier
 
 \iffalse
 
@@ -966,10 +990,114 @@ DNA methylation data was also prepared for synthetic lethal analysis but was dis
 
 \fi
 
-\subsection{Synthetic lethality by somatic mutation}
 
+\section{Metagene Analysis}
+[include?]
 
-\subsubsection{Mutation analysis}
+\subsection{Pathway expression}
+
+\begin{figure*}[!htp]
+\noindent\makebox[\textwidth][c]{%               %centering
+\noindent\fbox{\begin{minipage}{1.00 \textwidth}  %frame beyond textwidth
+\begin{center}
+  \resizebox{1 \textwidth}{!}{
+    \includegraphics{CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf}
+   }
+   \end{center}
+   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors and cancer gene mutations.
+}
+\label{fig:metagene_expr_Gatza2011}
+\end{minipage}
+} %close fbox
+} %close centering
+\end{figure*}
+
+\FloatBarrier
+
+\subsection{Somatic mutation}
+
+\subsection{Synthetic lethal metagenes} \label{chapt3:metagene_SL}
+
+\begin{table*}[!ht]
+\caption{Candidate synthetic lethal metagenes against \textit{CDH1} from SLIPT}
+\label{tab:metagene_SL}
+\centering
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{sl^l^c^c^c^c^c}
+\rowstyle{\bfseries}
+ Pathway & ID & Observed & Expected & $\chi^2$value & p-value & p-value (FDR) \\ 
+  \hline
+  \rowcolor{black!10}
+  Activation of BMF and translocation to mitochondria & 139910 & 213 & 130.22 & 205.32 & $2.6909 \times 10^{-43}$ & $4.4373 \times 10^{-40}$\\
+  \rowcolor{black!5}
+  Downregulation of ERBB2:ERBB3 signaling & 1358803 & 197 & 130.22 & 189.57 & $6.5577 \times 10^{-40}$ & $5.4069 \times 10^{-370}$\\
+  \rowcolor{black!10}
+  Activation of PKB & 165158 & 209 & 130.22 & 188.57 & $1.0771 \times 10^{-39}$ & $5.9203 \times 10^{-370}$\\
+  \rowcolor{black!5}
+  Glycogen storage diseases & 3229121 & 68 & 130.22 & 175.58 & $6.6178 \times 10^{-37}$ & $1.8188 \times 10^{-340}$\\
+  \rowcolor{black!10}
+  Myoclonic epilepsy of Lafora & 3785653 & 68 & 130.22 & 175.58 & $6.6178 \times 10^{-37}$ & $1.8188 \times 10^{-340}$\\
+  \rowcolor{black!5}
+  Diseases of carbohydrate metabolism & 5663084 & 68 & 130.22 & 175.58 & $6.6178 \times 10^{-37}$ & $1.8188 \times 10^{-340}$\\
+  \rowcolor{black!10}
+  HSF1 activation & 3371511 & 212 & 130.22 & 171.21 & $5.7399 \times 10^{-36}$ & $1.3522 \times 10^{-330}$\\
+  \rowcolor{black!5}
+  Downregulation of ERBB4 signaling & 1253288 & 192 & 130.22 & 161.77 & $6.0875 \times 10^{-34}$ & $1.2548 \times 10^{-310}$\\
+  \rowcolor{black!10}
+  Arachidonic acid metabolism & 2142753 & 81 & 130.22 & 156.53 & $8.1254 \times 10^{-33}$ & $1.4888 \times 10^{-300}$\\
+  \rowcolor{black!5}
+  Translation initiation complex formation & 72649 & 70 & 130.22 & 152.14 & $7.0837 \times 10^{-32}$ & $1.1681 \times 10^{-290}$\\
+  \rowcolor{black!10}
+  Synthesis of 5-eicosatetraenoic acids & 2142688 & 68 & 130.22 & 150.98 & $1.2533 \times 10^{-31}$ & $1.8787 \times 10^{-290}$\\
+  \rowcolor{black!5}
+  SRP-dependent cotranslational protein targeting to membrane & 1799339 & 69 & 130.22 & 150.03 & $2.0095 \times 10^{-31}$ & $2.7613 \times 10^{-290}$\\
+  \rowcolor{black!10}
+  L13a-mediated translational silencing of Ceruloplasmin expression & 156827 & 72 & 130.22 & 147.84 & $5.9094 \times 10^{-31}$ & $6.4389 \times 10^{-290}$\\
+  \rowcolor{black!5}
+  3' -UTR-mediated translational regulation & 157279 & 72 & 130.22 & 147.84 & $5.9094 \times 10^{-31}$ & $6.4389 \times 10^{-290}$\\
+  \rowcolor{black!10}
+  Trafficking of AMPA receptors & 399719 & 198 & 130.22 & 147.73 & $6.2476 \times 10^{-31}$ & $6.4389 \times 10^{-290}$\\
+  \rowcolor{black!5}
+  Glutamate Binding, Activation of AMPA Receptors and Synaptic Plasticity & 399721 & 198 & 130.22 & 147.73 & $6.2476 \times 10^{-31}$ & $6.4389 \times 10^{-290}$\\
+  \rowcolor{black!10}
+  Scavenging by Class F Receptors & 3000484 & 202 & 130.22 & 146.85 & $9.6215 \times 10^{-31}$ & $9.2823 \times 10^{-290}$\\
+  \rowcolor{black!5}
+  \begin{tabular}[c]{@{}l@{}}Activation of the mRNA upon binding of the cap-binding complex and eIFs,\\and subsequent binding to 43S \end{tabular}  & 72662 & 70 & 130.22 & 146.51 & $1.1365 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
+  \rowcolor{black!10}
+  Formation of the ternary complex, and subsequently, the 43S complex & 72695 & 70 & 130.22 & 146.51 & $1.1365 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
+  \rowcolor{black!5}
+  Ribosomal scanning and start codon recognition & 72702 & 70 & 130.22 & 146.51 & $1.1365 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
+  \rowcolor{black!10}
+  Eukaryotic Translation Elongation & 156842 & 72 & 130.22 & 146.42 & $1.192 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
+  \rowcolor{black!5}
+  Nonsense Mediated Decay independent of the Exon Junction Complex & 975956 & 71 & 130.22 & 146.34 & $1.2384 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
+  \rowcolor{black!10}
+  Viral mRNA Translation & 192823 & 70 & 130.22 & 145.93 & $1.5135 \times 10^{-30}$ & $1.0399 \times 10^{-280}$\\
+  \rowcolor{black!5}
+  Eukaryotic Translation Termination & 72764 & 70 & 130.22 & 145.93 & $1.5135 \times 10^{-30}$ & $1.0399 \times 10^{-280}$\\
+  \rowcolor{black!10}
+  NF-kB is activated and signals survival & 209560 & 71 & 130.22 & 145.48 & $1.8975 \times 10^{-30}$ & $1.1857 \times 10^{-280}$\\
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+%%appendix
+%\label{tab:metagene_mtSL}
+
+\FloatBarrier
+
+%\section{Synthetic lethality by somatic mutation}
+
+\section{Mutation analysis}
+
+Data in Appendix \ref{appendix:mutation_analysis}
 
 \iffalse
 \subsection{ANOVA of Expression Predictors}
@@ -1133,111 +1261,10 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 \FloatBarrier
 
-\section{Metagene Analysis}
-[include?]
-
-\subsection{Pathway expression}
-
-\begin{figure*}[!htp]
-\noindent\makebox[\textwidth][c]{%               %centering
-\noindent\fbox{\begin{minipage}{1.00 \textwidth}  %frame beyond textwidth
-\begin{center}
-  \resizebox{1 \textwidth}{!}{
-    \includegraphics{CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf}
-   }
-   \end{center}
-   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors and cancer gene mutations.
-}
-\label{fig:metagene_expr_Gatza2011}
-\end{minipage}
-} %close fbox
-} %close centering
-\end{figure*}
-
-\FloatBarrier
-
-\subsection{Somatic mutation}
-
-\subsection{Synthetic lethal metagenes} \label{chapt3:metagene_SL}
-
-\begin{table*}[!ht]
-\caption{Candidate synthetic lethal metagenes against \textit{CDH1} from SLIPT}
-\label{tab:metagene_SL}
-\centering
-\resizebox{1 \textwidth}{!}{
-\begin{threeparttable}
-\begin{tabular}{sl^l^c^c^c^c^c}
-\rowstyle{\bfseries}
- Pathway & ID & Observed & Expected & $\chi^2$value & p-value & p-value (FDR) \\ 
-  \hline
-  \rowcolor{black!10}
-  Activation of BMF and translocation to mitochondria & 139910 & 213 & 130.22 & 205.32 & $2.6909 \times 10^{-43}$ & $4.4373 \times 10^{-40}$\\
-  \rowcolor{black!5}
-  Downregulation of ERBB2:ERBB3 signaling & 1358803 & 197 & 130.22 & 189.57 & $6.5577 \times 10^{-40}$ & $5.4069 \times 10^{-370}$\\
-  \rowcolor{black!10}
-  Activation of PKB & 165158 & 209 & 130.22 & 188.57 & $1.0771 \times 10^{-39}$ & $5.9203 \times 10^{-370}$\\
-  \rowcolor{black!5}
-  Glycogen storage diseases & 3229121 & 68 & 130.22 & 175.58 & $6.6178 \times 10^{-37}$ & $1.8188 \times 10^{-340}$\\
-  \rowcolor{black!10}
-  Myoclonic epilepsy of Lafora & 3785653 & 68 & 130.22 & 175.58 & $6.6178 \times 10^{-37}$ & $1.8188 \times 10^{-340}$\\
-  \rowcolor{black!5}
-  Diseases of carbohydrate metabolism & 5663084 & 68 & 130.22 & 175.58 & $6.6178 \times 10^{-37}$ & $1.8188 \times 10^{-340}$\\
-  \rowcolor{black!10}
-  HSF1 activation & 3371511 & 212 & 130.22 & 171.21 & $5.7399 \times 10^{-36}$ & $1.3522 \times 10^{-330}$\\
-  \rowcolor{black!5}
-  Downregulation of ERBB4 signaling & 1253288 & 192 & 130.22 & 161.77 & $6.0875 \times 10^{-34}$ & $1.2548 \times 10^{-310}$\\
-  \rowcolor{black!10}
-  Arachidonic acid metabolism & 2142753 & 81 & 130.22 & 156.53 & $8.1254 \times 10^{-33}$ & $1.4888 \times 10^{-300}$\\
-  \rowcolor{black!5}
-  Translation initiation complex formation & 72649 & 70 & 130.22 & 152.14 & $7.0837 \times 10^{-32}$ & $1.1681 \times 10^{-290}$\\
-  \rowcolor{black!10}
-  Synthesis of 5-eicosatetraenoic acids & 2142688 & 68 & 130.22 & 150.98 & $1.2533 \times 10^{-31}$ & $1.8787 \times 10^{-290}$\\
-  \rowcolor{black!5}
-  SRP-dependent cotranslational protein targeting to membrane & 1799339 & 69 & 130.22 & 150.03 & $2.0095 \times 10^{-31}$ & $2.7613 \times 10^{-290}$\\
-  \rowcolor{black!10}
-  L13a-mediated translational silencing of Ceruloplasmin expression & 156827 & 72 & 130.22 & 147.84 & $5.9094 \times 10^{-31}$ & $6.4389 \times 10^{-290}$\\
-  \rowcolor{black!5}
-  3' -UTR-mediated translational regulation & 157279 & 72 & 130.22 & 147.84 & $5.9094 \times 10^{-31}$ & $6.4389 \times 10^{-290}$\\
-  \rowcolor{black!10}
-  Trafficking of AMPA receptors & 399719 & 198 & 130.22 & 147.73 & $6.2476 \times 10^{-31}$ & $6.4389 \times 10^{-290}$\\
-  \rowcolor{black!5}
-  Glutamate Binding, Activation of AMPA Receptors and Synaptic Plasticity & 399721 & 198 & 130.22 & 147.73 & $6.2476 \times 10^{-31}$ & $6.4389 \times 10^{-290}$\\
-  \rowcolor{black!10}
-  Scavenging by Class F Receptors & 3000484 & 202 & 130.22 & 146.85 & $9.6215 \times 10^{-31}$ & $9.2823 \times 10^{-290}$\\
-  \rowcolor{black!5}
-  \begin{tabular}[c]{@{}l@{}}Activation of the mRNA upon binding of the cap-binding complex and eIFs,\\and subsequent binding to 43S \end{tabular}  & 72662 & 70 & 130.22 & 146.51 & $1.1365 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
-  \rowcolor{black!10}
-  Formation of the ternary complex, and subsequently, the 43S complex & 72695 & 70 & 130.22 & 146.51 & $1.1365 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
-  \rowcolor{black!5}
-  Ribosomal scanning and start codon recognition & 72702 & 70 & 130.22 & 146.51 & $1.1365 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
-  \rowcolor{black!10}
-  Eukaryotic Translation Elongation & 156842 & 72 & 130.22 & 146.42 & $1.192 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
-  \rowcolor{black!5}
-  Nonsense Mediated Decay independent of the Exon Junction Complex & 975956 & 71 & 130.22 & 146.34 & $1.2384 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
-  \rowcolor{black!10}
-  Viral mRNA Translation & 192823 & 70 & 130.22 & 145.93 & $1.5135 \times 10^{-30}$ & $1.0399 \times 10^{-280}$\\
-  \rowcolor{black!5}
-  Eukaryotic Translation Termination & 72764 & 70 & 130.22 & 145.93 & $1.5135 \times 10^{-30}$ & $1.0399 \times 10^{-280}$\\
-  \rowcolor{black!10}
-  NF-kB is activated and signals survival & 209560 & 71 & 130.22 & 145.48 & $1.8975 \times 10^{-30}$ & $1.1857 \times 10^{-280}$\\
-  \hline
-\end{tabular}
-\begin{tablenotes}
-\raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
-\end{tablenotes}
-\end{threeparttable}
-}
-\end{table*}
-
-%%appendix
-%\label{tab:metagene_mtSL}
-
-\FloatBarrier
 
 \section{Replication in stomach cancer}
 
-\section{Synthetic Lethal Genes and Pathways} \label{results:stad_exprSL_genes}
+\subsection{Synthetic Lethal Genes and Pathways} \label{results:stad_exprSL_genes}
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal genes against E-cadherin from SLIPT in stomach cancer}
@@ -1378,7 +1405,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 \FloatBarrier
 
-\section{Synthetic Lethal Expression Profiles} \label{results:stad_exprSL_clusters}
+\subsection{Synthetic Lethal Expression Profiles} \label{results:stad_exprSL_clusters}
 
 \begin{figure*}[!ht]
 \begin{mdframed}
@@ -1401,7 +1428,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 
 
-\begin{table*}[!Hp]
+\begin{table*}[!hp]
 \caption{Pathway composition for clusters of \textit{CDH1} partners in stomach SLIPT}
 \label{tab:pathway_clusters_stad}
 \centering
@@ -1595,7 +1622,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 \FloatBarrier
 
-\section{Comparison to Primary Screen}
+\subsection{Comparison to Primary Screen}
 
 
 \begin{figure}[!ht]
@@ -1616,7 +1643,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \FloatBarrier
 
 
-\begin{table*}[!Hp]
+\begin{table*}[!hp]
 \caption{Pathway composition for \textit{CDH1} partners from SLIPT and siRNA screening}
 \label{tab:Venn_over-representation_stad}
 \centering
@@ -1765,9 +1792,9 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 \FloatBarrier
 
-\subsection{Resampling Analysis}  \label{chapt3:compare_pathway_perm_stad_exprSL}
+\subsubsection{Resampling Analysis}  \label{chapt3:compare_pathway_perm_stad_exprSL}
 
-\begin{table*}[!Htp]
+\begin{table*}[!htp]
 \caption{Pathways for \textit{CDH1} partners from SLIPT in stomach cancer}
 \label{tab:pathway_perm_stad}
 \centering
@@ -1887,7 +1914,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 }
 \end{table*}
 
-\begin{table*}[!Htp]
+\begin{table*}[!htp]
 \caption{Pathways for \textit{CDH1} partners from SLIPT in stomach and siRNA screen}
 \label{tab:pathway_perm_overlap_stad}
 \centering
@@ -2013,7 +2040,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 
 \FloatBarrier
 
-\section{Metagene Analysis} \label{chapt3:metagene_stad_exprSL}
+\subsection{Metagene Analysis} \label{chapt3:metagene_stad_exprSL}
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from SLIPT in stomach cancer}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  22 APR 2017 18:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  23 APR 2017 01:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1379,10 +1379,17 @@ o on input line 106.
 
 Package glossaries Info: Writing glossary file 20170419_thesis_results_slipt.ac
 n on input line 106.
- (./20170419_thesis_results_slipt.aux (./intro.aux)
-(./methods.aux) (./methods_dev.aux) (./chapt3.aux) (./chapt4.aux) (./chapt5.aux
-) (./chapt6.aux) (./conclusion.aux) (./appendix_methods.aux)
-(./appendix_chapt3.aux
+ (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
+Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
+\c@lips@count=\count307
+)
+(/usr/share/texlive/texmf-dist/tex/latex/nowidow/nowidow.sty
+Package: nowidow 2011/09/20 1.0 Easily prevent widows and orphans
+Package: nowidow 
+)
+(./20170419_thesis_results_slipt.aux (./intro.aux) (./methods.aux)
+(./methods_dev.aux) (./chapt3.aux) (./chapt4.aux) (./chapt5.aux) (./chapt6.aux)
+(./conclusion.aux) (./appendix_methods.aux) (./appendix_chapt3.aux
 
 LaTeX Warning: Label `fig:simulate_function:first' multiply defined.
 
@@ -1448,40 +1455,40 @@ LaTeX Warning: Label `chapt3:metagene_stad_exprSL@cref' multiply defined.
 ))
 \openout1 = `20170419_thesis_results_slipt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 136.
-LaTeX Font Info:    ... okay on input line 136.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 136.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 136.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 139.
+LaTeX Font Info:    ... okay on input line 139.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 139.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 139.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 136.
+LaTeX Font Info:    ... okay on input line 139.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count307
+\scratchcounter=\count308
 \scratchdimen=\dimen340
 \scratchbox=\box99
-\nofMPsegments=\count308
-\nofMParguments=\count309
+\nofMPsegments=\count309
+\nofMParguments=\count310
 \everyMPshowfont=\toks57
-\MPscratchCnt=\count310
+\MPscratchCnt=\count311
 \MPscratchDim=\dimen341
-\MPnumerator=\count311
-\makeMPintoPDFobject=\count312
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
 \everyMPtoPDFconversion=\toks58
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1499,7 +1506,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box100
-Package hyperref Info: Link coloring OFF on input line 136.
+Package hyperref Info: Link coloring OFF on input line 139.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1507,11 +1514,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count313
+\c@section@level=\count314
 )
-LaTeX Info: Redefining \ref on input line 136.
-LaTeX Info: Redefining \pageref on input line 136.
-LaTeX Info: Redefining \nameref on input line 136.
+LaTeX Info: Redefining \ref on input line 139.
+LaTeX Info: Redefining \pageref on input line 139.
+LaTeX Info: Redefining \nameref on input line 139.
 
 (./20170419_thesis_results_slipt.out) (./20170419_thesis_results_slipt.out)
 \@outlinefile=\write7
@@ -1561,7 +1568,7 @@ Non-PDF special ignored!
 
  (./chapt3.tex
 Chapter 4.
-[116
+[117
 
 
 
@@ -1573,7 +1580,7 @@ Overfull \hbox (4.23738pt too wide) in paragraph at lines 10--11
 een in-cluded in manuscripts
  []
 
-[117]
+[118]
 LaTeX Font Info:    Calculating math sizes for size <8.39996> on input line 88.
 
 
@@ -1589,8 +1596,8 @@ LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <4.19998> not available
 LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <4.19998> not available
 (Font)              size <5> substituted on input line 88.
 
-[118] [119]
-<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png, id=868, 146
+[119] [120]
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png, id=858, 146
 1.46pt x 1461.46pt>
 File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png Graphic
  file (type png)
@@ -1618,248 +1625,180 @@ Package mdframed Info: mdframed inside float
  mdframed uses option nobreak mdframed on input line 182.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 182.
-[120]
+[121] [122]
 
-LaTeX Warning: Text page 121 contains only floats.
+LaTeX Warning: Text page 123 contains only floats.
 
 
 Overfull \vbox (4.99904pt too high) has occurred while \output is active []
 
 
-[121 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png>]
-[122]
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.206 \begin{table*}[!Hp]
-                         
-Option `H' ignored and `p' used.
-
+[123 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png>]
 
 LaTeX Warning: Float too large for page by 2.94676pt on input line 393.
 
-[123] [124] [125]
-<Venn_exprSL_siRNA_allgenes_reduced_Pub.png, id=931, 540.0175pt x 449.68pt>
+[124] [125] [126]
+<Venn_exprSL_siRNA_allgenes_reduced_Pub.png, id=923, 540.0175pt x 449.68pt>
 File: Venn_exprSL_siRNA_allgenes_reduced_Pub.png Graphic file (type png)
 
 <use Venn_exprSL_siRNA_allgenes_reduced_Pub.png>
 Package pdftex.def Info: Venn_exprSL_siRNA_allgenes_reduced_Pub.png used on inp
-ut line 428.
+ut line 425.
 (pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 432.
+ mdframed uses option nobreak mdframed on input line 429.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 432.
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ú in font cmr12!
-Missing character: There is no ‚ in font cmr12!
-Missing character: There is no Ä in font cmr12!
-Missing character: There is no ù in font cmr12!
- [126 <./Venn_exprSL_siRNA_allgenes_reduced_Pub.png>]
-<vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf, id=936, 578.16pt x
+ mdframed uses option nobreak mdframed on input line 429.
+
+<exprSLIPT_siRNA_vs_Correlation_with_CDH1.png, id=924, 803.0pt x 401.5pt>
+File: exprSLIPT_siRNA_vs_Correlation_with_CDH1.png Graphic file (type png)
+
+<use exprSLIPT_siRNA_vs_Correlation_with_CDH1.png>
+Package pdftex.def Info: exprSLIPT_siRNA_vs_Correlation_with_CDH1.png used on i
+nput line 444.
+(pdftex.def)             Requested size: 802.99805pt x 401.49901pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 449.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 449.
+
+<vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf, id=925, 578.16pt x
  385.44pt>
 File: vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf Graphic file (
 type pdf)
  <use vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf>
 Package pdftex.def Info: vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1
-.pdf used on input line 451.
+.pdf used on input line 457.
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 456.
+ mdframed uses option nobreak mdframed on input line 462.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 456.
+ mdframed uses option nobreak mdframed on input line 462.
 
-<exprSLIPT_siRNA_vs_Correlation_with_CDH1.png, id=937, 803.0pt x 401.5pt>
-File: exprSLIPT_siRNA_vs_Correlation_with_CDH1.png Graphic file (type png)
-
-<use exprSLIPT_siRNA_vs_Correlation_with_CDH1.png>
-Package pdftex.def Info: exprSLIPT_siRNA_vs_Correlation_with_CDH1.png used on i
-nput line 464.
-(pdftex.def)             Requested size: 802.99805pt x 401.49901pt.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 469.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 469.
- [127] [128 <./vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf> <./e
-xprSLIPT_siRNA_vs_Correlation_with_CDH1.png>]
-<vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf, id=952, 578.16pt x 
-385.44pt>
-File: vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf Graphic file (t
-ype pdf)
- <use vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf>
-Package pdftex.def Info: vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.
-pdf used on input line 480.
-(pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 485.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 485.
-
-<exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png, id=953, 803.0pt x 401.5pt>
+[127 <./Venn_exprSL_siRNA_allgenes_reduced_Pub.png>] [128 <./exprSLIPT_siRNA_vs
+_Correlation_with_CDH1.png> <./vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_wit
+h_CDH1.pdf>]
+<exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png, id=956, 803.0pt x 401.5pt>
 File: exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png Graphic file (type png)
 
 <use exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png>
 Package pdftex.def Info: exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png used 
-on input line 493.
+on input line 484.
 (pdftex.def)             Requested size: 802.99805pt x 401.49901pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 498.
+ mdframed uses option nobreak mdframed on input line 489.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 498.
+ mdframed uses option nobreak mdframed on input line 489.
 
-<exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pdf, id=954, 602.25pt x 56
+<exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pdf, id=957, 602.25pt x 56
 2.1pt>
 File: exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pdf Graphic file (typ
 e pdf)
  <use exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pdf>
 Package pdftex.def Info: exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pd
-f used on input line 506.
+f used on input line 497.
 (pdftex.def)             Requested size: 602.24852pt x 562.09863pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 511.
+ mdframed uses option nobreak mdframed on input line 502.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 511.
- [129
+ mdframed uses option nobreak mdframed on input line 502.
+ [129]
+[130 <./exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png> <./exprSLIPT(p-val)_s
+iRNA_vs_Viability_Ratio_with_CDH1.pdf>]
+<vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf, id=985, 578.16pt x 
+385.44pt>
+File: vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf Graphic file (t
+ype pdf)
+ <use vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf>
+Package pdftex.def Info: vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.
+pdf used on input line 514.
+(pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 519.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 519.
 
- <./vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf> <./exprSLIPT_siR
-NA_vs_Viability_Ratio_with_CDH1.png>]
+[131 <./vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf>]
 
-! LaTeX Error: Unknown float option `H'.
+LaTeX Warning: Float too large for page by 1.7224pt on input line 676.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.523 \begin{table*}[!Hp]
-                         
-Option `H' ignored and `p' used.
-
-
-LaTeX Warning: Float too large for page by 1.7224pt on input line 665.
-
-<sample_size_dist_exprSL_1M_Pub.png, id=970, 803.0pt x 803.0pt>
+[132] [133] <sample_size_dist_exprSL_1M_Pub.png, id=1026, 803.0pt x 803.0pt>
 File: sample_size_dist_exprSL_1M_Pub.png Graphic file (type png)
 
 <use sample_size_dist_exprSL_1M_Pub.png>
 Package pdftex.def Info: sample_size_dist_exprSL_1M_Pub.png used on input line 
-680.
+697.
 (pdftex.def)             Requested size: 802.99805pt x 802.99805pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 685.
+ mdframed uses option nobreak mdframed on input line 702.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 685.
- [130 <./exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pdf>] [131] [132 <
-./sample_size_dist_exprSL_1M_Pub.png>]
-Overfull \hbox (2.21452pt too wide) in paragraph at lines 692--693
+ mdframed uses option nobreak mdframed on input line 702.
+ [134] [135 <./sample_size_dist_exprSL_1M_Pub.png>]
+Overfull \hbox (2.21452pt too wide) in paragraph at lines 715--716
 \OT1/cmr/m/n/12 nalling path-ways in-clud-ing G$[]$ sig-nalling, GPCR down-stre
 am sig-nalling, and chemokine
  []
 
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.695 \begin{table*}[!Htp]
-                          
-Option `H' ignored and `p' used.
-
-[133]
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.819 \begin{table*}[!Htp]
-                          
-Option `H' ignored and `p' used.
-
-
-Overfull \hbox (20.81776pt too wide) in paragraph at lines 953--954
+[136] [137] [138]
+Overfull \hbox (20.81776pt too wide) in paragraph at lines 975--976
 \OT1/cmr/m/n/12 Thus we have iden-ti-fied can-di-date syn-thetic lethal path-wa
 ys by gene set over-representation,
  []
 
-[134] [135] <MostSL_Summary_CDH1_FDR.pdf, id=1016, 385.44pt x 385.44pt>
-File: MostSL_Summary_CDH1_FDR.pdf Graphic file (type pdf)
 
-<use MostSL_Summary_CDH1_FDR.pdf>
-Package pdftex.def Info: MostSL_Summary_CDH1_FDR.pdf used on input line 996.
-(pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1001.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1001.
- [136 <./MostSL_Summary_CDH1_FDR.pdf>]
-[137]
 <CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf, 
-id=1033, 867.24pt x 867.24pt>
+id=1063, 867.24pt x 867.24pt>
 File: CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.
 pdf Graphic file (type pdf)
 
 <use CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.p
 df>
 Package pdftex.def Info: CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_
-and_CDH1_Stat_corr.pdf used on input line 1154.
+and_CDH1_Stat_corr.pdf used on input line 1012.
 (pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
- [138] [139 <./CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_S
-tat_corr.pdf>] [140] [141] [142]
-<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png, id=108
-0, 1461.46pt x 1461.46pt>
+ [139] [140 <./CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_S
+tat_corr.pdf>] <MostSL_Summary_CDH1_FDR.pdf, id=1097, 385.44pt x 385.44pt>
+File: MostSL_Summary_CDH1_FDR.pdf Graphic file (type pdf)
+
+<use MostSL_Summary_CDH1_FDR.pdf>
+Package pdftex.def Info: MostSL_Summary_CDH1_FDR.pdf used on input line 1124.
+(pdftex.def)             Requested size: 385.43906pt x 385.43906pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 1129.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 1129.
+ [141] [142 <./MostSL_Summary_CDH1_FDR.pdf>]
+[143] [144] [145] [146]
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png, id=113
+5, 1461.46pt x 1461.46pt>
 File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png Gr
 aphic file (type png)
 
 <use CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png>
 Package pdftex.def Info: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordi
-stx_Pub_stad.png used on input line 1388.
+stx_Pub_stad.png used on input line 1415.
 (pdftex.def)             Requested size: 1461.45645pt x 1461.45645pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1393.
+ mdframed uses option nobreak mdframed on input line 1420.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1393.
+ mdframed uses option nobreak mdframed on input line 1420.
 
-[143
+[147
 
 ]
 
-LaTeX Warning: Text page 144 contains only floats.
+LaTeX Warning: Text page 148 contains only floats.
 
 
 Overfull \vbox (4.99904pt too high) has occurred while \output is active []
 
 
-[144 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png>
+[148 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png>
 ]
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1404 \begin{table*}[!Hp]
-                          
-Option `H' ignored and `p' used.
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1870,7 +1809,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1878,7 +1817,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1889,7 +1828,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1897,7 +1836,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1908,7 +1847,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1916,7 +1855,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1927,7 +1866,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1935,7 +1874,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1946,7 +1885,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1954,7 +1893,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1965,7 +1904,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1973,7 +1912,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1984,7 +1923,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1992,7 +1931,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2003,7 +1942,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2011,7 +1950,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2022,7 +1961,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2030,7 +1969,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2038,7 +1977,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.1590 }
+l.1617 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2048,7 +1987,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1590 }
+l.1617 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2059,7 +1998,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1590 }
+l.1617 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2067,7 +2006,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...or {Cluster_Orange!30} G_${\alpha s}
                                                   $ signalling events & 100 ...
-l.1590 }
+l.1617 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2078,43 +2017,32 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1590 }
+l.1617 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-LaTeX Warning: Float too large for page by 2.94676pt on input line 1591.
+LaTeX Warning: Float too large for page by 2.94676pt on input line 1618.
 
-[145]
-<Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png, id=1098, 540.0175pt x 449.68p
+[149]
+<Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png, id=1152, 540.0175pt x 449.68p
 t>
 File: Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png Graphic file (type png)
  <use Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png>
 Package pdftex.def Info: Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png used o
-n input line 1606.
+n input line 1633.
 (pdftex.def)             Requested size: 540.01617pt x 449.6789pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 1610.
+ mdframed uses option nobreak mdframed on input line 1637.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 1610.
-
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1619 \begin{table*}[!Hp]
-                          
-Option `H' ignored and `p' used.
+ mdframed uses option nobreak mdframed on input line 1637.
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2125,7 +2053,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2133,7 +2061,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2144,7 +2072,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2152,7 +2080,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2163,7 +2091,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2171,7 +2099,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2182,7 +2110,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2190,7 +2118,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2201,7 +2129,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2209,7 +2137,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2220,7 +2148,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2228,7 +2156,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2239,7 +2167,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2247,7 +2175,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2258,7 +2186,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2266,7 +2194,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2277,7 +2205,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2285,7 +2213,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2296,32 +2224,21 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1760 }
+l.1787 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-LaTeX Warning: Float too large for page by 1.7224pt on input line 1761.
+LaTeX Warning: Float too large for page by 1.7224pt on input line 1788.
 
-[146
+[150
 
- <./Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png>] [147]
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1770 \begin{table*}[!Htp]
-                           
-Option `H' ignored and `p' used.
-
+ <./Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png>] [151]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1887 }
+l.1914 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2329,7 +2246,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.1887 }
+l.1914 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2339,7 +2256,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1887 }
+l.1914 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2350,7 +2267,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.1887 }
+l.1914 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2358,7 +2275,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...color {Cluster_Red!15} G_${\alpha i}
                                                   $ signalling events & $8.9...
-l.1887 }
+l.1914 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2369,27 +2286,16 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.1887 }
+l.1914 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
-
-! LaTeX Error: Unknown float option `H'.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1890 \begin{table*}[!Htp]
-                           
-Option `H' ignored and `p' used.
-
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2007 }
+l.2034 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2397,7 +2303,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.2007 }
+l.2034 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2407,7 +2313,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.2007 }
+l.2034 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2418,7 +2324,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2007 }
+l.2034 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2426,7 +2332,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...ed!15!Cluster_Blue!15} G_${\alpha q}
                                                   $ signalling events & $5.6...
-l.2007 }
+l.2034 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2437,7 +2343,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.2007 }
+l.2034 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2446,7 +2352,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2007 }
+l.2034 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2454,7 +2360,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.2007 }
+l.2034 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2464,7 +2370,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.2007 }
+l.2034 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2475,7 +2381,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2007 }
+l.2034 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2483,7 +2389,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...ed!15!Cluster_Blue!15} G_${\alpha i}
                                                   $ signalling events & $3.5...
-l.2007 }
+l.2034 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2494,7 +2400,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.2007 }
+l.2034 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
@@ -2503,7 +2409,7 @@ Try to go on, since this might almost work.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2007 }
+l.2034 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2511,7 +2417,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.2007 }
+l.2034 }
         
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -2521,7 +2427,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.2007 }
+l.2034 }
         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2532,7 +2438,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.2007 }
+l.2034 }
         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -2540,7 +2446,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <argument> ...ed!20!Cluster_Blue!20} G_${\alpha s}
                                                   $ signalling events & $1.7...
-l.2007 }
+l.2034 }
         
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2551,23 +2457,23 @@ deleted material, e.g., by typing `I$}'.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.2007 }
+l.2034 }
         
 I've put in what seems to be necessary to fix
 the current column of the current alignment.
 Try to go on, since this might almost work.
 
 
-LaTeX Warning: Float too large for page by 9.62149pt on input line 2008.
+LaTeX Warning: Float too large for page by 9.62149pt on input line 2035.
 
-[148] [149] [150] [151]
+[152] [153] [154] [155]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ò in font cmr12!
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ô in font cmr12!
- [152] [153] [154] [155] [156]) [157]
+ [156] [157] [158] [159] [160]) [161]
 (./20170419_thesis_results_slipt.bbl
 Missing character: There is no √ in font cmti12!
 Missing character: There is no ¶ in font cmti12!
@@ -2583,7 +2489,7 @@ Underfull \hbox (badness 5592) in paragraph at lines 72--78
 avigating-[]cancer-[]care / cancer-[]basics /
  []
 
-[170
+[174
 
 
 
@@ -2591,10 +2497,10 @@ avigating-[]cancer-[]care / cancer-[]basics /
 
 
 
-] [171]
+] [175]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ∂ in font cmr12!
- [172] [173]
+ [176] [177]
 Underfull \hbox (badness 10000) in paragraph at lines 323--328
 []\OT1/cmr/m/n/12 Cancer Re-search UK (2017) Fam-ily his-tory and can-cer
  []
@@ -2611,11 +2517,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--328
 eased-[]cancer-[]risk /
  []
 
-[174] [175]
+[178] [179]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
- [176] [177]
+ [180] [181]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 603.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -2626,10 +2532,10 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no î in font cmr12!
- [178] [179]
+ [182] [183]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no © in font cmr12!
- [180] [181] [182] [183] [184] [185] [186] [187]
+ [184] [185] [186] [187] [188] [189] [190] [191]
 Missing character: There is no „ in font cmr12!
 Missing character: There is no Ç in font cmr12!
 Missing character: There is no Ø in font cmr12!
@@ -2669,63 +2575,37 @@ Missing character: There is no † in font cmr12!
 Missing character: There is no „ in font cmr12!
 Missing character: There is no Ç in font cmr12!
 Missing character: There is no ∫ in font cmr12!
- [188] [189]
-[190]
+ [192] [193]
+[194]
 Underfull \hbox (badness 4168) in paragraph at lines 1597--1602
 \OT1/cmtt/m/n/12 / / www . cancer . gov / about-[]cancer / causes-[]prevention 
 / genetics$[]\OT1/cmr/m/n/12 .  Pub-lished:
  []
 
-[191]
+[195]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no ì in font cmr12!
- [192] [193] [194]
+ [196] [197] [198]
 Missing character: There is no ‚ in font cmr12!
 Missing character: There is no Ä in font cmr12!
 Missing character: There is no î in font cmr12!
-) [195]
-
-! LaTeX Error: No counter 'lips@count' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.195 \include{appendix_methods}
-                                
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: No counter 'lips@count' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.196 \include{appendix_chapt3}
-                               
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
+) [199]
 
 Package glossaries Warning: No \printglossary or \printglossaries found.
 (Remove \makeglossaries if you don't want any glossaries.)
 This document will not have a glossary.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
 (./20170419_thesis_results_slipt.aux (./intro.aux) (./methods.aux)
 (./methods_dev.aux) (./chapt3.aux) (./chapt4.aux) (./chapt5.aux) (./chapt6.aux)
 (./conclusion.aux) (./appendix_methods.aux) (./appendix_chapt3.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
 Package rerunfilecheck Info: File `20170419_thesis_results_slipt.out' has not c
 hanged.
-(rerunfilecheck)             Checksum: 4BB400B7C17922FFC170A06C6DDC9124;2687.
+(rerunfilecheck)             Checksum: 323D8BE4E045F53160CCE910B221AEA4;2520.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -2736,32 +2616,44 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 36138 strings out of 494497
- 674068 string characters out of 6172400
- 913437 words of memory out of 5000000
- 37983 multiletter control sequences out of 15000+600000
+ 36659 strings out of 494497
+ 681453 string characters out of 6172400
+ 1018069 words of memory out of 5000000
+ 38492 multiletter control sequences out of 15000+600000
  14677 words of font info for 54 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
  59i,19n,94p,10439b,983s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.caption.18} has been referenced but does n
-ot exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.57} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.14} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.55} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.158} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.54} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.156} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.52} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.51} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.50} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.49} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.47} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.155} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.153} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.151} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.149} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.150} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.148} has been referenced but does not
@@ -2770,34 +2662,34 @@ pdfTeX warning (dest): name{table.caption.148} has been referenced but does not
 pdfTeX warning (dest): name{table.caption.146} has been referenced but does not
  exist, replaced by a fixed one
 
+pdfTeX warning (dest): name{table.caption.145} has been referenced but does not
+ exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{table.caption.143} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.141} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.140} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.128} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.138} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.123} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.125} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.121} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.120} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.119} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.118} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.115} has been referenced but does not
+pdfTeX warning (dest): name{table.caption.116} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.113} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.112} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.111} has been referenced but does not
@@ -2806,14 +2698,17 @@ pdfTeX warning (dest): name{table.caption.111} has been referenced but does not
 pdfTeX warning (dest): name{table.caption.110} has been referenced but does not
  exist, replaced by a fixed one
 
+pdfTeX warning (dest): name{table.caption.109} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.108} has been referenced but does not
+ exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{table.B.1} has been referenced but does not exist, 
 replaced by a fixed one
 
 pdfTeX warning (dest): name{table.2.5} has been referenced but does not exist, 
 replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.17} has been referenced but does not 
-exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.15} has been referenced but does not 
 exist, replaced by a fixed one
@@ -2827,22 +2722,13 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{table.caption.10} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.155} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.152} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.147} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.144} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.145} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.140} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.139} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.138} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.142} has been referenced but does no
 t exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.137} has been referenced but does no
@@ -2869,25 +2755,25 @@ t exist, replaced by a fixed one
 pdfTeX warning (dest): name{figure.caption.130} has been referenced but does no
 t exist, replaced by a fixed one
 
+pdfTeX warning (dest): name{figure.caption.129} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.128} has been referenced but does no
+t exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{figure.caption.127} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.126} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.124} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.125} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.119} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.123} has been referenced but does no
 t exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.117} has been referenced but does no
 t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.109} has been referenced but does no
-t exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.108} has been referenced but does no
+pdfTeX warning (dest): name{figure.caption.115} has been referenced but does no
 t exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.107} has been referenced but does no
@@ -2900,6 +2786,12 @@ pdfTeX warning (dest): name{figure.caption.105} has been referenced but does no
 t exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.104} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.103} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.102} has been referenced but does no
 t exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.42} has been referenced but does not
@@ -2920,13 +2812,13 @@ pdfTeX warning (dest): name{figure.caption.38} has been referenced but does not
 pdfTeX warning (dest): name{figure.caption.37} has been referenced but does not
  exist, replaced by a fixed one
 
+pdfTeX warning (dest): name{figure.caption.36} has been referenced but does not
+ exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{figure.caption.35} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.33} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.32} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.31} has been referenced but does not
@@ -2941,6 +2833,9 @@ pdfTeX warning (dest): name{figure.caption.29} has been referenced but does not
 pdfTeX warning (dest): name{figure.caption.28} has been referenced but does not
  exist, replaced by a fixed one
 
+pdfTeX warning (dest): name{figure.caption.27} has been referenced but does not
+ exist, replaced by a fixed one
+
 pdfTeX warning (dest): name{figure.caption.26} has been referenced but does not
  exist, replaced by a fixed one
 
@@ -2950,13 +2845,13 @@ pdfTeX warning (dest): name{figure.caption.25} has been referenced but does not
 pdfTeX warning (dest): name{figure.caption.24} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.23} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.22} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.21} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.20} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.14} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.9} has been referenced but does not 
@@ -3487,10 +3382,10 @@ fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/t
 exmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/type1/public/
 tex-gyre/qhvr.pfb>
-Output written on 20170419_thesis_results_slipt.pdf (77 pages, 2641158 bytes).
+Output written on 20170419_thesis_results_slipt.pdf (80 pages, 2650836 bytes).
 PDF statistics:
- 1790 PDF objects out of 2073 (max. 8388607)
- 1647 compressed objects within 17 object streams
- 684 named destinations out of 1000 (max. 500000)
- 317 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1840 PDF objects out of 2073 (max. 8388607)
+ 1692 compressed objects within 17 object streams
+ 688 named destinations out of 1000 (max. 500000)
+ 301 words of extra memory for PDF output out of 10000 (max. 10000000)
 
