@@ -9,6 +9,40 @@
 %% Use double curly brackets {{}} when you want to maintain your own
 %% capitalisation, otherwise bibtex will follow its own rules.
 %%
+
+@Article{Gatza2014,
+   Author="Gatza, M. L.  and Silva, G. O.  and Parker, J. S.  and Fan, C.  and Perou, C. M. ",
+   Title="{{A}n integrated genomics approach identifies drivers of proliferation in luminal-subtype human breast cancer}",
+   Journal="Nat. Genet.",
+   Year="2014",
+   Volume="46",
+   Number="10",
+   Pages="1051--1059",
+   Month="Oct"
+}
+
+@Article{Gatza2011,
+   Author="Gatza, M. L.  and Kung, H. N.  and Blackwell, K. L.  and Dewhirst, M. W.  and Marks, J. R.  and Chi, J. T. ",
+   Title="{{A}nalysis of tumor environmental response and oncogenic pathway activation identifies distinct basal and luminal features in {H}{E}{R}2-related breast tumor subtypes}",
+   Journal="Breast Cancer Res.",
+   Year="2011",
+   Volume="13",
+   Number="3",
+   Pages="R62",
+   Month="Jun"
+}
+
+@Article{Gatza2010,
+   Author="Gatza, M. L.  and Lucas, J. E.  and Barry, W. T.  and Kim, J. W.  and Wang, Q.  and Crawford, M. D.  and Datto, M. B.  and Kelley, M.  and Mathey-Prevot, B.  and Potti, A.  and Nevins, J. R. ",
+   Title="{{A} pathway-based classification of human breast cancer}",
+   Journal="Proc. Natl. Acad. Sci. U.S.A.",
+   Year="2010",
+   Volume="107",
+   Number="15",
+   Pages="6994--6999",
+   Month="Apr"
+}
+
 @article{Neeley2009,
 author = {Neeley, E. Shannon and Kornblau, Steven M. and Coombes, Kevin R. and Baggerly, Keith A.},
 title = {Variable slope normalization of reverse phase protein arrays},
@@ -549,6 +583,17 @@ author = "F. Sanger and A.R. Coulson",
   Note = {Accessed: 26/03/2017},
   Year = {2017},
 }
+
+@Misc{CCLE,
+  Author={{\acroauthor{Cancer Cell Line Encyclopedia}{CCLE}}},
+  Title = {{Broad-Novartis Cancer Cell Line Encyclopedia}},
+  Howpublished = {\url{http://www.broadinstitute.org/ccle}},
+  Note = {Accessed: 07/11/2014},
+  Year = {2014},
+}
+
+
+
 
 
 @Misc{ICGC2017web,
@@ -3747,7 +3792,7 @@ Metabolism
 
 @article{genesetdb,
   author = {Araki, H. and Knapp, C. and Tsai, P. and Print, C.},
-  title = {GeneSetDB: A comprehensive meta-database, statistical and visualisation framework for gene set analysis},
+  title = {{GeneSetDB}: A comprehensive meta-database, statistical and visualisation framework for gene set analysis},
   journal = {FEBS Open Bio},
   volume = {2},
   pages = {76-82},

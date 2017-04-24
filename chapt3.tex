@@ -413,6 +413,8 @@ Similar translational, cytoskeletal, and immune processes were identified among 
 
 %\subsection{Comparison with differential expression} \label{chapt3:compare_differential_expression}
 
+%A transcriptome experiment has been conducted by the Cancer Genetics Laboratory to test their \textit{CDH1}$^{-/-}$ null MCF10A cell lines compared to an otherwise isogenic wildtype \citep{Chen2014}. While differential expression analysis was inconclusive due to few technical replicates, this data was also useful to determine genes which were not detectable in MCF10A cell lines which would not be expected to detect synthetic lethality in siRNA screen data even if they were predicted to be synthetic lethal in expression data. 
+
 \subsection{Comparison with siRNA screen candidates} \label{chapt3:primary_screen}
 
 Gene candidates were compared between computational (SLIPT in TCGA breast cancer data) and experimental (the primary siRNA screen performed by \citet{Telford2015}) approaches in Figure \ref{fig:Venn_allgenes}. The number of genes detected by both methods did not produce a significant overlap but these may be difficult to compare due to vast differences between the detection methods. There were similar issues comparison of mtSLIPT genes tested against \textit{CDH1} mutations (in Figure \ref{fig:Venn_allgenes_stad_mtSL}), despite exlcuded genes not tested by both methods in either test. However, these intersecting genes may still be functionally informative or amenable to drug triage as they were replicated across both methods and pathway over-represent\-ation differed between the sections of the Venn diagram (see Figure \ref{fig:Venn_allgenes}).
@@ -706,13 +708,13 @@ The overlap between synthetic lethal from bioinformatics SLIPT predictions and s
 
 Of particular concern are the over-represented pathways in genes detected by both methods. Pathway over-representation alone does not detect whether SLIPT predicted genes or siRNA candidates are enriched within each other. This resampling analysis therefore detects whether over-represented pathways were detected by SLIPT independently of their over-representation among siRNA candidates (without assuming an underlying test statistic distribution).
 
-A resampling approach is also applicable to testing whether the number of genes detected by each approach significantly intersected. As shown in Figure \ref{fig:perm_sample}, resampling did not find evidence of significant depletion or over-represent\-ation for experimental synthetic lethal candidates in the computationally predicted synthetic lethal partners of \textit{CDH1} and the overlap may be observed by chance.
+A resampling approach is also applicable to testing whether the number of genes detected by each approach significantly intersected. As shown in Figure \ref{fig:perm_sample}, resampling did not find evidence of significant depletion or over-represent\-ation for experimental synthetic lethal candidates in the computationally predicted synthetic lethal partners of \textit{CDH1} and the overlap may be observed by chance. This is consistent with previous findings (see Figure \ref{fig:Venn_allgenes}) and does not preclude pathway relationships being supported by resampling.
 
-A permutation analysis was performed to resample the genes tested by both approaches to investigate whether the observed pathway over-represent\-ation could have occurred in a randomly selected sample of genes from the experimental candidates, that is, whether the pathway predictions from SLIPT could be expected by chance.
+A permutation analysis was performed to resample the genes tested by both approaches to investigate whether the observed pathway over-represent\-ation could have occurred in a randomly selected sample of genes from the experimental candidates, that is, whether the pathway predictions from SLIPT could be expected by chance (as described in sections \ref{methods:venn_analysis} and \ref{methods:permutation}).
 %The observed 604 genes detected by both approaches (in Figure \ref{fig:Venn_allgenes}) was not a significantly over-represent\-ation ($p = 0.12982$) or depletion ($p = 0.85841$) of computationally predicted synthetic lethal partners of \textit{CDH1} among experimental synthetic lethal candidates (in Figure \ref{fig:perm_sample}). This reinforces the results of the $\chi^2$ analysis,
 While the number of siRNA candidate genes detected by SLIPT was not statistically significant ($p=0.281$), this may be due to the vastly different limitations of the approaches and the correlation structure of gene expression not being independent (as assumed for multiple testing procedures). The  intersection may still be functionally relevant to \textit{CDH1}-deficient cancers, such as the pathway data in Table \ref{tab:Venn_over-representation}. The resampling analysis for pathways was compared to the pathway over-represent\-ation for SLIPT predicted synthetic lethal partners in Table \ref{tab:pathway_perm}. Similarly, the pathway resampling for intersection between SLIPT predictions and experimental screen candidates was compared to pathway over-represent\-ation in Table \ref{tab:pathway_perm_overlap} for intersection with siRNA data.
 
-The pathway resampling approach for SLIPT-specific gene candidates (Table \ref{tab:pathway_perm}) replicates the gene set over-represent\-ation analysis for all SLIPT genes, detecting evidence of synthetic lethal pathways for \textit{CDH1} in translational, immune, and cell signalling pathways including  G$_{\alpha i}$ signalling, GPCR downstream signalling, and chemokine receptor binding. While the immune and signal transduction pathways were not significantly over-represented in the resampling analysis, the results for the two approaches were largely consistent for translation and post-transcriptional gene regulation, supporting gene set over-represent\-ation of the SLIPT-specific pathways in Table \ref{tab:pathway_perm}. In particular, some of the most significantly over-represented pathways had higher observed $\chi^2$ values than any of the 1 million random permutations.
+The pathway resampling approach for SLIPT-specific gene candidates (Table \ref{tab:pathway_perm}) replicates the gene set over-represent\-ation analysis for all SLIPT genes, detecting evidence of synthetic lethal pathways for \textit{CDH1} in translational, immune, and cell signalling pathways including  G$_{\alpha i}$ signalling, GPCR downstream signalling, and chemokine receptor binding. While the immune and signal transduction pathways were not significantly over-represented in the resampling analysis, the results for the two approaches were largely consistent for translation and post-transcriptional gene regulation, supporting gene set over-represent\-ation of the SLIPT-specific pathways in Table \ref{tab:pathway_perm}. In particular, some of the most significantly over-represented pathways had higher observed $\chi^2$ values than any of the 1 million random permutations. Similar pathways were also replicated by permutation analysis for mtSLIPT candidate partners against \textit{CDH1} mutation (shown in Figure \ref{tab:pathway_perm_mtSL}). This shows that many of the pathways detected specfically by SLIPT are replicated by permutation procedures and that the permutation approach is capable of detecting many of the most strongly over-represented pathways. 
 
 
 \begin{table*}[!ht]
@@ -766,13 +768,13 @@ The pathway resampling approach for SLIPT-specific gene candidates (Table \ref{t
   \rowcolor{Cluster_Red!15}  
   \textbf{Influenza Life Cycle} & $2.5 \times 10^{-156}$ & $< 1.241 \times 10^{-5}$  \\
   \rowcolor{Cluster_Red!20}  
-  Extracellular matrix organisation & $1.1 \times 10^{-152}$ & $0.071761$ \\
+  \textit{Extracellular matrix organisation} & $1.1 \times 10^{-152}$ & $0.071761$ \\
   \rowcolor{Cluster_Red!15}  
   GPCR ligand binding & $1.1 \times 10^{-143}$ & $0.55801$ \\
   \rowcolor{Cluster_Red!20}  
   Class A/1 (Rhodopsin-like receptors) & $1.5 \times 10^{-142}$ & $0.58901$ \\
   \rowcolor{Cluster_Red!15}  
-  GPCR downstream signalling & $7.6 \times 10^{-140}$ & $0.098357$ \\
+  \textit{GPCR downstream signalling} & $7.6 \times 10^{-140}$ & $0.098357$ \\
   \rowcolor{Cluster_Red!20}  
   Haemostasis & $1.9 \times 10^{-134}$ & $0.27059$ \\
   \rowcolor{Cluster_Red!15}  
@@ -837,7 +839,9 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 }
 \end{table*}
 
-The intersection between computational and experimental candidates (in Table \ref{tab:pathway_perm_overlap}) differed between over-represent\-ation and resampling analyses. Namely, many of the over-represented pathways were not significant in the resampling analysis, including visual phototransduction and retinoic acid signalling, although pathways involving defective \textit{EXT1} or \textit{EXT2} genes approach significance after FDR adjustment for multiple tests. Of the highest over-represented pathways in the intersection, only G$_{\alpha s}$ signalling events were supported by both over-represent\-ation and resampling analyses. Other pathways supported by both analyses were cytoplasmic elastic fibre formation, associated protein modification pathways, energy metabolism, and the fibrin clotting cascade.
+The permutation approach was then also applied to the intersection between computational and experimental candidates. Where the permutation anlaysis is testing for consistent detection of pathways independent of their pre-existing status as experimental candidates. The pathway results for these candidate partners (in Table \ref{tab:pathway_perm_overlap}) differed between over-represent\-ation and resampling analyses.
+
+Namely, many of the over-represented pathways were not significant in the resampling analysis, including visual phototransduction and retinoic acid signalling, although pathways involving defective \textit{EXT1} or \textit{EXT2} genes approach significance after FDR adjustment for multiple tests. Of the highest over-represented pathways in the intersection, only G$_{\alpha s}$ signalling events were supported by both over-represent\-ation and resampling analyses. Other pathways supported by both analyses were cytoplasmic elastic fibre formation, associated HS-GAG protein modification pathways, energy metabolism, and the fibrin clotting cascade.  
 
 \begin{table*}[!htp]
 \caption{Pathways for \textit{CDH1} partners from SLIPT and siRNA primary screen}
@@ -959,10 +963,23 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 }
 \end{table*}
 
-While this indicates that G$_{\alpha s}$ and GPCR class A/1 signalling events were significantly detected by both approaches, GPCR signalling pathways overall were not. It is likely that GPCRs were primarily over-represented in the intersection with the experimental candidates due to strong over-represent\-ation of these pathways in experimental candidates, rather than detection by SLIPT, which may be driven by these more specific constituent pathways.
+Many of the pathways supported in the intersection by permutation analysis were also replicated in the mtSLIPT anlaysis of partners tested with \textit{CDH1} mutation (in Table \ref{tab:pathway_perm_overlap_mtSL}), including G$_{\alpha s}$, elastic fibres, HS-GAG, and energy metabolism. While there were differences between the pathways Identified by over-representation anlaysis, those replicated by permutation were highly concordant supported the combined use of these pathways approaches to identify synthetic lethal gene functions and targets. 
+
+While this indicates that G$_{\alpha s}$ and GPCR class A/1 signalling events were significantly detected by both approaches, GPCR signalling pathways overall were not. It is likely that GPCRs were primarily over-represented in the intersection with the experimental candidates due to strong over-represent\-ation of these pathways in experimental candidates, rather than detection by SLIPT, which may be driven by these more specific constituent pathways. 
 
 %% remove paragraph?
-However, we note that several pathways, including some immune functions and neurotransmitters, were supported by the resampling analysis (in Table \ref{tab:pathway_perm_overlap}) when the initial pathway over-represent\-ation test was not significant. These functions appear to have been detected by both approaches  more than expected by chance but must be interpreted with caution since they were still not common enough to be detected in pathway over-represent\-ation analysis.
+However, several pathways, including some immune functions and neurotransmitters, were supported by the resampling analysis (in Tables \ref{tab:pathway_perm_overlap} and \ref{tab:pathway_perm_overlap_mtSL}) when the initial pathway over-represent\-ation test was not significant. These functions appear to have been detected by both approaches  more than expected by chance but must be interpreted with caution since they were still not common enough to be detected in pathway over-represent\-ation analysis.
+
+Therefore computational and experimental approaches to synthetic lethal screening for \textit{CDH1} lead to a broader functional characterisation and many candidate partners, when combined, despite different strengths and limitations. Compared to candidate gene approaches, experimental genome-wide screens are an appealing unbiased strategy for identifying synthetic lethal interactions. Since these screens are costly, laborious, and subject to genetic background, computational analysis can augment candidate triage to either reduce the initial panel of screened genes or prioritise validation.
+
+GPCR pathways were detected among both computational and experimental synthetic lethal candidates, with more support in the experimental screen (Table \ref{tab:pathway_perm_overlap}). The homogeneous cell line model may be more likely to detect particular pathways. For instance, SLIPT identified immune pathways, not expected to be detected in isolated cell culture. GPCR signalling was supported in experimental models \cite{Telford2015} with some of these pathways replicated in varied genetic backgrounds of patient samples. These pathways require further investigation such as identification of more specific pathways, higher order interactions, and modes of resistance.
+
+The pathway composition across computational and experimental synthetic lethal candidates was informative with over-represent\-ation (Table \ref{tab:Venn_over-representation}) and supported by resampling analysis (Table \ref{tab:pathway_perm_overlap}), despite a modest intersection of genes between them (Figure \ref{fig:Venn_allgenes}).
+Either approach may be significant for a pathway in this intersection without being supported by the other: resampling analysis may support pathways that were not over-represent\-ed due to small effect sizes, thus both tests are required for a candidate pathway.
+The pathways detected by both over-represent\-ation and resampling are the strongest candidates for further investigation, such as G$_{\alpha s}$ signalling, a strong candidate in prior analyses with a role in the regulation of translation in cancer \cite{Gao2015}, another function supported by SLIPT analysis.
+%The bioinformatics analysis demonstrated here could be integrated into future screening for synthetic lethality in cancer.  
+
+The predicted synthetic lethal partners occurred across functionally distinct pathways, including characterised functions of \textit{CDH1}. This diversity is consistent with the wide ranging role of \textit{CDH1} in cell-cell adhesion, cell signalling, and the cytoskeletal structure of epithelial tissues. Pathway structure may be relevant to identifying potential drug targets from gene expression signatures, indicating downstream effector genes and mechanisms leading to cell inviability. These distinct synthetic lethal gene clusters and pathways may further lead to the elucidation of drug resistance mechanisms.
 
 %%appendix
 %\label{tab:pathway_perm_mtSL}
@@ -970,11 +987,10 @@ However, we note that several pathways, including some immune functions and neur
 
 \FloatBarrier
 
-\subsubsection{Comparison of candidate SL Pathways}
-
-Thus we have identified candidate synthetic lethal pathways by gene set over-representation, metagene synthetic lethality, and re-sampled empirical pathway over-representation. The challenge currently under consideration is whether these methods can be compared and which may lead to biologically meaningful or clinically relevant synthetic lethal candidate pathways.
-
-\FloatBarrier
+%\subsubsection{Comparison of candidate SL Pathways}
+%committee
+%Thus we have identified candidate synthetic lethal pathways by gene set over-representation, metagene synthetic lethality, and re-sampled empirical pathway over-representation. The challenge currently under consideration is whether these methods can be compared and which may lead to biologically meaningful or clinically relevant synthetic lethal candidate pathways.
+%\FloatBarrier
 
 \iffalse
 
@@ -992,19 +1008,23 @@ DNA methylation data was also prepared for synthetic lethal analysis but was dis
 
 
 \section{Metagene Analysis}
-[include?]
+%[include?]
 
-\subsection{Pathway expression}
+Metagenes serve as a consistent signal of pathway activity. The direction of metagenes is generally arbitrary but care has been taken to ensure that these occur in a direction which reflect overall activation of the pathway (as described in section \ref{methods:metagene}). This will be supported by examining the pathway expression of gene signatures in breast cancer to ensure they behave as expected in TCGA expression data. These metagenes were also compared to somatic mutation to show the limitations of mutation as a measure of gene activity. Having established that metagenes generated with this procedure reflect gene activity, these were then applied to the Reactome pathways for synthetic lethal analysis of pathways directly to provide an alternative approach to identifying synthetic lethal pathways with \textit{CDH1}.
+
+\subsection{Pathway expression} \label{chapt3:metagene_expression}
+
+Pathway metagenes (generated as described in section \ref{methods:metagene}) for gene signatures of key processes in breast cancer \citep{Gatza2011} were used to check that metagenes were generated in the correct direction to indicate pathway activation. These gene signatures were plotting in Figure \ref{fig:metagene_expr_Gatza2011} for comparison with clinical factors and somatic mutations. The ``intrinsic subtype''  was computed by performing the PAM50 procedure \cite{Parker2009} for RNASeq data which was highly concordant with the subtypes provided by UCSC for TCGA samples previously analysed by microarrays \citep{TCGA2012}. Somatic mutations were reported for recurrently mutated genes in breast cancer, as reported by TCGA \citep{TCGA2012}, related genes, and those previously discussed to be important in hereditary breast cancers (\textit{BRCA1}, \textit{BRCA2}, and \textit{CDH1}).
 
 \begin{figure*}[!htp]
 \noindent\makebox[\textwidth][c]{%               %centering
 \noindent\fbox{\begin{minipage}{1.00 \textwidth}  %frame beyond textwidth
 \begin{center}
   \resizebox{1 \textwidth}{!}{
-    \includegraphics{CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.pdf}
+    \includegraphics{CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.png} %original pdf, png for edited
    }
    \end{center}
-   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors and cancer gene mutations.
+   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors and cancer gene mutations. Samples were clustered independently for each intrinsic subtype and by \textit{CDH1} expression status. 
 }
 \label{fig:metagene_expr_Gatza2011}
 \end{minipage}
@@ -1012,11 +1032,96 @@ DNA methylation data was also prepared for synthetic lethal analysis but was dis
 } %close centering
 \end{figure*}
 
+These gene signatures reflect intrinsic subtypes as expected. In particular, the estrogen and progesterone receptor signatures are low in the ER$-$ and PR$-$ basal subtype tumours. These tumours also had the highest frequency of \textit{TP53} mutations and a corresponding reduction of p53 metagene activity, as expected for loss of a tumour suppressor. The luminal A and luminal B tumour subtypes are the most similar, which is reflected in these metagenes signatures, although they are distinguishable molecular subtypes as shown by elevated PI3K, AKT, RAS, asn $\Beta$-catenin signalling in luminal B tumours. Although, these pathways were also elevated in Basal and HER2-enriched subtypes and lowly expressed in the ``normal-like'' subtype (which contained the normal samples). These intrinsic subtype specific gene signature profiles were further supported with metagenes for an extended set of signatures \citep{Gatza2014}, as shown in Figure \ref{fig:metagene_expr_Gatza2014}.
+
+\textit{TP53} mutations were the most frequent and more common in basal subtype. Similarly, \textit{GATA3} mutations were more common in luminal subtype tumours. PI3K mutations were more frequent across breast tumours, although these were less common in the basal subtype despite an elevated metagene (this discrepancy will the discussed further in section \ref{chapt3:metagene_mut}). \textit{CDH1} mutations similarly occurred across molecular subtypes with the exception of the basal subtype (as observed in gene expression with Figure \ref{fig:slipt_expr}). \textit{CDH1} low samples occurred in all subtypes but were predominantly lobular subtype. Apart from these genes, mutations did not show clear specficity to a particular subtype and the variation between samples was reflects the range of molecular cascades that can result in tumours with similar molecular profiles, supporting the use of expression for cancer diagnostics and identification of molecular targets. 
+
+The direction of the metagenes were also consistent with the clincal characteristics and formed a consensus of gene activity as shown in Figures \ref{fig:metagene_expr_Gatza2011_PI3K}\nobreakdash--\ref{fig:metagene_expr_Gatza2014_BRCA}. In each of the examples for gene signatures for PI3K (Figure \ref{fig:metagene_expr_Gatza2011_PI3K}), p53 (Figure \ref{fig:metagene_expr_Gatza2011_P53}), estrogen receptor (Figure \ref{fig:metagene_expr_Gatza2011_ER}), and BRCA (Figure \ref{fig:metagene_expr_Gatza2014_BRCA}) genes \citep{Gatza2011, Gatza2014}, the expression of the majority of the genes were highly concordant with the metagene, being either positively or negatively correlated. These were generally consistent with established clinical and molecular subtypes of breast cancer and the recurrent mutations shown. However, the \textit{PIK3CA} and \textit{PIK3R1} mutant samples did not necessarily have elevated PI3K pathway metagene activity (as shown in Figure \ref{fig:metagene_expr_Gatza2011_PI3K}).  
+
 \FloatBarrier
 
-\subsection{Somatic mutation}
+\subsection{Somatic mutation}  \label{chapt3:metagene_mut}
+
+\begin{figure*}[!ht]
+\begin{mdframed}
+        \begin{center}
+%
+        \subfigure[\textit{PIK3CA} mutation]{%
+           \includegraphics[width=0.45\textwidth]{metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf}
+        }%
+        \subfigure[\textit{PIK3CA} or \textit{PIK3R1} mutation]{%
+           \includegraphics[width=0.45\textwidth]{metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK3R1.pdf}
+        }
+        
+        \subfigure[\textit{CDH1} mutation]{%
+           \includegraphics[width=0.45\textwidth]{metagene(ranked)_vioplotx_Mutation_PI3K2011_CDH1.pdf}
+        }%
+        \subfigure[\textit{TP53} mutation]{%
+           \includegraphics[width=0.45\textwidth]{metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.pdf}
+        }
+    \end{center}
+    \caption[Somatic mutation against PI3K metagene]{\small \textbf{Somatic mutation against PI3K metagene.} Mutations in \textit{PIK3CA}, \textit{PIK3R1}, \textit{CDH1}, and \textit{TP53} were examined in TCGA breast cancer for their effect on the PI3K \citep{Gatza2011} pathway metagene. The tumour suppressors \textit{CDH1} and \textit{TP53} showed an increase and decrease in the metagene respectively, whereas \textit{PIK3CA} and \textit{PIK3R1} mutations had little effect on the metagene levels.
+}
+\label{fig:mutation_expr_mg}
+\end{mdframed}
+\end{figure*}
+
+It should be noted that metagenes, while consistent with the consensus of constituent expressed genes, were not neccessarily reflecting the somatic mutation status. The PI3K \citep{Gatza2011} metagene levels in particular, were not statistically significant in between mutant and wildtype \textit{PIK3CA} samples (shown in Figure \ref{fig:mutation_expr_mg}). Although the PI3K metagene differed across \textit{CDH1} and \textit{TP53} mutations, remarkably in opposite directions considering that PI3K is an oncogenic growth pathway and these are both most frequently tumour suppressors inactivated in cancers. This shows that \textit{CDH1} and \textit{TP53} deficient tumours have distinct molecular growth pathways and that synthetic lethal inactivations against \textit{CDH1} inactivation may not be applicable to other cancers with driver mutations such as \textit{TP53}, although these were kept in the analysis for comparison. These differences may be related to these mutations being more frequent in tumours with difference clinical characteristics (as observed in section \ref{chapt3:metagene_expression}).  Thus mutations do not neccessarily have corresponding changes in pathway expression, particularly for oncogenes which may change in function rather than being upregulated.
+
+
+While the more specific \textit{PIK3CA} \citep{Gatza2014} metagene showed significant differences with \textit{PIK3CA} and \textit{PIK3R1} mutations (as shown in Figure \ref{fig:mutation_expr_mg2}), this metagene replicated stronger differences for \texit{CDH1} and \textit{TP53}.  These differences were less pronounced in the protein levels of p110$\alpha$ (enocded by \textit{PIK3CA}) and the downstream AKT gene (shown in Figures \ref{fig:mutation_expr_prot} and \ref{fig:mutation_expr_prot2} respectively). Although this may be due to this regulatory cascade (kinases) being transmitted as a change in protein state (phosphorylation) rather than changes in expression levels. Another consideration is that mutations at different loci have different effects on protein function, particularly for oncogenes.
+
+\FloatBarrier
+
+\subsection{Mutation locus}  \label{chapt3:metagene_mut_locus}
+
+The gene locus distribution of \textit{PIK3CA} and it's receptor \textit{PIK3R1} were consistent with oncogenic and tumour suppressor mutations, as shown in Figure \ref{fig:mutation_locus}. \textit{PIK3CA} is an has recurrent mutations in 2 hotspots, centered around the E545K and H1047R (shown in Figure \ref{fig:mutation_locus:PIK3CA}), as expected for an oncogene. This contrasts with the tumour suppressors, \textit{PIK3R1}, and \textit{CDH1} (shown in Figures \ref{fig:mutation_locus:PIK3R1} and \ref{fig:mutation_locus:CDH1} respectively), which have low frequency inactivating mutations spread across them. A notable exception is \textit{TP53} (shown in Figure \ref{fig:mutation_locus:TP53}) which displays both inactivating mutations throughout and recurrent (oncogenic) mutations at high frequency, consistent with the complex role of \textit{TP53} in cancer biology which is outside of the scope of this thesis and shown for comparison. 
+
+These differences in gene locus may explain why mutations do not necessarily have corresponding changes in gene or metagene expression. Specfically, the recurrent E545K and H1047R oncogene mutations in \textit{PIK3CA} did not affect \textit{PIK3CA} mRNA expression but E545K had specifically lower PI3K \citep{Gatza2011} metagene levels. Both mutations had higher \textit{PIK3R1} mRNA expression but these differences differences were not reflected in the protein expression levels of p110$\alpha$ protein (encoded by \textit{PIK3CA}), it's downstream target AKT, E-cadherin (encoded by \text{CDH1}), or p53 (as ashown in Figure \ref{fig:mutation_expr}).
+
+\begin{figure*}[!ht]
+\begin{mdframed}
+        \begin{center}
+%
+        \subfigure[\textit{PI3KCA} gene]{%
+            %\label{fig:simulate_function:first}
+            \includegraphics[width=0.3\textwidth]{geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf}
+        }%
+        \subfigure[\textit{PI3KCA} metagene]{%
+            %\label{fig:simulate_function:first}
+            \includegraphics[width=0.3\textwidth]{metagene_vioplotx_Mutation_locus_PIK3CA.pdf}
+        }%
+        \subfigure[\textit{PIK3R1} gene]{%
+           \includegraphics[width=0.3\textwidth]{geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf}
+        }
+        
+        \subfigure[\textit{PIK3CA} protein]{%
+           \includegraphics[width=0.3\textwidth]{protein_vioplotx_Mutation_locus_PIK3CA.pdf}
+        }%
+        \subfigure[\textit{AKT} protein]{%
+           \includegraphics[width=0.3\textwidth]{protein_vioplotx_Mutation_locus_AKT.pdf}
+        }
+        
+        \subfigure[\textit{CDH1} protein]{%
+           \includegraphics[width=0.3\textwidth]{protein_vioplotx_Mutation_locus_CDH1.pdf}
+        }%
+        \subfigure[\textit{TP53} protein]{%
+           \includegraphics[width=0.3\textwidth]{protein_vioplotx_Mutation_locus_TP53.pdf}
+        }
+    \end{center}
+    \caption[Somatic mutation locus against expression]{\small \textbf{Somatic mutation locus against expression.} The recurrent E545K and H1047R oncogene mutations in \textit{PIK3CA} were examined in TCGA breast cancer to show the effect of mutation locus on gene, pathway, and protein expression. While neither of these mutations had an impact of \textit{PIK3CA} mRNA expression, E545K had specifically lower PI3K \citep{Gatza2011} metagene levels and both mutations had higher \textit{PIK3R1} mRNA expression. However, these differences were not reflected in the protein expression levels.
+}
+\label{fig:mutation_expr}
+\end{mdframed}
+\end{figure*}
+
+ While the complex effects of mutation in oncogenes such as \textit{PIK3CA} are not neccessarily detected in a pathway metagene, these do capture the consensus of patheay gene expression and account for other potential means of pathway activation. Thus metagenes are sufficient as a measure of gene activity for the purposes of synthetic lethal detection with SLIPT. This approach is more applicable to tumour suppressor genes with a relationship between gene expression and activity (rather than activation at the protein level) but this is not a major concern since synthetic lethality is more clinically relevant for targeting tumour suppressor mutations than oncogenes.
+
+\FloatBarrier
 
 \subsection{Synthetic lethal metagenes} \label{chapt3:metagene_SL}
+
+Pathway metagenes for Reactome pathways (generated as described in section \ref{methods:metagene}) were also used for testing synthetic lethal partner pathways with \textit{CDH1} by SLIPT. Since the metagenes have are higher when the pathway as a whole is activated, they are amenable to SLIPT analysis using low metagene levels for inactivated pathways. These synthetic lethal metagenes differed to the over-represented pathways among synthetic lethal gene candidates. However, there were some similarities to previous findings, as shown in Tables \ref{tab:metagene_SL}. In particular, translational pathways were replicated as observed in Table \ref{tab:pathway_exprSL}. While the specific pathways differ, immune pathways (such as NF-$\kappa$B) were also supported by metagene synthetic lethal analysis.
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from SLIPT}
@@ -1029,55 +1134,55 @@ DNA methylation data was also prepared for synthetic lethal analysis but was dis
  Pathway & ID & Observed & Expected & $\chi^2$value & p-value & p-value (FDR) \\ 
   \hline
   \rowcolor{black!10}
-  Activation of BMF and translocation to mitochondria & 139910 & 213 & 130.22 & 205.32 & $2.6909 \times 10^{-43}$ & $4.4373 \times 10^{-40}$\\
+  Glycogen storage diseases & 3229121 & 68 & 130 & 176 & $6.62 \times 10^{-37}$ & $1.82 \times 10^{-34}$ \\ 
   \rowcolor{black!5}
-  Downregulation of ERBB2:ERBB3 signaling & 1358803 & 197 & 130.22 & 189.57 & $6.5577 \times 10^{-40}$ & $5.4069 \times 10^{-370}$\\
+  Myoclonic epilepsy of Lafora & 3785653 & 68 & 130 & 176 & $6.62 \times 10^{-37}$ & $1.82 \times 10^{-34}$ \\ 
   \rowcolor{black!10}
-  Activation of PKB & 165158 & 209 & 130.22 & 188.57 & $1.0771 \times 10^{-39}$ & $5.9203 \times 10^{-370}$\\
+  Diseases of carbohydrate metabolism & 5663084 & 68 & 130 & 176 & $6.62 \times 10^{-37}$ & $1.82 \times 10^{-34}$ \\ 
   \rowcolor{black!5}
-  Glycogen storage diseases & 3229121 & 68 & 130.22 & 175.58 & $6.6178 \times 10^{-37}$ & $1.8188 \times 10^{-340}$\\
+  Arachidonic acid metabolism & 2142753 & 81 & 130 & 157 & $8.13 \times 10^{-33}$ & $1.49 \times 10^{-30}$ \\ 
   \rowcolor{black!10}
-  Myoclonic epilepsy of Lafora & 3785653 & 68 & 130.22 & 175.58 & $6.6178 \times 10^{-37}$ & $1.8188 \times 10^{-340}$\\
+  Translation initiation complex formation & 72649 & 70 & 130 & 152 & $7.08 \times 10^{-32}$ & $1.17 \times 10^{-29}$ \\ 
   \rowcolor{black!5}
-  Diseases of carbohydrate metabolism & 5663084 & 68 & 130.22 & 175.58 & $6.6178 \times 10^{-37}$ & $1.8188 \times 10^{-340}$\\
+  Synthesis of 5-eicosatetraenoic acids & 2142688 & 68 & 130 & 151 & $1.25 \times 10^{-31}$ & $1.88 \times 10^{-29}$ \\ 
   \rowcolor{black!10}
-  HSF1 activation & 3371511 & 212 & 130.22 & 171.21 & $5.7399 \times 10^{-36}$ & $1.3522 \times 10^{-330}$\\
+  SRP-dependent cotranslational protein targeting to membrane & 1799339 & 69 & 130 & 150 & $2.01 \times 10^{-31}$ & $2.76 \times 10^{-29}$ \\ 
   \rowcolor{black!5}
-  Downregulation of ERBB4 signaling & 1253288 & 192 & 130.22 & 161.77 & $6.0875 \times 10^{-34}$ & $1.2548 \times 10^{-310}$\\
+  L13a-mediated translational silencing of Ceruloplasmin expression & 156827 & 72 & 130 & 148 & $5.91 \times 10^{-31}$ & $6.44 \times 10^{-29}$ \\ 
   \rowcolor{black!10}
-  Arachidonic acid metabolism & 2142753 & 81 & 130.22 & 156.53 & $8.1254 \times 10^{-33}$ & $1.4888 \times 10^{-300}$\\
+  3' -UTR-mediated translational regulation & 157279 & 72 & 130 & 148 & $5.91 \times 10^{-31}$ & $6.44 \times 10^{-29}$ \\ 
   \rowcolor{black!5}
-  Translation initiation complex formation & 72649 & 70 & 130.22 & 152.14 & $7.0837 \times 10^{-32}$ & $1.1681 \times 10^{-290}$\\
+  \begin{tabular}[c]{@{}l@{}}Activation of the mRNA upon binding of the cap-binding complex and eIFs,\\and subsequent binding to 43S \end{tabular} & 72662 & 70 & 130 & 147 & $1.14 \times 10^{-30}$ & $9.28 \times 10^{-29}$ \\ 
   \rowcolor{black!10}
-  Synthesis of 5-eicosatetraenoic acids & 2142688 & 68 & 130.22 & 150.98 & $1.2533 \times 10^{-31}$ & $1.8787 \times 10^{-290}$\\
+  Formation of the ternary complex, and subsequently, the 43S complex & 72695 & 70 & 130 & 147 & $1.14 \times 10^{-30}$ & $9.28 \times 10^{-29}$ \\ 
   \rowcolor{black!5}
-  SRP-dependent cotranslational protein targeting to membrane & 1799339 & 69 & 130.22 & 150.03 & $2.0095 \times 10^{-31}$ & $2.7613 \times 10^{-290}$\\
+  Ribosomal scanning and start codon recognition & 72702 & 70 & 130 & 147 & $1.14 \times 10^{-30}$ & $9.28 \times 10^{-29}$ \\ 
   \rowcolor{black!10}
-  L13a-mediated translational silencing of Ceruloplasmin expression & 156827 & 72 & 130.22 & 147.84 & $5.9094 \times 10^{-31}$ & $6.4389 \times 10^{-290}$\\
+  Eukaryotic Translation Elongation & 156842 & 72 & 130 & 146 & $1.19 \times 10^{-30}$ & $9.28 \times 10^{-29}$ \\ 
   \rowcolor{black!5}
-  3' -UTR-mediated translational regulation & 157279 & 72 & 130.22 & 147.84 & $5.9094 \times 10^{-31}$ & $6.4389 \times 10^{-290}$\\
+  Nonsense Mediated Decay independent of the Exon Junction Complex & 975956 & 71 & 130 & 146 & $1.24 \times 10^{-30}$ & $9.28 \times 10^{-29}$ \\ 
   \rowcolor{black!10}
-  Trafficking of AMPA receptors & 399719 & 198 & 130.22 & 147.73 & $6.2476 \times 10^{-31}$ & $6.4389 \times 10^{-290}$\\
+  Viral mRNA Translation & 192823 & 70 & 130 & 146 & $1.51 \times 10^{-30}$ & $1.04 \times 10^{-28}$ \\ 
   \rowcolor{black!5}
-  Glutamate Binding, Activation of AMPA Receptors and Synaptic Plasticity & 399721 & 198 & 130.22 & 147.73 & $6.2476 \times 10^{-31}$ & $6.4389 \times 10^{-290}$\\
+  Eukaryotic Translation Termination & 72764 & 70 & 130 & 146 & $1.51 \times 10^{-30}$ & $1.04 \times 10^{-28}$ \\ 
   \rowcolor{black!10}
-  Scavenging by Class F Receptors & 3000484 & 202 & 130.22 & 146.85 & $9.6215 \times 10^{-31}$ & $9.2823 \times 10^{-290}$\\
+  NF-kB is activated and signals survival & 209560 & 71 & 130 & 145 & $1.90 \times 10^{-30}$ & $1.19 \times 10^{-28}$ \\ 
   \rowcolor{black!5}
-  \begin{tabular}[c]{@{}l@{}}Activation of the mRNA upon binding of the cap-binding complex and eIFs,\\and subsequent binding to 43S \end{tabular}  & 72662 & 70 & 130.22 & 146.51 & $1.1365 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
+  Peptide chain elongation & 156902 & 72 & 130 & 145 & $1.91 \times 10^{-30}$ & $1.19 \times 10^{-28}$ \\ 
   \rowcolor{black!10}
-  Formation of the ternary complex, and subsequently, the 43S complex & 72695 & 70 & 130.22 & 146.51 & $1.1365 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
+  Influenza Life Cycle & 168255 & 70 & 130 & 145 & $1.95 \times 10^{-30}$ & $1.19 \times 10^{-28}$ \\ 
   \rowcolor{black!5}
-  Ribosomal scanning and start codon recognition & 72702 & 70 & 130.22 & 146.51 & $1.1365 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
+  Formation of a pool of free 40S subunits & 72689 & 73 & 130 & 145 & $2.01 \times 10^{-30}$ & $1.19 \times 10^{-28}$ \\ 
   \rowcolor{black!10}
-  Eukaryotic Translation Elongation & 156842 & 72 & 130.22 & 146.42 & $1.192 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
+  Nonsense-Mediated Decay & 927802 & 71 & 130 & 145 & $2.44 \times 10^{-30}$ & $1.34 \times 10^{-28}$ \\ 
   \rowcolor{black!5}
-  Nonsense Mediated Decay independent of the Exon Junction Complex & 975956 & 71 & 130.22 & 146.34 & $1.2384 \times 10^{-30}$ & $9.2823 \times 10^{-290}$\\
+  Nonsense Mediated Decay enhanced by the Exon Junction Complex & 975957 & 71 & 130 & 145 & $2.44 \times 10^{-30}$ & $1.34 \times 10^{-28}$ \\ 
   \rowcolor{black!10}
-  Viral mRNA Translation & 192823 & 70 & 130.22 & 145.93 & $1.5135 \times 10^{-30}$ & $1.0399 \times 10^{-280}$\\
+  GTP hydrolysis and joining of the 60S ribosomal subunit & 72706 & 72 & 130 & 145 & $2.58 \times 10^{-30}$ & $1.37 \times 10^{-28}$ \\ 
   \rowcolor{black!5}
-  Eukaryotic Translation Termination & 72764 & 70 & 130.22 & 145.93 & $1.5135 \times 10^{-30}$ & $1.0399 \times 10^{-280}$\\
+  Influenza Viral RNA Transcription and Replication & 168273 & 72 & 130 & 144 & $4.01 \times 10^{-30}$ & $2.07 \times 10^{-28}$ \\ 
   \rowcolor{black!10}
-  NF-kB is activated and signals survival & 209560 & 71 & 130.22 & 145.48 & $1.8975 \times 10^{-30}$ & $1.1857 \times 10^{-280}$\\
+  Signaling by NOTCH1 HD Domain Mutants in Cancer & 2691230 & 79 & 130 & 143 & $5.99 \times 10^{-30}$ & $2.82 \times 10^{-28}$ \\ 
   \hline
 \end{tabular}
 \begin{tablenotes}
@@ -1088,6 +1193,12 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 }
 \end{table*}
 
+Signalling pathways were more strongly supported by mtSLIPT analysis of metagene pathway expression against \textit{CDH1} mutation, as shown in \ref{tab:metagene_mtSL}. Although these results were generally less statistically significant than expression analyses. Signalling pathways detected as synthetic lethal metagenes include G_${\alpha z}$, insulin-related growth factor (IGF), GABA receptor, G_${\alpha s}$, S6K1 and various toxin responses mediated by GPCRs. Metabolic processes including processing of carbohydrates and fatty acids were also implicated across these analyses.
+
+The metagene analyses differ more between expresssion and \textit{CDH1} mutation than previous analyses, with more specific signalling pathways identified in the mutation analysis. This supports the usage of a complete null mutant model in experimental testing for synthetic lethality of signalling pathways against \text{CDH1} inactivation rather than a knockdown in expression. However, low expression of partners has been used in either case to be applicable to dose-dependent pharmacological inhibition and across genes where mutations have different functional consequences, including variants of unknown significance. 
+
+These results show an independent pathway approach to detecting synthetic lethal gene functions interacting with \textit{CDH1}. Synthetic lethal metagenes, replicates support for these pathways independent of pathway size (as genes are weighted equally). The synthetic lethal analysis against low \textit{CDH1} expression support prior findings in translational and immune pathways even if they were not able to detected in an experimental screen \citep{Telford2015}. Together these findings support the role of \textit{CDH1} loss in cancer disrupting cell signalling with wider effects on protein translation and metabolism necessary for the proliferation of cancer cells. This is consistent with the GPCR pathways such as G_${\alpha s}$ signalling being supported by SLIPT gene candidates and the experimental primary siRNA screen, as shown by resampling in section \ref{chapt3:compare_pathway_perm}.
+
 %%appendix
 %\label{tab:metagene_mtSL}
 
@@ -1095,9 +1206,8 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 
 %\section{Synthetic lethality by somatic mutation}
 
-\section{Mutation analysis}
-
-Data in Appendix \ref{appendix:mutation_analysis}
+%\section{Mutation analysis}
+%Data in Appendix \ref{appendix:mutation_analysis} %%discussed above
 
 \iffalse
 \subsection{ANOVA of Expression Predictors}
@@ -1108,159 +1218,7 @@ Another approach was to only use copy number, mutation, or hyper-methylation dat
 Globally predicting gene expression across all genes from DNA copy number and somatic mutation was attempted by ANOVA. However, this was computationally challenging and gene-specific analyses would be more informative. Gene specific ANOVA and linear regression was performed but was raised more issues than it addressed. There were issues with interaction terms and mutation data, many genes were not tested for these since there were so few mutations for these genes in the dataset.  It was possible to include DNA methylation in gene-specific analyses (despite the concerns raised above) but the $R^2$ values for each gene were still generally very low and issues with insufficient mutant samples for interaction terms became worse. This means that the approach used differs for each gene making it difficult to compare them. The challenges raised here suggested that expression is very difficult to predict with other factors but including these other factors would be difficult and plagued by multiple-testing, particularly comparing between them with the current synthetic lethal prediction method. This led to investigations into the simulation of synthetic lethality.
 \fi
 
-
 \FloatBarrier
-
-\section{Global Synthetic Lethality}
-[include?]
-
-Global levels of synthetic lethality were analysed as part of my Honours project \citep{Kelly2013} to address concerns of high numbers of synthetic lethal candidates for \textit{CDH1}. This turned out to be typical for most genes in the microarray dataset. Due to newer samples and concerns about sample quality in TCGA microarrays, RNA-Seq datasets were used here. The focus of this thesis is gene expression data generated by RNA-Seq, this was replicated using the TCGA breast cancer RNA-Seq dataset on the New Zealand eScience Infrastructure Intel Pan supercomputer.
-
-\begin{figure*}[!ht]
-\begin{mdframed}
-  \begin{center}
-  \resizebox{0.75 \textwidth}{!}{
-    \includegraphics{MostSL_Summary_CDH1_FDR.pdf}
-   }
-   \end{center}
-   \caption[Synthetic lethal partners across query genes]{\small \textbf{Synthetic lethal partners across query genes.} Global synthetic lethal pairs were examined across the genome in TCGA breast expression data by applying SLIPT across query genes. The high number of predicted partners for \textit{CDH1} was typical for a human gene and lower than many other genes.
-   }
-\label{fig:global_SL}
-\end{mdframed}
-\end{figure*}
-
-
-\FloatBarrier
-
-\subsection{Hub Genes}
-
-
-\begin{table*}[!ht]
-\caption{Query synthetic lethal genes with the most SLIPT partners}
-\label{tab:gene_mostSL}
-\centering
-\resizebox{0.8 \textwidth}{!}{
-\begin{threeparttable}
-\begin{tabular}{>{\em}sl^c^c^c^c^c}
-\rowstyle{\bfseries}
-  \em{Gene} & Direction & raw p-value & p-value (FDR) & SLIPT raw p-value & SLIPT (FDR) \\ 
-  \hline
-  \rowcolor{black!10}
-  TGFBR2 & 8134 & 17982 & 17973 & 8007 & 8006 \\ 
-  \rowcolor{black!5}
-  A2M & 8571 & 17605 & 17583 & 8345 & 8339 \\ 
-  \rowcolor{black!10}
-  TNS1 & 8019 & 17949 & 17934 & 7874 & 7873 \\ 
-  \rowcolor{black!5}
-  PROS1 & 8539 & 17668 & 17642 & 8317 & 8310 \\ 
-  \rowcolor{black!10}
-  ANXA1 & 9085 & 17330 & 17302 & 8689 & 8682 \\ 
-  \rowcolor{black!5}
-  CELF2 & 8665 & 17406 & 17368 & 8370 & 8355 \\ 
-  \rowcolor{black!10}
-  BOC & 8694 & 17371 & 17348 & 8384 & 8381 \\ 
-  \rowcolor{black!5}
-  PLAGL1 & 8792 & 17361 & 17327 & 8448 & 8436 \\ 
-  \rowcolor{black!10}
-  PDGFRA & 8296 & 17650 & 17621 & 8095 & 8087 \\ 
-  \rowcolor{black!5}
-  FAM171A1 & 8874 & 17560 & 17533 & 8567 & 8562 \\ 
-  \rowcolor{black!10}
-  FAM126A & 8510 & 17383 & 17356 & 8184 & 8178 \\ 
-  \rowcolor{black!5}
-  TSHZ2 & 7942 & 17983 & 17976 & 7787 & 7786 \\ 
-  \rowcolor{black!10}
-  KCTD12 & 8366 & 17651 & 17621 & 8115 & 8108 \\ 
-  \rowcolor{black!5}
-  MAML2 & 8336 & 17537 & 17503 & 8069 & 8061 \\ 
-  \rowcolor{black!10}
-  FOXO1 & 8027 & 17753 & 17737 & 7840 & 7836 \\ 
-  \rowcolor{black!5}
-  AMOTL1 & 8425 & 17388 & 17347 & 8147 & 8139 \\ 
-  \rowcolor{black!10}
-  FAT4 & 8111 & 17750 & 17732 & 7925 & 7919 \\ 
-  \rowcolor{black!5}
-  CAV1 & 8645 & 17491 & 17464 & 8342 & 8331 \\ 
-  \rowcolor{black!10}
-  SVEP1 & 7945 & 17859 & 17842 & 7791 & 7784 \\ 
-  \rowcolor{black!5}
-  EPB41L2 & 8415 & 17327 & 17296 & 8097 & 8092 \\ 
-  \hline
-\end{tabular}
-\begin{tablenotes}
-\raggedright \small
-Genes with the most candidate SL partners SLIPT in TCGA breast expression data with the number of partner genes predicted by direction criteria and $\chi^2$ testing separately and combined as a SLIPT analysis. Where specified, the p-values for the $\chi^2$ test were adjusted for multiple tests (FDR).
-\end{tablenotes}
-\end{threeparttable}
-}
-\end{table*}
-
-\FloatBarrier
-
-\subsection{Hub Pathways}
-
-
-\begin{table*}[!ht]
-\caption{Pathways for genes with the most SLIPT partners}
-\label{tab:pathway_mostSL}
-\centering
-\resizebox{1 \textwidth}{!}{
-\begin{threeparttable}
-\begin{tabular}{lcccc}
-  \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value} & \textbf{p-value (FDR)} \\
-  \hline
-  \rowcolor{black!10}
-  Constitutive Signaling by Aberrant PI3K in Cancer &  56 &  10 & $8.4 \times 10^{-16}$ & $8.7 \times 10^{-13}$ \\ 
-  \rowcolor{black!5}
-  PI3K/AKT Signaling in Cancer &  78 &  11 & $2.1 \times 10^{-14}$ & $1.1 \times 10^{-11}$ \\ 
-  \rowcolor{black!10}
-  Role of LAT2/NTAL/LAB on calcium mobilization &  96 &  12 & $7.7 \times 10^{-14}$ & $2.2 \times 10^{-11}$ \\ 
-  \rowcolor{black!5}
-  Complement cascade &  33 &   7 & $1.2 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
-  \rowcolor{black!10}
-  Cell surface interactions at the vascular wall &  99 &  12 & $1.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
-  \rowcolor{black!5}
-  PI3K events in ERBB4 signaling &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
-  \rowcolor{black!10}
-  PIP3 activates AKT signaling &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
-  \rowcolor{black!5}
-  PI3K events in ERBB2 signaling &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
-  \rowcolor{black!10}
-  PI-3K cascade:FGFR1 &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
-  \rowcolor{black!5}
-  PI-3K cascade:FGFR2 &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
-  \rowcolor{black!10}
-  PI-3K cascade:FGFR3 &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
-  \rowcolor{black!5}
-  PI-3K cascade:FGFR4 &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
-  \rowcolor{black!10}
-  Extracellular matrix organization & 238 &  22 & $4.7 \times 10^{-13}$ & $3.6 \times 10^{-11}$ \\ 
-  \rowcolor{black!5}
-  Muscle contraction &  62 &   9 & $4.9 \times 10^{-13}$ & $3.6 \times 10^{-11}$ \\ 
-  \rowcolor{black!10}
-  PI3K/AKT activation &  90 &  11 & $5.5 \times 10^{-13}$ & $3.8 \times 10^{-11}$ \\ 
-  \rowcolor{black!5}
-  GAB1 signalosome &  91 &  11 & $7.1 \times 10^{-13}$ & $4.6 \times 10^{-11}$ \\ 
-  \rowcolor{black!10}
-  Smooth Muscle Contraction &  28 &   6 & $2.4 \times 10^{-12}$ & $1.5 \times 10^{-10}$ \\ 
-  \rowcolor{black!5}
-  Response to elevated platelet cytosolic Ca$^{2+}$ &  82 &  10 & $2.6 \times 10^{-12}$ & $1.5 \times 10^{-10}$ \\ 
-  \rowcolor{black!10}
-  Signaling by SCF-KIT & 126 &  13 & $3.0 \times 10^{-12}$ & $1.6 \times 10^{-10}$ \\ 
-  \rowcolor{black!5}
-  Signaling by FGFR & 143 &  14 & $5.0 \times 10^{-12}$ & $2.2 \times 10^{-10}$ \\ 
-   \hline
-\end{tabular}
-\begin{tablenotes}
-\raggedright \small
-Gene set over-representation analysis (hypergeometric test) for Reactome pathways in the top 500 ``hub'' genes with the most candidate synthetic lethal partners by SLIPT analysis of TCGA breast expression data
-\end{tablenotes}
-\end{threeparttable}
-}
-\end{table*}
-
-\FloatBarrier
-
 
 \section{Replication in stomach cancer}
 
@@ -2042,6 +2000,8 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 
 \subsection{Metagene Analysis} \label{chapt3:metagene_stad_exprSL}
 
+
+
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from SLIPT in stomach cancer}
 \label{tab:metagene_stad_SL}
@@ -2053,55 +2013,55 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
  Pathway & ID & Observed & Expected & $\chi^2$value & p-value & p-value (FDR) \\
   \hline
   \rowcolor{black!10}
-    Apoptotic cleavage of cell adhesion  proteins & 351906 & 106 & 50.45 & 160.39 & $1.205 \times 10^{-33}$ & $1.9906 \times 10^{-300}$\\
+  Cell-Cell communication & 1500931 & 18 & 50.4 & 110 & $7.43 \times 10^{-23}$ & $1.53 \times 10^{-20}$ \\ 
   \rowcolor{black!5}
-   \begin{tabular}[c]{@{}l@{}} Nef mediated downregulation of MHC class I complex cell surface\\ expression \end{tabular} & 164940 & 100 & 50.45 & 128.73 & $7.2777 \times 10^{-27}$ & $6.0114 \times 10^{-240}$\\
+  VEGFR2 mediated vascular permeability & 5218920 & 19 & 50.4 & 109 & $1.36 \times 10^{-22}$ & $2.49 \times 10^{-20}$ \\ 
   \rowcolor{black!10}
-  Cell-cell junction organization & 421270 & 94 & 50.45 & 125.26 & $4.0251 \times 10^{-26}$ & $2.2165 \times 10^{-230}$\\
+  Sema4D in semaphorin signaling & 400685 & 20 & 50.4 & 104 & $1.62 \times 10^{-21}$ & $2.12 \times 10^{-19}$ \\ 
   \rowcolor{black!5}
-  Cytochrome P450 - arranged by substrate type & 211897 & 96 & 50.45 & 116.16 & $3.5335 \times 10^{-24}$ & $1.2741 \times 10^{-210}$\\
+  Ion transport by P-type ATPases & 936837 & 17 & 50.4 & 100 & $8.29 \times 10^{-21}$ & $8.06 \times 10^{-19}$ \\ 
   \rowcolor{black!10}
-  Cell junction organization & 446728 & 93 & 50.45 & 115.98 & $3.8563 \times 10^{-24}$ & $1.2741 \times 10^{-210}$\\
+  Sialic acid metabolism & 4085001 & 19 & 50.4 & 95.3 & $9.95 \times 10^{-20}$ & $7.82 \times 10^{-18}$ \\ 
   \rowcolor{black!5}
-  N-Glycan antennae elongation & 975577 & 98 & 50.45 & 115.26 & $5.5032 \times 10^{-24}$ & $1.5152 \times 10^{-210}$\\
+  Synthesis of pyrophosphates in the cytosol & 1855167 & 26 & 50.4 & 94 & $1.86 \times 10^{-19}$ & $1.23 \times 10^{-17}$ \\ 
   \rowcolor{black!10}
-  N-glycan antennae elongation in the medial\/trans-Golgi & 975576 & 95 & 50.45 & 113.42 & $1.3541 \times 10^{-23}$ & $3.1958 \times 10^{-210}$\\
+  Keratan sulfate/keratin metabolism & 1638074 & 25 & 50.4 & 93.5 & $2.36 \times 10^{-19}$ & $1.44 \times 10^{-17}$ \\ 
   \rowcolor{black!5}
-  Cell-Cell communication & 1500931 & 18 & 50.45 & 109.96 & $7.426 \times 10^{-23}$ & $1.5335 \times 10^{-200}$\\
+  Ion channel transport & 983712 & 19 & 50.4 & 92.8 & $3.37 \times 10^{-19}$ & $1.99 \times 10^{-17}$ \\ 
   \rowcolor{black!10}
-  VEGFR2 mediated vascular permeability & 5218920 & 19 & 50.45 & 108.73 & $1.3555 \times 10^{-22}$ & $2.4882 \times 10^{-200}$\\
+  Keratan sulfate biosynthesis & 2022854 & 26 & 50.4 & 91.4 & $6.79 \times 10^{-19}$ & $3.62 \times 10^{-17}$ \\ 
   \rowcolor{black!5}
-  Synthesis of PE & 1483213 & 93 & 50.45 & 108.33 & $1.6505 \times 10^{-22}$ & $2.7266 \times 10^{-200}$\\
+  Arachidonic acid metabolism & 2142753 & 22 & 50.4 & 90.6 & $9.81 \times 10^{-19}$ & $5.07 \times 10^{-17}$ \\ 
   \rowcolor{black!10}
-  Lysosome Vesicle Biogenesis & 432720 & 92 & 50.45 & 105.43 & $6.8635 \times 10^{-22}$ & $1.0308 \times 10^{-190}$\\
+  RHO GTPases activate CIT & 5625900 & 22 & 50.4 & 87 & $5.80 \times 10^{-18}$ & $2.66 \times 10^{-16}$ \\ 
   \rowcolor{black!5}
-  Sema4D in semaphorin signaling & 400685 & 20 & 50.45 & 103.68 & $1.6182 \times 10^{-21}$ & $2.1167 \times 10^{-190}$\\
+  Stimuli-sensing channels & 2672351 & 25 & 50.4 & 85.8 & $1.03 \times 10^{-17}$ & $4.58 \times 10^{-16}$ \\ 
   \rowcolor{black!10}
-   \begin{tabular}[c]{@{}l@{}}Transport of glucose and other sugars, bile salts and organic acids, \\ metal ions and amine compounds \end{tabular} & 425366 & 83 & 50.45 & 103.62 & $1.6657 \times 10^{-21}$ & $2.1167 \times 10^{-190}$\\
+  Synthesis of PI & 1483226 & 19 & 50.4 & 85.6 & $1.15 \times 10^{-17}$ & $4.89 \times 10^{-16}$ \\ 
   \rowcolor{black!5}
-  Phase 1 - Functionalization of compounds & 211945 & 93 & 50.45 & 102.76 & $2.5461 \times 10^{-21}$ & $3.0044 \times 10^{-190}$\\
+  G-protein activation & 202040 & 19 & 50.4 & 85.3 & $1.34 \times 10^{-17}$ & $5.53 \times 10^{-16}$ \\ 
   \rowcolor{black!10}
-  Sphingolipid de novo biosynthesis & 1660661 & 94 & 50.45 & 102.39 & $3.0471 \times 10^{-21}$ & $3.3558 \times 10^{-190}$\\
+  NrCAM interactions & 447038 & 22 & 50.4 & 84.3 & $2.1 \times 10^{-17}$ & $8.27 \times 10^{-16}$ \\ 
   \rowcolor{black!5}
-  Transport of nucleotide sugars & 727802 & 91 & 50.45 & 101.47 & $4.7818 \times 10^{-21}$ & $4.9372 \times 10^{-190}$\\
+  Inwardly rectifying $K^+$ channels & 1296065 & 24 & 50.4 & 83.5 & $3.19 \times 10^{-17}$ & $1.22 \times 10^{-15}$ \\ 
   \rowcolor{black!10}
-  Ion transport by P-type ATPases & 936837 & 17 & 50.45 & 100.35 & $8.2923 \times 10^{-21}$ & $8.0581 \times 10^{-190}$\\
+  Calcitonin-like ligand receptors & 419812 & 20 & 50.4 & 82.2 & $6.07 \times 10^{-17}$ & $2.13 \times 10^{-15}$ \\ 
   \rowcolor{black!5}
-  PPARA activates gene expression & 1989781 & 93 & 50.45 & 99.78 & $1.0972 \times 10^{-20}$ & $1.007 \times 10^{-180}$\\
+  Prostacyclin signalling through prostacyclin receptor & 392851 & 24 & 50.4 & 81.8 & $7.27 \times 10^{-17}$ & $2.5 \times 10^{-15}$ \\ 
   \rowcolor{black!10}
-  Adherens junctions interactions & 418990 & 93 & 50.45 & 99.09 & $1.5361 \times 10^{-20}$ & $1.3356 \times 10^{-180}$\\
+  Presynaptic function of Kainate receptors & 500657 & 26 & 50.4 & 79.7 & $2.00 \times 10^{-16}$ & $6.34 \times 10^{-15}$ \\ 
   \rowcolor{black!5}
-  Tight junction interactions & 420029 & 92 & 50.45 & 98.35 & $2.2075 \times 10^{-20}$ & $1.8234 \times 10^{-180}$\\
+  ADP signalling through P2Y purinoceptor 12 & 392170 & 23 & 50.4 & 79.2 & $2.57 \times 10^{-16}$ & $7.71 \times 10^{-15}$ \\ 
   \rowcolor{black!10}
-  Sialic acid metabolism & 4085001 & 19 & 50.45 & 95.28 & $9.947 \times 10^{-20}$ & $7.8249 \times 10^{-180}$\\
+  regulation of FZD by ubiquitination & 4641263 & 22 & 50.4 & 78.8 & $3.15 \times 10^{-16}$ & $9.3 \times 10^{-15}$ \\ 
   \rowcolor{black!5}
-  Transport of inorganic cations\/anions and amino acids\/oligopeptides & 425393 & 89 & 50.45 & 94.10 & $1.7698 \times 10^{-19}$ & $1.2268 \times 10^{-170}$\\
+  Toxicity of tetanus toxin (TeNT) & 5250982 & 27 & 50.4 & 78.7 & $3.36 \times 10^{-16}$ & $9.75 \times 10^{-15}$ \\ 
   \rowcolor{black!10}
-  Biological oxidations & 211859 & 87 & 50.45 & 94.05 & $1.8182 \times 10^{-19}$ & $1.2268 \times 10^{-170}$\\
+  Gap junction degradation & 190873 & 21 & 50.4 & 78.5 & $3.66 \times 10^{-16}$ & $1.04 \times 10^{-14}$ \\ 
   \rowcolor{black!5}
-  GRB7 events in ERBB2 signaling & 1306955 & 92 & 50.45 & 94.01 & $1.8492 \times 10^{-19}$ & $1.2268 \times 10^{-170}$\\
+  Nephrin interactions & 373753 & 25 & 50.4 & 78.2 & $4.21 \times 10^{-16}$ & $1.14 \times 10^{-14}$ \\ 
   \rowcolor{black!10}
-  Synthesis of pyrophosphates in the cytosol & 1855167 & 26 & 50.45 & 94.00 & $1.8566 \times 10^{-19}$ & $1.2268 \times 10^{-170}$\\
+  GABA synthesis, release, reuptake and degradation & 888590 & 26 & 50.4 & 77 & $7.69 \times 10^{-16}$ & $1.95 \times 10^{-14}$ \\ 
   \hline
 \end{tabular}
 \begin{tablenotes}
@@ -2112,16 +2072,184 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 }
 \end{table*}
 
+Signalling and immune pathways were also supported by mtSLIPT analysis of metagene pathway expression against \textit{CDH1} mutation, as shown in \ref{tab:metagene_mtSL}. Although these results were generally less statistically significant than expression analyses. Signalling pathways detected as synthetic lethal metagenes include prostacyclin, SCF-KIT, ERK, MAPK, NGF, VEGF, and PI3K/AKT. The innate immune response, the inflammasome, and integrin signaling were also implicated to be synthetic lethal with \textit{CDH1 mutations}. Cell surface interactions, cholesterol biosynthesis, and platelet homeostasis also support the role of extracellular processes in proliferation of \textit{CDH1} deficient cancers and interactions of \textit{CDH1} with the extracellular environment that was not tested in the cell line experimental screen.
+
 
 %%appendix
 %\label{tab:metagene_stad_mtSL}
 
 \FloatBarrier
 
+\section{Global Synthetic Lethality}
+[include?]
+
+Global levels of synthetic lethality were analysed to address concerns raised by the high numbers of synthetic lethal candidates for \textit{CDH1}. The SLIPT procedure (as described in section \ref{methods:SLIPT}) was performed with each possible query gene from the TCGA breast cancer RNA-Seq dataset. Due to the computational demands of this procedure, it was performed on the New Zealand eScience Infrastructure Intel Pan supercomputer (as described in section \ref{methods:HPC}).
+
+The observed number of SLIPT appears to be typical for most genes in the TCGA breast RNA- Seq dataset as shown in Figure \ref{fig:global_SL}. This figure was actually lower than the majority (95\%) of genes tested, although \textit{CDH1} was ranked higher for a similar in SLIPT analysis of TCGA stomach cancer data, shown in Figure \ref{fig:global_SL_stad}. The differences in sample size make these analyses difficult to compare but (in either case), the number of partners detected for \textit{CDH1} is not unexpected, eeven when adjust for multiple comparisons across candidate partners.
+
+\begin{figure*}[!ht]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \includegraphics{MostSL_Summary_CDH1_FDR.pdf}
+   }
+   \end{center}
+   \caption[Synthetic lethal partners across query genes]{\small \textbf{Synthetic lethal partners across query genes.} Global synthetic lethal pairs were examined across the genome in TCGA breast expression data by applying SLIPT across query genes. The high number of predicted partners for \textit{CDH1} was typical for a human gene and lower than many other genes.
+   }
+\label{fig:global_SL}
+\end{mdframed}
+\end{figure*}
+
+The number of detected candidates reported here is higher than in Figures \ref{fig:Venn_allgenes} and \ref{fig:Venn_allgenes_stad} because these exlcuded genes not tested by the siRNA primary screen \citep{Telford2015} for comparison with it. For an statistically rigorous measure of global synthetic lethality, multiple comparison procedures would need to be performed for all pairs of genes tested. However, only partner genes for each query SLIPT analysis were performed for the purposes of comparing the number of partners predicted with those observed for \textit{CDH1} throughout this thesis.
+
+
+\FloatBarrier
+
+\subsection{Hub Genes}
+
+The genes with the most synthetic lethal interactions by this SLIPT analysis are the ``hub'' genes of a synthetic lethal network. These genes with the highest number of candidate partners detected by SLIPT in TCGA breast cancer expression data are summarised in Table \ref{tab:gene_mostSL}.  These include several genes involved in cellular signalling such as \textit{TGFBR2}, \textit{PDGFRA}, \textit{FAM126A}, \textit{KCTD12}, \textit{MAML2}, and \textit{CAV1}. Gene regulation including chromatin, DNA, and RNA bindings genes were also observed as hub genes such as \textit{CELF2}, \textit{PLAGL1}, \textit{TSHZ2}, \textit{FOXO1}, and \textit{SVEP1}. Genes involved in the cellular membrane such as \textit{ANXA1} and \textit{FAM171A1} were also observed in addition to genes specifically implicated in cell adhesion and tight junctions such as \textit{TNS1}, \textit{BOC}, \textit{AMOTL1}, \textit{FAT4}, and \textit{EPB41L2}.
+
+\begin{table*}[!ht]
+\caption{Query synthetic lethal genes with the most SLIPT partners}
+\label{tab:gene_mostSL}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{>{\em}sl^c^c^c^c^c}
+\rowstyle{\bfseries}
+  \em{Gene} & Direction & raw p-value & p-value (FDR) & SLIPT raw p-value & SLIPT (FDR) \\ 
+  \hline
+  \rowcolor{black!10}
+  TGFBR2 & 8134 & 17982 & 17973 & 8007 & 8006 \\ 
+  \rowcolor{black!5}
+  A2M & 8571 & 17605 & 17583 & 8345 & 8339 \\ 
+  \rowcolor{black!10}
+  TNS1 & 8019 & 17949 & 17934 & 7874 & 7873 \\ 
+  \rowcolor{black!5}
+  PROS1 & 8539 & 17668 & 17642 & 8317 & 8310 \\ 
+  \rowcolor{black!10}
+  ANXA1 & 9085 & 17330 & 17302 & 8689 & 8682 \\ 
+  \rowcolor{black!5}
+  CELF2 & 8665 & 17406 & 17368 & 8370 & 8355 \\ 
+  \rowcolor{black!10}
+  BOC & 8694 & 17371 & 17348 & 8384 & 8381 \\ 
+  \rowcolor{black!5}
+  PLAGL1 & 8792 & 17361 & 17327 & 8448 & 8436 \\ 
+  \rowcolor{black!10}
+  PDGFRA & 8296 & 17650 & 17621 & 8095 & 8087 \\ 
+  \rowcolor{black!5}
+  FAM171A1 & 8874 & 17560 & 17533 & 8567 & 8562 \\ 
+  \rowcolor{black!10}
+  FAM126A & 8510 & 17383 & 17356 & 8184 & 8178 \\ 
+  \rowcolor{black!5}
+  TSHZ2 & 7942 & 17983 & 17976 & 7787 & 7786 \\ 
+  \rowcolor{black!10}
+  KCTD12 & 8366 & 17651 & 17621 & 8115 & 8108 \\ 
+  \rowcolor{black!5}
+  MAML2 & 8336 & 17537 & 17503 & 8069 & 8061 \\ 
+  \rowcolor{black!10}
+  FOXO1 & 8027 & 17753 & 17737 & 7840 & 7836 \\ 
+  \rowcolor{black!5}
+  AMOTL1 & 8425 & 17388 & 17347 & 8147 & 8139 \\ 
+  \rowcolor{black!10}
+  FAT4 & 8111 & 17750 & 17732 & 7925 & 7919 \\ 
+  \rowcolor{black!5}
+  CAV1 & 8645 & 17491 & 17464 & 8342 & 8331 \\ 
+  \rowcolor{black!10}
+  SVEP1 & 7945 & 17859 & 17842 & 7791 & 7784 \\ 
+  \rowcolor{black!5}
+  EPB41L2 & 8415 & 17327 & 17296 & 8097 & 8092 \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Genes with the most candidate SL partners SLIPT in TCGA breast expression data with the number of partner genes predicted by direction criteria and $\chi^2$ testing separately and combined as a SLIPT analysis. Where specified, the p-values for the $\chi^2$ test were adjusted for multiple tests (FDR).
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+Genes involved in adhesion and tight junctions were also hub genes in stomach cancer (shown in Table \ref{tab:gene_mostSL_stad}) such as \textit{HEG1}, \textit{FAT4}, \textit{NFASC}, \textit{LAMA4}, \textit{LAMC1}, \textit{TNS1}, and \textit{AMOTL1}. These also included cytoskeletal genes such as \textit{ANK2}, \textit{TTC28}, and \textit{MACF1}. Cancer genes were also among hub genes across breast and stomach cancer such as \textit{BOC}, \textit{FAT4}, and \textit{MRVI1}. 
+
+It is therefore unsurprising that signalling and regulatory genes have been detected throughout this thesis. Not only are they suitable targets for anti-cancer therapy, they are also highly interacting genes themselves and so it is plausible that their interactions would be detectable by SLIPT. This is consistent with the established role of abberant signalling and gene regulation in proliferation and survival of tumours and the importance of these pathways in development with highly redundant functions across many genes under complex regulation. These are also highly amenable to detection by SLIPT analysis of expression data since their functions are dynamically regulated with corresponding changes in expression.
+
+Cytoskeletal, membrane bound, and extracellular matrix genes are also among highly interacting synthetic lethal hubs, including focal adhesion, tight junctions, microtubules, and fibronectin. These support the use of synthetic lethal interactions to target \textit{CDH1}, as a tumour suppressor gene involved in these functions. Cellular structure and cell-cell interactions are thus important functions with highly redundant genes for which there are many feasible synthetic lethal interactions by which to understand regulation of cellular functions. These functions may also be exploited as vulnerabilities in cancer as they are frequently disruped in cancers, including HDGC where loss of \textit{CDH1} is a driver of cancer proliferation and malignancy.  
+
+
+\FloatBarrier
+
+\subsection{Hub Pathways}
+
+Pathways over-represented among TCGA breast cancer hub genes (as shown in Table \ref{tab:pathway_mostSL}) particularly support the importance of signalling pathways, such as the PI3K/AKT pathway, as synthetic lethal hubs. The highly redundant natures of cell-cell interaction and the extracellular matrix functions was also further supported.
+
+
+\begin{table*}[!ht]
+\caption{Pathways for genes with the most SLIPT partners}
+\label{tab:pathway_mostSL}
+\centering
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lcccc}
+  \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value} & \textbf{p-value (FDR)} \\
+  \hline
+  \rowcolor{black!10}
+  Constitutive Signaling by Aberrant PI3K in Cancer &  56 &  10 & $8.4 \times 10^{-16}$ & $8.7 \times 10^{-13}$ \\ 
+  \rowcolor{black!5}
+  PI3K/AKT Signaling in Cancer &  78 &  11 & $2.1 \times 10^{-14}$ & $1.1 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  Role of LAT2/NTAL/LAB on calcium mobilization &  96 &  12 & $7.7 \times 10^{-14}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  Complement cascade &  33 &   7 & $1.2 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  Cell surface interactions at the vascular wall &  99 &  12 & $1.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  PI3K events in ERBB4 signaling &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  PIP3 activates AKT signaling &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  PI3K events in ERBB2 signaling &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  PI-3K cascade:FGFR1 &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  PI-3K cascade:FGFR2 &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  PI-3K cascade:FGFR3 &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  PI-3K cascade:FGFR4 &  87 &  11 & $2.6 \times 10^{-13}$ & $2.2 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  Extracellular matrix organization & 238 &  22 & $4.7 \times 10^{-13}$ & $3.6 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  Muscle contraction &  62 &   9 & $4.9 \times 10^{-13}$ & $3.6 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  PI3K/AKT activation &  90 &  11 & $5.5 \times 10^{-13}$ & $3.8 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  GAB1 signalosome &  91 &  11 & $7.1 \times 10^{-13}$ & $4.6 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  Smooth Muscle Contraction &  28 &   6 & $2.4 \times 10^{-12}$ & $1.5 \times 10^{-10}$ \\ 
+  \rowcolor{black!5}
+  Response to elevated platelet cytosolic Ca$^{2+}$ &  82 &  10 & $2.6 \times 10^{-12}$ & $1.5 \times 10^{-10}$ \\ 
+  \rowcolor{black!10}
+  Signaling by SCF-KIT & 126 &  13 & $3.0 \times 10^{-12}$ & $1.6 \times 10^{-10}$ \\ 
+  \rowcolor{black!5}
+  Signaling by FGFR & 143 &  14 & $5.0 \times 10^{-12}$ & $2.2 \times 10^{-10}$ \\ 
+   \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in the top 500 ``hub'' genes with the most candidate synthetic lethal partners by SLIPT analysis of TCGA breast expression data
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+Pathway over-representation for synthetic lethal hub genes was replicated in TCGA stomach cancer expression data. However, these pathways differ considerably from breast cancer, as shown in Table \ref{tab:pathway_mostSL_stad}. Cell-cell interactions and extracellular matrix pathways, including elastic fibres, were also among the hub genes for stomach cancer. The signalling pathways differ as expected in a different tissue type, although BMP and PAK signalling were detected as hub gene functions.
+
+\FloatBarrier
+
 \section{Replication in cell line encyclopaedia}
 
 As breast cancer cell lines are the experimental system in which many cancer genetics and drug targets are investigated, these were analysed in addition to patient samples from TCGA. The cancer cell line encyclopaedia (CCLE) is a resource for genomics profiles across a range of cell lines. These have also been used to generate synthetic lethal candidates for comparison to those in experimental screen and predictions from TCGA expression data.
-A transcriptome experiment has been conducted by the Cancer Genetics Laboratory to test their \textit{CDH1}$^{-/-}$ null MCF10A cell lines compared to an otherwise isogenic wildtype \citep{Chen2014}. While differential expression analysis was inconclusive due to few technical replicates, this data was also useful to determine genes which were not detectable in MCF10A cell lines which would not be expected to detect synthetic lethality in siRNA screen data even if they were predicted to be synthetic lethal in expression data. 
+
 
 
 \begin{table*}[!ht]
@@ -2514,6 +2642,8 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{table*}
 
 
+
+\FloatBarrier
 
 
 
