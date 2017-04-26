@@ -19,7 +19,7 @@
 \section{Sample Correlation}
 \label{appendix:sample_correlation}
 
-Samples were excluded from expression analysis based on sample correlations and the clustering analysis presented below, as described in section \ref{methods:sample_qc}.  
+Samples were excluded from expression analysis based on sample correlations and the clustering analysis presented below, as described in Section~\ref{methods:sample_qc}.  
 
 \begin{figure*}[!ht]
 \begin{mdframed}
@@ -28,7 +28,7 @@ Samples were excluded from expression analysis based on sample correlations and 
     \includegraphics{Raw(log)_Corr_eudist_Cut_part_Pub.png}
    }
    \end{center}
-   \caption[Correlation profiles of removed samples]{\small \textbf{Correlation profiles of removed samples.} Correlation matrix heatmap (Euclidean distance) of all samples in TCGA breast cancer dataset (left) clustered for all samples against removed samples (top): tissue source site (TSS), sample type with reds for tumour and greens for normal, patient (A2QH in pink), with varied analyte and plate (corresponding to batch in Table \ref{tab:qc}). Excluded samples cluster at the bottom and annotation (left) show  shared properties between samples in the dataset.
+   \caption[Correlation profiles of removed samples]{\small \textbf{Correlation profiles of removed samples.} Correlation matrix heatmap (Euclidean distance) of all samples in TCGA breast cancer dataset (left) clustered for all samples against removed samples (top): tissue source site (TSS), sample type with reds for tumour and greens for normal, patient (A2QH in pink), with varied analyte and plate (corresponding to batch in Table~\ref{tab:qc}). Excluded samples cluster at the bottom and annotation (left) show  shared properties between samples in the dataset.
    }
 \label{fig:corr_map_part}
 \end{mdframed}
@@ -51,9 +51,9 @@ Samples were excluded from expression analysis based on sample correlations and 
 \section{Replicate Samples in TCGA Breast}
 \label{appendix:replicate_samples}
 
-Replicate samples were picked where possible from the TCGA breast cancer gene expression data to examine for sample quality. Independent samples of the same tumour are expected to have very high Pearson's correlation between their expression profiles unless there were issues with sample collection or preparation and are thus an indicator of sample quality. The log-transformed raw read counts for replicate samples were examined in Figures \ref{fig:rep_cutcut}\nobreakdash--\ref{fig:rep_keepcut}. These were examined before normalisation which would be expected to increase sample concordance.
+Replicate samples were picked where possible from the TCGA breast cancer gene expression data to examine for sample quality. Independent samples of the same tumour are expected to have very high Pearson's correlation between their expression profiles unless there were issues with sample collection or preparation and are thus an indicator of sample quality. The log-transformed raw read counts for replicate samples were examined in Figures~\ref{fig:rep_cutcut}\nobreakdash--\ref{fig:rep_keepcut}. These were examined before normalisation which would be expected to increase sample concordance.
 
-Another consideration are the samples which were removed for quality concerns (in section \ref{methods:sample_qc}). While these were selected by unbiased hierarchical clustering (See Figure \ref{fig:corr_map}), it is notable that many of the exluded (tumour) samples were performed in replicate despite relatively few replicate samples in the overall dataset. These samples correlate poorly with the rest of the dataset, in addition to with replicate samples.
+Another consideration are the samples which were removed for quality concerns (in Section~\ref{methods:sample_qc}). While these were selected by unbiased hierarchical clustering (See Figure~\ref{fig:corr_map}), it is notable that many of the exluded (tumour) samples were performed in replicate despite relatively few replicate samples in the overall dataset. These samples correlate poorly with the rest of the dataset, in addition to with replicate samples.
 
 \begin{figure*}[!hb]
 \begin{mdframed}
