@@ -142,62 +142,68 @@
 \BOOKMARK [2][-]{subsection.4.5.1}{Hub Genes}{section.4.5}% 142
 \BOOKMARK [2][-]{subsection.4.5.2}{Hub Pathways}{section.4.5}% 143
 \BOOKMARK [1][-]{section.4.6}{Replication in cell line encyclopaedia}{chapter.4}% 144
-\BOOKMARK [1][-]{section.4.7}{Summary}{chapter.4}% 145
-\BOOKMARK [0][-]{chapter.5}{Synthetic Lethal Pathway Structure}{}% 146
-\BOOKMARK [1][-]{section.5.1}{Reactome Network structure and Information Centrality as a measure of gene essentiality}{chapter.5}% 147
-\BOOKMARK [1][-]{section.5.2}{Synthetic lethal genes in synthetic lethal pathways}{chapter.5}% 148
-\BOOKMARK [1][-]{section.5.3}{Centrality and connectivity of synthetic lethal genes}{chapter.5}% 149
-\BOOKMARK [1][-]{section.5.4}{Upstream or downstream synthetic lethal candidates}{chapter.5}% 150
-\BOOKMARK [1][-]{section.5.5}{Hierachical approach}{chapter.5}% 151
-\BOOKMARK [1][-]{section.5.6}{Discussion}{chapter.5}% 152
-\BOOKMARK [1][-]{section.5.7}{Conclusion}{chapter.5}% 153
-\BOOKMARK [0][-]{chapter.6}{Simulation and Modeling of Synthetic Lethal Pathways}{}% 154
-\BOOKMARK [1][-]{section.6.1}{Simulations and Modelling Synthetic Lethality in Expression Data}{chapter.6}% 155
-\BOOKMARK [1][-]{section.6.2}{Simulations over simple graph structures}{chapter.6}% 156
-\BOOKMARK [2][-]{subsection.6.2.1}{Performance}{section.6.2}% 157
-\BOOKMARK [2][-]{subsection.6.2.2}{Synthetic lethality across graph stuctures}{section.6.2}% 158
-\BOOKMARK [2][-]{subsection.6.2.3}{Performance with inhibition links}{section.6.2}% 159
-\BOOKMARK [2][-]{subsection.6.2.4}{Performance with 20,000 genes}{section.6.2}% 160
-\BOOKMARK [1][-]{section.6.3}{Simulations over pathway-based graphs}{chapter.6}% 161
-\BOOKMARK [1][-]{section.6.4}{Comparing methods}{chapter.6}% 162
-\BOOKMARK [2][-]{subsection.6.4.1}{SLIPT and Chi-Squared}{section.6.4}% 163
-\BOOKMARK [3][-]{subsubsection.6.4.1.1}{Correlated query genes}{subsection.6.4.1}% 164
-\BOOKMARK [2][-]{subsection.6.4.2}{Correlation}{section.6.4}% 165
-\BOOKMARK [2][-]{subsection.6.4.3}{Bimodality with BiSEp}{section.6.4}% 166
-\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 167
-\BOOKMARK [1][-]{section.7.1}{Significance}{chapter.7}% 168
-\BOOKMARK [1][-]{section.7.2}{Future Directions}{chapter.7}% 169
-\BOOKMARK [1][-]{section.7.3}{Conclusion}{chapter.7}% 170
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 171
-\BOOKMARK [0][-]{chapter.8}{References}{}% 172
-\BOOKMARK [0][-]{appendix.A}{Sample Quality}{}% 173
-\BOOKMARK [1][-]{section.A.1}{Sample Correlation}{appendix.A}% 174
-\BOOKMARK [1][-]{section.A.2}{Replicate Samples in TCGA Breast}{appendix.A}% 175
-\BOOKMARK [0][-]{appendix.B}{Software Used for Thesis}{}% 176
-\BOOKMARK [0][-]{appendix.C}{Secondary Screen Data}{}% 177
-\BOOKMARK [0][-]{appendix.D}{Mutation Analysis in Breast Cancer}{}% 178
-\BOOKMARK [1][-]{section.D.1}{Synthetic Lethal Genes and Pathways}{appendix.D}% 179
-\BOOKMARK [1][-]{section.D.2}{Synthetic Lethal Expression Profiles}{appendix.D}% 180
-\BOOKMARK [1][-]{section.D.3}{Comparison to Primary Screen}{appendix.D}% 181
-\BOOKMARK [2][-]{subsection.D.3.1}{Resampling Analysis}{section.D.3}% 182
-\BOOKMARK [1][-]{section.D.4}{Compare SLIPT genes}{appendix.D}% 183
-\BOOKMARK [1][-]{section.D.5}{Metagene Analysis}{appendix.D}% 184
-\BOOKMARK [1][-]{section.D.6}{Mutation Variation}{appendix.D}% 185
-\BOOKMARK [2][-]{subsection.D.6.1}{Mutation Frequency}{section.D.6}% 186
-\BOOKMARK [2][-]{subsection.D.6.2}{PI3K Mutation Expression}{section.D.6}% 187
-\BOOKMARK [0][-]{appendix.E}{Metagene Expression Profiles}{}% 188
-\BOOKMARK [0][-]{appendix.F}{Stomach Expression Analysis}{}% 189
-\BOOKMARK [1][-]{section.F.1}{Synthetic Lethal Genes and Pathways}{appendix.F}% 190
-\BOOKMARK [1][-]{section.F.2}{Comparison to Primary Screen}{appendix.F}% 191
-\BOOKMARK [2][-]{subsection.F.2.1}{Resampling Analysis}{section.F.2}% 192
-\BOOKMARK [1][-]{section.F.3}{Metagene Analysis}{appendix.F}% 193
-\BOOKMARK [0][-]{appendix.G}{Stomach Mutation Analysis}{}% 194
-\BOOKMARK [1][-]{section.G.1}{Synthetic Lethal Genes and Pathways}{appendix.G}% 195
-\BOOKMARK [1][-]{section.G.2}{Synthetic Lethal Expression Profiles}{appendix.G}% 196
-\BOOKMARK [1][-]{section.G.3}{Comparison to Primary Screen}{appendix.G}% 197
-\BOOKMARK [2][-]{subsection.G.3.1}{Resampling Analysis}{section.G.3}% 198
-\BOOKMARK [1][-]{section.G.4}{Metagene Analysis}{appendix.G}% 199
-\BOOKMARK [0][-]{appendix.H}{Global Synthetic Lethality in Stomach Cancer}{}% 200
-\BOOKMARK [1][-]{section.H.1}{Hub Genes}{appendix.H}% 201
-\BOOKMARK [1][-]{section.H.2}{Hub Pathways}{appendix.H}% 202
-\BOOKMARK [0][-]{appendix.I}{Replication in cell line encyclopaedia}{}% 203
+\BOOKMARK [1][-]{section.4.7}{Discussion}{chapter.4}% 145
+\BOOKMARK [2][-]{subsection.4.7.1}{Strengths of the SLIPT Methodology}{section.4.7}% 146
+\BOOKMARK [2][-]{subsection.4.7.2}{Syntheic lethal Pathways for E-cadherin}{section.4.7}% 147
+\BOOKMARK [2][-]{subsection.4.7.3}{Replication and Validation}{section.4.7}% 148
+\BOOKMARK [3][-]{subsubsection.4.7.3.1}{Integration with siRNA Screening}{subsection.4.7.3}% 149
+\BOOKMARK [3][-]{subsubsection.4.7.3.2}{Replication across Tissues and Cell lines}{subsection.4.7.3}% 150
+\BOOKMARK [1][-]{section.4.8}{Summary}{chapter.4}% 151
+\BOOKMARK [0][-]{chapter.5}{Synthetic Lethal Pathway Structure}{}% 152
+\BOOKMARK [1][-]{section.5.1}{Reactome Network structure and Information Centrality as a measure of gene essentiality}{chapter.5}% 153
+\BOOKMARK [1][-]{section.5.2}{Synthetic lethal genes in synthetic lethal pathways}{chapter.5}% 154
+\BOOKMARK [1][-]{section.5.3}{Centrality and connectivity of synthetic lethal genes}{chapter.5}% 155
+\BOOKMARK [1][-]{section.5.4}{Upstream or downstream synthetic lethal candidates}{chapter.5}% 156
+\BOOKMARK [1][-]{section.5.5}{Hierachical approach}{chapter.5}% 157
+\BOOKMARK [1][-]{section.5.6}{Discussion}{chapter.5}% 158
+\BOOKMARK [1][-]{section.5.7}{Conclusion}{chapter.5}% 159
+\BOOKMARK [0][-]{chapter.6}{Simulation and Modeling of Synthetic Lethal Pathways}{}% 160
+\BOOKMARK [1][-]{section.6.1}{Simulations and Modelling Synthetic Lethality in Expression Data}{chapter.6}% 161
+\BOOKMARK [1][-]{section.6.2}{Simulations over simple graph structures}{chapter.6}% 162
+\BOOKMARK [2][-]{subsection.6.2.1}{Performance}{section.6.2}% 163
+\BOOKMARK [2][-]{subsection.6.2.2}{Synthetic lethality across graph stuctures}{section.6.2}% 164
+\BOOKMARK [2][-]{subsection.6.2.3}{Performance with inhibition links}{section.6.2}% 165
+\BOOKMARK [2][-]{subsection.6.2.4}{Performance with 20,000 genes}{section.6.2}% 166
+\BOOKMARK [1][-]{section.6.3}{Simulations over pathway-based graphs}{chapter.6}% 167
+\BOOKMARK [1][-]{section.6.4}{Comparing methods}{chapter.6}% 168
+\BOOKMARK [2][-]{subsection.6.4.1}{SLIPT and Chi-Squared}{section.6.4}% 169
+\BOOKMARK [3][-]{subsubsection.6.4.1.1}{Correlated query genes}{subsection.6.4.1}% 170
+\BOOKMARK [2][-]{subsection.6.4.2}{Correlation}{section.6.4}% 171
+\BOOKMARK [2][-]{subsection.6.4.3}{Bimodality with BiSEp}{section.6.4}% 172
+\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 173
+\BOOKMARK [1][-]{section.7.1}{Significance}{chapter.7}% 174
+\BOOKMARK [1][-]{section.7.2}{Future Directions}{chapter.7}% 175
+\BOOKMARK [1][-]{section.7.3}{Conclusion}{chapter.7}% 176
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 177
+\BOOKMARK [0][-]{chapter.8}{References}{}% 178
+\BOOKMARK [0][-]{appendix.A}{Sample Quality}{}% 179
+\BOOKMARK [1][-]{section.A.1}{Sample Correlation}{appendix.A}% 180
+\BOOKMARK [1][-]{section.A.2}{Replicate Samples in TCGA Breast}{appendix.A}% 181
+\BOOKMARK [0][-]{appendix.B}{Software Used for Thesis}{}% 182
+\BOOKMARK [0][-]{appendix.C}{Secondary Screen Data}{}% 183
+\BOOKMARK [0][-]{appendix.D}{Mutation Analysis in Breast Cancer}{}% 184
+\BOOKMARK [1][-]{section.D.1}{Synthetic Lethal Genes and Pathways}{appendix.D}% 185
+\BOOKMARK [1][-]{section.D.2}{Synthetic Lethal Expression Profiles}{appendix.D}% 186
+\BOOKMARK [1][-]{section.D.3}{Comparison to Primary Screen}{appendix.D}% 187
+\BOOKMARK [2][-]{subsection.D.3.1}{Resampling Analysis}{section.D.3}% 188
+\BOOKMARK [1][-]{section.D.4}{Compare SLIPT genes}{appendix.D}% 189
+\BOOKMARK [1][-]{section.D.5}{Metagene Analysis}{appendix.D}% 190
+\BOOKMARK [1][-]{section.D.6}{Mutation Variation}{appendix.D}% 191
+\BOOKMARK [2][-]{subsection.D.6.1}{Mutation Frequency}{section.D.6}% 192
+\BOOKMARK [2][-]{subsection.D.6.2}{PI3K Mutation Expression}{section.D.6}% 193
+\BOOKMARK [0][-]{appendix.E}{Metagene Expression Profiles}{}% 194
+\BOOKMARK [0][-]{appendix.F}{Stomach Expression Analysis}{}% 195
+\BOOKMARK [1][-]{section.F.1}{Synthetic Lethal Genes and Pathways}{appendix.F}% 196
+\BOOKMARK [1][-]{section.F.2}{Comparison to Primary Screen}{appendix.F}% 197
+\BOOKMARK [2][-]{subsection.F.2.1}{Resampling Analysis}{section.F.2}% 198
+\BOOKMARK [1][-]{section.F.3}{Metagene Analysis}{appendix.F}% 199
+\BOOKMARK [0][-]{appendix.G}{Stomach Mutation Analysis}{}% 200
+\BOOKMARK [1][-]{section.G.1}{Synthetic Lethal Genes and Pathways}{appendix.G}% 201
+\BOOKMARK [1][-]{section.G.2}{Synthetic Lethal Expression Profiles}{appendix.G}% 202
+\BOOKMARK [1][-]{section.G.3}{Comparison to Primary Screen}{appendix.G}% 203
+\BOOKMARK [2][-]{subsection.G.3.1}{Resampling Analysis}{section.G.3}% 204
+\BOOKMARK [1][-]{section.G.4}{Metagene Analysis}{appendix.G}% 205
+\BOOKMARK [0][-]{appendix.H}{Global Synthetic Lethality in Stomach Cancer}{}% 206
+\BOOKMARK [1][-]{section.H.1}{Hub Genes}{appendix.H}% 207
+\BOOKMARK [1][-]{section.H.2}{Hub Pathways}{appendix.H}% 208
+\BOOKMARK [0][-]{appendix.I}{Replication in cell line encyclopaedia}{}% 209
