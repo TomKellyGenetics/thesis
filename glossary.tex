@@ -7,6 +7,97 @@
   description={Transcriptome data from sequencing RNA}
 }
 
+
+\newglossaryentry{Sanger}{
+  name=Sanger,
+  description={A dideoxy chain termination method for DNA sequencing (named after Fred Sanger)}
+}
+
+\newglossaryentry{genomics}{
+  name=genomics,
+  description={An approach or technology designed to generate or use data from all genes in the genome},
+  plural=genome %%switch
+}
+
+\newglossaryentry{omics}{
+  name=omics,
+  description={A rationale for applying molecular studies across all of the genes in the genome or biomolecules in the cell},
+  plural=omic %%switch
+}
+
+\newglossaryentry{transcriptome}{
+  name=transcriptome,
+  description={An analysis of all the genes expressed in the genome},
+  plural=transcriptomics
+}
+
+\newglossaryentry{metagenomics}{
+  name=metagenomics,
+  description={An analysis of all the genes and genomes in a community},
+  plural=metagenome %%switch
+}
+
+\newglossaryentry{epigenome}{
+  name=epigenome,
+  description={An analysis of epigenetic modifications of all genes in the genome},
+  plural=epigenomics
+}
+
+\newglossaryentry{proteome}{
+  name=proteome,
+  description={An analysis of all the proteins expressed from the genome},
+  plural=proteomics
+}
+
+\newglossaryentry{metabolome}{
+  name=metabolome,
+  description={An analysis of all the metabolites and enzymes in the cell},
+  plural=metabolomics
+}
+
+\newglossaryentry{methylome}{
+  name=methylome,
+  description={An analysis of DNA methylation throughout the genome},
+  plural=methylomics
+}
+
+\newglossaryentry{exome}{
+  name=exome,
+  description={An approach or technology designed to generate or use data from all genes in the genome}
+}
+
+\newglossaryentry{bioinformatics}{
+  name=bioinformatics,
+  description={Statistical or computational approaches to biological data or research tools},
+  plural=bioinformatic %%switch
+}
+
+\newglossaryentry{InDel}
+{
+  name=InDel,
+  description={Changes to DNA sequence by insertion or deletion},
+  plural=InDels
+}
+
+\newglossaryentry{microRNA}
+{
+  name=microRNA,
+  description={Short RNA molecules generally regarded to regulate gene expression by binding to mRNA},
+  plural=microRNAs
+}
+
+\newglossaryentry{synthetic lethal}
+{
+  name=synthetic lethality,
+  description={Genetic interactions where inactivation of multiple genes is inviable (or deleterious) when they are viable if inactivated separately},
+  plural=synthetic lethality
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 %microarray
 %E-cadherin / CDH1
 %copy number
@@ -77,31 +168,39 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Acronym terms
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newacronym[description={Area under the reciever operating characteristic (curve)}]{AUROC}{AUROC}{area under the reciever operating characteristic}
+
+\newacronym[description={Reciever operating characteristic (curve)}]{ROC}{ROC}{reciever operating characteristic}
+
+\newacronym[description={Next-generation sequencing}]{NGS}{NGS}{``Next-Generation Sequencing''}
 
 \newacronym[description={Deoxyribonucleic acid}]{dna}{DNA}{deoxyribonucleic acid}
 
 \newacronym[description={Ribonucleic acid}]{rna}{RNA}{ribonucleic acid}
 
-\newacronym[description={Messenger ribonucleic acid}]{mrna}{mRNA}{messenger ribonucleic acid}
+\newacronym[description={Messenger ribonucleic acid}]{mRNA}{mRNA}{messenger ribonucleic acid}
+
+\newacronym[description={microRNA}]{miRNA}{miRNA}{miRNA}
 
 \newacronym[description={Short interfering ribonucleic acid}]{sirna}{siRNA}{short interfering ribonucleic acid}
 
 \newacronym[description={Short hairpin ribonucleic acid}]{shrna}{shRNA}{short hairpin ribonucleic acid}
 
-\newacronym[description={Ribonucleic acid}]{rrna}{rRNA}{ribonucleic acid}
+\newacronym[description={Ribonucleic acid}]{rRNA}{rRNA}{ribonucleic acid}
 
 \newacronym[description={Transfer ribonucleic acid}]{trna}{tRNA}{transfer ribonucleic acid}
 
-\newacronym[description={Complementary deoxyribonucleic acid (from mRNA)}]{cdna}{cDNA}{deoxyribonucleic acid}
+\newacronym[description={Complementary deoxyribonucleic acid (from mRNA)}]{cDNA}{cDNA}{deoxyribonucleic acid}
 
-\newacronym[description={Polymerase chain reaction}]{PCR}{PCR}{PCR}
+\newacronym[description={Polymerase chain reaction}]{PCR}{PCR}{polymerase chain reaction}
 
-\newacronym[description={Quantitative (real-time) polymerase chain reaction}]{qPCR}{qPCR}{qPCR}
+\newacronym[description={Quantitative (real-time) polymerase chain reaction}]{qPCR}{qPCR}{quantitative PCR}
 
 \newacronym[description={Restriction fragment length polymorphism}]{RFLP}{RFLP}{restriction fragment length polymorphism}
 
+\newacronym[description={Single nucleotide polymorphism}]{SNP}{SNP}{single nucleotide polymorphism}
 
 %SLIPT
 %DAISY
@@ -125,3 +224,11 @@
 %caArray
 
 %GPCR
+
+%%linked entry
+
+\newglossaryentry{gls-OWD} {
+  name={One-Way Delay},
+  description={The time a packet uses through a network from one host to another},
+}
+\newacronym[see={[Glossary:]{gls-OWD}}]{OWD}{OWD}{One-Way Delay\glsadd{gls-OWD}}
