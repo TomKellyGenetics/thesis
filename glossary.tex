@@ -2,11 +2,45 @@
 %% Glossary terms
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newglossaryentry{rnaseq}{
+
+
+\newglossaryentry{pleiotropy}{
+  name=pleiotropy,
+  description={A gene which has multiple biological functions},
+  plural=pleiotropic
+}
+
+\newglossaryentry{E-cadherin}{
+  name=E-cadherin,
+  description={Epithelial cadherin (calcium-dependent adhesion), a cell-adhesion protein encoded by the tumour suppressor gene \textit{CDH1}}
+}
+
+
+\newglossaryentry{Pan cancer}{
+  name=Pan cancer,
+  description={Study or analysis or cancers across tissue of origin}
+}
+
+
+\newglossaryentry{RNA-Seq}{
   name=RNA-Seq,
   description={Transcriptome data from sequencing RNA}
 }
 
+\newglossaryentry{CAGE-Seq}{
+  name=CAGE-Seq,
+  description={Transcriptome data from cap analysis of gene expression}
+}
+
+\newglossaryentry{gls-ChIP-Seq}{
+  name=ChIP-Seq,
+  description={Epigenome data from chromatin immunopreciptation sequencing}
+}
+
+\newglossaryentry{bisulfite-Seq}{
+  name=bisulfite-Seq,
+  description={Methylome data from sequencing bisulfite treated DNA}
+}
 
 \newglossaryentry{Sanger}{
   name=Sanger,
@@ -72,12 +106,6 @@
   plural=bioinformatic %%switch
 }
 
-\newglossaryentry{InDel}
-{
-  name=InDel,
-  description={Changes to DNA sequence by insertion or deletion},
-  plural=InDels
-}
 
 \newglossaryentry{microRNA}
 {
@@ -88,7 +116,7 @@
 
 \newglossaryentry{synthetic lethal}
 {
-  name=synthetic lethality,
+  name=synthetic lethal,
   description={Genetic interactions where inactivation of multiple genes is inviable (or deleterious) when they are viable if inactivated separately},
   plural=synthetic lethality
 }
@@ -170,27 +198,41 @@
 %% Acronym terms
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\newacronym[description={Area under the reciever operating characteristic (curve)}]{AUROC}{AUROC}{area under the reciever operating characteristic}
+\newacronym[description={Gene Ontology}]{GO}{GO}{Gene Ontology}
 
-\newacronym[description={Reciever operating characteristic (curve)}]{ROC}{ROC}{reciever operating characteristic}
+\newacronym[description={Janus kinase}]{JAK}{JAK}{Janus kinase}
+
+\newacronym[description={Histone deacetylase}]{HDAC}{HDAC}{histone deacetylase}
+
+\newacronym[description={Phosphoinositide 3-kinase}]{PI3K}{PI3K}{phosphoinositide 3-kinase}
+
+\newacronym[description={Hereditary leiomyomatosis and renal cell carcinoma}]{HLRCC}{HLRCC}{Hereditary leiomyomatosis and renal cell carcinoma}
+
+\newacronym[description={Hereditary diffuse gastric cancer}]{HDGC}{HDGC}{hereditary diffuse gastric cancer}
+
+\newacronym[description={Epithelial-mesenchymal transition}]{EMT}{EMT}{epithelial-mesenchymal transition}
+
+\newacronym[description={Wingless-related integration site}]{WNT}{WNT}{Wingless-related integration site}
 
 \newacronym[description={Next-generation sequencing}]{NGS}{NGS}{``Next-Generation Sequencing''}
 
-\newacronym[description={Deoxyribonucleic acid}]{dna}{DNA}{deoxyribonucleic acid}
+\newacronym[description={Deoxyribonucleic acid}]{DNA}{DNA}{deoxyribonucleic acid}
 
-\newacronym[description={Ribonucleic acid}]{rna}{RNA}{ribonucleic acid}
+\newacronym[description={Ribonucleic acid}]{RNA}{RNA}{ribonucleic acid}
+
+\newacronym[description={Ribonucleic acid interference}]{RNAi}{RNAi}{RNA interference}
 
 \newacronym[description={Messenger ribonucleic acid}]{mRNA}{mRNA}{messenger ribonucleic acid}
 
 \newacronym[description={microRNA}]{miRNA}{miRNA}{miRNA}
 
-\newacronym[description={Short interfering ribonucleic acid}]{sirna}{siRNA}{short interfering ribonucleic acid}
+\newacronym[description={Short interfering ribonucleic acid}, plural=siRNAs,firstplural=siRNAs]{siRNA}{siRNA}{short interfering ribonucleic acid}
 
 \newacronym[description={Short hairpin ribonucleic acid}]{shrna}{shRNA}{short hairpin ribonucleic acid}
 
 \newacronym[description={Ribonucleic acid}]{rRNA}{rRNA}{ribonucleic acid}
 
-\newacronym[description={Transfer ribonucleic acid}]{trna}{tRNA}{transfer ribonucleic acid}
+\newacronym[description={Transfer ribonucleic acid}]{tRNA}{tRNA}{transfer ribonucleic acid}
 
 \newacronym[description={Complementary deoxyribonucleic acid (from mRNA)}]{cDNA}{cDNA}{deoxyribonucleic acid}
 
@@ -200,14 +242,69 @@
 
 \newacronym[description={Restriction fragment length polymorphism}]{RFLP}{RFLP}{restriction fragment length polymorphism}
 
-\newacronym[description={Single nucleotide polymorphism}]{SNP}{SNP}{single nucleotide polymorphism}
+\newacronym[description={Single nucleotide polymorphism}, plural=SNPs,firstplural=SNPs]{SNP}{SNP}{single nucleotide polymorphism}
+
+\newacronym[description={Long non-coding ribonucleic acid}]{lncRNA}{lncRNA}{long non-coding ribonucleic acid}
+
+\newacronym[description={Reduced representation bisulfite sequencing}]{RRBS}{RRBS}{reduced representation bisulfite sequencing}
+
+\newacronym[description={Chromatin immunopreciptation sequencing}, see={[Glossary:]{gls-ChIP-Seq}}]{ChIP-Seq}{ChIP-Seq}{chromatin immunopreciptation sequencing}
+
+\newacronym[description={Insertion or deletion (in DNA sequence)}, plural=InDels,firstplural=insertions or deletions]{InDel}{InDel}{InDel}
+
+\newacronym[description={Cancer Cell Line Encyclopaedia}]{CCLE}{CCLE}{Cancer Cell Line Encyclopaedia}
+\newacronym[description={National Institutes of Health (in the USA)}]{NIH}{NIH}{National Institutes of Health}
+\newacronym[description={The Cancer Genome Atlas (genomics project)}]{TCGA}{TCGA}{The Cancer Genome Atlas}
+\newacronym[description={International Cancer Genome Consortium}]{ICGC}{ICGC}{International Cancer Genome Consortium}
+\newacronym[description={National Cancer Institute (in the USA)}]{NCI}{NCI}{National Cancer Institute}
+\newacronym[description={National Human Genome Research Institute (in the USA)}]{NHGRI}{NHGRI}{National Human Genome Research Institute}
+\newacronym[description={National Center for Biotechnology Information (in the USA)}]{NCBI}{NCBI}{National Center for Biotechnology Information}
+\newacronym[description={European Molecular Biology Laboratory}]{EMBL}{EMBL}{European Molecular Biology Laboratory}
+\newacronym[description={The European Nucleotide Archive}]{ENA}{ENA}{The European Nucleotide Archive}
+\newacronym[description={DNA Data Bank of Japan}]{DDBJ}{DDBJ}{DNA Data Bank of Japan}
+\newacronym[description={National Institute of Genetics (in Japan)}]{NIG}{NIG}{National Institute of Genetics}
+\newacronym[description={Gene Expression Omnibus}]{GEO}{GEO}{Gene Expression Omnibus}
+\newacronym[description={Encyclopaedia of DNA Elements}]{ENCODE}{ENCODE}{Encyclopaedia of DNA Elements}
+\newacronym[description={Functional Annotation Of Mammalian genome}]{FANTOM}{FANTOM}{Functional Annotation Of Mammalian genome}
+
+%%To add:
+
+\newacronym[description={5'—C—phosphate—G—3'}]{CpG}{CpG}{CpG dinucleotide}
+\newacronym[description={Catalogue Of Somatic Mutations In Cancer}]{COSMIC}{COSMIC}{Catalogue Of Somatic Mutations In Cancer}
+\newacronym[description={1000 genomes project}]{1KGP}{1KGP}{1000 genomes project}
+\newacronym[description={Molecular Taxonomy of Breast Cancer International Consortium}]{METABRIC}{METABRIC}{Molecular Taxonomy of Breast Cancer International Consortium}
+\newacronym[description={Copy Number Variation}]{CNV}{CNV}{Copy Number Variation}
+
+%%
+
 
 %SLIPT
 %DAISY
 %BiSEp
 %MetaSL
 
-%cDNA, mRNA, siRNA, miRNA, CpG, NGS, rRNA,lncRNA, ICGC, TCGA, NIH, NCI, NHGRI, COSMIC, CCLE, ENCODE, FANTOM 10KGP, HDGC, METABRIC, RNAi, shRNA, CNV
+
+\newacronym[description={Synthetic lethal interaction prediction tool}]{SLIPT}{SLIPT}{Synthetic Lethal Interaction Prediction Tool}
+
+\newacronym[description={Data mining synthetic lethal identification pipeline}]{DAISY}{DAISY}{DAta mIning SYnthetic lethal identification pipeline}
+
+\newacronym[description={Bimodal Subsetting Expression}]{BiSEp}{BiSEp}{BImodal Subsetting ExPression}
+
+
+
+%
+
+%FDR
+%slurm
+%exprSL
+%mtSL
+%RMA
+%RSEM
+
+\newacronym[description={Area under the reciever operating characteristic (curve)}]{AUROC}{AUROC}{area under the reciever operating characteristic}
+
+\newacronym[description={Reciever operating characteristic (curve)}]{ROC}{ROC}{reciever operating characteristic}
+
 
 %SL
 %SSL
@@ -215,6 +312,8 @@
 %SGA
 %PPI
 %GO
+
+\newacronym[description={synthetic genetic interaction}, plural=SGIs,firstplural=synthetic genetic interactions]{SGI}{SGI}{synthetic genetic interaction}
 
 %ROC
 %AUROC

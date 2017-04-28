@@ -13,51 +13,51 @@ The style file: mycustom.bst
 A level-1 auxiliary file: appendix_methods.aux
 A level-1 auxiliary file: appendix_chapt3.aux
 A level-1 auxiliary file: appendix_chapt4.aux
-Reallocated field_info (elt_size=4) to 11786 items from 5000.
+Reallocated field_info (elt_size=4) to 11890 items from 5000.
 Database file #1: thesis.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both volume and number fields in Erdos1960
-You've used 261 entries,
+You've used 265 entries,
             3105 wiz_defined-function locations,
-            2332 strings with 172574 characters,
-and the built_in function-call counts, 244808 in all, are:
-= -- 21865
-> -- 10253
-< -- 221
-+ -- 9898
-- -- 2797
-* -- 18935
-:= -- 29326
-add.period$ -- 541
-call.type$ -- 261
-change.case$ -- 2721
-chr.to.int$ -- 262
-cite$ -- 523
-duplicate$ -- 19700
-empty$ -- 16239
-format.name$ -- 3722
-if$ -- 48632
-int.to.chr$ -- 4
+            2354 strings with 174329 characters,
+and the built_in function-call counts, 249321 in all, are:
+= -- 22259
+> -- 10500
+< -- 223
++ -- 10151
+- -- 2865
+* -- 19269
+:= -- 29862
+add.period$ -- 550
+call.type$ -- 265
+change.case$ -- 2776
+chr.to.int$ -- 266
+cite$ -- 531
+duplicate$ -- 20026
+empty$ -- 16498
+format.name$ -- 3801
+if$ -- 49515
+int.to.chr$ -- 5
 int.to.str$ -- 1
-missing$ -- 3399
-newline$ -- 1331
-num.names$ -- 1048
-pop$ -- 9418
+missing$ -- 3462
+newline$ -- 1352
+num.names$ -- 1064
+pop$ -- 9583
 preamble$ -- 1
-purify$ -- 2436
+purify$ -- 2486
 quote$ -- 0
-skip$ -- 8625
+skip$ -- 8823
 stack$ -- 0
-substring$ -- 17432
-swap$ -- 8162
+substring$ -- 17712
+swap$ -- 8310
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2337
+type$ -- 2373
 warning$ -- 1
-while$ -- 1048
+while$ -- 1065
 width$ -- 0
-write$ -- 3666
+write$ -- 3723
 (There was 1 warning)

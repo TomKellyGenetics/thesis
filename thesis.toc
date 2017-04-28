@@ -23,7 +23,7 @@
 \contentsline {subsubsubsection}{\numberline {1.1.5.1.2}Genomic Comparisons Across Cancer Tissues}{16}{subsubsubsection.1.1.5.1.2}
 \contentsline {subsubsubsection}{\numberline {1.1.5.1.3}Cancer Genomic Data Resources}{17}{subsubsubsection.1.1.5.1.3}
 \contentsline {subsection}{\numberline {1.1.6}Genomic Cancer Medicine}{17}{subsection.1.1.6}
-\contentsline {subsubsection}{\numberline {1.1.6.1}Cancer Genes and Driver Mutations}{17}{subsubsection.1.1.6.1}
+\contentsline {subsubsection}{\numberline {1.1.6.1}Cancer Genes and Driver Mutations}{18}{subsubsection.1.1.6.1}
 \contentsline {subsubsection}{\numberline {1.1.6.2}Personalised or Precision Cancer Medicine}{18}{subsubsection.1.1.6.2}
 \contentsline {subsubsubsection}{\numberline {1.1.6.2.1}Molecular Diagnostics and Pan-Cancer Medicine}{19}{subsubsubsection.1.1.6.2.1}
 \contentsline {subsubsection}{\numberline {1.1.6.3}Targeted Therapeutics and Pharmacogenomics}{20}{subsubsection.1.1.6.3}
@@ -31,18 +31,18 @@
 \contentsline {subsubsection}{\numberline {1.1.6.4}Systems and Network Biology}{21}{subsubsection.1.1.6.4}
 \contentsline {subsubsubsection}{\numberline {1.1.6.4.1} Network Medicine, and Polypharmacology}{23}{subsubsubsection.1.1.6.4.1}
 \contentsline {section}{\numberline {1.2}A Synthetic Lethal Approach to Cancer Medicine}{24}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Synthetic Lethal Genetic Interactions}{24}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.1}Synthetic Lethal Genetic Interactions}{25}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Synthetic Lethal Concepts in Genetics}{25}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Studies of Synthetic Lethality}{26}{subsection.1.2.3}
 \contentsline {subsubsection}{\numberline {1.2.3.1}Synthetic Lethal Pathways and Networks}{27}{subsubsection.1.2.3.1}
-\contentsline {subsubsubsection}{\numberline {1.2.3.1.1}Evolution of Synthetic Lethality}{27}{subsubsubsection.1.2.3.1.1}
+\contentsline {subsubsubsection}{\numberline {1.2.3.1.1}Evolution of Synthetic Lethality}{28}{subsubsubsection.1.2.3.1.1}
 \contentsline {subsection}{\numberline {1.2.4}Synthetic Lethal Concepts in Cancer}{28}{subsection.1.2.4}
 \contentsline {subsection}{\numberline {1.2.5}Clinical Impact of Synthetic Lethality in Cancer}{30}{subsection.1.2.5}
 \contentsline {subsection}{\numberline {1.2.6}High{}-throughput Screening for Synthetic Lethality}{32}{subsection.1.2.6}
 \contentsline {subsubsection}{\numberline {1.2.6.1}Synthetic Lethal Screens}{33}{subsubsection.1.2.6.1}
 \contentsline {subsection}{\numberline {1.2.7}Computational Prediction of Synthetic Lethality}{36}{subsection.1.2.7}
 \contentsline {subsubsection}{\numberline {1.2.7.1}Bioinformatics Approaches to Genetic Interactions}{36}{subsubsection.1.2.7.1}
-\contentsline {subsubsection}{\numberline {1.2.7.2}Comparative Genomics}{38}{subsubsection.1.2.7.2}
+\contentsline {subsubsection}{\numberline {1.2.7.2}Comparative Genomics}{37}{subsubsection.1.2.7.2}
 \contentsline {subsubsection}{\numberline {1.2.7.3}Analysis and Modelling of Protein Data}{40}{subsubsection.1.2.7.3}
 \contentsline {subsubsection}{\numberline {1.2.7.4}Differential Gene Expression}{42}{subsubsection.1.2.7.4}
 \contentsline {subsubsection}{\numberline {1.2.7.5}Data Mining and Machine Learning}{43}{subsubsection.1.2.7.5}
@@ -92,125 +92,125 @@
 \contentsline {section}{\numberline {3.1}A Synthetic Lethal Detection Methodology}{76}{section.3.1}
 \contentsline {section}{\numberline {3.2}Synthetic Lethal Simulation and Modelling}{79}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}A Model of Synthetic Lethality in Expression Data}{79}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Simulation Procedure}{84}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.2}Simulation Procedure}{83}{subsection.3.2.2}
 \contentsline {section}{\numberline {3.3}Detecting Simulated Synthetic Lethal Partners}{86}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Binomial Simulation of Synthetic lethality}{86}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Multivariate Normal Simulation of Synthetic lethality}{90}{subsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.2.1}Multivariate Normal Simulation with Correlated Genes}{92}{subsubsection.3.3.2.1}
-\contentsline {subsubsection}{\numberline {3.3.2.2}Specificity with Query-Correlated Pathways}{100}{subsubsection.3.3.2.2}
-\contentsline {subsubsubsection}{\numberline {3.3.2.2.1}Importance of Directional Testing}{100}{subsubsubsection.3.3.2.2.1}
-\contentsline {section}{\numberline {3.4}Graph Structure Methods}{102}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Upstream and Downstream Gene Detection}{102}{subsection.3.4.1}
-\contentsline {subsubsection}{\numberline {3.4.1.1}Permutation Analysis for Statistical Significance}{103}{subsubsection.3.4.1.1}
-\contentsline {subsubsection}{\numberline {3.4.1.2}Ranking Based on Biological Context}{104}{subsubsection.3.4.1.2}
-\contentsline {subsection}{\numberline {3.4.2}Simulating Gene Expression from Graph Structures}{105}{subsection.3.4.2}
-\contentsline {section}{\numberline {3.5}Customised Functions and Packages Developed}{109}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Synthetic Lethal Interaction Prediction Tool}{109}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Data Visualisation}{110}{subsection.3.5.2}
-\contentsline {subsection}{\numberline {3.5.3}Extensions to the iGraph Package}{112}{subsection.3.5.3}
-\contentsline {subsubsection}{\numberline {3.5.3.1}Sampling Simulated Data from Graph Structures}{112}{subsubsection.3.5.3.1}
-\contentsline {subsubsection}{\numberline {3.5.3.2}Plotting Directed Graph Structures}{112}{subsubsection.3.5.3.2}
-\contentsline {subsubsection}{\numberline {3.5.3.3}Computing Information Centrality}{113}{subsubsection.3.5.3.3}
-\contentsline {subsubsection}{\numberline {3.5.3.4}Testing Pathway Structure with Permutation Testing}{113}{subsubsection.3.5.3.4}
-\contentsline {subsubsection}{\numberline {3.5.3.5}Metapackage to Install iGraph Functions}{114}{subsubsection.3.5.3.5}
-\contentsline {chapter}{\numberline {4}Synthetic Lethal Analysis of Gene Expression Data}{115}{chapter.4}
-\contentsline {section}{\numberline {4.1}Synthetic lethal genes in breast cancer}{116}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Synthetic lethal pathways in breast cancer}{118}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Expression profiles of synthetic lethal partners}{119}{subsection.4.1.2}
-\contentsline {subsubsection}{\numberline {4.1.2.1}Subgroup pathway analysis}{122}{subsubsection.4.1.2.1}
-\contentsline {section}{\numberline {4.2}Comparison of synthetic lethal gene candidates}{125}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Comparison with siRNA screen candidates}{125}{subsection.4.2.1}
-\contentsline {subsubsection}{\numberline {4.2.1.1}Comparison with correlation}{126}{subsubsection.4.2.1.1}
-\contentsline {subsubsection}{\numberline {4.2.1.2}Comparison with viability}{127}{subsubsection.4.2.1.2}
-\contentsline {subsubsection}{\numberline {4.2.1.3}Comparison with secondary screen siRNA screen candidates}{131}{subsubsection.4.2.1.3}
-\contentsline {subsubsection}{\numberline {4.2.1.4}Comparison of screen at pathway level}{131}{subsubsection.4.2.1.4}
-\contentsline {subsubsubsection}{\numberline {4.2.1.4.1}Resampling of genes for pathway enrichment}{133}{subsubsubsection.4.2.1.4.1}
-\contentsline {section}{\numberline {4.3}Metagene Analysis}{139}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Pathway expression}{139}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Somatic mutation}{142}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Mutation locus}{143}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Synthetic lethal metagenes}{145}{subsection.4.3.4}
-\contentsline {section}{\numberline {4.4}Replication in stomach cancer}{147}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Synthetic Lethal Genes and Pathways}{147}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Synthetic Lethal Expression Profiles}{149}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Comparison to Primary Screen}{151}{subsection.4.4.3}
-\contentsline {subsubsection}{\numberline {4.4.3.1}Resampling Analysis}{152}{subsubsection.4.4.3.1}
-\contentsline {subsection}{\numberline {4.4.4}Metagene Analysis}{152}{subsection.4.4.4}
-\contentsline {section}{\numberline {4.5}Global Synthetic Lethality}{153}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Hub Genes}{154}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Hub Pathways}{156}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}Replication in cell line encyclopaedia}{157}{section.4.6}
-\contentsline {section}{\numberline {4.7}Discussion}{159}{section.4.7}
-\contentsline {subsection}{\numberline {4.7.1}Strengths of the SLIPT Methodology}{159}{subsection.4.7.1}
-\contentsline {subsection}{\numberline {4.7.2}Syntheic Lethal Pathways for E-cadherin}{160}{subsection.4.7.2}
-\contentsline {subsection}{\numberline {4.7.3}Replication and Validation}{162}{subsection.4.7.3}
-\contentsline {subsubsection}{\numberline {4.7.3.1}Integration with siRNA Screening}{162}{subsubsection.4.7.3.1}
-\contentsline {subsubsection}{\numberline {4.7.3.2}Replication across Tissues and Cell lines}{163}{subsubsection.4.7.3.2}
-\contentsline {section}{\numberline {4.8}Summary}{164}{section.4.8}
-\contentsline {paragraph}{Aims}{166}{section*.75}
-\contentsline {paragraph}{Summary}{166}{section*.76}
-\contentsline {chapter}{\numberline {5}Synthetic Lethal Pathway Structure}{167}{chapter.5}
-\contentsline {paragraph}{Aims}{167}{section*.77}
-\contentsline {paragraph}{Summary}{167}{section*.78}
-\contentsline {section}{\numberline {5.1}Reactome Network structure and Information Centrality as a measure of gene essentiality}{168}{section.5.1}
-\contentsline {section}{\numberline {5.2}Synthetic lethal genes in synthetic lethal pathways}{169}{section.5.2}
-\contentsline {section}{\numberline {5.3}Centrality and connectivity of synthetic lethal genes}{169}{section.5.3}
-\contentsline {section}{\numberline {5.4}Upstream or downstream synthetic lethal candidates}{169}{section.5.4}
-\contentsline {section}{\numberline {5.5}Hierachical approach}{169}{section.5.5}
-\contentsline {section}{\numberline {5.6}Discussion}{169}{section.5.6}
-\contentsline {section}{\numberline {5.7}Conclusion}{169}{section.5.7}
-\contentsline {chapter}{\numberline {6}Simulation and Modeling of Synthetic Lethal Pathways}{170}{chapter.6}
-\contentsline {paragraph}{Aims}{170}{section*.79}
-\contentsline {paragraph}{Summary}{170}{section*.80}
-\contentsline {section}{\numberline {6.1}Simulations and Modelling Synthetic Lethality in Expression Data}{173}{section.6.1}
-\contentsline {section}{\numberline {6.2}Simulations over simple graph structures}{174}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Performance}{174}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Synthetic lethality across graph stuctures}{174}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Performance with inhibition links}{174}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Performance with 20,000 genes}{174}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Simulations over pathway-based graphs}{174}{section.6.3}
-\contentsline {section}{\numberline {6.4}Comparing methods}{174}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}SLIPT and Chi-Squared}{174}{subsection.6.4.1}
-\contentsline {subsubsection}{\numberline {6.4.1.1}Correlated query genes}{174}{subsubsection.6.4.1.1}
-\contentsline {subsection}{\numberline {6.4.2}Correlation}{174}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Bimodality with BiSEp}{174}{subsection.6.4.3}
-\contentsline {chapter}{\numberline {7}Discussion}{175}{chapter.7}
-\contentsline {paragraph}{Aims}{175}{section*.81}
-\contentsline {paragraph}{Summary}{175}{section*.82}
-\contentsline {section}{\numberline {7.1}Significance}{177}{section.7.1}
-\contentsline {section}{\numberline {7.2}Future Directions}{178}{section.7.2}
-\contentsline {section}{\numberline {7.3}Conclusion}{179}{section.7.3}
-\contentsline {chapter}{\numberline {8}Conclusion}{181}{chapter.8}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{182}{chapter.8}
-\contentsline {chapter}{\numberline {A}Sample Quality}{207}{appendix.A}
-\contentsline {section}{\numberline {A.1}Sample Correlation}{207}{section.A.1}
-\contentsline {section}{\numberline {A.2}Replicate Samples in TCGA Breast}{210}{section.A.2}
-\contentsline {chapter}{\numberline {B}Software Used for Thesis}{214}{appendix.B}
-\contentsline {chapter}{\numberline {C}Secondary Screen Data}{223}{appendix.C}
-\contentsline {chapter}{\numberline {D}Mutation Analysis in Breast Cancer}{225}{appendix.D}
-\contentsline {section}{\numberline {D.1}Synthetic Lethal Genes and Pathways}{225}{section.D.1}
-\contentsline {section}{\numberline {D.2}Synthetic Lethal Expression Profiles}{228}{section.D.2}
-\contentsline {section}{\numberline {D.3}Comparison to Primary Screen}{231}{section.D.3}
-\contentsline {subsection}{\numberline {D.3.1}Resampling Analysis}{233}{subsection.D.3.1}
-\contentsline {section}{\numberline {D.4}Compare SLIPT genes}{235}{section.D.4}
-\contentsline {section}{\numberline {D.5}Metagene Analysis}{237}{section.D.5}
-\contentsline {section}{\numberline {D.6}Mutation Variation}{238}{section.D.6}
-\contentsline {subsection}{\numberline {D.6.1}Mutation Frequency}{238}{subsection.D.6.1}
-\contentsline {subsection}{\numberline {D.6.2}PI3K Mutation Expression}{239}{subsection.D.6.2}
-\contentsline {chapter}{\numberline {E}Metagene Expression Profiles}{242}{appendix.E}
-\contentsline {chapter}{\numberline {F}Stomach Expression Analysis}{248}{appendix.F}
-\contentsline {section}{\numberline {F.1}Synthetic Lethal Genes and Pathways}{248}{section.F.1}
-\contentsline {section}{\numberline {F.2}Comparison to Primary Screen}{251}{section.F.2}
-\contentsline {subsection}{\numberline {F.2.1}Resampling Analysis}{253}{subsection.F.2.1}
-\contentsline {section}{\numberline {F.3}Metagene Analysis}{255}{section.F.3}
-\contentsline {chapter}{\numberline {G}Stomach Mutation Analysis}{256}{appendix.G}
-\contentsline {section}{\numberline {G.1}Synthetic Lethal Genes and Pathways}{256}{section.G.1}
-\contentsline {section}{\numberline {G.2}Synthetic Lethal Expression Profiles}{259}{section.G.2}
-\contentsline {section}{\numberline {G.3}Comparison to Primary Screen}{262}{section.G.3}
-\contentsline {subsection}{\numberline {G.3.1}Resampling Analysis}{264}{subsection.G.3.1}
-\contentsline {section}{\numberline {G.4}Metagene Analysis}{266}{section.G.4}
-\contentsline {chapter}{\numberline {H}Global Synthetic Lethality in Stomach Cancer}{267}{appendix.H}
-\contentsline {section}{\numberline {H.1}Hub Genes}{269}{section.H.1}
-\contentsline {section}{\numberline {H.2}Hub Pathways}{270}{section.H.2}
-\contentsline {chapter}{\numberline {I}Replication in cell line encyclopaedia}{271}{appendix.I}
-\contentsline {chapter}{\numberline {J}Synthetic Lethal Genes in Pathways}{276}{appendix.J}
+\contentsline {subsection}{\numberline {3.3.2}Multivariate Normal Simulation of Synthetic lethality}{88}{subsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.2.1}Multivariate Normal Simulation with Correlated Genes}{91}{subsubsection.3.3.2.1}
+\contentsline {subsubsection}{\numberline {3.3.2.2}Specificity with Query-Correlated Pathways}{98}{subsubsection.3.3.2.2}
+\contentsline {subsubsubsection}{\numberline {3.3.2.2.1}Importance of Directional Testing}{98}{subsubsubsection.3.3.2.2.1}
+\contentsline {section}{\numberline {3.4}Graph Structure Methods}{100}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Upstream and Downstream Gene Detection}{100}{subsection.3.4.1}
+\contentsline {subsubsection}{\numberline {3.4.1.1}Permutation Analysis for Statistical Significance}{101}{subsubsection.3.4.1.1}
+\contentsline {subsubsection}{\numberline {3.4.1.2}Ranking Based on Biological Context}{102}{subsubsection.3.4.1.2}
+\contentsline {subsection}{\numberline {3.4.2}Simulating Gene Expression from Graph Structures}{103}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.5}Customised Functions and Packages Developed}{107}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Synthetic Lethal Interaction Prediction Tool}{107}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Data Visualisation}{108}{subsection.3.5.2}
+\contentsline {subsection}{\numberline {3.5.3}Extensions to the iGraph Package}{110}{subsection.3.5.3}
+\contentsline {subsubsection}{\numberline {3.5.3.1}Sampling Simulated Data from Graph Structures}{110}{subsubsection.3.5.3.1}
+\contentsline {subsubsection}{\numberline {3.5.3.2}Plotting Directed Graph Structures}{110}{subsubsection.3.5.3.2}
+\contentsline {subsubsection}{\numberline {3.5.3.3}Computing Information Centrality}{111}{subsubsection.3.5.3.3}
+\contentsline {subsubsection}{\numberline {3.5.3.4}Testing Pathway Structure with Permutation Testing}{111}{subsubsection.3.5.3.4}
+\contentsline {subsubsection}{\numberline {3.5.3.5}Metapackage to Install iGraph Functions}{112}{subsubsection.3.5.3.5}
+\contentsline {chapter}{\numberline {4}Synthetic Lethal Analysis of Gene Expression Data}{113}{chapter.4}
+\contentsline {section}{\numberline {4.1}Synthetic lethal genes in breast cancer}{114}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Synthetic lethal pathways in breast cancer}{116}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Expression profiles of synthetic lethal partners}{117}{subsection.4.1.2}
+\contentsline {subsubsection}{\numberline {4.1.2.1}Subgroup pathway analysis}{120}{subsubsection.4.1.2.1}
+\contentsline {section}{\numberline {4.2}Comparison of synthetic lethal gene candidates}{123}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Comparison with siRNA screen candidates}{123}{subsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.1.1}Comparison with correlation}{124}{subsubsection.4.2.1.1}
+\contentsline {subsubsection}{\numberline {4.2.1.2}Comparison with viability}{125}{subsubsection.4.2.1.2}
+\contentsline {subsubsection}{\numberline {4.2.1.3}Comparison with secondary screen siRNA screen candidates}{129}{subsubsection.4.2.1.3}
+\contentsline {subsubsection}{\numberline {4.2.1.4}Comparison of screen at pathway level}{129}{subsubsection.4.2.1.4}
+\contentsline {subsubsubsection}{\numberline {4.2.1.4.1}Resampling of genes for pathway enrichment}{131}{subsubsubsection.4.2.1.4.1}
+\contentsline {section}{\numberline {4.3}Metagene Analysis}{137}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Pathway expression}{137}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Somatic mutation}{140}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Mutation locus}{141}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Synthetic lethal metagenes}{143}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Replication in stomach cancer}{145}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Synthetic Lethal Genes and Pathways}{145}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Synthetic Lethal Expression Profiles}{147}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}Comparison to Primary Screen}{149}{subsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.3.1}Resampling Analysis}{150}{subsubsection.4.4.3.1}
+\contentsline {subsection}{\numberline {4.4.4}Metagene Analysis}{150}{subsection.4.4.4}
+\contentsline {section}{\numberline {4.5}Global Synthetic Lethality}{151}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Hub Genes}{152}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Hub Pathways}{154}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}Replication in cell line encyclopaedia}{155}{section.4.6}
+\contentsline {section}{\numberline {4.7}Discussion}{157}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Strengths of the SLIPT Methodology}{157}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Syntheic Lethal Pathways for E-cadherin}{158}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Replication and Validation}{160}{subsection.4.7.3}
+\contentsline {subsubsection}{\numberline {4.7.3.1}Integration with siRNA Screening}{160}{subsubsection.4.7.3.1}
+\contentsline {subsubsection}{\numberline {4.7.3.2}Replication across Tissues and Cell lines}{161}{subsubsection.4.7.3.2}
+\contentsline {section}{\numberline {4.8}Summary}{162}{section.4.8}
+\contentsline {paragraph}{Aims}{164}{section*.75}
+\contentsline {paragraph}{Summary}{164}{section*.76}
+\contentsline {chapter}{\numberline {5}Synthetic Lethal Pathway Structure}{165}{chapter.5}
+\contentsline {paragraph}{Aims}{165}{section*.77}
+\contentsline {paragraph}{Summary}{165}{section*.78}
+\contentsline {section}{\numberline {5.1}Reactome Network structure and Information Centrality as a measure of gene essentiality}{166}{section.5.1}
+\contentsline {section}{\numberline {5.2}Synthetic lethal genes in synthetic lethal pathways}{167}{section.5.2}
+\contentsline {section}{\numberline {5.3}Centrality and connectivity of synthetic lethal genes}{167}{section.5.3}
+\contentsline {section}{\numberline {5.4}Upstream or downstream synthetic lethal candidates}{167}{section.5.4}
+\contentsline {section}{\numberline {5.5}Hierachical approach}{167}{section.5.5}
+\contentsline {section}{\numberline {5.6}Discussion}{167}{section.5.6}
+\contentsline {section}{\numberline {5.7}Conclusion}{167}{section.5.7}
+\contentsline {chapter}{\numberline {6}Simulation and Modeling of Synthetic Lethal Pathways}{168}{chapter.6}
+\contentsline {paragraph}{Aims}{168}{section*.79}
+\contentsline {paragraph}{Summary}{168}{section*.80}
+\contentsline {section}{\numberline {6.1}Simulations and Modelling Synthetic Lethality in Expression Data}{171}{section.6.1}
+\contentsline {section}{\numberline {6.2}Simulations over simple graph structures}{172}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Performance}{172}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Synthetic lethality across graph stuctures}{172}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Performance with inhibition links}{172}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Performance with 20,000 genes}{172}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Simulations over pathway-based graphs}{172}{section.6.3}
+\contentsline {section}{\numberline {6.4}Comparing methods}{172}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}SLIPT and Chi-Squared}{172}{subsection.6.4.1}
+\contentsline {subsubsection}{\numberline {6.4.1.1}Correlated query genes}{172}{subsubsection.6.4.1.1}
+\contentsline {subsection}{\numberline {6.4.2}Correlation}{172}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Bimodality with BiSEp}{172}{subsection.6.4.3}
+\contentsline {chapter}{\numberline {7}Discussion}{173}{chapter.7}
+\contentsline {paragraph}{Aims}{173}{section*.81}
+\contentsline {paragraph}{Summary}{173}{section*.82}
+\contentsline {section}{\numberline {7.1}Significance}{175}{section.7.1}
+\contentsline {section}{\numberline {7.2}Future Directions}{176}{section.7.2}
+\contentsline {section}{\numberline {7.3}Conclusion}{177}{section.7.3}
+\contentsline {chapter}{\numberline {8}Conclusion}{179}{chapter.8}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }References}{180}{chapter.8}
+\contentsline {chapter}{\numberline {A}Sample Quality}{205}{appendix.A}
+\contentsline {section}{\numberline {A.1}Sample Correlation}{205}{section.A.1}
+\contentsline {section}{\numberline {A.2}Replicate Samples in TCGA Breast}{208}{section.A.2}
+\contentsline {chapter}{\numberline {B}Software Used for Thesis}{212}{appendix.B}
+\contentsline {chapter}{\numberline {C}Secondary Screen Data}{221}{appendix.C}
+\contentsline {chapter}{\numberline {D}Mutation Analysis in Breast Cancer}{223}{appendix.D}
+\contentsline {section}{\numberline {D.1}Synthetic Lethal Genes and Pathways}{223}{section.D.1}
+\contentsline {section}{\numberline {D.2}Synthetic Lethal Expression Profiles}{226}{section.D.2}
+\contentsline {section}{\numberline {D.3}Comparison to Primary Screen}{229}{section.D.3}
+\contentsline {subsection}{\numberline {D.3.1}Resampling Analysis}{231}{subsection.D.3.1}
+\contentsline {section}{\numberline {D.4}Compare SLIPT genes}{233}{section.D.4}
+\contentsline {section}{\numberline {D.5}Metagene Analysis}{235}{section.D.5}
+\contentsline {section}{\numberline {D.6}Mutation Variation}{236}{section.D.6}
+\contentsline {subsection}{\numberline {D.6.1}Mutation Frequency}{236}{subsection.D.6.1}
+\contentsline {subsection}{\numberline {D.6.2}PI3K Mutation Expression}{237}{subsection.D.6.2}
+\contentsline {chapter}{\numberline {E}Metagene Expression Profiles}{240}{appendix.E}
+\contentsline {chapter}{\numberline {F}Stomach Expression Analysis}{246}{appendix.F}
+\contentsline {section}{\numberline {F.1}Synthetic Lethal Genes and Pathways}{246}{section.F.1}
+\contentsline {section}{\numberline {F.2}Comparison to Primary Screen}{249}{section.F.2}
+\contentsline {subsection}{\numberline {F.2.1}Resampling Analysis}{251}{subsection.F.2.1}
+\contentsline {section}{\numberline {F.3}Metagene Analysis}{253}{section.F.3}
+\contentsline {chapter}{\numberline {G}Stomach Mutation Analysis}{254}{appendix.G}
+\contentsline {section}{\numberline {G.1}Synthetic Lethal Genes and Pathways}{254}{section.G.1}
+\contentsline {section}{\numberline {G.2}Synthetic Lethal Expression Profiles}{257}{section.G.2}
+\contentsline {section}{\numberline {G.3}Comparison to Primary Screen}{260}{section.G.3}
+\contentsline {subsection}{\numberline {G.3.1}Resampling Analysis}{262}{subsection.G.3.1}
+\contentsline {section}{\numberline {G.4}Metagene Analysis}{264}{section.G.4}
+\contentsline {chapter}{\numberline {H}Global Synthetic Lethality in Stomach Cancer}{265}{appendix.H}
+\contentsline {section}{\numberline {H.1}Hub Genes}{267}{section.H.1}
+\contentsline {section}{\numberline {H.2}Hub Pathways}{268}{section.H.2}
+\contentsline {chapter}{\numberline {I}Replication in cell line encyclopaedia}{269}{appendix.I}
+\contentsline {chapter}{\numberline {J}Synthetic Lethal Genes in Pathways}{274}{appendix.J}
