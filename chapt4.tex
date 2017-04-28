@@ -36,22 +36,150 @@
   
 \clearpage
   
-Having identified key pathways implicated in synthetic lethal genetic interactions with \textit{CDH1}, these were investigated for the underlying synthetic lethal genes within them and their realtionships to pathway structure in Reactome pathways. This chapter will focus on the pathway structure of biological pathways detected across analyses in Chapter~\ref{chap:SLIPT}. The synthetic lethal genes considered here are candidates those detected by SLIPT (as described in Section~\ref{methods:}) in TCGA breast cancer expression and mutation data \citep{TCGA2012} in comparison to the candidate gene partners from the siRNA screening in breast cell lines \citep{Telford2015}. 
+Having identified key pathways implicated in synthetic lethal genetic interactions with \textit{CDH1}, these were investigated for the underlying synthetic lethal genes within them and their realtionships to pathway structure in Reactome pathways. This chapter will focus on the pathway structure of biological pathways detected across analyses in Chapter~\ref{chap:SLIPT}. The synthetic lethal genes considered here are candidates those detected by SLIPT (as described in Section~\ref{methods:SLIPT}) in TCGA breast cancer expression and mutation data \citep{TCGA2012} in comparison to the candidate gene partners from the siRNA screening in breast cell lines \citep{Telford2015}. 
 
 
 
-\section{Reactome Network structure and Information Centrality as a measure of gene essentiality}
 
-Network structure is another useful strategy to analyse gene function and this has been used to investigate network properties of a network constructed from of Reactome pathways imported with the paxtoolsr R package (Demir et al. 2010). Most notably, information centrality which has been proposed as a measure of gene essentiality was calculated as performed by Kranthi et al. (2013) using the efficiency and shortest path between each pair or nodes in the network before and after a node of interest is removed to test the importance of a node to network connectivity. Reactome contains substrates and cofactors in addition to genes or proteins, supporting the idea of centrality as a measure of essentiality, a number nodes with the highest centrality were essential nutrients including Mg\textsuperscript{2$+$}, Ca\textsuperscript{2$+$}, Zn\textsuperscript{2$+$},  and Fe\textsuperscript{3$+$}.
 
 \section{Synthetic lethal genes in synthetic lethal pathways}
 
 \section{Centrality and connectivity of synthetic lethal genes}
 
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.95 \textwidth}{!}{
+    %\input{{{"SL_Model.pdf_tex"}}
+    \fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_vertex_degree".png}}
+   }
+   }
+   \end{center}
+   \caption[Synthetic Lethality and Vertex Degree]{\small \textbf{Synthetic Lethality and Vertex Degree.} Synthetic Lethality and Vertex Degree
+}
+\label{fig:SL_Pathway_PI3K_Vertex_Degree}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.95 \textwidth}{!}{
+    %\input{{{"SL_Model.pdf_tex"}}
+    \fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_Info_Centrality(Log)".png}}
+   }
+   }
+   \end{center}
+   \caption[Synthetic Lethality and Centrality]{\small \textbf{Synthetic Lethality and Centrality.} Synthetic Lethality and Information Centrality (log-scale).
+}
+\label{fig:SL_Pathway_PI3K_InfoCent}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.95 \textwidth}{!}{
+    %\input{{{"SL_Model.pdf_tex"}}
+    \fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_pagerank".png}}
+   }
+   }
+   \end{center}
+   \caption[Synthetic Lethality and PageRank]{\small \textbf{Synthetic Lethality and PageRank.} Synthetic Lethality and PageRank.
+}
+\label{fig:SL_Pathway_PI3K_PageRank}
+\end{mdframed}
+\end{figure*}
+
+
+
+
 \section{Upstream or downstream synthetic lethal candidates}
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.95 \textwidth}{!}{
+    %\input{{{"SL_Model.pdf_tex"}}
+    \fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K".png}}
+   }
+   }
+   \end{center}
+   \caption[Structure of Synthetic Lethality Resampling]{\small \textbf{Structure of Synthetic Lethality Resampling.} Structure of Synthetic Lethality Resampling.
+}
+\label{fig:SL_Pathway_PI3K_Perm}
+\end{mdframed}
+\end{figure*}
+
+\resizebox{1 \textwidth}{!}{
+	
+\begin{tabular}{lllllllllll}
+                                          & \multicolumn{2}{l}{Graph:} & \multicolumn{2}{l}{States:} & \multicolumn{4}{l}{Observed:}        & \multicolumn{2}{l}{Permutation p-value:}  \\
+\hline
+pathway                                   & nodes       & edges        & exprSL        & siRNA       & up   & down & up-down & up/down      & up abs             & down abs            \\
+
+\hline
+PI3K Cascade                              & 138         & 1495         & 38            & 25          & 122  & 128  & -6      & 0.953125     & 0.5326             & 0.4606              \\
+PI3K/AKT Signaling in Cancer              & 275         & 12882        & 98            & 44          & 779  & 679  & 100     & 1.147275405  & 0.3255             & 0.6734              \\
+G$_{\alpha i}$ Signaling                       & 292         & 22003        & 95            & 58          & 836  & 1546 & -710    & 0.5407503234 & 0.9971             & 0.0029              \\
+GPCR downstream                           & 1270        & 142071       & 312           & 160         & 9755 & 9261 & 494     & 1.0533419717 & 0.3692             & 0.6305              \\
+Elastic fibre formation                   & 42          & 175          & 24            & 7           & 1    & 2    & -1      & 0.5          & 0.5461             & 0.3865              \\
+Extracellular matrix                      & 299         & 3677         & 127           & 29          & 547  & 455  & 92      & 1.2021978022 & 0.3351             & 0.6636              \\
+Formation of Fibrin                       & 52          & 243          & 18            & 5           & 12   & 17   & -5      & 0.7058823529 & 0.6198             & 0.3564              \\
+Nonsense-Mediated Decay                   & 103         & 102          & 74            & 2           & 0    & 74   & -74     & 0            & 1                  & 0                   \\
+3' -UTR-mediated translational regulation & 107         & 2860         & 77            & 1           & 0    & 0    & 0       & NaN          & 0.4902             & 0.5027              \\
+Eukaryotic Translation Elongation         & 92          & 3746         & 76            & 0           & 0    & 0    & 0       & NaN          & 0.4943             & 0.4933              \\
+\hline
+                                          &             &              &               &             &      &      &         &              &                    &                     \\
+Sampling only within target pathway       &             &              &               &             &      &      &         &              &                    &                     \\
+Number of siRNA+SLIPT matched to observed &             &              &               &             &      &      &         &              &                    &                     \\
+siRNA+SLIPT kept for up/down evaluation   &             &              &               &             &      &      &         &              &                    &                     \\
+\end{tabular}
+}
+
 
 \section{Hierachical approach}
 %closer to membrane or nucleus
+
+
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.95 \textwidth}{!}{
+    %\input{{{"SL_Model.pdf_tex"}}
+    \fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/graph_distance".png}}
+   }
+   }
+   \end{center}
+   \caption[Structure of PI3K Ranking]{\small \textbf{Structure of PI3K Ranking.} Structure of PI3K Ranking.
+}
+\label{fig:SL_Pathway_PI3K_Ranking}
+\end{mdframed}
+\end{figure*}
+
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.95 \textwidth}{!}{
+    %\input{{{"SL_Model.pdf_tex"}}
+    \fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_vioplot".png}}
+   }
+   }
+   \end{center}
+   \caption[Structure of Synthetic Lethality in PI3K]{\small \textbf{Structure of Synthetic Lethality in PI3K.} Structure of Synthetic Lethality in PI3K.
+}
+\label{fig:SL_Pathway_PI3K_Perm}
+\end{mdframed}
+\end{figure*}
 
 \section{Discussion}
 
