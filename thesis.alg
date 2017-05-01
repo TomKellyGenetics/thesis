@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 28.04.2017  18:52:21
-;; Indexstyle: "/tmp/LY4MnPYzdF", Rawindex: "/tmp/w9dOw89Xak", Output: "thesis.acr"
+;; at 02.05.2017  01:37:01
+;; Indexstyle: "/tmp/PC_gQ9M2S_", Rawindex: "/tmp/_qqaTXjnEH", Output: "thesis.acr"
 
 
 Building indexentry-tree:
@@ -47,8 +47,20 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 
 Forming letter-groups:
+Letter-group: "Ð´¨ÈÚ" -> "S"
+Letter-group: "Ð¨Ë¼€" -> "S"
 Letter-group: "ÊÈ†Ë" -> "Q"
 Letter-group: "Ëœ´È" -> "R"
 Letter-group: "È†Ë" -> "P"
@@ -85,13 +97,21 @@ Letter-group: "Ã" -> "G"
 Letter-group: "††´—" -> "C"
 Letter-group: "†ÃÐ»¨†" -> "C"
 Letter-group: "—»Ú" -> "E"
-Letter-group: "Ð¨Ë¼€" -> "S"
 Letter-group: "¬€®" -> "J"
 Letter-group: "¤€†" -> "H"
 Letter-group: "È¨3®" -> "P"
-Letter-group: "Ð´¨ÈÚ" -> "S"
+Letter-group: "È†Ë" -> "G"
+Letter-group: "È—" -> "P"
+Letter-group: "€»È®" -> "A"
+Letter-group: "Úœ" -> "T"
+Letter-group: "„»È" -> "B"
+Letter-group: "ËÐ" -> "R"
+Letter-group: "†ë†Ë" -> "C"
+Letter-group: "Ë¤Ã" -> "R"
+Letter-group: "¼»" -> "N"
+Letter-group: "àÚË" -> "U"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "€àËÃ†" -> "A"
+Letter-group: "€»È®" -> "A"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "„¨Ð—È" -> "B"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
@@ -124,3 +144,5 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "Ð¨" -> "S"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "Ú†€" -> "T"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "àÚË" -> "U"

@@ -127,7 +127,7 @@ In practice, samples are not removed from a simulated dataset, rather the expres
 
 Simulations were developed to simulate normal distributions of expression data and define function with a threshold cut-off. This is the reverse to the procedure of \gls{SLIPT} to predict synthetic lethal partners (although the threshold is assumed to be unknown when testing upon simulated data). While gene function is used as an intermediary step in modelling synthetic lethal genes in expression data, the normal distribution is sampled for simulated data to represent normalised empirical gene expression data for which \gls{SLIPT} (and other methods) will be applicable.
 
-\begin{figure*}[!Htbp]
+\begin{figure*}[!htbp]
 \begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
@@ -251,7 +251,7 @@ A previous version of the synthetic lethal simulation procedure (described in Se
 
 The simulation procedure was performed with 20,000 total genes (as feasible in the human genome and expression datasets) with a variable number of true synthetic lethal partners and sample sizes of 500, 1000, 2000, and 5000. Each ROC curve was derived from the results of 10,000 replicate simulations. The statistical performance (as shown in Figure~\ref{fig:Binomial_AUC}) of such an approach based on the $\chi^2$ p-value declines towards random predictions (an AUROC of 0.5) with an increasing number of underlying true synthetic lethal partners to detect. However, increased sample size mitigates this decline to some extent, as expected with a statistical predictor, particularly for moderate numbers of synthetic lethal partners. 
 
-\begin{figure*}[!Hp]
+\begin{figure*}[!hp]
 \begin{mdframed}
   \begin{center}
   \resizebox{0.6 \textwidth}{!}{
@@ -373,7 +373,7 @@ These plots (Figures~\ref{fig:simulation_May4SL} and~\ref{fig:simulation_May4SL1
         }%
         \subfigure[Simulated correlation matrix]{%
             \label{fig:simulation_May4SL1K:second}
-            \includegraphics[width=0.35\textwidth]{{""SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".pdf}}
+            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".pdf}}
         }%
         
         \subfigure[Simulated gene expression]{%
@@ -423,7 +423,7 @@ These simulations (on 100 genes) were repeated to examine the variation between 
 %
         \subfigure[Statistical evaluation]{%
             \label{fig:simulation_Apr15ROC2:Perf}
-            \includegraphics[width=0.475\textwidth]{{SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png}}
+            \includegraphics[width=0.475\textwidth]{{"SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png}}
         }%
         \subfigure[Receiver operating characteristic]{%
             \label{fig:simulation_Apr15ROC2:ROC}
@@ -469,7 +469,7 @@ Thus \gls{SLIPT} is robust across correlation structures and applicable to real 
 %
         \subfigure[Statistical evaluation]{%
             \label{fig:simulation_May15ROC:Perf}
-            \includegraphics[width=0.475\textwidth]{{SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}}
+            \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}}
         }%
         \subfigure[Receiver operating characteristic]{%
             \label{fig:simulation_May15ROC:ROC}
@@ -503,7 +503,7 @@ Another consideration for correlation structures is postively correlated genes w
   \begin{center}
   \resizebox{0.5 \textwidth}{!}{
   \fbox{
-    \includegraphics[fbox]{{"SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Apry)_v_Cor(Mayxy)_Full"}}
+    \includegraphics{{"SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Apry)_v_Cor(Mayxy)_Full"}}
    }
    }
    \end{center}
@@ -518,18 +518,22 @@ Another consideration for correlation structures is postively correlated genes w
 \subsubsubsection{Importance of Directional Testing}
 It is important to notice here that the directional criteria of the \gls{SLIPT} procedure is enhancing it's performance, particularly in distinguishing positively correlated true negatives. The multivariate normal simulation results, with 20,000 genes including all of the correlation structures discussed (SL, non-SL, and query correlated genes), are compared here for \gls{SLIPT} with and without ($\chi^2$) directional testing. There is a marked improvement in statistical performance with directional criteria, particularly with increased sensitivity and lower false discovery rate (as shown in Figure~\ref{fig:mvtnorm_dir_compare}).
 
-\begin{figure*}[!Hb]
+\begin{figure*}[!hb]
 \begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
         \subfigure[$\chi^2$ testing without direction]{%
             \label{fig:mvtnorm_dir_compare:perf_null}
-            \includegraphics[width=0.475\textwidth, fbox]{{"SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png}}
+            \fbox{
+            \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png}}
+            }
         }%
         \subfigure[\gls{SLIPT} with directional criteria]{%
            \label{fig:mvtnorm_dir_compare:perf_dir}
-           \includegraphics[width=0.475\textwidth, fbox]{{"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}}
+            \fbox{
+           \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}}
+           }
         }%
 
     \end{center}
@@ -546,11 +550,15 @@ It is important to notice here that the directional criteria of the \gls{SLIPT} 
 %
         \subfigure[$\chi^2$ testing without direction]{%
             \label{fig:mvtnorm_dir_compare:ROC_null}
-            \includegraphics[width=0.475\textwidth, fbox]{{"SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png}}
+            \fbox{
+            \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png}}
+            }
         }%
         \subfigure[\gls{SLIPT} with directional criteria]{%
            \label{fig:mvtnorm_dir_compare:ROC_dir}
-           \includegraphics[width=0.475\textwidth, fbox]{{"SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png}}
+            \fbox{
+           \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png}}
+           }
         }%
 
 
@@ -568,7 +576,7 @@ It is important to notice here that the directional criteria of the \gls{SLIPT} 
 
 This is encouraging for the application of \gls{SLIPT} to empirical expression datasets as postively correlated genes are likely to occur and the directional condition robustly improves the performance of \gls{SLIPT} across simulation parameters. Without assuming the underlying number of synthetic lethal genes, \gls{SLIPT} will perform better than the $\chi^2$ test alone at detecting them. This is further supported irrespective of significance threshold for the $\chi^2$ test by the ROC analysis in Figure~\ref{fig:mvtnorm_dir_compare2}. The directional \gls{SLIPT} methodology outperforms the ordinary $\chi^2$ test at detecting synthetic lethal partners with some predictive power (above random and AUROC of 0.5) even up to 100 synthetic lethal genes.
 
-Together these simulation results support the application of the \gls{SLIPT} methodology as it has been performed throughout Chapter~\ref{chap:SLIPT} and \ref{chap:Pathways}. However, the methodology and simulation procedure will explored in more detail in Chapter~\ref{chap:simulation}, with the inclusion of graph structures and comparison to other synthetic lethal detection approaches.
+Together these simulation results support the application of the \gls{SLIPT} methodology as it has been performed throughout Chapter~\ref{chap:SLIPT} and~\ref{chap:Pathways}. However, the methodology and simulation procedure will explored in more detail in Chapter~\ref{chap:simulation}, with the inclusion of graph structures and comparison to other synthetic lethal detection approaches.
 
 \FloatBarrier
 
@@ -608,11 +616,15 @@ This enables modelling of synthetic lethal partners within a biological pathway 
 %
         \subfigure[Activating pathway structure]{%
             \label{fig:simple_graph:first}
-            \includegraphics[width=0.45\textwidth, fbox]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph".png}}
+            \fbox{
+            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph".png}}
+            }
         }%
         \subfigure[Pathway structure including inhibitions]{%
            \label{fig:simple_graph:second}
-           \includegraphics[width=0.45\textwidth, fbox]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph_inhibiting".png}}
+            \fbox{
+           \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph_inhibiting".png}}
+           }
         }%
 %
     \end{center}
@@ -796,7 +808,9 @@ The \texttt{plot.igraph} package provides the \texttt{plot\_directed} function s
 \begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
-          \includegraphics[width=0.5\textwidth, fbox]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph_inhibiting".png}}
+         \fbox{
+          \includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph_inhibiting".png}}
+	  }
 	  \end{center}
    \caption[Simulating graph structures]{\small \textbf{\textbf{Simulating graph structures.}} An example graph structure which will be used throughout demonstrating the simulation procedure from graph structures. Here activating links are denoted by blue arrows and inhibiting links by red edges.}
 %}

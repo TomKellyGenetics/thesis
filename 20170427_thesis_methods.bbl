@@ -1,4 +1,4 @@
-\begin{thebibliography}{260}
+\begin{thebibliography}{265}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibAnnoteFile}[1]{%
   \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
@@ -357,6 +357,13 @@ Chen, A., Beetham, H., Black, M.A., Priya, R., Telford, B.J., Guest, J.,
   epithelial-mesenchymal transition.
 \newblock \emph{{BMC} Cancer}, \textbf{14}(1): 552.
 \bibAnnoteFile{Chen2014}
+
+\bibitem[\protect\astroncite{Chen \emph{et~al.}}{2015}]{Chen2015}
+Chen, K., Yang, D., Li, X., Sun, B., Song, F., Cao, W., Brat, D.J., Gao, Z.,
+  Li, H., Liang, H., \emph{et~al.} (2015) {{M}utational landscape of gastric
+  adenocarcinoma in {C}hinese: implications for prognosis and therapy}.
+\newblock \emph{Proc Natl Acad Sci USA}, \textbf{112}(4): 1107--1112.
+\bibAnnoteFile{Chen2015}
 
 \bibitem[\protect\astroncite{Chen and Parmigiani}{2007}]{Chen2007}
 Chen, S. and Parmigiani, G. (2007) {{M}eta-analysis of {B}{R}{C}{A}1 and
@@ -962,6 +969,14 @@ Kaelin, Jr, W. (2009) Synthetic lethality: a framework for the development of
 \newblock \emph{Genome Med}, \textbf{1}: 99.
 \bibAnnoteFile{Kaelin2009}
 
+\bibitem[\protect\astroncite{Kakiuchi \emph{et~al.}}{2014}]{Kakiuchi2014}
+Kakiuchi, M., Nishizawa, T., Ueda, H., Gotoh, K., Tanaka, A., Hayashi, A.,
+  Yamamoto, S., Tatsuno, K., Katoh, H., Watanabe, Y., \emph{et~al.} (2014)
+  {{R}ecurrent gain-of-function mutations of {R}{H}{O}{A} in diffuse-type
+  gastric carcinoma}.
+\newblock \emph{Nat Genet}, \textbf{46}(6): 583--587.
+\bibAnnoteFile{Kakiuchi2014}
+
 \bibitem[\protect\astroncite{Kamada and Kawai}{1989}]{Kamada1989}
 Kamada, T. and Kawai, S. (1989) An algorithm for drawing general undirected
   graphs.
@@ -1483,12 +1498,20 @@ Telford, B.J., Chen, A., Beetham, H., Frick, J., Brew, T.P., Gould, C.M.,
 \bibAnnoteFile{TCGA2012}
 
 \bibitem[\protect\astroncite{{\acroauthor{The Cancer Genome Atlas Research
-  Network}{TCGA}}}{2017}]{TCGA2017web}
-{\acroauthor{The Cancer Genome Atlas Research Network}{TCGA}} (2017) {The
-  Cancer Genome Atlas Project}.
+  Network}{TCGA}}}{2017{\natexlab{a}}}]{TCGA2017web}
+{\acroauthor{The Cancer Genome Atlas Research Network}{TCGA}}
+  (2017{\natexlab{a}}) {The Cancer Genome Atlas Project}.
 \newblock \url{https://cancergenome.nih.gov/}.
 \newblock Accessed: 26/03/2017.
 \bibAnnoteFile{TCGA2017web}
+
+\bibitem[\protect\astroncite{{\acroauthor{The Cancer Genome Atlas Research
+  Network}{TCGA}}}{2017{\natexlab{b}}}]{TCGA2017prov}
+{\acroauthor{The Cancer Genome Atlas Research Network}{TCGA}}
+  (2017{\natexlab{b}}) {The Cancer Genome Atlas Project Data Portal}.
+\newblock \url{https://tcga-data.nci.nih.gov/}.
+\newblock Accessed: 06/02/2017 (via cBioPortal.
+\bibAnnoteFile{TCGA2017prov}
 
 \bibitem[\protect\astroncite{{\acroauthor{The Cancer Society of New
   Zealand}{Cancer Society of NZ}}}{2017}]{CSNZ2017}
@@ -1520,6 +1543,14 @@ Telford, B.J., Chen, A., Beetham, H., Frick, J., Brew, T.P., Gould, C.M.,
   {E}{N}{C}{O}{D}{E} ({E}{N}{C}yclopedia {O}f {D}{N}{A} {E}lements) {P}roject}.
 \newblock \emph{Science}, \textbf{306}(5696): 636--640.
 \bibAnnoteFile{ENCODE2004}
+
+\bibitem[\protect\astroncite{{\acroauthor{The Internation Cancer Genome
+  Consortium}{ICGC}}}{2017}]{ICGC2017web}
+{\acroauthor{The Internation Cancer Genome Consortium}{ICGC}} (2017) {ICGC Data
+  Portal}.
+\newblock \url{https://dcc.icgc.org/}.
+\newblock Accessed: 06/02/2017.
+\bibAnnoteFile{ICGC2017web}
 
 \bibitem[\protect\astroncite{{\acroauthor{The National Cancer
   Institute}{NCI}}}{2015}]{NCI2015}
@@ -1663,6 +1694,14 @@ Wang, K., Singh, D., Zeng, Z., Coleman, S.J., Huang, Y., Savich, G.L., He, X.,
   discovery}.
 \newblock \emph{Nucleic Acids Res}, \textbf{38}(18): e178.
 \bibAnnoteFile{mapsplice}
+
+\bibitem[\protect\astroncite{Wang \emph{et~al.}}{2014}]{Wang2014}
+Wang, K., Yuen, S.T., Xu, J., Lee, S.P., Yan, H.H., Shi, S.T., Siu, H.C., Deng,
+  S., Chu, K.M., Law, S., \emph{et~al.} (2014) {{W}hole-genome sequencing and
+  comprehensive molecular profiling identify new driver mutations in gastric
+  cancer}.
+\newblock \emph{Nat Genet}, \textbf{46}(6): 573--582.
+\bibAnnoteFile{Wang2014}
 
 \bibitem[\protect\astroncite{Wang and Simon}{2013}]{Wang2013}
 Wang, X. and Simon, R. (2013) Identification of potential synthetic lethal

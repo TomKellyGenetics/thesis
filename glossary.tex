@@ -198,12 +198,28 @@
 %% Acronym terms
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\newacronym[description={Nonsense-mediated decay }]{NMD}{NMD}{nonsense-mediated decay }
+\newacronym[description={G-protein signaling}]{RGS}{RGS}{G-protein signaling}
+\newacronym[description={Chemokine receptors}]{CXCR}{CXCR}{chemokine receptors}
+\newacronym[description={Ras Homolog Family}]{RHO}{RHO}{Ras homolog family}
+\newacronym[description={Untranslated region (of mRNA)}]{UTR}{UTR}{untranslated region}
+
+\newacronym[description={Transforming growth factor $\beta$}]{TGFB}{TGF$\beta$}{transforming growth factor $\beta$}
+
+\newacronym[description={Bone morphogenic protein}, plural=BMPs]{BMP}{BMP}{bone morphogenic protein}
+
 \newacronym[description={Gene Ontology}]{GO}{GO}{Gene Ontology}
 
 \newacronym[description={Janus kinase}]{JAK}{JAK}{Janus kinase}
 
 \newacronym[description={Histone deacetylase}]{HDAC}{HDAC}{histone deacetylase}
 
+\newacronym[description={G protein coupled receptor}, plural=GPCRs,firstplural=G protein coupled receptors]{GPCR}{GPCR}{G protein coupled receptor}
+
+\newacronym[description={AMP-activated protein kinase}]{AMPK}{AMPK}{AMP-activated protein kinase}
+
+\newacronym[description={Phosphodiesterase}]{PDE}{PDE}{phosphodiesterase}
+ 
 \newacronym[description={Phosphoinositide 3-kinase}]{PI3K}{PI3K}{phosphoinositide 3-kinase}
 
 \newacronym[description={Hereditary leiomyomatosis and renal cell carcinoma}]{HLRCC}{HLRCC}{Hereditary leiomyomatosis and renal cell carcinoma}
@@ -248,7 +264,8 @@
 
 \newacronym[description={Reduced representation bisulfite sequencing}]{RRBS}{RRBS}{reduced representation bisulfite sequencing}
 
-\newacronym[description={Chromatin immunopreciptation sequencing}, see={[Glossary:]{gls-ChIP-Seq}}]{ChIP-Seq}{ChIP-Seq}{chromatin immunopreciptation sequencing}
+\newacronym[description={Chromatin immunopreciptation sequencing}]{ChIP-Seq}{ChIP-Seq}{chromatin immunopreciptation sequencing}
+%see={[Glossary:]{gls-ChIP-Seq}}
 
 \newacronym[description={Insertion or deletion (in DNA sequence)}, plural=InDels,firstplural=insertions or deletions]{InDel}{InDel}{InDel}
 
@@ -325,9 +342,10 @@
 %GPCR
 
 %%linked entry
-
+\iffalse
 \newglossaryentry{gls-OWD} {
   name={One-Way Delay},
   description={The time a packet uses through a network from one host to another},
 }
 \newacronym[see={[Glossary:]{gls-OWD}}]{OWD}{OWD}{One-Way Delay\glsadd{gls-OWD}}
+\fi
