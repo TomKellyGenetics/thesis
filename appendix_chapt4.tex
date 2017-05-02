@@ -220,17 +220,57 @@
    }
    }
    \end{center}
-   \caption[Synthetic Lethality and Vertex Degree]{\small \textbf{Synthetic Lethality and Vertex Degree.} Synthetic Lethality and Vertex Degree.
+   \caption[Synthetic Lethality and Vertex Degree]{\small \textbf{Synthetic Lethality and Vertex Degree.} The number of connected genes (vertex degree) was compared (on a log-scale across genes deteced by mtSLIPT and \gls{siRNA} screening in the Reactome PI3K cascade pathway. There were very few differences in vertex degree between the groups, although genes detected by \gls{siRNA} included those with the fewest connections.
 }
 \label{fig:mtSL_Pathway_PI3K_Vertex_Degree}
 \end{mdframed}
 \end{figure*}
 
+%\FloatBarrier
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.95 \textwidth}{!}{
+    %\input{{{"SL_Model.pdf_tex"}}
+    \fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_Info_Centrality(Log)".pdf}}
+   }
+   }
+   \end{center}
+   \caption[Synthetic Lethality and Centrality]{\small \textbf{Synthetic Lethality and Centrality.}  The information centrality was compared (on a log-scale across genes deteced by mtSLIPT and \gls{siRNA} screening in the Reactome PI3K cascade pathway. Genes detected by \gls{siRNA} had higher connectivity than many genes not detected by either approach. The gene with the highest centrality was detected by mtSLIPT.
+}
+\label{fig:mtSL_Pathway_PI3K_InfoCent}
+\end{mdframed}
+\end{figure*}
+
+%info cent pathway 1.338433
+
+
+%\FloatBarrier
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.95 \textwidth}{!}{
+    %\input{{{"SL_Model.pdf_tex"}}
+    \fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_pagerank".pdf}}
+   }
+   }
+   \end{center}
+   \caption[Synthetic Lethality and PageRank]{\small \textbf{Synthetic Lethality and PageRank.}  The PageRank centrality was compared (on a log-scale across genes deteced by mtSLIPT and \gls{siRNA} screening in the Reactome PI3K cascade pathway. Genes detected by \gls{siRNA} had a more restricted range of centrality values than other genes not detected by either approach, although these groups also had fewer genes.
+}
+\label{fig:mtSL_Pathway_PI3K_PageRank}
+\end{mdframed}
+\end{figure*}
+
+
 \begin{table*}[!htb]
 \caption{ANOVA for Synthetic Lethality and Vertex Degree}
 \label{tab:mtSL_Pathway_PI3K_Vertex_Degree}
 \noindent\makebox[\textwidth][c]{%               %centering
-%\resizebox{1.1 \textwidth}{!}{
+\resizebox{0.8 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccccc}
 \hline
@@ -246,36 +286,19 @@ siRNA$\times$mtSLIPT     &     1    &    9 &  9.17 & 0.0079 & 0.9294 \\
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-ANOVA for Synthetic Lethality and Vertex Degree
+Analysis of variance for vertex degree against synthetic lethal detection approaches (with an interaction term)
 \end{tablenotes}
 \end{threeparttable}
 }
-%}
+}
 \end{table*}
 
-\FloatBarrier
-
-\begin{figure*}[!htp]
-\begin{mdframed}
-  \begin{center}
-  \resizebox{0.95 \textwidth}{!}{
-    %\input{{{"SL_Model.pdf_tex"}}
-    \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_Info_Centrality(Log)".pdf}}
-   }
-   }
-   \end{center}
-   \caption[Synthetic Lethality and Centrality]{\small \textbf{Synthetic Lethality and Centrality.} Synthetic Lethality and Information Centrality (log-scale).
-}
-\label{fig:mtSL_Pathway_PI3K_InfoCent}
-\end{mdframed}
-\end{figure*}
 
 \begin{table*}[!htb]
 \caption{ANOVA for Synthetic Lethality and Information Centrality}
 \label{tab:mtSL_Pathway_PI3K_InfoCent}
 \noindent\makebox[\textwidth][c]{%               %centering
-%\resizebox{1.1 \textwidth}{!}{
+\resizebox{0.8 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccccc}
 \hline
@@ -291,40 +314,20 @@ siRNA$\times$mtSLIPT     &     1    &    0.001238 & 0.0012385 & 0.8952 & 0.3476 
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-ANOVA for Synthetic Lethality and Information Centrality
+Analysis of variance for information centrality against synthetic lethal detection approaches (with an interaction term)
 \end{tablenotes}
 \end{threeparttable}
 }
-%}
+}
 \end{table*}
 
-%info cent pathway 1.338433
-
-
-\FloatBarrier
-
-\begin{figure*}[!htp]
-\begin{mdframed}
-  \begin{center}
-  \resizebox{0.95 \textwidth}{!}{
-    %\input{{{"SL_Model.pdf_tex"}}
-    \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_pagerank".pdf}}
-   }
-   }
-   \end{center}
-   \caption[Synthetic Lethality and PageRank]{\small \textbf{Synthetic Lethality and PageRank.} Synthetic Lethality and PageRank.
-}
-\label{fig:mtSL_Pathway_PI3K_PageRank}
-\end{mdframed}
-\end{figure*}
 
 
 \begin{table*}[!htb]
 \caption{ANOVA for Synthetic Lethality and PageRank Centrality}
 \label{tab:mtSL_Pathway_PI3K_PageRank}
 \noindent\makebox[\textwidth][c]{%               %centering
-%\resizebox{1.1 \textwidth}{!}{
+\resizebox{0.8 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccccc}
 \hline
@@ -340,70 +343,12 @@ siRNA$\times$mtSLIPT     &     1    &    0.0000137 & $1.3743 \times 10^{-5}$ & 0
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-ANOVA for Synthetic Lethality and PageRank Centrality
-\end{tablenotes}
-\end{threeparttable}
-}
-%}
-\end{table*}
-
-\FloatBarrier
-
-\chapter{Pathway Structure for Mutation SLIPT}
-\label{appendix:Pathway_Structure_mtSL}
-
-\FloatBarrier
-
-\begin{table*}[!htb]
-\caption{Information centrality for genes and molecules in the Reactome network}
-\label{tab:pathway_str_mtSL}
-\noindent\makebox[\textwidth][c]{%               %centering
-\resizebox{1.1 \textwidth}{!}{
-\begin{threeparttable}
-\begin{tabular}{lccccccccccc}
-                                          & \multicolumn{2}{l}{Graph:} & \multicolumn{2}{l}{States:} & \multicolumn{4}{l}{Observed:}        & \multicolumn{2}{l}{Permutation p-value:} \\
-\hline
-Pathway                                   & Nodes & Edges  & mtSL & siRNA & Up   & Down & Up$-$Down & Up$/$Down           & Up$-$Down & Down$-$Up \\
-\hline
-  \rowcolor{black!10}
-PI3K Cascade                              & 138   & 1495   & 42   & 25    & 131  & 123  & 8       & 1.065             & 0.4473 & 0.5466   \\
-  \rowcolor{black!5}
-PI3K/AKT Signaling in Cancer              & 275   & 12882  & 56   & 44    & 478  & 440  & 38      & 1.086             & 0.4163 & 0.5810   \\
-  \rowcolor{black!10}
-G$_{\alpha i}$ Signaling                  & 292   & 22003  & 57   & 58    & 543  & 866  & -323    & 0.627             & 0.9507 & \textbf{0.0488}             \\  
-  \rowcolor{black!5}
-GPCR downstream                           & 1270  & 142071 & 218  & 160   & 7632 & 6500 & 1132    & 1.174             & 0.1707 & 0.8291   \\
-  \rowcolor{black!10}
-Elastic fibre formation                   & 42    & 175    & 16   & 7     & 6    & 7    & -1      & 0.857             & 0.5512 & 0.3681   \\
-  \rowcolor{black!5}
-Extracellular matrix                      & 299   & 3677   & 81   & 29    & 313  & 347  & -34     & 0.902             & 0.5762 & 0.4215   \\
-  \rowcolor{black!10}
-Formation of Fibrin                       & 52    & 243    & 11   & 5     & 8    & 19   & -11     & 0.421             & 0.7993 & 0.1800   \\
-  \rowcolor{black!5}
-Nonsense-Mediated Decay                   & 103   & 102    & 56   & 2     & 0    & 0    & 0       &                   & 0.197  & 0.1373   \\
-  \rowcolor{black!10}
-3$^\prime$-UTR-mediated translational regulation & 107   & 2860   & 56   & 1     & 52   & 1    & 51      & 52                & 0.1210  & 0.8751   \\
-  \rowcolor{black!5}
-Eukaryotic Translation Elongation         & 92    & 3746   & 57   & 0     & 0    & 0    & 0       &                   & 0.4952 & 0.4892   \\ 
-\hline
-\end{tabular}
-\begin{tablenotes}
-\raggedright \small
-Pathways in the Reactome network tested for structural relationships between mtSLIPT and siRNA genes by resampling (raw p-value)
-
-Significant resampling in bold
-
-Sampling only within target pathway
-
-Number of siRNA+SLIPT matched to observed
-
-siRNA+SLIPT kept for up/down evaluation 
+Analysis of variance for PageRank centrality against synthetic lethal detection approaches (with an interaction term)
 \end{tablenotes}
 \end{threeparttable}
 }
 }
 \end{table*}
-
 
 \FloatBarrier
 
@@ -414,12 +359,12 @@ siRNA+SLIPT kept for up/down evaluation
 
 %Reactome Network structure and Information Centrality as a measure of gene essentiality
 
-Network structure is another useful strategy to analyse gene function and this has been used to investigate network properties of a network constructed from of Reactome pathways imported with the paxtoolsr R package (Demir et al. 2010). Most notably, information centrality which has been proposed as a measure of gene essentiality was calculated as performed by Kranthi et al. (2013) using the efficiency and shortest path between each pair or nodes in the network before and after a node of interest is removed to test the importance of a node to network connectivity. Reactome contains substrates and cofactors in addition to genes or proteins, supporting the idea of centrality as a measure of essentiality, a number nodes with the highest centrality were essential nutrients including Mg\textsuperscript{2$+$}, Ca\textsuperscript{2$+$}, Zn\textsuperscript{2$+$},  and Fe\textsuperscript{3$+$}.
-
+Network structure is another useful strategy to analyse gene function and this has been used to investigate network properties of a network constructed from of Reactome pathways imported via Pathway Commons with Paxtools \citep{PathwayCommons, paxtools}. Most notably, information centrality which has been proposed as a measure of gene essentiality was calculated as performed by \citet{Kranthi2013} using the efficiency and shortest path between each pair or nodes in the network before and after a node of interest is removed to test the importance of a node to network connectivity. Reactome contains substrates and cofactors in addition to genes or proteins. In support of centrality as a measure of essentiality, a number nodes with the highest centrality (shown in Table~\ref{tab:infocent_reactome}) were essential nutrients including Mg\textsuperscript{2$+$}, Ca\textsuperscript{2$+$}, Zn\textsuperscript{2$+$},  and Fe. In addition, there were genes important in development of epithelial tissues and breast cancer such as \textit{IL8}, \textit{GATA3}, and \textit{CTNNB1} detected with relatively high information centrality. 
+%Fe\textsuperscript{3$+$}??
 
 \begin{table*}[!htb]
 \caption{Information centrality for genes and molecules in the Reactome network}
-\label{tab:pathway_ccle_brca_exprSL}
+\label{tab:infocent_reactome}
 \centering
 \resizebox{0.5 \textwidth}{!}{
 \begin{threeparttable}
@@ -500,6 +445,65 @@ Highest information centrality for genes (proteins), cofactors, and minerals in 
    \end{center}
    \caption[Information centrality distribution]{\small \textbf{Information centrality distribution.} Information centrality in the Reactome network for nodes, including genes/proteins and other biomolecules.
 }
-\label{fig:mtSL_Pathway_PI3K_PageRank}
+\label{fig:infocent_reactome}
 \end{mdframed}
 \end{figure*}
+
+
+\chapter{Pathway Structure for Mutation SLIPT}
+\label{appendix:Pathway_Structure_mtSL}
+
+\FloatBarrier
+
+\begin{table*}[!htb]
+\caption{Information centrality for genes and molecules in the Reactome network}
+\label{tab:pathway_str_mtSL}
+\noindent\makebox[\textwidth][c]{%               %centering
+\resizebox{1.1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccccccccccc}
+                                          & \multicolumn{2}{l}{Graph:} & \multicolumn{2}{l}{States:} & \multicolumn{4}{l}{Observed:}        & \multicolumn{2}{l}{Permutation p-value:} \\
+\hline
+Pathway                                   & Nodes & Edges  & mtSL & siRNA & Up   & Down & Up$-$Down & Up$/$Down           & Up$-$Down & Down$-$Up \\
+\hline
+  \rowcolor{black!10}
+PI3K Cascade                              & 138   & 1495   & 42   & 25    & 131  & 123  & 8       & 1.065             & 0.4473 & 0.5466   \\
+  \rowcolor{black!5}
+PI3K/AKT Signaling in Cancer              & 275   & 12882  & 56   & 44    & 478  & 440  & 38      & 1.086             & 0.4163 & 0.5810   \\
+  \rowcolor{black!10}
+G$_{\alpha i}$ Signaling                  & 292   & 22003  & 57   & 58    & 543  & 866  & -323    & 0.627             & 0.9507 & \textbf{0.0488}             \\  
+  \rowcolor{black!5}
+GPCR downstream                           & 1270  & 142071 & 218  & 160   & 7632 & 6500 & 1132    & 1.174             & 0.1707 & 0.8291   \\
+  \rowcolor{black!10}
+Elastic fibre formation                   & 42    & 175    & 16   & 7     & 6    & 7    & -1      & 0.857             & 0.5512 & 0.3681   \\
+  \rowcolor{black!5}
+Extracellular matrix                      & 299   & 3677   & 81   & 29    & 313  & 347  & -34     & 0.902             & 0.5762 & 0.4215   \\
+  \rowcolor{black!10}
+Formation of Fibrin                       & 52    & 243    & 11   & 5     & 8    & 19   & -11     & 0.421             & 0.7993 & 0.1800   \\
+  \rowcolor{black!5}
+Nonsense-Mediated Decay                   & 103   & 102    & 56   & 2     & 0    & 0    & 0       &                   & 0.197  & 0.1373   \\
+  \rowcolor{black!10}
+3$^\prime$-UTR-mediated translational regulation & 107   & 2860   & 56   & 1     & 52   & 1    & 51      & 52                & 0.1210  & 0.8751   \\
+  \rowcolor{black!5}
+Eukaryotic Translation Elongation         & 92    & 3746   & 57   & 0     & 0    & 0    & 0       &                   & 0.4952 & 0.4892   \\ 
+\hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Pathways in the Reactome network tested for structural relationships between mtSLIPT and siRNA genes by resampling (raw p-value)
+
+Significant resampling in bold
+
+Sampling only within target pathway
+
+Number of siRNA+SLIPT matched to observed
+
+siRNA+SLIPT kept for up/down evaluation 
+\end{tablenotes}
+\end{threeparttable}
+}
+}
+\end{table*}
+
+
+\FloatBarrier

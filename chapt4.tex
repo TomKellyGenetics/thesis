@@ -144,13 +144,16 @@ Many of these \gls{SLIPT} candidate genes are also among the \gls{NMD} pathway (
 
 \glsreset{ANOVA}
 
+Genes detected as synthetic lethal partners of \textit{CDH1} with the \gls{SLIPT} computational approach and the \gls{siRNA} screen \citep{Telford2015} were compared across network metrics in the example of the PI3K cascade pathway (where the genes differed considerably between synthetic lethal detection methods). These were used to test whether network metrics differed  between groups of genes detected by either or both approaches. These analyses serve to both test whether synthetic lethal gene candidates had higher connectivity or importance in a network and to whether either detection approach is constrained to genes with different network properties.  
+
 \FloatBarrier
 
 \subsection{Gene Connectivity and Vertex Degree}  \label{chapt4:Network_Vertex_Degree}
 
+Vertex degree (the number of connections) for each gene is a fundamental property of a network. The vast majority of genes had a relatively modest number of connections each with only a few genes in the PI3K pathway (shown in Figure~\ref{fig:SL_Pathway_PI3K_Vertex_Degree}) having pathway relationships with a high number of genes, consistent with the scle-free property of biological networks \cite{Barabasi2004}. There were few differences in the number of connections between gene groups (by synthetic lethal detection). Although genes detected by \gls{siRNA} included those with the fewest connections. The median connectivity of genes detected by both approaches was marginally higher.
 
 
-\begin{figure*}[!htp]
+\begin{figure*}[!htb]
 \begin{mdframed}
   \begin{center}
   \resizebox{0.95 \textwidth}{!}{
@@ -160,17 +163,21 @@ Many of these \gls{SLIPT} candidate genes are also among the \gls{NMD} pathway (
    }
    }
    \end{center}
-   \caption[Synthetic Lethality and Vertex Degree]{\small \textbf{Synthetic Lethality and Vertex Degree.} Synthetic Lethality and Vertex Degree
+   \caption[Synthetic Lethality and Vertex Degree]{\small \textbf{Synthetic Lethality and Vertex Degree.} The number of connected genes (vertex degree) was compared (on a log-scale) across genes deteced by \gls{SLIPT} and \gls{siRNA} screening in the Reactome PI3K cascade pathway. There were very few differences in vertex degree between the groups, although genes detected by \gls{siRNA} included those with the fewest connections. 
 }
 \label{fig:SL_Pathway_PI3K_Vertex_Degree}
 \end{mdframed}
 \end{figure*}
 
+The results for the PI3K pathway were very similar when testing synthetic lethality against \textit{CDH1} mutation (mtSLIPT). In this case, there is also indication that mtSLIPT-specific genes may have higher connectivity than those detected by \gls{siRNA} screening (shown in Figure~\ref{fig:mtSL_Pathway_PI3K_Vertex_Degree}).
+
+However, these apparent differences in vertex degree may be due to fewer genes being detected by either approach. There was no statistically significant effect of either computational or experimental synthetic lethal detection method on vertex degree, as determined by \gls{ANOVA} (shown by Tables~\ref{tab:SL_Pathway_PI3K_Vertex_Degree} and ~\ref{tab:mtSL_Pathway_PI3K_Vertex_Degree}). Thus synthetic lethal detection does not discriminate among genes by their connectivity in a pathway network, nor is either approach constrained by a genes connectivity. Both approaches have been demonstrated to detect genes with many and very few connections.
+
 \begin{table*}[!htb]
 \caption{ANOVA for Synthetic Lethality and Vertex Degree}
 \label{tab:SL_Pathway_PI3K_Vertex_Degree}
 \noindent\makebox[\textwidth][c]{%               %centering
-%\resizebox{1.1 \textwidth}{!}{
+\resizebox{0.8 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccccc}
 \hline
@@ -186,11 +193,11 @@ siRNA$\times$SLIPT     &     1    &    0      &    0.05      &   0.0000     &   
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-ANOVA for Synthetic Lethality and Vertex Degree
+Analysis of variance for vertex degree against synthetic lethal detection approaches (with an interaction term)
 \end{tablenotes}
 \end{threeparttable}
 }
-%}
+}
 \end{table*}
 
 \FloatBarrier
@@ -199,11 +206,16 @@ ANOVA for Synthetic Lethality and Vertex Degree
 
 \subsubsection{Information Centrality}  \label{chapt4:Network_InfoCent}
 
-Information centrality is a measure of the importance of nodes in a network but how vital they are to the transmission of information throughout the network. This naturally applies well to biological pathways, partcularly gene regulation and cell signalling. The nodes with the highest information centrality are not necessarily the most connected as they may also include nodes which pass signals between highly connected netwprk hubs. 
+Information centrality is a measure of the importance of nodes in a network by how vital they are to the transmission of information throughout the network. This naturally applies well to biological pathways, partcularly gene regulation and cell signalling. The nodes with the highest information centrality are not necessarily the most connected as they may also include nodes which pass signals between highly connected network hubs. Information centrality therefore provides a distinct metric for the connectivity of a gene in a pathway, which has the added benefit of being directly related to the disruption of pathway function were it to be inactivated or removed.
 
-Information centrality has also been suggested to indicate essentiality of genes or proteins \citep{Kranthi2013}. See also Appendix \ref{appendix:infocent_essential} on gene essentiality.
+Information centrality has also been suggested to indicate essentiality of genes or proteins \citep{Kranthi2013}. The information centrality for was computed across the entire Reacomte network (as discussed in Appendix~\ref{appendix:infocent_essential}). Reactome contains substrates and cofactors in addition to genes or proteins. In support of centrality as a measure of essentiality or importance to the network, a number nodes with the highest centrality (shown in Table~\ref{tab:infocent_reactome}) were essential nutrients including Mg\textsuperscript{2$+$}, Ca\textsuperscript{2$+$}, Zn\textsuperscript{2$+$}, and Fe.%\textsuperscript{3$+$}
 
-\begin{figure*}[!htp]
+Genes important in development of epithelial tissues and breast cancer were also detected with relatively high information centrality (as shown by the distribution across the Reactome network in Figure~\ref{fig:infocent_reactome}). Interleukin 8 (encoded by \textit{IL8}) is a chemokine important in epithelial cells, the innate immune system, and binding GPCRs. \textit{GATA4} is a embryonic transcription factor involved in heart development, \gls{EMT}, and was reccurently mutated in in breast cancer \citep{TCGA2012}. $\beta$-catenin (encoded by the proto-oncogene \textit{CTNNB1}) is a regulatory protein which binds E-cadherin, being involved in cell-cell adhesion and \gls{WNT} signalling. Together these show that information cetrality identifies nodes of importance to biological functions in pathway networks, including those relevant to \textit{CDH1} deficient breast cancers. 
+
+
+Within the PI3K pathway (shown in Figure~\ref{fig:SL_Pathway_PI3K_InfoCent}), genes detected by \gls{siRNA} did not include those with lower centrality, although the median information centrality across gene groups detected by either synthetic lethal approach did not differ. The gene with the highest information centrality (\textit{AKT2}) was detected by SLIPT and was markedly higher than the other genes in the pathway which is consistent with the known biological role of AKT in PI3K/AKT signalling and the pathway structure (shown in Figure~\ref{fig:SL_Pathway_Pi3K}). The information centrality of the PI3K pathway was 1.338433.
+
+\begin{figure*}[!htb]
 \begin{mdframed}
   \begin{center}
   \resizebox{0.95 \textwidth}{!}{
@@ -213,17 +225,20 @@ Information centrality has also been suggested to indicate essentiality of genes
    }
    }
    \end{center}
-   \caption[Synthetic Lethality and Centrality]{\small \textbf{Synthetic Lethality and Centrality.} Synthetic Lethality and Information Centrality (log-scale).
+   \caption[Synthetic Lethality and Centrality]{\small \textbf{Synthetic Lethality and Centrality.} The information centrality was compared (on a log-scale across genes deteced by \gls{SLIPT} and \gls{siRNA} screening in the Reactome PI3K cascade pathway. Genes detected by \gls{siRNA} had higher connectivity than many genes not detected by either approach. The gene with the highest centrality was detected by \gls{SLIPT}.
 }
 \label{fig:SL_Pathway_PI3K_InfoCent}
 \end{mdframed}
 \end{figure*}
 
+These findings were replicated (shown in Figure~\ref{fig:mtSL_Pathway_PI3K_InfoCent}) when testing synthetic lethality against \textit{CDH1} mutation (mtSLIPT). The differences in network centrality between gene groups detected by either method were not statistically significant as determined by \gls{ANOVA} (shown by Tables~\ref{tab:SL_Pathway_PI3K_InfoCent} and ~\ref{tab:mtSL_Pathway_PI3K_InfoCent}). Thus neither method was unable to detect synthetic lethal genes with particular centrality constraints, although they were also not detecting genes with higher centrality than expected by chance.
+
+
 \begin{table*}[!htb]
 \caption{ANOVA for Synthetic Lethality and Information Centrality}
 \label{tab:SL_Pathway_PI3K_InfoCent}
 \noindent\makebox[\textwidth][c]{%               %centering
-%\resizebox{1.1 \textwidth}{!}{
+\resizebox{0.8 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccccc}
 \hline
@@ -239,18 +254,22 @@ siRNA$\times$SLIPT     &     1    &    0.000804 &  0.0008036 & 0.5820 & 0.4483 \
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-ANOVA for Synthetic Lethality and Information Centrality
+Analysis of variance for information centrality against synthetic lethal detection approaches (with an interaction term)
 \end{tablenotes}
 \end{threeparttable}
 }
-%}
+}
 \end{table*}
 
 \FloatBarrier
 
 \subsubsection{PageRank Centrality}  \label{chapt4:Network_PageRank}
 
-\begin{figure*}[!htp]
+\FloatBarrier
+
+PageRank centrality is another network analysis procedure to infer a heirarchy of gene importance from a network using connections and structure \citep{Brin1998}. In constrast to the information centrality approach of removing nodes, PageRank uses the eigenvalue properties of the adjacency matrix to rank genes according to the number of connections and paths they are involved in. 
+
+\begin{figure*}[!b]
 \begin{mdframed}
   \begin{center}
   \resizebox{0.95 \textwidth}{!}{
@@ -260,17 +279,20 @@ ANOVA for Synthetic Lethality and Information Centrality
    }
    }
    \end{center}
-   \caption[Synthetic Lethality and PageRank]{\small \textbf{Synthetic Lethality and PageRank.} Synthetic Lethality and PageRank.
+   \caption[Synthetic Lethality and PageRank]{\small \textbf{Synthetic Lethality and PageRank.} The PageRank centrality was compared (on a log-scale across genes deteced by mtSLIPT and \gls{siRNA} screening in the Reactome PI3K cascade pathway. Genes detected by \gls{siRNA} had a more restricted range of centrality values (which may be constrained experimental detection in a cell line model) than other genes not detected by either approach, although these groups also had fewer genes and a higher median.
 }
 \label{fig:SL_Pathway_PI3K_PageRank}
 \end{mdframed}
 \end{figure*}
 
+This distinction is immediately clear within the PI3K pathway (shown in Figure~\ref{fig:SL_Pathway_PI3K_PageRank}), which differs considerably from the information centrality scores. While genes not detected by either method had the highest centrality, genes detected by \gls{SLIPT} span the complete range of PageRank centrality values for this pathway. This was replicated (shown in Figure~\ref{fig:mtSL_Pathway_PI3K_PageRank}) when testing synthetic lethality against \textit{CDH1} mutation (mtSLIPT).  Thus \gls{SLIPT} is not biased towards genes with more crucial role in the pathway as inferred by pathway connectivity and centrality measures and it is therefore independent of pathway structure. However, the genes detected by \gls{siRNA} screening have a higher median PageRank centrality, although the differences in PageRank centrality between these methods were not statistically significant as determined by \gls{ANOVA} (shown by Tables~\ref{tab:SL_Pathway_PI3K_InfoCent} and ~\ref{tab:mtSL_Pathway_PI3K_InfoCent}).
+
+
 \begin{table*}[!htb]
 \caption{ANOVA for Synthetic Lethality and PageRank Centrality}
 \label{tab:SL_Pathway_PI3K_PageRank}
 \noindent\makebox[\textwidth][c]{%               %centering
-%\resizebox{1.1 \textwidth}{!}{
+\resizebox{0.8 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccccc}
 \hline
@@ -281,21 +303,17 @@ siRNA              &     1    &    0.0002038 & $2.0385 \times 10^{-4}$ & 1.1423 
 \rowcolor{black!5}
 SLIPT              &     1    &    0.0000208 & $2.0752 \times 10^{-5}$ & 0.1163 & 0.7342 \\
 \rowcolor{black!10}
-siRNA$\times$SLIPT     &     1    &    0.0000208 & $2.0752 \times 10^{-5}$ & 0.1163 & 0.7342 \\
+siRNA$\times$SLIPT     &     1    &    0.0000137 & $1.3743 \times 10^{-5}$ & 0.0770 & 0.7823 \\
 \hline
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-ANOVA for Synthetic Lethality and PageRank Centrality
+Analysis of variance for PageRank centrality against synthetic lethal detection approaches (with an interaction term)
 \end{tablenotes}
 \end{threeparttable}
 }
-%}
+}
 \end{table*}
-
-%in_siRNA           1 0.0002038 2.0385e-04  1.1423 0.2892
-%in_slipt           1 0.0000208 2.0752e-05  0.1163 0.7342
-%in_siRNA:in_slipt  1 0.0000208 2.0752e-05  0.1163 0.7342
 
 \FloatBarrier
 
