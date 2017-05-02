@@ -216,7 +216,7 @@
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_vertex_degree".png}}
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_vertex_degree".pdf}}
    }
    }
    \end{center}
@@ -226,13 +226,42 @@
 \end{mdframed}
 \end{figure*}
 
+\begin{table*}[!htb]
+\caption{ANOVA for Synthetic Lethality and Vertex Degree}
+\label{tab:mtSL_Pathway_PI3K_Vertex_Degree}
+\noindent\makebox[\textwidth][c]{%               %centering
+%\resizebox{1.1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccccc}
+\hline
+                 & DF & Sum Squares & Mean Squares & F-value & p-value \\
+\hline
+\rowcolor{black!10}
+siRNA              &     1    &    15  & 15.50 & 0.0134 & 0.9084 \\
+\rowcolor{black!5}
+mtSLIPT              &     1    &    196 & 195.94 & 0.1689 & 0.6825 \\
+\rowcolor{black!10}
+siRNA$\times$mtSLIPT     &     1    &    9 &  9.17 & 0.0079 & 0.9294 \\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+ANOVA for Synthetic Lethality and Vertex Degree
+\end{tablenotes}
+\end{threeparttable}
+}
+%}
+\end{table*}
+
+\FloatBarrier
+
 \begin{figure*}[!htp]
 \begin{mdframed}
   \begin{center}
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_Info_Centrality(Log)".png}}
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_Info_Centrality(Log)".pdf}}
    }
    }
    \end{center}
@@ -242,13 +271,45 @@
 \end{mdframed}
 \end{figure*}
 
+\begin{table*}[!htb]
+\caption{ANOVA for Synthetic Lethality and Information Centrality}
+\label{tab:mtSL_Pathway_PI3K_InfoCent}
+\noindent\makebox[\textwidth][c]{%               %centering
+%\resizebox{1.1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccccc}
+\hline
+                 & DF & Sum Squares & Mean Squares & F-value & p-value \\
+\hline
+\rowcolor{black!10}
+siRNA              &     1    &    0.000256 & 0.0002561 & 0.1851 & 0.6685 \\
+\rowcolor{black!5}
+mtSLIPT              &     1    &    0.003225 & 0.0032247 & 2.3308 & 0.1318 \\
+\rowcolor{black!10}
+siRNA$\times$mtSLIPT     &     1    &    0.001238 & 0.0012385 & 0.8952 & 0.3476 \\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+ANOVA for Synthetic Lethality and Information Centrality
+\end{tablenotes}
+\end{threeparttable}
+}
+%}
+\end{table*}
+
+%info cent pathway 1.338433
+
+
+\FloatBarrier
+
 \begin{figure*}[!htp]
 \begin{mdframed}
   \begin{center}
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_pagerank".png}}
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_pagerank".pdf}}
    }
    }
    \end{center}
@@ -258,6 +319,33 @@
 \end{mdframed}
 \end{figure*}
 
+
+\begin{table*}[!htb]
+\caption{ANOVA for Synthetic Lethality and PageRank Centrality}
+\label{tab:mtSL_Pathway_PI3K_PageRank}
+\noindent\makebox[\textwidth][c]{%               %centering
+%\resizebox{1.1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccccc}
+\hline
+                 & DF & Sum Squares & Mean Squares & F-value & p-value \\
+\hline
+\rowcolor{black!10}
+siRNA              &     1    &     0.0002038 & $2.0385 \times 10^{-4}$ & 1.1423 & 0.2892 \\
+\rowcolor{black!5}
+mtSLIPT              &     1    &    0.0000208 & $2.0752 \times 10^{-5}$ & 0.1163 & 0.7342 \\
+\rowcolor{black!10}
+siRNA$\times$mtSLIPT     &     1    &    0.0000137 & $1.3743 \times 10^{-5}$ & 0.0770 & 0.7823 \\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+ANOVA for Synthetic Lethality and PageRank Centrality
+\end{tablenotes}
+\end{threeparttable}
+}
+%}
+\end{table*}
 
 \FloatBarrier
 

@@ -133,7 +133,7 @@ Similarly, \acrfull{GPCR} pathways are highly complex (as shown in Figures~\ref{
 
 \subsection{Gene Regulation and Translation}  \label{chapt4:SL_Genes_Translation}
 
-While very few synthetic lethal genes were detected in translational pathways in an experimental screen against \textit{CDH1} \cite{Telford2015}, these were highly over-represented in translational elongation (as shown in Figure~\ref{fig:SL_Pathway_TranslationElongation}). These \gls{SLIPT} genes include many ribosomal proteins and the regulatory ``elongation factors'' which may be subject to responses in the upstream signalling pathways. This observation lends support the notion of pathway structure among synthetic lethal candidates detected by \gls{SLIPT} in comparison with \gls{siRNA} as the computational approach with \gls{SLIPT} has demonstrated the ability to detect downstream genes in the core translational processes which experimental screening did not identify. Although it is possible the experimental screening may detect upstream regulatory genes that are less sensitive inactivation, that is less likely to be indiscriminately lethal to both genotypes at high doses of inactivation.
+While very few synthetic lethal genes were detected in translational pathways in an experimental screen against \textit{CDH1} \cite{Telford2015}, these were highly over-represented in translational elongation (as shown in Figure~\ref{fig:SL_Pathway_TranslationElongation}). These \gls{SLIPT} genes include many ribosomal proteins and the regulatory ``elongation factors'' which may be subject to responses in the upstream signalling pathways. This observation lends support the notion of pathway structure among synthetic lethal candidates detected by \gls{SLIPT} in comparison with \gls{siRNA} as the computational approach with \gls{SLIPT} has demonstrated the ability to detect downstream genes in the core translational processes which experimental screening did not identify. Although it is possible that the experimental screening may detect upstream regulatory genes less sensitive inactivation, that is genes which are less likely to be indiscriminately lethal to both genotypes at high doses of inactivation.
 
 Many of these \gls{SLIPT} candidate genes are also among the \gls{NMD} pathway (shown in Figure~\ref{fig:SL_Pathway_NMD}) or 3$^\prime$ \gls{UTR} mediated translational regulation (shown in Figure~\ref{fig:SL_Pathway_Three_prime_UTR}). While genes in these pathways were also supported by experimental screening with \gls{siRNA}, there was clear pathway structure. In particular, \textit{UPF1} was detected in the \gls{siRNA} screen and is the focal downstream gene for the entire \gls{NMD} pathway showing that (in this case) \gls{siRNA} genes are downstream effectors of those detected by \gls{SLIPT}.  3$^\prime$ \gls{UTR} mediated translational regulation has a similar structure with two modules connected solely by \textit{RPL13A}, giving an example of \gls{SLIPT} candidates genes with high connectivity, although there were many ribosomal proteins detected by \gls{SLIPT}. However, \textit{EIF3K} a regulatory elongation factor (not essential to ribosomal function) that was detected by \gls{SLIPT} was replicated with \gls{siRNA} screening while the majority of the elongation factors were not detected by either approach. Regulatory genes being more amenable to experimental validation also support further investigation into pathway structure as the \gls{SLIPT} candidates may support them by structural relationships and the downstream genes not being detectable by experimental screening with high dose inhibitors may explain the greater number of \gls{SLIPT} candidate partners of \textit{CDH1} than those experimentally identified.
 
@@ -142,9 +142,13 @@ Many of these \gls{SLIPT} candidate genes are also among the \gls{NMD} pathway (
 
 \section{Network Analysis of Synthetic Lethal Genes}   \label{chapt4:Network_Test}
 
+\glsreset{ANOVA}
+
 \FloatBarrier
 
 \subsection{Gene Connectivity and Vertex Degree}  \label{chapt4:Network_Vertex_Degree}
+
+
 
 \begin{figure*}[!htp]
 \begin{mdframed}
@@ -152,7 +156,7 @@ Many of these \gls{SLIPT} candidate genes are also among the \gls{NMD} pathway (
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_vertex_degree".png}}
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_vertex_degree".pdf}}
    }
    }
    \end{center}
@@ -161,6 +165,33 @@ Many of these \gls{SLIPT} candidate genes are also among the \gls{NMD} pathway (
 \label{fig:SL_Pathway_PI3K_Vertex_Degree}
 \end{mdframed}
 \end{figure*}
+
+\begin{table*}[!htb]
+\caption{ANOVA for Synthetic Lethality and Vertex Degree}
+\label{tab:SL_Pathway_PI3K_Vertex_Degree}
+\noindent\makebox[\textwidth][c]{%               %centering
+%\resizebox{1.1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccccc}
+\hline
+                 & DF & Sum Squares & Mean Squares & F-value & p-value \\
+\hline
+\rowcolor{black!10}
+siRNA              &     1    &    15     &    15.50     &    0.0134    &    0.9082 \\
+\rowcolor{black!5}
+SLIPT              &     1    &    506    &    506.01    &    0.4378    &    0.5105 \\
+\rowcolor{black!10}
+siRNA$\times$SLIPT     &     1    &    0      &    0.05      &   0.0000     &    0.9947 \\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+ANOVA for Synthetic Lethality and Vertex Degree
+\end{tablenotes}
+\end{threeparttable}
+}
+%}
+\end{table*}
 
 \FloatBarrier
 
@@ -178,7 +209,7 @@ Information centrality has also been suggested to indicate essentiality of genes
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_Info_Centrality(Log)".png}}
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_Info_Centrality(Log)".pdf}}
    }
    }
    \end{center}
@@ -187,6 +218,33 @@ Information centrality has also been suggested to indicate essentiality of genes
 \label{fig:SL_Pathway_PI3K_InfoCent}
 \end{mdframed}
 \end{figure*}
+
+\begin{table*}[!htb]
+\caption{ANOVA for Synthetic Lethality and Information Centrality}
+\label{tab:SL_Pathway_PI3K_InfoCent}
+\noindent\makebox[\textwidth][c]{%               %centering
+%\resizebox{1.1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccccc}
+\hline
+                 & DF & Sum Squares & Mean Squares & F-value & p-value \\
+\hline
+\rowcolor{black!10}
+siRNA              &     1    &    0.000256 & 0.0002561 &  0.1854 & 0.6682 \\
+\rowcolor{black!5}
+SLIPT              &     1    &    0.003827 & 0.0038275 & 2.7717 & 0.1008 \\
+\rowcolor{black!10}
+siRNA$\times$SLIPT     &     1    &    0.000804 &  0.0008036 & 0.5820 & 0.4483 \\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+ANOVA for Synthetic Lethality and Information Centrality
+\end{tablenotes}
+\end{threeparttable}
+}
+%}
+\end{table*}
 
 \FloatBarrier
 
@@ -198,7 +256,7 @@ Information centrality has also been suggested to indicate essentiality of genes
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_pagerank".png}}
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_pagerank".pdf}}
    }
    }
    \end{center}
@@ -208,6 +266,36 @@ Information centrality has also been suggested to indicate essentiality of genes
 \end{mdframed}
 \end{figure*}
 
+\begin{table*}[!htb]
+\caption{ANOVA for Synthetic Lethality and PageRank Centrality}
+\label{tab:SL_Pathway_PI3K_PageRank}
+\noindent\makebox[\textwidth][c]{%               %centering
+%\resizebox{1.1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccccc}
+\hline
+                 & DF & Sum Squares & Mean Squares & F-value & p-value \\
+\hline
+\rowcolor{black!10}
+siRNA              &     1    &    0.0002038 & $2.0385 \times 10^{-4}$ & 1.1423 & 0.2892 \\
+\rowcolor{black!5}
+SLIPT              &     1    &    0.0000208 & $2.0752 \times 10^{-5}$ & 0.1163 & 0.7342 \\
+\rowcolor{black!10}
+siRNA$\times$SLIPT     &     1    &    0.0000208 & $2.0752 \times 10^{-5}$ & 0.1163 & 0.7342 \\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+ANOVA for Synthetic Lethality and PageRank Centrality
+\end{tablenotes}
+\end{threeparttable}
+}
+%}
+\end{table*}
+
+%in_siRNA           1 0.0002038 2.0385e-04  1.1423 0.2892
+%in_slipt           1 0.0000208 2.0752e-05  0.1163 0.7342
+%in_siRNA:in_slipt  1 0.0000208 2.0752e-05  0.1163 0.7342
 
 \FloatBarrier
 
