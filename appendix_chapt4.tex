@@ -455,11 +455,104 @@ Highest information centrality for genes (proteins), cofactors, and minerals in 
 
 \FloatBarrier
 
+\begin{figure*}[!htp]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_counts_vioplot_mtSL".pdf}}
+   }
+   }
+   \end{center}
+   \caption[Synthetic Lethality and Heirarchy Score in PI3K]{\small \textbf{Synthetic Lethality and Heirarchy Score in PI3K.} The hierarchical distance scores were similarly distributed across mtSLIPT and \gls{siRNA} genes. Genes detected by both methods had a higher (downstream) median than either group.
+}
+\label{fig:mtSL_Pathway_PI3K_Distance_Vioplot_Counts}
+\end{mdframed}
+\end{figure*}
+
+
 \begin{table*}[!htb]
-\caption{Information centrality for genes and molecules in the Reactome network}
+\caption{ANOVA for Synthetic Lethality and PI3K Hierarchy}
+\label{tab:mtSL_Pathway_PI3K_Distance_Counts}
+\noindent\makebox[\textwidth][c]{%               %centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccccc}
+\hline
+                 & DF & Sum Squares & Mean Squares & F-value & p-value \\
+\hline
+\rowcolor{black!10}
+siRNA              &     1    &     0.001 & 0.00070 & 0.0004 & 0.9841 \\
+\rowcolor{black!5}
+mtSLIPT              &     1    &    0.007 & 0.0066 & 0.0040 & 0.9496 \\
+\rowcolor{black!10}
+siRNA$\times$mtSLIPT     &     1    &   3.906 & 3.9056 & 2.3829 & 0.1250 \\
+\hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Analysis of variance for PI3K hierarchy score against synthetic lethal detection approaches (with an interaction term)
+\end{tablenotes}
+\end{threeparttable}
+}
+}
+\end{table*}
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    \fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_counts_barplot_mtSL".pdf}}
+   }
+   }
+   \end{center}
+   \caption[Heirarchy Score in PI3K against Synthetic Lethality in PI3K]{\small \textbf{Heirarchy Score in PI3K against Synthetic Lethality in PI3K.} The number of mtSLIPT and \gls{siRNA} genes against the hierarchical distance scores showing no significant tendency for either method to either of the pathway upstream or downstream extremities.
+}
+\label{fig:mtSL_Pathway_PI3K_Distance_Barplot_Counts}
+\end{mdframed}
+\end{figure*}
+
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    %\input{{{"SL_Model.pdf_tex"}}
+    \fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_vioplot_mtSL".pdf}}
+   }
+   }
+   \end{center}
+   \caption[Structure of Synthetic Lethality in PI3K]{\small \textbf{Structure of Synthetic Lethality in PI3K.} The number of mtSLIPT and \gls{siRNA} genes upstream or downstream of each gene in the Reactome PI3K pathway were tested (by the $\chi^2$-test). These are plotted as a split violin plot against the hierarchical distance scores showing no significant tendency for either method to either of the pathway upstream or downstream extremities.
+}
+\label{fig:mtSL_Pathway_PI3K_Distance_Vioplot}
+\end{mdframed}
+\end{figure*}
+
+
+\begin{figure*}[!htp]
+\begin{mdframed}
+  \begin{center}
+  \resizebox{0.75 \textwidth}{!}{
+    %\input{{{"SL_Model.pdf_tex"}}
+    \fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_mtSL".pdf}}
+   }
+   }
+   \end{center}
+   \caption[Structure of Synthetic Lethality Resampling]{\small \textbf{Structure of Synthetic Lethality Resampling.} Structure of Synthetic Lethality Resampling.
+}
+\label{fig:mtSL_Pathway_PI3K_Perm}
+\end{mdframed}
+\end{figure*}
+
+
+\begin{table*}[!htb]
+\caption{Resampling for pathway structure of synthetic lethal detection methods}
 \label{tab:pathway_str_mtSL}
 \noindent\makebox[\textwidth][c]{%               %centering
-\resizebox{1.1 \textwidth}{!}{
+\resizebox{1.2 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccccccccccc}
                                           & \multicolumn{2}{l}{Graph:} & \multicolumn{2}{l}{States:} & \multicolumn{4}{l}{Observed:}        & \multicolumn{2}{l}{Permutation p-value:} \\
