@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.4)  4 MAY 2017 16:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.4)  4 MAY 2017 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -32,9 +32,8 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count88
-)
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+) (./etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
@@ -74,15 +73,15 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/share/texlive/texmf-dist/tex/latex/moreverb/moreverb.sty
-Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+(./moreverb.sty
+Package: moreverb 1997/06/11 v2.2d `more' verbatim facilities
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks15
 \verbatim@line=\toks16
 \verbatim@in@stream=\read1
 )
+\verbatim@out=\write3
 \tab@position=\count92
 \tab@size=\count93
 \listing@line=\count94
@@ -583,7 +582,7 @@ Package: glossaries-compatible-307 2013/11/14 v4.0 (NLCT)
 \gls@level=\count153
 \@gls@tmpb=\toks31
 \gls@tmplen=\skip63
-\glswrite=\write3
+\glswrite=\write4
 \glskeylisttok=\toks32
 \glslabeltok=\toks33
 \glsshorttok=\toks34
@@ -641,7 +640,7 @@ Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 \pgf@yb=\dimen153
 \pgf@xc=\dimen154
 \pgf@yc=\dimen155
-\w@pgf@writea=\write4
+\w@pgf@writea=\write5
 \r@pgf@reada=\read2
 \c@pgf@counta=\count154
 \c@pgf@countb=\count155
@@ -1369,13 +1368,13 @@ Package: xfrac 2012/11/09 v4299 L3 Experimental split-level fractions
 \openout2 = `glossary.aux'.
 
 (./glossary.tex)
-\glo@main@file=\write5
-\openout5 = `20170427_thesis_methods.glo'.
+\glo@main@file=\write6
+\openout6 = `20170427_thesis_methods.glo'.
 
 Package glossaries Info: Writing glossary file 20170427_thesis_methods.glo on i
 nput line 106.
-\glo@acronym@file=\write6
-\openout6 = `20170427_thesis_methods.acn'.
+\glo@acronym@file=\write7
+\openout7 = `20170427_thesis_methods.acn'.
 
 Package glossaries Info: Writing glossary file 20170427_thesis_methods.acn on i
 nput line 106.
@@ -1459,8 +1458,8 @@ LaTeX Info: Redefining \pageref on input line 139.
 LaTeX Info: Redefining \nameref on input line 139.
 
 (./20170427_thesis_methods.out) (./20170427_thesis_methods.out)
-\@outlinefile=\write7
-\openout7 = `20170427_thesis_methods.out'.
+\@outlinefile=\write8
+\openout8 = `20170427_thesis_methods.out'.
 
 
 ABD: EveryShipout initializing macros
@@ -1479,26 +1478,26 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 
 
-\openout3 = `20170427_thesis_methods.xdy'.
+\openout4 = `20170427_thesis_methods.xdy'.
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 [2] [3] [4] [5])
-\tf@toc=\write8
-\openout8 = `20170427_thesis_methods.toc'.
+\tf@toc=\write9
+\openout9 = `20170427_thesis_methods.toc'.
 
  [6] (./20170427_thesis_methods.lof [7
 
 ] [8])
-\tf@lof=\write9
-\openout9 = `20170427_thesis_methods.lof'.
+\tf@lof=\write10
+\openout10 = `20170427_thesis_methods.lof'.
 
  [9]
 (./20170427_thesis_methods.lot [10
 
 ])
-\tf@lot=\write10
-\openout10 = `20170427_thesis_methods.lot'.
+\tf@lot=\write11
+\openout11 = `20170427_thesis_methods.lot'.
 
  (./20170427_thesis_methods.gls [11]
 Underfull \hbox (badness 1521) in paragraph at lines 27--28
@@ -1531,13 +1530,13 @@ Overfull \hbox (11.25215pt too wide) in paragraph at lines 7--7
 
 
 
-] [58] [59] <fig2a.png, id=1031, 602.25pt x 602.25pt>
+] [58] [59] <fig2a.png, id=1030, 602.25pt x 602.25pt>
 File: fig2a.png Graphic file (type png)
  <use fig2a.png>
 Package pdftex.def Info: fig2a.png used on input line 57.
 (pdftex.def)             Requested size: 168.08452pt x 168.08665pt.
 
-<fig2b.png, id=1032, 602.25pt x 602.25pt>
+<fig2b.png, id=1031, 602.25pt x 602.25pt>
 File: fig2b.png Graphic file (type png)
  <use fig2b.png>
 Package pdftex.def Info: fig2b.png used on input line 61.
@@ -1547,13 +1546,13 @@ Package mdframed Info: mdframed inside float
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 67.
 
-<fig3a.png, id=1033, 602.25pt x 602.25pt>
+<fig3a.png, id=1032, 602.25pt x 602.25pt>
 File: fig3a.png Graphic file (type png)
  <use fig3a.png>
 Package pdftex.def Info: fig3a.png used on input line 78.
 (pdftex.def)             Requested size: 168.08452pt x 168.08665pt.
 
-<fig3b.png, id=1034, 602.25pt x 602.25pt>
+<fig3b.png, id=1033, 602.25pt x 602.25pt>
 File: fig3b.png Graphic file (type png)
  <use fig3b.png>
 Package pdftex.def Info: fig3b.png used on input line 82.
@@ -1592,7 +1591,7 @@ Chapter 3.
 
 
 
-] (./SL_Method.pdf_tex <SL_Method.pdf, id=1346, 518.34277pt x 199.68352pt>
+] (./SL_Method.pdf_tex <SL_Method.pdf, id=1345, 518.34277pt x 199.68352pt>
 File: SL_Method.pdf Graphic file (type pdf)
 
 <use SL_Method.pdf>
@@ -1604,7 +1603,7 @@ Package mdframed Info: mdframed inside float
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 25.
  [77 <./SL_Method.pdf>] (./SL_Method_mtSL.pdf_tex
-<SL_Method_mtSL.pdf, id=1362, 518.46199pt x 199.68126pt>
+<SL_Method_mtSL.pdf, id=1361, 518.46199pt x 199.68126pt>
 File: SL_Method_mtSL.pdf Graphic file (type pdf)
 
 <use SL_Method_mtSL.pdf>
@@ -1616,7 +1615,7 @@ Package mdframed Info: mdframed inside float
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 41.
  [78 <./SL_Method_mtSL.pdf>]
-<"SL_Model".pdf, id=1385, 642.4pt x 602.25pt>
+<"SL_Model".pdf, id=1384, 642.4pt x 602.25pt>
 File: "SL_Model".pdf Graphic file (type pdf)
  <use "SL_Model".pdf>
 Package pdftex.def Info: "SL_Model".pdf used on input line 69.
@@ -1626,7 +1625,7 @@ Package mdframed Info: mdframed inside float
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 74.
  [79]
-[80 <./SL_Model.pdf>] <"SL_Model_Expression".pdf, id=1590, 481.8pt x 240.9pt>
+[80 <./SL_Model.pdf>] <"SL_Model_Expression".pdf, id=1589, 481.8pt x 240.9pt>
 File: "SL_Model_Expression".pdf Graphic file (type pdf)
 
 <use "SL_Model_Expression".pdf>
@@ -1637,7 +1636,7 @@ Package mdframed Info: mdframed inside float
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 94.
 
-<"SL_Model_Higher".pdf, id=1591, 642.4pt x 642.4pt>
+<"SL_Model_Higher".pdf, id=1590, 642.4pt x 642.4pt>
 File: "SL_Model_Higher".pdf Graphic file (type pdf)
 
 <use "SL_Model_Higher".pdf>
@@ -1649,7 +1648,7 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 111.
  [81 <./SL_Model_Expression.pdf>] [82 <./SL_Model_Higher.pdf>]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat".pn
-g, id=1648, 803.0pt x 803.0pt>
+g, id=1647, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_ma
 t".png Graphic file (type png)
 
@@ -1660,7 +1659,7 @@ _sim_method/expr_mat".png used on input line 139.
 (pdftex.def)             Requested size: 189.0967pt x 189.0971pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_disc_ma
-t".png, id=1649, 803.0pt x 803.0pt>
+t".png, id=1648, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_di
 sc_mat".png Graphic file (type png)
 
@@ -1675,7 +1674,7 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 151.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL_disc
-_mat".png, id=1650, 803.0pt x 803.0pt>
+_mat".png, id=1649, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL
 _disc_mat".png Graphic file (type png)
 
@@ -1686,7 +1685,7 @@ _sim_method/expr_SL_disc_mat".png used on input line 190.
 (pdftex.def)             Requested size: 189.0967pt x 189.0971pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_disc_qu
-ery_mat_graph".png, id=1651, 803.0pt x 803.0pt>
+ery_mat_graph".png, id=1650, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_di
 sc_query_mat_graph".png Graphic file (type png)
 
@@ -1714,7 +1713,7 @@ _sim_method/expr_mat".png used on input line 222.
 (pdftex.def)             Requested size: 189.0967pt x 189.0971pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_query_m
-at_graph".png, id=1672, 803.0pt x 803.0pt>
+at_graph".png, id=1671, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_qu
 ery_mat_graph".png Graphic file (type png)
 
@@ -1729,7 +1728,7 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 234.
  [85 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_que
 ry_mat_graph.png (PNG copy)>]
-<"SL_Model_Binomial_1K_AUC_samples_prop".png, id=1689, 602.25pt x 602.25pt>
+<"SL_Model_Binomial_1K_AUC_samples_prop".png, id=1688, 602.25pt x 602.25pt>
 File: "SL_Model_Binomial_1K_AUC_samples_prop".png Graphic file (type png)
 
 <use "SL_Model_Binomial_1K_AUC_samples_prop".png>
@@ -1742,7 +1741,7 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 265.
 
 <"SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Binom(Feb)_v_Mvtn(Aprxy)_Full".png
-, id=1690, 602.25pt x 602.25pt>
+, id=1689, 602.25pt x 602.25pt>
 File: "SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Binom(Feb)_v_Mvtn(Aprxy)_Full
 ".png Graphic file (type png)
 
@@ -1772,7 +1771,7 @@ LaTeX Warning: File `{SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png}' not
 found on input line 300.
 
 
-<SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png, id=1717, 602.25pt x 602.25
+<SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png, id=1716, 602.25pt x 602.25
 pt>
 File: SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png Graphic file (type png
 )
@@ -1781,7 +1780,7 @@ Package pdftex.def Info: SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png use
 d on input line 300.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_Apr15mvnormCor_1K_ROC2_samplesx_prop".png, id=1718, 602.25pt x 602.2
+<"SL_Model_Apr15mvnormCor_1K_ROC2_samplesx_prop".png, id=1717, 602.25pt x 602.2
 5pt>
 File: "SL_Model_Apr15mvnormCor_1K_ROC2_samplesx_prop".png Graphic file (type pn
 g)
@@ -1790,7 +1789,7 @@ Package pdftex.def Info: "SL_Model_Apr15mvnormCor_1K_ROC2_samplesx_prop".png us
 ed on input line 304.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_Apr15mvnormCor_1K_AUC_samplesx_prop".png, id=1719, 602.25pt x 602.25
+<"SL_Model_Apr15mvnormCor_1K_AUC_samplesx_prop".png, id=1718, 602.25pt x 602.25
 pt>
 File: "SL_Model_Apr15mvnormCor_1K_AUC_samplesx_prop".png Graphic file (type png
 )
@@ -1809,7 +1808,7 @@ LaTeX Warning: Float too large for page by 11.2572pt on input line 315.
 [88] [89 <./SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop.png (PNG copy)> <./SL
 _Model_Apr15mvnormCor_1K_ROC2_samplesx_prop.png (PNG copy)> <./SL_Model_Apr15mv
 normCor_1K_AUC_samplesx_prop.png (PNG copy)>] [90]
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(1)".pdf, id=1764, 481.8pt x 682
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(1)".pdf, id=1763, 481.8pt x 682
 .55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(1)".pdf Graphic file (type
  pdf)
@@ -1818,7 +1817,7 @@ Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(1)".pdf
  used on input line 340.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(2)".pdf, id=1765, 481.8pt x 682
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(2)".pdf, id=1764, 481.8pt x 682
 .55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(2)".pdf Graphic file (type
  pdf)
@@ -1827,7 +1826,7 @@ Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(2)".pdf
  used on input line 344.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(4)".pdf, id=1766, 481.8pt x 682
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(4)".pdf, id=1765, 481.8pt x 682
 .55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(4)".pdf Graphic file (type
  pdf)
@@ -1836,7 +1835,7 @@ Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(4)".pdf
  used on input line 349.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(3)".pdf, id=1767, 481.8pt x 682
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(3)".pdf, id=1766, 481.8pt x 682
 .55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(3)".pdf Graphic file (type
  pdf)
@@ -1853,7 +1852,7 @@ Package mdframed Info: mdframed inside a box
 LaTeX Warning: Float too large for page by 8.25864pt on input line 359.
 
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(1)".pdf, id=1780, 481.8pt x 
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(1)".pdf, id=1779, 481.8pt x 
 682.55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(1)".pdf Graphic file (t
 ype pdf)
@@ -1862,7 +1861,7 @@ Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(1)".
 pdf used on input line 373.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".pdf, id=1781, 481.8pt x 
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".pdf, id=1780, 481.8pt x 
 682.55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".pdf Graphic file (t
 ype pdf)
@@ -1871,7 +1870,7 @@ Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".
 pdf used on input line 377.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(4)".pdf, id=1782, 481.8pt x 
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(4)".pdf, id=1781, 481.8pt x 
 682.55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(4)".pdf Graphic file (t
 ype pdf)
@@ -1880,7 +1879,7 @@ Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(4)".
 pdf used on input line 382.
 (pdftex.def)             Requested size: 147.07877pt x 208.35971pt.
 
-<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(3)".pdf, id=1783, 481.8pt x 
+<"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(3)".pdf, id=1782, 481.8pt x 
 682.55pt>
 File: "SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(3)".pdf Graphic file (t
 ype pdf)
@@ -1926,7 +1925,7 @@ pdfTeX warning: pdflatex (file ./SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_t
 op(3).pdf): PDF inclusion: multiple pdfs with page group included in a single p
 age
 >]
-<"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".png, id=1838, 602.25pt x 752
+<"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".png, id=1837, 602.25pt x 752
 .8125pt>
 File: "SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".png Graphic file (type 
 png)
@@ -1935,7 +1934,7 @@ Package pdftex.def Info: "SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".png
 used on input line 405.
 (pdftex.def)             Requested size: 147.07877pt x 183.84909pt.
 
-<"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(2)".png, id=1839, 602.25pt x 752
+<"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(2)".png, id=1838, 602.25pt x 752
 .8125pt>
 File: "SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(2)".png Graphic file (type 
 png)
@@ -1948,7 +1947,7 @@ Package mdframed Info: mdframed inside float
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 415.
 
-<"SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png, id=1842, 602.25pt x 602.25pt
+<"SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png, id=1841, 602.25pt x 602.25pt
 >
 File: "SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png Graphic file (type png)
  <use "SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png>
@@ -1956,7 +1955,7 @@ Package pdftex.def Info: "SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png used
 on input line 427.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png, id=1843, 602.25pt x 602.25pt
+<"SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png, id=1842, 602.25pt x 602.25pt
 >
 File: "SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png Graphic file (type png)
  <use "SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png>
@@ -1964,7 +1963,7 @@ Package pdftex.def Info: "SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png used
 on input line 431.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png, id=1844, 602.25pt x 602.25pt>
+<"SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png, id=1843, 602.25pt x 602.25pt>
 File: "SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png Graphic file (type png)
 <use "SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png>
 Package pdftex.def Info: "SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png used o
@@ -1980,7 +1979,7 @@ LaTeX Warning: Float too large for page by 11.2572pt on input line 442.
 
 
 <"SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Apry)_v_Cor(Aprxy)_Full".png,
- id=1847, 602.25pt x 602.25pt>
+ id=1846, 602.25pt x 602.25pt>
 File: "SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Apry)_v_Cor(Aprxy)_Full"
 .png Graphic file (type png)
 
@@ -1997,7 +1996,7 @@ Package mdframed Info: mdframed inside a box
 vnorm_heatmap_10XSL_cor_comp2(2).png>] [95 <./SL_Model_Apr15mvnorm_1K_ROC1_samp
 lesx_prop.png (PNG copy)> <./SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop.png (PN
 G copy)> <./SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop.png (PNG copy)>]
-<"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png, id=1871, 602.25pt x 602.
+<"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png, id=1870, 602.25pt x 602.
 25pt>
 File: "SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png Graphic file (type p
 ng)
@@ -2006,7 +2005,7 @@ Package pdftex.def Info: "SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png u
 sed on input line 473.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png, id=1872, 602.25pt x 602.
+<"SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png, id=1871, 602.25pt x 602.
 25pt>
 File: "SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png Graphic file (type p
 ng)
@@ -2015,7 +2014,7 @@ Package pdftex.def Info: "SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png u
 sed on input line 477.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"SL_Model_May15mvnorm_dir_1K_AUC_samplesx_prop".png, id=1873, 602.25pt x 602.2
+<"SL_Model_May15mvnorm_dir_1K_AUC_samplesx_prop".png, id=1872, 602.25pt x 602.2
 5pt>
 File: "SL_Model_May15mvnorm_dir_1K_AUC_samplesx_prop".png Graphic file (type pn
 g)
@@ -2035,7 +2034,7 @@ LaTeX Warning: Float too large for page by 11.2572pt on input line 488.
 png (PNG copy)>] [97 <./SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop.png (PNG
  copy)> <./SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop.png (PNG copy)> <./SL
 _Model_May15mvnorm_dir_1K_AUC_samplesx_prop.png (PNG copy)>]
-<"SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png, id=1894, 602.25pt x 602.25pt
+<"SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png, id=1893, 602.25pt x 602.25pt
 >
 File: "SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png Graphic file (type png)
  <use "SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png>
@@ -2059,7 +2058,7 @@ Package mdframed Info: mdframed inside float
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 543.
 
-<"SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png, id=1900, 602.25pt x 602.25pt
+<"SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png, id=1899, 602.25pt x 602.25pt
 >
 File: "SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png Graphic file (type png)
  <use "SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png>
@@ -2080,7 +2079,7 @@ Overfull \hbox (23.9272pt too wide) in paragraph at lines 556--563
 
 
 <"SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Mayy)_v_Cor(Mayxy)_Full".png,
- id=1902, 602.25pt x 602.25pt>
+ id=1901, 602.25pt x 602.25pt>
 File: "SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Mayy)_v_Cor(Mayxy)_Full"
 .png Graphic file (type png)
 
@@ -2098,7 +2097,7 @@ Package mdframed Info: mdframed inside a box
 est_Graph_10K_Graph1_ROC_Compare_Mvtn(Mayy)_v_Cor(Mayxy)_Full.png (PNG copy)>]
 [100] [101] [102]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph
-".png, id=1975, 803.0pt x 803.0pt>
+".png, id=1974, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_
 graph".png Graphic file (type png)
 
@@ -2109,7 +2108,7 @@ _sim_method/simple_graph".png used on input line 622.
 (pdftex.def)             Requested size: 189.0967pt x 189.0971pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph
-_inhibiting".png, id=1976, 803.0pt x 803.0pt>
+_inhibiting".png, id=1975, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_
 graph_inhibiting".png Graphic file (type png)
 
@@ -2140,7 +2139,7 @@ _sim_method/simple_graph".png used on input line 647.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/dist_mat".pn
-g, id=1991, 803.0pt x 803.0pt>
+g, id=1990, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/dist_ma
 t".png Graphic file (type png)
 
@@ -2151,7 +2150,7 @@ _sim_method/dist_mat".png used on input line 651.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_mat".p
-ng, id=1992, 803.0pt x 803.0pt>
+ng, id=1991, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_m
 at".png Graphic file (type png)
 
@@ -2162,7 +2161,7 @@ _sim_method/sigma_mat".png used on input line 656.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor_mat
-".png, id=1993, 803.0pt x 803.0pt>
+".png, id=1992, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_co
 r_mat".png Graphic file (type png)
 
@@ -2224,7 +2223,7 @@ _sim_method/dist_mat".png used on input line 693.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_mat_in
-hibiting".png, id=2006, 803.0pt x 803.0pt>
+hibiting".png, id=2005, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_m
 at_inhibiting".png Graphic file (type png)
 
@@ -2235,7 +2234,7 @@ _sim_method/sigma_mat_inhibiting".png used on input line 698.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor_mat
-_inhibiting".png, id=2007, 803.0pt x 803.0pt>
+_inhibiting".png, id=2006, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_co
 r_mat_inhibiting".png Graphic file (type png)
 
@@ -2246,7 +2245,7 @@ _sim_method/expr_cor_mat_inhibiting".png used on input line 702.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat_inh
-ibiting".png, id=2008, 803.0pt x 803.0pt>
+ibiting".png, id=2007, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_ma
 t_inhibiting".png Graphic file (type png)
 
@@ -2257,7 +2256,7 @@ _sim_method/expr_mat_inhibiting".png used on input line 707.
 (pdftex.def)             Requested size: 147.07877pt x 147.07008pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_d
-isc_mat".png, id=2009, 803.0pt x 803.0pt>
+isc_mat".png, id=2008, 803.0pt x 803.0pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_in
 hib_disc_mat".png Graphic file (type png)
 
@@ -2279,13 +2278,13 @@ y)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor_
 mat_inhibiting.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model
 /graph_sim_method/expr_mat_inhibiting.png (PNG copy)> </home/tomkelly/Documents
 /PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_disc_mat.png (PNG copy)>] [
-107] <"vioplot1".png, id=2070, 632.3625pt x 351.3125pt>
+107] <"vioplot1".png, id=2069, 632.3625pt x 351.3125pt>
 File: "vioplot1".png Graphic file (type png)
 
 <use "vioplot1".png>
 Package pdftex.def Info: "vioplot1".png used on input line 766.
 (pdftex.def)             Requested size: 189.0967pt x 105.05148pt.
- <"vioplot2".png, id=2071, 632.3625pt x 351.3125pt>
+ <"vioplot2".png, id=2070, 632.3625pt x 351.3125pt>
 File: "vioplot2".png Graphic file (type png)
 
 <use "vioplot2".png>
@@ -2295,7 +2294,7 @@ Package mdframed Info: mdframed inside float
  mdframed uses option nobreak mdframed on input line 775.
 Package mdframed Info: mdframed inside a box 
  mdframed uses option nobreak mdframed on input line 775.
- <"heatmap2x".png, id=2074, 505.89pt x 361.35pt>
+ <"heatmap2x".png, id=2073, 505.89pt x 361.35pt>
 File: "heatmap2x".png Graphic file (type png)
 
 <use "heatmap2x".png>
@@ -2333,7 +2332,7 @@ Underfull \hbox (badness 5592) in paragraph at lines 72--78
 avigating-[]cancer-[]care / cancer-[]basics /
  []
 
-[198
+[202
 
 
 
@@ -2342,10 +2341,10 @@ avigating-[]cancer-[]care / cancer-[]basics /
 
 
 
-] [199]
+] [203]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
- [200] [201]
+ [204] [205]
 Underfull \hbox (badness 10000) in paragraph at lines 323--328
 []\OT1/cmr/m/n/12 Cancer Re-search UK (2017) Fam-ily his-tory and can-cer
  []
@@ -2362,11 +2361,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--328
 eased-[]cancer-[]risk /
  []
 
-[202] [203]
+[206] [207]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [204] [205]
+ [208] [209]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 611.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -2377,25 +2376,25 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
- [206] [207]
+ [210] [211]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
- [208] [209] [210] [211] [212] [213] [214] [215] [216] [217]
-[218]
+ [212] [213] [214] [215] [216] [217] [218] [219] [220] [221]
+[222]
 Underfull \hbox (badness 4168) in paragraph at lines 1557--1562
 \OT1/cmtt/m/n/12 / / www . cancer . gov / about-[]cancer / causes-[]prevention 
 / genetics$[]\OT1/cmr/m/n/12 .  Pub-lished:
  []
 
-[219]
+[223]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [220] [221]
+ [224] [225]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
-) [222]
+) [226]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 204.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 204.
  (./20170427_thesis_methods.aux (./intro.aux)
@@ -2414,10 +2413,10 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 35855 strings out of 494985
- 653203 string characters out of 6180356
- 910585 words of memory out of 5000000
- 37365 multiletter control sequences out of 15000+600000
+ 35856 strings out of 494985
+ 652940 string characters out of 6180356
+ 910681 words of memory out of 5000000
+ 37369 multiletter control sequences out of 15000+600000
  14525 words of font info for 54 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  59i,21n,94p,10458b,953s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2466,24 +2465,6 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{table.caption.26} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.23} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.18} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.16} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.15} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{table.B.1} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.caption.29} has been referenced but does not 
-exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{table.caption.25} has been referenced but does not 
 exist, replaced by a fixed one
 
@@ -2493,7 +2474,22 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{table.caption.17} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.14} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.16} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.B.1} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.27} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.23} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.18} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.15} has been referenced but does not 
 exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.73} has been referenced but does not 
@@ -3102,10 +3098,10 @@ usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/texlive/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on 20170427_thesis_methods.pdf (94 pages, 4458881 bytes).
+Output written on 20170427_thesis_methods.pdf (94 pages, 4458870 bytes).
 PDF statistics:
- 2684 PDF objects out of 2984 (max. 8388607)
- 2384 compressed objects within 24 object streams
- 729 named destinations out of 1000 (max. 500000)
+ 2683 PDF objects out of 2984 (max. 8388607)
+ 2383 compressed objects within 24 object streams
+ 728 named destinations out of 1000 (max. 500000)
  696 words of extra memory for PDF output out of 10000 (max. 10000000)
 

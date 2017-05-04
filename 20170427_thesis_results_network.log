@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.4)  4 MAY 2017 16:13
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.10.4)  4 MAY 2017 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -32,9 +32,8 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibsep=\skip44
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count88
-)
-(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+) (./etoolbox.sty
+Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 
 (/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
 Package: etex 1998/03/26 v2.0 eTeX basic definition package (PEB)
@@ -74,15 +73,15 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(/usr/share/texlive/texmf-dist/tex/latex/moreverb/moreverb.sty
-Package: moreverb 2008/06/03 v2.3a `more' verbatim facilities
-
-(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+(./moreverb.sty
+Package: moreverb 1997/06/11 v2.2d `more' verbatim facilities
+ (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks15
 \verbatim@line=\toks16
 \verbatim@in@stream=\read1
 )
+\verbatim@out=\write3
 \tab@position=\count92
 \tab@size=\count93
 \listing@line=\count94
@@ -583,7 +582,7 @@ Package: glossaries-compatible-307 2013/11/14 v4.0 (NLCT)
 \gls@level=\count153
 \@gls@tmpb=\toks31
 \gls@tmplen=\skip63
-\glswrite=\write3
+\glswrite=\write4
 \glskeylisttok=\toks32
 \glslabeltok=\toks33
 \glsshorttok=\toks34
@@ -641,7 +640,7 @@ Package: pgfsys 2010/06/30 v2.10 (rcs-revision 1.37)
 \pgf@yb=\dimen153
 \pgf@xc=\dimen154
 \pgf@yc=\dimen155
-\w@pgf@writea=\write4
+\w@pgf@writea=\write5
 \r@pgf@reada=\read2
 \c@pgf@counta=\count154
 \c@pgf@countb=\count155
@@ -1369,13 +1368,13 @@ Package: xfrac 2012/11/09 v4299 L3 Experimental split-level fractions
 \openout2 = `glossary.aux'.
 
 (./glossary.tex)
-\glo@main@file=\write5
-\openout5 = `20170427_thesis_results_network.glo'.
+\glo@main@file=\write6
+\openout6 = `20170427_thesis_results_network.glo'.
 
 Package glossaries Info: Writing glossary file 20170427_thesis_results_network.
 glo on input line 106.
-\glo@acronym@file=\write6
-\openout6 = `20170427_thesis_results_network.acn'.
+\glo@acronym@file=\write7
+\openout7 = `20170427_thesis_results_network.acn'.
 
 Package glossaries Info: Writing glossary file 20170427_thesis_results_network.
 acn on input line 106.
@@ -1460,8 +1459,8 @@ LaTeX Info: Redefining \pageref on input line 139.
 LaTeX Info: Redefining \nameref on input line 139.
 
 (./20170427_thesis_results_network.out) (./20170427_thesis_results_network.out)
-\@outlinefile=\write7
-\openout7 = `20170427_thesis_results_network.out'.
+\@outlinefile=\write8
+\openout8 = `20170427_thesis_results_network.out'.
 
 ABD: EveryShipout initializing macros
 Package caption Info: Begin \AtBeginDocument code.
@@ -1480,26 +1479,26 @@ Non-PDF special ignored!
 Non-PDF special ignored!
 
 
-\openout3 = `20170427_thesis_results_network.xdy'.
+\openout4 = `20170427_thesis_results_network.xdy'.
 
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 [2] [3] [4] [5])
-\tf@toc=\write8
-\openout8 = `20170427_thesis_results_network.toc'.
+\tf@toc=\write9
+\openout9 = `20170427_thesis_results_network.toc'.
 
  [6] (./20170427_thesis_results_network.lof [7
 
 ] [8])
-\tf@lof=\write9
-\openout9 = `20170427_thesis_results_network.lof'.
+\tf@lof=\write10
+\openout10 = `20170427_thesis_results_network.lof'.
 
  [9]
 (./20170427_thesis_results_network.lot [10
 
 ])
-\tf@lot=\write10
-\openout10 = `20170427_thesis_results_network.lot'.
+\tf@lot=\write11
+\openout11 = `20170427_thesis_results_network.lot'.
 
 
 (./20170427_thesis_results_network.gls [11]
@@ -1531,194 +1530,197 @@ Chapter 5.
 
 
 
-] [166
-
-]
+] [166]
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3K_exprSL_2".pdf, id=
-920, 1084.05pt x 1084.05pt>
+918, 1084.05pt x 1084.05pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3K_exprSL_2".pdf
  Graphic file (type pdf)
 
 <use "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3K_exprSL_2".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot
-_Pi3K_exprSL_2".pdf used on input line 67.
+_Pi3K_exprSL_2".pdf used on input line 32.
 (pdftex.def)             Requested size: 1084.04736pt x 1084.04736pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 72.
+ mdframed uses option nobreak mdframed on input line 37.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 72.
-[167] [168 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3K_exprSL_2
-.pdf>]
+ mdframed uses option nobreak mdframed on input line 37.
+[167 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3K_exprSL_2.pdf>]
+
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_ElasticFibre_exprSL_2".
-pdf, id=982, 1084.05pt x 1084.05pt>
+pdf, id=976, 1084.05pt x 1084.05pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_ElasticFibre_exprS
 L_2".pdf Graphic file (type pdf)
 
 <use "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_ElasticFibre_exprSL
 _2".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot
-_ElasticFibre_exprSL_2".pdf used on input line 94.
+_ElasticFibre_exprSL_2".pdf used on input line 59.
 (pdftex.def)             Requested size: 1084.04736pt x 1084.04736pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 99.
+ mdframed uses option nobreak mdframed on input line 64.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 99.
- [169]
+ mdframed uses option nobreak mdframed on input line 64.
+ [168] [169 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_ElasticFibre
+_exprSL_2.pdf>]
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_FibrinFormation_exprSL_
-2".pdf, id=997, 1084.05pt x 1084.05pt>
+2".pdf, id=1009, 1084.05pt x 1084.05pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_FibrinFormation_ex
 prSL_2".pdf Graphic file (type pdf)
 
 <use "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_FibrinFormation_exp
 rSL_2".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot
-_FibrinFormation_exprSL_2".pdf used on input line 114.
+_FibrinFormation_exprSL_2".pdf used on input line 79.
 (pdftex.def)             Requested size: 1084.04736pt x 1084.04736pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 119.
+ mdframed uses option nobreak mdframed on input line 84.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 119.
- [170 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_ElasticFibre_exprS
-L_2.pdf>] [171 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_FibrinFor
-mation_exprSL_2.pdf>]
-Overfull \hbox (3.80937pt too wide) in paragraph at lines 137--138
+ mdframed uses option nobreak mdframed on input line 84.
+ [170 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_FibrinFormation_ex
+prSL_2.pdf>]
+Overfull \hbox (3.80937pt too wide) in paragraph at lines 102--103
 \OT1/cmr/m/n/12 per-i-men-tal screen against \OT1/cmr/m/it/12 CDH1 []\OT1/cmr/m
 /n/12 Telford \OT1/cmr/m/it/12 et al.[] \OT1/cmr/m/n/12 ([]2015[]), these were 
 highly over-represented
  []
 
-[172]
+[171] [172]
 <"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_ver
-tex_degree".pdf, id=1099, 578.16pt x 385.44pt>
+tex_degree".pdf, id=1097, 578.16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_networ
 k_vertex_degree".pdf Graphic file (type pdf)
 
 <use "/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network
 _vertex_degree".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/Centrality
-_exprSL/Pi3K_network_vertex_degree".pdf used on input line 165.
+_exprSL/Pi3K_network_vertex_degree".pdf used on input line 130.
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 170.
+ mdframed uses option nobreak mdframed on input line 135.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 170.
- [173] [174 </home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_
-network_vertex_degree.pdf>] [175]
+ mdframed uses option nobreak mdframed on input line 135.
+ [173 </home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_networ
+k_vertex_degree.pdf>] [174]
 <"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_Inf
-o_Centrality(Log)".pdf, id=1148, 578.16pt x 385.44pt>
+o_Centrality(Log)".pdf, id=1143, 578.16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_networ
 k_Info_Centrality(Log)".pdf Graphic file (type pdf)
 
 <use "/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network
 _Info_Centrality(Log)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/Centrality
-_exprSL/Pi3K_network_Info_Centrality(Log)".pdf used on input line 227.
+_exprSL/Pi3K_network_Info_Centrality(Log)".pdf used on input line 192.
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 232.
+ mdframed uses option nobreak mdframed on input line 197.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 232.
- [176 </home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_networ
-k_Info_Centrality(Log).pdf>] [177]
+ mdframed uses option nobreak mdframed on input line 197.
+ [175 </home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_networ
+k_Info_Centrality(Log).pdf>]
 <"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_pag
-erank".pdf, id=1180, 578.16pt x 385.44pt>
+erank".pdf, id=1170, 578.16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_networ
 k_pagerank".pdf Graphic file (type pdf)
 
 <use "/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network
 _pagerank".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/Centrality
-_exprSL/Pi3K_network_pagerank".pdf used on input line 284.
+_exprSL/Pi3K_network_pagerank".pdf used on input line 249.
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 289.
+ mdframed uses option nobreak mdframed on input line 254.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 289.
- [178 </home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_networ
-k_pagerank.pdf>]
+ mdframed uses option nobreak mdframed on input line 254.
+ [176] [177 </home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_
+network_pagerank.pdf>]
 <"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/graph_distance".pdf,
- id=1212, 770.88pt x 770.88pt>
+ id=1208, 770.88pt x 770.88pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/graph_distance"
 .pdf Graphic file (type pdf)
 
 <use "/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/graph_distance".
 pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/Discrete_P
-i3k/graph_distance".pdf used on input line 345.
+i3k/graph_distance".pdf used on input line 310.
 (pdftex.def)             Requested size: 770.87813pt x 770.87813pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 350.
+ mdframed uses option nobreak mdframed on input line 315.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 350.
- [179]
+ mdframed uses option nobreak mdframed on input line 315.
+
 <"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_counts_v
-ioplot".pdf, id=1228, 578.16pt x 289.08pt>
+ioplot".pdf, id=1218, 578.16pt x 289.08pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_cou
 nts_vioplot".pdf Graphic file (type pdf)
 
 <use "/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_coun
 ts_vioplot".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/Discrete_P
-i3k/SL_distance_counts_vioplot".pdf used on input line 373.
+i3k/SL_distance_counts_vioplot".pdf used on input line 338.
 (pdftex.def)             Requested size: 578.15858pt x 289.07928pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 378.
+ mdframed uses option nobreak mdframed on input line 343.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 378.
+ mdframed uses option nobreak mdframed on input line 343.
 
 <"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_counts_b
-arplot".pdf, id=1233, 578.16pt x 289.08pt>
+arplot".pdf, id=1223, 578.16pt x 289.08pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_cou
 nts_barplot".pdf Graphic file (type pdf)
 
 <use "/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_coun
 ts_barplot".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/Discrete_P
-i3k/SL_distance_counts_barplot".pdf used on input line 388.
+i3k/SL_distance_counts_barplot".pdf used on input line 353.
 (pdftex.def)             Requested size: 578.15858pt x 289.07928pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 393.
+ mdframed uses option nobreak mdframed on input line 358.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 393.
- [180 </home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/graph_distance.
-pdf>] [181 </home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distanc
-e_counts_vioplot.pdf> </home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k
-/SL_distance_counts_barplot.pdf>]
+ mdframed uses option nobreak mdframed on input line 358.
+ [178] [179 </home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/graph_dis
+tance.pdf>]
+
+LaTeX Warning: Text page 180 contains only floats.
+
+[180 </home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_coun
+ts_vioplot.pdf> </home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_di
+stance_counts_barplot.pdf>]
 <"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_vioplot"
-.pdf, id=1278, 578.16pt x 289.08pt>
+.pdf, id=1274, 578.16pt x 289.08pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_vio
 plot".pdf Graphic file (type pdf)
 
 <use "/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_viop
 lot".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/Discrete_P
-i3k/SL_distance_vioplot".pdf used on input line 444.
+i3k/SL_distance_vioplot".pdf used on input line 409.
 (pdftex.def)             Requested size: 578.15858pt x 289.07928pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 449.
+ mdframed uses option nobreak mdframed on input line 414.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 449.
- [182 </home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_vio
-plot.pdf>] [183]
-<"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL".pdf, id=1336, 57
+ mdframed uses option nobreak mdframed on input line 414.
+ [181 </home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_vio
+plot.pdf>]
+<"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL".pdf, id=1311, 57
 8.16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL".pdf Graphic
  file (type pdf)
 
 <use "/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_
-exprSL".pdf used on input line 476.
+exprSL".pdf used on input line 439.
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 481.
+ mdframed uses option nobreak mdframed on input line 444.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 481.
+ mdframed uses option nobreak mdframed on input line 444.
 
-[184 </home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL.pdf>]
+[182 </home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL.pdf>]
+[183]
 ! Undefined control sequence.
 <argument> ...} gene candidate partners of \texti 
                                                   {CDH1} with significant pa...
-l.535 }
+l.502 }
        
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1726,7 +1728,103 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[185]) [186] (./20170427_thesis_results_network.bbl
+[184] [185] [186]
+! Argument of \\@gls has an extra }.
+<inserted text> 
+                \par 
+l.530 ...aths to test whether pairs of \gls[SLIPT}
+                                                   and \gls{siRNA} gene cand...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+SLIPT
+! Paragraph ended before \\@gls was complete.
+<to be read again> 
+                   \par 
+l.530 ...aths to test whether pairs of \gls[SLIPT}
+                                                   and \gls{siRNA} gene cand...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Too many }'s.
+<recently read> }
+                 
+l.530 ...aths to test whether pairs of \gls[SLIPT}
+                                                   and \gls{siRNA} gene cand...
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Argument of \\@gls has an extra }.
+<inserted text> 
+                \par 
+l.530 ...for pathway structure between \gls[SLIPT}
+                                                   and \gls{siRNA} gene cand...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+SLIPT
+! Paragraph ended before \\@gls was complete.
+<to be read again> 
+                   \par 
+l.530 ...for pathway structure between \gls[SLIPT}
+                                                   and \gls{siRNA} gene cand...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Too many }'s.
+<recently read> }
+                 
+l.530 ...for pathway structure between \gls[SLIPT}
+                                                   and \gls{siRNA} gene cand...
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+! Argument of \\@gls has an extra }.
+<inserted text> 
+                \par 
+l.530 ...r the differences between the \gls[SLIPT}
+                                                   and \gls{siRNA} gene cand...
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+SLIPT
+! Paragraph ended before \\@gls was complete.
+<to be read again> 
+                   \par 
+l.530 ...r the differences between the \gls[SLIPT}
+                                                   and \gls{siRNA} gene cand...
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+! Too many }'s.
+<recently read> }
+                 
+l.530 ...r the differences between the \gls[SLIPT}
+                                                   and \gls{siRNA} gene cand...
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
+
+[187] [188
+
+]) (./20170427_thesis_results_network.bbl
 Missing character: There is no Ã in font cmti12!
 Missing character: There is no ¦ in font cmti12!
 
@@ -1741,17 +1839,18 @@ Underfull \hbox (badness 5592) in paragraph at lines 72--78
 avigating-[]cancer-[]care / cancer-[]basics /
  []
 
-[198
+[202
 
 
 
 
 
 
-] [199]
+
+] [203]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
- [200] [201]
+ [204] [205]
 Underfull \hbox (badness 10000) in paragraph at lines 323--328
 []\OT1/cmr/m/n/12 Cancer Re-search UK (2017) Fam-ily his-tory and can-cer
  []
@@ -1768,11 +1867,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 323--328
 eased-[]cancer-[]risk /
  []
 
-[202] [203]
+[206] [207]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [204] [205]
+ [208] [209]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 611.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -1783,25 +1882,25 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
- [206] [207]
+ [210] [211]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
- [208] [209] [210] [211] [212] [213] [214] [215] [216] [217]
-[218]
+ [212] [213] [214] [215] [216] [217] [218] [219] [220] [221]
+[222]
 Underfull \hbox (badness 4168) in paragraph at lines 1557--1562
 \OT1/cmtt/m/n/12 / / www . cancer . gov / about-[]cancer / causes-[]prevention 
 / genetics$[]\OT1/cmr/m/n/12 .  Pub-lished:
  []
 
-[219]
+[223]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [220] [221]
+ [224] [225]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
-) [222]
+) [226]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 212.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 212.
  (./20170427_thesis_results_network.aux (./intro.aux)
@@ -1812,16 +1911,16 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 212.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 212.
 Package rerunfilecheck Info: File `20170427_thesis_results_network.out' has not
  changed.
-(rerunfilecheck)             Checksum: 2FC681D393E329ED391FA2047018C483;1897.
+(rerunfilecheck)             Checksum: 3CC6B263249BCE73C4A48B169AA6D8BF;1897.
  ) 
 Here is how much of TeX's memory you used:
- 35580 strings out of 494985
- 643640 string characters out of 6180356
- 905277 words of memory out of 5000000
- 37180 multiletter control sequences out of 15000+600000
+ 35586 strings out of 494985
+ 643440 string characters out of 6180356
+ 903374 words of memory out of 5000000
+ 37185 multiletter control sequences out of 15000+600000
  11702 words of font info for 42 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 59i,15n,94p,10466b,953s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,15n,94p,10466b,955s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{table.caption.109} has been referenced but does n
 ot exist, replaced by a fixed one
 
@@ -1879,10 +1978,13 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{table.caption.32} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.28} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.26} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.23} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.25} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.20} has been referenced but does not 
 exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.B.1} has been referenced but does not exist, 
@@ -1927,10 +2029,10 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{table.2.5} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.16} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.17} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.12} has been referenced but does not 
+pdfTeX warning (dest): name{table.caption.14} has been referenced but does not 
 exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.11} has been referenced but does not 
@@ -1993,7 +2095,7 @@ pdfTeX warning (dest): name{figure.caption.68} has been referenced but does not
 pdfTeX warning (dest): name{figure.caption.42} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.14} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
  exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.66} has been referenced but does not
@@ -2068,23 +2170,23 @@ pdfTeX warning (dest): name{figure.caption.30} has been referenced but does not
 pdfTeX warning (dest): name{figure.caption.29} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.26} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.28} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.25} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.27} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.21} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.24} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.20} has been referenced but does not
+pdfTeX warning (dest): name{figure.caption.23} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.9} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.19} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.8} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
+ exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{appendix.M} has been referenced but does not exist,
  replaced by a fixed one
@@ -2694,11 +2796,11 @@ fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/s
 hare/texmf/fonts/type1/public/tex-gyre/qcrr.pfb></usr/share/texmf/fonts/type1/p
 ublic/tex-gyre/qhvr.pfb>
-Output written on 20170427_thesis_results_network.pdf (60 pages, 1340478 bytes)
+Output written on 20170427_thesis_results_network.pdf (62 pages, 1346185 bytes)
 .
 PDF statistics:
- 2001 PDF objects out of 2073 (max. 8388607)
- 1849 compressed objects within 19 object streams
- 682 named destinations out of 1000 (max. 500000)
+ 2034 PDF objects out of 2073 (max. 8388607)
+ 1880 compressed objects within 19 object streams
+ 685 named destinations out of 1000 (max. 500000)
  240 words of extra memory for PDF output out of 10000 (max. 10000000)
 
