@@ -541,7 +541,8 @@ Analysis of variance for PI3K hierarchy score against synthetic lethal detection
    }
    }
    \end{center}
-   \caption[Structure of Synthetic Lethality Resampling]{\small \textbf{Structure of Synthetic Lethality Resampling.} Structure of Synthetic Lethality Resampling.
+   \caption[Structure of Synthetic Lethality Resampling]{\small \textbf{Structure of Synthetic Lethality Resampling.} A null distribution (10,000 iterations) of the \gls{siRNA} genes upstream or downstream of mtSLIPT genes (shown by the difference) in the PI3K pathway. The observed events (red) were compared to the the distribution (violet) and were not significant. Genes detected by both methods were fixed for the distribution (blue). The genes detected by both approaches were used. 
+}
 }
 \label{fig:mtSL_Pathway_PI3K_Perm}
 \end{mdframed}
@@ -554,8 +555,9 @@ Analysis of variance for PI3K hierarchy score against synthetic lethal detection
 \noindent\makebox[\textwidth][c]{%               %centering
 \resizebox{1.2 \textwidth}{!}{
 \begin{threeparttable}
-\begin{tabular}{lccccccccccc}
-                                          & \multicolumn{2}{l}{Graph:} & \multicolumn{2}{l}{States:} & \multicolumn{4}{l}{Observed:}        & \multicolumn{2}{l}{Permutation p-value:} \\
+\begin{tabular}{l|cc|cc|cccc|cc}
+\cline{2-11}
+                                          & \multicolumn{2}{c|}{\textbf{Graph}} & \multicolumn{2}{c|}{\textbf{States}} & \multicolumn{4}{c|}{\textbf{Observed}}        & \multicolumn{2}{c}{\textbf{Permutation p-value}}  \\
 \hline
 Pathway                                   & Nodes & Edges  & mtSL & siRNA & Up   & Down & Up$-$Down & Up$/$Down           & Up$-$Down & Down$-$Up \\
 \hline
@@ -564,7 +566,7 @@ PI3K Cascade                              & 138   & 1495   & 42   & 25    & 131 
   \rowcolor{black!5}
 PI3K/AKT Signaling in Cancer              & 275   & 12882  & 56   & 44    & 478  & 440  & 38      & 1.086             & 0.4163 & 0.5810   \\
   \rowcolor{black!10}
-G$_{\alpha i}$ Signaling                  & 292   & 22003  & 57   & 58    & 543  & 866  & -323    & 0.627             & 0.9507 & \textbf{0.0488}             \\  
+\textbf{G$_{\alpha i}$ Signaling}                  & 292   & 22003  & 57   & 58    & 543  & 866  & -323    & 0.627             & 0.9507 & 0.0488             \\  
   \rowcolor{black!5}
 GPCR downstream                           & 1270  & 142071 & 218  & 160   & 7632 & 6500 & 1132    & 1.174             & 0.1707 & 0.8291   \\
   \rowcolor{black!10}
@@ -583,15 +585,7 @@ Eukaryotic Translation Elongation         & 92    & 3746   & 57   & 0     & 0   
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Pathways in the Reactome network tested for structural relationships between mtSLIPT and siRNA genes by resampling (raw p-value)
-
-Significant resampling in bold
-
-Sampling only within target pathway
-
-Number of siRNA+SLIPT matched to observed
-
-siRNA+SLIPT kept for up/down evaluation 
+Pathways in the Reactome network tested for structural relationships between mtSLIPT and \gls{siRNA} genes by resampling. The raw p-value (computed without adjusting for multiple comparisons over pathways) is given for the difference in upstream and downstream paths from mtSLIPT to \gls{siRNA} gene candidate partners of \texti{CDH1} with significant pathways highlighted in bold. Sampling was performed only in the target pathway and shortest paths were computed within it. Loops or paths in either direction that could not be resolved were excluded from the analysis. The gene detected by both mtSLIPT and \gls{siRNA} (or resampling for them) were includued in the analysis and the number of these were fixed to the number observed.
 \end{tablenotes}
 \end{threeparttable}
 }
