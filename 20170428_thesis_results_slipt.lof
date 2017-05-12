@@ -1,191 +1,41 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Synthetic genetic interactions}}{26}{figure.caption.8}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces \Glspl {synthetic lethal} in cancer}}{29}{figure.caption.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Read count density}}{61}{figure.caption.8}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Read count sample mean}}{61}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Raw counts (log-scale)}}}{61}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Voom normalised}}}{61}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mean raw counts (log-scale)}}}{61}{figure.caption.8}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mean voom normalised}}}{61}{figure.caption.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Framework for synthetic lethal prediction}}{77}{figure.caption.14}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Synthetic lethal prediction adapted for mutation}}{78}{figure.caption.15}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces A model of synthetic lethal gene expression}}{80}{figure.caption.16}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Modeling synthetic lethal gene expression}}{81}{figure.caption.17}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Synthetic lethality with multiple genes}}{82}{figure.caption.18}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Simulating gene function}}{84}{figure.caption.19}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Simulating synthetic lethal gene function}}{84}{figure.caption.19}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Simulated expression matrix}}}{84}{figure.caption.19}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corresponding gene function calls}}}{84}{figure.caption.19}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Simulated gene function with SL genes}}}{84}{figure.caption.19}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Query gene added with SL condition}}}{84}{figure.caption.19}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Simulating synthetic lethal gene expression}}{85}{figure.caption.20}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial expression matrix}}}{85}{figure.caption.20}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated synthetic lethal dataset}}}{85}{figure.caption.20}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Performance of binomial simulations}}{87}{figure.caption.21}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparison of statistical performance}}{87}{figure.caption.21}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Performance of multivariate normal simulations}}{89}{figure.caption.22}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{89}{figure.caption.22}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{89}{figure.caption.22}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{89}{figure.caption.22}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Simulating expression with correlated gene blocks}}{92}{figure.caption.23}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Input $\Sigma $ matrix parameter}}}{92}{figure.caption.23}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated correlation matrix}}}{92}{figure.caption.23}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Simulated gene expression}}}{92}{figure.caption.23}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated gene function}}}{92}{figure.caption.23}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Simulating expression with correlated gene blocks}}{93}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Input $\Sigma $ matrix parameter}}}{93}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated correlation matrix}}}{93}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Simulated gene expression}}}{93}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated gene function}}}{93}{figure.caption.24}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Synthetic lethal prediction across simulations}}{94}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Gene category in simulations}}}{94}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corresponding $\chi ^2$ values}}}{94}{figure.caption.25}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Performance with correlations}}{95}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{95}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{95}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{95}{figure.caption.26}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Comparison of statistical performance with correlation structure}}{96}{figure.caption.27}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Performance with query correlations}}{97}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{97}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{97}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{97}{figure.caption.28}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Statistical evaluation of directional criteria}}{98}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\chi ^2$ testing without direction}}}{98}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {SLIPT} with directional criteria}}}{98}{figure.caption.29}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Performance of directional criteria}}{99}{figure.caption.30}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\chi ^2$ testing without direction}}}{99}{figure.caption.30}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {SLIPT} with directional criteria}}}{99}{figure.caption.30}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{99}{figure.caption.30}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Simulated graph structures}}{103}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{103}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{103}{figure.caption.31}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Simulating expression from a graph structure}}{105}{figure.caption.32}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{105}{figure.caption.32}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distance matrix }}}{105}{figure.caption.32}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sigma, $\Sigma $ (expected correlation)}}}{105}{figure.caption.32}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated correlation structure}}}{105}{figure.caption.32}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Simulated expression data}}}{105}{figure.caption.32}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Simulated gene function calls}}}{105}{figure.caption.32}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Simulating expression from graph structure with inhibitions}}{106}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pathway structure with inhibition}}}{106}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distance matrix }}}{106}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sigma, $\Sigma $ (expected correlation)}}}{106}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated correlation structure}}}{106}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Simulated expression data}}}{106}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Simulated gene function calls}}}{106}{figure.caption.33}
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Demonstration of violin plots with custom features}}{109}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Customised violin plot}}}{109}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Split violin plot}}}{109}{figure.caption.34}
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Demonstration of annotated heatmap}}{109}{figure.caption.35}
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Simulating graph structures}}{111}{figure.caption.36}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Synthetic lethal expression profiles of analysed samples}}{119}{figure.caption.12}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Comparison of SLIPT to siRNA}}{123}{figure.caption.14}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Compare SLIPT and siRNA genes with correlation}}{124}{figure.caption.15}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Compare SLIPT and siRNA genes with correlation}}{124}{figure.caption.15}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Compare SLIPT and siRNA genes with siRNA viability}}{126}{figure.caption.16}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Compare SLIPT and siRNA genes with viability}}{126}{figure.caption.16}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Compare SLIPT and siRNA genes with siRNA viability}}{128}{figure.caption.17}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Resampled intersection of SLIPT and siRNA candidates}}{132}{figure.caption.19}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Pathway metagene expression profiles}}{138}{figure.caption.24}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Somatic mutation against PI3K metagene}}{140}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{140}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{140}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{140}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{140}{figure.caption.25}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Somatic mutation locus against expression}}{142}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PI3KCA} gene}}}{142}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PI3KCA} metagene}}}{142}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {PIK3R1} gene}}}{142}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {PIK3CA} protein}}}{142}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\textit {AKT} protein}}}{142}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\textit {CDH1} protein}}}{142}{figure.caption.26}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {\textit {TP53} protein}}}{142}{figure.caption.26}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Synthetic lethal expression profiles of stomach samples}}{148}{figure.caption.31}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Synthetic lethal partners across query genes}}{152}{figure.caption.32}
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Synthetic Lethality in the PI3K Cascade}}{167}{figure.caption.8}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Synthetic Lethality in the Elastic Fibre Formation Pathway}}{169}{figure.caption.9}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Synthetic Lethality in the Fibrin Clot Formation}}{170}{figure.caption.10}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Synthetic Lethality and Vertex Degree}}{173}{figure.caption.11}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Synthetic Lethality and Centrality}}{175}{figure.caption.14}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Synthetic Lethality and PageRank}}{177}{figure.caption.17}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Structure of PI3K Ranking}}{179}{figure.caption.20}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Synthetic Lethality and Hierarchy Score in PI3K}}{180}{figure.caption.21}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Hierarchy Score in PI3K against Synthetic Lethality in PI3K}}{180}{figure.caption.22}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Structure of Synthetic Lethality in PI3K}}{181}{figure.caption.25}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Structure of Synthetic Lethality Resampling in PI3K}}{182}{figure.caption.26}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Synthetic lethal expression profiles of analysed samples}}{199}{figure.caption.10}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Comparison of SLIPT to siRNA}}{203}{figure.caption.12}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Compare SLIPT and siRNA genes with correlation}}{205}{figure.caption.13}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Compare SLIPT and siRNA genes with correlation}}{205}{figure.caption.13}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Compare SLIPT and siRNA genes with siRNA viability}}{207}{figure.caption.14}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Compare SLIPT and siRNA genes with viability}}{207}{figure.caption.14}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Compare SLIPT and siRNA genes with siRNA viability}}{208}{figure.caption.15}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Resampled intersection of SLIPT and siRNA candidates}}{212}{figure.caption.17}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Pathway metagene expression profiles}}{218}{figure.caption.22}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Somatic mutation against PI3K metagene}}{220}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{220}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{220}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{220}{figure.caption.23}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{220}{figure.caption.23}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Somatic mutation locus against expression}}{222}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PI3KCA} gene}}}{222}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PI3KCA} metagene}}}{222}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {PIK3R1} gene}}}{222}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {PIK3CA} protein}}}{222}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\textit {AKT} protein}}}{222}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\textit {CDH1} protein}}}{222}{figure.caption.24}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {\textit {TP53} protein}}}{222}{figure.caption.24}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Synthetic lethal expression profiles of stomach samples}}{228}{figure.caption.29}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Synthetic lethal partners across query genes}}{232}{figure.caption.30}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Correlation profiles of removed samples}}{228}{figure.caption.9}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Correlation analysis and sample removal}}{229}{figure.caption.10}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Replicate excluded samples}}{230}{figure.caption.11}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Replicate samples with all remaining}}{231}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Remaining triplet}}}{231}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Remaining triplet}}}{231}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Remaining triplet}}}{231}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Remaining paired samples}}}{231}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Remaining paired samples}}}{231}{figure.caption.12}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Remaining paired samples}}}{231}{figure.caption.12}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Replicate samples with some excluded}}{232}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Remaining}}}{232}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Compare with excluded}}}{232}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Compare with excluded}}}{232}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Remaining}}}{232}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Compare with excluded}}}{232}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Compare with excluded}}}{232}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Remaining}}}{232}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Compare with excluded}}}{232}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {Compare with excluded}}}{232}{figure.caption.13}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Replicate samples with some excluded}}{233}{figure.caption.14}
-\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {Remaining}}}{233}{figure.caption.14}
-\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {Compare with excluded}}}{233}{figure.caption.14}
-\contentsline {subfigure}{\numberline {(l)}{\ignorespaces {Compare with excluded}}}{233}{figure.caption.14}
-\contentsline {subfigure}{\numberline {(m)}{\ignorespaces {Compare with excluded}}}{233}{figure.caption.14}
-\contentsline {subfigure}{\numberline {(n)}{\ignorespaces {Compare with excluded}}}{233}{figure.caption.14}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Synthetic lethal expression profiles of analysed samples}}{249}{figure.caption.22}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Comparison of mtSLIPT to siRNA}}{251}{figure.caption.24}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Compare mtSLIPT and siRNA genes with correlation}}{255}{figure.caption.30}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Compare mtSLIPT and siRNA genes with correlation}}{255}{figure.caption.30}
-\contentsline {figure}{\numberline {D.5}{\ignorespaces Compare mtSLIPT and siRNA genes with siRNA viability}}{256}{figure.caption.31}
-\contentsline {figure}{\numberline {D.6}{\ignorespaces Somatic mutation locus}}{258}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PI3KCA}}}}{258}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PI3KR1}}}}{258}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1}}}}{258}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53}}}}{258}{figure.caption.34}
-\contentsline {figure}{\numberline {D.7}{\ignorespaces Somatic mutation against PIK3CA metagene}}{259}{figure.caption.35}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{259}{figure.caption.35}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{259}{figure.caption.35}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{259}{figure.caption.35}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{259}{figure.caption.35}
-\contentsline {figure}{\numberline {D.8}{\ignorespaces Somatic mutation against PI3K protein}}{260}{figure.caption.36}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{260}{figure.caption.36}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{260}{figure.caption.36}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{260}{figure.caption.36}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{260}{figure.caption.36}
-\contentsline {figure}{\numberline {D.9}{\ignorespaces Somatic mutation against AKT protein}}{261}{figure.caption.37}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{261}{figure.caption.37}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{261}{figure.caption.37}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{261}{figure.caption.37}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{261}{figure.caption.37}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Pathway metagene expression profiles}}{263}{figure.caption.38}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Expression profiles for constituent genes of PI3K}}{264}{figure.caption.39}
-\contentsline {figure}{\numberline {E.3}{\ignorespaces Expression profiles for p53 related genes}}{265}{figure.caption.40}
-\contentsline {figure}{\numberline {E.4}{\ignorespaces Expression profiles for estrogen receptor related genes}}{266}{figure.caption.41}
-\contentsline {figure}{\numberline {E.5}{\ignorespaces Expression profiles for BRCA related genes}}{267}{figure.caption.42}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Comparison of SLIPT in stomach to siRNA}}{271}{figure.caption.46}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {G.1}{\ignorespaces Synthetic lethal expression profiles of stomach samples}}{280}{figure.caption.58}
-\contentsline {figure}{\numberline {G.2}{\ignorespaces Comparison of mtSLIPT in stomach to siRNA}}{282}{figure.caption.60}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {H.1}{\ignorespaces Synthetic lethal partners across query genes}}{288}{figure.caption.68}
+\addvspace {10\p@ }
 \addvspace {10\p@ }

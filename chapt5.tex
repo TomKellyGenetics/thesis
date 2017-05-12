@@ -1,70 +1,43 @@
 \chapter{Simulation and Modeling of Synthetic Lethal Pathways}
 \label{chap:simulation}
 
+Simulation and modelling of synthetic lethality in gene expression will be revisited in greater detail in this chapter, building upon the results provided to support the use of \gls{SLIPT} in Section~\ref{chapt2:simulation_2015}. A simulation procedure for generating simulated data with underlying (known) synthetic lethal partners of a query gene, such as \textit{CDH1}, was developed (as described in Section~\ref{methods:simulating_SL}) by sampling from a Multivariate normal distribution based on a statistical model of synthetic lethality in expression data (as described in Section~\ref{methods:SL_Model}). This simulation framework was applied to simulated data (in Section~\ref{chapt2:simulation_2015}), including simple correlation structures to assess the statistical performance of the \gls{SLIPT} methodology and support it's use a computational approach for detecting synthetic lethal candidates from expression data throughout this thesis (in Chapters~\ref{chap:SLIPT} and~\ref{chap:Pathways}). 
 
-\paragraph{Aims}
+While this basic framework was sufficent to support the use of \gls{SLIPT} in prior Chapters, further investigations with simulations were conducted to assess the strengths and limitations of the \gls{SLIPT} methodology, compare it to alternative statistical approaches to synthetic lethal detection, and assess it's performance upon more complex correlation structures. Together these simulation investigations assess the performance of the \gls{SLIPT} methdology, including on pathway graph structures (such as those discussed in Chapter~\ref{chap:Pathways}) and determine whether the \gls{SLIPT} methdology (or similar refined bioinformatics strategies) are statistically rigourous or suitable for wider genomics applications.
 
-  \begin{itemize}
-   \item A Model of Synthetic Lethal Genes in Gene Expression Data
-   
-   \bigskip
-   
-   \item Simulations of Known Synthetic Lethal Genes within Pathway Networks
-   
-   \bigskip
-   
-   \item Comparison of SLIPT to Alternative Approaches
-  \end{itemize}
+These simulation investigations continue to utilise the Multivariate Normal procedure (as applied in Section~\ref{chapt2:simulation_2015}) with further refinements. The \gls{SLIPT} methodology (and it's equivalent $\chi^2$ test) were applied across a range of parameters (including altering the quantiles for detecting synthetic lethal direction and compared correlation. This was also applied to with query correlated genes (as performed in Section~\ref{chapt2:simulation_2015}).
 
-\paragraph{Summary}
+A refined simulation procedure was developed specifically to extend the simulation procedure (described in Section~\ref{methods:simulation_SL_expression}) to utilise pathway graph structures for the correlation structures of simulated datasets (as described in Section~\ref{methods:graphsim}). This methdology can be applied to simulated correlation structures across simple graph structures to test specfic network modules or use pathway structures based on biological pathways (as discussed in Chapter~\ref{chap:Pathways}). Thus graph structure and simulation approaches were combined to test whether a gene locus in a pathway affects detection by \gls{SLIPT} and whether \gls{SLIPT} performance is affected by pathway structure. The simulation procedure based on graph structures were applied in a computational pipeline across many parameters with high-performance computing (as discussed in Section~\ref{methods:HPC}) and the core simulation functions have been released as a software package for wider use to test bioinformatics and statistical methods on graph structures (as described in Section~\ref{methods:igraph_extensions}).
 
-    \begin{itemize}
-      \item We have designed a straight-forward rational query-based synthetic lethal detection method with the example of application to \textit{CDH1} in cancer gene expression
-      
-      \bigskip
-      
-      \item We have developed a simulation pipeline to generate continuous gene expression with pathway structure including a procedure to simulate synthetic lethality 
-      
-      \bigskip
-      
-      \item Our simulation procedure is robust across pathway structures and has desirable performance compared to other statistical techniques 
-      \end{itemize}
-
-\clearpage
-      
-%\section{Background}
-
-Synthetic lethality (SL) is the death of a cell or organism with the combined loss of two non-essential genes.   This phenomenon was originally used to study genetic interactions and functional redundancy in models organisms (Boone et al. 2007).   While synthetic lethal experiments have been performed in Drosophila melanogaster (Dobzhansky 1946), Caenorhabditis elegans (Lehner et al. 2006), Escherichia coli (Butland et al. 2008), Schizosaccharomyces pombe (Roguev et al. 2007), and various mammalian cell lines (Kaelin 2005), the most extensive synthetic lethal screens have been performed with the synthetic gene array (SGA) technique in Saccharomyces cerevisiae (Boone et al. 2007; Costanzo et al. 2011; Tong et al. 2004).  
-
-Originally defined by double mutants, a range of mechanisms for gene inactivation of synthetic lethal partners can induce cell death including RNA interference and drug treatment where it is sometimes called ‘induced essentiality’ or ‘non-oncogene addiction’ in cancer research (Fece de la Cruz et al. 2015).  Cellular viability is the main means to measure synthetic lethal effects experimentally because it is quantified and measured consistently (as shown in Figure 1), whereas qualitative measures of impaired organism viability are ambiguous and less relevant to yeast or cancer research.
-
-The cancer genetics laboratory are currently working on developing a synthetic lethal approach to target the tumour suppressor gene CDH1 which has been found to cause predispose early-onset breast and stomach cancers in mutation carriers, including families of New Zealand M\={a}ori (Berx et al. 1995; Guilford et al. 1998).  These families are currently closely monitored and offered drastic preventative surgery.  If it were developed, a drug selective against CDH1 mutant tumours would serve not only as a chemopreventative alternative for these families but also benefit the wider community as a treatment for sporadic cases of CDH1 mutant cancer.  To augment experimental work on CDH1 with isogenic cell lines (Telford et al. 2015), a computational methodology is explored here to exploit public cancer genomic databases.
-
-Microarray and massively-parallel sequencing technologies are driving a revolution in molecular biological research, particularly with regard to cancer where the premise of ‘genomic medicine’ is rapidly becoming feasible with the use of genomics to identify cancer genes, diagnose patients with actionable mutations, and use gene expression as a prognostic marker.  Genomic data could also be used to identify novel drug targets and synthetic lethal partners of known cancer genes in particular.  The Cancer Genome Atlas database (TCGA) and the overarching International Cancer Genome Consortium (ICGC) provide a valuable public cancer genome data resource because they support many different data types for the same samples, for many different cancer types, and for high sample sizes (Cancer Genome Atlas Research Network 2014; Cancer Genome Atlas Research Network et al. 2013; International Cancer Genome Consortium 2014).  They host data of patient clinical factors, gene expression, somatic mutation, DNA copy number, and DNA methylation which could all serve to predict synthetic lethality from frequency of mutually exclusive gene inactivation and its impact on patient survival.  A number of other databases are given in the Table 6 which may be used to explore gene function, drug target feasibility, or replicate analyses but TCGA and ICGC datasets will be the focus of this project.
-
-There is a growing need for a robust approach to cost-effective prediction of candidate synthetic lethal interaction, particularly in cancer research.  Exploiting existing public genomic databases is an ideal way to utilise existing resources with suitable sample sizes, data types, and different limitations to those of laboratory experiments.  A number of computation approaches to synthetic lethality have been developed but many of these rely on data not available to cancer researchers, methods that are difficult to replicate, over-fitted to a particular dataset, having mixed validation results, or do not have a software tool accessible to the research community.  These methodologies are reviewed in detail in the accompanying literature review.  They will still be considered to develop an improved synthetic lethal interaction prediction tool (SLIPT).  
-
-A bioinformatics approach has distinct limitations to experimental methods and would work well combined with genetic screen data and conventional molecular biology laboratory validation techniques to answer biological research questions.  Compared with an experimental screen, a bioinformatics approach has the benefits of reduced costs, with the potential for automation, scaling up, and replication of the same gene across populations and cell types.  Analysis of public genomic data accounts for real tumour variation showing detection with tumour heterogeneity and genomic instability.  Compared with a cell line or xenograft experimental model we are limited by difficulties in establishing validity of a novel method, lack of mechanism, or potential for testing drug activity in the same system.  However, computational methods may further miss useful therapeutic candidates from variable genetic background and be limited by the population sampled.  This research builds on previous work in an Honours project and similar approaches in the literature (Jerby-Arnon et al. 2014; Kelly 2013; Lu et al. 2015).
-
-\section{Simulations and Modelling Synthetic Lethality in Expression Data}
-
+%\section{Simulations and Modelling Synthetic Lethality in Expression Data}
+%%committee
+\iffalse
 Synthetic lethality was modelled for effects on expression levels and whether these are detectable in known interacting and non-interacting genes in simulated data. These were conducted for expression data but the nature of these simulations would be relevant to how synthetic lethality would manifest in other factors, particularly DNA copy number variation and DNA methylation. These simulations were discussed at length in the previous meeting and showed that synthetic lethality was detectable with our approach in simple cases. While it was less effective, the methods were able to detect synthetic lethal genes in expression data with correlation structure (generated with the multi-variate normal distribution) and were distinguishable from correlated genes. Therefore the strongest (most significant) synthetic lethal genes are more likely to be true synthetic lethal partners and a high number of hits are expected from correlated genes and co-regulated pathways.
 
 The power of the method to detect interactions depleted with increasing multiple tests, interactions, and cryptic (third party) interacting partners. Increased sample size counteracted these effects as expected. This led the idea that pathways would be more suitable as the focus of this project. Biological pathways led to fewer multiple tests, more relevant to understanding cancer biology, and are often drug targets in practice.
-
-\section{Simulations over simple graph structures}
-\subsection{Performance}
-\subsection{Synthetic lethality across graph stuctures}
-\subsection{Performance with inhibition links}
-\subsection{Performance with 20,000 genes}
-
-\section{Simulations over pathway-based graphs}
+\fi
 
 \section{Comparing methods} \label{chap5:compare_ methods}
-\subsection{SLIPT and Chi-Squared}
-\subsubsection{Correlated query genes}
-\subsection{Correlation}
-\subsection{Bimodality with BiSEp}
+
+Methods were compared \ldots
+
+\subsection{Performance of SLIPT and $\chi^2$  across Quantiles}
+
+Text
+
+\subsubsection{Correlated Query Genes affects Specificity}
+
+Text
+
+\subsection{Correlation as a Synthetic Lethal Detection Strategy}
+
+Text
+
+\subsection{Testing for Bimodality with BiSEp}
+
+Text
+
+
 %\subsection{Linear models}
 
 \iffalse
@@ -74,3 +47,259 @@ The power of the method to detect interactions depleted with increasing multiple
 \subsection{Conditioning}
 \subsection{SLIPTv2}
 \fi
+
+\section{Simulations with Graph Structures}
+
+Text
+
+\begin{figure*}[!htb]
+\begin{mdframed}
+%  \resizebox{\textwidth}{!}{
+         \begin{center}
+%
+        \subfigure[Activating pathway structure]{%
+            \label{fig:simple_graph1:first}
+            \fbox{
+            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf}}
+            }
+        }%
+        \subfigure[Pathway structure including inhibitions]{%
+           \label{fig:simple_graph1:second}
+            \fbox{
+            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1i".pdf}}
+           }
+        }%
+%
+    \end{center}
+   \caption[Simulated graph structures]{\small \textbf{\textbf{Simulated graph structures.}} A constructed graph structure used as an example to demonstrate the simulation procedure. Activating links are denoted by blue arrows and inhibiting links by red edges.}
+%}
+\label{fig:simple_graph1}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htb]
+\begin{mdframed}
+%  \resizebox{\textwidth}{!}{
+         \begin{center}
+%
+        \subfigure[Activating pathway structure]{%
+            \label{fig:simple_graph2:first}
+            \fbox{
+            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf}}
+            }
+        }%
+        \subfigure[Pathway structure including inhibitions]{%
+           \label{fig:simple_graph2:second}
+            \fbox{
+            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2i".pdf}}
+           }
+        }%
+%
+    \end{center}
+   \caption[Simulated graph structures]{\small \textbf{\textbf{Simulated graph structures.}} A constructed graph structure used as an example to demonstrate the simulation procedure. Activating links are denoted by blue arrows and inhibiting links by red edges.}
+%}
+\label{fig:simple_graph2}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htb]
+\begin{mdframed}
+%  \resizebox{\textwidth}{!}{
+         \begin{center}
+%
+        \subfigure[Activating pathway structure]{%
+            \label{fig:simple_graph3:first}
+            \fbox{
+            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3".pdf}}
+            }
+        }%
+        \subfigure[Pathway structure including inhibitions]{%
+           \label{fig:simple_graph3:second}
+            \fbox{
+            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3i".pdf}}
+           }
+        }%
+%
+    \end{center}
+   \caption[Simulated graph structures]{\small \textbf{\textbf{Simulated graph structures.}} A constructed graph structure used as an example to demonstrate the simulation procedure. Activating links are denoted by blue arrows and inhibiting links by red edges.}
+%}
+\label{fig:simple_graph3}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htb]
+\begin{mdframed}
+%  \resizebox{\textwidth}{!}{
+         \begin{center}
+%
+        \subfigure[Activating pathway structure]{%
+            \label{fig:simple_graph4:first}
+            \fbox{
+            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf}}
+            }
+        }%
+        \subfigure[Pathway structure including inhibitions]{%
+           \label{fig:simple_graph4:second}
+            \fbox{
+            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i".pdf}}
+           }
+        }%
+
+        \subfigure[Pathway structure including inhibitions]{%
+           \label{fig:simple_graph4:third}
+            \fbox{
+            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf}}
+           }
+        }%
+        %
+    \end{center}
+   \caption[Simulated graph structures]{\small \textbf{\textbf{Simulated graph structures.}} A constructed graph structure used as an example to demonstrate the simulation procedure. Activating links are denoted by blue arrows and inhibiting links by red edges.}
+%}
+\label{fig:simple_graph4}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htb]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.9 \textwidth}{!}{
+    \fbox{\includegraphics{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5".pdf}}
+   }
+   \end{center}
+   \caption[Simulated graph structures]{\small \textbf{\textbf{Simulated graph structures.}} A constructed graph structure used as an example to demonstrate the simulation procedure. Activating links are denoted by blue arrows and inhibiting links by red edges.}
+\label{fig:simple_graph5}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htb]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.9 \textwidth}{!}{
+    \fbox{\includegraphics{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7".pdf}}
+   }
+   \end{center}
+   \caption[Simulated graph structures]{\small \textbf{\textbf{Simulated graph structures.}} A constructed graph structure used as an example to demonstrate the simulation procedure. Activating links are denoted by blue arrows and inhibiting links by red edges.}
+\label{fig:simple_graph7}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htb]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.9 \textwidth}{!}{
+    \fbox{\includegraphics{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7i".pdf}}
+   }
+   \end{center}
+   \caption[Simulated graph structures]{\small \textbf{\textbf{Simulated graph structures.}} A constructed graph structure used as an example to demonstrate the simulation procedure. Activating links are denoted by blue arrows and inhibiting links by red edges.}
+\label{fig:simple_graph7i}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htb]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.9 \textwidth}{!}{
+    \fbox{\includegraphics{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7i2".pdf}}
+   }
+   \end{center}
+   \caption[Simulated graph structures]{\small \textbf{\textbf{Simulated graph structures.}} A constructed graph structure used as an example to demonstrate the simulation procedure. Activating links are denoted by blue arrows and inhibiting links by red edges.}
+\label{fig:simple_graph7i2}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htb]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.9 \textwidth}{!}{
+    \fbox{\includegraphics{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf}}
+   }
+   \end{center}
+   \caption[Simulated graph structures]{\small \textbf{\textbf{Simulated graph structures.}} A constructed graph structure used as an example to demonstrate the simulation procedure. Activating links are denoted by blue arrows and inhibiting links by red edges.}
+\label{fig:simple_graph_pi3k1}
+\end{mdframed}
+\end{figure*}
+
+\begin{figure*}[!htb]
+\begin{mdframed}
+\begin{center}
+  \resizebox{0.9 \textwidth}{!}{
+    \fbox{\includegraphics{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_Gai".pdf}}
+   }
+   \end{center}
+   \caption[Simulated graph structures]{\small \textbf{\textbf{Simulated graph structures.}} A constructed graph structure used as an example to demonstrate the simulation procedure. Activating links are denoted by blue arrows and inhibiting links by red edges.}
+\label{fig:simple_graph_Gai1}
+\end{mdframed}
+\end{figure*}
+
+\subsection{Performance over a Graph Structure}
+
+%Graph1 cf Graph 2
+%Graph 4 - RUN0921
+
+Text
+
+\subsection{Synthetic Lethality across Graph Stuctures}
+
+%Graph 4 - RUN1109 STR
+
+Text
+
+\subsection{Performance with inhibition links}
+
+%Graph4 v 4i v 4i2 RUN0921
+
+Text
+
+\subsection{Performance with 20,000 genes}
+
+%Graph4 & 4i RUN0921 v RUN0914
+
+Text
+
+\section{Simulations over pathway-based graphs}
+
+%PI3K and GAI
+
+Text
+
+
+\section{Discussion}
+
+Text
+
+
+\section{Summary}
+
+Text
+
+
+\clearpage
+
+\paragraph{Aims}
+
+  \begin{itemize}
+   \item A Model of Synthetic Lethal Genes in Gene Expression Data
+   
+   \bigskip
+   
+   \item Comparison of SLIPT to Alternative Approaches
+   
+   \bigskip
+   
+   \item Simulations of Known Synthetic Lethal Genes within Pathway Networks
+      
+  \end{itemize}
+
+\paragraph{Summary}
+
+    \begin{itemize}
+      \item We have designed a straight-forward rational query-based synthetic lethal detection method with the example of application to \textit{CDH1} in cancer gene expression
+      
+      \bigskip
+      
+      \item I have developed a simulation pipeline to generate continuous gene expression with pathway structure including a procedure to simulate synthetic lethality 
+      
+      \bigskip
+      
+      \item The simulation procedure shows that SLIPT is robust across pathway structures and has desirable performance compared to other statistical techniques 
+      \end{itemize}
