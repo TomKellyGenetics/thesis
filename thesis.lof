@@ -1,231 +1,733 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces Synthetic genetic interactions}}{27}{figure.caption.8}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces \Glspl {synthetic lethal} in cancer}}{31}{figure.caption.9}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Synthetic genetic interactions}}{27}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces \Glspl {synthetic lethal} in cancer}}{31}{figure.1.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Read count density}}{62}{figure.caption.13}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Read count sample mean}}{62}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Raw counts (log-scale)}}}{62}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Voom normalised}}}{62}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mean raw counts (log-scale)}}}{62}{figure.caption.13}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mean voom normalised}}}{62}{figure.caption.13}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Read count density}}{62}{figure.2.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Raw counts (log-scale)}}}{62}{figure.2.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Voom normalised}}}{62}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Read count sample mean}}{62}{figure.2.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Mean raw counts (log-scale)}}}{62}{figure.2.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Mean voom normalised}}}{62}{figure.2.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Framework for synthetic lethal prediction}}{78}{figure.caption.19}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Synthetic lethal prediction adapted for mutation}}{79}{figure.caption.20}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces A model of synthetic lethal gene expression}}{81}{figure.caption.21}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Modeling synthetic lethal gene expression}}{82}{figure.caption.22}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Synthetic lethality with multiple genes}}{83}{figure.caption.23}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Simulating gene function}}{85}{figure.caption.24}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Simulating synthetic lethal gene function}}{85}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Simulated expression matrix}}}{85}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corresponding gene function calls}}}{85}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Simulated gene function with SL genes}}}{85}{figure.caption.24}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Query gene added with SL condition}}}{85}{figure.caption.24}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Simulating synthetic lethal gene expression}}{86}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial expression matrix}}}{86}{figure.caption.25}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated synthetic lethal dataset}}}{86}{figure.caption.25}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Performance of binomial simulations}}{88}{figure.caption.26}
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparison of statistical performance}}{88}{figure.caption.26}
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Performance of multivariate normal simulations}}{90}{figure.caption.27}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{90}{figure.caption.27}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{90}{figure.caption.27}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{90}{figure.caption.27}
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Simulating expression with correlated gene blocks}}{93}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Input $\Sigma $ matrix parameter}}}{93}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated correlation matrix}}}{93}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Simulated gene expression}}}{93}{figure.caption.28}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated gene function}}}{93}{figure.caption.28}
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Simulating expression with correlated gene blocks}}{94}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Input $\Sigma $ matrix parameter}}}{94}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated correlation matrix}}}{94}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Simulated gene expression}}}{94}{figure.caption.29}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated gene function}}}{94}{figure.caption.29}
-\contentsline {figure}{\numberline {3.14}{\ignorespaces Synthetic lethal prediction across simulations}}{95}{figure.caption.30}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Gene category in simulations}}}{95}{figure.caption.30}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corresponding $\chi ^2$ values}}}{95}{figure.caption.30}
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Performance with correlations}}{96}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{96}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{96}{figure.caption.31}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{96}{figure.caption.31}
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Comparison of statistical performance with correlation structure}}{97}{figure.caption.32}
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Performance with query correlations}}{98}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{98}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{98}{figure.caption.33}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{98}{figure.caption.33}
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Statistical evaluation of directional criteria}}{99}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\chi ^2$ testing without direction}}}{99}{figure.caption.34}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {SLIPT} with directional criteria}}}{99}{figure.caption.34}
-\contentsline {figure}{\numberline {3.19}{\ignorespaces Performance of directional criteria}}{100}{figure.caption.35}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\chi ^2$ testing without direction}}}{100}{figure.caption.35}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {SLIPT} with directional criteria}}}{100}{figure.caption.35}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{100}{figure.caption.35}
-\contentsline {figure}{\numberline {3.20}{\ignorespaces Simulated graph structures}}{104}{figure.caption.36}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{104}{figure.caption.36}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{104}{figure.caption.36}
-\contentsline {figure}{\numberline {3.21}{\ignorespaces Simulating expression from a graph structure}}{106}{figure.caption.37}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{106}{figure.caption.37}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distance matrix }}}{106}{figure.caption.37}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sigma, $\Sigma $ (expected correlation)}}}{106}{figure.caption.37}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated correlation structure}}}{106}{figure.caption.37}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Simulated expression data}}}{106}{figure.caption.37}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Simulated gene function calls}}}{106}{figure.caption.37}
-\contentsline {figure}{\numberline {3.22}{\ignorespaces Simulating expression from graph structure with inhibitions}}{107}{figure.caption.38}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pathway structure with inhibition}}}{107}{figure.caption.38}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distance matrix }}}{107}{figure.caption.38}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sigma, $\Sigma $ (expected correlation)}}}{107}{figure.caption.38}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated correlation structure}}}{107}{figure.caption.38}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Simulated expression data}}}{107}{figure.caption.38}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Simulated gene function calls}}}{107}{figure.caption.38}
-\contentsline {figure}{\numberline {3.23}{\ignorespaces Demonstration of violin plots with custom features}}{111}{figure.caption.39}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Customised violin plot}}}{111}{figure.caption.39}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Split violin plot}}}{111}{figure.caption.39}
-\contentsline {figure}{\numberline {3.24}{\ignorespaces Demonstration of annotated heatmap}}{112}{figure.caption.40}
-\contentsline {figure}{\numberline {3.25}{\ignorespaces Simulating graph structures}}{114}{figure.caption.41}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Framework for synthetic lethal prediction}}{78}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Synthetic lethal prediction adapted for mutation}}{79}{figure.3.2}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces A model of synthetic lethal gene expression}}{81}{figure.3.3}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Modeling synthetic lethal gene expression}}{83}{figure.3.4}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Synthetic lethality with multiple genes}}{84}{figure.3.5}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Simulating gene function}}{86}{figure.3.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Simulated expression matrix}}}{86}{figure.3.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corresponding gene function calls}}}{86}{figure.3.6}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Simulating synthetic lethal gene function}}{86}{figure.3.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Simulated gene function with SL genes}}}{86}{figure.3.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Query gene added with SL condition}}}{86}{figure.3.7}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Simulating synthetic lethal gene expression}}{87}{figure.3.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Initial expression matrix}}}{87}{figure.3.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated synthetic lethal dataset}}}{87}{figure.3.8}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Performance of binomial simulations}}{89}{figure.3.9}
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Comparison of statistical performance}}{89}{figure.3.10}
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Performance of multivariate normal simulations}}{92}{figure.3.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{92}{figure.3.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{92}{figure.3.11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{92}{figure.3.11}
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Simulating expression with correlated gene blocks}}{94}{figure.3.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Input $\Sigma $ matrix parameter}}}{94}{figure.3.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated correlation matrix}}}{94}{figure.3.12}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Simulated gene expression}}}{94}{figure.3.12}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated gene function}}}{94}{figure.3.12}
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Simulating expression with correlated gene blocks}}{96}{figure.3.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Input $\Sigma $ matrix parameter}}}{96}{figure.3.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Simulated correlation matrix}}}{96}{figure.3.13}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Simulated gene expression}}}{96}{figure.3.13}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated gene function}}}{96}{figure.3.13}
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Synthetic lethal prediction across simulations}}{97}{figure.3.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Gene category in simulations}}}{97}{figure.3.14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Corresponding $\chi ^2$ values}}}{97}{figure.3.14}
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Performance with correlations}}{98}{figure.3.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{98}{figure.3.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{98}{figure.3.15}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{98}{figure.3.15}
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Comparison of statistical performance with correlation structure}}{99}{figure.3.16}
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Performance with query correlations}}{100}{figure.3.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{100}{figure.3.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{100}{figure.3.17}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{100}{figure.3.17}
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Statistical evaluation of directional criteria}}{101}{figure.3.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\chi ^2$ testing without direction}}}{101}{figure.3.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {SLIPT} with directional criteria}}}{101}{figure.3.18}
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Performance of directional criteria}}{102}{figure.3.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {$\chi ^2$ testing without direction}}}{102}{figure.3.19}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\gls {SLIPT} with directional criteria}}}{102}{figure.3.19}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Statistical performance}}}{102}{figure.3.19}
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Simulated graph structures}}{106}{figure.3.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{106}{figure.3.20}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{106}{figure.3.20}
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Simulating expression from a graph structure}}{108}{figure.3.21}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{108}{figure.3.21}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distance matrix }}}{108}{figure.3.21}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sigma, $\Sigma $ (expected correlation)}}}{108}{figure.3.21}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated correlation structure}}}{108}{figure.3.21}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Simulated expression data}}}{108}{figure.3.21}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Simulated gene function calls}}}{108}{figure.3.21}
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Simulating expression from graph structure with inhibitions}}{109}{figure.3.22}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Pathway structure with inhibition}}}{109}{figure.3.22}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Distance matrix }}}{109}{figure.3.22}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Sigma, $\Sigma $ (expected correlation)}}}{109}{figure.3.22}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Simulated correlation structure}}}{109}{figure.3.22}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Simulated expression data}}}{109}{figure.3.22}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Simulated gene function calls}}}{109}{figure.3.22}
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Demonstration of violin plots with custom features}}{112}{figure.3.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Customised violin plot}}}{112}{figure.3.23}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Split violin plot}}}{112}{figure.3.23}
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Demonstration of annotated heatmap}}{112}{figure.3.24}
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Simulating graph structures}}{114}{figure.3.25}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Synthetic lethal expression profiles of analysed samples}}{122}{figure.caption.46}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Comparison of SLIPT to siRNA}}{126}{figure.caption.48}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Compare SLIPT and siRNA genes with correlation}}{127}{figure.caption.49}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Compare SLIPT and siRNA genes with correlation}}{127}{figure.caption.49}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Compare SLIPT and siRNA genes with siRNA viability}}{130}{figure.caption.50}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Compare SLIPT and siRNA genes with viability}}{130}{figure.caption.50}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Compare SLIPT and siRNA genes with siRNA viability}}{131}{figure.caption.51}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Resampled intersection of SLIPT and siRNA candidates}}{135}{figure.caption.53}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Pathway metagene expression profiles}}{141}{figure.caption.58}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Somatic mutation against PI3K metagene}}{143}{figure.caption.59}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{143}{figure.caption.59}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{143}{figure.caption.59}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{143}{figure.caption.59}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{143}{figure.caption.59}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Somatic mutation locus against expression}}{145}{figure.caption.60}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PI3KCA} gene}}}{145}{figure.caption.60}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PI3KCA} metagene}}}{145}{figure.caption.60}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {PIK3R1} gene}}}{145}{figure.caption.60}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {PIK3CA} protein}}}{145}{figure.caption.60}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\textit {AKT} protein}}}{145}{figure.caption.60}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\textit {CDH1} protein}}}{145}{figure.caption.60}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {\textit {TP53} protein}}}{145}{figure.caption.60}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Synthetic lethal expression profiles of stomach samples}}{151}{figure.caption.65}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Synthetic lethal partners across query genes}}{155}{figure.caption.66}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Synthetic lethal expression profiles of analysed samples}}{123}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Comparison of SLIPT to siRNA}}{127}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Compare SLIPT and siRNA genes with correlation}}{128}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Compare SLIPT and siRNA genes with correlation}}{128}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Compare SLIPT and siRNA genes with siRNA viability}}{130}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Compare SLIPT and siRNA genes with viability}}{130}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Compare SLIPT and siRNA genes with siRNA viability}}{131}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Resampled intersection of SLIPT and siRNA candidates}}{135}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Pathway metagene expression profiles}}{141}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Somatic mutation against PI3K metagene}}{143}{figure.4.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{143}{figure.4.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{143}{figure.4.10}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{143}{figure.4.10}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{143}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Somatic mutation locus against expression}}{145}{figure.4.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PI3KCA} gene}}}{145}{figure.4.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PI3KCA} metagene}}}{145}{figure.4.11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {PIK3R1} gene}}}{145}{figure.4.11}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {PIK3CA} protein}}}{145}{figure.4.11}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {\textit {AKT} protein}}}{145}{figure.4.11}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {\textit {CDH1} protein}}}{145}{figure.4.11}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {\textit {TP53} protein}}}{145}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Synthetic lethal expression profiles of stomach samples}}{151}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Synthetic lethal partners across query genes}}{155}{figure.4.13}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Synthetic Lethality in the PI3K Cascade}}{170}{figure.caption.77}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Synthetic Lethality in the Elastic Fibre Formation Pathway}}{172}{figure.caption.78}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Synthetic Lethality in the Fibrin Clot Formation}}{173}{figure.caption.79}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Synthetic Lethality and Vertex Degree}}{176}{figure.caption.80}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Synthetic Lethality and Centrality}}{178}{figure.caption.83}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Synthetic Lethality and PageRank}}{180}{figure.caption.86}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Structure of PI3K Ranking}}{182}{figure.caption.89}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Synthetic Lethality and Hierarchy Score in PI3K}}{183}{figure.caption.90}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Hierarchy Score in PI3K against Synthetic Lethality in PI3K}}{184}{figure.caption.91}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Structure of Synthetic Lethality in PI3K}}{185}{figure.caption.94}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Structure of Synthetic Lethality Resampling in PI3K}}{187}{figure.caption.95}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Synthetic Lethality in the PI3K Cascade}}{170}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Synthetic Lethality in the Elastic Fibre Formation Pathway}}{172}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Synthetic Lethality in the Fibrin Clot Formation}}{173}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Synthetic Lethality and Vertex Degree}}{176}{figure.5.4}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Synthetic Lethality and Centrality}}{178}{figure.5.5}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Synthetic Lethality and PageRank}}{180}{figure.5.6}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Structure of PI3K Ranking}}{182}{figure.5.7}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Synthetic Lethality and Hierarchy Score in PI3K}}{183}{figure.5.8}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Hierarchy Score in PI3K against Synthetic Lethality in PI3K}}{183}{figure.5.9}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Structure of Synthetic Lethality in PI3K}}{184}{figure.5.10}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Structure of Synthetic Lethality Resampling in PI3K}}{185}{figure.5.11}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Simulated graph structures}}{196}{figure.caption.100}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{196}{figure.caption.100}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{196}{figure.caption.100}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Simulated graph structures}}{196}{figure.caption.101}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{196}{figure.caption.101}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{196}{figure.caption.101}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Simulated graph structures}}{197}{figure.caption.102}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{197}{figure.caption.102}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{197}{figure.caption.102}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Simulated graph structures}}{198}{figure.caption.103}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{198}{figure.caption.103}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{198}{figure.caption.103}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Pathway structure including inhibitions}}}{198}{figure.caption.103}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Simulated graph structures}}{199}{figure.caption.104}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Simulated graph structures}}{200}{figure.caption.105}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Simulated graph structures}}{201}{figure.caption.106}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Simulated graph structures}}{202}{figure.caption.107}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Simulated graph structures}}{203}{figure.caption.108}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Simulated graph structures}}{204}{figure.caption.109}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Performance of multivariate normal simulations}}{194}{figure.6.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{194}{figure.6.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{194}{figure.6.1}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{194}{figure.6.1}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{194}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Performance of multivariate normal simulations}}{195}{figure.6.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{195}{figure.6.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{195}{figure.6.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{195}{figure.6.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{195}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Performance of multivariate normal simulations}}{196}{figure.6.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{196}{figure.6.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{196}{figure.6.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{196}{figure.6.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{196}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Performance of multivariate normal simulations}}{197}{figure.6.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{197}{figure.6.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{197}{figure.6.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{197}{figure.6.4}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{197}{figure.6.4}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Performance of multivariate normal simulations}}{198}{figure.6.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{198}{figure.6.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{198}{figure.6.5}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{198}{figure.6.5}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{198}{figure.6.5}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Performance of multivariate normal simulations}}{199}{figure.6.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{199}{figure.6.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{199}{figure.6.6}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{199}{figure.6.6}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{199}{figure.6.6}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Performance of multivariate normal simulations}}{200}{figure.6.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{200}{figure.6.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{200}{figure.6.7}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{200}{figure.6.7}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{200}{figure.6.7}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Performance of multivariate normal simulations}}{201}{figure.6.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{201}{figure.6.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{201}{figure.6.8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{201}{figure.6.8}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{201}{figure.6.8}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Performance of multivariate normal simulations}}{202}{figure.6.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{202}{figure.6.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{202}{figure.6.9}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{202}{figure.6.9}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{202}{figure.6.9}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Performance of multivariate normal simulations}}{203}{figure.6.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{203}{figure.6.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{203}{figure.6.10}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{203}{figure.6.10}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{203}{figure.6.10}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Performance of multivariate normal simulations}}{204}{figure.6.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{204}{figure.6.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{204}{figure.6.11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{204}{figure.6.11}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{204}{figure.6.11}
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Performance of multivariate normal simulations}}{205}{figure.6.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{205}{figure.6.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{205}{figure.6.12}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{205}{figure.6.12}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{205}{figure.6.12}
+\contentsline {figure}{\numberline {6.13}{\ignorespaces Performance of multivariate normal simulations}}{206}{figure.6.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{206}{figure.6.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{206}{figure.6.13}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{206}{figure.6.13}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{206}{figure.6.13}
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Performance of multivariate normal simulations}}{207}{figure.6.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{207}{figure.6.14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{207}{figure.6.14}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{207}{figure.6.14}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{207}{figure.6.14}
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Performance of multivariate normal simulations}}{208}{figure.6.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{208}{figure.6.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{208}{figure.6.15}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{208}{figure.6.15}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{208}{figure.6.15}
+\contentsline {figure}{\numberline {6.16}{\ignorespaces Performance of multivariate normal simulations}}{209}{figure.6.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{209}{figure.6.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{209}{figure.6.16}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{209}{figure.6.16}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{209}{figure.6.16}
+\contentsline {figure}{\numberline {6.17}{\ignorespaces Performance of multivariate normal simulations}}{210}{figure.6.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{210}{figure.6.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{210}{figure.6.17}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{210}{figure.6.17}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{210}{figure.6.17}
+\contentsline {figure}{\numberline {6.18}{\ignorespaces Performance of multivariate normal simulations}}{211}{figure.6.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{211}{figure.6.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{211}{figure.6.18}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{211}{figure.6.18}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{211}{figure.6.18}
+\contentsline {figure}{\numberline {6.19}{\ignorespaces Performance of multivariate normal simulations}}{212}{figure.6.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{212}{figure.6.19}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{212}{figure.6.19}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{212}{figure.6.19}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{212}{figure.6.19}
+\contentsline {figure}{\numberline {6.20}{\ignorespaces Performance of multivariate normal simulations}}{213}{figure.6.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{213}{figure.6.20}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{213}{figure.6.20}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{213}{figure.6.20}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{213}{figure.6.20}
+\contentsline {figure}{\numberline {6.21}{\ignorespaces Performance of multivariate normal simulations}}{215}{figure.6.21}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{215}{figure.6.21}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{215}{figure.6.21}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{215}{figure.6.21}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{215}{figure.6.21}
+\contentsline {figure}{\numberline {6.22}{\ignorespaces Performance of multivariate normal simulations}}{216}{figure.6.22}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{216}{figure.6.22}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{216}{figure.6.22}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{216}{figure.6.22}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{216}{figure.6.22}
+\contentsline {figure}{\numberline {6.23}{\ignorespaces Performance of multivariate normal simulations}}{217}{figure.6.23}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{217}{figure.6.23}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{217}{figure.6.23}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{217}{figure.6.23}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{217}{figure.6.23}
+\contentsline {figure}{\numberline {6.24}{\ignorespaces Performance of multivariate normal simulations}}{218}{figure.6.24}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{218}{figure.6.24}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{218}{figure.6.24}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{218}{figure.6.24}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{218}{figure.6.24}
+\contentsline {figure}{\numberline {6.25}{\ignorespaces Performance of multivariate normal simulations}}{219}{figure.6.25}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{219}{figure.6.25}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{219}{figure.6.25}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{219}{figure.6.25}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{219}{figure.6.25}
+\contentsline {figure}{\numberline {6.26}{\ignorespaces Performance of multivariate normal simulations}}{220}{figure.6.26}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{220}{figure.6.26}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{220}{figure.6.26}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{220}{figure.6.26}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{220}{figure.6.26}
+\contentsline {figure}{\numberline {6.27}{\ignorespaces Performance of multivariate normal simulations}}{221}{figure.6.27}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{221}{figure.6.27}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{221}{figure.6.27}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{221}{figure.6.27}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{221}{figure.6.27}
+\contentsline {figure}{\numberline {6.28}{\ignorespaces Performance of multivariate normal simulations}}{222}{figure.6.28}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{222}{figure.6.28}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{222}{figure.6.28}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{222}{figure.6.28}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{222}{figure.6.28}
+\contentsline {figure}{\numberline {6.29}{\ignorespaces Performance of multivariate normal simulations}}{223}{figure.6.29}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{223}{figure.6.29}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{223}{figure.6.29}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{223}{figure.6.29}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{223}{figure.6.29}
+\contentsline {figure}{\numberline {6.30}{\ignorespaces Performance of multivariate normal simulations}}{224}{figure.6.30}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{224}{figure.6.30}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{224}{figure.6.30}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{224}{figure.6.30}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{224}{figure.6.30}
+\contentsline {figure}{\numberline {6.31}{\ignorespaces Performance of multivariate normal simulations}}{225}{figure.6.31}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{225}{figure.6.31}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{225}{figure.6.31}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{225}{figure.6.31}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{225}{figure.6.31}
+\contentsline {figure}{\numberline {6.32}{\ignorespaces Performance of multivariate normal simulations}}{226}{figure.6.32}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{226}{figure.6.32}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{226}{figure.6.32}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{226}{figure.6.32}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{226}{figure.6.32}
+\contentsline {figure}{\numberline {6.33}{\ignorespaces Performance of multivariate normal simulations}}{227}{figure.6.33}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{227}{figure.6.33}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{227}{figure.6.33}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{227}{figure.6.33}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{227}{figure.6.33}
+\contentsline {figure}{\numberline {6.34}{\ignorespaces Performance of multivariate normal simulations}}{228}{figure.6.34}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{228}{figure.6.34}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{228}{figure.6.34}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{228}{figure.6.34}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{228}{figure.6.34}
+\contentsline {figure}{\numberline {6.35}{\ignorespaces Performance of multivariate normal simulations}}{229}{figure.6.35}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{229}{figure.6.35}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{229}{figure.6.35}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{229}{figure.6.35}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{229}{figure.6.35}
+\contentsline {figure}{\numberline {6.36}{\ignorespaces Performance of multivariate normal simulations}}{230}{figure.6.36}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{230}{figure.6.36}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{230}{figure.6.36}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{230}{figure.6.36}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{230}{figure.6.36}
+\contentsline {figure}{\numberline {6.37}{\ignorespaces Performance of multivariate normal simulations}}{231}{figure.6.37}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{231}{figure.6.37}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{231}{figure.6.37}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{231}{figure.6.37}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{231}{figure.6.37}
+\contentsline {figure}{\numberline {6.38}{\ignorespaces Performance of multivariate normal simulations}}{232}{figure.6.38}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{232}{figure.6.38}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{232}{figure.6.38}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{232}{figure.6.38}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{232}{figure.6.38}
+\contentsline {figure}{\numberline {6.39}{\ignorespaces Performance of multivariate normal simulations}}{233}{figure.6.39}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{233}{figure.6.39}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{233}{figure.6.39}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{233}{figure.6.39}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{233}{figure.6.39}
+\contentsline {figure}{\numberline {6.40}{\ignorespaces Performance of multivariate normal simulations}}{234}{figure.6.40}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{234}{figure.6.40}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{234}{figure.6.40}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{234}{figure.6.40}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{234}{figure.6.40}
+\contentsline {figure}{\numberline {6.41}{\ignorespaces Performance of multivariate normal simulations}}{236}{figure.6.41}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{236}{figure.6.41}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{236}{figure.6.41}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{236}{figure.6.41}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{236}{figure.6.41}
+\contentsline {figure}{\numberline {6.42}{\ignorespaces Performance of multivariate normal simulations}}{237}{figure.6.42}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{237}{figure.6.42}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{237}{figure.6.42}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{237}{figure.6.42}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{237}{figure.6.42}
+\contentsline {figure}{\numberline {6.43}{\ignorespaces Performance of multivariate normal simulations}}{238}{figure.6.43}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{238}{figure.6.43}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{238}{figure.6.43}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{238}{figure.6.43}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{238}{figure.6.43}
+\contentsline {figure}{\numberline {6.44}{\ignorespaces Performance of multivariate normal simulations}}{239}{figure.6.44}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{239}{figure.6.44}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{239}{figure.6.44}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{239}{figure.6.44}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{239}{figure.6.44}
+\contentsline {figure}{\numberline {6.45}{\ignorespaces Performance of multivariate normal simulations}}{240}{figure.6.45}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{240}{figure.6.45}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{240}{figure.6.45}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{240}{figure.6.45}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{240}{figure.6.45}
+\contentsline {figure}{\numberline {6.46}{\ignorespaces Performance of multivariate normal simulations}}{241}{figure.6.46}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{241}{figure.6.46}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{241}{figure.6.46}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{241}{figure.6.46}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{241}{figure.6.46}
+\contentsline {figure}{\numberline {6.47}{\ignorespaces Performance of multivariate normal simulations}}{242}{figure.6.47}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{242}{figure.6.47}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{242}{figure.6.47}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{242}{figure.6.47}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{242}{figure.6.47}
+\contentsline {figure}{\numberline {6.48}{\ignorespaces Performance of multivariate normal simulations}}{243}{figure.6.48}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{243}{figure.6.48}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{243}{figure.6.48}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{243}{figure.6.48}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{243}{figure.6.48}
+\contentsline {figure}{\numberline {6.49}{\ignorespaces Performance of multivariate normal simulations}}{244}{figure.6.49}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{244}{figure.6.49}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{244}{figure.6.49}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{244}{figure.6.49}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{244}{figure.6.49}
+\contentsline {figure}{\numberline {6.50}{\ignorespaces Performance of multivariate normal simulations}}{245}{figure.6.50}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{245}{figure.6.50}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{245}{figure.6.50}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{245}{figure.6.50}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{245}{figure.6.50}
+\contentsline {figure}{\numberline {6.51}{\ignorespaces Performance of multivariate normal simulations}}{246}{figure.6.51}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{246}{figure.6.51}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{246}{figure.6.51}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{246}{figure.6.51}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{246}{figure.6.51}
+\contentsline {figure}{\numberline {6.52}{\ignorespaces Performance of multivariate normal simulations}}{247}{figure.6.52}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{247}{figure.6.52}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{247}{figure.6.52}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{247}{figure.6.52}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{247}{figure.6.52}
+\contentsline {figure}{\numberline {6.53}{\ignorespaces Performance of multivariate normal simulations}}{248}{figure.6.53}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{248}{figure.6.53}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{248}{figure.6.53}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{248}{figure.6.53}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{248}{figure.6.53}
+\contentsline {figure}{\numberline {6.54}{\ignorespaces Performance of multivariate normal simulations}}{249}{figure.6.54}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{249}{figure.6.54}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{249}{figure.6.54}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{249}{figure.6.54}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{249}{figure.6.54}
+\contentsline {figure}{\numberline {6.55}{\ignorespaces Performance of multivariate normal simulations}}{250}{figure.6.55}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{250}{figure.6.55}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{250}{figure.6.55}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{250}{figure.6.55}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{250}{figure.6.55}
+\contentsline {figure}{\numberline {6.56}{\ignorespaces Performance of multivariate normal simulations}}{251}{figure.6.56}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{251}{figure.6.56}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{251}{figure.6.56}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{251}{figure.6.56}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{251}{figure.6.56}
+\contentsline {figure}{\numberline {6.57}{\ignorespaces Performance of multivariate normal simulations}}{252}{figure.6.57}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{252}{figure.6.57}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{252}{figure.6.57}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{252}{figure.6.57}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{252}{figure.6.57}
+\contentsline {figure}{\numberline {6.58}{\ignorespaces Performance of multivariate normal simulations}}{253}{figure.6.58}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{253}{figure.6.58}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{253}{figure.6.58}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{253}{figure.6.58}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{253}{figure.6.58}
+\contentsline {figure}{\numberline {6.59}{\ignorespaces Performance of multivariate normal simulations}}{254}{figure.6.59}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{254}{figure.6.59}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{254}{figure.6.59}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{254}{figure.6.59}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{254}{figure.6.59}
+\contentsline {figure}{\numberline {6.60}{\ignorespaces Performance of multivariate normal simulations}}{255}{figure.6.60}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{255}{figure.6.60}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{255}{figure.6.60}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{255}{figure.6.60}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{255}{figure.6.60}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces Correlation profiles of removed samples}}{240}{figure.caption.115}
-\contentsline {figure}{\numberline {A.2}{\ignorespaces Correlation analysis and sample removal}}{241}{figure.caption.116}
-\contentsline {figure}{\numberline {A.3}{\ignorespaces Replicate excluded samples}}{242}{figure.caption.117}
-\contentsline {figure}{\numberline {A.4}{\ignorespaces Replicate samples with all remaining}}{243}{figure.caption.118}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Remaining triplet}}}{243}{figure.caption.118}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Remaining triplet}}}{243}{figure.caption.118}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Remaining triplet}}}{243}{figure.caption.118}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Remaining paired samples}}}{243}{figure.caption.118}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Remaining paired samples}}}{243}{figure.caption.118}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Remaining paired samples}}}{243}{figure.caption.118}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Replicate samples with some excluded}}{244}{figure.caption.119}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Remaining}}}{244}{figure.caption.119}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Compare with excluded}}}{244}{figure.caption.119}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Compare with excluded}}}{244}{figure.caption.119}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Remaining}}}{244}{figure.caption.119}
-\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Compare with excluded}}}{244}{figure.caption.119}
-\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Compare with excluded}}}{244}{figure.caption.119}
-\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Remaining}}}{244}{figure.caption.119}
-\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Compare with excluded}}}{244}{figure.caption.119}
-\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {Compare with excluded}}}{244}{figure.caption.119}
-\contentsline {figure}{\numberline {A.5}{\ignorespaces Replicate samples with some excluded}}{245}{figure.caption.120}
-\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {Remaining}}}{245}{figure.caption.120}
-\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {Compare with excluded}}}{245}{figure.caption.120}
-\contentsline {subfigure}{\numberline {(l)}{\ignorespaces {Compare with excluded}}}{245}{figure.caption.120}
-\contentsline {subfigure}{\numberline {(m)}{\ignorespaces {Compare with excluded}}}{245}{figure.caption.120}
-\contentsline {subfigure}{\numberline {(n)}{\ignorespaces {Compare with excluded}}}{245}{figure.caption.120}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces Correlation profiles of removed samples}}{292}{figure.A.1}
+\contentsline {figure}{\numberline {A.2}{\ignorespaces Correlation analysis and sample removal}}{293}{figure.A.2}
+\contentsline {figure}{\numberline {A.3}{\ignorespaces Replicate excluded samples}}{294}{figure.A.3}
+\contentsline {figure}{\numberline {A.4}{\ignorespaces Replicate samples with all remaining}}{295}{figure.A.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Remaining triplet}}}{295}{figure.A.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Remaining triplet}}}{295}{figure.A.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Remaining triplet}}}{295}{figure.A.4}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Remaining paired samples}}}{295}{figure.A.4}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Remaining paired samples}}}{295}{figure.A.4}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Remaining paired samples}}}{295}{figure.A.4}
+\contentsline {figure}{\numberline {A.5}{\ignorespaces Replicate samples with some excluded}}{296}{figure.A.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Remaining}}}{296}{figure.A.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Compare with excluded}}}{296}{figure.A.5}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Compare with excluded}}}{296}{figure.A.5}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Remaining}}}{296}{figure.A.5}
+\contentsline {subfigure}{\numberline {(e)}{\ignorespaces {Compare with excluded}}}{296}{figure.A.5}
+\contentsline {subfigure}{\numberline {(f)}{\ignorespaces {Compare with excluded}}}{296}{figure.A.5}
+\contentsline {subfigure}{\numberline {(g)}{\ignorespaces {Remaining}}}{296}{figure.A.5}
+\contentsline {subfigure}{\numberline {(h)}{\ignorespaces {Compare with excluded}}}{296}{figure.A.5}
+\contentsline {subfigure}{\numberline {(i)}{\ignorespaces {Compare with excluded}}}{296}{figure.A.5}
+\contentsline {figure}{\numberline {A.6}{\ignorespaces Replicate samples with some excluded}}{297}{figure.A.6}
+\contentsline {subfigure}{\numberline {(j)}{\ignorespaces {Remaining}}}{297}{figure.A.6}
+\contentsline {subfigure}{\numberline {(k)}{\ignorespaces {Compare with excluded}}}{297}{figure.A.6}
+\contentsline {subfigure}{\numberline {(l)}{\ignorespaces {Compare with excluded}}}{297}{figure.A.6}
+\contentsline {subfigure}{\numberline {(m)}{\ignorespaces {Compare with excluded}}}{297}{figure.A.6}
+\contentsline {subfigure}{\numberline {(n)}{\ignorespaces {Compare with excluded}}}{297}{figure.A.6}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {D.1}{\ignorespaces Synthetic lethal expression profiles of analysed samples}}{261}{figure.caption.128}
-\contentsline {figure}{\numberline {D.2}{\ignorespaces Comparison of mtSLIPT to siRNA}}{263}{figure.caption.130}
-\contentsline {figure}{\numberline {D.3}{\ignorespaces Compare mtSLIPT and siRNA genes with correlation}}{268}{figure.caption.136}
-\contentsline {figure}{\numberline {D.4}{\ignorespaces Compare mtSLIPT and siRNA genes with correlation}}{268}{figure.caption.136}
-\contentsline {figure}{\numberline {D.5}{\ignorespaces Compare mtSLIPT and siRNA genes with siRNA viability}}{269}{figure.caption.137}
-\contentsline {figure}{\numberline {D.6}{\ignorespaces Somatic mutation locus}}{272}{figure.caption.140}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PI3KCA}}}}{272}{figure.caption.140}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PI3KR1}}}}{272}{figure.caption.140}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1}}}}{272}{figure.caption.140}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53}}}}{272}{figure.caption.140}
-\contentsline {figure}{\numberline {D.7}{\ignorespaces Somatic mutation against PIK3CA metagene}}{273}{figure.caption.141}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{273}{figure.caption.141}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{273}{figure.caption.141}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{273}{figure.caption.141}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{273}{figure.caption.141}
-\contentsline {figure}{\numberline {D.8}{\ignorespaces Somatic mutation against PI3K protein}}{274}{figure.caption.142}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{274}{figure.caption.142}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{274}{figure.caption.142}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{274}{figure.caption.142}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{274}{figure.caption.142}
-\contentsline {figure}{\numberline {D.9}{\ignorespaces Somatic mutation against AKT protein}}{275}{figure.caption.143}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{275}{figure.caption.143}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{275}{figure.caption.143}
-\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{275}{figure.caption.143}
-\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{275}{figure.caption.143}
+\contentsline {figure}{\numberline {D.1}{\ignorespaces Synthetic lethal expression profiles of analysed samples}}{313}{figure.D.1}
+\contentsline {figure}{\numberline {D.2}{\ignorespaces Comparison of mtSLIPT to siRNA}}{315}{figure.D.2}
+\contentsline {figure}{\numberline {D.3}{\ignorespaces Compare mtSLIPT and siRNA genes with correlation}}{320}{figure.D.3}
+\contentsline {figure}{\numberline {D.4}{\ignorespaces Compare mtSLIPT and siRNA genes with correlation}}{320}{figure.D.4}
+\contentsline {figure}{\numberline {D.5}{\ignorespaces Compare mtSLIPT and siRNA genes with siRNA viability}}{321}{figure.D.5}
+\contentsline {figure}{\numberline {D.6}{\ignorespaces Somatic mutation locus}}{324}{figure.D.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PI3KCA}}}}{324}{figure.D.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PI3KR1}}}}{324}{figure.D.6}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1}}}}{324}{figure.D.6}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53}}}}{324}{figure.D.6}
+\contentsline {figure}{\numberline {D.7}{\ignorespaces Somatic mutation against PIK3CA metagene}}{325}{figure.D.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{325}{figure.D.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{325}{figure.D.7}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{325}{figure.D.7}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{325}{figure.D.7}
+\contentsline {figure}{\numberline {D.8}{\ignorespaces Somatic mutation against PI3K protein}}{326}{figure.D.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{326}{figure.D.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{326}{figure.D.8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{326}{figure.D.8}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{326}{figure.D.8}
+\contentsline {figure}{\numberline {D.9}{\ignorespaces Somatic mutation against AKT protein}}{327}{figure.D.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {\textit {PIK3CA} mutation}}}{327}{figure.D.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {\textit {PIK3CA} or \textit {PIK3R1} mutation}}}{327}{figure.D.9}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {\textit {CDH1} mutation}}}{327}{figure.D.9}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {\textit {TP53} mutation}}}{327}{figure.D.9}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {E.1}{\ignorespaces Pathway metagene expression profiles}}{277}{figure.caption.144}
-\contentsline {figure}{\numberline {E.2}{\ignorespaces Expression profiles for constituent genes of PI3K}}{278}{figure.caption.145}
-\contentsline {figure}{\numberline {E.3}{\ignorespaces Expression profiles for p53 related genes}}{279}{figure.caption.146}
-\contentsline {figure}{\numberline {E.4}{\ignorespaces Expression profiles for estrogen receptor related genes}}{280}{figure.caption.147}
-\contentsline {figure}{\numberline {E.5}{\ignorespaces Expression profiles for BRCA related genes}}{281}{figure.caption.148}
+\contentsline {figure}{\numberline {E.1}{\ignorespaces Pathway metagene expression profiles}}{329}{figure.E.1}
+\contentsline {figure}{\numberline {E.2}{\ignorespaces Expression profiles for constituent genes of PI3K}}{330}{figure.E.2}
+\contentsline {figure}{\numberline {E.3}{\ignorespaces Expression profiles for p53 related genes}}{331}{figure.E.3}
+\contentsline {figure}{\numberline {E.4}{\ignorespaces Expression profiles for estrogen receptor related genes}}{332}{figure.E.4}
+\contentsline {figure}{\numberline {E.5}{\ignorespaces Expression profiles for BRCA related genes}}{333}{figure.E.5}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {F.1}{\ignorespaces Comparison of SLIPT in stomach to siRNA}}{285}{figure.caption.152}
+\contentsline {figure}{\numberline {F.1}{\ignorespaces Comparison of SLIPT in stomach to siRNA}}{337}{figure.F.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {G.1}{\ignorespaces Synthetic lethal expression profiles of stomach samples}}{294}{figure.caption.164}
-\contentsline {figure}{\numberline {G.2}{\ignorespaces Comparison of mtSLIPT in stomach to siRNA}}{296}{figure.caption.166}
+\contentsline {figure}{\numberline {G.1}{\ignorespaces Synthetic lethal expression profiles of stomach samples}}{346}{figure.G.1}
+\contentsline {figure}{\numberline {G.2}{\ignorespaces Comparison of mtSLIPT in stomach to siRNA}}{348}{figure.G.2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {H.1}{\ignorespaces Synthetic lethal partners across query genes}}{301}{figure.caption.174}
+\contentsline {figure}{\numberline {H.1}{\ignorespaces Synthetic lethal partners across query genes}}{354}{figure.H.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {J.1}{\ignorespaces Synthetic Lethality in the PI3K/AKT Pathway}}{309}{figure.caption.189}
-\contentsline {figure}{\numberline {J.2}{\ignorespaces Synthetic Lethality in the PI3K/AKT Pathway in Cancer}}{310}{figure.caption.190}
-\contentsline {figure}{\numberline {J.3}{\ignorespaces Synthetic Lethality in the Extracellular Matrix}}{311}{figure.caption.191}
-\contentsline {figure}{\numberline {J.4}{\ignorespaces Synthetic Lethality in the GPCRs}}{312}{figure.caption.192}
-\contentsline {figure}{\numberline {J.5}{\ignorespaces Synthetic Lethality in the GPCR Downstream}}{313}{figure.caption.193}
-\contentsline {figure}{\numberline {J.6}{\ignorespaces Synthetic Lethality in the Translation Elongation}}{314}{figure.caption.194}
-\contentsline {figure}{\numberline {J.7}{\ignorespaces Synthetic Lethality in the Nonsense-mediated Decay}}{315}{figure.caption.195}
-\contentsline {figure}{\numberline {J.8}{\ignorespaces Synthetic Lethality in the 3$^\prime $ UTR}}{316}{figure.caption.196}
+\contentsline {figure}{\numberline {J.1}{\ignorespaces Synthetic Lethality in the PI3K/AKT Pathway}}{363}{figure.J.1}
+\contentsline {figure}{\numberline {J.2}{\ignorespaces Synthetic Lethality in the PI3K/AKT Pathway in Cancer}}{364}{figure.J.2}
+\contentsline {figure}{\numberline {J.3}{\ignorespaces Synthetic Lethality in the Extracellular Matrix}}{365}{figure.J.3}
+\contentsline {figure}{\numberline {J.4}{\ignorespaces Synthetic Lethality in the GPCRs}}{366}{figure.J.4}
+\contentsline {figure}{\numberline {J.5}{\ignorespaces Synthetic Lethality in the GPCR Downstream}}{367}{figure.J.5}
+\contentsline {figure}{\numberline {J.6}{\ignorespaces Synthetic Lethality in the Translation Elongation}}{368}{figure.J.6}
+\contentsline {figure}{\numberline {J.7}{\ignorespaces Synthetic Lethality in the Nonsense-mediated Decay}}{369}{figure.J.7}
+\contentsline {figure}{\numberline {J.8}{\ignorespaces Synthetic Lethality in the 3$^\prime $ UTR}}{370}{figure.J.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {K.1}{\ignorespaces Synthetic Lethality and Vertex Degree}}{318}{figure.caption.197}
-\contentsline {figure}{\numberline {K.2}{\ignorespaces Synthetic Lethality and Centrality}}{319}{figure.caption.198}
-\contentsline {figure}{\numberline {K.3}{\ignorespaces Synthetic Lethality and PageRank}}{320}{figure.caption.199}
+\contentsline {figure}{\numberline {K.1}{\ignorespaces Synthetic Lethality and Vertex Degree}}{371}{figure.K.1}
+\contentsline {figure}{\numberline {K.2}{\ignorespaces Synthetic Lethality and Centrality}}{372}{figure.K.2}
+\contentsline {figure}{\numberline {K.3}{\ignorespaces Synthetic Lethality and PageRank}}{373}{figure.K.3}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {L.1}{\ignorespaces Information centrality distribution}}{323}{figure.caption.208}
+\contentsline {figure}{\numberline {L.1}{\ignorespaces Information centrality distribution}}{377}{figure.L.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {M.1}{\ignorespaces Synthetic Lethality and Heirarchy Score in PI3K}}{325}{figure.caption.209}
-\contentsline {figure}{\numberline {M.2}{\ignorespaces Heirarchy Score in PI3K against Synthetic Lethality in PI3K}}{326}{figure.caption.212}
-\contentsline {figure}{\numberline {M.3}{\ignorespaces Structure of Synthetic Lethality in PI3K}}{327}{figure.caption.213}
-\contentsline {figure}{\numberline {M.4}{\ignorespaces Structure of Synthetic Lethality Resampling}}{328}{figure.caption.214}
+\contentsline {figure}{\numberline {M.1}{\ignorespaces Synthetic Lethality and Heirarchy Score in PI3K}}{378}{figure.M.1}
+\contentsline {figure}{\numberline {M.2}{\ignorespaces Heirarchy Score in PI3K against Synthetic Lethality in PI3K}}{379}{figure.M.2}
+\contentsline {figure}{\numberline {M.3}{\ignorespaces Structure of Synthetic Lethality in PI3K}}{379}{figure.M.3}
+\contentsline {figure}{\numberline {M.4}{\ignorespaces Structure of Synthetic Lethality Resampling}}{380}{figure.M.4}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {N.1}{\ignorespaces Simulated graph structures}}{382}{figure.N.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{382}{figure.N.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{382}{figure.N.1}
+\contentsline {figure}{\numberline {N.2}{\ignorespaces Simulated graph structures}}{383}{figure.N.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{383}{figure.N.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{383}{figure.N.2}
+\contentsline {figure}{\numberline {N.3}{\ignorespaces Simulated graph structures}}{383}{figure.N.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{383}{figure.N.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{383}{figure.N.3}
+\contentsline {figure}{\numberline {N.4}{\ignorespaces Simulated graph structures}}{384}{figure.N.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Activating pathway structure}}}{384}{figure.N.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Pathway structure including inhibitions}}}{384}{figure.N.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces {Pathway structure including inhibitions}}}{384}{figure.N.4}
+\contentsline {figure}{\numberline {N.5}{\ignorespaces Simulated graph structures}}{385}{figure.N.5}
+\contentsline {figure}{\numberline {N.6}{\ignorespaces Simulated graph structures}}{385}{figure.N.6}
+\contentsline {figure}{\numberline {N.7}{\ignorespaces Simulated graph structures}}{386}{figure.N.7}
+\contentsline {figure}{\numberline {N.8}{\ignorespaces Simulated graph structures}}{386}{figure.N.8}
+\contentsline {figure}{\numberline {N.9}{\ignorespaces Simulated graph structures}}{387}{figure.N.9}
+\contentsline {figure}{\numberline {N.10}{\ignorespaces Simulated graph structures}}{388}{figure.N.10}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {O.1}{\ignorespaces Performance of multivariate normal simulations}}{390}{figure.O.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{390}{figure.O.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{390}{figure.O.1}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{390}{figure.O.1}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{390}{figure.O.1}
+\contentsline {figure}{\numberline {O.2}{\ignorespaces Performance of multivariate normal simulations}}{391}{figure.O.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{391}{figure.O.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{391}{figure.O.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{391}{figure.O.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{391}{figure.O.2}
+\contentsline {figure}{\numberline {O.3}{\ignorespaces Performance of multivariate normal simulations}}{392}{figure.O.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{392}{figure.O.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{392}{figure.O.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{392}{figure.O.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{392}{figure.O.3}
+\contentsline {figure}{\numberline {O.4}{\ignorespaces Performance of multivariate normal simulations}}{393}{figure.O.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{393}{figure.O.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{393}{figure.O.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{393}{figure.O.4}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{393}{figure.O.4}
+\contentsline {figure}{\numberline {O.5}{\ignorespaces Performance of multivariate normal simulations}}{394}{figure.O.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{394}{figure.O.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{394}{figure.O.5}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{394}{figure.O.5}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{394}{figure.O.5}
+\contentsline {figure}{\numberline {O.6}{\ignorespaces Performance of multivariate normal simulations}}{395}{figure.O.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{395}{figure.O.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{395}{figure.O.6}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{395}{figure.O.6}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{395}{figure.O.6}
+\contentsline {figure}{\numberline {O.7}{\ignorespaces Performance of multivariate normal simulations}}{396}{figure.O.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{396}{figure.O.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{396}{figure.O.7}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{396}{figure.O.7}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{396}{figure.O.7}
+\contentsline {figure}{\numberline {O.8}{\ignorespaces Performance of multivariate normal simulations}}{397}{figure.O.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{397}{figure.O.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{397}{figure.O.8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{397}{figure.O.8}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{397}{figure.O.8}
+\contentsline {figure}{\numberline {O.9}{\ignorespaces Performance of multivariate normal simulations}}{398}{figure.O.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{398}{figure.O.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{398}{figure.O.9}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{398}{figure.O.9}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{398}{figure.O.9}
+\contentsline {figure}{\numberline {O.10}{\ignorespaces Performance of multivariate normal simulations}}{399}{figure.O.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{399}{figure.O.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{399}{figure.O.10}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{399}{figure.O.10}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{399}{figure.O.10}
+\contentsline {figure}{\numberline {O.11}{\ignorespaces Performance of multivariate normal simulations}}{400}{figure.O.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{400}{figure.O.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{400}{figure.O.11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{400}{figure.O.11}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{400}{figure.O.11}
+\contentsline {figure}{\numberline {O.12}{\ignorespaces Performance of multivariate normal simulations}}{401}{figure.O.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{401}{figure.O.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{401}{figure.O.12}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{401}{figure.O.12}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{401}{figure.O.12}
+\contentsline {figure}{\numberline {O.13}{\ignorespaces Performance of multivariate normal simulations}}{402}{figure.O.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{402}{figure.O.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{402}{figure.O.13}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{402}{figure.O.13}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{402}{figure.O.13}
+\contentsline {figure}{\numberline {O.14}{\ignorespaces Performance of multivariate normal simulations}}{403}{figure.O.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{403}{figure.O.14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{403}{figure.O.14}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{403}{figure.O.14}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{403}{figure.O.14}
+\contentsline {figure}{\numberline {O.15}{\ignorespaces Performance of multivariate normal simulations}}{404}{figure.O.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{404}{figure.O.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{404}{figure.O.15}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{404}{figure.O.15}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{404}{figure.O.15}
+\contentsline {figure}{\numberline {O.16}{\ignorespaces Performance of multivariate normal simulations}}{405}{figure.O.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{405}{figure.O.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{405}{figure.O.16}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{405}{figure.O.16}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{405}{figure.O.16}
+\contentsline {figure}{\numberline {O.17}{\ignorespaces Performance of multivariate normal simulations}}{406}{figure.O.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{406}{figure.O.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{406}{figure.O.17}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{406}{figure.O.17}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{406}{figure.O.17}
+\contentsline {figure}{\numberline {O.18}{\ignorespaces Performance of multivariate normal simulations}}{407}{figure.O.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{407}{figure.O.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{407}{figure.O.18}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{407}{figure.O.18}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{407}{figure.O.18}
+\contentsline {figure}{\numberline {O.19}{\ignorespaces Performance of multivariate normal simulations}}{408}{figure.O.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{408}{figure.O.19}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{408}{figure.O.19}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{408}{figure.O.19}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{408}{figure.O.19}
+\contentsline {figure}{\numberline {O.20}{\ignorespaces Performance of multivariate normal simulations}}{409}{figure.O.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{409}{figure.O.20}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{409}{figure.O.20}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{409}{figure.O.20}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{409}{figure.O.20}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {P.1}{\ignorespaces Performance of multivariate normal simulations}}{411}{figure.P.1}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{411}{figure.P.1}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{411}{figure.P.1}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{411}{figure.P.1}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{411}{figure.P.1}
+\contentsline {figure}{\numberline {P.2}{\ignorespaces Performance of multivariate normal simulations}}{412}{figure.P.2}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{412}{figure.P.2}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{412}{figure.P.2}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{412}{figure.P.2}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{412}{figure.P.2}
+\contentsline {figure}{\numberline {P.3}{\ignorespaces Performance of multivariate normal simulations}}{413}{figure.P.3}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{413}{figure.P.3}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{413}{figure.P.3}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{413}{figure.P.3}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{413}{figure.P.3}
+\contentsline {figure}{\numberline {P.4}{\ignorespaces Performance of multivariate normal simulations}}{414}{figure.P.4}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{414}{figure.P.4}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{414}{figure.P.4}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{414}{figure.P.4}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{414}{figure.P.4}
+\contentsline {figure}{\numberline {P.5}{\ignorespaces Performance of multivariate normal simulations}}{415}{figure.P.5}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{415}{figure.P.5}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{415}{figure.P.5}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{415}{figure.P.5}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{415}{figure.P.5}
+\contentsline {figure}{\numberline {P.6}{\ignorespaces Performance of multivariate normal simulations}}{416}{figure.P.6}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{416}{figure.P.6}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{416}{figure.P.6}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{416}{figure.P.6}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{416}{figure.P.6}
+\contentsline {figure}{\numberline {P.7}{\ignorespaces Performance of multivariate normal simulations}}{417}{figure.P.7}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{417}{figure.P.7}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{417}{figure.P.7}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{417}{figure.P.7}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{417}{figure.P.7}
+\contentsline {figure}{\numberline {P.8}{\ignorespaces Performance of multivariate normal simulations}}{418}{figure.P.8}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{418}{figure.P.8}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{418}{figure.P.8}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{418}{figure.P.8}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{418}{figure.P.8}
+\contentsline {figure}{\numberline {P.9}{\ignorespaces Performance of multivariate normal simulations}}{419}{figure.P.9}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{419}{figure.P.9}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{419}{figure.P.9}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{419}{figure.P.9}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{419}{figure.P.9}
+\contentsline {figure}{\numberline {P.10}{\ignorespaces Performance of multivariate normal simulations}}{420}{figure.P.10}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{420}{figure.P.10}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{420}{figure.P.10}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{420}{figure.P.10}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{420}{figure.P.10}
+\contentsline {figure}{\numberline {P.11}{\ignorespaces Performance of multivariate normal simulations}}{421}{figure.P.11}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{421}{figure.P.11}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{421}{figure.P.11}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{421}{figure.P.11}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{421}{figure.P.11}
+\contentsline {figure}{\numberline {P.12}{\ignorespaces Performance of multivariate normal simulations}}{422}{figure.P.12}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{422}{figure.P.12}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{422}{figure.P.12}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{422}{figure.P.12}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{422}{figure.P.12}
+\contentsline {figure}{\numberline {P.13}{\ignorespaces Performance of multivariate normal simulations}}{423}{figure.P.13}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{423}{figure.P.13}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{423}{figure.P.13}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{423}{figure.P.13}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{423}{figure.P.13}
+\contentsline {figure}{\numberline {P.14}{\ignorespaces Performance of multivariate normal simulations}}{424}{figure.P.14}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{424}{figure.P.14}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{424}{figure.P.14}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{424}{figure.P.14}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{424}{figure.P.14}
+\contentsline {figure}{\numberline {P.15}{\ignorespaces Performance of multivariate normal simulations}}{425}{figure.P.15}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{425}{figure.P.15}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{425}{figure.P.15}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{425}{figure.P.15}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{425}{figure.P.15}
+\contentsline {figure}{\numberline {P.16}{\ignorespaces Performance of multivariate normal simulations}}{426}{figure.P.16}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{426}{figure.P.16}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{426}{figure.P.16}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{426}{figure.P.16}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{426}{figure.P.16}
+\contentsline {figure}{\numberline {P.17}{\ignorespaces Performance of multivariate normal simulations}}{427}{figure.P.17}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{427}{figure.P.17}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{427}{figure.P.17}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{427}{figure.P.17}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{427}{figure.P.17}
+\contentsline {figure}{\numberline {P.18}{\ignorespaces Performance of multivariate normal simulations}}{428}{figure.P.18}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{428}{figure.P.18}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{428}{figure.P.18}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{428}{figure.P.18}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{428}{figure.P.18}
+\contentsline {figure}{\numberline {P.19}{\ignorespaces Performance of multivariate normal simulations}}{429}{figure.P.19}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{429}{figure.P.19}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{429}{figure.P.19}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{429}{figure.P.19}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{429}{figure.P.19}
+\contentsline {figure}{\numberline {P.20}{\ignorespaces Performance of multivariate normal simulations}}{430}{figure.P.20}
+\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Statistical evaluation}}}{430}{figure.P.20}
+\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Receiver operating characteristic}}}{430}{figure.P.20}
+\contentsline {subfigure}{\numberline {(c)}{\ignorespaces t}}{430}{figure.P.20}
+\contentsline {subfigure}{\numberline {(d)}{\ignorespaces {Statistical performance}}}{430}{figure.P.20}
