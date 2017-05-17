@@ -132,12 +132,12 @@ Simulations were developed to simulate normal distributions of expression data a
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[Simulated expression matrix]{%
+        \subcaptionbox{Simulated expression matrix}{%
             \label{fig:simulate_function:first}
             %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat_inhibiting".png}}
             \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat".png}}
         }%
-        \subfigure[Corresponding gene function calls]{%
+        \subcaptionbox{Corresponding gene function calls}{%
            \label{fig:simulate_function:second}
            %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_disc_mat".png}} %%check if same tree order (sample) as expression
            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_disc_mat".png}}
@@ -155,13 +155,13 @@ Simulations were developed to simulate normal distributions of expression data a
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-	\subfigure[Simulated gene function with SL genes]{%
+	\subcaptionbox{Simulated gene function with SL genes}{%
             \label{fig:simulate_add_query:first}
             %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_SL_disc_mat".png}}
             %\includegraphics[width=0.5\textwidth,trim=4cm 2cm 0cm 0cm,clip]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL_disc_mat".png}}
             \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL_disc_mat".png}}
         }%
-        \subfigure[Query gene added with SL condition]{%
+        \subcaptionbox{Query gene added with SL condition}{%
            \label{fig:simulate_add_query:second}
            %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_disc_query_mat_graph".png}} %%check if same tree order (sample) as expression
            %\includegraphics[width=0.5\textwidth,trim=4cm 2cm 0cm 0cm,clip]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_disc_query_mat_graph".png}}
@@ -182,13 +182,13 @@ Simulations were developed to simulate normal distributions of expression data a
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-	\subfigure[Simulated gene function with SL genes]{%
+	\subcaptionbox{Simulated gene function with SL genes}{%
             \label{fig:simulate_add_query:first}
             %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_SL_disc_mat".png}}
             %\includegraphics[width=0.5\textwidth,trim=4cm 2cm 0cm 0cm,clip]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL_disc_mat".png}}
             \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL_disc_mat".png}}
         }%
-        \subfigure[Query gene added with SL condition]{%
+        \subcaptionbox{Query gene added with SL condition}{%
            \label{fig:simulate_add_query:second}
            %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_disc_query_mat_graph".png}} %%check if same tree order (sample) as expression
            %\includegraphics[width=0.5\textwidth,trim=4cm 2cm 0cm 0cm,clip]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_disc_query_mat_graph".png}}
@@ -215,12 +215,12 @@ Once we have generated a simulated dataset, the samples are compared by gene fun
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[Initial expression matrix]{%
+        \subcaptionbox{Initial expression matrix}{%
             \label{fig:simulate_SL:first}
             %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat_inhibiting".png}}
             \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat".png}}
         }%
-        \subfigure[Simulated synthetic lethal dataset]{%
+        \subcaptionbox{Simulated synthetic lethal dataset}{%
            \label{fig:simulate_SL:second}
            %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_query_mat_graph".png}} %%check if same tree order (sample) as expression
            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_query_mat_graph".png}}
@@ -294,17 +294,14 @@ Expression is sampled from multivariate normal distribution with a mean ($\mu = 
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[Statistical evaluation]{%
-            \label{fig:simulation_Apr15ROC:Perf}
+        \subcaptionbox{Statistical evaluation \label{fig:simulation_Apr15ROC:Perf}}{%
             \includegraphics[width=0.475\textwidth]{{"SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png}}
         }%
-        \subfigure[Receiver operating characteristic]{%
-            \label{fig:simulation_Apr15ROC:ROC}
+        \subcaptionbox{Receiver operating characteristic \label{fig:simulation_Apr15ROC:ROC}}{%
             \includegraphics[width=0.475\textwidth]{{"SL_Model_Apr15mvnormCor_1K_ROC2_samplesx_prop".png}}
         }%
         
-        \subfigure[Statistical performance]{%
-           \label{fig:simulation_Apr15ROC:AUC}
+        \subcaptionbox{Statistical performance \label{fig:simulation_Apr15ROC:AUC}}{%
            \includegraphics[width=0.65\textwidth]{{"SL_Model_Apr15mvnormCor_1K_AUC_samplesx_prop".png}}
         }%
     \end{center}
@@ -334,21 +331,17 @@ Correlation structures can be added to the simulation procedure (as discussed in
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[Input $\Sigma$ matrix parameter]{%
-            \label{fig:simulation_May4SL:first}
+        \subcaptionbox{Input $\Sigma$ matrix parameter  \label{fig:simulation_May4SL:first}}{%
             \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(1)".pdf}}
         }%
-        \subfigure[Simulated correlation matrix]{%
-            \label{fig:simulation_May4SL:second}
+        \subcaptionbox{Simulated correlation matrix \label{fig:simulation_May4SL:second}}{%
             \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(2)".pdf}}
         }%
         
-        \subfigure[Simulated gene expression]{%
-           \label{fig:simulation_May4SL:third}
+        \subcaptionbox{Simulated gene expression  \label{fig:simulation_May4SL:third}}{%
            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(4)".pdf}}
         }%
-	\subfigure[Simulated gene function]{%
-           \label{fig:simulation_May4SL:fifth}
+	\subcaptionbox{Simulated gene function \label{fig:simulation_May4SL:fifth}}{%
            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(3)".pdf}}
         }%
     \end{center}
@@ -367,20 +360,20 @@ These plots (Figures~\ref{fig:simulation_May4SL} and~\ref{fig:simulation_May4SL1
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[Input $\Sigma$ matrix parameter]{%
+        \subcaptionbox{Input $\Sigma$ matrix parameter}{%
             \label{fig:simulation_May4SL1K:first}
             \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(1)".pdf}}
         }%
-        \subfigure[Simulated correlation matrix]{%
+        \subcaptionbox{Simulated correlation matrix}{%
             \label{fig:simulation_May4SL1K:second}
             \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".pdf}}
         }%
         
-        \subfigure[Simulated gene expression]{%
+        \subcaptionbox{Simulated gene expression}{%
            \label{fig:simulation_May4SL1K:third}
            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(4)".pdf}}
         }%
-	\subfigure[Simulated gene function]{%
+	\subcaptionbox{Simulated gene function}{%
            \label{fig:simulation_May4SL1K:fifth}
            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(3)".pdf}}
         }%
@@ -399,11 +392,11 @@ These simulations (on 100 genes) were repeated to examine the variation between 
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[Gene category in simulations]{%
+        \subcaptionbox{Gene category in simulations}{%
             \label{fig:simulation_May4SLreps:first}
             \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".png}}
         }%
-        \subfigure[Corresponding $\chi^2$ values]{%
+        \subcaptionbox{Corresponding $\chi^2$ values}{%
             \label{fig:simulation_May4SLreps:second}
             \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(2)".png}}
         }%
@@ -421,16 +414,16 @@ These simulations (on 100 genes) were repeated to examine the variation between 
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[Statistical evaluation]{%
+        \subcaptionbox{Statistical evaluation}{%
             \label{fig:simulation_Apr15ROC2:Perf}
             \includegraphics[width=0.475\textwidth]{{"SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png}}
         }%
-        \subfigure[Receiver operating characteristic]{%
+        \subcaptionbox{Receiver operating characteristic}{%
             \label{fig:simulation_Apr15ROC2:ROC}
             \includegraphics[width=0.475\textwidth]{{"SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png}}
         }%
         
-        \subfigure[Statistical performance]{%
+        \subcaptionbox{Statistical performance}{%
            \label{fig:simulation_Apr15ROC2:AUC}
            \includegraphics[width=0.65\textwidth]{{"SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png}}
         }%
@@ -467,16 +460,16 @@ Thus \gls{SLIPT} is robust across correlation structures and applicable to real 
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[Statistical evaluation]{%
-            \label{fig:simulation_May15ROC:Perf}
+        \subcaptionbox{Statistical evaluation \label{fig:simulation_May15ROC:Perf}}{%
+            
             \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}}
         }%
-        \subfigure[Receiver operating characteristic]{%
+        \subcaptionbox{Receiver operating characteristic}{%
             \label{fig:simulation_May15ROC:ROC}
             \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png}}
         }%
         
-        \subfigure[Statistical performance]{%
+        \subcaptionbox{Statistical performance}{%
            \label{fig:simulation_May15ROC:AUC}
            \includegraphics[width=0.65\textwidth]{{"SL_Model_May15mvnorm_dir_1K_AUC_samplesx_prop".png}}
         }%
@@ -493,7 +486,7 @@ In particular, genes correlated with true synthetic lethal genes have little imp
 
 \subsubsection{Specificity with Query-Correlated Pathways}  \label{chapt2:simulation_mvtnorm_query_cor}
 
-Another consideration for correlation structures is postively correlated genes with the query that are not synthetic lethal. As described in Section~\ref{chapt2:simulation_mvtnorm_cor}, 5 highly correlated ($r = 0.8$) with the query gene were added. These simulations perform similarly to before (in Figure~\ref{fig:simulation_May15ROC2}) with a higher specficity and a lower false discovery rate being feasible (as shown in~\ref{fig:simulation_May15ROC:Perf}).
+Another consideration for correlation structures is postively correlated genes with the query that are not synthetic lethal. As described in Section~\ref{chapt2:simulation_mvtnorm_cor}, 5 highly correlated ($r = 0.8$) with the query gene were added. These simulations perform similarly to before (in Figure~\ref{fig:simulation_May15ROC2}) with a higher specficity and a lower false discovery rate being feasible (as shown in Figure~\ref{fig:simulation_May15ROC:Perf}).
 
 
 %both have 5x5 cor genes (dir tested for May)
@@ -523,13 +516,13 @@ It is important to notice here that the directional criteria of the \gls{SLIPT} 
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[$\chi^2$ testing without direction]{%
+        \subcaptionbox{$\chi^2$ testing without direction}{%
             \label{fig:mvtnorm_dir_compare:perf_null}
             \fbox{
             \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png}}
             }
         }%
-        \subfigure[\gls{SLIPT} with directional criteria]{%
+        \subcaptionbox{\gls{SLIPT} with directional criteria}{%
            \label{fig:mvtnorm_dir_compare:perf_dir}
             \fbox{
            \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}}
@@ -548,13 +541,13 @@ It is important to notice here that the directional criteria of the \gls{SLIPT} 
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[$\chi^2$ testing without direction]{%
+        \subcaptionbox{$\chi^2$ testing without direction}{%
             \label{fig:mvtnorm_dir_compare:ROC_null}
             \fbox{
             \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png}}
             }
         }%
-        \subfigure[\gls{SLIPT} with directional criteria]{%
+        \subcaptionbox{\gls{SLIPT} with directional criteria}{%
            \label{fig:mvtnorm_dir_compare:ROC_dir}
             \fbox{
            \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png}}
@@ -562,7 +555,7 @@ It is important to notice here that the directional criteria of the \gls{SLIPT} 
         }%
 
 
-        \subfigure[Statistical performance]{%
+        \subcaptionbox{Statistical performance}{%
            \label{fig:mvtnorm_dir_compare:AUC}
            \includegraphics[width=0.6\textwidth]{{"SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Mayy)_v_Cor(Mayxy)_Full".png}}
         }%
@@ -614,14 +607,12 @@ This enables modelling of synthetic lethal partners within a biological pathway 
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[Activating pathway structure]{%
-            \label{fig:simple_graph:first}
+        \subcaptionbox{Activating pathway structure }{%
             \fbox{
             \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph".png}}
             }
         }%
-        \subfigure[Pathway structure including inhibitions]{%
-           \label{fig:simple_graph:second}
+        \subcaptionbox{Pathway structure including inhibitions \label{fig:simple_graph:second}}{%
             \fbox{
            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph_inhibiting".png}}
            }
@@ -641,30 +632,24 @@ First, the graph structure is constructed for simulated data to be generated fro
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[Activating pathway structure]{%
-            \label{fig:simulation_activating:first}
+        \subcaptionbox{Activating pathway structure \label{fig:simulation_activating:first}}{%
             \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph".png}}
         }%
-        \subfigure[Distance matrix ]{%
-            \label{fig:simulation_activating:second}
+        \subcaptionbox{Distance matrix \label{fig:simulation_activating:second}}{%
             \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/dist_mat".png}}
         }%
         
-        \subfigure[Sigma, $\Sigma$ (expected correlation)]{%
-           \label{fig:simulation_activating:third}
+        \subcaptionbox{Sigma, $\Sigma$ (expected correlation) \label{fig:simulation_activating:third}}{%
            \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_mat".png}}
         }%
-	\subfigure[Simulated correlation structure]{%
-           \label{fig:simulation_activating:fifth}
+	\subcaptionbox{Simulated correlation structure \label{fig:simulation_activating:fifth}}{%
            \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor_mat".png}}
         }%
         	
-	\subfigure[Simulated expression data]{%
-            \label{fig:simulation_activating:fourth}
+	\subcaptionbox{Simulated expression data  \label{fig:simulation_activating:fourth}}{%
             \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat".png}}
         }%
-        \subfigure[Simulated gene function calls]{%
-           \label{fig:simulation_activating:sixth}
+        \subcaptionbox{Simulated gene function calls \label{fig:simulation_activating:sixth}}{%
            \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_disc_mat".png}}
         }%
     \end{center}
@@ -683,30 +668,25 @@ A $\Sigma$ matrix is derived from this distance weighting matrix, creating a mat
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[Pathway structure with inhibition]{%
-            \label{fig:simulation_inhibiting:first}
+        \subcaptionbox{Pathway structure with inhibition \label{fig:simulation_inhibiting:first}}{%
             \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph_inhibiting".png}}
         }%
-        \subfigure[Distance matrix ]{%
-            \label{fig:simulation_inhibiting:second}
+        \subcaptionbox{Distance matrix \label{fig:simulation_inhibiting:second}}{%
             \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/dist_mat".png}}
         }%
         
-        \subfigure[Sigma, $\Sigma$ (expected correlation)]{%
-           \label{fig:simulation_inhibiting:third}
+        \subcaptionbox{Sigma, $\Sigma$ (expected correlation) \label{fig:simulation_inhibiting:third}}{%
            \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_mat_inhibiting".png}}
         }%
-	\subfigure[Simulated correlation structure]{%
-           \label{fig:simulation_inhibiting:fifth}
+	\subcaptionbox{Simulated correlation structure \label{fig:simulation_inhibiting:fifth}}{%
            \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor_mat_inhibiting".png}}
         }%
         
-        \subfigure[Simulated expression data]{%
-            \label{fig:simulation_inhibiting:fourth}
+        \subcaptionbox{Simulated expression data \label{fig:simulation_inhibiting:fourth}}{%
+            
             \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat_inhibiting".png}}
         }%
-        \subfigure[Simulated gene function calls]{%
-           \label{fig:simulation_inhibiting:sixth}
+        \subcaptionbox{Simulated gene function calls \label{fig:simulation_inhibiting:sixth}}{%
            \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_disc_mat".png}}
         }%
     \end{center}
@@ -760,11 +740,11 @@ Customisations to existing data visualisations in R have been developed to prese
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subfigure[Customised violin plot]{%
+        \subcaptionbox{Customised violin plot}{%
             \label{fig:vioplot:first}
             \includegraphics[width=0.45\textwidth]{{"vioplot1".png}}
         }%
-        \subfigure[Split violin plot]{%
+        \subcaptionbox{Split violin plot}{%
             \label{fig:vioplot:second}
             \includegraphics[width=0.45\textwidth]{{"vioplot2".png}}
         }%

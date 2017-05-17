@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  16 MAY 2017 23:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  18 MAY 2017 02:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,25 +981,45 @@ File: pstricks.tex 2015/14/11 v2.64b `PSTricks' (tvz,hv)
 (/usr/share/texlive/texmf-dist/tex/generic/pstricks/pst-fp.tex)
 File: pst-fp.tex 2015/14/11 v2.64b `PST-fp' (hv)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.sty
-Package: subfigure 2002/03/15 v2.1.5 subfigure package
-\subfigtopskip=\skip72
-\subfigcapskip=\skip73
-\subfigcaptopadj=\dimen289
-\subfigbottomskip=\skip74
-\subfigcapmargin=\dimen290
-\subfiglabelskip=\skip75
-\c@subfigure=\count198
-\c@lofdepth=\count199
-\c@subtable=\count266
-\c@lotdepth=\count267
+(/usr/share/texlive/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2016/02/20 v1.1-142 Sub-captions (AR)
 
-****************************************
-* Local config file subfigure.cfg used *
-****************************************
-(/usr/share/texlive/texmf-dist/tex/latex/subfigure/subfigure.cfg)
-\subfig@top=\skip76
-\subfig@bottom=\skip77
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/02/04 v1.7-139 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen289
+\captionmargin@=\dimen290
+\captionwidth=\dimen291
+\caption@tempdima=\dimen292
+\caption@indent=\dimen293
+\caption@parindent=\dimen294
+\caption@hangindent=\dimen295
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+)
+
+Package caption Warning: Unsupported document class (or package) detected,
+(caption)                usage of the caption package is not recommended.
+See the caption package documentation for explanation.
+
+Package caption Info: \@makecaption = \long macro:#1#2->\vskip \abovecaptionski
+p \sbox \@tempboxa {#1: #2}\ifdim \wd \@tempboxa > 0.8\hsize \leftskip = 0.1\hs
+ize \rightskip = 0.1\hsize #1: #2\par \else \global \@minipagefalse \hb@xt@ \hs
+ize {\hfil \box \@tempboxa \hfil }\fi \vskip \belowcaptionskip .
+\c@ContinuedFloat=\count198
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+Package caption Info: threeparttable package is loaded.
+)
+\c@subfigure=\count199
+\c@subtable=\count266
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
@@ -1018,37 +1038,37 @@ L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
 L3 Module: l3str 2016/01/03 v6357 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/01/05 v6366 L3 Integers
-\c_max_int=\count268
-\l_tmpa_int=\count269
-\l_tmpb_int=\count270
-\g_tmpa_int=\count271
-\g_tmpb_int=\count272
+\c_max_int=\count267
+\l_tmpa_int=\count268
+\l_tmpb_int=\count269
+\g_tmpa_int=\count270
+\g_tmpb_int=\count271
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count273
+\g__prg_map_int=\count272
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2015/09/28 v6113 L3 Messages
 L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
-\l_iow_line_count_int=\count274
-\l__iow_target_count_int=\count275
-\l__iow_current_line_int=\count276
-\l__iow_current_word_int=\count277
-\l__iow_current_indentation_int=\count278
+\l_iow_line_count_int=\count273
+\l__iow_target_count_int=\count274
+\l__iow_current_line_int=\count275
+\l__iow_current_word_int=\count276
+\l__iow_current_indentation_int=\count277
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
-\c_zero_dim=\dimen291
-\c_max_dim=\dimen292
-\l_tmpa_dim=\dimen293
-\l_tmpb_dim=\dimen294
-\g_tmpa_dim=\dimen295
-\g_tmpb_dim=\dimen296
-\c_zero_skip=\skip78
-\c_max_skip=\skip79
-\l_tmpa_skip=\skip80
-\l_tmpb_skip=\skip81
-\g_tmpa_skip=\skip82
-\g_tmpb_skip=\skip83
+\c_zero_dim=\dimen296
+\c_max_dim=\dimen297
+\l_tmpa_dim=\dimen298
+\l_tmpb_dim=\dimen299
+\g_tmpa_dim=\dimen300
+\g_tmpb_dim=\dimen301
+\c_zero_skip=\skip72
+\c_max_skip=\skip73
+\l_tmpa_skip=\skip74
+\l_tmpb_skip=\skip75
+\g_tmpa_skip=\skip76
+\g_tmpb_skip=\skip77
 \c_zero_muskip=\muskip12
 \c_max_muskip=\muskip13
 \l_tmpa_muskip=\muskip14
@@ -1056,18 +1076,18 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip16
 \g_tmpb_muskip=\muskip17
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count279
-\l_keys_choice_int=\count280
+\g__keyval_level_int=\count278
+\l_keys_choice_int=\count279
 L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
-\c__fp_leading_shift_int=\count281
-\c__fp_middle_shift_int=\count282
-\c__fp_trailing_shift_int=\count283
-\c__fp_big_leading_shift_int=\count284
-\c__fp_big_middle_shift_int=\count285
-\c__fp_big_trailing_shift_int=\count286
-\c__fp_Bigg_leading_shift_int=\count287
-\c__fp_Bigg_middle_shift_int=\count288
-\c__fp_Bigg_trailing_shift_int=\count289
+\c__fp_leading_shift_int=\count280
+\c__fp_middle_shift_int=\count281
+\c__fp_trailing_shift_int=\count282
+\c__fp_big_leading_shift_int=\count283
+\c__fp_big_middle_shift_int=\count284
+\c__fp_big_trailing_shift_int=\count285
+\c__fp_Bigg_leading_shift_int=\count286
+\c__fp_Bigg_middle_shift_int=\count287
+\c__fp_Bigg_trailing_shift_int=\count288
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \c_empty_box=\box74
 \l_tmpa_box=\box75
@@ -1076,13 +1096,13 @@ L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
 \g_tmpb_box=\box78
 L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
 \l__coffin_internal_box=\box79
-\l__coffin_internal_dim=\dimen297
-\l__coffin_offset_x_dim=\dimen298
-\l__coffin_offset_y_dim=\dimen299
-\l__coffin_x_dim=\dimen300
-\l__coffin_y_dim=\dimen301
-\l__coffin_x_prime_dim=\dimen302
-\l__coffin_y_prime_dim=\dimen303
+\l__coffin_internal_dim=\dimen302
+\l__coffin_offset_x_dim=\dimen303
+\l__coffin_offset_y_dim=\dimen304
+\l__coffin_x_dim=\dimen305
+\l__coffin_y_dim=\dimen306
+\l__coffin_x_prime_dim=\dimen307
+\l__coffin_y_prime_dim=\dimen308
 \c_empty_coffin=\box80
 \l__coffin_aligned_coffin=\box81
 \l__coffin_aligned_internal_coffin=\box82
@@ -1091,40 +1111,40 @@ L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
 \l__coffin_display_coffin=\box85
 \l__coffin_display_coord_coffin=\box86
 \l__coffin_display_pole_coffin=\box87
-\l__coffin_display_offset_dim=\dimen304
-\l__coffin_display_x_dim=\dimen305
-\l__coffin_display_y_dim=\dimen306
+\l__coffin_display_offset_dim=\dimen309
+\l__coffin_display_x_dim=\dimen310
+\l__coffin_display_y_dim=\dimen311
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
 L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen307
-\l__box_bottom_dim=\dimen308
-\l__box_left_dim=\dimen309
-\l__box_right_dim=\dimen310
-\l__box_top_new_dim=\dimen311
-\l__box_bottom_new_dim=\dimen312
-\l__box_left_new_dim=\dimen313
-\l__box_right_new_dim=\dimen314
+\l__box_top_dim=\dimen312
+\l__box_bottom_dim=\dimen313
+\l__box_left_dim=\dimen314
+\l__box_right_dim=\dimen315
+\l__box_top_new_dim=\dimen316
+\l__box_bottom_new_dim=\dimen317
+\l__box_left_new_dim=\dimen318
+\l__box_right_new_dim=\dimen319
 \l__box_internal_box=\box88
-\l__coffin_bounding_shift_dim=\dimen315
-\l__coffin_left_corner_dim=\dimen316
-\l__coffin_right_corner_dim=\dimen317
-\l__coffin_bottom_corner_dim=\dimen318
-\l__coffin_top_corner_dim=\dimen319
-\l__coffin_scaled_total_height_dim=\dimen320
-\l__coffin_scaled_width_dim=\dimen321
+\l__coffin_bounding_shift_dim=\dimen320
+\l__coffin_left_corner_dim=\dimen321
+\l__coffin_right_corner_dim=\dimen322
+\l__coffin_bottom_corner_dim=\dimen323
+\l__coffin_top_corner_dim=\dimen324
+\l__coffin_scaled_total_height_dim=\dimen325
+\l__coffin_scaled_width_dim=\dimen326
 L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2015/11/11 v6250 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count290
+\l__driver_color_stack_int=\count289
 ))
 Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count291
-\l__xparse_m_args_int=\count292
-\l__xparse_mandatory_args_int=\count293
-\l__xparse_processor_int=\count294
-\l__xparse_v_nesting_int=\count295
+\l__xparse_current_arg_int=\count290
+\l__xparse_m_args_int=\count291
+\l__xparse_mandatory_args_int=\count292
+\l__xparse_processor_int=\count293
+\l__xparse_v_nesting_int=\count294
 )
 (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
 Package: zref-abspage 2012/04/04 v2.24 Module abspage for zref (HO)
@@ -1135,53 +1155,53 @@ Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
 Package zref Info: New property: page on input line 761.
 )
-\c@abspage=\count296
+\c@abspage=\count295
 Package zref Info: New property: abspage on input line 62.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
-\mdf@templength=\skip84
-\c@mdf@globalstyle@cnt=\count297
-\mdf@skipabove@length=\skip85
-\mdf@skipbelow@length=\skip86
-\mdf@leftmargin@length=\skip87
-\mdf@rightmargin@length=\skip88
-\mdf@innerleftmargin@length=\skip89
-\mdf@innerrightmargin@length=\skip90
-\mdf@innertopmargin@length=\skip91
-\mdf@innerbottommargin@length=\skip92
-\mdf@splittopskip@length=\skip93
-\mdf@splitbottomskip@length=\skip94
-\mdf@outermargin@length=\skip95
-\mdf@innermargin@length=\skip96
-\mdf@linewidth@length=\skip97
-\mdf@innerlinewidth@length=\skip98
-\mdf@middlelinewidth@length=\skip99
-\mdf@outerlinewidth@length=\skip100
-\mdf@roundcorner@length=\skip101
-\mdf@footenotedistance@length=\skip102
-\mdf@userdefinedwidth@length=\skip103
-\mdf@needspace@length=\skip104
-\mdf@frametitleaboveskip@length=\skip105
-\mdf@frametitlebelowskip@length=\skip106
-\mdf@frametitlerulewidth@length=\skip107
-\mdf@frametitleleftmargin@length=\skip108
-\mdf@frametitlerightmargin@length=\skip109
-\mdf@shadowsize@length=\skip110
-\mdf@extratopheight@length=\skip111
-\mdf@subtitleabovelinewidth@length=\skip112
-\mdf@subtitlebelowlinewidth@length=\skip113
-\mdf@subtitleaboveskip@length=\skip114
-\mdf@subtitlebelowskip@length=\skip115
-\mdf@subtitleinneraboveskip@length=\skip116
-\mdf@subtitleinnerbelowskip@length=\skip117
-\mdf@subsubtitleabovelinewidth@length=\skip118
-\mdf@subsubtitlebelowlinewidth@length=\skip119
-\mdf@subsubtitleaboveskip@length=\skip120
-\mdf@subsubtitlebelowskip@length=\skip121
-\mdf@subsubtitleinneraboveskip@length=\skip122
-\mdf@subsubtitleinnerbelowskip@length=\skip123
+\mdf@templength=\skip78
+\c@mdf@globalstyle@cnt=\count296
+\mdf@skipabove@length=\skip79
+\mdf@skipbelow@length=\skip80
+\mdf@leftmargin@length=\skip81
+\mdf@rightmargin@length=\skip82
+\mdf@innerleftmargin@length=\skip83
+\mdf@innerrightmargin@length=\skip84
+\mdf@innertopmargin@length=\skip85
+\mdf@innerbottommargin@length=\skip86
+\mdf@splittopskip@length=\skip87
+\mdf@splitbottomskip@length=\skip88
+\mdf@outermargin@length=\skip89
+\mdf@innermargin@length=\skip90
+\mdf@linewidth@length=\skip91
+\mdf@innerlinewidth@length=\skip92
+\mdf@middlelinewidth@length=\skip93
+\mdf@outerlinewidth@length=\skip94
+\mdf@roundcorner@length=\skip95
+\mdf@footenotedistance@length=\skip96
+\mdf@userdefinedwidth@length=\skip97
+\mdf@needspace@length=\skip98
+\mdf@frametitleaboveskip@length=\skip99
+\mdf@frametitlebelowskip@length=\skip100
+\mdf@frametitlerulewidth@length=\skip101
+\mdf@frametitleleftmargin@length=\skip102
+\mdf@frametitlerightmargin@length=\skip103
+\mdf@shadowsize@length=\skip104
+\mdf@extratopheight@length=\skip105
+\mdf@subtitleabovelinewidth@length=\skip106
+\mdf@subtitlebelowlinewidth@length=\skip107
+\mdf@subtitleaboveskip@length=\skip108
+\mdf@subtitlebelowskip@length=\skip109
+\mdf@subtitleinneraboveskip@length=\skip110
+\mdf@subtitleinnerbelowskip@length=\skip111
+\mdf@subsubtitleabovelinewidth@length=\skip112
+\mdf@subsubtitlebelowlinewidth@length=\skip113
+\mdf@subsubtitleaboveskip@length=\skip114
+\mdf@subsubtitlebelowskip@length=\skip115
+\mdf@subsubtitleinneraboveskip@length=\skip116
+\mdf@subsubtitleinnerbelowskip@length=\skip117
 
 (/usr/share/texlive/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
@@ -1191,34 +1211,34 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \mdf@splitbox@one=\box91
 \mdf@splitbox@two=\box92
 \mdf@splitbox@save=\box93
-\mdfsplitboxwidth=\skip124
-\mdfsplitboxtotalwidth=\skip125
-\mdfsplitboxheight=\skip126
-\mdfsplitboxdepth=\skip127
-\mdfsplitboxtotalheight=\skip128
-\mdfframetitleboxwidth=\skip129
-\mdfframetitleboxtotalwidth=\skip130
-\mdfframetitleboxheight=\skip131
-\mdfframetitleboxdepth=\skip132
-\mdfframetitleboxtotalheight=\skip133
-\mdffootnoteboxwidth=\skip134
-\mdffootnoteboxtotalwidth=\skip135
-\mdffootnoteboxheight=\skip136
-\mdffootnoteboxdepth=\skip137
-\mdffootnoteboxtotalheight=\skip138
-\mdftotallinewidth=\skip139
-\mdfboundingboxwidth=\skip140
-\mdfboundingboxtotalwidth=\skip141
-\mdfboundingboxheight=\skip142
-\mdfboundingboxdepth=\skip143
-\mdfboundingboxtotalheight=\skip144
-\mdf@freevspace@length=\skip145
-\mdf@horizontalwidthofbox@length=\skip146
-\mdf@verticalmarginwhole@length=\skip147
-\mdf@horizontalspaceofbox=\skip148
-\mdfsubtitleheight=\skip149
-\mdfsubsubtitleheight=\skip150
-\c@mdfcountframes=\count298
+\mdfsplitboxwidth=\skip118
+\mdfsplitboxtotalwidth=\skip119
+\mdfsplitboxheight=\skip120
+\mdfsplitboxdepth=\skip121
+\mdfsplitboxtotalheight=\skip122
+\mdfframetitleboxwidth=\skip123
+\mdfframetitleboxtotalwidth=\skip124
+\mdfframetitleboxheight=\skip125
+\mdfframetitleboxdepth=\skip126
+\mdfframetitleboxtotalheight=\skip127
+\mdffootnoteboxwidth=\skip128
+\mdffootnoteboxtotalwidth=\skip129
+\mdffootnoteboxheight=\skip130
+\mdffootnoteboxdepth=\skip131
+\mdffootnoteboxtotalheight=\skip132
+\mdftotallinewidth=\skip133
+\mdfboundingboxwidth=\skip134
+\mdfboundingboxtotalwidth=\skip135
+\mdfboundingboxheight=\skip136
+\mdfboundingboxdepth=\skip137
+\mdfboundingboxtotalheight=\skip138
+\mdf@freevspace@length=\skip139
+\mdf@horizontalwidthofbox@length=\skip140
+\mdf@verticalmarginwhole@length=\skip141
+\mdf@horizontalspaceofbox=\skip142
+\mdfsubtitleheight=\skip143
+\mdfsubsubtitleheight=\skip144
+\c@mdfcountframes=\count297
 
 ****** mdframed patching \endmdf@trivlist
 
@@ -1234,10 +1254,10 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 . 
 . Defining command \mdtheorem with sig. ' O{} m o m o ' on line 701.
 .................................................
-\mdf@envdepth=\count299
-\c@mdf@env@i=\count300
-\c@mdf@env@ii=\count301
-\c@mdf@zref@counter=\count302
+\mdf@envdepth=\count298
+\c@mdf@env@i=\count299
+\c@mdf@env@ii=\count300
+\c@mdf@zref@counter=\count301
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/cleveref/cleveref.sty
@@ -1257,25 +1277,17 @@ LaTeX Info: Redefining \labelcpageref on input line 2230.
 (/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box94
-\beforetitleunit=\skip151
-\aftertitleunit=\skip152
-\ttl@plus=\dimen322
-\ttl@minus=\dimen323
+\beforetitleunit=\skip145
+\aftertitleunit=\skip146
+\ttl@plus=\dimen327
+\ttl@minus=\dimen328
 \ttl@toksa=\toks54
-\titlewidth=\dimen324
-\titlewidthlast=\dimen325
-\titlewidthfirst=\dimen326
+\titlewidth=\dimen329
+\titlewidthlast=\dimen330
+\titlewidthfirst=\dimen331
 )
 (./subsubsubsection.tex
-\c@subsubsubsection=\count303
-)
-(/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count304
-\float@exts=\toks55
-\float@box=\box95
-\@float@everytoks=\toks56
-\@floatcapt=\box96
+\c@subsubsubsection=\count302
 )
 (/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
@@ -1287,19 +1299,19 @@ Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
 (/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
 Package: xtemplate 2016/01/19 v6377 L3 Experimental prototype document function
 s
-\l__xtemplate_tmp_dim=\dimen327
-\l__xtemplate_tmp_int=\count305
+\l__xtemplate_tmp_dim=\dimen332
+\l__xtemplate_tmp_int=\count303
 \l__xtemplate_tmp_muskip=\muskip18
-\l__xtemplate_tmp_skip=\skip153
+\l__xtemplate_tmp_skip=\skip147
 )
 Package: xfrac 2016/01/19 v6377 L3 Experimental split-level fractions
-\l__xfrac_slash_box=\box97
-\l__xfrac_tmp_box=\box98
-\l__xfrac_denominator_bot_sep_dim=\dimen328
-\l__xfrac_numerator_bot_sep_dim=\dimen329
-\l__xfrac_numerator_top_sep_dim=\dimen330
-\l__xfrac_slash_left_sep_dim=\dimen331
-\l__xfrac_slash_right_sep_dim=\dimen332
+\l__xfrac_slash_box=\box95
+\l__xfrac_tmp_box=\box96
+\l__xfrac_denominator_bot_sep_dim=\dimen333
+\l__xfrac_numerator_bot_sep_dim=\dimen334
+\l__xfrac_numerator_top_sep_dim=\dimen335
+\l__xfrac_slash_left_sep_dim=\dimen336
+\l__xfrac_slash_right_sep_dim=\dimen337
 \l__xfrac_slash_left_muskip=\muskip19
 \l__xfrac_slash_right_muskip=\muskip20
 .................................................
@@ -1330,7 +1342,7 @@ Package glossaries Info: Writing glossary file 20170506_thesis_results_simulati
 on.acn on input line 107.
  (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
-\c@lips@count=\count306
+\c@lips@count=\count304
 )
 (/usr/share/texlive/texmf-dist/tex/latex/nowidow/nowidow.sty
 Package: nowidow 2011/09/20 1.0 Easily prevent widows and orphans
@@ -1338,6 +1350,18 @@ Package: nowidow
 )
 (./20170506_thesis_results_simulation.aux (./intro.aux) (./methods.aux)
 (./methods_dev.aux) (./chapt3.aux) (./chapt4.aux) (./chapt5.aux
+
+LaTeX Warning: Label `fig:simulation1107_Graph5All5SL' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1107_Graph5All5SL@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1107_Graph5All5SL' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1107_Graph5All5SL@cref' multiply defined.
+
 
 LaTeX Warning: Label `fig:simulation1205_randx_Graph1' multiply defined.
 
@@ -1385,10 +1409,6 @@ LaTeX Warning: Label `fig:simulation1206_Str_randx_Graph4iD:Graph4i@cref' multi
 ply defined.
 
 
-LaTeX Warning: Label `sub@fig:simulation1206_Str_randx_Graph4iD:Graph4i' multip
-ly defined.
-
-
 LaTeX Warning: Label `fig:simulation1206_Str_randx_Graph4iD:Graph4i' multiply d
 efined.
 
@@ -1397,10 +1417,6 @@ LaTeX Warning: Label `fig:simulation1206_Str_randx_Graph4iD:Graph4i@cref' multi
 ply defined.
 
 
-LaTeX Warning: Label `sub@fig:simulation1206_Str_randx_Graph4iD:Graph4i' multip
-ly defined.
-
-
 LaTeX Warning: Label `fig:simulation1206_Str_randx_Graph4iD:vioplot' multiply d
 efined.
 
@@ -1409,20 +1425,12 @@ LaTeX Warning: Label `fig:simulation1206_Str_randx_Graph4iD:vioplot@cref' multi
 ply defined.
 
 
-LaTeX Warning: Label `sub@fig:simulation1206_Str_randx_Graph4iD:vioplot' multip
-ly defined.
-
-
 LaTeX Warning: Label `fig:simulation1206_Str_randx_Graph4iD:vioplot' multiply d
 efined.
 
 
 LaTeX Warning: Label `fig:simulation1206_Str_randx_Graph4iD:vioplot@cref' multi
 ply defined.
-
-
-LaTeX Warning: Label `sub@fig:simulation1206_Str_randx_Graph4iD:vioplot' multip
-ly defined.
 
 
 LaTeX Warning: Label `fig:simulation1207_randx_Graph1' multiply defined.
@@ -1710,17 +1718,17 @@ LaTeX Font Info:    ... okay on input line 140.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count307
-\scratchdimen=\dimen333
-\scratchbox=\box99
-\nofMPsegments=\count308
-\nofMParguments=\count309
-\everyMPshowfont=\toks57
-\MPscratchCnt=\count310
-\MPscratchDim=\dimen334
-\MPnumerator=\count311
-\makeMPintoPDFobject=\count312
-\everyMPtoPDFconversion=\toks58
+\scratchcounter=\count305
+\scratchdimen=\dimen338
+\scratchbox=\box97
+\nofMPsegments=\count306
+\nofMParguments=\count307
+\everyMPshowfont=\toks55
+\MPscratchCnt=\count308
+\MPscratchDim=\dimen339
+\MPnumerator=\count309
+\makeMPintoPDFobject=\count310
+\everyMPtoPDFconversion=\toks56
 ) (/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -1736,7 +1744,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box100
+\AtBeginShipoutBox=\box98
 Package hyperref Info: Link coloring OFF on input line 140.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1745,7 +1753,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count313
+\c@section@level=\count311
 )
 LaTeX Info: Redefining \ref on input line 140.
 LaTeX Info: Redefining \pageref on input line 140.
@@ -1757,8 +1765,10 @@ LaTeX Info: Redefining \nameref on input line 140.
 \openout8 = `20170506_thesis_results_simulation.out'.
 
 
-ABD: EveryShipout initializing macros (./20170506_thesis_results_simulation.toc
-[1
+ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+ (./20170506_thesis_results_simulation.toc [1
 Non-PDF special ignored!
 Non-PDF special ignored!
 Non-PDF special ignored!
@@ -1780,12 +1790,12 @@ Non-PDF special ignored!
 
  [6] (./20170506_thesis_results_simulation.lof [7
 
-] [8] [9])
+] [8] [9]
+[10])
 \tf@lof=\write10
 \openout10 = `20170506_thesis_results_simulation.lof'.
 
-
-[10] [11] (./20170506_thesis_results_simulation.lot [12
+ [11] (./20170506_thesis_results_simulation.lot [12
 
 ])
 \tf@lot=\write11
@@ -1799,7 +1809,7 @@ No file 20170506_thesis_results_simulation.acr.
 
  (./chapt5.tex
 Chapter 6.
-[192
+[190
 
 
 
@@ -1826,8 +1836,292 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 24.
 
 
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
+aph_10K_Graph5_ROC_Cor_v_nCor_All(5)".png, id=1050, 602.25pt x 602.25pt>
+File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
+st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(5)".png Graphic file (type png)
+
+<use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Tes
+t_Graph_10K_Graph5_ROC_Cor_v_nCor_All(5)".png>
+Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
+0161108/SL_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(5)".png used on input
+ line 35.
+(pdftex.def)             Requested size: 252.1332pt x 252.13458pt.
+
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png, id=1051, 602.25pt x 602.2
+5pt>
+File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
+st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png Graphic file (type pn
+g)
+
+<use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Tes
+t_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png>
+Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
+0161108/SL_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png us
+ed on input line 40.
+(pdftex.def)             Requested size: 252.1332pt x 252.13458pt.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.42 ...c Lethal Detection Compared with $\chi^$.}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.42 ...c Lethal Detection Compared with $\chi^$.}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.42 ...c Lethal Detection Compared with $\chi^$.}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.42 ...c Lethal Detection Compared with $\chi^$.}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 44.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 44.
+
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png, id=1052, 602.25pt x 602.25
+pt>
+File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
+st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png Graphic file (type png
+)
+
+<use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Tes
+t_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png>
+Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
+0161107/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png use
+d on input line 58.
+(pdftex.def)             Requested size: 252.1332pt x 252.13458pt.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.61 ...on Compared with $\chi^$ with more genes.}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.61 ...on Compared with $\chi^$ with more genes.}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.61 ...on Compared with $\chi^$ with more genes.}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.61 ...on Compared with $\chi^$ with more genes.}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 63.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 63.
+[191] [192 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Mod
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(5).png (PNG copy)> </home/tomkelly/
+Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Graph_10K_Graph5_RO
+C_SLIPT_v_ChiSq_v_nCor_Ally(5).png (PNG copy)>]
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png, id=1063, 602.25
+pt x 602.25pt>
+File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
+L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png Graphic fil
+e (type png)
+
+<use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL
+_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png>
+Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
+0161108_query_cor/SL_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(
+5)".png used on input line 86.
+(pdftex.def)             Requested size: 252.1332pt x 252.13458pt.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.89 ...ith $\chi^$ with query correlation genes.}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.89 ...ith $\chi^$ with query correlation genes.}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.89 ...ith $\chi^$ with query correlation genes.}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.89 ...ith $\chi^$ with query correlation genes.}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 91.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 91.
+
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png, id=1064, 602.25p
+t x 602.25pt>
+File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
+L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png Graphic file
+ (type png)
+
+<use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL
+_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png>
+Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
+0161107_query_cor/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5
+)".png used on input line 105.
+(pdftex.def)             Requested size: 252.1332pt x 252.13458pt.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.108 ...$ with query correlation and more genes.}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.108 ...$ with query correlation and more genes.}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.108 ...$ with query correlation and more genes.}
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.108 ...$ with query correlation and more genes.}
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 110.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 110.
+[193 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Tes
+t_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5).png (PNG copy)>] [194 </home
+/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Model_Test
+_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5).png (PNG copy)> </home/tomke
+lly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Model_Test_Graph
+_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5).png (PNG copy)>]
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_Cor_randx/SL_Mod
+el_Test_Graph_10K_Graph4_ROC_Compare(1)_SLIPT_v_Cor".png, id=1074, 602.25pt x 6
+02.25pt>
+File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_Cor_randx/S
+L_Model_Test_Graph_10K_Graph4_ROC_Compare(1)_SLIPT_v_Cor".png Graphic file (typ
+e png)
+
+<use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_Cor_randx/SL
+_Model_Test_Graph_10K_Graph4_ROC_Compare(1)_SLIPT_v_Cor".png>
+Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
+0161207_Cor_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(1)_SLIPT_v_Cor".pn
+g used on input line 127.
+(pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 131.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 131.
+ [195] [196 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_Cor_r
+andx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(1)_SLIPT_v_Cor.png (PNG copy)>]
+
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph1_ROC1_samplesx".png, id=1068, 602.25pt x 602.25pt>
+est_Graph_10K_Graph1_ROC1_samplesx".png, id=1084, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph1_ROC1_samplesx".png Graphic file (type png)
 
@@ -1835,11 +2129,11 @@ del_Test_Graph_10K_Graph1_ROC1_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph1_ROC1_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph1_ROC1_samplesx".png used on input l
-ine 73.
+ine 175.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph1_ROC2_samplesx".png, id=1069, 602.25pt x 602.25pt>
+est_Graph_10K_Graph1_ROC2_samplesx".png, id=1085, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph1_ROC2_samplesx".png Graphic file (type png)
 
@@ -1847,21 +2141,21 @@ del_Test_Graph_10K_Graph1_ROC2_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph1_ROC2_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph1_ROC2_samplesx".png used on input l
-ine 77.
+ine 179.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf, id=1070, 578.16p
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf, id=1086, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf Graphic file
  (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-1".pdf used on input line 84.
+1".pdf used on input line 186.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph1_AUC_samplesx".png, id=1071, 602.25pt x 602.25pt>
+est_Graph_10K_Graph1_AUC_samplesx".png, id=1087, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph1_AUC_samplesx".png Graphic file (type png)
 
@@ -1869,40 +2163,39 @@ del_Test_Graph_10K_Graph1_AUC_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph1_AUC_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph1_AUC_samplesx".png used on input li
-ne 88.
+ne 190.
 (pdftex.def)             Requested size: 283.64824pt x 283.65486pt.
 
-Overfull \hbox (12.99686pt too wide) in paragraph at lines 84--89
- [][][][] 
+Overfull \hbox (12.99686pt too wide) in paragraph at lines 186--191
+ [][][] 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 93.
+ mdframed uses option nobreak mdframed on input line 195.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 93.
+ mdframed uses option nobreak mdframed on input line 195.
 
-LaTeX Warning: Float too large for page by 47.82195pt on input line 94.
+LaTeX Warning: Float too large for page by 6.42087pt on input line 196.
 
-[193]
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf Graphic file
  (type pdf)
- <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf>
+<use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-1".pdf used on input line 104.
+1".pdf used on input line 206.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf, id=1079, 578.16p
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf, id=1090, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf Graphic file
  (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-2".pdf used on input line 108.
+2".pdf used on input line 210.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph1_ROC_Compare_Graph2(1)".pdf, id=1080, 578.16pt x 578.16pt>
+est_Graph_10K_Graph1_ROC_Compare_Graph2(1)".pdf, id=1091, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph1_ROC_Compare_Graph2(1)".pdf Graphic file (type pdf)
 
@@ -1910,15 +2203,15 @@ del_Test_Graph_10K_Graph1_ROC_Compare_Graph2(1)".pdf Graphic file (type pdf)
 el_Test_Graph_10K_Graph1_ROC_Compare_Graph2(1)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Graph2(1)".pdf used on
- input line 114.
+ input line 216.
 (pdftex.def)             Requested size: 273.13895pt x 273.13792pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 124.
+ mdframed uses option nobreak mdframed on input line 226.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 124.
+ mdframed uses option nobreak mdframed on input line 226.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4_ROC1_samplesx".png, id=1083, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4_ROC1_samplesx".png, id=1094, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC1_samplesx".png Graphic file (type png)
 
@@ -1926,11 +2219,11 @@ del_Test_Graph_10K_Graph4_ROC1_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph4_ROC1_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph4_ROC1_samplesx".png used on input l
-ine 136.
+ine 238.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4_ROC2_samplesx".png, id=1084, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4_ROC2_samplesx".png, id=1095, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC2_samplesx".png Graphic file (type png)
 
@@ -1938,21 +2231,21 @@ del_Test_Graph_10K_Graph4_ROC2_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph4_ROC2_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph4_ROC2_samplesx".png used on input l
-ine 140.
+ine 242.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf, id=1085, 578.16p
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf, id=1096, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf Graphic file
  (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4".pdf used on input line 147.
+4".pdf used on input line 249.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4_AUC_samplesx".png, id=1086, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4_AUC_samplesx".png, id=1097, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4_AUC_samplesx".png Graphic file (type png)
 
@@ -1960,23 +2253,23 @@ del_Test_Graph_10K_Graph4_AUC_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph4_AUC_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph4_AUC_samplesx".png used on input li
-ne 151.
+ne 253.
 (pdftex.def)             Requested size: 283.64824pt x 283.65486pt.
 
-Overfull \hbox (12.99686pt too wide) in paragraph at lines 147--152
- [][][][] 
+Overfull \hbox (12.99686pt too wide) in paragraph at lines 249--254
+ [][][] 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 156.
+ mdframed uses option nobreak mdframed on input line 258.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 156.
+ mdframed uses option nobreak mdframed on input line 258.
 
-LaTeX Warning: Float too large for page by 47.82195pt on input line 157.
+LaTeX Warning: Float too large for page by 6.42087pt on input line 259.
 
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph5_ROC1_samplesx".png, id=1089, 602.25pt x 602.25pt>
+est_Graph_10K_Graph5_ROC1_samplesx".png, id=1100, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph5_ROC1_samplesx".png Graphic file (type png)
 
@@ -1984,11 +2277,11 @@ del_Test_Graph_10K_Graph5_ROC1_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph5_ROC1_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph5_ROC1_samplesx".png used on input l
-ine 167.
+ine 269.
 (pdftex.def)             Requested size: 126.06659pt x 126.0627pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph5_ROC2_samplesx".png, id=1090, 602.25pt x 602.25pt>
+est_Graph_10K_Graph5_ROC2_samplesx".png, id=1101, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph5_ROC2_samplesx".png Graphic file (type png)
 
@@ -1996,21 +2289,21 @@ del_Test_Graph_10K_Graph5_ROC2_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph5_ROC2_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph5_ROC2_samplesx".png used on input l
-ine 171.
+ine 273.
 (pdftex.def)             Requested size: 126.06659pt x 126.0627pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5".pdf, id=1091, 1156.32
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5".pdf, id=1102, 1156.32
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5".pdf Graphic file
  (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-5".pdf used on input line 178.
+5".pdf used on input line 280.
 (pdftex.def)             Requested size: 210.10886pt x 105.05237pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph5_AUC_samplesx_prop".png, id=1092, 602.25pt x 602.25pt>
+est_Graph_10K_Graph5_AUC_samplesx_prop".png, id=1103, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph5_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -2018,63 +2311,38 @@ del_Test_Graph_10K_Graph5_AUC_samplesx_prop".png Graphic file (type png)
 el_Test_Graph_10K_Graph5_AUC_samplesx_prop".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph5_AUC_samplesx_prop".png used on inp
-ut line 183.
+ut line 285.
 (pdftex.def)             Requested size: 210.10886pt x 210.11063pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 188.
+ mdframed uses option nobreak mdframed on input line 290.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 188.
+ mdframed uses option nobreak mdframed on input line 290.
 
 
-LaTeX Warning: Float too large for page by 51.23592pt on input line 189.
+LaTeX Warning: Float too large for page by 6.74483pt on input line 291.
 
-[194] [195pdfTeX warning (ext4): destination with the same identifier (name{fig
-ure.6.1}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.192 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-05_randx/SL_Model_Test_Graph_10K_Graph1_ROC1_samplesx.png (PNG copy)> </home/to
-mkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_
-10K_Graph1_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Un
-i/SL_Model/Graph1.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201
-61205_randx/SL_Model_Test_Graph_10K_Graph1_AUC_samplesx.png (PNG copy)>]
-[196pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
-2}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.192 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2.pdf
-> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_
-Test_Graph_10K_Graph1_ROC_Compare_Graph2(1).pdf>] [197pdfTeX warning (ext4): de
-stination with the same identifier (name{figure.6.3}) has been already used, du
-plicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.192 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-05_randx/SL_Model_Test_Graph_10K_Graph4_ROC1_samplesx.png (PNG copy)> </home/to
-mkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_
-10K_Graph4_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Un
-i/SL_Model/Graph4.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201
-61205_randx/SL_Model_Test_Graph_10K_Graph4_AUC_samplesx.png (PNG copy)>]
-[198pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
-4}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.192 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-05_randx/SL_Model_Test_Graph_10K_Graph5_ROC1_samplesx.png (PNG copy)> </home/to
-mkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_
-10K_Graph5_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Un
-i/SL_Model/Graph5.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201
-61205_randx/SL_Model_Test_Graph_10K_Graph5_AUC_samplesx_prop.png (PNG copy)>]
+[197] [198 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/
+SL_Model_Test_Graph_10K_Graph1_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Do
+cuments/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph
+1_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Mode
+l/Graph1.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_ran
+dx/SL_Model_Test_Graph_10K_Graph1_AUC_samplesx.png (PNG copy)>] [199 </home/tom
+kelly/Documents/PhD Otago Uni/SL_Model/Graph2.pdf> </home/tomkelly/Documents/Ph
+D Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph1_ROC_Comp
+are_Graph2(1).pdf>] [200 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
+0161205_randx/SL_Model_Test_Graph_10K_Graph4_ROC1_samplesx.png (PNG copy)> </ho
+me/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_G
+raph_10K_Graph4_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Ota
+go Uni/SL_Model/Graph4.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RU
+N_20161205_randx/SL_Model_Test_Graph_10K_Graph4_AUC_samplesx.png (PNG copy)>]
+[201 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mod
+el_Test_Graph_10K_Graph5_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Document
+s/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph5_ROC2
+_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Grap
+h5.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_
+Model_Test_Graph_10K_Graph5_AUC_samplesx_prop.png (PNG copy)>]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph1i_ROC1_samplesx".png, id=1159, 602.25pt x 602.25pt>
+est_Graph_10K_Graph1i_ROC1_samplesx".png, id=1153, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph1i_ROC1_samplesx".png Graphic file (type png)
 
@@ -2082,11 +2350,11 @@ del_Test_Graph_10K_Graph1i_ROC1_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph1i_ROC1_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph1i_ROC1_samplesx".png used on input 
-line 207.
+line 309.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph1i_ROC2_samplesx".png, id=1160, 602.25pt x 602.25pt>
+est_Graph_10K_Graph1i_ROC2_samplesx".png, id=1154, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph1i_ROC2_samplesx".png Graphic file (type png)
 
@@ -2094,21 +2362,21 @@ del_Test_Graph_10K_Graph1i_ROC2_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph1i_ROC2_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph1i_ROC2_samplesx".png used on input 
-line 211.
+line 313.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1i".pdf, id=1161, 578.16
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1i".pdf, id=1155, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1i".pdf Graphic fil
 e (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1i".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-1i".pdf used on input line 218.
+1i".pdf used on input line 320.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph1i_AUC_samplesx".png, id=1162, 602.25pt x 602.25pt>
+est_Graph_10K_Graph1i_AUC_samplesx".png, id=1156, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph1i_AUC_samplesx".png Graphic file (type png)
 
@@ -2116,36 +2384,36 @@ del_Test_Graph_10K_Graph1i_AUC_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph1i_AUC_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph1i_AUC_samplesx".png used on input l
-ine 222.
+ine 324.
 (pdftex.def)             Requested size: 283.64824pt x 283.65486pt.
 
-Overfull \hbox (12.99686pt too wide) in paragraph at lines 218--223
- [][][][] 
+Overfull \hbox (12.99686pt too wide) in paragraph at lines 320--325
+ [][][] 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 227.
+ mdframed uses option nobreak mdframed on input line 329.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 227.
+ mdframed uses option nobreak mdframed on input line 329.
 
-LaTeX Warning: Float too large for page by 49.95111pt on input line 228.
+LaTeX Warning: Float too large for page by 24.1009pt on input line 330.
 
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf Graphic file
  (type pdf)
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-1".pdf used on input line 238.
+1".pdf used on input line 340.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1i".pdf Graphic fil
 e (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1i".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-1i".pdf used on input line 242.
+1i".pdf used on input line 344.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph1_ROC_Compare(1)".pdf, id=1165, 578.16pt x 578.16pt>
+est_Graph_10K_Graph1_ROC_Compare(1)".pdf, id=1159, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph1_ROC_Compare(1)".pdf Graphic file (type pdf)
 
@@ -2153,15 +2421,15 @@ del_Test_Graph_10K_Graph1_ROC_Compare(1)".pdf Graphic file (type pdf)
 el_Test_Graph_10K_Graph1_ROC_Compare(1)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Graph1_ROC_Compare(1)".pdf used on input 
-line 248.
+line 350.
 (pdftex.def)             Requested size: 273.13895pt x 273.13792pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 258.
+ mdframed uses option nobreak mdframed on input line 360.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 258.
+ mdframed uses option nobreak mdframed on input line 360.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4i2_ROC1_samplesx".png, id=1168, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4i2_ROC1_samplesx".png, id=1162, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4i2_ROC1_samplesx".png Graphic file (type png)
 
@@ -2169,11 +2437,11 @@ del_Test_Graph_10K_Graph4i2_ROC1_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph4i2_ROC1_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph4i2_ROC1_samplesx".png used on input
- line 269.
+ line 371.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4i2_ROC2_samplesx".png, id=1169, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4i2_ROC2_samplesx".png, id=1163, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4i2_ROC2_samplesx".png Graphic file (type png)
 
@@ -2181,21 +2449,21 @@ del_Test_Graph_10K_Graph4i2_ROC2_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph4i2_ROC2_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph4i2_ROC2_samplesx".png used on input
- line 273.
+ line 375.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf, id=1170, 578.1
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf, id=1164, 578.1
 6pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf Graphic fi
 le (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4i2".pdf used on input line 280.
+4i2".pdf used on input line 382.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4i2_AUC_samplesx".png, id=1171, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4i2_AUC_samplesx".png, id=1165, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4i2_AUC_samplesx".png Graphic file (type png)
 
@@ -2203,46 +2471,46 @@ del_Test_Graph_10K_Graph4i2_AUC_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_Graph4i2_AUC_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph4i2_AUC_samplesx".png used on input 
-line 284.
+line 386.
 (pdftex.def)             Requested size: 283.64824pt x 283.65486pt.
 
-Overfull \hbox (12.99686pt too wide) in paragraph at lines 280--285
- [][][][] 
+Overfull \hbox (12.99686pt too wide) in paragraph at lines 382--387
+ [][][] 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 289.
+ mdframed uses option nobreak mdframed on input line 391.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 289.
+ mdframed uses option nobreak mdframed on input line 391.
 
-LaTeX Warning: Float too large for page by 49.95111pt on input line 290.
+LaTeX Warning: Float too large for page by 24.1009pt on input line 392.
 
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf Graphic file
  (type pdf)
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4".pdf used on input line 300.
+4".pdf used on input line 402.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i".pdf, id=1174, 578.16
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i".pdf, id=1168, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i".pdf Graphic fil
 e (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4i".pdf used on input line 304.
+4i".pdf used on input line 406.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf Graphic fi
 le (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4i2".pdf used on input line 308.
+4i2".pdf used on input line 410.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph4_ROC_Compare(1)".pdf, id=1175, 578.16pt x 578.16pt>
+est_Graph_10K_Graph4_ROC_Compare(1)".pdf, id=1169, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC_Compare(1)".pdf Graphic file (type pdf)
 
@@ -2250,11 +2518,11 @@ del_Test_Graph_10K_Graph4_ROC_Compare(1)".pdf Graphic file (type pdf)
 el_Test_Graph_10K_Graph4_ROC_Compare(1)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(1)".pdf used on input 
-line 314.
+line 416.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph4_ROC_Compare(4)".pdf, id=1176, 578.16pt x 578.16pt>
+est_Graph_10K_Graph4_ROC_Compare(4)".pdf, id=1170, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC_Compare(4)".pdf Graphic file (type pdf)
 
@@ -2262,59 +2530,34 @@ del_Test_Graph_10K_Graph4_ROC_Compare(4)".pdf Graphic file (type pdf)
 el_Test_Graph_10K_Graph4_ROC_Compare(4)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(4)".pdf used on input 
-line 318.
+line 420.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 328.
+ mdframed uses option nobreak mdframed on input line 430.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 328.
- [199
+ mdframed uses option nobreak mdframed on input line 430.
+ [202
 
-] [200pdfTeX warning (ext4): destination with the same identifier (name{figure.
-6.5}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.331 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-05_randx/SL_Model_Test_Graph_10K_Graph1i_ROC1_samplesx.png (PNG copy)> </home/t
-omkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph
-_10K_Graph1i_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago 
-Uni/SL_Model/Graph1i.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_
-20161205_randx/SL_Model_Test_Graph_10K_Graph1i_AUC_samplesx.png (PNG copy)>]
-[201pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
-6}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.331 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-07_randx/SL_Model_Test_Graph_10K_Graph1_ROC_Compare(1).pdf>] [202pdfTeX warning
- (ext4): destination with the same identifier (name{figure.6.7}) has been alrea
-dy used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.331 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-05_randx/SL_Model_Test_Graph_10K_Graph4i2_ROC1_samplesx.png (PNG copy)> </home/
-tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Grap
-h_10K_Graph4i2_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otag
-o Uni/SL_Model/Graph4i2.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/R
-UN_20161205_randx/SL_Model_Test_Graph_10K_Graph4i2_AUC_samplesx.png (PNG copy)>
-] [203pdfTeX warning (ext4): destination with the same identifier (name{figure.
-6.8}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.331 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i.pd
-f> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model
-_Test_Graph_10K_Graph4_ROC_Compare(1).pdf> </home/tomkelly/Documents/PhD Otago 
-Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(4).p
-df>]
+] [203 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_M
+odel_Test_Graph_10K_Graph1i_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Docum
+ents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph1i_
+ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/
+Graph1i.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_rand
+x/SL_Model_Test_Graph_10K_Graph1i_AUC_samplesx.png (PNG copy)>] [204 </home/tom
+kelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1
+0K_Graph1_ROC_Compare(1).pdf>] [205 </home/tomkelly/Documents/PhD Otago Uni/SL_
+Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph4i2_ROC1_samplesx.png (PN
+G copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL
+_Model_Test_Graph_10K_Graph4i2_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Do
+cuments/PhD Otago Uni/SL_Model/Graph4i2.pdf> </home/tomkelly/Documents/PhD Otag
+o Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph4i2_AUC_samplesx
+.png (PNG copy)>] [206 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i
+.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
+del_Test_Graph_10K_Graph4_ROC_Compare(1).pdf> </home/tomkelly/Documents/PhD Ota
+go Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(4
+).pdf>]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf, id=1246, 578.16pt 
+del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf, id=1224, 578.16pt 
 x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf Graphic file (
@@ -2324,21 +2567,21 @@ type pdf)
 L_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)"
-.pdf used on input line 344.
+.pdf used on input line 447.
 (pdftex.def)             Requested size: 578.15858pt x 578.15858pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 347.
+ mdframed uses option nobreak mdframed on input line 450.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 347.
+ mdframed uses option nobreak mdframed on input line 450.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D".pdf, id=1249, 578.16
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D".pdf, id=1227, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D".pdf Graphic fil
 e (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4D".pdf used on input line 357.
+4D".pdf used on input line 460.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf Graphic file (
@@ -2348,25 +2591,25 @@ type pdf)
 L_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)"
-.pdf used on input line 361.
+.pdf used on input line 464.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 364.
+ mdframed uses option nobreak mdframed on input line 467.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 364.
+ mdframed uses option nobreak mdframed on input line 467.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD".pdf, id=1252, 578.1
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD".pdf, id=1230, 578.1
 6pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD".pdf Graphic fi
 le (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4iD".pdf used on input line 374.
+4iD".pdf used on input line 477.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf, id=1253, 578.16pt
+del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf, id=1231, 578.16pt
  x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf Graphic file 
@@ -2376,25 +2619,25 @@ SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf Graphic file
 L_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)
-".pdf used on input line 378.
+".pdf used on input line 481.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 381.
+ mdframed uses option nobreak mdframed on input line 484.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 381.
+ mdframed uses option nobreak mdframed on input line 484.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D".pdf Graphic fil
 e (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4D".pdf used on input line 391.
+4D".pdf used on input line 494.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD".pdf Graphic fi
 le (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4iD".pdf used on input line 395.
+4iD".pdf used on input line 498.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf Graphic file (
@@ -2404,7 +2647,7 @@ type pdf)
 L_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)"
-.pdf used on input line 400.
+.pdf used on input line 503.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf Graphic file 
@@ -2414,47 +2657,22 @@ SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf Graphic file
 L_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)
-".pdf used on input line 404.
+".pdf used on input line 507.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 407.
+ mdframed uses option nobreak mdframed on input line 510.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 407.
- [204
+ mdframed uses option nobreak mdframed on input line 510.
+ [207
 
-pdfTeX warning (ext4): destination with the same identifier (name{figure.6.9}) 
-has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.411 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161
-206_Str_randx/SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4).pdf>]
-[205pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
-10}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.411 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D.pd
-f>] [206pdfTeX warning (ext4): destination with the same identifier (name{figur
-e.6.11}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.411 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD.p
-df> </home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL
-_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4).pdf>] [207pdfTeX war
-ning (ext4): destination with the same identifier (name{figure.6.12}) has been 
-already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.411 \FloatBarrier
-                   ]
+ </home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
+del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4).pdf>] [208 </home/tomkel
+ly/Documents/PhD Otago Uni/SL_Model/Graph4D.pdf>] [209 </home/tomkelly/Document
+s/PhD Otago Uni/SL_Model/Graph4iD.pdf> </home/tomkelly/Documents/PhD Otago Uni/
+SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLs
+try_vioplot(4).pdf>] [210]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph1_ROC1_samplesx".png, id=1305, 602.25pt x 602.25pt>
+est_Graph_1K_Graph1_ROC1_samplesx".png, id=1275, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph1_ROC1_samplesx".png Graphic file (type png)
 
@@ -2462,11 +2680,11 @@ del_Test_Graph_1K_Graph1_ROC1_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph1_ROC1_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph1_ROC1_samplesx".png used on input li
-ne 425.
+ne 528.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph1_ROC2_samplesx".png, id=1306, 602.25pt x 602.25pt>
+est_Graph_1K_Graph1_ROC2_samplesx".png, id=1276, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph1_ROC2_samplesx".png Graphic file (type png)
 
@@ -2474,18 +2692,18 @@ del_Test_Graph_1K_Graph1_ROC2_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph1_ROC2_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph1_ROC2_samplesx".png used on input li
-ne 429.
+ne 532.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf Graphic file
  (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-1".pdf used on input line 436.
+1".pdf used on input line 539.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph1_AUC_samplesx".png, id=1307, 602.25pt x 602.25pt>
+est_Graph_1K_Graph1_AUC_samplesx".png, id=1277, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph1_AUC_samplesx".png Graphic file (type png)
 
@@ -2493,36 +2711,36 @@ del_Test_Graph_1K_Graph1_AUC_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph1_AUC_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph1_AUC_samplesx".png used on input lin
-e 440.
+e 543.
 (pdftex.def)             Requested size: 283.64824pt x 283.65486pt.
 
-Overfull \hbox (12.99686pt too wide) in paragraph at lines 436--441
- [][][][] 
+Overfull \hbox (12.99686pt too wide) in paragraph at lines 539--544
+ [][][] 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 445.
+ mdframed uses option nobreak mdframed on input line 548.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 445.
+ mdframed uses option nobreak mdframed on input line 548.
 
-LaTeX Warning: Float too large for page by 49.95111pt on input line 446.
+LaTeX Warning: Float too large for page by 24.1009pt on input line 549.
 
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf Graphic file
  (type pdf)
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-1".pdf used on input line 456.
+1".pdf used on input line 559.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf Graphic file
  (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-2".pdf used on input line 460.
+2".pdf used on input line 563.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph1_ROC_Compare(2)".pdf, id=1310, 578.16pt x 578.16pt>
+est_Graph_10K_Graph1_ROC_Compare(2)".pdf, id=1280, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph1_ROC_Compare(2)".pdf Graphic file (type pdf)
 
@@ -2530,11 +2748,11 @@ del_Test_Graph_10K_Graph1_ROC_Compare(2)".pdf Graphic file (type pdf)
 el_Test_Graph_10K_Graph1_ROC_Compare(2)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Graph1_ROC_Compare(2)".pdf used on input 
-line 470.
+line 573.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph2_ROC_Compare(2)".pdf, id=1311, 578.16pt x 578.16pt>
+est_Graph_10K_Graph2_ROC_Compare(2)".pdf, id=1281, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph2_ROC_Compare(2)".pdf Graphic file (type pdf)
 
@@ -2542,15 +2760,15 @@ del_Test_Graph_10K_Graph2_ROC_Compare(2)".pdf Graphic file (type pdf)
 el_Test_Graph_10K_Graph2_ROC_Compare(2)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Graph2_ROC_Compare(2)".pdf used on input 
-line 474.
+line 577.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 480.
+ mdframed uses option nobreak mdframed on input line 583.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 480.
+ mdframed uses option nobreak mdframed on input line 583.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph3_ROC1_samplesx".png, id=1314, 602.25pt x 602.25pt>
+est_Graph_1K_Graph3_ROC1_samplesx".png, id=1284, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph3_ROC1_samplesx".png Graphic file (type png)
 
@@ -2558,11 +2776,11 @@ del_Test_Graph_1K_Graph3_ROC1_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph3_ROC1_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph3_ROC1_samplesx".png used on input li
-ne 491.
+ne 594.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph3_ROC2_samplesx".png, id=1315, 602.25pt x 602.25pt>
+est_Graph_1K_Graph3_ROC2_samplesx".png, id=1285, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph3_ROC2_samplesx".png Graphic file (type png)
 
@@ -2570,21 +2788,21 @@ del_Test_Graph_1K_Graph3_ROC2_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph3_ROC2_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph3_ROC2_samplesx".png used on input li
-ne 495.
+ne 598.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3".pdf, id=1316, 578.16p
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3".pdf, id=1286, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3".pdf Graphic file
  (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-3".pdf used on input line 502.
+3".pdf used on input line 605.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph3_AUC_samplesx".png, id=1317, 602.25pt x 602.25pt>
+est_Graph_1K_Graph3_AUC_samplesx".png, id=1287, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph3_AUC_samplesx".png Graphic file (type png)
 
@@ -2592,23 +2810,23 @@ del_Test_Graph_1K_Graph3_AUC_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph3_AUC_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph3_AUC_samplesx".png used on input lin
-e 506.
+e 609.
 (pdftex.def)             Requested size: 283.64824pt x 283.65486pt.
 
-Overfull \hbox (12.99686pt too wide) in paragraph at lines 502--507
- [][][][] 
+Overfull \hbox (12.99686pt too wide) in paragraph at lines 605--610
+ [][][] 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 511.
+ mdframed uses option nobreak mdframed on input line 614.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 511.
+ mdframed uses option nobreak mdframed on input line 614.
 
-LaTeX Warning: Float too large for page by 49.95111pt on input line 512.
+LaTeX Warning: Float too large for page by 24.1009pt on input line 615.
 
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph3i_ROC1_samplesx".png, id=1320, 602.25pt x 602.25pt>
+est_Graph_1K_Graph3i_ROC1_samplesx".png, id=1290, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph3i_ROC1_samplesx".png Graphic file (type png)
 
@@ -2616,11 +2834,11 @@ del_Test_Graph_1K_Graph3i_ROC1_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph3i_ROC1_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph3i_ROC1_samplesx".png used on input l
-ine 522.
+ine 625.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph3i_ROC2_samplesx".png, id=1321, 602.25pt x 602.25pt>
+est_Graph_1K_Graph3i_ROC2_samplesx".png, id=1291, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph3i_ROC2_samplesx".png Graphic file (type png)
 
@@ -2628,21 +2846,21 @@ del_Test_Graph_1K_Graph3i_ROC2_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph3i_ROC2_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph3i_ROC2_samplesx".png used on input l
-ine 526.
+ine 629.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3i".pdf, id=1322, 578.16
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3i".pdf, id=1292, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3i".pdf Graphic fil
 e (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3i".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-3i".pdf used on input line 533.
+3i".pdf used on input line 636.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph3i_AUC_samplesx".png, id=1323, 602.25pt x 602.25pt>
+est_Graph_1K_Graph3i_AUC_samplesx".png, id=1293, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph3i_AUC_samplesx".png Graphic file (type png)
 
@@ -2650,36 +2868,36 @@ del_Test_Graph_1K_Graph3i_AUC_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph3i_AUC_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph3i_AUC_samplesx".png used on input li
-ne 537.
+ne 640.
 (pdftex.def)             Requested size: 283.64824pt x 283.65486pt.
 
-Overfull \hbox (12.99686pt too wide) in paragraph at lines 533--538
- [][][][] 
+Overfull \hbox (12.99686pt too wide) in paragraph at lines 636--641
+ [][][] 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 542.
+ mdframed uses option nobreak mdframed on input line 645.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 542.
+ mdframed uses option nobreak mdframed on input line 645.
 
-LaTeX Warning: Float too large for page by 49.95111pt on input line 543.
+LaTeX Warning: Float too large for page by 24.1009pt on input line 646.
 
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3".pdf Graphic file
  (type pdf)
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-3".pdf used on input line 553.
+3".pdf used on input line 656.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3i".pdf Graphic fil
 e (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3i".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-3i".pdf used on input line 557.
+3i".pdf used on input line 660.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph3_ROC_Compare(2)".pdf, id=1326, 578.16pt x 578.16pt>
+est_Graph_10K_Graph3_ROC_Compare(2)".pdf, id=1296, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph3_ROC_Compare(2)".pdf Graphic file (type pdf)
 
@@ -2687,11 +2905,11 @@ del_Test_Graph_10K_Graph3_ROC_Compare(2)".pdf Graphic file (type pdf)
 el_Test_Graph_10K_Graph3_ROC_Compare(2)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Graph3_ROC_Compare(2)".pdf used on input 
-line 567.
+line 670.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph3_ROC_Compare(3)".pdf, id=1327, 578.16pt x 578.16pt>
+est_Graph_10K_Graph3_ROC_Compare(3)".pdf, id=1297, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph3_ROC_Compare(3)".pdf Graphic file (type pdf)
 
@@ -2699,15 +2917,15 @@ del_Test_Graph_10K_Graph3_ROC_Compare(3)".pdf Graphic file (type pdf)
 el_Test_Graph_10K_Graph3_ROC_Compare(3)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Graph3_ROC_Compare(3)".pdf used on input 
-line 571.
+line 674.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 577.
+ mdframed uses option nobreak mdframed on input line 680.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 577.
+ mdframed uses option nobreak mdframed on input line 680.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph4_ROC1_samplesx".png, id=1330, 602.25pt x 602.25pt>
+est_Graph_1K_Graph4_ROC1_samplesx".png, id=1300, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph4_ROC1_samplesx".png Graphic file (type png)
 
@@ -2715,11 +2933,11 @@ del_Test_Graph_1K_Graph4_ROC1_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph4_ROC1_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph4_ROC1_samplesx".png used on input li
-ne 588.
+ne 691.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph4_ROC2_samplesx".png, id=1331, 602.25pt x 602.25pt>
+est_Graph_1K_Graph4_ROC2_samplesx".png, id=1301, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph4_ROC2_samplesx".png Graphic file (type png)
 
@@ -2727,18 +2945,18 @@ del_Test_Graph_1K_Graph4_ROC2_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph4_ROC2_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph4_ROC2_samplesx".png used on input li
-ne 592.
+ne 695.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf Graphic file
  (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4".pdf used on input line 599.
+4".pdf used on input line 702.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph4_AUC_samplesx".png, id=1332, 602.25pt x 602.25pt>
+est_Graph_1K_Graph4_AUC_samplesx".png, id=1302, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph4_AUC_samplesx".png Graphic file (type png)
 
@@ -2746,23 +2964,23 @@ del_Test_Graph_1K_Graph4_AUC_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph4_AUC_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph4_AUC_samplesx".png used on input lin
-e 603.
+e 706.
 (pdftex.def)             Requested size: 283.64824pt x 283.65486pt.
 
-Overfull \hbox (12.99686pt too wide) in paragraph at lines 599--604
- [][][][] 
+Overfull \hbox (12.99686pt too wide) in paragraph at lines 702--707
+ [][][] 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 608.
+ mdframed uses option nobreak mdframed on input line 711.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 608.
+ mdframed uses option nobreak mdframed on input line 711.
 
-LaTeX Warning: Float too large for page by 49.95111pt on input line 609.
+LaTeX Warning: Float too large for page by 24.1009pt on input line 712.
 
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph4i2_ROC1_samplesx".png, id=1335, 602.25pt x 602.25pt>
+est_Graph_1K_Graph4i2_ROC1_samplesx".png, id=1305, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph4i2_ROC1_samplesx".png Graphic file (type png)
 
@@ -2770,11 +2988,11 @@ del_Test_Graph_1K_Graph4i2_ROC1_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph4i2_ROC1_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph4i2_ROC1_samplesx".png used on input 
-line 619.
+line 722.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph4i2_ROC2_samplesx".png, id=1336, 602.25pt x 602.25pt>
+est_Graph_1K_Graph4i2_ROC2_samplesx".png, id=1306, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph4i2_ROC2_samplesx".png Graphic file (type png)
 
@@ -2782,18 +3000,18 @@ del_Test_Graph_1K_Graph4i2_ROC2_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph4i2_ROC2_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph4i2_ROC2_samplesx".png used on input 
-line 623.
+line 726.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf Graphic fi
 le (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4i2".pdf used on input line 630.
+4i2".pdf used on input line 733.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph4i2_AUC_samplesx".png, id=1337, 602.25pt x 602.25pt>
+est_Graph_1K_Graph4i2_AUC_samplesx".png, id=1307, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph4i2_AUC_samplesx".png Graphic file (type png)
 
@@ -2801,36 +3019,36 @@ del_Test_Graph_1K_Graph4i2_AUC_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_Graph4i2_AUC_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph4i2_AUC_samplesx".png used on input l
-ine 634.
+ine 737.
 (pdftex.def)             Requested size: 283.64824pt x 283.65486pt.
 
-Overfull \hbox (12.99686pt too wide) in paragraph at lines 630--635
- [][][][] 
+Overfull \hbox (12.99686pt too wide) in paragraph at lines 733--738
+ [][][] 
  []
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 639.
+ mdframed uses option nobreak mdframed on input line 742.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 639.
+ mdframed uses option nobreak mdframed on input line 742.
 
-LaTeX Warning: Float too large for page by 49.95111pt on input line 640.
+LaTeX Warning: Float too large for page by 24.1009pt on input line 743.
 
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf Graphic file
  (type pdf)
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4".pdf used on input line 650.
+4".pdf used on input line 753.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf Graphic fi
 le (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-4i2".pdf used on input line 654.
+4i2".pdf used on input line 757.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph4_ROC_Compare(2)".pdf, id=1340, 578.16pt x 578.16pt>
+est_Graph_10K_Graph4_ROC_Compare(2)".pdf, id=1310, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC_Compare(2)".pdf Graphic file (type pdf)
 
@@ -2838,11 +3056,11 @@ del_Test_Graph_10K_Graph4_ROC_Compare(2)".pdf Graphic file (type pdf)
 el_Test_Graph_10K_Graph4_ROC_Compare(2)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(2)".pdf used on input 
-line 664.
+line 767.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph4_ROC_Compare(5)".pdf, id=1341, 578.16pt x 578.16pt>
+est_Graph_10K_Graph4_ROC_Compare(5)".pdf, id=1311, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC_Compare(5)".pdf Graphic file (type pdf)
 
@@ -2850,101 +3068,52 @@ del_Test_Graph_10K_Graph4_ROC_Compare(5)".pdf Graphic file (type pdf)
 el_Test_Graph_10K_Graph4_ROC_Compare(5)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(5)".pdf used on input 
-line 668.
+line 771.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 674.
+ mdframed uses option nobreak mdframed on input line 777.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 674.
- [208
+ mdframed uses option nobreak mdframed on input line 777.
+ [211
 
-] [209pdfTeX warning (ext4): destination with the same identifier (name{figure.
-6.13}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.677 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-07_randx/SL_Model_Test_Graph_1K_Graph1_ROC1_samplesx.png (PNG copy)> </home/tom
+] [212 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_M
+odel_Test_Graph_1K_Graph1_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documen
+ts/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_Graph1_ROC2
+_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_
+20161207_randx/SL_Model_Test_Graph_1K_Graph1_AUC_samplesx.png (PNG copy)>] [213
+ </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
+est_Graph_10K_Graph1_ROC_Compare(2).pdf> </home/tomkelly/Documents/PhD Otago Un
+i/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph2_ROC_Compare(2).pdf
+>] [214 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_
+Model_Test_Graph_1K_Graph3_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Docume
+nts/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_Graph3_ROC
+2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Gra
+ph3.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL
+_Model_Test_Graph_1K_Graph3_AUC_samplesx.png (PNG copy)>] [215 </home/tomkelly/
+Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_Grap
+h3i_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Mo
+del/RUN_20161207_randx/SL_Model_Test_Graph_1K_Graph3i_ROC2_samplesx.png (PNG co
+py)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph3i.pdf> </home/tomke
+lly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_
+Graph3i_AUC_samplesx.png (PNG copy)>] [216 </home/tomkelly/Documents/PhD Otago 
+Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph3_ROC_Compare(2).p
+df> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mode
+l_Test_Graph_10K_Graph3_ROC_Compare(3).pdf>] [217 </home/tomkelly/Documents/PhD
+ Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_Graph4_ROC1_sampl
+esx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
+07_randx/SL_Model_Test_Graph_1K_Graph4_ROC2_samplesx.png (PNG copy)> </home/tom
 kelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1
-K_Graph1_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/
-SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_Graph1_AUC_samplesx.png (PNG
- copy)>] [210pdfTeX warning (ext4): destination with the same identifier (name{
-figure.6.14}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.677 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-07_randx/SL_Model_Test_Graph_10K_Graph1_ROC_Compare(2).pdf> </home/tomkelly/Doc
-uments/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph2
-_ROC_Compare(2).pdf>] [211pdfTeX warning (ext4): destination with the same iden
-tifier (name{figure.6.15}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.677 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-07_randx/SL_Model_Test_Graph_1K_Graph3_ROC1_samplesx.png (PNG copy)> </home/tom
-kelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1
-K_Graph3_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/
-SL_Model/Graph3.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161
-207_randx/SL_Model_Test_Graph_1K_Graph3_AUC_samplesx.png (PNG copy)>] [212pdfTe
-X warning (ext4): destination with the same identifier (name{figure.6.16}) has 
-been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.677 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-07_randx/SL_Model_Test_Graph_1K_Graph3i_ROC1_samplesx.png (PNG copy)> </home/to
-mkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_
-1K_Graph3i_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Un
-i/SL_Model/Graph3i.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20
-161207_randx/SL_Model_Test_Graph_1K_Graph3i_AUC_samplesx.png (PNG copy)>]
-[213pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
-17}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.677 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-07_randx/SL_Model_Test_Graph_10K_Graph3_ROC_Compare(2).pdf> </home/tomkelly/Doc
-uments/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph3
-_ROC_Compare(3).pdf>] [214pdfTeX warning (ext4): destination with the same iden
-tifier (name{figure.6.18}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.677 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-07_randx/SL_Model_Test_Graph_1K_Graph4_ROC1_samplesx.png (PNG copy)> </home/tom
-kelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1
-K_Graph4_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/
-SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_Graph4_AUC_samplesx.png (PNG
- copy)>] [215pdfTeX warning (ext4): destination with the same identifier (name{
-figure.6.19}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.677 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-07_randx/SL_Model_Test_Graph_1K_Graph4i2_ROC1_samplesx.png (PNG copy)> </home/t
-omkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph
-_1K_Graph4i2_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago 
-Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_Graph4i2_AUC_samplesx.pn
-g (PNG copy)>] [216pdfTeX warning (ext4): destination with the same identifier 
-(name{figure.6.20}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.677 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-07_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(2).pdf> </home/tomkelly/Doc
-uments/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph4
-_ROC_Compare(5).pdf>]
+K_Graph4_AUC_samplesx.png (PNG copy)>] [218 </home/tomkelly/Documents/PhD Otago
+ Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_Graph4i2_ROC1_samplesx.
+png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_r
+andx/SL_Model_Test_Graph_1K_Graph4i2_ROC2_samplesx.png (PNG copy)> </home/tomke
+lly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_
+Graph4i2_AUC_samplesx.png (PNG copy)>] [219 </home/tomkelly/Documents/PhD Otago
+ Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(2).
+pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mod
+el_Test_Graph_10K_Graph4_ROC_Compare(5).pdf>]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_pi3k_ROC1_samplesx".png, id=1455, 602.25pt x 602.25pt>
+est_Graph_10K_pi3k_ROC1_samplesx".png, id=1393, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_pi3k_ROC1_samplesx".png Graphic file (type png)
 
@@ -2952,11 +3121,11 @@ del_Test_Graph_10K_pi3k_ROC1_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_pi3k_ROC1_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_pi3k_ROC1_samplesx".png used on input lin
-e 695.
+e 798.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_pi3k_ROC2_samplesx".png, id=1456, 602.25pt x 602.25pt>
+est_Graph_10K_pi3k_ROC2_samplesx".png, id=1394, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_pi3k_ROC2_samplesx".png Graphic file (type png)
 
@@ -2964,21 +3133,21 @@ del_Test_Graph_10K_pi3k_ROC2_samplesx".png Graphic file (type png)
 el_Test_Graph_10K_pi3k_ROC2_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_pi3k_ROC2_samplesx".png used on input lin
-e 699.
+e 802.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf, id=1457, 115
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf, id=1395, 115
 6.32pt x 1156.32pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf Graphic 
 file (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-_pi3k".pdf used on input line 706.
+_pi3k".pdf used on input line 809.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_pi3k_AUC_samplesx_prop".png, id=1458, 602.25pt x 602.25pt>
+est_Graph_10K_pi3k_AUC_samplesx_prop".png, id=1396, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_pi3k_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -2986,15 +3155,15 @@ del_Test_Graph_10K_pi3k_AUC_samplesx_prop".png Graphic file (type png)
 el_Test_Graph_10K_pi3k_AUC_samplesx_prop".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_pi3k_AUC_samplesx_prop".png used on input
- line 710.
+ line 813.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 715.
+ mdframed uses option nobreak mdframed on input line 818.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 715.
+ mdframed uses option nobreak mdframed on input line 818.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_pi3k_ROC1_samplesx".png, id=1461, 602.25pt x 602.25pt>
+est_Graph_1K_pi3k_ROC1_samplesx".png, id=1399, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_pi3k_ROC1_samplesx".png Graphic file (type png)
 
@@ -3002,11 +3171,11 @@ del_Test_Graph_1K_pi3k_ROC1_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_pi3k_ROC1_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_pi3k_ROC1_samplesx".png used on input line
- 726.
+ 829.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_pi3k_ROC2_samplesx".png, id=1462, 602.25pt x 602.25pt>
+est_Graph_1K_pi3k_ROC2_samplesx".png, id=1400, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_pi3k_ROC2_samplesx".png Graphic file (type png)
 
@@ -3014,18 +3183,18 @@ del_Test_Graph_1K_pi3k_ROC2_samplesx".png Graphic file (type png)
 el_Test_Graph_1K_pi3k_ROC2_samplesx".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_pi3k_ROC2_samplesx".png used on input line
- 730.
+ 833.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf Graphic 
 file (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-_pi3k".pdf used on input line 737.
+_pi3k".pdf used on input line 840.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_pi3k_AUC_samplesx_prop".png, id=1463, 602.25pt x 602.25pt>
+est_Graph_1K_pi3k_AUC_samplesx_prop".png, id=1401, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_pi3k_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -3033,32 +3202,32 @@ del_Test_Graph_1K_pi3k_AUC_samplesx_prop".png Graphic file (type png)
 el_Test_Graph_1K_pi3k_AUC_samplesx_prop".png>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_pi3k_AUC_samplesx_prop".png used on input 
-line 741.
+line 844.
 (pdftex.def)             Requested size: 199.60597pt x 199.60693pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 746.
+ mdframed uses option nobreak mdframed on input line 849.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 746.
+ mdframed uses option nobreak mdframed on input line 849.
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf Graphic 
 file (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-_pi3k".pdf used on input line 758.
+_pi3k".pdf used on input line 861.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_Gai".pdf, id=1466, 1156
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_Gai".pdf, id=1404, 1156
 .32pt x 1156.32pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_Gai".pdf Graphic f
 ile (type pdf)
 
 <use "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_Gai".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
-_Gai".pdf used on input line 762.
+_Gai".pdf used on input line 865.
 (pdftex.def)             Requested size: 126.06659pt x 126.06638pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_pi3k_ROC_Compare(2)".pdf, id=1467, 578.16pt x 578.16pt>
+est_Graph_10K_pi3k_ROC_Compare(2)".pdf, id=1405, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_pi3k_ROC_Compare(2)".pdf Graphic file (type pdf)
 
@@ -3066,11 +3235,11 @@ del_Test_Graph_10K_pi3k_ROC_Compare(2)".pdf Graphic file (type pdf)
 el_Test_Graph_10K_pi3k_ROC_Compare(2)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_pi3k_ROC_Compare(2)".pdf used on input li
-ne 772.
+ne 875.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Gai_ROC_Compare(2)".pdf, id=1468, 578.16pt x 578.16pt>
+est_Graph_10K_Gai_ROC_Compare(2)".pdf, id=1406, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Gai_ROC_Compare(2)".pdf Graphic file (type pdf)
 
@@ -3078,48 +3247,29 @@ del_Test_Graph_10K_Gai_ROC_Compare(2)".pdf Graphic file (type pdf)
 el_Test_Graph_10K_Gai_ROC_Compare(2)".pdf>
 Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Gai_ROC_Compare(2)".pdf used on input lin
-e 776.
+e 879.
 (pdftex.def)             Requested size: 199.60597pt x 199.60657pt.
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 782.
+ mdframed uses option nobreak mdframed on input line 885.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 782.
- [217
+ mdframed uses option nobreak mdframed on input line 885.
+ [220
 
-] [218pdfTeX warning (ext4): destination with the same identifier (name{figure.
-6.21}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.785 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-05_randx/SL_Model_Test_Graph_10K_pi3k_ROC1_samplesx.png (PNG copy)> </home/tomk
-elly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10
-K_pi3k_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL
-_Model/Graph_pi3k.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201
-61205_randx/SL_Model_Test_Graph_10K_pi3k_AUC_samplesx_prop.png (PNG copy)>]
-[219pdfTeX warning (ext4): destination with the same identifier (name{figure.6.
-22}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.785 \FloatBarrier
-                    </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
-07_randx/SL_Model_Test_Graph_1K_pi3k_ROC1_samplesx.png (PNG copy)> </home/tomke
-lly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_
-pi3k_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_M
-odel/RUN_20161207_randx/SL_Model_Test_Graph_1K_pi3k_AUC_samplesx_prop.png (PNG 
-copy)>] [220pdfTeX warning (ext4): destination with the same identifier (name{f
-igure.6.23}) has been already used, duplicate ignored
-
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.797 \clearpage
-                 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_Gai.pdf
-> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_
-Test_Graph_10K_pi3k_ROC_Compare(2).pdf> </home/tomkelly/Documents/PhD Otago Uni
-/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Gai_ROC_Compare(2).pdf>]
-[221]) [222
+ </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
+est_Graph_10K_pi3k_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD 
+Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_pi3k_ROC2_samples
+x.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k.p
+df> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mode
+l_Test_Graph_10K_pi3k_AUC_samplesx_prop.png (PNG copy)>] [221 </home/tomkelly/D
+ocuments/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_pi3k_
+ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/
+RUN_20161207_randx/SL_Model_Test_Graph_1K_pi3k_ROC2_samplesx.png (PNG copy)> </
+home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test
+_Graph_1K_pi3k_AUC_samplesx_prop.png (PNG copy)>] [222 </home/tomkelly/Document
+s/PhD Otago Uni/SL_Model/Graph_Gai.pdf> </home/tomkelly/Documents/PhD Otago Uni
+/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_pi3k_ROC_Compare(2).pdf> <
+/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Tes
+t_Graph_10K_Gai_ROC_Compare(2).pdf>]) [223
 
 ] (./20170506_thesis_results_simulation.bbl
 Missing character: There is no Ã in font cmti12!
@@ -3136,16 +3286,16 @@ Underfull \hbox (badness 5592) in paragraph at lines 72--78
 avigating-[]cancer-[]care / cancer-[]basics /
  []
 
-[265
+[227
 
 
 
 
 
-] [266]
+] [228]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¶ in font cmr12!
- [267] [268]
+ [229] [230]
 Underfull \hbox (badness 10000) in paragraph at lines 331--336
 []\OT1/cmr/m/n/12 Cancer Re-search UK (2017) Fam-ily his-tory and can-cer
  []
@@ -3162,11 +3312,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 331--336
 eased-[]cancer-[]risk /
  []
 
-[269] [270]
+[231] [232]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [271] [272]
+ [233] [234]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 619.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
@@ -3177,25 +3327,25 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
- [273] [274]
+ [235] [236]
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
- [275] [276] [277] [278] [279] [280] [281] [282] [283] [284]
-[285]
+ [237] [238] [239] [240] [241] [242] [243] [244] [245] [246]
+[247]
 Underfull \hbox (badness 4168) in paragraph at lines 1580--1585
 \OT1/cmtt/m/n/12 / / www . cancer . gov / about-[]cancer / causes-[]prevention 
 / genetics$[]\OT1/cmr/m/n/12 .  Pub-lished:
  []
 
-[286]
+[248]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no “ in font cmr12!
- [287] [288]
+ [249] [250]
 Missing character: There is no â in font cmr12!
 Missing character: There is no € in font cmr12!
 Missing character: There is no ” in font cmr12!
- [289]) [290]
+ [251]) [252]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 207.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 207.
  (./20170506_thesis_results_simulation.aux
@@ -3206,624 +3356,480 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 207.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 207.
 Package rerunfilecheck Info: File `20170506_thesis_results_simulation.out' has 
 not changed.
-(rerunfilecheck)             Checksum: 2A4AF178024A228DAC1624D15C7EC7DD;1359.
+(rerunfilecheck)             Checksum: 72AC43753CB83F6B9F23C8429BC9CC94;1360.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 38930 strings out of 494497
- 757882 string characters out of 6172400
- 986439 words of memory out of 5000000
- 40527 multiletter control sequences out of 15000+600000
+ 39819 strings out of 494497
+ 783269 string characters out of 6172400
+ 1029554 words of memory out of 5000000
+ 41527 multiletter control sequences out of 15000+600000
  12541 words of font info for 45 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 55i,9n,54p,10444b,976s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,9n,94p,10444b,978s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{glo:SLIPT} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{table.M.2} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.109} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.M.1} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.104} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.L.1} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.100} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.K.3} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.98} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.K.2} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.94} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.K.1} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.79} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.I.5} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.77} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.I.4} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.75} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.I.3} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.73} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.I.2} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.71} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.I.1} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.69} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.H.2} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.66} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.H.1} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.64} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.G.7} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.62} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.G.6} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.61} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.G.5} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.59} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.G.4} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.56} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.G.3} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.54} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.G.2} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.52} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.G.1} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.50} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.F.6} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.48} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.F.5} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.47} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.F.4} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.45} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.F.3} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.43} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.F.2} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.32} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.F.1} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.28} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.D.7} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.26} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.D.6} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.23} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.D.5} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.17} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.D.4} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.D.3} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.D.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.D.1} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.C.3} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.C.2} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.C.1} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.15} has been referenced but does not 
+exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.B.1} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{table.5.5} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.96} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.5.4} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.92} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.5.3} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.87} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.5.2} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.84} has been referenced but does not 
+exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:ANOVA} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{table.5.1} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.81} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.4.12} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.37} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.4.11} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.35} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.4.10} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.33} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.4.9} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.31} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.4.8} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.27} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.4.7} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.25} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.4.6} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.20} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.4.5} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.18} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.4.4} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.16} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.4.3} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.8} has been referenced but does not e
+xist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.4.2} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.6} has been referenced but does not e
+xist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.4.1} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{table.2.6} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.13} has been referenced but does not 
+exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.2.5} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{table.2.4} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.9} has been referenced but does not e
+xist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.2.3} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.12} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.2.2} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.11} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.2.1} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.10} has been referenced but does not 
+exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.1.3} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.169} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.1.2} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.168} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.1.1} has been referenced but does not exist, 
-replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.167} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.S.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.166} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.S.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.165} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.R.9} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.164} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.R.8} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.163} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.R.7} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.162} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.R.6} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.161} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.R.5} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.160} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.R.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.159} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.R.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.158} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.R.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.157} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.R.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.156} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.Q.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.155} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.Q.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.154} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.Q.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.153} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.Q.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.152} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.P.9} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.151} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.P.8} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.150} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.P.7} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.149} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.P.6} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.148} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.P.5} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.147} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.P.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.146} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.P.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.145} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.P.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.144} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.P.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.143} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.O.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.142} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.O.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.141} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.O.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.140} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.O.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.139} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.15} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.138} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.14} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.137} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.13} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.136} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.12} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.135} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.11} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.134} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.10} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.133} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.9} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.132} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.8} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.131} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.7} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.130} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.6} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.129} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.5} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.128} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.127} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.126} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.125} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.N.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.124} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.M.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.123} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.M.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.122} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.M.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.121} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.M.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.120} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.L.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.119} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.K.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.118} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.K.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.117} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.K.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.116} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.J.8} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.115} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.J.7} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.114} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.J.6} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.113} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.J.5} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.112} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.J.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.111} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.J.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.108} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.J.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.107} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.J.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.106} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.H.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.103} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.G.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.102} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.G.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.93} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.F.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.92} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.E.5} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.88} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.E.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.87} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.E.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.85} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.E.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.84} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.E.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.68} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.D.9} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.60} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.D.8} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.58} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.D.7} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.46} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.D.6} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.42} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.D.5} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.41} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.D.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.40} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.D.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.39} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.D.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.38} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.D.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.37} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.A.6} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.95} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.A.5} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.94} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.A.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.91} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.A.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.90} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.A.2} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.89} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.A.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.86} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.5.11} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.83} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.5.10} has been referenced but does not exist
-, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.80} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.5.9} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.79} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.5.8} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.78} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.5.7} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.77} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.5.6} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.36} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.5.5} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.35} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.5.4} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.34} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.5.3} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.33} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.5.2} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.5.1} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.13} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.12} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.11} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.10} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.9} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.8} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.7} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.6} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.5} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.4} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.3} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.2} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.4.1} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.25} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.24} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.23} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.22} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.21} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.20} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.19} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.18} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.17} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.16} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.15} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.14} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.13} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.12} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.11} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.10} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.9} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.8} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.7} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.6} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.5} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.4} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.3} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.2} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.3.1} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.2.2} has been referenced but does not exist,
- replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.2.1} has been referenced but does not exist,
- replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.32} has been referenced but does not
+ exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{glo:synthetic\040lethal} has been referenced but do
 es not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.1.2} has been referenced but does not exist,
+pdfTeX warning (dest): name{appendix.U} has been referenced but does not exist,
  replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.1.1} has been referenced but does not exist,
+pdfTeX warning (dest): name{appendix.T} has been referenced but does not exist,
  replaced by a fixed one
 
 pdfTeX warning (dest): name{appendix.S} has been referenced but does not exist,
@@ -3840,6 +3846,9 @@ pdfTeX warning (dest): name{appendix.P} has been referenced but does not exist,
 
 pdfTeX warning (dest): name{appendix.O} has been referenced but does not exist,
  replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.N.0.1} has been referenced but does not 
+exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{appendix.N} has been referenced but does not exist,
  replaced by a fixed one
@@ -4470,11 +4479,11 @@ lic/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
 2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on 20170506_thesis_results_simulation.pdf (70 pages, 2652558 byt
+Output written on 20170506_thesis_results_simulation.pdf (73 pages, 2762740 byt
 es).
 PDF statistics:
- 2170 PDF objects out of 2487 (max. 8388607)
- 1950 compressed objects within 20 object streams
- 879 named destinations out of 1000 (max. 500000)
- 444 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2064 PDF objects out of 2073 (max. 8388607)
+ 1836 compressed objects within 19 object streams
+ 757 named destinations out of 1000 (max. 500000)
+ 474 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -5,18 +5,18 @@
 %\appendix
 
 %%
-%% -> \chapter will cause the next bit to be labelled Appendix A
+%% -> \Chapter will cause the next bit to be labelled Appendix A
 %% -> \section will give us A.1, \subsection A.1.1 etc.
 %%
 %% I suggest a section for each program and a subsection for each file
-%% in the program.  Alternatively, a chapter for each program, a
+%% in the program.  Alternatively, a Chapter for each program, a
 %% section for each library and a subsection for each file.
 %%
 
 \chapter{Secondary Screen Data}
 \label{appendix:secondary_screen}
 
-A series of experimental genome-wide siRNA screens have been performed on synthetic lethal partners of \textit{CDH1} \citep{Telford2015}. The strongest candidates from a primary screen were subject to a further secondary screen for validation by independent replication with 4 gene knockdowns with different targeting siRNA. As shown in Table \ref{tab:secondary_screen}, there is significant ($p=7.49 \times 10^{-3}$ by Fisher's exact test) %$8.67 \times 10^{-3} by \chi^2 (4 df)
+A series of experimental genome-wide siRNA screens have been performed on synthetic lethal partners of \textit{CDH1} \citep{Telford2015}. The strongest candidates from a primary screen were subject to a further secondary screen for validation by independent replication with 4 gene knockdowns with different targeting siRNA. As shown in Table~\ref{tab:secondary_screen}, there is significant ($p=7.49 \times 10^{-3}$ by Fisher's exact test) %$8.67 \times 10^{-3} by \chi^2 (4 df)
 association between SLIPT candidates and stronger validations of siRNA candidates. Since there were more SLIPT$-$ genes among those not validated and more SLIPT$+$ genes among those validated with several siRNAs, this supports the use of SLIPT as a synthetic lethal discovery procedure which may augment such screening experiments.
 
 \begin{table*}[!ht]
@@ -43,7 +43,7 @@ association between SLIPT candidates and stronger validations of siRNA candidate
 \end{center}
 \end{table*}
 
-Similar analysis with mtSLIPT, comparing SLIPT against \textit{CDH1} somatic mutation with siRNA validation results was not significant ($p=7.02 \times 10^{-1}$ by Fisher's exact test). However,  as shown in Table \ref{tab:secondary_screen_mtSL}, the observed and expected values were in a direction consistent with that observed above for SLIPT against low \textit{CDH1} expression. It is not unexpected that this result does not have comparable statistical support due to the lower sample size for mutation data. 
+Similar analysis with mtSLIPT, comparing SLIPT against \textit{CDH1} somatic mutation with siRNA validation results was not significant ($p=7.02 \times 10^{-1}$ by Fisher's exact test). However,  as shown in Table~\ref{tab:secondary_screen_mtSL}, the observed and expected values were in a direction consistent with that observed above for SLIPT against low \textit{CDH1} expression. It is not unexpected that this result does not have comparable statistical support due to the lower sample size for mutation data. 
 
 \begin{table*}[!ht]
 \caption{Comparing mtSLIPT genes against Secondary siRNA Screen in breast cancer}
@@ -69,7 +69,7 @@ Similar analysis with mtSLIPT, comparing SLIPT against \textit{CDH1} somatic mut
 \end{center}
 \end{table*}
 
-This analysis was replicated on a (smaller) stomach cancer dataset but it was less conclusive ($p=2.36 \times 10^{-1}$ by Fisher's exact test). As shown in Table \ref{tab:secondary_screen_stad}, fewer SLIPT candidates were validated than expected statistically. However, these results in stomach cancer may not be directly comparable to experiments in a breast cell line. Genes validated by 0 or 1 siRNA behave consistently with the results above.
+This analysis was replicated on a (smaller) stomach cancer dataset but it was less conclusive ($p=2.36 \times 10^{-1}$ by Fisher's exact test). As shown in Table~\ref{tab:secondary_screen_stad}, fewer SLIPT candidates were validated than expected statistically. However, these results in stomach cancer may not be directly comparable to experiments in a breast cell line. Genes validated by 0 or 1 siRNA behave consistently with the results above.
 
 \begin{table*}[!ht]
 \caption{Comparing SLIPT genes against Secondary siRNA Screen in stomach cancer}
@@ -98,9 +98,9 @@ This analysis was replicated on a (smaller) stomach cancer dataset but it was le
 \chapter{Mutation Analysis in Breast Cancer}
 \label{appendix:mtSL}
 
-\section{Synthetic Lethal Genes and Pathways} \label{results:mtSL_genes}
+\section{Synthetic Lethal Genes and Pathways} \label{appendix:mtSL_genes}
 
-SLIPT expression analysis (described in section \ref{methods:SLIPT}) on TCGA breast cancer data ($n = 969$) found the following genes and pathways, described in sections \ref{results:exprSL_genes} and \ref{results:exprSL_pathways}.
+SLIPT expression analysis (described in Section~\ref{methods:SLIPT}) on TCGA breast cancer data ($n = 969$) found the following genes and pathways, described in sections~\ref{chapt3:exprSL_genes} and~\ref{chapt3:exprSL_pathways}.
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal gene partners of \textit{CDH1} from mtSLIPT}
@@ -234,14 +234,14 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 \FloatBarrier
 
-The genes and pathways identified in Tables \ref{tab:gene_mtSL} and \ref{tab:pathway_mtSL} were derived from comparing the expression profiles of potential partners to the mutation status of \textit{CDH1} (as shown in Figure \ref{fig:SLIPT_Method_mtSL}). Thus the following analysis is only limited the samples for which TCGA provides both expression and somatic mutation data.
+The genes and pathways identified in Tables~\ref{tab:gene_mtSL} and~\ref{tab:pathway_mtSL} were derived from comparing the expression profiles of potential partners to the mutation status of \textit{CDH1} (as shown in Figure~\ref{fig:SLIPT_Method_mtSL}). Thus the following analysis is only limited the samples for which TCGA provides both expression and somatic mutation data.
 
 \FloatBarrier
 
 %\clearpage
-\section{Synthetic Lethal Expression Profiles} \label{results:mtSL_clusters}
+\section{Synthetic Lethal Expression Profiles} \label{appendix:mtSL_clusters}
 
-Similar to the analysis of synthetic lethal partners against low \textit{CDH1} expression in \ref{results:exprSL_clusters}, the partners detected from \textit{CDH1} mutation were also examined for their expression profiles and the pathway composition of gene clusters. Hierachical clustering was performed on mtSLIPT partners for \textit{CDH1} as showing in Figure \ref{fig:slipt_expr_mtSL}. Over-representation for Reactome pathways for each of the gene clusters identified is given in Table \ref{tab:pathway_clusters_mtSL}.
+Similar to the analysis of synthetic lethal partners against low \textit{CDH1} expression in~\ref{chapt3:exprSL_clusters}, the partners detected from \textit{CDH1} mutation were also examined for their expression profiles and the pathway composition of gene clusters. Hierachical clustering was performed on mtSLIPT partners for \textit{CDH1} as showing in Figure~\ref{fig:slipt_expr_mtSL}. Over-representation for Reactome pathways for each of the gene clusters identified is given in Table~\ref{tab:pathway_clusters_mtSL}.
 
 \begin{figure*}[!ht]
 \begin{mdframed}
@@ -259,7 +259,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
 \FloatBarrier
 
 
-\begin{table*}[!Hp]
+\begin{table*}[!hp]
 \caption{Pathway composition for clusters of \textit{CDH1} partners from mtSLIPT}
 \label{tab:pathway_clusters_mtSL}
 \centering
@@ -452,7 +452,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
 \clearpage
 \section{Comparison to Primary Screen}
 
-The mutation synthetic lethal partners with \textit{CDH1} were also compared to siRNA primary screen data \citep{Telford2015}, as performed in section \ref{chapt3:primary_screen}. These are expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure \ref{fig:Venn_allgenes_mtSL}. This may be affected by lower sample size for mutations in TCGA data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
+The mutation synthetic lethal partners with \textit{CDH1} were also compared to siRNA primary screen data \citep{Telford2015}, as performed in Section~\ref{chapt3:primary_screen}. These are expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure~\ref{fig:Venn_allgenes_mtSL}. This may be affected by lower sample size for mutations in TCGA data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
 
 \begin{figure}[!ht]
 \begin{mdframed}
@@ -468,10 +468,10 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
 
 \FloatBarrier
 
-Despite a lower sample size (and low number of a predicted partners) for mutation analysis, the pathway composition (Tables \ref{tab:pathway_mtSL} and \ref{tab:Venn_over-representation_mtSL}) is simlar to expression analysis, as described in section \ref{chapt3:compare_pathway}. In particular, the resampling analysis (section \ref{chapt3:compare_pathway_perm_mtSL}) supported many of the results of expression analysis (section \ref{chapt3:compare_pathway_perm}) with Tables \ref{tab:pathway_perm_mtSL} and \ref{tab:pathway_perm_overlap_mtSL} detecting many of the same or functionally-related pathways.
+Despite a lower sample size (and low number of a predicted partners) for mutation analysis, the pathway composition (Tables~\ref{tab:pathway_mtSL} and~\ref{tab:Venn_over-representation_mtSL}) is simlar to expression analysis, as described in Section~\ref{chapt3:compare_pathway}. In particular, the resampling analysis (Section~\ref{appendix:compare_pathway_perm_mtSL}) supported many of the results of expression analysis (Section~\ref{chapt3:compare_pathway_perm}) with Tables~\ref{tab:pathway_perm_mtSL} and~\ref{tab:pathway_perm_overlap_mtSL} detecting many of the same or functionally-related pathways.
  
 
-\begin{table*}[!Hp]
+\begin{table*}[!hp]
 \caption{Pathway composition for \textit{CDH1} partners from mtSLIPT and siRNA}
 \label{tab:Venn_over-representation_mtSL}
 \centering
@@ -617,7 +617,7 @@ Despite a lower sample size (and low number of a predicted partners) for mutatio
 
 
 \clearpage
-\subsection{Resampling Analysis}  \label{chapt3:compare_pathway_perm_mtSL}
+\subsection{Resampling Analysis}  \label{appendix:compare_pathway_perm_mtSL}
 
 \begin{table*}[!htp]
 \caption{Pathways for \textit{CDH1} partners from mtSLIPT}
@@ -901,9 +901,9 @@ Reactome Pathway & Over-representation & Permutation \\
 \fi
 
 \clearpage
-\section{Compare SLIPT genes} \label{chapt3:compare_mtSL}}
+\section{Compare SLIPT genes} \label{appendix:compare_mtSL}}
 
-The mutation synthetic lethal partners with \textit{CDH1} were also compared to siRNA primary screen data \citep{Telford2015}, by correlation and siRNA viability as described in sections \ref{chapt3:compare_correlation} and \ref{chapt3:compare_viability}.
+The mutation synthetic lethal partners with \textit{CDH1} were also compared to siRNA primary screen data \citep{Telford2015}, by correlation and siRNA viability as described in sections~\ref{chapt3:compare_correlation} and~\ref{chapt3:compare_viability}.
 
 \begin{figure*}[!htp]
 \begin{mdframed}
@@ -946,9 +946,9 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
 
 
 \clearpage
-\section{Metagene Analysis} \label{chapt3:metagene_mtSL}
+\section{Metagene Analysis} \label{appendix:metagene_mtSL}
 
-Metagene analysis was also performed for synthetic lethal candidates for \textit{CDH1} mutation. These are described and compared to mutation analysis in section \ref{chapt3:metagene_SL}. 
+Metagene analysis was also performed for synthetic lethal candidates for \textit{CDH1} mutation. These are described and compared to expression analysis in Section~\ref{chapt3:metagene_SL}. 
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from mtSLIPT}
@@ -1135,7 +1135,7 @@ Mutations have different effects as shown by the following examples in cancer ge
 \end{figure*}
 
 \chapter{Metagene Expression Profiles}
-\label{results:mg_expr_SL}}
+\label{appendix:mg_expr_SL}}
 
 %\label{fig:metagene_expr_Gatza2011}
 
@@ -1225,9 +1225,9 @@ Mutations have different effects as shown by the following examples in cancer ge
 \chapter{Stomach Expression Analysis}
 \label{appendix:stad_exprSL}
 
-The following results are a replication of the TCGA results (in Chapter 4) with stomach cancer data, using synthetic lethality (SLIPT) against \textit{CDH1} mutation.
+The following results are a replication of the TCGA results (in Chapter~\ref{chap:SLIPT}) with stomach cancer data, using synthetic lethality (SLIPT) against \textit{CDH1} mutation.
 
-\section{Synthetic Lethal Genes and Pathways} \label{results:stad_exprSL_genes}
+\section{Synthetic Lethal Genes and Pathways} \label{appendix:stad_exprSL_genes}
 
 \begin{table*}[!ht]
 \caption{Synthetic lethal gene partners of \textit{CDH1} from SLIPT in stomach cancer}
@@ -1311,9 +1311,9 @@ SLIPT partners of \textit{CDH1} with observed and expected mutant samples of bot
 
 \iffalse
 
-\section{Synthetic Lethal Expression Profiles} \label{results:stad_exprSL_clusters}
+\section{Synthetic Lethal Expression Profiles} \label{appendix:stad_exprSL_clusters}
 
-Similar to the analysis of synthetic lethal partners in \ref{results:stad_exprSL_genes} breast cancer, the partners detected for low \textit{CDH1} expression in stomach cancer were also examined for their expression profiles and the pathway composition of gene clusters. Hierachical clustering was performed on SLIPT partners for \textit{CDH1} as showing in Figure \ref{fig:slipt_expr_stad_mtSL}. Over-representation for Reactome pathways for each of the gene clusters identified is given in Table \ref{tab:pathway_clusters_stad_mtSL}.
+Similar to the analysis of synthetic lethal partners in~\ref{chapt3:stad_exprSL_genes} breast cancer, the partners detected for low \textit{CDH1} expression in stomach cancer were also examined for their expression profiles and the pathway composition of gene clusters. Hierachical clustering was performed on SLIPT partners for \textit{CDH1} as showing in Figure~\ref{fig:slipt_expr_stad_mtSL}. Over-representation for Reactome pathways for each of the gene clusters identified is given in Table~\ref{tab:pathway_clusters_stad_mtSL}.
 
 %%appendix
 %\label{fig:slipt_expr_stad_mtSL}
@@ -1515,9 +1515,9 @@ Similar to the analysis of synthetic lethal partners in \ref{results:stad_exprSL
 
 \FloatBarrier
 
-\section{Comparison to Primary Screen}
+\section{Comparison to Primary Screen} \label{appendix:compare_exprSL_genes_stad}
 
-The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers were also compared to siRNA primary screen data \citep{Telford2015}, as performed in section \ref{chapt3:primary_screen}. These are expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure \ref{fig:Venn_allgenes_stad}. This may be affected by lower sample size for mutations in TCGA data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
+The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers were also compared to siRNA primary screen data \citep{Telford2015}, as performed in Section~\ref{chapt3:primary_screen}. These are expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure~\ref{fig:Venn_allgenes_stad}. This may be affected by lower sample size for mutations in TCGA data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
 
 
 
@@ -1580,9 +1580,9 @@ The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers w
   \rowcolor{Cluster_Red!15}
   Hemostasis & 438 & 112 & $1.2 \times 10^{-80}$ \\ 
   \rowcolor{Cluster_Red!20}
-  Eukaryotic Translation Initiation & 107 &  48 & $8 \times 10^{-80}$ \\ 
+  Eukaryotic Translation Initiation & 107 &  48 & $8.0 \times 10^{-80}$ \\ 
   \rowcolor{Cluster_Red!15}
-  Cap-dependent Translation Initiation & 107 &  48 & $8 \times 10^{-80}$ \\ 
+  Cap-dependent Translation Initiation & 107 &  48 & $8.0 \times 10^{-80}$ \\ 
   \rowcolor{Cluster_Red!20}
   Infectious disease & 338 &  90 & $1.6 \times 10^{-76}$ \\ 
   \rowcolor{Cluster_Red!15}
@@ -1944,9 +1944,9 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 
 \FloatBarrier
 
-\section{Metagene Analysis} %\label{appendix:metagene_stad_exprSL}
+\section{Metagene Analysis} \label{appendix:metagene_stad_exprSL}
 
-Metagene analysis was also performed for synthetic lethal candidates for \textit{CDH1} expression in stomach cancer. These are described and compared to mutation analysis in section \ref{chapt3:metagene_stad_exprSL}. 
+Metagene analysis was also performed for synthetic lethal candidates for \textit{CDH1} expression in stomach cancer. These are described and compared to mutation analysis in Section~\ref{appendix:metagene_stad_mtSL}. 
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from SLIPT in stomach cancer}
@@ -2024,9 +2024,9 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 \chapter{Stomach Mutation Analysis}
 \label{appendix:stad_mtSL}
 
-The following results are a replication of the TCGA results (in Appendix \ref{appendix:mtSL}) with stomach cancer data, using synthetic lethality (mtSLIPT) against \textit{CDH1} mutation.
+The following results are a replication of the TCGA results (in Appendix~\ref{appendix:mtSL}) with stomach cancer data, using synthetic lethality (mtSLIPT) against \textit{CDH1} mutation.
 
-\section{Synthetic Lethal Genes and Pathways} \label{results:stad_mtSL_genes}
+\section{Synthetic Lethal Genes and Pathways} \label{appendix:stad_mtSL_genes}
 
 \begin{table*}[!ht]
 \caption{Synthetic lethal gene partners of \textit{CDH1} from mtSLIPT in stomach cancer}
@@ -2164,9 +2164,9 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \FloatBarrier
 
 %\clearpage
-\section{Synthetic Lethal Expression Profiles} \label{results:stad_mtSL_clusters}
+\section{Synthetic Lethal Expression Profiles} \label{appendix:stad_mtSL_clusters}
 
-Similar to the analysis of synthetic lethal partners against low \textit{CDH1} expression in \ref{results:stad_exprSL_genes}, the partners detected from \textit{CDH1} mutation were also examined for their expression profiles and the pathway composition of gene clusters. Hierachical clustering was performed on mtSLIPT partners for \textit{CDH1} as showing in Figure \ref{fig:slipt_expr_stad_mtSL}. Over-representation for Reactome pathways for each of the gene clusters identified is given in Table \ref{tab:pathway_clusters_stad_mtSL}.
+Similar to the analysis of synthetic lethal partners against low \textit{CDH1} expression in~\ref{appendix:stad_exprSL_genes}, the partners detected from \textit{CDH1} mutation were also examined for their expression profiles and the pathway composition of gene clusters. Hierachical clustering was performed on mtSLIPT partners for \textit{CDH1} as showing in Figure~\ref{fig:slipt_expr_stad_mtSL}. Over-representation for Reactome pathways for each of the gene clusters identified is given in Table~\ref{tab:pathway_clusters_stad_mtSL}.
 
 
 \begin{figure*}[!ht]
@@ -2185,7 +2185,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
 \FloatBarrier
 
 
-\begin{table*}[!Hp]
+\begin{table*}[!hp]
 \caption{Pathway composition for clusters of \textit{CDH1} partners in stomach mtSLIPT}
 \label{tab:pathway_clusters_stad_mtSL}
 \centering
@@ -2378,9 +2378,9 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
 
 \FloatBarrier
 
-\section{Comparison to Primary Screen}
+\section{Comparison to Primary Screen} \label{appendix:compare_mtSL_genes_stad}
 
-The mutation synthetic lethal partners with \textit{CDH1} were also compared to siRNA primary screen data \citep{Telford2015}, as performed in section \ref{chapt3:primary_screen}. These are expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure \ref{fig:Venn_allgenes_stad_mtSL}. This may be affected by lower sample size for mutations in TCGA data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
+The mutation synthetic lethal partners with \textit{CDH1} were also compared to siRNA primary screen data \citep{Telford2015}, as performed in Section~\ref{chapt3:primary_screen}. These are expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure~\ref{fig:Venn_allgenes_stad_mtSL}. This may be affected by lower sample size for mutations in TCGA data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
 
 \begin{figure}[!ht]
 \begin{mdframed}
@@ -2395,7 +2395,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
 \end{figure}
 
 
-\begin{table*}[!Hp]
+\begin{table*}[!hp]
 \caption{Pathway composition for \textit{CDH1} partners from mtSLIPT and siRNA}
 \label{tab:Venn_over-representation_stad_mtSL}
 \centering
@@ -2541,7 +2541,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
 
 \FloatBarrier
 
-\subsection{Resampling Analysis}  \label{chapt3:compare_pathway_perm_stad_mtSL}
+\subsection{Resampling Analysis}  \label{appendix:compare_pathway_perm_stad_mtSL}
 
 %For replication of resampling in stomach cancer, 10,000 iterations were used to estimate the permutation p-value.
 
@@ -2558,27 +2558,27 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
   Reactome Pathway & Over-representation & Permutation \\ 
   \hline
   \rowcolor{Cluster_Red!20} 
-  Extracellular matrix organization & $9.6 \times 10^{-9}$ & $0.057678$ \\ 
+  \textit{Extracellular matrix organization} & $9.6 \times 10^{-9}$ & $0.057678$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Elastic fibre formation & $3.7 \times 10^{-8}$ & $0.033817$ \\ 
+  \textbf{Elastic fibre formation} & $3.7 \times 10^{-8}$ & $0.033817$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Diseases associated with glycosaminoglycan metabolism & $3.7 \times 10^{-8}$ & $0.049336$ \\ 
+  \textbf{Diseases associated with glycosaminoglycan metabolism} & $3.7 \times 10^{-8}$ & $0.049336$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Diseases of glycosylation & $3.7 \times 10^{-8}$ & $0.049336$ \\ 
+  \textbf{Diseases of glycosylation} & $3.7 \times 10^{-8}$ & $0.049336$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Nitric oxide stimulates guanylate cyclase & $3.1 \times 10^{-6}$ & $0.037904$ \\ 
+  \textbf{Nitric oxide stimulates guanylate cyclase} & $3.1 \times 10^{-6}$ & $0.037904$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Initial triggering of complement & $3.7 \times 10^{-5}$ & $0.020828$ \\ 
+  \textbf{Initial triggering of complement} & $3.7 \times 10^{-5}$ & $0.020828$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Molecules associated with elastic fibres & $3.7 \times 10^{-5}$ & $0.027865$ \\ 
+  \textbf{Molecules associated with elastic fibres} & $3.7 \times 10^{-5}$ & $0.027865$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Regulation of IGF transport and uptake by IGFBPs & $3.7 \times 10^{-5}$ & $0.069102$ \\ 
+  \textit{Regulation of IGF transport and uptake by IGFBPs} & $3.7 \times 10^{-5}$ & $0.069102$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Platelet homeostasis & $3.7 \times 10^{-5}$ & $0.097294$ \\ 
+  \textit{Platelet homeostasis} & $3.7 \times 10^{-5}$ & $0.097294$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Defective B4GALT7 causes EDS, progeroid type & $5.6 \times 10^{-5}$ & $0.081505$ \\ 
+  \textit{Defective B4GALT7 causes EDS, progeroid type} & $5.6 \times 10^{-5}$ & $0.081505$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Defective B3GAT3 causes JDSSDHD & $5.6 \times 10^{-5}$ & $0.081505$ \\ 
+  \textit{Defective B3GAT3 causes JDSSDHD} & $5.6 \times 10^{-5}$ & $0.081505$ \\ 
   \rowcolor{Cluster_Red!15} 
   Collagen degradation & $5.6 \times 10^{-5}$ & $0.1104$ \\ 
   \rowcolor{Cluster_Red!20} 
@@ -2588,43 +2588,43 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
   \rowcolor{Cluster_Red!20} 
   A tetrasaccharide linker sequence is required for GAG synthesis & $0.00025$ & $0.10536$ \\ 
   \rowcolor{Cluster_Red!15} 
-  RHO GTPases Activate WASPs and WAVEs & $0.00059$ & $0.053929$ \\ 
+  \textit{RHO GTPases Activate WASPs and WAVEs} & $0.00059$ & $0.053929$ \\ 
   \rowcolor{Cluster_Red!20} 
   Non-integrin membrane-ECM interactions & $0.00065$ & $0.10424$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Creation of C4 and C2 activators & $0.00079$ & $0.05461$ \\ 
+  \textit{Creation of C4 and C2 activators} & $0.00079$ & $0.05461$ \\ 
   \rowcolor{Cluster_Red!20} 
   Dermatan sulfate biosynthesis & $0.00079$ & $0.21163$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Integrin cell surface interactions & $0.00098$ & $0.092405$ \\ 
+  \textit{Integrin cell surface interactions} & $0.00098$ & $0.092405$ \\ 
   \rowcolor{Cluster_Red!20} 
   Glucagon signaling in metabolic regulation & $0.00098$ & $0.13425$ \\ 
   \rowcolor{Cluster_Red!15} 
   Keratan sulfate degradation & $0.00098$ & $0.22137$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Complement cascade & $0.0011$ & $0.01552$ \\ 
+  \textbf{Complement cascade} & $0.0011$ & $0.01552$ \\ 
   \rowcolor{Cluster_Red!15} 
-  CS/DS degradation & $0.0012$ & $0.065012$ \\ 
+  \textit{CS/DS degradation} & $0.0012$ & $0.065012$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Eicosanoid ligand-binding receptors & $0.0016$ & $0.066128$ \\ 
+  \textit{Eicosanoid ligand-binding receptors} & $0.0016$ & $0.066128$ \\ 
   \rowcolor{Cluster_Red!15} 
   Nuclear signaling by ERBB4 & $0.0016$ & $0.15511$ \\ 
   \rowcolor{Cluster_Red!20} 
   Collagen formation & $0.0026$ & $0.13447$ \\ 
   \rowcolor{Cluster_Red!15} 
-  cGMP effects & $0.0041$ & $0.020195$ \\ 
+  \textbf{cGMP effects} & $0.0041$ & $0.020195$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Voltage gated Potassium channels & $0.0041$ & $0.068923$ \\ 
+  \textit{Voltage gated Potassium channels} & $0.0041$ & $0.068923$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Chondroitin sulfate biosynthesis & $0.0059$ & $>1.5862 \times 10^{-5}$ \\ 
+  \textbf{Chondroitin sulfate biosynthesis} & $0.0059$ & $>1.5862 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Chondroitin sulfate/dermatan sulfate metabolism & $0.0065$ & $0.087745$ \\ 
+  \textit{Chondroitin sulfate/dermatan sulfate metabolism} & $0.0065$ & $0.087745$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Heparan sulfate/heparin (HS-GAG) metabolism & $0.0071$ & $0.085622$ \\ 
+  \textit{Heparan sulfate/heparin (HS-GAG) metabolism} & $0.0071$ & $0.085622$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Synthesis of substrates in N-glycan biosythesis & $0.0085$ & $0.09456$ \\ 
+  \textit{Synthesis of substrates in N-glycan biosythesis} & $0.0085$ & $0.09456$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Regulation of actin dynamics for phagocytic cup formation & $0.0085$ & $0.096227$ \\ 
+  \textit{Regulation of actin dynamics for phagocytic cup formation} & $0.0085$ & $0.096227$ \\ 
   \rowcolor{Cluster_Red!20} 
   CDO in myogenesis & $0.01$ & $0.32599$ \\ 
   \rowcolor{Cluster_Red!15} 
@@ -2644,7 +2644,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
   \rowcolor{Cluster_Red!20} 
   Laminin interactions & $0.021$ & $0.12766$ \\ 
   \rowcolor{Cluster_Red!15} 
-  \begin{tabular}[c]{@{}l@{}}Biosynthesis of the N-glycan precursor (dolichol lipid-linked oligosaccharide) \\ and transfer to a nascent protein \end{tabular} & $0.027$ & $0.065782$ \\ 
+  \textit{\begin{tabular}[c]{@{}l@{}}Biosynthesis of the N-glycan precursor (dolichol lipid-linked oligosaccharide) \\ and transfer to a nascent protein \end{tabular}} & $0.027$ & $0.065782$ \\ 
   \rowcolor{Cluster_Red!20} 
   Sialic acid metabolism & $0.027$ & $0.13413$ \\ 
   \rowcolor{Cluster_Red!15} 
@@ -2656,7 +2656,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
   \rowcolor{Cluster_Red!20} 
   Ion transport by P-type ATPases & $0.048$ & $0.66686$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Retinoid metabolism and transport & $0.051$ & $0.058715$ \\ 
+  \textit{Retinoid metabolism and transport} & $0.051$ & $0.058715$ \\ 
   \rowcolor{Cluster_Red!20} 
   \hline
 \end{tabular}
@@ -2668,7 +2668,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 }
 \end{table*}
 
-\begin{table*}[!Htp]
+\begin{table*}[!htp]
 \caption{Pathways for \textit{CDH1} partners from mtSLIPT in stomach and siRNA screen}
 \label{tab:pathway_perm_overlap_stad_mtSL}
 \centering
@@ -2676,7 +2676,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 \begin{threeparttable}
 \begin{tabular}{sl^c^c}
 \rowstyle{\bfseries}
-  Reactome Pathway & Over-representation & Permutation \\ 
+  \cellcolor{white} Reactome Pathway & Over-representation & Permutation \\ 
   \hline
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   SLBP independent Processing of Histone Pre-mRNAs & 1 & $>1.2349 \times 10^{-5}$ \\ 
@@ -2699,12 +2699,90 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
    \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
   HIV Infection & 1 & $>1.2349 \times 10^{-5}$ \\ 
    \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
-  
+  Cell Cycle & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Influenza Infection & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Influenza Life Cycle & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Influenza Viral RNA Transcription and Replication & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Neurotoxicity of clostridium toxins & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  p38MAPK events & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  SCF-beta-TrCP mediated degradation of Emi1 & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  SRP-dependent cotranslational protein targeting to membrane & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Vpu mediated degradation of CD4 & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Serotonin Neurotransmitter Release Cycle & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Acetylcholine Binding And Downstream Events & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Viral mRNA Translation & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Cobalamin (Cbl, vitamin B12) transport and metabolism & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  ERK/MAPK targets & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Vitamin B5 (pantothenate) metabolism & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Signaling by BMP & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Synthesis of Leukotrienes (LT) and Eoxins (EX) & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Separation of Sister Chromatids & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Mitotic Metaphase and Anaphase & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  TRP channels & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Defects in cobalamin (B12) metabolism & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Regulation by c-FLIP & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Attenuation phase & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Autodegradation of the E3 ubiquitin ligase COP1 & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Apoptotic cleavage of cell adhesion  proteins & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Negative regulation of TCF-dependent signaling by WNT ligand antagonists & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  PERK regulates gene expression & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Regulation of the Fanconi anemia pathway & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Passive transport by Aquaporins & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Lysosome Vesicle Biogenesis & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Zinc transporters & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Zinc influx into cells by the SLC39 gene family & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Asparagine N-linked glycosylation & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  AUF1 (hnRNP D0) destabilizes mRNA & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  Asymmetric localization of PCP proteins & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  degradation of DVL & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  CASP8 activity is inhibited & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Degradation of GLI1 by the proteasome & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
+  BBSome-mediated cargo-targeting to cilium & 1 & $>1.2349 \times 10^{-5}$ \\ 
+   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
+  Regulation of necroptotic cell death & 1 & $>1.2349 \times 10^{-5}$ \\ 
   \hline
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (FDR). Significant pathways are marked in bold (FDR $ < 0.05$) and italics (FDR $ < 0.1$).
+%Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (FDR). Significant pathways are marked in bold (FDR $ < 0.05$) and italics (FDR $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2712,9 +2790,9 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 
 \FloatBarrier
 
-\section{Metagene Analysis} \label{chapt3:metagene_stad_mtSL}
+\section{Metagene Analysis} \label{appendix:metagene_stad_mtSL}
 
-Metagene analysis was also performed for synthetic lethal candidates for \textit{CDH1} mutation in stomach cancer. These are described and compared to expression analysis in section \ref{chapt3:metagene_stad_exprSL}. 
+Metagene analysis was also performed for synthetic lethal candidates for \textit{CDH1} mutation in stomach cancer. These are described and compared to expression analysis in Section~\ref{appendix:metagene_stad_exprSL}. 
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from mtSLIPT in stomach cancer}
@@ -2724,10 +2802,10 @@ Metagene analysis was also performed for synthetic lethal candidates for \textit
 \begin{threeparttable}
 \begin{tabular}{sl^l^c^c^c^c^c}
 \rowstyle{\bfseries}
- Pathway & ID & Observed & Expected & $\chi^2$value & p-value & p-value (FDR) \\
+ \cellcolor{white} Pathway & ID & Observed & Expected & $\chi^2$value & p-value & p-value (FDR) \\
   \hline
   \rowcolor{black!10}
-  \cellcolor{white} Prostacyclin signalling through prostacyclin receptor & 392851 & 1 & 10.1 & 26.5 & $1.73 \times 10^{-6}$ & $0.00286$ \\ 
+  Prostacyclin signalling through prostacyclin receptor & 392851 & 1 & 10.1 & 26.5 & $1.73 \times 10^{-6}$ & $0.00286$ \\ 
   \rowcolor{black!5}
   Cell surface interactions at the vascular wall & 202733 & 3 & 10.1 & 21.1 & $2.61 \times 10^{-5}$ & $0.00642$ \\ 
   \rowcolor{black!10}
@@ -2937,3 +3015,333 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{threeparttable}
 }
 \end{table*}
+
+\FloatBarrier
+
+\chapter{Replication in cell line encyclopaedia} \label{appendix:CCLE}
+
+
+\begin{table*}[!ht]
+\caption{Candidate synthetic lethal gene partners of \textit{CDH1} from SLIPT in CCLE}
+\label{tab:gene_ccle_SL}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{>{\em}sl^c^c^c^c^c}
+\rowstyle{\bfseries}
+ \em{Gene} & Observed & Expected & $\chi^2$ value & p-value & p-value (FDR) \\ 
+  \hline
+  \rowcolor{black!10}
+  ZEB1 & 24 & 115 & 555 & $7.84 \times 10^{-119}$ & $3.62 \times 10^{-116}$ \\ 
+  \rowcolor{black!5}
+  RP11-620J15.3 & 17 & 115 & 471 & $1.54 \times 10^{-100}$ & $3.68 \times 10^{-98}$ \\ 
+  \rowcolor{black!10}
+  AP1S2 & 20 & 115 & 462 & $1.38 \times 10^{-98}$ & $3.07 \times 10^{-96}$ \\ 
+  \rowcolor{black!5}
+  VIM & 24 & 115 & 424 & $1.73 \times 10^{-90}$ & $3.06 \times 10^{-88}$ \\ 
+  \rowcolor{black!10}
+  CCDC88A & 24 & 115 & 418 & $3.94 \times 10^{-89}$ & $6.86 \times 10^{-87}$ \\ 
+  \rowcolor{black!5}
+  RECK & 28 & 115 & 416 & $8.23 \times 10^{-89}$ & $1.42 \times 10^{-86}$ \\ 
+  \rowcolor{black!10}
+  AP1M1 & 16 & 115 & 414 & $2.42 \times 10^{-88}$ & $4.06 \times 10^{-86}$ \\ 
+  \rowcolor{black!5}
+  ZEB2 & 23 & 115 & 396 & $2.32 \times 10^{-84}$ & $3.4 \times 10^{-82}$ \\ 
+  \rowcolor{black!10}
+  WIPF1 & 25 & 115 & 390 & $4.9 \times 10^{-83}$ & $6.74 \times 10^{-81}$ \\ 
+  \rowcolor{black!5}
+  SLC35B4 & 29 & 115 & 386 & $3.2 \times 10^{-82}$ & $4.38 \times 10^{-80}$ \\ 
+  \rowcolor{black!10}
+  SACS & 28 & 115 & 373 & $2.13 \times 10^{-79}$ & $2.7 \times 10^{-77}$ \\ 
+  \rowcolor{black!5}
+  ST3GAL2 & 25 & 115 & 351 & $9.7 \times 10^{-75}$ & $1.08 \times 10^{-72}$ \\ 
+  \rowcolor{black!10}
+  ATP8B2 & 38 & 115 & 341 & $1.53 \times 10^{-72}$ & $1.61 \times 10^{-70}$ \\ 
+  \rowcolor{black!5}
+  IFFO1 & 39 & 115 & 332 & $1.66 \times 10^{-70}$ & $1.65 \times 10^{-68}$ \\ 
+  \rowcolor{black!10}
+  EMP3 & 38 & 115 & 329 & $5.04 \times 10^{-70}$ & $4.95 \times 10^{-68}$ \\ 
+  \rowcolor{black!5}
+  LEPRE1 & 40 & 115 & 325 & $5.4 \times 10^{-69}$ & $5.22 \times 10^{-67}$ \\ 
+  \rowcolor{black!10}
+  STARD9 & 39 & 115 & 311 & $4.52 \times 10^{-66}$ & $3.96 \times 10^{-64}$ \\ 
+  \rowcolor{black!5}
+  DENND5A & 48 & 115 & 304 & $1.89 \times 10^{-64}$ & $1.59 \times 10^{-62}$ \\ 
+  \rowcolor{black!10}
+  SYT11 & 38 & 115 & 300 & $1.21 \times 10^{-63}$ & $9.89 \times 10^{-62}$ \\ 
+  \rowcolor{black!5}
+  EID2B & 38 & 115 & 299 & $1.99 \times 10^{-63}$ & $1.61 \times 10^{-61}$ \\ 
+  \rowcolor{black!10}
+  NXPE3 & 35 & 115 & 294 & $1.71 \times 10^{-62}$ & $1.35 \times 10^{-60}$ \\ 
+  \rowcolor{black!5}
+  STX2 & 49 & 115 & 293 & $3.83 \times 10^{-62}$ & $3 \times 10^{-60}$ \\ 
+  \rowcolor{black!10}
+  ARHGEF6 & 43 & 115 & 289 & $2.2 \times 10^{-61}$ & $1.71 \times 10^{-59}$ \\ 
+  \rowcolor{black!5}
+  KATNAL1 & 50 & 115 & 283 & $4.45 \times 10^{-60}$ & $3.38 \times 10^{-58}$ \\ 
+  \rowcolor{black!10}
+  ANXA6 & 37 & 115 & 282 & $8.92 \times 10^{-60}$ & $6.67 \times 10^{-58}$ \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+
+\begin{table*}[!ht]
+\caption{Candidate synthetic lethal gene partners of \textit{CDH1} from SLIPT in breast CCLE}
+\label{tab:gene_ccle_brca_SL}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{>{\em}sl^c^c^c^c^c}
+\rowstyle{\bfseries}
+ \em{Gene} & Observed & Expected & $\chi^2$ value & p-value & p-value (FDR) \\ 
+  \hline
+  \rowcolor{black!10}
+  MIR155HG & 1 & 6.78 & 31.5 & $2.41 \times 10^{-6}$ & 0.00371 \\ 
+  \rowcolor{black!5}
+  ENPP2 & 1 & 6.78 & 30.7 & $3.47 \times 10^{-6}$ & 0.00383 \\ 
+  \rowcolor{black!10}
+  DCLK2 & 3 & 6.78 & 28.3 & $1.08 \times 10^{-5}$ & 0.0071 \\ 
+  \rowcolor{black!5}
+  PID1 & 1 & 6.78 & 27.8 & $1.34 \times 10^{-5}$ & 0.00791 \\ 
+  \rowcolor{black!10}
+  SCFD2 & 5 & 6.78 & 27.7 & $1.42 \times 10^{-5}$ & 0.00791 \\ 
+  \rowcolor{black!5}
+  FAT4 & 4 & 6.78 & 27.3 & $1.69 \times 10^{-5}$ & 0.00865 \\ 
+  \rowcolor{black!10}
+  ILK & 1 & 6.78 & 26.9 & $2.04 \times 10^{-5}$ & 0.00884 \\ 
+  \rowcolor{black!5}
+  RWDD1 & 0 & 6.78 & 26.8 & $2.15 \times 10^{-5}$ & 0.00884 \\ 
+  \rowcolor{black!10}
+  RIC8A & 2 & 6.78 & 26.8 & $2.2 \times 10^{-5}$ & 0.00884 \\ 
+  \rowcolor{black!5}
+  F2RL2 & 1 & 6.78 & 26.6 & $2.34 \times 10^{-5}$ & 0.00901 \\ 
+  \rowcolor{black!10}
+  SDCBP & 5 & 6.78 & 25.9 & $3.26 \times 10^{-5}$ & 0.0108 \\ 
+  \rowcolor{black!5}
+  PPM1F & 4 & 6.78 & 25.8 & $3.41 \times 10^{-5}$ & 0.0108 \\ 
+  \rowcolor{black!10}
+  IKBIP & 5 & 6.78 & 25.8 & $3.49 \times 10^{-5}$ & 0.0108 \\ 
+  \rowcolor{black!5}
+  SPRED1 & 3 & 6.78 & 25.5 & $3.97 \times 10^{-5}$ & 0.0108 \\ 
+  \rowcolor{black!10}
+  RNH1 & 1 & 6.78 & 25.4 & $4.22 \times 10^{-5}$ & 0.0108 \\ 
+  \rowcolor{black!5}
+  SYDE1 & 3 & 6.78 & 25.4 & $4.22 \times 10^{-5}$ & 0.0108 \\ 
+  \rowcolor{black!10}
+  LINC00968 & 1 & 6.78 & 25.2 & $4.63 \times 10^{-5}$ & 0.0109 \\ 
+  \rowcolor{black!5}
+  ARHGEF10 & 5 & 6.78 & 24.5 & $6.22 \times 10^{-5}$ & 0.0116 \\ 
+  \rowcolor{black!10}
+  P4HA1 & 0 & 6.78 & 24.5 & $6.34 \times 10^{-5}$ & 0.0116 \\ 
+  \rowcolor{black!5}
+  AZI2 & 2 & 6.78 & 24.5 & $6.34 \times 10^{-5}$ & 0.0116 \\ 
+  \rowcolor{black!10}
+  TNFAIP6 & 2 & 6.78 & 24.5 & $6.34 \times 10^{-5}$ & 0.0116 \\ 
+  \rowcolor{black!5}
+  CD200 & 4 & 6.78 & 24.5 & $6.37 \times 10^{-5}$ & 0.0116 \\ 
+  \rowcolor{black!10}
+  SMPD1 & 1 & 6.78 & 24.4 & $6.67 \times 10^{-5}$ & 0.0116 \\ 
+  \rowcolor{black!5}
+  ATP6V1G2 & 3 & 6.78 & 24.2 & $7.33 \times 10^{-5}$ & 0.0123 \\ 
+  \rowcolor{black!10}
+  FGF2 & 4 & 6.78 & 24.1 & $7.49 \times 10^{-5}$ & 0.0123 \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+\begin{table*}[!ht]
+\caption{Candidate synthetic lethal gene partners of \textit{CDH1} from SLIPT in stomach CCLE}
+\label{tab:gene_ccle_stad_SL}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{>{\em}sl^c^c^c^c^c}
+\rowstyle{\bfseries}
+ \em{Gene} & Observed & Expected & $\chi^2$ value & $p-value$ & p-value (FDR) \\ 
+  \hline
+  \rowcolor{black!10}
+  ZEB1 & 1 & 4.45 & 36 & $2.84 \times 10^{-7}$ & 0.00175 \\ 
+  \rowcolor{black!5}
+  WDR47 & 0 & 4.45 & 26.7 & $2.3 \times 10^{-5}$ & 0.013 \\ 
+  \rowcolor{black!10}
+  KANK2 & 1 & 4.45 & 25.1 & $4.81 \times 10^{-5}$ & 0.0222 \\ 
+  \rowcolor{black!5}
+  LEPRE1 & 0 & 4.45 & 24.5 & $6.26 \times 10^{-5}$ & 0.0228 \\ 
+  \rowcolor{black!10}
+  KATNAL1 & 0 & 4.45 & 24.3 & $6.88 \times 10^{-5}$ & 0.0231 \\ 
+  \rowcolor{black!5}
+  TET1 & 0 & 4.45 & 23.9 & $8.23 \times 10^{-5}$ & 0.0249 \\ 
+  \rowcolor{black!10}
+  AP1S2 & 1 & 4.45 & 23.1 & $0.00012$ & 0.0273 \\ 
+  \rowcolor{black!5}
+  CDKN2C & 1 & 4.45 & 22.8 & $0.000136$ & 0.0292 \\ 
+  \rowcolor{black!10}
+  ARMC4 & 1 & 4.45 & 22.4 & $0.000164$ & 0.0315 \\ 
+  \rowcolor{black!5}
+  CSTF3 & 1 & 4.45 & 22.4 & $0.000166$ & 0.0315 \\ 
+  \rowcolor{black!10}
+  FAM216A & 1 & 4.45 & 22.4 & $0.000166$ & 0.0315 \\ 
+  \rowcolor{black!5}
+  ANKRD32 & 1 & 4.45 & 22.4 & $0.000166$ & 0.0315 \\ 
+  \rowcolor{black!10}
+  WDR35 & 1 & 4.45 & 22.4 & $0.000169$ & 0.0315 \\ 
+  \rowcolor{black!5}
+  ECI2 & 0 & 4.45 & 21.7 & $0.000232$ & 0.0378 \\ 
+  \rowcolor{black!10}
+  SAMD8 & 0 & 4.45 & 21.7 & $0.000232$ & 0.0378 \\ 
+  \rowcolor{black!5}
+  CHST12 & 0 & 4.45 & 21.7 & $0.000232$ & 0.0378 \\ 
+  \rowcolor{black!10}
+  RPL23AP32 & 0 & 4.45 & 21.7 & $0.000232$ & 0.0378 \\ 
+  \rowcolor{black!5}
+  STARD9 & 1 & 4.45 & 21.7 & $0.000232$ & 0.0378 \\ 
+  \rowcolor{black!10}
+  MCM8 & 0 & 4.45 & 21.5 & $0.000255$ & 0.0379 \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+
+
+\begin{table*}[!ht]
+\caption{Pathways for \textit{CDH1} partners from SLIPT in stomach CCLE}
+\label{tab:pathway_ccle_stad_exprSL}
+\centering
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccc}
+  \hline
+  \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
+  \hline
+  \rowcolor{black!10}
+  Nef mediated downregulation of MHC class I complex cell surface expression &  10 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Unwinding of DNA &  11 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  Processing of Intronless Pre-mRNAs &  13 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  E2F mediated regulation of DNA replication &  20 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  Chondroitin sulfate biosynthesis &  20 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Post-Elongation Processing of Intronless pre-mRNA &  21 &   1 &   1 \\ 
+  \rowcolor{black!10}
+ \begin{tabular}[c]{@{}l@{}} Nef-mediates down modulation of cell surface receptors by recruiting them \\ to clathrin adapters \end{tabular} &  21 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Processing of Capped Intronless Pre-mRNA &  21 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  Post-Elongation Processing of Intron-Containing pre-mRNA &  23 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Activation of the pre-replicative complex &  23 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  mRNA 3'-end processing &  23 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Golgi Associated Vesicle Biogenesis &  24 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  Lysosome Vesicle Biogenesis &  25 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Oncogene Induced Senescence &  27 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  The role of Nef in HIV-1 replication and disease pathogenesis &  28 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Cyclin D associated events in G1 &  29 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  G1 Phase &  29 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  Cleavage of Growing Transcript in the Termination Region &  31 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  Activation of ATR in response to replication stress &  31 &   1 &   1 \\ 
+  \rowcolor{black!5}
+  DNA strand elongation &  31 &   1 &   1 \\ 
+  \rowcolor{black!10}
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+
+\begin{table*}[!ht]
+\caption{Pathways for \textit{CDH1} partners from SLIPT in breast and stomach CCLE}
+\label{tab:pathway_ccle_breast_stad_exprSL}
+\centering
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccc}
+  \hline
+  \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
+  \hline
+  \rowcolor{black!10}
+  Collagen formation &  66 &   8 &  $1.1 \times 10^{-7}$ \\ 
+  \rowcolor{black!5}
+  Glycosaminoglycan metabolism & 111 &  11 & $1.1 \times 10^{-7}$ \\ 
+  \rowcolor{black!10}
+  Extracellular matrix organization & 236 &  20 & $1.1 \times 10^{-7}$ \\ 
+  \rowcolor{black!5}
+  Collagen biosynthesis and modifying enzymes &  55 &   7 & $1.7 \times 10^{-7}$ \\ 
+  \rowcolor{black!10}
+  Keratan sulfate biosynthesis &  28 &   5 & $2.2 \times 10^{-7}$ \\ 
+  \rowcolor{black!5}
+  Keratan sulfate/keratin metabolism &  32 &   5 & $7.5 \times 10^{-7}$ \\ 
+  \rowcolor{black!10}
+  ECM proteoglycans &  65 &   7 & $1.1 \times 10^{-6}$ \\ 
+  \rowcolor{black!5}
+  Non-integrin membrane-ECM interactions &  52 &   6 & $2.0 \times 10^{-6}$ \\ 
+  \rowcolor{black!10}
+  Cell junction organization &  71 &   7 & $3.0 \times 10^{-6}$ \\ 
+  \rowcolor{black!5}
+  Assembly of collagen fibrils and other multimeric structures &  39 &   5 & $3.6 \times 10^{-6}$ \\ 
+  \rowcolor{black!10}
+  Post-chaperonin tubulin folding pathway &  14 &   3 & $1.7 \times 10^{-5}$ \\ 
+  \rowcolor{black!5}
+  Adherens junctions interactions &  29 &   4 & $1.7 \times 10^{-5}$ \\ 
+  \rowcolor{black!10}
+  Cell-Cell communication & 118 &   9 & $1.7 \times 10^{-5}$ \\ 
+  \rowcolor{black!5}
+  Sialic acid metabolism &  31 &   4 & $2.5 \times 10^{-5}$ \\ 
+  \rowcolor{black!10}
+  Synthesis and interconversion of nucleotide di- and triphosphates &  16 &   3 & $3.1 \times 10^{-5}$ \\ 
+  \rowcolor{black!5}
+  Transport to the Golgi and subsequent modification &  34 &   4 & $4.8 \times 10^{-5}$ \\ 
+  \rowcolor{black!10}
+  Asparagine N-linked glycosylation & 113 &   8 & $7.8 \times 10^{-5}$ \\ 
+  \rowcolor{black!5}
+  Elastic fibre formation &  37 &   4 & $8.5 \times 10^{-5}$ \\ 
+  \rowcolor{black!10}
+  L1CAM interactions &  77 &   6 & $9.5 \times 10^{-5}$ \\ 
+  \rowcolor{black!5}
+  Signal transduction by L1 &  20 &   3 & $9.5 \times 10^{-5}$ \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+\FloatBarrier
