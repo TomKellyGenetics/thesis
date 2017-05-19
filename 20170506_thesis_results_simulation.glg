@@ -1,32 +1,13 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 06.05.2017  22:48:51
-;; Indexstyle: "20170506_thesis_results_simulation.xdy", Rawindex: "/tmp/bojdsDshfm", Output: "20170506_thesis_results_simulation.gls"
-
-ERROR: "A" does not name a letter group in
-(DEFINE-LETTER-GROUP "glsnumbers" :PREFIXES
- ("0" "1" "2" "3" "4" "5" "6" "7" "8" "9") :BEFORE "A")
-
-*** Unable to execute: '"xindy"    -I xindy -M "20170506_thesis_results_simulation" -t "20170506_thesis_results_simulation.glg" -o "20170506_thesis_results_simulation.gls" "20170506_thesis_results_simulation.glo"' ***
-
-Failed with error code 1.
-
-Status report:
-
-Opening logfile "20170506_thesis_results_simulation.glg" (done)
-Reading indexstyle...
-Loading module "20170506_thesis_results_simulation.xdy"...
-Loading module "tex.xdy"...
-Finished loading module "tex.xdy".
-
-Error in line 432:
+;; at 18.05.2017  16:27:58
+;; Indexstyle: "/tmp/RMiZ1qrIAb", Rawindex: "/tmp/x2wuNlQR_6", Output: "20170506_thesis_results_simulation.gls"
 
 
-; additional letter groups
+Building indexentry-tree:
+Hierdepth of index is :TREE
 
-(define-letter-group "glsnumbers"
-   :prefixes ("0" "1" "2" "3" "4" "5" "6" "7" "8" "9")
-   :before "A")
-ERROR: "A" does not name a letter group in
-(DEFINE-LETTER-GROUP "glsnumbers" :PREFIXES
- ("0" "1" "2" "3" "4" "5" "6" "7" "8" "9") :BEFORE "A")
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 
+Forming letter-groups:
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "Ðí¼Ú¤—Ú¨† ´—Ú¤€´" -> "S"
