@@ -83,10 +83,7 @@ The synthetic lethal detection procedures were also tested with 1000 simulations
 
 \FloatBarrier
 
-As discussed in Section~\ref{chapt2:simulation_mvtnorm_query_cor}, postively correlated genes (with the query gene) have an impact of on the performance of synthetic lethal detection. \gls{SLIPT} able to distinguish these from synthetic lethal partners and hence has a higher specificity in datasets which include postively correlated genes with the query gene (as expected in gene expression data). The synthetic lethal detection procedures were compared with 10,000 simulations of a small dataset of 100 genes (with 5 correlated with the query gene) and 1000 samples otherwise without correlation structure between genes. As shown in Figure~\ref{fig:simulation1108_query_cor_Graph5All5SL}, this specficity is reflected in the increased \gls{AUROC} performance values for \gls{SLIPT} (in contrast to Figure \ref{fig:simulation1108_Graph5All5SL}). This specficity can be attributed to the directional criteria (as described in Section~\ref{methods:SLIPT}) since the $\chi^2$-test alone performs comparatively poorly with positively correlated genes.
-
-
-    \begin{figure*}[!htb]
+    \begin{figure*}[!tb]
     \begin{mdframed}
     \begin{center}
 %
@@ -100,12 +97,15 @@ As discussed in Section~\ref{chapt2:simulation_mvtnorm_query_cor}, postively cor
             \includegraphics[width=0.6\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png}}
         %}%
       \end{center}
-      \caption[Performance on Graph Structures]{\textbf{Performance on Graph Structures}. Synthetic Lethal Detection Compared with $\chi^2$ with query correlation genes.}
+       \caption[Performance of $\chi^2$ and SLIPT across quantiles with query correlation]{\textbf{Performance of $\chi^2$ and SLIPT across quantiles with query correlation}. Synthetic lethal detection (of 5 genes in 100 including 5 query correlated) with quantiles as in axis labels. The line plot is coloured according to the legend. \gls{SLIPT} performs consistently higher than $\chi^2$ due to higher specificity. Negative correlation performed modestly.}
     \label{fig:simulation1108_query_cor_Graph5All5SL}
     \end{mdframed}
     \end{figure*}
 
-The synthetic lethal detection procedures were also compared with 1000 simulations of a larger dataset of 20,000 genes (with 1000 correlated with the query gene) and 1000 samples otherwise without correlation structure between genes. This simulation increases the number of genes (and proportion of negative genes) to those feasible in a human gene expression dataset while maintaining a comparable 5\% of postively correlated genes. \gls{SLIPT} still outperforms $\chi^2$ or negative correlation and is optimal at the 3-quantile. However, the difference between \gls{SLIPT} and $\chi^2$ were less pronounced in a larger dataset since the sheer number of negative genes (as potential false postives) affects the specficity of \gls{SLIPT} which distinguishes it from $\chi^2$-test alone and is an important consideration in large-scale genomics analysis.
+    
+As discussed in Section~\ref{chapt2:simulation_mvtnorm_query_cor}, postively correlated genes (with the query gene) have an impact of on the performance of synthetic lethal detection. \gls{SLIPT} able to distinguish these from synthetic lethal partners and hence has a higher specificity in datasets which include postively correlated genes with the query gene (as expected in gene expression data). The synthetic lethal detection procedures were compared with 10,000 simulations of a small dataset of 100 genes (with 5 correlated with the query gene) and 1000 samples otherwise without correlation structure between genes. As shown in Figure~\ref{fig:simulation1108_query_cor_Graph5All5SL}, this specficity is reflected in the increased \gls{AUROC} performance values for \gls{SLIPT} (in contrast to Figure \ref{fig:simulation1108_Graph5All5SL}). This specficity can be attributed to the directional criteria (as described in Section~\ref{methods:SLIPT}) since the $\chi^2$-test alone performs comparatively poorly with positively correlated genes.
+    
+The synthetic lethal detection procedures were also compared with 1000 simulations of a larger dataset of 20,000 genes (with 1000 correlated with the query gene) and 1000 samples otherwise without correlation structure between genes. This simulation increases the number of genes (and proportion of negative genes) to those feasible in a human gene expression dataset while maintaining a comparable 5\% of postively correlated genes. As shown in Figure~\ref{fig:simulation1107_query_cor_Graph5All5SL}, \gls{SLIPT} still outperforms $\chi^2$ or negative correlation and is optimal at the 3-quantile. However, the difference between \gls{SLIPT} and $\chi^2$ were less pronounced in a larger dataset since the sheer number of negative genes (as potential false postives) affects the specficity of \gls{SLIPT} which distinguishes it from $\chi^2$-test alone and is an important consideration in large-scale genomics analysis.
 
    
     \begin{figure*}[!tb]
@@ -122,26 +122,29 @@ The synthetic lethal detection procedures were also compared with 1000 simulatio
             \includegraphics[width=0.6\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png}}
         %}%
       \end{center}
-      \caption[Performance on Graph Structures]{\textbf{Performance on Graph Structures}. Synthetic Lethal Detection Compared with $\chi^2$ with query correlation and more genes.}
+      \caption[Performance of $\chi^2$ and SLIPT across quantiles with query correlation and more genes]{\textbf{Performance of $\chi^2$ and SLIPT across quantiles with query correlation and more}. Synthetic lethal detection (of 5 genes in 20,000 including 1000 query correlated) with quantiles as in axis labels. The line plot is coloured according to the legend. \gls{SLIPT} performs consistently higher than $\chi^2$ due to higher specificity. Negative correlation performed modestly.}
     \label{fig:simulation1107_query_cor_Graph5All5SL}
     \end{mdframed}
     \end{figure*}
 
 Nevertheless, \gls{SLIPT} with 3-quantiles (as performed throughout Chapters~\ref{chap:SLIPT} and~\ref{chap:Pathways}), has higher performance than other quantiles, particularly with postive correlations (replicating the Section~\ref{chapt2:simulation_mvtnorm_query_cor}). These findings hold across different numbers of underlying synthetic lethal genes (as shown in Figures~\ref{fig:simulation1108_query_cor_Graph5Alllineplot} and ~\ref{fig:simulation1107_query_cor_Graph5Alllineplot}).
 
-Together these results support the use of \gls{SLIPT}, particularly the use of quantiles as thresholds for gene function and specific use of 3-quantiles which perform well compared to other quantiles. A particular concern in the design of \gls{SLIPT} for expression data was sufficient samples size when the data is divided into quantiles. The \gls{SLIPT} methdology further peforms better for 3-quantiles (and other moderate values), irrespective of sample size or p-value threshold as \gls{AUROC} values are independent from them. Such quantiles ensure that there are a sufficent number of samples expected below and above them so that deviations from these are statistically detectable. Thhese quantiles were also optimal for the $\chi^2$ as both significance and the \gls{SLIPT} directional conditions rely use the same expected values.   
-
-This categorical approach for gene function to detect synthetic lethality also outperforms correlations which use continuous data directly. Correlation performing poorly as a synthetic lethal detection strategy consistent with there not necessarily being a relationship between syntethic lethal partners which can be in distinct biological pathways, expressed at different times or in different cell types. Nevertheless, correlation is among the alternative detection methods considered in further detail. 
+Together these results support the use of \gls{SLIPT}, particularly the use of quantiles as thresholds for gene function and specific use of 3-quantiles which perform well compared to other quantiles. A particular concern in the design of \gls{SLIPT} for expression data was sufficient samples size when the data is divided into quantiles. The \gls{SLIPT} methdology further peforms better for 3-quantiles (and other moderate values), irrespective of sample size or p-value threshold as \gls{AUROC} values are independent from them. Such quantiles ensure that there are a sufficent number of samples expected below and above them so that deviations from these are statistically detectable. Thhese quantiles were also optimal for the $\chi^2$ as both significance and the \gls{SLIPT} directional conditions rely use the same expected values.
 
 \FloatBarrier
 
 \subsection{Alternative Synthetic Lethal Detection Strategies}
 
+The categorical approach for gene function to detect synthetic lethality also outperforms correlations which use continuous data directly. Correlation performing poorly as a synthetic lethal detection strategy consistent with there not necessarily being a relationship between synthetic lethal partners which can be in distinct biological pathways, expressed at different times or in different cell types. Nevertheless, correlation is among the alternative detection methods considered in further detail.
+
+The \gls{BiSEp} R package \citep{Wappett2014} for using bimodality to detect synthetic lethality \citep{Wappett2016} and linear models were also considered. These statistical methods span a range of computational approaches to detecting synthetic lethality and serve to compare alternatives to \gls{SLIPT}, supporting it's design (see Section~\ref{methods:SLIPT}) and application (in Chapters~\ref{chap:SLIPT} and~\ref{chap:Pathways}). Although these are intended not intended to be a comprehensive benchmarking of existing synthetic lethal tools, implementing other synthetic lethal detection software is out of the scope of this project. However, these comparisons are able provide supporting data from statistical modelling and simulations for the viability of the \gls{SLIPT} methodology for syntetic lethal discovery in cancer (as demonstrated in Chapter~\ref{chap:SLIPT}) and further applications.
+
 \subsubsection{Correlation for Synthetic Lethal Detection}
+\label{chap5:compare_correlation}
 
 \FloatBarrier
 
-Text
+As shown in Section~\ref{chap5:compare_chisq}, negative (Pearson's) correlation performed better than positive correlation, indicating the inverse relationships were more predictive of synthetic lethality. However, neither correlation approach performed as well as \gls{SLIPT} or the $\chi^2$ test as a predictor of synthetic lethal gene partners. Although negative correlation still often performed considerably better than random chance.
 
     \begin{figure*}[!htb]
     \begin{mdframed}
@@ -154,13 +157,35 @@ Text
     \label{fig:simulation1205_randx_Graph4cfnCor}
     \end{mdframed}
     \end{figure*}
+    
+    
+Negative correlation was compared directly to the \gls{SLIPT} methdology (as described in Section~\ref{methods:SLIPT}) across numbers of known synthetic lethal partners and sample size (ranging from 500 to 5000). This comparison used 1000 simulations of a dataset with 20,000 genes and synthetic lethal genes from within a network (sampled as in Section~\ref{methods:graphsim})) with a 0.8 correlation between adjacent genes (as explored in more detail in Section~\ref{chap5:graphsim}). In a direct comparison of \gls{SLIPT} and negative correation (shown in Figure~\ref{fig:simulation1205_randx_Graph4cfnCor}), \gls{SLIPT} consistently has higher performance insimulated data across parameter values and (inverse) correlation-based approaches perform modestly in comparison. 
 
+[Add Other Graphs to Appendix?]
+
+
+Both \gls{SLIPT} and correlation had poorer performance with increasing numbers of the synthetic lethal genes to detect while they had higher performance in higher sample sizes as expected (as previously observed for \gls{SLIPT} in Section~\ref{chapt2:simulation_2015}). Thus the issue with detection of greater numbers of synthetic lethal genes is not specfic to \gls{SLIPT} but occurs across computational methods of synthetic lethal discovery in (simulated) expression data and likely stems from cryptic higher-order synthetic lethal interactions (as conservatively assumed in Section~\ref{methods:SL_Model}). 
     
 \FloatBarrier
 
 \subsubsection{Testing for Bimodality with BiSEp}
+\label{chap5:compare_bisep}
 
-Computer says No
+Exhaustive attempts were also made to compare \gls{SLIPT} to the \gls{BiSEp} methodology \citep{Wappett2016}, a statistical approach to identify synthetic lethal gene pairs from mutually exclusive relationships using bimodal distributions. This synthetic lethal detection methodology is also designed for expression analysis in cancer and is readily available as an (open-source) R package \citep{Wappett2014}, a practice which facilitates adoption and testing of the methdology on the same datasets and simulations procedures as previously used for \gls{SLIPT}.
+
+The \gls{BiSEp} package is designed for global testing of all potential gene pairs in the genome for synthetic lethality rather than focusing on the search space of  potential partners of the query gene. This approach was unable to detect synthetic lethal gene pairs in the TCGA breast cancer expression dataset \citep{TCGA2012}. However, this may be due to stringent thresholds under the multiple testing of millions of potential gene pairs.
+
+For a direct comparison with the query-based \gls{SLIPT} approach, the source code of the \gls{BiSEp} R functions were modified to test solely for the partners of a specific gene. This approach was still unable to detect synthetic lethal partners of \textit{CDH1} in TCGA breast cancer expression data \citep{TCGA2012}, even with the detection thresholds for bimodality and significance greatly relaxed from those which the package defaults to.
+
+To circumvent multiple testing issues, \gls{BiSEp} only tests gene pairs for synthetic lethality between genes with a detectable bimodal distribution. However, even with relaxed thresholds bimodal distributions were not detectable in the normalised TCGA data \citep{TCGA2012}. Such normalisation \cite{limma} is standard practice for expression datasets generated from microarrays or \gls{RNA-Seq} and therefore \gls{BiSEp} may not be appropriate to apply to this data. However, it is noted that \gls{BiSEp} may also use other data types such as DNA copy number or cell line data for which it may be more applicable \cite{Wappett2016}.
+
+Nevertheless, attempts were made to test \gls{BiSEp} on simulated datasets with underlying synthetic lethal genes (using the procedures described in Sections~\ref{methods:simulating_SL} and~\ref{methods:graphsim}). However, \gls{BiSEp} was also unable to detect genes with bimodal distributions of genes (and thus unable to detect synthetic lethality) in a limited number of simulations. Another consideration is that \gls{BiSEp} takes considerably more time to compute predictions than \gls{SLIPT} or $\chi^2$ which limited the number of simulations that were feasible and made it difficult to apply across parameters in the simulation pipeline (even when using supercomputing infrastructure as discussed in Section~\ref{methods:HPC}).
+
+The computationally intensive nature of the \gls{BiSEp} procedure does not appear to be the issue for detecting synthetic lethal genes in TCGA data or simulations, although it has made more extensive simulations challenging. Rather \gls{BiSEp} is not suitable in either case since the TCGA data is normalised with \texttt{voom} \citep{limma} and simulated data is generated by sampling from a multivariate normal distribution. In either case, even subtle bimodal signatures in expression data were not consistently detectable or sufficient to detect synthetic lethality. The \gls{BiSEp} methdology may perform better on other data types but it cannot be directly compared with the results for \gls{SLIPT} throughout this thesis which have used normalised or (multivariate) normally distributed data. Since it requires bimodal distributions, \gls{BiSEp} is not suitable for stringently normalised expression data nor would it be expected to perform on (ranked) pathway metagenes. Thus \gls{SLIPT} represents a distinct approach more suitable for these data types whereas \gls{BiSEp} may be applicable to other applications in which bimodal distributions are more frequent.
+
+This investigation also demonstrates that implementing scientific software from other research groups is not a trivial exercise, even when released as an open-source R package. Therefore, the above results are sufficient to evaluate \gls{SLIPT} and compare it to other statistical rationales. An comprehensive comparison to contemporary synthetic lethal detection approaches (and those released in the future) or further benchmarking is left to an impartial researcher to evaluate and is outside the scope of this thesis. The above findings show that the \gls{SLIPT} approach is able to detect synthetic lethal genes in simulated data with comparable or better performance than a range of distinct statistical techniques and was appropriate for use throughout this thesis.  
+
+\iffalse
 
 \begin{itemize}
  \item Designed for global SL
@@ -174,9 +199,20 @@ Computer says No
 \end{itemize}
 
 \subsubsubsection{Implementation and Computation Time}
-Compare runtime?
+\label{chap5:compare_compute_time}
+[Compare runtime?]
+
+\begin{itemize}
+ \item ChiSQ
+ \item SLIPT
+ \item Correlation
+ \item BiSEp
+ \item LM/GLM
+\end{itemize}
+
 
 \subsubsection{Testing Synthetic Lethal Genes with Linear Models}
+\label{chap5:compare_linear_model}
 [Move to future Dir??]
 
 \begin{itemize}
@@ -185,6 +221,9 @@ Compare runtime?
  \item All attempts: linear, GLM, and linear polynomial (quadratic, cubic, or quintic) underperform \gls{SLIPT}, similar to Pearson's correlation results
  \item Linear models and regression may still be an avenue for further detection of SL (e.g., with Bayes)
 \end{itemize}
+\fi
+
+[Discuss linear models?]
 
 %\subsection{Linear models}
 
