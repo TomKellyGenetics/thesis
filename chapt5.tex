@@ -105,7 +105,7 @@ The synthetic lethal detection procedures were also tested with 1000 simulations
     
 As discussed in Section~\ref{chapt2:simulation_mvtnorm_query_cor}, positively correlated genes (with the query gene) have an impact of on the performance of synthetic lethal detection. \gls{SLIPT} able to distinguish these from synthetic lethal partners and hence has a higher specificity in datasets which include positively correlated genes with the query gene (as expected in gene expression data). The synthetic lethal detection procedures were compared with 10,000 simulations of a small dataset of 100 genes (with 5 correlated with the query gene) and 1000 samples otherwise without correlation structure between genes. As shown in Figure~\ref{fig:simulation1108_query_cor_Graph5All5SL}, this specificity is reflected in the increased \gls{AUROC} performance values for \gls{SLIPT} (in contrast to Figure \ref{fig:simulation1108_Graph5All5SL}). This specificity can be attributed to the directional criteria (as described in Section~\ref{methods:SLIPT}) since the $\chi^2$-test alone performs comparatively poorly with positively correlated genes.
     
-The synthetic lethal detection procedures were also compared with 1000 simulations of a larger dataset of 20,000 genes (with 1000 correlated with the query gene) and 1000 samples otherwise without correlation structure between genes. This simulation increases the number of genes (and proportion of negative genes) to those feasible in a human gene expression dataset while maintaining a comparable 5\% of positively correlated genes. As shown in Figure~\ref{fig:simulation1107_query_cor_Graph5All5SL}, \gls{SLIPT} still outperforms $\chi^2$ or negative correlation and is optimal at the 3-quantile. However, the difference between \gls{SLIPT} and $\chi^2$ were less pronounced in a larger dataset since the sheer number of negative genes (as potential false postives) affects the specificity of \gls{SLIPT} which distinguishes it from $\chi^2$-test alone and is an important consideration in large-scale genomics analysis.
+The synthetic lethal detection procedures were also compared with 1000 simulations of a larger dataset of 20,000 genes (with 1000 correlated with the query gene) and 1000 samples otherwise without correlation structure between genes. This simulation increases the number of genes (and proportion of negative genes) to those feasible in a human gene expression dataset while maintaining a comparable 5\% of positively correlated genes. As shown in Figure~\ref{fig:simulation1107_query_cor_Graph5All5SL}, \gls{SLIPT} still outperforms $\chi^2$ or negative correlation and is optimal at the 3-quantile. However, the difference between \gls{SLIPT} and $\chi^2$ were less pronounced in a larger dataset since the sheer number of negative genes (as potential false positives) affects the specificity of \gls{SLIPT} which distinguishes it from $\chi^2$-test alone and is an important consideration in large-scale genomics analysis.
 
    
     \begin{figure*}[!tb]
@@ -578,10 +578,11 @@ These findings were replicated with larger more complex graph structures with in
 
 While synthetic lethal genes are distinguishable in principle from those highly positively correlated with them (as shown by \gls{ROC} analysis), they are not necessarily distinguished as reflected in low specificity and high false discovery rate in poorly performing simulations throughout this section. Although the negative correlations are not subject to the same issue, they sometimes perturb the correlation structure between synthetic lethal partner genes making it difficult to detect many of them. Thus far, synthetic lethal genes have been selected randomly which is a limited approach. To examine the impact of pathway relationships in more more detail, specific genes will be selected to be synthetic lethal in a network to demonstrate the impact of these genes being synthetic lethal in the detection of neighbouring genes in the pathway network, under graph structure activating and inhibiting relationships.
 
-%Graph 4 - RUN1109 / 1206 STR
-%Graph4i?
+For instance, detection of a synthetic lethal genes in an activating graph structure (as shown in Figure~\ref{fig:simulation1206_Str_randx_Graph4D:Graph4}) is straightforward: the $\chi^2$ values across simulations are clearly distinguishable from non synthetic lethal genes (shown in Figure~\ref{fig:simulation1206_Str_randx_Graph4D:vioplot}). A small number of simulations were performed for each gene being designated as synthetic lethal. In each case (of each gene being the synthetic lethal partner), the synthetic lethal gene was detectable with highest $\chi^2$ value, being distinguishable amongst 20,000 genes including the highly correlated graph network (as shown in Figure~\ref{fig:simulation1206_Str_randx_Graph4}).
 
-\begin{figure*}[!ht]
+
+\iffalse
+\begin{figure*}[!htb]
 \begin{mdframed}
      \begin{center}
       \resizebox{0.8 \textwidth}{!}{
@@ -589,73 +590,98 @@ While synthetic lethal genes are distinguishable in principle from those highly 
       \end{center}
       \caption[Performance is affected by inhibition in graphs]{\small \textbf{Performance is affected by inhibition in graphs.} The gene category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non-SL-correlated, and green for non-SL) ordered by $\chi^2$ signed by the \gls{SLIPT} directional condition is shown across simulations. For each of 1--10 SL partners, 10 simulations demonstrate that the increasing numbers of SL partners become harder detect. The $\chi^2$ values show a clear threshold for SL and correlated genes when there are fewer of them, distinguishable from correlated genes in this case.}
 \end{mdframed}
-\label{fig:simulation1206_Str_randx_Graph4D}
+%\label{fig:simulation1206_Str_randx_Graph4D}
 \end{figure*}
+\fi
 
-\begin{figure*}[!ht]
+\begin{figure*}[!htb]
 \begin{mdframed}
      \begin{center}
-       \subcaptionbox{Graph Structure}{%
-           \label{fig:simulation1206_Str_randx_Graph4D:Graph4}
-           \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D".pdf}}
+       \subcaptionbox{Graph Structure \label{fig:simulation1206_Str_randx_Graph4D:Graph4}}{%
+           \raisebox{0.15\textwidth}{
+           \includegraphics[width=0.3\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D".pdf}}
+           }
         }%
-       \subcaptionbox{Graph Structure}{%
-           \label{fig:simulation1206_Str_randx_Graph4D:vioplot}
-           \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf}}
+       \subcaptionbox{$\chi^2$ distribution for each gene \label{fig:simulation1206_Str_randx_Graph4D:vioplot}}{%
+           \includegraphics[width=0.6\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf}}
         }%
        \end{center}
-      \caption[Performance is affected by inhibition in graphs]{\small \textbf{Performance is affected by inhibition in graphs.} The gene category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non-SL-correlated, and green for non-SL) ordered by $\chi^2$ signed by the \gls{SLIPT} directional condition is shown across simulations. For each of 1--10 SL partners, 10 simulations demonstrate that the increasing numbers of SL partners become harder detect. The $\chi^2$ values show a clear threshold for SL and correlated genes when there are fewer of them, distinguishable from correlated genes in this case.}
+      \caption[Detection of Synthetic Lethality within a Graph Structure]{\small \textbf{Detection of Synthetic Lethality within a Graph Structure.} The gene ``D'' was designated to be synthetic lethal and the $\chi^2$ value from \gls{SLIPT} was computed for each gene across the graph structure. The $\chi^2$ values were computed in 100 simulations of datasets of 20,000 genes including the graph structure and 1000 samples.}
 \end{mdframed}
+\addtocounter{figure}{-1}
+\phantomcaption
 \label{fig:simulation1206_Str_randx_Graph4D}
 \end{figure*}
 
+
+This is consistent with previous observations that \gls{SLIPT} performed optimally for a single synthetic lethal partner in this network (in Figure~\ref{fig:simulation1205_randx_Graph4}). Despite optimal performance in a \gls{ROC} curve irrespective of detection threshold, many of the highly correlated genes would be detected as false positives using a conventional p-value threshold (even if adjusted by FDR) from a $\chi^2$ test with 4 degrees of freedom as performed by \gls{SLIPT} (as described in Section~\ref{methods:SLIPT}). In particular, the genes that are adjacent to the synthetic lethal gene ``D'' within the graph structure exhibited high test statistics across simulations which would often be reported as false positives (as shown in Figure~\ref{fig:simulation1206_Str_randx_Graph4D}). This is not specific to example of gene ``D'', with the neighbouring genes exhibiting higher $\chi^2$ test statistics for each gene in the network when it is designated as the synthetic lethal partner (as shown in Figure~\ref{fig:simulation1206_Str_randx_Graph4}).
+
+Thus the synthetic lethal signal propagates from the true synthetic lethal gene throughout the network such genes nearer to the true synthetic lethal gene (more highly correlated) have higher test statistics and are more likely to be detected by \gls{SLIPT} as false positives. This tendency for adjacent genes to be detected as synthetic lethal false positives is consistent with the synthetic lethal pathways being more concordant between \gls{SLIPT} in TCGA data \citep{TCGA2012} and the \gls{siRNA} screen \citep{Telford2015} than individual gene results (in Chapter~\ref{chap:SLIPT}). False positive genes are therefore still more likely to be involved in a synthetic lethal pathway by being correlated with a true synthetic lethal gene and synthetic lethal pathways are likely to have many genes detected by \gls{SLIPT} giving a consensus of evidence, supporting the pathway over-representation approach in particular which may account for how it differs from pathway metagenes. Furthermore, \gls{SLIPT} is still viable to detect true synthetic lethal partners or prioritise those most likely to be experimentally validated since those with the strongest support (i.e, higher $\chi^2$ values and more significant p-values) are more likely to be the underlying synthetic lethal gene.
+
+In contrast, the immediately adjacent genes did not have elevated $\chi^2$ test statistics indicating synthetic lethality nor a significant inverse effect (as shown in Figure~\ref{fig:simulation1206_Str_randx_Graph4D2}). Similar simulations were performed a graph structure with inhibiting relationships within a dataset of 20,000 genes. The adjacent genes to the synthetic lethal gene ``D'' did not have elevated $\chi^2$ values and therefore true synthetic lethal partners were highly distinguishable from non synthetic lethal genes with inhibiting relationships. This was not specific to ``D'' and was shown across any gene in the graph structure if it were designated to be the synthetic lethal partner of the query gene (shown in Figure~\ref{fig:simulation1206_Str_randx_Graph4i}). This is consistent with the detection of many genes involved in kinase signalling, gene regulation, and other known cancer pathways (in Chapter~\ref{chap:SLIPT}) which frequently have inhibitory steps. Therefore \gls{SLIPT} is an appropriate approach to distinguish synthetic lethal partners in biological pathways relevant to cancer growth and inhibition.
+
+
+\iffalse
 \begin{figure*}[!ht]
 \begin{mdframed}
      \begin{center}
        \subcaptionbox{Graph Structure}{%
+           \raisebox{0.15\textwidth}{
            \label{fig:simulation1206_Str_randx_Graph4iD:Graph4i}
-           \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD".pdf}}
+           \includegraphics[width=0.3\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD".pdf}}
+           }
         }%
-       \subcaptionbox{Graph Structure}{%
+       \subcaptionbox{$\chi^2$ distribution for each gene}{%
            \label{fig:simulation1206_Str_randx_Graph4iD:vioplot}
-           \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf}}
+           \includegraphics[width=0.6\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf}}
         }%
        \end{center}
-      \caption[Performance is affected by inhibition in graphs]{\small \textbf{Performance is affected by inhibition in graphs.} The gene category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non-SL-correlated, and green for non-SL) ordered by $\chi^2$ signed by the \gls{SLIPT} directional condition is shown across simulations. For each of 1--10 SL partners, 10 simulations demonstrate that the increasing numbers of SL partners become harder detect. The $\chi^2$ values show a clear threshold for SL and correlated genes when there are fewer of them, distinguishable from correlated genes in this case.}
+      \caption[Detection of Synthetic Lethality within an Inhibiting Graph Structure]{\small \textbf{Detection of Synthetic Lethality within an Inhibiting  Graph Structure.} The gene ``D'' was designated to be synthetic lethal and the $\chi^2$ value from \gls{SLIPT} was computed for each gene across the graph structure. The $\chi^2$ values were computed in 100 simulations of datasets of 20,000 genes including the graph structure and 1000 samples.}
 \end{mdframed}
-\label{fig:simulation1206_Str_randx_Graph4iD}
+%\label{fig:simulation1206_Str_randx_Graph4iD}
 \end{figure*}
+\fi
 
-\begin{figure*}[!ht]
+\begin{figure*}[!htb]
 \begin{mdframed}
      \begin{center}
-       \subcaptionbox{Graph Structure}{%
+       \subcaptionbox{Activating Graph}{%
            \label{fig:simulation1206_Str_randx_Graph4iD:Graph4i}
            \includegraphics[width=0.3\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D".pdf}}
         }%
-        \subcaptionbox{Graph Structure}{%
+        \subcaptionbox{Inhibiting Graph}{%
            \label{fig:simulation1206_Str_randx_Graph4iD:Graph4i}
            \includegraphics[width=0.3\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD".pdf}}
         }%
         
-       \subcaptionbox{Graph Structure}{%
+       \subcaptionbox{$\chi^2$ distribution for Graph4}{%
            \label{fig:simulation1206_Str_randx_Graph4iD:vioplot}
            \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf}}
         }%
-       \subcaptionbox{Graph Structure}{%
+       \subcaptionbox{$\chi^2$ distribution for Inhibiting Graph4}{%
            \label{fig:simulation1206_Str_randx_Graph4iD:vioplot}
            \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf}}
         }%
        \end{center}
-      \caption[Performance is affected by inhibition in graphs]{\small \textbf{Performance is affected by inhibition in graphs.} The gene category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non-SL-correlated, and green for non-SL) ordered by $\chi^2$ signed by the \gls{SLIPT} directional condition is shown across simulations. For each of 1--10 SL partners, 10 simulations demonstrate that the increasing numbers of SL partners become harder detect. The $\chi^2$ values show a clear threshold for SL and correlated genes when there are fewer of them, distinguishable from correlated genes in this case.}
+      \caption[Detection of Synthetic Lethality within a Graph Structure with Inhibitions]{\small \textbf{Detection of Synthetic Lethality within Graph Structure with Inhibitions.} The gene ``D'' was designated to be synthetic lethal and the $\chi^2$ value from \gls{SLIPT} was computed for each gene across each graph structure. The $\chi^2$ values were computed in 100 simulations of datasets of 20,000 genes including the graph structure and 1000 samples. Adjacent genes exhibited lower $\chi^$ values with inhibiting relationships.} 
 \end{mdframed}
+\addtocounter{figure}{-1}
+\phantomcaption
 \label{fig:simulation1206_Str_randx_Graph4D2}
 \end{figure*}
+
+However, it should be noted that the 2\textsuperscript{nd} degree neighbours of the synthetic lethal gene still exhibited moderate $\chi^2$ values (and are moderately correlated with the synthetic lethal gene). It is still possible for these to be detected as false positives as previously described for an activating graph structure although the presence of inhibitory relationships (and negative correlations) further increases the differences in test statistics for correlated genes and underlying synthetic lethal partners as shown by the extreme example (in Figure~\ref{fig:simulation1206_Str_randx_Graph4i}).
+
+These findings are consistent with simulations in a graph containing a combination of activating and inhibiting relationships which exhibits a either of these $\chi^2$ profiles depending on which gene is synthetic lethal and the relationships to adjacent genes (as shown in Figure~\ref{fig:simulation1206_Str_randx_Graph4i2}). Note that in this case, the synthetic lethal gene is distinguishable and inhibitory relationships within this graph structure make it easier to detect underlying synthetic lethal genes with \gls{SLIPT} by a more highly significant $\chi^2$ test. This contrasts with randomly selecting multiple synthetic lethal genes (in Figure~\ref{fig:simulation1205_randx_Graph4cf4i}) where the performance of \gls{SLIPT} was impeded by the inhibitory relationships between synthetic lethal partners in this graph structure. Therefore the random synthetic lethal genes selected previously with negative correlations between them which had poor performance are likely to have created an artifact in the simulation results as they are biologically implausible and constrain the synthetic lethal simulation procedure
+
+The results with one synthetic lethal partner as sufficient to infer the impact of synthetic lethal partners within pathways on neighbouring (correlated) genes. Although it is plausible that the synthetic lethal signatures in expression data would propagate through a network with multiple synthetic lethal partners as sources, provided that the correlations between synthetic lethal partners is biological feasible. These simulations were performed on a correlated graph structure within a larger gene expression dataset of 20,000 genes (as performed in Sections~\ref{chapt2:simulation_2015} and~\ref{chap5:graphsim_performance_20K}), a feasible number for a full human gene expression dataset, and as such are comparable to the findings below.
 
 \FloatBarrier
 
 \subsection{Performance with Feasible Gene Numbers (20,000)}
 \label{chap5:graphsim_performance_20K}
+
+As noted in Section~\ref{chap5:graphsim_performance_simple}, the high proportion of synthetic lethal partners in small networks made accurately assessing the performance of \gls{SLIPT} with higher numbers of true partners to detect (and fewer true negatives) difficult. Similarly, adding more true negative genes in previous simulations increased the performance of \gls{SLIPT}, particularly the specificity to reduce the number of false positives (as shown in Sections~\ref{chapt2:simulation_2015} and~\ref{chap5:compare_ methods}). Building on these findings, here the graph structures (as used in Section~\ref{chap5:graphsim_performance}) of genes with correlations from sampling a multivariate normal distribution were included in a larger simulated dataset of 20,000 genes. This simulation procedure serves to test the performance of \gls{SLIPT} at detecting synthetic lethal partners within correlated graph structures (of a synthetic lethal pathway) in the context of biologically feasible numbers of genes. 
 
 \subsubsection{Simple Graph Structures in a Genome}
 \label{chap5:graphsim_performance_20K_simple}
