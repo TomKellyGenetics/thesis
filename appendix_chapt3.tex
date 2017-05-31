@@ -244,7 +244,7 @@ The genes and pathways identified in Tables~\ref{tab:gene_mtSL} and~\ref{tab:pat
 Similar to the analysis of synthetic lethal partners against low \textit{CDH1} expression in~\ref{chapt3:exprSL_clusters}, the partners detected from \textit{CDH1} mutation were also examined for their expression profiles and the pathway composition of gene clusters. Hierachical clustering was performed on mtSLIPT partners for \textit{CDH1} as showing in Figure~\ref{fig:slipt_expr_mtSL}. Over-representation for Reactome pathways for each of the gene clusters identified is given in Table~\ref{tab:pathway_clusters_mtSL}.
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png}
@@ -253,7 +253,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_mtSL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \FloatBarrier
@@ -455,7 +455,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
 The mutation synthetic lethal partners with \textit{CDH1} were also compared to siRNA primary screen data \citep{Telford2015}, as performed in Section~\ref{chapt3:primary_screen}. These are expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure~\ref{fig:Venn_allgenes_mtSL}. This may be affected by lower sample size for mutations in TCGA data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
 
 \begin{figure}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.66 \columnwidth}{!}{
     \includegraphics{Venn_mtSL_siRNA_allgenes_reduced_Pub.png}
@@ -463,7 +463,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
     \caption[Comparison of mtSLIPT to siRNA]{\small \textbf{Comparison of mtSLIPT to siRNA.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
 }
 \label{fig:Venn_allgenes_mtSL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure}
 
 \FloatBarrier
@@ -906,7 +906,7 @@ Reactome Pathway & Over-representation & Permutation \\
 The mutation synthetic lethal partners with \textit{CDH1} were also compared to siRNA primary screen data \citep{Telford2015}, by correlation and siRNA viability as described in sections~\ref{chapt3:compare_correlation} and~\ref{chapt3:compare_viability}.
 
 \begin{figure*}[!htp]
-\begin{mdframed}
+%\begin{mdframed}
 \begin{center}
   \resizebox{0.75 \textwidth}{!}{
     \includegraphics{mtSLIPT_siRNA_vs_Correlation_with_CDH1.png}
@@ -915,11 +915,11 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
    \caption[Compare mtSLIPT and siRNA genes with correlation]{\small \textbf{Compare mtSLIPT and siRNA genes with correlation.} The mtSLIPT p-values were compared against Pearson's correlation of expression with \textit{CDH1}. Genes detected by SLIPT or siRNA are coloured according to the legend. 
 }
 \label{fig:compare_points_correlation_mtSL}
-\end{mdframed}
+%\end{mdframed}
 %\end{figure*}
 
 %\begin{figure*}[!htp]
-\begin{mdframed}
+%\begin{mdframed}
 \begin{center}
   \resizebox{0.75 \textwidth}{!}{
     \includegraphics{vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf}
@@ -928,11 +928,11 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
    \caption[Compare mtSLIPT and siRNA genes with correlation]{\small \textbf{Compare mtSLIPT and siRNA genes with correlation.}  Genes detected by mtSLIPT against \textit{CDH1} mutation and siRNA screening were compared against Pearson's correlation of expression with \textit{CDH1}. There were no differences in correlation between the gene groups. 
 }
 \label{fig:compare_correlation_mtSL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \begin{figure*}[!htp]
-\begin{mdframed}
+%\begin{mdframed}
 \begin{center}
   \resizebox{0.75 \textwidth}{!}{
     \includegraphics{vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
@@ -941,7 +941,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
    \caption[Compare mtSLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare mtSLIPT and siRNA genes with siRNA viability.}  Genes detected as candidate synthetic lethal partners by mtSLIPT (in TCGA breast cancer) expression analysis against \textit{CDH1} mutation and experimental screening (with siRNA) were compared against the viability ratio of \textit{CDH1} mutant and wildtype cells in the primary siRNA screen. There were clear no differences in viability between genes detected by mtSLIPT and those not with the differences being primarily due to viability thresholds being used to detect synthetic lethality by \citet{Telford2015}. 
 }
 \label{fig:compare_viability_mtSL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
@@ -1032,7 +1032,7 @@ Mutations have different effects as shown by the following examples in cancer ge
 %Mutation_locus_TP53.pdf
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
         \begin{center}
 %
         \subcaptionbox{\textit{PI3KCA} \label{fig:mutation_locus:PIK3CA}}{%
@@ -1051,14 +1051,14 @@ Mutations have different effects as shown by the following examples in cancer ge
     \caption[Somatic mutation locus]{\small \textbf{Somatic mutation locus.} Mutation frequency at each locus in TCGA breast cancer. \textit{PIK3CA} shows clear recurrent E545K and H1047R oncogene mutations consistent with it being an oncogene. \textit{PIK3R1} and \textit{CDH1} are tumour suppressors with inactivating mutations distributed throughout the gene, whereas \textit{TP53} exhibits both of these properties and a very high mutation frequency compared to other genes.
 }
 \label{fig:mutation_locus}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \clearpage
 \subsection{PI3K Mutation Expression}
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
         \begin{center}
 %
         \subcaptionbox{\textit{PIK3CA} mutation}{%
@@ -1078,11 +1078,11 @@ Mutations have different effects as shown by the following examples in cancer ge
     \caption[Somatic mutation against PIK3CA metagene]{\small \textbf{Somatic mutation against PIK3CA metagene.} Mutations in \textit{PIK3CA}, \textit{PIK3R1}, \textit{CDH1}, and \textit{TP53} were examined in TCGA breast cancer for their effect on the PIK3CA  \citep{Gatza2014} pathway metagene. The tumour suppressors \textit{CDH1} and \textit{TP53} showed an increase and decrease in the metagene respectively, whereas \textit{PIK3CA} and \textit{PIK3R1} mutations weaker evidence of decrease in metagene levels.
 }
 \label{fig:mutation_expr_mg2}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
         \begin{center}
 %
         \subcaptionbox{\textit{PIK3CA} mutation}{%
@@ -1102,11 +1102,11 @@ Mutations have different effects as shown by the following examples in cancer ge
     \caption[Somatic mutation against PI3K protein]{\small \textbf{Somatic mutation against PI3K protein.} Mutations in \textit{PIK3CA}, \textit{PIK3R1}, \textit{CDH1}, and \textit{TP53} were examined in TCGA breast cancer for their effect on the expression of the p110$\alpha$ protein (encoded by \textit{PIK3CA}). Protein levels were significantly elevated in samples with \textit{PIK3CA} or \textit{PIK3R1} mutations and lower in samples with \textit{TP53} mutations.
 }
 \label{fig:mutation_expr_prot}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
         \begin{center}
 %
         \subcaptionbox{\textit{PIK3CA} mutation}{%
@@ -1126,7 +1126,7 @@ Mutations have different effects as shown by the following examples in cancer ge
     \caption[Somatic mutation against AKT protein]{\small \textbf{Somatic mutation against AKT protein.} Mutations in \textit{PIK3CA}, \textit{PIK3R1}, \textit{CDH1}, and \textit{TP53} were examined in TCGA breast cancer for their effect on the expression of the AKT protein (a downstream target of \textit{PIK3CA}). Protein levels were not significantly different in samples mutations in any of these cancer genes.
 }
 \label{fig:mutation_expr_prot2}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \chapter{Metagene Expression Profiles}
@@ -1517,7 +1517,7 @@ The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers w
 
 
 \begin{figure}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.66 \columnwidth}{!}{
     \includegraphics{Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png}
@@ -1525,7 +1525,7 @@ The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers w
     \caption[Comparison of SLIPT in stomach to siRNA]{\small \textbf{Comparison of SLIPT in stomach to siRNA.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
 }
 \label{fig:Venn_allgenes_stad}
-\end{mdframed}
+%\end{mdframed}
 \end{figure}
 
 %%appendix
@@ -2165,7 +2165,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
 
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png}
@@ -2174,7 +2174,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_stad_mtSL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \FloatBarrier
@@ -2378,7 +2378,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
 The mutation synthetic lethal partners with \textit{CDH1} were also compared to siRNA primary screen data \citep{Telford2015}, as performed in Section~\ref{chapt3:primary_screen}. These are expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure~\ref{fig:Venn_allgenes_stad_mtSL}. This may be affected by lower sample size for mutations in TCGA data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
 
 \begin{figure}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.66 \columnwidth}{!}{
     \includegraphics{Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png}
@@ -2386,7 +2386,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
     \caption[Comparison of mtSLIPT in stomach to siRNA]{\small \textbf{Comparison of mtSLIPT in stomach to siRNA.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (mtSLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.872$). %A Venn diagram of all 16298 genes tested by both approaches.
 }
 \label{fig:Venn_allgenes_stad_mtSL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure}
 
 
@@ -2864,7 +2864,7 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 \chapter{Global Synthetic Lethality in Stomach Cancer}
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.75 \textwidth}{!}{
     \includegraphics{MostSL_Summary_CDH1_FDR_stad.pdf}
@@ -2873,7 +2873,7 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
    \caption[Synthetic lethal partners across query genes]{\small \textbf{Synthetic lethal partners across query genes.} Global synthetic lethal pairs were examined across the genome in TCGA stomach expression data by applying SLIPT across query genes. The high number of predicted partners for \textit{CDH1} was typical for a human gene and lower than many other genes.
    }
 \label{fig:global_SL_stad}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 

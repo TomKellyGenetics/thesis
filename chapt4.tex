@@ -1,13 +1,13 @@
 \chapter{Synthetic Lethal Pathway Structure}
 \label{chap:Pathways}
   
-Having identified key pathways implicated in synthetic lethal genetic interactions with \textit{CDH1}, these were investigated for the underlying synthetic lethal genes within them and their relationships to pathway structure in Reactome pathways. This chapter will focus on the pathway structure of biological pathways detected across analyses in Chapter~\ref{chap:SLIPT}. The synthetic lethal genes considered here are those candidates detected by SLIPT (as described in Section~\ref{methods:SLIPT}) in TCGA breast cancer expression and mutation data \citep{TCGA2012} in comparison to the candidate gene partners from the siRNA screening in breast cell lines \citep{Telford2015}. 
+Having identified key pathways implicated in synthetic lethal genetic interactions with \textit{CDH1} (in Chapter~\ref{chap:SLIPT}), these were investigated for the underlying synthetic lethal genes within them and their relationships to pathway structure in Reactome pathways. This chapter will focus on the pathway structure of biological pathways detected across analyses in Chapter~\ref{chap:SLIPT}. The synthetic lethal genes considered here are those candidates detected by \gls{SLIPT} (as described in Section~\ref{methods:SLIPT}) in \gls{TCGA} breast cancer expression and mutation data \citep{TCGA2012} in comparison to the candidate gene partners from the \gls{siRNA} screening in breast cell lines \citep{Telford2015}. 
 
-The graph structure for Reactome pathways was obtained from Pathway Commons via \gls{BioPAX} (as described in Section~\ref{methods:graph_data}). The pathways describe the (directional) relationships between biomolecules, including proteins (encoded by genes), in biological pathways. These relationships include cell signalling (such as kinase phosphorylation cascades), gene regulation (such as transcription factors, chromatin modifiers, RNA binding proteins), and metabolism (such as the product of an enzyme being the substrate of another). Together these relationships describe the known functional pathways in a human cell with a reasonable resolution, from a curated database supported by publications documenting pathway relationships.  While this functional pathway network encapsulates protein complexes and functional modules, protein binding or text-mining alone are not used to determine relationships between genes. The Reactome network is sufficient to test pathway relationships with directional information, although it is not documented whether these relationships are activating or inhibitory.
+The graph structure for Reactome pathways was obtained from Pathway Commons via \gls{BioPAX} (as described in Section~\ref{methods:graph_data}). The pathways describe the (directional) relationships between biomolecules, including genes which encode proteins in biological pathways. These relationships include cell signalling (e.g., kinase phosphorylation cascades), gene regulation (e.g., transcription factors, chromatin modifiers, \gls{RNA} binding proteins), and metabolism (e.g., the product of an enzyme being the substrate of another). Together these relationships describe the known functional pathways in a human cell with a reasonable resolution, from a curated database supported by publications documenting pathway relationships. 
 
-Pathway structures were derived from the Reactome network (as described in Section~\ref{methods:subgraphs}) for the graph structure of each biological pathway. The synthetic lethal candidate genes for notable pathways discussed in Chapter~\ref{chap:SLIPT}, including candidate synthetic lethal pathways of \textit{CDH1}, were examined to show the SLIPT and siRNA candidates within these pathways. Thus synthetic lethal genes were identified within a biological context and with further investigations into their relationship with pathway structure and between synthetic lethal candidates detect by each approach. Synthetic lethal gene candidates in the context of pathway structures and additional support for belonging to a synthetic lethal pathway are ideal for triage of targets specific to \textit{CDH1} deficient tumours and for further experimental validation in preclinical models.
+Pathway structures from the Reactome network (as described in Section~\ref{methods:subgraphs}) were used to derive the graph structure of each biological pathway. The synthetic lethal candidate genes for notable pathways discussed in Chapter~\ref{chap:SLIPT}, including candidate synthetic lethal pathways of \textit{CDH1}, were examined to show the SLIPT and siRNA candidates within these pathways. Thus synthetic lethal genes were identified within a biological context and with further investigations into their relationship with pathway structure and between synthetic lethal candidates detected by each approach. Synthetic lethal gene candidates in the context of pathway structures provide additional mechanisms and support for belonging to a synthetic lethal pathway. Such gene candidates are ideal for triage of targets specific to \textit{CDH1} deficient tumours and for further experimental validation in preclinical models.
 
-Network analysis metrics (as described in Sections~\ref{methods:network_metrics} and~\ref{methods:igraph_extensions}) were applied to test whether gene detected by SLIPT, siRNA, or both approaches varied according to these network analysis metrics (of connectivity and importance in the network) to test whether they differed between synthetic lethal genes or approaches to detect them. Another consideration is the relationships between synthetic lethal candidates detected by either approach: these were tested by both a resampling approach (as described in Sections~\ref{methods:pathway_str} and ~\ref{methods:network_permutation}) and compared across a ranking based on biological context (Section~\ref{methods:pathway_rank}). Together these approaches serve to test the pathway relationships between SLIPT and siRNA synthetic lethal gene candidate partners for \textit{CDH1} within the biological pathways identified and demonstrate a combination of network biology and statistical investigations into structural relationships between genes identified by a Bioinformatics analysis.
+Network analysis metrics (as described in Sections~\ref{methods:network_metrics} and~\ref{methods:igraph_extensions}) were applied to test whether genes detected by SLIPT, siRNA, or both approaches varied according to these network analysis metrics (of connectivity and importance in the network) to test whether they differed between synthetic lethal genes or approaches to detect them. The relationships between synthetic lethal candidates detected by either approach was also considered: these were tested by a resampling approach (as described in Sections~\ref{methods:pathway_str} and~\ref{methods:network_permutation}) and compared across a ranking based on biological context (Section~\ref{methods:pathway_rank}). Together these approaches serve to investigate the pathway relationships between SLIPT and siRNA synthetic lethal gene candidate partners for \textit{CDH1}. Synthetic lethal genes were examined within the biological pathways identified previously (in Chapter~\ref{chap:SLIPT}) and used to demonstrate how a combination of network biology and statistical investigations into structural relationships can be performed with genes identified by a Bioinformatics analysis.
 
 \FloatBarrier
 
@@ -17,81 +17,81 @@ Network analysis metrics (as described in Sections~\ref{methods:network_metrics}
 
 \subsection{The PI3K/AKT Pathway}  \label{chapt4:SL_Genes_PI3K}
 
-The \acrfull{PI3K} cascade signalling pathway exhibited unexpected results with metagene analyses (as discussed in Section~\ref{chapt3:metagene_results}). This pathway is also of interest because mediating signals between the \glspl{GPCR} and regulation of protein translation which have both been strongly implicated to be synthetic lethal pathways with loss of \textit{CDH1} function. All three of these pathways have are also subject to dysregulation in cancer and other diseases. Thus the PI3K cascade will be examined along with the most supported synthetic lethal pathways (as identified in Chapter~\ref{chap:SLIPT}).
+The \acrfull{PI3K} cascade signalling pathway exhibited unexpected results with metagene analyses (as discussed in Section~\ref{chapt3:metagene_results}). This pathway is also of interest because mediating signals between the \glspl{GPCR} and regulation of protein translation have both been strongly implicated to be synthetic lethal pathways with loss of \textit{CDH1} function (in Chapter~\ref{chap:SLIPT}). All of these pathways have are also subject to dysregulation in cancer and other diseases \cite{Gao2015}. Thus the PI3K cascade will be examined along with the most supported synthetic lethal pathways (as identified in Chapter~\ref{chap:SLIPT}).
 
-The \gls{PI3K} pathway is also an ideal pathway to test pathway structure since it has an established direction of signal transduction from extracellular stimuli (and membrane bound receptors) to the inner mechanisms of the cell, namely the regulation of protein translation. The production of proteins is neccessary for the growth of the cell so it is reasonable to suggest that these processes may be subject to (non-oncogene) addiction in some cancer cells which rely upon them for sustained protein production and cell growth. This is also supported by the oncogenes \textit{PIK3CA} and \textit{AKT1} being involved with the PI3K cascade and related PI3K/AKT pathway which may be subject to oncogene addiction when these proto-oncogenes are activated.
+The \gls{PI3K} pathway is also an ideal pathway in which to test pathway structure because it has an established direction of signal transduction from extracellular stimuli (and membrane bound receptors) to the inner mechanisms of the cell, namely, the regulation of protein translation. The production of proteins is neccessary for the growth of the cell so it is reasonable to suggest that these processes may be subject to (non-oncogene) addiction in some cancer cells which rely upon them for sustained protein production and cell growth. This is also supported by the oncogenes \textit{PIK3CA} and \textit{AKT1} being involved with the PI3K cascade and related PI3K/AKT pathway which may be subject to oncogene addiction when these proto-oncogenes are activated.
 
 \begin{figure*}[!htb]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
-  \resizebox{0.85 \textwidth}{!}{
+  \resizebox{1 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
-    \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3K_exprSL_2".pdf}}
-   }
+    %\fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3K_exprSL2".pdf}}
+   %}
    }
    \end{center}
-   \caption[Synthetic Lethality in the PI3K Cascade]{\small \textbf{Synthetic Lethality in the PI3K Cascade.} The Reactome PI3K Cascade pathway with synthetic lethal candidates coloured as shown in the Legend.
+   \caption[Synthetic Lethality in the PI3K Cascade]{\small \textbf{Synthetic Lethality in the PI3K Cascade.} The Reactome PI3K Cascade pathway with synthetic lethal candidates coloured as shown in the legend.
 }
 \label{fig:SL_Pathway_Pi3K}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
-Despite the \gls{PI3K} cascade not being supported across SLIPT and siRNA analysis by over-representation (in Section~\ref{chapt3:compare_pathway}) or resampling (in Section~\ref{chapt3:compare_pathway_perm}), numerous genes were detected by either \gls{SLIPT} in TCGA breast expression data or the \gls{siRNA} primary screen (as shown in Figure~\ref{fig:SL_Pathway_Pi3K}).  It is also notable, that of the few genes that were identified by both approaches, these include genes that are highly conencted in the PI3K cascade and are hubs to information transmission such as \textit{FGF9},\textit{PDE3B}, and \textit{PDE4A}. The key upstream genes \textit{PIK3CA} and \textit{PIK3CG} were detected by \gls{siRNA} whereas the downstream \textit{PIK3R1} and \textit{AKT2} genes were detected by \gls{SLIPT}. Gene detected by either method were also prevalent in the \gls{PI3K}, \gls{PDE}, and \gls{AMPK} modules, in addition to the downstream translation factors and ribosomal genes (\textit{EIF4B}, \textit{EEF2K}, and \textit{RPS6}). Together these suggest that there may further be structure between the \gls{SLIPT} and \gls{siRNA} candidates partners of \textit{CDH1} in pathways such as this example. As such, pathway structure will be tested to detect differences in the upstream and downstream gene candidates of those detected by either method. This may further explain the disparity between \gls{SLIPT} and \gls{siRNA} genes, even in pathways such as PI3K where they did not significantly intersect.
+The \gls{PI3K} cascade was not supported across \gls{SLIPT} in TCGA breast expression data and the \gls{siRNA} primary screen by over-representation (in Section~\ref{chapt3:compare_pathway}) or resampling (in Section~\ref{chapt3:compare_pathway_perm}) but genes were detectable by either approach (as shown in Figure~\ref{fig:SL_Pathway_Pi3K}).  While few genes were identified by both approaches, these include genes that are highly conencted in the PI3K cascade and are hubs to information transmission such as \textit{FGF9},\textit{PDE3B}, and \textit{PDE4A}. The key upstream genes \textit{PIK3CA} and \textit{PIK3CG} were detected by \gls{siRNA} whereas the downstream \textit{PIK3R1} and \textit{AKT2} genes were detected by \gls{SLIPT}. Gene detected by either method were also prevalent in the \gls{PI3K}, \gls{PDE}, and \gls{AMPK} modules, in addition to the downstream translation factors and ribosomal genes (\textit{EIF4B}, \textit{EEF2K}, and \textit{RPS6}). Together these suggest that there may further be structure between the \gls{SLIPT} and \gls{siRNA} candidate partners of \textit{CDH1} in pathways as illustrated by \gls{PI3K}. As such, pathway structure will be investigated to detect differences in the upstream and downstream gene candidates of those detected by either method. Pathway structure may account for the disparity between \gls{SLIPT} and \gls{siRNA} genes, even in pathways such as PI3K where they did not significantly intersect. For instance, \gls{SLIPT} gene parnters may be downstream of \gls{siRNA} candidates rather than replicating them directly.
 
-This disparity between \gls{SLIPT} and \gls{siRNA} gene candidate synthetic lethal partners of \text{CDH1}, that is a high number of genes detected by either approach with few detected by both, was replicated the related PI3K/AKT pathway and the ``PI3K/AKT in cancer'' pathway (shown in Figures~\ref{fig:SL_Pathway_Pi3KAkt} and~\ref{fig:SL_Pathway_Pi3KAktCancer}). With many synthetic lethal candidates at the upstream core of these pathway networks and the downstream extremities. It is particularly notable that the many genes important in cell signalling and gene regulation were detected by either sytnhetic lethal detection approach. These include \textit{AKT1}, \textit{AKT2}, and \textit{AKT3}, the Calmodulin signalling genes \textit{CALM1} and \textit{CAMK4}, and the forkhead family transcription factors \textit{FOXO1} (a tumour suppressor) and \textit{FOXO4} and inhibitor of \gls{EMT}.
+This disparity between \gls{SLIPT} and \gls{siRNA} gene candidate synthetic lethal partners of \text{CDH1}, that is a high number of genes detected by either approach with few detected by both, was replicated in the related PI3K/AKT pathway and the ``PI3K/AKT in cancer'' pathway (shown in Appendix Figures~\ref{fig:SL_Pathway_Pi3KAkt} and~\ref{fig:SL_Pathway_Pi3KAktCancer}). With many synthetic lethal candidates at the upstream core of these pathway networks and the downstream extremities. It is particularly notable that the many genes important in cell signalling and gene regulation were detected by either synthetic lethal detection approach. These include \textit{AKT1}, \textit{AKT2}, and \textit{AKT3}, the Calmodulin signalling genes \textit{CALM1} and \textit{CAMK4}, and the forkhead family transcription factors \textit{FOXO1} (a tumour suppressor) and \textit{FOXO4} and inhibitor of \gls{EMT}.
 
 \FloatBarrier
 
 
 \subsection{The Extracellular Matrix}  \label{chapt4:SL_Genes_ECM}
 
-The extracellular pathways elastic fibre formation and fibrin clot formation (shown in Figures~\ref{fig:SL_Pathway_ElasticFibre} and~\ref{fig:SL_Pathway_FibrinFormation} respectively) were both supported across analyses (in Chapter~\ref{chap:SLIPT}). This includes a significant over-representation and resampling the interaction between \gls{SLIPT} (for TCGA breast cancer) and \gls{siRNA} gene candidates showing that \gls{SLIPT} has identified these pathways in addition to their over-representation in the \gls{siRNA} screen.
+The extracellular pathways ``elastic fibre formation'' and ``fibrin clot formation'' (shown in Figures~\ref{fig:SL_Pathway_ElasticFibre} and~\ref{fig:SL_Pathway_FibrinFormation} respectively) were both supported across analyses (in Chapter~\ref{chap:SLIPT}. Significant over-representation and resampling the intersection between \gls{SLIPT} (for TCGA breast cancer) and \gls{siRNA} gene candidates which showed that both approaches identified these pathways.
 
 \begin{figure*}[!tb]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
-  \resizebox{0.85 \textwidth}{!}{
+  \resizebox{1 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
-    \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_ElasticFibre_exprSL_2".pdf}}
-   }
+    %\fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_ElasticFibre_exprSL2".pdf}}
+   %}
    }
    \end{center}
-   \caption[Synthetic Lethality in the Elastic Fibre Formation Pathway]{\small \textbf{Synthetic Lethality in the Elastic Fibre Formation Pathway.} The Reactome Elastic Fibre Formation pathway with synthetic lethal candidates coloured as shown in the Legend.
+   \caption[Synthetic Lethality in the Elastic Fibre Formation Pathway]{\small \textbf{Synthetic Lethality in the Elastic Fibre Formation Pathway.} The Reactome Elastic Fibre Formation pathway with synthetic lethal candidates coloured as shown in the legend.
 }
 \label{fig:SL_Pathway_ElasticFibre}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
-Particularly for elastic fibres (in Figure~\ref{fig:SL_Pathway_ElasticFibre}), the vast majority of genes were detected by either approach in addition to a significant proportion of genes detected by both approaches (as determined in Section~\ref{chapt3:compare_pathway}). The genes detected by both approaches also appeared to have a non-random distribution in the network with \textit{TFGB1}, \textit{ITGB8}, and \textit{MFAP2} exhibiting high connectivity and a cental role in their respective pathway modules. In addition to a structural role in the extracellular matrix and connective tissue (including the tumour microenvironment), these proteins including Furin, \gls{TGFB}, and the \glspl{BMP}, are also involved in responses to endocrine signals and interacting with the cellular receptors for signalling pathways. Therefore it is plausible that \textit{CDH1} deficient tumours will be subject to non-oncogene addiction to the extracellular environment and growth signals arising from this pathway. The pathway structure is also worth further investigation into whether the genes detected by \gls{siRNA} or both approaches are downstream of those detected by \gls{SLIPT} in addition to whether they have higher connectivity or centrality than other genes in the pathway.
+Particularly for elastic fibres (Figure~\ref{fig:SL_Pathway_ElasticFibre}), the vast majority of genes were detected by either approach in addition to a significant proportion of genes detected by both approaches (as determined in Section~\ref{chapt3:compare_pathway}). The genes detected by both approaches also appeared to have a non-random distribution in the network with \textit{TFGB1}, \textit{ITGB8}, and \textit{MFAP2} exhibiting high connectivity, and having a central role in their respective pathway modules. In addition to a structural role in the extracellular matrix and connective tissue (including the tumour microenvironment), these proteins including Furin, \gls{TGFB}, and the \glspl{BMP}, are also involved in responses to endocrine signals and interacting with the cellular receptors for signalling pathways. Therefore it is plausible that \textit{CDH1} deficient tumours will be subject to non-oncogene addiction to the extracellular environment and growth signals arising from this pathway. The pathway structure is also worth further investigation into whether the genes detected by \gls{siRNA} or both approaches are downstream of those detected by \gls{SLIPT}, in addition to whether they have higher connectivity or centrality than other genes in the pathway.
 
 Genes detected as synthetic lethal partners of \textit{CDH1} by \gls{SLIPT} or \gls{siRNA} screening were also common in the Fibrin clot formation pathway (shown in Figure~\ref{fig:SL_Pathway_FibrinFormation}). This is consistent with the established pleiotropic role of \textit{CDH1} in regulating fibrin clotting. It is also notable that the genes detected by either method appear to be highly connected such as \textit{C1QBP} \textit{KNG1}, \textit{F8}, \textit{F10}, \textit{F12}, \textit{F13A}, and \textit{PROC} (including many of the coagulation factors). Synthetic lethal candidates also include \textit{SERPINE2} and \textit{PRCP}, which only affect downstream genes, in addition to \textit{PROCR} and \textit{VWF}, which are only affected by upstream genes. 
 
 \begin{figure*}[!htb]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
-  \resizebox{0.85 \textwidth}{!}{
+  \resizebox{1 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
-    \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_FibrinFormation_exprSL_2".pdf}}
-   }
+    %\fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_FibrinFormation_exprSL2".pdf}}
+   %}
    }
    \end{center}
-   \caption[Synthetic Lethality in the Fibrin Clot Formation]{\small \textbf{Synthetic Lethality in the Fibrin Clot Formation.} The Reactome Fibrin Clot Formation pathway with synthetic lethal candidates coloured as shown in the Legend.
+   \caption[Synthetic Lethality in the Fibrin Clot Formation]{\small \textbf{Synthetic Lethality in the Fibrin Clot Formation.} The Reactome Fibrin Clot Formation pathway with synthetic lethal candidates coloured as shown in the legend.
 }
 \label{fig:SL_Pathway_FibrinFormation}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
-Many of these genes are involved in the larger Extracellular Matrix pathway (shown in Figure~\ref{fig:SL_Pathway_ExtracellularMatrix}), including many of the synthetic lethal candidates discussed for elastic fibres. The number of \gls{SLIPT} candidate genes outnumbers those identified by \gls{siRNA} as expected from an isolated cell model. However, the endocrine response genes (such as \textit{TGFB1} and \textit{LTBP4}) which are potentially artifacts of the cell line growth process were replicated with \gls{SLIPT} analysis in patient tumours (TCGA breast cancer data). There is also additional support for synthetic elthal genes such as \textit{ITGB2}, \textit{MFAP2}, and \textit{SPARC} being highly connected networks hubs of the pathway. Although the complexity of extracellular matrix pathway lends credence to the need for formal network analysis approaches to aid interpretation of the structure and relationships among synthetic lethal candidates in a pathway network, in addition to statistical approaches to determine whether such relationships are unlikely to be observed by sampling error. 
+Many of these genes are involved in the larger Extracellular Matrix pathway (shown in Appendix Figure~\ref{fig:SL_Pathway_ExtracellularMatrix}), including many of the synthetic lethal candidates discussed for elastic fibres. The number of \gls{SLIPT} candidate genes outnumbers those identified by \gls{siRNA}, as expected from an isolated cell model. However, the endocrine response genes (e.g., \textit{TGFB1} and \textit{LTBP4}) which are potentially artifacts of the cell line growth process were replicated with \gls{SLIPT} analysis in patient tumours (TCGA breast cancer data). There is also additional support for synthetic lethal genes such as \textit{ITGB2}, \textit{MFAP2}, and \textit{SPARC} being highly connected networks hubs of the pathway. The complexity of the extracellular matrix pathway lends credence to the need for formal network analysis approaches to interpret the pathway structure of synthetic lethal candidates. Furthermore statistical approaches are needed to determine whether structural relationships are unlikely to be observed between synthetic lethal candidates by sampling error. 
 
 \FloatBarrier
 
 \subsection{G Protein Coupled Receptors}  \label{chapt4:SL_Genes_GPCR}
 
-Similarly, \acrfull{GPCR} pathways are highly complex (as shown in Figures~\ref{fig:SL_Pathway_GPCR} and~\ref{fig:SL_Pathway_GPCR_Downstream}). Many of these were synthetic lethal candidates by eith \gls{SLIPT} pr \gls{siRNA} screening with many detected with both approaches, consistent with these pathways being supported by prior analyses (in Sections~\ref{chapt3:compare_pathway} and~\ref{chapt3:compare_pathway_perm}). Synthetic lethal candidates include the \gls{PDE} and Calmodulin genes (as discussed in Section~\ref{chapt4:SL_Genes_GPCR}) in addition to others such as the regulators of \gls{RGS}, \gls{CXCR}, \acrfull{JAK}, and the \gls{RHO} genes. These are important regulatory signalling pathways necessary for cellular growth and cancer proliferation. Thus the GPCR pathways (and downstream PI3K/AKT signals) are a potentially actionable vulnerability against \textit{CDH1} deficient cancers, particularly since many existing drug targets exist among these signalling pathways, some of which have been experimentally validated \citep{Telford2015, KellyHDGC}. However, the complexity of GPCR networks containing hundreds of genes requires the relationships between \gls{SLIPT} and experimental candidates to be tested with a network based statistical approach, although a statistically significant intersection of these approaches has been established (in Sections~\ref{chapt3:compare_pathway} and~\ref{chapt3:compare_pathway_perm}).
+\acrfull{GPCR} pathways are highly complex (as shown in Appendix Figures~\ref{fig:SL_Pathway_GPCR} and~\ref{fig:SL_Pathway_GPCR_Downstream}). Many of these were synthetic lethal candidates by either \gls{SLIPT} or \gls{siRNA} screening, with many detected with both approaches, consistent with these pathways being supported by prior analyses (in Sections~\ref{chapt3:compare_pathway} and~\ref{chapt3:compare_pathway_perm}). Synthetic lethal candidates include the \gls{PDE} and Calmodulin genes (as discussed in Section~\ref{chapt4:SL_Genes_GPCR}) in addition to others such as the regulators of \gls{RGS}, \gls{CXCR}, \acrfull{JAK}, and the \gls{RHO} genes. These are important regulatory signalling pathways necessary for cellular growth and cancer proliferation. Thus the GPCR pathways (and downstream PI3K/AKT signals) are a potentially actionable vulnerability against \textit{CDH1} deficient cancers, particularly since many existing drug targets exist among these signalling pathways, some of which have been experimentally validated \citep{Telford2015, KellyHDGC}. However, the complexity of GPCR networks containing hundreds of genes requires the relationships between \gls{SLIPT} and experimental candidates to be tested with a network based statistical approach, although a statistically significant intersection of these approaches has been established (in Sections~\ref{chapt3:compare_pathway} and~\ref{chapt3:compare_pathway_perm}).
 
 
 
@@ -99,9 +99,9 @@ Similarly, \acrfull{GPCR} pathways are highly complex (as shown in Figures~\ref{
 
 \subsection{Gene Regulation and Translation}  \label{chapt4:SL_Genes_Translation}
 
-While very few synthetic lethal genes were detected in translational pathways in an experimental screen against \textit{CDH1} \cite{Telford2015}, these were highly over-represented in translational elongation (as shown in Figure~\ref{fig:SL_Pathway_TranslationElongation}). These \gls{SLIPT} genes include many ribosomal proteins and the regulatory ``elongation factors'' which may be subject to responses in the upstream signalling pathways. This observation lends support the notion of pathway structure among synthetic lethal candidates detected by \gls{SLIPT} in comparison with \gls{siRNA} as the computational approach with \gls{SLIPT} has demonstrated the ability to detect downstream genes in the core translational processes which experimental screening did not identify. Although it is possible that the experimental screening may detect upstream regulatory genes less sensitive inactivation, that is genes which are less likely to be indiscriminately lethal to both genotypes at high doses of inactivation.
+While very few synthetic lethal genes were detected in translational pathways in an experimental screen against \textit{CDH1} \cite{Telford2015}, these were highly over-represented in translational elongation (as shown in Appendix Figure~\ref{fig:SL_Pathway_TranslationElongation}). These \gls{SLIPT} genes include many ribosomal proteins and the regulatory ``elongation factors'' which may be subject to responses in the upstream signalling pathways. This observation lends support to the notion of pathway structure among synthetic lethal candidates detected by \gls{SLIPT} in comparison with \gls{siRNA}. The computational approach with \gls{SLIPT} displays the ability to detect downstream genes in the core translational processes which experimental screening did not identify. The experimental screening may similarly detect upstream regulatory genes less sensitive inactivation, that is genes which are less likely to be indiscriminately lethal to both genotypes at high doses of inactivation.
 
-Many of these \gls{SLIPT} candidate genes are also among the \gls{NMD} pathway (shown in Figure~\ref{fig:SL_Pathway_NMD}) or 3$^\prime$ \gls{UTR} mediated translational regulation (shown in Figure~\ref{fig:SL_Pathway_Three_prime_UTR}). While genes in these pathways were also supported by experimental screening with \gls{siRNA}, there was clear pathway structure. In particular, \textit{UPF1} was detected in the \gls{siRNA} screen and is the focal downstream gene for the entire \gls{NMD} pathway showing that (in this case) \gls{siRNA} genes are downstream effectors of those detected by \gls{SLIPT}.  3$^\prime$ \gls{UTR} mediated translational regulation has a similar structure with two modules connected solely by \textit{RPL13A}, giving an example of \gls{SLIPT} candidates genes with high connectivity, although there were many ribosomal proteins detected by \gls{SLIPT}. However, \textit{EIF3K} a regulatory elongation factor (not essential to ribosomal function) that was detected by \gls{SLIPT} was replicated with \gls{siRNA} screening while the majority of the elongation factors were not detected by either approach. Regulatory genes being more amenable to experimental validation also support further investigation into pathway structure as the \gls{SLIPT} candidates may support them by structural relationships and the downstream genes not being detectable by experimental screening with high dose inhibitors may explain the greater number of \gls{SLIPT} candidate partners of \textit{CDH1} than those experimentally identified.
+Many of these \gls{SLIPT} candidate genes are also among the \gls{NMD} pathway (shown in Appendix Figure~\ref{fig:SL_Pathway_NMD}) or 3$^\prime$ \gls{UTR} mediated translational regulation (shown in Appendix Figure~\ref{fig:SL_Pathway_Three_prime_UTR}). While genes in these pathways were also supported by experimental screening with \gls{siRNA}, there was clear pathway structure. In particular, \textit{UPF1} was detected in the \gls{siRNA} screen and is the focal downstream gene for the entire \gls{NMD} pathway showing that (in this case) \gls{siRNA} genes are downstream effectors of those detected by \gls{SLIPT}.  3$^\prime$ \gls{UTR} mediated translational regulation has a similar structure with two modules connected solely by \textit{RPL13A}, giving an example of \gls{SLIPT} candidates genes with high connectivity, although there were many ribosomal proteins detected by \gls{SLIPT}. However \textit{EIF3K}, a regulatory elongation factor (not essential to ribosomal function) that was detected by \gls{SLIPT}, was replicated with \gls{siRNA} screening, while the majority of the elongation factors were not detected by either approach. Regulatory genes, being more amenable to experimental validation, also support further investigation into pathway structure. The \gls{SLIPT} candidates may support experimental candidates by in biological pathways by detecting downstream genes which may not be detectable by experimental screening with high dose inhibitors. This difference between the approaches may explain the greater number of \gls{SLIPT} candidate partners of \textit{CDH1} than those experimentally identified.
 
 
 \FloatBarrier
@@ -110,34 +110,34 @@ Many of these \gls{SLIPT} candidate genes are also among the \gls{NMD} pathway (
 
 \glsreset{ANOVA}
 
-Genes detected as synthetic lethal partners of \textit{CDH1} with the \gls{SLIPT} computational approach and the \gls{siRNA} screen \citep{Telford2015} were compared across network metrics in the example of the PI3K cascade pathway (where the genes differed considerably between synthetic lethal detection methods). These were used to test whether network metrics differed  between groups of genes detected by either or both approaches. These analyses serve to both test whether synthetic lethal gene candidates had higher connectivity or importance in a network and to whether either detection approach is constrained to genes with different network properties.  
+Genes detected as synthetic lethal partners of \textit{CDH1} with the \gls{SLIPT} computational approach and the \gls{siRNA} screen \citep{Telford2015} were compared across network metrics in the example of the PI3K cascade pathway (where the genes differed considerably between synthetic lethal detection methods). These were used to test whether network metrics differed  between groups of genes detected by either or both approaches. These analyses serve to both test whether synthetic lethal gene candidates had higher connectivity or importance in a network and whether either detection approach is biased towards genes with different network properties.  
 
 \FloatBarrier
 
 \subsection{Gene Connectivity and Vertex Degree}  \label{chapt4:Network_Vertex_Degree}
 
-Vertex degree (the number of connections) for each gene is a fundamental property of a network. The vast majority of genes had a relatively modest number of connections each with only a few genes in the PI3K pathway (shown in Figure~\ref{fig:SL_Pathway_PI3K_Vertex_Degree}) having pathway relationships with a high number of genes, consistent with the scle-free property of biological networks \cite{Barabasi2004}. There were few differences in the number of connections between gene groups (by synthetic lethal detection). Although genes detected by \gls{siRNA} included those with the fewest connections. The median connectivity of genes detected by both approaches was marginally higher.
+Vertex degree (the number of connections) for each gene is a fundamental property of a network. The vast majority of genes had a relatively modest number of connections, each with only a few genes in the PI3K pathway (shown in Figure~\ref{fig:SL_Pathway_PI3K_Vertex_Degree}) having pathway relationships with a high number of genes, consistent with the scale-free property of biological networks \citep{Barabasi2004}. There were few differences in the number of connections between gene groups (by synthetic lethal detection), although genes detected by \gls{siRNA} included those with the fewest connections. The median connectivity of genes detected by both approaches was marginally higher.
 
 
 \begin{figure*}[!htb]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
-    \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_vertex_degree".pdf}}
-   }
+    %\fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_vertex_degree_stripchart2".pdf}}
+   %}
    }
    \end{center}
    \caption[Synthetic Lethality and Vertex Degree]{\small \textbf{Synthetic Lethality and Vertex Degree.} The number of connected genes (vertex degree) was compared (on a log-scale) across genes deteced by \gls{SLIPT} and \gls{siRNA} screening in the Reactome PI3K cascade pathway. There were very few differences in vertex degree between the groups, although genes detected by \gls{siRNA} included those with the fewest connections. 
 }
 \label{fig:SL_Pathway_PI3K_Vertex_Degree}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 The results for the PI3K pathway were very similar when testing synthetic lethality against \textit{CDH1} mutation (mtSLIPT). In this case, there is also indication that mtSLIPT-specific genes may have higher connectivity than those detected by \gls{siRNA} screening (shown in Figure~\ref{fig:mtSL_Pathway_PI3K_Vertex_Degree}).
 
-However, these apparent differences in vertex degree may be due to fewer genes being detected by either approach. There was no statistically significant effect of either computational or experimental synthetic lethal detection method on vertex degree, as determined by \gls{ANOVA} (shown by Tables~\ref{tab:SL_Pathway_PI3K_Vertex_Degree} and ~\ref{tab:mtSL_Pathway_PI3K_Vertex_Degree}). Thus synthetic lethal detection does not discriminate among genes by their connectivity in a pathway network, nor is either approach constrained by a genes connectivity. Both approaches have been demonstrated to detect genes with many and very few connections.
+However, these apparent differences in vertex degree may be due to fewer genes being detected by either approach. There was no statistically significant effect of either computational or experimental synthetic lethal detection method on vertex degree, as determined by \gls{ANOVA} (shown by Tables~\ref{tab:SL_Pathway_PI3K_Vertex_Degree} and~\ref{tab:mtSL_Pathway_PI3K_Vertex_Degree}). Thus synthetic lethal detection does not discriminate among genes by their connectivity in a pathway network, nor is either approach constrained to detecting highly connected genes. Both approaches have been demonstrated to detect genes with many and very few connections.
 
 \begin{table*}[!htb]
 \caption{\gls{ANOVA} for Synthetic Lethality and Vertex Degree}
@@ -172,29 +172,28 @@ Analysis of variance for vertex degree against synthetic lethal detection approa
 
 \subsubsection{Information Centrality}  \label{chapt4:Network_InfoCent}
 
-Information centrality is a measure of the importance of nodes in a network by how vital they are to the transmission of information throughout the network. This naturally applies well to biological pathways, partcularly gene regulation and cell signalling. The nodes with the highest information centrality are not necessarily the most connected as they may also include nodes which pass signals between highly connected network hubs. Information centrality therefore provides a distinct metric for the connectivity of a gene in a pathway, which has the added benefit of being directly related to the disruption of pathway function were it to be inactivated or removed.
+Information centrality is a measure of the importance of nodes in a network by how vital they are to the transmission of information throughout the network. This applies well to biological pathways, partcularly gene regulation and cell signalling. The nodes with the highest information centrality are not necessarily the most connected, as they may also include nodes which pass signals between highly connected network hubs. Information centrality therefore provides a distinct metric for the connectivity of a gene in a pathway, which has the added benefit of being directly related to the disruption of pathway function were it to be inactivated or removed.
 
-Information centrality has also been suggested to indicate essentiality of genes or proteins \citep{Kranthi2013}. The information centrality for was computed across the entire Reacomte network (as discussed in Appendix~\ref{appendix:infocent_essential}). Reactome contains substrates and cofactors in addition to genes or proteins. In support of centrality as a measure of essentiality or importance to the network, a number nodes with the highest centrality (shown in Table~\ref{tab:infocent_reactome}) were essential nutrients including Mg\textsuperscript{2$+$}, Ca\textsuperscript{2$+$}, Zn\textsuperscript{2$+$}, and Fe.%\textsuperscript{3$+$}
+Information centrality has also been suggested to indicate essentiality of genes or proteins \citep{Kranthi2013}. The information centrality for each gene was computed across the entire Reactome network (as discussed in Appendix~\ref{appendix:infocent_essential}). Reactome contains substrates and cofactors in addition to genes and proteins. In support of centrality as a measure of essentiality or importance to the network, a number nodes with the highest centrality (shown in Table~\ref{tab:infocent_reactome}) were essential nutrients, including Mg\textsuperscript{2$+$}, Ca\textsuperscript{2$+$}, Zn\textsuperscript{2$+$}, and Fe.%\textsuperscript{3$+$}
 
-Genes important in development of epithelial tissues and breast cancer were also detected with relatively high information centrality (as shown by the distribution across the Reactome network in Figure~\ref{fig:infocent_reactome}). Interleukin 8 (encoded by \textit{IL8}) is a chemokine important in epithelial cells, the innate immune system, and binding GPCRs. \textit{GATA4} is a embryonic transcription factor involved in heart development, \gls{EMT}, and was reccurently mutated in in breast cancer \citep{TCGA2012}. $\beta$-catenin (encoded by the proto-oncogene \textit{CTNNB1}) is a regulatory protein which binds E-cadherin, being involved in cell-cell adhesion and \gls{WNT} signalling. Together these show that information cetrality identifies nodes of importance to biological functions in pathway networks, including those relevant to \textit{CDH1} deficient breast cancers. 
+Genes important in development of epithelial tissues and breast cancer were also detected with relatively high information centrality (as shown by the distribution across the Reactome network in Figure~\ref{fig:infocent_reactome}). Interleukin 8 (encoded by \textit{IL8}) is a chemokine important in epithelial cells, the innate immune system, and binding GPCRs. \textit{GATA4} is an embryonic transcription factor involved in heart development, \gls{EMT}, and has been shown to be reccurently mutated in breast cancer \citep{TCGA2012}. $\beta$-catenin (encoded by the proto-oncogene \textit{CTNNB1}) is a regulatory protein which binds E-cadherin, being involved in cell-cell adhesion and \gls{WNT} signalling. Together these show that information cetrality identifies nodes of importance to biological functions in pathway networks, including those relevant to \textit{CDH1} deficient breast cancers. 
 
-
-Within the PI3K pathway (shown in Figure~\ref{fig:SL_Pathway_PI3K_InfoCent}), genes detected by \gls{siRNA} did not include those with lower centrality, although the median information centrality across gene groups detected by either synthetic lethal approach did not differ. The gene with the highest information centrality (\textit{AKT2}) was detected by SLIPT and was markedly higher than the other genes in the pathway which is consistent with the known biological role of AKT in PI3K/AKT signalling and the pathway structure (shown in Figure~\ref{fig:SL_Pathway_Pi3K}). The information centrality of the PI3K pathway was 1.338433.
+Within the PI3K pathway, genes detected by \gls{siRNA} did not include those with lower centrality (shown in Figure~\ref{fig:SL_Pathway_PI3K_InfoCent}), although the median information centrality across gene groups detected by either synthetic lethal approach did not differ. The gene with the highest information centrality (\textit{AKT2}) was detected by SLIPT and was markedly higher than the other genes in the pathway which is consistent with the known biological role of AKT in PI3K/AKT signalling and the pathway structure (shown in Figure~\ref{fig:SL_Pathway_Pi3K}). %The information centrality of the PI3K pathway was 1.338.
 
 \begin{figure*}[!htb]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
-    \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_Info_Centrality(Log)".pdf}}
-   }
+    %\fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_Info_Centrality(Log)_stripchart2".pdf}}
+   %}
    }
    \end{center}
    \caption[Synthetic Lethality and Centrality]{\small \textbf{Synthetic Lethality and Centrality.} The information centrality was compared (on a log-scale across genes deteced by \gls{SLIPT} and \gls{siRNA} screening in the Reactome PI3K cascade pathway. Genes detected by \gls{siRNA} had higher connectivity than many genes not detected by either approach. The gene with the highest centrality was detected by \gls{SLIPT}.
 }
 \label{fig:SL_Pathway_PI3K_InfoCent}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \FloatBarrier
@@ -226,7 +225,7 @@ Analysis of variance for information centrality against synthetic lethal detecti
 }
 \end{table*}
 
-These findings were replicated (shown in Figure~\ref{fig:mtSL_Pathway_PI3K_InfoCent}) when testing synthetic lethality against \textit{CDH1} mutation (mtSLIPT). The differences in network centrality between gene groups detected by either method were not statistically significant as determined by \gls{ANOVA} (shown by Tables~\ref{tab:SL_Pathway_PI3K_InfoCent} and ~\ref{tab:mtSL_Pathway_PI3K_InfoCent}). Thus neither method was unable to detect synthetic lethal genes with particular centrality constraints, although they were also not detecting genes with higher centrality than expected by chance.
+These findings were replicated (shown in Figure~\ref{fig:mtSL_Pathway_PI3K_InfoCent}) when testing synthetic lethality against \textit{CDH1} mutation (mtSLIPT). The differences in network centrality between gene groups detected by either method were not statistically significant as determined by \gls{ANOVA} (shown by Tables~\ref{tab:SL_Pathway_PI3K_InfoCent} and~\ref{tab:mtSL_Pathway_PI3K_InfoCent}). Thus neither method was unable to detect synthetic lethal genes with particular centrality constraints, although they were also not detecting genes with higher centrality than expected by chance.
 
 
 
@@ -239,22 +238,22 @@ These findings were replicated (shown in Figure~\ref{fig:mtSL_Pathway_PI3K_InfoC
 PageRank centrality is another network analysis procedure to infer a hierarchy of gene importance from a network using connections and structure \citep{Brin1998}. In constrast to the information centrality approach of removing nodes, PageRank uses the eigenvalue properties of the adjacency matrix to rank genes according to the number of connections and paths they are involved in. 
 
 \begin{figure*}[!htb]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
-    \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_pagerank".pdf}}
-   }
+    %\fbox{
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/Pi3K_network_pagerank_stripchart2".pdf}}
+   %}
    }
    \end{center}
    \caption[Synthetic Lethality and PageRank]{\small \textbf{Synthetic Lethality and PageRank.} The PageRank centrality was compared (on a log-scale across genes deteced by mtSLIPT and \gls{siRNA} screening in the Reactome PI3K cascade pathway. Genes detected by \gls{siRNA} had a more restricted range of centrality values (which may be constrained experimental detection in a cell line model) than other genes not detected by either approach, although these groups also had fewer genes and a higher median.
 }
 \label{fig:SL_Pathway_PI3K_PageRank}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
-This distinction is immediately clear within the PI3K pathway (shown in Figure~\ref{fig:SL_Pathway_PI3K_PageRank}), which differs considerably from the information centrality scores. While genes not detected by either method had the highest centrality, genes detected by \gls{SLIPT} span the complete range of PageRank centrality values for this pathway. This was replicated (shown in Figure~\ref{fig:mtSL_Pathway_PI3K_PageRank}) when testing synthetic lethality against \textit{CDH1} mutation (mtSLIPT).  Thus \gls{SLIPT} is not biased towards genes with more crucial role in the pathway as inferred by pathway connectivity and centrality measures and it is therefore independent of pathway structure. However, the genes detected by \gls{siRNA} screening have a higher median PageRank centrality, although the differences in PageRank centrality between these methods were not statistically significant as determined by \gls{ANOVA} (shown by Tables~\ref{tab:SL_Pathway_PI3K_InfoCent} and ~\ref{tab:mtSL_Pathway_PI3K_InfoCent}).
+This distinction is immediately clear within the PI3K pathway (shown in Figure~\ref{fig:SL_Pathway_PI3K_PageRank}), which differs considerably from the information centrality scores. While genes not detected by either method had the highest centrality, genes detected by \gls{SLIPT} span the complete range of PageRank centrality values for this pathway. This was replicated (shown in Figure~\ref{fig:mtSL_Pathway_PI3K_PageRank}) when testing synthetic lethality against \textit{CDH1} mutation (mtSLIPT).  Thus \gls{SLIPT} is not biased towards genes with more crucial role in the pathway as inferred by pathway connectivity and centrality measures and it is therefore independent of pathway structure. However, the genes detected by \gls{siRNA} screening have a higher median PageRank centrality, although the differences in PageRank centrality between these methods were not statistically significant as determined by \gls{ANOVA} (shown by Tables~\ref{tab:SL_Pathway_PI3K_PageRank} and~\ref{tab:mtSL_Pathway_PI3K_PageRank}).
 
 
 \begin{table*}[!htb]
@@ -286,7 +285,7 @@ Analysis of variance for PageRank centrality against synthetic lethal detection 
 
 \FloatBarrier
 
-\section{Testing Pathway Structure of Synthetic Lethal Genes}
+\section{Relationships between Synthetic Lethal Genes}
 
 \FloatBarrier
 
@@ -297,22 +296,22 @@ Analysis of variance for PageRank centrality against synthetic lethal detection 
 
 \FloatBarrier
 
-A contextual hierarchy of genes in the PI3K pathway was performed (as described in in Secion~\ref{methods:pathway_rank}) to assign scores for their relative order in the pathway. In the case of PI3K (shown in Figure~\ref{fig:SL_Pathway_PI3K_Ranking}), this orders genes from the upstream genes which respond to signals from extracellular stimuli to the downstream genes which transmit these to the gene expression (translation) responses of the cell. The directionality of this pathway is evident in transmitting signals from the \gls{PI3K} complex, via AKT, \gls{PDE}, and mTOR to the ribosomal regulatory proteins. This hierarchical procedure enables testing whether the biological context of a gene in a pathway is relevant to detection as a synthetic lethal candidate by either computational \gls{SLIPT} analysis or experimental \gls{siRNA} screening.
+A contextual hierarchy of genes in the PI3K pathway was performed (as described in in Secion~\ref{methods:pathway_rank}) to assign scores for their relative order in the pathway. In the case of PI3K (shown in Figure~\ref{fig:SL_Pathway_PI3K_Ranking}), this orders genes from the upstream genes which respond to signals from extracellular stimuli, to the downstream genes which transmit these to the gene expression (translation) responses of the cell. The directionality of this pathway is evident in transmitting signals from the \gls{PI3K} complex, via AKT, \gls{PDE}, and mTOR to the ribosomal regulatory proteins. This hierarchical procedure enables testing whether the biological context of a gene in a pathway is relevant to detection as a synthetic lethal candidate by either computational \gls{SLIPT} analysis or experimental \gls{siRNA} screening.
 
 \begin{figure*}[!htb]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
-  \resizebox{0.95 \textwidth}{!}{
+  \resizebox{1 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
-    \fbox{
+    %\fbox{
     \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/graph_distance".pdf}}
-   }
+   %}
    }
    \end{center}
-   \caption[Structure of PI3K Ranking]{\small \textbf{Structure of PI3K Ranking.} Structure of PI3K Ranking.
+   \caption[Hierarchical Structure of PI3K]{\small \textbf{Hierarchical Structure of PI3K.} A contextual score was used for ranking genes within the \gls{PI3K} Cascade to demonstrate a pathway structure analysis to examine whether genes detected by either \gls{SLIPT} or \gls{siRNA} were more frequently upstream or downstream in the \gls{PI3K} pathway.
 }
 \label{fig:SL_Pathway_PI3K_Ranking}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
@@ -326,39 +325,30 @@ A contextual hierarchy of genes in the PI3K pathway was performed (as described 
 % \item Is there an association with SLIPT (Chi-sq) or siRNA (viability) score? x
 %\end{itemize}
 
-This pathway hierarchy in the \gls{PI3K} cascade was tested for differences between genes detected across \gls{SLIPT} and \gls{siRNA} screening. The synthetic lethal candidates for \textit{CDH1} detected by either method (as shown by Figure~\ref{fig:SL_Pathway_PI3K_Distance_Vioplot_Counts}) did not differ, each being distributed throughout the pathway. The \gls{SLIPT} candidate genes were more numerous, there was little indication that they are more frequently upstream or downstream of \gls{siRNA} candidate genes (as shown by Figure~\ref{fig:SL_Pathway_PI3K_Distance_Barplot_Counts}). Although \gls{SLIPT} genes included more with a lower (upstream) hierarchy. Synthetic lethal candidates from both methods were less frequently detected in the downstream effectors of the pathway (such as the mTOR complex), although core pathway genes (such as \textit{AKT2} and \textit{PDE3B}) were detectable as synthetic lethal candidates (as discussed for Figure~\ref{fig:SL_Pathway_Pi3K}).
+This pathway hierarchy in the \gls{PI3K} cascade was tested for differences between genes detected across \gls{SLIPT} and \gls{siRNA} screening. The synthetic lethal candidates for \textit{CDH1} detected by either method (as shown by Figure~\ref{fig:SL_Pathway_PI3K_Distance_Vioplot_Counts}) did not differ, each being distributed throughout the pathway. The \gls{SLIPT} candidate genes were more numerous, there was little indication that they are more frequently upstream or downstream of \gls{siRNA} candidate genes (as shown by Figure~\ref{fig:SL_Pathway_PI3K_Distance_Barplot_Counts}), although \gls{SLIPT} genes included more with a lower (upstream) hierarchy. Synthetic lethal candidates from both methods were less frequently detected in the downstream effectors of the pathway (e.g., the mTOR complex), although core pathway genes (e.g., \textit{AKT2} and \textit{PDE3B}) were detectable as synthetic lethal candidates (as discussed for Figure~\ref{fig:SL_Pathway_Pi3K}).
 
 \begin{figure*}[!htb]
-\begin{mdframed}
-  \begin{center}
-  \resizebox{0.75 \textwidth}{!}{
-    \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_counts_vioplot".pdf}}
-   }
-   }
-   \end{center}
-   \caption[Synthetic Lethality and Hierarchy Score in PI3K]{\small \textbf{Synthetic Lethality and Hierarchy Score in PI3K.} The hierarchical distance scores were similarly distributed across \gls{SLIPT} and \gls{siRNA} genes.
+%\begin{mdframed}
+ \begin{center}
+%
+        \subcaptionbox{Hierarchical Distance Score \label{fig:SL_Pathway_PI3K_Distance_Vioplot_Counts}}{
+	  %\fbox{
+	  \includegraphics[width=0.75 \textwidth]{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_counts_vioplot".pdf}}
+	%}
+        }%
+
+        \subcaptionbox{Proportion of Genes \label{fig:SL_Pathway_PI3K_Distance_Barplot_Counts}}{%
+	  %\fbox{
+	  \includegraphics[width=0.75 \textwidth]{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_counts_barplot_prop".pdf}}
+	%}
+        }%
+      \end{center}
+   \caption[Hierarchy Score in PI3K against Synthetic Lethality in PI3K]{\small \textbf{Hierarchy Score in PI3K against Synthetic Lethality in PI3K.} The hierarchical distance scores were similarly distributed across \gls{SLIPT} and \gls{siRNA} genes. The number of \gls{SLIPT} and \gls{siRNA} genes against the hierarchical distance scores showing no significant tendency for either method to either of the pathway upstream or downstream extremities.
 }
-\label{fig:SL_Pathway_PI3K_Distance_Vioplot_Counts}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
-\begin{figure*}[!htb]
-\begin{mdframed}
-  \begin{center}
-  \resizebox{0.75 \textwidth}{!}{
-    \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_counts_barplot".pdf}}
-   }
-   }
-   \end{center}
-   \caption[Hierarchy Score in PI3K against Synthetic Lethality in PI3K]{\small \textbf{Hierarchy Score in PI3K against Synthetic Lethality in PI3K.} The number of \gls{SLIPT} and \gls{siRNA} genes against the hierarchical distance scores showing no significant tendency for either method to either of the pathway upstream or downstream extremities.
-}
-\label{fig:SL_Pathway_PI3K_Distance_Barplot_Counts}
-\end{mdframed}
-\end{figure*}
-
-Similarly, when testing synthetic lethality against \textit{CDH1} mutation (mtSLIPT), the hierarchical score for the \gls{PI3K} pathway did not differ between mtSLIPT-specific and siRNA-specific gene candidates (as shown by Figure~\ref{fig:mtSL_Pathway_PI3K_Distance_Vioplot_Counts}). Although the median among genes detected by both approaches was elevated, that is further downstream in the pathway that other synthetic lethal candidates partners of \textit{CDH1}. This distinction is particularly notable since there were fewer genes overall with higher scores (shown in Figure~\ref{fig:mtSL_Pathway_PI3K_Distance_Barplot_Counts}), while these are more frequently detected by both mtSLIPT and siRNA.
+Similarly, when testing synthetic lethality against \textit{CDH1} mutation (mtSLIPT), the hierarchical score for the \gls{PI3K} pathway did not differ between mtSLIPT-specific and siRNA-specific gene candidates (as shown by Appendix Figure~\ref{fig:mtSL_Pathway_PI3K_Distance_Vioplot_Counts}), although the median among genes detected by both approaches was elevated. These genes were further downstream in the pathway that other synthetic lethal candidate partners of \textit{CDH1}. This distinction is particularly notable since there were fewer genes overall with higher scores (shown in Figure~\ref{fig:mtSL_Pathway_PI3K_Distance_Barplot_Counts}), while these are more frequently detected by both mtSLIPT and siRNA.
 
 However, there was no significant effect variation in pathway hierarchy (shown by \gls{ANOVA} in Tables~\ref{tab:SL_Pathway_PI3K_Distance_Counts} and~\ref{tab:mtSL_Pathway_PI3K_Distance_Counts}) accounted for by SLIPT or siRNA detection in the PI3K pathway (as shown in Figure~\ref{fig:SL_Pathway_Pi3K}). Thus such differences in hierarchical scores may be observed by sampling variation and there is no indication that SLIPT or siRNA detection differs along the direction of the pathway. Genes detected by either method are no more or less common among upstream or downstream of the pathway.
 
@@ -394,54 +384,55 @@ Analysis of variance for PI3K hierarchy score against synthetic lethal detection
 }
 }
 \end{table*}
-The pathway hierarchy may be applied here. A $\chi^2$-test was performed for the \gls{SLIPT} or \gls{siRNA} candidate genes upstream or downstream of each gene. It is unsurprising that these $\chi^2$ tests were more significant when the gene used as a threshold was in the middle of the pathway (as shown in Figure~\ref{fig:SL_Pathway_PI3K_Distance_Vioplot}). However, there was no statistically significant support for pathway structure by this approach as none of the $\chi^2$ values were high enough to detect pathway structure between \gls{SLIPT} and \gls{siRNA} gene candidates. Nor was structure detectable for mtSLIPT testing synthetic lethality against \textit{CDH1} mutation (as shown in Figure~\ref{fig:mtSL_Pathway_PI3K_Distance_Vioplot}).
+The pathway hierarchy may be applied here. A $\chi^2$-test was performed for the \gls{SLIPT} or \gls{siRNA} candidate genes upstream or downstream of each gene. It is unsurprising that these $\chi^2$ tests were more significant when the gene used as a threshold was in the middle of the pathway (as shown in Figure~\ref{fig:SL_Pathway_PI3K_Distance_Vioplot}). However, there was no statistically significant support for pathway structure by this approach, as none of the $\chi^2$ values were high enough to detect pathway structure between \gls{SLIPT} and \gls{siRNA} gene candidates. Nor was structure detectable for mtSLIPT testing synthetic lethality against \textit{CDH1} mutation (as shown in Figure~\ref{fig:mtSL_Pathway_PI3K_Distance_Vioplot}).
 
 %\FloatBarrier
 
 \begin{figure*}[!htb]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.75 \textwidth}{!}{
-    \fbox{
+    %\fbox{
     %\includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_vioplot_exprSL".png}}
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_vioplot".pdf}}
-   }
+    %\includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_vioplot".pdf}}
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Discrete_Pi3k/SL_distance_stripchart".pdf}}
+   %}
    }
    \end{center}
    \caption[Structure of Synthetic Lethality in PI3K]{\small \textbf{Structure of Synthetic Lethality in PI3K.} The number of \gls{SLIPT} and \gls{siRNA} genes upstream or downstream of each gene in the Reactome PI3K pathway were tested (by the $\chi^2$-test). These are plotted as a split violin plot against the hierarchical distance scores showing no significant tendency for either method to either of the pathway upstream or downstream extremities.
 }
 \label{fig:SL_Pathway_PI3K_Distance_Vioplot}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \FloatBarrier
 
 \subsection{Upstream or Downstream Synthetic Lethality}
 
-However, this does not ascertain whether \gls{SLIPT} and \gls{siRNA} candidate partners of \textit{CDH1} are upstream or downstream of one and other within a pathway such as the \gls{PI3K} cascade. The hierarchical approach is designed to detected differences in pathway location between gene groups. An alternative pathway structure method has been devised to use network structures to identify directional relationships between individual \gls{SLIPT} and \gls{siRNA} genes. This pathway structure methodology will be applied (as described in Section~\ref{methods:pathway_str}) to detect the direction of shortest paths between \gls{SLIPT} and \gls{siRNA} gene candidates. This will be used to demonstrate the methodology on the \gls{PI3K} pathway, to develop a statistical test for pathway structure between between \gls{SLIPT} and \gls{siRNA} gene candidate using resampling  (as described in Section~\ref{methods:network_permutation}, and to apply this test for pathway structure among synthetic lethal gene candidates to the pathways identified in Chapter~\ref{chap:SLIPT} and discussed in Section~\ref{chapt4:SL_Genes}.
+This approach does not ascertain whether \gls{SLIPT} and \gls{siRNA} candidate partners of \textit{CDH1} are upstream or downstream of one and other within a pathway such as the \gls{PI3K} cascade. The hierarchical approach is designed to detect differences in pathway location between gene groups. An alternative pathway structure method has been devised to use network structures to identify directional relationships between individual \gls{SLIPT} and \gls{siRNA} genes. This pathway structure methodology will be applied (as described in Section~\ref{methods:pathway_str}) to detect the direction of shortest paths between \gls{SLIPT} and \gls{siRNA} gene candidates. This will be used to demonstrate the methodology on the \gls{PI3K} pathway, to develop a statistical test for pathway structure between between \gls{SLIPT} and \gls{siRNA} gene candidate using resampling  (as described in Section~\ref{methods:network_permutation}, and to apply this test for pathway structure among synthetic lethal gene candidates to the pathways identified in Chapter~\ref{chap:SLIPT} and discussed in Section~\ref{chapt4:SL_Genes}.
 
 \FloatBarrier
 
 \subsubsection{Measuring Structure of Candidates within PI3K}  \label{chapt4:Structure_PI3K}
 
-Shortest paths in a pathway network were used to devise a strategy to detect pathway structure between \gls{SLIPT} and \gls{siRNA} gene candidate partners of \textit{CDH1} (asdescribed in Section~\ref{methods:pathway_str}). Thus we can determine whether individual \gls{SLIPT} genes have upstream or downstream \gls{siRNA} candidates (scored as ``up'' or ``down'' events respectively). This procedure enables the detection of directional relationships between \gls{SLIPT} and \gls{siRNA} gene candidates (in contrast to the hierarchical approach).
+Shortest paths in a pathway network were used to devise a strategy to detect pathway structure between \gls{SLIPT} and \gls{siRNA} gene candidate partners of \textit{CDH1} (as described in Section~\ref{methods:pathway_str}). Thus we can determine whether individual \gls{SLIPT} genes have upstream or downstream \gls{siRNA} candidates (scored as ``up'' or ``down'' events respectively). This procedure enables the detection of directional relationships between \gls{SLIPT} and \gls{siRNA} gene candidates (in contrast to the hierarchical approach).
 
 
 
 \begin{figure*}[!tb]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.75 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
-    \fbox{
+    %\fbox{
     \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL".pdf}}
-   }
+   %}
    }
    \end{center}
    \caption[Structure of Synthetic Lethality Resampling in PI3K]{\small \textbf{Structure of Synthetic Lethality Resampling in PI3K.} A null distribution with 10,000 iterations of the number of \gls{siRNA} genes upstream or downstream of \gls{SLIPT} genes (depicted as the difference of these) in the PI3K pathway. To assess significance, the observed events (with shortest paths) were compared to the 90\% and 95\% intervals for the null distribution (shown in violet). Genes detected by both methods were fixed to the same number as observed for the alternative null distribution (shown in blue), although the observed number of events (red) was not significant in either case. In both cases, these genes detected by both approaches were included in computing the number of shortest paths (in either direction) between \gls{SLIPT} and \gls{siRNA} genes. 
 }
 \label{fig:SL_Pathway_PI3K_Perm}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 The total number of gene candidate pairs in either direction can be compared within a pathway network to assess the overall directional relationships in a pathway. This directionality is detectable by the difference between the number \gls{SLIPT} candidate genes with upstream and downstream \gls{siRNA} gene partners. However, this measure alone is not sufficient to determine whether there is evidence of pathway structure between \gls{SLIPT} and \gls{siRNA} gene candidate partners of \textit{CDH1} in a pathway network. Although it does serve to measure the magnitude (and direction) of the consensus of directional relationships (upstream and downstream) between \gls{SLIPT} and \gls{siRNA} gene candidate partners. This measure of pathway structure can be used for testing for statistical significance of pathway structure by resampling, using a permutation procedure to test whether these relationships are detectable among randomly selected gene groups rather than the detected \gls{SLIPT} and \gls{siRNA} gene candidate partners (as described in Sections~\ref{methods:permutation} and~\ref{methods:network_permutation}).
@@ -455,9 +446,9 @@ In contrast, when testing synthetic lethality against \textit{CDH1} mutation (mt
 
 \subsubsection{Resampling for Synthetic Lethal Pathway Structure}  \label{chapt4:Structure_Perm}
 
-The permutation procedure (as described in Section~\ref{methods:network_permutation}) that was performed in Section~\ref{chapt4:Structure_PI3K} for the \gls{PI3K} cascade was also applied to other pathways identified in Chapter~\ref{chap:SLIPT} and discussed in Section~\ref{chapt4:SL_Genes}. These include extracellular matrix (with constituent elastic fibre and fibrin pathways), cell signalling (by PI3K/AKT and GCPRs), and translational pathways (with \gls{NMD} and 3$^\prime$\gls{UTR} regulation). The resampling results across these pathways (as shown in Table~\ref{tab:pathway_str_exprSL}) had limited support for pathway structure, with the majority of these being non-significant as shown for PI3K (in Figure~\ref{fig:mtSL_Pathway_PI3K_Perm}). However, the distribution for these pathways will differ depending on their structure, the number of genes they consist of, and the proportion of synthetic lethal candidates among them (including a higher frequency of genes detected by both methods pathways identified in Sections~\ref{chapt3:compare_pathway_perm} and ~\ref{chapt3:compare_pathway_perm_stad_SL}). This resampling is an appropriate procedure to use to detect structural relationships across pathways as it does not assume an underlying test statistic distribution.
+The permutation procedure (as described in Section~\ref{methods:network_permutation}) that was performed in Section~\ref{chapt4:Structure_PI3K} for the \gls{PI3K} cascade was also applied to other pathways identified in Chapter~\ref{chap:SLIPT} and discussed in Section~\ref{chapt4:SL_Genes}. These include extracellular matrix (with constituent elastic fibre and fibrin pathways), cell signalling (by PI3K/AKT and GCPRs), and translational pathways (with \gls{NMD} and 3$^\prime$\gls{UTR} regulation). The resampling results across these pathways (as shown in Table~\ref{tab:pathway_str_exprSL}) had limited support for pathway structure, with the majority of these being non-significant as shown for PI3K (in Figure~\ref{fig:mtSL_Pathway_PI3K_Perm}). However, the distribution for these pathways will differ depending on their structure, the number of genes they consist of, and the proportion of synthetic lethal candidates among them (including a higher frequency of genes detected by both methods pathways identified in Sections~\ref{chapt3:compare_pathway_perm} and~\ref{chapt3:compare_pathway_perm_stad_SL}). This resampling is an appropriate procedure to use to detect structural relationships across pathways as it does not assume an underlying test statistic distribution.
 
-Pathway structure was supported for the \gls{NMD} pathway (which is consistent with \gls{siRNA} being downstream in Figure~\ref{fig:SL_Pathway_NMD}). However, this observation rest upon a single gene and was not replicated when testing synthetic lethality (mtSLIPT) against \textit{CDH1} mutation (as shown in Table~\ref{tab:pathway_str_mtSL}) or supported by the related 3$^\prime$\gls{UTR} regulation and translational elongation pathways.
+Pathway structure was supported for the \gls{NMD} pathway (which is consistent with \gls{siRNA} being downstream in Figure~\ref{fig:SL_Pathway_NMD}). However, this observation rests upon a single gene and was not replicated when testing synthetic lethality (mtSLIPT) against \textit{CDH1} mutation (as shown in Table~\ref{tab:pathway_str_mtSL}) nor was it supported by the related 3$^\prime$\gls{UTR} regulation and translational elongation pathways.
 
 \begin{table*}[!htb]
 \caption{Resampling for pathway structure of synthetic lethal detection methods}
@@ -486,23 +477,25 @@ Extracellular matrix                      & 299         & 3677         & 127    
 \rowcolor{black!10}
 Formation of Fibrin                       & 52          & 243          & 18            & 5           & 12   & 17   & -5      & 0.706        & 0.6198             & 0.3564              \\
 \rowcolor{black!5}
-\textbf{Nonsense-Mediated Decay}                   & 103         & 102          & 74            & 2           & 0    & 74   & -74     & 0            & 1.0000             & $>0.0001$                   \\
+\textbf{Nonsense-Mediated Decay}                   & 103         & 102          & 74            & 2           & 0    & 74   & -74     & 0            & 1.0000             & $<0.0001$                   \\
 \rowcolor{black!10}
 3' -UTR-mediated translational regulation & 107         & 2860         & 77            & 1           & 0    & 0    & 0       &              & 0.4902             & 0.5027              \\
 \rowcolor{black!5}
 Eukaryotic Translation Elongation         & 92          & 3746         & 76            & 0           & 0    & 0    & 0       &              & 0.4943             & 0.4933              \\
 \hline
+%fdr:  0.6734 0.6734 0.0145 0.6734 0.6734 0.6734 0.6734 0.0010 0.6734 0.6734
+%holm: 0.4606 0.6734 0.0029 0.6305 0.3865 0.6636 0.3564 0.0001 0.5027 0.4933
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Pathways in the Reactome network tested for structural relationships between \gls{SLIPT} and \gls{siRNA} genes by resampling. The raw p-value (computed without adjusting for multiple comparisons over pathways) is given for the difference in upstream and downstream paths from \gls{SLIPT} to \gls{siRNA} gene candidate partners of \texti{CDH1} with significant pathways highlighted in bold. Sampling was performed only in the target pathway and shortest paths were computed within it. Loops or paths in either direction that could not be resolved were excluded from the analysis. The gene detected by both \gls{SLIPT} and \gls{siRNA} (or resampling for them) were includued in the analysis and the number of these were fixed to the number observed.
+Pathways in the Reactome network tested for structural relationships between \gls{SLIPT} and \gls{siRNA} genes by resampling. The raw p-value (computed without adjusting for multiple comparisons over pathways) is given for the difference in upstream and downstream paths from \gls{SLIPT} to \gls{siRNA} gene candidate partners of \textit{CDH1} with significant pathways highlighted in bold. Sampling was performed only in the target pathway and shortest paths were computed within it. Loops or paths in either direction that could not be resolved were excluded from the analysis. The gene detected by both \gls{SLIPT} and \gls{siRNA} (or resampling for them) were includued in the analysis and the number of these were fixed to the number observed.
 \end{tablenotes}
 \end{threeparttable}
 }
 }
 \end{table*}
 
-There does not appear to be a consensus on the directionality of \gls{SLIPT} and \gls{siRNA} candidates across pathways as distinct pathways showed stronger tendency for \gls{siRNA} genes to be either upstream or downstream. Even related pathways such as \gls{PI3K} and PI3K/AKT signalling showed directional events in opposite directions. The strongest pathway (among those tested) with support for directional pathways structure is G$_{\alpha i}$ signaling which showed significant downstream \gls{siRNA} genes for both SLIPT and mtSLIPT from a large number of shortest paths (in Tables~\ref{tab:pathway_str_exprSL} and ~\ref{tab:pathway_str_mtSL}).However, these results are borderline significant (with raw permutation p-values) and are unlikely to be detected after adjusting for multiple comparisons.
+There does not appear to be a consensus on the directionality of \gls{SLIPT} and \gls{siRNA} candidates across pathways as distinct pathways showed stronger tendency for \gls{siRNA} genes to be either upstream or downstream. Even related pathways such as \gls{PI3K} and PI3K/AKT signalling showed directional events in opposite directions. The strongest pathway (among those tested) with support for directional pathways structure is G$_{\alpha i}$ signaling which showed significant downstream \gls{siRNA} genes for both SLIPT and mtSLIPT from a large number of shortest paths (in Tables~\ref{tab:pathway_str_exprSL} and~\ref{tab:pathway_str_mtSL}). However, these results are borderline significant (with raw permutation p-values) and are unlikely to be detected after adjusting for multiple comparisons across the 10 pathways presented here (nor in the 1652 Reactome pathways used previously in Chapter~\ref{chap:SLIPT}).
 
 Therefore, there is insufficent evidence to determine whether there is pathway structure between the \gls{SLIPT} and \gls{siRNA} candidates observed in many pathways. In particular, directional structure among synthetic lethal candidates for \textit{CDH1} was not strongly supported in signalling pathways upon which the rationale for pathway structure hypotheses were based on. Despite the design of a robust resampling approach to test relationships between gene groups, this did not detect many structural relationships between \gls{SLIPT} and \gls{siRNA} gene candidates, although it may apply more broadly to gene networks. Furthermore, the pathway relationships are unlikely to be statistically supported by resampling when testing across the search space of Reactome pathways and adjusting for multiple comparisons. While there is statistically significant over-representation of many of these pathways in gene detected by both \gls{SLIPT} and \gls{siRNA} (as described in Chapter~\ref{chap:SLIPT}), these did not show pathway structure, nor does pathway structure account for the discrepancy between \gls{SLIPT} and \gls{siRNA} gene candidates which did not significantly intersect such as the \gls{PI3K} cascade. 
 
@@ -513,7 +506,7 @@ Therefore, there is insufficent evidence to determine whether there is pathway s
 
 Synthetic lethal genes and pathways (for \textit{CDH1} loss in cancer) were identified across gene expression and mutation datasets in Chapter~\ref{chap:SLIPT}. These pathway structure investigations extend those investigations into synthetic lethal gene candidates including exploring the discrepancy between \gls{SLIPT} and \gls{siRNA} candidates genes in a pathway such as \gls{PI3K} in which they did not significantly intersect. Pathways with replicated synthetic lethal genes across these detection methods, breast and stomach cancer data, and patient and cell line data were also investigated including pathways from the extracellular microenvironment to core translational pathway and the signalling pathways which mediate between them.
 
-Many genes were detected by either method and the differences between the computational and experimental screening approaches could feasibly lead to differences in which genes within a synthetic lethal pathway are identified. Genes detected by synthetic lethal detection strategies included those biological importance within synthetic lethal pathways, those which are actionable drug targets, and those with functional implications for the biological growth mechanisms or vulnerabilities of \textit{CDH1} deficient tumours. It appeared that genes detected by both approaches were highly connected (or of importance) in the network structure or some pathways and that there may be some structure with \gls{SLIPT} and \gls{siRNA} upstream or downstream of each other. However, the complexity of biological pathways meant that they are not reliably interpretable so formal mathematical and computational approaches are needed to analyse large biological networks.
+Many genes were detected by either method and the differences between the computational and experimental screening approaches could feasibly lead to differences in which genes within a synthetic lethal pathway are identified. Genes detected by synthetic lethal detection strategies included those biological importance within synthetic lethal pathways, those which are actionable drug targets, and those with functional implications for the biological growth mechanisms or vulnerabilities of \textit{CDH1} deficient tumours. It appeared that genes detected by both approaches were highly connected (or of importance) in the network structure or some pathways and that there may be some structure with \gls{SLIPT} and \gls{siRNA} upstream or downstream of each other. However, the complexity of biological pathways meant that relationships between gene candidates are difficult to discern without formal mathematical and computational approaches so these were used to analyse large biological networks.
 
 Network analysis techniques were therefore applied to formalise and quantify the connectivity and importance (centrality) of genes within pathways (using PI3K as an example). However, these network techniques were unable to identify distinct differences in the network properties of genes detected as synthetic lethal candidates by computational or experimental methods. These network metrics support the application of synthetic detection across pathways (and the findings using pathways as gene sets in Chapter~\ref{chap:SLIPT}) as neither synthetic lethal detection approach was biased towards genes of higher importance or connectivity and neither approach was insensitive to genes of lower  importance or connectivity.
 
@@ -521,11 +514,15 @@ Similarly, a network hierarchy based on biological context (ordered from receivi
 
 A measure of pathway structure between individual \gls{SLIPT} and \gls{siRNA} genes within a pathway was also devised using the direction of shortest paths in a directed graph structure. This is amenable to detecting the consensus directionality of the pathway across pairs of genes detected by either method. The pathway structure methodology developed here is generally applicable to comparison of node groups (allowing overlapping) including genes in biological pathways and their detection by different methodologies. While the pathway structure measure alone is not able to detect structural relationships between gene groups (such \gls{SLIPT} and \gls{siRNA} gene candidates), it is amenable to resampling to determine whether these relationships are statistically significant.
 
+[add paragraph on pathway validity?]
+
+These investigations used a functional pathway network that encapsulates protein complexes and functional modules. The Reactome network \citep{Reactome} uses curated experimentally identified pathways to determine relationships between genes and does not have the limitation of relying solely on protein binding or text-mining which are prone to false postives. While it is not documented whether these relationships are activating or inhibitory, the Reactome network \citep{Reactome} is sufficient to test pathway relationships with directional information.
+
 \section{Summary}
 
-Together these analyses of biological pathways, network metrics, and statistical procedures devised specifically for purpose were applied to Reactome pathway structures to test whether structural relationships exist between synthetic lethal candidates. Of particular interest was whether these relationships be related to the differences between the computational (\gls{SLIPT}) and experimental (\gls{siRNA}) synthetic lethal candidate partners of \textit{CDH1} (in the pathways discussed in Chapter~\ref{chap:SLIPT}).
+Together these analyses of biological pathways, network metrics, and statistical procedures devised specifically for purpose were applied to Reactome pathway structures to test whether structural relationships exist between synthetic lethal candidates. Of particular interest was whether these relationships relate to the differences between the computational (\gls{SLIPT}) and experimental (\gls{siRNA}) synthetic lethal candidate partners of \textit{CDH1} (in the pathways discussed in Chapter~\ref{chap:SLIPT}).
 
-While biologically relevant relationships were observed in specific pathways, there were not detectable structural relationships between \gls{SLIPT} and \gls{siRNA} gene candidates. These candidates did not exhibited significant differences in network connectivity or centrality measures. Network analyses were also unable to ascertain whether the candidates detected by either method stratified into upstream and downstream genes on the pathway and they likely do not.
+While biologically relevant relationships were observed in specific pathways, there were not detectable structural relationships between \gls{SLIPT} and \gls{siRNA} gene candidates. These candidates did not exhibite significant differences in network connectivity or centrality measures. Network analyses were also unable to ascertain whether the candidates detected by either method stratified into upstream and downstream genes on the pathway and they likely do not.
 
 A statistical resampling procedure was applied to shortest paths to test whether pairs of \gls{SLIPT} and \gls{siRNA} gene candidates were more likely to be upstream or downstream of each other. This approach detected very few structural relationships in the synthetic lethal pathways identified in Chapter~\ref{chap:SLIPT}. Overall, support for pathway structure between \gls{SLIPT} and \gls{siRNA} gene candidates is weak and the direction is inconsistent between pathways. Therefore pathway structure does not account for the differences between the \gls{SLIPT} and \gls{siRNA} gene candidates, although this does support the validity of gene set analyses in Chapter~\ref{chap:SLIPT} and the synthetic lethal pathways identified.
 

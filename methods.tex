@@ -47,7 +47,7 @@ After removal of these samples, the \gls{TCGA} dataset used for analysis consist
 
 
 \begin{figure*}[!htp]
-\begin{mdframed}
+%\begin{mdframed}
    %\resizebox{1 \textwidth}{!}{
    \begin{center}
 %
@@ -64,11 +64,11 @@ After removal of these samples, the \gls{TCGA} dataset used for analysis consist
 \caption[Read count density]{\small \textbf{Read count density.} Sample density plots of raw counts on log-scale and voom normalised showing samples removed due to quality concerns.}
 %}
 \label{fig:density}
-\end{mdframed}
+%\end{mdframed}
 %\end{figure*}
 
 %\begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -85,7 +85,7 @@ After removal of these samples, the \gls{TCGA} dataset used for analysis consist
   \caption[Read count sample mean]{\small \textbf{Read count sample mean.} Boxplots of sample means for raw counts on log-scale and voom normalised show removed tumour samples with low mean read count.}
 %}
 \label{fig:boxplot}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
@@ -147,7 +147,7 @@ The \texttt{t.test} function \citep{R_core} has also been used to implement the 
 Multiple comparisons are adjusted by the Benjamini-Hochberg procedure to control the false discovery rate (FDR) unless otherwise specified \citep{fdr1995}. This procedure adjusts p-values to achieve an average of the proportion of false-positives among significant tests below a threshold, $\alpha$. The more stringent Holm-Bonferroni (Holm) procedure \citep{Holm1979} was also applied in some cases to adjust for multiple comparisons and control the family-wise error rate which adjusts p-values so that the probability that any one of the tests is a false-positive (type-1 error) below a threshold, $\alpha$.
 
 \subsection{Gene Set Over-representation Analysis} \label{methods:enrichment}
-Gene set enrichment over-representation was performed to test whether there is an enrichment of a gene set (such as a biological pathway) among a group of input genes. Such input genes may be predicted synthetic lethal candidates or a subset defined by clustering (in Section~\ref{methods:clustering}) or comparison with experimental candidates (see Section~\ref{methods:venn_analysis}). Initially, these tests were performed using the GeneSetDB web tool \citep{genesetdb} hosted by the University of Auckland on the Reactome pathways \citep{Reactome}. Since the GeneSetDB tool used an older version of Reactome (version 40), it was difficult to directly compare with the results of other analysis (see sections~\ref{methods:venn_analysis} and~\ref{methods:permutation}) performed on version 52 (as described in  Section~\ref{methods:gene_set}). Thus an implementation of the hypergeometric test in R \citep{R_core} was used to test for over-representation against Reactome (version 52) pathways. Pathways containing less than 10 genes or more than 500 \citep[as performed in GeneSetDB by][]{genesetdb} were excluded before adjusting for multiple comparisons.
+Gene set enrichment over-representation was performed to test whether there is an enrichment of a gene set (e.g., a biological pathway) among a group of input genes. Such input genes may be predicted synthetic lethal candidates or a subset defined by clustering (in Section~\ref{methods:clustering}) or comparison with experimental candidates (see Section~\ref{methods:venn_analysis}). Initially, these tests were performed using the GeneSetDB web tool \citep{genesetdb} hosted by the University of Auckland on the Reactome pathways \citep{Reactome}. Since the GeneSetDB tool used an older version of Reactome (version 40), it was difficult to directly compare with the results of other analysis (see sections~\ref{methods:venn_analysis} and~\ref{methods:permutation}) performed on version 52 (as described in  Section~\ref{methods:gene_set}). Thus an implementation of the hypergeometric test in R \citep{R_core} was used to test for over-representation against Reactome (version 52) pathways. Pathways containing less than 10 genes or more than 500 \citep[as performed in GeneSetDB by][]{genesetdb} were excluded before adjusting for multiple comparisons.
 
 \subsection{Clustering} \label{methods:clustering}
 Clustering analysis when performed uses unsupervised hierarchical clustering with complete linkage (distance calculated from the furthest possible pairing). For correlation matrices or multivariate normal parameters (e.g., $\Sigma$), the distance metric used was Euclidean distance. For empirical or simulated gene and pathway expression data correlation distance was used, calculated by $distance = 1 - cor(t(x))$ where $cor$ is Pearson's correlation and $t(x)$ is the transpose of the expression matrix. 

@@ -17,7 +17,7 @@
 \label{appendix:sample_correlation}
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.7 \textwidth}{!}{
     \includegraphics{Raw(log)_Corr_eudist_Cut_part_Pub.png}
@@ -25,11 +25,11 @@
    \end{center}
    \caption[Correlation profiles of removed samples]{\small \textbf{Correlation profiles of removed samples.} Correlation matrix heatmap (Euclidean distance) of all samples in TCGA breast cancer dataset (left) clustered for all samples against removed samples (top): tissue source site (TSS), sample type with reds for tumour and greens for normal, patient (A2QH in pink), with varied analyte and plate (corresponding to batch in Table~\ref{tab:qc}). Excluded samples cluster at the bottom and annotation (left) show  shared properties between samples in the dataset.}
 \label{fig:corr_map_part}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{\textwidth}{!}{
     \includegraphics{Raw(log)_Corr_eudist_Ann_Pub.png}
@@ -37,7 +37,7 @@
    \end{center}
    \caption[Correlation analysis and sample removal]{\small \textbf{Correlation analysis and sample removal.} Correlation matrix heatmap (Euclidean distance) of all samples in TCGA breast cancer dataset against each other annotated for sample clinical data: sample type, tissue type, tumour stage, Estrogen receptor (IHC) and intrinsic subtype (from the PAM50 method). CDH1 somatic mutation, gene expression, and status for SLIPT prediction are also annotated. Discrete variables are coloured as displayed in the legend and continuous variables on a blue-red scale as shown in the colour key. Trimmed samples cluster at the bottom of the heatmap and the colour bars of the left show which were removed for quality concerns.}
 \label{fig:corr_map}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
@@ -49,7 +49,7 @@ Replicate samples were picked where possible from the TCGA breast cancer gene ex
 Another consideration are the samples which were removed for quality concerns (in Section~\ref{methods:sample_qc}). While these were selected by unbiased hierarchical clustering (See Figure~\ref{fig:corr_map}), it is notable that many of the exluded (tumour) samples were performed in replicate despite relatively few replicate samples in the overall dataset. These samples correlate poorly with the rest of the dataset, in addition to with replicate samples.
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.3\textwidth}{!}{
     \includegraphics{Rep_picking_CutCut2.pdf}
@@ -57,11 +57,11 @@ Another consideration are the samples which were removed for quality concerns (i
     \caption[Replicate excluded samples]{\small \textbf{Replicate excluded samples.} Both tumour samples of patient A2QH were excluded as they were poorly correlated with other samples, although they are highly similar to each other as shown by Pearson's correlation of log-raw counts.
 }
 \label{fig:rep_cutcut}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
            \begin{center}
 %
         \subfigure[Remaining triplet]{%
@@ -96,12 +96,12 @@ Another consideration are the samples which were removed for quality concerns (i
     \caption[Replicate samples with all remaining]{\small \textbf{Replicate samples with all remaining.} Patient A26J was sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples.  In all cases, replicate samples remaining in the dataset were highly concordant as shown by Pearson's correlation of log-raw counts.
 }
 \label{fig:rep_keepkeep}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
            \begin{center}
 %
         \subfigure[Remaining]{%
@@ -150,10 +150,10 @@ Another consideration are the samples which were removed for quality concerns (i
     \end{center}
     \caption[Replicate samples with some excluded]{\small \textbf{Replicate samples with some excluded.} Patients A0DB, A13D, A13E, and A26E were each sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples. In all cases, the replicate samples remaining in the dataset more were highly concordant (as shown by Pearson's correlation of log-raw counts) than those excluded from the analysis.
 }
-\end{mdframed}
+%\end{mdframed}
 \end{figure}
 \begin{figure}[!ht]\ContinuedFloat
-\begin{mdframed}
+%\begin{mdframed}
      \begin{center}
 %
         \subfigure[Remaining]{%
@@ -185,7 +185,7 @@ Another consideration are the samples which were removed for quality concerns (i
     \caption[Replicate samples with some excluded]{\small \textbf{Replicate samples with some excluded.} Patients A0DB, A13D, A13E, and A26E were each sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples. In all cases, the replicate samples remaining in the dataset more were highly concordant (as shown by Pearson's correlation of log-raw counts) than those excluded from the analysis.
 }
 \label{fig:rep_keepcut}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
@@ -1251,7 +1251,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{table*}
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png}
@@ -1260,7 +1260,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_mtSL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
@@ -1454,7 +1454,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{table*}
 
 \begin{figure}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.66 \columnwidth}{!}{
     \includegraphics{Venn_mtSL_siRNA_allgenes_reduced_Pub.png}
@@ -1462,7 +1462,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
     \caption[Comparison of mtSLIPT to siRNA]{\small \textbf{Comparison of mtSLIPT to siRNA.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
 }
 \label{fig:Venn_allgenes_mtSL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure}
 
 
@@ -2105,7 +2105,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{table*}
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png}
@@ -2114,7 +2114,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_stad_mtSL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
@@ -2310,7 +2310,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{table*}
 
 \begin{figure}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.66 \columnwidth}{!}{
     \includegraphics{Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png}
@@ -2318,7 +2318,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
     \caption[Comparison of mtSLIPT in stomach to siRNA]{\small \textbf{Comparison of mtSLIPT in stomach to siRNA.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
 }
 \label{fig:Venn_allgenes_stad_mtSL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure}
 
 

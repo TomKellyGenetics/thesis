@@ -170,7 +170,7 @@ It is also notable that the pathways over-represented in \gls{SLIPT} candidate g
 Due to the sheer number of gene candidates and to examine their expression patterns, investigations proceeded into correlation structure and pathway over-represent\-ation. This serves to explore the functional similarity of the synthetic lethal partners of \textit{CDH1}, with the eventual aim to assess their utility as drug targets. As shown in Figure~\ref{fig:slipt_expr} (which clusters \textit{CDH1} lowly expressing samples separately), there were several large clusters of genes among the  expression profiles of the \textit{CDH1} synthetic lethal candidate partners. The clustering suggests co-regulation of genes or pathway correlation between partner gene candidates. A number of candidates from an experimental RNAi screen study performed by \citet{Telford2015} were also identified by this approach. In addition, we identified novel gene candidates, which had little effect on viability in isogenic cell line experiments. %or in some cases, even opposite effects of selective cell death or toxicity to both isogenic cell lines.
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub.png}
@@ -179,7 +179,7 @@ Due to the sheer number of gene candidates and to examine their expression patte
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 In these expression profiles, a gene with a moderate or high signal across samples exhibiting low \textit{CDH1} expression would represent a potential drug target. However, it appears that several molecular subtypes of cancer have elevation of different clusters of synthetic lethal candidates in samples with low \textit{CDH1}. This clustering suggests that different targets or combinations could be effective in different patients suggesting potential utility for stratification.  In particular, estrogen receptor negative, basal subtype, and ``normal-like'' samples \cite{Eroles2012, Parker2009, Dai2015} have elevation of genes specific to particular clusters which is indicative of some synthetic lethal interactions being specific to a particular molecular subtype or genetic background. Thus synthetic lethal drug therapy against these subtypes may be ineffective if it were designed against genes in another cluster.
@@ -401,7 +401,7 @@ Cluster 1 contains genes with less evidence of over-represented pathways than ot
 
 Based on these results, potential synthetic lethal partners of \textit{CDH1} include processes known to be dysregulated in cancer, such as translational, cytoskeletal, and immune processes. Intracellular signalling cascades such as the GPCRs and extracellular stimuli for these pathways were also implicated in potential synthetic lethality with \textit{CDH1}.
 
-Similar translational, cytoskeletal, and immune processes were identified among \gls{SLIPT} partners with respect to \textit{CDH1} mutation, shown in Table~\ref{tab:pathway_clusters_mtSL}. While GPCR signalling was replicated in mtSLIPT analysis, there was also stronger over-representation for NOTCH, ERBB2, and PI3K/AKT signalling in mutation analysis consistent with these signals being important for proliferation of \textit{CDH1} deficient tumours. The GCPR and PI3K/AKT pathways are of particular interest as pathways with oncogenic mutations that can be targeted and downstream effects on translation (a strongly supported process across analyses). Extracellular matrix pathways (such as elastic fibre formation) were also supported across analyses (in Tables~\ref{tab:pathway_clusters} and~\ref{tab:pathway_clusters_mtSL}) consistent with the established cell-cell signalling role of \textit{CDH1} and the importance of the tumour microenvironment for cancer proliferation.
+Similar translational, cytoskeletal, and immune processes were identified among \gls{SLIPT} partners with respect to \textit{CDH1} mutation, shown in Table~\ref{tab:pathway_clusters_mtSL}. While GPCR signalling was replicated in mtSLIPT analysis, there was also stronger over-representation for NOTCH, ERBB2, and PI3K/AKT signalling in mutation analysis consistent with these signals being important for proliferation of \textit{CDH1} deficient tumours. The GCPR and PI3K/AKT pathways are of particular interest as pathways with oncogenic mutations that can be targeted and downstream effects on translation (a strongly supported process across analyses). Extracellular matrix pathways (e.g., elastic fibre formation) were also supported across analyses (in Tables~\ref{tab:pathway_clusters} and~\ref{tab:pathway_clusters_mtSL}) consistent with the established cell-cell signalling role of \textit{CDH1} and the importance of the tumour microenvironment for cancer proliferation.
 
 %%appendix
 %\label{tab:pathway_clusters_mtSL}
@@ -420,7 +420,7 @@ Similar translational, cytoskeletal, and immune processes were identified among 
 Gene candidates were compared between computational (\gls{SLIPT} in TCGA breast cancer data) and experimental (the primary \gls{siRNA} screen performed by \citet{Telford2015}) approaches in Figure~\ref{fig:Venn_allgenes}. The number of genes detected by both methods did not produce a significant overlap but these may be difficult to compare due to vast differences between the detection methods. There were similar issues comparison of mtSLIPT genes tested against \textit{CDH1} mutations (in Figure~\ref{fig:Venn_allgenes_stad_mtSL}), despite exlcuded genes not tested by both methods in either test. However, these intersecting genes may still be functionally informative or amenable to drug triage as they were replicated across both methods and pathway over-represent\-ation differed between the sections of the Venn diagram (see Figure~\ref{fig:Venn_allgenes}).
 
 \begin{figure}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.66 \columnwidth}{!}{
     \includegraphics{Venn_exprSL_siRNA_allgenes_reduced_Pub.png}
@@ -428,7 +428,7 @@ Gene candidates were compared between computational (\gls{SLIPT} in TCGA breast 
     \caption[Comparison of SLIPT to siRNA]{\small \textbf{Comparison of \gls{SLIPT} to \gls{siRNA}.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (\gls{SLIPT}) and experimental screening (\gls{siRNA}) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
 }
 \label{fig:Venn_allgenes}
-\end{mdframed}
+%\end{mdframed}
 \end{figure}
 
 %%appendix
@@ -439,7 +439,7 @@ Gene candidates were compared between computational (\gls{SLIPT} in TCGA breast 
 \subsubsection{Comparison with correlation} \label{chapt3:compare_correlation} 
 
 \begin{figure*}[!htp]
-\begin{mdframed}
+%\begin{mdframed}
 \begin{center}
   \resizebox{0.75 \textwidth}{!}{
     \includegraphics{exprSLIPT_siRNA_vs_Correlation_with_CDH1.png}
@@ -448,11 +448,11 @@ Gene candidates were compared between computational (\gls{SLIPT} in TCGA breast 
    \caption[Compare SLIPT and siRNA genes with correlation]{\small \textbf{Compare \gls{SLIPT} and \gls{siRNA} genes with correlation.} The $\chi^2$ p-values for genes tested by \gls{SLIPT} (in TCGA breast cancer) expression analysis were compared against Pearson's correlation of gene expression with \textit{CDH1}. Genes detected by \gls{SLIPT} or \gls{siRNA} are coloured according to the legend. 
 }
 \label{fig:compare_points_correlation_SL}
-\end{mdframed}
+%\end{mdframed}
 %\end{figure*}
 
 %\begin{figure*}[!htp]
-\begin{mdframed}
+%\begin{mdframed}
 \begin{center}
   \resizebox{0.75 \textwidth}{!}{
     \includegraphics{vioplotx_exprSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf}
@@ -461,7 +461,7 @@ Gene candidates were compared between computational (\gls{SLIPT} in TCGA breast 
    \caption[Compare SLIPT and siRNA genes with correlation]{\small \textbf{Compare \gls{SLIPT} and \gls{siRNA} genes with correlation.} Genes detected as candidate synthetic lethal partners by \gls{SLIPT} (in TCGA breast cancer) expression analysis and experimental screening (with \gls{siRNA}) were compared against Pearson's correlation of gene expression with \textit{CDH1}. There were no differences in correlation between gene groups detected by either approach. 
 }
 \label{fig:compare_correlation_SL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 Another potential means to triage drug target candidates is correlation of expression profiles with \textit{CDH1}. Correlation with \textit{CDH1} was compared to \gls{SLIPT} and \gls{siRNA} results in Figure~\ref{fig:compare_points_correlation_SL}. The genes not detected by \gls{SLIPT} (including \gls{siRNA} candidates) included genes with high (insignificant) \gls{SLIPT} p-values. As expected, these genes were distributed around a correlation of zero and genes with higher correlation with \textit{CDH1} (either direction) had more significant \gls{SLIPT} p-values, although there were exceptions to this trend and larger positive correlations were negative correations.
@@ -479,7 +479,7 @@ However, the apparent tendancy for genes detected by \gls{SLIPT} or \gls{siRNA} 
 A similar comparison of \gls{SLIPT} results was made with the viability ratio (of \textit{CDH1} mutant to wildtype) in the primary \gls{siRNA} screen performed by \citet{Telford2015}. The significance and viability thresholds used for \gls{SLIPT} and \gls{siRNA} detection of synthetic lethal candidate partners of \textit{CDH1} are clear in Figure~\ref{fig:compare_points_viability_SL}. However note that not all of the gene below these thresholds are neccessarily selected to be candidate partners as additional criteria were used in each case: directional criteria as for \gls{SLIPT} (see Section~\ref{methods:SLIPT}) and minimum wildtype viability for \gls{siRNA} \citep{Telford2015}.
 
 \begin{figure*}[!htp]
-\begin{mdframed}
+%\begin{mdframed}
 \begin{center}
   \resizebox{0.75 \textwidth}{!}{
     \includegraphics{exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.png}
@@ -488,11 +488,11 @@ A similar comparison of \gls{SLIPT} results was made with the viability ratio (o
    \caption[Compare SLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare \gls{SLIPT} and \gls{siRNA} genes with \gls{siRNA} viability.} The $\chi^2$ p-values for genes tested by \gls{SLIPT} (in TCGA breast cancer) expression analysis were compared against the viability ratio of \textit{CDH1} mutant and wildtype cells in the primary \gls{siRNA} screen. Genes detected by \gls{SLIPT} or \gls{siRNA} are coloured according to the legend. 
 }
 \label{fig:compare_points_viability_SL}
-\end{mdframed}
+%\end{mdframed}
 %\end{figure*}
 
 %\begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
 \begin{center}
   \resizebox{0.5 \textwidth}{!}{
     \includegraphics{exprSLIPT(p-val)_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
@@ -501,7 +501,7 @@ A similar comparison of \gls{SLIPT} results was made with the viability ratio (o
    \caption[Compare SLIPT and siRNA genes with viability]{\small \textbf{Compare \gls{SLIPT} and \gls{siRNA} genes with viability.} The $\chi^2$ p-values for genes tested by \gls{SLIPT} (in TCGA breast cancer) expression analysis were compared (on a log-scale) against the viability ratio of \textit{CDH1} mutant and wildtype cells in the primary \gls{siRNA} screen. Genes detected by \gls{SLIPT} or \gls{siRNA} are coloured according to the legend with a grey line for $p=0.05$.
 }
 \label{fig:compare_pval_points_correlation_SL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 There does not appear to be a clear relationship between \gls{SLIPT} and \gls{siRNA} candidates. Many genes not detected by both approaches were numerous in Figures~\ref{fig:Venn_allgenes} and~\ref{fig:Venn_allgenes_mtSL}. These genes detected by either are not neccessarily near the thresholds for the other. In this respect the \gls{SLIPT} approach with patient data and cell line experiments are independent means to identify synthetic lethal candidates. While genes detected by both approaches were not neccessarily more strongly supported by either, the genes with a viability closer to 1 (no synthetic lethal effect) in \gls{siRNA} included those with more significant \gls{SLIPT} p-values whereas more extreme viability ratios tended to be less significant (as shown by a logarithmic plot in Figure~\ref{fig:compare_pval_points_correlation_SL}). Although it should be noted that genes with more moderate viability ratios were more common and \gls{SLIPT} was capable (despite adjusting for multiple testing) of detecting significant genes with extreme viability ratios, particularly those considerably lower than 1. 
@@ -509,7 +509,7 @@ There does not appear to be a clear relationship between \gls{SLIPT} and \gls{si
 However, there was not support for \gls{SLIPT} candidates or those detected by both approaches having considerably different viability ratios (as shown in Figures~\ref{fig:compare_viability_SL} and~\ref{fig:compare_viability_mtSL}). The difference between the gene groups stems largely from the viability thresholds used by \citet{Telford2015} to detect synthetic lethal candidates in the primary screen, rather than more extreme viability ratios for genes identified by \gls{SLIPT}. 
 
 \begin{figure*}[!htp]
-\begin{mdframed}
+%\begin{mdframed}
 \begin{center}
   \resizebox{0.75 \textwidth}{!}{
     \includegraphics{vioplotx_exprSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
@@ -518,7 +518,7 @@ However, there was not support for \gls{SLIPT} candidates or those detected by b
    \caption[Compare SLIPT and siRNA genes with siRNA viability]{\small \textbf{Compare \gls{SLIPT} and \gls{siRNA} genes with \gls{siRNA} viability.} Genes detected as candidate synthetic lethal partners by \gls{SLIPT} (in TCGA breast cancer) expression analysis and experimental screening (with \gls{siRNA}) were compared against the viability ratio of \textit{CDH1} mutant and wildtype cells in the primary \gls{siRNA} screen. There were clear no differences in viability between genes detected by \gls{SLIPT} and those not with the differences being primarily due to viability thresholds being used to detect synthetic lethality by \citet{Telford2015}. 
 }
 \label{fig:compare_viability_SL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \FloatBarrier
@@ -692,7 +692,7 @@ The pathway analysis for mtSLIPT against \textit{CDH1} mutations (in Table~\ref{
 Comparing genes between experimental screen candidates and prediction from TCGA expression data has been less consistent than pathways. Although this is not unexpected since synthetic lethal pathways more more robustly conserved \citep{Dixon2008} and the computational approach using patient samples from complex tumour microenvironment has considerably different strengths to an experimental screen \citep{Telford2015} based on genetically homogenous cell line models in an isolated laboratory environment. For instance, it is unlikely for immune signaling to be detected in an isolated cell culture system.
 
 \begin{figure}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.5 \columnwidth}{!}{
     \includegraphics{sample_size_dist_exprSL_1M_Pub.png}
@@ -701,10 +701,10 @@ Comparing genes between experimental screen candidates and prediction from TCGA 
    %However, the pathway composition of this intersect may still be informative. %%covered in text
 }
 \label{fig:perm_sample}
-\end{mdframed}
+%\end{mdframed}
 \end{figure}
 
-The overlap between synthetic lethal from bioinformatics \gls{SLIPT} predictions and siRNA screening has raised other questions including whether the pathways over-represented would be expected by chance. This of particular concern since the siRNA candidate genes themselves are highly over-represented for particular pathways (such as GPCRs) so selecting any intersect with them would be enriched for these pathways. Another pathway approach is to test whether pathways are over-represented in randomly sampled genes, comparing many ``resamplings'' or ``permutations'' of these genes to the enrichment statistics observed for these pathways in the \gls{SLIPT} candidates and their intersection with the siRNA hits shows whether we detect these pathways more than we expect by chance (as described in Section~\ref{methods:permutation}). 
+The overlap between synthetic lethal from bioinformatics \gls{SLIPT} predictions and siRNA screening has raised other questions including whether the pathways over-represented would be expected by chance. This of particular concern since the siRNA candidate genes themselves are highly over-represented for particular pathways (e.g., GPCRs) so selecting any intersect with them would be enriched for these pathways. Another pathway approach is to test whether pathways are over-represented in randomly sampled genes, comparing many ``resamplings'' or ``permutations'' of these genes to the enrichment statistics observed for these pathways in the \gls{SLIPT} candidates and their intersection with the siRNA hits shows whether we detect these pathways more than we expect by chance (as described in Section~\ref{methods:permutation}). 
 
 Of particular concern are the over-represented pathways in genes detected by both methods. Pathway over-representation alone does not detect whether \gls{SLIPT} predicted genes or siRNA candidates are enriched within each other. This resampling analysis therefore detects whether over-represented pathways were detected by \gls{SLIPT} independently of their over-representation among siRNA candidates (without assuming an underlying test statistic distribution).
 
@@ -1043,7 +1043,7 @@ The direction of the metagenes were also consistent with the clincal characteris
 \subsection{Somatic mutation}  \label{chapt3:metagene_mut}
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
         \begin{center}
 %
         \subcaptionbox{\textit{PIK3CA} mutation}{%
@@ -1063,7 +1063,7 @@ The direction of the metagenes were also consistent with the clincal characteris
     \caption[Somatic mutation against PI3K metagene]{\small \textbf{Somatic mutation against PI3K metagene.} Mutations in \textit{PIK3CA}, \textit{PIK3R1}, \textit{CDH1}, and \textit{TP53} were examined in TCGA breast cancer for their effect on the PI3K \citep{Gatza2011} pathway metagene. The tumour suppressors \textit{CDH1} and \textit{TP53} showed an increase and decrease in the metagene respectively, whereas \textit{PIK3CA} and \textit{PIK3R1} mutations had little effect on the metagene levels.
 }
 \label{fig:mutation_expr_mg}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 It should be noted that metagenes, while consistent with the consensus of constituent expressed genes, were not neccessarily reflecting the somatic mutation status. The PI3K \citep{Gatza2011} metagene levels in particular, were not statistically significant in between mutant and wildtype \textit{PIK3CA} samples (shown in Figure~\ref{fig:mutation_expr_mg}). Although the PI3K metagene differed across \textit{CDH1} and \textit{TP53} mutations, remarkably in opposite directions considering that PI3K is an oncogenic growth pathway and these are both most frequently tumour suppressors inactivated in cancers. This shows that \textit{CDH1} and \textit{TP53} deficient tumours have distinct molecular growth pathways and that synthetic lethal inactivations against \textit{CDH1} inactivation may not be applicable to other cancers with driver mutations such as \textit{TP53}, although these were kept in the analysis for comparison. These differences may be related to these mutations being more frequent in tumours with difference clinical characteristics (as observed in Section~\ref{chapt3:metagene_expression}).  Thus mutations do not neccessarily have corresponding changes in pathway expression, particularly for oncogenes which may change in function rather than being upregulated.
@@ -1079,7 +1079,7 @@ The gene locus distribution of \textit{PIK3CA} and it's receptor \textit{PIK3R1}
 
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
         \begin{center}
 %
         \subcaptionbox{\textit{PI3KCA} gene}{%
@@ -1111,7 +1111,7 @@ The gene locus distribution of \textit{PIK3CA} and it's receptor \textit{PIK3R1}
     \caption[Somatic mutation locus against expression]{\small \textbf{Somatic mutation locus against expression.} The recurrent E545K and H1047R oncogene mutations in \textit{PIK3CA} were examined in TCGA breast cancer to show the effect of mutation locus on gene, pathway, and protein expression. While neither of these mutations had an impact of \textit{PIK3CA} mRNA expression, E545K had specifically lower PI3K \citep{Gatza2011} metagene levels and both mutations had higher \textit{PIK3R1} mRNA expression. However, these differences were not reflected in the protein expression levels.
 }
 \label{fig:mutation_expr}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 These differences in gene locus may explain why mutations do not necessarily have corresponding changes in gene or metagene expression. Specfically, the recurrent E545K and H1047R oncogene mutations in \textit{PIK3CA} did not affect \textit{PIK3CA} mRNA expression but E545K had specifically lower PI3K \citep{Gatza2011} metagene levels. Both mutations had higher \textit{PIK3R1} mRNA expression but these differences differences were not reflected in the protein expression levels of p110$\alpha$ protein (encoded by \textit{PIK3CA}), it's downstream target AKT, E-cadherin (encoded by \text{CDH1}), or p53 (as ashown in Figure~\ref{fig:mutation_expr}).
@@ -1122,7 +1122,7 @@ These differences in gene locus may explain why mutations do not necessarily hav
 
 \subsection{Synthetic lethal metagenes} \label{chapt3:metagene_SL}
 
-Pathway metagenes for Reactome pathways (generated as described in Section~\ref{methods:metagene}) were also used for testing synthetic lethal partner pathways with \textit{CDH1} by \gls{SLIPT}. Since the metagenes have are higher when the pathway as a whole is activated, they are amenable to \gls{SLIPT} analysis using low metagene levels for inactivated pathways. These synthetic lethal metagenes differed to the over-represented pathways among synthetic lethal gene candidates. However, there were some similarities to previous findings, as shown in Tables~\ref{tab:metagene_SL}. In particular, translational pathways were replicated as observed in Table~\ref{tab:pathway_exprSL}. While the specific pathways differ, immune pathways (such as NF-$\kappa$B) were also supported by metagene synthetic lethal analysis.
+Pathway metagenes for Reactome pathways (generated as described in Section~\ref{methods:metagene}) were also used for testing synthetic lethal partner pathways with \textit{CDH1} by \gls{SLIPT}. Since the metagenes have are higher when the pathway as a whole is activated, they are amenable to \gls{SLIPT} analysis using low metagene levels for inactivated pathways. These synthetic lethal metagenes differed to the over-represented pathways among synthetic lethal gene candidates. However, there were some similarities to previous findings, as shown in Tables~\ref{tab:metagene_SL}. In particular, translational pathways were replicated as observed in Table~\ref{tab:pathway_exprSL}. While the specific pathways differ, immune pathways (e.g., NF-$\kappa$B) were also supported by metagene synthetic lethal analysis.
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from SLIPT}
@@ -1235,7 +1235,7 @@ The strongest \gls{SLIPT} genes for stomach cancer (shown in Table~\ref{tab:gene
 
 The strongest mtSLIPT genes tested against \textit{CDH1} mutatoin for stomach cancer (shown in Table~\ref{tab:gene_stad_mtSL}) supported similar gene functions. Membrane and cell-adhesion genes including \textit{KFBP6},\textit{THY1},\textit{CLELC2B}, \textit{NISCH}, \textit{TSPAN1},and \textit{KCTD12} and signalling genes including \textit{ZEB2}, \textit{CCND2}, \textit{NEURL1B}, \textit{KFBP6}, and \textit{OGN} were detected. Similarly, these include cancer genes such as \textit{VIM},\textit{ZEB2},\textit{BCL2},\textit{THY1}, and \textit{RUNX1T1}. The mtSLIPT procedure also replicated several of the strongest candidates in breast cancer (shown in Table~\ref{tab:gene_mtSL}) such as \textit{NRIP2} and \textit{NISCH}.
 
-Together, these gene candidates indicate widespread functions of \textit{CDH1} and strongly detectable synthetic lethality with many genes from a strategy that can be applied across cancer types. More specifically, the signalling genes included GPCR signalling genes (such as \textit{GNG11}, \textit{GNAI1}, \textit{DZIP1}, \textit{PTGFR}, and \textit{KCTD12}), a growth signalling pathway which was one of the most supported synthetic lethal pathways in breast cancer analysis, the experimental screen \citep{Telford2015}, and has many actionable drug targets which have been applied to other diseases.
+Together, these gene candidates indicate widespread functions of \textit{CDH1} and strongly detectable synthetic lethality with many genes from a strategy that can be applied across cancer types. More specifically, the signalling genes included GPCR signalling genes (e.g., \textit{GNG11}, \textit{GNAI1}, \textit{DZIP1}, \textit{PTGFR}, and \textit{KCTD12}), a growth signalling pathway which was one of the most supported synthetic lethal pathways in breast cancer analysis, the experimental screen \citep{Telford2015}, and has many actionable drug targets which have been applied to other diseases.
 
 These findings were further supported by the pathways over-represented in \gls{SLIPT} candidates from TCGA stomach cancer (shown in Table~\ref{tab:pathway_stad_exprSL}) which were replicated the translational and immune pathways observed in TCGA breast cancer (shown in Tabel~\ref{tab:pathway_exprSL}). Further support for GCPR signalling pathways including the class A/1 receptors. The extracellular matrix was also detected at the pathway level in stomach cancer \gls{SLIPT} candidates and replicated in mtSLIPT analysis for \textit{CDH1} mutation (shown in Table~\ref{tab:pathway_stad_mtSL}), including elastic fibres, glycosylation, collagen, and integrin cell-surface interactions. Thus there was strong evidence for the role of extracellular matrix pathways and the tumour microenvironment in \textit{CDH1} deficient stomach cancers, in addition to cell signalling and translation pathways important in tumour growth across breast and stomach cancer.
 
@@ -1310,7 +1310,7 @@ The expression profiles of candidate synthetic lethal partners dtected by \gls{S
 
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \centering
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png}
@@ -1319,7 +1319,7 @@ The expression profiles of candidate synthetic lethal partners dtected by \gls{S
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_stad}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 The \gls{SLIPT} partners of \textit{CDH1} exhibited similar clustering in staomch cancer to breast cancer, replicating the diverse roles of elevated partner genes in different clinical samples. Specifically (in Figure~\ref{fig:slipt_expr_stad}), the diffuse type stomach cancers had higher expression of the candidate synthetic lethal partners (where \textit{CDH1} has a role as a driver mutation), despite an unbiased clustering. This is consistent with compensating expression of synthetic lethal partners under loss of \textit{CDH1}, as suggested by \citet{Lu2015}. The pathway composition of gene clusters for stomach cancer (shown in Table~\ref{tab:pathway_clusters_stad}) was also highly concordant with breast cancer findings (shown in Table~\ref{tab:pathway_clusters}). These included replicated of translation (Cluster 1), immune functions (Cluster 2), G_${\alpha s}$ signalling (Cluster 3), and further support for the roles of GPCRs and the extracellular matrix (Cluster 4) in the synthetic lethal partners and functions of \textit{CDH1}, replicated across stomach and breast cancers. Clusters 1 and 4, which had particularly high expression of \gls{SLIPT} candidate partner genes in the diffuse subtype, also had the most significant over-representation of pathways.
@@ -1369,7 +1369,7 @@ Global levels of synthetic lethality were analysed to address concerns raised by
 The observed number of \gls{SLIPT} appears to be typical for most genes in the TCGA breast RNA- Seq dataset as shown in Figure~\ref{fig:global_SL}. This figure was actually lower than the majority (95\%) of genes tested, although \textit{CDH1} was ranked higher for a similar in \gls{SLIPT} analysis of TCGA stomach cancer data, shown in Figure~\ref{fig:global_SL_stad}. The differences in sample size make these analyses difficult to compare but (in either case), the number of partners detected for \textit{CDH1} is not unexpected, eeven when adjust for multiple comparisons across candidate partners.
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.75 \textwidth}{!}{
     \includegraphics{MostSL_Summary_CDH1_FDR.pdf}
@@ -1378,7 +1378,7 @@ The observed number of \gls{SLIPT} appears to be typical for most genes in the T
    \caption[Synthetic lethal partners across query genes]{\small \textbf{Synthetic lethal partners across query genes.} Global synthetic lethal pairs were examined across the genome in TCGA breast expression data by applying \gls{SLIPT} across query genes. The high number of predicted partners for \textit{CDH1} was typical for a human gene and lower than many other genes.
    }
 \label{fig:global_SL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 The number of detected candidates reported here is higher than in Figures~\ref{fig:Venn_allgenes} and~\ref{fig:Venn_allgenes_stad} because these exlcuded genes not tested by the siRNA primary screen \citep{Telford2015} for comparison with it. For an statistically rigorous measure of global synthetic lethality, multiple comparison procedures would need to be performed for all pairs of genes tested. However, only partner genes for each query \gls{SLIPT} analysis were performed for the purposes of comparing the number of partners predicted with those observed for \textit{CDH1} throughout this thesis.
@@ -1708,7 +1708,7 @@ There are many gene functions replicated across breast cancer gene expression an
 
 We have developed a simple, interpretable, computational approach to predict synthetic lethal partners from genomics data. The analyses focus on gene expression data as it is widely available for applications in other cancers and other disease genes, particularly those with malignant loss of function.
 
-This approach has been applied to robustly detect synthetic lethal pathways for the E-cadherin (\textit{CDH1}) in TCGA breast cancer molecular profiles with comparisons to experimenal screening \citep{Telford2015} in cell lines, and replication in TCGA stomach cancer molecular profiles and across cell types in the cancer cell line encyclopaedia. The pathway replicated across several analyses included extracellular matrix pathways (such as elastic fibres formation), cell signalling (including GPCRs), and core gene regulation and translation processes crucial for the growth and proliferation of cancer cells. These pathways show evidence of non-oncogene addiction for \textit{CDH1} deficient cells and present vulnerabilities which may be exploited for specific treatment against \textit{CDH1} mutations in HCGC and sporadic cancers. There was also support for synthetic lethal pathways with \textit{CDH1} in cell adhesion and cytoskeletal processes to which \textit{CDH1} belongs, supporting the finding that synthetic lethality occurs within biological pathways \citep{Kelley2005, Boone2007}.
+This approach has been applied to robustly detect synthetic lethal pathways for the E-cadherin (\textit{CDH1}) in TCGA breast cancer molecular profiles with comparisons to experimenal screening \citep{Telford2015} in cell lines, and replication in TCGA stomach cancer molecular profiles and across cell types in the cancer cell line encyclopaedia. The pathway replicated across several analyses included extracellular matrix pathways (e.g., elastic fibres formation), cell signalling (including GPCRs), and core gene regulation and translation processes crucial for the growth and proliferation of cancer cells. These pathways show evidence of non-oncogene addiction for \textit{CDH1} deficient cells and present vulnerabilities which may be exploited for specific treatment against \textit{CDH1} mutations in HCGC and sporadic cancers. There was also support for synthetic lethal pathways with \textit{CDH1} in cell adhesion and cytoskeletal processes to which \textit{CDH1} belongs, supporting the finding that synthetic lethality occurs within biological pathways \citep{Kelley2005, Boone2007}.
 
 While translational and immune pathways detected by \gls{SLIPT} were not supported by primary siRNA screening \citep{Telford2015}, these were replicated across various analyses. Due to the differences between an experimenal cell line model \citep{Barretina2012, Chen2014, Fece2015} and patient molecular profiles \citep{TCGA2012, TCGA2014GC}, these would not be expected to be completely concordant. Furthermore, many pathways are difficult to test in an isolated experimental system. Nevertheless, many of the genes and pathways detected by \gls{SLIPT} are suitable to inform further investigations and triage of therapeutic targets against \textit{CDH1} deficient tumours in combination with experimenal screening.  
 

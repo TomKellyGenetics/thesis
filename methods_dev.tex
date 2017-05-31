@@ -13,7 +13,7 @@ The \gls{SLIPT} methodology identifies gene expression patterns consistent with 
 %Where synthetic lethality is scored SL-Q if it is predicted in query-low samples and SL-C if it is predicted in candidate-low samples (as shown in Figure~\ref{fig:SLIPT_Method}). Synthetic lethality is only reported in this text if it meets both of these conditions and a significant p-value where it is scored SL-2. %too detailed
 
 \begin{figure*}[!b]
-\begin{mdframed}
+%\begin{mdframed}
 \begin{center}
   \resizebox{0.8 \textwidth}{!}{
     \fbox{\input{SL_Method.pdf_tex}}
@@ -22,14 +22,14 @@ The \gls{SLIPT} methodology identifies gene expression patterns consistent with 
    \caption[Framework for synthetic lethal prediction]{\small \textbf{Framework for synthetic lethal prediction.} \gls{SLIPT} was designed to identify candidate interacting genes from gene expression data using the $\chi^2$ test against a query gene. Samples are sorted into low, medium, and high expression quantiles for each gene to test for a directional shift. A sample being low in both genes of a synthetic lethal pair is unlikely, since loss of both genes will be deleterious, and is expected to be statistically under-represented in a gene expression dataset. We expect a corresponding (symmetric) increase in frequency of sample with low-high gene pairs. Synthetic lethal candidate (exprSL) partners of a gene are identified by running this procedure on all possible partner genes, selecting those with an FDR-adjusted $\chi^2$ p-value of $p < 0.05$, and meeting the directional criteria. Since synthetic lethal genes are partners of each other commutatively, the symmetric direction criteria are all required such that synthetic lethal genes will predicted to be partners of each other.
 }
 \label{fig:SLIPT_Method}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
-The synthetic lethal prediction procedure has also been adapted to utilise somatic mutation data for the query gene. This is intended to utilise a query gene known to be recurrently mutated in the disease (and dataset), with the majority of mutations inactivating gene function (such as null or frameshift mutations). A synthetic lethal interaction is predicted  (as shown in Figure~\ref{fig:SLIPT_Method_mtSL}) when (i) the $\chi^2$ test is significant; (ii) observed mutant-query, low-candidate samples are less frequent than expected; and (iii) observed mutant-query, high-candidate and wild-type-query, low-candidate samples are more frequent than expected. Unless otherwise specified, computationally predicted synthetic lethal gene candidates from \gls{SLIPT} used expression data (exprSL) for both genes (as shown in Figure~\ref{fig:SLIPT_Method}) rather than mutation data (mtSL) for the query gene (as shown in Figure~\ref{fig:SLIPT_Method_mtSL}).
+The synthetic lethal prediction procedure has also been adapted to utilise somatic mutation data for the query gene. This is intended to utilise a query gene known to be recurrently mutated in the disease (and dataset), with the majority of mutations inactivating gene function (e.g.,  null or frameshift mutations). A synthetic lethal interaction is predicted  (as shown in Figure~\ref{fig:SLIPT_Method_mtSL}) when (i) the $\chi^2$ test is significant; (ii) observed mutant-query, low-candidate samples are less frequent than expected; and (iii) observed mutant-query, high-candidate and wild-type-query, low-candidate samples are more frequent than expected. Unless otherwise specified, computationally predicted synthetic lethal gene candidates from \gls{SLIPT} used expression data (exprSL) for both genes (as shown in Figure~\ref{fig:SLIPT_Method}) rather than mutation data (mtSL) for the query gene (as shown in Figure~\ref{fig:SLIPT_Method_mtSL}).
 
 \begin{figure*}[!tb]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.8 \textwidth}{!}{
     \fbox{\input{SL_Method_mtSL.pdf_tex}}
@@ -38,7 +38,7 @@ The synthetic lethal prediction procedure has also been adapted to utilise somat
    \caption[Synthetic lethal prediction adapted for mutation]{\small \textbf{Synthetic lethal prediction adapted for mutation.} \gls{SLIPT} was also adapted to identify candidate interacting genes using (somatic) mutation data of the query gene in the $\chi^2$ test. Samples are sorted into low, medium, and high expression quantiles for each candidate gene and tested for a directional shift against mutation status of the query gene. A sample having low expression or mutation for the synthetic lethal pair is expected to be unlikely with a corresponding increase in frequency of sample with mutant-high or wild-type-low gene pairs. Synthetic lethal candidate (mtSL) partners of a gene are identified by running this procedure on all possible partner genes, selecting those with an FDR-adjusted $\chi^2$ p-value of $p < 0.05$, and meeting the directional criteria. %Synthetic lethal genes are partners of each other commutatively with synthetic lethal genes will predicted to be partners of each other.
 }
 \label{fig:SLIPT_Method_mtSL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 The \gls{SLIPT} methodology is amenable for use on expression data including pathway metagenes (as generated in Section~\ref{methods:metagene}). The suitability of the \gls{SLIPT} methodology to application on public gene expression data will further be supported by simulation results in Section~\ref{chapt2:simulation_2015} and Chapter~\ref{chap:simulation}, including comparison to other statistical methods. \gls{SLIPT} results for \textit{CDH1} will also compared experimental screen results in a breast cell line \citep{Telford2015}, primary screen results are discussed in Section~\ref{chapt3:compare_SL_genes} and secondary (validation) screen results are presented in Appendix~\ref{appendix:secondary_screen}.
@@ -59,7 +59,7 @@ A statistical model of Synthetic Lethality was developed to generate simulated d
 A conceptual model of synthetic lethality was constructed (see Figure~\ref{fig:SL_Model}), which will be used to build a statistical model of synthetic lethal gene expression from which to simulate expression data to on which test SLIPT and various potential synthetic lethal prediction methods. In the model, synthetic lethality arises between genes with related functions as a cell death phenotype when these functions are removed.
 
 \begin{figure*}[!p]
-\begin{mdframed}
+%\begin{mdframed}
 \begin{center}
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
@@ -71,7 +71,7 @@ A conceptual model of synthetic lethality was constructed (see Figure~\ref{fig:S
    \caption[A model of synthetic lethal gene expression]{\small \textbf{A model of synthetic lethal gene expresion.} A conceptual model of synthetic lethal interactions between a Query gene and partner gene ($G_X$). Genes that are synthetic lethal may not both be non-functional in the same sample without another gene compensating for the loss of function. This is most likely to be detectable as low gene expression, whether they are lost by mutation, deletion, DNA methylation, or suppressing regulatory signals. This could manifest as coexpression, mutual exclusivity, or directional shifts in sample frequency. Thus the alternative hypothesis ($H_{A}$) is that synthetic lethal genes will have a reduced frequency of co-loss samples while the null hypothesis ($H_{0}$) is that non-synthetic lethal gene pairs would show no such relationship, even if they may be correlated for other means such as pathway relationships. In this model synthetic lethal genes may compensate for the loss of each other but this is not assumed, only that loss of both is unfavourable to cell viability and probability of detecting samples with combined gene loss.
 }
 \label{fig:SL_Model}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
@@ -80,7 +80,7 @@ This model suggests that synthetic lethality is detectable in measures of gene i
 The first condition of the synthetic lethal model is that if there are only two synthetic lethal genes (e.g., \textit{CDH1} and one SL partner), then they will not both be non-functional in the same sample (in an ideal model). Gene function is thus determined for each sample in a model of synthetic lethal with the proportion of samples with a functional or non-functional gene being arbitrary. Whether a gene is functional can similarly be modelled by an arbitrary threshold of continuous and normally distributed gene expression data to define gene function (as shown in Figure~\ref{fig:SL_Model_Expression}). For the purposes of modeling synthetic lethality in breast cancer expression data, a threshold of the 30\textsuperscript{th} percentile of the expression levels was used because approximately 30\% of samples analysed had \textit{CDH1} inactivation. This was generalised for a model of the proportion of samples inactivated for each gene. In this ideal case, no samples lowly expressing both of these genes are expected to be observed. While this is not observed, that is to be expected as it is unlikely that only 2 genes will have an exclusive synthetic lethal partnership. The threshold of the 0.3 quantile was used in simulations dervied from this model throughout this thesis.
 
 \begin{figure*}[!tb]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.7125 \textwidth}{!}{
   \fbox{
@@ -91,12 +91,12 @@ The first condition of the synthetic lethal model is that if there are only two 
    \caption[Modeling synthetic lethal gene expression]{\small \textbf{Modeling synthetic lethal gene expression.} When modeling synthetic lethal interactions between a Query gene with partner genes ($G_X$ and $G_Y$) above,  cellular viability requires that at least of genes is not inactivated. Expression below a threshold is used as a model of loss of function, where genes are regarded as non-functional for the purposes of modelling synthetic lethality. Tumour suppressor genes with loss of function also have cancer specific phenotypes (although these thresholds are not necessarily the same). Expression is modeled by a normally (Gaussian) distributed continuous data such as (log-scale) data from RNA (microarray or RNA-Seq), protein, or pathway metagenes. This rationale generalises for several genes on a multivariate normal distribution.
 }
 \label{fig:SL_Model_Expression} 
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
 \begin{figure*}[!p]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
@@ -108,7 +108,7 @@ The first condition of the synthetic lethal model is that if there are only two 
    \caption[Synthetic lethality with multiple genes]{\small \textbf{Synthetic lethality with multiple genes.} Higher order synthetic lethal interactions may occur between 3 or more genes, affecting the simulated expression (or synthetic lethal predictions) even if undetected when observed pairwise. Consider interactions between a Query gene and two partner genes ($G_X$ and $G_Y$). They may interact with the Query pairwise (inviable when either gene pair is lost) or form a higher-order interaction such as the ``synthetic lethal triplet''  if any of the genes provide an essential function (inviable only when all are lost). Either is plausible with the potential pathway structures. A synthetic lethal triple has 8 potential combinations of gene functional but one is not expected to be observed (due to inviability) but pairwise inactivation may be observed if additional partner genes are functional. The proportion of these combinations vary depending on the functional threshold.
 }
 \label{fig:SL_Model_Higher}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
@@ -128,7 +128,7 @@ In practice, samples are not removed from a simulated dataset, rather the expres
 Simulations were developed to simulate normal distributions of expression data and define function with a threshold cut-off. This is the reverse to the procedure of \gls{SLIPT} to predict synthetic lethal partners (although the threshold is assumed to be unknown when testing upon simulated data). While gene function is used as an intermediary step in modelling synthetic lethal genes in expression data, the normal distribution is sampled for simulated data to represent normalised empirical gene expression data for which \gls{SLIPT} (and other methods) will be applicable.
 
 \begin{figure*}[!htbp]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -148,10 +148,10 @@ Simulations were developed to simulate normal distributions of expression data a
    \caption[Simulating gene function]{\small \textbf{\textbf{Simulating gene function.}} A simulated dataset with samples (columns) and genes A--H (rows) is transformed from a continuous (coloured blue--red) scale to a discrete matrix of gene function (black for functional levels and grey for non-functional).}
 %}
 \label{fig:simulate_function}
-\end{mdframed}
+%\end{mdframed}
 
 \iffalse
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -174,11 +174,11 @@ Simulations were developed to simulate normal distributions of expression data a
    }
 %}
 \label{fig:simulate_add_query}
-\end{mdframed}
+%\end{mdframed}
 \fi
 %\end{figure*}
 %\begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -201,7 +201,7 @@ Simulations were developed to simulate normal distributions of expression data a
    }
 %}
 \label{fig:simulate_add_query}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
@@ -211,7 +211,7 @@ Once we have generated a simulated dataset, the samples are compared by gene fun
 
 
 \begin{figure*}[!htb]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -231,7 +231,7 @@ Once we have generated a simulated dataset, the samples are compared by gene fun
    \caption[Simulating synthetic lethal gene expression]{\small \textbf{\textbf{Simulating synthetic lethal gene expression.}} A simluated continuous expression dataset (blue--red scale) with samples (columns) and genes (rows) is matched to a query gene such that at least one synthetic lethal partner is above a functional threshold when the query gene is below it satisfying the synthetic lethal model.}
 %}
 \label{fig:simulate_SL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 This results a simulated dataset where samples with non-functional query gene have at least one functional partner gene. Similarly, the query gene is functional in all samples where all of the synthetic lethal partner genes are non-functional. Therefore a dataset has been generated with known synthetic lethal partners (see Figure~\ref{fig:simulate_SL}) by as few assumptions about the relationships between the each synthetic lethal pair as possible (and allowing compensating functions from higher-order interactions). This has been designed to have the most stringent (least detectable) synthetic lethal relationships where higher-order interactions are possible for the purposes of testing pairwise detection procedures such as \gls{SLIPT}.  
@@ -252,7 +252,7 @@ A previous version of the synthetic lethal simulation procedure (described in Se
 The simulation procedure was performed with 20,000 total genes (as feasible in the human genome and expression datasets) with a variable number of true synthetic lethal partners and sample sizes of 500, 1000, 2000, and 5000. Each ROC curve was derived from the results of 10,000 replicate simulations. The statistical performance (as shown in Figure~\ref{fig:Binomial_AUC}) of such an approach based on the $\chi^2$ p-value declines towards random predictions (an AUROC of 0.5) with an increasing number of underlying true synthetic lethal partners to detect. However, increased sample size mitigates this decline to some extent, as expected with a statistical predictor, particularly for moderate numbers of synthetic lethal partners. 
 
 \begin{figure*}[!hp]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.6 \textwidth}{!}{
   \fbox{
@@ -262,9 +262,9 @@ The simulation procedure was performed with 20,000 total genes (as feasible in t
    \end{center}
    \caption[Performance of binomial simulations]{\small \textbf{Performance of binomial simulations.} Gene function was simulated by binomial sampling and tested for synthetic lethal genes. Statistical performance declines with additional known synthetic partners but this is mitigated by increased sample sizes.}
 \label{fig:Binomial_AUC}
-\end{mdframed}
+%\end{mdframed}
 
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.6 \textwidth}{!}{
   \fbox{
@@ -274,7 +274,7 @@ The simulation procedure was performed with 20,000 total genes (as feasible in t
    \end{center}
    \caption[Comparison of statistical performance]{\small \textbf{Comparison of statistical performance.} Binomial simulation of synthetic lethality (in colour) is compared (in greyscale) to multivariate normal simulations (detailed below) which consistently outperforms binomial simulation across parameters.}
 \label{fig:Binomial_Compare}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 Simulations based on a simple binomial model of synthetic lethality are limited but form a basis for builing a more complex model including expression and correlation structures. While this does not represent the data that \gls{SLIPT} will be applied to, binomial simulations do demonstrate that \gls{SLIPT} is able to distinguish small numbers of synthetic lethal partners in a simplistic simulated system with behavious expected with resepect to sample size. This supported further development of the synthetic lethal model and simulation pipeline (as described in Section~\ref{methods:simulation_SL_expression}) using the multivariate normal distribution.
@@ -290,7 +290,7 @@ The multivariate normal simulation procedure was initially performed using the \
 Expression is sampled from multivariate normal distribution with a mean ($\mu = 0$), standard deviation ($\sigma = 1$), and no correlation between genes ($r = 0$): $$X\sim N(\bar{\mu},\Sigma)$$  Once a query gene consistent with synthetic lethality has been added, the simulated expression values are tested by \gls{SLIPT} exactly as described in Section~\ref{methods:SLIPT}.
 
 \begin{figure*}[!hp]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -308,10 +308,10 @@ Expression is sampled from multivariate normal distribution with a mean ($\mu = 
    \caption[Performance of multivariate normal simulations]{\small \textbf{Performance of multivariate normal simulations.} Simulation of synthetic lethality was performed sampling from a multivariate normal distribution (without correlation structure). Performance of \gls{SLIPT} declines for more synthetic partners but this is mitigated by increased sample sizes (in darker colours). This generally occurs as the sensitivity decreases for a greater number of true positives to detect, leading to a trade off in accuracy as seen in a trough for false discovery rate and the ROC curves.}
 %}
 \label{fig:simulation_Apr15ROC}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
-As shown in Figure~\ref{fig:simulation_Apr15ROC:Perf}, the statistical accuracy of \gls{SLIPT} as a binary classifier is considerably high across simulations of a full human dataset of 20,000 genes. However, with the $\chi^2$ p-value as a threshold for prediction, this is largely to desirable specificity: the majority of non-SL genes are distinguished from the few underlying synthetic lethal genes. In this regard, the \gls{SLIPT} methodology generally performs better with larger datasets with more expected negatives and thus the results of simulations of smaller numbers of genes (such as the graph structures analysed in Chapter~\ref{chap:simulation}) can be applied to larger datasets where they are expected to perform comparably or better with a lower false negative rate. Accordingly, key results will be supported by replication with larger numbers of non-SL genes added to the simulations. 
+As shown in Figure~\ref{fig:simulation_Apr15ROC:Perf}, the statistical accuracy of \gls{SLIPT} as a binary classifier is considerably high across simulations of a full human dataset of 20,000 genes. However, with the $\chi^2$ p-value as a threshold for prediction, this is largely to desirable specificity: the majority of non-SL genes are distinguished from the few underlying synthetic lethal genes. In this regard, the \gls{SLIPT} methodology generally performs better with larger datasets with more expected negatives and thus the results of simulations of smaller numbers of genes (e.g.,  the graph structures analysed in Chapter~\ref{chap:simulation}) can be applied to larger datasets where they are expected to perform comparably or better with a lower false negative rate. Accordingly, key results will be supported by replication with larger numbers of non-SL genes added to the simulations. 
 
 However, with higher numbers of synthetic lethal genes to detect, the sensitivity (in Figure~\ref{fig:simulation_Apr15ROC:Perf}) of \gls{SLIPT} as a binary classifier of synthetic lethality declines, although this is somewhat mitigated by higher sample sizes (shown in darker colours). Thus the minority of true synthetic lethal partners are more difficult to distinguish when there are more of them (and a weaker expression signal from each). While a reasonable reduction of the false discovery rate can be achieved for moderate numbers of underlying synthetic lethal partners, we can not be sure how many partners are expected to be detected in analyses of expression data. However this simulation procedure is amenable to assessing the performance of \gls{SLIPT} across simulation parameters, graph structures and comparisons to other approaches (presented in more detail in Chapter~\ref{chap:simulation}).
 
@@ -327,7 +327,7 @@ The receiver operating characteristic curves (in Figure~\ref{fig:simulation_Apr1
 Correlation structures can be added to the simulation procedure (as discussed in Section~\ref{methods:simulation_SL_expression}), starting with simple correlated blocks of genes as the $\Sigma$ parameter depicted in Figure~\ref{fig:simulation_May4SL:first}. These correlated blocks represent genes with correlated expression such as that expected by coregulation or biological pathways. Figure~\ref{fig:simulation_May4SL} gives an example of 4 synthetic lethal genes (out of 100), each with 5 correlated genes that are not themselves synthetic lethal partners of the query gene. This serves to test whether synthetic lethal genes are distinguishable from correlated partners. This $\Sigma$ matrix produces a similar correlation structure (Figure~\ref{fig:simulation_May4SL:second}) in the resulting expression profiles (Figure~\ref{fig:simulation_May4SL:third}) where apart from correlated blocks of genes ($r = 0.8$), the remaining genes have only slight variations due to random sampling. The structure of the dataset, particularly between synthetic lethal genes and the query, is shown at the gene expression (Figure~\ref{fig:simulation_May4SL:third}) and function (Figure~\ref{fig:simulation_May4SL:fifth}). These are ordered by the \gls{SLIPT} results and the synthetic lethal genes are ranked high, with the majority of them being distinguishable from highly correlated genes.
 
 \begin{figure*}[!hp]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -348,7 +348,7 @@ Correlation structures can be added to the simulation procedure (as discussed in
    \caption[Simulating expression with correlated gene blocks]{\small \textbf{Simulating expression with correlated gene blocks.} A $\Sigma$ matrix (a) is used generate a multivariate normal distribution with of 100 genes correlated blocks of genes (correlated by 0.8) with a comparable structure (b) to the input $\Sigma$, as shown by correlation on a red--green scale. The annotation bars for genes give the $\chi^2$ (in blue if the direction of \gls{SLIPT} is met or red otherwise) and the gene category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non-SL-correlated, and green for non-SL). The simulated gene expression (c) and function (d) generated are ordered by $\chi^2$ showing the functional structure of synthetic lethal genes and that they are among the strongest \gls{SLIPT} results.}
 %}
 \label{fig:simulation_May4SL}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 The use of correlation structures generalises to larger datasets, such as 1000 genes shown in Figure~\ref{fig:simulation_May4SL1K}. Synthetic lethal genes are highly ranked by \gls{SLIPT} and still largely distinguishable from correlated genes. As previously discussed in Section~\ref{chapt2:simulation_mvtnorm}, these synthetic lethal genes are still detectable among a larger number of true negatives and the \gls{SLIPT} methodology performs better on such datasets.
@@ -356,7 +356,7 @@ The use of correlation structures generalises to larger datasets, such as 1000 g
 These plots (Figures~\ref{fig:simulation_May4SL} and~\ref{fig:simulation_May4SL1K}) also show similar correlated blocks with a non-synthetic lethal gene (true negative) and the query gene (which is not synthetic lethal with itself). Neither of these should be synthetic lethal (or detected to be) but they may impact upon the performance of the model, particularly the specificity as correlated negative genes may be distinguishable from true synthetic lethals. The non-synthetic lethal correlated block has no impact on synthetic lethal detection but the impact of query correlated genes will be discussed in Section~\ref{chapt2:simulation_mvtnorm_query_cor} and Chapter~\ref{chap:simulation}.
 
 \begin{figure*}[!htp]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -381,14 +381,14 @@ These plots (Figures~\ref{fig:simulation_May4SL} and~\ref{fig:simulation_May4SL1
    \caption[Simulating expression with correlated gene blocks]{\small \textbf{Simulating expression with correlated gene blocks.} Using the (a) $\Sigma$ matrix, sampling from a multivariate normal distribution with of 1000 genes produced (b) correlated blocks of genes (correlated by 0.8) on a red--green scale. The simulated gene expression (c) and function (d) generated are ordered by $\chi^2$ and \gls{SLIPT} direction show that synthetic lethal genes are among the strongest \gls{SLIPT} results with high specficity against many potential false positives. These are annotated for $\chi^2$ (on a red--green scale) and category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non-SL-correlated, and green for non-SL) for each gene.}
 %}
 \label{fig:simulation_May4SL1K}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 %\subsection{Replication Simulation Heatmap}
 These simulations (on 100 genes) were repeated to examine the variation between detection on different samples and varying the number of underlying synthetic lethal partners, in simulated gene expression data with correlations structure. A small nuber (10 for each) simulations are shown in Figure~\ref{fig:simulation_May4SLreps} to demonstrate the variation between replicate simulations, with iterative sampling from the same multivariate normal distribution. These simulations show synthetic lethal genes are not only highly ranked by \gls{SLIPT} when there are few of them but also that they are fairly consistent across replicate simulations. Whereas they become less consistent for increasing numbers of true synthetic lethal partners to detect and thus more difficult to distinguish from other geners, particularly those correlated with them. Similarly, the $\chi^2$ values show a marked stepwise increase with clear thresholds for SL and correlated genes in simple simulations, whereas these become less evident for higher numbers of SL partners.
 
 \begin{figure*}[!t]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -405,12 +405,12 @@ These simulations (on 100 genes) were repeated to examine the variation between 
    \caption[Synthetic lethal prediction across simulations]{\small \textbf{Synthetic lethal prediction across simulations.} The gene category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non-SL-correlated, and green for non-SL) ordered by $\chi^2$ signed by the \gls{SLIPT} directional condition is shown across simulations. For each of 1--10 SL partners, 10 simulations demonstrate that the increasing numbers of SL partners become harder detect. The $\chi^2$ values show a clear threshold for SL and correlated genes when there are fewer of them, distinguishable from correlated genes in this case.}
 %}
 \label{fig:simulation_May4SLreps}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 %5 correlated genes
  \begin{figure*}[!hp]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -431,11 +431,11 @@ These simulations (on 100 genes) were repeated to examine the variation between 
    \caption[Performance with correlations]{\small \textbf{Performance with correlations.} Simulation of synthetic lethality was performed sampling from a multivariate normal distribution (with correlation structure). Performance of \gls{SLIPT} declines for more synthetic partners but this is mitigated by increased sample sizes (darker colours). This generally occurs as the sensitivity decreases for a greater number of true positives to detect, leading to a trade off in accuracy as seen in a trough for false discovery rate and the ROC curves.}
 %}
 \label{fig:simulation_Apr15ROC2}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \begin{figure*}[!ht]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.5 \textwidth}{!}{
   \fbox{
@@ -445,7 +445,7 @@ These simulations (on 100 genes) were repeated to examine the variation between 
    \end{center}
    \caption[Comparison of statistical performance with correlation structure]{\small \textbf{Comparison of statistical performance with correlation structure.} Multivariate simulation of synthetic lethality with correlation structure (in colour) has comparable performance to simulation without correlations (in greyscale)  with known synthetic partners across parameters.}
 \label{fig:mvtnorm_cor_compare}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 
@@ -456,7 +456,7 @@ Thus \gls{SLIPT} is robust across correlation structures and applicable to real 
 %query correlated
 %5 correlated genes
  \begin{figure*}[!hp]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -477,7 +477,7 @@ Thus \gls{SLIPT} is robust across correlation structures and applicable to real 
    \caption[Performance with query correlations]{\small \textbf{Performance with query correlations.} Simulation of synthetic lethality was performed sampling from a multivariate normal distribution (with correlation structure including correlated genes with non-SL and query genes). As before, performance of \gls{SLIPT} declines for more synthetic partners and is mitigated by increased sample sizes (darker colours)but the sensitivity remains higher for a greater number of true positives with corresponding improvements in ROC curves.}
 %}
 \label{fig:simulation_May15ROC2}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 In particular, genes correlated with true synthetic lethal genes have little impact on the performance of \gls{SLIPT} detection: synthetic lethal genes are as distinguishable from true negative genes as without correlated genes. Synthetic lethal correlated genes will not interfere detect of true synthetic lethals, although they may be ranked next below them and be biologically informative with related gene functions.
@@ -492,7 +492,7 @@ Another consideration for correlation structures is postively correlated genes w
 %both have 5x5 cor genes (dir tested for May)
 \iffalse
 \begin{figure*}[!htbp]
-\begin{mdframed}
+%\begin{mdframed}
   \begin{center}
   \resizebox{0.5 \textwidth}{!}{
   \fbox{
@@ -502,7 +502,7 @@ Another consideration for correlation structures is postively correlated genes w
    \end{center}
    \caption[Comparison of performance for query correlations]{\small \textbf{Comparison of performance for query correlations.} Multivariate simulation of synthetic lethality with correlation structure (in colour) clearly has lower performance than simulation including query correlations (in greyscale) across parameters. The query correlation simulation shows predictive potential for \gls{SLIPT} even with many underlying synthetic lethal partners as postively correlated genes are distinguished robustly.}
 \label{fig:mvtnorm_query_cor_compare}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 \fi
 
@@ -512,7 +512,7 @@ Another consideration for correlation structures is postively correlated genes w
 It is important to notice here that the directional criteria of the \gls{SLIPT} procedure is enhancing it's performance, particularly in distinguishing positively correlated true negatives. The multivariate normal simulation results, with 20,000 genes including all of the correlation structures discussed (SL, non-SL, and query correlated genes), are compared here for \gls{SLIPT} with and without ($\chi^2$) directional testing. There is a marked improvement in statistical performance with directional criteria, particularly with increased sensitivity and lower false discovery rate (as shown in Figure~\ref{fig:mvtnorm_dir_compare}).
 
 \begin{figure*}[!hb]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -533,11 +533,11 @@ It is important to notice here that the directional criteria of the \gls{SLIPT} 
    \caption[Statistical evaluation of directional criteria]{\small \textbf{Statistical evaluation of directional criteria.} A simulated multivariate normal dataset of 20,000 genes with correlation structures was tested by \gls{SLIPT} with the directional condition and and the equivalent $\chi^2$ test without. \gls{SLIPT} exhibited a consistently higher sensitivity and lower false discovery rate.}
 %}
 \label{fig:mvtnorm_dir_compare}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \begin{figure*}[!htbp]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -564,7 +564,7 @@ It is important to notice here that the directional criteria of the \gls{SLIPT} 
    \caption[Performance of directional criteria]{\small \textbf{Performance with directional criteria.} A simulated multivariate normal dataset of 20,000 genes with correlation structures was tested by \gls{SLIPT} with the directional condition and and the equivalent $\chi^2$ test without. \gls{SLIPT} has higher performance across simulation parameters, clearly differing from random (grey diagonal) in ROC curves up to 100 SL genes (b). The performance (c) of \gls{SLIPT} (in greyscale) was consistently higher than the $\chi^2$ test (in color).}
 %}
 \label{fig:mvtnorm_dir_compare2}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 This is encouraging for the application of \gls{SLIPT} to empirical expression datasets as postively correlated genes are likely to occur and the directional condition robustly improves the performance of \gls{SLIPT} across simulation parameters. Without assuming the underlying number of synthetic lethal genes, \gls{SLIPT} will perform better than the $\chi^2$ test alone at detecting them. This is further supported irrespective of significance threshold for the $\chi^2$ test by the ROC analysis in Figure~\ref{fig:mvtnorm_dir_compare2}. The directional \gls{SLIPT} methodology outperforms the ordinary $\chi^2$ test at detecting synthetic lethal partners with some predictive power (above random and AUROC of 0.5) even up to 100 synthetic lethal genes.
@@ -596,14 +596,14 @@ An alternative approach to pathway structure was performed based on the biologic
 
 A network-based approach was used to determine the pathway hierarchy of genes in a computationally rational way when applied to different biological pathways with a directed graph structure, $G$ (without loops). The diameter of the network (i.e., the length of longest possible shortest path between the most distant genes) was used to identify a gene ($z$) at the downstream end of the pathway (at the end of a diameter spanning shortest path), assigned a hierarchy of: $$hierarchy(z) = 1 + diameter(G)$$ Having identified the downstream end of the pathway, genes upstream (e.g., gene $i$) of this are assigned a hierarchy by the length of their shortest path ($d$) to this gene, $z$. $$hierarchy(i) = hierarchy(z) - d_{iz}$$ The remaining unassigned genes (e.g., gene $j$) gain the hierarchy of the length of the shortest path downstream from the nearest assigned gene if possible. $$hierarchy(j) = hierarchy(i) + d_{ij}$$ This process may be performed iteratively to fill in pathway hierarchy but it was not necessary to perform further iterations for the candidate synthetic lethal pathways investigated (amenable to this procedure) which exhibited clear directional structure and the small world property (with a low diameter). Thus genes in a pathway graph structure were assigned integer valued hierarchy upstream to downstream by this procedure: $$hierarchy \in \{1, 2, 3, ..., 1 + diameter(G)\}$$
 %new paragraph?
-This hierarchy of pathway directionality (such as that shown in Figure~\ref{fig:SL_Pathway_PI3K_Ranking}) can be used for comparison with measures of the number of genes of each candidate group and the support for being synthetic lethal partners with either approach.
+This hierarchy of pathway directionality (e.g.,  that shown in Figure~\ref{fig:SL_Pathway_PI3K_Ranking}) can be used for comparison with measures of the number of genes of each candidate group and the support for being synthetic lethal partners with either approach.
 
 \subsection{Simulating Gene Expression from Graph Structures} \label{methods:graphsim}
 A further refinement of the simulation procedure generated expression data with correlation structure, derived from a known graph structure. %rather than correlated blocks for $\Sigma$ in \texttt{mvtnorm} \citet{mvtnorm}
 This enables modelling of synthetic lethal partners within a biological pathway and the investigation of impact of pathway structure on synthetic lethal prediction. A simulated pathway is first constructed as a graph structure, with the \texttt{igraph} R package \citet{igraph}, with the added annotation of the state of the edges (i.e, whether they activate or inhibit downstream pathway members). This simulation procedure was intended for biological pathway members with correlated gene expression (higher than the background of genes in other pathways) but it may also be applicable to modelling protein levels (in a kinase regulation cascade) or substrates and products (in a metabolic pathway).% as it is to gene regulation as it has been applied here.
 
 \begin{figure*}[!htb]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -622,13 +622,13 @@ This enables modelling of synthetic lethal partners within a biological pathway 
    \caption[Simulated graph structures]{\small \textbf{\textbf{Simulated graph structures.}} A constructed graph structure used as an example to demonstrate the simulation procedure. Activating links are denoted by blue arrows and inhibiting links by red edges.}
 %}
 \label{fig:simple_graph}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 First, the graph structure is constructed for simulated data to be generated from (by sampling from a multivariate normal distribution using the \texttt{mvtnorm} R package \citep{Genz2009, mvtnorm}). Throughout this section, the simulation procedure will be demonstrated with the relatively simple constructed graph structure shown in Figure~\ref{fig:simple_graph}. This graph structure visualisation was specifically developed for (directed) iGraph objects in R and has been released in the \texttt{plot.igraph} package and \texttt{igraph.extensions} library (see Table~\ref{tab:computers_r_packages_dev} and Section~\ref{methods:igraph_extensions}). The \texttt{plot\_directed} function allows customisation of plot parameters for each node or edge and mixed (directed) edge types for indicating activation or inhibition. These inhibition links (which often occur in biological pathways) are demonstrated in Figure~\ref{fig:simple_graph:second}.
 
 \begin{figure*}[!hp]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -656,7 +656,7 @@ First, the graph structure is constructed for simulated data to be generated fro
    \caption[Simulating expression from a graph structure]{\small \textbf{\textbf{Simulating expression from a graph structure.}} An example graph structure is used to derive a correlation structure from the relative distances between nodes and simulate continuous gene expression with sampling from the multivariate normal distribution.}
 %}
 \label{fig:simulation_activating}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 The simulation procedure is designed to use such graph structures to inform development of a ``Sigma'' variance-covariance matrix ($\Sigma$) for sampling from a multivariate normal distribution (using the \texttt{mvtnorm} R package). Given a graph structure (or adjacency matrix), such as Figure~\ref{fig:simulation_activating:first}, a relation matrix is calculated based on distance such that nearer nodes are given higher weight than farther nodes. For the purposes of this thesis a geometrically decreasing (relative) distance weighting is used, with each more distant node being related by $\sfrac{1}{2}$ compared to the next nearest as shown in Figure~\ref{fig:simulation_activating:second}. However, an arithmetically decreasing (absolute) distance weighting is also available in the \texttt{graphsim} R package release of this procedure.
@@ -664,7 +664,7 @@ The simulation procedure is designed to use such graph structures to inform deve
 A $\Sigma$ matrix is derived from this distance weighting matrix, creating a matrix (with a diagonal of $1$) where each node has a variance and standard deviation of 1. Thus covariances between adjacent nodes are assigned by a correlation parameter and the remaining matrix based on weighting these correlations with by the distance matrix (or the nearest ``positive definite'' matrix). For the purposes of this thesis, the correlation parameter is $0.8$ unless otherwise specified (as used for the example in Figure~\ref{fig:simulation_activating:third}). This $\Sigma$ matrix is used to sample from a multivariate normal distribution with each gene having a mean of $0$, standard deviation $1$, and covariance within the range $[0,1]$ such that they are correlations. This procedure generates a simulated (continuous normally distributed) expression profile for each node (as shown in Figure~\ref{fig:simulation_activating:fourth}) with corresponding correlation structure (Figure~\ref{fig:simulation_activating:fifth}). The simulated correlation structure closely resembles the expected correlation structure (Sigma in~\ref{fig:simulation_activating:third}) even for the relatively modest sample size ($N=100$) illustrated in~\ref{fig:simulation_activating}. Once a simulated gene expression dataset has been generated (as in Figure~\ref{fig:simulation_activating:fourth}), then a discrete matrix of gene function can be constructed with a functional threshold quantile to simulate functional relationships of synthetic lethality (as shown in Figure~\ref{fig:SL_Model_Expression}). For the purposes of this thesis, this threshold is the 0.3 quantile (as discussed in Section~\ref{methods:SL_Model}) which generates functional discrete matrices such as those used for synthetic lethal simulation in Section~\ref{methods:simulating_SL} (as shown Figure~\ref{fig:simulation_activating:sixth})
 
 \begin{figure*}[!hp]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -693,7 +693,7 @@ A $\Sigma$ matrix is derived from this distance weighting matrix, creating a mat
    \caption[Simulating expression from graph structure with inhibitions]{\small \textbf{\textbf{Simulating expression from graph structure with inhibitions.}} An example graph structure is used to derive a correlation structure from the relative distances between nodes and simulate continuous gene expression with sampling from the multivariate normal distribution.}
 %}
 \label{fig:simulation_inhibiting}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 The simulation procedure (depicted in Figure~\ref{fig:simulation_activating}) is amenable to pathways containing inhibition links (as shown in Figure~\ref{fig:simulation_inhibiting}) with several refinements. With the inhibition links (as shown in Figure~\ref{fig:simulation_inhibiting:first}), distances are calculated in the same manner as before (Figure~\ref{fig:simulation_inhibiting:second}) with inhibitions accounted for by iteratively multiplying downstream nodes by $-1$ to form blocks of negative correlations (as shown in Figures~\ref{fig:simulation_inhibiting:third} and~\ref{fig:simulation_inhibiting:fifth}). As before, a multivariate normal distribution with these negative correlations can be sampled to generate simulated data (as shown in Figures~\ref{fig:simulation_inhibiting:fourth} and~\ref{fig:simulation_inhibiting:sixth}).  
@@ -736,7 +736,7 @@ The \gls{SLIPT} methodology in this package release has been used in later analy
 Customisations to existing data visualisations in R have been developed to present data throughout this thesis. The \texttt{vioplotx} and \texttt{heatmap.2x} packages are enhancements of the \texttt{vioplot} package \citep{vioplot} and \texttt{heatmap.2} provided by the \texttt{gplots} package \citep{gplots}. 
 
 \begin{figure*}[!p]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
@@ -752,13 +752,13 @@ Customisations to existing data visualisations in R have been developed to prese
    \caption[Demonstration of violin plots with custom features]{\small \textbf{Demonstration of violin plots with custom features.} An example of the \texttt{iris} dataset is plotted to show the custom features of the \texttt{vioplotx} package including a) individual colour, shape and size parameters of each violin, scaling violin widths by area, and b) splitting violins to compare subsets of data.}
 %}
 \label{fig:vioplot}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 The \texttt{vioplotx} package provides an alternative visualisation (of continuous variables against categories) to the more familiar boxplot, showing variability of the data by the width of the plots. As demonstrated in Figure~\ref{fig:vioplot}, the customised version enables separate plotting parameters for each violin with vector inputs for colour, shape, and size of various elements of the median point, central boxplot, borders, and fill colour for the violin. Scaling violin width to adjust violin area and splitting data by a second categorical variable is also enabled. This function is intended to be backwards compatible with the inputs of \texttt{vioplot} (applying scalar inputs across all violins) and \texttt{boxplot} (by enabling formula inputs as an S3 method). Each of these features is demonstrated with examples in respective vignettes on the package \href{https://github.com/TomKellyGenetics/vioplotx}{GitHub repository}.
 
 \begin{figure*}[!p]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
             \includegraphics[width=0.9 \textwidth]{{"heatmap2x".png}}
@@ -766,7 +766,7 @@ The \texttt{vioplotx} package provides an alternative visualisation (of continuo
    \caption[Demonstration of annotated heatmap]{\small \textbf{Demonstration of annotated heatmap}. The example heatmap depicts the additional row and column annotation bars enabled by \texttt{heatmap.2x}, extending the features of \texttt{gplots} with backwards compatible inputs.}
 %}
 \label{fig:heatmap.2x} 
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 The \texttt{heatmap.2x} provides extensions for annotation colour bars for both the rows and columns (as shown in Figure~\ref{fig:heatmap.2x}). Multiple bars are enabled on both axes with matrix inputs (rather than single vector for \texttt{heatmap.2}) which facilitates additional plotting of gene and sample characteristics for comparison with correlation matrices, expression profiles, or pathway metagenes. Annotation bar inputs correspond to their orientation on the plot, each colour bar is provided as a column for the row annotation on the left of the heatmap and as a row for the column annotation on top of the heatmap. Row and column annotation bars are labelled with the column or row names respectively. Additional parameters enable resizing of these annotation bar labels and control of reordering columns for if samples are ordered in advance (e.g., ranked by a metagene or split into groups clustered separately).  These features were used through this thesis and are provided in a package \href{https://github.com/TomKellyGenetics/heatmap.2x}{GitHub repository}.
@@ -785,7 +785,7 @@ The \texttt{plot.igraph} package provides the \texttt{plot\_directed} function s
  
 
  \begin{figure*}[!htp]
-\begin{mdframed}
+%\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
          \fbox{
@@ -795,7 +795,7 @@ The \texttt{plot.igraph} package provides the \texttt{plot\_directed} function s
    \caption[Simulating graph structures]{\small \textbf{\textbf{Simulating graph structures.}} An example graph structure which will be used throughout demonstrating the simulation procedure from graph structures. Here activating links are denoted by blue arrows and inhibiting links by red edges.}
 %}
 \label{fig:simple_graph2}
-\end{mdframed}
+%\end{mdframed}
 \end{figure*}
 
 \FloatBarrier
