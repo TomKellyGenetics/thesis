@@ -7,47 +7,58 @@ A level-1 auxiliary file: methods_dev.aux
 A level-1 auxiliary file: chapt3.aux
 A level-1 auxiliary file: chapt4.aux
 A level-1 auxiliary file: chapt5.aux
-I found no \bibdata command---while reading file thesis.aux
-I found no \bibstyle command---while reading file thesis.aux
+A level-1 auxiliary file: chapt6.aux
+A level-1 auxiliary file: conclusion.aux
+The style file: mycustom.bst
+A level-1 auxiliary file: appendix_methods.aux
+A level-1 auxiliary file: appendix_chapt3.aux
+A level-1 auxiliary file: appendix_chapt4.aux
+A level-1 auxiliary file: appendix_chapt5.aux
+Reallocated field_info (elt_size=4) to 12020 items from 5000.
+Database file #1: thesis.bib
+Reallocated str_pool (elt_size=1) to 130000 items from 65000.
+Reallocated str_pool (elt_size=1) to 195000 items from 130000.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--can't use both volume and number fields in Erdos1960
 You've used 270 entries,
-            0 wiz_defined-function locations,
-            613 strings with 5805 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
-int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+            3105 wiz_defined-function locations,
+            2381 strings with 175553 characters,
+and the built_in function-call counts, 255136 in all, are:
+= -- 22782
+> -- 10776
+< -- 225
++ -- 10430
+- -- 2941
+* -- 19712
+:= -- 30532
+add.period$ -- 560
+call.type$ -- 270
+change.case$ -- 2839
+chr.to.int$ -- 271
+cite$ -- 541
+duplicate$ -- 20483
+empty$ -- 16860
+format.name$ -- 3896
+if$ -- 50662
+int.to.chr$ -- 5
+int.to.str$ -- 1
+missing$ -- 3540
+newline$ -- 1377
+num.names$ -- 1084
+pop$ -- 9815
+preamble$ -- 1
+purify$ -- 2544
 quote$ -- 0
-skip$ -- 0
+skip$ -- 9047
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 18137
+swap$ -- 8501
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 2418
+warning$ -- 1
+while$ -- 1089
 width$ -- 0
-write$ -- 0
-(There were 2 error messages)
+write$ -- 3793
+(There was 1 warning)

@@ -21,6 +21,7 @@
 \providecommand*\glsXpageXhypersl[2]{\setentrycounter[#1]{page}\hypersl{#2}}
 \providecommand*\glsXpageXhypersc[2]{\setentrycounter[#1]{page}\hypersc{#2}}
 \providecommand*\glsXpageXhyperemph[2]{\setentrycounter[#1]{page}\hyperemph{#2}}
+\providecommand*\glsXpageXglsignore[2]{\setentrycounter[#1]{page}\glsignore{#2}}
 \begin{theglossary}\glossaryheader
 \glsgroupheading{B}\relax\glsresetentrylist
 \glossentry{bioinformatics}{\glossaryentrynumbers{\relax 
@@ -93,8 +94,8 @@
 \glsXpageXglsnumberformat{}{18}\delimN 
 \glsXpageXglsnumberformat{}{43}\delimN 
 \glsXpageXglsnumberformat{}{47}\delimN 
-\glsXpageXglsnumberformat{}{201}\delimN 
-\glsXpageXglsnumberformat{}{232}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{200}\delimN 
+\glsXpageXglsnumberformat{}{231}}}\glsgroupskip
 \glsgroupheading{S}\relax\glsresetentrylist
 \glossentry{Sanger}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{8}}}\relax\glsresetentrylist

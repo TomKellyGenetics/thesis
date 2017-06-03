@@ -16,34 +16,7 @@
 \chapter{Secondary Screen Data}
 \label{appendix:secondary_screen}
 
-A series of experimental genome-wide siRNA screens have been performed on synthetic lethal partners of \textit{CDH1} \citep{Telford2015}. The strongest candidates from a primary screen were subject to a further secondary screen for validation by independent replication with 4 gene knockdowns with different targeting siRNA. As shown in Table~\ref{tab:secondary_screen}, there is significant ($p=7.49 \times 10^{-3}$ by Fisher's exact test) %$8.67 \times 10^{-3} by \chi^2 (4 df)
-association between SLIPT candidates and stronger validations of siRNA candidates. Since there were more SLIPT$-$ genes among those not validated and more SLIPT$+$ genes among those validated with several siRNAs, this supports the use of SLIPT as a synthetic lethal discovery procedure which may augment such screening experiments.
-
-\begin{table*}[!ht]
-\caption{Comparing SLIPT genes against Secondary siRNA Screen in breast cancer}
-\label{tab:secondary_screen}
-\begin{center}
-%\resizebox{\textwidth}{!}{
-\begin{tabular}{>{\cellcolor{white}}rrcccccl}
-                                                                            &                                                           & \multicolumn{5}{c}{\bfseries Secondary Screen}                                                                                     &                                           \\ \cline{3-7}
-\rowcolor{black!10}
-                                                                            & \multicolumn{1}{r|}{\cellcolor{white}}                    & 0/4                      & 1/4                      & 2/4                     & 3/4                     & \multicolumn{1}{c|}{4/4} & \cellcolor{white} \textbf{Total}          \\ \cline{2-8} 
-\rowcolor{black!5}
-\multicolumn{1}{r|}{\cellcolor{white}}                                      & \multicolumn{1}{r|}{Observed}                             & 70                       & 46                       & 31                      & 8                       & \multicolumn{1}{c|}{2}   &  \multicolumn{1}{l|}{}                     \\
-\rowcolor{black!10}
-\multicolumn{1}{r|}{\cellcolor{white} \multirow{-2}{*}{\bfseries SLIPT$+$}} & \multicolumn{1}{r|}{Expected}                             & 85                       & 44                       & 10                      & 4                       & \multicolumn{1}{c|}{2}   & \multicolumn{1}{l|}{\multirow{-2}{*}{157}}    \\ \cline{2-8} 
-\rowcolor{black!5}
-\multicolumn{1}{r|}{\cellcolor{white}}                                      & \multicolumn{1}{r|}{Observed}                             & 190                      & 90                       & 31                      & 10                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{}                     \\
-\rowcolor{black!10}
-\multicolumn{1}{r|}{\cellcolor{white}\multirow{-2}{*}{\bfseries SLIPT$-$}}  & \multicolumn{1}{r|}{Expected}                             & 175                      & 91                       & 42                      & 12                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{\multirow{-2}{*}{325}} \\ \cline{2-8} 
-\rowcolor{black!5}
-\cellcolor{white}                                                           & \multicolumn{1}{r|}{\cellcolor{white} \bfseries Total}    & \multicolumn{1}{c}{280} & \multicolumn{1}{c}{136} & \multicolumn{1}{c}{52} & \multicolumn{1}{c}{18} & \multicolumn{1}{c|}{6}   & \multicolumn{1}{l|}{482}                  \\ \cline{3-8} 
-\end{tabular} 
-%}
-\end{center}
-\end{table*}
-
-Similar analysis with mtSLIPT, comparing SLIPT against \textit{CDH1} somatic mutation with siRNA validation results was not significant ($p=7.02 \times 10^{-1}$ by Fisher's exact test). However,  as shown in Table~\ref{tab:secondary_screen_mtSL}, the observed and expected values were in a direction consistent with that observed above for SLIPT against low \textit{CDH1} expression. It is not unexpected that this result does not have comparable statistical support due to the lower sample size for mutation data. 
+A series of experimental genome-wide siRNA screens have been performed on synthetic lethal partners of \textit{CDH1} \citep{Telford2015}. The strongest candidates from a primary screen were subject to a further secondary screen for validation by independent replication with 4 gene knockdowns with different targeting siRNA. Analysis with mtSLIPT was performed, comparing SLIPT against \textit{CDH1} somatic mutation with siRNA validation results was not significant ($p=7.02 \times 10^{-1}$ by Fisher's exact test). However,  as shown in Table~\ref{tab:secondary_screen_mtSL}, the observed and expected values were in a direction consistent with that observed above for SLIPT against low \textit{CDH1} expression. It is not unexpected that this result does not have comparable statistical support due to the lower sample size for mutation data. 
 
 \begin{table*}[!ht]
 \caption{Comparing mtSLIPT genes against Secondary siRNA Screen in breast cancer}
@@ -166,7 +139,7 @@ TFAP2B & 8 & 36.7 & 89.5 & $3.60 \times 10^{-20}$ & $8.37 \times 10^{-17}$ \\
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected mutant samples with low expression of partner genes
+Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} breast tumours with low expression of partner genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -219,14 +192,14 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
   \rowcolor{black!5}
   Influenza Life Cycle & 112 &  57 & $1.4 \times 10^{-100}$ \\ 
   \rowcolor{black!10}
-  GPCR downstream signaling & 472 & 116 & $1.0 \times 10^{-80}$ \\ 
+  GPCR downstream signalling & 472 & 116 & $1.0 \times 10^{-80}$ \\ 
   \rowcolor{black!5}
   Hemostasis & 422 & 105 & $1.4 \times 10^{-78}$ \\ 
   \hline
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Gene set over-representation analysis (hypergeometric test) for Reactome pathways in mtSLIPT partners for \textit{CDH1}
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in mtSLIPT partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -265,34 +238,35 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
 \centering
 %\begin{tiny}
 %\makebox[\textwidth][c]{
-\resizebox{0.666 \textwidth}{!}{
+\resizebox{0.75 \textwidth}{!}{
+\begin{threeparttable}
 \begin{tabular}{lccc}
 %\caption{Pathway composition for clusters of \textit{CDH1} partners from SLIPT}
 %\label{tab:pathway_clusters_mtSL}
   \large{\textbf{Pathways Over-represented in Cluster 1}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Blue!20}
-  Olfactory Signaling Pathway &  57 &   8 & $7.1 \times 10^{-9}$ \\ 
+  Olfactory Signalling Pathway &  57 &   8 & $7.1 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Blue!15} 
   Assembly of the primary cilium & 149 &  14 & $8.0 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Blue!20} 
   Sphingolipid metabolism &  62 &   8 & $9.6 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Blue!15} 
-  Signaling by ERBB4 & 133 &  12 & $5.1 \times 10^{-8}$ \\ 
+  Signalling by ERBB4 & 133 &  12 & $5.1 \times 10^{-8}$ \\ 
   \rowcolor{Cluster_Blue!20} 
   PI3K Cascade &  65 &   7 & $4.9 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Blue!15} 
   Circadian Clock &  33 &   5 & $4.9 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Blue!20} 
-  Nuclear signaling by ERBB4 &  34 &   5 & $4.9 \times 10^{-7}$ \\ 
+  Nuclear signalling by ERBB4 &  34 &   5 & $4.9 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Blue!15} 
   Intraflagellar transport &  35 &   5 & $4.9 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Blue!20} 
-  PI3K events in ERBB4 signaling &  87 &   8 & $4.9 \times 10^{-7}$ \\ 
+  PI3K events in ERBB4 signalling &  87 &   8 & $4.9 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Blue!15} 
-  PIP3 activates AKT signaling &  87 &   8 & $4.9 \times 10^{-7}$ \\ 
+  PIP3 activates AKT signalling &  87 &   8 & $4.9 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Blue!20} 
-  PI3K events in ERBB2 signaling &  87 &   8 & $4.9 \times 10^{-7}$ \\ 
+  PI3K events in ERBB2 signalling &  87 &   8 & $4.9 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Blue!15} 
   PI-3K cascade:FGFR1 &  87 &   8 & $4.9 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Blue!20} 
@@ -307,12 +281,12 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   PI3K/AKT activation &  90 &   8 & $5.6 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Blue!15} 
   Cargo trafficking to the periciliary membrane &  38 &   5 & $5.6 \times 10^{-7}$ \\ 
-  \rowcolor{Cluster_Blue!20} 
-  Signaling by Hedgehog & 108 &   9 & $5.6 \times 10^{-7}$ \\ 
-  \rowcolor{Cluster_Blue!15} 
-  Downstream signal transduction & 143 &  11 & $5.6 \times 10^{-7}$ \\ 
+%  \rowcolor{Cluster_Blue!20} 
+%  Signalling by Hedgehog & 108 &   9 & $5.6 \times 10^{-7}$ \\ 
+%  \rowcolor{Cluster_Blue!15} 
+%  Downstream signal transduction & 143 &  11 & $5.6 \times 10^{-7}$ \\ 
   \hline
-  \\
+%  \\
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 2}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Green!20}
@@ -330,7 +304,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \rowcolor{Cluster_Green!20} 
   Integration of energy metabolism &  84 &  13 & $8.8 \times 10^{-15}$ \\ 
   \rowcolor{Cluster_Green!15} 
-  GPCR downstream signaling & 472 &  48 & $2.8 \times 10^{-14}$ \\ 
+  GPCR downstream signalling & 472 &  48 & $2.8 \times 10^{-14}$ \\ 
   \rowcolor{Cluster_Green!20} 
   G$_{\alpha z}$ signalling events &  15 &   6 & $5.0 \times 10^{-14}$ \\ 
   \rowcolor{Cluster_Green!15} 
@@ -338,7 +312,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \rowcolor{Cluster_Green!20} 
   Phase 1 - Functionalization of compounds &  67 &  11 & $5.6 \times 10^{-14}$ \\ 
   \rowcolor{Cluster_Green!15} 
-  Platelet activation, signaling and aggregation & 179 &  20 & $5.6 \times 10^{-14}$ \\ 
+  Platelet activation, signalling and aggregation & 179 &  20 & $5.6 \times 10^{-14}$ \\ 
   \rowcolor{Cluster_Green!20} 
   Vasopressin regulates renal water homeostasis via Aquaporins &  24 &   7 & $6.1 \times 10^{-14}$ \\ 
   \rowcolor{Cluster_Green!15} 
@@ -351,12 +325,12 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   cGMP effects &  18 &   6 & $3.6 \times 10^{-13}$ \\ 
   \rowcolor{Cluster_Green!15} 
   G$_{\alpha i}$ signalling events & 167 &  18 & $6.3 \times 10^{-13}$ \\ 
-  \rowcolor{Cluster_Green!20} 
-  Ca-dependent events &  29 &   7 & $8.2 \times 10^{-13}$ \\ 
-  \rowcolor{Cluster_Green!15} 
-  Binding and Uptake of Ligands by Scavenger Receptors &  40 &   8 & $8.2 \times 10^{-13}$ \\ 
+%  \rowcolor{Cluster_Green!20} 
+%  Ca-dependent events &  29 &   7 & $8.2 \times 10^{-13}$ \\ 
+%  \rowcolor{Cluster_Green!15} 
+%  Binding and Uptake of Ligands by Scavenger Receptors &  40 &   8 & $8.2 \times 10^{-13}$ \\ 
   \hline
-  \\
+%  \\
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 3}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Orange!30}
@@ -395,12 +369,12 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   Influenza Infection & 117 &  53 & $6.2 \times 10^{-88}$ \\ 
   \rowcolor{Cluster_Orange!20} 
   Translation & 141 &  55 & $3 \times 10^{-81}$ \\ 
-  \rowcolor{Cluster_Orange!30} 
-  Formation of the ternary complex, and subsequently, the 43S complex &  47 &  23 & $2.3 \times 10^{-48}$ \\ 
-  \rowcolor{Cluster_Orange!20} 
-  Translation initiation complex formation &  54 &  23 & $9.1 \times 10^{-45}$ \\ 
+%  \rowcolor{Cluster_Orange!30} 
+%  Formation of the ternary complex, and subsequently, the 43S complex &  47 &  23 & $2.3 \times 10^{-48}$ \\ 
+%  \rowcolor{Cluster_Orange!20} 
+%  Translation initiation complex formation &  54 &  23 & $9.1 \times 10^{-45}$ \\ 
   \hline
-  \\ 
+%  \\ 
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 4}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
   \hline 
   \rowcolor{Cluster_Red!20}
@@ -410,7 +384,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \rowcolor{Cluster_Red!20} 
   Arachidonic acid metabolism &  41 &   7 & $1.1 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Red!15} 
-  G_${\alpha q}$ signalling events & 149 &  14 & $4.0 \times 10^{-9}$ \\ 
+  G$_{\alpha q}$ signalling events & 149 &  14 & $4.0 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Red!20} 
   HS-GAG degradation &  21 &   5 & $4.5 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Red!15} 
@@ -428,23 +402,28 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \rowcolor{Cluster_Red!15} 
   Synthesis of Leukotrienes and Eoxins &  15 &   4 & $3.2 \times 10^{-8}$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Signaling by NOTCH1 &  59 &   7 & $5.3 \times 10^{-8}$ \\ 
+  Signalling by NOTCH1 &  59 &   7 & $5.3 \times 10^{-8}$ \\ 
   \rowcolor{Cluster_Red!15} 
   Regulation of insulin secretion &  44 &   6 & $6.0 \times 10^{-8}$ \\ 
   \rowcolor{Cluster_Red!20} 
   Metabolism of lipids and lipoproteins & 471 &  37 & $8.2 \times 10^{-8}$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Signaling by NOTCH &  80 &   8 & $1.2 \times 10^{-7}$ \\ 
+  Signalling by NOTCH &  80 &   8 & $1.2 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Platelet activation, signaling and aggregation & 179 &  14 & $1.2 \times 10^{-7}$ \\ 
+  Platelet activation, signalling and aggregation & 179 &  14 & $1.2 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Red!15} 
   Recruitment of mitotic centrosome proteins and complexes &  64 &   7 & $1.2 \times 10^{-7}$ \\ 
-  \rowcolor{Cluster_Red!20} 
-  Centrosome maturation &  64 &   7 & $1.2 \times 10^{-7}$ \\ 
-  \rowcolor{Cluster_Red!15} 
-  Biological oxidations & 133 &  11 & $1.5 \times 10^{-7}$ \\ 
+%  \rowcolor{Cluster_Red!20} 
+%  Centrosome maturation &  64 &   7 & $1.2 \times 10^{-7}$ \\ 
+%  \rowcolor{Cluster_Red!15} 
+%  Biological oxidations & 133 &  11 & $1.5 \times 10^{-7}$ \\ 
   \hline
 \end{tabular}
+\begin{tablenotes}
+\raggedright %\small
+Pathway over-representation analysis for Reactome pathways with the number of genes in each pathway (Pathway Size), number of genes within the pathway identified (Cluster Genes), and the pathway over-representation p-value (adjusted by FDR) from the hypergeometric test.  
+\end{tablenotes}
+\end{threeparttable}
 }
 \end{table*}
 
@@ -544,27 +523,27 @@ Despite a lower sample size (and low number of a predicted partners) for mutatio
   \rowcolor{Cluster_Blue!20}
   Downstream signal transduction & 146 &  24 & $1.9 \times 10^{-22}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Signaling by VEGF &  99 &  19 & $2.6 \times 10^{-22}$ \\ 
+  Signalling by VEGF &  99 &  19 & $2.6 \times 10^{-22}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  DAP12 signaling & 149 &  24 & $4.2 \times 10^{-22}$ \\ 
+  DAP12 signalling & 149 &  24 & $4.2 \times 10^{-22}$ \\ 
   \rowcolor{Cluster_Blue!15}
   Organelle biogenesis and maintenance & 264 &  34 & $4.3 \times 10^{-20}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Downstream signaling of activated FGFR1 & 134 &  21 & $4.3 \times 10^{-20}$ \\ 
+  Downstream signalling of activated FGFR1 & 134 &  21 & $4.3 \times 10^{-20}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Downstream signaling of activated FGFR2 & 134 &  21 & $4.3 \times 10^{-20}$ \\ 
+  Downstream signalling of activated FGFR2 & 134 &  21 & $4.3 \times 10^{-20}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Downstream signaling of activated FGFR3 & 134 &  21 & $4.3 \times 10^{-20}$ \\ 
+  Downstream signalling of activated FGFR3 & 134 &  21 & $4.3 \times 10^{-20}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Downstream signaling of activated FGFR4 & 134 &  21 & $4.3 \times 10^{-20}$ \\ 
+  Downstream signalling of activated FGFR4 & 134 &  21 & $4.3 \times 10^{-20}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Signaling by ERBB2 & 146 &  22 & $5.3 \times 10^{-20}$ \\ 
+  Signalling by ERBB2 & 146 &  22 & $5.3 \times 10^{-20}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Signaling by FGFR & 146 &  22 & $5.3 \times 10^{-20}$ \\ 
+  Signalling by FGFR & 146 &  22 & $5.3 \times 10^{-20}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Signaling by FGFR1 & 146 &  22 & $5.3 \times 10^{-20}$ \\ 
+  Signalling by FGFR1 & 146 &  22 & $5.3 \times 10^{-20}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Signaling by FGFR2 & 146 &  22 & $5.3 \times 10^{-20}$ \\ 
+  Signalling by FGFR2 & 146 &  22 & $5.3 \times 10^{-20}$ \\ 
   \hline
   \\
   \rowstyle{\bfseries}
@@ -575,9 +554,9 @@ Despite a lower sample size (and low number of a predicted partners) for mutatio
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
   Retinoid metabolism and transport &  39 &   5 & $4.9 \times 10^{-6}$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
-  Platelet activation, signaling and aggregation & 186 &  13 & $4.9 \times 10^{-6}$ \\ 
+  Platelet activation, signalling and aggregation & 186 &  13 & $4.9 \times 10^{-6}$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
-  Signaling by NOTCH4 &  11 &   3 & $4.9 \times 10^{-6}$ \\ 
+  Signalling by NOTCH4 &  11 &   3 & $4.9 \times 10^{-6}$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
   $G_{\alpha s}$ signalling events & 100 &   8 & $5.0 \times 10^{-6}$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
@@ -587,11 +566,11 @@ Despite a lower sample size (and low number of a predicted partners) for mutatio
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
   Class A/1 (Rhodopsin-like receptors) & 289 &  18 & $2.2 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
-  Signaling by PDGF & 173 &  11 & $2.9 \times 10^{-5}$ \\ 
+  Signalling by PDGF & 173 &  11 & $2.9 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
   Circadian Clock &  34 &   4 & $2.9 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
-  Signaling by ERBB4 & 139 &   9 & $4.3 \times 10^{-5}$ \\ 
+  Signalling by ERBB4 & 139 &   9 & $4.3 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
   Role of LAT2/NTAL/LAB on calcium mobilization &  99 &   7 & $4.4 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
@@ -601,15 +580,15 @@ Despite a lower sample size (and low number of a predicted partners) for mutatio
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
   Defective B3GAT3 causes JDSSDHD &  19 &   3 & $4.5 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
-  Signaling by NOTCH &  80 &   6 & $4.5 \times 10^{-5}$ \\ 
+  Signalling by NOTCH &  80 &   6 & $4.5 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
   $G_{\alpha q}$ signalling events & 164 &  10 & $5.1 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
   Response to elevated platelet cytosolic Ca$^{2+}$ &  84 &   6 & $7.1 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
-  Signaling by ERBB2 & 148 &   9 & $7.1 \times 10^{-5}$ \\ 
+  Signalling by ERBB2 & 148 &   9 & $7.1 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
-  Signaling by SCF-KIT & 129 &   8 & $8.3 \times 10^{-5}$ \\ 
+  Signalling by SCF-KIT & 129 &   8 & $8.3 \times 10^{-5}$ \\ 
   \hline
 \end{tabular}
 }
@@ -668,11 +647,11 @@ Despite a lower sample size (and low number of a predicted partners) for mutatio
     \rowcolor{Cluster_Red!20} 
   \textbf{Disease} & $2.1 \times 10^{-90}$ & $0.013347$ \\ 
     \rowcolor{Cluster_Red!15} 
-  \textbf{GPCR downstream signaling} & $1.6 \times 10^{-80}$ & $0.095478$ \\ 
+  \textbf{GPCR downstream signalling} & $1.6 \times 10^{-80}$ & $0.095478$ \\ 
     \rowcolor{Cluster_Red!20} 
   Hemostasis & $2.1 \times 10^{-78}$ & $0.2671$ \\ 
     \rowcolor{Cluster_Red!15} 
-  Signaling by GPCR & $1.2 \times 10^{-73}$ & $0.44939$ \\ 
+  Signalling by GPCR & $1.2 \times 10^{-73}$ & $0.44939$ \\ 
     \rowcolor{Cluster_Red!20} 
   \textit{Extracellular matrix organization} & $2.2 \times 10^{-67}$ & $0.054008$ \\ 
     \rowcolor{Cluster_Red!15} 
@@ -695,19 +674,19 @@ Despite a lower sample size (and low number of a predicted partners) for mutatio
     \rowcolor{Cluster_Red!15} 
   Metabolism & $9.7 \times 10^{-56}$ & $0.72543$ \\ 
     \rowcolor{Cluster_Red!20} 
-  Platelet activation, signaling and aggregation & $3.4 \times 10^{-55}$ & $0.29119$ \\ 
+  Platelet activation, signalling and aggregation & $3.4 \times 10^{-55}$ & $0.29119$ \\ 
     \rowcolor{Cluster_Red!15} 
   GPCR ligand binding & $9.3 \times 10^{-55}$ & $0.59136$ \\ 
     \rowcolor{Cluster_Red!20} 
-  Signaling by PDGF & $1.1 \times 10^{-54}$ & $0.40041$ \\ 
+  Signalling by PDGF & $1.1 \times 10^{-54}$ & $0.40041$ \\ 
     \rowcolor{Cluster_Red!15} 
   Class A/1 (Rhodopsin-like receptors) & $4.2 \times 10^{-54}$ & $0.63215$ \\ 
     \rowcolor{Cluster_Red!20} 
-  Fc epsilon receptor (FCERI) signaling & $8 \times 10^{-53}$ & $0.44441$ \\ 
+  Fc epsilon receptor (FCERI) signalling & $8 \times 10^{-53}$ & $0.44441$ \\ 
     \rowcolor{Cluster_Red!15} 
   Adaptive Immune System & $6.7 \times 10^{-52}$ & $0.14054$ \\ 
     \rowcolor{Cluster_Red!20} 
-  Signaling by ERBB4 & $7.8 \times 10^{-52}$ & $0.24354$ \\ 
+  Signalling by ERBB4 & $7.8 \times 10^{-52}$ & $0.24354$ \\ 
     \rowcolor{Cluster_Red!15} 
   Axon guidance & $1.2 \times 10^{-51}$ & $0.6903$ \\ 
     \rowcolor{Cluster_Red!20} 
@@ -723,13 +702,13 @@ Despite a lower sample size (and low number of a predicted partners) for mutatio
     \rowcolor{Cluster_Red!15} 
   Transmembrane transport of small molecules & $2.5 \times 10^{-49}$ & $0.17506$ \\ 
     \rowcolor{Cluster_Red!20} 
-  Signaling by ERBB2 & $8.1 \times 10^{-49}$ & $0.45422$ \\ 
+  Signalling by ERBB2 & $8.1 \times 10^{-49}$ & $0.45422$ \\ 
     \rowcolor{Cluster_Red!15} 
   Rho GTPase cycle & $4.9 \times 10^{-48}$ & $0.10613$ \\ 
     \rowcolor{Cluster_Red!20} 
-  G_${\alpha s}$ signalling events & $1.5 \times 10^{-47}$ & $0.0026835$ \\ 
+  G$_{\alpha s}$ signalling events & $1.5 \times 10^{-47}$ & $0.0026835$ \\ 
     \rowcolor{Cluster_Red!15} 
-  Signaling by FGFR & $2.4 \times 10^{-47}$ & $0.54308$ \\ 
+  Signalling by FGFR & $2.4 \times 10^{-47}$ & $0.54308$ \\ 
   \fi
   \hline
 \end{tabular}
@@ -765,13 +744,13 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   Chemokine receptors bind chemokines & $1.1 \times 10^{-5}$ & $0.95259$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
-  \textit{Signaling by NOTCH4} & $1.2 \times 10^{-5}$ & $0.079229$ \\ 
+  \textit{Signalling by NOTCH4} & $1.2 \times 10^{-5}$ & $0.079229$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   Defective EXT2 causes exostoses 2 & $1.2 \times 10^{-5}$ & $0.22292$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   Defective EXT1 causes exostoses 1, TRPS2 and CHDS & $1.2 \times 10^{-5}$ & $0.22292$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
-  Platelet activation, signaling and aggregation & $1.2 \times 10^{-5}$ & $0.48853$ \\ 
+  Platelet activation, signalling and aggregation & $1.2 \times 10^{-5}$ & $0.48853$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   Serotonin receptors & $1.4 \times 10^{-5}$ & $0.34596$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
@@ -783,7 +762,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   Acyl chain remodelling of PE & $3.8 \times 10^{-5}$ & $0.42615$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
-  Signaling by GPCR & $3.8 \times 10^{-5}$ & $0.93888$ \\ 
+  Signalling by GPCR & $3.8 \times 10^{-5}$ & $0.93888$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   \textbf{Molecules associated with elastic fibres} & $3.9 \times 10^{-5}$ & $0.017982$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
@@ -813,7 +792,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   \textit{Bile acid and bile salt metabolism} & $9.4 \times 10^{-5}$ & $0.079905$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
-  Netrin-1 signaling & $0.00011$ & $0.92216$ \\ 
+  Netrin-1 signalling & $0.00011$ & $0.92216$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   \textbf{Integration of energy metabolism} & $0.00011$ & $0.011152$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
@@ -821,35 +800,35 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   Platelet sensitization by LDL & $0.00012$ & $0.34596$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
-  DAP12 signaling & $0.00012$ & $0.62787$ \\ 
+  DAP12 signalling & $0.00012$ & $0.62787$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   Defensins & $0.00012$ & $0.77542$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
-  GPCR downstream signaling & $0.00012$ & $0.79454$ \\ 
+  GPCR downstream signalling & $0.00012$ & $0.79454$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   \textit{Diseases associated with glycosaminoglycan metabolism} & $0.00013$ & $0.065927$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   \textit{Diseases of glycosylation} & $0.00013$ & $0.065927$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
-  Signaling by Retinoic Acid & $0.00013$ & $0.22292$ \\ 
+  Signalling by Retinoic Acid & $0.00013$ & $0.22292$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
-  Signaling by Leptin & $0.00013$ & $0.34596$ \\ 
+  Signalling by Leptin & $0.00013$ & $0.34596$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
-  Signaling by SCF-KIT & $0.00013$ & $0.70881$ \\ 
+  Signalling by SCF-KIT & $0.00013$ & $0.70881$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   Opioid Signalling & $0.00013$ & $0.96053$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
-  Signaling by NOTCH & $0.00015$ & $0.26884$ \\ 
+  Signalling by NOTCH & $0.00015$ & $0.26884$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   Platelet homeostasis & $0.00015$ & $0.4878$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
-  Signaling by NOTCH1 & $0.00016$ & $0.13043$ \\ 
+  Signalling by NOTCH1 & $0.00016$ & $0.13043$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   Class B/2 (Secretin family receptors) & $0.00016$ & $0.13994$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   \textit{Diseases of Immune System} & $0.0002$ & $0.0795$ \\ 
     \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
-  \textit{Diseases associated with the TLR signaling cascade} & $0.0002$ & $0.0795$ \\ 
+  \textit{Diseases associated with the TLR signalling cascade} & $0.0002$ & $0.0795$ \\ 
     \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   A tetrasaccharide linker sequence is required for GAG synthesis & $0.0002$ & $0.42615$ \\
   \hline
@@ -875,7 +854,7 @@ Reactome Pathway & Over-representation & Permutation \\
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   \textbf{G$_{\alpha s}$ signalling events} & $3.305 \times 10^{-7}$ & $2.229 \times 10^{-2}$ \\
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
-  \textit{Signaling by NOTCH4} & $1.642 \times 10^{-5}$ & $7.159 \times 10^{-2}$ \\
+  \textit{Signalling by NOTCH4} & $1.642 \times 10^{-5}$ & $7.159 \times 10^{-2}$ \\
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
   Defective EXT2 causes exostoses 2 & $1.642 \times 10^{-5}$ & $1.880 \times 10^{-1}$ \\
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
@@ -891,7 +870,7 @@ Reactome Pathway & Over-representation & Permutation \\
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
   \textbf{HS-GAG degradation} & $1.795 \times 10^{-4}$ & $6.056 \times 10^{-3}$ \\
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
-  \textit{Growth hormone receptor signaling} & $2.274 \times 10^{-4}$ & $7.127 \times 10^{-2}$ \\
+  \textit{Growth hormone receptor signalling} & $2.274 \times 10^{-4}$ & $7.127 \times 10^{-2}$ \\
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
   \textit{Diseases associated with glycosaminoglycan metabolism} & $2.618 \times 10^{-4}$ & $6.388 \times 10^{-2}$ \\
   \hline
@@ -997,7 +976,7 @@ Metagene analysis was also performed for synthetic lethal candidates for \textit
   \rowcolor{black!5}
   Keratan sulfate degradation & 2022857 & 10 & 36.7 & 46.6 & $7.5 \times 10^{-11}$ & $1.15 \times 10^{-9}$ \\ 
   \rowcolor{black!10}
-  Signaling by Retinoic Acid & 5362517 & 10 & 36.7 & 46.6 & $7.5 \times 10^{-11}$ & $1.15 \times 10^{-9}$ \\ 
+  Signalling by Retinoic Acid & 5362517 & 10 & 36.7 & 46.6 & $7.5 \times 10^{-11}$ & $1.15 \times 10^{-9}$ \\ 
   \rowcolor{black!5}
   Adenylate cyclase inhibitory pathway & 170670 & 14 & 36.7 & 45.9 & $1.11 \times 10^{-10}$ & $1.59 \times 10^{-9}$ \\ 
   \rowcolor{black!10}
@@ -1014,7 +993,7 @@ Metagene analysis was also performed for synthetic lethal candidates for \textit
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected mutant samples with low expression of partner metagenes
+Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected numbers of mutant \textit{CDH1} \gls{TCGA} breast cancer tumours with low expression of partner metagenes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -1288,7 +1267,7 @@ The following results are a replication of the TCGA results (in Chapter~\ref{cha
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-SLIPT partners of \textit{CDH1} with observed and expected mutant samples of both genes
+SLIPT partners of \textit{CDH1} with observed and expected numbers of \gls{TCGA} stomach cancer samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -1322,7 +1301,8 @@ Similar to the analysis of synthetic lethal partners in~\ref{chapt3:stad_exprSL_
 \centering
 %\begin{tiny}
 %\makebox[\textwidth][c]{
-\resizebox{0.666 \textwidth}{!}{
+\resizebox{0.75 \textwidth}{!}{
+\begin{threeparttable}
 \begin{tabular}{lccc}
 %\caption{Pathway composition for clusters of \textit{CDH1} partners from SLIPT}
 %\label{tab:pathway_clusters}
@@ -1364,12 +1344,12 @@ Similar to the analysis of synthetic lethal partners in~\ref{chapt3:stad_exprSL_
   Influenza Life Cycle & 113 &  48 & $3.4 \times 10^{-80}$ \\ 
   \rowcolor{Cluster_Blue!15}
   Influenza Infection & 118 &  48 & $6.4 \times 10^{-78}$ \\ 
-  \rowcolor{Cluster_Blue!20}
-  Infectious disease & 349 &  68 & $1.8 \times 10^{-50}$ \\ 
-  \rowcolor{Cluster_Blue!15}
-  Formation of the ternary complex, and subsequently, the 43S complex &  48 &  21 & $3.7 \times 10^{-43}$ \\ 
+%  \rowcolor{Cluster_Blue!20}
+%  Infectious disease & 349 &  68 & $1.8 \times 10^{-50}$ \\ 
+%  \rowcolor{Cluster_Blue!15}
+%  Formation of the ternary complex, and subsequently, the 43S complex &  48 &  21 & $3.7 \times 10^{-43}$ \\ 
   \hline
-  \\
+%  \\
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 2}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Green!20}
@@ -1379,13 +1359,13 @@ Similar to the analysis of synthetic lethal partners in~\ref{chapt3:stad_exprSL_
   \rowcolor{Cluster_Green!20}
   Generation of second messenger molecules &  29 &   7 & $2.7 \times 10^{-12}$ \\ 
   \rowcolor{Cluster_Green!15}
-  PD-1 signaling &  21 & $  6 & 7.4 \times 10^{-12}$ \\ 
+  PD-1 signalling &  21 & $  6 & 7.4 \times 10^{-12}$ \\ 
   \rowcolor{Cluster_Green!20}
-  TCR signaling &  62 & $  9 & 4.3 \times 10^{-11}$ \\ 
+  TCR signalling &  62 & $  9 & 4.3 \times 10^{-11}$ \\ 
   \rowcolor{Cluster_Green!15}
   Translocation of ZAP-70 to Immunological synapse &  16 & $  5 & 1.1 \times 10^{-10}$ \\ 
   \rowcolor{Cluster_Green!20}
-  Interferon alpha/beta signaling &  68 & $  9 & 1.6 \times 10^{-10}$ \\ 
+  Interferon alpha/beta signalling &  68 & $  9 & 1.6 \times 10^{-10}$ \\ 
   \rowcolor{Cluster_Green!15}
   Initial triggering of complement &  17 & $  5 & 1.6 \times 10^{-10}$ \\ 
   \rowcolor{Cluster_Green!20}
@@ -1397,23 +1377,23 @@ Similar to the analysis of synthetic lethal partners in~\ref{chapt3:stad_exprSL_
   \rowcolor{Cluster_Green!15}
   RHO GTPases Activate NADPH Oxidases &  11 & $  4 & 1.3 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Green!20}
-  Interferon Signaling & 175 &  15 & $2.3 \times 10^{-9}$ \\ 
+  Interferon Signalling & 175 &  15 & $2.3 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Green!15}
   Chemokine receptors bind chemokines &  52 &   7 & $4.0 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Green!20}
-  Interferon gamma signaling &  74 &   8 & $1.6 \times 10^{-8}$ \\ 
+  Interferon gamma signalling &  74 &   8 & $1.6 \times 10^{-8}$ \\ 
   \rowcolor{Cluster_Green!15}
   TRAF6 mediated induction of TAK1 complex &  15 &   4 & $1.6 \times 10^{-8}$ \\ 
   \rowcolor{Cluster_Green!20}
   Activation of IRF3/IRF7 mediated by TBK1/IKK epsilon &  16 &   4 & $2.7 \times 10^{-8}$ \\ 
   \rowcolor{Cluster_Green!15}
-  Downstream TCR signaling &  45 &   6 & $3.5 \times 10^{-8}$ \\ 
-  \rowcolor{Cluster_Green!20}
-  Ligand-dependent caspase activation &  17 &   4 & $4.2 \times 10^{-8}$ \\ 
-  \rowcolor{Cluster_Green!15}
-  Complement cascade &  34 &   5 & $1.3 \times 10^{-7}$ \\ 
+  Downstream TCR signalling &  45 &   6 & $3.5 \times 10^{-8}$ \\ 
+%  \rowcolor{Cluster_Green!20}
+%  Ligand-dependent caspase activation &  17 &   4 & $4.2 \times 10^{-8}$ \\ 
+%  \rowcolor{Cluster_Green!15}
+%  Complement cascade &  34 &   5 & $1.3 \times 10^{-7}$ \\ 
   \hline
-  \\
+%  \\
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 3}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Orange!30}
@@ -1437,7 +1417,7 @@ Similar to the analysis of synthetic lethal partners in~\ref{chapt3:stad_exprSL_
   \rowcolor{Cluster_Orange!20}
   Acetylcholine Neurotransmitter Release Cycle &  17 &   3 & $3.3 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Orange!30}
-  G_${\alpha s}$ signalling events & 100 &   7 & $5.5 \times 10^{-5}$ \\ 
+  G$_{\alpha s}$ signalling events & 100 &   7 & $5.5 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Orange!20}
   GABA synthesis, release, reuptake and degradation &  19 &   3 & $5.6 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Orange!30}
@@ -1452,12 +1432,12 @@ Similar to the analysis of synthetic lethal partners in~\ref{chapt3:stad_exprSL_
   Termination of O-glycan biosynthesis &  21 &   3 & $7.4 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Orange!20}
   Kinesins &  22 &   3 & $8.5 \times 10^{-5}$ \\ 
-  \rowcolor{Cluster_Orange!30}
-  Signaling by Type 1 Insulin-like Growth Factor 1 Receptor (IGF1R) &  86 &   6 & $8.5 \times 10^{-5}$ \\ 
-  \rowcolor{Cluster_Orange!20}
-  IGF1R signaling cascade &  86 &   6 & $8.5 \times 10^{-5}$ \\
+%  \rowcolor{Cluster_Orange!30}
+%  Signalling by Type 1 Insulin-like Growth Factor 1 Receptor (IGF1R) &  86 &   6 & $8.5 \times 10^{-5}$ \\ 
+%  \rowcolor{Cluster_Orange!20}
+%  IGF1R signalling cascade &  86 &   6 & $8.5 \times 10^{-5}$ \\
   \hline
-  \\ 
+%  \\ 
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 4}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
   \hline 
   \rowcolor{Cluster_Red!20}
@@ -1475,13 +1455,13 @@ Similar to the analysis of synthetic lethal partners in~\ref{chapt3:stad_exprSL_
   \rowcolor{Cluster_Red!20}
   Degradation of the extracellular matrix & 104 &  39 & $6.7 \times 10^{-63}$ \\ 
   \rowcolor{Cluster_Red!15}
-  Platelet activation, signaling and aggregation & 186 &  52 & $6.6 \times 10^{-62}$ \\ 
+  Platelet activation, signalling and aggregation & 186 &  52 & $6.6 \times 10^{-62}$ \\ 
   \rowcolor{Cluster_Red!20}
   ECM proteoglycans &  66 &  31 & $8.1 \times 10^{-61}$ \\ 
   \rowcolor{Cluster_Red!15}
   Neuronal System & 272 &  64 & $5.1 \times 10^{-60}$ \\ 
   \rowcolor{Cluster_Red!20}
-  Signaling by PDGF & 173 &  47 & $9.7 \times 10^{-57}$ \\ 
+  Signalling by PDGF & 173 &  47 & $9.7 \times 10^{-57}$ \\ 
   \rowcolor{Cluster_Red!15}
   Integrin cell surface interactions &  82 &  31 & $1.9 \times 10^{-53}$ \\ 
   \rowcolor{Cluster_Red!20}
@@ -1496,12 +1476,17 @@ Similar to the analysis of synthetic lethal partners in~\ref{chapt3:stad_exprSL_
   Elastic fibre formation &  38 &  22 & $4.7 \times 10^{-52}$ \\ 
   \rowcolor{Cluster_Red!15}
   Non-integrin membrane-ECM interactions &  53 &  24 & $7.0 \times 10^{-49}$ \\ 
-  \rowcolor{Cluster_Red!20}
-  Glycosaminoglycan metabolism & 114 &  33 & $4.7 \times 10^{-47}$ \\ 
-  \rowcolor{Cluster_Red!15}
-  Platelet homeostasis &  54 &  23 & $1.0 \times 10^{-45}$ \\ 
+%  \rowcolor{Cluster_Red!20}
+%  Glycosaminoglycan metabolism & 114 &  33 & $4.7 \times 10^{-47}$ \\ 
+%  \rowcolor{Cluster_Red!15}
+%  Platelet homeostasis &  54 &  23 & $1.0 \times 10^{-45}$ \\ 
  \hline
 \end{tabular}
+\begin{tablenotes}
+\raggedright %\small
+Pathway over-representation analysis for Reactome pathways with the number of genes in each pathway (Pathway Size), number of genes within the pathway identified (Cluster Genes), and the pathway over-representation p-value (adjusted by FDR) from the hypergeometric test.  
+\end{tablenotes}
+\end{threeparttable}
 }
 \end{table*}
 
@@ -1594,39 +1579,39 @@ The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers w
   \rowcolor{Cluster_Blue!20}
   Peptide ligand-binding receptors & 175 &  38 & $7.9 \times 10^{-38}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  G_${\alpha i}$ signalling events & 184 &  37 & $1.1 \times 10^{-34}$ \\ 
+  G$_{\alpha i}$ signalling events & 184 &  37 & $1.1 \times 10^{-34}$ \\ 
   \rowcolor{Cluster_Blue!20}
   Gastrin-CREB signalling pathway via PKC and MAPK & 180 &  35 & $1.4 \times 10^{-32}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  G_${\alpha q}$ signalling events & 159 &  32 & $4.8 \times 10^{-32}$ \\ 
+  G$_{\alpha q}$ signalling events & 159 &  32 & $4.8 \times 10^{-32}$ \\ 
   \rowcolor{Cluster_Blue!20}
   DAP12 interactions & 159 &  29 & $1.4 \times 10^{-27}$ \\ 
   \rowcolor{Cluster_Blue!15}
   Downstream signal transduction & 146 &  26 & $2.4 \times 10^{-25}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  DAP12 signaling & 149 &  26 & $6.4 \times 10^{-25}$ \\ 
+  DAP12 signalling & 149 &  26 & $6.4 \times 10^{-25}$ \\ 
   \rowcolor{Cluster_Blue!15}
   VEGFA-VEGFR2 Pathway &  91 &  19 & $8.1 \times 10^{-24}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Signaling by PDGF & 172 &  27 & $5.7 \times 10^{-23}$ \\ 
+  Signalling by PDGF & 172 &  27 & $5.7 \times 10^{-23}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Signaling by ERBB2 & 146 &  24 & $1.4 \times 10^{-22}$ \\ 
+  Signalling by ERBB2 & 146 &  24 & $1.4 \times 10^{-22}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Signaling by VEGF &  99 &  19 & $2.0 \times 10^{-22}$ \\ 
+  Signalling by VEGF &  99 &  19 & $2.0 \times 10^{-22}$ \\ 
   \rowcolor{Cluster_Blue!15}
   Visual phototransduction &  85 &  17 & $1.3 \times 10^{-21}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Downstream signaling of activated FGFR1 & 134 &  22 & $1.3 \times 10^{-21}$ \\ 
+  Downstream signalling of activated FGFR1 & 134 &  22 & $1.3 \times 10^{-21}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Downstream signaling of activated FGFR2 & 134 &  22 & $1.3 \times 10^{-21}$ \\ 
+  Downstream signalling of activated FGFR2 & 134 &  22 & $1.3 \times 10^{-21}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Downstream signaling of activated FGFR3 & 134 &  22 & $1.3 \times 10^{-21}$ \\ 
+  Downstream signalling of activated FGFR3 & 134 &  22 & $1.3 \times 10^{-21}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Downstream signaling of activated FGFR4 & 134 &  22 & $1.3 \times 10^{-21}$ \\ 
+  Downstream signalling of activated FGFR4 & 134 &  22 & $1.3 \times 10^{-21}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Signaling by FGFR & 146 &  23 & $2.0 \times 10^{-21}$ \\ 
+  Signalling by FGFR & 146 &  23 & $2.0 \times 10^{-21}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Signaling by FGFR1 & 146 &  23 & $2.0 \times 10^{-21}$ \\ 
+  Signalling by FGFR1 & 146 &  23 & $2.0 \times 10^{-21}$ \\ 
   \hline
   \\
   \rowstyle{\bfseries}
@@ -1635,7 +1620,7 @@ The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers w
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
   Class A/1 (Rhodopsin-like receptors) & 282 &  25 & $3.9 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
-  Platelet activation, signaling and aggregation & 182 &  17 & $3.9 \times 10^{-9}$ \\ 
+  Platelet activation, signalling and aggregation & 182 &  17 & $3.9 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
   Response to elevated platelet cytosolic Ca$2^+$ &  82 &   9 & $5.5 \times 10^{-8}$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
@@ -1651,13 +1636,13 @@ The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers w
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
   Amine ligand-binding receptors &  35 &   5 & $8.6 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
-  G_${\alpha i}$ signalling events & 184 &  14 & $9.8 \times 10^{-7}$ \\ 
+  G$_{\alpha i}$ signalling events & 184 &  14 & $9.8 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
   GPCR ligand binding & 363 &  27 & $1.1 \times 10^{-6}$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
   Elastic fibre formation &  38 &   5 & $1.5 \times 10^{-6}$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
-  G_${\alpha q}$ signalling events & 159 &  12 & $1.9 \times 10^{-6}$ \\ 
+  G$_{\alpha q}$ signalling events & 159 &  12 & $1.9 \times 10^{-6}$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
   Serotonin receptors &  12 &   3 & $3.8 \times 10^{-6}$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
@@ -1750,7 +1735,7 @@ The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers w
   \rowcolor{Cluster_Red!15} 
   \textbf{Translation} & $1.3 \times 10^{-87}$ & $>1.031 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Platelet activation, signaling and aggregation & $1.3 \times 10^{-86}$ & $0.28959$ \\ 
+  Platelet activation, signalling and aggregation & $1.3 \times 10^{-86}$ & $0.28959$ \\ 
   \rowcolor{Cluster_Red!15} 
   \textbf{Influenza Infection} & $1 \times 10^{-82}$ & $>1.031 \times 10^{-5}$ \\ 
   \rowcolor{Cluster_Red!20} 
@@ -1764,17 +1749,17 @@ The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers w
   \rowcolor{Cluster_Red!20} 
   Rho GTPase cycle & $5.1 \times 10^{-75}$ & $0.14864$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Signaling by PDGF & $7.4 \times 10^{-74}$ & $0.40493$ \\ 
+  Signalling by PDGF & $7.4 \times 10^{-74}$ & $0.40493$ \\ 
   \rowcolor{Cluster_Red!20} 
-  \textit{Signaling by Rho GTPases} & $5.1 \times 10^{-73}$ & $0.077217$ \\ 
+  \textit{Signalling by Rho GTPases} & $5.1 \times 10^{-73}$ & $0.077217$ \\ 
   \rowcolor{Cluster_Red!15} 
   Glycosaminoglycan metabolism & $1.4 \times 10^{-68}$ & $0.52984$ \\ 
   \rowcolor{Cluster_Red!20} 
-  G_${\alpha i}$ signalling events & $1.8 \times 10^{-66}$ & $0.9254$ \\ 
+  G$_{\alpha i}$ signalling events & $1.8 \times 10^{-66}$ & $0.9254$ \\ 
   \rowcolor{Cluster_Red!15} 
   Metabolism of carbohydrates & $1.1 \times 10^{-65}$ & $0.39501$ \\ 
   \rowcolor{Cluster_Red!20} 
-  \textbf{G_${\alpha s}$ signalling events} & $2.7 \times 10^{-65}$ & $0.0050293$ \\ 
+  \textbf{G$_{\alpha s}$ signalling events} & $2.7 \times 10^{-65}$ & $0.0050293$ \\ 
   \rowcolor{Cluster_Red!15} 
   Potassium Channels & $2.7 \times 10^{-65}$ & $0.53359$ \\ 
   \rowcolor{Cluster_Red!20} 
@@ -1800,7 +1785,7 @@ The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers w
   \rowcolor{Cluster_Red!20} 
   \begin{tabular}[c]{@{}l@{}}Neurotransmitter Receptor Binding And Downstream Transmission\\ In The  Postsynaptic Cell \end{tabular} & $8.7 \times 10^{-57}$ & $0.82522$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Signaling by Wnt & $8.7 \times 10^{-57}$ & $0.25468$ \\ 
+  Signalling by Wnt & $8.7 \times 10^{-57}$ & $0.25468$ \\ 
  \hline
 \end{tabular}
 \begin{tablenotes}
@@ -1823,7 +1808,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
   Reactome Pathway & Over-representation & Permutation \\ 
   \hline
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
-  Platelet activation, signaling and aggregation & $3.9 \times 10^{-9}$ & $0.49557$ \\ 
+  Platelet activation, signalling and aggregation & $3.9 \times 10^{-9}$ & $0.49557$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   Class A/1 (Rhodopsin-like receptors) & $3.9 \times 10^{-9}$ & $0.98432$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
@@ -1839,13 +1824,13 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   Amine ligand-binding receptors & $8.6 \times 10^{-7}$ & $0.43303$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
-  G_${\alpha i}$ signalling events & $9.8 \times 10^{-7}$ & $0.99626$ \\ 
+  G$_{\alpha i}$ signalling events & $9.8 \times 10^{-7}$ & $0.99626$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   GPCR ligand binding & $1.1 \times 10^{-6}$ & $0.97733$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   \textbf{Elastic fibre formation} & $1.5 \times 10^{-6}$ & $0.0025868$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
-  G_${\alpha q}$ signalling events & $1.9 \times 10^{-6}$ & $0.86089$ \\ 
+  G$_{\alpha q}$ signalling events & $1.9 \times 10^{-6}$ & $0.86089$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   P2Y receptors & $3.8 \times 10^{-6}$ & $0.18795$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
@@ -1869,9 +1854,9 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   Cell surface interactions at the vascular wall & $5.6 \times 10^{-5}$ & $0.47642$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
-  \textbf{G_${\alpha s}$ signalling events} & $6 \times 10^{-5}$ & $0.019858$ \\ 
+  \textbf{G$_{\alpha s}$ signalling events} & $6 \times 10^{-5}$ & $0.019858$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
-  Signaling by NOTCH & $6 \times 10^{-5}$ & $0.19008$ \\ 
+  Signalling by NOTCH & $6 \times 10^{-5}$ & $0.19008$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   A tetrasaccharide linker sequence is required for GAG synthesis & $0.00017$ & $0.47642$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
@@ -1889,7 +1874,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   \textit{Chondroitin sulfate/dermatan sulfate metabolism} & $0.00023$ & $0.085541$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
-  Integrin alphaIIb beta3 signaling & $0.00028$ & $0.76936$ \\ 
+  Integrin alphaIIb beta3 signalling & $0.00028$ & $0.76936$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
   Keratan sulfate biosynthesis & $0.00034$ & $0.68744$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
@@ -1903,7 +1888,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   FCERI mediated NF-kB activation & $0.00037$ & $0.69846$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
-  Fc epsilon receptor (FCERI) signaling & $0.00056$ & $0.43303$ \\ 
+  Fc epsilon receptor (FCERI) signalling & $0.00056$ & $0.43303$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   Defective EXT2 causes exostoses 2 & $0.00067$ & $0.16053$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
@@ -1915,7 +1900,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   G alpha (12/13) signalling events & $0.00078$ & $0.59164$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
-  \textbf{SEMA3A-Plexin repulsion signaling by inhibiting Integrin adhesion} & $0.00084$ & $0.038504$ \\ 
+  \textbf{SEMA3A-Plexin repulsion signalling by inhibiting Integrin adhesion} & $0.00084$ & $0.038504$ \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
   Signal attenuation & $0.00084$ & $0.37779$ \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
@@ -1958,7 +1943,7 @@ Metagene analysis was also performed for synthetic lethal candidates for \textit
   \rowcolor{black!5}
   VEGFR2 mediated vascular permeability & 5218920 & 19 & 50.4 & 109 & $1.36 \times 10^{-22}$ & $2.49 \times 10^{-20}$ \\ 
   \rowcolor{black!10}
-  Sema4D in semaphorin signaling & 400685 & 20 & 50.4 & 104 & $1.62 \times 10^{-21}$ & $2.12 \times 10^{-19}$ \\ 
+  Sema4D in semaphorin signalling & 400685 & 20 & 50.4 & 104 & $1.62 \times 10^{-21}$ & $2.12 \times 10^{-19}$ \\ 
   \rowcolor{black!5}
   Ion transport by P-type ATPases & 936837 & 17 & 50.4 & 100 & $8.29 \times 10^{-21}$ & $8.06 \times 10^{-19}$ \\ 
   \rowcolor{black!10}
@@ -2007,7 +1992,7 @@ Metagene analysis was also performed for synthetic lethal candidates for \textit
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{TCGA} stomach cancer samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2087,7 +2072,7 @@ The following results are a replication of the TCGA results (in Appendix~\ref{ap
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-mtSLIPT partners with observed and expected \textit{CDH1} mutant samples with low  expression
+mtSLIPT partners with observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} stomach cancer samples with low  expression of partner genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2149,7 +2134,7 @@ mtSLIPT partners with observed and expected \textit{CDH1} mutant samples with lo
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Gene set over-representation analysis (hypergeometric test) for Reactome pathways in mtSLIPT partners for \textit{CDH1}
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in mtSLIPT partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2186,14 +2171,15 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
 \centering
 %\begin{tiny}
 %\makebox[\textwidth][c]{
-\resizebox{0.666 \textwidth}{!}{
+\resizebox{0.75 \textwidth}{!}{
+\begin{threeparttable}
 \begin{tabular}{lccc}
 %\caption{Pathway composition for clusters of \textit{CDH1} partners from SLIPT}
 %\label{tab:pathway_clusters_stad_mtSL}
   \large{\textbf{Pathways Over-represented in Cluster 1}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Blue!20}
-  CD28 dependent PI3K/Akt signaling &  15 &   1 &   1 \\ 
+  CD28 dependent PI3K/Akt signalling &  15 &   1 &   1 \\ 
   \rowcolor{Cluster_Blue!15}
   Hormone-sensitive lipase (HSL)-mediated triacylglycerol hydrolysis &  19 &   1 &   1 \\ 
   \rowcolor{Cluster_Blue!20}
@@ -2203,9 +2189,9 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \rowcolor{Cluster_Blue!20}
   Costimulation by the CD28 family &  51 &   1 &   1 \\ 
   \rowcolor{Cluster_Blue!15}
-  Dectin-1 mediated noncanonical NF-kB signaling &  58 &   1 &   1 \\ 
+  Dectin-1 mediated noncanonical NF-kB signalling &  58 &   1 &   1 \\ 
   \rowcolor{Cluster_Blue!20}
-  CLEC7A (Dectin-1) signaling &  99 &   1 &   1 \\ 
+  CLEC7A (Dectin-1) signalling &  99 &   1 &   1 \\ 
   \rowcolor{Cluster_Blue!15}
   C-type lectin receptors (CLRs) & 123 &   1 &   1 \\ 
   \rowcolor{Cluster_Blue!20}
@@ -2213,7 +2199,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \rowcolor{Cluster_Blue!15}
   Metabolism of lipids and lipoproteins & 494 &   1 &   1 \\ 
   \rowcolor{Cluster_Blue!20}
-  Interleukin-6 signaling &  10 &   0 &   1 \\ 
+  Interleukin-6 signalling &  10 &   0 &   1 \\ 
   \rowcolor{Cluster_Blue!15}
   Apoptosis & 150 &   0 &   1 \\ 
   \rowcolor{Cluster_Blue!20}
@@ -2228,12 +2214,12 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   PI3K Cascade &  68 &   0 &   1 \\ 
   \rowcolor{Cluster_Blue!15}
   RAF/MAP kinase cascade &  10 &   0 &   1 \\ 
-  \rowcolor{Cluster_Blue!20}
-  Global Genomic NER (GG-NER) &  35 &   0 &   1 \\ 
-  \rowcolor{Cluster_Blue!15}
-  Repair synthesis for gap-filling by DNA polymerase in TC-NER &  15 &   0 &   1 \\ 
+%  \rowcolor{Cluster_Blue!20}
+%  Global Genomic NER (GG-NER) &  35 &   0 &   1 \\ 
+%  \rowcolor{Cluster_Blue!15}
+%  Repair synthesis for gap-filling by DNA polymerase in TC-NER &  15 &   0 &   1 \\ 
   \hline
-  \\
+%  \\
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 2}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Green!30}
@@ -2253,7 +2239,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \rowcolor{Cluster_Green!20}
   Hemostasis & 445 &   1 &   1 \\ 
   \rowcolor{Cluster_Green!30}
-  Interleukin-6 signaling &  10 &   0 &   1 \\ 
+  Interleukin-6 signalling &  10 &   0 &   1 \\ 
   \rowcolor{Cluster_Green!20}
   Apoptosis & 150 &   0 &   1 \\ 
   \rowcolor{Cluster_Green!30}
@@ -2272,12 +2258,12 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   Repair synthesis for gap-filling by DNA polymerase in TC-NER &  15 &   0 &   1 \\ 
   \rowcolor{Cluster_Green!20}
   Gap-filling DNA repair synthesis and ligation in TC-NER &  17 &   0 &   1 \\ 
-  \rowcolor{Cluster_Green!30}
-  Formation of transcription-coupled NER (TC-NER) repair complex &  29 &   0 &   1 \\ 
-  \rowcolor{Cluster_Green!20}
-  Dual incision reaction in TC-NER &  29 &   0 &   1 \\ 
+%  \rowcolor{Cluster_Green!30}
+%  Formation of transcription-coupled NER (TC-NER) repair complex &  29 &   0 &   1 \\ 
+%  \rowcolor{Cluster_Green!20}
+%  Dual incision reaction in TC-NER &  29 &   0 &   1 \\ 
   \hline
-  \\ 
+%  \\ 
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 3}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
   \hline 
   \rowcolor{Cluster_Orange!20}
@@ -2317,12 +2303,12 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   Integrin cell surface interactions &  82 &   5 & 0.0012 \\ 
   \rowcolor{Cluster_Orange!15}
   Keratan sulfate degradation &  12 &   2 & 0.0012 \\ 
-  \rowcolor{Cluster_Orange!20}
-  Complement cascade &  34 &   3 & 0.0013 \\ 
-  \rowcolor{Cluster_Orange!15}
-  CS/DS degradation &  13 &   2 & 0.0015 \\ 
+%  \rowcolor{Cluster_Orange!20}
+%  Complement cascade &  34 &   3 & 0.0013 \\ 
+%  \rowcolor{Cluster_Orange!15}
+%  CS/DS degradation &  13 &   2 & 0.0015 \\ 
   \hline
-  \\ 
+%  \\ 
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 4}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Red!20}
@@ -2336,11 +2322,11 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \rowcolor{Cluster_Red!20}
   Eicosanoid ligand-binding receptors &  14 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!15}
-  Prolactin receptor signaling &  15 &   1 &   1 \\ 
+  Prolactin receptor signalling &  15 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!20}
   Acyl chain remodelling of PI &  15 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!15}
-  Signaling by FGFR1 fusion mutants &  15 &   1 &   1 \\ 
+  Signalling by FGFR1 fusion mutants &  15 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!20}
   PKA activation &  16 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!15}
@@ -2356,18 +2342,22 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \rowcolor{Cluster_Red!20}
   Acyl chain remodelling of PE &  21 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!15}
-  Signaling by Leptin &  21 &   1 &   1 \\ 
+  Signalling by Leptin &  21 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!20}
   DARPP-32 events &  22 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!15}
   Glucagon-like Peptide-1 (GLP1) regulates insulin secretion &  22 &   1 &   1 \\ 
-  \rowcolor{Cluster_Red!20}
-  Uptake and actions of bacterial toxins &  22 &   1 &   1 \\ 
-  \rowcolor{Cluster_Red!15}
-  Acyl chain remodelling of PC &  23 &   1 &   1 \\ 
+%  \rowcolor{Cluster_Red!20}
+%  Uptake and actions of bacterial toxins &  22 &   1 &   1 \\ 
+%  \rowcolor{Cluster_Red!15}
+%  Acyl chain remodelling of PC &  23 &   1 &   1 \\ 
   \hline
-  \\
 \end{tabular}
+\begin{tablenotes}
+\raggedright %\small
+Pathway over-representation analysis for Reactome pathways with the number of genes in each pathway (Pathway Size), number of genes within the pathway identified (Cluster Genes), and the pathway over-representation p-value (adjusted by FDR) from the hypergeometric test.  
+\end{tablenotes}
+\end{threeparttable}
 }
 \end{table*}
 
@@ -2459,31 +2449,31 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
   \rowcolor{Cluster_Blue!20}
   DAP12 interactions & 159 &  35 & $8.3 \times 10^{-37}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Platelet activation, signaling and aggregation & 182 &  37 & $2.3 \times 10^{-35}$ \\ 
+  Platelet activation, signalling and aggregation & 182 &  37 & $2.3 \times 10^{-35}$ \\ 
   \rowcolor{Cluster_Blue!20}
   Hemostasis & 438 &  71 & $3.3 \times 10^{-35}$ \\ 
   \rowcolor{Cluster_Blue!15}
   Downstream signal transduction & 146 &  32 & $7.7 \times 10^{-35}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Signaling by PDGF & 172 &  35 & $2.1 \times 10^{-34}$ \\ 
+  Signalling by PDGF & 172 &  35 & $2.1 \times 10^{-34}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  DAP12 signaling & 149 &  32 & $2.7 \times 10^{-34}$ \\ 
+  DAP12 signalling & 149 &  32 & $2.7 \times 10^{-34}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Signaling by ERBB2 & 146 &  31 & $2.5 \times 10^{-33}$ \\ 
+  Signalling by ERBB2 & 146 &  31 & $2.5 \times 10^{-33}$ \\ 
   \rowcolor{Cluster_Blue!15}
   Signalling by NGF & 266 &  44 & $5.3 \times 10^{-31}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Downstream signaling of activated FGFR1 & 134 &  28 & $5.3 \times 10^{-31}$ \\ 
+  Downstream signalling of activated FGFR1 & 134 &  28 & $5.3 \times 10^{-31}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Downstream signaling of activated FGFR2 & 134 &  28 & $5.3 \times 10^{-31}$ \\ 
+  Downstream signalling of activated FGFR2 & 134 &  28 & $5.3 \times 10^{-31}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Downstream signaling of activated FGFR3 & 134 &  28 & $5.3 \times 10^{-31}$ \\ 
+  Downstream signalling of activated FGFR3 & 134 &  28 & $5.3 \times 10^{-31}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Downstream signaling of activated FGFR4 & 134 &  28 & $5.3 \times 10^{-31}$ \\ 
+  Downstream signalling of activated FGFR4 & 134 &  28 & $5.3 \times 10^{-31}$ \\ 
   \rowcolor{Cluster_Blue!20}
-  Signaling by FGFR & 146 &  29 & $2.0 \times 10^{-30}$ \\ 
+  Signalling by FGFR & 146 &  29 & $2.0 \times 10^{-30}$ \\ 
   \rowcolor{Cluster_Blue!15}
-  Signaling by FGFR1 & 146 &  29 & $2.0 \times 10^{-30}$ \\ 
+  Signalling by FGFR1 & 146 &  29 & $2.0 \times 10^{-30}$ \\ 
   \hline
   \\
   \rowstyle{\bfseries}
@@ -2520,7 +2510,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
   Inwardly rectifying K$^+$ channels &  31 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
-  Glucagon signaling in metabolic regulation &  33 &   1 &   1 \\ 
+  Glucagon signalling in metabolic regulation &  33 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
   Molecules associated with elastic fibres &  34 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!15!Cluster_Blue!15}
@@ -2593,7 +2583,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
   \rowcolor{Cluster_Red!15} 
   \textit{Integrin cell surface interactions} & $0.00098$ & $0.092405$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Glucagon signaling in metabolic regulation & $0.00098$ & $0.13425$ \\ 
+  Glucagon signalling in metabolic regulation & $0.00098$ & $0.13425$ \\ 
   \rowcolor{Cluster_Red!15} 
   Keratan sulfate degradation & $0.00098$ & $0.22137$ \\ 
   \rowcolor{Cluster_Red!20} 
@@ -2603,7 +2593,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
   \rowcolor{Cluster_Red!20} 
   \textit{Eicosanoid ligand-binding receptors} & $0.0016$ & $0.066128$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Nuclear signaling by ERBB4 & $0.0016$ & $0.15511$ \\ 
+  Nuclear signalling by ERBB4 & $0.0016$ & $0.15511$ \\ 
   \rowcolor{Cluster_Red!20} 
   Collagen formation & $0.0026$ & $0.13447$ \\ 
   \rowcolor{Cluster_Red!15} 
@@ -2724,7 +2714,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
    \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
   Vitamin B5 (pantothenate) metabolism & 1 & $>1.2349 \times 10^{-5}$ \\ 
    \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
-  Signaling by BMP & 1 & $>1.2349 \times 10^{-5}$ \\ 
+  Signalling by BMP & 1 & $>1.2349 \times 10^{-5}$ \\ 
    \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
   Synthesis of Leukotrienes (LT) and Eoxins (EX) & 1 & $>1.2349 \times 10^{-5}$ \\ 
    \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
@@ -2744,7 +2734,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
    \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
   Apoptotic cleavage of cell adhesion  proteins & 1 & $>1.2349 \times 10^{-5}$ \\ 
    \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
-  Negative regulation of TCF-dependent signaling by WNT ligand antagonists & 1 & $>1.2349 \times 10^{-5}$ \\ 
+  Negative regulation of TCF-dependent signalling by WNT ligand antagonists & 1 & $>1.2349 \times 10^{-5}$ \\ 
    \rowcolor{Cluster_Red!20!Cluster_Blue!20}  
   PERK regulates gene expression & 1 & $>1.2349 \times 10^{-5}$ \\ 
    \rowcolor{Cluster_Red!15!Cluster_Blue!15}  
@@ -2812,11 +2802,11 @@ Metagene analysis was also performed for synthetic lethal candidates for \textit
   \rowcolor{black!5}
   Keratan sulfate biosynthesis & 2022854 & 4 & 10.1 & 20.6 & $3.29 \times 10^{-5}$ & $0.00642$ \\ 
   \rowcolor{black!10}
-  Signaling by SCF-KIT & 1433557 & 5 & 10.1 & 20.6 & $3.30 \times 10^{-5}$ & $0.00642$ \\ 
+  Signalling by SCF-KIT & 1433557 & 5 & 10.1 & 20.6 & $3.30 \times 10^{-5}$ & $0.00642$ \\ 
   \rowcolor{black!5}
   VEGFA-VEGFR2 Pathway & 4420097 & 5 & 10.1 & 20.6 & $3.30 \times 10^{-5}$ & $0.00642$ \\ 
   \rowcolor{black!10}
-  p130Cas linkage to MAPK signaling for integrins & 372708 & 2 & 10.1 & 19.1 & $7.19 \times 10^{-5}$ & $0.00651$ \\ 
+  p130Cas linkage to MAPK signalling for integrins & 372708 & 2 & 10.1 & 19.1 & $7.19 \times 10^{-5}$ & $0.00651$ \\ 
   \rowcolor{black!5}
   cGMP effects & 418457 & 8 & 10.1 & 19 & $7.46 \times 10^{-5}$ & $0.00651$ \\ 
   \rowcolor{black!10}
@@ -2828,7 +2818,7 @@ Metagene analysis was also performed for synthetic lethal candidates for \textit
   \rowcolor{black!5}
   Signalling by NGF & 166520 & 7 & 10.1 & 17.9 & $0.00013$ & $0.00651$ \\ 
   \rowcolor{black!10}
-  Signaling by VEGF & 194138 & 7 & 10.1 & 17.9 & $0.00013$ & $0.00651$ \\ 
+  Signalling by VEGF & 194138 & 7 & 10.1 & 17.9 & $0.00013$ & $0.00651$ \\ 
   \rowcolor{black!5}
   Regulation of thyroid hormone activity & 350864 & 7 & 10.1 & 17.9 & $0.00013$ & $0.00651$ \\ 
   \rowcolor{black!10}
@@ -2836,15 +2826,15 @@ Metagene analysis was also performed for synthetic lethal candidates for \textit
   \rowcolor{black!5}
   Platelet homeostasis & 418346 & 7 & 10.1 & 17.9 & $0.00013$ & $0.00651$ \\ 
   \rowcolor{black!10}
-  PI3K events in ERBB4 signaling & 1250342 & 4 & 10.1 & 17.3 & $0.000179$ & $0.00651$ \\ 
+  PI3K events in ERBB4 signalling & 1250342 & 4 & 10.1 & 17.3 & $0.000179$ & $0.00651$ \\ 
   \rowcolor{black!5}
-  PIP3 activates AKT signaling & 1257604 & 4 & 10.1 & 17.3 & $0.000179$ & $0.00651$ \\ 
+  PIP3 activates AKT signalling & 1257604 & 4 & 10.1 & 17.3 & $0.000179$ & $0.00651$ \\ 
   \rowcolor{black!10}
   GAB1 signalosome & 180292 & 4 & 10.1 & 17.3 & $0.000179$ & $0.00651$ \\ 
   \rowcolor{black!5}
-  PI3K events in ERBB2 signaling & 1963642 & 4 & 10.1 & 17.3 & $0.000179$ & $0.00651$ \\ 
+  PI3K events in ERBB2 signalling & 1963642 & 4 & 10.1 & 17.3 & $0.000179$ & $0.00651$ \\ 
   \rowcolor{black!10}
-  PI3K/AKT Signaling in Cancer & 2219528 & 4 & 10.1 & 17.3 & $0.000179$ & $0.00651$ \\ 
+  PI3K/AKT Signalling in Cancer & 2219528 & 4 & 10.1 & 17.3 & $0.000179$ & $0.00651$ \\ 
   \rowcolor{black!5}
   Rap1 signalling & 392517 & 4 & 10.1 & 17.3 & $0.000179$ & $0.00651$ \\ 
   \rowcolor{black!10}
@@ -2853,7 +2843,7 @@ Metagene analysis was also performed for synthetic lethal candidates for \textit
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected mutant samples with low expression of partner metagenes
+Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} stomach cancer samples  with low expression of partner metagenes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2982,7 +2972,7 @@ Genes with the most candidate SL partners SLIPT in TCGA stomach expression data 
   \rowcolor{black!5}
   Axon guidance & 289 &  25 & $5 \times 10^{-13}$ & $5.2 \times 10^{-11}$ \\ 
   \rowcolor{black!10}
-  Signaling by BMP &  23 &   5 & $3.7 \times 10^{-11}$ & $3.2 \times 10^{-9}$ \\ 
+  Signalling by BMP &  23 &   5 & $3.7 \times 10^{-11}$ & $3.2 \times 10^{-9}$ \\ 
   \rowcolor{black!5}
   RHO GTPases activate PAKs &  23 &   5 & $3.7 \times 10^{-11}$ & $3.2 \times 10^{-9}$ \\ 
   \rowcolor{black!10}
@@ -2992,7 +2982,7 @@ Genes with the most candidate SL partners SLIPT in TCGA stomach expression data 
   \rowcolor{black!10}
   Degradation of the extracellular matrix & 104 &  10 & $1.3 \times 10^{-10}$ & $8.8 \times 10^{-9}$ \\ 
   \rowcolor{black!5}
-  Netrin-1 signaling &  42 &   6 & $2.5 \times 10^{-10}$ & $1.6 \times 10^{-8}$ \\ 
+  Netrin-1 signalling &  42 &   6 & $2.5 \times 10^{-10}$ & $1.6 \times 10^{-8}$ \\ 
   \rowcolor{black!10}
   Developmental Biology & 432 &  32 & $8.3 \times 10^{-10}$ & $5 \times 10^{-8}$ \\ 
   \rowcolor{black!5}
@@ -3005,7 +2995,7 @@ Genes with the most candidate SL partners SLIPT in TCGA stomach expression data 
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Gene set over-representation analysis (hypergeometric test) for Reactome pathways in the top 500 ``hub'' genes with the most candidate synthetic lethal partners by SLIPT analysis of TCGA stomach expression data
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in the top 500 ``hub'' genes with the most candidate synthetic lethal partners by SLIPT analysis of TCGA stomach expression data.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3080,7 +3070,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{CCLE} samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3151,7 +3141,7 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{CCLE} breast samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3209,7 +3199,7 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{CCLE} stomach samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3272,7 +3262,7 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3333,7 +3323,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
 }
