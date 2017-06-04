@@ -1,0 +1,369 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Glossary terms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\newglossaryentry{pleiotropy}{
+  name=pleiotropy,
+  description={A gene which has multiple biological functions},
+  plural=pleiotropic
+}
+
+\newglossaryentry{E-cadherin}{
+  name=E-cadherin,
+  description={Epithelial cadherin (calcium-dependent adhesion), a cell-adhesion protein encoded by the tumour suppressor gene \textit{CDH1}}
+}
+
+
+\newglossaryentry{Pan cancer}{
+  name=Pan cancer,
+  description={Study or analysis or cancers across tissue of origin}
+}
+
+
+\newglossaryentry{RNA-Seq}{
+  name=RNA-Seq,
+  description={Transcriptome data from sequencing RNA}
+}
+
+\newglossaryentry{CAGE-Seq}{
+  name=CAGE-Seq,
+  description={Transcriptome data from cap analysis of gene expression}
+}
+
+\newglossaryentry{gls-ChIP-Seq}{
+  name=ChIP-Seq,
+  description={Epigenome data from chromatin immunopreciptation sequencing}
+}
+
+\newglossaryentry{bisulfite-Seq}{
+  name=bisulfite-Seq,
+  description={Methylome data from sequencing bisulfite treated DNA}
+}
+
+\newglossaryentry{Sanger}{
+  name=Sanger,
+  description={A dideoxy chain termination method for DNA sequencing (named after Fred Sanger)}
+}
+
+\newglossaryentry{genomics}{
+  name=genomics,
+  description={An approach or technology designed to generate or use data from all genes in the genome},
+  plural=genome %%switch
+}
+
+\newglossaryentry{omics}{
+  name=omics,
+  description={A rationale for applying molecular studies across all of the genes in the genome or biomolecules in the cell},
+  plural=omic %%switch
+}
+
+\newglossaryentry{transcriptome}{
+  name=transcriptome,
+  description={An analysis of all the genes expressed in the genome},
+  plural=transcriptomics
+}
+
+\newglossaryentry{metagenomics}{
+  name=metagenomics,
+  description={An analysis of all the genes and genomes in a community},
+  plural=metagenome %%switch
+}
+
+\newglossaryentry{epigenome}{
+  name=epigenome,
+  description={An analysis of epigenetic modifications of all genes in the genome},
+  plural=epigenomics
+}
+
+\newglossaryentry{proteome}{
+  name=proteome,
+  description={An analysis of all the proteins expressed from the genome},
+  plural=proteomics
+}
+
+\newglossaryentry{metabolome}{
+  name=metabolome,
+  description={An analysis of all the metabolites and enzymes in the cell},
+  plural=metabolomics
+}
+
+\newglossaryentry{methylome}{
+  name=methylome,
+  description={An analysis of DNA methylation throughout the genome},
+  plural=methylomics
+}
+
+\newglossaryentry{exome}{
+  name=exome,
+  description={An approach or technology designed to generate or use data from all genes in the genome}
+}
+
+\newglossaryentry{bioinformatics}{
+  name=bioinformatics,
+  description={Statistical or computational approaches to biological data or research tools},
+  plural=bioinformatic %%switch
+}
+
+
+\newglossaryentry{microRNA}
+{
+  name=microRNA,
+  description={Short RNA molecules generally regarded to regulate gene expression by binding to mRNA},
+  plural=microRNAs
+}
+
+\newglossaryentry{synthetic lethal}
+{
+  name=synthetic lethal,
+  description={Genetic interactions where inactivation of multiple genes is inviable (or deleterious) when they are viable if inactivated separately},
+  plural=synthetic lethality
+}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%microarray
+%E-cadherin / CDH1
+%copy number
+%methylation
+%CAGE-Seq
+%ChIP-Seq
+%bisulfite-Seq
+%Omics
+%Bioinformatics
+%Genomics
+%Comp Biol
+%Genome
+%cancer gene
+%driver
+%passenger
+%Genomic medicine
+%precision medicine
+%personalised medicine
+%recurrent mutation
+%metagene
+%polypharmacology
+%targeted therapy
+%network biology
+%network medicine
+%intrinsic subtypes
+%pan cancer
+
+%wild-type
+%mutant
+
+%hub
+%edge / link
+%vertex / node
+
+% tumour suppressors
+% oncogene
+
+% (non) oncogene addiction
+% hallmark of cancer
+% induced essentiality
+% conditional essentiality
+% functional redundancy
+% synthetic dosage lethality
+
+%synthetic lethal screen
+% compound screen
+% MCF10A
+% NCI60
+
+%in silico
+
+% scale-free network
+% small world network
+% shortest path
+% netowrk centrality
+
+% synergistic
+% suppression
+% rescue
+
+% epistasis
+
+% pathway
+% network
+
+%molecular profile
+%molecular subtype
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Acronym terms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newacronym[description={Nonsense-mediated decay }]{NMD}{NMD}{nonsense-mediated decay }
+\newacronym[description={G-protein signalling}]{RGS}{RGS}{G-protein signalling}
+\newacronym[description={Chemokine receptors}]{CXCR}{CXCR}{chemokine receptors}
+\newacronym[description={Ras Homolog Family}]{RHO}{RHO}{Ras homolog family}
+\newacronym[description={Untranslated region (of mRNA)}]{UTR}{UTR}{untranslated region}
+
+\newacronym[description={Transforming growth factor $\beta$}]{TGFB}{TGF$\beta$}{transforming growth factor $\beta$}
+
+\newacronym[description={Bone morphogenic protein}, plural=BMPs]{BMP}{BMP}{bone morphogenic protein}
+
+\newacronym[description={Gene Ontology}]{GO}{GO}{Gene Ontology}
+
+\newacronym[description={Janus kinase}]{JAK}{JAK}{Janus kinase}
+
+\newacronym[description={Histone deacetylase}]{HDAC}{HDAC}{histone deacetylase}
+
+\newacronym[description={G protein coupled receptor}, plural=GPCRs,firstplural=G protein coupled receptors]{GPCR}{GPCR}{G protein coupled receptor}
+
+\newacronym[description={AMP-activated protein kinase}]{AMPK}{AMPK}{AMP-activated protein kinase}
+
+\newacronym[description={Phosphodiesterase}]{PDE}{PDE}{phosphodiesterase}
+ 
+\newacronym[description={Phosphoinositide 3-kinase}]{PI3K}{PI3K}{phosphoinositide 3-kinase}
+
+\newacronym[description={Hereditary leiomyomatosis and renal cell carcinoma}]{HLRCC}{HLRCC}{Hereditary leiomyomatosis and renal cell carcinoma}
+
+\newacronym[description={Hereditary diffuse gastric cancer}]{HDGC}{HDGC}{hereditary diffuse gastric cancer}
+
+\newacronym[description={Epithelial-mesenchymal transition}]{EMT}{EMT}{epithelial-mesenchymal transition}
+
+\newacronym[description={Wingless-related integration site}]{WNT}{WNT}{Wingless-related integration site}
+
+\newacronym[description={Next-generation sequencing}]{NGS}{NGS}{``Next-Generation Sequencing''}
+
+\newacronym[description={Deoxyribonucleic acid}]{DNA}{DNA}{deoxyribonucleic acid}
+
+\newacronym[description={Ribonucleic acid}]{RNA}{RNA}{ribonucleic acid}
+
+\newacronym[description={Ribonucleic acid interference}]{RNAi}{RNAi}{RNA interference}
+
+\newacronym[description={Messenger ribonucleic acid}]{mRNA}{mRNA}{messenger ribonucleic acid}
+
+\newacronym[description={microRNA}]{miRNA}{miRNA}{miRNA}
+
+\newacronym[description={Short interfering ribonucleic acid}, plural=siRNAs,firstplural=siRNAs]{siRNA}{siRNA}{short interfering ribonucleic acid}
+
+\newacronym[description={Short hairpin ribonucleic acid}]{shrna}{shRNA}{short hairpin ribonucleic acid}
+
+\newacronym[description={Ribonucleic acid}]{rRNA}{rRNA}{ribonucleic acid}
+
+\newacronym[description={Transfer ribonucleic acid}]{tRNA}{tRNA}{transfer ribonucleic acid}
+
+\newacronym[description={Complementary deoxyribonucleic acid (from mRNA)}]{cDNA}{cDNA}{deoxyribonucleic acid}
+
+\newacronym[description={Polymerase chain reaction}]{PCR}{PCR}{polymerase chain reaction}
+
+\newacronym[description={Quantitative (real-time) polymerase chain reaction}]{qPCR}{qPCR}{quantitative PCR}
+
+\newacronym[description={Restriction fragment length polymorphism}]{RFLP}{RFLP}{restriction fragment length polymorphism}
+
+\newacronym[description={Single nucleotide polymorphism}, plural=SNPs,firstplural=SNPs]{SNP}{SNP}{single nucleotide polymorphism}
+
+\newacronym[description={Long non-coding ribonucleic acid}]{lncRNA}{lncRNA}{long non-coding ribonucleic acid}
+
+\newacronym[description={Reduced representation bisulfite sequencing}]{RRBS}{RRBS}{reduced representation bisulfite sequencing}
+
+\newacronym[description={Chromatin immunopreciptation sequencing}]{ChIP-Seq}{ChIP-Seq}{chromatin immunopreciptation sequencing}
+%see={[Glossary:]{gls-ChIP-Seq}}
+
+\newacronym[description={Insertion or deletion (in DNA sequence)}, plural=InDels,firstplural=insertions or deletions]{InDel}{InDel}{InDel}
+
+\newacronym[description={Cancer Cell Line Encyclopaedia}]{CCLE}{CCLE}{Cancer Cell Line Encyclopaedia}
+\newacronym[description={National Institutes of Health (in the USA)}]{NIH}{NIH}{National Institutes of Health}
+\newacronym[description={The Cancer Genome Atlas (genomics project)}]{TCGA}{TCGA}{The Cancer Genome Atlas}
+\newacronym[description={International Cancer Genome Consortium}]{ICGC}{ICGC}{International Cancer Genome Consortium}
+\newacronym[description={National Cancer Institute (in the USA)}]{NCI}{NCI}{National Cancer Institute}
+\newacronym[description={National Human Genome Research Institute (in the USA)}]{NHGRI}{NHGRI}{National Human Genome Research Institute}
+\newacronym[description={National Center for Biotechnology Information (in the USA)}]{NCBI}{NCBI}{National Center for Biotechnology Information}
+\newacronym[description={European Molecular Biology Laboratory}]{EMBL}{EMBL}{European Molecular Biology Laboratory}
+\newacronym[description={The European Nucleotide Archive}]{ENA}{ENA}{The European Nucleotide Archive}
+\newacronym[description={DNA Data Bank of Japan}]{DDBJ}{DDBJ}{DNA Data Bank of Japan}
+\newacronym[description={National Institute of Genetics (in Japan)}]{NIG}{NIG}{National Institute of Genetics}
+\newacronym[description={Gene Expression Omnibus}]{GEO}{GEO}{Gene Expression Omnibus}
+\newacronym[description={Encyclopaedia of DNA Elements}]{ENCODE}{ENCODE}{Encyclopaedia of DNA Elements}
+\newacronym[description={Functional Annotation Of Mammalian genome}]{FANTOM}{FANTOM}{Functional Annotation Of Mammalian genome}
+
+%%To add:
+\newacronym[description={Phosphatidylinositol (4,5)-bisphosphate}]{PIP2}{PIP$_2$}{phosphatidylinositol (4,5)-bisphosphate}
+\newacronym[description={Phosphatidylinositol (3,4,5)-trisphosphate}]{PIP3}{PIP$_3$}{phosphatidylinositol (3,4,5)-trisphosphate}
+\newacronym[description={Adenosine triphosphate}]{ATP}{ATP}{adenosine triphosphate}
+\newacronym[description={Adenosine diphosphate}]{ADP}{ADP}{adenosine diphosphate}
+\newacronym[description={Adenosine monophosphate}]{AMP}{AMP}{adenosine monophosphate}
+ 
+\newacronym[description={5'—C—phosphate—G—3'}]{CpG}{CpG}{CpG dinucleotide}
+\newacronym[description={Catalogue Of Somatic Mutations In Cancer}]{COSMIC}{COSMIC}{Catalogue Of Somatic Mutations In Cancer}
+\newacronym[description={1000 genomes project}]{1KGP}{1KGP}{1000 genomes project}
+\newacronym[description={Molecular Taxonomy of Breast Cancer International Consortium}]{METABRIC}{METABRIC}{Molecular Taxonomy of Breast Cancer International Consortium}
+\newacronym[description={Copy Number Variation}]{CNV}{CNV}{Copy Number Variation}
+
+%%
+
+
+%SLIPT
+%DAISY
+%BiSEp
+%MetaSL
+% PAM50: Prediction Analysis of Microarray 50
+
+
+\newacronym[description={Synthetic lethal interaction prediction tool}]{SLIPT}{SLIPT}{Synthetic Lethal Interaction Prediction Tool}
+
+\newacronym[description={Data mining synthetic lethal identification pipeline}]{DAISY}{DAISY}{DAta mIning SYnthetic lethal identification pipeline}
+
+\newacronym[description={Bimodal Subsetting Expression}]{BiSEp}{BiSEp}{BImodal Subsetting ExPression}
+
+
+
+%
+
+%FDR
+%slurm
+%exprSL
+%mtSL
+%RMA
+%RSEM
+
+\newacronym[description={Area under the reciever operating characteristic (curve)}]{AUROC}{AUROC}{area under the reciever operating characteristic}
+
+\newacronym[description={Reciever operating characteristic (curve)}]{ROC}{ROC}{reciever operating characteristic}
+
+\newacronym[description={Analysis of Variance}]{ANOVA}{ANOVA}{analysis of variance}
+
+\newacronym[description={Biological Pathway Exchange}]{BioPAX}{BioPAX}{Biological pathway exchange}
+
+\newacronym[description={Simple Linux Utility for Resource Management}]{Slurm}{Slurm}{Simple Linux Utility for Resource Management}
+
+\newacronym[description={New Zealand eScience Infrastructure}]{NeSI}{NeSI}{the New Zealand eScience Infrastructure}
+
+\newacronym[description={High Performance Computing}]{HPC}{HPC}{High Performance Computing}
+
+
+
+
+%SL
+%SSL
+%SGI
+%SGA
+%PPI
+%GO
+
+\newacronym[description={synthetic genetic interaction}, plural=SGIs,firstplural=synthetic genetic interactions]{SGI}{SGI}{synthetic genetic interaction}
+
+%ROC
+%AUROC
+
+%GEO
+%arrayExpress
+%caArray
+
+%GPCR
+
+%%linked entry
+\iffalse
+\newglossaryentry{gls-OWD} {
+  name={One-Way Delay},
+  description={The time a packet uses through a network from one host to another},
+}
+\newacronym[see={[Glossary:]{gls-OWD}}]{OWD}{OWD}{One-Way Delay\glsadd{gls-OWD}}
+\fi
