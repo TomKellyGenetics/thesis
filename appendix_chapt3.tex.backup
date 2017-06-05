@@ -13,37 +13,11 @@
 %% section for each library and a subsection for each file.
 %%
 
+\iffalse
 \chapter{Secondary Screen Data}
 \label{appendix:secondary_screen}
 
-A series of experimental genome-wide siRNA screens have been performed on synthetic lethal partners of \textit{CDH1} \citep{Telford2015}. The strongest candidates from a primary screen were subject to a further secondary screen for validation by independent replication with 4 gene knockdowns with different targeting siRNA. As shown in Table~\ref{tab:secondary_screen}, there is significant ($p=7.49 \times 10^{-3}$ by Fisher's exact test) %$8.67 \times 10^{-3} by \chi^2 (4 df)
-association between SLIPT candidates and stronger validations of siRNA candidates. Since there were more SLIPT$-$ genes among those not validated and more SLIPT$+$ genes among those validated with several siRNAs, this supports the use of SLIPT as a synthetic lethal discovery procedure which may augment such screening experiments.
-
-\begin{table*}[!ht]
-\caption{Comparing SLIPT genes against Secondary siRNA Screen in breast cancer}
-\label{tab:secondary_screen}
-\begin{center}
-%\resizebox{\textwidth}{!}{
-\begin{tabular}{>{\cellcolor{white}}rrcccccl}
-                                                                            &                                                           & \multicolumn{5}{c}{\bfseries Secondary Screen}                                                                                     &                                           \\ \cline{3-7}
-\rowcolor{black!10}
-                                                                            & \multicolumn{1}{r|}{\cellcolor{white}}                    & 0/4                      & 1/4                      & 2/4                     & 3/4                     & \multicolumn{1}{c|}{4/4} & \cellcolor{white} \textbf{Total}          \\ \cline{2-8} 
-\rowcolor{black!5}
-\multicolumn{1}{r|}{\cellcolor{white}}                                      & \multicolumn{1}{r|}{Observed}                             & 70                       & 46                       & 31                      & 8                       & \multicolumn{1}{c|}{2}   &  \multicolumn{1}{l|}{}                     \\
-\rowcolor{black!10}
-\multicolumn{1}{r|}{\cellcolor{white} \multirow{-2}{*}{\bfseries SLIPT$+$}} & \multicolumn{1}{r|}{Expected}                             & 85                       & 44                       & 10                      & 4                       & \multicolumn{1}{c|}{2}   & \multicolumn{1}{l|}{\multirow{-2}{*}{157}}    \\ \cline{2-8} 
-\rowcolor{black!5}
-\multicolumn{1}{r|}{\cellcolor{white}}                                      & \multicolumn{1}{r|}{Observed}                             & 190                      & 90                       & 31                      & 10                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{}                     \\
-\rowcolor{black!10}
-\multicolumn{1}{r|}{\cellcolor{white}\multirow{-2}{*}{\bfseries SLIPT$-$}}  & \multicolumn{1}{r|}{Expected}                             & 175                      & 91                       & 42                      & 12                      & \multicolumn{1}{c|}{4}   & \multicolumn{1}{l|}{\multirow{-2}{*}{325}} \\ \cline{2-8} 
-\rowcolor{black!5}
-\cellcolor{white}                                                           & \multicolumn{1}{r|}{\cellcolor{white} \bfseries Total}    & \multicolumn{1}{c}{280} & \multicolumn{1}{c}{136} & \multicolumn{1}{c}{52} & \multicolumn{1}{c}{18} & \multicolumn{1}{c|}{6}   & \multicolumn{1}{l|}{482}                  \\ \cline{3-8} 
-\end{tabular} 
-%}
-\end{center}
-\end{table*}
-
-Similar analysis with mtSLIPT, comparing SLIPT against \textit{CDH1} somatic mutation with siRNA validation results was not significant ($p=7.02 \times 10^{-1}$ by Fisher's exact test). However,  as shown in Table~\ref{tab:secondary_screen_mtSL}, the observed and expected values were in a direction consistent with that observed above for SLIPT against low \textit{CDH1} expression. It is not unexpected that this result does not have comparable statistical support due to the lower sample size for mutation data. 
+A series of experimental genome-wide siRNA screens have been performed on synthetic lethal partners of \textit{CDH1} \citep{Telford2015}. The strongest candidates from a primary screen were subject to a further secondary screen for validation by independent replication with 4 gene knockdowns with different targeting siRNA. Analysis with mtSLIPT was performed, comparing SLIPT against \textit{CDH1} somatic mutation with siRNA validation results was not significant ($p=7.02 \times 10^{-1}$ by Fisher's exact test). However,  as shown in Table~\ref{tab:secondary_screen_mtSL}, the observed and expected values were in a direction consistent with that observed above for SLIPT against low \textit{CDH1} expression. It is not unexpected that this result does not have comparable statistical support due to the lower sample size for mutation data. 
 
 \begin{table*}[!ht]
 \caption{Comparing mtSLIPT genes against Secondary siRNA Screen in breast cancer}
@@ -94,6 +68,7 @@ This analysis was replicated on a (smaller) stomach cancer dataset but it was le
 %}
 \end{center}
 \end{table*}
+\fi
 
 \chapter{Mutation Analysis in Breast Cancer}
 \label{appendix:mtSL}
@@ -1020,13 +995,13 @@ Metagene analysis was also performed for synthetic lethal candidates for \textit
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected mutant \textit{CDH1} \gls{TCGA} breast cancer tumours with low expression of partner metagenes.
+Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected numbers of mutant \textit{CDH1} \gls{TCGA} breast cancer tumours with low expression of partner metagenes.
 \end{tablenotes}
 \end{threeparttable}
 }
 \end{table*}
 
-
+\iffalse
 \clearpage
 \section{Mutation Variation} \label{appendix:mutation_analysis}
 Mutations have different effects as shown by the following examples in cancer genes.
@@ -1059,9 +1034,10 @@ Mutations have different effects as shown by the following examples in cancer ge
 \label{fig:mutation_locus}
 %\end{mdframed}
 \end{figure*}
+\fi
 
 \clearpage
-\subsection{PI3K Mutation Expression}
+\section{Expression of Somatic Mutations}
 
 \begin{figure*}[!ht]
 %\begin{mdframed}
@@ -1086,7 +1062,10 @@ Mutations have different effects as shown by the following examples in cancer ge
 \label{fig:mutation_expr_mg2}
 %\end{mdframed}
 \end{figure*}
+\fi
 
+
+%\iffalse
 \begin{figure*}[!ht]
 %\begin{mdframed}
         \begin{center}
@@ -1134,15 +1113,70 @@ Mutations have different effects as shown by the following examples in cancer ge
 \label{fig:mutation_expr_prot2}
 %\end{mdframed}
 \end{figure*}
+%\fi
+
+\clearpage
+\chapter{Intrinsic Subtyping} \label{appendix:intrinsic_subtypes}
+The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by UCSC \citep{TCGA2012} that were derived from microarray analysis have been compared to the PAM50 results for performing subtyping from \gls{RNA-Seq} data \citep{Parker2009}. As shown in Table~\ref{tab:intrinsic_subtypes}, these subtypes were highly concordant for samples which had both procedures performed upon them ($\chi^2 = 1305.9$, $p = 2.73 \times 10^{-268}$). The main exception were the luminal A samples some of which were reclassified as luminal B or ``normal-like''. This is potentially more accurate given similarity of these subtypes and that the remainder of the subtypes were accurately recapitulated with \gls{RNA-seq} data. Furthermore, UCSC subtypes correctly identified $\sfrac{22}{22}$ normal samples as ``normal-like'' and PAM50 subtyping in \gls{RNA-Seq} data had a success rate of $\sfrac{112}{113}$ (including all of those identified from microarrays). Therefore the PAM50 subtypes (performed on a larger cohort of samples) are appropriate to use for further interpretation, superceeding the UCSC subtypes available for a limited set of samples.
+
+\begin{table*}[!htb]
+\caption{Comparison of Intrinsic Subtypes}
+\label{tab:intrinsic_subtypes}
+\noindent\makebox[\textwidth][c]{%               %centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{llllll}
+ \cellcolor{white} & \multicolumn{5}{c}{\bfseries UCSC Subtype}  \\  
+\cline{2-6}
+ \cellcolor{white} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
+\cline{2-6}
+\rowcolor{black!10} \cellcolor{white}
+ \cellcolor{white} &    100  &   58  &  232  &  128  &  30  \\
+\cline{2-6}
+%\end{tabular}
+\\
+%\begin{tabular}{llllll}
+ \cellcolor{white} & \multicolumn{5}{c}{\bfseries PAM50 Subtype}  \\
+\cline{2-6}
+ \cellcolor{white} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
+\cline{2-6}
+\rowcolor{black!10} \cellcolor{white}
+ \cellcolor{white} &    208  &   94  &  314  &  334  &  227  \\
+\cline{2-6}
+%\end{tabular}
+\\
+%\begin{tabular}{lllllll}
+ \cellcolor{white} & \multicolumn{5}{c}{\bfseries UCSC Subtype}  \\
+   \cline{2-6}
+ \textbf{PAM50 Subtype} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
+   \hline
+\rowcolor{black!10} Basal-like    &  96 &   4 &   2 &   2 &   1 \\ 
+\rowcolor{black!5} HER2-enriched &   0 &  47 &   5 &   3 &   0 \\ 
+\rowcolor{black!10} Luminal A     &   1 &   0 & 141 &   1 &   0 \\ 
+\rowcolor{black!5} Luminal B     &   2 &   7 &  49 & 121 &   0 \\ 
+\rowcolor{black!10} Normal-like   &   1 &   0 &  35 &   1 &  29 \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+The intrinsic subtypes of TCGA breast samples were compared between those provided by UCSC \citep{TCGA2012} from microarray expression to those derived from RNA-Seq data \citep{Parker2009}. Comparisons between these were limited to samples for which both data types were available.
+\end{tablenotes}
+\end{threeparttable}
+}
+}
+\end{table*} 
+
 
 \chapter{Metagene Expression Profiles}
 \label{appendix:mg_expr_SL}
 
 %\label{fig:metagene_expr_Gatza2011}
 
+
 \begin{figure*}[!htp]
 \noindent\makebox[\textwidth][c]{%               %centering
-\noindent\fbox{\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
+%\noindent\fbox{
+\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
 \begin{center}
   \resizebox{1 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Gatza2014(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr.png} %original pdf, png for edited
@@ -1152,13 +1186,14 @@ Mutations have different effects as shown by the following examples in cancer ge
 }
 \label{fig:metagene_expr_Gatza2014}
 \end{minipage}
-} %close fbox
+%} %close fbox
 } %close centering
 \end{figure*}
 
 \begin{figure*}[!htp]
 \noindent\makebox[\textwidth][c]{%               %centering
-\noindent\fbox{\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
+%\noindent\fbox{
+\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
 \begin{center}
   \resizebox{1 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.png} %original pdf, png for edited
@@ -1168,13 +1203,14 @@ Mutations have different effects as shown by the following examples in cancer ge
 }
 \label{fig:metagene_expr_Gatza2011_PI3K}
 \end{minipage}
-} %close fbox
+%} %close fbox
 } %close centering
 \end{figure*}
 
 \begin{figure*}[!htp]
 \noindent\makebox[\textwidth][c]{%               %centering
-\noindent\fbox{\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
+%\noindent\fbox{
+\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
 \begin{center}
   \resizebox{1 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.png} %original pdf, png for edited
@@ -1184,13 +1220,14 @@ Mutations have different effects as shown by the following examples in cancer ge
 }
 \label{fig:metagene_expr_Gatza2011_P53}
 \end{minipage}
-} %close fbox
+%} %close fbox
 } %close centering
 \end{figure*}
 
 \begin{figure*}[!htp]
 \noindent\makebox[\textwidth][c]{%               %centering
-\noindent\fbox{\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
+%\noindent\fbox{
+\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
 \begin{center}
   \resizebox{1 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.png} %original pdf, png for edited
@@ -1200,14 +1237,15 @@ Mutations have different effects as shown by the following examples in cancer ge
 }
 \label{fig:metagene_expr_Gatza2011_ER}
 \end{minipage}
-} %close fbox
+%} %close fbox
 } %close centering
 \end{figure*}
 
 
 \begin{figure*}[!htp]
 \noindent\makebox[\textwidth][c]{%               %centering
-\noindent\fbox{\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
+%\noindent\fbox{
+\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
 \begin{center}
   \resizebox{1 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.png} %original pdf, png for edited
@@ -1217,7 +1255,7 @@ Mutations have different effects as shown by the following examples in cancer ge
 }
 \label{fig:metagene_expr_Gatza2014_BRCA}
 \end{minipage}
-} %close fbox
+%} %close fbox
 } %close centering
 \end{figure*}
 
@@ -1294,7 +1332,7 @@ The following results are a replication of the TCGA results (in Chapter~\ref{cha
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-SLIPT partners of \textit{CDH1} with observed and expected \gls{TCGA} stomach cancer samples with low expression of both genes.
+SLIPT partners of \textit{CDH1} with observed and expected numbers of \gls{TCGA} stomach cancer samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2019,7 +2057,7 @@ Metagene analysis was also performed for synthetic lethal candidates for \textit
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected \gls{TCGA} stomach cancer samples with low expression of both genes.
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{TCGA} stomach cancer samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2099,7 +2137,7 @@ The following results are a replication of the TCGA results (in Appendix~\ref{ap
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-mtSLIPT partners with observed and expected \textit{CDH1} mutant \gls{TCGA} stomach cancer samples with low  expression of partner genes.
+mtSLIPT partners with observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} stomach cancer samples with low  expression of partner genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2870,7 +2908,7 @@ Metagene analysis was also performed for synthetic lethal candidates for \textit
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected \textit{CDH1} mutant \gls{TCGA} stomach cancer samples  with low expression of partner metagenes.
+Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} stomach cancer samples  with low expression of partner metagenes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3022,7 +3060,7 @@ Genes with the most candidate SL partners SLIPT in TCGA stomach expression data 
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Gene set over-representation analysis (hypergeometric test) for Reactome pathways in the top 500 ``hub'' genes with the most candidate synthetic lethal partners by SLIPT analysis of TCGA stomach expression data
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in the top 500 ``hub'' genes with the most candidate synthetic lethal partners by SLIPT analysis of TCGA stomach expression data.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3097,7 +3135,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{CCLE} samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3168,7 +3206,7 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{CCLE} breast samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3226,7 +3264,7 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected samples with low expression of both genes
+Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{CCLE} stomach samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3289,7 +3327,7 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3350,7 +3388,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
 }
