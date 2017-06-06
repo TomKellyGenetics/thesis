@@ -1,7 +1,7 @@
 \chapter{Synthetic Lethal Analysis of Gene Expression Data}
 \label{chap:SLIPT}
 
-Having developed a statistical synthetic lethal detection methodology, \gls{SLIPT}, it was then applied to publicly available cancer gene expression datasets. The analysis focuses on breast cancer for which  \gls{TCGA} expression data \citep{TCGA2012} from a patient cohort and \gls{siRNA} screen data \citep{Telford2015} from experiments conducted in MCF10A cells were available. Stomach cancer data \citep{TCGA2014GC} was used to replicate findings in an independent dataset, with this cancer chosen because it also occurs in syndromic \gls{HDGC} patients. The \gls{TCGA} data also has the advantages of other clinical and molecular profiles including somatic mutation across many of the same samples, in addition to a considerable sample size for RNASeq expression data generated with a common \gls{TCGA} procedures to minimise batch effects. Some findings were replicated in the Cancer Cell Line Encyclopaedia (CCLE) \citep{Barretina2012} for comparison to the cell line experiments.
+Having developed a statistical synthetic lethal detection methodology, \gls{SLIPT}, it was then applied to publicly available cancer gene expression datasets. The analysis focuses on breast cancer for which  \gls{TCGA} expression data \citep{TCGA2012} from a patient cohort and \gls{siRNA} screen data \citep{Telford2015} from experiments conducted in MCF10A cells were available. Stomach cancer data \citep{TCGA2014GC} was used to replicate findings in an independent dataset, with this cancer chosen because it also occurs in syndromic \gls{HDGC} patients. The \gls{TCGA} data also has the advantages of other clinical and molecular profiles including somatic mutation across many of the same samples, in addition to a considerable sample size for RNASeq expression data generated with a common \gls{TCGA} procedures to minimise batch effects. %Some findings were replicated in the Cancer Cell Line Encyclopaedia (CCLE) \citep{Barretina2012} for comparison to the cell line experiments.
 
 Synthetic lethal candidate partners for \textit{CDH1} were identified at both the gene and pathway level. \gls{SLIPT} gene candidates were analysed by cluster analysis for common expression profiles across samples and relationships with clinical factors and mutations in key breast cancer genes. These genes will also be compared to the gene candidates from a primary and secondary (validation) screens conducted by \citet{Telford2015} on isogenic cell lines. For comparison, the \gls{SLIPT} methodology was also applied using mutation data for \textit{CDH1} against expression of candidate partners (as described in Section~\ref{methods:SLIPT}) which may better represent the null mutations in HDGC patients and the experiment cell model \citep{Chen2014}. Pathways were analysed by over-representation analysis (with resampling for comparisons with \gls{siRNA} data) and supported by a metagene analysis of pathway gene signatures. The pathway metagene expression profiles were used to replicate known relationships between clinical and molecular characteristics for breast cancer and to demonstrate application of \gls{SLIPT} directly on metagenes to detect synthetic lethal pathways.
 
@@ -400,7 +400,7 @@ Pathway over-representation analysis for Reactome pathways with the number of ge
 \end{table*}
 
 %%committee
-Synthetic lethal gene candidates for \textit{CDH1} from \gls{SLIPT} analysis of RNA-Seq gene expression data were also used for pathway over-representation analyses (as described in Section~\ref{methods:enrichment}). The correlation structure in the expression of candidates synthetic lethal genes in \textit{CDH1} low tumours (lowest $\sfrac{1}{3}$\textsuperscript{rd} quantile of expression) was examined for distinct biological pathways in subgroups of genes elevated in different clusters of samples. These genes were highly expressed in different samples with their clinical factors including estrogen receptor status and intrinsic (PAM50) subtype \citep{Parker2009} shown in Figure~\ref{fig:slipt_expr}.
+Synthetic lethal gene candidates for \textit{CDH1} from \gls{SLIPT} analysis of RNA-Seq gene expression data were also used for pathway over-representation analyses (as described in Section~\ref{methods:enrichment}). The correlation structure in the expression of candidates synthetic lethal genes in \textit{CDH1} low tumours (lowest $\sfrac{1}{3}$\textsuperscript{rd} quantile of expression) was examined for distinct biological pathways in subgroups of genes elevated in different clusters of samples. These genes were highly expressed in different samples with their clinical factors including estrogen receptor status and intrinsic subtype, from the \gls{PAM50} procedure \citep{Parker2009} shown in Figure~\ref{fig:slipt_expr}.
 
 %%paper
 As shown by the most over-represented pathways in Table~\ref{tab:pathway_clusters}, each correlated cluster of candidate synthetic lethal partners of \textit{CDH1} contains functionally different genes. %Each correlated subgroup of synthetic lethal candidate genes has markedly different biological functions.
@@ -1064,7 +1064,7 @@ The gene signatures \citep{Gatza2011, Gatza2014} were used to demonstrate to uti
 
 \subsection{Pathway Expression} \label{chapt3:metagene_expression}
 
-Pathway metagenes (generated as described in Section~\ref{methods:metagene}) for gene signatures of key processes in breast cancer \citep{Gatza2011} were used to check that metagenes were generated in the correct direction to indicate pathway activation. Some of these gene signatures are plotted in Figure~\ref{fig:metagene_expr_Gatza2011} for comparison with clinical factors and somatic mutations. The ``intrinsic subtype''  was computed by performing the PAM50 procedure \cite{Parker2009} for RNASeq data which was highly concordant ($\chi^2 = 1305.9$, $p = 2.73 \times 10^{-268}$) with the subtypes provided by UCSC for TCGA samples  \citep{TCGA2012} previously analysed by microarrays (as shown in Appendix \ref{appendix:intrinsic_subtypes}). Somatic mutations were reported for recurrently mutated genes in breast cancer, as reported by TCGA \citep{TCGA2012}, related genes, and those previously discussed to be important in hereditary breast cancers (\textit{BRCA1}, \textit{BRCA2}, and \textit{CDH1}).
+Pathway metagenes (generated as described in Section~\ref{methods:metagene}) for gene signatures of key processes in breast cancer \citep{Gatza2011} were used to check that metagenes were generated in the correct direction to indicate pathway activation. Some of these gene signatures are plotted in Figure~\ref{fig:metagene_expr_Gatza2011} for comparison with clinical factors and somatic mutations. The ``intrinsic subtype''  was computed by performing the \gls{PAM50} procedure \cite{Parker2009} for RNASeq data which was highly concordant ($\chi^2 = 1305.9$, $p = 2.73 \times 10^{-268}$) with the subtypes provided by \gls{UCSC} for TCGA samples  \citep{TCGA2012} previously analysed by microarrays (as shown in Appendix \ref{appendix:intrinsic_subtypes}). Somatic mutations were reported for recurrently mutated genes in breast cancer, as reported by TCGA \citep{TCGA2012}, related genes, and those previously discussed to be important in hereditary breast cancers (\textit{BRCA1}, \textit{BRCA2}, and \textit{CDH1}).
 
 \begin{figure*}[!htp]
 \noindent\makebox[\textwidth][c]{%               %centering
@@ -1075,7 +1075,7 @@ Pathway metagenes (generated as described in Section~\ref{methods:metagene}) for
     \includegraphics{CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr2.pdf} %original pdf, png for edited %1.png = Gatza 2011, 2.png = Cropped, 3.png = excl. PI3K
    }
    \end{center}
-   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors (with sample types and histological results coloured according to the legend) and cancer gene mutations (Negative values for mutation are light grey with missing data in white). Intrinsic subtypes are shown as derived from microarray (UCSC) and \gls{RNA-Seq} (PAM50) data \citep{TCGA2012, Parker2009}. Samples were clustered independently for each intrinsic subtype and by \textit{CDH1} expression status. Pathway expression signatures are consistent with mutations and clinical subgroups.
+   \caption[Pathway metagene expression profiles]{\small \textbf{Pathway metagene expression profiles.} Expression profiles for metagene signatures from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors (with sample types and histological results coloured according to the legend) and cancer gene mutations (Negative values for mutation are light grey with missing data in white). Intrinsic subtypes are shown as derived from microarray (\gls{UCSC}) and \gls{RNA-Seq} (\gls{PAM50}) data \citep{TCGA2012, Parker2009}. Samples were clustered independently for each intrinsic subtype and by \textit{CDH1} expression status. Pathway expression signatures are consistent with mutations and clinical subgroups.
 }
 \label{fig:metagene_expr_Gatza2011}
 \end{minipage}
@@ -1320,12 +1320,11 @@ Globally predicting gene expression across all genes from DNA copy number and so
 
 \section{Replication in Stomach Cancer} \label{chapt3:stad_replication}
 
-The synthetic lethal analysis of genes and pathways (previously identified for TCGA breast cancer data) was replicated in TCGA stomach cancer. The accompanying data for \gls{SLIPT} and mtSLIPT analyses against \textit{CDH1} expression and mutation are in Appendices~\ref{appendix:stad_exprSL} and~\ref{appendix:stad_mtSL} respectively.
-
-The experimental screen \citep{Telford2015} was conducted in MCF10A breast cells so it may not be as comparable to stomach cancer. Nevertheless, \textit{CDH1} is also important in stomach cancer biology as a driver tumour suppressor gene and as a germline mutation in many cases of hereditary diffuse gastric cancer.
+\textit{CDH1} is also important in stomach cancer biology as a driver tumour suppressor gene, including as a germline mutation in many cases of hereditary diffuse gastric cancer. The synthetic lethal analysis of genes and pathways (previously identified for TCGA breast cancer data) was replicated in TCGA stomach cancer. The accompanying data for \gls{SLIPT} analysis against \textit{CDH1} expression is provided in Appendix~\ref{appendix:stad_exprSL}.
 
 While the sample size was lower for TCGA stomach cancer (particularly for mutations), these results serve to support the findings in breast cancer in an independent patient cohort and tissue samples. The molecular profiling, including RNA-Seq expression, were performed by TCGA using the sample procedures as for breast cancer and the findings reported here were performed used data analysis techniques identical to those presented previously. These procedures should ensure as close comparison as feasible across cancer types for those relevant to HDGC and recurrent \textit{CDH1} mutations.
 
+\iffalse
 \subsection{Synthetic Lethal Genes and Pathways} \label{chapt3:stad_SL_genes}
 
 The strongest \gls{SLIPT} genes for stomach cancer (shown in Table~\ref{tab:gene_stad_SL}) did not necessarily directly correspond to those observed in breast cancer (shown in Table~\ref{tab:gene_SL}). However, several gene functions were replicated in stomach cancer. Cell membrane genes including \textit{EMP3}, \textit{GYPC},  \textit{LGALS1}, \textit{PRR24},  and \textit{FUNCD2} were among the strongest SL candidates. Similarly, cell signalling genes including \textit{PLEKHO1}, \textit{RARRES2}, \textit{VEGFB}, \textit{HSPB2}, and \textit{CREM} were detected in stomach cancers. It is notable that several of these genes (\textit{EMP3}, \textit{PLEKHO1}, and \textit{FUNCD2}) have a known role in cancer. Together these genes support the roles of \textit{CDH1} in cell membrane and signalling functions (of epithelial tissues) which are perturbed in both breast and stomach cancers.
@@ -1337,64 +1336,6 @@ Together, these gene candidates indicate widespread functions of \textit{CDH1} a
 These findings were further supported by the pathways over-represented in \gls{SLIPT} candidates from TCGA stomach cancer (shown in Table~\ref{tab:pathway_stad_exprSL}) which were replicated the translational and immune pathways observed in TCGA breast cancer (shown in Tabel~\ref{tab:pathway_exprSL}). Further support for GCPR signalling pathways including the class A/1 receptors. The extracellular matrix was also detected at the pathway level in stomach cancer \gls{SLIPT} candidates and replicated in mtSLIPT analysis for \textit{CDH1} mutation (shown in Table~\ref{tab:pathway_stad_mtSL}), including elastic fibres, glycosylation, collagen, and integrin cell-surface interactions. Thus there was strong evidence for the role of extracellular matrix pathways and the tumour microenvironment in \textit{CDH1} deficient stomach cancers, in addition to cell signalling and translation pathways important in tumour growth across breast and stomach cancer.
 
 
-\begin{table*}[!ht]
-\caption{Pathways for \textit{CDH1} partners from SLIPT in stomach cancer}
-\label{tab:pathway_stad_exprSL}
-\centering
-\resizebox{1 \textwidth}{!}{
-\begin{threeparttable}
-\begin{tabular}{lccc}
-  \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
-  \hline
-  \rowcolor{black!10}
-  Extracellular matrix organization & 241 & 104 & $7.5 \times 10^{-140}$ \\ 
-  \rowcolor{black!5}
-  Hemostasis & 445 & 138 & $1.8 \times 10^{-121}$ \\ 
-  \rowcolor{black!10}
-  Developmental Biology & 432 & 125 & $9.2 \times 10^{-107}$ \\ 
-  \rowcolor{black!5}
-  Axon guidance & 289 &  94 & $1.5 \times 10^{-102}$ \\ 
-  \rowcolor{black!10}
-  Eukaryotic Translation Termination &  84 &  49 & $1.9 \times 10^{-99}$ \\ 
-  \rowcolor{black!5}
-  GPCR ligand binding & 373 & 108 & $3.8 \times 10^{-99}$ \\ 
-  \rowcolor{black!10}
-  Viral mRNA Translation &  82 &  48 & $3.3 \times 10^{-98}$ \\ 
-  \rowcolor{black!5}
-  Formation of a pool of free 40S subunits &  94 &  51 & $3.3 \times 10^{-98}$ \\ 
-  \rowcolor{black!10}
-  Eukaryotic Translation Elongation &  87 &  49 & $1.6 \times 10^{-97}$ \\ 
-  \rowcolor{black!5}
-  Peptide chain elongation &  84 &  48 & $7.2 \times 10^{-97}$ \\ 
-  \rowcolor{black!10}
-  Class A/1 (Rhodopsin-like receptors) & 289 &  90 & $2.7 \times 10^{-96}$ \\ 
-  \rowcolor{black!5}
-  Nonsense Mediated Decay independent of the Exon Junction Complex &  89 &  49 & $3.0 \times 10^{-96}$ \\ 
-  \rowcolor{black!10}
-  Infectious disease & 349 & 100 & $2.6 \times 10^{-94}$ \\ 
-  \rowcolor{black!5}
-  GTP hydrolysis and joining of the 60S ribosomal subunit & 105 &  52 & $3.4 \times 10^{-94}$ \\ 
-  \rowcolor{black!10}
-  L13a-mediated translational silencing of Ceruloplasmin expression & 104 &  51 & $2.8 \times 10^{-92}$ \\ 
-  \rowcolor{black!5}
-  3' -UTR-mediated translational regulation & 104 &  51 & $2.8 \times 10^{-92}$ \\ 
-  \rowcolor{black!10}
-  Neuronal System & 272 &  84 & $8.4 \times 10^{-92}$ \\ 
-  \rowcolor{black!5}
-  SRP-dependent cotranslational protein targeting to membrane & 105 &  51 & $9.5 \times 10^{-92}$ \\ 
-  \rowcolor{black!10}
-  Eukaryotic Translation Initiation & 112 &  52 & $2.0 \times 10^{-90}$ \\ 
-  \rowcolor{black!5}
-  Cap-dependent Translation Initiation & 112 &  52 & $2.0 \times 10^{-90}$ \\ 
-   \hline
-\end{tabular}
-\begin{tablenotes}
-\raggedright \small
-Gene set over-representation analysis (hypergeometric test) for Reactome pathways in \gls{SLIPT} partners for \textit{CDH1}.
-\end{tablenotes}
-\end{threeparttable}
-}
-\end{table*}
 
 
 %%appendix
@@ -1403,7 +1344,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 \subsection{Synthetic Lethal Expression Profiles} \label{chapt3:stad_SL_clusters}
 
-The expression profiles of candidate synthetic lethal partners dtected by \gls{SLIPT} and mtSLIPT in stomach cancer were plotted against clinical characteristics as described for breast cancer data in Section~\ref{chapt3:exprSL_clusters} (shown in Figures~\ref{fig:slipt_expr_stad} and~\ref{fig:slipt_expr_stad_mtSL} respectively). As expected the majority of \textit{CDH1} mutant samples had low expression of \textit{CDH1} and were the diffuse type of stomach cancer.
+%The expression profiles of candidate synthetic lethal partners dtected by \gls{SLIPT} and mtSLIPT in stomach cancer were plotted against clinical characteristics as described for breast cancer data in Section~\ref{chapt3:exprSL_clusters} (shown in Figures~\ref{fig:slipt_expr_stad} and~\ref{fig:slipt_expr_stad_mtSL} respectively). As expected the majority of \textit{CDH1} mutant samples had low expression of \textit{CDH1} and were the diffuse type of stomach cancer.
 
 
 \begin{figure*}[!ht]
@@ -1419,9 +1360,9 @@ The expression profiles of candidate synthetic lethal partners dtected by \gls{S
 %\end{mdframed}
 \end{figure*}
 
-The \gls{SLIPT} partners of \textit{CDH1} exhibited similar clustering in staomch cancer to breast cancer, replicating the diverse roles of elevated partner genes in different clinical samples. Specifically (in Figure~\ref{fig:slipt_expr_stad}), the diffuse type stomach cancers had higher expression of the candidate synthetic lethal partners (where \textit{CDH1} has a role as a driver mutation), despite an unbiased clustering. This is consistent with compensating expression of synthetic lethal partners under loss of \textit{CDH1}, as suggested by \citet{Lu2015}. The pathway composition of gene clusters for stomach cancer (shown in Table~\ref{tab:pathway_clusters_stad}) was also highly concordant with breast cancer findings (shown in Table~\ref{tab:pathway_clusters}). These included replicated of translation (Cluster 1), immune functions (Cluster 2), G$_{\alpha s}$ signalling (Cluster 3), and further support for the roles of GPCRs and the extracellular matrix (Cluster 4) in the synthetic lethal partners and functions of \textit{CDH1}, replicated across stomach and breast cancers. Clusters 1 and 4, which had particularly high expression of \gls{SLIPT} candidate partner genes in the diffuse subtype, also had the most significant over-representation of pathways.
+%The \gls{SLIPT} partners of \textit{CDH1} exhibited similar clustering in staomch cancer to breast cancer, replicating the diverse roles of elevated partner genes in different clinical samples. Specifically (in Figure~\ref{fig:slipt_expr_stad}), the diffuse type stomach cancers had higher expression of the candidate synthetic lethal partners (where \textit{CDH1} has a role as a driver mutation), despite an unbiased clustering. This is consistent with compensating expression of synthetic lethal partners under loss of \textit{CDH1}, as suggested by \citet{Lu2015}. The pathway composition of gene clusters for stomach cancer (shown in Table~\ref{tab:pathway_clusters_stad}) was also highly concordant with breast cancer findings (shown in Table~\ref{tab:pathway_clusters}). These included replicated of translation (Cluster 1), immune functions (Cluster 2), G$_{\alpha s}$ signalling (Cluster 3), and further support for the roles of GPCRs and the extracellular matrix (Cluster 4) in the synthetic lethal partners and functions of \textit{CDH1}, replicated across stomach and breast cancers. Clusters 1 and 4, which had particularly high expression of \gls{SLIPT} candidate partner genes in the diffuse subtype, also had the most significant over-representation of pathways.
 
-There was less variation between the expression profiles of mtSLIPT partners of \textit{CDH1} in stomach cancer, although clusters were still detectable (as shown in Figure~\ref{fig:slipt_expr_stad_mtSL}). While the genes and pathways detected was lewss significant (due to lower sample size), the composition of clusters was further indicative for the roles of extracellular matrix (including elastic fibres), immune functions, and the cell signalling.
+%There was less variation between the expression profiles of mtSLIPT partners of \textit{CDH1} in stomach cancer, although clusters were still detectable (as shown in Figure~\ref{fig:slipt_expr_stad_mtSL}). While the genes and pathways detected was lewss significant (due to lower sample size), the composition of clusters was further indicative for the roles of extracellular matrix (including elastic fibres), immune functions, and the cell signalling.
 
 \FloatBarrier
 
@@ -1455,9 +1396,11 @@ Signalling and immune pathways were also supported by mtSLIPT analysis of metage
 
 %%appendix
 %\label{tab:metagene_stad_mtSL}
+\fi
 
 \FloatBarrier
 
+\iffalse
 \section{Global Synthetic Lethality}
 %[include?]
 
@@ -1621,9 +1564,11 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{table*}
 
 Pathway over-representation for synthetic lethal hub genes was replicated in TCGA stomach cancer expression data. However, these pathways differ considerably from breast cancer, as shown in Table~\ref{tab:pathway_mostSL_stad}. Cell-cell interactions and extracellular matrix pathways, including elastic fibres, were also among the hub genes for stomach cancer. The signalling pathways differ as expected in a different tissue type, although BMP and PAK signalling were detected as hub gene functions.
+\fi
 
 \FloatBarrier
 
+\iffalse
 \section{Replication in the Cancer Cell Line Encyclopaedia} \label{chapt3:CCLE}
 
 \FloatBarrier
@@ -1755,7 +1700,8 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{table*}
 
 
-Synthetic lethal pathways specific to \gls{SLIPT} candidates from breast cell lines (as shown in Table~\ref{tab:pathway_ccle_brca_exprSL}) were more consistent with previous obervations, particularly the established role of E-cadherin in cell junctions and the Adherens complex. However, the number of \gls{SLIPT} candidate genes detected in stomach cell lines was insufficient to replicate the findings in breast cell lines to TCGA patient samples. However, \gls{SLIPT} candidates across breast and stomach CCLE cell lines were over-represented (as shown in Table~\ref{tab:pathway_ccle_breast_stad_exprSL}) for similar pathways to breast cell lines with additional support for extracellular matrix pathways including elastic fibres which were replicated with resampling across breast and stomach TCGA analyses and the primary siRNA screen \citet{Telford2015}.
+Synthetic lethal pathways specific to \gls{SLIPT} candidates from breast cell lines (as shown in Table~\ref{tab:pathway_ccle_brca_exprSL}) were more consistent with previous obervations, particularly the established role of E-cadherin in cell junctions and the Adherens complex. However, the number of \gls{SLIPT} candidate genes detected in stomach cell lines was insufficient to replicate the findings in breast cell lines to TCGA patient samples. However, \gls{SLIPT} candidates across breast and stomach CCLE cell lines were over-represented (as shown in Table~\ref{tab:pathway_ccle_breast_stad_exprSL}) for similar pathways to breast cell lines with additional support for extracellular matrix pathways including elastic fibres which were replicated with resampling across breast and stomach TCGA analyses and the primary siRNA screen \citet{Telford2015}
+\fi
 
 \FloatBarrier
 
@@ -1807,11 +1753,13 @@ We have developed a simple, interpretable, computational approach to predict syn
 
 This approach has been applied to robustly detect synthetic lethal pathways for the E-cadherin (\textit{CDH1}) in TCGA breast cancer molecular profiles with comparisons to experimenal screening \citep{Telford2015} in cell lines, and replication in TCGA stomach cancer molecular profiles and across cell types in the cancer cell line encyclopaedia. The pathway replicated across several analyses included extracellular matrix pathways (e.g., elastic fibres formation), cell signalling (including GPCRs), and core gene regulation and translation processes crucial for the growth and proliferation of cancer cells. These pathways show evidence of non-oncogene addiction for \textit{CDH1} deficient cells and present vulnerabilities which may be exploited for specific treatment against \textit{CDH1} mutations in HCGC and sporadic cancers. There was also support for synthetic lethal pathways with \textit{CDH1} in cell adhesion and cytoskeletal processes to which \textit{CDH1} belongs, supporting the finding that synthetic lethality occurs within biological pathways \citep{Kelley2005, Boone2007}.
 
-While translational and immune pathways detected by \gls{SLIPT} were not supported by primary siRNA screening \citep{Telford2015}, these were replicated across various analyses. Due to the differences between an experimenal cell line model \citep{Barretina2012, Chen2014, Fece2015} and patient molecular profiles \citep{TCGA2012, TCGA2014GC}, these would not be expected to be completely concordant. Furthermore, many pathways are difficult to test in an isolated experimental system. Nevertheless, many of the genes and pathways detected by \gls{SLIPT} are suitable to inform further investigations and triage of therapeutic targets against \textit{CDH1} deficient tumours in combination with experimenal screening.  
+While translational and immune pathways detected by \gls{SLIPT} were not supported by primary siRNA screening \citep{Telford2015}, these were replicated across various analyses. Due to the differences between an experimenal cell line model \citep{, Chen2014, Fece2015}%Barretina2012
+and patient molecular profiles \citep{TCGA2012, TCGA2014GC}, these would not be expected to be completely concordant. Furthermore, many pathways are difficult to test in an isolated experimental system. Nevertheless, many of the genes and pathways detected by \gls{SLIPT} are suitable to inform further investigations and triage of therapeutic targets against \textit{CDH1} deficient tumours in combination with experimenal screening.  
 
 A characteristic of gene interaction networks is a scale-free topology leading to highly interacting ‘hub’ genes, these represent important genes in a functional network. Cell surface interactions, the extracellular matrix, and cell signalling (particularly PI3K/AKT signalling) were also found to be synthetic lethal hubs with more interactions detected than other genes. This indicates that these pathways are functionally important to survival of cancer cells since they are subject to high functional redundancy, despite frequent disruptions in cancer. These pathways being involved in a disproportionate number of synthetic lethal interactions is also consistent with their detection for \textit{CDH1}.
 
-Thus synthetic lethal pathways have been identified using TCGA patient molecular profiles, CCLE cancer cell line expression data, and experimenal screening results. Some these were robustly replicated across these datasets and against \textit{CDH1} mutation or expression analysis. However, there remains the need to identify actionable genes within these pathways, relationships with experimental candidates, and how these pathways may affect viability when lost. While the genes identified between these analyses were less concordant the results of the TCGA breast cancer analysis will be used to test pathway structure relationships and further examine the synthetic lethal genes detected in the following Chapter.
+Thus synthetic lethal pathways have been identified using TCGA patient molecular profiles%, CCLE cancer cell line expression data,
+and experimenal screening results. Some these were robustly replicated across these datasets and against \textit{CDH1} mutation or expression analysis. However, there remains the need to identify actionable genes within these pathways, relationships with experimental candidates, and how these pathways may affect viability when lost. While the genes identified between these analyses were less concordant the results of the TCGA breast cancer analysis will be used to test pathway structure relationships and further examine the synthetic lethal genes detected in the following Chapter.
 
 \clearpage
 

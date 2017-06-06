@@ -1178,7 +1178,7 @@ Mutations have different effects as shown by the following examples in cancer ge
 
 \clearpage
 \chapter{Intrinsic Subtyping} \label{appendix:intrinsic_subtypes}
-The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by UCSC \citep{TCGA2012} that were derived from microarray analysis have been compared to the PAM50 results for performing subtyping from \gls{RNA-Seq} data \citep{Parker2009}. As shown in Table~\ref{tab:intrinsic_subtypes}, these subtypes were highly concordant for samples which had both procedures performed upon them ($\chi^2 = 1305.9$, $p = 2.73 \times 10^{-268}$). The main exception were the luminal A samples some of which were reclassified as luminal B or ``normal-like''.
+The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by \gls{UCSC} \citep{TCGA2012} that were derived from microarray analysis have been compared to the \gls{PAM50} results for performing subtyping from \gls{RNA-Seq} data \citep{Parker2009}. As shown in Table~\ref{tab:intrinsic_subtypes}, these subtypes were highly concordant for samples which had both procedures performed upon them ($\chi^2 = 1305.9$, $p = 2.73 \times 10^{-268}$). The main exception were the luminal A samples some of which were reclassified as luminal B or ``normal-like''.
 
 \begin{table*}[!htb]
 \caption{Comparison of Intrinsic Subtypes}
@@ -1187,7 +1187,7 @@ The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by UCSC \ci
 \resizebox{0.8 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{llllll}
- \cellcolor{white} & \multicolumn{5}{c}{\bfseries UCSC Subtype}  \\  
+ \cellcolor{white} & \multicolumn{5}{c}{\bfseries \gls{UCSC} Subtype}  \\  
 \cline{2-6}
  \cellcolor{white} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
 \cline{2-6}
@@ -1197,7 +1197,7 @@ The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by UCSC \ci
 %\end{tabular}
 \\
 %\begin{tabular}{llllll}
- \cellcolor{white} & \multicolumn{5}{c}{\bfseries PAM50 Subtype}  \\
+ \cellcolor{white} & \multicolumn{5}{c}{\bfseries \gls{PAM50} Subtype}  \\
 \cline{2-6}
  \cellcolor{white} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
 \cline{2-6}
@@ -1207,9 +1207,9 @@ The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by UCSC \ci
 %\end{tabular}
 \\
 %\begin{tabular}{lllllll}
- \cellcolor{white} & \multicolumn{5}{c}{\bfseries UCSC Subtype}  \\
+ \cellcolor{white} & \multicolumn{5}{c}{\bfseries \gls{UCSC} Subtype}  \\
    \cline{2-6}
- \textbf{PAM50 Subtype} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
+ \textbf{\gls{PAM50} Subtype} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
    \hline
 \rowcolor{black!10} Basal-like    &  96 &   4 &   2 &   2 &   1 \\ 
 \rowcolor{black!5} HER2-enriched &   0 &  47 &   5 &   3 &   0 \\ 
@@ -1220,14 +1220,14 @@ The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by UCSC \ci
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-The intrinsic subtypes of TCGA breast samples were compared between those provided by UCSC \citep{TCGA2012} from microarray expression to those derived from RNA-Seq data \citep{Parker2009}. Comparisons between these were limited to samples for which both data types were available.
+The intrinsic subtypes of TCGA breast samples were compared between those provided by \gls{UCSC} \citep{TCGA2012} from microarray expression to those derived from RNA-Seq data \citep{Parker2009}. Comparisons between these were limited to samples for which both data types were available.
 \end{tablenotes}
 \end{threeparttable}
 }
 }
 \end{table*} 
 
-The PAM50 subtypes are potentially more accurate given similarity of these subtypes and that the remainder of the subtypes were accurately recapitulated with \gls{RNA-seq} data. Furthermore, UCSC subtypes correctly identified $\sfrac{22}{22}$ normal samples as ``normal-like'' and PAM50 subtyping in \gls{RNA-Seq} data had a success rate of $\sfrac{112}{113}$ (including all of those identified from microarrays). Therefore the PAM50 subtypes (performed on a larger cohort of samples) are appropriate to use for further interpretation, superceeding the UCSC subtypes available for a limited set of samples.
+The \gls{PAM50} subtypes are potentially more accurate given similarity of these subtypes and that the remainder of the subtypes were accurately recapitulated with \gls{RNA-Seq} data. Furthermore, \gls{UCSC} subtypes correctly identified $\sfrac{22}{22}$ normal samples as ``normal-like'' and \gls{PAM50} subtyping in \gls{RNA-Seq} data had a success rate of $\sfrac{112}{113}$ (including all of those identified from microarrays). Therefore the \gls{PAM50} subtypes (performed on a larger cohort of samples) are appropriate to use for further interpretation, superceeding the \gls{UCSC} subtypes available for a limited set of samples.
 
 
 \FloatBarrier
@@ -1310,26 +1310,90 @@ SLIPT partners of \textit{CDH1} with observed and expected numbers of \gls{TCGA}
 \end{table*}
 
 
-%%appendix
-%\label{tab:gene_stad_mtSL}
-
-
-%%appendix
-%\label{tab:pathway_stad_mtSL}
+\begin{table*}[!ht]
+\caption{Pathways for \textit{CDH1} partners from SLIPT in stomach cancer}
+\label{tab:pathway_stad_exprSL}
+\centering
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccc}
+  \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
+  \hline
+  \rowcolor{black!10}
+  Extracellular matrix organization & 241 & 104 & $7.5 \times 10^{-140}$ \\ 
+  \rowcolor{black!5}
+  Hemostasis & 445 & 138 & $1.8 \times 10^{-121}$ \\ 
+  \rowcolor{black!10}
+  Developmental Biology & 432 & 125 & $9.2 \times 10^{-107}$ \\ 
+  \rowcolor{black!5}
+  Axon guidance & 289 &  94 & $1.5 \times 10^{-102}$ \\ 
+  \rowcolor{black!10}
+  Eukaryotic Translation Termination &  84 &  49 & $1.9 \times 10^{-99}$ \\ 
+  \rowcolor{black!5}
+  GPCR ligand binding & 373 & 108 & $3.8 \times 10^{-99}$ \\ 
+  \rowcolor{black!10}
+  Viral mRNA Translation &  82 &  48 & $3.3 \times 10^{-98}$ \\ 
+  \rowcolor{black!5}
+  Formation of a pool of free 40S subunits &  94 &  51 & $3.3 \times 10^{-98}$ \\ 
+  \rowcolor{black!10}
+  Eukaryotic Translation Elongation &  87 &  49 & $1.6 \times 10^{-97}$ \\ 
+  \rowcolor{black!5}
+  Peptide chain elongation &  84 &  48 & $7.2 \times 10^{-97}$ \\ 
+  \rowcolor{black!10}
+  Class A/1 (Rhodopsin-like receptors) & 289 &  90 & $2.7 \times 10^{-96}$ \\ 
+  \rowcolor{black!5}
+  Nonsense Mediated Decay independent of the Exon Junction Complex &  89 &  49 & $3.0 \times 10^{-96}$ \\ 
+  \rowcolor{black!10}
+  Infectious disease & 349 & 100 & $2.6 \times 10^{-94}$ \\ 
+  \rowcolor{black!5}
+  GTP hydrolysis and joining of the 60S ribosomal subunit & 105 &  52 & $3.4 \times 10^{-94}$ \\ 
+  \rowcolor{black!10}
+  L13a-mediated translational silencing of Ceruloplasmin expression & 104 &  51 & $2.8 \times 10^{-92}$ \\ 
+  \rowcolor{black!5}
+  3' -UTR-mediated translational regulation & 104 &  51 & $2.8 \times 10^{-92}$ \\ 
+  \rowcolor{black!10}
+  Neuronal System & 272 &  84 & $8.4 \times 10^{-92}$ \\ 
+  \rowcolor{black!5}
+  SRP-dependent cotranslational protein targeting to membrane & 105 &  51 & $9.5 \times 10^{-92}$ \\ 
+  \rowcolor{black!10}
+  Eukaryotic Translation Initiation & 112 &  52 & $2.0 \times 10^{-90}$ \\ 
+  \rowcolor{black!5}
+  Cap-dependent Translation Initiation & 112 &  52 & $2.0 \times 10^{-90}$ \\ 
+   \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in \gls{SLIPT} partners for \textit{CDH1}.
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
 
 \FloatBarrier
 
-\iffalse
 
-\section{Synthetic Lethal Expression Profiles} \label{appendix:stad_exprSL_clusters}
+\section{Synthetic Lethal Expression Profiles} \label{chapt3:stad_SL_clusters}
 
-Similar to the analysis of synthetic lethal partners in~\ref{chapt3:stad_exprSL_genes} breast cancer, the partners detected for low \textit{CDH1} expression in stomach cancer were also examined for their expression profiles and the pathway composition of gene clusters. Hierachical clustering was performed on SLIPT partners for \textit{CDH1} as showing in Figure~\ref{fig:slipt_expr_stad_mtSL}. Over-representation for Reactome pathways for each of the gene clusters identified is given in Table~\ref{tab:pathway_clusters_stad_mtSL}.
+%The expression profiles of candidate synthetic lethal partners dtected by \gls{SLIPT} and mtSLIPT in stomach cancer were plotted against clinical characteristics as described for breast cancer data in Section~\ref{chapt3:exprSL_clusters} (shown in Figures~\ref{fig:slipt_expr_stad} and~\ref{fig:slipt_expr_stad_mtSL} respectively). As expected the majority of \textit{CDH1} mutant samples had low expression of \textit{CDH1} and were the diffuse type of stomach cancer.
 
-%%appendix
-%\label{fig:slipt_expr_stad_mtSL}
 
-\FloatBarrier
-\fi
+\begin{figure*}[!ht]
+%\begin{mdframed}
+  \centering
+  \resizebox{0.99 \textwidth}{!}{
+    \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png}
+   }
+    \caption[Synthetic lethal expression profiles of stomach samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in TCGA stomach cancer dataset for gene expression of 4,365 candidate partners of E-cadherin (\textit{CDH1}) from \gls{SLIPT} prediction (with significant FDR adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an siRNA screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably diffuse and \textit{CDH1} mutant samples have elevated expression in one or more distinct clusters, although there was less complexity and variation among candidate synthetic lethal partners than in breast data. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
+   %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
+}
+\label{fig:slipt_expr_stad}
+%\end{mdframed}
+\end{figure*}
+
+%The \gls{SLIPT} partners of \textit{CDH1} exhibited similar clustering in staomch cancer to breast cancer, replicating the diverse roles of elevated partner genes in different clinical samples. Specifically (in Figure~\ref{fig:slipt_expr_stad}), the diffuse type stomach cancers had higher expression of the candidate synthetic lethal partners (where \textit{CDH1} has a role as a driver mutation), despite an unbiased clustering. This is consistent with compensating expression of synthetic lethal partners under loss of \textit{CDH1}, as suggested by \citet{Lu2015}. The pathway composition of gene clusters for stomach cancer (shown in Table~\ref{tab:pathway_clusters_stad}) was also highly concordant with breast cancer findings (shown in Table~\ref{tab:pathway_clusters}). These included replicated of translation (Cluster 1), immune functions (Cluster 2), G$_{\alpha s}$ signalling (Cluster 3), and further support for the roles of GPCRs and the extracellular matrix (Cluster 4) in the synthetic lethal partners and functions of \textit{CDH1}, replicated across stomach and breast cancers. Clusters 1 and 4, which had particularly high expression of \gls{SLIPT} candidate partner genes in the diffuse subtype, also had the most significant over-representation of pathways.
+
+%There was less variation between the expression profiles of mtSLIPT partners of \textit{CDH1} in stomach cancer, although clusters were still detectable (as shown in Figure~\ref{fig:slipt_expr_stad_mtSL}). While the genes and pathways detected was lewss significant (due to lower sample size), the composition of clusters was further indicative for the roles of extracellular matrix (including elastic fibres), immune functions, and the cell signalling.
+
 
 \begin{table*}[!hp]
 \caption{Pathway composition for clusters of \textit{CDH1} partners in stomach SLIPT}
@@ -2037,6 +2101,7 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 
 \FloatBarrier
 
+\iffalse
 \chapter{Stomach Mutation Analysis}
 \label{appendix:stad_mtSL}
 
@@ -2884,9 +2949,11 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 \end{threeparttable}
 }
 \end{table*}
+\fi
 
 \FloatBarrier
 
+\iffalse
 \chapter{Global Synthetic Lethality in Stomach Cancer}
 
 \begin{figure*}[!ht]
@@ -3039,6 +3106,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 \FloatBarrier
 
+\iffalse
 \chapter{Replication in cell line encyclopaedia} \label{appendix:CCLE}
 
 
@@ -3366,3 +3434,4 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{table*}
 
 \FloatBarrier
+\fi

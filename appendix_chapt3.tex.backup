@@ -1116,58 +1116,7 @@ Mutations have different effects as shown by the following examples in cancer ge
 %\fi
 
 \clearpage
-\chapter{Intrinsic Subtyping} \label{appendix:intrinsic_subtypes}
-The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by UCSC \citep{TCGA2012} that were derived from microarray analysis have been compared to the PAM50 results for performing subtyping from \gls{RNA-Seq} data \citep{Parker2009}. As shown in Table~\ref{tab:intrinsic_subtypes}, these subtypes were highly concordant for samples which had both procedures performed upon them ($\chi^2 = 1305.9$, $p = 2.73 \times 10^{-268}$). The main exception were the luminal A samples some of which were reclassified as luminal B or ``normal-like''. This is potentially more accurate given similarity of these subtypes and that the remainder of the subtypes were accurately recapitulated with \gls{RNA-seq} data. Furthermore, UCSC subtypes correctly identified $\sfrac{22}{22}$ normal samples as ``normal-like'' and PAM50 subtyping in \gls{RNA-Seq} data had a success rate of $\sfrac{112}{113}$ (including all of those identified from microarrays). Therefore the PAM50 subtypes (performed on a larger cohort of samples) are appropriate to use for further interpretation, superceeding the UCSC subtypes available for a limited set of samples.
-
-\begin{table*}[!htb]
-\caption{Comparison of Intrinsic Subtypes}
-\label{tab:intrinsic_subtypes}
-\noindent\makebox[\textwidth][c]{%               %centering
-\resizebox{0.8 \textwidth}{!}{
-\begin{threeparttable}
-\begin{tabular}{llllll}
- \cellcolor{white} & \multicolumn{5}{c}{\bfseries UCSC Subtype}  \\  
-\cline{2-6}
- \cellcolor{white} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
-\cline{2-6}
-\rowcolor{black!10} \cellcolor{white}
- \cellcolor{white} &    100  &   58  &  232  &  128  &  30  \\
-\cline{2-6}
-%\end{tabular}
-\\
-%\begin{tabular}{llllll}
- \cellcolor{white} & \multicolumn{5}{c}{\bfseries PAM50 Subtype}  \\
-\cline{2-6}
- \cellcolor{white} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
-\cline{2-6}
-\rowcolor{black!10} \cellcolor{white}
- \cellcolor{white} &    208  &   94  &  314  &  334  &  227  \\
-\cline{2-6}
-%\end{tabular}
-\\
-%\begin{tabular}{lllllll}
- \cellcolor{white} & \multicolumn{5}{c}{\bfseries UCSC Subtype}  \\
-   \cline{2-6}
- \textbf{PAM50 Subtype} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
-   \hline
-\rowcolor{black!10} Basal-like    &  96 &   4 &   2 &   2 &   1 \\ 
-\rowcolor{black!5} HER2-enriched &   0 &  47 &   5 &   3 &   0 \\ 
-\rowcolor{black!10} Luminal A     &   1 &   0 & 141 &   1 &   0 \\ 
-\rowcolor{black!5} Luminal B     &   2 &   7 &  49 & 121 &   0 \\ 
-\rowcolor{black!10} Normal-like   &   1 &   0 &  35 &   1 &  29 \\ 
-  \hline
-\end{tabular}
-\begin{tablenotes}
-\raggedright \small
-The intrinsic subtypes of TCGA breast samples were compared between those provided by UCSC \citep{TCGA2012} from microarray expression to those derived from RNA-Seq data \citep{Parker2009}. Comparisons between these were limited to samples for which both data types were available.
-\end{tablenotes}
-\end{threeparttable}
-}
-}
-\end{table*} 
-
-
-\chapter{Metagene Expression Profiles}
+\section{Metagene Expression Profiles}
 \label{appendix:mg_expr_SL}
 
 %\label{fig:metagene_expr_Gatza2011}
@@ -1196,23 +1145,6 @@ The intrinsic subtypes of TCGA breast samples were compared between those provid
 \begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
 \begin{center}
   \resizebox{1 \textwidth}{!}{
-    \includegraphics{CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.png} %original pdf, png for edited
-   }
-   \end{center}
-   \caption[Expression profiles for constituent genes of PI3K]{\small \textbf{Expression profiles for constituent genes of PI3K.} Expression profiles the genes contained in the PI3K gene signature from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors and cancer gene mutations. Samples are separated by \textit{CDH1} expression status and sorted by the metagene. In both cases, the majority of genes were consistent with the direction of the PI3K metagene, although considerable proportion were inversely correlated with the metagene. Normal samples had low PI3K metagene expression and \textit{TP53} mutant samples had high PI3K expression. Although, oncogenic \textit{PIK3CA} and tumour suppressor \textit{PIK3R1} mutations across samples including those with low metagene response.
-}
-\label{fig:metagene_expr_Gatza2011_PI3K}
-\end{minipage}
-%} %close fbox
-} %close centering
-\end{figure*}
-
-\begin{figure*}[!htp]
-\noindent\makebox[\textwidth][c]{%               %centering
-%\noindent\fbox{
-\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
-\begin{center}
-  \resizebox{1 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.png} %original pdf, png for edited
    }
    \end{center}
@@ -1230,24 +1162,6 @@ The intrinsic subtypes of TCGA breast samples were compared between those provid
 \begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
 \begin{center}
   \resizebox{1 \textwidth}{!}{
-    \includegraphics{CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.png} %original pdf, png for edited
-   }
-   \end{center}
-   \caption[Expression profiles for estrogen receptor related genes]{\small \textbf{Expression profiles for estrogen receptor related genes.} Expression profiles the genes contained in the estrogen receptor (ER) gene signature from \citet{Gatza2011} in TCGA breast data, annotated for clinical factors and cancer gene mutations. Samples are separated by \textit{CDH1} expression status and sorted by the metagene. In both cases, the majority of genes were consistent with the direction of the metagene, with very few exceptions being inversely correlated. Estrogen receptor (by antibody staining) negative samples had low  metagene expression, as expected. These were more likely to be ductal and basal subtypes, lacking \textit{CDH1} or \textit{PIK3CA} mutations.
-}
-\label{fig:metagene_expr_Gatza2011_ER}
-\end{minipage}
-%} %close fbox
-} %close centering
-\end{figure*}
-
-
-\begin{figure*}[!htp]
-\noindent\makebox[\textwidth][c]{%               %centering
-%\noindent\fbox{
-\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
-\begin{center}
-  \resizebox{1 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.png} %original pdf, png for edited
    }
    \end{center}
@@ -1258,6 +1172,63 @@ The intrinsic subtypes of TCGA breast samples were compared between those provid
 %} %close fbox
 } %close centering
 \end{figure*}
+
+\FloatBarrier
+
+
+\clearpage
+\chapter{Intrinsic Subtyping} \label{appendix:intrinsic_subtypes}
+The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by \gls{UCSC} \citep{TCGA2012} that were derived from microarray analysis have been compared to the \gls{PAM50} results for performing subtyping from \gls{RNA-Seq} data \citep{Parker2009}. As shown in Table~\ref{tab:intrinsic_subtypes}, these subtypes were highly concordant for samples which had both procedures performed upon them ($\chi^2 = 1305.9$, $p = 2.73 \times 10^{-268}$). The main exception were the luminal A samples some of which were reclassified as luminal B or ``normal-like''.
+
+\begin{table*}[!htb]
+\caption{Comparison of Intrinsic Subtypes}
+\label{tab:intrinsic_subtypes}
+\noindent\makebox[\textwidth][c]{%               %centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{llllll}
+ \cellcolor{white} & \multicolumn{5}{c}{\bfseries \gls{UCSC} Subtype}  \\  
+\cline{2-6}
+ \cellcolor{white} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
+\cline{2-6}
+\rowcolor{black!10} \cellcolor{white}
+ \cellcolor{white} &    100  &   58  &  232  &  128  &  30  \\
+\cline{2-6}
+%\end{tabular}
+\\
+%\begin{tabular}{llllll}
+ \cellcolor{white} & \multicolumn{5}{c}{\bfseries \gls{PAM50} Subtype}  \\
+\cline{2-6}
+ \cellcolor{white} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
+\cline{2-6}
+\rowcolor{black!10} \cellcolor{white}
+ \cellcolor{white} &    208  &   94  &  314  &  334  &  227  \\
+\cline{2-6}
+%\end{tabular}
+\\
+%\begin{tabular}{lllllll}
+ \cellcolor{white} & \multicolumn{5}{c}{\bfseries \gls{UCSC} Subtype}  \\
+   \cline{2-6}
+ \textbf{\gls{PAM50} Subtype} & Basal-like &  HER2-enriched  &  Luminal A  &  Luminal B  &  Normal-like  \\
+   \hline
+\rowcolor{black!10} Basal-like    &  96 &   4 &   2 &   2 &   1 \\ 
+\rowcolor{black!5} HER2-enriched &   0 &  47 &   5 &   3 &   0 \\ 
+\rowcolor{black!10} Luminal A     &   1 &   0 & 141 &   1 &   0 \\ 
+\rowcolor{black!5} Luminal B     &   2 &   7 &  49 & 121 &   0 \\ 
+\rowcolor{black!10} Normal-like   &   1 &   0 &  35 &   1 &  29 \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+The intrinsic subtypes of TCGA breast samples were compared between those provided by \gls{UCSC} \citep{TCGA2012} from microarray expression to those derived from RNA-Seq data \citep{Parker2009}. Comparisons between these were limited to samples for which both data types were available.
+\end{tablenotes}
+\end{threeparttable}
+}
+}
+\end{table*} 
+
+The \gls{PAM50} subtypes are potentially more accurate given similarity of these subtypes and that the remainder of the subtypes were accurately recapitulated with \gls{RNA-seq} data. Furthermore, \gls{UCSC} subtypes correctly identified $\sfrac{22}{22}$ normal samples as ``normal-like'' and \gls{PAM50} subtyping in \gls{RNA-Seq} data had a success rate of $\sfrac{112}{113}$ (including all of those identified from microarrays). Therefore the \gls{PAM50} subtypes (performed on a larger cohort of samples) are appropriate to use for further interpretation, superceeding the \gls{UCSC} subtypes available for a limited set of samples.
+
 
 \FloatBarrier
 
@@ -3068,6 +3039,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 \FloatBarrier
 
+\iffalse
 \chapter{Replication in cell line encyclopaedia} \label{appendix:CCLE}
 
 
@@ -3395,3 +3367,4 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{table*}
 
 \FloatBarrier
+\fi
