@@ -158,7 +158,7 @@
 \BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 158
 \BOOKMARK [1][-]{section.5.5}{Summary}{chapter.5}% 159
 \BOOKMARK [0][-]{chapter.6}{Simulation and Modeling of Synthetic Lethal Pathways}{}% 160
-\BOOKMARK [1][-]{section.6.1}{Comparing methods}{chapter.6}% 161
+\BOOKMARK [1][-]{section.6.1}{Comparing Synthetic Lethal Detection Methods}{chapter.6}% 161
 \BOOKMARK [2][-]{subsection.6.1.1}{Performance of SLIPT and 2 across Quantiles}{section.6.1}% 162
 \BOOKMARK [3][-]{subsubsection.6.1.1.1}{Correlated Query Genes affects Specificity}{subsection.6.1.1}% 163
 \BOOKMARK [2][-]{subsection.6.1.2}{Alternative Synthetic Lethal Detection Strategies}{section.6.1}% 164
@@ -171,63 +171,65 @@
 \BOOKMARK [2][-]{subsection.6.2.2}{Performance with Inhibitions}{section.6.2}% 171
 \BOOKMARK [2][-]{subsection.6.2.3}{Synthetic Lethality across Graph Structures}{section.6.2}% 172
 \BOOKMARK [2][-]{subsection.6.2.4}{Performance within a Simulated Human Genome}{section.6.2}% 173
-\BOOKMARK [1][-]{section.6.3}{Simulations over pathway-based graphs}{chapter.6}% 174
-\BOOKMARK [2][-]{subsection.6.3.1}{Pathway Structures in a Simulated Human Genome}{section.6.3}% 175
-\BOOKMARK [1][-]{section.6.4}{Discussion}{chapter.6}% 176
-\BOOKMARK [2][-]{subsection.6.4.1}{Simulation Procedure}{section.6.4}% 177
-\BOOKMARK [2][-]{subsection.6.4.2}{Design and Performance of SLIPT}{section.6.4}% 178
-\BOOKMARK [2][-]{subsection.6.4.3}{Simulations from Graph Structures}{section.6.4}% 179
-\BOOKMARK [1][-]{section.6.5}{Summary}{chapter.6}% 180
-\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 181
-\BOOKMARK [1][-]{section.7.1}{Synthetic Lethality and CDH1 Biology}{chapter.7}% 182
-\BOOKMARK [2][-]{subsection.7.1.1}{Established Functions of CDH1}{section.7.1}% 183
-\BOOKMARK [2][-]{subsection.7.1.2}{The Molecular Role of CDH1 in Cancer}{section.7.1}% 184
-\BOOKMARK [1][-]{section.7.2}{Significance}{chapter.7}% 185
-\BOOKMARK [2][-]{subsection.7.2.1}{Synthetic Lethality in the Genomic Era}{section.7.2}% 186
-\BOOKMARK [2][-]{subsection.7.2.2}{Clinical Interventions based on Synthetic Lethality}{section.7.2}% 187
-\BOOKMARK [1][-]{section.7.3}{Evaluating the Synthetic Lethality Prediction Tool}{chapter.7}% 188
-\BOOKMARK [2][-]{subsection.7.3.1}{Strength of the Synthetic Lethality Prediction Tool}{section.7.3}% 189
-\BOOKMARK [2][-]{subsection.7.3.2}{Limitations of the Synthetic Lethality Prediction Tool}{section.7.3}% 190
-\BOOKMARK [2][-]{subsection.7.3.3}{Comparisons to Alternative Methods}{section.7.3}% 191
-\BOOKMARK [3][-]{subsubsection.7.3.3.1}{Combined with Experimental Screening}{subsection.7.3.3}% 192
-\BOOKMARK [3][-]{subsubsection.7.3.3.2}{Differences to Computational Methods}{subsection.7.3.3}% 193
-\BOOKMARK [1][-]{section.7.4}{Future Directions}{chapter.7}% 194
-\BOOKMARK [2][-]{subsection.7.4.1}{Refinements Synthetic Lethality Prediction Methods}{section.7.4}% 195
-\BOOKMARK [3][-]{subsubsection.7.4.1.1}{Wider Use of Synthetic Lethality Prediction}{subsection.7.4.1}% 196
-\BOOKMARK [2][-]{subsection.7.4.2}{Validation of Synthetic Lethal Genes and Pathways}{section.7.4}% 197
-\BOOKMARK [3][-]{subsubsection.7.4.2.1}{Pre-clinical and Clinical Testing}{subsection.7.4.2}% 198
-\BOOKMARK [2][-]{subsection.7.4.3}{Application to Further Genes and Pathways}{section.7.4}% 199
-\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 200
-\BOOKMARK [0][-]{section*.116}{References}{}% 201
-\BOOKMARK [0][-]{appendix.A}{Sample Quality}{}% 202
-\BOOKMARK [1][-]{section.A.1}{Sample Correlation}{appendix.A}% 203
-\BOOKMARK [1][-]{section.A.2}{Replicate Samples in TCGA Breast}{appendix.A}% 204
-\BOOKMARK [0][-]{appendix.B}{Software Used for Thesis}{}% 205
-\BOOKMARK [0][-]{appendix.C}{Mutation Analysis in Breast Cancer}{}% 206
-\BOOKMARK [1][-]{section.C.1}{Synthetic Lethal Genes and Pathways}{appendix.C}% 207
-\BOOKMARK [1][-]{section.C.2}{Synthetic Lethal Expression Profiles}{appendix.C}% 208
-\BOOKMARK [1][-]{section.C.3}{Comparison to Primary Screen}{appendix.C}% 209
-\BOOKMARK [2][-]{subsection.C.3.1}{Resampling Analysis}{section.C.3}% 210
-\BOOKMARK [1][-]{section.C.4}{Compare SLIPT genes}{appendix.C}% 211
-\BOOKMARK [1][-]{section.C.5}{Metagene Analysis}{appendix.C}% 212
-\BOOKMARK [1][-]{section.C.6}{Expression of Somatic Mutations}{appendix.C}% 213
-\BOOKMARK [1][-]{section.C.7}{Metagene Expression Profiles}{appendix.C}% 214
-\BOOKMARK [0][-]{appendix.D}{Intrinsic Subtyping}{}% 215
-\BOOKMARK [0][-]{appendix.E}{Stomach Expression Analysis}{}% 216
-\BOOKMARK [1][-]{section.E.1}{Synthetic Lethal Genes and Pathways}{appendix.E}% 217
-\BOOKMARK [1][-]{section.E.2}{Comparison to Primary Screen}{appendix.E}% 218
-\BOOKMARK [2][-]{subsection.E.2.1}{Resampling Analysis}{section.E.2}% 219
-\BOOKMARK [1][-]{section.E.3}{Metagene Analysis}{appendix.E}% 220
-\BOOKMARK [0][-]{appendix.F}{Synthetic Lethal Genes in Pathways}{}% 221
-\BOOKMARK [0][-]{appendix.G}{Pathway Connectivity for Mutation SLIPT}{}% 222
-\BOOKMARK [0][-]{appendix.H}{Information Centrality for Gene Essentiality}{}% 223
-\BOOKMARK [0][-]{appendix.I}{Pathway Structure for Mutation SLIPT}{}% 224
-\BOOKMARK [0][-]{appendix.J}{Performance of SLIPT and 2}{}% 225
-\BOOKMARK [1][-]{subsection.J.0.1}{Correlated Query Genes affects Specificity}{appendix.J}% 226
-\BOOKMARK [0][-]{appendix.K}{Graph Structures}{}% 227
-\BOOKMARK [1][-]{section.K.1}{Simulations from Graph Structures}{appendix.K}% 228
-\BOOKMARK [1][-]{section.K.2}{Simulations from Inhibiting Graph Structures}{appendix.K}% 229
-\BOOKMARK [1][-]{section.K.3}{Simulation across Graph Structures}{appendix.K}% 230
-\BOOKMARK [1][-]{section.K.4}{Graph Structure Simulations with 20K genes}{appendix.K}% 231
-\BOOKMARK [2][-]{subsection.K.4.1}{Inhibiting Graph Structure Simulations with 20K genes}{section.K.4}% 232
-\BOOKMARK [1][-]{section.K.5}{Simations from Pathway Graph Structures}{appendix.K}% 233
+\BOOKMARK [1][-]{section.6.3}{Simulations in More Complex Graph Structures}{chapter.6}% 174
+\BOOKMARK [2][-]{subsection.6.3.1}{Simulations over Pathway-based Graphs}{section.6.3}% 175
+\BOOKMARK [2][-]{subsection.6.3.2}{Pathway Structures in a Simulated Human Genome}{section.6.3}% 176
+\BOOKMARK [1][-]{section.6.4}{Discussion}{chapter.6}% 177
+\BOOKMARK [2][-]{subsection.6.4.1}{Simulation Procedure}{section.6.4}% 178
+\BOOKMARK [2][-]{subsection.6.4.2}{Comparing Methods with Simulated Data}{section.6.4}% 179
+\BOOKMARK [2][-]{subsection.6.4.3}{Design and Performance of SLIPT}{section.6.4}% 180
+\BOOKMARK [2][-]{subsection.6.4.4}{Simulations from Graph Structures}{section.6.4}% 181
+\BOOKMARK [1][-]{section.6.5}{Summary}{chapter.6}% 182
+\BOOKMARK [0][-]{chapter.7}{Discussion}{}% 183
+\BOOKMARK [1][-]{section.7.1}{Synthetic Lethality and CDH1 Biology}{chapter.7}% 184
+\BOOKMARK [2][-]{subsection.7.1.1}{Established Functions of CDH1}{section.7.1}% 185
+\BOOKMARK [2][-]{subsection.7.1.2}{The Molecular Role of CDH1 in Cancer}{section.7.1}% 186
+\BOOKMARK [1][-]{section.7.2}{Significance}{chapter.7}% 187
+\BOOKMARK [2][-]{subsection.7.2.1}{Synthetic Lethality in the Genomic Era}{section.7.2}% 188
+\BOOKMARK [2][-]{subsection.7.2.2}{Clinical Interventions based on Synthetic Lethality}{section.7.2}% 189
+\BOOKMARK [1][-]{section.7.3}{Evaluating the Synthetic Lethality Prediction Tool}{chapter.7}% 190
+\BOOKMARK [2][-]{subsection.7.3.1}{Strength of the Synthetic Lethality Prediction Tool}{section.7.3}% 191
+\BOOKMARK [2][-]{subsection.7.3.2}{Limitations of the Synthetic Lethality Prediction Tool}{section.7.3}% 192
+\BOOKMARK [2][-]{subsection.7.3.3}{Comparisons to Alternative Methods}{section.7.3}% 193
+\BOOKMARK [3][-]{subsubsection.7.3.3.1}{Combined with Experimental Screening}{subsection.7.3.3}% 194
+\BOOKMARK [3][-]{subsubsection.7.3.3.2}{Differences to Computational Methods}{subsection.7.3.3}% 195
+\BOOKMARK [1][-]{section.7.4}{Future Directions}{chapter.7}% 196
+\BOOKMARK [2][-]{subsection.7.4.1}{Refinements Synthetic Lethality Prediction Methods}{section.7.4}% 197
+\BOOKMARK [3][-]{subsubsection.7.4.1.1}{Wider Use of Synthetic Lethality Prediction}{subsection.7.4.1}% 198
+\BOOKMARK [2][-]{subsection.7.4.2}{Validation of Synthetic Lethal Genes and Pathways}{section.7.4}% 199
+\BOOKMARK [3][-]{subsubsection.7.4.2.1}{Pre-clinical and Clinical Testing}{subsection.7.4.2}% 200
+\BOOKMARK [2][-]{subsection.7.4.3}{Application to Further Genes and Pathways}{section.7.4}% 201
+\BOOKMARK [0][-]{chapter.8}{Conclusion}{}% 202
+\BOOKMARK [0][-]{section*.112}{References}{}% 203
+\BOOKMARK [0][-]{appendix.A}{Sample Quality}{}% 204
+\BOOKMARK [1][-]{section.A.1}{Sample Correlation}{appendix.A}% 205
+\BOOKMARK [1][-]{section.A.2}{Replicate Samples in TCGA Breast}{appendix.A}% 206
+\BOOKMARK [0][-]{appendix.B}{Software Used for Thesis}{}% 207
+\BOOKMARK [0][-]{appendix.C}{Mutation Analysis in Breast Cancer}{}% 208
+\BOOKMARK [1][-]{section.C.1}{Synthetic Lethal Genes and Pathways}{appendix.C}% 209
+\BOOKMARK [1][-]{section.C.2}{Synthetic Lethal Expression Profiles}{appendix.C}% 210
+\BOOKMARK [1][-]{section.C.3}{Comparison to Primary Screen}{appendix.C}% 211
+\BOOKMARK [2][-]{subsection.C.3.1}{Resampling Analysis}{section.C.3}% 212
+\BOOKMARK [1][-]{section.C.4}{Compare SLIPT genes}{appendix.C}% 213
+\BOOKMARK [1][-]{section.C.5}{Metagene Analysis}{appendix.C}% 214
+\BOOKMARK [1][-]{section.C.6}{Expression of Somatic Mutations}{appendix.C}% 215
+\BOOKMARK [1][-]{section.C.7}{Metagene Expression Profiles}{appendix.C}% 216
+\BOOKMARK [0][-]{appendix.D}{Intrinsic Subtyping}{}% 217
+\BOOKMARK [0][-]{appendix.E}{Stomach Expression Analysis}{}% 218
+\BOOKMARK [1][-]{section.E.1}{Synthetic Lethal Genes and Pathways}{appendix.E}% 219
+\BOOKMARK [1][-]{section.E.2}{Comparison to Primary Screen}{appendix.E}% 220
+\BOOKMARK [2][-]{subsection.E.2.1}{Resampling Analysis}{section.E.2}% 221
+\BOOKMARK [1][-]{section.E.3}{Metagene Analysis}{appendix.E}% 222
+\BOOKMARK [0][-]{appendix.F}{Synthetic Lethal Genes in Pathways}{}% 220
+\BOOKMARK [0][-]{appendix.G}{Pathway Connectivity for Mutation SLIPT}{}% 221
+\BOOKMARK [0][-]{appendix.H}{Information Centrality for Gene Essentiality}{}% 222
+\BOOKMARK [0][-]{appendix.I}{Pathway Structure for Mutation SLIPT}{}% 223
+\BOOKMARK [0][-]{appendix.J}{Performance of SLIPT and 2}{}% 224
+\BOOKMARK [1][-]{section.J.1}{Correlated Query Genes affects Specificity}{appendix.J}% 225
+\BOOKMARK [0][-]{appendix.K}{Graph Structures}{}% 226
+\BOOKMARK [1][-]{section.K.1}{Simulations from Simple Graph Structures}{appendix.K}% 227
+\BOOKMARK [2][-]{subsection.K.1.1}{Simulations from Inhibiting Graph Structures}{section.K.1}% 228
+\BOOKMARK [1][-]{section.K.2}{Simulation across Graph Structures}{appendix.K}% 229
+\BOOKMARK [1][-]{section.K.3}{Simulations from Complex Graph Structures}{appendix.K}% 230
+\BOOKMARK [2][-]{subsection.K.3.1}{Simulations from Complex Inhibiting Graphs}{section.K.3}% 231
+\BOOKMARK [1][-]{section.K.4}{Simulations from Pathway Graph Structures}{appendix.K}% 232

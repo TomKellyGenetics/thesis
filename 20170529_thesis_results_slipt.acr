@@ -21,6 +21,7 @@
 \providecommand*\glsXpageXhypersl[2]{\setentrycounter[#1]{page}\hypersl{#2}}
 \providecommand*\glsXpageXhypersc[2]{\setentrycounter[#1]{page}\hypersc{#2}}
 \providecommand*\glsXpageXhyperemph[2]{\setentrycounter[#1]{page}\hyperemph{#2}}
+\providecommand*\glsXpageXglsignore[2]{\setentrycounter[#1]{page}\glsignore{#2}}
 \begin{theglossary}\glossaryheader
 \glsgroupheading{A}\relax\glsresetentrylist
 \glossentry{ANOVA}{\glossaryentrynumbers{\relax 
@@ -53,13 +54,14 @@
 \glsXpageXglsnumberformat{}{138}\delimN 
 \glsXpageXglsnumberformat{}{139}\delimN 
 \glsXpageXglsnumberformat{}{145}\delimR 
-\glsXpageXglsnumberformat{}{152}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{153}}}\glsgroupskip
 \glsgroupheading{T}\relax\glsresetentrylist
 \glossentry{TCGA}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{115}\delimN 
 \glsXpageXglsnumberformat{}{117}\delimN 
 \glsXpageXglsnumberformat{}{144}\delimN 
-\glsXpageXglsnumberformat{}{146}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{146}\delimN 
+\glsXpageXglsnumberformat{}{149}}}\glsgroupskip
 \glsgroupheading{U}\relax\glsresetentrylist
 \glossentry{UCSC}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{139}\delimN 

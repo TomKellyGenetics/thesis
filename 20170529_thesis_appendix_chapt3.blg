@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: 20170529_thesis_appendix_chapt3.aux
 A level-1 auxiliary file: intro.aux
@@ -6,7 +6,11 @@ A level-1 auxiliary file: methods.aux
 A level-1 auxiliary file: methods_dev.aux
 A level-1 auxiliary file: chapt3.aux
 A level-1 auxiliary file: chapt4.aux
-A level-1 auxiliary file: chapt5.aux
+I couldn't open auxiliary file chapt5.aux
+---line 35 of file 20170529_thesis_appendix_chapt3.aux
+ : \@input{chapt5.aux
+ :                   }
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: chapt6.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: mycustom.bst
@@ -22,7 +26,7 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both volume and number fields in Erdos1960
 You've used 270 entries,
             3105 wiz_defined-function locations,
-            2381 strings with 175589 characters,
+            2381 strings with 175587 characters,
 and the built_in function-call counts, 255626 in all, are:
 = -- 22830
 > -- 10791
@@ -61,4 +65,4 @@ warning$ -- 1
 while$ -- 1092
 width$ -- 0
 write$ -- 3792
-(There was 1 warning)
+(There was 1 error message)
