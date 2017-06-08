@@ -12,7 +12,7 @@
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" />
 <!-- html,xhtml -->
 <meta name="src" content="20170529_thesis_introduction.tex" />
-<meta name="date" content="2017-06-02 18:40:00" />
+<meta name="date" content="2017-06-08 20:18:00" />
 <link rel="stylesheet" type="text/css" href="20170529_thesis_introduction.css" />
 </head>
 <body 
@@ -128,18 +128,14 @@ href="#x1-580001" id="QQ2-1-65">Breast Cancers and Invasion</a></span>
 href="#x1-590003" id="QQ2-1-66">Hereditary Diffuse Gastric Cancer and
 Lobular Breast Cancer</a></span> <br />  <span
 class="subsectionToc">1.3.4 <a 
-href="#x1-600004" id="QQ2-1-67">Somatic Mutations</a></span>
-<br />   <span class="subsubsectionToc">1.3.4.1 <a 
-href="#x1-610001" id="QQ2-1-68">Mutation Rate</a></span> <br />   <span
-class="subsubsectionToc">1.3.4.2 <a 
-href="#x1-620002" id="QQ2-1-69">Co-occurring Mutations</a></span>
-<br />  <span class="subsectionToc">1.3.5 <a 
-href="#x1-630005" id="QQ2-1-70">Models of <span class="cmti-12">CDH1
+href="#x1-600004" id="QQ2-1-67">Models of <span class="cmti-12">CDH1
 </span>loss in cell lines</a></span> <br /> <span class="sectionToc">1.4
 <a 
-href="#x1-640004" id="QQ2-1-71">Summary and Research Direction of
-Thesis</a></span> <br /><span class="chapterToc"><a 
-href="#Q1-1-72"> References</a></span>
+href="#x1-610004" id="QQ2-1-68">Summary and Research Direction of
+Thesis</a></span> <br />  <span class="subsectionToc">1.4.1 <a 
+href="#x1-620001" id="QQ2-1-69">Thesis Aims</a></span> <br /><span
+class="chapterToc"><a 
+href="#Q1-1-70"> References</a></span>
 
 </div>
 
@@ -1004,37 +1000,8 @@ class="td11">
 <span class="titlemark">Chapter 1</span><br /><a 
  id="x1-60001"></a>Introduction
 </h2>
-<!--l. 11-->
-<p class="noindent">
-The thesis presents research into genetic interactions based on <a 
-href="#glo:genomics">genomics</a> data and <a 
-href="#glo:bioinformatics">bioinformatics</a> approaches. This Chapter
-introduces the recent developments in <a 
-href="#glo:genomics">genomics</a> and <a 
-href="#glo:bioinformatics">bioinformatics</a>, particularly in their
-application to cancer research. <a 
-href="#glo:synthetic lethal">Synthetic lethal</a> interactions are a
-long standing area of research in genetics in both model organisms and
-cancer biology. Various reasons why these interactions are of interest
-in fundamental and translational biology will be outlined but first
-these and similar interactions will be defined. A <a 
-href="#glo:bioinformatics">bioinformatics</a> approach to <a 
-href="#glo:synthetic lethal">synthetic lethal</a> interactions enables
-much wider exploration of the inter-connected nature of genes and
-proteins within a cancer cell than previous candidate-based approaches.
-An alternative approach is experimental screening which will be
-presented and contrasted with <a 
-href="#glo:bioinformatics">bioinformatics</a> approaches in more detail.
-An emerging application of <a 
-href="#glo:synthetic lethal">synthetic lethality</a> is the design of
-treatments with specificity against loss of function mutations in tumour
-suppressor genes. <a 
-href="#glo:E-cadherin">E-cadherin</a> (encoded by <span
-class="cmti-12">CDH1 </span>) is a prime example of this which will be
-the focus of the analysis in this thesis and as such the role of this
-gene in cellular and cancer biology will be briefly reviewed. <a 
+<a 
  id="x1-6001r1"></a>
-</p>
 <h3 class="sectionHead">
 <span class="titlemark">1.1 </span> <a 
  id="x1-70001"></a>Cancer Research in the Post-Genomic Era
@@ -1079,10 +1046,9 @@ adopted in healthcare and oncology. Here we outline the <a
 href="#glo:genomics">genomics</a> technologies and <a 
 href="#glo:bioinformatics">bioinformatics</a> approaches which have led
 to availability of <a 
-href="#glo:genomics">genomics</a> data and techiques used in
-
-this thesis and potential for applications in cancer research or the
-clinic in the future. <a 
+href="#glo:genomics">genomics</a> data and techiques used in this thesis
+and potential for applications in cancer research or the clinic in the
+future. <a 
  id="x1-7001r1"></a>
 </p>
 <h4 class="subsectionHead">
@@ -1112,13 +1078,14 @@ href="#XFerlay2015">Ferlay <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XFerlay2015">2015</a>). Breast and stomach cancers are among the
 5 most frequent cancers globally, with breast cancer affecting women
-more than other cancer tissue types. Breast cancer has an estimated
-annual incidence of 1.6 million cases and mortality of 520 thousand
-people. Stomach cancer has an estimated annual incidence of 950 thousand
-cases and a mortality of 723 thousand people. Cancer is also a major
-health concern here in New Zealand, with 19.1 thousand people (including
-2.5 thousand cases of breast cancer and 370 cases of stomach cancer)
-diagnosed annually (<a 
+more than other
+
+cancer tissue types. Breast cancer has an estimated annual incidence of
+1.6 million cases and mortality of 520 thousand people. Stomach cancer
+has an estimated annual incidence of 950 thousand cases and a mortality
+of 723 thousand people. Cancer is also a major health concern here in
+New Zealand, with 19.1 thousand people (including 2.5 thousand cases of
+breast cancer and 370 cases of stomach cancer) diagnosed annually (<a 
 href="#XCIX2013">Hanna</a>, <a 
 href="#XCIX2013">2003</a>), among the highest incidence
 (age-standardised per capita) of cancer in the world (<a 
@@ -1147,17 +1114,15 @@ organ systems. These approaches can be effective against certain
 cancers, particularly in early stage cancer or in patients with
 particular subtypes (such as acute myeloid leukaemia) which respond well
 to modern treatment regimens. Thus early diagnosis is important to
-patient survival and quality of life.
-
-National screening programs (which prioritise patients with a high risk
-of cancer) therefore aim to diagnose cancers early and subtypes more
-accurately. Therefore identification of patients with genetic variants
-or family histories (for inclusion in national databases) for high risk
-of particular cancers is an important health issue, particularly where
-effective interventions exist if these cancers are diagnosed early. Thus
-high risk individuals being regularly monitored for some cancers are
-sometimes offered preventative surgery or treatment for pre-cancerous
-tissue (<a 
+patient survival and quality of life. National screening programs (which
+prioritise patients with a high risk of cancer) therefore aim to
+diagnose cancers early and subtypes more accurately. Therefore
+identification of patients with genetic variants or family histories
+(for inclusion in national databases) for high risk of particular
+cancers is an important health issue, particularly where effective
+interventions exist if these cancers are diagnosed early. Thus high risk
+individuals being regularly monitored for some cancers are sometimes
+offered preventative surgery or treatment for pre-cancerous tissue (<a 
 href="#XGuilford2010">Guilford <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XGuilford2010">2010</a>; <a 
@@ -1179,11 +1144,12 @@ href="#XKaelin2009">2009</a>). Since surveillence preventative surgery
 preventing cancers and may impact on quality of life, depending on the
 cancer tissue types they are at risk of, alternative treatment
 strategies based on molecular biology and other fields are being
-investigated. These alternatives include immunological, endocrine, and
-targeted therapeutics, with a particular interest in treatments with
-specificity against cancer cells and wider applications (i.e., tolerable
-effective doses in applciations as a chemopreventative or against
-advanced stage cancers). <a 
+investigated. These alternatives include
+
+immunological, endocrine, and targeted therapeutics, with a particular
+interest in treatments with specificity against cancer cells and wider
+applications (i.e., tolerable effective doses in applciations as a
+chemopreventative or against advanced stage cancers). <a 
  id="x1-8001r1"></a>
 </p>
 <h5 class="subsubsectionHead">
@@ -1217,9 +1183,8 @@ tumour growth and invasion, or “tumour suppressors” which are
 inactivated in cancers, removing cellular regulation and genomic
 maintenance functions. The mutations which cause cancers accumulate with
 age and have been suggested to be inevitably coupled with aging due to
-the association of cancer incidence with the stem
-
-cell divisions in which mutations could occur across tissue types (<a 
+the association of cancer incidence with the stem cell divisions in
+which mutations could occur across tissue types (<a 
 href="#XTomasetti2015">Tomasetti and Vogelstein</a>, <a 
 href="#XTomasetti2015">2015</a>).
 </p>
@@ -1248,6 +1213,7 @@ href="#glo:E-cadherin">E-cadherin</a> mutation in metastasis or p53
 mutation in genomic instability (<a 
 href="#XHanahan2000">Hanahan and Weinberg</a>, <a 
 href="#XHanahan2000">2000</a>), will be an important step in
+
 understanding and inhibiting cancer with the next generation of
 genomically-informed treatments.
 </p>
@@ -1288,7 +1254,6 @@ href="#XHerschkowitz2007">Herschkowitz <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em></a>, <a 
 href="#XHerschkowitz2007">2007</a>) and stimulated further
 investigations into subtyping of breast cancers by molecular properties.
-
 </p>
 <!--l. 51-->
 <p class="indent">
@@ -1322,7 +1287,9 @@ href="#XGatza2010">Gatza <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XGatza2010">2010</a>). A robust approach to measuring pathway
 activation in cancer is with a“metagene” which gives a consistent signal
-as a consensus of expression across genes even if they are inversely
+as a
+
+consensus of expression across genes even if they are inversely
 correlated (<a 
 href="#XAnjomshoaa2008">Anjomshoaa <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em></a>, <a 
@@ -1374,9 +1341,7 @@ href="#XGatza2014">2014</a>) extend these analyses include 52 pathway
 signatures from previous publications in breast cancer, replicating
 known characteristics (such as hormone re) of each subtype and
 identifying novel subtype-specific driver genes of proliferation by
-analysis of microarray
-
-expression from 476 from <a 
+analysis of microarray expression from 476 from <a 
 href="#glo:TCGA">The Cancer Genome Atlas (TCGA)</a>. In addition to
 distinct biological functions driving growth of breast cancer subtypes,
 these molecular subtypes provide a rational approach based on molecular
@@ -1468,12 +1433,11 @@ class="cmti-12"> al.</span></em></a>, <a
 href="#XLander2001">2001</a>). This particular project generated
 significant public interest due to it being a landmark achievement, the
 first of it’s scale, and some controversial findings. Namely, the number
-of genes discovered (particularly those
-
-specific to vertebrates) was much lower than most estimates for a genome
-of it’s size and the number of repetitious transposon elements was very
-high. Even the figure of 30–40,000 genes given by the original
-publication is now regarded to be an overestimate (<a 
+of genes discovered (particularly those specific to vertebrates) was
+much lower than most estimates for a genome of it’s size and the number
+of repetitious transposon elements was very high. Even the figure of
+30–40,000 genes given by the original publication is now regarded to be
+an overestimate (<a 
 href="#XEzkurdia2014">Ezkurdia <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XEzkurdia2014">2014</a>; <a 
@@ -1498,6 +1462,7 @@ href="#glo:genomics">genomics</a> projects have flourished since then,
 the need in turn for systematic means of interpreting data of such scale
 and for the interdisciplinary expertise to do so has only grown. <a 
  id="x1-11001r13"></a>
+
 </p>
 <h5 class="subsubsectionHead">
 <span class="titlemark">1.1.2.2 </span> <a 
@@ -1543,7 +1508,6 @@ href="#XStratton2009">2009</a>). <a
 </h4>
 <a 
  id="x1-13001r14"></a>
-
 <h5 class="subsubsectionHead">
 <span class="titlemark">1.1.3.1 </span> <a 
  id="x1-140001"></a>DNA Sequencing and Genotyping Technologies
@@ -1576,10 +1540,11 @@ href="#XMaxam1977">Maxam and Gilbert</a>, <a
 href="#XMaxam1977">1977</a>), which required more radioactive and toxic
 reactants. The <a 
 href="#glo:Sanger">Sanger</a> methodology has relatively long read
-length (particularly compared to early versions of more recent
-technologies), with read lengths of 500–700 base pairs accurately
-sequenced in most applications, usually following targeted amplification
-with <a 
+length (particularly compared to
+
+early versions of more recent technologies), with read lengths of
+500–700 base pairs accurately sequenced in most applications, usually
+following targeted amplification with <a 
 href="#glo:PCR">PCR</a>. <a 
 href="#glo:Sanger">Sanger</a> sequencing by gel electrophoresis takes
 around 6-8 hours and has been further refined with the “capillary”
@@ -1614,9 +1579,8 @@ used for smaller scale experiments and as a “gold standard” for
 measuring gene expression (<a 
 href="#XAdamski2014">Adamski <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
-href="#XAdamski2014">2014</a>). This also represents a
-
-shift in the application of <a 
+href="#XAdamski2014">2014</a>). This also represents a shift in the
+application of <a 
 href="#glo:qPCR">qPCR</a> and sequencing technology, where the primary
 interest is quantifying the amount of input material (by the rate of
 amplification to a certain level) rather than the qualitative nature of
@@ -1648,7 +1612,9 @@ such as genotype, expression, or methylation across many genes, making
 it feasible to do so over a statistically meaningful number of samples.
 Microarrays are manufactured with probes which measure binding of
 particular nucleotide sequences to either quantitatively detect the
-presence of a sequence such as a <a 
+presence of a sequence
+
+such as a <a 
 href="#glo:SNP">single nucleotide polymorphism (SNP)</a> or quantify DNA
 copy number, gene expression, or DNA CpG methylation. Microarray
 technologies have popularised “genome scale” studies of genetic
@@ -1686,10 +1652,8 @@ href="#glo:genomics">genomics</a> data from these studies. This <a
 href="#glo:NGS">“Next-Generation Sequencing” (NGS)</a> expands not only
 gene expression studies (compared to microarrays) but extends to genome
 sequencing <span class="cmti-12">de novo </span>for previously unknown
-genome and transcriptome
-
-sequences at an unprecedented scale. This has been a particularly
-important technological revolution in <a 
+genome and transcriptome sequences at an unprecedented scale. This has
+been a particularly important technological revolution in <a 
 href="#glo:genomics">genomics</a>, as the cost and time of genome
 sequencing has dropped dramatically and enabled sequencing projects of
 far more samples and applications beyond the Human Genome Project.
@@ -1712,10 +1676,12 @@ href="#glo:NGS">NGS</a> data can be more technically difficult. While
 methods developed for analysing microarray data can be repurposed for
 sequence analysis in many cases, more <a 
 href="#glo:bioinformatics">bioinformatics</a> expertise is required
-particularly to handle the raw read data and changing approaches for
-various developments in sequencing technologies. One of the main
-computational challenges is the assembly of reads or mapping to a
-reference genome due to the inherently small reads of most <a 
+particularly to
+
+handle the raw read data and changing approaches for various
+developments in sequencing technologies. One of the main computational
+challenges is the assembly of reads or mapping to a reference genome due
+to the inherently small reads of most <a 
 href="#glo:NGS">NGS</a> technologies compared to the Sanger methodology.
 Furthermore, there are fewer software releases and best practices
 established specifically for <a 
@@ -1748,7 +1714,6 @@ href="#glo:exome">exome</a> analysis or <a
 href="#glo:RRBS">reduced representation bisulfite sequencing (RRBS)</a>,
 focuses on sequencing DNA sequences and methylation levels of CpG sites
 near known genes to reduce cost, noise, and incidental findings.
-
 </p>
 <!--l. 110-->
 <p class="indent">
@@ -1775,7 +1740,9 @@ already characterised sequence or functions, do not need to be updated
 with new probes for each genome annotation release, and do not require a
 reference genome at all for new species. A “transcriptome” can be
 assembled <span class="cmti-12">de novo </span>for an expression study
-in any organism by sequencing the mRNA extracted from a cell. <a 
+in any organism by sequencing the mRNA extracted from a cell.
+
+<a 
  id="x1-16001r1"></a>
 </p>
 <a 
@@ -1821,9 +1788,7 @@ href="#glo:proteome">proteome</a> and <a
 href="#glo:metabolome">metabolome</a> respectively. These “<a 
 href="#glo:omics">omics</a>” technologies are applicable across a wide
 range of biomolecules in a cell and these “molecular profiles” are
-produced in many experimental laboratories.
-
-<a 
+produced in many experimental laboratories. <a 
  id="x1-17001r19"></a>
 </p>
 <a 
@@ -1845,9 +1810,10 @@ sequencing with the economies of scale with the Hi-Seq X 10 claiming to
 produce a human genome (with 30<span class="cmsy-10x-x-120">×
 </span>coverage) for less than US<span class="tcrm-1200">\$</span>1000,
 the first platform to achieve this long-standing goal in <a 
-href="#glo:genomics">genomics</a>. The high-throughput of Illumina
-sequencing also makes deep sequencing for high coverage, high quality
-consensus reads, and sensitive <a 
+href="#glo:genomics">genomics</a>. The
+
+high-throughput of Illumina sequencing also makes deep sequencing for
+high coverage, high quality consensus reads, and sensitive <a 
 href="#glo:RNA-Seq">RNA-Seq</a> experiments feasible. Illumina
 sequencing now has a dominating market share of the <a 
 href="#glo:NGS">NGS</a> technologies. Their Hi-Seq platforms were used
@@ -1884,9 +1850,7 @@ href="#glo:genomics">genomics</a> projects and methods to make
 inferences from <a 
 href="#glo:RNA-Seq">RNA-Seq</a> experiments could feasibly be applied to
 many other studies based on these current (or similar future)
-technologies.
-
-<a 
+technologies. <a 
  id="x1-18001r18"></a>
 </p>
 <h5 class="subsubsectionHead">
@@ -1911,8 +1875,10 @@ of “theoretical” or “computational biology” which existed prior to <a
 href="#glo:genomics">genomics</a> data, focusing on modelling and
 simulating aspects of biology without necessarily addressing the <a 
 href="#glo:genomics">genomics</a> data or detecting the phenomena in
-nature, extending beyond genetics to cell modelling, neuroscience,
-cancer development, ecology, and evolution.
+nature, extending
+
+beyond genetics to cell modelling, neuroscience, cancer development,
+ecology, and evolution.
 </p>
 <!--l. 156-->
 <p class="indent">
@@ -1957,7 +1923,6 @@ class="cmti-12"> al.</span></em></a>, <a
 href="#XFANTOM2001">2001</a>; <a 
 href="#XENCODE2004">ENCODE</a>, <a 
 href="#XENCODE2004">2004</a>) and to human populations with an interest
-
 variability between individuals and health or disease risk (<a 
 href="#XHapMap2003">HapMap</a>, <a 
 href="#XHapMap2003">2003</a>; <a 
@@ -1992,9 +1957,11 @@ gene expression datasets, originally developed for microarray data but
 <a 
 href="#glo:RNA-Seq">RNA-Seq</a> data is now supported by some platforms.
 They are repositories for researchers to deposit, share, and access gene
-expression data, serving as a resource to support ongoing research where
-larger datasets than would were previously accessible for many
-individual laboratories are available (<a 
+expression data, serving as
+
+a resource to support ongoing research where larger datasets than would
+were previously accessible for many individual laboratories are
+available (<a 
 href="#XRung2013">Rung and Brazma</a>, <a 
 href="#XRung2013">2013</a>). These resources cover not only DNA sequence
 across the genome but also molecular profiles of other factors by
@@ -2031,7 +1998,6 @@ was noticed, even in the early days of <a
 href="#glo:genomics">genomics</a> (<a 
 href="#XDickson1999">Dickson</a>, <a 
 href="#XDickson1999">1999</a>). The Cancer Genome Project (CGP) based at
-
 Wellcome Trust Sanger Institute in the UK were among the first to launch
 investigations into cancer after the publication of the Human Genome,
 using this genome sequence, consensus across the cancer research
@@ -2047,6 +2013,7 @@ samples, both “oncogenes” and “tumour suppressors” which are activated
 and inactivated respectively in cancers. This project is ongoing and the
 UK continues to be involved in international sequencing initiatives and
 those focused on particular tissue types.
+
 </p>
 <!--l. 175-->
 <p class="indent">
@@ -2083,7 +2050,7 @@ href="#glo:NHGRI">National Human Genome Research Institute (NHGRI)</a>
 of the <a 
 href="#glo:NIH">National Institutes of Health (NIH)</a> (<a 
 href="#XTCGA2017web">TCGA</a>, <a 
-href="#XTCGA2017web">2017a</a>). They first set out to demonstrate the
+href="#XTCGA2017web">2017</a>). They first set out to demonstrate the
 pilot project on brain (<a 
 href="#XTCGA2008GBM">McLendon <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
@@ -2105,9 +2072,7 @@ href="#glo:TCGA">TCGA</a> projects set out to generate a molecular
 “profile” of the tumour (and some matched normal tissue) samples: the
 genotype, somatic mutations, gene expression, DNA copy number, and <a 
 href="#glo:RNA">RNA</a> methylation levels. While these were originally
-performed
-
-largely with microarray technologies, exome and <a 
+performed largely with microarray technologies, exome and <a 
 href="#glo:RNA-Seq">RNA-Seq</a> has been since adopted and performed for
 many <a 
 href="#glo:TCGA">TCGA</a> samples, with whole genomes being performed
@@ -2131,11 +2096,12 @@ class="cmti-12"> al.</span></em></a>, <a
 href="#XTCGA2008GBM">2008</a>) serve to demonstrate the power of
 applying <a 
 href="#glo:genomics">genomics</a> technologies to cancer research at
-such as scale. In addition to sequencing the whole genome or a subset
-(exome), DNA copy number, gene expression, DNA methylation, and somatic
-mutations were also analysed. The initial projects used microarray
-technologies for expression and methylation data but these have since
-been replaced by <a 
+such as scale. In addition to sequencing the whole
+
+genome or a subset (exome), DNA copy number, gene expression, DNA
+methylation, and somatic mutations were also analysed. The initial
+projects used microarray technologies for expression and methylation
+data but these have since been replaced by <a 
 href="#glo:RNA-Seq">RNA-Seq</a> for expression. <a 
 href="#glo:TCGA">TCGA</a> demonstrated the potential discovery of the
 molecular basis of cancer by analysing 206 glioblastoma brain cancer
@@ -2183,9 +2149,7 @@ href="#glo:TCGA">TCGA</a> breast cancer analysis (<a
 href="#XTCGA2012">TCGA</a>, <a 
 href="#XTCGA2012">2012</a>) consisted of 802 samples with exomes, copy
 number variants, RPPA protein quantification, and DNA methylation, mRNA,
-and
-
-microRNA arrays with 97 whole genomes sequenced. Four main molecular
+and microRNA arrays with 97 whole genomes sequenced. Four main molecular
 classes were identified to subtype the samples, despite considerable
 heterogeneity between samples. Recurrent mutations across more than 10%
 of samples were identified in <span class="cmti-12">TP53</span>,<span
@@ -2211,19 +2175,21 @@ href="#XTCGA2012CRC">Muzny <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XTCGA2012CRC">2012</a>), finding no genomic distinction between
 colorectal cancers. Apart from 16% of hypermutated colorectal cancers,
-the remaining samples were very similar at the molecular level with 24
-significantly recurrently mutated genes identified. These include the
-expected <span class="cmti-12">APC</span>, <span
-class="cmti-12">TP53</span>, <span class="cmti-12">SMAD4</span>, <span
-class="cmti-12">PIK3CA</span>, and <span class="cmti-12">KRAS</span>
-genes. Additionally, novel recurrent mutations were identified in <span
-class="cmti-12">ARID1A</span>, <span class="cmti-12">SOX9</span>, and
-<span class="cmti-12">FAM123 </span>along with recurrent copy number
-alterations in <span class="cmti-12">ERBB2 </span>and <span
-class="cmti-12">IFG2</span>. Thus the molecular findings of colon and
-rectal tumours can be applicable across colorectal cancers, including
-the known characteristics of microsatellite instability (MSI) and CpG
-island methylator phenotype (CIMP) found in some colorectal tumours.
+the remaining samples were
+
+very similar at the molecular level with 24 significantly recurrently
+mutated genes identified. These include the expected <span
+class="cmti-12">APC</span>, <span class="cmti-12">TP53</span>, <span
+class="cmti-12">SMAD4</span>, <span class="cmti-12">PIK3CA</span>, and
+<span class="cmti-12">KRAS</span> genes. Additionally, novel recurrent
+mutations were identified in <span class="cmti-12">ARID1A</span>, <span
+class="cmti-12">SOX9</span>, and <span class="cmti-12">FAM123
+</span>along with recurrent copy number alterations in <span
+class="cmti-12">ERBB2 </span>and <span class="cmti-12">IFG2</span>. Thus
+the molecular findings of colon and rectal tumours can be applicable
+across colorectal cancers, including the known characteristics of
+microsatellite instability (MSI) and CpG island methylator phenotype
+(CIMP) found in some colorectal tumours.
 </p>
 <!--l. 195-->
 <p class="indent">
@@ -2258,14 +2224,12 @@ endometrial, bladder, clear cell renal, and lung cancers), <span
 class="cmti-12">BRCA1</span>/<span class="cmti-12">BRCA2 </span>(in
 breast and ovarian cancers), <span class="cmti-12">NF1 </span>(in brain,
 ovarian, and skin cancers), <span class="cmti-12">ARID1A </span>(in
-colorectal, endometrial, and clear cell
-
-renal cancers), <span class="cmti-12">KRAS </span>(in colorectal,
-endometrial, and skin cancers), <span class="cmti-12">BRAF </span>(in
-colorectal, thyroid, and skin cancers), <span class="cmti-12">EGFR
-</span>(in brain, breast, and lung cancers), and <span
-class="cmti-12">PTEN </span>(in breast, endometrial, and uterine
-cancers) (<a 
+colorectal, endometrial, and clear cell renal cancers), <span
+class="cmti-12">KRAS </span>(in colorectal, endometrial, and skin
+cancers), <span class="cmti-12">BRAF </span>(in colorectal, thyroid, and
+skin cancers), <span class="cmti-12">EGFR </span>(in brain, breast, and
+lung cancers), and <span class="cmti-12">PTEN </span>(in breast,
+endometrial, and uterine cancers) (<a 
 href="#XTCGA2014TH">Agrawal <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XTCGA2014TH">2014</a>; <a 
@@ -2325,7 +2289,9 @@ renal, papillary renal, stomach, skin, bladder, and prostate cancers
 href="#XTCGA2015PR">Abeshouse <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XTCGA2015PR">2015</a>; <a 
-href="#XTCGA2015SK">Akbani <em><span class="cmti-12">et</span><span
+href="#XTCGA2015SK">Akbani
+
+<em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XTCGA2015SK">2015</a>; <a 
 href="#XTCGA2014GC">Bass <em><span class="cmti-12">et</span><span
@@ -2399,7 +2365,6 @@ href="#XHanahan2000">Hanahan and Weinberg</a>, <a
 href="#XHanahan2000">2000</a>, <a 
 href="#XHanahan2011">2011</a>). <a 
  id="x1-24001r26"></a>
-
 </p>
 <a 
  id="x1-250003"></a>Cancer Genomic Data Resources <!--l. 204-->
@@ -2414,7 +2379,7 @@ href="#XTCGA2008GBM">McLendon <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XTCGA2008GBM">2008</a>; <a 
 href="#XTCGA2017web">TCGA</a>, <a 
-href="#XTCGA2017web">2017a</a>; <a 
+href="#XTCGA2017web">2017</a>; <a 
 href="#XTCGA2013PAN">Weinstein <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XTCGA2013PAN">2013</a>). These serve as a vast resource of common
@@ -2423,14 +2388,16 @@ and rare cancer types and are publicly available for further analysis
 href="#XcBioPortal">cBioPortal</a>, <a 
 href="#XcBioPortal">2017</a>; <a 
 href="#XTCGA2017web">TCGA</a>, <a 
-href="#XTCGA2017web">2017a</a>; <a 
+href="#XTCGA2017web">2017</a>; <a 
 href="#XICGC2011">Zhang <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XICGC2011">2011</a>). This also applies to the Molecular Taxonomy
 of Breast Cancer International Consortium (METABRIC) project which
 focuses on breast cancer which also aimed to identify novel molecular
 subtypes (<a 
-href="#XMETABRIC2012">Curtis <em><span class="cmti-12">et</span><span
+href="#XMETABRIC2012">Curtis
+
+<em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XMETABRIC2012">2012</a>). They performed an analysis of 2433
 breast cancer samples with long-term clincal data, gene expression, copy
@@ -2477,7 +2444,6 @@ of DNA copies, or evelated gene expression. Their normal functions are
 typically to regulate stem cells or to promote cellular growth and
 recurrent mutations are typically concentrated to particular gene
 regions. Conversely, tumour suppressor genes are those inactivated in
-
 cancer either by loss of function mutations, deletion of DNA copies,
 repression of gene expression, or hypermethylation. Their normal
 functions are typically to regulate cell division, DNA repair, and cell
@@ -2506,12 +2472,13 @@ mutations due to patient variation, tumour heterogeneity, and genomic
 instability. However, many cancer genes have been replicated from
 previous studies or well supported from <a 
 href="#glo:genomics">genomics</a> data. There remains the challenge of
-translating the identification of cancer genes to patient benefit with
-characterisation of variants of unknown significance, which mutation or
-gene expression markers can be used to monitor tumour progression or
-treament response, and design of therapeutic intervention against many
-molecular target for which they have yet to be developed or repurposed
-from other disease to cancers.
+translating the identification of cancer genes to
+
+patient benefit with characterisation of variants of unknown
+significance, which mutation or gene expression markers can be used to
+monitor tumour progression or treament response, and design of
+therapeutic intervention against many molecular target for which they
+have yet to be developed or repurposed from other disease to cancers.
 </p>
 <!--l. 223-->
 <p class="indent">
@@ -2557,10 +2524,8 @@ preventative lifestyle advice to effective treatments. Personalised
 medicine was described in contrast with current strategies of health
 advice, screening, prognostics, and treatments based on what works well
 for the majority of the population. Adverse effects of these treatments
-occur in a
-
-significant subpopulation, particularly demographics under-represented
-in clinical studies.
+occur in a significant subpopulation, particularly demographics
+under-represented in clinical studies.
 </p>
 <!--l. 228-->
 <p class="indent">
@@ -2581,16 +2546,18 @@ describe the paradigm of treating cancers by their genomic features,
 particularly grouping patients by the mutation, expression, or DNA
 methylation profiles of their cancers. Radical proponents advocate for
 these molecular subtypes to supercede tissue or cell type specific
-diagnosis of cancers. However, in practice they are often used in
-combination, with clinical and pathological factors being informative of
-prognosis and the medical expertise required for treatment. The related
-term of “precision medicine” also stems from this trend with the
-rationale to target these molecular subtypes with separate treatment
-strategies, particularly in developing and applying treatments targeted
-against a particular mutation specific to cancers. To this end much
-research in this field is focused on identifying mutations and gene
-expression signatures amenable to distinguishing cancers, particularly
-oncogenic driver mutations, and developing treatments against them. <a 
+diagnosis of
+
+cancers. However, in practice they are often used in combination, with
+clinical and pathological factors being informative of prognosis and the
+medical expertise required for treatment. The related term of “precision
+medicine” also stems from this trend with the rationale to target these
+molecular subtypes with separate treatment strategies, particularly in
+developing and applying treatments targeted against a particular
+mutation specific to cancers. To this end much research in this field is
+focused on identifying mutations and gene expression signatures amenable
+to distinguishing cancers, particularly oncogenic driver mutations, and
+developing treatments against them. <a 
  id="x1-28001r27"></a>
 </p>
 <a 
@@ -2618,12 +2585,10 @@ projects, which combined molecular profiles across tissue types <a
 href="#XTCGA2013PAN">Weinstein <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a> (<a 
 href="#XTCGA2013PAN">2013</a>). The molecular subtypes could feasibly be
-included in clinical
-
-testing as a panel of biomarkers for diagnostics and prognosis. Such
-biomarkers also have the potential to monitor drug response or risk of
-recurrence. This is also raises the need for development of treatments
-that target these molecular subtypes. <a 
+included in clinical testing as a panel of biomarkers for diagnostics
+and prognosis. Such biomarkers also have the potential to monitor drug
+response or risk of recurrence. This is also raises the need for
+development of treatments that target these molecular subtypes. <a 
  id="x1-29001r30"></a>
 </p>
 <h5 class="subsubsectionHead">
@@ -2639,10 +2604,11 @@ href="#glo:RNA">RNA</a> interference or pharmacological agents.
 Identification of molecular targets is important for developing novel
 anti-cancer treatments along with validation and drug testing. For
 oncogenic mutations, the recurrent mutant variant or overexpressed gene
-is directly inhibited using structure-aided drug design or compound
-screening. However, oncogenes with high homology to other genes or
-tumour suppressor genes (where lost in cancers) are not amenable to
-direct targeting (<a 
+is directly inhibited
+
+using structure-aided drug design or compound screening. However,
+oncogenes with high homology to other genes or tumour suppressor genes
+(where lost in cancers) are not amenable to direct targeting (<a 
 href="#XKaelin2009">Kaelin, Jr</a>, <a 
 href="#XKaelin2009">2009</a>).
 </p>
@@ -2680,7 +2646,6 @@ class="cmr-10x-x-109">V600E</span> </sup> and <span class="cmti-12">EGFR
 href="#XPrahallad2012">Prahallad <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em></a> (<a 
 href="#XPrahallad2012">2012</a>).
-
 </p>
 <!--l. 253-->
 <p class="indent">
@@ -2720,6 +2685,7 @@ href="#XRavnan2012">2012</a>) and targeted therapeutics may be further
 refined from understanding the pathway structure and functional
 interactions across cancer cells. <a 
  id="x1-31001r32"></a>
+
 </p>
 <h5 class="subsubsectionHead">
 <span class="titlemark">1.1.6.4 </span> <a 
@@ -2771,7 +2737,6 @@ findings in social networks (<a
 href="#XTravers1969">Travers and Milgram</a>, <a 
 href="#XTravers1969">1969</a>), is the remarkably short path lengths
 between any nodes in a small world network. A small world network is
-
 well-connected with a characteristic path length (the average length of
 shortest paths between all pairs of nodes) proportional to the logarithm
 of the number of nodes. <a 
@@ -2798,8 +2763,10 @@ hubs (which interact simultaneously with many partners) and ‘date’ hubs
 href="#XHan2004">Han <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a> (<a 
 href="#XHan2004">2004</a>). Network hubs can also be classed as
-associative or dissociative depending on whether they tend toward or
-away from connecting directly to other network hubs (<a 
+associative or dissociative depending on whether
+
+they tend toward or away from connecting directly to other network hubs
+(<a 
 href="#XvanSteen2010">van Steen</a>, <a 
 href="#XvanSteen2010">2010</a>). The associative and dissociative
 properties can also be used to test whether nodes of a particular
@@ -2841,14 +2808,13 @@ likely to be essential genes and define the subgroups of hubs based on
 correlation of gene expression with protein-protein interaction
 partners: ‘party’ hubs (which interact simultaneously with many
 partners) and ‘date’ hubs (which interact with different partners in
-different conditions). Party
-
-and date hubs occurred most frequently within and between network
-modules respectively. Party hubs were considered local regulators,
-whereas date hubs were considered important to network connectivity as
-global regulators. This distinction between classes of network hubs was
-supported by differences in tissue specificity and clinical relevance as
-a proposed predictor of clinical outcome in breast cancer with an <a 
+different conditions). Party and date hubs occurred most frequently
+within and between network modules respectively. Party hubs were
+considered local regulators, whereas date hubs were considered important
+to network connectivity as global regulators. This distinction between
+classes of network hubs was supported by differences in tissue
+specificity and clinical relevance as a proposed predictor of clinical
+outcome in breast cancer with an <a 
 href="#glo:AUROC">area under the reciever operating characteristic
 (AUROC)</a> of 0.784 <a 
 href="#XTaylor2009">Taylor <em><span class="cmti-12">et</span><span
@@ -2865,11 +2831,12 @@ class="cmti-12"> al.</span></em></a>, <a
 href="#XAgarwal2010">2010</a>) suggest the importance of interactions
 rather than network hubs as interactions important to the network were
 between functionally similar proteins. Network hubs can also be classed
-as associative or dissociative depending on whether they tend toward or
-away from connecting directly to other network hubs (van Steen 2010).
-The associative and dissociative properties can also be used to test
-whether nodes of a particular subgroup (e.g., gene function) associate
-with each other.
+as associative or dissociative depending on whether
+
+they tend toward or away from connecting directly to other network hubs
+(van Steen 2010). The associative and dissociative properties can also
+be used to test whether nodes of a particular subgroup (e.g., gene
+function) associate with each other.
 </p>
 <!--l. 269-->
 <p class="indent">
@@ -2893,9 +2860,7 @@ in humans, mammals, and non-model organisms (where applications would
 have the most societal impact) are limited by cost, time and labour
 constraints. Computational approaches with effective predictive models
 are the only feasible approach to study the connectivity of a biological
-network in a complex metazoan cell at the genome-scale.
-
-<a 
+network in a complex metazoan cell at the genome-scale. <a 
  id="x1-32001r33"></a>
 </p>
 <a 
@@ -2915,7 +2880,9 @@ existing effective drugs modulate multiple proteins, having been
 selected for biological effects or clinical outcome rather than
 molecular targets. Proponents of network biology and polypharmacology
 (specific binding to multiple targets) recommend developing drugs with a
-desired target profile designed for the target topology <a 
+desired target profile designed for the
+
+target topology <a 
 href="#XBarabasi2004">Barabási and Oltvai</a> (<a 
 href="#XBarabasi2004">2004</a>); <a 
 href="#XHopkins2008">Hopkins</a> (<a 
@@ -2964,7 +2931,6 @@ lead to development of more effective treatment interventions for these
 systems and prediction of similar molecular systems for development of
 novel drug targets and combinations. <a 
  id="x1-33001r9"></a>
-
 </p>
 <h3 class="sectionHead">
 <span class="titlemark">1.2 </span> <a 
@@ -2988,7 +2954,9 @@ concepts involved, initial work on the interaction, and the rationale
 for applications to cancer. Specific investigations into <a 
 href="#glo:synthetic lethal">synthetic lethality</a> in cancer,
 detection by experimental screening, and prediction by computational
-analysis will then be reviewed. <a 
+analysis will then be reviewed.
+
+<a 
  id="x1-34001r28"></a>
 </p>
 <h4 class="subsectionHead">
@@ -3037,10 +3005,8 @@ href="#glo:SGI">SGIs</a> giving growth inhibition and inviability
 respectively. <a 
 href="#glo:synthetic lethal">Synthetic lethality</a> in cancer research
 more broadly describes any negative <a 
-href="#glo:SGI">SGI</a>
-
-with specific inhibition of a mutant cell, including SSL interactions.
-Mutations are “alleviating” in positive <a 
+href="#glo:SGI">SGI</a> with specific inhibition of a mutant cell,
+including SSL interactions. Mutations are “alleviating” in positive <a 
 href="#glo:SGI">SGIs</a> with less deviation from the wild-type than
 expected. For viability, “suppression” and “rescue” are positive <a 
 href="#glo:SGI">SGIs</a> giving at least partial restoration of
@@ -5771,9 +5737,9 @@ would be widely applicable due to the availability of public gene
 expression data for a large number of samples and cancer types. <a 
 href="#XWang2013">Wang and Simon</a> (<a 
 href="#XWang2013">2013</a>) found differentially expressed genes (by the
-t-test, adjusted by FDR) between tumours with or
+t-test, adjusted by FDR) between tumours with or without
 
-without functional p53 mutations in <a 
+functional p53 mutations in <a 
 href="#glo:TCGA">TCGA</a> (<a 
 href="#XTCGA2008GBM">McLendon <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
@@ -5789,21 +5755,27 @@ href="#glo:synthetic lethal">synthetic lethal</a> partner genes in 3
 microarray datasets from the NCI60 cell lines, 31 partner genes from the
 <a 
 href="#glo:CCLE">CCLE</a> <a 
-href="#glo:RNA-Seq">RNA-Seq</a> data, and 50 in <a 
+href="#glo:RNA-Seq">RNA-Seq</a> data (<a 
+href="#XBarretina2012">Barretina <em><span
+class="cmti-12">et</span><span class="cmti-12"> al.</span></em></a>, <a 
+href="#XBarretina2012">2012</a>), and 50 in <a 
 href="#glo:TCGA">TCGA</a> <a 
-href="#glo:RNA-Seq">RNA-Seq</a> data. <span class="cmti-12">PLK1
-</span>was replicated across 4 of these analyses and 17 other genes were
-replicated across 2 analyses (including <span
-class="cmti-12">MTOR</span>, <span class="cmti-12">PLK4</span>, <span
-class="cmti-12">MAST2</span>, <span class="cmti-12">MAP3K4</span>, <span
-class="cmti-12">AURKA</span>, <span class="cmti-12">BUB1 </span>and 6
-CDK genes) with many playing a role in cell cycle regulation. This was
-supported by a drug sensitivity experiment on the NCI60 cell lines which
-found that cells which lacked functional p53 were more sensitive to
-paclitaxel (which targets <span class="cmti-12">PLK1</span>, <span
-class="cmti-12">AURKA</span>, and <span class="cmti-12">BUB1</span>).
-This demonstrated the potential of gene expression as a surrogate for
-gene function and use of public genomic data to predict <a 
+href="#glo:RNA-Seq">RNA-Seq</a> data (<a 
+href="#XTCGA2012CRC">Muzny <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XTCGA2012CRC">2012</a>). <span class="cmti-12">PLK1 </span>was
+replicated across 4 of these analyses and 17 other genes were replicated
+across 2 analyses (including <span class="cmti-12">MTOR</span>, <span
+class="cmti-12">PLK4</span>, <span class="cmti-12">MAST2</span>, <span
+class="cmti-12">MAP3K4</span>, <span class="cmti-12">AURKA</span>, <span
+class="cmti-12">BUB1 </span>and 6 CDK genes) with many playing a role in
+cell cycle regulation. This was supported by a drug sensitivity
+experiment on the NCI60 cell lines which found that cells which lacked
+functional p53 were more sensitive to paclitaxel (which targets <span
+class="cmti-12">PLK1</span>, <span class="cmti-12">AURKA</span>, and
+<span class="cmti-12">BUB1</span>). This demonstrated the potential of
+gene expression as a surrogate for gene function and use of public
+genomic data to predict <a 
 href="#glo:synthetic lethal">synthetic lethal</a> gene pairs in cancer.
 <a 
 href="#XWang2013">Wang and Simon</a> (<a 
@@ -6519,157 +6491,10 @@ of patients. <a
 </p>
 <h4 class="subsectionHead">
 <span class="titlemark">1.3.4 </span> <a 
- id="x1-600004"></a>Somatic Mutations
-</h4>
-<a 
- id="x1-60001r65"></a>
-<h5 class="subsubsectionHead">
-<span class="titlemark">1.3.4.1 </span> <a 
- id="x1-610001"></a>Mutation Rate
-</h5>
-<!--l. 950-->
-<p class="noindent">
-Estimates for the prevalence of <span class="cmti-12">CDH1
-</span>somatic mutations in sporadic cancers varies. The Cancer Gene
-Census (<a 
-href="#XFutreal2004">Futreal <em><span class="cmti-12">et</span><span
-class="cmti-12"> al.</span></em></a>, <a 
-href="#XFutreal2004">2004</a>; <a 
-href="#XPleasance2010">Pleasance <em><span
-class="cmti-12">et</span><span class="cmti-12"> al.</span></em></a>, <a 
-href="#XPleasance2010">2010</a>) detected 994 distinct mutations in
-10,143 tumour samples (at a rate of 7.52%), <a 
-href="#XCOSMICdb">COSMIC</a> (<a 
-href="#XCOSMICdb">2016</a>) detected 632 distinct mutations in 43,865
-tumour samples (at a rate of 1.71%), and detected mutations in 13.2% of
-53 of the NCI60 cancer cell lines. While there is no consensus on the
-prevalence of <span class="cmti-12">CDH1 </span>mutations, the vast
-variability of mutations is consistent with it’s role as a tumour
-supressor and it has been found to be recurrently mutated in a wide
-range of cancers of epithelial tissues.
-</p>
-<!--l. 952-->
-<p class="indent">
-<a 
-href="#XCOSMICdb">COSMIC</a> (<a 
-href="#XCOSMICdb">2016</a>) reports <span class="cmti-12">CDH1
-</span>mutations in 40 cancer tissue types including stomach (11.40% in
-1342 samples), breast (10.29% in 3343 samples), large colon (2.87%),
-skin (2.83%), endometrial (2.81%), and bladder (1.9%) cancer. <a 
-href="#XICGC2017web">ICGC</a> (<a 
-href="#XICGC2017web">2017</a>) reports <span class="cmti-12">CDH1</span>
-mutations in 29 cancer tissue types including skin (23.41% in 598
-samples), breast (14.50% in 1696 samples), ovary (13.98% in 93 samples),
-and stomach (11.41% in 289 samples) cancer samples. <span
-class="cmti-12">CDH1 </span>mutations are reported at similar rates in
-breast and stomach cancer in other cancer <a 
-href="#glo:genomics">genomics</a> projects and studies across distinct
-populations. <a 
-href="#XcBioPortal">cBioPortal</a> (<a 
-href="#XcBioPortal">2017</a>) reports <span class="cmti-12">CDH1
-</span>mutation prevalence in stomach cancer at 16.7% (<a 
-href="#XKakiuchi2014">Kakiuchi <em><span class="cmti-12">et</span><span
-class="cmti-12"> al.</span></em></a>, <a 
-href="#XKakiuchi2014">2014</a>, 30 samples), 15% (<a 
-href="#XWang2014">Wang <em><span class="cmti-12">et</span><span
-class="cmti-12"> al.</span></em></a>, <a 
-href="#XWang2014">2014</a>, 100 samples), 14.1% (<a 
-href="#XChen2015">Chen <em><span class="cmti-12">et</span><span
-class="cmti-12"> al.</span></em></a>, <a 
-href="#XChen2015">2015</a>, 78 samples), and 9.4% (<a 
-href="#XTCGA2017prov">TCGA</a>, <a 
-href="#XTCGA2017prov">2017b</a>, 393 samples). <a 
-href="#XcBioPortal">cBioPortal</a> (<a 
-href="#XcBioPortal">2017</a>) also reports <span class="cmti-12">CDH1
-</span>mutation prevalence in breast cancer at 12.7% (<a 
-href="#XTCGA2017prov">TCGA</a>, <a 
-href="#XTCGA2017prov">2017b</a>, 963 samples) and 10.8% (<a 
-href="#XMETABRIC2012">Curtis <em><span class="cmti-12">et</span><span
-class="cmti-12"> al.</span></em></a>, <a 
-href="#XMETABRIC2012">2012</a>; <a 
-href="#XMETABRIC2016">Pereira <em><span class="cmti-12">et</span><span
-class="cmti-12"> al.</span></em></a>, <a 
-href="#XMETABRIC2016">2016</a>, 2051 samples). The rare plasmacytoid
-bladder cancer subtype also has a high prevalence of <span
-class="cmti-12">CDH1</span>
-
-mutations in <a 
-href="#XCOSMICdb">COSMIC</a> (<a 
-href="#XCOSMICdb">2016</a>) at a rate of 81.8% (N=33). These demonstrate
-that <span class="cmti-12">CDH1 </span>is important in many cancers and
-targeting <span class="cmti-12">CDH1 </span>may be widely applied
-against sporadic cancers in addition to hereditary cancers. However,
-some of these studies have focused on disease subgroups (such as lobular
-subtype or estogren receptor negative breast cancers) with poor patient
-outcomes which may have inflated the prevalence of <span
-class="cmti-12">CDH1 </span>mutations which are more common in some of
-these subtypes. <a 
- id="x1-61001r68"></a>
-</p>
-<h5 class="subsubsectionHead">
-<span class="titlemark">1.3.4.2 </span> <a 
- id="x1-620002"></a>Co-occurring Mutations
-</h5>
-<!--l. 956-->
-<p class="noindent">
-Another concern is that <span class="cmti-12">CDH1 </span>mutations may
-co-occur with other known cancer driver genes such as highly prevalent
-tumour suppressor gene <span class="cmti-12">TP53 </span>or the
-proto-oncogene <span class="cmti-12">PIK3CA</span>. <a 
-href="#XcBioPortal">cBioPortal</a> (<a 
-href="#XcBioPortal">2017</a>) reports the prevalence of the mutations in
-these genes at 10% for <span class="cmti-12">CDH1</span>, 49% for <span
-class="cmti-12">TP53</span>, 22% for <span class="cmti-12">PIK3CA
-</span>in stomach cancer (<a 
-href="#XTCGA2017prov">TCGA</a>, <a 
-href="#XTCGA2017prov">2017b</a>, 393 samples). There is no evidence of
-significant co-occurring mutations between <span class="cmti-12">CDH1
-</span>and <span class="cmti-12">PIK3CA </span>(mutex <span
-class="cmmi-12">p </span>= 0<span class="cmmi-12">.</span>231) but there
-is evidence for significant mutually exclusive mutations for <span
-class="cmti-12">CDH1 </span>(mutex <span class="cmmi-12">p </span>=
-0<span class="cmmi-12">.</span>002) and <span class="cmti-12">PIK3CA
-</span>(mutex <span class="cmmi-12">p </span>= 0<span
-class="cmmi-12">.</span>004) with <span class="cmti-12">TP53</span>. <a 
-href="#XcBioPortal">cBioPortal</a> (<a 
-href="#XcBioPortal">2017</a>) also reports the prevalence of the
-mutations in these genes at 13% for <span class="cmti-12">CDH1</span>,
-32% for <span class="cmti-12">TP53</span>, 36% for <span
-class="cmti-12">PIK3CA </span>in breast cancer (<a 
-href="#XTCGA2017prov">TCGA</a>, <a 
-href="#XTCGA2017prov">2017b</a>, 963 samples). There is evidence of
-significant co-occurring mutations with <span
-class="cmti-12">CDH1</span> and <span class="cmti-12">PIK3CA
-</span>(mutex <span class="cmmi-12">p &lt; </span>0<span
-class="cmmi-12">.</span>0001) and evidence for significant mutually
-exclusive mutations for <span class="cmti-12">CDH1 </span>(mutex <span
-class="cmmi-12">p </span>= 0<span class="cmmi-12">.</span>003) and <span
-class="cmti-12">PIK3CA </span>(mutex <span class="cmmi-12">p </span>=
-0<span class="cmmi-12">.</span>032) with <span
-class="cmti-12">TP53</span>.
-</p>
-<!--l. 958-->
-<p class="indent">
-These cancer driver mutations have distinct molecular features, leading
-to disease progression in distinct ways which is a concern for drug
-resistance when several mutations may accumulate, particularly for
-sporadic cancers where this is common. Targeting <span
-class="cmti-12">CDH1 </span>specifically is most suitable for hereditary
-cancers and combination therapies may be required for sporadic cancers.
-However, <span class="cmti-12">CDH1 </span>and <span
-class="cmti-12">TP53 </span>mutant cancers appear to be distinct
-pathways of tumour progression so the high impact of <span
-class="cmti-12">TP53 </span>mutation on cancer cells need not be
-considered for the purposes of studying <span
-class="cmti-12">CDH1</span>. <a 
- id="x1-62001r67"></a>
-</p>
-<h4 class="subsectionHead">
-<span class="titlemark">1.3.5 </span> <a 
- id="x1-630005"></a>Models of <span class="cmti-12">CDH1 </span>loss in
+ id="x1-600004"></a>Models of <span class="cmti-12">CDH1 </span>loss in
 cell lines
 </h4>
-<!--l. 961-->
+<!--l. 963-->
 <p class="noindent">
 Previous work our research group has published used a model of
 homozygous <span class="cmti-12">CDH1</span><sup><span
@@ -6688,7 +6513,7 @@ href="#XChen2014">Chen <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
 href="#XChen2014">2014</a>).
 </p>
-<!--l. 963-->
+<!--l. 965-->
 <p class="indent">
 This <span class="cmti-12">CDH1</span><sup><span
 class="cmsy-8">-</span><span class="cmmi-8">∕</span><span
@@ -6720,24 +6545,26 @@ screen also produced candidates in <a
 href="#glo:HDAC">histone deacetylase (HDAC)</a> and <a 
 href="#glo:PI3K">phosphoinositide 3-kinase (PI3K)</a> which were
 supported by validation and time course experiments. <a 
- id="x1-63001r59"></a>
+ id="x1-60001r59"></a>
 </p>
 <h3 class="sectionHead">
 <span class="titlemark">1.4 </span> <a 
- id="x1-640004"></a>Summary and Research Direction of Thesis
+ id="x1-610004"></a>Summary and Research Direction of Thesis
 </h3>
-<!--l. 985-->
+<!--l. 987-->
 <p class="noindent">
 <a 
 href="#glo:genomics">Genomics</a> technologies and the data available
 from them have immense potential for understanding of genetics and
 improving healthcare, including identification of genes altered in
 cancer for molecular diagnosis, prognostic biomarkers, and therapeutic
-targets. This has been demonstrated with the identification of cancer
-genes in many cancers, distinguishing tumour subtypes by expression
-profiles, and the development of targeted therapies against oncogenes
-(such as <span class="cmti-12">BRAF </span>and tumour suppressors (such
-as <span class="cmti-12">BRCA1</span>). <a 
+targets. This has
+
+been demonstrated with the identification of cancer genes in many
+cancers, distinguishing tumour subtypes by expression profiles, and the
+development of targeted therapies against oncogenes (such as <span
+class="cmti-12">BRAF</span>) and tumour suppressors (such as <span
+class="cmti-12">BRCA1</span>). <a 
 href="#glo:synthetic lethal">Synthetic lethality</a> is an important
 genetic interaction to study fundamental cellular functions and exploit
 them for biomarkers and cancer treatment. They present a means to target
@@ -6745,7 +6572,7 @@ loss of function mutations and genetic dysregulation in tumour
 suppressor genes by identifying interacting partners with redundant or
 compensating molecular functions.
 </p>
-<!--l. 987-->
+<!--l. 989-->
 <p class="indent">
 <span class="cmti-12">CDH1 </span>(encoding <a 
 href="#glo:E-cadherin">E-cadherin</a>) is an example of a tumour
@@ -6753,12 +6580,11 @@ suppressor gene implicated in sporadic breast and stomach cancers.
 Germline mutations in <span class="cmti-12">CDH1 </span>are also found
 in many patients with familial early onset cancers (<a 
 href="#glo:HDGC">HDGC</a>). Discovery of <a 
-href="#glo:synthetic lethal">synthetic lethal</a> partners
-
-would be contribute to an understanding on the molecular mechanisms
-driving the growth of <span class="cmti-12">CDH1 </span>deficient
-tumours and identification of potential therapeutic targets or
-chemopreventative agents for management of <a 
+href="#glo:synthetic lethal">synthetic lethal</a> partners would be
+contribute to an understanding on the molecular mechanisms driving the
+growth of <span class="cmti-12">CDH1 </span>deficient tumours and
+identification of potential therapeutic targets or chemopreventative
+agents for management of <a 
 href="#glo:HDGC">HDGC</a>. The clinical potential of the <a 
 href="#glo:synthetic lethal">synthetic lethal</a> approach has been
 demonstrated with the application of olaparib against <span
@@ -6780,7 +6606,7 @@ identification of <a
 href="#glo:synthetic lethal">synthetic lethal</a> partners of <span
 class="cmti-12">CDH1 </span>remains to be done.
 </p>
-<!--l. 992-->
+<!--l. 994-->
 <p class="indent">
 While there are a wide range of experimental and computational
 approaches to <a 
@@ -6801,7 +6627,7 @@ community and the need for robust predictions of <a
 href="#glo:synthetic lethal">synthetic lethal</a> interactions in cancer
 and human tissues.
 </p>
-<!--l. 994-->
+<!--l. 996-->
 <p class="indent">
 Effective screening, prediction, and analysis of <a 
 href="#glo:synthetic lethal">synthetic lethal</a> interactions are a
@@ -6814,10 +6640,12 @@ personalised medicine targeted to particular molecular aberrations.
 Genetic tests and <a 
 href="#glo:genomics">genomics</a> have the potential to revolutionise
 cancer screening, diagnosis, and prognostics; targeted therapeutics,
-similarly, have applications in prevention and therapy of sporadic or
-hereditary cancers with known molecular properties.
+similarly,
+
+have applications in prevention and therapy of sporadic or hereditary
+cancers with known molecular properties.
 </p>
-<!--l. 996-->
+<!--l. 998-->
 <p class="indent">
 To address the concerns raised by recent computational approaches to <a 
 href="#glo:synthetic lethal">synthetic lethal</a> discovery in cancer
@@ -6843,193 +6671,92 @@ href="#glo:synthetic lethal">synthetic lethal</a> gene pairs in <a
 href="#glo:genomics">genomics</a> data. Comparison of <a 
 href="#glo:synthetic lethal">synthetic lethal</a> gene candidates from
 public data analysis and experimental candidates, pathway analysis, and
-networks structure will also be
-
-presented to investigate the relationships between <a 
+networks structure will also be presented to investigate the
+relationships between <a 
 href="#glo:synthetic lethal">synthetic lethal</a> candidates. Release of
 R codes used for simulation, prediction, and analysis will enable
 adoption of the methodology in the cancer research community and
-comparison to existing methods.
-</p>
-<!--l. 998-->
-<p class="indent">
-My thesis aims to develop such predictions for <a 
+comparison to existing methods. Therefore my thesis aims to develop such
+predictions for <a 
 href="#glo:synthetic lethal">synthetic lethal</a> partner genes with a
 focus on the example of <a 
 href="#glo:E-cadherin">E-cadherin</a> to compare to the findings of <a 
 href="#XTelford2015">Telford <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a> (<a 
 href="#XTelford2015">2015</a>), develop of network approaches for
-pathway structure, and simulate gene expression on pathway structre with
-the following <a 
+pathway structure, and simulate gene expression on pathway structure
+with the <a 
 href="#glo:bioinformatics">bioinformatics</a> and computational biology
-investigations:
+investigations. <a 
+ id="x1-61001r67"></a>
 </p>
-<ul class="itemize1">
-<li class="itemize">
+<h4 class="subsectionHead">
+<span class="titlemark">1.4.1 </span> <a 
+ id="x1-620001"></a>Thesis Aims
+</h4>
+<!--l. 1002-->
+<p class="noindent">
+Understanding synthetic lethality is important in cancers and has shown
+an impact clinical practice and patient outcomes for certain genes
+already. Thus this thesis aims to identify synthetic lethal gene pairs
+using public gene expression data. Accordingly, chapter 3 aims to
+develop the methods to do so including a synthetic lethal detection
+methodology (<a 
+href="#glo:SLIPT">SLIPT</a>) which has been released as an R software
+package. This chapter also documents the simulation and network analysis
+procedures developed to support the use of <a 
+href="#glo:SLIPT">SLIPT</a> and perform analyses in throughout this
+thesis.
+</p>
 <!--l. 1004-->
-<p class="noindent">
-Developed a query-based <a 
-href="#glo:synthetic lethal">synthetic lethal</a> detection methodology
-(<a 
-href="#glo:SLIPT">SLIPT</a>) for use on gene expression data
-</p>
-</li>
-<li class="itemize">
-<!--l. 1008-->
-<p class="noindent">
-Adapt this methodology to utilise somatic mutation for query genes or
-candidate pathway metagenes
-</p>
-</li>
-<li class="itemize">
-<!--l. 1012-->
-<p class="noindent">
-Apply <a 
-href="#glo:synthetic lethal">Synthetic lethal</a> prediction to public
-breast cancer <a 
-href="#glo:genomics">genomics</a> data from <a 
-href="#glo:TCGA">TCGA</a> (<a 
-href="#XTCGA2012">TCGA</a>, <a 
-href="#XTCGA2012">2012</a>)
-</p>
-</li>
-<li class="itemize">
-<!--l. 1016-->
-<p class="noindent">
-Identify over-represented biological pathways using Reactome (<a 
-href="#XReactome">Croft <em><span class="cmti-12">et</span><span
-class="cmti-12"> al.</span></em></a>, <a 
-href="#XReactome">2014</a>) among <a 
-href="#glo:synthetic lethal">synthetic lethal</a> candidate partner
-genes
-</p>
-</li>
-<li class="itemize">
-<!--l. 1020-->
-<p class="noindent">
-Compare these at the gene and pathway level to experimental screen data
-in breast cell lines from <a 
-href="#XTelford2015">Telford <em><span class="cmti-12">et</span><span
-class="cmti-12"> al.</span></em></a> (<a 
-href="#XTelford2015">2015</a>)
-</p>
-</li>
-<li class="itemize">
-<!--l. 1024-->
-<p class="noindent">
-Replicate these analyses in stomach cancer <a 
-href="#glo:genomics">genomics</a> data from <a 
-href="#glo:TCGA">TCGA</a> (<a 
+<p class="indent">
+This thesis also aimed to demonstrate <a 
+href="#glo:SLIPT">SLIPT</a> methodology for analysis of <a 
+href="#glo:RNA-Seq">RNA-Seq</a> gene expression data. Chapter 4 aimed to
+do so by performing an analysis to identify candidate synthetic lethal
+gene partners of <span class="cmti-12">CDH1 </span>in public breast and
+stomach cancer data (<a 
 href="#XTCGA2014GC">Bass <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
-href="#XTCGA2014GC">2014</a>)
-</p>
-</li>
-<li class="itemize">
-<!--l. 1028-->
-<p class="noindent">
-Determine whether <a 
-href="#glo:synthetic lethal">synthetic lethal</a> candidates have
-importance in biological networks of candidate partner pathways
-</p>
-</li>
-<li class="itemize">
-<!--l. 1032-->
-<p class="noindent">
-Determine whether there are relationships within biological network
-structures between experimental and predicted gene candidate partners
-</p>
-</li>
-<li class="itemize">
-<!--l. 1036-->
-<p class="noindent">
-Develop a statistical model of <a 
-href="#glo:synthetic lethal">synthetic lethal</a> gene expression
-</p>
-</li>
-<li class="itemize">
-<!--l. 1040-->
-<p class="noindent">
-Simulate gene expression with <a 
-href="#glo:synthetic lethal">synthetic lethal</a> genes and pathway
-structures
-</p>
-</li>
-<li class="itemize">
-<!--l. 1044-->
-<p class="noindent">
-Evaluate the effects of modification to the <a 
-href="#glo:SLIPT">SLIPT</a> procedure on it’s statistical performance
-</p>
-</li>
-<li class="itemize">
-<!--l. 1048-->
-<p class="noindent">
-Compare the statistical performance of the <a 
-href="#glo:SLIPT">SLIPT</a> procedure to alternative statistical methods
-</p>
-</li>
-<li class="itemize">
-<!--l. 1052-->
-<p class="noindent">
-Release a <a 
-href="#glo:synthetic lethal">synthetic lethal</a> prediction methodology
-(<a 
-href="#glo:SLIPT">SLIPT</a>) to the research community for wider
-application
+href="#XTCGA2014GC">2014</a>; <a 
+href="#XTCGA2012">TCGA</a>, <a 
+href="#XTCGA2012">2012</a>). Chapter 4 also aimed to demonstrate the
+biological relevance of these candidate synthetic lethal partners by
+identifying synthetic lethal pathways
 
+and comparing them with the results of an experimental <a 
+href="#glo:siRNA">siRNA</a> screen (<a 
+href="#XTelford2015">Telford <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XTelford2015">2015</a>).
 </p>
-<div class="center">
+<!--l. 1006-->
+<p class="indent">
+Pathway analysis was extended with graph structures in chapter 5 which
+aimed to assess the importance of synthetic lethal genes within pathway
+structures. Chapter 5 also aimed to use pathway structure to identify
+directional relationships between <a 
+href="#glo:SLIPT">SLIPT</a> and <a 
+href="#glo:siRNA">siRNA</a> synthetic lethal candidates and explore the
+disparity between them. The <a 
+href="#glo:SLIPT">SLIPT</a> methodology was also supported by
+simulations investigations in chapters 3 and 6 which aimed to evaluate
+the <a 
+href="#glo:SLIPT">SLIPT</a> method on detecting known synthetic lethal
+genes in simulated data. Graph structures were also used in chapter 6
+which also aimed to determine the effect of pathway structures of
+synthetic lethal detection with <a 
+href="#glo:SLIPT">SLIPT</a> in simulated data and ascertain that the
+simulation results were comparable to expression data with contains
+complex correlation structures within biological pathways.
 
-<!--l. 1057-->
-<p class="noindent">
-</p>
-<!--l. 1058-->
-<p class="noindent">
-<strong><span class="cmbx-12">Thesis Aims</span></strong>
-</p>
-
-</div>
-
-</li>
-</ul>
-<ul class="itemize1">
-<li class="itemize">
-To develop a statistical approach to detect <a 
-href="#glo:synthetic lethal">synthetic lethal</a> gene pairs in cancer
-from expression data
-</li>
-<li class="itemize">
-To apply this methodology to public cancer gene expression data against
-<span class="cmti-12">CDH1</span> and analyse pathway structure with
-comparisons to experimental screen data
-</li>
-<li class="itemize">
-To construct a statistical model of <a 
-href="#glo:synthetic lethal">synthetic lethality</a> in multivariate
-normal expression data
-</li>
-<li class="itemize">
-To develop a simulation pipeline of expression with pathway structure on
-a high-performance computing cluster
-</li>
-<li class="itemize">
-To examine the statistical performance of the methodology with simulated
-expression including pathways and compare it to other approaches
-</li>
-<li class="itemize">
-To release the <a 
-href="#glo:synthetic lethal">synthetic lethal</a> detection methodology
-and pathway simulation procedure as R software packages
-</li>
-</ul>
 <a 
- id="Q1-1-72"></a>
+ id="Q1-1-70"></a>
 
+</p>
 <h2 class="likechapterHead">
 <a 
- id="x1-650000"></a>References
+ id="x1-630000"></a>References
 </h2>
 <div class="thebibliography">
 
@@ -7198,6 +6925,14 @@ class="cmbx-12">286</span></strong>(5439): 509–12.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
+ id="XBarabasi2011"></a><span class="bibsp">   </span></span>Barabási,
+A.L., Gulbahce, N., and Loscalzo, J. (2011) Network medicine: a
+network-based approach to human disease. <em><span class="cmti-12">Nat
+Rev Genet</span></em>, <strong><span
+class="cmbx-12">12</span></strong>(1): 56–68.
+</p>
+<p class="bibitem">
+<span class="biblabel"> <a 
  id="XBarabasi2004"></a><span class="bibsp">   </span></span>Barabási,
 A.L. and Oltvai, Z.N. (2004) Network biology: understanding the cell’s
 functional organization. <em><span class="cmti-12">Nat Rev
@@ -7238,6 +6973,7 @@ Synthetic genetic array (sga) analysis in saccharomyces cerevisiae and
 schizosaccharomyces pombe. <em><span class="cmti-12">Methods
 Enzymol</span></em>, <strong><span class="cmbx-12">470</span></strong>:
 145–79.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7245,10 +6981,9 @@ Enzymol</span></em>, <strong><span class="cmbx-12">470</span></strong>:
 class="bibsp">   </span></span>Baryshnikova, A., Costanzo, M., Kim, Y.,
 Ding, H., Koh, J., Toufighi, K., Youn, J.Y., Ou, J., San Luis, B.J.,
 Bandyopadhyay, S., <em><span class="cmti-12">et</span><span
-class="cmti-12"> al.</span></em> (2010b) Quantitative analysis
-
-of fitness and genetic interactions in yeast on a genome scale.
-<em><span class="cmti-12">Nat Meth</span></em>, <strong><span
+class="cmti-12"> al.</span></em> (2010b) Quantitative analysis of
+fitness and genetic interactions in yeast on a genome scale. <em><span
+class="cmti-12">Nat Meth</span></em>, <strong><span
 class="cmbx-12">7</span></strong>(12): 1017–1024.
 </p>
 <p class="bibitem">
@@ -7296,6 +7031,7 @@ class="cmbx-12">54</span></strong>(14): 3845–3852.
 <span class="biblabel"> <a 
  id="XTCGA2011OV"></a><span class="bibsp">   </span></span>Bell, D.,
 Berchuck, A., Birrer, M., Chien, J., Cramer, D., Dao, F., Dhir, R.,
+
 DiSaia, P., Gabra, H., Glenn, P., <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2011)
 Integrated genomic analyses of ovarian carcinoma. <em><span
@@ -7358,6 +7094,7 @@ class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2015)
 Gene Ontology Consortium: going forward. <em><span
 class="cmti-12">Nucleic Acids Res</span></em>, <strong><span
 class="cmbx-12">43</span></strong>(Database issue): D1049–1056.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7456,15 +7193,6 @@ Accessed: 22/03/2017.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
- id="XCCLE"></a><span class="bibsp">   </span></span>Cancer Cell Line
-Encyclopedia (CCLE) (2014) Broad-Novartis Cancer Cell Line Encyclopedia.
-<a 
-href="http://www.broadinstitute.org/ccle" class="url" ><span
-class="cmtt-12">http://www.broadinstitute.org/ccle</span></a>. Accessed:
-07/11/2014.
-</p>
-<p class="bibitem">
-<span class="biblabel"> <a 
  id="XcBioPortal"></a><span class="bibsp">   </span></span>cBioPortal
 for Cancer Genomics (cBioPortal) (2017) cBioPortal for Cancer Genomics.
 <a 
@@ -7480,27 +7208,18 @@ Schultz, N., Bader, G.D., and Sander, C. (2011) Pathway Commons, a web
 resource for biological pathway data. <em><span class="cmti-12">Nucleic
 Acids Res</span></em>, <strong><span
 class="cmbx-12">39</span></strong>(Database issue): D685–690.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
  id="XChen2014"></a><span class="bibsp">   </span></span>Chen, A.,
 Beetham, H., Black, M.A., Priya, R., Telford, B.J., Guest, J., Wiggins,
 G.A.R., Godwin, T.D., Yap, A.S., and Guilford, P.J. (2014) E-cadherin
-loss alters cytoskeletal organization and adhesion in non-malignant
-breast cells but is insufficient to induce an epithelial-mesenchymal
+loss
+
+alters cytoskeletal organization and adhesion in non-malignant breast
+cells but is insufficient to induce an epithelial-mesenchymal
 transition. <em><span class="cmti-12">BMC Cancer</span></em>,
 <strong><span class="cmbx-12">14</span></strong>(1): 552.
-</p>
-<p class="bibitem">
-<span class="biblabel"> <a 
- id="XChen2015"></a><span class="bibsp">   </span></span>Chen, K., Yang,
-D., Li, X., Sun, B., Song, F., Cao, W., Brat, D.J., Gao, Z., Li, H.,
-Liang, H., <em><span class="cmti-12">et</span><span
-class="cmti-12"> al.</span></em> (2015) Mutational landscape of gastric
-adenocarcinoma in Chinese: implications for prognosis and therapy.
-<em><span class="cmti-12">Proc Natl Acad Sci USA</span></em>,
-<strong><span class="cmbx-12">112</span></strong>(4): 1107–1112.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7538,10 +7257,9 @@ class="cmbx-12">10</span></strong>(1): 17.
 <span class="biblabel"> <a 
  id="XChristofori1999"></a><span
 class="bibsp">   </span></span>Christofori, G. and Semb, H. (1999) The
-role of the cell-adhesion molecule
-
-E-cadherin as a tumour-suppressor gene. <em><span class="cmti-12">Trends
-in Biochemical Sciences</span></em>, <strong><span
+role of the cell-adhesion molecule E-cadherin as a tumour-suppressor
+gene. <em><span class="cmti-12">Trends in Biochemical
+Sciences</span></em>, <strong><span
 class="cmbx-12">24</span></strong>(2): 73 – 76.
 </p>
 <p class="bibitem">
@@ -7599,7 +7317,6 @@ class="cmbx-12">300</span></strong>(5617): 286–290.
 <span class="biblabel"> <a 
  id="XTCGA2014LU"></a><span class="bibsp">   </span></span>Collisson,
 E., Campbell, J., Brooks, A., Berger, A., Lee, W., Chmielecki, J., Beer,
-
 D., Cope, L., Creighton, C., Danilova, L., <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2014)
 Comprehensive molecular profiling of lung adenocarcinoma. <em><span
@@ -7618,6 +7335,7 @@ cancers to raf inhibition with vemurafenib. <em><span
 class="cmti-12">Cancer</span> <span
 class="cmti-12">Discovery</span></em>, <strong><span
 class="cmbx-12">2</span></strong>(3): 227–235.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7665,7 +7383,6 @@ class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2014)
 The Reactome pathway knowledgebase. <em><span class="cmti-12">Nucleic
 Acids Res</span></em>, <strong><span
 class="cmbx-12">42</span></strong>(database issue): D472D477.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7681,6 +7398,7 @@ class="cmbx-12">13</span></strong>(11): 812.
 Nepusz, T. (2006) The igraph software package for complex network
 research. <em><span class="cmti-12">InterJournal</span></em>,
 <strong><span class="cmbx-12">Complex Systems</span></strong>: 1695.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7740,6 +7458,7 @@ comparative genomic approach for identifying synthetic lethal
 interactions in human cancer. <em><span class="cmti-12">Cancer
 Res</span></em>, <strong><span class="cmbx-12">73</span></strong>(20):
 6128–36.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7840,7 +7559,6 @@ class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2005)
 Targeting the dna repair defect in BRCA mutant cells as a therapeutic
 strategy. <em><span class="cmti-12">Nature</span></em>, <strong><span
 class="cmbx-12">434</span></strong>(7035): 917–21.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7858,6 +7576,7 @@ Cruz, F., Gapp, B.V., and Nijman, S.M. (2015) Synthetic lethal
 vulnerabilities of cancer. <em><span class="cmti-12">Annu Rev Pharmacol
 Toxicol</span></em>, <strong><span class="cmbx-12">55</span></strong>:
 513–531.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7916,6 +7635,7 @@ D805–811.
 (2004) Towards full employment: using RNAi to find roles for the
 redundant. <em><span class="cmti-12">Oncogene</span></em>, <strong><span
 class="cmbx-12">23</span></strong>(51): 8346–52.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7959,7 +7679,6 @@ class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2010) A
 pathway-based classification of human breast cancer. <em><span
 class="cmti-12">Proc Natl Acad Sci USA</span></em>, <strong><span
 class="cmbx-12">107</span></strong>(15): 6994–6999.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7973,6 +7692,7 @@ human breast cancer. <em><span class="cmti-12">Nat Genet</span></em>,
 <span class="biblabel"> <a 
  id="XGentleman2004"></a><span class="bibsp">   </span></span>Gentleman,
 R.C., Carey, V.J., Bates, D.M., Bolstad, B., Dettling, M., Dudoit, S.,
+
 Ellis, B., Gautier, L., Ge, Y., Gentry, J., <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2004)
 Bioconductor: open software development for computational biology and
@@ -8027,6 +7747,7 @@ F., Humar, B., and Guilford, P. (2003) The role of the E-cadherin gene
 susceptibility: from the laboratory to clinical practice. <em><span
 class="cmti-12">Annals of Oncology</span></em>, <strong><span
 class="cmbx-12">14</span></strong>(12): 1705–1713.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8071,7 +7792,6 @@ E-cadherin germline mutations define an inherited cancer syndrome
 dominated by diffuse gastric cancer. <em><span class="cmti-12">Hum
 Mutat</span></em>, <strong><span class="cmbx-12">14</span></strong>(3):
 249–55.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8139,6 +7859,7 @@ class="cmbx-12">144</span></strong>(5): 646–674.
  id="XCIX2013"></a><span class="bibsp">   </span></span>Hanna, S. (2003)
 Cancer incidence in new zealand (2003-2007). In D. Forman, D. Bray
 F Brewster, C. Gombe Mbalawa, B. Kohler, M. Piñeros,
+
 E. Steliarova-Foucher, R. Swaminathan, and J. Ferlay (editors),
 <em><span class="cmti-12">Cancer Incidence</span> <span
 class="cmti-12">in Five Continents</span></em>, volume X, 902–907.
@@ -8187,7 +7908,6 @@ Identification of conserved gene expression features between murine
 mammary carcinoma models and human breast tumors. <em><span
 class="cmti-12">Genome Biol</span></em>, <strong><span
 class="cmbx-12">8</span></strong>(5): R76.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8200,8 +7920,9 @@ class="cmbx-12">320</span></strong>: 362–365.
 <p class="bibitem">
 <span class="biblabel"> <a 
  id="XTCGA2014PAN"></a><span class="bibsp">   </span></span>Hoadley,
-K.A., Yau, C., Wolf, D.M., Cherniack, A.D., Tamborero, D., Ng, S.,
-Leiserson, M.D., Niu, B., McLellan, M.D., Uzunangelov, V., <em><span
+K.A., Yau, C., Wolf, D.M., Cherniack, A.D., Tamborero, D., Ng,
+
+S., Leiserson, M.D., Niu, B., McLellan, M.D., Uzunangelov, V., <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2014)
 Multiplatform analysis of 12 cancer types reveals molecular
 classification within and across tissues of origin. <em><span
@@ -8246,7 +7967,6 @@ class="cmti-12"> al.</span></em> (2006) The molecular portraits of
 breast tumors are conserved across microarray platforms. <em><span
 class="cmti-12">BMC Genomics</span></em>, <strong><span
 class="cmbx-12">7</span></strong>: 96.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8306,7 +8026,6 @@ kernel methods</span></em>, 169–184. MIT Press.
 Roebuck, P.L., Siwak, D.R., Zhang, N., Lu, Y., Davies, M.A., Akbani, R.,
 Weinstein, J.N., Mills, G.B., <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em> (2015) Development of a robust
-
 classifier for quality control of reverse-phase protein arrays.
 <em><span class="cmti-12">Bioinformatics</span></em>, <strong><span
 class="cmbx-12">31</span></strong>(6): 912.
@@ -8318,6 +8037,7 @@ W. (2005) The concept of synthetic lethality in the context of
 anticancer therapy. <em><span class="cmti-12">Nat Rev
 Cancer</span></em>, <strong><span class="cmbx-12">5</span></strong>(9):
 689–98.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8325,16 +8045,6 @@ Cancer</span></em>, <strong><span class="cmbx-12">5</span></strong>(9):
 W. (2009) Synthetic lethality: a framework for the development of wiser
 cancer therapeutics. <em><span class="cmti-12">Genome Med</span></em>,
 <strong><span class="cmbx-12">1</span></strong>: 99.
-</p>
-<p class="bibitem">
-<span class="biblabel"> <a 
- id="XKakiuchi2014"></a><span class="bibsp">   </span></span>Kakiuchi,
-M., Nishizawa, T., Ueda, H., Gotoh, K., Tanaka, A., Hayashi, A.,
-Yamamoto, S., Tatsuno, K., Katoh, H., Watanabe, Y., <em><span
-class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2014)
-Recurrent gain-of-function mutations of RHOA in diffuse-type gastric
-carcinoma. <em><span class="cmti-12">Nat Genet</span></em>,
-<strong><span class="cmbx-12">46</span></strong>(6): 583–587.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8416,7 +8126,6 @@ class="cmbx-12">9</span></strong>(8): 2163–2167.
 (2011) Initial impact of the sequencing of the human genome. <em><span
 class="cmti-12">Nature</span></em>, <strong><span
 class="cmbx-12">470</span></strong>(7333): 187–197.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8443,6 +8152,7 @@ class="cmbx-12">10</span></strong>(3): R25.
 and Marchiori, M. (2001) Efficient behavior of small-world networks.
 <em><span class="cmti-12">Phys Rev Lett</span></em>, <strong><span
 class="cmbx-12">87</span></strong>: 198701.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8526,7 +8236,6 @@ Systematic mapping of genetic interactions in caenorhabditis elegans
 identifies common modifiers of diverse signaling pathways. <em><span
 class="cmti-12">Nat Genet</span></em>, <strong><span
 class="cmbx-12">38</span></strong>(8): 896–903.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8554,6 +8263,7 @@ Carcinoma. <em><span class="cmti-12">N Engl J Med</span></em>,
 class="cmti-12">Nature</span> <span class="cmti-12">Reviews
 Cancer</span></em>, <strong><span
 class="cmbx-12">14</span></strong>(10): 649–649.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8639,11 +8349,9 @@ class="cmbx-12">74</span></strong>(2): 560–564.
  id="XMcCourt2013"></a><span class="bibsp">   </span></span>McCourt,
 C.M., McArt, D.G., Mills, K., Catherwood, M.A., Maxwell, P., Waugh,
 D.J., Hamilton, P., O’Sullivan, J.M., and Salto-Tellez, M. (2013)
-Validation of
-
-next generation sequencing technologies in comparison to current
-diagnostic gold standards for BRAF, EGFR and KRAS mutational analysis.
-<em><span class="cmti-12">PLoS ONE</span></em>, <strong><span
+Validation of next generation sequencing technologies in comparison to
+current diagnostic gold standards for BRAF, EGFR and KRAS mutational
+analysis. <em><span class="cmti-12">PLoS ONE</span></em>, <strong><span
 class="cmbx-12">8</span></strong>(7): e69604.
 </p>
 <p class="bibitem">
@@ -8672,6 +8380,7 @@ class="cmbx-12">455</span></strong>(7216): 1061–1068.
 clinical setting. <em><span class="cmti-12">Breast Cancer
 Res</span></em>, <strong><span class="cmbx-12">3</span></strong>(6):
 380–384.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8697,11 +8406,10 @@ class="cmbx-12">487</span></strong>(7407): 330–337.
 Chou, J.W., Willingham, M.C., Ruiz, J., Vaughn, J.P., Dubey, P., Lash,
 T.L., Hamilton-Dutoit, S.J., Bergh, J., Sotiriou, C., <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2013)
-Interactions
-
-between immunity, proliferation and molecular subtype in breast cancer
-prognosis. <em><span class="cmti-12">Genome Biol</span></em>,
-<strong><span class="cmbx-12">14</span></strong>(4): R34.
+Interactions between immunity, proliferation and molecular subtype in
+breast cancer prognosis. <em><span class="cmti-12">Genome
+Biol</span></em>, <strong><span class="cmbx-12">14</span></strong>(4):
+R34.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8786,21 +8494,11 @@ class="cmbx-12">406</span></strong>(6797): 747–752.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
- id="XPleasance2010"></a><span class="bibsp">   </span></span>Pleasance,
-E.D., Cheetham, R.K., Stephens, P.J., McBride, D.J., Humphray, S.J.,
-Greenman, C.D., Varela, I., Lin, M.L., Ordonez, G.R., Bignell, G.R.,
-<em><span class="cmti-12">et</span><span
-class="cmti-12"> al.</span></em> (2010) A comprehensive catalogue of
-somatic mutations from a human cancer genome. <em><span
-class="cmti-12">Nature</span></em>, <strong><span
-class="cmbx-12">463</span></strong>(7278): 191–196.
-</p>
-<p class="bibitem">
-<span class="biblabel"> <a 
  id="XPolyak2009"></a><span class="bibsp">   </span></span>Polyak, K.
-and Weinberg, R.A. (2009) Transitions between epithelial and mesenchymal
-states: acquisition of malignant and stem cell traits. <em><span
-class="cmti-12">Nat Rev Cancer</span></em>, <strong><span
+and Weinberg, R.A. (2009) Transitions between epithelial and
+
+mesenchymal states: acquisition of malignant and stem cell traits.
+<em><span class="cmti-12">Nat Rev Cancer</span></em>, <strong><span
 class="cmbx-12">9</span></strong>(4): 265–73.
 </p>
 <p class="bibitem">
@@ -8910,10 +8608,11 @@ class="cmbx-12">94</span></strong>(3): 441 – 448.
 Kauff, N., Robson, M., Kelly, B., Barakat, R., Satagopan, J., Ellis, N.,
 Hensley, M., Boyd, J., Borgen, P., <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2002)
-Outcome of preventive surgery and screening for breast and ovarian
-cancer in BRCA mutation carriers. <em><span class="cmti-12">J Clin
-Oncol</span></em>, <strong><span class="cmbx-12">20</span></strong>(5):
-1260–1268.
+Outcome of preventive surgery and
+
+screening for breast and ovarian cancer in BRCA mutation carriers.
+<em><span class="cmti-12">J Clin Oncol</span></em>, <strong><span
+class="cmbx-12">20</span></strong>(5): 1260–1268.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8929,7 +8628,6 @@ O., Beerenwinkel, N., and Lengauer, T. (2005) Rocr: visualizing
 classifier performance in r. <em><span
 class="cmti-12">Bioinformatics</span></em>, <strong><span
 class="cmbx-12">21</span></strong>(20): 7881.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8968,9 +8666,10 @@ class="cmbx-12">458</span></strong>(7239): 719–724.
 <p class="bibitem">
 <span class="biblabel"> <a 
  id="XStrom2012"></a><span class="bibsp">   </span></span>Ström, C. and
-Helleday, T. (2012) Strategies for the use of poly(adenosine diphosphate
-ribose) polymerase (parp) inhibitors in cancer therapy. <em><span
-class="cmti-12">Biomolecules</span></em>, <strong><span
+Helleday, T. (2012) Strategies for the use of poly(adenosine
+
+diphosphate ribose) polymerase (parp) inhibitors in cancer therapy.
+<em><span class="cmti-12">Biomolecules</span></em>, <strong><span
 class="cmbx-12">2</span></strong>(4): 635–649.
 </p>
 <p class="bibitem">
@@ -8989,7 +8688,6 @@ class="cmbx-12">508</span></strong>(7494): 118–122.
  id="XTaylor2009"></a><span class="bibsp">   </span></span>Taylor, I.W.,
 Linding, R., Warde-Farley, D., Liu, Y., Pesquita, C., Faria, D., Bull,
 S., Pawson, T., Morris, Q., and Wrana, J.L. (2009) Dynamic modularity in
-
 protein interaction networks predicts breast cancer outcome. <em><span
 class="cmti-12">Nat Biotechnol</span></em>, <strong><span
 class="cmbx-12">27</span></strong>(2): 199–204.
@@ -9023,20 +8721,11 @@ class="cmbx-12">490</span></strong>(7418): 61–70.
 <p class="bibitem">
 <span class="biblabel"> <a 
  id="XTCGA2017web"></a><span class="bibsp">   </span></span>The Cancer
-Genome Atlas Research Network (TCGA) (2017a) The Cancer Genome Atlas
+Genome Atlas Research Network (TCGA) (2017) The Cancer Genome Atlas
 Project. <a 
 href="https://cancergenome.nih.gov/" class="url" ><span
 class="cmtt-12">https://cancergenome.nih.gov/</span></a>. Accessed:
 26/03/2017.
-</p>
-<p class="bibitem">
-<span class="biblabel"> <a 
- id="XTCGA2017prov"></a><span class="bibsp">   </span></span>The Cancer
-Genome Atlas Research Network (TCGA) (2017b) The Cancer Genome Atlas
-Project Data Portal. <a 
-href="https://tcga-data.nci.nih.gov/" class="url" ><span 
-class="cmtt-12">https://tcga-\_data.nci.nih.gov/</span></a>. Accessed:
-06/02/2017 (via cBioPortal.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -9069,13 +8758,6 @@ class="cmtt-12">https://cran.r-\_project.org/</span></a>. Accessed:
 Project Consortium (ENCODE) (2004) The ENCODE (ENCyclopedia Of DNA
 Elements) Project. <em><span class="cmti-12">Science</span></em>,
 <strong><span class="cmbx-12">306</span></strong>(5696): 636–640.
-</p>
-<p class="bibitem">
-<span class="biblabel"> <a 
- id="XICGC2017web"></a><span class="bibsp">   </span></span>The
-Internation Cancer Genome Consortium (ICGC) (2017) ICGC Data Portal. <a 
-href="https://dcc.icgc.org/" class="url" ><span
-class="cmtt-12">https://dcc.icgc.org/</span></a>. Accessed: 06/02/2017.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -9261,17 +8943,6 @@ discovery. <em><span class="cmti-12">Nucleic Acids Res</span></em>,
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
- id="XWang2014"></a><span class="bibsp">   </span></span>Wang, K., Yuen,
-S.T., Xu, J., Lee, S.P., Yan, H.H., Shi, S.T., Siu, H.C., Deng, S., Chu,
-K.M., Law, S., <em><span class="cmti-12">et</span><span
-class="cmti-12"> al.</span></em> (2014) Whole-genome sequencing and
-comprehensive molecular profiling identify new driver mutations in
-gastric cancer. <em><span class="cmti-12">Nat Genet</span></em>,
-<strong><span class="cmbx-12">46</span></strong>(6): 573–582.
-
-</p>
-<p class="bibitem">
-<span class="biblabel"> <a 
  id="XWang2013"></a><span class="bibsp">   </span></span>Wang, X. and
 Simon, R. (2013) Identification of potential synthetic lethal genes to
 p53 using a computational biology approach. <em><span
@@ -9327,7 +8998,6 @@ class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2014)
 Comprehensive molecular characterization of urothelial bladder
 carcinoma. <em><span class="cmti-12">Nature</span></em>, <strong><span
 class="cmbx-12">507</span></strong>(7492): 315–322.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -9339,6 +9009,7 @@ class="cmti-12"> al.</span></em> (2013) The Cancer Genome Atlas
 Pan-Cancer analysis project. <em><span class="cmti-12">Nat
 Genet</span></em>, <strong><span class="cmbx-12">45</span></strong>(10):
 1113–1120.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -9390,7 +9061,6 @@ class="cmbx-12">13</span></strong>(Suppl 3): 71–80.
 Parallel statistical computing in r. <em><span class="cmti-12">R
 News</span></em>, <strong><span class="cmbx-12">2</span></strong>(2):
 10–14.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -9400,6 +9070,7 @@ essential genes and synthetic lethality via influence propagation in
 signaling pathways of cancer cell fates. <em><span class="cmti-12">J
 Bioinform Comput Biol</span></em>, <strong><span
 class="cmbx-12">13</span></strong>(3): 1541002.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 

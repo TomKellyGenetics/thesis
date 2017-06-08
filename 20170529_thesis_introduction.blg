@@ -6,60 +6,56 @@ A level-1 auxiliary file: methods.aux
 A level-1 auxiliary file: methods_dev.aux
 A level-1 auxiliary file: chapt3.aux
 A level-1 auxiliary file: chapt4.aux
-I couldn't open auxiliary file chapt5.aux
----line 35 of file 20170529_thesis_introduction.aux
- : \@input{chapt5.aux
- :                   }
-I'm skipping whatever remains of this command
+A level-1 auxiliary file: chapt5.aux
 A level-1 auxiliary file: chapt6.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: mycustom.bst
 A level-1 auxiliary file: appendices.aux
-Reallocated field_info (elt_size=4) to 12020 items from 5000.
+Reallocated field_info (elt_size=4) to 11864 items from 5000.
 Database file #1: thesis.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both volume and number fields in Erdos1960
-You've used 270 entries,
+You've used 264 entries,
             3105 wiz_defined-function locations,
-            2378 strings with 175518 characters,
-and the built_in function-call counts, 255626 in all, are:
-= -- 22830
-> -- 10791
-< -- 223
-+ -- 10446
-- -- 2945
-* -- 19759
-:= -- 30570
-add.period$ -- 559
-call.type$ -- 270
-change.case$ -- 2840
-chr.to.int$ -- 271
-cite$ -- 541
-duplicate$ -- 20534
-empty$ -- 16899
-format.name$ -- 3901
-if$ -- 50761
-int.to.chr$ -- 5
+            2344 strings with 172736 characters,
+and the built_in function-call counts, 249524 in all, are:
+= -- 22304
+> -- 10457
+< -- 219
++ -- 10107
+- -- 2853
+* -- 19309
+:= -- 29825
+add.period$ -- 545
+call.type$ -- 264
+change.case$ -- 2762
+chr.to.int$ -- 265
+cite$ -- 529
+duplicate$ -- 20102
+empty$ -- 16548
+format.name$ -- 3793
+if$ -- 49570
+int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 3545
-newline$ -- 1376
-num.names$ -- 1084
-pop$ -- 9848
+missing$ -- 3457
+newline$ -- 1344
+num.names$ -- 1060
+pop$ -- 9638
 preamble$ -- 1
-purify$ -- 2546
+purify$ -- 2476
 quote$ -- 0
-skip$ -- 9053
+skip$ -- 8779
 stack$ -- 0
-substring$ -- 18202
-swap$ -- 8519
+substring$ -- 17855
+swap$ -- 8315
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2418
+type$ -- 2364
 warning$ -- 1
-while$ -- 1092
+while$ -- 1068
 width$ -- 0
-write$ -- 3792
-(There was 1 error message)
+write$ -- 3706
+(There was 1 warning)
