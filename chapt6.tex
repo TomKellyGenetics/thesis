@@ -66,6 +66,7 @@ While \gls{SLIPT} analysis and \gls{RNAi} screens represent a significant step t
 
 Targeted therapeutics designed based on synthetic lethal interactions have potential to vastly expand the applications of ``precision medicine'' against molecular targets, particularly in cancer where many have been cancer genes have been identified. Synthetic lethality expands the range of cancer genes which can be (indirectly) targeted to include tumour suppressor genes with loss of function (such as \textit{CDH1}) and oncogenes with disrupted functions that are dysregulated or highly homologous to non-cancerous proto-oncogenes (such as \textit{MYC}, \textit{EGFR} or \textit{KRAS}). Applications against tumour suppressor genes is a particularly important application as these cannot be approached by careful dosing. Synthetic lethal drug design also has the added benefit of being highly specific against a particular genotype (such as \text{CDH1}\textsuperscript{-/-}) with the potential for target therapies with a wide therapeutic index and few adverse effects, in contrast to many current anti-cancer drug regimens \citep{Hopkins2008, Kaelin2009}. These properties are highly desirable for chemoprevention applications such as treatment against \textit{CDH1}-deficient early cancers in \gls{HDGC} patients before they are detectable during screening.
 
+\iffalse
 \section{Evaluating the Synthetic Lethality Prediction Tool}
 \label{chapt6:slipt}
 
@@ -84,12 +85,13 @@ Targeted therapeutics designed based on synthetic lethal interactions have poten
 
 \subsubsection{Differences to Computational Methods}
 \label{chapt6:slipt_compare_computational}
-
+\fi
 
 \section{Future Directions}
 \label{chapt6:future}
 %%paper
 
+\iffalse
 Such a bioinformatically-informed synthetic lethal screening and validation strategy could be integrated into existing and future screens for synthetic lethality in cancer. 
 
 Possible improvements to the SLIPT method include developing a Bayesian inference method or simulations and modelling to account for pathway structure among synthetic lethal genes. Another extension would be to test for higher order synthetic lethal interactions, where 3 or more genes perform a redundant function. 
@@ -104,6 +106,7 @@ Further development of the synthetic lethal model and simulation is needed to ex
 Comparing the findings of modelling and simulation with public gene expression analysis and experimental screen targets is still needed to identify putative synthetic lethal interactions.  This application will be tested with the example of CDH1 as a query gene in breast cancer for follow up to earlier results, relevance to ongoing research in the Cancer genetics Laboratory, and comparison to the experimental screen data of MCF10A cells by Telford et al. (2015).  While this methodology is intended to be widely applicable, particularly to other cancer genes and will be made available to the research community (manuscript and code release in preparation).
 
 There are several avenues for further research on synthetic lethality in breast cancer. The main alternative themes are network analysis with a focus on tissue specificity or drug feasibility with an emphasis on pharmacogenomics, biological pathways, and whether candidate targets could be inactivated by compounds with favourable pharmacokinetic properties. Either approach remains within the scope of the project, although each will require adoption of new computational tools, which is important topic for consideration in the meeting and changes to the project direction later in the year.
+\fi
 
 \subsection{Refinements Synthetic Lethality Prediction Methods}
 \label{chapt6:future_slipt_method}
@@ -137,8 +140,8 @@ There are several avenues for further research on synthetic lethality in breast 
 
 Synthetic lethal interactions are important for understanding gene function and development of targeted anti-cancer treatments.  Synthetic lethal discovery with experimental screening is error prone and limited by the model systems in which it is performed.  A bioinformatics tool to predict synthetic lethal interactions from genomics data would greatly benefit the cancer research community (and wider genetics research community).  Several such tools exist, including one we have developed, but they have conflicting design and results are often inconsistent with experimental screen data. Therefore, modelling and simulation of synthetic lethality in gene expression data is needed to ensure the statistical validity of predictions.  We have developed a model with correlation structure based on a Multivariate Normal distribution for which simulations detect synthetic lethality with high performance in simple cases and which has the potential to be developed to model complex correlation structure, biological pathways, or patterns observed in empirical gene expression data.  The modelling, public data analysis, and experimental screen data approaches will be combined to further examine the example of CDH1 in breast cancer.  Analysis of gene networks, tissue specificity, biological pathways, or drug targets remain options to explore tool development and implications for synthetic lethal cancer research in the future. 
 
+\iffalse
 \clearpage
-
 \paragraph{Aims}
 
   \begin{itemize}
@@ -218,3 +221,4 @@ Synthetic lethal interactions are important for understanding gene function and 
       
       \item Our simulation procedure is robust across pathway structures and has desirable performance compared to other statistical techniques 
       \end{itemize}
+ \fi
