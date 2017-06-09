@@ -66,6 +66,7 @@ While \gls{SLIPT} analysis and \gls{RNAi} screens represent a significant step t
 
 Targeted therapeutics designed based on synthetic lethal interactions have potential to vastly expand the applications of ``precision medicine'' against molecular targets, particularly in cancer where many have been cancer genes have been identified. Synthetic lethality expands the range of cancer genes which can be (indirectly) targeted to include tumour suppressor genes with loss of function (such as \textit{CDH1}) and oncogenes with disrupted functions that are dysregulated or highly homologous to non-cancerous proto-oncogenes (such as \textit{MYC}, \textit{EGFR} or \textit{KRAS}). Applications against tumour suppressor genes is a particularly important application as these cannot be approached by careful dosing. Synthetic lethal drug design also has the added benefit of being highly specific against a particular genotype (such as \text{CDH1}\textsuperscript{-/-}) with the potential for target therapies with a wide therapeutic index and few adverse effects, in contrast to many current anti-cancer drug regimens \citep{Hopkins2008, Kaelin2009}. These properties are highly desirable for chemoprevention applications such as treatment against \textit{CDH1}-deficient early cancers in \gls{HDGC} patients before they are detectable during screening.
 
+\iffalse
 \section{Evaluating the Synthetic Lethality Prediction Tool}
 \label{chapt6:slipt}
 
@@ -84,12 +85,13 @@ Targeted therapeutics designed based on synthetic lethal interactions have poten
 
 \subsubsection{Differences to Computational Methods}
 \label{chapt6:slipt_compare_computational}
-
+\fi
 
 \section{Future Directions}
 \label{chapt6:future}
 %%paper
 
+\iffalse
 Such a bioinformatically-informed synthetic lethal screening and validation strategy could be integrated into existing and future screens for synthetic lethality in cancer. 
 
 Possible improvements to the SLIPT method include developing a Bayesian inference method or simulations and modelling to account for pathway structure among synthetic lethal genes. Another extension would be to test for higher order synthetic lethal interactions, where 3 or more genes perform a redundant function. 
@@ -104,6 +106,7 @@ Further development of the synthetic lethal model and simulation is needed to ex
 Comparing the findings of modelling and simulation with public gene expression analysis and experimental screen targets is still needed to identify putative synthetic lethal interactions.  This application will be tested with the example of CDH1 as a query gene in breast cancer for follow up to earlier results, relevance to ongoing research in the Cancer genetics Laboratory, and comparison to the experimental screen data of MCF10A cells by Telford et al. (2015).  While this methodology is intended to be widely applicable, particularly to other cancer genes and will be made available to the research community (manuscript and code release in preparation).
 
 There are several avenues for further research on synthetic lethality in breast cancer. The main alternative themes are network analysis with a focus on tissue specificity or drug feasibility with an emphasis on pharmacogenomics, biological pathways, and whether candidate targets could be inactivated by compounds with favourable pharmacokinetic properties. Either approach remains within the scope of the project, although each will require adoption of new computational tools, which is important topic for consideration in the meeting and changes to the project direction later in the year.
+\fi
 
 \subsection{Refinements Synthetic Lethality Prediction Methods}
 \label{chapt6:future_slipt_method}
@@ -131,14 +134,34 @@ There are several avenues for further research on synthetic lethality in breast 
 \subsection{Application to Further Genes and Pathways}
 \label{chapt6:future_slipt}
 
-
-\chapter{Conclusion}
+\clearpage
+\section{Conclusion}
 \label{chap:conclusion}
 
-Synthetic lethal interactions are important for understanding gene function and development of targeted anti-cancer treatments.  Synthetic lethal discovery with experimental screening is error prone and limited by the model systems in which it is performed.  A bioinformatics tool to predict synthetic lethal interactions from genomics data would greatly benefit the cancer research community (and wider genetics research community).  Several such tools exist, including one we have developed, but they have conflicting design and results are often inconsistent with experimental screen data. Therefore, modelling and simulation of synthetic lethality in gene expression data is needed to ensure the statistical validity of predictions.  We have developed a model with correlation structure based on a Multivariate Normal distribution for which simulations detect synthetic lethality with high performance in simple cases and which has the potential to be developed to model complex correlation structure, biological pathways, or patterns observed in empirical gene expression data.  The modelling, public data analysis, and experimental screen data approaches will be combined to further examine the example of CDH1 in breast cancer.  Analysis of gene networks, tissue specificity, biological pathways, or drug targets remain options to explore tool development and implications for synthetic lethal cancer research in the future. 
+Synthetic lethal interactions are important for understanding gene function and development of highly specific targeted anti-cancer treatments. Synthetic lethality potential expanding the repertoire of applications for precision cancer medicine to indirectly targeting loss of function in tumour suppressor genes.  Synthetic lethal discovery with experimental screening is error prone and limited by the model systems in which it is performed.  There is a need for bioinformatics tool to predict synthetic lethal interactions from gene expression data facilitates rapid identification of synthetic lethal candidates to augment functional genetic screens and cancer drug target triage. I present the original \acrfull{SLIPT} methodology as a statically robust procedure which performs this analysis.
 
+The \gls{SLIPT} methodology has been demonstrated to identify biologically relevant genes and pathways. An comprehensive analysis of synthetic lethal partners of the \textit{CDH1} was performed in \gls{TCGA} breast cancer data \citep{TCGA2012} with many of these findings replicated in stomach cancer data \citep{TCGA2014GC}. These genes clustered into several distinct groups, with distinct biological functions and elevated expression in different clinical subtypes.  These analyses identified of synthetic lethal candidates in the $G_{\alpha i}$ signalling, cytoplasmic microfibres, and extracellular fibrin clotting pathways which were validated in an \gls{siRNA} screen performed by \citet{Telford2015} and consistent with the known cytoskeletal and cell signalling roles of E-cadherin. These findings support interventions against these pathways being applicable to specific cancer therapeutics beyond the pre-clinical cell line models in which they were validated. \gls{SLIPT} has also identified synthetic lethal partners in novel pathways for \textit{CDH1} including the regulation of immune signalling and translational elongation which extend the range of pleiotropic functions of \textit{CDH1} and present further biological mechanisms to investigate the malignancy and vulnerabilities of \textit{CDH1}-deficient cancers.
+
+While some of these pathways are not expected to be detected in an isolated experimental cell line model, pathway structure could potentially account for this disparity. Thus synthetic lethal candidates detected by \acrshort{SLIPT} and \acrshort{siRNA} were compared within graph structures of the candidate synthetic lethal pathways. However, this did not generally account for differences between detection by these approaches. Neither synthetic lethal detection methodology preferentially detected genes of more importance or connectivity in pathway structures using established network metrics. Nor could it be generally established that \acrshort{SLIPT} gene candidates were upstream or downstream of \acrshort{siRNA} gene candidates in pathway structures across biological pathways.
+
+Pathway graph structures were also included in investigations with simulated data to ascertain whether the \gls{SLIPT} procedure performed desirably in data with complex correlation structures derived based on biological pathways. A simulation procedure was developed based on a statistical model of synthetic lethality which generates multivariate normal data with known synthetic lethal partners and correlation structures.  
+
+
+would greatly benefit the cancer research community (and wider genetics research community).  Several such tools exist, including one we have developed, but they have conflicting design and results are often inconsistent with experimental screen data. Therefore, modelling and simulation of synthetic lethality in gene expression data is needed to ensure the statistical validity of predictions.  We have developed a model with correlation structure based on a Multivariate Normal distribution for which simulations detect synthetic lethality with high performance in simple cases and which has the potential to be developed to model complex correlation structure, biological pathways, or patterns observed in empirical gene expression data.  The modelling, public data analysis, and experimental screen data approaches will be combined to further examine the example of CDH1 in breast cancer.  Analysis of gene networks, tissue specificity, biological pathways, or drug targets remain options to explore tool development and implications for synthetic lethal cancer research in the future. 
+%chapt 5
+
+A model of synthetic lethality used to simulate gene expression datasets with synthetic lethal partners of a gene. The \acrshort{SLIPT} methodology had high statistical performance detecting few synthetic lethal partners, although this diminishes with more synthetic lethal parners or lower sample size. The \acrshort{SLIPT} methodology performs better than Pearson's correlation or the $\chi^2$-test. In particular, it performs well with high specificity for datasets containing thousands of genes or genes positively correlated with the query gene (as expected in human expression data). It was also robust across correlation structures, including those derived from complex pathway structures and often distinguished synthetic lethal genes from those positively or negatively correlated with them. Therefore \acrshort{SLIPT} is appropriate to identify synthetic lethal genes within pathways and use candidate synthetic lethal genes (and their correlates) to identify synthetic lethal pathways.
+
+%Conclusions
 \clearpage
+\textbf{Summary}
 
+Thus my thesis has developed, evaluated and refined a bioinformatics approach to discovery of synthetic lethal genes solely from gene expression data. This approach has been demonstrated to detect biologically informative and clinically relevant candidate partners for \textit{CDH1} in breast and stomach cancers. These investigations have also involved the development of network analysis and simulation procedures which may be more widely applicable.
+
+\cle
+
+\iffalse
+\clearpage
 \paragraph{Aims}
 
   \begin{itemize}
@@ -218,3 +241,4 @@ Synthetic lethal interactions are important for understanding gene function and 
       
       \item Our simulation procedure is robust across pathway structures and has desirable performance compared to other statistical techniques 
       \end{itemize}
+ \fi
