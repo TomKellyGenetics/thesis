@@ -1,4 +1,4 @@
-q#! \bin\bash
+#! \bin\bash
 latex -interaction=batchmode ${1}.tex
 bibtex $1
 makeglossaries $1

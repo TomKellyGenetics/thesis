@@ -12,7 +12,7 @@
 <meta name="originator" content="TeX4ht (http://www.cse.ohio-state.edu/~gurari/TeX4ht/)" />
 <!-- html,xhtml -->
 <meta name="src" content="20170529_thesis_introduction.tex" />
-<meta name="date" content="2017-06-08 20:18:00" />
+<meta name="date" content="2017-06-09 21:38:00" />
 <link rel="stylesheet" type="text/css" href="20170529_thesis_introduction.css" />
 </head>
 <body 
@@ -26,8 +26,8 @@
 <span class="chapterToc"><a 
 href="#Q1-1-4">Glossary</a></span> <br /><span class="chapterToc"><a 
 href="#Q1-1-6">Acronyms</a></span> <br /><span class="chapterToc">1 <a 
-href="#x1-60001" id="QQ2-1-8">Introduction</a></span> <br /> <span
-class="sectionToc">1.1 <a 
+href="#x1-60001" id="QQ2-1-8">Introduction and Literature
+Review</a></span> <br /> <span class="sectionToc">1.1 <a 
 href="#x1-70001" id="QQ2-1-9">Cancer Research in the Post-Genomic
 Era</a></span> <br />  <span class="subsectionToc">1.1.1 <a 
 href="#x1-80001" id="QQ2-1-10">Cancer as a Global Health
@@ -111,12 +111,12 @@ Development</a></span> <br /> <span class="sectionToc">1.3 <a
 href="#x1-520003" id="QQ2-1-59">E-cadherin as a Synthetic Lethal
 Target</a></span> <br />  <span class="subsectionToc">1.3.1 <a 
 href="#x1-530001" id="QQ2-1-60">The <span class="cmti-12">CDH1
-</span>gene and it’s Biological Functions</a></span> <br />   <span
+</span>gene and its Biological Functions</a></span> <br />   <span
 class="subsubsectionToc">1.3.1.1 <a 
 href="#x1-540001" id="QQ2-1-61">Cytoskeleton</a></span> <br />   <span
 class="subsubsectionToc">1.3.1.2 <a 
 href="#x1-550002" id="QQ2-1-62">Extracellular and Tumour
-Micro-Environment</a></span> <br />   <span
+Micro-environment</a></span> <br />   <span
 class="subsubsectionToc">1.3.1.3 <a 
 href="#x1-560003" id="QQ2-1-63">Cell-Cell Adhesion and
 Signalling</a></span> <br />  <span class="subsectionToc">1.3.2 <a 
@@ -998,7 +998,7 @@ class="td11">
 
 <h2 class="chapterHead">
 <span class="titlemark">Chapter 1</span><br /><a 
- id="x1-60001"></a>Introduction
+ id="x1-60001"></a>Introduction and Literature Review
 </h2>
 <a 
  id="x1-6001r1"></a>
@@ -2345,7 +2345,7 @@ href="#XTCGA2014PAN">2014</a>) has identified 11 molecular subtypes
 across these tissues, 5 of corresponding to tissue cancer types and the
 remainder reassigned due to molecular similarities shared across cancer
 types. Squamous cell lung, head, and neck and a subset bladder cancers
-were grouped together by molecular similarities, characteried by a high
+were grouped together by molecular similarities, characterised by a high
 frequency of <span class="cmti-12">TP53 </span>mutations. Conversely,
 bladder cancers were divided into 3 of these molecular subtypes with
 distinct profiles. This project further supports the genomic
@@ -6192,9 +6192,9 @@ such as <span class="cmti-12">CDH1</span>. <a
 href="#glo:E-cadherin">E-cadherin</a> is a transmembrane protein
 (encoded by <span class="cmti-12">CDH1</span>) with several
 characterised functions in the cytoskeleton and cell-to-cell signalling.
-Here we outline the key known functions of <a 
-href="#glo:E-cadherin">E-cadherin</a> and it’s importance in cancer
-biology. <span class="cmti-12">CDH1 </span>is a tumour supressor gene,
+Here we outline the characterised functions of <a 
+href="#glo:E-cadherin">E-cadherin</a> and its importance in cancer
+biology. <span class="cmti-12">CDH1 </span>is a tumour suppressor gene,
 with loss of function occurring in both familial (germline mutations)
 and sporadic (somatic mutations) cancers. As such, <span
 class="cmti-12">CDH1 </span>inactivation is a prime example of a genetic
@@ -6202,17 +6202,16 @@ event that could be targeted by <a
 href="#glo:synthetic lethal">synthetic lethality</a> for anti-cancer
 treatments. Most notably this includes patients at risk of developing
 hereditary breast and stomach cancers for which conventional surgical or
-cytotoxic chemotherapy is not ideal (due to impact of quality of life)
-and who have a known genetic aberration in their familial syndromic
-cancers. Effective treatments against <span class="cmti-12">CDH1
-</span>inactivation would also benefit patients with sporadic diffuse
-gastric cancers since they often present with symptoms at a late stage.
-<a 
+cytotoxic chemotherapy is not ideal and who have a known genetic
+aberration in their familial syndromic cancers. Effective treatments
+against <span class="cmti-12">CDH1 </span>inactivation would also
+benefit patients with sporadic diffuse gastric cancers since they often
+present with symptoms at a late stage. <a 
  id="x1-52001r48"></a>
 </p>
 <h4 class="subsectionHead">
 <span class="titlemark">1.3.1 </span> <a 
- id="x1-530001"></a>The <span class="cmti-12">CDH1 </span>gene and it’s
+ id="x1-530001"></a>The <span class="cmti-12">CDH1 </span>gene and its
 Biological Functions
 </h4>
 <!--l. 918-->
@@ -6265,8 +6264,11 @@ complex is particularly important for cell structure and regulation
 because it interacts with cytoskeletal actins and microtubules. The
 cytoskeletal role of <a 
 href="#glo:E-cadherin">E-cadherin</a> maintains healthy cellular
-viability and growth in epithelial tissues including cellular polarity.
-<a 
+viability and growth in epithelial tissues including cellular polarity
+(<a 
+href="#XJeanes2008">Jeanes <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XJeanes2008">2008</a>). <a 
 href="#glo:E-cadherin">E-cadherin</a> is not essential to cellular
 viability but loss in epithelial cells does lead to defects in
 cytoskeletal structure and proliferation. In addition to a central role
@@ -6274,25 +6276,38 @@ in the adherens complex, <a
 href="#glo:E-cadherin">E-cadherin</a> is involved in many other cellular
 functions and thus <span class="cmti-12">CDH1 </span>is regarded as a
 highly <a 
-href="#glo:pleiotropy">pleiotropic</a> gene. <a 
+href="#glo:pleiotropy">pleiotropic</a> gene (<a 
+href="#XKroepil2012">Kroepil <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XKroepil2012">2012</a>). <a 
  id="x1-54001r61"></a>
 </p>
 <h5 class="subsubsectionHead">
 <span class="titlemark">1.3.1.2 </span> <a 
- id="x1-550002"></a>Extracellular and Tumour Micro-Environment
+ id="x1-550002"></a>Extracellular and Tumour Micro-environment
 </h5>
 <!--l. 924-->
 <p class="noindent">
 As a transmembrane signalling protein <a 
 href="#glo:E-cadherin">E-cadherin</a> also interacts with the
 extracellular environment and other cells, most notably forming tight
-junctions between cells. These junctions serve to both regulate movement
-of ion signals between cells and separate membrane proteins on the
-apical and basal surfaces of a cell, maintaining cell polarity. Thus <a 
+junctions between cells (<a 
+href="#XChen2014">Chen <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XChen2014">2014</a>; <a 
+href="#XTunggal2005">Tunggal <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XTunggal2005">2005</a>). These junctions serve to both regulate
+movement of ion signals between cells and separate membrane proteins on
+the apical and basal surfaces of a cell, maintaining cell polarity. Thus
+<a 
 href="#glo:E-cadherin">E-cadherin</a> is an important regulator of
-epithelial tissues by intercellular communication. It also has important
-roles in the extracellular matrix, including fibrin clot formation. The
-role of intercellular interactions and the tissue micro-environment are
+epithelial tissues by intercellular communication (<a 
+href="#XJeanes2008">Jeanes <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XJeanes2008">2008</a>). It also has important roles in the
+extracellular matrix, including fibrin clot formation. The role of
+intercellular interactions and the tissue micro-environment are
 important themes in cancer research, being a potential mechanism for
 cancer progression and malignancy in a addition to it’s potential for
 specifically targeting tumour cells. <a 
@@ -6307,22 +6322,36 @@ specifically targeting tumour cells. <a
 The signals mediated by tight junctions are also passed on to
 intracellular signalling pathways and thus <a 
 href="#glo:E-cadherin">E-cadherin</a> also has a role in maintaining
-cellular function and growth. One such example is the regulation of
-<span class="cmmi-12">β</span>-catenin which interacts with both the
-actin
+cellular function and growth.
 
-cytoskeleton and acts as a transcription factor via the WNT pathway.
-Similarly, the Hippo and PI3K/AKT pathways are implicated in being
-mediated by <a 
-href="#glo:E-cadherin">E-cadherin</a>, having roles in promoting cell
-survival, proliferation, and repressing apoptosis. <a 
+One such example is the regulation of <span
+class="cmmi-12">β</span>-catenin which interacts with both the actin
+cytoskeleton and acts as a transcription factor via the WNT pathway (<a 
+href="#XJeanes2008">Jeanes <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XJeanes2008">2008</a>). Similarly, the Hippo and PI3K/AKT
+pathways are implicated in being mediated by <a 
+href="#glo:E-cadherin">E-cadherin</a> (<a 
+href="#XDeSantis2009">De Santis <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XDeSantis2009">2009</a>; <a 
+href="#XKim2011">Kim <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XKim2011">2011</a>), having roles in promoting cell survival,
+proliferation, and repressing apoptosis. <a 
 href="#glo:E-cadherin">E-cadherin</a> shares several downstream pathways
 with signalling pathways such as integrins and thus indirectly interacts
 with them, particularly since feedback loops may occur in such pathways.
 Conversely, the multifaceted roles of <a 
-href="#glo:E-cadherin">E-cadherin</a> have been shown with differing
+href="#glo:E-cadherin">E-cadherin</a> have been shown with
 overexpression in ovarian cells promoting tumour growth, while it
-maintains healthy cellular functions in other cells. <a 
+maintains healthy cellular functions in other cells (<a 
+href="#XBrouxhon2014">Brouxhon <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XBrouxhon2014">2014</a>; <a 
+href="#XDong2012">Dong <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XDong2012">2012</a>). <a 
  id="x1-56001r60"></a>
 </p>
 <h4 class="subsectionHead">
@@ -6384,7 +6413,9 @@ href="#glo:E-cadherin">E-cadherin</a> is not sufficient to cause <a
 href="#glo:EMT">EMT</a> or tumourigenesis, it is an important step in
 this mechanism of tumour progression and a potential therapeutic
 intervention may therefore also impede cancer progression and have
-activity against advanced stage cancers. <a 
+activity against advanced stage cancers.
+
+<a 
  id="x1-58001r64"></a>
 </p>
 <h4 class="subsectionHead">
@@ -6417,13 +6448,31 @@ individuals are prone to carcinogenic lesion in the breast and stomach
 when the other allele is inactivated, occurring much more frequently and
 thus younger than in individuals without a second functional allele of
 <span class="cmti-12">CDH1</span>. The loss of the second allele is most
-often hypermethylation suppressing expression rather than mutation,
-although loss of heterozygousity may also occur. Therefore <a 
+often hypermethylation suppressing expression rather than mutation (<a 
+href="#XGrady2000">Grady <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XGrady2000">2000</a>; <a 
+href="#XMachado2001">Machado <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XMachado2001">2001</a>; <a 
+href="#XOliveira2009">Oliveira <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XOliveira2009">2009</a>), although loss of heterozygousity may
+also occur (<a 
+href="#XGuilford2010">Guilford <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XGuilford2010">2010</a>). Therefore <a 
 href="#glo:HDGC">HDGC</a> is an autosomal dominant cancer syndrome with
 incomplete penetrance. The “lifetime” (until age 80 years) risk for
 mutation carriers of diffuse gastric cancer is 70% in males and 56% in
-females. In addition, the lifetime risk of lobular breast cancer is 42%
-in female mutation carriers.
+females (<a 
+href="#XHansford2015">Hansford <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em></a>, <a 
+href="#XHansford2015">2015</a>; <a 
+href="#XvanderPost2015">van der Post <em><span
+class="cmti-12">et</span><span class="cmti-12"> al.</span></em></a>, <a 
+href="#XvanderPost2015">2015</a>). In addition, the lifetime risk of
+lobular breast cancer is 42% in female mutation carriers.
 </p>
 <!--l. 941-->
 <p class="indent">
@@ -6465,11 +6514,12 @@ difficult to detect and may be missed in regular screening. Thus
 patients carrying <span class="cmti-12">CDH1 </span>mutations either
 have surgical interventions with a significant impact on quality of life
 and risk of complications or remain at risk of developing advanced stage
-stomach cancers. Due to the lower mortality rate due to stomach cancers,
-there is increasing concerns among these <a 
+stomach cancers. Due to the lower
+
+mortality rate due to stomach cancers, there is increasing concerns
+among these <a 
 href="#glo:HDGC">HDGC</a> families on the elevated risk of lobular
 breast cancers for women later in life.
-
 </p>
 <!--l. 945-->
 <p class="indent">
@@ -6558,13 +6608,11 @@ href="#glo:genomics">Genomics</a> technologies and the data available
 from them have immense potential for understanding of genetics and
 improving healthcare, including identification of genes altered in
 cancer for molecular diagnosis, prognostic biomarkers, and therapeutic
-targets. This has
-
-been demonstrated with the identification of cancer genes in many
-cancers, distinguishing tumour subtypes by expression profiles, and the
-development of targeted therapies against oncogenes (such as <span
-class="cmti-12">BRAF</span>) and tumour suppressors (such as <span
-class="cmti-12">BRCA1</span>). <a 
+targets. This has been demonstrated with the identification of cancer
+genes in many cancers, distinguishing tumour subtypes by expression
+profiles, and the development of targeted therapies against oncogenes
+(such as <span class="cmti-12">BRAF</span>) and tumour suppressors (such
+as <span class="cmti-12">BRCA1</span>). <a 
 href="#glo:synthetic lethal">Synthetic lethality</a> is an important
 genetic interaction to study fundamental cellular functions and exploit
 them for biomarkers and cancer treatment. They present a means to target
@@ -6632,18 +6680,17 @@ and human tissues.
 Effective screening, prediction, and analysis of <a 
 href="#glo:synthetic lethal">synthetic lethal</a> interactions are a
 crucial part of developing next generation anti-cancer strategies.
-Therefore, we propose developing a computational statistical procedure
-to identify <a 
+Therefore, we propose developing a
+
+computational statistical procedure to identify <a 
 href="#glo:synthetic lethal">synthetic lethal</a> interactions and
 construct gene networks. This will enable the development of
 personalised medicine targeted to particular molecular aberrations.
 Genetic tests and <a 
 href="#glo:genomics">genomics</a> have the potential to revolutionise
 cancer screening, diagnosis, and prognostics; targeted therapeutics,
-similarly,
-
-have applications in prevention and therapy of sporadic or hereditary
-cancers with known molecular properties.
+similarly, have applications in prevention and therapy of sporadic or
+hereditary cancers with known molecular properties.
 </p>
 <!--l. 998-->
 <p class="indent">
@@ -6696,21 +6743,22 @@ investigations. <a
 </h4>
 <!--l. 1002-->
 <p class="noindent">
-Understanding synthetic lethality is important in cancers and has shown
+Understanding synthetic lethality is important in cancers, having shown
 an impact clinical practice and patient outcomes for certain genes
 already. Thus this thesis aims to identify synthetic lethal gene pairs
 using public gene expression data. Accordingly, chapter 3 aims to
 develop the methods to do so including a synthetic lethal detection
 methodology (<a 
-href="#glo:SLIPT">SLIPT</a>) which has been released as an R software
-package. This chapter also documents the simulation and network analysis
-procedures developed to support the use of <a 
+href="#glo:SLIPT">SLIPT</a>) and its release as an R software package.
+This chapter also serves to document the original simulation and network
+analysis procedures developed to support the use of <a 
 href="#glo:SLIPT">SLIPT</a> and perform analyses in throughout this
 thesis.
+
 </p>
 <!--l. 1004-->
 <p class="indent">
-This thesis also aimed to demonstrate <a 
+This thesis also aims to demonstrate <a 
 href="#glo:SLIPT">SLIPT</a> methodology for analysis of <a 
 href="#glo:RNA-Seq">RNA-Seq</a> gene expression data. Chapter 4 aimed to
 do so by performing an analysis to identify candidate synthetic lethal
@@ -6722,9 +6770,8 @@ href="#XTCGA2014GC">2014</a>; <a
 href="#XTCGA2012">TCGA</a>, <a 
 href="#XTCGA2012">2012</a>). Chapter 4 also aimed to demonstrate the
 biological relevance of these candidate synthetic lethal partners by
-identifying synthetic lethal pathways
-
-and comparing them with the results of an experimental <a 
+identifying synthetic lethal pathways and comparing them with the
+results of an experimental <a 
 href="#glo:siRNA">siRNA</a> screen (<a 
 href="#XTelford2015">Telford <em><span class="cmti-12">et</span><span
 class="cmti-12"> al.</span></em></a>, <a 
@@ -7145,6 +7192,15 @@ class="cmbx-12">30</span></strong>(1): 107 – 117.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
+ id="XBrouxhon2014"></a><span class="bibsp">   </span></span>Brouxhon,
+S.M., Kyrkanides, S., Teng, X., Athar, M., Ghazizadeh, S., Simon, M.,
+O’Banion, M.K., and Ma, L. (2014) Soluble E-cadherin: a critical
+oncogene modulating receptor tyrosine kinases, MAPK and PI3K/Akt/mTOR
+signaling. <em><span class="cmti-12">Oncogene</span></em>, <strong><span
+class="cmbx-12">33</span></strong>(2): 225–235.
+</p>
+<p class="bibitem">
+<span class="biblabel"> <a 
  id="XBryant2005"></a><span class="bibsp">   </span></span>Bryant, H.E.,
 Schultz, N., Thomas, H.D., Parker, K.M., Flower, D., Lopez, E., Kyle,
 S., Meuth, M., Curtin, N.J., and Helleday, T. (2005) Specific killing of
@@ -7204,6 +7260,7 @@ class="cmtt-12">http://www.cbioportal.org/</span></a>. Accessed:
 <span class="biblabel"> <a 
  id="XPathwayCommons"></a><span class="bibsp">   </span></span>Cerami,
 E.G., Gross, B.E., Demir, E., Rodchenkov, I., Babur, O., Anwar, N.,
+
 Schultz, N., Bader, G.D., and Sander, C. (2011) Pathway Commons, a web
 resource for biological pathway data. <em><span class="cmti-12">Nucleic
 Acids Res</span></em>, <strong><span
@@ -7214,10 +7271,8 @@ class="cmbx-12">39</span></strong>(Database issue): D685–690.
  id="XChen2014"></a><span class="bibsp">   </span></span>Chen, A.,
 Beetham, H., Black, M.A., Priya, R., Telford, B.J., Guest, J., Wiggins,
 G.A.R., Godwin, T.D., Yap, A.S., and Guilford, P.J. (2014) E-cadherin
-loss
-
-alters cytoskeletal organization and adhesion in non-malignant breast
-cells but is insufficient to induce an epithelial-mesenchymal
+loss alters cytoskeletal organization and adhesion in non-malignant
+breast cells but is insufficient to induce an epithelial-mesenchymal
 transition. <em><span class="cmti-12">BMC Cancer</span></em>,
 <strong><span class="cmbx-12">14</span></strong>(1): 552.
 </p>
@@ -7335,7 +7390,6 @@ cancers to raf inhibition with vemurafenib. <em><span
 class="cmti-12">Cancer</span> <span
 class="cmti-12">Discovery</span></em>, <strong><span
 class="cmbx-12">2</span></strong>(3): 227–235.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7398,7 +7452,6 @@ class="cmbx-12">13</span></strong>(11): 812.
 Nepusz, T. (2006) The igraph software package for complex network
 research. <em><span class="cmti-12">InterJournal</span></em>,
 <strong><span class="cmbx-12">Complex Systems</span></strong>: 1695.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7442,6 +7495,16 @@ class="cmbx-12">183</span></strong>(4): 404–11.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
+ id="XDeSantis2009"></a><span class="bibsp">   </span></span>De Santis,
+G., Miotti, S., Mazzi, M., Canevari, S., and Tomassetti, A. (2009)
+
+E-cadherin directly contributes to PI3K/AKT activation by engaging the
+PI3K-p85 regulatory subunit to adherens junctions of ovarian carcinoma
+cells. <em><span class="cmti-12">Oncogene</span></em>, <strong><span
+class="cmbx-12">28</span></strong>(9): 1206–1217.
+</p>
+<p class="bibitem">
+<span class="biblabel"> <a 
  id="Xpaxtools"></a><span class="bibsp">   </span></span>Demir, E.,
 Babur, O., Rodchenkov, I., Aksoy, B.A., Fukuda, K.I., Gross, B., Sumer,
 O.S., Bader, G.D., and Sander, C. (2013) Using biological pathway data
@@ -7458,7 +7521,6 @@ comparative genomic approach for identifying synthetic lethal
 interactions in human cancer. <em><span class="cmti-12">Cancer
 Res</span></em>, <strong><span class="cmbx-12">73</span></strong>(20):
 6128–36.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7493,13 +7555,23 @@ class="cmbx-12">2</span></strong>(2): 78–81.
 <p class="bibitem">
 <span class="biblabel"> <a 
  id="XDixon2008"></a><span class="bibsp">   </span></span>Dixon, S.J.,
-Fedyshyn, Y., Koh, J.L., Prasad, T.S., Chahwan, C., Chua, G., Toufighi,
-K., Baryshnikova, A., Hayles, J., Hoe, K.L., <em><span
+Fedyshyn, Y., Koh, J.L., Prasad, T.S., Chahwan, C., Chua, G.,
+
+Toufighi, K., Baryshnikova, A., Hayles, J., Hoe, K.L., <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2008)
 Significant conservation of synthetic lethal genetic interaction
 networks between distantly related eukaryotes. <em><span
 class="cmti-12">Proc Natl Acad Sci U S A</span></em>, <strong><span
 class="cmbx-12">105</span></strong>(43): 16653–8.
+</p>
+<p class="bibitem">
+<span class="biblabel"> <a 
+ id="XDong2012"></a><span class="bibsp">   </span></span>Dong, L.L.,
+Liu, L., Ma, C.H., Li, J.S., Du, C., Xu, S., Han, L.H., Li, L., and
+Wang, X.W. (2012) E-cadherin promotes proliferation of human ovarian
+cancer cells in vitro via activating MEK/ERK pathway. <em><span
+class="cmti-12">Acta Pharmacol Sin</span></em>, <strong><span
+class="cmbx-12">33</span></strong>(6): 817–822.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7544,6 +7616,7 @@ class="cmbx-12">38</span></strong>(6): 698–707.
 <span class="biblabel"> <a 
  id="XEzkurdia2014"></a><span class="bibsp">   </span></span>Ezkurdia,
 I., Juan, D., Rodriguez, J.M., Frankish, A., Diekhans, M., Harrow, J.,
+
 Vazquez, J., Valencia, A., and Tress, M.L. (2014) Multiple evidence
 strands suggest that there may be as few as 19 000 human protein-coding
 genes. <em><span class="cmti-12">Human Molecular</span> <span
@@ -7576,7 +7649,6 @@ Cruz, F., Gapp, B.V., and Nijman, S.M. (2015) Synthetic lethal
 vulnerabilities of cancer. <em><span class="cmti-12">Annu Rev Pharmacol
 Toxicol</span></em>, <strong><span class="cmbx-12">55</span></strong>:
 513–531.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7602,8 +7674,10 @@ class="cmbx-12">52</span></strong>(02): 399–433.
 Boss, D.S., Yap, T.A., Tutt, A., Wu, P., Mergui-Roelvink, M., Mortimer,
 P., Swaisland, H., Lau, A., O’Connor, M.J., <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2009)
-Inhibition of poly(adp-ribose) polymerase in tumors from BRCA mutation
-carriers. <em><span class="cmti-12">N Engl J</span> <span
+Inhibition of
+
+poly(adp-ribose) polymerase in tumors from BRCA mutation carriers.
+<em><span class="cmti-12">N Engl J</span> <span
 class="cmti-12">Med</span></em>, <strong><span
 class="cmbx-12">361</span></strong>(2): 123–34.
 </p>
@@ -7635,7 +7709,6 @@ D805–811.
 (2004) Towards full employment: using RNAi to find roles for the
 redundant. <em><span class="cmti-12">Oncogene</span></em>, <strong><span
 class="cmbx-12">23</span></strong>(51): 8346–52.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7692,7 +7765,6 @@ human breast cancer. <em><span class="cmti-12">Nat Genet</span></em>,
 <span class="biblabel"> <a 
  id="XGentleman2004"></a><span class="bibsp">   </span></span>Gentleman,
 R.C., Carey, V.J., Bates, D.M., Bolstad, B., Dettling, M., Dudoit, S.,
-
 Ellis, B., Gautier, L., Ge, Y., Gentry, J., <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2004)
 Bioconductor: open software development for computational biology and
@@ -7741,13 +7813,23 @@ class="cmtt-12">https://www.globus.org/</span></a>. Accessed:
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
+ id="XGrady2000"></a><span class="bibsp">   </span></span>Grady, W.M.,
+Willis, J., Guilford, P.J., Dunbier, A.K., Toro, T.T., Lynch, H.,
+Wiesner, G., Ferguson, K., Eng, C., Park, J.G., <em><span
+class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2000)
+Methylation of the CDH1 promoter as the second genetic hit in hereditary
+diffuse gastric cancer. <em><span class="cmti-12">Nat</span> <span
+class="cmti-12">Genet</span></em>, <strong><span
+class="cmbx-12">26</span></strong>(1): 16–17.
+</p>
+<p class="bibitem">
+<span class="biblabel"> <a 
  id="XGraziano2003"></a><span class="bibsp">   </span></span>Graziano,
 F., Humar, B., and Guilford, P. (2003) The role of the E-cadherin gene
 (<span class="cmti-12">CDH1</span>) in diffuse gastric cancer
 susceptibility: from the laboratory to clinical practice. <em><span
 class="cmti-12">Annals of Oncology</span></em>, <strong><span
 class="cmbx-12">14</span></strong>(12): 1705–1713.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7764,6 +7846,7 @@ P. (1999) E-cadherin downregulation in cancer: fuel on the fire?
 <em><span class="cmti-12">Molecular</span> <span
 class="cmti-12">Medicine Today</span></em>, <strong><span
 class="cmbx-12">5</span></strong>(4): 172 – 177.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7859,7 +7942,6 @@ class="cmbx-12">144</span></strong>(5): 646–674.
  id="XCIX2013"></a><span class="bibsp">   </span></span>Hanna, S. (2003)
 Cancer incidence in new zealand (2003-2007). In D. Forman, D. Bray
 F Brewster, C. Gombe Mbalawa, B. Kohler, M. Piñeros,
-
 E. Steliarova-Foucher, R. Swaminathan, and J. Ferlay (editors),
 <em><span class="cmti-12">Cancer Incidence</span> <span
 class="cmti-12">in Five Continents</span></em>, volume X, 902–907.
@@ -7867,6 +7949,17 @@ International Agency for Research on Cancer, Lyon, France. Electronic
 version <a 
 href="http://ci5.iarc.fr" class="url" ><span
 class="cmtt-12">http://ci5.iarc.fr</span></a> Accessed 22/03/2017.
+</p>
+<p class="bibitem">
+<span class="biblabel"> <a 
+ id="XHansford2015"></a><span class="bibsp">   </span></span>Hansford,
+S., Kaurah, P., Li-Chang, H., Woo, M., Senz, J., Pinheiro, H., Schrader,
+K.A., Schaeffer, D.F., Shumansky, K., Zogopoulos, G., <em><span
+class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2015)
+Hereditary Diffuse Gastric Cancer Syndrome: CDH1 Mutations and Beyond.
+<em><span class="cmti-12">JAMA Oncol</span></em>, <strong><span
+class="cmbx-12">1</span></strong>(1): 23–32.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -7920,9 +8013,8 @@ class="cmbx-12">320</span></strong>: 362–365.
 <p class="bibitem">
 <span class="biblabel"> <a 
  id="XTCGA2014PAN"></a><span class="bibsp">   </span></span>Hoadley,
-K.A., Yau, C., Wolf, D.M., Cherniack, A.D., Tamborero, D., Ng,
-
-S., Leiserson, M.D., Niu, B., McLellan, M.D., Uzunangelov, V., <em><span
+K.A., Yau, C., Wolf, D.M., Cherniack, A.D., Tamborero, D., Ng, S.,
+Leiserson, M.D., Niu, B., McLellan, M.D., Uzunangelov, V., <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2014)
 Multiplatform analysis of 12 cancer types reveals molecular
 classification within and across tissues of origin. <em><span
@@ -8001,6 +8093,14 @@ Human Genome Sequencing Consortium (IHGSC) (2004) Finishing the
 euchromatic sequence of the human genome. <em><span
 class="cmti-12">Nature</span></em>, <strong><span
 class="cmbx-12">431</span></strong>(7011): 931–945.
+</p>
+<p class="bibitem">
+<span class="biblabel"> <a 
+ id="XJeanes2008"></a><span class="bibsp">   </span></span>Jeanes, A.,
+Gottardi, C.J., and Yap, A.S. (2008) Cadherins and cancer: how does
+cadherin dysfunction promote tumor progression? <em><span
+class="cmti-12">Oncogene</span></em>, <strong><span
+class="cmbx-12">27</span></strong>(55): 6920–6929.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8083,13 +8183,6 @@ class="cmbx-12">23</span></strong>(5): 561–566.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
- id="XKellyBMC"></a><span class="bibsp">   </span></span>Kelly, S.,
-Chen, A., Guilford, P., and Black, M. (2017a) Synthetic lethal
-interaction prediction of target pathways in E-cadherin deficient breast
-cancers. Submitted to <span class="cmti-12">BMC Genomics</span>.
-</p>
-<p class="bibitem">
-<span class="biblabel"> <a 
  id="XKelly2013"></a><span class="bibsp">   </span></span>Kelly, S.T.
 (2013) <em><span class="cmti-12">Statistical Predictions of Synthetic
 Lethal Interactions in Cancer</span></em>. Dissertation, University of
@@ -8099,10 +8192,19 @@ Otago.
 <span class="biblabel"> <a 
  id="XKellyHDGC"></a><span class="bibsp">   </span></span>Kelly, S.T.,
 Single, A.B., Telford, B.J., Beetham, H.G., Godwin, T.D., Chen, A.,
-Black, M.A., and Guilford, P.J. (2017b) Towards HDGC chemoprevention:
+Black, M.A., and Guilford, P.J. (2017) Towards HDGC chemoprevention:
 vulnerabilities in E-cadherin-negative cells identified by genome-wide
 interrogation of isogenic cell lines and whole tumors. Submitted to
 <span class="cmti-12">Cancer Prev Res</span>.
+
+</p>
+<p class="bibitem">
+<span class="biblabel"> <a 
+ id="XKim2011"></a><span class="bibsp">   </span></span>Kim, N.G., Koh,
+E., Chen, X., and Gumbiner, B.M. (2011) E-cadherin mediates contact
+inhibition of proliferation through Hippo signaling-pathway components.
+<em><span class="cmti-12">Proc Natl Acad Sci USA</span></em>,
+<strong><span class="cmbx-12">108</span></strong>(29): 11930–11935.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8119,6 +8221,15 @@ Rao, S., and Manimaran, P. (2013) Identification of synthetic lethal
 pairs in biological systems through network information centrality.
 <em><span class="cmti-12">Mol BioSyst</span></em>, <strong><span
 class="cmbx-12">9</span></strong>(8): 2163–2167.
+</p>
+<p class="bibitem">
+<span class="biblabel"> <a 
+ id="XKroepil2012"></a><span class="bibsp">   </span></span>Kroepil, F.,
+Fluegen, G., Totikov, Z., Baldus, S.E., Vay, C., Schauer, M., Topp,
+S.A., Esch, J.S., Knoefel, W.T., and Stoecklein, N.H. (2012)
+Down-regulation of CDH1 is associated with expression of SNAI1 in
+colorectal adenomas. <em><span class="cmti-12">PLoS ONE</span></em>,
+<strong><span class="cmbx-12">7</span></strong>(9): e46665.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8152,7 +8263,6 @@ class="cmbx-12">10</span></strong>(3): R25.
 and Marchiori, M. (2001) Efficient behavior of small-world networks.
 <em><span class="cmti-12">Phys Rev Lett</span></em>, <strong><span
 class="cmbx-12">87</span></strong>: 198701.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8192,6 +8302,7 @@ class="cmbx-12">9</span></strong>(9): R135.
  id="XLeMeur2014"></a><span class="bibsp">   </span></span>Le Meur, N.,
 Jiang, Z., Liu, T., Mar, J., and Gentleman, R.C. (2014) Slgi: Synthetic
 lethal genetic interaction. r package version 1.26.0.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8263,7 +8374,6 @@ Carcinoma. <em><span class="cmti-12">N Engl J Med</span></em>,
 class="cmti-12">Nature</span> <span class="cmti-12">Reviews
 Cancer</span></em>, <strong><span
 class="cmbx-12">14</span></strong>(10): 649–649.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8361,6 +8471,7 @@ J., George, A., and Banerjee, S. (2016) The current status of parp
 inhibitors in ovarian cancer. <em><span
 class="cmti-12">Tumori</span></em>, <strong><span
 class="cmbx-12">102</span></strong>(5): 433–440.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8380,7 +8491,6 @@ class="cmbx-12">455</span></strong>(7216): 1061–1068.
 clinical setting. <em><span class="cmti-12">Breast Cancer
 Res</span></em>, <strong><span class="cmbx-12">3</span></strong>(6):
 380–384.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8477,10 +8587,12 @@ class="cmbx-12">291</span></strong>(5507): 1224–1229.
 B., Chin, S.F., Rueda, O.M., Vollan, H.K., Provenzano, E., Bardwell,
 H.A., Pugh, M., Jones, L., Russell, R., Sammut, S.J., <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2016)
-Erratum: The somatic mutation profiles of 2,433 breast cancers refine
-their genomic and transcriptomic landscapes. <em><span
-class="cmti-12">Nat Commun</span></em>, <strong><span
-class="cmbx-12">7</span></strong>: 11908.
+Erratum: The somatic
+
+mutation profiles of 2,433 breast cancers refine their genomic and
+transcriptomic landscapes. <em><span class="cmti-12">Nat
+Commun</span></em>, <strong><span class="cmbx-12">7</span></strong>:
+11908.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8495,10 +8607,9 @@ class="cmbx-12">406</span></strong>(6797): 747–752.
 <p class="bibitem">
 <span class="biblabel"> <a 
  id="XPolyak2009"></a><span class="bibsp">   </span></span>Polyak, K.
-and Weinberg, R.A. (2009) Transitions between epithelial and
-
-mesenchymal states: acquisition of malignant and stem cell traits.
-<em><span class="cmti-12">Nat Rev Cancer</span></em>, <strong><span
+and Weinberg, R.A. (2009) Transitions between epithelial and mesenchymal
+states: acquisition of malignant and stem cell traits. <em><span
+class="cmti-12">Nat Rev Cancer</span></em>, <strong><span
 class="cmbx-12">9</span></strong>(4): 265–73.
 </p>
 <p class="bibitem">
@@ -8593,6 +8704,7 @@ genomes. <em><span class="cmti-12">Cancer Cell</span></em>,
 and Joung, J.K. (2014) Crispr-cas systems for editing, regulating and
 targeting genomes. <em><span class="cmti-12">Nat Biotechnol</span></em>,
 <strong><span class="cmbx-12">32</span></strong>(4): 347–55.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8608,11 +8720,10 @@ class="cmbx-12">94</span></strong>(3): 441 – 448.
 Kauff, N., Robson, M., Kelly, B., Barakat, R., Satagopan, J., Ellis, N.,
 Hensley, M., Boyd, J., Borgen, P., <em><span
 class="cmti-12">et</span><span class="cmti-12"> al.</span></em> (2002)
-Outcome of preventive surgery and
-
-screening for breast and ovarian cancer in BRCA mutation carriers.
-<em><span class="cmti-12">J Clin Oncol</span></em>, <strong><span
-class="cmbx-12">20</span></strong>(5): 1260–1268.
+Outcome of preventive surgery and screening for breast and ovarian
+cancer in BRCA mutation carriers. <em><span class="cmti-12">J Clin
+Oncol</span></em>, <strong><span class="cmbx-12">20</span></strong>(5):
+1260–1268.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8655,6 +8766,7 @@ J.E. and Lapp, H. (2006) Open source tools and toolkits for
 bioinformatics: significance, and where are we? <em><span
 class="cmti-12">Brief Bioinformatics</span></em>, <strong><span
 class="cmbx-12">7</span></strong>(3): 287–296.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8666,10 +8778,9 @@ class="cmbx-12">458</span></strong>(7239): 719–724.
 <p class="bibitem">
 <span class="biblabel"> <a 
  id="XStrom2012"></a><span class="bibsp">   </span></span>Ström, C. and
-Helleday, T. (2012) Strategies for the use of poly(adenosine
-
-diphosphate ribose) polymerase (parp) inhibitors in cancer therapy.
-<em><span class="cmti-12">Biomolecules</span></em>, <strong><span
+Helleday, T. (2012) Strategies for the use of poly(adenosine diphosphate
+ribose) polymerase (parp) inhibitors in cancer therapy. <em><span
+class="cmti-12">Biomolecules</span></em>, <strong><span
 class="cmbx-12">2</span></strong>(4): 635–649.
 </p>
 <p class="bibitem">
@@ -8840,7 +8951,6 @@ class="cmbx-12">303</span></strong>(5659): 808–13.
 and Milgram, S. (1969) An experimental study of the small world problem.
 <em><span class="cmti-12">Sociometry</span></em>, <strong><span
 class="cmbx-12">32</span></strong>(4): 425–443.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8852,6 +8962,15 @@ Transient low doses of dna-demethylating agents exert durable antitumor
 effects on hematological and epithelial tumor cells. <em><span
 class="cmti-12">Cancer Cell</span></em>, <strong><span
 class="cmbx-12">21</span></strong>(3): 430–46.
+</p>
+<p class="bibitem">
+<span class="biblabel"> <a 
+ id="XTunggal2005"></a><span class="bibsp">   </span></span>Tunggal,
+J.A., Helfrich, I., Schmitz, A., Schwarz, H., Gunzel, D., Fromm, M.,
+Kemler, R., Krieg, T., and Niessen, C.M. (2005) E-cadherin is essential
+for in vivo epidermal barrier function by regulating tight junctions.
+<em><span class="cmti-12">EMBO J</span></em>, <strong><span
+class="cmbx-12">24</span></strong>(6): 1146–1156.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8873,6 +8992,18 @@ RNAi screen identifies a synthetic lethal interaction between PIM1
 overexpression and PLK1 inhibition. <em><span class="cmti-12">Clinical
 Cancer Research</span></em>, <strong><span
 class="cmbx-12">20</span></strong>(12): 3211–3221.
+
+</p>
+<p class="bibitem">
+<span class="biblabel"> <a 
+ id="XvanderPost2015"></a><span class="bibsp">   </span></span>van der
+Post, R.S., Vogelaar, I.P., Carneiro, F., Guilford, P., Huntsman, D.,
+Hoogerbrugge, N., Caldas, C., Schreiber, K.E., Hardwick, R.H., Ausems,
+M.G., <em><span class="cmti-12">et</span><span
+class="cmti-12"> al.</span></em> (2015) Hereditary diffuse gastric
+cancer: updated clinical guidelines with an emphasis on germline CDH1
+mutation carriers. <em><span class="cmti-12">J Med Genet</span></em>,
+<strong><span class="cmbx-12">52</span></strong>(6): 361–374.
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -8920,6 +9051,7 @@ class="bibsp">   </span></span>Vogelstein, B., Papadopoulos, N.,
 Velculescu, V.E., Zhou, S., Diaz, L.A., and Kinzler, K.W. (2013) Cancer
 genome landscapes. <em><span class="cmti-12">Science</span></em>,
 <strong><span class="cmbx-12">339</span></strong>(6127): 1546–1558.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -9009,7 +9141,6 @@ class="cmti-12"> al.</span></em> (2013) The Cancer Genome Atlas
 Pan-Cancer analysis project. <em><span class="cmti-12">Nat
 Genet</span></em>, <strong><span class="cmbx-12">45</span></strong>(10):
 1113–1120.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -9037,6 +9168,7 @@ class="cmti-12">Proceedings of the National Academy of Sciences
 of</span> <span class="cmti-12">the United States of
 America</span></em>, <strong><span
 class="cmbx-12">101</span></strong>(44): 15682–15687.
+
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -9070,7 +9202,6 @@ essential genes and synthetic lethality via influence propagation in
 signaling pathways of cancer cell fates. <em><span class="cmti-12">J
 Bioinform Comput Biol</span></em>, <strong><span
 class="cmbx-12">13</span></strong>(3): 1541002.
-
 </p>
 <p class="bibitem">
 <span class="biblabel"> <a 
@@ -9098,6 +9229,7 @@ and Campbell, G. (1993) Receiver-operating characteristic (roc) plots: a
 fundamental evaluation tool in clinical medicine. <em><span
 class="cmti-12">Clinical Chemistry</span></em>, <strong><span
 class="cmbx-12">39</span></strong>(4): 561–577.
+
 </p>
 
 </div>

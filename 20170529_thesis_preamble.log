@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  9 JUN 2017 15:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.9.16)  10 JUN 2017 00:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1893,12 +1893,140 @@ LaTeX Warning: Label `fig:simulation1207_randx_Graph_pi3k' multiply defined.
 LaTeX Warning: Label `fig:simulation1207_randx_Graph_pi3k@cref' multiply define
 d.
 
-) (./chapt6.aux) (./conclusion.aux) (./appendices.aux
+) (./chapt6.aux) (./conclusion.aux) (./appendix_methods.aux)
+(./appendix_chapt3.aux) (./appendix_chapt4.aux) (./appendix_chapt5.aux
 
-LaTeX Warning: Label `tab:secondary_screen' multiply defined.
+LaTeX Warning: Label `fig:simulation1205_randx_Graph2' multiply defined.
 
 
-LaTeX Warning: Label `tab:secondary_screen@cref' multiply defined.
+LaTeX Warning: Label `fig:simulation1205_randx_Graph2@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph2i' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph2i@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph4i' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph4i@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph4i2ROC:Perf' multiply defin
+ed.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph4i2ROC:Perf@cref' multiply 
+defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph4i2ROC:ROC' multiply define
+d.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph4i2ROC:ROC@cref' multiply d
+efined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph4i2' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph4i2@cref' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph4i2ROC:AUC' multiply define
+d.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph4i2ROC:AUC@cref' multiply d
+efined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph4i2' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph4i2@cref' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph5' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph5@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph6' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph6@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph7' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph7@cref' multiply defined.
+
+
+LaTeX Warning: Label `appendix:complex_graph_sim' multiply defined.
+
+
+LaTeX Warning: Label `appendix:complex_graph_sim@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph5i' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph5i@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph5i2' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph5i2@cref' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph6i' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph6i@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph6i2' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph6i2@cref' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph7i' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph7i@cref' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph7i2' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph7i2@cref' multiply defined.
+
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph_Gai' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1205_randx_Graph_Gai@cref' multiply defined
+.
+
+
+LaTeX Warning: Label `fig:simulation1207_randx_Graph_Gai' multiply defined.
+
+
+LaTeX Warning: Label `fig:simulation1207_randx_Graph_Gai@cref' multiply defined
+.
 
 ))
 \openout1 = `20170529_thesis_preamble.aux'.
@@ -2043,7 +2171,7 @@ Package caption Info: End \AtBeginDocument code.
  ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 143.
 
-<logo.pdf, id=11, 139.52126pt x 201.75375pt>
+<logo.pdf, id=19, 139.52126pt x 201.75375pt>
 File: logo.pdf Graphic file (type pdf)
  <use logo.pdf>
 Package pdftex.def Info: logo.pdf used on input line 150.
@@ -2140,39 +2268,41 @@ File: c70goth.fdx 2008/12/29 4.8.2
 )) [8]
 (./20170529_thesis_preamble.toc [9
 
-] [10] [11] [12])
+] [10] [11] [12] [13])
 \tf@toc=\write9
 \openout9 = `20170529_thesis_preamble.toc'.
 
- [13]
-(./20170529_thesis_preamble.lot [14
+ [14]
+(./20170529_thesis_preamble.lot [15
 
 ])
 \tf@lot=\write10
 \openout10 = `20170529_thesis_preamble.lot'.
 
- [15] (./20170529_thesis_preamble.lof
-[16
+ [16] (./20170529_thesis_preamble.lof
+[17
 
-] [17])
+] [18] [19])
 \tf@lof=\write11
 \openout11 = `20170529_thesis_preamble.lof'.
 
-
-No file 20170529_thesis_preamble.gls.
-No file 20170529_thesis_preamble.acr.
-[18] (./20170529_thesis_preamble.bbl
-Underfull \hbox (badness 7221) in paragraph at lines 72--78
-[]\OT1/cmr/m/n/12 American So-ci-ety for Clin-i-cal On-col-ogy ([]) (2017) The 
-ge-net-ics of
+ (./20170529_thesis_preamble.gls [20]
+Underfull \hbox (badness 1521) in paragraph at lines 28--29
+[]\OT1/cmr/m/n/12 Genetic in-ter-ac-tions where in-ac-ti-va-tion of
  []
 
 
-Underfull \hbox (badness 5592) in paragraph at lines 72--78
-\OT1/cmr/m/n/12 can-cer.  []$\OT1/cmtt/m/n/12 http : / / www . cancer . net / n
-avigating-[]cancer-[]care / cancer-[]basics /
+Underfull \hbox (badness 1231) in paragraph at lines 28--29
+\OT1/cmr/m/n/12 mul-ti-ple genes is in-vi-able (or dele-te-ri-ous)
  []
 
+) (./20170529_thesis_preamble.acr [21
+
+
+]) [22
+
+
+] (./20170529_thesis_preamble.bbl
 [229
 
 
@@ -2185,118 +2315,222 @@ avigating-[]cancer-[]care / cancer-[]basics /
 
 
 
-] [230] [231]
-Underfull \hbox (badness 10000) in paragraph at lines 337--342
-[]\OT1/cmr/m/n/12 Cancer Re-search UK (2017) Fam-ily his-tory and can-cer
- []
+] [230] [231] [232] [233] [234]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 601.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 337--342
-\OT1/cmr/m/n/12 genes.  []$\OT1/cmtt/m/n/12 http : / / www . cancerresearchuk .
- org / about-[]cancer /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 337--342
-\OT1/cmtt/m/n/12 causes-[]of-[]cancer / inherited-[]cancer-[]genes-[]and-[]incr
-eased-[]cancer-[]risk /
- []
-
-[232] [233] [234]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 622.
-
- (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 622.
-
-[235] [236] [237] [238] [239] [240] [241] [242] [243] [244]
-Underfull \hbox (badness 4168) in paragraph at lines 1542--1547
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 601.
+ [235] [236] [237]
+[238] [239] [240] [241] [242] [243] [244]
+Underfull \hbox (badness 4168) in paragraph at lines 1491--1496
 \OT1/cmtt/m/n/12 / / www . cancer . gov / about-[]cancer / causes-[]prevention 
 / genetics$[]\OT1/cmr/m/n/12 .  Pub-lished:
  []
 
 [245] [246] [247]) [248]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 199.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 199.
+ (./20170529_thesis_preamble.aux (./intro.aux)
+(./methods.aux) (./methods_dev.aux) (./chapt3.aux) (./chapt4.aux) (./chapt5.aux
+) (./chapt6.aux) (./conclusion.aux)
 
-! LaTeX Error: No counter 'lofdepth' defined.
+Package natbib Warning: Citation(s) may have changed.
+(natbib)                Rerun to get citations correct.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 \include{appendices}
-                          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: No counter 'lotdepth' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 \include{appendices}
-                          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: No counter 'float@type' defined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.193 \include{appendices}
-                          
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 194.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 194.
-(./20170529_thesis_preamble.aux (./intro.aux) (./methods.aux)
-(./methods_dev.aux) (./chapt3.aux) (./chapt4.aux) (./chapt5.aux) (./chapt6.aux)
-(./conclusion.aux) (./appendices.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 194.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 194.
+(./appendix_methods.aux) (./appendix_chapt3.aux) (./appendix_chapt4.aux)
+(./appendix_chapt5.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 199.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 199.
 Package rerunfilecheck Info: File `20170529_thesis_preamble.out' has not change
 d.
-(rerunfilecheck)             Checksum: 1BCE0D85E47C0F1BDC7DBA6FE259150B;48.
+(rerunfilecheck)             Checksum: 9ADD0CFE42A08C6AD7C89F75EC256F48;136.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 40691 strings out of 494497
- 741746 string characters out of 6172400
- 987731 words of memory out of 5000000
- 42496 multiletter control sequences out of 15000+600000
+ 41271 strings out of 494497
+ 764993 string characters out of 6172400
+ 1028221 words of memory out of 5000000
+ 42984 multiletter control sequences out of 15000+600000
  19286 words of font info for 73 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 59i,6n,94p,10434b,958s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{figure.caption.84} has been referenced but does n
-ot exist, replaced by a fixed one
+ 59i,10n,94p,10434b,948s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{figure.caption.216} has been referenced but does 
+not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.62} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.215} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.61} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.214} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.60} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.213} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.59} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.212} has been referenced but does no
+t exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{figure.caption.57} has been referenced but does not
- exist, replaced by a fixed one
+pdfTeX warning (dest): name{figure.caption.211} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.210} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.209} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.208} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.207} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.206} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.205} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.204} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.202} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.201} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.200} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.199} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.198} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.196} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.194} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.192} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.190} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.188} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.186} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.183} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.182} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.181} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.178} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.177} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.168} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.167} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.166} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.165} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.164} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.163} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.162} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.161} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.160} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.159} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.158} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.150} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.147} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.140} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.139} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.138} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.137} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.136} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.135} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.132} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.131} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.125} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.122} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.116} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.115} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.114} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.113} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.112} has been referenced but does no
+t exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.108} has been referenced but does no
 t exist, replaced by a fixed one
@@ -2493,58 +2727,76 @@ pdfTeX warning (dest): name{figure.caption.19} has been referenced but does not
 pdfTeX warning (dest): name{figure.caption.13} has been referenced but does not
  exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{glo:synthetic\040lethal} has been referenced but do
-es not exist, replaced by a fixed one
-
 pdfTeX warning (dest): name{figure.caption.9} has been referenced but does not 
 exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{figure.caption.8} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.92} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.184} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.90} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.179} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.88} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.175} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.85} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.173} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.82} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.171} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.80} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.169} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.78} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.156} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.74} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.154} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.71} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.152} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.68} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.151} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.66} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.148} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.65} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.145} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.64} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.143} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.caption.63} has been referenced but does not 
-exist, replaced by a fixed one
+pdfTeX warning (dest): name{table.caption.141} has been referenced but does not
+ exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{table.C.1} has been referenced but does not exist, 
+pdfTeX warning (dest): name{table.caption.133} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.129} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.127} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.126} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.123} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.120} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.118} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.B.1} has been referenced but does not exist, 
 replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.87} has been referenced but does not 
@@ -2576,9 +2828,6 @@ exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.56} has been referenced but does not 
 exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{glo:ANOVA} has been referenced but does not exist, 
-replaced by a fixed one
 
 pdfTeX warning (dest): name{table.caption.52} has been referenced but does not 
 exist, replaced by a fixed one
@@ -2619,11 +2868,56 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{table.caption.10} has been referenced but does not 
 exist, replaced by a fixed one
 
+pdfTeX warning (dest): name{section.K.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.K.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.K.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.K.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.K.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.K.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.K} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section.J.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.J} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.I} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.H} has been referenced but does not exist,
+ replaced by a fixed one
+
 pdfTeX warning (dest): name{appendix.G} has been referenced but does not exist,
  replaced by a fixed one
 
 pdfTeX warning (dest): name{appendix.F} has been referenced but does not exist,
  replaced by a fixed one
+
+pdfTeX warning (dest): name{section.E.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.E.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.E.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.E.1} has been referenced but does not exist
+, replaced by a fixed one
 
 pdfTeX warning (dest): name{appendix.E} has been referenced but does not exist,
  replaced by a fixed one
@@ -2631,32 +2925,47 @@ pdfTeX warning (dest): name{appendix.E} has been referenced but does not exist,
 pdfTeX warning (dest): name{appendix.D} has been referenced but does not exist,
  replaced by a fixed one
 
+pdfTeX warning (dest): name{section.C.7} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.C.6} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.C.5} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.C.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.C.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.C.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.C.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.C.1} has been referenced but does not exist
+, replaced by a fixed one
+
 pdfTeX warning (dest): name{appendix.C} has been referenced but does not exist,
  replaced by a fixed one
 
 pdfTeX warning (dest): name{appendix.B} has been referenced but does not exist,
  replaced by a fixed one
 
+pdfTeX warning (dest): name{section.A.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.A.1} has been referenced but does not exist
+, replaced by a fixed one
+
 pdfTeX warning (dest): name{appendix.A} has been referenced but does not exist,
  replaced by a fixed one
 
 pdfTeX warning (dest): name{section.7.4} has been referenced but does not exist
 , replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.7.3.3} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.7.3.2.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.7.3.2} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.7.3.1.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.7.3.1} has been referenced but does not 
-exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{section.7.3} has been referenced but does not exist
 , replaced by a fixed one
@@ -3132,59 +3441,38 @@ exist, replaced by a fixed one
 pdfTeX warning (dest): name{section.1.2} has been referenced but does not exist
 , replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsubsection.1.1.6.4.1} has been referenced but
+pdfTeX warning (dest): name{subsubsubsection.1.1.4.4.1} has been referenced but
  does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsection.1.1.6.4} has been referenced but does
+pdfTeX warning (dest): name{subsubsection.1.1.4.4} has been referenced but does
  not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsubsection.1.1.6.3.1} has been referenced but
+pdfTeX warning (dest): name{subsubsubsection.1.1.4.3.1} has been referenced but
  does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsection.1.1.6.3} has been referenced but does
+pdfTeX warning (dest): name{subsubsection.1.1.4.3} has been referenced but does
  not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsubsection.1.1.6.2.1} has been referenced but
+pdfTeX warning (dest): name{subsubsubsection.1.1.4.2.1} has been referenced but
  does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsection.1.1.6.2} has been referenced but does
+pdfTeX warning (dest): name{subsubsection.1.1.4.2} has been referenced but does
  not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsection.1.1.6.1} has been referenced but does
+pdfTeX warning (dest): name{subsubsection.1.1.4.1} has been referenced but does
  not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.1.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsubsection.1.1.5.1.3} has been referenced but
- does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsubsection.1.1.5.1.2} has been referenced but
- does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsubsection.1.1.5.1.1} has been referenced but
- does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsection.1.1.5.1} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.1.5} has been referenced but does not 
-exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsection.1.1.4} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsection.1.1.3.4} has been referenced but does
- not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsubsubsection.1.1.3.3.2} has been referenced but
+pdfTeX warning (dest): name{subsubsubsection.1.1.3.2.3} has been referenced but
  does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsubsection.1.1.3.3.1} has been referenced but
+pdfTeX warning (dest): name{subsubsubsection.1.1.3.2.2} has been referenced but
  does not exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{subsubsection.1.1.3.3} has been referenced but does
- not exist, replaced by a fixed one
+pdfTeX warning (dest): name{subsubsubsection.1.1.3.2.1} has been referenced but
+ does not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsubsection.1.1.3.2} has been referenced but does
  not exist, replaced by a fixed one
@@ -3194,6 +3482,18 @@ pdfTeX warning (dest): name{subsubsection.1.1.3.1} has been referenced but does
 
 pdfTeX warning (dest): name{subsection.1.1.3} has been referenced but does not 
 exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.1.1.2.4} has been referenced but does
+ not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsubsection.1.1.2.3.2} has been referenced but
+ does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsubsection.1.1.2.3.1} has been referenced but
+ does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.1.1.2.3} has been referenced but does
+ not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{subsubsection.1.1.2.2} has been referenced but does
  not exist, replaced by a fixed one
@@ -3216,18 +3516,6 @@ pdfTeX warning (dest): name{section.1.1} has been referenced but does not exist
 pdfTeX warning (dest): name{chapter.1} has been referenced but does not exist, 
 replaced by a fixed one
 
-pdfTeX warning (dest): name{glo:GPCR} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{glo:siRNA} has been referenced but does not exist, 
-replaced by a fixed one
-
-pdfTeX warning (dest): name{glo:TCGA} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{glo:SLIPT} has been referenced but does not exist, 
-replaced by a fixed one
-
  </home/tomkelly/.texmf-var/fonts/pk/ljfour/jknappen/ec/tcrm1095.600pk></usr/sh
 are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/te
 xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/
@@ -3237,19 +3525,20 @@ nts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/t
-exmf/fonts/type1/wadalab/JIS/dgjhira.pfb></usr/share/texmf/fonts/type1/wadalab/
-JIS/dgjkb.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dgjkc.pfb></usr/share/t
-exmf/fonts/type1/wadalab/JIS/dgjkd.pfb></usr/share/texmf/fonts/type1/wadalab/JI
-S/dgjkh.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dgjkk.pfb></usr/share/tex
-mf/fonts/type1/wadalab/JIS/dgjsy.pfb>
-Output written on 20170529_thesis_preamble.pdf (39 pages, 314647 bytes).
+cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/texmf/fo
+nts/type1/wadalab/JIS/dgjhira.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dgj
+kb.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dgjkc.pfb></usr/share/texmf/fo
+nts/type1/wadalab/JIS/dgjkd.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dgjkh
+.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dgjkk.pfb></usr/share/texmf/font
+s/type1/wadalab/JIS/dgjsy.pfb>
+Output written on 20170529_thesis_preamble.pdf (43 pages, 328626 bytes).
 PDF statistics:
- 1419 PDF objects out of 1440 (max. 8388607)
- 1331 compressed objects within 14 object streams
- 625 named destinations out of 1000 (max. 500000)
- 42 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1580 PDF objects out of 1728 (max. 8388607)
+ 1486 compressed objects within 15 object streams
+ 703 named destinations out of 1000 (max. 500000)
+ 58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -10,52 +10,55 @@ A level-1 auxiliary file: chapt5.aux
 A level-1 auxiliary file: chapt6.aux
 A level-1 auxiliary file: conclusion.aux
 The style file: mycustom.bst
-A level-1 auxiliary file: appendices.aux
-Reallocated field_info (elt_size=4) to 11838 items from 5000.
+A level-1 auxiliary file: appendix_methods.aux
+A level-1 auxiliary file: appendix_chapt3.aux
+A level-1 auxiliary file: appendix_chapt4.aux
+A level-1 auxiliary file: appendix_chapt5.aux
+Reallocated field_info (elt_size=4) to 11708 items from 5000.
 Database file #1: thesis.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both volume and number fields in Erdos1960
-You've used 263 entries,
+You've used 258 entries,
             3105 wiz_defined-function locations,
-            2339 strings with 172527 characters,
-and the built_in function-call counts, 248962 in all, are:
-= -- 22258
-> -- 10425
-< -- 219
-+ -- 10079
-- -- 2845
-* -- 19261
-:= -- 29744
-add.period$ -- 543
-call.type$ -- 263
-change.case$ -- 2752
-chr.to.int$ -- 264
-cite$ -- 527
-duplicate$ -- 20067
-empty$ -- 16519
-format.name$ -- 3782
-if$ -- 49465
+            2307 strings with 172974 characters,
+and the built_in function-call counts, 246896 in all, are:
+= -- 22014
+> -- 10496
+< -- 207
++ -- 10188
+- -- 2867
+* -- 19110
+:= -- 29455
+add.period$ -- 530
+call.type$ -- 258
+change.case$ -- 2735
+chr.to.int$ -- 259
+cite$ -- 517
+duplicate$ -- 19791
+empty$ -- 16306
+format.name$ -- 3785
+if$ -- 49021
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 3449
-newline$ -- 1339
-num.names$ -- 1056
-pop$ -- 9617
+missing$ -- 3429
+newline$ -- 1311
+num.names$ -- 1036
+pop$ -- 9539
 preamble$ -- 1
-purify$ -- 2468
+purify$ -- 2459
 quote$ -- 0
-skip$ -- 8760
+skip$ -- 8770
 stack$ -- 0
-substring$ -- 17842
-swap$ -- 8295
+substring$ -- 17566
+swap$ -- 8251
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2355
+type$ -- 2310
 warning$ -- 1
-while$ -- 1066
+while$ -- 1057
 width$ -- 0
-write$ -- 3693
+write$ -- 3620
 (There was 1 warning)
