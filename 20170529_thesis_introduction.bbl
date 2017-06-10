@@ -1,4 +1,4 @@
-\begin{thebibliography}{253}
+\begin{thebibliography}{248}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibAnnoteFile}[1]{%
   \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
@@ -26,13 +26,6 @@ Abeshouse, A., Ahn, J., Akbani, R., Ally, A., Amin, S., Andry, C.D., Annala,
 Adler, D. (2005) \emph{vioplot: Violin plot}.
 \newblock R package version 0.2.
 \bibAnnoteFile{vioplot}
-
-\bibitem[\protect\astroncite{Agrawal \emph{et~al.}}{2014}]{TCGA2014TH}
-Agrawal, N., Akbani, R., Aksoy, B.A., Ally, A., Arachchi, H., Asa, S.L., Auman,
-  J.T., Balasundaram, M., Balu, S., Baylin, S.B., \emph{et~al.} (2014)
-  {{I}ntegrated genomic characterization of papillary thyroid carcinoma}.
-\newblock \emph{Cell}, \textbf{159}(3): 676--690.
-\bibAnnoteFile{TCGA2014TH}
 
 \bibitem[\protect\astroncite{Akbani \emph{et~al.}}{2015}]{TCGA2015SK}
 Akbani, R., Akdemir, K.C., Aksoy, B.A., Albert, M., Ally, A., Amin, S.B.,
@@ -290,14 +283,6 @@ Bryant, H.E., Schultz, N., Thomas, H.D., Parker, K.M., Flower, D., Lopez, E.,
 \newblock \emph{Nature}, \textbf{434}(7035): 913--7.
 \bibAnnoteFile{Bryant2005}
 
-\bibitem[\protect\astroncite{Burk \emph{et~al.}}{2017}]{TCGA2017CERV}
-Burk, R.D., Chen, Z., Saller, C., Tarvin, K., Carvalho, A.L.,
-  Scapulatempo-Neto, C., Silveira, H.C., Fregnani, J.H., Creighton, C.J.,
-  Anderson, M.L., \emph{et~al.} (2017) {{I}ntegrated genomic and molecular
-  characterization of cervical cancer}.
-\newblock \emph{Nature}, \textbf{543}(7645): 378--384.
-\bibAnnoteFile{TCGA2017CERV}
-
 \bibitem[\protect\astroncite{Bussey \emph{et~al.}}{2006}]{Bussey2006}
 Bussey, H., Andrews, B., and Boone, C. (2006) From worm genetic networks to
   complex human diseases.
@@ -346,13 +331,6 @@ Chen, X. and Tompa, M. (2010) {{C}omparative assessment of methods for aligning
   multiple genome sequences}.
 \newblock \emph{Nat Biotechnol}, \textbf{28}(6): 567--572.
 \bibAnnoteFile{Chen2010}
-
-\bibitem[\protect\astroncite{Cherniack \emph{et~al.}}{2017}]{TCGA2017UT}
-Cherniack, A.D., Shen, H., Walter, V., Stewart, C., Murray, B.A., Bowlby, R.,
-  Hu, X., Ling, S., Soslow, R.A., Broaddus, R.R., \emph{et~al.} (2017)
-  {{I}ntegrated {M}olecular {C}haracterization of {U}terine {C}arcinosarcoma}.
-\newblock \emph{Cancer Cell}, \textbf{31}(3): 411--423.
-\bibAnnoteFile{TCGA2017UT}
 
 \bibitem[\protect\astroncite{Chipman and Singh}{2009}]{Chipman2009}
 Chipman, K. and Singh, A. (2009) Predicting genetic interactions with random
@@ -461,14 +439,6 @@ Csardi, G. and Nepusz, T. (2006) The igraph software package for complex
   network research.
 \newblock \emph{InterJournal}, \textbf{Complex Systems}: 1695.
 \bibAnnoteFile{igraph}
-
-\bibitem[\protect\astroncite{Curtis \emph{et~al.}}{2012}]{METABRIC2012}
-Curtis, C., Shah, S.P., Chin, S.F., Turashvili, G., Rueda, O.M., Dunning, M.J.,
-  Speed, D., Lynch, A.G., Samarajiwa, S., Yuan, Y., \emph{et~al.} (2012) {{T}he
-  genomic and transcriptomic architecture of 2,000 breast tumours reveals novel
-  subgroups}.
-\newblock \emph{Nature}, \textbf{486}(7403): 346--352.
-\bibAnnoteFile{METABRIC2012}
 
 \bibitem[\protect\astroncite{Dai \emph{et~al.}}{2015}]{Dai2015}
 Dai, X., Li, T., Bai, Z., Yang, Y., Liu, X., Zhan, J., and Shi, B. (2015)
@@ -941,13 +911,6 @@ Kamada, T. and Kawai, S. (1989) An algorithm for drawing general undirected
 \newblock \emph{Information Processing Letters}, \textbf{31}(1): 7--15.
 \bibAnnoteFile{Kamada1989}
 
-\bibitem[\protect\astroncite{Kandoth \emph{et~al.}}{2013}]{TCGA2013ENDO}
-Kandoth, C., Schultz, N., Cherniack, A.D., Akbani, R., Liu, Y., Shen, H.,
-  Robertson, A.G., Pashtan, I., Shen, R., Benz, C.C., \emph{et~al.} (2013)
-  {{I}ntegrated genomic characterization of endometrial carcinoma}.
-\newblock \emph{Nature}, \textbf{497}(7447): 67--73.
-\bibAnnoteFile{TCGA2013ENDO}
-
 \bibitem[\protect\astroncite{Kawai \emph{et~al.}}{2001}]{FANTOM2001}
 Kawai, J., Shinagawa, A., Shibata, K., Yoshino, M., Itoh, M., Ishii, Y.,
   Arakawa, T., Hara, A., Fukunishi, Y., Konno, H., \emph{et~al.} (2001)
@@ -1007,6 +970,13 @@ Lander, E.S. (2011) {{I}nitial impact of the sequencing of the human genome}.
 \newblock \emph{Nature}, \textbf{470}(7333): 187--197.
 \bibAnnoteFile{Lander2011}
 
+\bibitem[\protect\astroncite{Lander \emph{et~al.}}{2001}]{Lander2001}
+Lander, E.S., Linton, L.M., Birren, B., Nusbaum, C., Zody, M.C., Baldwin, J.,
+  Devon, K., Dewar, K., Doyle, M., FitzHugh, W., \emph{et~al.} (2001) {I}nitial
+  sequencing and analysis of the human genome.
+\newblock \emph{Nature}, \textbf{409}(6822): 860--921.
+\bibAnnoteFile{Lander2001}
+
 \bibitem[\protect\astroncite{Langmead \emph{et~al.}}{2009}]{bowtie}
 Langmead, B., Trapnell, C., Pop, M., and Salzberg, S.L. (2009) {{U}ltrafast and
   memory-efficient alignment of short {D}{N}{A} sequences to the human genome}.
@@ -1030,14 +1000,6 @@ Law, C.W., Chen, Y., Shi, W., and Smyth, G.K. (2014) voom: precision weights
   unlock linear model analysis tools for {RNA}-seq read counts.
 \newblock \emph{Genome Biol}, \textbf{15}(2): R29.
 \bibAnnoteFile{Law2014}
-
-\bibitem[\protect\astroncite{Lawrence \emph{et~al.}}{2015}]{TCGA2015HNSC}
-Lawrence, M.S., Sougnez, C., Lichtenstein, L., Cibulskis, K., Lander, E.,
-  Gabriel, S.B., Getz, G., Ally, A., Balasundaram, M., Birol, I., \emph{et~al.}
-  (2015) {{C}omprehensive genomic characterization of head and neck squamous
-  cell carcinomas}.
-\newblock \emph{Nature}, \textbf{517}(7536): 576--582.
-\bibAnnoteFile{TCGA2015HNSC}
 
 \bibitem[\protect\astroncite{Le~Meur and Gentleman}{2008}]{LeMeur2008}
 Le~Meur, N. and Gentleman, R. (2008) Modeling synthetic lethality.
