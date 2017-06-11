@@ -1,4 +1,4 @@
-\begin{thebibliography}{258}
+\begin{thebibliography}{252}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibAnnoteFile}[1]{%
   \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
@@ -22,24 +22,10 @@ Abeshouse, A., Ahn, J., Akbani, R., Ally, A., Amin, S., Andry, C.D., Annala,
 \newblock \emph{Cell}, \textbf{163}(4): 1011--1025.
 \bibAnnoteFile{TCGA2015PR}
 
-\bibitem[\protect\astroncite{Adamski \emph{et~al.}}{2014}]{Adamski2014}
-Adamski, M.G., Gumann, P., and Baird, A.E. (2014) {{A} method for quantitative
-  analysis of standard and high-throughput q{P}{C}{R} expression data based on
-  input sample quantity}.
-\newblock \emph{PLoS ONE}, \textbf{9}(8): e103917.
-\bibAnnoteFile{Adamski2014}
-
 \bibitem[\protect\astroncite{Adler}{2005}]{vioplot}
 Adler, D. (2005) \emph{vioplot: Violin plot}.
 \newblock R package version 0.2.
 \bibAnnoteFile{vioplot}
-
-\bibitem[\protect\astroncite{Agrawal \emph{et~al.}}{2014}]{TCGA2014TH}
-Agrawal, N., Akbani, R., Aksoy, B.A., Ally, A., Arachchi, H., Asa, S.L., Auman,
-  J.T., Balasundaram, M., Balu, S., Baylin, S.B., \emph{et~al.} (2014)
-  {{I}ntegrated genomic characterization of papillary thyroid carcinoma}.
-\newblock \emph{Cell}, \textbf{159}(3): 676--690.
-\bibAnnoteFile{TCGA2014TH}
 
 \bibitem[\protect\astroncite{Akbani \emph{et~al.}}{2015}]{TCGA2015SK}
 Akbani, R., Akdemir, K.C., Aksoy, B.A., Albert, M., Ally, A., Amin, S.B.,
@@ -269,6 +255,13 @@ Boucher, B. and Jenna, S. (2013) Genetic interaction networks: better
 \newblock \emph{Front Genet}, \textbf{4}: 290.
 \bibAnnoteFile{Boucher2013}
 
+\bibitem[\protect\astroncite{Bozovic-Spasojevic
+  \emph{et~al.}}{2012}]{Bozovic-Spasojevic2012}
+Bozovic-Spasojevic, I., Azambuja, E., McCaskill-Stevens, W., Dinh, P., and
+  Cardoso, F. (2012) Chemoprevention for breast cancer.
+\newblock \emph{Cancer treatment reviews}, \textbf{38}(5): 329--339.
+\bibAnnoteFile{Bozovic-Spasojevic2012}
+
 \bibitem[\protect\astroncite{Breiman}{2001}]{Breiman2001}
 Breiman, L. (2001) Random forests.
 \newblock \emph{Machine Learning}, \textbf{45}(1): 5--32.
@@ -296,14 +289,6 @@ Bryant, H.E., Schultz, N., Thomas, H.D., Parker, K.M., Flower, D., Lopez, E.,
   polymerase.
 \newblock \emph{Nature}, \textbf{434}(7035): 913--7.
 \bibAnnoteFile{Bryant2005}
-
-\bibitem[\protect\astroncite{Burk \emph{et~al.}}{2017}]{TCGA2017CERV}
-Burk, R.D., Chen, Z., Saller, C., Tarvin, K., Carvalho, A.L.,
-  Scapulatempo-Neto, C., Silveira, H.C., Fregnani, J.H., Creighton, C.J.,
-  Anderson, M.L., \emph{et~al.} (2017) {{I}ntegrated genomic and molecular
-  characterization of cervical cancer}.
-\newblock \emph{Nature}, \textbf{543}(7645): 378--384.
-\bibAnnoteFile{TCGA2017CERV}
 
 \bibitem[\protect\astroncite{Bussey \emph{et~al.}}{2006}]{Bussey2006}
 Bussey, H., Andrews, B., and Boone, C. (2006) From worm genetic networks to
@@ -353,13 +338,6 @@ Chen, X. and Tompa, M. (2010) {{C}omparative assessment of methods for aligning
   multiple genome sequences}.
 \newblock \emph{Nat Biotechnol}, \textbf{28}(6): 567--572.
 \bibAnnoteFile{Chen2010}
-
-\bibitem[\protect\astroncite{Cherniack \emph{et~al.}}{2017}]{TCGA2017UT}
-Cherniack, A.D., Shen, H., Walter, V., Stewart, C., Murray, B.A., Bowlby, R.,
-  Hu, X., Ling, S., Soslow, R.A., Broaddus, R.R., \emph{et~al.} (2017)
-  {{I}ntegrated {M}olecular {C}haracterization of {U}terine {C}arcinosarcoma}.
-\newblock \emph{Cancer Cell}, \textbf{31}(3): 411--423.
-\bibAnnoteFile{TCGA2017UT}
 
 \bibitem[\protect\astroncite{Chipman and Singh}{2009}]{Chipman2009}
 Chipman, K. and Singh, A. (2009) Predicting genetic interactions with random
@@ -468,14 +446,6 @@ Csardi, G. and Nepusz, T. (2006) The igraph software package for complex
   network research.
 \newblock \emph{InterJournal}, \textbf{Complex Systems}: 1695.
 \bibAnnoteFile{igraph}
-
-\bibitem[\protect\astroncite{Curtis \emph{et~al.}}{2012}]{METABRIC2012}
-Curtis, C., Shah, S.P., Chin, S.F., Turashvili, G., Rueda, O.M., Dunning, M.J.,
-  Speed, D., Lynch, A.G., Samarajiwa, S., Yuan, Y., \emph{et~al.} (2012) {{T}he
-  genomic and transcriptomic architecture of 2,000 breast tumours reveals novel
-  subgroups}.
-\newblock \emph{Nature}, \textbf{486}(7403): 346--352.
-\bibAnnoteFile{METABRIC2012}
 
 \bibitem[\protect\astroncite{Dai \emph{et~al.}}{2015}]{Dai2015}
 Dai, X., Li, T., Bai, Z., Yang, Y., Liu, X., Zhan, J., and Shi, B. (2015)
@@ -713,11 +683,23 @@ Genz, A., Bretz, F., Miwa, T., Mi, X., Leisch, F., Scheipl, F., and Hothorn, T.
 \newblock R package version 1.0-5. URL.
 \bibAnnoteFile{mvtnorm}
 
+\bibitem[\protect\astroncite{Glaire \emph{et~al.}}{2017}]{Glaire2017}
+Glaire, M.A., Brown, M., Church, D.N., and Tomlinson, I. (2017) {{C}ancer
+  predisposition syndromes: lessons for truly precision medicine}.
+\newblock \emph{J Pathol}, \textbf{241}(2): 226--235.
+\bibAnnoteFile{Glaire2017}
+
 \bibitem[\protect\astroncite{{\acroauthor{Globus}{Globus}}}{2017}]{Globus}
 {\acroauthor{Globus}{Globus}} (2017) {Research data management simplified}.
 \newblock \url{https://www.globus.org/}.
 \newblock Accessed: 25/03/2017.
 \bibAnnoteFile{Globus}
+
+\bibitem[\protect\astroncite{Goodwin \emph{et~al.}}{2016}]{Goodwin2016}
+Goodwin, S., McPherson, J.D., and McCombie, W.R. (2016) {{C}oming of age: ten
+  years of next-generation sequencing technologies}.
+\newblock \emph{Nat Rev Genet}, \textbf{17}(6): 333--351.
+\bibAnnoteFile{Goodwin2016}
 
 \bibitem[\protect\astroncite{Grady \emph{et~al.}}{2000}]{Grady2000}
 Grady, W.M., Willis, J., Guilford, P.J., Dunbier, A.K., Toro, T.T., Lynch, H.,
@@ -843,15 +825,6 @@ Hell, P. (1976) Graphs with given neighbourhoods i. probl\'{e}mes combinatorics
 \newblock \emph{Proc Coil Int CNRS, Orsay}, \textbf{260}: 219--223.
 \bibAnnoteFile{Hell1976}
 
-\bibitem[\protect\astroncite{Herschkowitz
-  \emph{et~al.}}{2007}]{Herschkowitz2007}
-Herschkowitz, J.I., Simin, K., Weigman, V.J., Mikaelian, I., Usary, J., Hu, Z.,
-  Rasmussen, K.E., Jones, L.P., Assefnia, S., Chandrasekharan, S.,
-  \emph{et~al.} (2007) {{I}dentification of conserved gene expression features
-  between murine mammary carcinoma models and human breast tumors}.
-\newblock \emph{Genome Biol}, \textbf{8}(5): R76.
-\bibAnnoteFile{Herschkowitz2007}
-
 \bibitem[\protect\astroncite{Hillenmeyer}{2008}]{Hillenmeyer2008}
 Hillenmeyer, M.E. (2008) The chemical genomic portrait of yeast: uncovering a
   phenotype for all genes.
@@ -903,14 +876,6 @@ Huang, E., Cheng, S., Dressman, H., Pittman, J., Tsou, M., Horng, C., Bild, A.,
   predictors of breast cancer outcomes.
 \newblock \emph{Lancet}, \textbf{361}: 1590--1596.
 \bibAnnoteFile{Huang2003}
-
-\bibitem[\protect\astroncite{{\acroauthor{Illumina,
-  Inc}{Illumina}}}{2017}]{Illumina}
-{\acroauthor{Illumina, Inc}{Illumina}} (2017) {Sequencing and array-based
-  solutions for genetic research}.
-\newblock \url{https://www.illumina.com/}.
-\newblock Accessed: 26/03/2017.
-\bibAnnoteFile{Illumina}
 
 \bibitem[\protect\astroncite{{\acroauthor{International HapMap 3
   Consortium}{HapMap}}}{2003}]{HapMap2003}
@@ -965,13 +930,6 @@ Kamada, T. and Kawai, S. (1989) An algorithm for drawing general undirected
 \newblock \emph{Information Processing Letters}, \textbf{31}(1): 7--15.
 \bibAnnoteFile{Kamada1989}
 
-\bibitem[\protect\astroncite{Kandoth \emph{et~al.}}{2013}]{TCGA2013ENDO}
-Kandoth, C., Schultz, N., Cherniack, A.D., Akbani, R., Liu, Y., Shen, H.,
-  Robertson, A.G., Pashtan, I., Shen, R., Benz, C.C., \emph{et~al.} (2013)
-  {{I}ntegrated genomic characterization of endometrial carcinoma}.
-\newblock \emph{Nature}, \textbf{497}(7447): 67--73.
-\bibAnnoteFile{TCGA2013ENDO}
-
 \bibitem[\protect\astroncite{Kawai \emph{et~al.}}{2001}]{FANTOM2001}
 Kawai, J., Shinagawa, A., Shibata, K., Yoshino, M., Itoh, M., Ishii, Y.,
   Arakawa, T., Hara, A., Fukunishi, Y., Konno, H., \emph{et~al.} (2001)
@@ -991,11 +949,11 @@ Kelly, S.T. (2013) \emph{Statistical Predictions of Synthetic Lethal
 \newblock Dissertation, University of Otago.
 \bibAnnoteFile{Kelly2013}
 
-\bibitem[\protect\astroncite{Kelly \emph{et~al.}}{2017}]{KellyHDGC}
+\bibitem[\protect\astroncite{Kelly \emph{et~al.}}{unpublished}]{KellyHDGC}
 Kelly, S.T., Single, A.B., Telford, B.J., Beetham, H.G., Godwin, T.D., Chen,
-  A., Black, M.A., and Guilford, P.J. (2017) Towards {HDGC} chemoprevention:
-  vulnerabilities in {E-cadherin}-negative cells identified by genome-wide
-  interrogation of isogenic cell lines and whole tumors.
+  A., Black, M.A., and Guilford, P.J. (unpublished) Towards {HDGC}
+  chemoprevention: vulnerabilities in {E-cadherin}-negative cells identified by
+  genome-wide interrogation of isogenic cell lines and whole tumors.
 \newblock Submitted to \textit{Cancer Prev Res}.
 \bibAnnoteFile{KellyHDGC}
 
@@ -1061,14 +1019,6 @@ Law, C.W., Chen, Y., Shi, W., and Smyth, G.K. (2014) voom: precision weights
   unlock linear model analysis tools for {RNA}-seq read counts.
 \newblock \emph{Genome Biol}, \textbf{15}(2): R29.
 \bibAnnoteFile{Law2014}
-
-\bibitem[\protect\astroncite{Lawrence \emph{et~al.}}{2015}]{TCGA2015HNSC}
-Lawrence, M.S., Sougnez, C., Lichtenstein, L., Cibulskis, K., Lander, E.,
-  Gabriel, S.B., Getz, G., Ally, A., Balasundaram, M., Birol, I., \emph{et~al.}
-  (2015) {{C}omprehensive genomic characterization of head and neck squamous
-  cell carcinomas}.
-\newblock \emph{Nature}, \textbf{517}(7536): 576--582.
-\bibAnnoteFile{TCGA2015HNSC}
 
 \bibitem[\protect\astroncite{Le~Meur and Gentleman}{2008}]{LeMeur2008}
 Le~Meur, N. and Gentleman, R. (2008) Modeling synthetic lethality.
@@ -1177,6 +1127,11 @@ Machado, J., Olivera, C., Carvalh, R., Soares, P., Berx, G., Caldas, C.,
 \newblock \emph{Oncogene}, \textbf{20}: 1525--1528.
 \bibAnnoteFile{Machado2001}
 
+\bibitem[\protect\astroncite{Markowetz}{2017}]{Markowetz2017}
+Markowetz, F. (2017) {{A}ll biology is computational biology}.
+\newblock \emph{PLoS Biol}, \textbf{15}(3): e2002050.
+\bibAnnoteFile{Markowetz2017}
+
 \bibitem[\protect\astroncite{Masciari \emph{et~al.}}{2007}]{Masciari2007}
 Masciari, S., Larsson, N., Senz, J., Boyd, N., Kaurah, P., Kandel, M.J.,
   Harris, L.N., Pinheiro, H.C., Troussard, A., Miron, P., \emph{et~al.} (2007)
@@ -1273,12 +1228,6 @@ Parker, J., Mullins, M., Cheung, M., Leung, S., Voduc, D., Vickery, T., Davies,
 \newblock \emph{Journal of Clinical Oncology}, \textbf{27}(8): 1160--1167.
 \bibAnnoteFile{Parker2009}
 
-\bibitem[\protect\astroncite{Peltonen and McKusick}{2001}]{Peltonen2001}
-Peltonen, L. and McKusick, V.A. (2001) {{G}enomics and medicine. {D}issecting
-  human disease in the postgenomic era}.
-\newblock \emph{Science}, \textbf{291}(5507): 1224--1229.
-\bibAnnoteFile{Peltonen2001}
-
 \bibitem[\protect\astroncite{Pereira \emph{et~al.}}{2016}]{METABRIC2016}
 Pereira, B., Chin, S.F., Rueda, O.M., Vollan, H.K., Provenzano, E., Bardwell,
   H.A., Pugh, M., Jones, L., Russell, R., Sammut, S.J., \emph{et~al.} (2016)
@@ -1342,6 +1291,13 @@ Roguev, A., Bandyopadhyay, S., Zofall, M., Zhang, K., Fischer, T., Collins,
 \newblock \emph{Science}, \textbf{322}(5900): 405--10.
 \bibAnnoteFile{Roguev2008}
 
+\bibitem[\protect\astroncite{Roychowdhury and
+  Chinnaiyan}{2016}]{Roychowdhury2016}
+Roychowdhury, S. and Chinnaiyan, A.M. (2016) {{T}ranslating cancer genomes and
+  transcriptomes for precision oncology}.
+\newblock \emph{CA Cancer J Clin}, \textbf{66}(1): 75--88.
+\bibAnnoteFile{Roychowdhury2016}
+
 \bibitem[\protect\astroncite{Rung and Brazma}{2013}]{Rung2013}
 Rung, J. and Brazma, A. (2013) {{R}euse of public genome-wide gene expression
   data}.
@@ -1362,17 +1318,10 @@ Ryan, C., Lord, C., and Ashworth, A. (2014) Daisy: Picking synthetic lethals
 \newblock \emph{Cancer Cell}, \textbf{26}(3): 306--308.
 \bibAnnoteFile{Ryan2014}
 
-\bibitem[\protect\astroncite{Sander and Joung}{2014}]{Sander2014}
-Sander, J.D. and Joung, J.K. (2014) Crispr-cas systems for editing, regulating
-  and targeting genomes.
-\newblock \emph{Nat Biotechnol}, \textbf{32}(4): 347--55.
-\bibAnnoteFile{Sander2014}
-
-\bibitem[\protect\astroncite{Sanger and Coulson}{1975}]{Sanger1975}
-Sanger, F. and Coulson, A. (1975) A rapid method for determining sequences in
-  dna by primed synthesis with dna polymerase.
-\newblock \emph{Journal of Molecular Biology}, \textbf{94}(3): 441 -- 448.
-\bibAnnoteFile{Sanger1975}
+\bibitem[\protect\astroncite{Schena}{1996}]{Schena1996}
+Schena, M. (1996) {{G}enome analysis with gene expression microarrays}.
+\newblock \emph{Bioessays}, \textbf{18}(5): 427--431.
+\bibAnnoteFile{Schena1996}
 
 \bibitem[\protect\astroncite{Scheuer \emph{et~al.}}{2002}]{Scheuer2002}
 Scheuer, L., Kauff, N., Robson, M., Kelly, B., Barakat, R., Satagopan, J.,
@@ -1501,12 +1450,6 @@ Telford, B.J., Chen, A., Beetham, H., Frick, J., Brew, T.P., Gould, C.M.,
 \newblock Accessed: 25/03/2017.
 \bibAnnoteFile{NeSI}
 
-\bibitem[\protect\astroncite{{\acroauthor{The Pharmaceutical Management
-  Agency}{PHARMAC}}}{2016}]{Pharmac2016}
-{\acroauthor{The Pharmaceutical Management Agency}{PHARMAC}} (2016) Approval of
-  multi-product funding proposal with roche.
-\bibAnnoteFile{Pharmac2016}
-
 \bibitem[\protect\astroncite{Tierney \emph{et~al.}}{2015}]{snow}
 Tierney, L., Rossini, A.J., Li, N., and Sevcikova, H. (2015) \emph{snow: Simple
   Network of Workstations}.
@@ -1547,6 +1490,13 @@ Tong, A.H., Lesage, G., Bader, G.D., Ding, H., Xu, H., Xin, X., Young, J.,
   the yeast genetic interaction network.
 \newblock \emph{Science}, \textbf{303}(5659): 808--13.
 \bibAnnoteFile{Tong2004}
+
+\bibitem[\protect\astroncite{Tran \emph{et~al.}}{2012}]{Tran2012}
+Tran, B., Dancey, J.E., Kamel-Reid, S., McPherson, J.D., Bedard, P.L., Brown,
+  A.M., Zhang, T., Shaw, P., Onetto, N., Stein, L., \emph{et~al.} (2012)
+  {{C}ancer genomics: technology, discovery, and translation}.
+\newblock \emph{J Clin Oncol}, \textbf{30}(6): 647--660.
+\bibAnnoteFile{Tran2012}
 
 \bibitem[\protect\astroncite{Travers and Milgram}{1969}]{Travers1969}
 Travers, J. and Milgram, S. (1969) An experimental study of the small world
@@ -1608,12 +1558,6 @@ Vapnik, V.N. (1995) \emph{The nature of statistical learning theory}.
 \newblock Springer-Verlag New York, Inc.
 \bibAnnoteFile{Vapnik1995}
 
-\bibitem[\protect\astroncite{Vargas \emph{et~al.}}{2004}]{Vargas2004}
-Vargas, J.J., Gusella, G., Najfeld, V., Klotman, M., and Cara, A. (2004) Novel
-  integrase-defective lentiviral episomal vectors for gene transfer.
-\newblock \emph{Hum Gene Ther}, \textbf{15}: 361--372.
-\bibAnnoteFile{Vargas2004}
-
 \bibitem[\protect\astroncite{Vizeacoumar \emph{et~al.}}{2013}]{Vizeacoumar2013}
 Vizeacoumar, F.J., Arnold, R., Vizeacoumar, F.S., Chandrashekhar, M., Buzina,
   A., Young, J.T., Kwan, J.H., Sayad, A., Mero, P., Lawo, S., \emph{et~al.}
@@ -1635,6 +1579,12 @@ Vos, C.B., Cleton-Jansen, A.M., Berx, G., de~Leeuw, W.J., ter Haar, N.T., van
   early event in tumorigenesis.
 \newblock \emph{Br J Cancer}, \textbf{76}(9): 1131--3.
 \bibAnnoteFile{Vos1997}
+
+\bibitem[\protect\astroncite{Waldron}{2016}]{Waldron2016}
+Waldron, D. (2016) {{C}ancer genomics: {A} multi-layer omics approach to
+  cancer}.
+\newblock \emph{Nat Rev Genet}, \textbf{17}(8): 436--437.
+\bibAnnoteFile{Waldron2016}
 
 \bibitem[\protect\astroncite{Wang \emph{et~al.}}{2010}]{mapsplice}
 Wang, K., Singh, D., Zeng, Z., Coleman, S.J., Huang, Y., Savich, G.L., He, X.,
