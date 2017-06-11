@@ -1,4 +1,4 @@
-\begin{thebibliography}{246}
+\begin{thebibliography}{252}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibAnnoteFile}[1]{%
   \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
@@ -683,11 +683,23 @@ Genz, A., Bretz, F., Miwa, T., Mi, X., Leisch, F., Scheipl, F., and Hothorn, T.
 \newblock R package version 1.0-5. URL.
 \bibAnnoteFile{mvtnorm}
 
+\bibitem[\protect\astroncite{Glaire \emph{et~al.}}{2017}]{Glaire2017}
+Glaire, M.A., Brown, M., Church, D.N., and Tomlinson, I. (2017) {{C}ancer
+  predisposition syndromes: lessons for truly precision medicine}.
+\newblock \emph{J Pathol}, \textbf{241}(2): 226--235.
+\bibAnnoteFile{Glaire2017}
+
 \bibitem[\protect\astroncite{{\acroauthor{Globus}{Globus}}}{2017}]{Globus}
 {\acroauthor{Globus}{Globus}} (2017) {Research data management simplified}.
 \newblock \url{https://www.globus.org/}.
 \newblock Accessed: 25/03/2017.
 \bibAnnoteFile{Globus}
+
+\bibitem[\protect\astroncite{Goodwin \emph{et~al.}}{2016}]{Goodwin2016}
+Goodwin, S., McPherson, J.D., and McCombie, W.R. (2016) {{C}oming of age: ten
+  years of next-generation sequencing technologies}.
+\newblock \emph{Nat Rev Genet}, \textbf{17}(6): 333--351.
+\bibAnnoteFile{Goodwin2016}
 
 \bibitem[\protect\astroncite{Grady \emph{et~al.}}{2000}]{Grady2000}
 Grady, W.M., Willis, J., Guilford, P.J., Dunbier, A.K., Toro, T.T., Lynch, H.,
@@ -1115,6 +1127,11 @@ Machado, J., Olivera, C., Carvalh, R., Soares, P., Berx, G., Caldas, C.,
 \newblock \emph{Oncogene}, \textbf{20}: 1525--1528.
 \bibAnnoteFile{Machado2001}
 
+\bibitem[\protect\astroncite{Markowetz}{2017}]{Markowetz2017}
+Markowetz, F. (2017) {{A}ll biology is computational biology}.
+\newblock \emph{PLoS Biol}, \textbf{15}(3): e2002050.
+\bibAnnoteFile{Markowetz2017}
+
 \bibitem[\protect\astroncite{Masciari \emph{et~al.}}{2007}]{Masciari2007}
 Masciari, S., Larsson, N., Senz, J., Boyd, N., Kaurah, P., Kandel, M.J.,
   Harris, L.N., Pinheiro, H.C., Troussard, A., Miron, P., \emph{et~al.} (2007)
@@ -1211,12 +1228,6 @@ Parker, J., Mullins, M., Cheung, M., Leung, S., Voduc, D., Vickery, T., Davies,
 \newblock \emph{Journal of Clinical Oncology}, \textbf{27}(8): 1160--1167.
 \bibAnnoteFile{Parker2009}
 
-\bibitem[\protect\astroncite{Peltonen and McKusick}{2001}]{Peltonen2001}
-Peltonen, L. and McKusick, V.A. (2001) {{G}enomics and medicine. {D}issecting
-  human disease in the postgenomic era}.
-\newblock \emph{Science}, \textbf{291}(5507): 1224--1229.
-\bibAnnoteFile{Peltonen2001}
-
 \bibitem[\protect\astroncite{Pereira \emph{et~al.}}{2016}]{METABRIC2016}
 Pereira, B., Chin, S.F., Rueda, O.M., Vollan, H.K., Provenzano, E., Bardwell,
   H.A., Pugh, M., Jones, L., Russell, R., Sammut, S.J., \emph{et~al.} (2016)
@@ -1280,6 +1291,13 @@ Roguev, A., Bandyopadhyay, S., Zofall, M., Zhang, K., Fischer, T., Collins,
 \newblock \emph{Science}, \textbf{322}(5900): 405--10.
 \bibAnnoteFile{Roguev2008}
 
+\bibitem[\protect\astroncite{Roychowdhury and
+  Chinnaiyan}{2016}]{Roychowdhury2016}
+Roychowdhury, S. and Chinnaiyan, A.M. (2016) {{T}ranslating cancer genomes and
+  transcriptomes for precision oncology}.
+\newblock \emph{CA Cancer J Clin}, \textbf{66}(1): 75--88.
+\bibAnnoteFile{Roychowdhury2016}
+
 \bibitem[\protect\astroncite{Rung and Brazma}{2013}]{Rung2013}
 Rung, J. and Brazma, A. (2013) {{R}euse of public genome-wide gene expression
   data}.
@@ -1299,6 +1317,11 @@ Ryan, C., Lord, C., and Ashworth, A. (2014) Daisy: Picking synthetic lethals
   from cancer genomes.
 \newblock \emph{Cancer Cell}, \textbf{26}(3): 306--308.
 \bibAnnoteFile{Ryan2014}
+
+\bibitem[\protect\astroncite{Schena}{1996}]{Schena1996}
+Schena, M. (1996) {{G}enome analysis with gene expression microarrays}.
+\newblock \emph{Bioessays}, \textbf{18}(5): 427--431.
+\bibAnnoteFile{Schena1996}
 
 \bibitem[\protect\astroncite{Scheuer \emph{et~al.}}{2002}]{Scheuer2002}
 Scheuer, L., Kauff, N., Robson, M., Kelly, B., Barakat, R., Satagopan, J.,
@@ -1468,6 +1491,13 @@ Tong, A.H., Lesage, G., Bader, G.D., Ding, H., Xu, H., Xin, X., Young, J.,
 \newblock \emph{Science}, \textbf{303}(5659): 808--13.
 \bibAnnoteFile{Tong2004}
 
+\bibitem[\protect\astroncite{Tran \emph{et~al.}}{2012}]{Tran2012}
+Tran, B., Dancey, J.E., Kamel-Reid, S., McPherson, J.D., Bedard, P.L., Brown,
+  A.M., Zhang, T., Shaw, P., Onetto, N., Stein, L., \emph{et~al.} (2012)
+  {{C}ancer genomics: technology, discovery, and translation}.
+\newblock \emph{J Clin Oncol}, \textbf{30}(6): 647--660.
+\bibAnnoteFile{Tran2012}
+
 \bibitem[\protect\astroncite{Travers and Milgram}{1969}]{Travers1969}
 Travers, J. and Milgram, S. (1969) An experimental study of the small world
   problem.
@@ -1549,6 +1579,12 @@ Vos, C.B., Cleton-Jansen, A.M., Berx, G., de~Leeuw, W.J., ter Haar, N.T., van
   early event in tumorigenesis.
 \newblock \emph{Br J Cancer}, \textbf{76}(9): 1131--3.
 \bibAnnoteFile{Vos1997}
+
+\bibitem[\protect\astroncite{Waldron}{2016}]{Waldron2016}
+Waldron, D. (2016) {{C}ancer genomics: {A} multi-layer omics approach to
+  cancer}.
+\newblock \emph{Nat Rev Genet}, \textbf{17}(8): 436--437.
+\bibAnnoteFile{Waldron2016}
 
 \bibitem[\protect\astroncite{Wang \emph{et~al.}}{2010}]{mapsplice}
 Wang, K., Singh, D., Zeng, Z., Coleman, S.J., Huang, Y., Savich, G.L., He, X.,
