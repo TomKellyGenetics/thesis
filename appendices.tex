@@ -23,7 +23,7 @@
     \includegraphics{Raw(log)_Corr_eudist_Cut_part_Pub.png}
    }
    \end{center}
-   \caption[Correlation profiles of removed samples]{\small \textbf{Correlation profiles of removed samples.} Correlation matrix heatmap (Euclidean distance) of all samples in TCGA breast cancer dataset (left) clustered for all samples against removed samples (top): tissue source site (TSS), sample type with reds for tumour and greens for normal, patient (A2QH in pink), with varied analyte and plate (corresponding to batch in Table~\ref{tab:qc}). Excluded samples cluster at the bottom and annotation (left) show  shared properties between samples in the dataset.}
+   \caption[Correlation profiles of removed samples]{\small \textbf{Correlation profiles of removed samples.} Correlation matrix heatmap (Euclidean distance) of all samples in \gls{TCGA} breast cancer dataset (left) clustered for all samples against removed samples (top): tissue source site (TSS), sample type with reds for tumour and greens for normal, patient (A2QH in pink), with varied analyte and plate (corresponding to batch in Table~\ref{tab:qc}). Excluded samples cluster at the bottom and annotation (left) show  shared properties between samples in the dataset.}
 \label{fig:corr_map_part}
 %\end{mdframed}
 \end{figure*}
@@ -35,16 +35,16 @@
     \includegraphics{Raw(log)_Corr_eudist_Ann_Pub.png}
    }
    \end{center}
-   \caption[Correlation analysis and sample removal]{\small \textbf{Correlation analysis and sample removal.} Correlation matrix heatmap (Euclidean distance) of all samples in TCGA breast cancer dataset against each other annotated for sample clinical data: sample type, tissue type, tumour stage, Estrogen receptor (IHC) and intrinsic subtype (from the \gls{PAM50} method). CDH1 somatic mutation, gene expression, and status for SLIPT prediction are also annotated. Discrete variables are coloured as displayed in the legend and continuous variables on a blue-red scale as shown in the colour key. Trimmed samples cluster at the bottom of the heatmap and the colour bars of the left show which were removed for quality concerns.}
+   \caption[Correlation analysis and sample removal]{\small \textbf{Correlation analysis and sample removal.} Correlation matrix heatmap (Euclidean distance) of all samples in \gls{TCGA} breast cancer dataset against each other annotated for sample clinical data: sample type, tissue type, tumour stage, Estrogen receptor (IHC) and intrinsic subtype (from the \gls{PAM50} method). CDH1 somatic mutation, gene expression, and status for \gls{SLIPT} prediction are also annotated. Discrete variables are coloured as displayed in the legend and continuous variables on a blue-red scale as shown in the colour key. Trimmed samples cluster at the bottom of the heatmap and the colour bars of the left show which were removed for quality concerns.}
 \label{fig:corr_map}
 %\end{mdframed}
 \end{figure*}
 
 
-\chapter{Replicate Samples in TCGA Breast}
+\chapter{Replicate Samples in \gls{TCGA} Breast}
 \label{appendix:replicate_samples}
 
-Replicate samples were picked where possible from the TCGA breast cancer gene expression data to examine for sample quality. Independent samples of the same tumour are expected to have very high Pearson's correlation between their expression profiles unless there were issues with sample collection or preparation and are thus an indicator of sample quality. The log-transformed raw read counts for replicate samples were examined in Figures~\ref{fig:rep_cutcut}\nobreakdash--\ref{fig:rep_keepcut}. These were examined before normalisation which would be expected to increase sample concordance.
+Replicate samples were picked where possible from the \gls{TCGA} breast cancer gene expression data to examine for sample quality. Independent samples of the same tumour are expected to have very high Pearson's correlation between their expression profiles unless there were issues with sample collection or preparation and are thus an indicator of sample quality. The log-transformed raw read counts for replicate samples were examined in Figures~\ref{fig:rep_cutcut}\nobreakdash--\ref{fig:rep_keepcut}. These were examined before normalisation which would be expected to increase sample concordance.
 
 Another consideration are the samples which were removed for quality concerns (in Section~\ref{methods:sample_qc}). While these were selected by unbiased hierarchical clustering (See Figure~\ref{fig:corr_map}), it is notable that many of the exluded (tumour) samples were performed in replicate despite relatively few replicate samples in the overall dataset. These samples correlate poorly with the rest of the dataset, in addition to with replicate samples.
 
@@ -206,13 +206,13 @@ Another consideration are the samples which were removed for quality concerns (i
 base                          & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0             \\
 %\hline
 \rowcolor{black!5}
-abind                         & CRAN                      &             & 1.4-5       &                & 1.4-3              \\
+abind                         & \{gls{CRAN}                      &             & 1.4-5       &                & 1.4-3              \\
 %\hline
 \rowcolor{black!10}
-acepack                       & CRAN                      &             & 1.4.1       &                & 1.3-3.3           \\
+acepack                       & \{gls{CRAN}                      &             & 1.4.1       &                & 1.3-3.3           \\
 %\hline
 \rowcolor{black!5}
-ade4                          & CRAN                      &             & 1.7-5       &                &                    \\
+ade4                          & \{gls{CRAN}                      &             & 1.7-5       &                &                    \\
 %\hline
 \rowcolor{black!10}
 annaffy                       & Bioconductor              &             & 1.46.0      &                &                   \\
@@ -221,31 +221,31 @@ annaffy                       & Bioconductor              &             & 1.46.0
 AnnotationDbi                 & Bioconductor              &             & 1.36.0      & 1.36.0         & 1.34.4             \\
 %\hline
 \rowcolor{black!10}
-apComplex                     & CRAN                      &             & 2.40.0      &                &                   \\
+apComplex                     & \{gls{CRAN}                      &             & 2.40.0      &                &                   \\
 %\hline
 \rowcolor{black!5}
-ape                           & CRAN                      &             & 4           &                & 3.4                \\
+ape                           & \{gls{CRAN}                      &             & 4           &                & 3.4                \\
 %\hline
 \rowcolor{black!10}
-arm                           & CRAN                      &             & 1.9-3       &                &                   \\
+arm                           & \{gls{CRAN}                      &             & 1.9-3       &                &                   \\
 %\hline
 \rowcolor{black!5}
-assertthat                    & CRAN                      & 0.1         & 0.1         & 0.1            & 0.1                \\
+assertthat                    & \{gls{CRAN}                      & 0.1         & 0.1         & 0.1            & 0.1                \\
 %\hline
 \rowcolor{black!10}
-backports                     & CRAN                      & 1.0.5       & 1.0.4       & 1.0.5          & 1.0.2             \\
+backports                     & \{gls{CRAN}                      & 1.0.5       & 1.0.4       & 1.0.5          & 1.0.2             \\
 %\hline
 \rowcolor{black!5}
-base64                        & CRAN                      &             &             & 2              & 2                  \\
+base64                        & \{gls{CRAN}                      &             &             & 2              & 2                  \\
 %\hline
 \rowcolor{black!10}
-base64enc                     & CRAN                      &             & 0.1-3       &                & 0.1-3             \\
+base64enc                     & \{gls{CRAN}                      &             & 0.1-3       &                & 0.1-3             \\
 %\hline
 \rowcolor{black!5}
-beanplot                      & CRAN                      &             & 1.2         & 1.2            & 1.2                \\
+beanplot                      & \{gls{CRAN}                      &             & 1.2         & 1.2            & 1.2                \\
 %\hline
 \rowcolor{black!10}
-BH                            & CRAN                      & 1.60.0-2    & 1.62.0-1    & 1.62.0-1       & 1.60.0-2          \\
+BH                            & \{gls{CRAN}                      & 1.60.0-2    & 1.62.0-1    & 1.62.0-1       & 1.60.0-2          \\
 %\hline
 \rowcolor{black!5}
 Biobase                       & Bioconductor              &             & 2.34.0      & 2.34.0         & 2.32.0             \\
@@ -266,28 +266,28 @@ Biostrings                    & Bioconductor              &             & 2.42.1
 BiSEp                         & Bioconductor              &             & 2.0.1       & 2.0.1          & 2.0.1             \\
 %\hline
 \rowcolor{black!5}
-bitops                        & CRAN                      & 1.0-6       & 1.0-6       & 1.0-6          & 1.0-6              \\
+bitops                        & \{gls{CRAN}                      & 1.0-6       & 1.0-6       & 1.0-6          & 1.0-6              \\
 %\hline
 \rowcolor{black!10}
 boot                          & base                      & 1.3-18      & 1.3-18      & 1.3-18         & 1.3-18            \\
 %\hline
 \rowcolor{black!5}
-brew                          & CRAN                      & 1.0-6       & 1.0-6       & 1.0-6          & 1.0-6              \\
+brew                          & \{gls{CRAN}                      & 1.0-6       & 1.0-6       & 1.0-6          & 1.0-6              \\
 %\hline
 \rowcolor{black!10}
-broom                         & CRAN                      & 0.4.1       &             &                &                   \\
+broom                         & \{gls{CRAN}                      & 0.4.1       &             &                &                   \\
 %\hline
 \rowcolor{black!5}
-caTools                       & CRAN                      & 1.17.1      & 1.17.1      & 1.17.1         & 1.17.1             \\
+caTools                       & \{gls{CRAN}                      & 1.17.1      & 1.17.1      & 1.17.1         & 1.17.1             \\
 %\hline
 \rowcolor{black!10}
-cgdsr                         & CRAN                      &             & 1.2.5       &                &                   \\
+cgdsr                         & \{gls{CRAN}                      &             & 1.2.5       &                &                   \\
 %\hline
 \rowcolor{black!5}
-checkmate                     & CRAN                      &             & 1.8.2       &                & 1.7.4              \\
+checkmate                     & \{gls{CRAN}                      &             & 1.8.2       &                & 1.7.4              \\
 %\hline
 \rowcolor{black!10}
-chron                         & CRAN                      & 2.3-47      & 2.3-48      & 2.3-50         & 2.3-47            \\
+chron                         & \{gls{CRAN}                      & 2.3-47      & 2.3-48      & 2.3-50         & 2.3-47            \\
 %\hline
 \rowcolor{black!5}
 class                         & base                      & 7.3-14      & 7.3-14      & 7.3-14         & 7.3-14             \\
@@ -296,127 +296,127 @@ class                         & base                      & 7.3-14      & 7.3-14
 cluster                       & base                      & 2.0.5       & 2.0.5       & 2.0.5          & 2.0.4             \\
 %\hline
 \rowcolor{black!5}
-coda                          & CRAN                      &             & 0.19-1      &                & 0.18-1             \\
+coda                          & \{gls{CRAN}                      &             & 0.19-1      &                & 0.18-1             \\
 %\hline
 \rowcolor{black!10}
 codetools                     & base                      & 0.2-15      & 0.2-15      & 0.2-15         & 0.2-14            \\
 %\hline
 \rowcolor{black!5}
-colorRamps                    & CRAN                      &             & 2.3         &                &                    \\
+colorRamps                    & \{gls{CRAN}                      &             & 2.3         &                &                    \\
 %\hline
 \rowcolor{black!10}
-colorspace                    & CRAN                      & 1.2-6       & 1.3-2       & 1.3-2          & 1.2-6             \\
+colorspace                    & \{gls{CRAN}                      & 1.2-6       & 1.3-2       & 1.3-2          & 1.2-6             \\
 %\hline
 \rowcolor{black!5}
-commonmark                    & CRAN                      & 1.1         &             & 1.2            &                    \\
+commonmark                    & \{gls{CRAN}                      & 1.1         &             & 1.2            &                    \\
 %\hline
 \rowcolor{black!10}
 compiler                      & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0             \\
 %\hline
 \rowcolor{black!5}
-corpcor                       & CRAN                      &             & 1.6.8       & 1.6.8          & 1.6.8              \\
+corpcor                       & \{gls{CRAN}                      &             & 1.6.8       & 1.6.8          & 1.6.8              \\
 %\hline
 \rowcolor{black!10}
-Cprob                         & CRAN                      &             & 1.2.4       &                &                   \\
+Cprob                         & \{gls{CRAN}                      &             & 1.2.4       &                &                   \\
 %\hline
 \rowcolor{black!5}
-crayon                        & CRAN                      & 1.3.2       & 1.3.2       & 1.3.2          & 1.3.2              \\
+crayon                        & \{gls{CRAN}                      & 1.3.2       & 1.3.2       & 1.3.2          & 1.3.2              \\
 %\hline
 \rowcolor{black!10}
-crop                          & CRAN                      &             & 0.0-2       & 0.0-2          &                   \\
+crop                          & \{gls{CRAN}                      &             & 0.0-2       & 0.0-2          &                   \\
 %\hline
 \rowcolor{black!5}
-curl                          & CRAN                      & 1.2         & 2.3         & 2.3            & 0.9.7              \\
+curl                          & \{gls{CRAN}                      & 1.2         & 2.3         & 2.3            & 0.9.7              \\
 %\hline
 \rowcolor{black!10}
-d3Network                     & CRAN                      &             & 0.5.2.1     &                &                   \\
+d3Network                     & \{gls{CRAN}                      &             & 0.5.2.1     &                &                   \\
 %\hline
 \rowcolor{black!5}
-data.table                    & CRAN                      & 1.9.6       & 1.10.0      & 1.10.1         & 1.9.6              \\
+data.table                    & \{gls{CRAN}                      & 1.9.6       & 1.10.0      & 1.10.1         & 1.9.6              \\
 %\hline
 \rowcolor{black!10}
-data.tree                     & CRAN                      &             & 0.7.0       & 0.7.0          &                   \\
+data.tree                     & \{gls{CRAN}                      &             & 0.7.0       & 0.7.0          &                   \\
 %\hline
 \rowcolor{black!5}
 datasets                      & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
 %\hline
 \rowcolor{black!10}
-DBI                           & CRAN                      & 0.5-1       & 0.5-1       & 0.5-1          & 0.5-1             \\
+DBI                           & \{gls{CRAN}                      & 0.5-1       & 0.5-1       & 0.5-1          & 0.5-1             \\
 %\hline
 \rowcolor{black!5}
-dendextend                    & CRAN                      & 1.4.0       & 1.4.0       & 1.4.0          &                    \\
+dendextend                    & \{gls{CRAN}                      & 1.4.0       & 1.4.0       & 1.4.0          &                    \\
 %\hline
 \rowcolor{black!10}
-DEoptimR                      & CRAN                      & 1.0-8       & 1.0-8       & 1.0-8          & 1.0-4             \\
+DEoptimR                      & \{gls{CRAN}                      & 1.0-8       & 1.0-8       & 1.0-8          & 1.0-4             \\
 %\hline
 \rowcolor{black!5}
-desc                          & CRAN                      & 1.1.0       &             & 1.1.0          &                    \\
+desc                          & \{gls{CRAN}                      & 1.1.0       &             & 1.1.0          &                    \\
 %\hline
 \rowcolor{black!10}
-devtools                      & CRAN                      & 1.12.0      & 1.12.0      & 1.12.0         & 1.12.0            \\
+devtools                      & \{gls{CRAN}                      & 1.12.0      & 1.12.0      & 1.12.0         & 1.12.0            \\
 %\hline
 \rowcolor{black!5}
-DiagrammeR                    & CRAN                      &             & 0.9.0       & 0.9.0          &                    \\
+DiagrammeR                    & \{gls{CRAN}                      &             & 0.9.0       & 0.9.0          &                    \\
 %\hline
 \rowcolor{black!10}
-dichromat                     & CRAN                      & 2.0-0       & 2.0-0       & 2.0-0          & 2.0-0             \\
+dichromat                     & \{gls{CRAN}                      & 2.0-0       & 2.0-0       & 2.0-0          & 2.0-0             \\
 %\hline
 \rowcolor{black!5}
-digest                        & CRAN                      & 0.6.10      & 0.6.11      & 0.6.12         & 0.6.9              \\
+digest                        & \{gls{CRAN}                      & 0.6.10      & 0.6.11      & 0.6.12         & 0.6.9              \\
 %\hline
 \rowcolor{black!10}
-diptest                       & CRAN                      & 0.75-7      & 0.75-7      & 0.75-7         &                   \\
+diptest                       & \{gls{CRAN}                      & 0.75-7      & 0.75-7      & 0.75-7         &                   \\
 %\hline
 \rowcolor{black!5}
-doParallel                    & CRAN                      & 1.0.10      & 1.0.10      & 1.0.10         & 1.0.10             \\
+doParallel                    & \{gls{CRAN}                      & 1.0.10      & 1.0.10      & 1.0.10         & 1.0.10             \\
 %\hline
 \rowcolor{black!10}
-dplyr                         & CRAN                      & 0.5.0       & 0.5.0       & 0.5.0          & 0.5.0             \\
+dplyr                         & \{gls{CRAN}                      & 0.5.0       & 0.5.0       & 0.5.0          & 0.5.0             \\
 %\hline
 \rowcolor{black!5}
-ellipse                       & CRAN                      &             & 0.3-8       & 0.3-8          & 0.3-8              \\
+ellipse                       & \{gls{CRAN}                      &             & 0.3-8       & 0.3-8          & 0.3-8              \\
 %\hline
 \rowcolor{black!10}
-evaluate                      & CRAN                      &             & 0.1         & 0.1            & 0.9               \\
+evaluate                      & \{gls{CRAN}                      &             & 0.1         & 0.1            & 0.9               \\
 %\hline
 \rowcolor{black!5}
-fdrtool                       & CRAN                      &             & 1.2.15      &                &                    \\
+fdrtool                       & \{gls{CRAN}                      &             & 1.2.15      &                &                    \\
 %\hline
 \rowcolor{black!10}
-fields                        & CRAN                      &             & 8.1         &                &                   \\
+fields                        & \{gls{CRAN}                      &             & 8.1         &                &                   \\
 %\hline
 \rowcolor{black!5}
-flexmix                       & CRAN                      & 2.3-13      & 2.3-13      & 2.3-13         &                    \\
+flexmix                       & \{gls{CRAN}                      & 2.3-13      & 2.3-13      & 2.3-13         &                    \\
 %\hline
 \rowcolor{black!10}
-forcats                       & CRAN                      & 0.2.0       &             &                &                   \\
+forcats                       & \{gls{CRAN}                      & 0.2.0       &             &                &                   \\
 %\hline
 \rowcolor{black!5}
-foreach                       & CRAN                      & 1.4.3       & 1.4.3       & 1.4.3          & 1.4.3              \\
+foreach                       & \{gls{CRAN}                      & 1.4.3       & 1.4.3       & 1.4.3          & 1.4.3              \\
 %\hline
 \rowcolor{black!10}
 foreign                       & base                      & 0.8-67      & 0.8-67      & 0.8-67         & 0.8-66            \\
 %\hline
 \rowcolor{black!5}
-formatR                       & CRAN                      &             & 1.4         & 1.4            & 1.4                \\
+formatR                       & \{gls{CRAN}                      &             & 1.4         & 1.4            & 1.4                \\
 %\hline
 \rowcolor{black!10}
-Formula                       & CRAN                      &             & 1.2-1       &                & 1.2-1             \\
+Formula                       & \{gls{CRAN}                      &             & 1.2-1       &                & 1.2-1             \\
 %\hline
 \rowcolor{black!5}
-fpc                           & CRAN                      & 2.1-10      & 2.1-10      & 2.1-10         &                    \\
+fpc                           & \{gls{CRAN}                      & 2.1-10      & 2.1-10      & 2.1-10         &                    \\
 %\hline
 \rowcolor{black!10}
-futile.logger                 & CRAN                      &             & 1.4.3       & 1.4.3          & 1.4.1             \\
+futile.logger                 & \{gls{CRAN}                      &             & 1.4.3       & 1.4.3          & 1.4.1             \\
 %\hline
 \rowcolor{black!5}
-futile.options                & CRAN                      &             & 1.0.0       & 1.0.0          & 1.0.0              \\
+futile.options                & \{gls{CRAN}                      &             & 1.0.0       & 1.0.0          & 1.0.0              \\
 %\hline
 \rowcolor{black!10}
-gdata                         & CRAN                      & 2.17.0      & 2.17.0      & 2.17.0         & 2.17.0            \\
+gdata                         & \{gls{CRAN}                      & 2.17.0      & 2.17.0      & 2.17.0         & 2.17.0            \\
 %\hline
 \rowcolor{black!5}
-geepack                       & CRAN                      &             & 1.2-1       &                &                    \\
+geepack                       & \{gls{CRAN}                      &             & 1.2-1       &                &                    \\
 %\hline
 \rowcolor{black!10}
 GenomeInfoDb                  & Bioconductor              &             & 1.10.2      & 1.10.1         &                   \\
@@ -428,16 +428,16 @@ GenomicAlignments             & Bioconductor              &             & 1.10.0
 GenomicRanges                 & Bioconductor              &             & 1.26.2      & 1.26.1         &                   \\
 %\hline
 \rowcolor{black!5}
-ggm                           & CRAN                      &             & 2.3         &                &                    \\
+ggm                           & \{gls{CRAN}                      &             & 2.3         &                &                    \\
 %\hline
 \rowcolor{black!10}
-ggplot2                       & CRAN                      & 2.1.0       & 2.2.1       & 2.2.1          & 2.1.0             \\
+ggplot2                       & \{gls{CRAN}                      & 2.1.0       & 2.2.1       & 2.2.1          & 2.1.0             \\
 %\hline
 \rowcolor{black!5}
-git2r                         & CRAN                      & 0.15.0      & 0.18.0      & 0.16.0         & 0.15.0             \\
+git2r                         & \{gls{CRAN}                      & 0.15.0      & 0.18.0      & 0.16.0         & 0.15.0             \\
 %\hline
 \rowcolor{black!10}
-glasso                        & CRAN                      &             & 1.8         &                &                   \\
+glasso                        & \{gls{CRAN}                      &             & 1.8         &                &                   \\
 %\hline
 \rowcolor{black!5}
 GO.db                         & Bioconductor              &             & 3.4.0       & 3.2.2          & 3.3.0              \\
@@ -446,7 +446,7 @@ GO.db                         & Bioconductor              &             & 3.4.0 
 GOSemSim                      & Bioconductor              &             & 2.0.3       & 1.28.2         & 1.30.3            \\
 %\hline
 \rowcolor{black!5}
-gplots                        & CRAN                      & 3.0.1       & 3.0.1       & 3.0.1          & 3.0.1              \\
+gplots                        & \{gls{CRAN}                      & 3.0.1       & 3.0.1       & 3.0.1          & 3.0.1              \\
 %\hline
 \rowcolor{black!10}
 graph                         & Bioconductor              &             & 1.52.0      &                &                   \\
@@ -464,22 +464,22 @@ grDevices                     & base                      & 3.3.2       & 3.3.2 
 grid                          & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0             \\
 %\hline
 \rowcolor{black!5}
-gridBase                      & CRAN                      & 0.4-7       & 0.4-7       & 0.4-7          & 0.4-7              \\
+gridBase                      & \{gls{CRAN}                      & 0.4-7       & 0.4-7       & 0.4-7          & 0.4-7              \\
 %\hline
 \rowcolor{black!10}
-gridExtra                     & CRAN                      & 2.2.1       & 2.2.1       & 2.2.1          & 2.2.1             \\
+gridExtra                     & \{gls{CRAN}                      & 2.2.1       & 2.2.1       & 2.2.1          & 2.2.1             \\
 %\hline
 \rowcolor{black!5}
-gridGraphics                  & CRAN                      &             & 0.1-5       &                &                    \\
+gridGraphics                  & \{gls{CRAN}                      &             & 0.1-5       &                &                    \\
 %\hline
 \rowcolor{black!10}
-gtable                        & CRAN                      & 0.2.0       & 0.2.0       & 0.2.0          & 0.2.0             \\
+gtable                        & \{gls{CRAN}                      & 0.2.0       & 0.2.0       & 0.2.0          & 0.2.0             \\
 %\hline
 \rowcolor{black!5}
-gtools                        & CRAN                      & 3.5.0       & 3.5.0       & 3.5.0          & 3.5.0              \\
+gtools                        & \{gls{CRAN}                      & 3.5.0       & 3.5.0       & 3.5.0          & 3.5.0              \\
 %\hline
 \rowcolor{black!10}
-haven                         & CRAN                      & 1.0.0       &             &                &                   \\
+haven                         & \{gls{CRAN}                      & 1.0.0       &             &                &                   \\
 %\hline
 \rowcolor{black!5}
 heatmap.2x                    & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.0.0.9000  & 0.0.0.9000  & 0.0.0.9000     & 0.0.0.9000         \\
@@ -488,46 +488,46 @@ heatmap.2x                    & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGen
 hgu133plus2.db                & Bioconductor              &             & 3.2.3       &                &                   \\
 %\hline
 \rowcolor{black!5}
-highr                         & CRAN                      &             & 0.6         & 0.6            & 0.6                \\
+highr                         & \{gls{CRAN}                      &             & 0.6         & 0.6            & 0.6                \\
 %\hline
 \rowcolor{black!10}
-Hmisc                         & CRAN                      &             & 4.0-2       & 4.0-2          & 3.17-4            \\
+Hmisc                         & \{gls{CRAN}                      &             & 4.0-2       & 4.0-2          & 3.17-4            \\
 %\hline
 \rowcolor{black!5}
-hms                           & CRAN                      & 0.2         & 0.3         &                &                    \\
+hms                           & \{gls{CRAN}                      & 0.2         & 0.3         &                &                    \\
 %\hline
 \rowcolor{black!10}
-htmlTable                     & CRAN                      &             & 1.8         & 1.9            &                   \\
+htmlTable                     & \{gls{CRAN}                      &             & 1.8         & 1.9            &                   \\
 %\hline
 \rowcolor{black!5}
-htmltools                     & CRAN                      & 0.3.5       & 0.3.5       & 0.3.5          & 0.3.5              \\
+htmltools                     & \{gls{CRAN}                      & 0.3.5       & 0.3.5       & 0.3.5          & 0.3.5              \\
 %\hline
 \rowcolor{black!10}
-htmlwidgets                   & CRAN                      &             & 0.8         & 0.8            &                   \\
+htmlwidgets                   & \{gls{CRAN}                      &             & 0.8         & 0.8            &                   \\
 %\hline
 \rowcolor{black!5}
-httpuv                        & CRAN                      & 1.3.3       &             & 1.3.3          &                    \\
+httpuv                        & \{gls{CRAN}                      & 1.3.3       &             & 1.3.3          &                    \\
 %\hline
 \rowcolor{black!10}
-httr                          & CRAN                      & 1.2.1       & 1.2.1       & 1.2.1          & 1.1.0             \\
+httr                          & \{gls{CRAN}                      & 1.2.1       & 1.2.1       & 1.2.1          & 1.1.0             \\
 %\hline
 \rowcolor{black!5}
-huge                          & CRAN                      &             & 1.2.7       &                &                    \\
+huge                          & \{gls{CRAN}                      &             & 1.2.7       &                &                    \\
 %\hline
 \rowcolor{black!10}
-hunspell                      & CRAN                      &             & 2.3         &                & 2                 \\
+hunspell                      & \{gls{CRAN}                      &             & 2.3         &                & 2                 \\
 %\hline
 \rowcolor{black!5}
-hypergraph                    & CRAN                      &             & 1.46.0      &                &                    \\
+hypergraph                    & \{gls{CRAN}                      &             & 1.46.0      &                &                    \\
 %\hline
 \rowcolor{black!10}
-igraph                        & CRAN                      & 1.0.1       & 1.0.1       & 1.0.1          & 1.0.1             \\
+igraph                        & \{gls{CRAN}                      & 1.0.1       & 1.0.1       & 1.0.1          & 1.0.1             \\
 %\hline
 \rowcolor{black!5}
 igraph.extensions             & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.1.0.9001  & 0.1.0.9001  & 0.1.0.9001     & 0.1.0.9001         \\
 %\hline
 \rowcolor{black!10}
-influenceR                    & CRAN                      &             & 0.1.0       & 0.1.0          &                   \\
+influenceR                    & \{gls{CRAN}                      &             & 0.1.0       & 0.1.0          &                   \\
 %\hline
 \rowcolor{black!5}
 info.centrality               & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.1.0       & 0.1.0       & 0.1.0          & 0.1.0              \\
@@ -536,73 +536,73 @@ info.centrality               & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGen
 IRanges                       & Bioconductor              &             & 2.8.1       & 2.8.1          & 2.6.1             \\
 %\hline
 \rowcolor{black!5}
-irlba                         & CRAN                      & 2.1.1       & 2.1.2       & 2.1.2          & 2.0.0              \\
+irlba                         & \{gls{CRAN}                      & 2.1.1       & 2.1.2       & 2.1.2          & 2.0.0              \\
 %\hline
 \rowcolor{black!10}
-iterators                     & CRAN                      & 1.0.8       & 1.0.8       & 1.0.8          & 1.0.8             \\
+iterators                     & \{gls{CRAN}                      & 1.0.8       & 1.0.8       & 1.0.8          & 1.0.8             \\
 %\hline
 \rowcolor{black!5}
-jpeg                          & CRAN                      &             & 0.1-8       &                &                    \\
+jpeg                          & \{gls{CRAN}                      &             & 0.1-8       &                &                    \\
 %\hline
 \rowcolor{black!10}
-jsonlite                      & CRAN                      & 1.1         & 1.2         & 1.3            & 0.9.20            \\
+jsonlite                      & \{gls{CRAN}                      & 1.1         & 1.2         & 1.3            & 0.9.20            \\
 %\hline
 \rowcolor{black!5}
 KEGG.db                       & Bioconductor              &             & 3.2.3       &                &                    \\
 %\hline
 \rowcolor{black!10}
-kernlab                       & CRAN                      & 0.9-25      & 0.9-25      & 0.9-25         &                   \\
+kernlab                       & \{gls{CRAN}                      & 0.9-25      & 0.9-25      & 0.9-25         &                   \\
 %\hline
 \rowcolor{black!5}
 KernSmooth                    & base                      & 2.23-15     & 2.23-15     & 2.23-15        & 2.23-15            \\
 %\hline
 \rowcolor{black!10}
-knitr                         & CRAN                      &             & 1.15.1      & 1.15.1         & 1.14              \\
+knitr                         & \{gls{CRAN}                      &             & 1.15.1      & 1.15.1         & 1.14              \\
 %\hline
 \rowcolor{black!5}
-labeling                      & CRAN                      & 0.3         & 0.3         & 0.3            & 0.3                \\
+labeling                      & \{gls{CRAN}                      & 0.3         & 0.3         & 0.3            & 0.3                \\
 %\hline
 \rowcolor{black!10}
-lambda.r                      & CRAN                      &             & 1.1.9       & 1.1.9          & 1.1.7             \\
+lambda.r                      & \{gls{CRAN}                      &             & 1.1.9       & 1.1.9          & 1.1.7             \\
 %\hline
 \rowcolor{black!5}
 lattice                       & base                      & 0.20-34     & 0.20-34     & 0.20-34        & 0.20-33            \\
 %\hline
 \rowcolor{black!10}
-latticeExtra                  & CRAN                      &             & 0.6-28      &                & 0.6-28            \\
+latticeExtra                  & \{gls{CRAN}                      &             & 0.6-28      &                & 0.6-28            \\
 %\hline
 \rowcolor{black!5}
-lava                          & CRAN                      &             & 1.4.6       &                &                    \\
+lava                          & \{gls{CRAN}                      &             & 1.4.6       &                &                    \\
 %\hline
 \rowcolor{black!10}
-lavaan                        & CRAN                      &             & 0.5-22      &                &                   \\
+lavaan                        & \{gls{CRAN}                      &             & 0.5-22      &                &                   \\
 %\hline
 \rowcolor{black!5}
-lazyeval                      & CRAN                      & 0.2.0       & 0.2.0       & 0.2.0          & 0.2.0              \\
+lazyeval                      & \{gls{CRAN}                      & 0.2.0       & 0.2.0       & 0.2.0          & 0.2.0              \\
 %\hline
 \rowcolor{black!10}
-les                           & CRAN                      &             & 1.24.0      &                &                   \\
+les                           & \{gls{CRAN}                      &             & 1.24.0      &                &                   \\
 %\hline
 \rowcolor{black!5}
-lgtdl                         & CRAN                      &             & 1.1.3       &                &                    \\
+lgtdl                         & \{gls{CRAN}                      &             & 1.1.3       &                &                    \\
 %\hline
 \rowcolor{black!10}
 limma                         & Bioconductor              &             & 3.30.7      & 3.30.3         &                   \\
 %\hline
 \rowcolor{black!5}
-lme4                          & CRAN                      &             & 1.1-12      &                & 1.1-12             \\
+lme4                          & \{gls{CRAN}                      &             & 1.1-12      &                & 1.1-12             \\
 %\hline
 \rowcolor{black!10}
-lubridate                     & CRAN                      & 1.6.0       &             &                &                   \\
+lubridate                     & \{gls{CRAN}                      & 1.6.0       &             &                &                   \\
 %\hline
 \rowcolor{black!5}
-magrittr                      & CRAN                      & 1.5         & 1.5         & 1.5            & 1.5                \\
+magrittr                      & \{gls{CRAN}                      & 1.5         & 1.5         & 1.5            & 1.5                \\
 %\hline
 \rowcolor{black!10}
-maps                          & CRAN                      &             & 3.1.1       &                &                   \\
+maps                          & \{gls{CRAN}                      &             & 3.1.1       &                &                   \\
 %\hline
 \rowcolor{black!5}
-markdown                      & CRAN                      &             & 0.7.7       & 0.7.7          & 0.7.7              \\
+markdown                      & \{gls{CRAN}                      &             & 0.7.7       & 0.7.7          & 0.7.7              \\
 %\hline
 \rowcolor{black!10}
 MASS                          & base                      & 7.3-45      & 7.3-45      & 7.3-45         & 7.3-45            \\
@@ -611,13 +611,13 @@ MASS                          & base                      & 7.3-45      & 7.3-45
 Matrix                        & base                      & 1.2-7.1     & 1.2-7.1     & 1.2-8          & 1.2-6              \\
 %\hline
 \rowcolor{black!10}
-matrixcalc                    & CRAN                      & 1.0-3       & 1.0-3       & 1.0-3          & 1.0-3             \\
+matrixcalc                    & \{gls{CRAN}                      & 1.0-3       & 1.0-3       & 1.0-3          & 1.0-3             \\
 %\hline
 \rowcolor{black!5}
-mclust                        & CRAN                      & 5.2         & 5.2.1       & 5.2.2          & 5.2                \\
+mclust                        & \{gls{CRAN}                      & 5.2         & 5.2.1       & 5.2.2          & 5.2                \\
 %\hline
 \rowcolor{black!10}
-memoise                       & CRAN                      & 1.0.0       & 1.0.0       & 1.0.0          & 1.0.0             \\
+memoise                       & \{gls{CRAN}                      & 1.0.0       & 1.0.0       & 1.0.0          & 1.0.0             \\
 %\hline
 \rowcolor{black!5}
 methods                       & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
@@ -626,52 +626,52 @@ methods                       & base                      & 3.3.2       & 3.3.2 
 mgcv                          & base                      & 1.8-16      & 1.8-16      & 1.8-17         & 1.8-12            \\
 %\hline
 \rowcolor{black!5}
-mi                            & CRAN                      &             & 1           &                &                    \\
+mi                            & \{gls{CRAN}                      &             & 1           &                &                    \\
 %\hline
 \rowcolor{black!10}
-mime                          & CRAN                      & 0.5         & 0.5         & 0.5            & 0.4               \\
+mime                          & \{gls{CRAN}                      & 0.5         & 0.5         & 0.5            & 0.4               \\
 %\hline
 \rowcolor{black!5}
-minqa                         & CRAN                      &             & 1.2.4       &                & 1.2.4              \\
+minqa                         & \{gls{CRAN}                      &             & 1.2.4       &                & 1.2.4              \\
 %\hline
 \rowcolor{black!10}
-mnormt                        & CRAN                      & 1.5-5       & 1.5-5       &                & 1.5-4             \\
+mnormt                        & \{gls{CRAN}                      & 1.5-5       & 1.5-5       &                & 1.5-4             \\
 %\hline
 \rowcolor{black!5}
-modelr                        & CRAN                      & 0.1.0       &             &                &                    \\
+modelr                        & \{gls{CRAN}                      & 0.1.0       &             &                &                    \\
 %\hline
 \rowcolor{black!10}
-modeltools                    & CRAN                      & 0.2-21      & 0.2-21      & 0.2-21         &                   \\
+modeltools                    & \{gls{CRAN}                      & 0.2-21      & 0.2-21      & 0.2-21         &                   \\
 %\hline
 \rowcolor{black!5}
 multtest                      & Bioconductor              &             & 2.30.0      & 2.30.0         &                    \\
 %\hline
 \rowcolor{black!10}
-munsell                       & CRAN                      & 0.4.3       & 0.4.3       & 0.4.3          & 0.4.3             \\
+munsell                       & \{gls{CRAN}                      & 0.4.3       & 0.4.3       & 0.4.3          & 0.4.3             \\
 %\hline
 \rowcolor{black!5}
-mvtnorm                       & CRAN                      & 1.0-5       & 1.0-5       & 1.0-6          & 1.0-5              \\
+mvtnorm                       & \{gls{CRAN}                      & 1.0-5       & 1.0-5       & 1.0-6          & 1.0-5              \\
 %\hline
 \rowcolor{black!10}
-network                       & CRAN                      &             & 1.13.0      &                &                   \\
+network                       & \{gls{CRAN}                      &             & 1.13.0      &                &                   \\
 %\hline
 \rowcolor{black!5}
 nlme                          & base                      & 3.1-128     & 3.1-128     & 3.1-131        & 3.1-128            \\
 %\hline
 \rowcolor{black!10}
-nloptr                        & CRAN                      &             & 1.0.4       &                & 1.0.4             \\
+nloptr                        & \{gls{CRAN}                      &             & 1.0.4       &                & 1.0.4             \\
 %\hline
 \rowcolor{black!5}
-NMF                           & CRAN                      & 0.20.6      & 0.20.6      & 0.20.6         & 0.20.6             \\
+NMF                           & \{gls{CRAN}                      & 0.20.6      & 0.20.6      & 0.20.6         & 0.20.6             \\
 %\hline
 \rowcolor{black!10}
 nnet                          & base                      & 7.3-12      & 7.3-12      & 7.3-12         & 7.3-12            \\
 %\hline
 \rowcolor{black!5}
-numDeriv                      & CRAN                      &             & 2016.8-1    &                & 2014.2-1           \\
+numDeriv                      & \{gls{CRAN}                      &             & 2016.8-1    &                & 2014.2-1           \\
 %\hline
 \rowcolor{black!10}
-openssl                       & CRAN                      & 0.9.4       & 0.9.6       & 0.9.6          & 0.9.4             \\
+openssl                       & \{gls{CRAN}                      & 0.9.4       & 0.9.6       & 0.9.6          & 0.9.4             \\
 %\hline
 \rowcolor{black!5}
 org.Hs.eg.db                  & Bioconductor              &             & 3.1.2       &                & 3.3.0              \\
@@ -686,94 +686,94 @@ parallel                      & base                      & 3.3.2       & 3.3.2 
 \begin{tabular}[c]{@{}l@{}}pathway.structure\\.permutation \end{tabular} & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.1.0       & 0.1.0       & 0.1.0          & 0.1.0             \\
 %\hline
 \rowcolor{black!5}
-pbivnorm                      & CRAN                      &             & 0.6.0       &                &                    \\
+pbivnorm                      & \{gls{CRAN}                      &             & 0.6.0       &                &                    \\
 %\hline
 \rowcolor{black!10}
 PGSEA                         & Bioconductor              &             & 1.48.0      &                &                   \\
 %\hline
 \rowcolor{black!5}
-pkgmaker                      & CRAN                      & 0.22        & 0.22        & 0.22           & 0.22               \\
+pkgmaker                      & \{gls{CRAN}                      & 0.22        & 0.22        & 0.22           & 0.22               \\
 %\hline
 \rowcolor{black!10}
-PKI                           & CRAN                      &             & 0.1-3       &                &                   \\
+PKI                           & \{gls{CRAN}                      &             & 0.1-3       &                &                   \\
 %\hline
 \rowcolor{black!5}
-plogr                         & CRAN                      &             & 0.1-1       & 0.1-1          &                    \\
+plogr                         & \{gls{CRAN}                      &             & 0.1-1       & 0.1-1          &                    \\
 %\hline
 \rowcolor{black!10}
 plot.igraph                   & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.0.0.9001  & 0.0.0.9001  & 0.0.0.9001     & 0.0.0.9001        \\
 %\hline
 \rowcolor{black!5}
-plotrix                       & CRAN                      &             & 3.6-4       &                &                    \\
+plotrix                       & \{gls{CRAN}                      &             & 3.6-4       &                &                    \\
 %\hline
 \rowcolor{black!10}
-plyr                          & CRAN                      & 1.8.4       & 1.8.4       & 1.8.4          & 1.8.3             \\
+plyr                          & \{gls{CRAN}                      & 1.8.4       & 1.8.4       & 1.8.4          & 1.8.3             \\
 %\hline
 \rowcolor{black!5}
-png                           & CRAN                      &             & 0.1-7       &                & 0.1-7              \\
+png                           & \{gls{CRAN}                      &             & 0.1-7       &                & 0.1-7              \\
 %\hline
 \rowcolor{black!10}
-prabclus                      & CRAN                      & 2.2-6       & 2.2-6       & 2.2-6          &                   \\
+prabclus                      & \{gls{CRAN}                      & 2.2-6       & 2.2-6       & 2.2-6          &                   \\
 %\hline
 \rowcolor{black!5}
-praise                        & CRAN                      & 1.0.0       & 1.0.0       &                & 1.0.0              \\
+praise                        & \{gls{CRAN}                      & 1.0.0       & 1.0.0       &                & 1.0.0              \\
 %\hline
 \rowcolor{black!10}
-pROC                          & CRAN                      &             & 1.8         & 1.9.1          &                   \\
+pROC                          & \{gls{CRAN}                      &             & 1.8         & 1.9.1          &                   \\
 %\hline
 \rowcolor{black!5}
-prodlim                       & CRAN                      &             & 1.5.7       &                &                    \\
+prodlim                       & \{gls{CRAN}                      &             & 1.5.7       &                &                    \\
 %\hline
 \rowcolor{black!10}
-prof.tree                     & CRAN                      &             & 0.1.0       &                &                   \\
+prof.tree                     & \{gls{CRAN}                      &             & 0.1.0       &                &                   \\
 %\hline
 \rowcolor{black!5}
-proftools                     & CRAN                      &             & 0.99-2      &                &                    \\
+proftools                     & \{gls{CRAN}                      &             & 0.99-2      &                &                    \\
 %\hline
 \rowcolor{black!10}
-progress                      & CRAN                      &             &             & 1.1.2          &                   \\
+progress                      & \{gls{CRAN}                      &             &             & 1.1.2          &                   \\
 %\hline
 \rowcolor{black!5}
-psych                         & CRAN                      & 1.6.12      & 1.6.12      &                &                    \\
+psych                         & \{gls{CRAN}                      & 1.6.12      & 1.6.12      &                &                    \\
 %\hline
 \rowcolor{black!10}
-purrr                         & CRAN                      & 0.2.2       & 0.2.2       & 0.2.2          & 0.2.2             \\
+purrr                         & \{gls{CRAN}                      & 0.2.2       & 0.2.2       & 0.2.2          & 0.2.2             \\
 %\hline
 \rowcolor{black!5}
-qgraph                        & CRAN                      &             & 1.4.1       &                &                    \\
+qgraph                        & \{gls{CRAN}                      &             & 1.4.1       &                &                    \\
 %\hline
 \rowcolor{black!10}
-quadprog                      & CRAN                      &             & 1.5-5       & 1.5-5          & 1.5-5             \\
+quadprog                      & \{gls{CRAN}                      &             & 1.5-5       & 1.5-5          & 1.5-5             \\
 %\hline
 \rowcolor{black!5}
-R.methodsS3                   & CRAN                      &             & 1.7.1       &                & 1.7.1              \\
+R.methodsS3                   & \{gls{CRAN}                      &             & 1.7.1       &                & 1.7.1              \\
 %\hline
 \rowcolor{black!10}
-R.oo                          & CRAN                      &             & 1.21.0      &                & 1.20.0            \\
+R.oo                          & \{gls{CRAN}                      &             & 1.21.0      &                & 1.20.0            \\
 %\hline
 \rowcolor{black!5}
-R.utils                       & CRAN                      &             & 2.5.0       &                &                    \\
+R.utils                       & \{gls{CRAN}                      &             & 2.5.0       &                &                    \\
 %\hline
 \rowcolor{black!10}
-R6                            & CRAN                      & 2.1.3       & 2.2.0       & 2.2.0          & 2.1.3             \\
+R6                            & \{gls{CRAN}                      & 2.1.3       & 2.2.0       & 2.2.0          & 2.1.3             \\
 %\hline
 \rowcolor{black!5}
-RBGL                          & CRAN                      &             & 1.50.0      &                &                    \\
+RBGL                          & \{gls{CRAN}                      &             & 1.50.0      &                &                    \\
 %\hline
 \rowcolor{black!10}
-RColorBrewer                  & CRAN                      & 1.1-2       & 1.1-2       & 1.1-2          & 1.1-2             \\
+RColorBrewer                  & \{gls{CRAN}                      & 1.1-2       & 1.1-2       & 1.1-2          & 1.1-2             \\
 %\hline
 \rowcolor{black!5}
-Rcpp                          & CRAN                      & 0.12.7      & 0.12.9      & 0.12.9         & 0.12.7             \\
+Rcpp                          & \{gls{CRAN}                      & 0.12.7      & 0.12.9      & 0.12.9         & 0.12.7             \\
 %\hline
 \rowcolor{black!10}
-RcppArmadillo                 & CRAN                      &             &             & 0.7.700.0.0    & 0.6.700.6.0       \\
+RcppArmadillo                 & \{gls{CRAN}                      &             &             & 0.7.700.0.0    & 0.6.700.6.0       \\
 %\hline
 \rowcolor{black!5}
-RcppEigen                     & CRAN                      &             & 0.3.2.9.0   &                & 0.3.2.8.1          \\
+RcppEigen                     & \{gls{CRAN}                      &             & 0.3.2.9.0   &                & 0.3.2.8.1          \\
 %\hline
 \rowcolor{black!10}
-RCurl                         & CRAN                      &             & 1.95-4.8    & 1.95-4.8       & 1.95-4.8          \\
+RCurl                         & \{gls{CRAN}                      &             & 1.95-4.8    & 1.95-4.8       & 1.95-4.8          \\
 %\hline
 \rowcolor{black!5}
 reactome.db                   & Bioconductor              &             & 1.52.1      & 1.52.1         &                    \\
@@ -782,73 +782,73 @@ reactome.db                   & Bioconductor              &             & 1.52.1
 reactometree                  & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  &             & 0.1         &                &                   \\
 %\hline
 \rowcolor{black!5}
-readr                         & CRAN                      & 1.0.0       & 1.0.0       &                &                    \\
+readr                         & \{gls{CRAN}                      & 1.0.0       & 1.0.0       &                &                    \\
 %\hline
 \rowcolor{black!10}
-readxl                        & CRAN                      & 0.1.1       &             &                &                   \\
+readxl                        & \{gls{CRAN}                      & 0.1.1       &             &                &                   \\
 %\hline
 \rowcolor{black!5}
-registry                      & CRAN                      & 0.3         & 0.3         & 0.3            & 0.3                \\
+registry                      & \{gls{CRAN}                      & 0.3         & 0.3         & 0.3            & 0.3                \\
 %\hline
 \rowcolor{black!10}
-reshape2                      & CRAN                      & 1.4.1       & 1.4.2       & 1.4.2          & 1.4.1             \\
+reshape2                      & \{gls{CRAN}                      & 1.4.1       & 1.4.2       & 1.4.2          & 1.4.1             \\
 %\hline
 \rowcolor{black!5}
-rgexf                         & CRAN                      &             & 0.15.3      & 0.15.3         &                    \\
+rgexf                         & \{gls{CRAN}                      &             & 0.15.3      & 0.15.3         &                    \\
 %\hline
 \rowcolor{black!10}
-rgl                           & CRAN                      &             &             & 0.97.0         & 0.95.1441         \\
+rgl                           & \{gls{CRAN}                      &             &             & 0.97.0         & 0.95.1441         \\
 %\hline
 \rowcolor{black!5}
-Rgraphviz                     & CRAN                      &             & 2.18.0      &                &                    \\
+Rgraphviz                     & \{gls{CRAN}                      &             & 2.18.0      &                &                    \\
 %\hline
 \rowcolor{black!10}
-rjson                         & CRAN                      &             & 0.2.15      &                &                   \\
+rjson                         & \{gls{CRAN}                      &             & 0.2.15      &                &                   \\
 %\hline
 \rowcolor{black!5}
-RJSONIO                       & CRAN                      &             & 1.3-0       &                &                    \\
+RJSONIO                       & \{gls{CRAN}                      &             & 1.3-0       &                &                    \\
 %\hline
 \rowcolor{black!10}
-rmarkdown                     & CRAN                      &             & 1.3         & 1.3            & 1                 \\
+rmarkdown                     & \{gls{CRAN}                      &             & 1.3         & 1.3            & 1                 \\
 %\hline
 \rowcolor{black!5}
-Rmpi                          & CRAN                      &             & 0.6-6       &                & 0.6-5              \\
+Rmpi                          & \{gls{CRAN}                      &             & 0.6-6       &                & 0.6-5              \\
 %\hline
 \rowcolor{black!10}
-rngtools                      & CRAN                      & 1.2.4       & 1.2.4       & 1.2.4          & 1.2.4             \\
+rngtools                      & \{gls{CRAN}                      & 1.2.4       & 1.2.4       & 1.2.4          & 1.2.4             \\
 %\hline
 \rowcolor{black!5}
-robustbase                    & CRAN                      & 0.92-7      & 0.92-7      & 0.92-7         & 0.92-5             \\
+robustbase                    & \{gls{CRAN}                      & 0.92-7      & 0.92-7      & 0.92-7         & 0.92-5             \\
 %\hline
 \rowcolor{black!10}
-ROCR                          & CRAN                      & 1.0-7       & 1.0-7       & 1.0-7          & 1.0-7             \\
+ROCR                          & \{gls{CRAN}                      & 1.0-7       & 1.0-7       & 1.0-7          & 1.0-7             \\
 %\hline
 \rowcolor{black!5}
-Rook                          & CRAN                      &             & 1.1-1       & 1.1-1          &                    \\
+Rook                          & \{gls{CRAN}                      &             & 1.1-1       & 1.1-1          &                    \\
 %\hline
 \rowcolor{black!10}
-roxygen2                      & CRAN                      & 6.0.1       & 5.0.1       & 6.0.1          & 5.0.1             \\
+roxygen2                      & \{gls{CRAN}                      & 6.0.1       & 5.0.1       & 6.0.1          & 5.0.1             \\
 %\hline
 \rowcolor{black!5}
 rpart                         & base                      & 4.1-10      & 4.1-10      & 4.1-10         & 4.1-10             \\
 %\hline
 \rowcolor{black!10}
-rprojroot                     & CRAN                      & 1.2         & 1.1         & 1.2            &                   \\
+rprojroot                     & \{gls{CRAN}                      & 1.2         & 1.1         & 1.2            &                   \\
 %\hline
 \rowcolor{black!5}
 Rsamtools                     & Bioconductor              &             & 1.26.1      & 1.26.1         &                    \\
 %\hline
 \rowcolor{black!10}
-rsconnect                     & CRAN                      &             & 0.7         &                &                   \\
+rsconnect                     & \{gls{CRAN}                      &             & 0.7         &                &                   \\
 %\hline
 \rowcolor{black!5}
-RSQLite                       & CRAN                      &             & 1.1-2       & 1.1-2          & 1.0.0              \\
+RSQLite                       & \{gls{CRAN}                      &             & 1.1-2       & 1.1-2          & 1.0.0              \\
 %\hline
 \rowcolor{black!10}
-rstudioapi                    & CRAN                      & 0.6         & 0.6         & 0.6            & 0.6               \\
+rstudioapi                    & \{gls{CRAN}                      & 0.6         & 0.6         & 0.6            & 0.6               \\
 %\hline
 \rowcolor{black!5}
-rvest                         & CRAN                      & 0.3.2       &             &                &                    \\
+rvest                         & \{gls{CRAN}                      & 0.3.2       &             &                &                    \\
 %\hline
 \rowcolor{black!10}
 S4Vectors                     & Bioconductor              &             & 0.12.1      & 0.12.0         & 0.10.3            \\
@@ -857,34 +857,34 @@ S4Vectors                     & Bioconductor              &             & 0.12.1
 safe                          & Bioconductor              &             & 3.14.0      & 3.10.0         &                    \\
 %\hline
 \rowcolor{black!10}
-scales                        & CRAN                      & 0.4.0       & 0.4.1       & 0.4.1          & 0.4.0             \\
+scales                        & \{gls{CRAN}                      & 0.4.0       & 0.4.1       & 0.4.1          & 0.4.0             \\
 %\hline
 \rowcolor{black!5}
-selectr                       & CRAN                      & 0.3-1       &             &                &                    \\
+selectr                       & \{gls{CRAN}                      & 0.3-1       &             &                &                    \\
 %\hline
 \rowcolor{black!10}
-sem                           & CRAN                      &             & 3.1-8       &                &                   \\
+sem                           & \{gls{CRAN}                      &             & 3.1-8       &                &                   \\
 %\hline
 \rowcolor{black!5}
-shiny                         & CRAN                      & 0.14        &             & 1.0.0          &                    \\
+shiny                         & \{gls{CRAN}                      & 0.14        &             & 1.0.0          &                    \\
 %\hline
 \rowcolor{black!10}
 slipt                         & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.1.0       & 0.1.0       & 0.1.0          & 0.1.0             \\
 %\hline
 \rowcolor{black!5}
-sm                            & CRAN                      & 2.2-5.4     & 2.2-5.4     &                &                    \\
+sm                            & \{gls{CRAN}                      & 2.2-5.4     & 2.2-5.4     &                &                    \\
 %\hline
 \rowcolor{black!10}
-sna                           & CRAN                      &             & 2.4         &                &                   \\
+sna                           & \{gls{CRAN}                      &             & 2.4         &                &                   \\
 %\hline
 \rowcolor{black!5}
-snow                          & CRAN                      & 0.4-1       & 0.4-2       & 0.4-2          & 0.3-13             \\
+snow                          & \{gls{CRAN}                      & 0.4-1       & 0.4-2       & 0.4-2          & 0.3-13             \\
 %\hline
 \rowcolor{black!10}
-sourcetools                   & CRAN                      & 0.1.5       &             & 0.1.5          &                   \\
+sourcetools                   & \{gls{CRAN}                      & 0.1.5       &             & 0.1.5          &                   \\
 %\hline
 \rowcolor{black!5}
-SparseM                       & CRAN                      &             & 1.74        &                & 1.7                \\
+SparseM                       & \{gls{CRAN}                      &             & 1.74        &                & 1.7                \\
 %\hline
 \rowcolor{black!10}
 spatial                       & base                      & 7.3-11      & 7.3-11      & 7.3-11         & 7.3-11            \\
@@ -893,7 +893,7 @@ spatial                       & base                      & 7.3-11      & 7.3-11
 splines                       & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
 %\hline
 \rowcolor{black!10}
-statnet.common                & CRAN                      &             & 3.3.0       &                &                   \\
+statnet.common                & \{gls{CRAN}                      &             & 3.3.0       &                &                   \\
 %\hline
 \rowcolor{black!5}
 stats                         & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
@@ -902,10 +902,10 @@ stats                         & base                      & 3.3.2       & 3.3.2 
 stats4                        & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0             \\
 %\hline
 \rowcolor{black!5}
-stringi                       & CRAN                      & 1.1.1       & 1.1.2       & 1.1.2          & 1.0-1              \\
+stringi                       & \{gls{CRAN}                      & 1.1.1       & 1.1.2       & 1.1.2          & 1.0-1              \\
 %\hline
 \rowcolor{black!10}
-stringr                       & CRAN                      & 1.1.0       & 1.1.0       & 1.2.0          & 1.0.0             \\
+stringr                       & \{gls{CRAN}                      & 1.1.0       & 1.1.0       & 1.2.0          & 1.0.0             \\
 %\hline
 \rowcolor{black!5}
 \begin{tabular}[c]{@{}l@{}}Summarized\\Experiment \end{tabular}          & Bioconductor              &             & 1.4.0       & 1.4.0          &                    \\
@@ -917,73 +917,73 @@ survival                      & base                      & 2.39-4      & 2.40-1
 tcltk                         & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
 %\hline
 \rowcolor{black!10}
-testthat                      & CRAN                      & 1.0.2       & 1.0.2       &                & 1.0.2             \\
+testthat                      & \{gls{CRAN}                      & 1.0.2       & 1.0.2       &                & 1.0.2             \\
 %\hline
 \rowcolor{black!5}
-tibble                        & CRAN                      & 1.2         & 1.2         & 1.2            & 1.2                \\
+tibble                        & \{gls{CRAN}                      & 1.2         & 1.2         & 1.2            & 1.2                \\
 %\hline
 \rowcolor{black!10}
-tidyr                         & CRAN                      & 0.6.1       & 0.6.1       & 0.6.1          &                   \\
+tidyr                         & \{gls{CRAN}                      & 0.6.1       & 0.6.1       & 0.6.1          &                   \\
 %\hline
 \rowcolor{black!5}
 tidyverse                     & \begin{tabular}[c]{@{}l@{}}GitHub \\ hadley \end{tabular}            & 1.1.1       &             &                &                    \\
 %\hline
 \rowcolor{black!10}
-timeline                      & CRAN                      &             & 0.9         &                &                   \\
+timeline                      & \{gls{CRAN}                      &             & 0.9         &                &                   \\
 %\hline
 \rowcolor{black!5}
 tools                         & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
 %\hline
 \rowcolor{black!10}
-tpr                           & CRAN                      &             & 0.3-1       &                &                   \\
+tpr                           & \{gls{CRAN}                      &             & 0.3-1       &                &                   \\
 %\hline
 \rowcolor{black!5}
-trimcluster                   & CRAN                      & 0.1-2       & 0.1-2       & 0.1-2          &                    \\
+trimcluster                   & \{gls{CRAN}                      & 0.1-2       & 0.1-2       & 0.1-2          &                    \\
 %\hline
 \rowcolor{black!10}
-Unicode                       & CRAN                      & 9.0.0-1     & 9.0.0-1     & 9.0.0-1        &                   \\
+Unicode                       & \{gls{CRAN}                      & 9.0.0-1     & 9.0.0-1     & 9.0.0-1        &                   \\
 %\hline
 \rowcolor{black!5}
 utils                         & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
 %\hline
 \rowcolor{black!10}
-vioplot                       & CRAN                      &             & 0.2         &                &                   \\
+vioplot                       & \{gls{CRAN}                      &             & 0.2         &                &                   \\
 %\hline
 \rowcolor{black!5}
 vioplotx                      & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.0.0.9000  & 0.0.0.9000  &                &                    \\
 %\hline
 \rowcolor{black!10}
-viridis                       & CRAN                      & 0.3.4       & 0.3.4       & 0.3.4          &                   \\
+viridis                       & \{gls{CRAN}                      & 0.3.4       & 0.3.4       & 0.3.4          &                   \\
 %\hline
 \rowcolor{black!5}
-visNetwork                    & CRAN                      &             & 1.0.3       & 1.0.3          &                    \\
+visNetwork                    & \{gls{CRAN}                      &             & 1.0.3       & 1.0.3          &                    \\
 %\hline
 \rowcolor{black!10}
-whisker                       & CRAN                      & 0.3-2       & 0.3-2       & 0.3-2          & 0.3-2             \\
+whisker                       & \{gls{CRAN}                      & 0.3-2       & 0.3-2       & 0.3-2          & 0.3-2             \\
 %\hline
 \rowcolor{black!5}
-withr                         & CRAN                      & 1.0.2       & 1.0.2       & 1.0.2          & 1.0.2              \\
+withr                         & \{gls{CRAN}                      & 1.0.2       & 1.0.2       & 1.0.2          & 1.0.2              \\
 %\hline
 \rowcolor{black!10}
 XML                           & base                      & 3.98-1.3    & 3.98-1.1    & 3.98-1.5       & 3.98-1.4          \\
 %\hline
 \rowcolor{black!5}
-xml2                          & CRAN                      & 1.1.1       &             & 1.1.1          & 1.0.0              \\
+xml2                          & \{gls{CRAN}                      & 1.1.1       &             & 1.1.1          & 1.0.0              \\
 %\hline
 \rowcolor{black!10}
-xtable                        & CRAN                      & 1.8-2       & 1.8-2       & 1.8-2          & 1.8-2             \\
+xtable                        & \{gls{CRAN}                      & 1.8-2       & 1.8-2       & 1.8-2          & 1.8-2             \\
 %\hline
 \rowcolor{black!5}
 XVector                       & Bioconductor              &             & 0.14.0      & 0.14.0         &                    \\
 %\hline
 \rowcolor{black!10}
-yaml                          & CRAN                      &             & 2.1.14      & 2.1.14         & 2.1.13            \\
+yaml                          & \{gls{CRAN}                      &             & 2.1.14      & 2.1.14         & 2.1.13            \\
 %\hline
 \rowcolor{black!5}
-zlibbioc                      & CRAN                      &             & 1.20.0      & 1.20.0         &                    \\
+zlibbioc                      & \{gls{CRAN}                      &             & 1.20.0      & 1.20.0         &                    \\
 %\hline
 \rowcolor{black!10}
-zoo                           & CRAN                      & 1.7-13      & 1.7-14      &                & 1.7-13            \\
+zoo                           & \{gls{CRAN}                      & 1.7-13      & 1.7-14      &                & 1.7-13            \\
 \hline
 \end{longtable}
 %} %resize
@@ -1036,11 +1036,11 @@ zoo                           & CRAN                      & 1.7-13      & 1.7-14
 \chapter{Secondary Screen Data}
 \label{appendix:secondary_screen}
 
-A series of experimental genome-wide siRNA screens have been performed on synthetic lethal partners of \textit{CDH1} \citep{Telford2015}. The strongest candidates from a primary screen were subject to a further secondary screen for validation by independent replication with 4 gene knockdowns with different targeting siRNA. As shown in Table~\ref{tab:secondary_screen}, there is significant ($p=7.49 \times 10^{-3}$ by Fisher's exact test) %$8.67 \times 10^{-3} by \chi^2 (4 df)
-association between SLIPT candidates and stronger validations of siRNA candidates. Since there were more SLIPT$-$ genes among those not validated and more SLIPT$+$ genes among those validated with several siRNAs, this supports the use of SLIPT as a synthetic lethal discovery procedure which may augment such screening experiments.
+A series of experimental genome-wide \gls{siRNA} screens have been performed on synthetic lethal partners of \textit{CDH1} \citep{Telford2015}. The strongest candidates from a primary screen were subject to a further secondary screen for validation by independent replication with 4 gene knockdowns with different targeting \gls{siRNA}. As shown in Table~\ref{tab:secondary_screen}, there is significant ($p=7.49 \times 10^{-3}$ by Fisher's exact test) %$8.67 \times 10^{-3} by \chi^2 (4 df)
+association between \gls{SLIPT} candidates and stronger validations of \gls{siRNA} candidates. Since there were more SLIPT$-$ genes among those not validated and more SLIPT$+$ genes among those validated with several \glspl{siRNA}, this supports the use of SLIPT as a synthetic lethal discovery procedure which may augment such screening experiments.
 
 \begin{table*}[!ht]
-\caption{Comparing SLIPT genes against Secondary siRNA Screen in breast cancer}
+\caption{Comparing \gls{SLIPT} genes against Secondary \gls{siRNA} Screen in breast cancer}
 \label{tab:secondary_screen}
 \begin{center}
 %\resizebox{\textwidth}{!}{
@@ -1063,10 +1063,10 @@ association between SLIPT candidates and stronger validations of siRNA candidate
 \end{center}
 \end{table*}
 
-Similar analysis with mtSLIPT, comparing SLIPT against \textit{CDH1} somatic mutation with siRNA validation results was not significant ($p=7.02 \times 10^{-1}$ by Fisher's exact test). However,  as shown in Table~\ref{tab:secondary_screen_mtSL}, the observed and expected values were in a direction consistent with that observed above for SLIPT against low \textit{CDH1} expression. It is not unexpected that this result does not have comparable statistical support due to the lower sample size for mutation data. 
+Similar analysis with mtSLIPT, comparing SLIPT against \textit{CDH1} somatic mutation with \gls{siRNA} validation results was not significant ($p=7.02 \times 10^{-1}$ by Fisher's exact test). However,  as shown in Table~\ref{tab:secondary_screen_mtSL}, the observed and expected values were in a direction consistent with that observed above for SLIPT against low \textit{CDH1} expression. It is not unexpected that this result does not have comparable statistical support due to the lower sample size for mutation data. 
 
 \begin{table*}[!ht]
-\caption{Comparing mtSLIPT genes against Secondary siRNA Screen in breast cancer}
+\caption{Comparing \acrshort{mtSLIPT} genes against Secondary \gls{siRNA} Screen in breast cancer}
 \label{tab:secondary_screen_mtSL}
 \begin{center}
 %\resizebox{\textwidth}{!}{
@@ -1089,10 +1089,10 @@ Similar analysis with mtSLIPT, comparing SLIPT against \textit{CDH1} somatic mut
 \end{center}
 \end{table*}
 
-This analysis was replicated on a (smaller) stomach cancer dataset but it was less conclusive ($p=2.36 \times 10^{-1}$ by Fisher's exact test). As shown in Table~\ref{tab:secondary_screen_stad}, fewer SLIPT candidates were validated than expected statistically. However, these results in stomach cancer may not be directly comparable to experiments in a breast cell line. Genes validated by 0 or 1 siRNA behave consistently with the results above.
+This analysis was replicated on a (smaller) stomach cancer dataset but it was less conclusive ($p=2.36 \times 10^{-1}$ by Fisher's exact test). As shown in Table~\ref{tab:secondary_screen_stad}, fewer \gls{SLIPT} candidates were validated than expected statistically. However, these results in stomach cancer may not be directly comparable to experiments in a breast cell line. Genes validated by 0 or 1 \gls{siRNA} behave consistently with the results above.
 
 \begin{table*}[!ht]
-\caption{Comparing SLIPT genes against Secondary siRNA Screen in stomach cancer}
+\caption{Comparing \gls{SLIPT} genes against Secondary \gls{siRNA} Screen in stomach cancer}
 \label{tab:secondary_screen_stad}
 \begin{center}
 %\resizebox{\textwidth}{!}{
@@ -1127,7 +1127,7 @@ This analysis was replicated on a (smaller) stomach cancer dataset but it was le
 \begin{threeparttable}
 \begin{tabular}{>{\em}sl^c^c^c^c^c}
 \rowstyle{\bfseries}
- \em{Gene} & Observed & Expected & $\chi^2$ value & p-value & p-value (FDR) \\ 
+ \em{Gene} & Observed & Expected & $\chi^2$ value & p-value & p-value (\{gls{FDR}) \\ 
   \hline
   \rowcolor{black!10}
 TFAP2B & 8 & 36.7 & 89.5 & $3.60 \times 10^{-20}$ & $8.37 \times 10^{-17}$ \\
@@ -1183,7 +1183,7 @@ TFAP2B & 8 & 36.7 & 89.5 & $3.60 \times 10^{-20}$ & $8.37 \times 10^{-17}$ \\
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected mutant samples with low expression of partner genes
+Strongest candidate SL partners for \textit{CDH1} by \acrshort{mtSLIPT} with observed and expected mutant samples with low expression of partner genes
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -1198,7 +1198,7 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 \begin{threeparttable}
 \begin{tabular}{lccc}
   \hline
- \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
+ \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (\{gls{FDR})} \\
   \hline
   \rowcolor{black!10}
   Eukaryotic Translation Elongation &  86 &  60 & $2.0 \times 10^{-128}$ \\ 
@@ -1207,7 +1207,7 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
   \rowcolor{black!10}
   Eukaryotic Translation Termination &  83 &  58 & $2.3 \times 10^{-125}$ \\ 
   \rowcolor{black!5}
-  Viral mRNA Translation &  81 &  57 & $2.5 \times 10^{-124}$ \\ 
+  Viral \acrshort{mRNA} Translation &  81 &  57 & $2.5 \times 10^{-124}$ \\ 
   \rowcolor{black!10}
   Nonsense Mediated Decay independent of the Exon Junction Complex &  88 &  59 & $8.6 \times 10^{-124}$ \\ 
   \rowcolor{black!5}
@@ -1229,7 +1229,7 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
   \rowcolor{black!5}
   Cap-dependent Translation Initiation & 111 &  59 & $3.0 \times 10^{-106}$ \\ 
   \rowcolor{black!10}
-  Influenza Viral RNA Transcription and Replication & 108 &  57 & $5.1 \times 10^{-103}$ \\ 
+  Influenza Viral \acrshort{RNA} Transcription and Replication & 108 &  57 & $5.1 \times 10^{-103}$ \\ 
   \rowcolor{black!5}
   Influenza Infection & 117 &  59 & $1.5 \times 10^{-102}$ \\ 
   \rowcolor{black!10}
@@ -1244,7 +1244,7 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Gene set over-representation analysis (hypergeometric test) for Reactome pathways in mtSLIPT partners for \textit{CDH1}
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in \acrshort{mtSLIPT} partners for \textit{CDH1}
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -1256,7 +1256,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png}
    }
-    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in TCGA breast cancer dataset for gene expression of 4629 candidate partners of E-cadherin (\textit{CDH1}) from SLIPT prediction (with significant FDR adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an siRNA screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably 'normal-like', basal, and estrogen receptor negative samples have elevated expression in one or more distinct clusters showing complexity and variation among candidate synthetic lethal partners. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
+    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in \gls{TCGA} breast cancer dataset for gene expression of 4629 candidate partners of E-cadherin (\textit{CDH1}) from \gls{SLIPT} prediction (with significant \{gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably 'normal-like', basal, and estrogen receptor negative samples have elevated expression in one or more distinct clusters showing complexity and variation among candidate synthetic lethal partners. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_mtSL}
@@ -1274,7 +1274,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \begin{tabular}{lccc}
 %\caption{Pathway composition for clusters of \textit{CDH1} partners from SLIPT}
 %\label{tab:pathway_clusters}
-  \large{\textbf{Pathways Over-represented in Cluster 1}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
+  \large{\textbf{Pathways Over-represented in Cluster 1}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\{gls{FDR})}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Blue!20}
   Olfactory Signalling Pathway &  57 &   8 & $7.1 \times 10^{-9}$ \\ 
@@ -1307,7 +1307,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Blue!20} 
   PI-3K cascade:FGFR4 &  87 &   8 & $4.9 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Blue!15} 
-  Deadenylation of mRNA &  22 &   4 & $5.6 \times 10^{-7}$ \\ 
+  Deadenylation of \acrshort{mRNA} &  22 &   4 & $5.6 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Blue!20} 
   PI3K/AKT activation &  90 &   8 & $5.6 \times 10^{-7}$ \\ 
   \rowcolor{Cluster_Blue!15} 
@@ -1318,7 +1318,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   Downstream signal transduction & 143 &  11 & $5.6 \times 10^{-7}$ \\ 
   \hline
   \\
-  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 2}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
+  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 2}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\{gls{FDR})}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Green!20}
   G$_{\alpha s}$ signalling events &  83 &  19 & $5.1 \times 10^{-25}$ \\ 
@@ -1362,14 +1362,14 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   Binding and Uptake of Ligands by Scavenger Receptors &  40 &   8 & $8.2 \times 10^{-13}$ \\ 
   \hline
   \\
-  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 3}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
+  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 3}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\{gls{FDR})}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Orange!30}
   Eukaryotic Translation Elongation &  86 &  55 & $1.1 \times 10^{-112}$ \\ 
   \rowcolor{Cluster_Orange!20} 
   Peptide chain elongation &  83 &  54 & $1.3 \times 10^{-112}$ \\ 
   \rowcolor{Cluster_Orange!30} 
-  Viral mRNA Translation &  81 &  53 & $1.6 \times 10^{-111}$ \\ 
+  Viral \acrshort{mRNA} Translation &  81 &  53 & $1.6 \times 10^{-111}$ \\ 
   \rowcolor{Cluster_Orange!20} 
   Eukaryotic Translation Termination &  83 &  53 & $7.1 \times 10^{-110}$ \\ 
   \rowcolor{Cluster_Orange!30} 
@@ -1389,7 +1389,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Orange!20} 
   GTP hydrolysis and joining of the 60S ribosomal subunit & 104 &  53 & $4.3 \times 10^{-95}$ \\ 
   \rowcolor{Cluster_Orange!30} 
-  Influenza Viral RNA Transcription and Replication & 108 &  53 & $9.6 \times 10^{-93}$ \\ 
+  Influenza Viral \acrshort{RNA} Transcription and Replication & 108 &  53 & $9.6 \times 10^{-93}$ \\ 
   \rowcolor{Cluster_Orange!20} 
   Eukaryotic Translation Initiation & 111 &  53 & $4.2 \times 10^{-91}$ \\ 
   \rowcolor{Cluster_Orange!30} 
@@ -1406,7 +1406,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   Translation initiation complex formation &  54 &  23 & $9.1 \times 10^{-45}$ \\ 
   \hline
   \\ 
-  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 4}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
+  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 4}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\{gls{FDR})}} \\ %(833 genes)  
   \hline 
   \rowcolor{Cluster_Red!20}
   ECM proteoglycans &  66 &  10 & $2.9 \times 10^{-11}$ \\ 
@@ -1423,7 +1423,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Red!20} 
   Gastrin-CREB signalling pathway via PKC and MAPK & 170 &  15 & $6.1 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Red!15} 
-  RNA Polymerase I, RNA Polymerase III, and Mitochondrial Transcription \textcolor{Cluster_Red!15}{ll}  &  64 &   8 & $6.1 \times 10^{-9}$ \\ 
+  \acrshort{RNA} Polymerase I, \acrshort{RNA} Polymerase III, and Mitochondrial Transcription \textcolor{Cluster_Red!15}{ll}  &  64 &   8 & $6.1 \times 10^{-9}$ \\ 
   \rowcolor{Cluster_Red!20} 
   Non-integrin membrane-ECM interactions &  53 &   7 & $1.5 \times 10^{-8}$ \\ 
   \rowcolor{Cluster_Red!15} 
@@ -1459,7 +1459,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \resizebox{0.66 \columnwidth}{!}{
     \includegraphics{Venn_mtSL_siRNA_allgenes_reduced_Pub.png}
    }
-    \caption[Comparison of mtSLIPT to siRNA]{\small \textbf{Comparison of mtSLIPT to siRNA.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
+    \caption[Comparison of \acrshort{mtSLIPT} to \gls{siRNA}]{\small \textbf{Comparison of \acrshort{mtSLIPT} to \gls{siRNA}.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
 }
 \label{fig:Venn_allgenes_mtSL}
 %\end{mdframed}
@@ -1467,13 +1467,13 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 
 \begin{table*}[!hp]
-\caption{Pathway composition for \textit{CDH1} partners from mtSLIPT and siRNA}
+\caption{Pathway composition for \textit{CDH1} partners from \acrshort{mtSLIPT} and \gls{siRNA}}
 \label{tab:Venn_over-representation_mtSL}
 \centering
 \resizebox{0.8 \textwidth}{!}{
 \begin{tabular}{sl^c^c^c}
 \rowstyle{\bfseries}
-  Predicted only by SLIPT (2901 genes) & Pathway Size & Genes Identified & p-value (FDR) \\ 
+  Predicted only by SLIPT (2901 genes) & Pathway Size & Genes Identified & p-value (\{gls{FDR}) \\ 
   \hline
   \rowcolor{Cluster_Red!20}
   Eukaryotic Translation Elongation &  87 &  57 & $2.8 \times 10^{-120}$ \\ 
@@ -1482,7 +1482,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Red!20}
   Eukaryotic Translation Termination &  84 &  55 & $2.8 \times 10^{-117}$ \\ 
   \rowcolor{Cluster_Red!15}
-  Viral mRNA Translation &  82 &  54 & $4.1 \times 10^{-116}$ \\ 
+  Viral \acrshort{mRNA} Translation &  82 &  54 & $4.1 \times 10^{-116}$ \\ 
   \rowcolor{Cluster_Red!20}
   Nonsense Mediated Decay independent of the Exon Junction Complex &  89 &  55 & $3.7 \times 10^{-113}$ \\ 
   \rowcolor{Cluster_Red!15}
@@ -1504,7 +1504,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Red!15}
   SRP-dependent cotranslational protein targeting to membrane & 105 &  54 & $2.2 \times 10^{-99}$ \\ 
   \rowcolor{Cluster_Red!20}
-  Influenza Viral RNA Transcription and Replication & 109 &  54 & $5.3 \times 10^{-97}$ \\ 
+  Influenza Viral \acrshort{RNA} Transcription and Replication & 109 &  54 & $5.3 \times 10^{-97}$ \\ 
   \rowcolor{Cluster_Red!15}
   Influenza Life Cycle & 113 &  54 & $9.6 \times 10^{-95}$ \\ 
   \rowcolor{Cluster_Red!20}
@@ -1518,7 +1518,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \hline
   \\
   \rowstyle{\bfseries}
-  Detected only by siRNA screen (1752 genes) & Pathway Size & Genes Identified & p-value (FDR) \\ 
+  Detected only by \gls{siRNA} screen (1752 genes) & Pathway Size & Genes Identified & p-value (\{gls{FDR}) \\ 
   \hline
   \rowcolor{Cluster_Blue!20}
   Class A/1 (Rhodopsin-like receptors) & 282 &  69 & $1.9 \times 10^{-59}$ \\ 
@@ -1563,7 +1563,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \hline
   \\
   \rowstyle{\bfseries}
-  Intersection of SLIPT and siRNA screen (450 genes) & Pathway Size & Genes Identified & p-value (FDR) \\ 
+  Intersection of SLIPT and \gls{siRNA} screen (450 genes) & Pathway Size & Genes Identified & p-value (\{gls{FDR}) \\ 
   \hline
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
   HS-GAG degradation &  21 &   4 & $4.9 \times 10^{-6}$ \\ 
@@ -1628,7 +1628,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
     \rowcolor{Cluster_Red!20} 
   \textbf{Eukaryotic Translation Termination} & $3.7 \times 10^{-125}$ & $<7.035 \times 10^{-4}$ \\ 
     \rowcolor{Cluster_Red!15} 
-  \textbf{Viral mRNA Translation} & $4.1 \times 10^{-124}$ & $<7.035 \times 10^{-4}$ \\ 
+  \textbf{Viral \acrshort{mRNA} Translation} & $4.1 \times 10^{-124}$ & $<7.035 \times 10^{-4}$ \\ 
     \rowcolor{Cluster_Red!20} 
   \textbf{Nonsense Mediated Decay independent of the Exon Junction Complex} & $1.4 \times 10^{-123}$ & $<7.035 \times 10^{-4}$ \\ 
     \rowcolor{Cluster_Red!15} 
@@ -1650,7 +1650,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
     \rowcolor{Cluster_Red!15} 
   \textbf{Cap-dependent Translation Initiation} & $4.8 \times 10^{-106}$ & $<7.035 \times 10^{-4}$ \\ 
     \rowcolor{Cluster_Red!20} 
-  \textbf{Influenza Viral RNA Transcription and Replication} & $8.1 \times 10^{-103}$ & $<7.035 \times 10^{-4}$ \\ 
+  \textbf{Influenza Viral \acrshort{RNA} Transcription and Replication} & $8.1 \times 10^{-103}$ & $<7.035 \times 10^{-4}$ \\ 
     \rowcolor{Cluster_Red!15} 
   \textbf{Influenza Infection} & $2.4 \times 10^{-102}$ & $<7.035 \times 10^{-4}$ \\ 
     \rowcolor{Cluster_Red!20} 
@@ -1711,7 +1711,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
     \rowcolor{Cluster_Red!15} 
   NGF signalling via TRKA from the plasma membrane & $9.1 \times 10^{-50}$ & $0.60808$ \\ 
     \rowcolor{Cluster_Red!20} 
-  \begin{tabular}[c]{@{}l@{}}Activation of the mRNA upon binding of the cap-binding complex and eIFs,\\and subsequent binding to 43S \end{tabular} & $9.6 \times 10^{-50}$ & $<7.035 \times 10^{-4}$ \\ 
+  \begin{tabular}[c]{@{}l@{}}Activation of the \acrshort{mRNA} upon binding of the cap-binding complex and eIFs,\\and subsequent binding to 43S \end{tabular} & $9.6 \times 10^{-50}$ & $<7.035 \times 10^{-4}$ \\ 
     \rowcolor{Cluster_Red!15} 
   Transmembrane transport of small molecules & $2.5 \times 10^{-49}$ & $0.17506$ \\ 
     \rowcolor{Cluster_Red!20} 
@@ -1727,7 +1727,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (FDR). Significant pathways are marked in bold (FDR $ < 0.05$) and italics (FDR $ < 0.1$).
+Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\{gls{FDR}). Significant pathways are marked in bold (\{gls{FDR} $ < 0.05$) and italics (\{gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -1735,7 +1735,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 
 
 \begin{table*}[!htp]
-\caption{Pathways for \textit{CDH1} partners from mtSLIPT and siRNA primary screen}
+\caption{Pathways for \textit{CDH1} partners from \acrshort{mtSLIPT} and \gls{siRNA} primary screen}
 \label{tab:pathway_perm_overlap_mtSL}
 \centering
 \resizebox{0.8 \textwidth}{!}{
@@ -1848,7 +1848,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (FDR). Significant pathways are marked in bold (FDR $ < 0.05$) and italics (FDR $ < 0.1$).
+Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\{gls{FDR}). Significant pathways are marked in bold (\{gls{FDR} $ < 0.05$) and italics (\{gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -1856,7 +1856,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 
 \iffalse
 \begin{table}
-\caption{Pathways for \textit{CDH1} partners from mtSLIPT and siRNA screen}
+\caption{Pathways for \textit{CDH1} partners from \acrshort{mtSLIPT} and \gls{siRNA} screen}
 \label{tab:pathway_perm_overlap_small_mtSL}
 \centering
 \resizebox{1 \textwidth}{!}{
@@ -1902,7 +1902,7 @@ Reactome Pathway & Over-representation & Permutation \\
 \begin{threeparttable}
 \begin{tabular}{sl^l^c^c^c^c^c}
 \rowstyle{\bfseries}
- Pathway & ID & Observed & Expected & $\chi^2$value & p-value & p-value (FDR) \\
+ Pathway & ID & Observed & Expected & $\chi^2$value & p-value & p-value (\{gls{FDR}) \\
   \hline
   \rowcolor{black!10}
   Linoleic acid (LA) metabolism & 2046105 & 79 & 36.70 & 87.03 & $1.2637 \times 10^{-19}$ & $2.0839 \times 10^{-160}$\\
@@ -1921,7 +1921,7 @@ Reactome Pathway & Over-representation & Permutation \\
   \rowcolor{black!5}
   Scavenging by Class F Receptors & 3000484 & 75 & 36.70 & 69.56 & $7.8573 \times 10^{-16}$ & $1.4396 \times 10^{-130}$\\
   \rowcolor{black!10}
-  Cytosolic tRNA aminoacylation & 379716 & 75 & 36.70 & 69.56 & $7.8573 \times 10^{-16}$ & $1.4396 \times 10^{-130}$\\
+  Cytosolic \acrshort{tRNA} aminoacylation & 379716 & 75 & 36.70 & 69.56 & $7.8573 \times 10^{-16}$ & $1.4396 \times 10^{-130}$\\
   \rowcolor{black!5}
   G1\/S Transition & 69206 & 74 & 36.70 & 69.21 & $9.3593 \times 10^{-16}$ & $1.5433 \times 10^{-130}$\\
   \rowcolor{black!10}
@@ -1929,7 +1929,7 @@ Reactome Pathway & Over-representation & Permutation \\
   \rowcolor{black!5}
   M\/G1 Transition & 68874 & 74 & 36.70 & 68.16 & $1.5826 \times 10^{-15}$ & $1.8641 \times 10^{-130}$\\
   \rowcolor{black!10}
-  DNA Replication Pre-Initiation & 69002 & 74 & 36.70 & 68.16 & $1.5826 \times 10^{-15}$ & $1.8641 \times 10^{-130}$\\
+  \acrshort{DNA} Replication Pre-Initiation & 69002 & 74 & 36.70 & 68.16 & $1.5826 \times 10^{-15}$ & $1.8641 \times 10^{-130}$\\
   \rowcolor{black!5}
   Cell Cycle Checkpoints & 69620 & 74 & 36.70 & 68.16 & $1.5826 \times 10^{-15}$ & $1.8641 \times 10^{-130}$\\
   \rowcolor{black!10}
@@ -1941,7 +1941,7 @@ Reactome Pathway & Over-representation & Permutation \\
   \rowcolor{black!5}
   Tetrahydrobiopterin (BH4) synthesis, recycling, salvage and regulation \textcolor{black!5}{city1} & 1474151 & 73 & 36.70 & 62.68 & $2.4547 \times 10^{-14}$ & $2.0427 \times 10^{-120}$\\
   \rowcolor{black!10}
-  DNA Replication & 69306 & 72 & 36.70 & 62.51 & $2.6652 \times 10^{-14}$ & $2.0427 \times 10^{-120}$\\
+  \acrshort{DNA} Replication & 69306 & 72 & 36.70 & 62.51 & $2.6652 \times 10^{-14}$ & $2.0427 \times 10^{-120}$\\
   \rowcolor{black!5}
   Separation of Sister Chromatids & 2467813 & 71 & 36.70 & 62.47 & $2.7252 \times 10^{-14}$ & $2.0427 \times 10^{-120}$\\
   \rowcolor{black!10}
@@ -1958,7 +1958,7 @@ Reactome Pathway & Over-representation & Permutation \\
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected mutant samples with low expression of partner metagenes
+Strongest candidate SL partners for \textit{CDH1} by \acrshort{mtSLIPT} with observed and expected mutant samples with low expression of partner metagenes
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -1973,14 +1973,14 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 
 
 \begin{table*}[!ht]
-\caption{Candidate synthetic lethal genes against E-cadherin from mtSLIPT in stomach cancer}
+\caption{Candidate synthetic lethal genes against E-cadherin from \acrshort{mtSLIPT} in stomach cancer}
 \label{tab:gene_stad_mtSL}
 \centering
 \resizebox{0.8 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{>{\em}sl^c^c^c^c^c}
 \rowstyle{\bfseries}
- \em{Gene} & Observed & Expected & $\chi^2$ value & p-value & p-value (FDR) \\ 
+ \em{Gene} & Observed & Expected & $\chi^2$ value & p-value & p-value (\{gls{FDR}) \\ 
   \hline
   \rowcolor{black!10}
   OLFML1 & 5 & 10.1 & 29.2 & $4.53 \times 10^{-7}$ & $0.0031$ \\ 
@@ -2036,7 +2036,7 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected mutant samples with low expression of partner genes
+Strongest candidate SL partners for \textit{CDH1} by \acrshort{mtSLIPT} with observed and expected mutant samples with low expression of partner genes
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2044,14 +2044,14 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 
 
 \begin{table*}[!ht]
-\caption{Pathways for \textit{CDH1} partners from mtSLIPT in stomach cancer}
+\caption{Pathways for \textit{CDH1} partners from \acrshort{mtSLIPT} in stomach cancer}
 \label{tab:pathway_stad_mtSL}
 \centering
 \resizebox{1 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccc}
   \hline
- \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (FDR)} \\
+ \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (\{gls{FDR})} \\
   \hline
   \rowcolor{black!10}
   Extracellular matrix organization & 241 &  20 & $9.6 \times 10^{-9}$ \\ 
@@ -2098,7 +2098,7 @@ Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and e
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Gene set over-representation analysis (hypergeometric test) for Reactome pathways in mtSLIPT partners for \textit{CDH1}
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in \acrshort{mtSLIPT} partners for \textit{CDH1}
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2110,7 +2110,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png}
    }
-    \caption[Synthetic lethal expression profiles of stomach samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in TCGA breast cancer dataset for gene expression of 4629 candidate partners of E-cadherin (\textit{CDH1}) from SLIPT prediction (with significant FDR adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an siRNA screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably diffuse and \textit{CDH1} mutant samples have elevated expression in one or more distinct clusters, although there was less complexity and variation among candidate synthetic lethal partners than in breast data. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
+    \caption[Synthetic lethal expression profiles of stomach samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in \gls{TCGA} breast cancer dataset for gene expression of 4629 candidate partners of E-cadherin (\textit{CDH1}) from \gls{SLIPT} prediction (with significant \{gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably diffuse and \textit{CDH1} mutant samples have elevated expression in one or more distinct clusters, although there was less complexity and variation among candidate synthetic lethal partners than in breast data. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_stad_mtSL}
@@ -2128,7 +2128,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \begin{tabular}{lccc}
 %\caption{Pathway composition for clusters of \textit{CDH1} partners from SLIPT}
 %\label{tab:pathway_clusters}
-  \large{\textbf{Pathways Over-represented in Cluster 1}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
+  \large{\textbf{Pathways Over-represented in Cluster 1}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\{gls{FDR})}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Blue!20}
   CD28 dependent PI3K/Akt signalling &  15 &   1 &   1 \\ 
@@ -2169,10 +2169,10 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Blue!20}
   Global Genomic NER (GG-NER) &  35 &   0 &   1 \\ 
   \rowcolor{Cluster_Blue!15}
-  Repair synthesis for gap-filling by DNA polymerase in TC-NER &  15 &   0 &   1 \\ 
+  Repair synthesis for gap-filling by \acrshort{DNA} polymerase in TC-NER &  15 &   0 &   1 \\ 
   \hline
   \\
-  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 2}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
+  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 2}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\{gls{FDR})}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Green!30}
   Kinesins &  22 &   1 &   1 \\ 
@@ -2207,16 +2207,16 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Green!20}
   Global Genomic NER (GG-NER) &  35 &   0 &   1 \\ 
   \rowcolor{Cluster_Green!30}
-  Repair synthesis for gap-filling by DNA polymerase in TC-NER &  15 &   0 &   1 \\ 
+  Repair synthesis for gap-filling by \acrshort{DNA} polymerase in TC-NER &  15 &   0 &   1 \\ 
   \rowcolor{Cluster_Green!20}
-  Gap-filling DNA repair synthesis and ligation in TC-NER &  17 &   0 &   1 \\ 
+  Gap-filling \acrshort{DNA} repair synthesis and ligation in TC-NER &  17 &   0 &   1 \\ 
   \rowcolor{Cluster_Green!30}
   Formation of transcription-coupled NER (TC-NER) repair complex &  29 &   0 &   1 \\ 
   \rowcolor{Cluster_Green!20}
   Dual incision reaction in TC-NER &  29 &   0 &   1 \\ 
   \hline
   \\ 
-  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 3}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
+  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 3}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\{gls{FDR})}} \\ %(833 genes)  
   \hline 
   \rowcolor{Cluster_Orange!20}
   Extracellular matrix organization & 241 &  20 & $9.6 \times 10^{-9}$ \\ 
@@ -2261,7 +2261,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   CS/DS degradation &  13 &   2 & 0.0015 \\ 
   \hline
   \\ 
-  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 4}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (FDR)}} \\ %(833 genes)  
+  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 4}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\{gls{FDR})}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Red!20}
   cGMP effects &  18 &   2 & 0.11 \\ 
@@ -2288,7 +2288,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Red!15}
   PKA activation in glucagon signalling &  17 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!20}
-  Butyrate Response Factor 1 (BRF1) destabilizes mRNA &  17 &   1 &   1 \\ 
+  Butyrate Response Factor 1 (BRF1) destabilizes \acrshort{mRNA} &  17 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!15}
   Other semaphorin interactions &  19 &   1 &   1 \\ 
   \rowcolor{Cluster_Red!20}
@@ -2315,7 +2315,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \resizebox{0.66 \columnwidth}{!}{
     \includegraphics{Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png}
    }
-    \caption[Comparison of mtSLIPT in stomach to siRNA]{\small \textbf{Comparison of mtSLIPT in stomach to siRNA.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
+    \caption[Comparison of \acrshort{mtSLIPT} in stomach to \gls{siRNA}]{\small \textbf{Comparison of \acrshort{mtSLIPT} in stomach to \gls{siRNA}.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
 }
 \label{fig:Venn_allgenes_stad_mtSL}
 %\end{mdframed}
@@ -2323,13 +2323,13 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 
 \begin{table*}[!hp]
-\caption{Pathway composition for \textit{CDH1} partners from mtSLIPT and siRNA}
+\caption{Pathway composition for \textit{CDH1} partners from \acrshort{mtSLIPT} and \gls{siRNA}}
 \label{tab:Venn_over-representation_stad_mtSL}
 \centering
 \resizebox{0.8 \textwidth}{!}{
 \begin{tabular}{sl^c^c^c}
 \rowstyle{\bfseries}
-  Predicted only by SLIPT (217 genes) & Pathway Size & Genes Identified & p-value (FDR) \\ 
+  Predicted only by SLIPT (217 genes) & Pathway Size & Genes Identified & p-value (\{gls{FDR}) \\ 
   \hline
   \rowcolor{Cluster_Red!20}
   Eukaryotic Translation Elongation &  87 &  57 & $2.8 \times 10^{-120}$ \\ 
@@ -2338,7 +2338,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Red!20}
   Eukaryotic Translation Termination &  84 &  55 & $2.8 \times 10^{-117}$ \\ 
   \rowcolor{Cluster_Red!15}
-  Viral mRNA Translation &  82 &  54 & $4.1 \times 10^{-116}$ \\ 
+  Viral \acrshort{mRNA} Translation &  82 &  54 & $4.1 \times 10^{-116}$ \\ 
   \rowcolor{Cluster_Red!20}
   Nonsense Mediated Decay independent of the Exon Junction Complex &  89 &  55 & $3.7 \times 10^{-113}$ \\ 
   \rowcolor{Cluster_Red!15}
@@ -2360,7 +2360,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Red!15}
   SRP-dependent cotranslational protein targeting to membrane & 105 &  54 & $2.2 \times 10^{-99}$ \\ 
   \rowcolor{Cluster_Red!20}
-  Influenza Viral RNA Transcription and Replication & 109 &  54 & $5.3 \times 10^{-97}$ \\ 
+  Influenza Viral \acrshort{RNA} Transcription and Replication & 109 &  54 & $5.3 \times 10^{-97}$ \\ 
   \rowcolor{Cluster_Red!15}
   Influenza Life Cycle & 113 &  54 & $9.6 \times 10^{-95}$ \\ 
   \rowcolor{Cluster_Red!20}
@@ -2374,7 +2374,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \hline
   \\
   \rowstyle{\bfseries}
-  Detected only by siRNA screen (2323 genes) & Pathway Size & Genes Identified & p-value (FDR) \\ 
+  Detected only by \gls{siRNA} screen (2323 genes) & Pathway Size & Genes Identified & p-value (\{gls{FDR}) \\ 
   \hline
   \rowcolor{Cluster_Blue!20}
   Class A/1 (Rhodopsin-like receptors) & 282 &  69 & $1.9 \times 10^{-59}$ \\ 
@@ -2419,7 +2419,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \hline
   \\
   \rowstyle{\bfseries}
-  Intersection of SLIPT and siRNA screen (23 genes) & Pathway Size & Genes Identified & p-value (FDR) \\ 
+  Intersection of SLIPT and \gls{siRNA} screen (23 genes) & Pathway Size & Genes Identified & p-value (\{gls{FDR}) \\ 
   \hline
   \rowcolor{Cluster_Red!20!Cluster_Blue!20}
   HS-GAG degradation &  21 &   4 & $4.9 \times 10^{-6}$ \\ 
@@ -2468,7 +2468,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 
 \begin{table*}[!htp]
-\caption{Pathways for \textit{CDH1} partners from mtSLIPT in stomach cancer}
+\caption{Pathways for \textit{CDH1} partners from \acrshort{mtSLIPT} in stomach cancer}
 \label{tab:pathway_perm_stad_mtSL}}
 \centering
 \resizebox{0.8 \textwidth}{!}{
@@ -2484,7 +2484,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Red!20} 
   Eukaryotic Translation Termination & $2.3 \times 10^{-125}$ & $<8.802 \times 10^{-4}$ \\ 
   \rowcolor{Cluster_Red!15} 
-  Viral mRNA Translation & $2.5 \times 10^{-124}$ & $<8.802 \times 10^{-4}$ \\ 
+  Viral \acrshort{mRNA} Translation & $2.5 \times 10^{-124}$ & $<8.802 \times 10^{-4}$ \\ 
   \rowcolor{Cluster_Red!20} 
   Nonsense Mediated Decay independent of the Exon Junction Complex & $8.6 \times 10^{-124}$ & $<8.802 \times 10^{-4}$ \\ 
   \rowcolor{Cluster_Red!15} 
@@ -2506,7 +2506,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Red!15} 
   Cap-dependent Translation Initiation & $3 \times 10^{-106}$ & $<8.802 \times 10^{-4}$ \\ 
   \rowcolor{Cluster_Red!20} 
-  Influenza Viral RNA Transcription and Replication & $5.1 \times 10^{-103}$ & $<8.802 \times 10^{-4}$ \\ 
+  Influenza Viral \acrshort{RNA} Transcription and Replication & $5.1 \times 10^{-103}$ & $<8.802 \times 10^{-4}$ \\ 
   \rowcolor{Cluster_Red!15} 
   Influenza Infection & $1.5 \times 10^{-102}$ & $<8.802 \times 10^{-4}$ \\ 
   \rowcolor{Cluster_Red!20} 
@@ -2552,7 +2552,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Red!20} 
   NGF signalling via TRKA from the plasma membrane & $6.7 \times 10^{-50}$ & $0.28811$ \\ 
   \rowcolor{Cluster_Red!15} 
-  \begin{tabular}[c]{@{}l@{}}Activation of the mRNA upon binding of the cap-binding complex and eIFs,\\and subsequent binding to 43S \end{tabular} & $7.1 \times 10^{-50}$ & $0.0017305$ \\ 
+  \begin{tabular}[c]{@{}l@{}}Activation of the \acrshort{mRNA} upon binding of the cap-binding complex and eIFs,\\and subsequent binding to 43S \end{tabular} & $7.1 \times 10^{-50}$ & $0.0017305$ \\ 
   \rowcolor{Cluster_Red!20} 
   Transmembrane transport of small molecules & $1.8 \times 10^{-49}$ & $0.081229$ \\ 
   \rowcolor{Cluster_Red!15} 
@@ -2581,14 +2581,14 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (FDR). Significant pathways are marked in bold (FDR $ < 0.05$) and italics (FDR $ < 0.1$).
+Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\{gls{FDR}). Significant pathways are marked in bold (\{gls{FDR} $ < 0.05$) and italics (\{gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
 }
 \end{table*}
 
 \begin{table*}[!htp]
-\caption{Pathways for \textit{CDH1} partners from mtSLIPT in stomach and siRNA screen}
+\caption{Pathways for \textit{CDH1} partners from \acrshort{mtSLIPT} in stomach and \gls{siRNA} screen}
 \label{tab:pathway_perm_overlap_stad_mtSL}
 \centering
 \resizebox{0.8 \textwidth}{!}{
@@ -2701,21 +2701,21 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (FDR). Significant pathways are marked in bold (FDR $ < 0.05$) and italics (FDR $ < 0.1$).
+Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\{gls{FDR}). Significant pathways are marked in bold (\{gls{FDR} $ < 0.05$) and italics (\{gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
 }
 \end{table*}  
 
 \begin{table*}[!ht]
-\caption{Candidate synthetic lethal metagenes against \textit{CDH1} from mtSLIPT in stomach cancer}
+\caption{Candidate synthetic lethal metagenes against \textit{CDH1} from \acrshort{mtSLIPT} in stomach cancer}
 \label{tab:metagene_stad_mtSL}
 \centering
 \resizebox{1 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{sl^l^c^c^c^c^c}
 \rowstyle{\bfseries}
- Pathway & ID & Observed & Expected & $\chi^2$value & p-value & p-value (FDR) \\
+ Pathway & ID & Observed & Expected & $\chi^2$value & p-value & p-value (\{gls{FDR}) \\
   \hline
   \rowcolor{black!10}
   Prostacyclin signalling through prostacyclin receptor & 392851 & 1 & 10.07 & 26.53 & $1.7307 \times 10^{-6}$ & $0.0028590$\\
@@ -2762,7 +2762,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
   \rowcolor{black!5}
   Platelet homeostasis & 418346 & 7 & 10.07 & 17.90 & $0.00012995$ & $0.00651340$\\
   \rowcolor{black!10}
-  Termination of translesion DNA synthesis & 5656169 & 20 & 10.07 & 17.46 & $0.00016155$ & $0.00651340$\\
+  Termination of translesion \acrshort{DNA} synthesis & 5656169 & 20 & 10.07 & 17.46 & $0.00016155$ & $0.00651340$\\
   \rowcolor{black!5}
   PI3K events in ERBB4 signalling & 1250342 & 4 & 10.07 & 17.26 & $0.00017862$ & $0.00651340$\\
   \rowcolor{black!5}
@@ -2771,7 +2771,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by mtSLIPT with observed and expected mutant samples with low expression of partner metagenes
+Strongest candidate SL partners for \textit{CDH1} by \acrshort{mtSLIPT} with observed and expected mutant samples with low expression of partner metagenes
 \end{tablenotes}
 \end{threeparttable}
 }

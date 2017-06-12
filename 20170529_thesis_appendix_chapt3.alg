@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 11.06.2017  21:27:23
-;; Indexstyle: "/tmp/T3bqwNiVqt", Rawindex: "/tmp/1urIdM09j7", Output: "20170529_thesis_appendix_chapt3.acr"
+;; at 13.06.2017  03:19:31
+;; Indexstyle: "/tmp/F_t3slwkwD", Rawindex: "/tmp/_pSVU4jYNc", Output: "20170529_thesis_appendix_chapt3.acr"
 
 
 Building indexentry-tree:
@@ -11,20 +11,33 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 
 Forming letter-groups:
-Letter-group: "€¼Ãå€" -> "A"
+Letter-group: "Ð¨Ë¼€" -> "S"
 Letter-group: "Ú†€" -> "T"
+Letter-group: "Ð´¨ÈÚ" -> "S"
+Letter-group: "»ÚÐ´¨ÈÚ" -> "M"
+Letter-group: "€¼Ãå€" -> "A"
+Letter-group: "»Ë¼€" -> "M"
+Letter-group: "Ë¼€" -> "R"
 Letter-group: "à†Ð†" -> "U"
 Letter-group: "È€»50" -> "P"
-Letter-group: "Ð´¨ÈÚ" -> "S"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "€¼Ãå€" -> "A"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "»Ë¼€" -> "M"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "È€»50" -> "P"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "Ð´¨ÈÚ" -> "S"
+Letter-group: "Ë¼€" -> "R"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "Ð¨Ë¼€" -> "S"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "Ú†€" -> "T"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "à†Ð†" -> "U"
+WARNING: location-reference "{}{v}" did match multiple location-classes! (taking first one)

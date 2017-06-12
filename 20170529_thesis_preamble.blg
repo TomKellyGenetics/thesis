@@ -2,63 +2,110 @@ This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: 20170529_thesis_preamble.aux
 A level-1 auxiliary file: intro.aux
+White space in argument---line 7 of file intro.aux
+ : \citation{ENCODE2004,\gls
+ :                           {FANTOM}2001}
+I'm skipping whatever remains of this command
+White space in argument---line 40 of file intro.aux
+ : \citation{Bamford2004,ICGC2011,\gls
+ :                                     {TCGA}.013PAN}
+I'm skipping whatever remains of this command
+White space in argument---line 56 of file intro.aux
+ : \citation{ENCODE2004,\gls
+ :                           {FANTOM}2001}
+I'm skipping whatever remains of this command
+White space in argument---line 68 of file intro.aux
+ : \citation{TCGA2008GBM,\gls
+ :                            {TCGA}.011OV,\gls {TCGA}.012LUSC}
+I'm skipping whatever remains of this command
+White space in argument---line 77 of file intro.aux
+ : \citation{TCGA2012,\gls
+ :                         {TCGA}.012LUSC,\gls {TCGA}.012CRC,\gls {TCGA}.013RCC,\gls {TCGA}.014BL,\gls {TCGA}.014GC,\gls {TCGA}.015LBC,\gls {TCGA}.015SK,\gls {TCGA}.016PRC,\gls {TCGA}.015PR}
+I'm skipping whatever remains of this command
+White space in argument---line 82 of file intro.aux
+ : \citation{TCGA2008GBM,\gls
+ :                            {TCGA}.013PAN,\gls {TCGA}.017web}
+I'm skipping whatever remains of this command
+White space in argument---line 83 of file intro.aux
+ : \citation{cBioPortal,\gls
+ :                           {TCGA}.017web,ICGC2011}
+I'm skipping whatever remains of this command
+White space in argument---line 87 of file intro.aux
+ : \citation{COSMICdb,\gls
+ :                         {TCGA}.013PAN}
+I'm skipping whatever remains of this command
+White space in argument---line 89 of file intro.aux
+ : \citation{METABRIC2016,\gls
+ :                             {TCGA}.013PAN}
+I'm skipping whatever remains of this command
+White space in argument---line 91 of file intro.aux
+ : \citation{ICGC2011,\gls
+ :                         {TCGA}.013PAN,METABRIC2016,COSMICdb,cBioPortal}
+I'm skipping whatever remains of this command
+White space in argument---line 345 of file intro.aux
+ : \citation{TCGA2012,\gls
+ :                         {TCGA}.014GC}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: methods.aux
 A level-1 auxiliary file: methods_dev.aux
 A level-1 auxiliary file: chapt3.aux
 A level-1 auxiliary file: chapt4.aux
 A level-1 auxiliary file: chapt5.aux
 A level-1 auxiliary file: chapt6.aux
+White space in argument---line 5 of file chapt6.aux
+ : \citation{TCGA2012,\gls
+ :                         {TCGA}.014GC}
+I'm skipping whatever remains of this command
 A level-1 auxiliary file: conclusion.aux
 The style file: mycustom.bst
 A level-1 auxiliary file: appendix_methods.aux
 A level-1 auxiliary file: appendix_chapt3.aux
 A level-1 auxiliary file: appendix_chapt4.aux
 A level-1 auxiliary file: appendix_chapt5.aux
-Reallocated field_info (elt_size=4) to 11552 items from 5000.
+Reallocated field_info (elt_size=4) to 11370 items from 5000.
 Database file #1: thesis.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
-Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both volume and number fields in Erdos1960
-You've used 252 entries,
+You've used 245 entries,
             3105 wiz_defined-function locations,
-            2267 strings with 147139 characters,
-and the built_in function-call counts, 240433 in all, are:
-= -- 21526
-> -- 10028
-< -- 205
-+ -- 9696
-- -- 2737
-* -- 18597
-:= -- 28649
-add.period$ -- 518
-call.type$ -- 252
-change.case$ -- 2639
-chr.to.int$ -- 253
-cite$ -- 505
-duplicate$ -- 19424
-empty$ -- 15992
-format.name$ -- 3628
-if$ -- 47785
+            2223 strings with 114794 characters,
+and the built_in function-call counts, 232647 in all, are:
+= -- 20898
+> -- 9546
+< -- 203
++ -- 9195
+- -- 2603
+* -- 18000
+:= -- 27701
+add.period$ -- 504
+call.type$ -- 245
+change.case$ -- 2537
+chr.to.int$ -- 246
+cite$ -- 491
+duplicate$ -- 18918
+empty$ -- 15559
+format.name$ -- 3474
+if$ -- 46279
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 3323
-newline$ -- 1281
-num.names$ -- 1012
-pop$ -- 9361
+missing$ -- 3202
+newline$ -- 1246
+num.names$ -- 984
+pop$ -- 9111
 preamble$ -- 1
-purify$ -- 2370
+purify$ -- 2275
 quote$ -- 0
-skip$ -- 8405
+skip$ -- 8019
 stack$ -- 0
-substring$ -- 17399
-swap$ -- 8009
+substring$ -- 17040
+swap$ -- 7725
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2256
+type$ -- 2193
 warning$ -- 1
-while$ -- 1036
+while$ -- 1004
 width$ -- 0
-write$ -- 3538
-(There was 1 warning)
+write$ -- 3440
+(There were 12 error messages)
