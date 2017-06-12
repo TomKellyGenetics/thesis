@@ -665,24 +665,24 @@
 \newglossaryentry{pathway}
 {
   name=pathway,
-  description={A central or highly connected component of a network},
-  plural=pathway
+  description={A series of biomolecules that produces a particular product or biological function},
+  plural=pathways
 }
 
 
 \newglossaryentry{molecular profile}
 {
   name=molecular profile,
-  description={A central or highly connected component of a network},
-  plural=molecular profile
+  description={A combination of genetic and biochemical measures which identifies characteristic traits of a tumour},
+  plural=molecular profiles %ing?
 }
 
 
 \newglossaryentry{molecular subtype}
 {
   name=molecular subtype,
-  description={A central or highly connected component of a network},
-  plural=molecular subtype
+  description={A classification of cancers based on an identification using molecular properties},
+  plural=molecular subtypes %ing?
 }
 
 
@@ -794,11 +794,6 @@
 
 %%
 
-
-%SLIPT
-%DAISY
-%BiSEp
-%MetaSL
 % \gls{PAM50}: Prediction Analysis of Microarray 50
 % \gls{UCSC} University of California, Santa Cruz (accessed https://genome-cancer.ucsc.edu/proj/site/hgHeatmap/, Mar 29  2012)
 
@@ -811,6 +806,9 @@
 \newacronym[description={Data mining synthetic lethal identification pipeline}]{DAISY}{DAISY}{DAta mIning SYnthetic lethal identification pipeline}
 
 \newacronym[description={Bimodal Subsetting Expression}]{BiSEp}{BiSEp}{BImodal Subsetting ExPression}
+
+\newacronym[description={Bimodal Subsetting Expression}]{BiSEp}{BiSEp}{BImodal Subsetting ExPression}
+
 
 %ER
 %PR
@@ -855,12 +853,6 @@
 
 %ROC
 %AUROC
-
-%GEO
-%arrayExpress
-%caArray
-
-%GPCR
 
 %%linked entry
 \iffalse
