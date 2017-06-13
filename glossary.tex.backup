@@ -4,154 +4,158 @@
 
 
 
-\newglossaryentry{pleiotropy}{
+\newglossaryentry{pleiotropy}{%
   name=pleiotropy,
   description={A gene which has multiple biological functions},
   plural=pleiotropic
 }
 
-\newglossaryentry{E-cadherin}{
+\newglossaryentry{E-cadherin}{%
   name=E-cadherin,
   description={Epithelial cadherin (calcium-dependent adhesion), a cell-adhesion protein encoded by the tumour suppressor gene, \textit{CDH1}}
 }
 
+%\newglossaryentry{Pan cancer}{
+%  name=Pan cancer,
+%  description={Study or analysis of cancers across tissue of origin}
+%}
 
-\newglossaryentry{Pan cancer}{
-  name=Pan cancer,
-  description={Study or analysis orf cancers across tissue of origin}
+\newglossaryentry{pan cancer}{%
+  name=pan cancer,
+  description={A focus on the molecular and genetic features across cancers in different tissues},
+  plural=pan cancer
 }
 
-
-\newglossaryentry{RNA-Seq}{
+\newglossaryentry{RNA-Seq}{%
   name=RNA-Seq,
   description={Transcriptome data from sequencing RNA}
 }
 
-\newglossaryentry{CAGE-Seq}{
+\newglossaryentry{CAGE-Seq}{%
   name=CAGE-Seq,
   description={Transcriptome data from cap analysis of gene expression}
 }
 
-\newglossaryentry{gls-ChIP-Seq}{
+\newglossaryentry{gls-ChIP-Seq}{%
   name=ChIP-Seq,
   description={Epigenome data from chromatin immunopreciptation sequencing}
 }
 
-\newglossaryentry{bisulfite-Seq}{
-  name=bisulfite-Seq,
+\newglossaryentry{bisulfite-Seq}{%
+  name=Bisulfite-Seq,
   description={Methylome data from sequencing bisulfite treated DNA}
 }
 
-\newglossaryentry{Sanger}{
-  name=Sanger,
+\newglossaryentry{Sanger}{%
+  name=Sanger sequencing,
   description={A dideoxy chain termination method for DNA sequencing (named after Fred Sanger)}
 }
 
-\newglossaryentry{genomic}{
+\newglossaryentry{genomic}{%
   name=genomic,
   description={An approach or technology designed to generate or use data from all genes in the genome},
   plural=genomics
 }
 
-\newglossaryentry{genome}{
+\newglossaryentry{genome}{%
   name=genome,
   description={An analysis of all of the DNA sequence in the genome},
   plural=genomes
 }
 
 
-\newglossaryentry{transcriptome}{
+\newglossaryentry{transcriptome}{%
   name=transcriptome,
   description={An analysis of all of the genes expressed in the genome},
-  plural=transcriptomics
+  plural=transcriptomes
 }
 
-\newglossaryentry{metagenomics}{
-  name=metagenomics,
+\newglossaryentry{metagenome}{%
+  name=metagenome,
   description={An analysis of all of the genes and genomes in a community},
-  plural=metagenome %%switch
+  plural=metagenomics %%switch
 }
 
-\newglossaryentry{epigenome}{
+\newglossaryentry{epigenome}{%
   name=epigenome,
   description={An analysis of epigenetic modifications of all genes in the genome},
   plural=epigenomics
 }
 
-\newglossaryentry{proteome}{
+\newglossaryentry{proteome}{%
   name=proteome,
   description={An analysis of all the proteins expressed from the genome},
   plural=proteomics
 }
 
-\newglossaryentry{metabolome}{
+\newglossaryentry{metabolome}{%
   name=metabolome,
   description={An analysis of all the metabolites and enzymes in the cell},
   plural=metabolomics
 }
 
-\newglossaryentry{methylome}{
-  name=methylome,
-  description={An analysis of DNA methylation throughout the genome},
-  plural=methylomics
-}
+%\newglossaryentry{methylome}{
+%  name=Methylome,
+%  description={An analysis of DNA methylation throughout the genome},
+%  plural=methylomics
+%}
 
-\newglossaryentry{exome}{
+\newglossaryentry{exome}{%
   name=exome,
   description={A sequencing approach designed to generate data enriched for coding genes within the genome}
 }
 
-\newglossaryentry{bioinformatics}{
+\newglossaryentry{bioinformatics}{%
   name=bioinformatics,
   description={Statistical or computational approaches to biological data or research tools},
   plural=bioinformatic %%switch
 }
 
-\newglossaryentry{computational biology}{
+\newglossaryentry{computational biology}{%
   name=computational biology,
   description={Applying computational or mathematical modelling to understanding biological systems and relationships},
   plural=computational biology %%switch
 }
 
 
-\newglossaryentry{microRNA}
-{
+\newglossaryentry{microRNA-gls}{
   name=microRNA,
   description={Short RNA molecules generally regarded to regulate gene expression by binding to mRNA},
   plural=microRNAs
 }
 
-\newglossaryentry{synthetic lethal}
-{
+\newglossaryentry{synthetic lethal}{%
   name=synthetic lethal,
   description={Genetic interactions where inactivation of multiple genes is inviable (or deleterious) which are viable if inactivated separately},
   plural=synthetic lethality
 }
 
-\newglossaryentry{microarray}
-{
+\newglossaryentry{synthetic sick}{%
+  name=synthetic sick,
+  description={Genetic interactions where inactivation of multiple genes is deleterious which are viable if inactivated separately},
+  plural=synthetic lethality
+}
+
+\newglossaryentry{microarray}{%
   name=microarray,
   description={A high-throughput technique to measure presence or abundance of nucleic acid sequences from binding to probes},
   plural=microarrays
 }
 
-\newglossaryentry{copy number}
-{
+\newglossaryentry{copy number}{%
   name=copy number,
   description={The number of copies of DNA, typically two copies for diploid organisms but subject to variation},
   plural=copy number
 }
 
-\newglossaryentry{gene expression}
-{
+\newglossaryentry{gene expression}{%
   name=gene expression,
   description={A measure of the relative expression of each gene from the mRNA extracted from (pooled) cells},
   plural=gene expression
 }
 
-\newglossaryentry{omics}
-{
-  name=omics,
+\newglossaryentry{omics}{%
+  name='omics,
   description={A combination of approaches to generating biological data with high-throughput procedures such as genomics, proteomics or metabolomics},
   plural=omics
 }
@@ -162,516 +166,451 @@
 %  plural=omic %%switch
 %}
 
-\newglossaryentry{cancer}
-{
+\newglossaryentry{cancer}{%
   name=cancer,
-  description={A group of diseases, formally ``malignant neoplasm'', of abnormal cellular growth and spread to other organs},
+  description={A class of diseases, formally ``malignant neoplasm'', of abnormal cellular growth and spread to other organs},
   plural=cancers
 }
 
-\newglossaryentry{cancer gene}
-{
+\newglossaryentry{tumour}{%
+  name=tumour,
+  description={An abnormal lump of tissue or growth of cells, may be cancerous},
+  plural=tumours
+}
+
+\newglossaryentry{metastasis}{%
+  name=metastasis,
+  description={A secondary growth of a tumour or spread of cancer to other organs},
+  plural=metastasize 
+}
+
+\newglossaryentry{cancer gene}{%
   name=cancer gene,
   description={A gene which is involved in the malignancy of some cancers, encompassing \glspl{oncogene} and \glspl{tumour suppressor}, which have molecular aberrations in cancer and variants which predispose individuals to cancer},
   plural=cancer genes
 }
 
-\newglossaryentry{oncogene}
-{
+\newglossaryentry{oncogene}{%
   name=oncogene,
   description={A gene that potentially causes cancer, typically by over-expression or mutant gene variants},
   plural=oncogenes
 }
 
-\newglossaryentry{proto-oncogene}
-{
+\newglossaryentry{proto-oncogene}{%
   name=proto-oncogene,
-  description={The non-mutant variant or precursor to a mutant \gls{oncogene}},
+  description={The non-mutant variant or precursor to a \gls{mutant} \gls{oncogene}},
   plural=proto-oncogenes
 }
 
-\newglossaryentry{tumour suppressor}
-{
-  name=tumour suppressor gene,
+\newglossaryentry{tumour suppressor}{%
+  name=tumour suppressor,
   description={A gene potentially causes cancer, typically by disruption of functions which protect the cell from cancer},
-  plural=tumour suppressor genes
+  plural=tumour suppressors
 }
 
-\newglossaryentry{mutation}
-{
+\newglossaryentry{mutation}{%
   name=mutation,
   description={A change in DNA sequence that disrupts gene function},
   plural=mutations
 }
 
-\newglossaryentry{driver mutation}
-{
-  name= driver mutation,
+\newglossaryentry{driver mutation}{%
+  name=driver mutation,
   description={A \gls{mutation} which promotes cancer growth},
   plural=driver mutations
 }
 
-\newglossaryentry{passenger mutation}
-{
+\newglossaryentry{passenger mutation}{%
   name=passenger mutation,
   description={A \gls{mutation} that occurs in cancers but does not affect the growth of cancers},
   plural=passenger mutations
 }
 
-\newglossaryentry{genomic medicine}
-{
+\newglossaryentry{genomic medicine}{%
   name=genomic medicine,
   description={The use of genomic information to tailor medicine treatment to the genetics of an individual},
   plural=genomic medicine
 }
 
-\newglossaryentry{precision medicine}
-{
+\newglossaryentry{precision medicine}{%
   name=precision medicine,
   description={The application of prevention and treatment measures to target diseases by molecular and genetic features},
-  plural=precision medicine
+  plural=precision cancer medicine
 }
 
-\newglossaryentry{recurrent mutation}
-{
+\newglossaryentry{recurrent mutation}{%
   name=recurrent mutation,
   description={The repeated occurrence of mutations in a particular gene across cancers},
   plural=recurrent mutations
 }
 
-\newglossaryentry{metagene}
-{
+\newglossaryentry{metagene}{%
   name=metagene,
   description={A consistent signal of expression for a collection of genes such as a biological pathway, derived from singular value decomposition},
   plural=metagenes
 }
 
-\newglossaryentry{polypharmacology}
-{
+\newglossaryentry{polypharmacology}{%
   name=polypharmacology,
   description={The design of drugs to target multiple molecular targets or biological pathways},
   plural=polypharmacology
 }
 
-\newglossaryentry{targeted therapy}
-{
+\newglossaryentry{targeted therapy}{%
   name=targeted therapy,
   description={Cancer treatment that specifically acts against a molecular target, in contrast to standard chemotherapy},
-  plural=targeted therapy
+  plural=targeted therapeutic
 }
 
-\newglossaryentry{network biology}
-{
+\newglossaryentry{network biology}{%
   name=network biology,
   description={The application mathematical and computational approaches to networks in understanding biological relationships},
   plural=network biology
 }
 
-\newglossaryentry{network medicine}
-{
+\newglossaryentry{network medicine}{%
   name=network medicine,
   description={The use  of \gls{network biology} to understand, prevent, or treat diseases},
   plural=network medicine
 }
 
-\newglossaryentry{intrinsic subtype}
-{
+\newglossaryentry{intrinsic subtype}{%
   name=intrinsic subtype,
   description={Distinguishing cancer by molecular and genetic features},
-  plural=intrinsic subtype
+  plural=intrinsic subtypes
 }
 
-
-\newglossaryentry{pan cancer}
-{
-  name=pan cancer,
-  description={A focus on the molecular and genetic features across cancers in different tissues},
-  plural=pan cancer
-}
-
-
-\newglossaryentry{chemotherapy}
-{
+\newglossaryentry{chemotherapy}{%
   name=chemotherapy,
   description={The use of cytotoxic drugs to treat cancers, in combinations, generally applied to advanced stage cancers},
   plural=chemotherapy
 }
 
-
-\newglossaryentry{diagnosis}
-{
-  name=diagnosis,
-  description={The identification of disease by clinical, cellular, and molecular},
-  plural=diagnosis
+\newglossaryentry{chemoprevention}{%
+  name=chemoprevention,
+  description={The use of cytotoxic drugs to prevent cancers from forming, generally applied to high-risk mutation carriers},
+  plural=chemopreventative
 }
 
 
-\newglossaryentry{prognosis}
-{
+\newglossaryentry{diagnosis}{%
+  name=diagnosis,
+  description={The identification of disease by clinical, cellular, and molecular},
+  plural=diagnose
+}
+
+
+\newglossaryentry{prognosis}{%
   name=prognosis,
   description={The estimation of disease progression and patient outcome},
   plural=prognosis
 }
 
 
-\newglossaryentry{treatment}
-{
+\newglossaryentry{treatment}{%
   name=treatment,
   description={Medical procedures for a disease to improve patient outcomes},
-  plural=treatment
+  plural=treatmense
 }
 
 
-\newglossaryentry{wild-type}
-{
+\newglossaryentry{wild-type}{%
   name=wild-type,
   description={A natural phenotype of a trait or the normally functional \gls{allele} which encodes it},
   plural=wild-type
 }
 
 
-\newglossaryentry{mutant}
-{
+\newglossaryentry{mutant}{%
   name=mutant,
   description={A variant or dysfunctional phenotype arising from a \gls{mutation} in a gene},
   plural=mutant
 }
 
 
-\newglossaryentry{somatic}
-{
+\newglossaryentry{somatic}{%
   name=somatic mutation,
   description={A \gls{mutation} that occurs in somatic cells, during a patient's lifespan},
   plural=somatic
 }
 
-\newglossaryentry{germline}
-{
+\newglossaryentry{germline}{%
   name=germline mutation,
   description={A \gls{mutation} that occurred in germline cells and is passed between generation},
   plural=germline
 }
 
-\newglossaryentry{allele}
-{
+\newglossaryentry{allele}{%
   name=allele,
   description={A gene variant with a specific sequence and phenotype},
   plural=allele
 }
 
-\newglossaryentry{familial}
-{
+\newglossaryentry{familial}{%
   name=familial,
   description={A trait recurrently occurring in families, not necessarily with a genetic cause},
   plural=familial
 }
 
 
-\newglossaryentry{hereditary}
-{
+\newglossaryentry{hereditary}{%
   name=hereditary,
   description={A trait or disease which has a genetic cause and is inherited from family members},
   plural=hereditary
 }
 
 
-\newglossaryentry{sporadic}
-{
-  name=sporadic,
+\newglossaryentry{sporadic}{%
+  name=sporadic cancer,
   description={Cancers which do occur in patients with a family history or carry a high-risk genetic variant},
   plural=sporadic
 }
 
 
-\newglossaryentry{hub}
-{
+\newglossaryentry{hub}{%
   name=hub,
   description={A central or highly connected component of a network},
-  plural=hub
+  plural=hubs
 }
 
 
-\newglossaryentry{vertex} %node
-{
+\newglossaryentry{vertex}{%
   name=vertex or node,
   description={An element of a graph structure or network},
   plural=vertices
 }
 
 
-\newglossaryentry{edge} %link
-{
+\newglossaryentry{edge}{%
   name=edge or link,
   description={A relationship connecting a pair of elements of a graph structure or network, may weighted or directional},
   plural=edges
 }
 
 
-\newglossaryentry{graph} %network
-{
+\newglossaryentry{graph}{%
   name=graph or network,
   description={A mathematical structure modelling or depicting the relationships between elements},
   plural=graphs
 }
 
 
-\newglossaryentry{oncogene addiction}
-{
+\newglossaryentry{oncogene addiction}{%
   name=oncogene addiction,
   description={The dependence of a cancer cell on a specific oncogenic pathway},
   plural=oncogene addiction
 }
 
 
-\newglossaryentry{non-oncogene addiction}
-{
+\newglossaryentry{non-oncogene addiction}{%
   name=non-oncogene addiction,
-  description={The dependence of a cancer cell on a functioning non-mutant genes},
+  description={The dependence of a cancer cell on functioning non-mutant genes},
   plural=non-oncogene addiction
 }
 
 
-\newglossaryentry{hallmark}
-{
+\newglossaryentry{hallmark}{%
   name=hallmark of cancer,
   description={An underlying characteristic of cancer as part of a rational approach devised by \citep{Hanahan2000}},
-  plural=hallmark
+  plural=hallmarks
 }
 
 
-\newglossaryentry{induced essentiality}
-{
+\newglossaryentry{induced essentiality}{
   name=induced essentiality,
-  description={A gene becoming essential to viability under certain conditions, including inactivation of a synthetic lethal partner},
+  description={A gene becoming \gls{essential} to viability under certain conditions, including inactivation of a synthetic lethal partner},
   plural=induced essentiality
 }
 
 
-\newglossaryentry{conditional essentiality}
-{
+\newglossaryentry{essential}{%
+  name=essential,
+  description={A gene which is required to be functional or expressed for a cell or organism to be viable, grow or develop},
+  plural=essentiality
+}
+
+\newglossaryentry{conditional essentiality}{%
   name=conditional essentiality,
   description={A gene becoming essential to viability under certain environmental conditions, including presence of compounds which inactivate other genes},
   plural=conditional essentiality
 }
 
 
-\newglossaryentry{functional redundancy} %genetic redundancy
-{
+\newglossaryentry{functional redundancy}{%
   name=functional redundancy, 
-  description={Genes which perform a common function},
+  description={Genes which perform a common function, also known as genetic redundancy},
   plural=functional redundancy
 }
 
 
-\newglossaryentry{genetic robustness}
-{
+\newglossaryentry{genetic robustness}{%
   name=genetic robustness,
   description={A system of biological pathways which (has evolved to) continue to function as a whole under various conditions, including the inactivation of various individual genes},
-  plural=genetic robustness
+  plural=genetically robust %adj
 }
 
 
-%\newglossaryentry{synthetic lethal}
-%{
-%  name=synthetic lethal,
-%  description={A central or highly connected component of a network},
-%  plural=synthetic lethal
-%}
-
-
-%\newglossaryentry{synthetic sick}
-%{
-%  name=synthetic sick,
-%  description={A central or highly connected component of a network},
-%  plural=synthetic sick
-%}
-
-
-\newglossaryentry{synthetic dosage lethal}
-{
+\newglossaryentry{synthetic dosage lethal}{%
   name=synthetic dosage lethal,
   description={A \acrfull{SGI} analogous to \glspl{synthetic lethal} where genes are disrupted by a change in dosage, typically where one gene is inactivated and the other over-expressed },
   plural=synthetic dosage lethality
 }
 
 
-\newglossaryentry{synthetic lethal screen}
-{
+\newglossaryentry{synthetic lethal screen}{%
   name=synthetic lethal screen,
   description={A \gls{high-throughput screen} performed on isogenic cell lines to detect genes for which inhibition specifically deleterious to the null \gls{mutant} genotype},
   plural=synthetic lethal screening
 }
 
 
-\newglossaryentry{high-throughput screen}
-{
+\newglossaryentry{high-throughput screen}{%
   name=high-throughput screen,
   description={An experimental procedure to perform a large scale series of chemical, genetic, or pharmacological tests},
   plural=high-throughput screening
 }
 
 
-\newglossaryentry{compound screen}
-{
+\newglossaryentry{compound screen}{
   name=compound screen,
   description={A \gls{high-throughput screen} performed using a library of chemical compounds},
   plural=compound screening
 }
 
-\newglossaryentry{RNAi screen}
-{
+\newglossaryentry{RNAi screen}{
   name=RNAi screen,
   description={A \gls{high-throughput screen} performed using a \acrfull{RNAi}},
   plural=RNAi screening
 }
 
 
-\newglossaryentry{MCF10A}
-{
+\newglossaryentry{MCF10A}{
   name=MCF10A cell line,
   description={A non-tumorigenic epithelial cell line derived from breast tissue},
   plural=MCF10A cells
 }
 
 
-\newglossaryentry{in silico}
-{
+\newglossaryentry{in silico}{
   name=\textit{in silico},
   description={An investigation conducted using computations, typically simulations or analyses},
   plural=in silico
 }
 
 
-\newglossaryentry{in vivo}
-{
+\newglossaryentry{in vivo}{
   name=\textit{in vivo},
   description={An investigation conducted using in the context of a biological cell or organism, including pre-clincal models and clinical trials},
   plural=in vivo
 }
 
 
-\newglossaryentry{in vitro}
-{
+\newglossaryentry{in vitro}{
   name=\textit{in vitro},
   description={An investigation conducted using a controlled experimental system to examine biomolecules},
   plural=in vitro
 }
 
 
-\newglossaryentry{de novo}
-{
+\newglossaryentry{de novo}{
   name=\textit{de novo},
   description={A bioinformatics sequence assembly conducted entirely from raw genomics data without a reference sequence},
   plural=de novo
 }
 
 
-\newglossaryentry{scale-free}
-{
+\newglossaryentry{scale-free}{
   name=scale-free,
   description={A property of a network which has a power law \gls{vertex degree} distribution, that is several highly connected \gls{hub} genes and many with very few connections},
   plural=scale-free
 }
 
 
-\newglossaryentry{small world}
-{
+\newglossaryentry{small world}{
   name=small world,
   description={A property of a network which is highly connected and has a low characteristic path length, derived from the mean \gls{shortest path} length across all pairs of nodes},
   plural=small world
 }
 
 
-\newglossaryentry{shortest path}
-{
+\newglossaryentry{shortest path}{
   name=shortest path,
   description={A path with the fewest possible \glspl{edge} which connects two particular \glspl{vertex}},
   plural=shortest paths
 }
 
 
-\newglossaryentry{centrality}
-{
+\newglossaryentry{centrality}{
   name=centrality,
   description={A network metric which identifies the most important \glspl{vertex} in a network},
   plural=centrality
 }
 
 
-\newglossaryentry{information centrality}
-{
+\newglossaryentry{information centrality}{
   name=information centrality,
   description={A network \gls{centrality} metric which uses the impact of removing a \gls{vertex} on connections in the network},
   plural=information centrality
 }
 
 
-\newglossaryentry{pagerank centrality}
-{
-  name=pagerank centrality,
+\newglossaryentry{pagerank centrality}{
+  name=PageRank centrality,
   description={A network \gls{centrality} metric which uses eigenvectors with a scaling factor \citep{Brin1998}},
   plural=pagerank centrality
 }
 
 
-\newglossaryentry{vertex degree}
-{
+\newglossaryentry{vertex degree}{
   name=vertex degree,
   description={A network metric of connectivity of \glspl{vertex} which uses the number of edges connected to each \gls{vertex}},
   plural=vertex degree
 }
 
 
-\newglossaryentry{synergy}
-{
+\newglossaryentry{synergy}{
   name=synergy,
   description={When multiple drugs have more effect than expected from the effect of each separately},
   plural=synergistic
 }
 
 
-\newglossaryentry{synthetic suppression}
-{
+\newglossaryentry{synthetic suppression}{%
   name=synthetic suppression,
   description={A \acrlong{SGI} when the combined \glspl{mutation} (partially) suppresses the \gls{mutant} phenotype of one of the \glspl{mutation}},
   plural=synthetic suppression
 }
 
 
-\newglossaryentry{synthetic rescue}
-{
+\newglossaryentry{synthetic rescue}{%
   name=synthetic rescue,
   description={A \acrlong{SGI} when the combined \glspl{mutation} restores the \gls{wild-type} the phenotype of one of the \glspl{mutation}},
   plural=synthetic rescue
 }
 
 
-\newglossaryentry{epistasis_bio}
-{
+\newglossaryentry{epistasis_bio}{
   name=epistasis (biological),
   description={The effects of a gene modifying or masking the phenotype of another gene},
   plural=epistasis
 }
 
 
-\newglossaryentry{epistasis_stat}
-{
+\newglossaryentry{epistasis_stat}{
   name=epistasis (statistical),
   description={A divergence of the observed double \gls{mutant} phenotype from that expected based on the respective phenotypes of single \glspl{mutant}  \citep{Fisher1919}},
   plural=epistasis
 }
 
 
-\newglossaryentry{pathway}
-{
+\newglossaryentry{pathway}{
   name=pathway,
   description={A series of biomolecules that produces a particular product or biological function},
   plural=pathways
 }
 
 
-\newglossaryentry{molecular profile}
-{
+\newglossaryentry{molecular profile}{
   name=molecular profile,
   description={A combination of genetic and biochemical measures which identifies characteristic traits of a tumour},
   plural=molecular profiles %ing?
@@ -693,7 +632,7 @@
 
 \newacronym[description={Nonsense-Mediated Decay}]{NMD}{NMD}{nonsense-mediated decay}%
 \newacronym[description={G-protein Signalling}]{RGS}{RGS}{G-protein signalling}%
-\newacronym[description={Chemokine Receptors}]{CXCR}{CXCR}{chemokine receptors}%
+\newacronym[description={Chemokine Receptor}, plural=CXCRs,firstplural=Chemokine receptors]{CXCR}{CXCR}{chemokine receptors}%
 \newacronym[description={Ras Homolog Family}]{RHO}{RHO}{Ras homolog family}%
 \newacronym[description={Untranslated Region (of mRNA)}]{UTR}{UTR}{untranslated region}%
 
@@ -734,7 +673,7 @@
 
 \newacronym[description={Messenger Ribonucleic Acid}]{mRNA}{mRNA}{messenger RNA}%
 
-\newacronym[description={Micro RNA}]{miRNA}{miRNA}{micro RNA}%
+\newacronym[description={Micro RNA}, plural=microRNAs,firstplural=microRNAs]{microRNA}{microRNA}{glslink{{microRNA-gls}}{micro RNA}}%
 
 \newacronym[description={Short Interfering Ribonucleic Acid}, plural=siRNAs,firstplural=siRNAs]{siRNA}{siRNA}{short interfering RNA}%
 
@@ -788,7 +727,7 @@
 \newacronym[description={Adenosine Monophosphate}]{AMP}{AMP}{adenosine monophosphate}%
 \newacronym[description={Cylic \acrshort{AMP}}]{cAMP}{cAMP}{cylic \acrshort{AMP}}%
  
-\newacronym[description={5$\^prime—$C$—$phosphate$—$G$—$3$\^prime$}]{CpG}{CpG}{CpG dinucleotide}%
+\newacronym[description={5$^\prime$--C--phosphate--G--3$^\prime$}]{CpG}{CpG}{CpG dinucleotide}%
 \newacronym[description={Catalogue Of Somatic Mutations In Cancer}]{COSMIC}{COSMIC}{Catalogue Of Somatic Mutations In Cancer}%
 \newacronym[description={1000 genomes project}]{1KGP}{1KGP}{1000 genomes project}%
 \newacronym[description={Molecular Taxonomy of Breast Cancer International Consortium}]{METABRIC}{METABRIC}{Molecular Taxonomy of Breast Cancer International Consortium}%
@@ -859,6 +798,7 @@
 
 \newacronym[description={Synthetic Gene Array (technique)}, plural=SGAs,firstplural=synthetic gene arrays]{SGA}{SGA}{synthetic gene array}%
 
+\newacronym[description={Microsatellite instability}]{MSI}{MSI}{microsatellite instability}%
 
 %%linked entry
 \iffalse

@@ -1036,7 +1036,7 @@ zoo                           & \{gls{CRAN}                      & 1.7-13      &
 \chapter{Secondary Screen Data}
 \label{appendix:secondary_screen}
 
-A series of experimental genome-wide \gls{siRNA} screens have been performed on synthetic lethal partners of \textit{CDH1} \citep{Telford2015}. The strongest candidates from a primary screen were subject to a further secondary screen for validation by independent replication with 4 gene knockdowns with different targeting \gls{siRNA}. As shown in Table~\ref{tab:secondary_screen}, there is significant ($p=7.49 \times 10^{-3}$ by Fisher's exact test) %$8.67 \times 10^{-3} by \chi^2 (4 df)
+A series of experimental \glspl{genome}-wide \gls{siRNA} screens have been performed on synthetic lethal partners of \textit{CDH1} \citep{Telford2015}. The strongest candidates from a primary screen were subject to a further secondary screen for validation by independent replication with 4 gene knockdowns with different targeting \gls{siRNA}. As shown in Table~\ref{tab:secondary_screen}, there is significant ($p=7.49 \times 10^{-3}$ by Fisher's exact test) %$8.67 \times 10^{-3} by \chi^2 (4 df)
 association between \gls{SLIPT} candidates and stronger validations of \gls{siRNA} candidates. Since there were more SLIPT$-$ genes among those not validated and more SLIPT$+$ genes among those validated with several \glspl{siRNA}, this supports the use of SLIPT as a synthetic lethal discovery procedure which may augment such screening experiments.
 
 \begin{table*}[!ht]
@@ -1120,7 +1120,7 @@ This analysis was replicated on a (smaller) stomach cancer dataset but it was le
 
 
 \begin{table*}[!ht]
-\caption{Candidate synthetic lethal genes against E-cadherin from mtSLIPT}
+\caption{Candidate synthetic lethal genes against \gls{E-cadherin} from mtSLIPT}
 \label{tab:gene_mtSL}
 \centering
 \resizebox{0.8 \textwidth}{!}{
@@ -1256,7 +1256,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png}
    }
-    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in \gls{TCGA} breast cancer dataset for gene expression of 4629 candidate partners of E-cadherin (\textit{CDH1}) from \gls{SLIPT} prediction (with significant \{gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably 'normal-like', basal, and estrogen receptor negative samples have elevated expression in one or more distinct clusters showing complexity and variation among candidate synthetic lethal partners. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
+    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in \gls{TCGA} breast cancer dataset for gene expression of 4629 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \gls{SLIPT} prediction (with significant \{gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably 'normal-like', basal, and estrogen receptor negative samples have elevated expression in one or more distinct clusters showing complexity and variation among candidate synthetic lethal partners. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_mtSL}
@@ -1459,7 +1459,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \resizebox{0.66 \columnwidth}{!}{
     \includegraphics{Venn_mtSL_siRNA_allgenes_reduced_Pub.png}
    }
-    \caption[Comparison of \acrshort{mtSLIPT} to \gls{siRNA}]{\small \textbf{Comparison of \acrshort{mtSLIPT} to \gls{siRNA}.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
+    \caption[Comparison of \acrshort{mtSLIPT} to \gls{siRNA}]{\small \textbf{Comparison of \acrshort{mtSLIPT} to \gls{siRNA}.} Testing the overlap of gene candidates for \gls{E-cadherin} synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
 }
 \label{fig:Venn_allgenes_mtSL}
 %\end{mdframed}
@@ -1973,7 +1973,7 @@ Strongest candidate SL partners for \textit{CDH1} by \acrshort{mtSLIPT} with obs
 
 
 \begin{table*}[!ht]
-\caption{Candidate synthetic lethal genes against E-cadherin from \acrshort{mtSLIPT} in stomach cancer}
+\caption{Candidate synthetic lethal genes against \gls{E-cadherin} from \acrshort{mtSLIPT} in stomach cancer}
 \label{tab:gene_stad_mtSL}
 \centering
 \resizebox{0.8 \textwidth}{!}{
@@ -2110,7 +2110,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png}
    }
-    \caption[Synthetic lethal expression profiles of stomach samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in \gls{TCGA} breast cancer dataset for gene expression of 4629 candidate partners of E-cadherin (\textit{CDH1}) from \gls{SLIPT} prediction (with significant \{gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably diffuse and \textit{CDH1} mutant samples have elevated expression in one or more distinct clusters, although there was less complexity and variation among candidate synthetic lethal partners than in breast data. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
+    \caption[Synthetic lethal expression profiles of stomach samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in \gls{TCGA} breast cancer dataset for gene expression of 4629 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \gls{SLIPT} prediction (with significant \{gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably diffuse and \textit{CDH1} mutant samples have elevated expression in one or more distinct clusters, although there was less complexity and variation among candidate synthetic lethal partners than in breast data. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_stad_mtSL}
@@ -2167,7 +2167,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Blue!15}
   RAF/MAP kinase cascade &  10 &   0 &   1 \\ 
   \rowcolor{Cluster_Blue!20}
-  Global Genomic NER (GG-NER) &  35 &   0 &   1 \\ 
+  Global \Gls{genomic} NER (GG-NER) &  35 &   0 &   1 \\ 
   \rowcolor{Cluster_Blue!15}
   Repair synthesis for gap-filling by \acrshort{DNA} polymerase in TC-NER &  15 &   0 &   1 \\ 
   \hline
@@ -2205,7 +2205,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \rowcolor{Cluster_Green!30}
   RAF/MAP kinase cascade &  10 &   0 &   1 \\ 
   \rowcolor{Cluster_Green!20}
-  Global Genomic NER (GG-NER) &  35 &   0 &   1 \\ 
+  Global \Gls{genomic} NER (GG-NER) &  35 &   0 &   1 \\ 
   \rowcolor{Cluster_Green!30}
   Repair synthesis for gap-filling by \acrshort{DNA} polymerase in TC-NER &  15 &   0 &   1 \\ 
   \rowcolor{Cluster_Green!20}
@@ -2315,7 +2315,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \resizebox{0.66 \columnwidth}{!}{
     \includegraphics{Venn_mtSL_siRNA_allgenes_reduced_Pub_stad.png}
    }
-    \caption[Comparison of \acrshort{mtSLIPT} in stomach to \gls{siRNA}]{\small \textbf{Comparison of \acrshort{mtSLIPT} in stomach to \gls{siRNA}.} Testing the overlap of gene candidates for E-cadherin synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
+    \caption[Comparison of \acrshort{mtSLIPT} in stomach to \gls{siRNA}]{\small \textbf{Comparison of \acrshort{mtSLIPT} in stomach to \gls{siRNA}.} Testing the overlap of gene candidates for \gls{E-cadherin} synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
 }
 \label{fig:Venn_allgenes_stad_mtSL}
 %\end{mdframed}

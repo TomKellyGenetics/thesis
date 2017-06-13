@@ -1,4 +1,4 @@
-\begin{thebibliography}{245}
+\begin{thebibliography}{252}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\bibAnnoteFile}[1]{%
   \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
@@ -15,10 +15,24 @@ Aarts, M., Bajrami, I., Herrera-Abreu, M.T., Elliott, R., Brough, R., Ashworth,
 \newblock \emph{Mol Cancer Ther}, \textbf{14}(4): 865--76.
 \bibAnnoteFile{Aarts2015}
 
+\bibitem[\protect\astroncite{Abeshouse \emph{et~al.}}{2015}]{TCGA2015PR}
+Abeshouse, A., Ahn, J., Akbani, R., Ally, A., Amin, S., Andry, C.D., Annala,
+  M., Aprikian, A., Armenia, J., Arora, A., \emph{et~al.} (2015) {{T}he
+  {M}olecular {T}axonomy of {P}rimary {P}rostate {C}ancer}.
+\newblock \emph{Cell}, \textbf{163}(4): 1011--1025.
+\bibAnnoteFile{TCGA2015PR}
+
 \bibitem[\protect\astroncite{Adler}{2005}]{vioplot}
 Adler, D. (2005) \emph{vioplot: Violin plot}.
 \newblock R package version 0.2.
 \bibAnnoteFile{vioplot}
+
+\bibitem[\protect\astroncite{Akbani \emph{et~al.}}{2015}]{TCGA2015SK}
+Akbani, R., Akdemir, K.C., Aksoy, B.A., Albert, M., Ally, A., Amin, S.B.,
+  Arachchi, H., Arora, A., Auman, J.T., Ayala, B., \emph{et~al.} (2015)
+  {{G}enomic {C}lassification of {C}utaneous {M}elanoma}.
+\newblock \emph{Cell}, \textbf{161}(7): 1681--1696.
+\bibAnnoteFile{TCGA2015SK}
 
 \bibitem[\protect\astroncite{Akobeng}{2007}]{Akobeng2007}
 Akobeng, A.K. (2007) Understanding diagnostic tests 3: receiver operating
@@ -406,6 +420,14 @@ Courtney, K.D., Corcoran, R.B., and Engelman, J.A. (2010) {{T}he {P}{I}3{K}
   pathway as drug target in human cancer}.
 \newblock \emph{J Clin Oncol}, \textbf{28}(6): 1075--1083.
 \bibAnnoteFile{Courtney2010}
+
+\bibitem[\protect\astroncite{Creighton \emph{et~al.}}{2013}]{TCGA2013RCC}
+Creighton, C.J., Morgan, M., Gunaratne, P.H., Wheeler, D.A., Gibbs, R.A.,
+  Robertson, A., Chu, A., Beroukhim, R., Cibulskis, K., Signoretti, S.,
+  \emph{et~al.} (2013) {{C}omprehensive molecular characterization of clear
+  cell renal cell carcinoma}.
+\newblock \emph{Nature}, \textbf{499}(7456): 43--49.
+\bibAnnoteFile{TCGA2013RCC}
 
 \bibitem[\protect\astroncite{Croft \emph{et~al.}}{2014}]{Reactome}
 Croft, D., Mundo, A.F., Haw, R., Milacic, M., Weiser, J., Wu, G., Caudy, M.,
@@ -908,11 +930,24 @@ Kamada, T. and Kawai, S. (1989) An algorithm for drawing general undirected
 \newblock \emph{Information Processing Letters}, \textbf{31}(1): 7--15.
 \bibAnnoteFile{Kamada1989}
 
+\bibitem[\protect\astroncite{Kawai \emph{et~al.}}{2001}]{FANTOM2001}
+Kawai, J., Shinagawa, A., Shibata, K., Yoshino, M., Itoh, M., Ishii, Y.,
+  Arakawa, T., Hara, A., Fukunishi, Y., Konno, H., \emph{et~al.} (2001)
+  {{F}unctional annotation of a full-length mouse c{D}{N}{A} collection}.
+\newblock \emph{Nature}, \textbf{409}(6821): 685--690.
+\bibAnnoteFile{FANTOM2001}
+
 \bibitem[\protect\astroncite{Kelley and Ideker}{2005}]{Kelley2005}
 Kelley, R. and Ideker, T. (2005) Systematic interpretation of genetic
   interactions using protein networks.
 \newblock \emph{Nat Biotech}, \textbf{23}(5): 561--566.
 \bibAnnoteFile{Kelley2005}
+
+\bibitem[\protect\astroncite{Kelly}{2013}]{Kelly2013}
+Kelly, S.T. (2013) \emph{Statistical Predictions of Synthetic Lethal
+  Interactions in Cancer}.
+\newblock Dissertation, University of Otago.
+\bibAnnoteFile{Kelly2013}
 
 \bibitem[\protect\astroncite{Kelly \emph{et~al.}}{unpublished}]{KellyHDGC}
 Kelly, S.T., Single, A.B., Telford, B.J., Beetham, H.G., Godwin, T.D., Chen,
@@ -1036,6 +1071,14 @@ Li, X.J., Mishra, S.K., Wu, M., Zhang, F., and Zheng, J. (2014) Syn-lethality:
   selective anticancer therapies.
 \newblock \emph{Biomed Res Int}, \textbf{2014}: 196034.
 \bibAnnoteFile{Li2014}
+
+\bibitem[\protect\astroncite{Linehan \emph{et~al.}}{2016}]{TCGA2016PRC}
+Linehan, W.M., Spellman, P.T., Ricketts, C.J., Creighton, C.J., Fei, S.S.,
+  Davis, C., Wheeler, D.A., Murray, B.A., Schmidt, L., Vocke, C.D.,
+  \emph{et~al.} (2016) {{C}omprehensive {M}olecular {C}haracterization of
+  {P}apillary {R}enal-{C}ell {C}arcinoma}.
+\newblock \emph{N Engl J Med}, \textbf{374}(2): 135--145.
+\bibAnnoteFile{TCGA2016PRC}
 
 \bibitem[\protect\astroncite{Lokody}{2014}]{Lokody2014}
 Lokody, I. (2014) Computational modelling: A computational crystal ball.
@@ -1587,6 +1630,13 @@ Weinstein, I.B. (2000) {{D}isorders in cell circuitry during multistage
   carcinogenesis: the role of homeostasis}.
 \newblock \emph{Carcinogenesis}, \textbf{21}(5): 857--864.
 \bibAnnoteFile{Weinstein2000}
+
+\bibitem[\protect\astroncite{Weinstein \emph{et~al.}}{2014}]{TCGA2014BL}
+Weinstein, J.N., Akbani, R., Broom, B.M., Wang, W., Verhaak, R.G., McConkey,
+  D., Lerner, S., Morgan, M., Creighton, C.J., Smith, C., \emph{et~al.} (2014)
+  {{C}omprehensive molecular characterization of urothelial bladder carcinoma}.
+\newblock \emph{Nature}, \textbf{507}(7492): 315--322.
+\bibAnnoteFile{TCGA2014BL}
 
 \bibitem[\protect\astroncite{Weinstein \emph{et~al.}}{2013}]{TCGA2013PAN}
 Weinstein, J.N., Collisson, E.A., Mills, G.B., Shaw, K.R., Ozenberger, B.A.,

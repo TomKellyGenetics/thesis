@@ -1,18 +1,18 @@
 %Background
 \textbf{Background}
 
-Synthetic lethal genetic interactions are re-emerging the post-genomics era due to their potential for precision medicine against cancers. Synthetic lethal drug design exploits functional redundancy with genes disrupted in cancers (including tumour suppressors) to develop specific treatments. E-cadherin, encoded by \textit{CDH1}, is a tumour supressor gene with loss of function in breast and btomach cancers. Experimental screens have identified candidate synthetic lethal interactions for drug target triage which can be further supported with bioinformatics analysis. Furthermore, gene expression data is amenable to investigation of the pathway composition and structure of synthetic lethal candidates. 
+Synthetic lethal genetic interactions are re-emerging the post-genomics era due to their potential for precision medicine against cancers. Synthetic lethal drug design exploits functional redundancy with genes disrupted in cancers (including tumour suppressors) to develop specific treatments. \gls{E-cadherin}, encoded by \textit{CDH1}, is a tumour supressor gene with loss of function in breast and btomach cancers. Experimental screens have identified candidate synthetic lethal interactions for drug target triage which can be further supported with bioinformatics analysis. Furthermore, gene expression data is amenable to investigation of the pathway composition and structure of synthetic lethal candidates. 
 
 %Methods \ Approach
 \textbf{Approach}
 
-A computational methodology, the Synthetic Lethal Prediction Tool (\acrshort{SLIPT}) was developed to detect synthetic lethal interactions in gene expression data. This methodology was demonstrated on interactions with \textit{CDH1} in breast and stomach cancer data from The Cancer Genome Atlas (\acrshort{TCGA}) project. Synthetic lethal genes and pathways were further investigated with unsupervised clustering, gene set over-representation analysis, metagenes, and permutation resampling. In particular, analyses focused on comparing \acrshort{SLIPT} gene candidates to an experimental \acrshort{siRNA} screen \citet{Telford2015}. Graph theory methods were also applied to the most supported pathways to test for pathway structure among between synthetic lethal candidates. Simulation and modelling was used to assess the statistical performance of \acrshort{SLIPT}, including simulated data with correlation structures derived from graph stuctures.
+A computational methodology, the Synthetic Lethal Prediction Tool (\acrshort{SLIPT}) was developed to detect synthetic lethal interactions in gene expression data. This methodology was demonstrated on interactions with \textit{CDH1} in breast and stomach cancer data from The Cancer \Glspl{genome} Atlas (\acrshort{TCGA}) project. Synthetic lethal genes and pathways were further investigated with unsupervised clustering, gene set over-representation analysis, metagenes, and permutation resampling. In particular, analyses focused on comparing \acrshort{SLIPT} gene candidates to an experimental \acrshort{siRNA} screen \citet{Telford2015}. Graph theory methods were also applied to the most supported pathways to test for pathway structure among between synthetic lethal candidates. Simulation and modelling was used to assess the statistical performance of \acrshort{SLIPT}, including simulated data with correlation structures derived from graph stuctures.
 
 %Results \ Findings
 \textbf{Findings}
 
 %chapt 3
-Many candidate synthetic lethal partners of \textit{CDH1} were detected in both \acrshort{TCGA} breast cancer. These genes clustered into several distinct groups, with distinct biological functions and elevated expression in different clinical subtypes. While the number of genes detected by both approaches was not significant, these contained significantly enriched pathways. In particular $G_{\alpha i}$ signalling, cytoplasmic microfibres, and extracellular fibrin clotting were robustly supported by both approaches which is consistent with the known cytoskeletal and cell signalling roles of E-cadherin and validation of \acrshort{GPCR}s performed by \citet{Telford2015}. Many of these pathways were replicated in stomach cancer. The pathways supported only by \acrshort{SLIPT} included regulation of immune signalling and translational elongation which were unlikely to be detected in an isogenic cell line model but are are still candidates for further investigation. 
+Many candidate synthetic lethal partners of \textit{CDH1} were detected in both \acrshort{TCGA} breast cancer. These genes clustered into several distinct groups, with distinct biological functions and elevated expression in different clinical subtypes. While the number of genes detected by both approaches was not significant, these contained significantly enriched pathways. In particular $G_{\alpha i}$ signalling, cytoplasmic microfibres, and extracellular fibrin clotting were robustly supported by both approaches which is consistent with the known cytoskeletal and cell signalling roles of \gls{E-cadherin} and validation of \acrshort{GPCR}s performed by \citet{Telford2015}. Many of these pathways were replicated in stomach cancer. The pathways supported only by \acrshort{SLIPT} included regulation of immune signalling and translational elongation which were unlikely to be detected in an isogenic cell line model but are are still candidates for further investigation. 
 
 %chapt 4
 Synthetic lethal candidates detected by \acrshort{SLIPT} and \acrshort{siRNA} were compared within graph structures of the candidate synthetic lethal pathways. These genes did not differ by network measures of importance or connectivity in the pathway. There was also little support for \acrshort{SLIPT} gene candidates being upstream or downstream of \acrshort{siRNA} gene candidates within a pathway, consistently across pathways. 
@@ -35,15 +35,15 @@ Thus my thesis has developed, evaluated and refined a bioinformatics approach to
 
 \textbf{Publications}
 
-\begin{small} \begin{flushleft} Kelly, S. T. and Spencer, H. G. (2017) Population-Genetics Models of Sex-Limited Genomic Imprinting. \textit{Theoretical Population Biology} \textbf{115}:35-44 \doi{10.1016/j.tpb.2017.03.004} \end{flushleft} \end{small}
+\begin{small} \begin{flushleft} Kelly, S. T. and Spencer, H. G. (2017) Population-Genetics Models of Sex-Limited \Gls{genomic} Imprinting. \textit{Theoretical Population Biology} \textbf{115}:35-44 \doi{10.1016/j.tpb.2017.03.004} \end{flushleft} \end{small}
 
 \textbf{Manuscripts Submitted}
 
 %Several publications have been prepared during the candidature of this thesis, including some findings related to the thesis topic on which we elaborate in more depth here. Please see the original article for the results which have been accepted for publication by peer-review:
 \begin{small}
-Kelly, S. T., Single, A. B., Telford, B. J., Beetham, H. G, Godwin, T. D., Chen, A., Black, M., A., and Guilford, P. J. (2017) Towards HDGC chemoprevention: vulnerabilities in E-cadherin-negative cells identified by genomic interrogation of isogenic cell lines and whole tumors.  Submitted to \textit{Cancer Prevention Research}.
+Kelly, S. T., Single, A. B., Telford, B. J., Beetham, H. G, Godwin, T. D., Chen, A., Black, M., A., and Guilford, P. J. (2017) Towards HDGC chemoprevention: vulnerabilities in \gls{E-cadherin}-negative cells identified by \gls{genomic} interrogation of isogenic cell lines and whole tumors.  Submitted to \textit{Cancer Prevention Research}.
 
-Kelly, S. T., Chen, A., Guilford, P. J., and Black, M. A. (2017) Synthetic lethal interaction prediction of target pathways in E-cadherin deficient breast cancers. Submitted to \textit{BMC Genomics}.
+Kelly, S. T., Chen, A., Guilford, P. J., and Black, M. A. (2017) Synthetic lethal interaction prediction of target pathways in \gls{E-cadherin} deficient breast cancers. Submitted to \textit{BMC \Glspl{genomic}}.
 \end{small}
 \iffalse
 \textbf{Community Blog Posts}
@@ -68,10 +68,10 @@ eResearch 2017 (Queenstown) February 20\textsuperscript{th}-22\textsuperscript{n
 Research Bazaar 2016 (Dunedin) February 2\textsuperscript{nd}-4\textsuperscript{th}
 
 eResearch 2016 (Queenstown) February 9\textsuperscript{th}-11\textsuperscript{th}
-%``Sifting the Needles in the Haystack: Permutation Resampling Biological Pathways in Cancer Genomic Interaction Data'' (Supported by REANNZ)
+%``Sifting the Needles in the Haystack: Permutation Resampling Biological Pathways in Cancer \Gls{genomic} Interaction Data'' (Supported by REANNZ)
 
 Genetics Otago Symposium 2016 (Dunedin) March 7\textsuperscript{th}-8\textsuperscript{th} 
-%``A Bioinformatics approach to Genetic Interactions: Synthetic Lethal Pathways with E-cadherin in Breast Cancer Genomics Data''
+%``A Bioinformatics approach to Genetic Interactions: Synthetic Lethal Pathways with \gls{E-cadherin} in Breast Cancer \Glspl{genomic} Data''
 
 DunDead: Zombie Science and Culture Festival 2014 (Dunedin) %Ignite Speaker
 August 16\textsuperscript{th}-17\textsuperscript{th}
@@ -88,7 +88,7 @@ June 30\textsuperscript{th}-July 2\textsuperscript{nd}
 
 \begin{small}
 Next Generation Sequencing Asia 2016 (Singapore) October 11\textsuperscript{th}-12\textsuperscript{th}
-%``Bioinformatic Investigations of Synthetic Lethal Interactions with E-cadherin in Breast Cancer''
+%``Bioinformatic Investigations of Synthetic Lethal Interactions with \gls{E-cadherin} in Breast Cancer''
 (Supported by the University of Otago Division of Health Sciences; Maurice and Phyllis Paykel Trust)
 
 Research Bazaar 2015 (Melbourne, Australia) February 16\textsuperscript{th}-18\textsuperscript{th}
@@ -119,7 +119,7 @@ Tokyo University Institute of Medical Science 2016 (Shirokanedai) October 24\tex
 
 National Institute of Genetics 2016 (Mishima) October 21\textsuperscript{st}
 
-RIKEN Division of Genomic Technologies 2016 (Yokohama) October 20\textsuperscript{th}
+RIKEN Division of \Gls{genomic} Technologies 2016 (Yokohama) October 20\textsuperscript{th}
 %``Analysis of Synthetic Lethal Pathways in Breast Cancer: A PhD project on genetic interactions with CDH1 inactivation in \gls{TCGA} data''
 
 \end{small}
@@ -131,7 +131,7 @@ RIKEN Division of Genomic Technologies 2016 (Yokohama) October 20\textsuperscrip
 Presentations within University of Otago Departments
 Department of Biochemistry 2017 PhD Seminar
 Upcoming Seminar (to schedule later upon completion of thesis)
-``Synthetic Lethal Interactions in Cancer Genomics Data: Prediction and Simulation''
+``Synthetic Lethal Interactions in Cancer \Glspl{genomic} Data: Prediction and Simulation''
 
 Department of Biochemistry 2016 Colloquia July 22nd
 ``Analysis of Synthetic Lethal Pathways in Breast Cancer: A PhD project on genetic interactions with CDH1 inactivation in \gls{TCGA} data''
