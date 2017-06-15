@@ -14,52 +14,53 @@ A level-1 auxiliary file: appendix_methods.aux
 A level-1 auxiliary file: appendix_chapt3.aux
 A level-1 auxiliary file: appendix_chapt4.aux
 A level-1 auxiliary file: appendix_chapt5.aux
-Reallocated field_info (elt_size=4) to 11578 items from 5000.
+Reallocated field_info (elt_size=4) to 11708 items from 5000.
 Database file #1: thesis.bib
 Reallocated str_pool (elt_size=1) to 130000 items from 65000.
 Reallocated str_pool (elt_size=1) to 195000 items from 130000.
 Warning--I didn't find a database entry for "UCSC2012"
+Warning--I didn't find a database entry for ""
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Warning--can't use both volume and number fields in Erdos1960
-You've used 252 entries,
+You've used 256 entries,
             3105 wiz_defined-function locations,
-            2269 strings with 147159 characters,
-and the built_in function-call counts, 240433 in all, are:
-= -- 21526
-> -- 10028
+            2297 strings with 148381 characters,
+and the built_in function-call counts, 244662 in all, are:
+= -- 21887
+> -- 10239
 < -- 205
-+ -- 9696
-- -- 2737
-* -- 18597
-:= -- 28649
-add.period$ -- 518
-call.type$ -- 252
-change.case$ -- 2639
-chr.to.int$ -- 253
-cite$ -- 505
-duplicate$ -- 19424
-empty$ -- 15992
-format.name$ -- 3628
-if$ -- 47785
++ -- 9908
+- -- 2795
+* -- 18936
+:= -- 29147
+add.period$ -- 526
+call.type$ -- 256
+change.case$ -- 2688
+chr.to.int$ -- 257
+cite$ -- 513
+duplicate$ -- 19737
+empty$ -- 16259
+format.name$ -- 3698
+if$ -- 48616
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 3323
-newline$ -- 1281
-num.names$ -- 1012
-pop$ -- 9361
+missing$ -- 3384
+newline$ -- 1301
+num.names$ -- 1028
+pop$ -- 9527
 preamble$ -- 1
-purify$ -- 2370
+purify$ -- 2415
 quote$ -- 0
-skip$ -- 8405
+skip$ -- 8562
 stack$ -- 0
-substring$ -- 17399
-swap$ -- 8009
+substring$ -- 17670
+swap$ -- 8159
 text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 2256
+type$ -- 2292
 warning$ -- 1
-while$ -- 1036
+while$ -- 1054
 width$ -- 0
-write$ -- 3538
-(There were 2 warnings)
+write$ -- 3594
+(There were 3 warnings)
