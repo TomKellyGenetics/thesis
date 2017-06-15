@@ -25,6 +25,9 @@
 %%
 \usepackage[phd]{otagothesis}     %% Use Otago page layout
 
+\usepackage[UKenglish]{babel}% http://ctan.org/pkg/babel
+\usepackage[UKenglish]{isodate}% http://ctan.org/pkg/isodate
+
 %\usepackage[longnamesfirst,round]{natbib} %% Use Natural Sciences bibliography
 %\usepackage[numbers]{natbib} %% Use Natural Sciences bibliography
 \usepackage[round, sort]{natbib} %% Use Natural Sciences bibliography
@@ -128,7 +131,9 @@
 %%
 \title{A Bioinformatics Approach to Synthetic Lethal Interactions in Breast Cancer with Gene Expression Data}
 \author{S. Thomas Kelly}
-\date{31 March 2017}
+\cleanlookdateon% Remove ordinal day reference
+\date{\today}
+%\date{30 June 2017}
 
 %%
 %% The library want to know all sorts of personal stuff!
