@@ -1,31 +1,31 @@
 %Background
 \textbf{Background}
 
-Synthetic lethal genetic interactions are re-emerging the post-genomics era due to their potential for precision medicine against cancers. Synthetic lethal drug design exploits functional redundancy with genes disrupted in cancers (including tumour suppressors) to develop specific treatments. \gls{E-cadherin}, encoded by \textit{CDH1}, is a tumour supressor gene with loss of function in breast and btomach cancers. Experimental screens have identified candidate synthetic lethal interactions for drug target triage which can be further supported with bioinformatics analysis. Furthermore, gene expression data is amenable to investigation of the pathway composition and structure of synthetic lethal candidates. 
+Synthetic lethal genetic interactions are re-emerging in the post-genomics era due to their potential for precision medicine against cancers. Synthetic lethal drug design exploits the functional redundancy of genes disrupted in cancers (including tumour suppressors) to develop specific treatments against them. \textit{CDH1}, which encodes \gls{E-cadherin}, is a tumour supressor gene with loss of function in breast and btomach cancers. Experimental screens have identified candidate synthetic lethal interactions for drug target triage, which can be further supported with bioinformatics analysis. Furthermore, gene expression data enables investigation of synthetic lethal pathways and graph structure of synthetic lethal genes within them. 
 
 %Methods \ Approach
 \textbf{Approach}
 
-A computational methodology, the Synthetic Lethal Prediction Tool (\acrshort{SLIPT}) was developed to detect synthetic lethal interactions in gene expression data. This methodology was demonstrated on interactions with \textit{CDH1} in breast and stomach cancer data from The Cancer \Glspl{genome} Atlas (\acrshort{TCGA}) project. Synthetic lethal genes and pathways were further investigated with unsupervised clustering, gene set over-representation analysis, metagenes, and permutation resampling. In particular, analyses focused on comparing \acrshort{SLIPT} gene candidates to an experimental \acrshort{siRNA} screen \citet{Telford2015}. Graph theory methods were also applied to the most supported pathways to test for pathway structure among between synthetic lethal candidates. Simulation and modelling was used to assess the statistical performance of \acrshort{SLIPT}, including simulated data with correlation structures derived from graph stuctures.
+A computational methodology, the Synthetic Lethal Prediction Tool (\acrshort{SLIPT}) has been developed to detect synthetic lethal interactions in gene expression data. This methodology was demonstrated on interactions with \textit{CDH1} in breast and stomach cancer data from The Cancer Genome Atlas (\acrshort{TCGA}) project. Synthetic lethal genes and pathways were further investigated with unsupervised clustering, gene set over-representation analysis, metagenes, and permutation resampling. In particular, analyses focused on comparing \acrshort{SLIPT} gene candidates to an experimental \acrshort{siRNA} screen \citet{Telford2015}. Network analysis methods were applied to the most supported pathways to test for pathway structure among between synthetic lethal candidates. Simulation and modelling was used to assess the statistical performance of \acrshort{SLIPT}, including simulated data with correlation structures derived from graph stuctures.
 
 %Results \ Findings
 \textbf{Findings}
 
 %chapt 3
-Many candidate synthetic lethal partners of \textit{CDH1} were detected in both \acrshort{TCGA} breast cancer. These genes clustered into several distinct groups, with distinct biological functions and elevated expression in different clinical subtypes. While the number of genes detected by both approaches was not significant, these contained significantly enriched pathways. In particular $G_{\alpha i}$ signalling, cytoplasmic microfibres, and extracellular fibrin clotting were robustly supported by both approaches which is consistent with the known cytoskeletal and cell signalling roles of \gls{E-cadherin} and validation of \acrshort{GPCR} pathways performed by \citet{Telford2015}. Many of these pathways were replicated in stomach cancer. The pathways supported only by \acrshort{SLIPT} included regulation of immune signalling and translational elongation which were unlikely to be detected in an isogenic cell line model but are are still candidates for further investigation. 
+Many candidate synthetic lethal partners of \textit{CDH1} were detected in both \acrshort{TCGA} breast cancer. These genes clustered into several distinct groups, with distinct biological functions and elevated expression in different clinical subtypes. While the number of genes detected by both approaches was not significant, these contained significantly enriched pathways. In particular, $G_{\alpha i}$ signalling, cytoplasmic microfibres, and extracellular fibrin clotting were robustly supported by both approaches, which is consistent with the known cytoskeletal and cell signalling roles of \gls{E-cadherin} and validation of \acrshort{GPCR} pathways performed by \citet{Telford2015}. Many of these pathways were replicated in stomach cancer data. The pathways supported only by \acrshort{SLIPT} included regulation of immune signalling and translational elongation which were not expected to be detected in an isogenic cell line model but are still candidates for further investigation. 
 
 %chapt 4
-Synthetic lethal candidates detected by \acrshort{SLIPT} and \acrshort{siRNA} were compared within graph structures of the candidate synthetic lethal pathways. These genes did not differ by network measures of importance or connectivity in the pathway. There was also little support for \acrshort{SLIPT} gene candidates being upstream or downstream of \acrshort{siRNA} gene candidates within a pathway, consistently across pathways. 
+Synthetic lethal candidates detected by \acrshort{SLIPT} and \acrshort{siRNA} were compared within graph structures of the candidate synthetic lethal pathways. These genes did not differ with respect to network metrics of importance or connectivity in the pathway. There was little support, across pathways, that \acrshort{SLIPT} gene candidates were consistently upstream or downstream of \acrshort{siRNA} gene candidates with pathways. 
 
 %chapt 5
 
-A model of synthetic lethality used to simulate gene expression data with synthetic lethal partners of a gene. The \acrshort{SLIPT} methodology had high statistical performance detecting few synthetic lethal partners, although this diminishes with more synthetic lethal partners or lower sample size. The \acrshort{SLIPT} methodology performs better than Pearson correlation or the $\chi^2$-test. In particular, it performs well with high specificity for datasets containing thousands of genes or genes positively correlated with the query gene (as expected in human expression data). It was also robust across correlation structures, including those derived from complex pathway structures and often distinguished synthetic lethal genes from those positively or negatively correlated with them. Therefore \acrshort{SLIPT} is appropriate to identify synthetic lethal genes within pathways and use candidate synthetic lethal genes (and their correlates) to identify synthetic lethal pathways.
+A model of synthetic lethality was used to simulate gene expression data with synthetic lethal partners of a gene. The \acrshort{SLIPT} methodology had high statistical performance, detecting few synthetic lethal partners, which diminished with more synthetic lethal partners or lower sample size. The \acrshort{SLIPT} methodology performed better than Pearson correlation or the $\chi^2$-test. In particular, it performed well with high specificity for datasets containing thousands of genes or genes positively correlated with the query gene (as expected to occur in expression data). \acrshort{SLIPT} was robust across correlation structures, including those derived from complex pathway structures and often distinguished synthetic lethal genes from those positively or negatively correlated with them. Therefore \acrshort{SLIPT} is appropriate to identify synthetic lethal genes within pathways and use candidate synthetic lethal genes (and their correlates) to identify synthetic lethal pathways.
 
 %Conclusions
 \clearpage
 \textbf{Summary}
 
-Thus my thesis has developed, evaluated and refined a bioinformatics approach to discovery of synthetic lethal genes solely from gene expression data. This approach has been demonstrated to detect biologically informative and clinically relevant candidate partners for \textit{CDH1} in breast and stomach cancers. These investigations have also involved the development of network analysis and simulation procedures which may be more widely applicable.
+Thus my thesis has developed, evaluated, and refined a bioinformatics approach to discovery of synthetic lethal genes solely from gene expression data. This approach has been demonstrated to detect biologically informative and clinically relevant candidate partners for \textit{CDH1} in breast and stomach cancers. These investigations have also involved the development of network analysis and simulation procedures which may be more widely applicable.
 
 \clearpage
 
@@ -91,13 +91,13 @@ Next Generation Sequencing Asia 2016 (Singapore) October 11\textsuperscript{th}-
 %``Bioinformatic Investigations of Synthetic Lethal Interactions with \gls{E-cadherin} in Breast Cancer''
 (Supported by the University of Otago Division of Health Sciences; Maurice and Phyllis Paykel Trust)
 
-Research Bazaar 2015 (Melbourne, Australia) February 16\textsuperscript{th}-18\textsuperscript{th}
+Research Bazaar 2015 (Melbourne) February 16\textsuperscript{th}-18\textsuperscript{th}
 %``My digital research toolkit''
 (Supported by the New Zealand eScience Infrastructure)
 
-Otago School of Medical Sciences Postgraduate Symposium 2015 (Dunedin, New Zealand) April 28\textsuperscript{th}-29\textsuperscript{th}
+Otago School of Medical Sciences Postgraduate Symposium 2015 (Dunedin) April 28\textsuperscript{th}-29\textsuperscript{th}
 
-QMB Cancer Drugs Satellite 2014 (Queenstown, New Zealand) August 24\textsuperscript{th}-25\textsuperscript{th}
+QMB Cancer Drugs Satellite 2014 (Queenstown) August 24\textsuperscript{th}-25\textsuperscript{th}
 %“Bioinformatics Prioritisation of Synthetic Lethal Targets for Drug Activity Against E-Cadherin Deficient Cancers”
 
 \end{small}
@@ -109,13 +109,13 @@ QMB Cancer Drugs Satellite 2014 (Queenstown, New Zealand) August 24\textsuperscr
 
 University of Otago Department of Biochemistry 2017 (Dunedin) November TBC
 
-Tohoku University 2016 (Sendai) November 11\textsuperscript{th}
+T\={o}hoku University 2016 (Sendai) November 11\textsuperscript{th}
 
 Okinawa Institute of Science and Technology 2016 (Onna) November 1\textsuperscript{st}
 
-Sokendai Graduate University 2016 (Hayama) October 25\textsuperscript{th}
+S\={o}kendai Graduate University 2016 (Hayama) October 25\textsuperscript{th}
 
-Tokyo University Institute of Medical Science 2016 (Shirokanedai) October 24\textsuperscript{th} 
+T\={o}ky\={o} University Institute of Medical Science 2016 (Shirokanedai) October 24\textsuperscript{th} 
 
 National Institute of Genetics 2016 (Mishima) October 21\textsuperscript{st}
 
@@ -185,7 +185,7 @@ Software packages in the R language have been released. Please refer to the appr
 
 \end{small}
 
-The \href{https://github.com/TomKellyGenetics/slipt-app}{\texttt{slipt-app}} GitHub repository also hosts an application for \gls{SLIPT} developed in the R \texttt{shiny} environment as part of a related project. There is also a digital copy of this thesis, including high resolution full-colour figures, hosted at:
+The \href{https://github.com/TomKellyGenetics/slipt-app}{\texttt{slipt-app}} GitHub repository also hosts an application for \gls{SLIPT} developed in the R \texttt{shiny} environment as part of a related project. There is a digital copy of this thesis, including high resolution full-colour figures, hosted at:
 
 \href{https://github.com/TomKellyGenetics/thesis/blob/master/thesis.pdf}{https://github.com/TomKellyGenetics/thesis/blob/master/thesis.pdf}
 
