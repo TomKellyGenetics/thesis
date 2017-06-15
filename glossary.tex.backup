@@ -295,7 +295,7 @@
 
 \newglossaryentry{diagnosis}{%
   name=diagnosis,
-  description={The identification of disease by clinical, cellular, and molecular},
+  description={The identification of disease by clinical, cellular, and molecular characteristics},
   plural=diagnose
 }
 
@@ -310,7 +310,7 @@
 \newglossaryentry{treatment}{%
   name=treatment,
   description={Medical procedures for a disease to improve patient outcomes},
-  plural=treatmense
+  plural=treatments
 }
 
 
@@ -467,108 +467,108 @@
 \newglossaryentry{high-throughput screen}{%
   name=high-throughput screen,
   description={An experimental procedure to perform a large scale series of chemical, genetic, or pharmacological tests},
-  plural=high-throughput screening
+  plural=high-throughput screens
 }
 
 
-\newglossaryentry{compound screen}{
+\newglossaryentry{compound screen}{%
   name=compound screen,
   description={A \gls{high-throughput screen} performed using a library of chemical compounds},
   plural=compound screening
 }
 
-\newglossaryentry{RNAi screen}{
+\newglossaryentry{RNAi screen}{%
   name=RNAi screen,
   description={A \gls{high-throughput screen} performed using a \acrfull{RNAi}},
   plural=RNAi screening
 }
 
 
-\newglossaryentry{MCF10A}{
+\newglossaryentry{MCF10A}{%
   name=MCF10A cell line,
   description={A non-tumorigenic epithelial cell line derived from breast tissue},
   plural=MCF10A cells
 }
 
 
-\newglossaryentry{in silico}{
+\newglossaryentry{in silico}{%
   name=\textit{in silico},
   description={An investigation conducted using computations, typically simulations or analyses},
   plural=in silico
 }
 
 
-\newglossaryentry{in vivo}{
+\newglossaryentry{in vivo}{%
   name=\textit{in vivo},
   description={An investigation conducted using in the context of a biological cell or organism, including pre-clincal models and clinical trials},
   plural=in vivo
 }
 
 
-\newglossaryentry{in vitro}{
+\newglossaryentry{in vitro}{%
   name=\textit{in vitro},
   description={An investigation conducted using a controlled experimental system to examine biomolecules},
   plural=in vitro
 }
 
 
-\newglossaryentry{de novo}{
+\newglossaryentry{de novo}{%
   name=\textit{de novo},
   description={A bioinformatics sequence assembly conducted entirely from raw genomics data without a reference sequence},
   plural=de novo
 }
 
 
-\newglossaryentry{scale-free}{
+\newglossaryentry{scale-free}{%
   name=scale-free,
   description={A property of a network which has a power law \gls{vertex degree} distribution, that is several highly connected \gls{hub} genes and many with very few connections},
   plural=scale-free
 }
 
 
-\newglossaryentry{small world}{
+\newglossaryentry{small world}{%
   name=small world,
   description={A property of a network which is highly connected and has a low characteristic path length, derived from the mean \gls{shortest path} length across all pairs of nodes},
-  plural=small world
+  plural=small worlds
 }
 
 
-\newglossaryentry{shortest path}{
+\newglossaryentry{shortest path}{%
   name=shortest path,
   description={A path with the fewest possible \glspl{edge} which connects two particular \glspl{vertex}},
   plural=shortest paths
 }
 
 
-\newglossaryentry{centrality}{
+\newglossaryentry{centrality}{%
   name=centrality,
   description={A network metric which identifies the most important \glspl{vertex} in a network},
   plural=centrality
 }
 
 
-\newglossaryentry{information centrality}{
+\newglossaryentry{information centrality}{%
   name=information centrality,
   description={A network \gls{centrality} metric which uses the impact of removing a \gls{vertex} on connections in the network},
   plural=information centrality
 }
 
 
-\newglossaryentry{pagerank centrality}{
+\newglossaryentry{PageRank centrality}{%
   name=PageRank centrality,
   description={A network \gls{centrality} metric which uses eigenvectors with a scaling factor \citep{Brin1998}},
   plural=pagerank centrality
 }
 
 
-\newglossaryentry{vertex degree}{
+\newglossaryentry{vertex degree}{%
   name=vertex degree,
   description={A network metric of connectivity of \glspl{vertex} which uses the number of edges connected to each \gls{vertex}},
   plural=vertex degree
 }
 
 
-\newglossaryentry{synergy}{
+\newglossaryentry{synergy}{%
   name=synergy,
   description={When multiple drugs have more effect than expected from the effect of each separately},
   plural=synergistic
@@ -589,36 +589,35 @@
 }
 
 
-\newglossaryentry{epistasis_bio}{
+\newglossaryentry{epistasis_bio}{%
   name=epistasis (biological),
   description={The effects of a gene modifying or masking the phenotype of another gene},
   plural=epistasis
 }
 
 
-\newglossaryentry{epistasis_stat}{
+\newglossaryentry{epistasis_stat}{%
   name=epistasis (statistical),
   description={A divergence of the observed double \gls{mutant} phenotype from that expected based on the respective phenotypes of single \glspl{mutant}  \citep{Fisher1919}},
   plural=epistasis
 }
 
 
-\newglossaryentry{pathway}{
+\newglossaryentry{pathway}{%
   name=pathway,
   description={A series of biomolecules that produces a particular product or biological function},
   plural=pathways
 }
 
 
-\newglossaryentry{molecular profile}{
+\newglossaryentry{molecular profile}{%
   name=molecular profile,
   description={A combination of genetic and biochemical measures which identifies characteristic traits of a tumour},
   plural=molecular profiles %ing?
 }
 
 
-\newglossaryentry{molecular subtype}
-{
+\newglossaryentry{molecular subtype}{%
   name=molecular subtype,
   description={A classification of cancers based on an identification using molecular properties},
   plural=molecular subtypes %ing?
@@ -762,7 +761,7 @@
 
 \newacronym[description={synthetic Lethality (mutation)}]{mtSL}{mtSL}{synthetic lethality (mutation)}
 
-\newacronym[description={Synthetic Lethal Interaction Prediction Tool (with respect to mutation)}]{mtSLIPT}{mtSLIPT}{mutation SLIPT}%
+\newacronym[description={Synthetic Lethal Interaction Prediction Tool (against mutation)}]{mtSLIPT}{mtSLIPT}{mutation SLIPT}%
 
 \newacronym[description={Robust Multiarray Averaging (normalisation}]{RMA}{RMA}{Robust Multiarray Averaging}%
 
@@ -770,7 +769,7 @@
 
 \newacronym[description={Area Under the Receiver Operating Characteristic (curve)}]{AUROC}{AUROC}{area under \gls{ROC}}%
 
-\newacronym[description={Reciever Pperating Characteristic (curve)}]{ROC}{ROC}{receiver operating characteristic}%
+\newacronym[description={Reciever Operating Characteristic (curve)}]{ROC}{ROC}{receiver operating characteristic}%
 
 \newacronym[description={Analysis of Variance}]{ANOVA}{ANOVA}{analysis of variance}%
 
@@ -798,7 +797,7 @@
 
 \newacronym[description={Synthetic Gene Array (technique)}, plural=SGAs,firstplural=synthetic gene arrays]{SGA}{SGA}{synthetic gene array}%
 
-\newacronym[description={Microsatellite instability}]{MSI}{MSI}{microsatellite instability}%
+\newacronym[description={Microsatellite Instability}]{MSI}{MSI}{microsatellite instability}%
 
 %%linked entry
 \iffalse

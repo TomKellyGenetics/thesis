@@ -14,9 +14,9 @@ Together these investigations into structural relationships demonstrate how a co
 
 \FloatBarrier
 
-The \gls{graph} structure for Reactome pathways was obtained from Pathway Commons via \gls{BioPAX} (as described in Section~\ref{methods:graph_data}). The pathways describe the (directional) relationships between biomolecules, including genes that encode proteins in biological pathways. These relationships include cell signalling (e.g., kinase phosphorylation cascades), gene regulation (e.g., transcription factors, chromatin modifiers, \acrshort{RNA} binding proteins), and metabolism (e.g., the product of an enzyme being the substrate of another). Together these relationships describe the known functional pathways in a human cell with a reasonable resolution, from a curated database supported by publications documenting pathway relationships. 
+The \glslink{graph}{graph} structure for Reactome pathways was obtained from Pathway Commons via \gls{BioPAX} (as described in Section~\ref{methods:graph_data}). The pathways describe the (directional) relationships between biomolecules, including genes that encode proteins in biological pathways. These relationships include cell signalling (e.g., kinase phosphorylation cascades), gene regulation (e.g., transcription factors, chromatin modifiers, \acrshort{RNA} binding proteins), and metabolism (e.g., the product of an enzyme being the substrate of another). Together these relationships describe the known functional pathways in a human cell with a reasonable resolution, from a curated database supported by publications documenting pathway relationships. 
 
-Pathway structures from the Reactome network (as described in Section~\ref{methods:subgraphs}) were used to derive the \gls{graph} structure of each biological pathway. The \gls{synthetic lethal} candidate genes for notable pathways discussed in Chapter~\ref{chap:SLIPT}, including candidate \gls{synthetic lethal} pathways of \textit{CDH1}, were examined to show the \gls{SLIPT} and \gls{siRNA} candidates within these pathways. The \gls{synthetic lethal} genes considered here are those candidates detected by \gls{SLIPT} (as described in Section~\ref{methods:SLIPT}) in \gls{TCGA} breast cancer \glslink{gene expression}{expression} and \gls{mutation} data \citep{TCGA2012} in comparison to the candidate gene partners from the \gls{siRNA} screening in breast cell lines \citep{Telford2015}. 
+Pathway structures from the Reactome network (as described in Section~\ref{methods:subgraphs}) were used to derive the \glslink{graph}{graph} structure of each biological pathway. The \gls{synthetic lethal} candidate genes for notable pathways discussed in Chapter~\ref{chap:SLIPT}, including candidate \gls{synthetic lethal} pathways of \textit{CDH1}, were examined to show the \gls{SLIPT} and \gls{siRNA} candidates within these pathways. The \gls{synthetic lethal} genes considered here are those candidates detected by \gls{SLIPT} (as described in Section~\ref{methods:SLIPT}) in \gls{TCGA} breast cancer \glslink{gene expression}{expression} and \gls{mutation} data \citep{TCGA2012} in comparison to the candidate gene partners from the \gls{siRNA} screening in breast cell lines \citep{Telford2015}. 
 
 \FloatBarrier
 
@@ -136,7 +136,7 @@ Vertex degree (the number of connections) for each gene is a fundamental propert
    %}
    }
    \end{center}
-   \caption[Synthetic lethality and vertex degree]{\small \textbf{Synthetic lethality and vertex degree.} The number of connected genes (\gls{vertex degree}) was compared (on a log-scale) across genes deteced by \gls{SLIPT} and \gls{siRNA} screening in the Reactome PI3K cascade pathway. There were very few differences in \gls{vertex} degree between the groups, although genes detected by \gls{siRNA} included those with the fewest connections. 
+   \caption[Synthetic lethality and vertex degree]{\small \textbf{Synthetic lethality and vertex degree.} The number of connected genes (\gls{vertex degree}) was compared (on a log-scale) across genes deteced by \gls{SLIPT} and \gls{siRNA} screening in the Reactome PI3K cascade pathway. There were very few differences in \glslink{vertex}{vertex} degree between the groups, although genes detected by \gls{siRNA} included those with the fewest connections. 
 }
 \label{fig:SL_Pathway_PI3K_Vertex_Degree}
 %\end{mdframed}
@@ -162,7 +162,7 @@ siRNA$\times$SLIPT     &     1    &    0      &    0.05      &   0.0000     &   
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Analysis of variance for \gls{vertex} degree against \gls{synthetic lethal} detection approaches (with an interaction term)
+Analysis of variance for \glslink{vertex}{vertex} degree against \gls{synthetic lethal} detection approaches (with an interaction term)
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -171,7 +171,7 @@ Analysis of variance for \gls{vertex} degree against \gls{synthetic lethal} dete
 
 The results for the PI3K pathway were very similar when testing \glspl{synthetic lethal} against \textit{CDH1} \gls{mutation} (\acrshort{mtSLIPT}). In this case, there is also indication that \acrshort{mtSLIPT}-specific genes may have higher connectivity than those detected by \gls{siRNA} screening (shown in Appendix Figure~\ref{fig:mtSL_Pathway_PI3K_Vertex_Degree}).
 
-However, these apparent differences in \gls{vertex} degree may be due to fewer genes being detected by either approach. There was no statistically significant effect of either computational or experimental \gls{synthetic lethal} detection method on \gls{vertex} degree, as determined by \gls{ANOVA} (shown by Table~\ref{tab:SL_Pathway_PI3K_Vertex_Degree} and Appendix Table~\ref{tab:mtSL_Pathway_PI3K_Vertex_Degree}). Thus \gls{synthetic lethal} detection does not discriminate among genes by their connectivity in a pathway network, nor is either approach constrained to detecting highly connected genes. Both approaches have been demonstrated to detect genes with many and very few connections.
+However, these apparent differences in \glslink{vertex}{vertex} degree may be due to fewer genes being detected by either approach. There was no statistically significant effect of either computational or experimental \gls{synthetic lethal} detection method on \glslink{vertex}{vertex} degree, as determined by \gls{ANOVA} (shown by Table~\ref{tab:SL_Pathway_PI3K_Vertex_Degree} and Appendix Table~\ref{tab:mtSL_Pathway_PI3K_Vertex_Degree}). Thus \gls{synthetic lethal} detection does not discriminate among genes by their connectivity in a pathway network, nor is either approach constrained to detecting highly connected genes. Both approaches have been demonstrated to detect genes with many and very few connections.
 
 \FloatBarrier
 
@@ -528,7 +528,7 @@ Network analysis techniques were therefore applied to formalise and quantify the
 
 Similarly, a network hierarchy based on biological context (ordered from receiving extracellular stimuli to affecting downstream \gls{gene expression} and cell growth) was devised to test whether \gls{PI3K} genes of a particular upstream or downstream level were more frequently detected as \gls{synthetic lethal} candidates. However, this approach was unable to ascertain whether genes detected by either method were further upstream or downstream in the pathway and there was no statistical evidence that either method differed in which levels of this structure were detected.
 
-A measure of \glslink{graph}{pathway} structure between individual \gls{SLIPT} and \gls{siRNA} genes within a pathway was also devised using the direction of \glspl{shortest path} in a directed \gls{graph} structure. This is amenable to detecting the consensus directionality of the pathway across pairs of genes detected by either method. The \glslink{graph}{pathway} structure methodology developed here is generally applicable to comparison of \glslink{vertex}{node} groups (allowing overlapping) including genes in biological pathways and their detection by different methodologies. While the \glslink{graph}{pathway} structure measure alone is not able to detect structural relationships between gene groups (e.g., \gls{SLIPT} and \gls{siRNA} gene candidates), it is amenable to resampling to determine whether these relationships are statistically significant.
+A measure of \glslink{graph}{pathway} structure between individual \gls{SLIPT} and \gls{siRNA} genes within a pathway was also devised using the direction of \glspl{shortest path} in a directed \glslink{graph}{graph} structure. This is amenable to detecting the consensus directionality of the pathway across pairs of genes detected by either method. The \glslink{graph}{pathway} structure methodology developed here is generally applicable to comparison of \glslink{vertex}{node} groups (allowing overlapping) including genes in biological pathways and their detection by different methodologies. While the \glslink{graph}{pathway} structure measure alone is not able to detect structural relationships between gene groups (e.g., \gls{SLIPT} and \gls{siRNA} gene candidates), it is amenable to resampling to determine whether these relationships are statistically significant.
 
 \section{Summary}
 
@@ -560,11 +560,11 @@ Furthermore, the resampling procedure demonstrated in this chapter is more widel
 \paragraph{Summary}
 
   \begin{itemize}
-   \item Synthetic Lethal genes were explored within a \gls{graph} structures for key pathways identified previously 
+   \item Synthetic Lethal genes were explored within a \glslink{graph}{graph} structures for key pathways identified previously 
    
    \bigskip
    
-   \item In some cases these \gls{graph} structures appeared to have relationships between \gls{synthetic lethal} genes  
+   \item In some cases these \glslink{graph}{graph} structures appeared to have relationships between \gls{synthetic lethal} genes  
    
    \bigskip
    
