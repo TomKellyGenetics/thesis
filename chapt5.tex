@@ -287,7 +287,7 @@ Simple pathway modules were used to test the effect of \glslink{graph}{pathway} 
 %%  \resizebox{\textwidth}{!}{
 %         \begin{center}
 %
-        \subcaptionbox{Converging Module \label{fig:simple_graph2:first}}{%
+        \subcaptionbox{Converging module \label{fig:simple_graph2:first}}{%
             \fbox{
             \includegraphics[width=0.25\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf}}
             }
@@ -333,7 +333,7 @@ Simple pathway modules were used to test the effect of \glslink{graph}{pathway} 
 %\end{mdframed}
 \end{figure*}
 
-As previously observed (in Section~\ref{chapt2:simulation_2015}), performance declined with higher numbers of \gls{synthetic lethal} genes and lower sample sizes. However, the sensitivity of \gls{SLIPT} is high with conventional p-value thresholds (adjusted by \{gls{FDR}). \Gls{synthetic lethal} partners are often distinguishable for non \gls{synthetic lethal} genes, even in simple highly correlated networks. The small number of genes and their high correlation has an impact on the \gls{ROC} curves for higher numbers of \gls{synthetic lethal} partners which are skewed compared to those observed previously. Specificity cannot be tested if all potential partner genes are \gls{synthetic lethal} which limits the number of \gls{synthetic lethal} genes that can be tested. 
+As previously observed (in Section~\ref{chapt2:simulation_2015}), performance declined with higher numbers of \gls{synthetic lethal} genes and lower sample sizes. However, the sensitivity of \gls{SLIPT} is high with conventional p-value thresholds (adjusted by \gls{FDR}). \Gls{synthetic lethal} partners are often distinguishable for non \gls{synthetic lethal} genes, even in simple highly correlated networks. The small number of genes and their high correlation has an impact on the \gls{ROC} curves for higher numbers of \gls{synthetic lethal} partners which are skewed compared to those observed previously. Specificity cannot be tested if all potential partner genes are \gls{synthetic lethal} which limits the number of \gls{synthetic lethal} genes that can be tested. 
 
 These results were consistent between the pathway modules of diverging (in Figure~\ref{fig:simulation1205_randx_Graph1cf2:Graph1}) and converging signals (in Figure~\ref{fig:simulation1205_randx_Graph1cf2:Graph2}). The \gls{AUROC} performance and underlying curves were strikingly similar between these \gls{graph} structures (as shown in Figures~\ref{fig:simulation1205_randx_Graph1} and~\ref{fig:simulation1205_randx_Graph2}). Thus the performance of \gls{SLIPT} was not perturbed by \glslink{graph}{pathway} structure, specifically the direction of pathway relationships since these \gls{graph} structures also demonstrate pathways in opposite direction. In a direct comparison (shown in Figure~\ref{fig:simulation1205_randx_Graph1cf2:Compare}), the performance of simulations did not differ across parameter values in these simple \glspl{graph} and therefore \gls{SLIPT} is robust to pathway direction.
 
@@ -346,12 +346,12 @@ These results were consistent between the pathway modules of diverging (in Figur
        \subcaptionbox{Diverging Module \label{fig:simulation1205_randx_Graph1cf2:Graph1}}{%
            \includegraphics[width=0.3\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf}}
         }%
-       \subcaptionbox{Converging Module \label{fig:simulation1205_randx_Graph1cf2:Graph2}}{%
+       \subcaptionbox{Converging module \label{fig:simulation1205_randx_Graph1cf2:Graph2}}{%
            \includegraphics[width=0.3\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf}}
         }%
 
 %
-        \subcaptionbox{Performance Between Graph Structures \label{fig:simulation1205_randx_Graph1cf2:Compare}}{%
+        \subcaptionbox{Performance between Graph Structures \label{fig:simulation1205_randx_Graph1cf2:Compare}}{%
             \includegraphics[width=0.55\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Graph2(1)".pdf}}
         }%
         %\subcaptionbox{Corresponding $\chi^2$ values}{%
@@ -402,7 +402,7 @@ A more complex \gls{graph} structure was used to examine the performance of dete
 %\end{mdframed}
 \end{figure*}
 
-When detecting \gls{synthetic lethal} genes with \gls{SLIPT} using adjusted (\{gls{FDR}) p-value thresholds, the performance differences were primarily due to changes in specificity, as the small numbers of \gls{synthetic lethal} genes still had highly significant p-values. Despite lower specificity and performance in \gls{ROC} curves, the accuracy increases and false positive rate decreases desirably with higher numbers of \gls{synthetic lethal} genes due to the high sensitivity and proportion of \gls{synthetic lethal} genes detected. Therefore the thresholds imposed by adjusted p-values appear to be appropriate for detecting \gls{synthetic lethal} partners, even in strongly correlated pathways, at least in these small-scale test cases.
+When detecting \gls{synthetic lethal} genes with \gls{SLIPT} using adjusted (\gls{FDR}) p-value thresholds, the performance differences were primarily due to changes in specificity, as the small numbers of \gls{synthetic lethal} genes still had highly significant p-values. Despite lower specificity and performance in \gls{ROC} curves, the accuracy increases and false positive rate decreases desirably with higher numbers of \gls{synthetic lethal} genes due to the high sensitivity and proportion of \gls{synthetic lethal} genes detected. Therefore the thresholds imposed by adjusted p-values appear to be appropriate for detecting \gls{synthetic lethal} partners, even in strongly correlated pathways, at least in these small-scale test cases.
 
 An artifact of these small test cases led to the skewed \gls{ROC} curves (as discussed in Section~\ref{chapt5:graphsim_performance_simple}), which may be the result of the low number of non-synthetic lethal genes to identify as true negatives, affecting the accuracy of specificity. This issue does not occur in larger, more complex \gls{graph} structures, even with modest total numbers of genes and high correlations (as shown in Section~\ref{chapt5:complex_graphs}). This issue is unlikely to occur in large \glslink{gene expression}{expression} datasets with many non \gls{synthetic lethal} genes, as shown previously (in Section~\ref{chapt2:simulation_2015} and~\ref{chapt5:graphsim_performance_simple}) with \gls{graph} structures in larger datasets (in Section~\ref{chapt5:graphsim_performance_20K}). 
 
@@ -414,7 +414,7 @@ An artifact of these small test cases led to the skewed \gls{ROC} curves (as dis
 
 \FloatBarrier
 
-Simulations of \glspl{synthetic lethal} in \glslink{gene expression}{expression} data were also performed with correlation structures derived from \glspl{graph} containing inhibiting relationships (as are commonplace in biological pathways) which produce negative correlations. As shown in Figure~\ref{fig:simulation1205_randx_Graph1i}, these are not an issue for detection by \gls{SLIPT}. Rather, the \gls{SLIPT} procedure performs well on simple graph modules with highly negative correlations. With \gls{synthetic lethal} detection based on p-value (adjusted by \{gls{FDR}), there was higher specificity, higher accuracy, and lower false positive rate in an inhibitory graph than the same graph with activating relationships (as shown by Figure~\ref{fig:simulation1205_randx_Graph1}).
+Simulations of \glspl{synthetic lethal} in \glslink{gene expression}{expression} data were also performed with correlation structures derived from \glspl{graph} containing inhibiting relationships (as are commonplace in biological pathways) which produce negative correlations. As shown in Figure~\ref{fig:simulation1205_randx_Graph1i}, these are not an issue for detection by \gls{SLIPT}. Rather, the \gls{SLIPT} procedure performs well on simple graph modules with highly negative correlations. With \gls{synthetic lethal} detection based on p-value (adjusted by \gls{FDR}), there was higher specificity, higher accuracy, and lower false positive rate in an inhibitory graph than the same graph with activating relationships (as shown by Figure~\ref{fig:simulation1205_randx_Graph1}).
 
 \begin{figure*}[!htbp]
 %\begin{mdframed}
@@ -467,7 +467,7 @@ The \gls{SLIPT} methodology likely performs better in biological pathways (which
         }%
 
 %
-        \subcaptionbox{Performance Between Graph Structures}{%
+        \subcaptionbox{Performance between Graph Structures}{%
             \label{fig:simulation1205_randx_Graph1cf1i:Compare}
             \includegraphics[width=0.55\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph1_ROC_Compare(1)".pdf}}
         }%
@@ -483,7 +483,7 @@ The \gls{SLIPT} methodology likely performs better in biological pathways (which
 %\end{mdframed}
 \end{figure*}
 
-Similarly, more complex \gls{graph} structures with entirely inhibiting relationships (negative correlations) also perform desirably on p-value thresholds (adjusted by \{gls{FDR}) and have high performance across increasing numbers of \gls{synthetic lethal} genes, particularly for sufficiently high sample sizes (as shown by Figure~\ref{fig:simulation1205_randx_Graph4i}). However, this is not necessarily the case for \gls{graph} structures with a combination of activating and inhibiting relationships (i.e., containing positive and negative correlations) As shown by Figure~\ref{fig:simulation1205_randx_Graph4i2}, such a mixed \glslink{graph}{network} structure does not necessarily have high performance across parameters as observed for purely inhibiting networks.
+Similarly, more complex \gls{graph} structures with entirely inhibiting relationships (negative correlations) also perform desirably on p-value thresholds (adjusted by \gls{FDR}) and have high performance across increasing numbers of \gls{synthetic lethal} genes, particularly for sufficiently high sample sizes (as shown by Figure~\ref{fig:simulation1205_randx_Graph4i}). However, this is not necessarily the case for \gls{graph} structures with a combination of activating and inhibiting relationships (i.e., containing positive and negative correlations) As shown by Figure~\ref{fig:simulation1205_randx_Graph4i2}, such a mixed \glslink{graph}{network} structure does not necessarily have high performance across parameters as observed for purely inhibiting networks.
 
 \begin{figure*}[!htbp]
 %\begin{mdframed}
@@ -539,11 +539,11 @@ In contrast, the combination of activating and inhibiting relationships had slig
         }%
 
 %
-        \subcaptionbox{Performance Between Graphs (a) and (b)}{%
+        \subcaptionbox{Performance between Graphs (a) and (b)}{%
             \label{fig:simulation1205_randx_Graph4cf4i:Compare4i}
             \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(1)".pdf}}
         }%
-        \subcaptionbox{Performance Between Graphs (a) and (c)}{%
+        \subcaptionbox{Performance between Graphs (a) and (c)}{%
             \label{fig:simulation1205_randx_Graph4cf4i:Compare4i2}
             \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(4)".pdf}}
         }%
@@ -631,7 +631,7 @@ For instance, detection of a \gls{synthetic lethal} gene in an activating \gls{g
 \end{figure*}
 \fi
 
-This is consistent with previous observations that \gls{SLIPT} performed optimally for a single \gls{synthetic lethal} partner in this network (in Figure~\ref{fig:simulation1205_randx_Graph4}). Despite optimal performance in a \gls{ROC} curve irrespective of detection threshold, many of the highly correlated genes would be detected as false positives using a conventional p-value threshold (even if adjusted by \{gls{FDR}) from a $\chi^2$ test with 4 degrees of freedom as performed by \gls{SLIPT} (as described in Section~\ref{methods:SLIPT}). In particular, the genes that are adjacent to the \gls{synthetic lethal} gene ``D'' within the \gls{graph} structure exhibited high test statistics across simulations which would often be reported as false positives (as shown in Figure~\ref{fig:simulation1206_Str_randx_Graph4D:vioplot}). This is not specific to example of gene ``D'', with the neighbouring genes exhibiting higher $\chi^2$ test statistics for each gene in the network when it is designated as the \gls{synthetic lethal} partner (as shown in Figure~\ref{fig:simulation1206_Str_randx_Graph4}).
+This is consistent with previous observations that \gls{SLIPT} performed optimally for a single \gls{synthetic lethal} partner in this network (in Figure~\ref{fig:simulation1205_randx_Graph4}). Despite optimal performance in a \gls{ROC} curve irrespective of detection threshold, many of the highly correlated genes would be detected as false positives using a conventional p-value threshold (even if adjusted by \gls{FDR}) from a $\chi^2$ test with 4 degrees of freedom as performed by \gls{SLIPT} (as described in Section~\ref{methods:SLIPT}). In particular, the genes that are adjacent to the \gls{synthetic lethal} gene ``D'' within the \gls{graph} structure exhibited high test statistics across simulations which would often be reported as false positives (as shown in Figure~\ref{fig:simulation1206_Str_randx_Graph4D:vioplot}). This is not specific to example of gene ``D'', with the neighbouring genes exhibiting higher $\chi^2$ test statistics for each gene in the network when it is designated as the \gls{synthetic lethal} partner (as shown in Figure~\ref{fig:simulation1206_Str_randx_Graph4}).
 
 Thus the \gls{synthetic lethal} signal propagates from the true \gls{synthetic lethal} gene throughout the network such genes nearer to the true \gls{synthetic lethal} gene (more highly correlated) have higher test statistics and are more likely to be detected by \gls{SLIPT} as false positives. This tendency for adjacent genes to be detected as \gls{synthetic lethal} false positives is consistent with the \gls{synthetic lethal} pathways being more concordant between \gls{SLIPT} in \gls{TCGA} data \citep{TCGA2012} and the \gls{siRNA} screen \citep{Telford2015} than individual gene results (in Chapter~\ref{chap:SLIPT}). False positive genes are therefore still more likely to be involved in a \gls{synthetic lethal} pathway by being correlated with a true \gls{synthetic lethal} gene and \gls{synthetic lethal} pathways are likely to have many genes detected by \gls{SLIPT} giving a consensus of evidence, supporting the pathway over-representation approach in particular which may account for how it differs from pathway \glspl{metagene}. Furthermore, \gls{SLIPT} is still viable to detect true \gls{synthetic lethal} partners or prioritise those most likely to be experimentally validated since those with the strongest support (i.e, higher $\chi^2$ values and more significant p-values) are more likely to be the underlying \gls{synthetic lethal} gene.
 
@@ -682,7 +682,7 @@ As noted in Section~\ref{chapt5:graphsim_performance_simple}, the high proportio
 
 %\FloatBarrier
 
-The simulations performed in Section~\ref{chapt5:graphsim_performance_simple} were replicated within a dataset of 20,000 genes with the rest being composed on non \gls{synthetic lethal} genes without correlation structure. The aforementioned issue with specificity in a higher number of underlying \gls{synthetic lethal} genes did not occur in a simple \gls{graph} structure (as shown in Figure~\ref{fig:simulation1207_randx_Graph1}). For such a small graph module of highly correlated genes within a \gls{gene expression} dataset, detection of \gls{synthetic lethal} genes within the network by \gls{SLIPT} and distinguishing these from the larger dataset performed well across parameter values. In this case, a reduction in sensitivity was the cause of poorer performance as a higher number of non \gls{synthetic lethal} genes were detected as true negative with a low false positive rate and high accuracy. This further supports the use of stringent $\chi^2$ p-value thresholds (adjusted by \{gls{FDR}) for testing for \glspl{synthetic lethal} in \gls{gene expression} data across the number of genes in human and cancer data.
+The simulations performed in Section~\ref{chapt5:graphsim_performance_simple} were replicated within a dataset of 20,000 genes with the rest being composed on non \gls{synthetic lethal} genes without correlation structure. The aforementioned issue with specificity in a higher number of underlying \gls{synthetic lethal} genes did not occur in a simple \gls{graph} structure (as shown in Figure~\ref{fig:simulation1207_randx_Graph1}). For such a small graph module of highly correlated genes within a \gls{gene expression} dataset, detection of \gls{synthetic lethal} genes within the network by \gls{SLIPT} and distinguishing these from the larger dataset performed well across parameter values. In this case, a reduction in sensitivity was the cause of poorer performance as a higher number of non \gls{synthetic lethal} genes were detected as true negative with a low false positive rate and high accuracy. This further supports the use of stringent $\chi^2$ p-value thresholds (adjusted by \gls{FDR}) for testing for \glspl{synthetic lethal} in \gls{gene expression} data across the number of genes in human and cancer data.
 
 \begin{figure*}[!htbp]
 %\begin{mdframed}
@@ -728,7 +728,7 @@ In a direct comparison with simulations in the \gls{graph} structure alone (as p
            \label{fig:simulation1205_randx_Graph1cf20K:Graph1}
            \includegraphics[width=0.3\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf}}
         }%
-       \subcaptionbox{Converging Module}{%
+       \subcaptionbox{Converging module}{%
            \label{fig:simulation1205_randx_Graph1cf20K:Graph2}
            \includegraphics[width=0.3\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf}}
         }%
@@ -742,7 +742,7 @@ In a direct comparison with simulations in the \gls{graph} structure alone (as p
             \label{fig:simulation1205_randx_Graph1cf20K:Compare1}
             \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph1_ROC_Compare(2)".pdf}}
         }%
-        \subcaptionbox{Performance in Converging Module}{%
+        \subcaptionbox{Performance in Converging module}{%
             \label{fig:simulation1205_randx_Graph1cf20K:Compare2}
             \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph2_ROC_Compare(2)".pdf}}
         }%
@@ -844,7 +844,7 @@ This poorer performance is unlikely to occur due to highly negatively correlated
 
 It more likely that the poorer performance stems from negative correlations between \gls{synthetic lethal} genes which makes them more difficult to individually detect (as observed in Section~\ref{chapt5:graphsim_performance_inhib}). As discussed in Section~\ref{chapt5:graphsim_str}, this is likely an artifact of the simulation procedure selecting random \gls{synthetic lethal} genes which may be biologically implausible (e.g., strong inhibitory relationships between them). Therefore the poorer performing inhibiting \glspl{graph} within larger datasets are not cause for concern as the cases where \gls{SLIPT} performs poorly are combinations of simulated \gls{synthetic lethal} genes which are unlikely to occur within biological pathways. Furthermore the simulation procedure has used included higher-order \gls{synthetic lethal} to produce the weakest signal of \glspl{synthetic lethal} for individual partner genes and these are still detectable by \gls{SLIPT}.
 
-%This interpretation is consistent with the poorly performing simulations in inhibiting \glspl{graph} having a low sensitivity (in Figures~\ref{fig:simulation1207_randx_Graph1i}\nobreakdash--\ref{fig:simulation1207_randx_Graph7i2}). These simulations still show high specificity and accuracy with a low false positive rate for \gls{synthetic lethal} detection with p-value thresholds (adjusted by \{gls{FDR}) for \gls{SLIPT}. Such results support \gls{SLIPT} as a stringent methodology to detect \gls{synthetic lethal} interactions in large \gls{gene expression} data, excluding the majority of false positives with many of those remaining belonging to \gls{synthetic lethal} pathways.
+%This interpretation is consistent with the poorly performing simulations in inhibiting \glspl{graph} having a low sensitivity (in Figures~\ref{fig:simulation1207_randx_Graph1i}\nobreakdash--\ref{fig:simulation1207_randx_Graph7i2}). These simulations still show high specificity and accuracy with a low false positive rate for \gls{synthetic lethal} detection with p-value thresholds (adjusted by \gls{FDR}) for \gls{SLIPT}. Such results support \gls{SLIPT} as a stringent methodology to detect \gls{synthetic lethal} interactions in large \gls{gene expression} data, excluding the majority of false positives with many of those remaining belonging to \gls{synthetic lethal} pathways.
 
 
 \FloatBarrier
@@ -853,9 +853,9 @@ It more likely that the poorer performance stems from negative correlations betw
 \label{chapt5:complex_graphs}
 %%intro blurb
 
-As shown in Figure~\ref{fig:simulation1205_randx_Graph5}, sensitivity declines over a greater range for the number of \gls{synthetic lethal} partners in a larger network with a tradeoff with specificity. However,  the accuracy declines for greater numbers of \gls{synthetic lethal} partners and the false positive rate peaks at intermediate values. In this range, difference between simulations varies with greater sample size. The \gls{AUROC} results were similar for other more complex \gls{graph} structures (as shown in Figures~\ref{fig:simulation1205_randx_Graph6} and~\ref{fig:simulation1205_randx_Graph7}). These \glspl{graph} performed similarly to each other, although they had differences from Figure~\ref{fig:simulation1205_randx_Graph5} in their sensitivity and specificity at an adjusted (\{gls{FDR}) p-value threshold. This difference may stem from different ratios of \gls{synthetic lethal} and non-synthetic lethal genes to detect, since the latter \glspl{graph} (in Figures~\ref{fig:simulation1205_randx_Graph6} and~\ref{fig:simulation1205_randx_Graph7}) had half the total genes to that shown in Figure~\ref{fig:simulation1205_randx_Graph5}.
+As shown in Figure~\ref{fig:simulation1205_randx_Graph5}, sensitivity declines over a greater range for the number of \gls{synthetic lethal} partners in a larger network with a tradeoff with specificity. However,  the accuracy declines for greater numbers of \gls{synthetic lethal} partners and the false positive rate peaks at intermediate values. In this range, difference between simulations varies with greater sample size. The \gls{AUROC} results were similar for other more complex \gls{graph} structures (as shown in Figures~\ref{fig:simulation1205_randx_Graph6} and~\ref{fig:simulation1205_randx_Graph7}). These \glspl{graph} performed similarly to each other, although they had differences from Figure~\ref{fig:simulation1205_randx_Graph5} in their sensitivity and specificity at an adjusted (\gls{FDR}) p-value threshold. This difference may stem from different ratios of \gls{synthetic lethal} and non-synthetic lethal genes to detect, since the latter \glspl{graph} (in Figures~\ref{fig:simulation1205_randx_Graph6} and~\ref{fig:simulation1205_randx_Graph7}) had half the total genes to that shown in Figure~\ref{fig:simulation1205_randx_Graph5}.
 
-However, the \gls{graph} structures (of similar size) were highly distinct and yet had similar performance profiles across parameters. Therefore \gls{SLIPT} is robust across \glslink{graph}{pathway} structures and is more affected by the number of genes to detect and the proportion of them out of those tested. As such findings from previous simulations in similar correlation structures (in Section~\ref{chapt2:simulation_2015}) should be applicable to \glslink{gene expression}{expression} data with more complex correlation structures such as those occurring in biological pathways. Specifically, \gls{synthetic lethal} partners are distinguishable from closely correlated genes in the context of a biological pathway network both irrespective of thresholds (shown by \gls{ROC}) and with the sensitivity and specificity of p-value thresholds (adjusted by \{gls{FDR}) as used for \gls{SLIPT} (in Chapters~\ref{chap:SLIPT} and~\ref{chap:Pathways}).
+However, the \gls{graph} structures (of similar size) were highly distinct and yet had similar performance profiles across parameters. Therefore \gls{SLIPT} is robust across \glslink{graph}{pathway} structures and is more affected by the number of genes to detect and the proportion of them out of those tested. As such findings from previous simulations in similar correlation structures (in Section~\ref{chapt2:simulation_2015}) should be applicable to \glslink{gene expression}{expression} data with more complex correlation structures such as those occurring in biological pathways. Specifically, \gls{synthetic lethal} partners are distinguishable from closely correlated genes in the context of a biological pathway network both irrespective of thresholds (shown by \gls{ROC}) and with the sensitivity and specificity of p-value thresholds (adjusted by \gls{FDR}) as used for \gls{SLIPT} (in Chapters~\ref{chap:SLIPT} and~\ref{chap:Pathways}).
 
 %%example figure?
 
@@ -870,7 +870,7 @@ The findings for inhibitory \gls{graph} structures were replicated with larger m
 
 %20K inhib?
 
-%This interpretation is consistent with the poorly performing simulations in inhibiting \glspl{graph} having a low sensitivity (in Figures~\ref{fig:simulation1207_randx_Graph1i}\nobreakdash--\ref{fig:simulation1207_randx_Graph7i2}). These simulations still show high specificity and accuracy with a low false positive rate for \gls{synthetic lethal} detection with p-value thresholds (adjusted by \{gls{FDR}) for \gls{SLIPT}. Such results support \gls{SLIPT} as a stringent methodology to detect \gls{synthetic lethal} interactions in large \gls{gene expression} data, excluding the majority of false positives with many of those remaining belonging to \gls{synthetic lethal} pathways.
+%This interpretation is consistent with the poorly performing simulations in inhibiting \glspl{graph} having a low sensitivity (in Figures~\ref{fig:simulation1207_randx_Graph1i}\nobreakdash--\ref{fig:simulation1207_randx_Graph7i2}). These simulations still show high specificity and accuracy with a low false positive rate for \gls{synthetic lethal} detection with p-value thresholds (adjusted by \gls{FDR}) for \gls{SLIPT}. Such results support \gls{SLIPT} as a stringent methodology to detect \gls{synthetic lethal} interactions in large \gls{gene expression} data, excluding the majority of false positives with many of those remaining belonging to \gls{synthetic lethal} pathways.
 
 \subsection{Simulations over Pathway-based Graphs}
 
@@ -880,7 +880,7 @@ Thus far simulations of \glspl{synthetic lethal} in \gls{gene expression} with c
 
 The Reactome \glslink{graph}{pathway} structure for the \gls{PI3K} cascade (as used extensively in Chapter~\ref{chap:Pathways}) was used to demonstrate the simulation procedure for detecting \glspl{synthetic lethal} in the \gls{graph} structure of a biological pathway. It is appropriate to do so since this pathway has clear directionality and signalling pathways were among those identified to be \gls{synthetic lethal} candidates (in Chapter~\ref{chap:SLIPT}). The \gls{PI3K} pathway having 138 genes is also of a moderate size and complexity compared to other biological pathways which is therefore suitable for comparison to previous \gls{graph} structures of a similar scale (50--100 genes) with the complexity of a characteristic of a biological pathway.
 
-The performance of \gls{synthetic lethal} detection with \gls{SLIPT} in simulated \glslink{gene expression}{expression} data based on the Reactome \gls{PI3K} pathway (as shown in Figure~\ref{fig:simulation1205_randx_Graph_pi3k}) was concordant with previous findings. \gls{SLIPT} had high performance at detecting a low number of \gls{synthetic lethal} genes with poorer performance for high numbers of \gls{synthetic lethal} genes or lower sample sizes. In particular, the performance of simulations in the \gls{PI3K} pathway was highly resembled the simulation results for constructed \glspl{graph} of similar scale and complexity (as shown in Figures~\ref{fig:simulation1205_randx_Graph6} and~\ref{fig:simulation1205_randx_Graph7}). Using thresholds based on the $\chi^2$ p-value (adjusted by \{gls{FDR}), simulations in the biological \gls{PI3K} pathway had a higher sensitivity and lower specificity. While the performance decreases for more \gls{synthetic lethal} genes to detect within the simulated \gls{PI3K} pathway, this primarily involves a reduction in sensitivity to detecting underlying \gls{synthetic lethal} genes rather than false positives as the false positive rate decreases, the accuracy increases, and the specificity is relatively unperturbed (being more dependent on sample size). Thus \gls{SLIPT} is stringent in biological \gls{graph} structures and appropriate for detection of \gls{synthetic lethal} genes in complex correlation structures in \gls{gene expression} data involving biological pathways. 
+The performance of \gls{synthetic lethal} detection with \gls{SLIPT} in simulated \glslink{gene expression}{expression} data based on the Reactome \gls{PI3K} pathway (as shown in Figure~\ref{fig:simulation1205_randx_Graph_pi3k}) was concordant with previous findings. \gls{SLIPT} had high performance at detecting a low number of \gls{synthetic lethal} genes with poorer performance for high numbers of \gls{synthetic lethal} genes or lower sample sizes. In particular, the performance of simulations in the \gls{PI3K} pathway was highly resembled the simulation results for constructed \glspl{graph} of similar scale and complexity (as shown in Figures~\ref{fig:simulation1205_randx_Graph6} and~\ref{fig:simulation1205_randx_Graph7}). Using thresholds based on the $\chi^2$ p-value (adjusted by \gls{FDR}), simulations in the biological \gls{PI3K} pathway had a higher sensitivity and lower specificity. While the performance decreases for more \gls{synthetic lethal} genes to detect within the simulated \gls{PI3K} pathway, this primarily involves a reduction in sensitivity to detecting underlying \gls{synthetic lethal} genes rather than false positives as the false positive rate decreases, the accuracy increases, and the specificity is relatively unperturbed (being more dependent on sample size). Thus \gls{SLIPT} is stringent in biological \gls{graph} structures and appropriate for detection of \gls{synthetic lethal} genes in complex correlation structures in \gls{gene expression} data involving biological pathways. 
 
 \begin{figure*}[!htb]
 %\begin{mdframed}
@@ -966,7 +966,7 @@ The performance of simulation of \glspl{synthetic lethal} within a biological pa
        \subcaptionbox{The PI3K cascade \label{fig:simulation1205_randx_Graphpwaycf20K:Graph_pi3k}}{%
            \includegraphics[width=0.3\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf}}
         }%
-       \subcaptionbox{G signalling \label{fig:simulation1205_randx_Graphpwaycf20K:Graph_Gai}}{%
+       \subcaptionbox{G$_{\alpha i}$ signalling \label{fig:simulation1205_randx_Graphpwaycf20K:Graph_Gai}}{%
            \includegraphics[width=0.3\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_Gai".pdf}}
         }%
        %\subcaptionbox{Graph Structure}{%
@@ -978,7 +978,7 @@ The performance of simulation of \glspl{synthetic lethal} within a biological pa
         \subcaptionbox{Performance in the PI3K cascade \label{fig:simulation1205_randx_Graphpwaycf20K:Compare1}}{%
             \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_pi3k_ROC_Compare(2)".pdf}}
         }%
-        \subcaptionbox{Performance in G signalling \label{fig:simulation1205_randx_Graphpwaycf20K:Compare2}}{%
+        \subcaptionbox{Performance in G$_{\alpha i}$ signalling \label{fig:simulation1205_randx_Graphpwaycf20K:Compare2}}{%
             \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Gai_ROC_Compare(2)".pdf}}
         }%
 

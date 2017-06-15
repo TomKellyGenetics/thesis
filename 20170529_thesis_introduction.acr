@@ -21,14 +21,15 @@
 \providecommand*\glsXpageXhypersl[2]{\setentrycounter[#1]{page}\hypersl{#2}}
 \providecommand*\glsXpageXhypersc[2]{\setentrycounter[#1]{page}\hypersc{#2}}
 \providecommand*\glsXpageXhyperemph[2]{\setentrycounter[#1]{page}\hyperemph{#2}}
+\providecommand*\glsXpageXglsignore[2]{\setentrycounter[#1]{page}\glsignore{#2}}
 \begin{theglossary}\glossaryheader
 \glsgroupheading{A}\relax\glsresetentrylist
 \glossentry{ADP}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{xvi}, 
+\glsXpageXglsnumberformat{}{xvii}, 
 \glsXpageXglsnumberformat{}{19}\delimN 
 \glsXpageXglsnumberformat{}{20}}}\relax\glsresetentrylist
 \glossentry{AMP}{\glossaryentrynumbers{\relax 
-\glsXpageXglsnumberformat{}{xv}, 
+\glsXpageXglsnumberformat{}{xvi}, 
 \glsXpageXglsnumberformat{}{23}}}\relax\glsresetentrylist
 \glossentry{ANOVA}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{xi}}}\relax\glsresetentrylist
@@ -80,7 +81,7 @@
 \glsgroupheading{E}\relax\glsresetentrylist
 \glossentry{EMT}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{38}\delimN 
-\glsXpageXglsnumberformat{}{39}}}\glsgroupskip
+\glsXpageXglsnumberformat{}{40}}}\glsgroupskip
 \glsgroupheading{G}\relax\glsresetentrylist
 \glossentry{GO}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{30}\delimN 
@@ -96,7 +97,7 @@
 \glossentry{HDGC}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{23}\delimN 
 \glsXpageXglsnumberformat{}{38}\delimR 
-\glsXpageXglsnumberformat{}{40}}}\relax\glsresetentrylist
+\glsXpageXglsnumberformat{}{41}}}\relax\glsresetentrylist
 \glossentry{HLRCC}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{23}}}\glsgroupskip
 \glsgroupheading{J}\relax\glsresetentrylist
@@ -158,9 +159,10 @@
 \glsXpageXglsnumberformat{}{16}\delimN 
 \glsXpageXglsnumberformat{}{18}}}\relax\glsresetentrylist
 \glossentry{SGI}{\glossaryentrynumbers{\relax 
+\glsXpageXglsnumberformat{}{xv}, 
 \glsXpageXglsnumberformat{}{14}\delimR 
 \glsXpageXglsnumberformat{}{18}\delimN 
-\glsXpageXglsnumberformat{}{25}\delimR 
+\glsXpageXglsnumberformat{}{26}\delimN 
 \glsXpageXglsnumberformat{}{27}}}\relax\glsresetentrylist
 \glossentry{shRNA}{\glossaryentrynumbers{\relax 
 \glsXpageXglsnumberformat{}{21}\delimR 
