@@ -1,11 +1,12 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 19.06.2017  01:43:43
-;; Indexstyle: "/tmp/EolRtBS7YW", Rawindex: "/tmp/AuB8JvKROE", Output: "thesis.acr"
+;; at 19.06.2017  09:31:14
+;; Indexstyle: "/tmp/zrSJ61JXU9", Rawindex: "/tmp/jHMTDIjGm_", Output: "thesis.acr"
 
 
 Building indexentry-tree:
 Hierdepth of index is :TREE
 
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
@@ -81,13 +82,13 @@ Letter-group: "Ð¨Ë¼€" -> "S"
 Letter-group: "È†Ë" -> "G"
 Letter-group: "€¼Ãå€" -> "A"
 Letter-group: "»ÚÐ´¨ÈÚ" -> "M"
+Letter-group: "†È" -> "C"
 Letter-group: "Ë¼€¨" -> "R"
 Letter-group: "Ð¨" -> "S"
 Letter-group: "€»È" -> "A"
 Letter-group: "€È" -> "A"
 Letter-group: "¼€" -> "D"
 Letter-group: "Ð¼È" -> "S"
-Letter-group: "†È" -> "C"
 Letter-group: "È†Ë" -> "P"
 Letter-group: "¼Ð" -> "N"
 Letter-group: "Ë¼€" -> "R"
@@ -124,6 +125,7 @@ Letter-group: "æ¼Ú" -> "W"
 Letter-group: "—»Ú" -> "E"
 Letter-group: "†Ë€¼" -> "C"
 Letter-group: "È€»50" -> "P"
+Letter-group: "Ú»»" -> "T"
 Letter-group: "—Ë" -> "E"
 Letter-group: "„¨ÃÈ€ë" -> "B"
 Letter-group: "¼—Ð¨" -> "N"
