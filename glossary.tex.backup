@@ -6,13 +6,13 @@
 
 \newglossaryentry{pleiotropy}{%
   name=pleiotropy,
-  description={A gene which has multiple biological functions},
+  description={When a gene has multiple biological functions},
   plural=pleiotropic
 }
 
 \newglossaryentry{E-cadherin}{%
   name=E-cadherin,
-  description={Epithelial cadherin (calcium-dependent adhesion), a cell-adhesion protein encoded by the tumour suppressor gene, \textit{CDH1}}
+  description={Epithelial cadherin (calcium-dependent adhesion), a cell-adhesion protein encoded by \textit{CDH1}}
 }
 
 %\newglossaryentry{Pan cancer}{
@@ -28,7 +28,7 @@
 
 \newglossaryentry{RNA-Seq}{%
   name=RNA-Seq,
-  description={Transcriptome data from sequencing RNA}
+  description={The generation of transcriptome data from sequencing RNA}
 }
 
 \newglossaryentry{CAGE-Seq}{%
@@ -42,8 +42,8 @@
 }
 
 \newglossaryentry{bisulfite-Seq}{%
-  name=Bisulfite-Seq,
-  description={Methylome data from sequencing bisulfite treated DNA}
+  name=bisulfite-Seq,
+  description={Epigenomic data from sequencing bisulfite treated DNA}
 }
 
 \newglossaryentry{Sanger}{%
@@ -53,26 +53,26 @@
 
 \newglossaryentry{genomic}{%
   name=genomic,
-  description={An approach or technology designed to generate or use data from all genes in the genome},
+  description={The use of data from all genes in the genome},
   plural=genomics
 }
 
 \newglossaryentry{genome}{%
   name=genome,
-  description={An analysis of all of the DNA sequence in the genome},
+  description={All of the DNA sequence in the genome},
   plural=genomes
 }
 
 
 \newglossaryentry{transcriptome}{%
   name=transcriptome,
-  description={An analysis of all of the genes expressed in the genome},
+  description={All of the genes expressed in the genome},
   plural=transcriptomes
 }
 
 \newglossaryentry{metagenome}{%
   name=metagenome,
-  description={An analysis of all of the genes and genomes in a community},
+  description={All of the genes and genomes in a community},
   plural=metagenomics %%switch
 }
 
@@ -84,13 +84,13 @@
 
 \newglossaryentry{proteome}{%
   name=proteome,
-  description={An analysis of all the proteins expressed from the genome},
+  description={All the proteins expressed from the genome},
   plural=proteomics
 }
 
 \newglossaryentry{metabolome}{%
   name=metabolome,
-  description={An analysis of all the metabolites and enzymes in the cell},
+  description={All the metabolites and enzymes in the cell},
   plural=metabolomics
 }
 
@@ -154,6 +154,13 @@
   plural=gene expression
 }
 
+
+\newglossaryentry{methylation}{%
+  name=methylation,
+  description={A measure of the epigenetic regulation of DNA at \gls{CpG} sites},
+  plural=methylation
+}
+
 \newglossaryentry{omics}{%
   name='omics,
   description={A combination of approaches to generating biological data with high-throughput procedures such as genomics, proteomics or metabolomics},
@@ -186,7 +193,7 @@
 
 \newglossaryentry{cancer gene}{%
   name=cancer gene,
-  description={A gene which is involved in the malignancy of some cancers, encompassing \glspl{oncogene} and \glspl{tumour suppressor}, which have molecular aberrations in cancer and variants which predispose individuals to cancer},
+  description={A gene which is involved in the malignancy of some cancers, encompassing \glspl{oncogene} and \glspl{tumour suppressor}, which have molecular aberrations in cancer or variants which predispose individuals to cancer},
   plural=cancer genes
 }
 
@@ -288,7 +295,7 @@
 
 \newglossaryentry{chemoprevention}{%
   name=chemoprevention,
-  description={The use of cytotoxic drugs to prevent cancers from forming, generally applied to high-risk mutation carriers},
+  description={The use of drugs to prevent early-stage cancers, generally applied to high-risk mutation carriers},
   plural=chemopreventative
 }
 
@@ -383,7 +390,7 @@
 
 \newglossaryentry{edge}{%
   name=edge or link,
-  description={A relationship connecting a pair of elements of a graph structure or network, may weighted or directional},
+  description={A relationship connecting a pair of elements of a graph structure or network, may be weighted or directional},
   plural=edges
 }
 
@@ -452,7 +459,8 @@
 
 \newglossaryentry{synthetic dosage lethal}{%
   name=synthetic dosage lethal,
-  description={A \acrfull{SGI} analogous to \glspl{synthetic lethal} where genes are disrupted by a change in dosage, typically where one gene is inactivated and the other over-expressed },
+  description={A \acrfull{SGI} analogous to \glspl{synthetic lethal} where %genes are disrupted by a change in dosage, typically
+  where one gene is inactivated and the other over-expressed },
   plural=synthetic dosage lethality
 }
 
@@ -542,7 +550,7 @@
 
 \newglossaryentry{centrality}{%
   name=centrality,
-  description={A network metric which identifies the most important \glspl{vertex} in a network},
+  description={A network metric which identifies important \glspl{vertex}},
   plural=centrality
 }
 
@@ -668,21 +676,21 @@
 
 \newacronym[description={Ribonucleic Acid}]{RNA}{RNA}{ribonucleic acid}%
 
-\newacronym[description={Ribonucleic Acid Interference}]{RNAi}{RNAi}{RNA interference}%
+\newacronym[description={RNA Interference}]{RNAi}{RNAi}{RNA interference}%
 
-\newacronym[description={Messenger Ribonucleic Acid}]{mRNA}{mRNA}{messenger RNA}%
+\newacronym[description={Messenger RNA}]{mRNA}{mRNA}{messenger RNA}%
 
-\newacronym[description={Micro RNA}, plural=microRNAs,firstplural=microRNAs]{microRNA}{microRNA}{glslink{{microRNA-gls}}{micro RNA}}%
+\newacronym[description={Micro RNA}, plural=microRNAs,firstplural=microRNAs]{microRNA}{microRNA}{\glslink{microRNA-gls}{micro RNA}}%
 
-\newacronym[description={Short Interfering Ribonucleic Acid}, plural=siRNAs,firstplural=siRNAs]{siRNA}{siRNA}{short interfering RNA}%
+\newacronym[description={Short Interfering RNA}, plural=siRNAs,firstplural=siRNAs]{siRNA}{siRNA}{short interfering RNA}%
 
-\newacronym[description={Short Hairpin Ribonucleic Acid}, plural=shRNAs,firstplural=shRNAs]{shRNA}{shRNA}{short hairpin RNA}%
+\newacronym[description={Short Hairpin RNA}, plural=shRNAs,firstplural=shRNAs]{shRNA}{shRNA}{short hairpin RNA}%
 
 \newacronym[description={Ribonucleic acid}]{rRNA}{rRNA}{RNA}%
 
-\newacronym[description={Transfer Ribonucleic Acid}]{tRNA}{tRNA}{transfer RNA}%
+\newacronym[description={Transfer RNA}]{tRNA}{tRNA}{transfer RNA}%
 
-\newacronym[description={Complementary Deoxyribonucleic Acid (from mRNA)}]{cDNA}{cDNA}{complementary DNA}%
+\newacronym[description={Complementary DNA (from mRNA)}]{cDNA}{cDNA}{complementary DNA}%
 
 \newacronym[description={Polymerase Chain Reaction}]{PCR}{PCR}{polymerase chain reaction}%
 
@@ -692,13 +700,13 @@
 
 \newacronym[description={Single Nucleotide Polymorphism}, plural=SNPs,firstplural=SNPs]{SNP}{SNP}{single nucleotide polymorphism}%
 
-\newacronym[description={Long Non-Coding Ribonucleic Acid}]{lncRNA}{lncRNA}{long non-coding RNA}%
+\newacronym[description={Long Non-Coding RNA}]{lncRNA}{lncRNA}{long non-coding RNA}%
 
 \newacronym[description={Reduced Representation Bisulfite Sequencing}]{RRBS}{RRBS}{reduced representation bisulfite sequencing}%
 
 \newacronym[description={Chromatin Immunopreciptation Sequencing}]{ChIP-Seq}{ChIP-Seq}{chromatin immunopreciptation sequencing}%
 \newacronym[description={Chromatin Immunopreciptation}]{ChIP}{ChIP}{chromatin immunopreciptation}%
-%see={[Glossary:]{gls-ChIP-Seq}}
+%see={[Glossary:]gls-ChIP-Seq}}
 
 \newacronym[description={Insertion or Deletion (in \acrshort{DNA} sequence)}, plural=InDels,firstplural=insertions or deletions]{InDel}{InDel}{InDel}%
 
@@ -765,6 +773,8 @@
 
 \newacronym[description={Robust Multiarray Averaging (normalisation}]{RMA}{RMA}{Robust Multiarray Averaging}%
 
+\newacronym[description={Trimmed Mean of M values (normalisation}]{TMM}{TMM}{trimmed mean of M values}%
+
 \newacronym[description={RNA-Seq by Expectation Maximization (normalisation}]{RSEM}{RSEM}{RNA-Seq by Expectation Maximization}%
 
 \newacronym[description={Area Under the Receiver Operating Characteristic (curve)}]{AUROC}{AUROC}{area under \gls{ROC}}%
@@ -801,9 +811,9 @@
 
 %%linked entry
 \iffalse
-\newglossaryentry{gls-OWD} {
+\newglossaryentrygls-OWD} {
   name={One-Way Delay},
   description={The time a packet uses through a network from one host to another},
 }
-\newacronym[see={[Glossary:]{gls-OWD}}]{OWD}{OWD}{One-Way Delay\glsadd{gls-OWD}}
+\newacronym[see={[Glossary:]gls-OWD}}]{OWD}{OWD}{One-Way Delay\glsaddgls-OWD}}
 \fi

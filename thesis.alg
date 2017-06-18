@@ -1,6 +1,6 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 19.06.2017  09:31:14
-;; Indexstyle: "/tmp/zrSJ61JXU9", Rawindex: "/tmp/jHMTDIjGm_", Output: "thesis.acr"
+;; at 19.06.2017  11:13:36
+;; Indexstyle: "/tmp/p6g2zya0cV", Rawindex: "/tmp/L89uf0gEvV", Output: "thesis.acr"
 
 
 Building indexentry-tree:
@@ -178,3 +178,4 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "à†Ð†" -> "U"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "æ¼Ú" -> "W"
+WARNING: location-reference "{}{x}" did match multiple location-classes! (taking first one)
