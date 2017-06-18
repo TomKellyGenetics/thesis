@@ -123,7 +123,9 @@ Samples were not actually removed from a simulated dataset, rather the \glslink{
 
 \subsection{Simulation Procedure} \label{methods:simulating_SL}
 
-Simulations were developed to simulate normal distributions of \glslink{gene expression}{expression} data and define function with a threshold cut-off. This is the reverse to the procedure of \gls{SLIPT} to predict \gls{synthetic lethal} partners (although the threshold is assumed to be unknown when testing upon simulated data). While gene function is used as an intermediary step in modelling \gls{synthetic lethal} genes in \glslink{gene expression}{expression} data, the normal distribution is sampled for simulated data to represent normalised empirical \gls{gene expression} data for which \gls{SLIPT} (and other methods) will be applicable.
+Simulations were developed to simulate normal distributions of \glslink{gene expression}{expression} data and define gene function with a threshold cut-off. 
+%This is the reverse to the procedure of \gls{SLIPT} to predict \gls{synthetic lethal} partners (although the threshold is assumed to be unknown when testing upon simulated data). 
+While gene function was used as an intermediary step in modelling \gls{synthetic lethal} genes in \glslink{gene expression}{expression} data, the normal distribution was sampled for simulated data to represent normalised empirical \gls{gene expression} data for which \gls{SLIPT} (and other methods) will be applicable.
 
 \begin{figure*}[!htbp]
 %\begin{mdframed}
@@ -143,7 +145,7 @@ Simulations were developed to simulate normal distributions of \glslink{gene exp
 %
     \end{center}
    %\caption[Simulating \gls{gene expression} and function]{\small \textbf{\textbf{Simulating gene function.}} Simulated data with samples (columns) and genes A--H (rows) shows how a simulated dataset is transformed from a continuous dataset (on a blue to red colour scale) to a discrete matrix of gene function (samples with functional gene levels are shaded in black and non-functional in grey).}
-   \caption[Simulating gene function]{\small \textbf{\textbf{Simulating gene function.}} A simulated dataset with samples (columns) and genes A--H (rows) is transformed from a continuous (coloured blue--red) scale to a discrete matrix of gene function (black for functional levels and grey for non-functional).}
+   \caption[Simulating gene function]{\small \textbf{\textbf{Simulating gene function.}} A simulated dataset with samples (columns) and genes A--H (rows) was transformed from a continuous (coloured blue--red) scale to a discrete matrix of gene function (black for functional levels and grey for non-functional).}
 %}
 \label{fig:simulate_function}
 %\end{mdframed}
@@ -195,7 +197,7 @@ Simulations were developed to simulate normal distributions of \glslink{gene exp
 %
     \end{center}
    %\caption[Simulating \gls{synthetic lethal} gene function]{\small \textbf{\textbf{Simulating \gls{synthetic lethal} gene function.}} Simulated data with samples (columns) and genes (rows) in a discrete matrix of gene function (shaded in black for sample with functional gene levels). Genes A and I are selected to be \gls{synthetic lethal} partners of a ``Query'' gene, which of these genes will be the true partner in each sample is selected randomly and indicated in green which samples are considered for the purposes of simulating \glspl{synthetic lethal} (shaded in forest green for samples with functional gene levels). Note that samples are ordered such that either the query gene or selected partner are functional in any particular sample.}
-   \caption[Simulating \gls{synthetic lethal} gene function]{\small \textbf{\textbf{Simulating \gls{synthetic lethal} gene function.}} In a discrete simulated gene function dataset (shaded for functional levels and pale otherwise) with samples (columns) and genes (rows), genes A and I are SL partners of a ``Query'' gene. A partner is selected (highlighted in green) randomly in each sample for simulating \glspl{synthetic lethal}, then ordered such that the query gene or an SL partner are functional in each sample.
+   \caption[Simulating \gls{synthetic lethal} gene function]{\small \textbf{\textbf{Simulating \gls{synthetic lethal} gene function.}} In a discrete simulated gene function dataset (shaded for functional levels and pale otherwise) with samples (columns) and genes (rows), genes A and I are SL partners of a ``Query'' gene. A partner was selected (highlighted in green) randomly in each sample for simulating \glspl{synthetic lethal}, then ordered such that the query gene or an SL partner were functional in each sample.
    }
 %}
 \label{fig:simulate_add_query}
@@ -203,9 +205,9 @@ Simulations were developed to simulate normal distributions of \glslink{gene exp
 \end{figure*}
 
 
-Sampling a distribution for \glslink{gene expression}{expression} profiles has the added advantage of being amenable to simulating correlation structures with the multivariate normal distribution (using the \texttt{mvtnorm} R package \citep{Genz2009, mvtnorm}). The parameter $\Sigma$ is a covariance matrix defines the correlation structure between simulated genes being sampled. With a diagonal of one, this $\Sigma$\ matrix simulates genes with a standard deviation of one and the covariance parameters between them are the correlations between each gene. In Figure~\ref{fig:simulate_function}, an example of such a simulated multivariate normal dataset is shown with the functional threshold applied.
+Sampling a distribution for \glslink{gene expression}{expression} profiles has the advantage of enabling simulating correlation structures with the multivariate normal distribution, using the \texttt{mvtnorm} R package \citep{Genz2009, mvtnorm}. The parameter $\Sigma$ is a covariance matrix which defines the correlation structure between the simulated genes being sampled. With a diagonal of one, this $\Sigma$\ matrix simulates genes with a standard deviation of one and the covariance parameters between them are the correlations between each gene. In Figure~\ref{fig:simulate_function}, an example of such a simulated multivariate normal dataset is shown with the functional threshold applied.
 
-Once we have generated a simulated dataset, the samples are compared by gene function (as derived from a functional threshold). Known underlying \gls{synthetic lethal} partners are selected within the dataset and a query gene is generated by sampling from the normal distribution. These are matched (as shown for 2 \gls{synthetic lethal} partners in Figure~\ref{fig:simulate_add_query}) such that the \gls{synthetic lethal} condition is met: that at least one of the synthetic partner genes and the query gene are functional in any particular cell. The samples are ordered by functional data (without assuming correlation of underyling \glslink{gene expression}{expression} values) with the query gene in one direction and the remaining dataset ordered by the selected \gls{synthetic lethal} partner.
+Once a simulated dataset has been generated, the samples were compared by gene function (as derived from a functional threshold). The known underlying \gls{synthetic lethal} partners were selected within the dataset and a query gene was generated by sampling from the normal distribution. These were matched (as shown for 2 \gls{synthetic lethal} partners in Figure~\ref{fig:simulate_add_query}) such that the \gls{synthetic lethal} condition was met: at least one of the synthetic partner genes and the query gene are functional in any particular cell. The samples are ordered by functional data (without assuming correlation of underyling \glslink{gene expression}{expression} values) with the query gene in one direction and the remaining dataset ordered by the selected \gls{synthetic lethal} partner.
 
 
 \begin{figure*}[!htb]
@@ -226,13 +228,13 @@ Once we have generated a simulated dataset, the samples are compared by gene fun
 %
     \end{center}
    %\caption[Simulating \gls{synthetic lethal} \gls{gene expression}]{\small \textbf{\textbf{Simulating \gls{synthetic lethal} \gls{gene expression}.}} Simulated data with samples (columns) and genes (rows) showing how a simulated continuous dataset (on a blue to red colour scale) is matched to a query gene such that at least one \gls{synthetic lethal} partner is above a functional threshold when the query gene is below it satisfying the \gls{synthetic lethal} model.}
-   \caption[Simulating \gls{synthetic lethal} \gls{gene expression}]{\small \textbf{\textbf{Simulating \gls{synthetic lethal} \gls{gene expression}.}} A simluated continuous \glslink{gene expression}{expression} dataset (blue--red scale) with samples (columns) and genes (rows) is matched to a query gene such that at least one \gls{synthetic lethal} partner is above a functional threshold when the query gene is below it satisfying the \gls{synthetic lethal} model.}
+   \caption[Simulating \gls{synthetic lethal} \gls{gene expression}]{\small \textbf{\textbf{Simulating \gls{synthetic lethal} \gls{gene expression}.}} A simulated continuous \glslink{gene expression}{expression} dataset (blue--red scale) with samples (columns) and genes (rows) was matched to a query gene such that at least one \gls{synthetic lethal} partner was above a functional threshold when the query gene was below it which satisfied the \gls{synthetic lethal} model.}
 %}
 \label{fig:simulate_SL}
 %\end{mdframed}
 \end{figure*}
 
-This results a simulated dataset where samples with non-functional query gene have at least one functional partner gene. Similarly, the query gene is functional in all samples where all of the \gls{synthetic lethal} partner genes are non-functional. Therefore a dataset has been generated with known \gls{synthetic lethal} partners (see Figure~\ref{fig:simulate_SL}) by as few assumptions about the relationships between the each \gls{synthetic lethal} pair as possible (and allowing compensating functions from higher-order interactions). This has been designed to have the most stringent (least detectable) \gls{synthetic lethal} relationships where higher-order interactions are possible for the purposes of testing pairwise detection procedures such as \gls{SLIPT}.  
+This procedure results in a simulated dataset where samples with non-functional query gene have at least one functional partner gene. Similarly, the query gene is functional in all samples where all of the \gls{synthetic lethal} partner genes are non-functional. In this procedure, a dataset has been generated with known \gls{synthetic lethal} partners (see Figure~\ref{fig:simulate_SL}) with few assumptions about the relationships between the each \gls{synthetic lethal} pair (allowing compensating functions from higher-order interactions). This procedure has been designed to have the most stringent (least detectable) \gls{synthetic lethal} relationships, where higher-order interactions are possible for the purposes of testing pairwise detection procedures such as \gls{SLIPT}.  
 
 
 \FloatBarrier
