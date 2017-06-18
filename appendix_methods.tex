@@ -19,16 +19,18 @@
 \section{Sample Correlation}
 \label{appendix:sample_correlation}
 
-Samples were excluded from expression analysis based on sample correlations and the clustering analysis presented below, as described in Section~\ref{methods:sample_qc}.  
+%Samples were excluded from expression analysis based on sample correlations and the clustering analysis presented below, as described in Section~\ref{methods:sample_qc}.  
 
 \begin{figure*}[!ht]
 %\begin{mdframed}
   \begin{center}
-  \resizebox{0.75 \textwidth}{!}{
+  \resizebox{0.66 \textwidth}{!}{
     \includegraphics{Raw(log)_Corr_eudist_Cut_part_Pub.png}
    }
    \end{center}
-   \caption[Correlation profiles of removed samples]{\small \textbf{Correlation profiles of removed samples.} Correlation matrix heatmap (Euclidean distance) of all samples in \gls{TCGA} breast cancer dataset (left) clustered for all samples against removed samples (top): tissue source site (TSS), sample type with reds for tumour and greens for normal, patient (A2QH in pink), with varied analyte and plate (corresponding to batch in Table~\ref{tab:qc}). Excluded samples cluster at the bottom and annotation (left) show  shared properties between samples in the dataset.
+   \caption[Correlation profiles of removed samples]{\small \textbf{Correlation profiles of removed samples.} Heatmap (Euclidean distance) of samples in \gls{TCGA} breast cancer dataset (left) clustered for all samples against removed samples (top): 
+   tissue source site (TSS), sample type with reds for tumour and greens for normal, patient (A2QH in pink), with varied analyte and plate. % (corresponding to batch in Table~\ref{tab:qc}).
+   Excluded samples clustered at the bottom and annotation (left) show  shared properties between samples in the dataset.
    }
 \label{fig:corr_map_part}
 %\end{mdframed}
@@ -41,7 +43,7 @@ Samples were excluded from expression analysis based on sample correlations and 
     \includegraphics{Raw(log)_Corr_eudist_Ann_Pub.png}
    }
    \end{center}
-   \caption[Correlation analysis and sample removal]{\small \textbf{Correlation analysis and sample removal.} Correlation matrix heatmap (Euclidean distance) of all samples in \gls{TCGA} breast cancer dataset against each other annotated for sample clinical data: sample type, tissue type, tumour stage, Estrogen receptor (IHC) and intrinsic subtype (from the \gls{PAM50} method). CDH1 somatic mutation, gene expression, and status for \gls{SLIPT} prediction are also annotated. Discrete variables are coloured as displayed in the legend and continuous variables on a blue-red scale as shown in the colour key. Trimmed samples cluster at the bottom of the heatmap and the colour bars of the left show which were removed for quality concerns.}
+   \caption[Correlation analysis and sample removal]{\small \textbf{Correlation analysis and sample removal.} Correlation matrix heatmap (Euclidean distance) of all samples in \gls{TCGA} breast cancer dataset against each other annotated for sample clinical data: sample type, tissue type, tumour stage, \gls{ER} and intrinsic subtype (from the \acrshort{PAM50} method). \textit{CDH1} somatic mutation, gene expression, and status for \gls{SLIPT} prediction were also annotated. Discrete variables were coloured as displayed in the legend and continuous variables on a blue--red scale as shown in the colour key. Trimmed samples cluster at the bottom of the heatmap and the colour bars of the left show which were removed for quality concerns.}
 \label{fig:corr_map}
 %\end{mdframed}
 \end{figure*}
@@ -51,9 +53,9 @@ Samples were excluded from expression analysis based on sample correlations and 
 \section{Replicate Samples in \gls{TCGA} Breast}
 \label{appendix:replicate_samples}
 
-Replicate samples were picked where possible from the \gls{TCGA} breast cancer gene expression data to examine for sample quality. Independent samples of the same tumour are expected to have very high Pearson's correlation between their expression profiles unless there were issues with sample collection or preparation and are thus an indicator of sample quality. The log-transformed raw read counts for replicate samples were examined in Figures~\ref{fig:rep_cutcut}\nobreakdash--\ref{fig:rep_keepcut}. These were examined before normalisation which would be expected to increase sample concordance.
+Replicate samples were picked where possible from the \gls{TCGA} breast cancer gene expression data to examine for sample quality. Independent samples of the same tumour were expected to have very high Pearson correlation between their expression profiles unless there were issues with sample collection or preparation and were thus an indicator of sample quality. The log-transformed raw read counts for replicate samples were examined in Figures~\ref{fig:rep_cutcut}\nobreakdash--\ref{fig:rep_keepcut}. These were examined before normalisation which would be expected to increase sample concordance.
 
-Another consideration are the samples which were removed for quality concerns (in Section~\ref{methods:sample_qc}). While these were selected by unbiased hierarchical clustering (See Figure~\ref{fig:corr_map}), it is notable that many of the exluded (tumour) samples were performed in replicate despite relatively few replicate samples in the overall dataset. These samples correlate poorly with the rest of the dataset, in addition to with replicate samples.
+Another consideration was the samples which were removed for quality concerns (in Section~\ref{methods:sample_qc}). While these were selected by unbiased hierarchical clustering (See Figure~\ref{fig:corr_map}), many of the excluded (tumour) samples were performed in replicate despite relatively few replicate samples in the overall dataset. These samples correlate poorly with the rest of the dataset, in addition to correlation with replicate samples.
 
 \begin{figure*}[!hb]
 %\begin{mdframed}
@@ -61,7 +63,7 @@ Another consideration are the samples which were removed for quality concerns (i
   \resizebox{0.3\textwidth}{!}{
     \includegraphics{Rep_picking_CutCut2.pdf}
    }
-    \caption[Replicate excluded samples]{\small \textbf{Replicate excluded samples.} Both tumour samples of patient A2QH were excluded as they were poorly correlated with other samples, although they are highly similar to each other as shown by Pearson's correlation of log-raw counts.
+    \caption[Replicate excluded samples]{\small \textbf{Replicate excluded samples.} Both tumour samples of patient A2QH were excluded as they were poorly correlated with other samples, although they were highly similar to each other as shown by Pearson correlation of log-raw counts.
 }
 \label{fig:rep_cutcut}
 %\end{mdframed}
@@ -100,7 +102,7 @@ Another consideration are the samples which were removed for quality concerns (i
         }%
 %
     \end{center}
-    \caption[Replicate samples with all remaining]{\small \textbf{Replicate samples with all remaining.} Patient A26J was sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples.  In all cases, replicate samples remaining in the dataset were highly concordant as shown by Pearson's correlation of log-raw counts.
+    \caption[Replicate samples with all remaining]{\small \textbf{Replicate samples with all remaining.} Patient A26J was sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples.  In all cases, replicate samples remaining in the dataset were highly concordant, as shown by Pearson correlation of log-raw counts.
 }
 \label{fig:rep_keepkeep}
 %\end{mdframed}
@@ -157,7 +159,7 @@ Another consideration are the samples which were removed for quality concerns (i
 %
     \end{center}
     \caption[Replicate samples with some excluded]{\small \textbf{Replicate samples with some excluded.} (continued on next page)
-    %Patients A0DB, A13D, A13E, and A26E were each sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples. In all cases, the replicate samples remaining in the dataset more were highly concordant (as shown by Pearson's correlation of log-raw counts) than those excluded from the analysis.
+    %Patients A0DB, A13D, A13E, and A26E were each sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples. In all cases, the replicate samples remaining in the dataset more were highly concordant (as shown by Pearson correlation of log-raw counts) than those excluded from the analysis.
     }
 %\end{mdframed}
 \end{figure*}
@@ -191,7 +193,7 @@ Another consideration are the samples which were removed for quality concerns (i
         }%
 %
     \end{center}
-    \caption[]{\small \textbf{Replicate samples with some excluded.} Patients A0DB, A13D, A13E, and A26E were each sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples. In all cases, the replicate samples remaining in the dataset more were highly concordant (as shown by Pearson's correlation of log-raw counts) than those excluded from the analysis.
+    \caption[]{\small \textbf{Replicate samples with some excluded.} Patients A0DB, A13D, A13E, and A26E were each sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples. In all cases, the replicate samples remaining in the dataset more were highly concordant than those excluded from the analysis, as shown by Pearson correlation of log-raw counts.
 }
 \label{fig:rep_keepcut}
 %\end{mdframed}
@@ -208,20 +210,20 @@ Another consideration are the samples which were removed for quality concerns (i
 %\makebox[\textwidth][c]{
 %\resizebox{\textwidth}{!}{
 \begin{longtable}{llllll}
-\caption{R packages used during thesis}
+\caption{Complete list of R packages used during this thesis}
 \label{tab:computers_r_packages_full}
 \\
 \multicolumn{1}{l}{\bfseries Package}  & \multicolumn{1}{l}{\bfseries Repository}  & \multicolumn{1}{l}{\bfseries Laptop}      & \multicolumn{1}{l}{\bfseries Lab}         & \multicolumn{1}{l}{\bfseries Server}         & \multicolumn{1}{l}{\bfseries NeSI} \\ \hline \rowcolor{black!10}
 base                          & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0             \\
 %\hline
 \rowcolor{black!5}
-abind                         & \{gls{CRAN}                      &             & 1.4-5       &                & 1.4-3              \\
+abind                         & \acrshort{CRAN}                      &             & 1.4-5       &                & 1.4-3              \\
 %\hline
 \rowcolor{black!10}
-acepack                       & \{gls{CRAN}                      &             & 1.4.1       &                & 1.3-3.3           \\
+acepack                       & \acrshort{CRAN}                      &             & 1.4.1       &                & 1.3-3.3           \\
 %\hline
 \rowcolor{black!5}
-ade4                          & \{gls{CRAN}                      &             & 1.7-5       &                &                    \\
+ade4                          & \acrshort{CRAN}                      &             & 1.7-5       &                &                    \\
 %\hline
 \rowcolor{black!10}
 annaffy                       & Bioconductor              &             & 1.46.0      &                &                   \\
@@ -230,31 +232,31 @@ annaffy                       & Bioconductor              &             & 1.46.0
 AnnotationDbi                 & Bioconductor              &             & 1.36.0      & 1.36.0         & 1.34.4             \\
 %\hline
 \rowcolor{black!10}
-apComplex                     & \{gls{CRAN}                      &             & 2.40.0      &                &                   \\
+apComplex                     & \acrshort{CRAN}                      &             & 2.40.0      &                &                   \\
 %\hline
 \rowcolor{black!5}
-ape                           & \{gls{CRAN}                      &             & 4           &                & 3.4                \\
+ape                           & \acrshort{CRAN}                      &             & 4           &                & 3.4                \\
 %\hline
 \rowcolor{black!10}
-arm                           & \{gls{CRAN}                      &             & 1.9-3       &                &                   \\
+arm                           & \acrshort{CRAN}                      &             & 1.9-3       &                &                   \\
 %\hline
 \rowcolor{black!5}
-assertthat                    & \{gls{CRAN}                      & 0.1         & 0.1         & 0.1            & 0.1                \\
+assertthat                    & \acrshort{CRAN}                      & 0.1         & 0.1         & 0.1            & 0.1                \\
 %\hline
 \rowcolor{black!10}
-backports                     & \{gls{CRAN}                      & 1.0.5       & 1.0.4       & 1.0.5          & 1.0.2             \\
+backports                     & \acrshort{CRAN}                      & 1.0.5       & 1.0.4       & 1.0.5          & 1.0.2             \\
 %\hline
 \rowcolor{black!5}
-base64                        & \{gls{CRAN}                      &             &             & 2              & 2                  \\
+base64                        & \acrshort{CRAN}                      &             &             & 2              & 2                  \\
 %\hline
 \rowcolor{black!10}
-base64enc                     & \{gls{CRAN}                      &             & 0.1-3       &                & 0.1-3             \\
+base64enc                     & \acrshort{CRAN}                      &             & 0.1-3       &                & 0.1-3             \\
 %\hline
 \rowcolor{black!5}
-beanplot                      & \{gls{CRAN}                      &             & 1.2         & 1.2            & 1.2                \\
+beanplot                      & \acrshort{CRAN}                      &             & 1.2         & 1.2            & 1.2                \\
 %\hline
 \rowcolor{black!10}
-BH                            & \{gls{CRAN}                      & 1.60.0-2    & 1.62.0-1    & 1.62.0-1       & 1.60.0-2          \\
+BH                            & \acrshort{CRAN}                      & 1.60.0-2    & 1.62.0-1    & 1.62.0-1       & 1.60.0-2          \\
 %\hline
 \rowcolor{black!5}
 Biobase                       & Bioconductor              &             & 2.34.0      & 2.34.0         & 2.32.0             \\
@@ -275,28 +277,28 @@ Biostrings                    & Bioconductor              &             & 2.42.1
 BiSEp                         & Bioconductor              &             & 2.0.1       & 2.0.1          & 2.0.1             \\
 %\hline
 \rowcolor{black!5}
-bitops                        & \{gls{CRAN}                      & 1.0-6       & 1.0-6       & 1.0-6          & 1.0-6              \\
+bitops                        & \acrshort{CRAN}                      & 1.0-6       & 1.0-6       & 1.0-6          & 1.0-6              \\
 %\hline
 \rowcolor{black!10}
 boot                          & base                      & 1.3-18      & 1.3-18      & 1.3-18         & 1.3-18            \\
 %\hline
 \rowcolor{black!5}
-brew                          & \{gls{CRAN}                      & 1.0-6       & 1.0-6       & 1.0-6          & 1.0-6              \\
+brew                          & \acrshort{CRAN}                      & 1.0-6       & 1.0-6       & 1.0-6          & 1.0-6              \\
 %\hline
 \rowcolor{black!10}
-broom                         & \{gls{CRAN}                      & 0.4.1       &             &                &                   \\
+broom                         & \acrshort{CRAN}                      & 0.4.1       &             &                &                   \\
 %\hline
 \rowcolor{black!5}
-caTools                       & \{gls{CRAN}                      & 1.17.1      & 1.17.1      & 1.17.1         & 1.17.1             \\
+caTools                       & \acrshort{CRAN}                      & 1.17.1      & 1.17.1      & 1.17.1         & 1.17.1             \\
 %\hline
 \rowcolor{black!10}
-cgdsr                         & \{gls{CRAN}                      &             & 1.2.5       &                &                   \\
+cgdsr                         & \acrshort{CRAN}                      &             & 1.2.5       &                &                   \\
 %\hline
 \rowcolor{black!5}
-checkmate                     & \{gls{CRAN}                      &             & 1.8.2       &                & 1.7.4              \\
+checkmate                     & \acrshort{CRAN}                      &             & 1.8.2       &                & 1.7.4              \\
 %\hline
 \rowcolor{black!10}
-chron                         & \{gls{CRAN}                      & 2.3-47      & 2.3-48      & 2.3-50         & 2.3-47            \\
+chron                         & \acrshort{CRAN}                      & 2.3-47      & 2.3-48      & 2.3-50         & 2.3-47            \\
 %\hline
 \rowcolor{black!5}
 class                         & base                      & 7.3-14      & 7.3-14      & 7.3-14         & 7.3-14             \\
@@ -305,127 +307,127 @@ class                         & base                      & 7.3-14      & 7.3-14
 cluster                       & base                      & 2.0.5       & 2.0.5       & 2.0.5          & 2.0.4             \\
 %\hline
 \rowcolor{black!5}
-coda                          & \{gls{CRAN}                      &             & 0.19-1      &                & 0.18-1             \\
+coda                          & \acrshort{CRAN}                      &             & 0.19-1      &                & 0.18-1             \\
 %\hline
 \rowcolor{black!10}
 codetools                     & base                      & 0.2-15      & 0.2-15      & 0.2-15         & 0.2-14            \\
 %\hline
 \rowcolor{black!5}
-colorRamps                    & \{gls{CRAN}                      &             & 2.3         &                &                    \\
+colorRamps                    & \acrshort{CRAN}                      &             & 2.3         &                &                    \\
 %\hline
 \rowcolor{black!10}
-colorspace                    & \{gls{CRAN}                      & 1.2-6       & 1.3-2       & 1.3-2          & 1.2-6             \\
+colorspace                    & \acrshort{CRAN}                      & 1.2-6       & 1.3-2       & 1.3-2          & 1.2-6             \\
 %\hline
 \rowcolor{black!5}
-commonmark                    & \{gls{CRAN}                      & 1.1         &             & 1.2            &                    \\
+commonmark                    & \acrshort{CRAN}                      & 1.1         &             & 1.2            &                    \\
 %\hline
 \rowcolor{black!10}
 compiler                      & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0             \\
 %\hline
 \rowcolor{black!5}
-corpcor                       & \{gls{CRAN}                      &             & 1.6.8       & 1.6.8          & 1.6.8              \\
+corpcor                       & \acrshort{CRAN}                      &             & 1.6.8       & 1.6.8          & 1.6.8              \\
 %\hline
 \rowcolor{black!10}
-Cprob                         & \{gls{CRAN}                      &             & 1.2.4       &                &                   \\
+Cprob                         & \acrshort{CRAN}                      &             & 1.2.4       &                &                   \\
 %\hline
 \rowcolor{black!5}
-crayon                        & \{gls{CRAN}                      & 1.3.2       & 1.3.2       & 1.3.2          & 1.3.2              \\
+crayon                        & \acrshort{CRAN}                      & 1.3.2       & 1.3.2       & 1.3.2          & 1.3.2              \\
 %\hline
 \rowcolor{black!10}
-crop                          & \{gls{CRAN}                      &             & 0.0-2       & 0.0-2          &                   \\
+crop                          & \acrshort{CRAN}                      &             & 0.0-2       & 0.0-2          &                   \\
 %\hline
 \rowcolor{black!5}
-curl                          & \{gls{CRAN}                      & 1.2         & 2.3         & 2.3            & 0.9.7              \\
+curl                          & \acrshort{CRAN}                      & 1.2         & 2.3         & 2.3            & 0.9.7              \\
 %\hline
 \rowcolor{black!10}
-d3Network                     & \{gls{CRAN}                      &             & 0.5.2.1     &                &                   \\
+d3Network                     & \acrshort{CRAN}                      &             & 0.5.2.1     &                &                   \\
 %\hline
 \rowcolor{black!5}
-data.table                    & \{gls{CRAN}                      & 1.9.6       & 1.10.0      & 1.10.1         & 1.9.6              \\
+data.table                    & \acrshort{CRAN}                      & 1.9.6       & 1.10.0      & 1.10.1         & 1.9.6              \\
 %\hline
 \rowcolor{black!10}
-data.tree                     & \{gls{CRAN}                      &             & 0.7.0       & 0.7.0          &                   \\
+data.tree                     & \acrshort{CRAN}                      &             & 0.7.0       & 0.7.0          &                   \\
 %\hline
 \rowcolor{black!5}
 datasets                      & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
 %\hline
 \rowcolor{black!10}
-DBI                           & \{gls{CRAN}                      & 0.5-1       & 0.5-1       & 0.5-1          & 0.5-1             \\
+DBI                           & \acrshort{CRAN}                      & 0.5-1       & 0.5-1       & 0.5-1          & 0.5-1             \\
 %\hline
 \rowcolor{black!5}
-dendextend                    & \{gls{CRAN}                      & 1.4.0       & 1.4.0       & 1.4.0          &                    \\
+dendextend                    & \acrshort{CRAN}                      & 1.4.0       & 1.4.0       & 1.4.0          &                    \\
 %\hline
 \rowcolor{black!10}
-DEoptimR                      & \{gls{CRAN}                      & 1.0-8       & 1.0-8       & 1.0-8          & 1.0-4             \\
+DEoptimR                      & \acrshort{CRAN}                      & 1.0-8       & 1.0-8       & 1.0-8          & 1.0-4             \\
 %\hline
 \rowcolor{black!5}
-desc                          & \{gls{CRAN}                      & 1.1.0       &             & 1.1.0          &                    \\
+desc                          & \acrshort{CRAN}                      & 1.1.0       &             & 1.1.0          &                    \\
 %\hline
 \rowcolor{black!10}
-devtools                      & \{gls{CRAN}                      & 1.12.0      & 1.12.0      & 1.12.0         & 1.12.0            \\
+devtools                      & \acrshort{CRAN}                      & 1.12.0      & 1.12.0      & 1.12.0         & 1.12.0            \\
 %\hline
 \rowcolor{black!5}
-DiagrammeR                    & \{gls{CRAN}                      &             & 0.9.0       & 0.9.0          &                    \\
+DiagrammeR                    & \acrshort{CRAN}                      &             & 0.9.0       & 0.9.0          &                    \\
 %\hline
 \rowcolor{black!10}
-dichromat                     & \{gls{CRAN}                      & 2.0-0       & 2.0-0       & 2.0-0          & 2.0-0             \\
+dichromat                     & \acrshort{CRAN}                      & 2.0-0       & 2.0-0       & 2.0-0          & 2.0-0             \\
 %\hline
 \rowcolor{black!5}
-digest                        & \{gls{CRAN}                      & 0.6.10      & 0.6.11      & 0.6.12         & 0.6.9              \\
+digest                        & \acrshort{CRAN}                      & 0.6.10      & 0.6.11      & 0.6.12         & 0.6.9              \\
 %\hline
 \rowcolor{black!10}
-diptest                       & \{gls{CRAN}                      & 0.75-7      & 0.75-7      & 0.75-7         &                   \\
+diptest                       & \acrshort{CRAN}                      & 0.75-7      & 0.75-7      & 0.75-7         &                   \\
 %\hline
 \rowcolor{black!5}
-doParallel                    & \{gls{CRAN}                      & 1.0.10      & 1.0.10      & 1.0.10         & 1.0.10             \\
+doParallel                    & \acrshort{CRAN}                      & 1.0.10      & 1.0.10      & 1.0.10         & 1.0.10             \\
 %\hline
 \rowcolor{black!10}
-dplyr                         & \{gls{CRAN}                      & 0.5.0       & 0.5.0       & 0.5.0          & 0.5.0             \\
+dplyr                         & \acrshort{CRAN}                      & 0.5.0       & 0.5.0       & 0.5.0          & 0.5.0             \\
 %\hline
 \rowcolor{black!5}
-ellipse                       & \{gls{CRAN}                      &             & 0.3-8       & 0.3-8          & 0.3-8              \\
+ellipse                       & \acrshort{CRAN}                      &             & 0.3-8       & 0.3-8          & 0.3-8              \\
 %\hline
 \rowcolor{black!10}
-evaluate                      & \{gls{CRAN}                      &             & 0.1         & 0.1            & 0.9               \\
+evaluate                      & \acrshort{CRAN}                      &             & 0.1         & 0.1            & 0.9               \\
 %\hline
 \rowcolor{black!5}
-fdrtool                       & \{gls{CRAN}                      &             & 1.2.15      &                &                    \\
+fdrtool                       & \acrshort{CRAN}                      &             & 1.2.15      &                &                    \\
 %\hline
 \rowcolor{black!10}
-fields                        & \{gls{CRAN}                      &             & 8.1         &                &                   \\
+fields                        & \acrshort{CRAN}                      &             & 8.1         &                &                   \\
 %\hline
 \rowcolor{black!5}
-flexmix                       & \{gls{CRAN}                      & 2.3-13      & 2.3-13      & 2.3-13         &                    \\
+flexmix                       & \acrshort{CRAN}                      & 2.3-13      & 2.3-13      & 2.3-13         &                    \\
 %\hline
 \rowcolor{black!10}
-forcats                       & \{gls{CRAN}                      & 0.2.0       &             &                &                   \\
+forcats                       & \acrshort{CRAN}                      & 0.2.0       &             &                &                   \\
 %\hline
 \rowcolor{black!5}
-foreach                       & \{gls{CRAN}                      & 1.4.3       & 1.4.3       & 1.4.3          & 1.4.3              \\
+foreach                       & \acrshort{CRAN}                      & 1.4.3       & 1.4.3       & 1.4.3          & 1.4.3              \\
 %\hline
 \rowcolor{black!10}
 foreign                       & base                      & 0.8-67      & 0.8-67      & 0.8-67         & 0.8-66            \\
 %\hline
 \rowcolor{black!5}
-formatR                       & \{gls{CRAN}                      &             & 1.4         & 1.4            & 1.4                \\
+formatR                       & \acrshort{CRAN}                      &             & 1.4         & 1.4            & 1.4                \\
 %\hline
 \rowcolor{black!10}
-Formula                       & \{gls{CRAN}                      &             & 1.2-1       &                & 1.2-1             \\
+Formula                       & \acrshort{CRAN}                      &             & 1.2-1       &                & 1.2-1             \\
 %\hline
 \rowcolor{black!5}
-fpc                           & \{gls{CRAN}                      & 2.1-10      & 2.1-10      & 2.1-10         &                    \\
+fpc                           & \acrshort{CRAN}                      & 2.1-10      & 2.1-10      & 2.1-10         &                    \\
 %\hline
 \rowcolor{black!10}
-futile.logger                 & \{gls{CRAN}                      &             & 1.4.3       & 1.4.3          & 1.4.1             \\
+futile.logger                 & \acrshort{CRAN}                      &             & 1.4.3       & 1.4.3          & 1.4.1             \\
 %\hline
 \rowcolor{black!5}
-futile.options                & \{gls{CRAN}                      &             & 1.0.0       & 1.0.0          & 1.0.0              \\
+futile.options                & \acrshort{CRAN}                      &             & 1.0.0       & 1.0.0          & 1.0.0              \\
 %\hline
 \rowcolor{black!10}
-gdata                         & \{gls{CRAN}                      & 2.17.0      & 2.17.0      & 2.17.0         & 2.17.0            \\
+gdata                         & \acrshort{CRAN}                      & 2.17.0      & 2.17.0      & 2.17.0         & 2.17.0            \\
 %\hline
 \rowcolor{black!5}
-geepack                       & \{gls{CRAN}                      &             & 1.2-1       &                &                    \\
+geepack                       & \acrshort{CRAN}                      &             & 1.2-1       &                &                    \\
 %\hline
 \rowcolor{black!10}
 GenomeInfoDb                  & Bioconductor              &             & 1.10.2      & 1.10.1         &                   \\
@@ -437,16 +439,16 @@ GenomicAlignments             & Bioconductor              &             & 1.10.0
 GenomicRanges                 & Bioconductor              &             & 1.26.2      & 1.26.1         &                   \\
 %\hline
 \rowcolor{black!5}
-ggm                           & \{gls{CRAN}                      &             & 2.3         &                &                    \\
+ggm                           & \acrshort{CRAN}                      &             & 2.3         &                &                    \\
 %\hline
 \rowcolor{black!10}
-ggplot2                       & \{gls{CRAN}                      & 2.1.0       & 2.2.1       & 2.2.1          & 2.1.0             \\
+ggplot2                       & \acrshort{CRAN}                      & 2.1.0       & 2.2.1       & 2.2.1          & 2.1.0             \\
 %\hline
 \rowcolor{black!5}
-git2r                         & \{gls{CRAN}                      & 0.15.0      & 0.18.0      & 0.16.0         & 0.15.0             \\
+git2r                         & \acrshort{CRAN}                      & 0.15.0      & 0.18.0      & 0.16.0         & 0.15.0             \\
 %\hline
 \rowcolor{black!10}
-glasso                        & \{gls{CRAN}                      &             & 1.8         &                &                   \\
+glasso                        & \acrshort{CRAN}                      &             & 1.8         &                &                   \\
 %\hline
 \rowcolor{black!5}
 GO.db                         & Bioconductor              &             & 3.4.0       & 3.2.2          & 3.3.0              \\
@@ -455,7 +457,7 @@ GO.db                         & Bioconductor              &             & 3.4.0 
 GOSemSim                      & Bioconductor              &             & 2.0.3       & 1.28.2         & 1.30.3            \\
 %\hline
 \rowcolor{black!5}
-gplots                        & \{gls{CRAN}                      & 3.0.1       & 3.0.1       & 3.0.1          & 3.0.1              \\
+gplots                        & \acrshort{CRAN}                      & 3.0.1       & 3.0.1       & 3.0.1          & 3.0.1              \\
 %\hline
 \rowcolor{black!10}
 graph                         & Bioconductor              &             & 1.52.0      &                &                   \\
@@ -473,22 +475,22 @@ grDevices                     & base                      & 3.3.2       & 3.3.2 
 grid                          & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0             \\
 %\hline
 \rowcolor{black!5}
-gridBase                      & \{gls{CRAN}                      & 0.4-7       & 0.4-7       & 0.4-7          & 0.4-7              \\
+gridBase                      & \acrshort{CRAN}                      & 0.4-7       & 0.4-7       & 0.4-7          & 0.4-7              \\
 %\hline
 \rowcolor{black!10}
-gridExtra                     & \{gls{CRAN}                      & 2.2.1       & 2.2.1       & 2.2.1          & 2.2.1             \\
+gridExtra                     & \acrshort{CRAN}                      & 2.2.1       & 2.2.1       & 2.2.1          & 2.2.1             \\
 %\hline
 \rowcolor{black!5}
-gridGraphics                  & \{gls{CRAN}                      &             & 0.1-5       &                &                    \\
+gridGraphics                  & \acrshort{CRAN}                      &             & 0.1-5       &                &                    \\
 %\hline
 \rowcolor{black!10}
-gtable                        & \{gls{CRAN}                      & 0.2.0       & 0.2.0       & 0.2.0          & 0.2.0             \\
+gtable                        & \acrshort{CRAN}                      & 0.2.0       & 0.2.0       & 0.2.0          & 0.2.0             \\
 %\hline
 \rowcolor{black!5}
-gtools                        & \{gls{CRAN}                      & 3.5.0       & 3.5.0       & 3.5.0          & 3.5.0              \\
+gtools                        & \acrshort{CRAN}                      & 3.5.0       & 3.5.0       & 3.5.0          & 3.5.0              \\
 %\hline
 \rowcolor{black!10}
-haven                         & \{gls{CRAN}                      & 1.0.0       &             &                &                   \\
+haven                         & \acrshort{CRAN}                      & 1.0.0       &             &                &                   \\
 %\hline
 \rowcolor{black!5}
 heatmap.2x                    & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.0.0.9000  & 0.0.0.9000  & 0.0.0.9000     & 0.0.0.9000         \\
@@ -497,46 +499,46 @@ heatmap.2x                    & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGen
 hgu133plus2.db                & Bioconductor              &             & 3.2.3       &                &                   \\
 %\hline
 \rowcolor{black!5}
-highr                         & \{gls{CRAN}                      &             & 0.6         & 0.6            & 0.6                \\
+highr                         & \acrshort{CRAN}                      &             & 0.6         & 0.6            & 0.6                \\
 %\hline
 \rowcolor{black!10}
-Hmisc                         & \{gls{CRAN}                      &             & 4.0-2       & 4.0-2          & 3.17-4            \\
+Hmisc                         & \acrshort{CRAN}                      &             & 4.0-2       & 4.0-2          & 3.17-4            \\
 %\hline
 \rowcolor{black!5}
-hms                           & \{gls{CRAN}                      & 0.2         & 0.3         &                &                    \\
+hms                           & \acrshort{CRAN}                      & 0.2         & 0.3         &                &                    \\
 %\hline
 \rowcolor{black!10}
-htmlTable                     & \{gls{CRAN}                      &             & 1.8         & 1.9            &                   \\
+htmlTable                     & \acrshort{CRAN}                      &             & 1.8         & 1.9            &                   \\
 %\hline
 \rowcolor{black!5}
-htmltools                     & \{gls{CRAN}                      & 0.3.5       & 0.3.5       & 0.3.5          & 0.3.5              \\
+htmltools                     & \acrshort{CRAN}                      & 0.3.5       & 0.3.5       & 0.3.5          & 0.3.5              \\
 %\hline
 \rowcolor{black!10}
-htmlwidgets                   & \{gls{CRAN}                      &             & 0.8         & 0.8            &                   \\
+htmlwidgets                   & \acrshort{CRAN}                      &             & 0.8         & 0.8            &                   \\
 %\hline
 \rowcolor{black!5}
-httpuv                        & \{gls{CRAN}                      & 1.3.3       &             & 1.3.3          &                    \\
+httpuv                        & \acrshort{CRAN}                      & 1.3.3       &             & 1.3.3          &                    \\
 %\hline
 \rowcolor{black!10}
-httr                          & \{gls{CRAN}                      & 1.2.1       & 1.2.1       & 1.2.1          & 1.1.0             \\
+httr                          & \acrshort{CRAN}                      & 1.2.1       & 1.2.1       & 1.2.1          & 1.1.0             \\
 %\hline
 \rowcolor{black!5}
-huge                          & \{gls{CRAN}                      &             & 1.2.7       &                &                    \\
+huge                          & \acrshort{CRAN}                      &             & 1.2.7       &                &                    \\
 %\hline
 \rowcolor{black!10}
-hunspell                      & \{gls{CRAN}                      &             & 2.3         &                & 2                 \\
+hunspell                      & \acrshort{CRAN}                      &             & 2.3         &                & 2                 \\
 %\hline
 \rowcolor{black!5}
-hypergraph                    & \{gls{CRAN}                      &             & 1.46.0      &                &                    \\
+hypergraph                    & \acrshort{CRAN}                      &             & 1.46.0      &                &                    \\
 %\hline
 \rowcolor{black!10}
-igraph                        & \{gls{CRAN}                      & 1.0.1       & 1.0.1       & 1.0.1          & 1.0.1             \\
+igraph                        & \acrshort{CRAN}                      & 1.0.1       & 1.0.1       & 1.0.1          & 1.0.1             \\
 %\hline
 \rowcolor{black!5}
 igraph.extensions             & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.1.0.9001  & 0.1.0.9001  & 0.1.0.9001     & 0.1.0.9001         \\
 %\hline
 \rowcolor{black!10}
-influenceR                    & \{gls{CRAN}                      &             & 0.1.0       & 0.1.0          &                   \\
+influenceR                    & \acrshort{CRAN}                      &             & 0.1.0       & 0.1.0          &                   \\
 %\hline
 \rowcolor{black!5}
 info.centrality               & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.1.0       & 0.1.0       & 0.1.0          & 0.1.0              \\
@@ -545,73 +547,73 @@ info.centrality               & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGen
 IRanges                       & Bioconductor              &             & 2.8.1       & 2.8.1          & 2.6.1             \\
 %\hline
 \rowcolor{black!5}
-irlba                         & \{gls{CRAN}                      & 2.1.1       & 2.1.2       & 2.1.2          & 2.0.0              \\
+irlba                         & \acrshort{CRAN}                      & 2.1.1       & 2.1.2       & 2.1.2          & 2.0.0              \\
 %\hline
 \rowcolor{black!10}
-iterators                     & \{gls{CRAN}                      & 1.0.8       & 1.0.8       & 1.0.8          & 1.0.8             \\
+iterators                     & \acrshort{CRAN}                      & 1.0.8       & 1.0.8       & 1.0.8          & 1.0.8             \\
 %\hline
 \rowcolor{black!5}
-jpeg                          & \{gls{CRAN}                      &             & 0.1-8       &                &                    \\
+jpeg                          & \acrshort{CRAN}                      &             & 0.1-8       &                &                    \\
 %\hline
 \rowcolor{black!10}
-jsonlite                      & \{gls{CRAN}                      & 1.1         & 1.2         & 1.3            & 0.9.20            \\
+jsonlite                      & \acrshort{CRAN}                      & 1.1         & 1.2         & 1.3            & 0.9.20            \\
 %\hline
 \rowcolor{black!5}
 KEGG.db                       & Bioconductor              &             & 3.2.3       &                &                    \\
 %\hline
 \rowcolor{black!10}
-kernlab                       & \{gls{CRAN}                      & 0.9-25      & 0.9-25      & 0.9-25         &                   \\
+kernlab                       & \acrshort{CRAN}                      & 0.9-25      & 0.9-25      & 0.9-25         &                   \\
 %\hline
 \rowcolor{black!5}
 KernSmooth                    & base                      & 2.23-15     & 2.23-15     & 2.23-15        & 2.23-15            \\
 %\hline
 \rowcolor{black!10}
-knitr                         & \{gls{CRAN}                      &             & 1.15.1      & 1.15.1         & 1.14              \\
+knitr                         & \acrshort{CRAN}                      &             & 1.15.1      & 1.15.1         & 1.14              \\
 %\hline
 \rowcolor{black!5}
-labeling                      & \{gls{CRAN}                      & 0.3         & 0.3         & 0.3            & 0.3                \\
+labeling                      & \acrshort{CRAN}                      & 0.3         & 0.3         & 0.3            & 0.3                \\
 %\hline
 \rowcolor{black!10}
-lambda.r                      & \{gls{CRAN}                      &             & 1.1.9       & 1.1.9          & 1.1.7             \\
+lambda.r                      & \acrshort{CRAN}                      &             & 1.1.9       & 1.1.9          & 1.1.7             \\
 %\hline
 \rowcolor{black!5}
 lattice                       & base                      & 0.20-34     & 0.20-34     & 0.20-34        & 0.20-33            \\
 %\hline
 \rowcolor{black!10}
-latticeExtra                  & \{gls{CRAN}                      &             & 0.6-28      &                & 0.6-28            \\
+latticeExtra                  & \acrshort{CRAN}                      &             & 0.6-28      &                & 0.6-28            \\
 %\hline
 \rowcolor{black!5}
-lava                          & \{gls{CRAN}                      &             & 1.4.6       &                &                    \\
+lava                          & \acrshort{CRAN}                      &             & 1.4.6       &                &                    \\
 %\hline
 \rowcolor{black!10}
-lavaan                        & \{gls{CRAN}                      &             & 0.5-22      &                &                   \\
+lavaan                        & \acrshort{CRAN}                      &             & 0.5-22      &                &                   \\
 %\hline
 \rowcolor{black!5}
-lazyeval                      & \{gls{CRAN}                      & 0.2.0       & 0.2.0       & 0.2.0          & 0.2.0              \\
+lazyeval                      & \acrshort{CRAN}                      & 0.2.0       & 0.2.0       & 0.2.0          & 0.2.0              \\
 %\hline
 \rowcolor{black!10}
-les                           & \{gls{CRAN}                      &             & 1.24.0      &                &                   \\
+les                           & \acrshort{CRAN}                      &             & 1.24.0      &                &                   \\
 %\hline
 \rowcolor{black!5}
-lgtdl                         & \{gls{CRAN}                      &             & 1.1.3       &                &                    \\
+lgtdl                         & \acrshort{CRAN}                      &             & 1.1.3       &                &                    \\
 %\hline
 \rowcolor{black!10}
 limma                         & Bioconductor              &             & 3.30.7      & 3.30.3         &                   \\
 %\hline
 \rowcolor{black!5}
-lme4                          & \{gls{CRAN}                      &             & 1.1-12      &                & 1.1-12             \\
+lme4                          & \acrshort{CRAN}                      &             & 1.1-12      &                & 1.1-12             \\
 %\hline
 \rowcolor{black!10}
-lubridate                     & \{gls{CRAN}                      & 1.6.0       &             &                &                   \\
+lubridate                     & \acrshort{CRAN}                      & 1.6.0       &             &                &                   \\
 %\hline
 \rowcolor{black!5}
-magrittr                      & \{gls{CRAN}                      & 1.5         & 1.5         & 1.5            & 1.5                \\
+magrittr                      & \acrshort{CRAN}                      & 1.5         & 1.5         & 1.5            & 1.5                \\
 %\hline
 \rowcolor{black!10}
-maps                          & \{gls{CRAN}                      &             & 3.1.1       &                &                   \\
+maps                          & \acrshort{CRAN}                      &             & 3.1.1       &                &                   \\
 %\hline
 \rowcolor{black!5}
-markdown                      & \{gls{CRAN}                      &             & 0.7.7       & 0.7.7          & 0.7.7              \\
+markdown                      & \acrshort{CRAN}                      &             & 0.7.7       & 0.7.7          & 0.7.7              \\
 %\hline
 \rowcolor{black!10}
 MASS                          & base                      & 7.3-45      & 7.3-45      & 7.3-45         & 7.3-45            \\
@@ -620,13 +622,13 @@ MASS                          & base                      & 7.3-45      & 7.3-45
 Matrix                        & base                      & 1.2-7.1     & 1.2-7.1     & 1.2-8          & 1.2-6              \\
 %\hline
 \rowcolor{black!10}
-matrixcalc                    & \{gls{CRAN}                      & 1.0-3       & 1.0-3       & 1.0-3          & 1.0-3             \\
+matrixcalc                    & \acrshort{CRAN}                      & 1.0-3       & 1.0-3       & 1.0-3          & 1.0-3             \\
 %\hline
 \rowcolor{black!5}
-mclust                        & \{gls{CRAN}                      & 5.2         & 5.2.1       & 5.2.2          & 5.2                \\
+mclust                        & \acrshort{CRAN}                      & 5.2         & 5.2.1       & 5.2.2          & 5.2                \\
 %\hline
 \rowcolor{black!10}
-memoise                       & \{gls{CRAN}                      & 1.0.0       & 1.0.0       & 1.0.0          & 1.0.0             \\
+memoise                       & \acrshort{CRAN}                      & 1.0.0       & 1.0.0       & 1.0.0          & 1.0.0             \\
 %\hline
 \rowcolor{black!5}
 methods                       & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
@@ -635,52 +637,52 @@ methods                       & base                      & 3.3.2       & 3.3.2 
 mgcv                          & base                      & 1.8-16      & 1.8-16      & 1.8-17         & 1.8-12            \\
 %\hline
 \rowcolor{black!5}
-mi                            & \{gls{CRAN}                      &             & 1           &                &                    \\
+mi                            & \acrshort{CRAN}                      &             & 1           &                &                    \\
 %\hline
 \rowcolor{black!10}
-mime                          & \{gls{CRAN}                      & 0.5         & 0.5         & 0.5            & 0.4               \\
+mime                          & \acrshort{CRAN}                      & 0.5         & 0.5         & 0.5            & 0.4               \\
 %\hline
 \rowcolor{black!5}
-minqa                         & \{gls{CRAN}                      &             & 1.2.4       &                & 1.2.4              \\
+minqa                         & \acrshort{CRAN}                      &             & 1.2.4       &                & 1.2.4              \\
 %\hline
 \rowcolor{black!10}
-mnormt                        & \{gls{CRAN}                      & 1.5-5       & 1.5-5       &                & 1.5-4             \\
+mnormt                        & \acrshort{CRAN}                      & 1.5-5       & 1.5-5       &                & 1.5-4             \\
 %\hline
 \rowcolor{black!5}
-modelr                        & \{gls{CRAN}                      & 0.1.0       &             &                &                    \\
+modelr                        & \acrshort{CRAN}                      & 0.1.0       &             &                &                    \\
 %\hline
 \rowcolor{black!10}
-modeltools                    & \{gls{CRAN}                      & 0.2-21      & 0.2-21      & 0.2-21         &                   \\
+modeltools                    & \acrshort{CRAN}                      & 0.2-21      & 0.2-21      & 0.2-21         &                   \\
 %\hline
 \rowcolor{black!5}
 multtest                      & Bioconductor              &             & 2.30.0      & 2.30.0         &                    \\
 %\hline
 \rowcolor{black!10}
-munsell                       & \{gls{CRAN}                      & 0.4.3       & 0.4.3       & 0.4.3          & 0.4.3             \\
+munsell                       & \acrshort{CRAN}                      & 0.4.3       & 0.4.3       & 0.4.3          & 0.4.3             \\
 %\hline
 \rowcolor{black!5}
-mvtnorm                       & \{gls{CRAN}                      & 1.0-5       & 1.0-5       & 1.0-6          & 1.0-5              \\
+mvtnorm                       & \acrshort{CRAN}                      & 1.0-5       & 1.0-5       & 1.0-6          & 1.0-5              \\
 %\hline
 \rowcolor{black!10}
-network                       & \{gls{CRAN}                      &             & 1.13.0      &                &                   \\
+network                       & \acrshort{CRAN}                      &             & 1.13.0      &                &                   \\
 %\hline
 \rowcolor{black!5}
 nlme                          & base                      & 3.1-128     & 3.1-128     & 3.1-131        & 3.1-128            \\
 %\hline
 \rowcolor{black!10}
-nloptr                        & \{gls{CRAN}                      &             & 1.0.4       &                & 1.0.4             \\
+nloptr                        & \acrshort{CRAN}                      &             & 1.0.4       &                & 1.0.4             \\
 %\hline
 \rowcolor{black!5}
-NMF                           & \{gls{CRAN}                      & 0.20.6      & 0.20.6      & 0.20.6         & 0.20.6             \\
+NMF                           & \acrshort{CRAN}                      & 0.20.6      & 0.20.6      & 0.20.6         & 0.20.6             \\
 %\hline
 \rowcolor{black!10}
 nnet                          & base                      & 7.3-12      & 7.3-12      & 7.3-12         & 7.3-12            \\
 %\hline
 \rowcolor{black!5}
-numDeriv                      & \{gls{CRAN}                      &             & 2016.8-1    &                & 2014.2-1           \\
+numDeriv                      & \acrshort{CRAN}                      &             & 2016.8-1    &                & 2014.2-1           \\
 %\hline
 \rowcolor{black!10}
-openssl                       & \{gls{CRAN}                      & 0.9.4       & 0.9.6       & 0.9.6          & 0.9.4             \\
+openssl                       & \acrshort{CRAN}                      & 0.9.4       & 0.9.6       & 0.9.6          & 0.9.4             \\
 %\hline
 \rowcolor{black!5}
 org.Hs.eg.db                  & Bioconductor              &             & 3.1.2       &                & 3.3.0              \\
@@ -695,94 +697,94 @@ parallel                      & base                      & 3.3.2       & 3.3.2 
 \begin{tabular}[c]{@{}l@{}}pathway.structure\\.permutation \end{tabular} & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.1.0       & 0.1.0       & 0.1.0          & 0.1.0             \\
 %\hline
 \rowcolor{black!5}
-pbivnorm                      & \{gls{CRAN}                      &             & 0.6.0       &                &                    \\
+pbivnorm                      & \acrshort{CRAN}                      &             & 0.6.0       &                &                    \\
 %\hline
 \rowcolor{black!10}
 PGSEA                         & Bioconductor              &             & 1.48.0      &                &                   \\
 %\hline
 \rowcolor{black!5}
-pkgmaker                      & \{gls{CRAN}                      & 0.22        & 0.22        & 0.22           & 0.22               \\
+pkgmaker                      & \acrshort{CRAN}                      & 0.22        & 0.22        & 0.22           & 0.22               \\
 %\hline
 \rowcolor{black!10}
-PKI                           & \{gls{CRAN}                      &             & 0.1-3       &                &                   \\
+PKI                           & \acrshort{CRAN}                      &             & 0.1-3       &                &                   \\
 %\hline
 \rowcolor{black!5}
-plogr                         & \{gls{CRAN}                      &             & 0.1-1       & 0.1-1          &                    \\
+plogr                         & \acrshort{CRAN}                      &             & 0.1-1       & 0.1-1          &                    \\
 %\hline
 \rowcolor{black!10}
 plot.igraph                   & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.0.0.9001  & 0.0.0.9001  & 0.0.0.9001     & 0.0.0.9001        \\
 %\hline
 \rowcolor{black!5}
-plotrix                       & \{gls{CRAN}                      &             & 3.6-4       &                &                    \\
+plotrix                       & \acrshort{CRAN}                      &             & 3.6-4       &                &                    \\
 %\hline
 \rowcolor{black!10}
-plyr                          & \{gls{CRAN}                      & 1.8.4       & 1.8.4       & 1.8.4          & 1.8.3             \\
+plyr                          & \acrshort{CRAN}                      & 1.8.4       & 1.8.4       & 1.8.4          & 1.8.3             \\
 %\hline
 \rowcolor{black!5}
-png                           & \{gls{CRAN}                      &             & 0.1-7       &                & 0.1-7              \\
+png                           & \acrshort{CRAN}                      &             & 0.1-7       &                & 0.1-7              \\
 %\hline
 \rowcolor{black!10}
-prabclus                      & \{gls{CRAN}                      & 2.2-6       & 2.2-6       & 2.2-6          &                   \\
+prabclus                      & \acrshort{CRAN}                      & 2.2-6       & 2.2-6       & 2.2-6          &                   \\
 %\hline
 \rowcolor{black!5}
-praise                        & \{gls{CRAN}                      & 1.0.0       & 1.0.0       &                & 1.0.0              \\
+praise                        & \acrshort{CRAN}                      & 1.0.0       & 1.0.0       &                & 1.0.0              \\
 %\hline
 \rowcolor{black!10}
-pROC                          & \{gls{CRAN}                      &             & 1.8         & 1.9.1          &                   \\
+pROC                          & \acrshort{CRAN}                      &             & 1.8         & 1.9.1          &                   \\
 %\hline
 \rowcolor{black!5}
-prodlim                       & \{gls{CRAN}                      &             & 1.5.7       &                &                    \\
+prodlim                       & \acrshort{CRAN}                      &             & 1.5.7       &                &                    \\
 %\hline
 \rowcolor{black!10}
-prof.tree                     & \{gls{CRAN}                      &             & 0.1.0       &                &                   \\
+prof.tree                     & \acrshort{CRAN}                      &             & 0.1.0       &                &                   \\
 %\hline
 \rowcolor{black!5}
-proftools                     & \{gls{CRAN}                      &             & 0.99-2      &                &                    \\
+proftools                     & \acrshort{CRAN}                      &             & 0.99-2      &                &                    \\
 %\hline
 \rowcolor{black!10}
-progress                      & \{gls{CRAN}                      &             &             & 1.1.2          &                   \\
+progress                      & \acrshort{CRAN}                      &             &             & 1.1.2          &                   \\
 %\hline
 \rowcolor{black!5}
-psych                         & \{gls{CRAN}                      & 1.6.12      & 1.6.12      &                &                    \\
+psych                         & \acrshort{CRAN}                      & 1.6.12      & 1.6.12      &                &                    \\
 %\hline
 \rowcolor{black!10}
-purrr                         & \{gls{CRAN}                      & 0.2.2       & 0.2.2       & 0.2.2          & 0.2.2             \\
+purrr                         & \acrshort{CRAN}                      & 0.2.2       & 0.2.2       & 0.2.2          & 0.2.2             \\
 %\hline
 \rowcolor{black!5}
-qgraph                        & \{gls{CRAN}                      &             & 1.4.1       &                &                    \\
+qgraph                        & \acrshort{CRAN}                      &             & 1.4.1       &                &                    \\
 %\hline
 \rowcolor{black!10}
-quadprog                      & \{gls{CRAN}                      &             & 1.5-5       & 1.5-5          & 1.5-5             \\
+quadprog                      & \acrshort{CRAN}                      &             & 1.5-5       & 1.5-5          & 1.5-5             \\
 %\hline
 \rowcolor{black!5}
-R.methodsS3                   & \{gls{CRAN}                      &             & 1.7.1       &                & 1.7.1              \\
+R.methodsS3                   & \acrshort{CRAN}                      &             & 1.7.1       &                & 1.7.1              \\
 %\hline
 \rowcolor{black!10}
-R.oo                          & \{gls{CRAN}                      &             & 1.21.0      &                & 1.20.0            \\
+R.oo                          & \acrshort{CRAN}                      &             & 1.21.0      &                & 1.20.0            \\
 %\hline
 \rowcolor{black!5}
-R.utils                       & \{gls{CRAN}                      &             & 2.5.0       &                &                    \\
+R.utils                       & \acrshort{CRAN}                      &             & 2.5.0       &                &                    \\
 %\hline
 \rowcolor{black!10}
-R6                            & \{gls{CRAN}                      & 2.1.3       & 2.2.0       & 2.2.0          & 2.1.3             \\
+R6                            & \acrshort{CRAN}                      & 2.1.3       & 2.2.0       & 2.2.0          & 2.1.3             \\
 %\hline
 \rowcolor{black!5}
-RBGL                          & \{gls{CRAN}                      &             & 1.50.0      &                &                    \\
+RBGL                          & \acrshort{CRAN}                      &             & 1.50.0      &                &                    \\
 %\hline
 \rowcolor{black!10}
-RColorBrewer                  & \{gls{CRAN}                      & 1.1-2       & 1.1-2       & 1.1-2          & 1.1-2             \\
+RColorBrewer                  & \acrshort{CRAN}                      & 1.1-2       & 1.1-2       & 1.1-2          & 1.1-2             \\
 %\hline
 \rowcolor{black!5}
-Rcpp                          & \{gls{CRAN}                      & 0.12.7      & 0.12.9      & 0.12.9         & 0.12.7             \\
+Rcpp                          & \acrshort{CRAN}                      & 0.12.7      & 0.12.9      & 0.12.9         & 0.12.7             \\
 %\hline
 \rowcolor{black!10}
-RcppArmadillo                 & \{gls{CRAN}                      &             &             & 0.7.700.0.0    & 0.6.700.6.0       \\
+RcppArmadillo                 & \acrshort{CRAN}                      &             &             & 0.7.700.0.0    & 0.6.700.6.0       \\
 %\hline
 \rowcolor{black!5}
-RcppEigen                     & \{gls{CRAN}                      &             & 0.3.2.9.0   &                & 0.3.2.8.1          \\
+RcppEigen                     & \acrshort{CRAN}                      &             & 0.3.2.9.0   &                & 0.3.2.8.1          \\
 %\hline
 \rowcolor{black!10}
-RCurl                         & \{gls{CRAN}                      &             & 1.95-4.8    & 1.95-4.8       & 1.95-4.8          \\
+RCurl                         & \acrshort{CRAN}                      &             & 1.95-4.8    & 1.95-4.8       & 1.95-4.8          \\
 %\hline
 \rowcolor{black!5}
 reactome.db                   & Bioconductor              &             & 1.52.1      & 1.52.1         &                    \\
@@ -791,73 +793,73 @@ reactome.db                   & Bioconductor              &             & 1.52.1
 reactometree                  & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  &             & 0.1         &                &                   \\
 %\hline
 \rowcolor{black!5}
-readr                         & \{gls{CRAN}                      & 1.0.0       & 1.0.0       &                &                    \\
+readr                         & \acrshort{CRAN}                      & 1.0.0       & 1.0.0       &                &                    \\
 %\hline
 \rowcolor{black!10}
-readxl                        & \{gls{CRAN}                      & 0.1.1       &             &                &                   \\
+readxl                        & \acrshort{CRAN}                      & 0.1.1       &             &                &                   \\
 %\hline
 \rowcolor{black!5}
-registry                      & \{gls{CRAN}                      & 0.3         & 0.3         & 0.3            & 0.3                \\
+registry                      & \acrshort{CRAN}                      & 0.3         & 0.3         & 0.3            & 0.3                \\
 %\hline
 \rowcolor{black!10}
-reshape2                      & \{gls{CRAN}                      & 1.4.1       & 1.4.2       & 1.4.2          & 1.4.1             \\
+reshape2                      & \acrshort{CRAN}                      & 1.4.1       & 1.4.2       & 1.4.2          & 1.4.1             \\
 %\hline
 \rowcolor{black!5}
-rgexf                         & \{gls{CRAN}                      &             & 0.15.3      & 0.15.3         &                    \\
+rgexf                         & \acrshort{CRAN}                      &             & 0.15.3      & 0.15.3         &                    \\
 %\hline
 \rowcolor{black!10}
-rgl                           & \{gls{CRAN}                      &             &             & 0.97.0         & 0.95.1441         \\
+rgl                           & \acrshort{CRAN}                      &             &             & 0.97.0         & 0.95.1441         \\
 %\hline
 \rowcolor{black!5}
-Rgraphviz                     & \{gls{CRAN}                      &             & 2.18.0      &                &                    \\
+Rgraphviz                     & \acrshort{CRAN}                      &             & 2.18.0      &                &                    \\
 %\hline
 \rowcolor{black!10}
-rjson                         & \{gls{CRAN}                      &             & 0.2.15      &                &                   \\
+rjson                         & \acrshort{CRAN}                      &             & 0.2.15      &                &                   \\
 %\hline
 \rowcolor{black!5}
-RJSONIO                       & \{gls{CRAN}                      &             & 1.3-0       &                &                    \\
+RJSONIO                       & \acrshort{CRAN}                      &             & 1.3-0       &                &                    \\
 %\hline
 \rowcolor{black!10}
-rmarkdown                     & \{gls{CRAN}                      &             & 1.3         & 1.3            & 1                 \\
+rmarkdown                     & \acrshort{CRAN}                      &             & 1.3         & 1.3            & 1                 \\
 %\hline
 \rowcolor{black!5}
-Rmpi                          & \{gls{CRAN}                      &             & 0.6-6       &                & 0.6-5              \\
+Rmpi                          & \acrshort{CRAN}                      &             & 0.6-6       &                & 0.6-5              \\
 %\hline
 \rowcolor{black!10}
-rngtools                      & \{gls{CRAN}                      & 1.2.4       & 1.2.4       & 1.2.4          & 1.2.4             \\
+rngtools                      & \acrshort{CRAN}                      & 1.2.4       & 1.2.4       & 1.2.4          & 1.2.4             \\
 %\hline
 \rowcolor{black!5}
-robustbase                    & \{gls{CRAN}                      & 0.92-7      & 0.92-7      & 0.92-7         & 0.92-5             \\
+robustbase                    & \acrshort{CRAN}                      & 0.92-7      & 0.92-7      & 0.92-7         & 0.92-5             \\
 %\hline
 \rowcolor{black!10}
-ROCR                          & \{gls{CRAN}                      & 1.0-7       & 1.0-7       & 1.0-7          & 1.0-7             \\
+ROCR                          & \acrshort{CRAN}                      & 1.0-7       & 1.0-7       & 1.0-7          & 1.0-7             \\
 %\hline
 \rowcolor{black!5}
-Rook                          & \{gls{CRAN}                      &             & 1.1-1       & 1.1-1          &                    \\
+Rook                          & \acrshort{CRAN}                      &             & 1.1-1       & 1.1-1          &                    \\
 %\hline
 \rowcolor{black!10}
-roxygen2                      & \{gls{CRAN}                      & 6.0.1       & 5.0.1       & 6.0.1          & 5.0.1             \\
+roxygen2                      & \acrshort{CRAN}                      & 6.0.1       & 5.0.1       & 6.0.1          & 5.0.1             \\
 %\hline
 \rowcolor{black!5}
 rpart                         & base                      & 4.1-10      & 4.1-10      & 4.1-10         & 4.1-10             \\
 %\hline
 \rowcolor{black!10}
-rprojroot                     & \{gls{CRAN}                      & 1.2         & 1.1         & 1.2            &                   \\
+rprojroot                     & \acrshort{CRAN}                      & 1.2         & 1.1         & 1.2            &                   \\
 %\hline
 \rowcolor{black!5}
 Rsamtools                     & Bioconductor              &             & 1.26.1      & 1.26.1         &                    \\
 %\hline
 \rowcolor{black!10}
-rsconnect                     & \{gls{CRAN}                      &             & 0.7         &                &                   \\
+rsconnect                     & \acrshort{CRAN}                      &             & 0.7         &                &                   \\
 %\hline
 \rowcolor{black!5}
-RSQLite                       & \{gls{CRAN}                      &             & 1.1-2       & 1.1-2          & 1.0.0              \\
+RSQLite                       & \acrshort{CRAN}                      &             & 1.1-2       & 1.1-2          & 1.0.0              \\
 %\hline
 \rowcolor{black!10}
-rstudioapi                    & \{gls{CRAN}                      & 0.6         & 0.6         & 0.6            & 0.6               \\
+rstudioapi                    & \acrshort{CRAN}                      & 0.6         & 0.6         & 0.6            & 0.6               \\
 %\hline
 \rowcolor{black!5}
-rvest                         & \{gls{CRAN}                      & 0.3.2       &             &                &                    \\
+rvest                         & \acrshort{CRAN}                      & 0.3.2       &             &                &                    \\
 %\hline
 \rowcolor{black!10}
 S4Vectors                     & Bioconductor              &             & 0.12.1      & 0.12.0         & 0.10.3            \\
@@ -866,34 +868,34 @@ S4Vectors                     & Bioconductor              &             & 0.12.1
 safe                          & Bioconductor              &             & 3.14.0      & 3.10.0         &                    \\
 %\hline
 \rowcolor{black!10}
-scales                        & \{gls{CRAN}                      & 0.4.0       & 0.4.1       & 0.4.1          & 0.4.0             \\
+scales                        & \acrshort{CRAN}                      & 0.4.0       & 0.4.1       & 0.4.1          & 0.4.0             \\
 %\hline
 \rowcolor{black!5}
-selectr                       & \{gls{CRAN}                      & 0.3-1       &             &                &                    \\
+selectr                       & \acrshort{CRAN}                      & 0.3-1       &             &                &                    \\
 %\hline
 \rowcolor{black!10}
-sem                           & \{gls{CRAN}                      &             & 3.1-8       &                &                   \\
+sem                           & \acrshort{CRAN}                      &             & 3.1-8       &                &                   \\
 %\hline
 \rowcolor{black!5}
-shiny                         & \{gls{CRAN}                      & 0.14        &             & 1.0.0          &                    \\
+shiny                         & \acrshort{CRAN}                      & 0.14        &             & 1.0.0          &                    \\
 %\hline
 \rowcolor{black!10}
 slipt                         & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.1.0       & 0.1.0       & 0.1.0          & 0.1.0             \\
 %\hline
 \rowcolor{black!5}
-sm                            & \{gls{CRAN}                      & 2.2-5.4     & 2.2-5.4     &                &                    \\
+sm                            & \acrshort{CRAN}                      & 2.2-5.4     & 2.2-5.4     &                &                    \\
 %\hline
 \rowcolor{black!10}
-sna                           & \{gls{CRAN}                      &             & 2.4         &                &                   \\
+sna                           & \acrshort{CRAN}                      &             & 2.4         &                &                   \\
 %\hline
 \rowcolor{black!5}
-snow                          & \{gls{CRAN}                      & 0.4-1       & 0.4-2       & 0.4-2          & 0.3-13             \\
+snow                          & \acrshort{CRAN}                      & 0.4-1       & 0.4-2       & 0.4-2          & 0.3-13             \\
 %\hline
 \rowcolor{black!10}
-sourcetools                   & \{gls{CRAN}                      & 0.1.5       &             & 0.1.5          &                   \\
+sourcetools                   & \acrshort{CRAN}                      & 0.1.5       &             & 0.1.5          &                   \\
 %\hline
 \rowcolor{black!5}
-SparseM                       & \{gls{CRAN}                      &             & 1.74        &                & 1.7                \\
+SparseM                       & \acrshort{CRAN}                      &             & 1.74        &                & 1.7                \\
 %\hline
 \rowcolor{black!10}
 spatial                       & base                      & 7.3-11      & 7.3-11      & 7.3-11         & 7.3-11            \\
@@ -902,7 +904,7 @@ spatial                       & base                      & 7.3-11      & 7.3-11
 splines                       & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
 %\hline
 \rowcolor{black!10}
-statnet.common                & \{gls{CRAN}                      &             & 3.3.0       &                &                   \\
+statnet.common                & \acrshort{CRAN}                      &             & 3.3.0       &                &                   \\
 %\hline
 \rowcolor{black!5}
 stats                         & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
@@ -911,10 +913,10 @@ stats                         & base                      & 3.3.2       & 3.3.2 
 stats4                        & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0             \\
 %\hline
 \rowcolor{black!5}
-stringi                       & \{gls{CRAN}                      & 1.1.1       & 1.1.2       & 1.1.2          & 1.0-1              \\
+stringi                       & \acrshort{CRAN}                      & 1.1.1       & 1.1.2       & 1.1.2          & 1.0-1              \\
 %\hline
 \rowcolor{black!10}
-stringr                       & \{gls{CRAN}                      & 1.1.0       & 1.1.0       & 1.2.0          & 1.0.0             \\
+stringr                       & \acrshort{CRAN}                      & 1.1.0       & 1.1.0       & 1.2.0          & 1.0.0             \\
 %\hline
 \rowcolor{black!5}
 \begin{tabular}[c]{@{}l@{}}Summarized\\Experiment \end{tabular}          & Bioconductor              &             & 1.4.0       & 1.4.0          &                    \\
@@ -926,73 +928,73 @@ survival                      & base                      & 2.39-4      & 2.40-1
 tcltk                         & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
 %\hline
 \rowcolor{black!10}
-testthat                      & \{gls{CRAN}                      & 1.0.2       & 1.0.2       &                & 1.0.2             \\
+testthat                      & \acrshort{CRAN}                      & 1.0.2       & 1.0.2       &                & 1.0.2             \\
 %\hline
 \rowcolor{black!5}
-tibble                        & \{gls{CRAN}                      & 1.2         & 1.2         & 1.2            & 1.2                \\
+tibble                        & \acrshort{CRAN}                      & 1.2         & 1.2         & 1.2            & 1.2                \\
 %\hline
 \rowcolor{black!10}
-tidyr                         & \{gls{CRAN}                      & 0.6.1       & 0.6.1       & 0.6.1          &                   \\
+tidyr                         & \acrshort{CRAN}                      & 0.6.1       & 0.6.1       & 0.6.1          &                   \\
 %\hline
 \rowcolor{black!5}
 tidyverse                     & \begin{tabular}[c]{@{}l@{}}GitHub \\ hadley \end{tabular}            & 1.1.1       &             &                &                    \\
 %\hline
 \rowcolor{black!10}
-timeline                      & \{gls{CRAN}                      &             & 0.9         &                &                   \\
+timeline                      & \acrshort{CRAN}                      &             & 0.9         &                &                   \\
 %\hline
 \rowcolor{black!5}
 tools                         & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
 %\hline
 \rowcolor{black!10}
-tpr                           & \{gls{CRAN}                      &             & 0.3-1       &                &                   \\
+tpr                           & \acrshort{CRAN}                      &             & 0.3-1       &                &                   \\
 %\hline
 \rowcolor{black!5}
-trimcluster                   & \{gls{CRAN}                      & 0.1-2       & 0.1-2       & 0.1-2          &                    \\
+trimcluster                   & \acrshort{CRAN}                      & 0.1-2       & 0.1-2       & 0.1-2          &                    \\
 %\hline
 \rowcolor{black!10}
-Unicode                       & \{gls{CRAN}                      & 9.0.0-1     & 9.0.0-1     & 9.0.0-1        &                   \\
+Unicode                       & \acrshort{CRAN}                      & 9.0.0-1     & 9.0.0-1     & 9.0.0-1        &                   \\
 %\hline
 \rowcolor{black!5}
 utils                         & base                      & 3.3.2       & 3.3.2       & 3.3.1          & 3.3.0              \\
 %\hline
 \rowcolor{black!10}
-vioplot                       & \{gls{CRAN}                      &             & 0.2         &                &                   \\
+vioplot                       & \acrshort{CRAN}                      &             & 0.2         &                &                   \\
 %\hline
 \rowcolor{black!5}
 vioplotx                      & \begin{tabular}[c]{@{}l@{}}GitHub \\ TomKellyGenetics \end{tabular}  & 0.0.0.9000  & 0.0.0.9000  &                &                    \\
 %\hline
 \rowcolor{black!10}
-viridis                       & \{gls{CRAN}                      & 0.3.4       & 0.3.4       & 0.3.4          &                   \\
+viridis                       & \acrshort{CRAN}                      & 0.3.4       & 0.3.4       & 0.3.4          &                   \\
 %\hline
 \rowcolor{black!5}
-visNetwork                    & \{gls{CRAN}                      &             & 1.0.3       & 1.0.3          &                    \\
+visNetwork                    & \acrshort{CRAN}                      &             & 1.0.3       & 1.0.3          &                    \\
 %\hline
 \rowcolor{black!10}
-whisker                       & \{gls{CRAN}                      & 0.3-2       & 0.3-2       & 0.3-2          & 0.3-2             \\
+whisker                       & \acrshort{CRAN}                      & 0.3-2       & 0.3-2       & 0.3-2          & 0.3-2             \\
 %\hline
 \rowcolor{black!5}
-withr                         & \{gls{CRAN}                      & 1.0.2       & 1.0.2       & 1.0.2          & 1.0.2              \\
+withr                         & \acrshort{CRAN}                      & 1.0.2       & 1.0.2       & 1.0.2          & 1.0.2              \\
 %\hline
 \rowcolor{black!10}
 XML                           & base                      & 3.98-1.3    & 3.98-1.1    & 3.98-1.5       & 3.98-1.4          \\
 %\hline
 \rowcolor{black!5}
-xml2                          & \{gls{CRAN}                      & 1.1.1       &             & 1.1.1          & 1.0.0              \\
+xml2                          & \acrshort{CRAN}                      & 1.1.1       &             & 1.1.1          & 1.0.0              \\
 %\hline
 \rowcolor{black!10}
-xtable                        & \{gls{CRAN}                      & 1.8-2       & 1.8-2       & 1.8-2          & 1.8-2             \\
+xtable                        & \acrshort{CRAN}                      & 1.8-2       & 1.8-2       & 1.8-2          & 1.8-2             \\
 %\hline
 \rowcolor{black!5}
 XVector                       & Bioconductor              &             & 0.14.0      & 0.14.0         &                    \\
 %\hline
 \rowcolor{black!10}
-yaml                          & \{gls{CRAN}                      &             & 2.1.14      & 2.1.14         & 2.1.13            \\
+yaml                          & \acrshort{CRAN}                      &             & 2.1.14      & 2.1.14         & 2.1.13            \\
 %\hline
 \rowcolor{black!5}
-zlibbioc                      & \{gls{CRAN}                      &             & 1.20.0      & 1.20.0         &                    \\
+zlibbioc                      & \acrshort{CRAN}                      &             & 1.20.0      & 1.20.0         &                    \\
 %\hline
 \rowcolor{black!10}
-zoo                           & \{gls{CRAN}                      & 1.7-13      & 1.7-14      &                & 1.7-13            \\
+zoo                           & \acrshort{CRAN}                      & 1.7-13      & 1.7-14      &                & 1.7-13            \\
 \hline
 \end{longtable}
 %} %resize
