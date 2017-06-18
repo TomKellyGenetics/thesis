@@ -209,7 +209,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 \FloatBarrier
 
-The genes and pathways identified in Tables~\ref{tab:gene_mtSL} and~\ref{tab:pathway_mtSL} were derived from comparing the expression profiles of potential partners to the mutation status of \textit{CDH1} (as shown in Figure~\ref{fig:SLIPT_Method_mtSL}). Thus the following analysis is only limited the samples for which \gls{TCGA} provides both expression and somatic mutation data.
+The genes and pathways identified in Tables~\ref{tab:gene_mtSL} and~\ref{tab:pathway_mtSL} were derived from comparing the expression profiles of potential partners to the mutation status of \textit{CDH1} (as shown in Figure~\ref{fig:SLIPT_Method_mtSL}). The following analysis was limited to the samples for which both expression and somatic mutation data were available from \gls{TCGA}.
 
 \FloatBarrier
 
@@ -224,7 +224,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png}
    }
-    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by \textit{CDH1} somatic mutation status) analysed in \gls{TCGA} breast cancer dataset for gene expression of 3743 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \acrshort{mtSLIPT} prediction (with significant \gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} mutant samples and often lowly expressing \textit{CDH1} wildtype samples (which were not tested for), although many of the \textit{CDH1} mutant samples had among the lowest \textit{CDH1} expression. In contrast to the expression analysis the (predominantly \textit{CDH1} wildtype) basal subtype and estrogen receptor negative samples have depleted expression among most candidate synthetic lethal partners. 
+    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by \textit{CDH1} somatic mutation status) analysed in \gls{TCGA} breast cancer dataset for gene expression of 3743 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \acrshort{mtSLIPT} prediction (with significant \gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} mutant samples and often lowly expressing \textit{CDH1} wildtype samples (which were not tested for), although many of the \textit{CDH1} mutant samples had among the lowest \textit{CDH1} expression. In contrast to the expression analysis the (predominantly \textit{CDH1} wildtype) basal subtype and \acrshort{ER} negative samples have depleted expression among most candidate synthetic lethal partners. 
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_mtSL}
@@ -433,7 +433,7 @@ Pathway over-representation analysis for Reactome pathways with the number of ge
 \clearpage
 \section{Comparison to Primary Screen}
 
-The mutation synthetic lethal partners with \textit{CDH1} were also compared to \gls{siRNA} primary screen data \citep{Telford2015}, as performed in Section~\ref{chapt3:primary_screen}. These are expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure~\ref{fig:Venn_allgenes_mtSL}. This may be affected by lower sample size for mutations in \gls{TCGA} data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
+The mutation synthetic lethal partners with \textit{CDH1} were also compared to \gls{siRNA} primary screen data \citep{Telford2015}, as performed in Section~\ref{chapt3:primary_screen}. These were expected to be more concordant with the experimental results performed on a null mutant, however this was not the case at the gene level: less genes overlapped with experimental candidates in Figure~\ref{fig:Venn_allgenes_mtSL}. This discrepancy was may be due to lower sample size for mutations in \gls{TCGA} data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
 
 \begin{figure}[!ht]
 %\begin{mdframed}
@@ -449,7 +449,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
 
 \FloatBarrier
 
-Despite a lower sample size (and low number of a predicted partners) for mutation analysis, the pathway composition (Tables~\ref{tab:pathway_mtSL} and~\ref{tab:Venn_over-representation_mtSL}) is simlar to expression analysis, as described in Section~\ref{chapt3:compare_pathway}. In particular, the resampling analysis (Section~\ref{appendix:compare_pathway_perm_mtSL}) supported many of the results of expression analysis (Section~\ref{chapt3:compare_pathway_perm}) with Tables~\ref{tab:pathway_perm_mtSL} and~\ref{tab:pathway_perm_overlap_mtSL} detecting many of the same or functionally-related pathways.
+Despite a lower sample size (and low number of a predicted partners) for mutation analysis, the pathway composition (Tables~\ref{tab:pathway_mtSL} and~\ref{tab:Venn_over-representation_mtSL}) was similar to expression analysis, as described in Section~\ref{chapt3:compare_pathway}. In particular, the resampling analysis (Section~\ref{appendix:compare_pathway_perm_mtSL}) supported many of the results of expression analysis (Section~\ref{chapt3:compare_pathway_perm}). Tables~\ref{tab:pathway_perm_mtSL} and~\ref{tab:pathway_perm_overlap_mtSL} detected many of the same or functionally-related pathways.
  
 
 \begin{table*}[!hp]
@@ -716,7 +716,7 @@ Despite a lower sample size (and low number of a predicted partners) for mutatio
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways are marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
+Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -837,7 +837,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways are marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
+Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -893,7 +893,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
     \includegraphics{mtSLIPT_siRNA_vs_Correlation_with_CDH1.png}
    }
    \end{center}
-   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation.} The \acrshort{mtSLIPT} p-values were compared against Pearson's correlation of expression with \textit{CDH1}. Genes detected by SLIPT or \gls{siRNA} are coloured according to the legend. 
+   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation.} The \acrshort{mtSLIPT} p-values were compared against Pearson's correlation of expression with \textit{CDH1}. Genes detected by SLIPT or \gls{siRNA} were coloured according to the legend. 
 }
 \label{fig:compare_points_correlation_mtSL}
 %\end{mdframed}
@@ -919,7 +919,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
     \includegraphics{vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
    }
    \end{center}
-   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with \gls{siRNA} viability]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with \gls{siRNA} viability.}  Genes detected as candidate synthetic lethal partners by \acrshort{mtSLIPT} (in \gls{TCGA} breast cancer) expression analysis against \textit{CDH1} mutation and experimental screening (with \gls{siRNA}) were compared against the viability ratio of \textit{CDH1} mutant and wildtype cells in the primary \gls{siRNA} screen. There were clear no differences in viability between genes detected by \acrshort{mtSLIPT} and those not with the differences being primarily due to viability thresholds being used to detect synthetic lethality by \citet{Telford2015}. 
+   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with \gls{siRNA} viability]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with \gls{siRNA} viability.}  Genes detected as candidate synthetic lethal partners by \acrshort{mtSLIPT} (in \gls{TCGA} breast cancer) expression analysis against \textit{CDH1} mutation and experimental screening (with \gls{siRNA}) were compared against the viability ratio of \textit{CDH1} mutant and wildtype cells in the primary \gls{siRNA} screen. There were clear no differences in viability between genes detected by \acrshort{mtSLIPT} and those not with the differences being primarily due to viability thresholds that were used to detect synthetic lethality by \citet{Telford2015}. 
 }
 \label{fig:compare_viability_mtSL}
 %\end{mdframed}
@@ -929,7 +929,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
 \clearpage
 \section{Metagene Analysis} \label{appendix:metagene_mtSL}
 
-Metagene analysis was also performed for synthetic lethal candidates for \textit{CDH1} mutation. These are described and compared to expression analysis in Section~\ref{chapt3:metagene_SL}. 
+Metagene analysis was performed for synthetic lethal pathways against \textit{CDH1} mutation. These were described and compared to expression analysis in Section~\ref{chapt3:metagene_SL}. 
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from mtSLIPT}
@@ -1029,7 +1029,7 @@ Mutations have different effects as shown by the following examples in cancer ge
            \includegraphics[width=0.75\textwidth]{Mutation_locus_TP53.pdf}
         }
     \end{center}
-    \caption[Somatic mutation locus]{\small \textbf{Somatic mutation locus.} Mutation frequency at each locus in \gls{TCGA} breast cancer. \textit{PIK3CA} shows clear recurrent E545K and H1047R oncogene mutations consistent with it being an oncogene. \textit{PIK3R1} and \textit{CDH1} are tumour suppressors with inactivating mutations distributed throughout the gene, whereas \textit{TP53} exhibits both of these properties and a very high mutation frequency compared to other genes.
+    \caption[Somatic mutation locus]{\small \textbf{Somatic mutation locus.} Mutation frequency at each locus in \gls{TCGA} breast cancer. \textit{PIK3CA} shows clear recurrent E545K and H1047R oncogene mutations consistent with it being an oncogene. \textit{PIK3R1} and \textit{CDH1} were tumour suppressors with inactivating mutations distributed throughout the gene, whereas \textit{TP53} exhibits both of these properties and a very high mutation frequency compared to other genes.
 }
 \label{fig:mutation_locus}
 %\end{mdframed}
@@ -1148,7 +1148,7 @@ Mutations have different effects as shown by the following examples in cancer ge
     \includegraphics{CDH1_Heatmaps_Gatza2011(P53)_Full_Metagene_mgorder.png} %original pdf, png for edited
    }
    \end{center}
-   \caption[Expression profiles for p53 related genes]{\small \textbf{Expression profiles for p53 related genes.} Expression profiles the genes contained in the \textit{TP53} gene signature from \citet{Gatza2011} in \gls{TCGA} breast data, annotated for clinical factors and cancer gene mutations. Samples are separated by \textit{CDH1} expression status and sorted by the metagene. In both cases, the majority of genes were consistent with the direction of the metagene, with few very exceptions. \textit{TP53} mutant samples had low metagene expression, consistent with loss of tumour suppressor functions, and were less likely to have \textit{CDH1} or \textit{PIK3CA} mutations.
+   \caption[Expression profiles for p53 related genes]{\small \textbf{Expression profiles for p53 related genes.} Expression profiles the genes contained in the \textit{TP53} gene signature from \citet{Gatza2011} in \gls{TCGA} breast data, annotated for clinical factors and cancer gene mutations. Samples were separated by \textit{CDH1} expression status and sorted by the metagene. In both cases, the majority of genes were consistent with the direction of the metagene, with few very exceptions. \textit{TP53} mutant samples had low metagene expression, consistent with loss of tumour suppressor functions, and were less likely to have \textit{CDH1} or \textit{PIK3CA} mutations.
 }
 \label{fig:metagene_expr_Gatza2011_P53}
 \end{minipage}
@@ -1165,7 +1165,7 @@ Mutations have different effects as shown by the following examples in cancer ge
     \includegraphics{CDH1_Heatmaps_Gatza2014(BRCA1)_Full_Metagene_mgorder.png} %original pdf, png for edited
    }
    \end{center}
-   \caption[Expression profiles for BRCA related genes]{\small \textbf{Expression profiles for BRCA related genes.} Expression profiles the genes contained in the gene signature related to \textit{BRCA1} and \textit{BRCA2} functions from \citet{Gatza2014} in \gls{TCGA} breast data, annotated for clinical factors and cancer gene mutations. Samples are separated by \textit{CDH1} expression status and sorted by the metagene. In both cases, the majority of genes were consistent with the direction of the metagene, with few very exceptions. \textit{BRCA1} and \textit{BRCA2} mutant samples had higher metagene expression than most samples for the ductal subtype, although this was not the case (for the lobular samples for which the metagene was lower). However, the metagene was higher for basal subtype and estrogen receptor negative samples.
+   \caption[Expression profiles for BRCA related genes]{\small \textbf{Expression profiles for BRCA related genes.} Expression profiles the genes contained in the gene signature related to \textit{BRCA1} and \textit{BRCA2} functions from \citet{Gatza2014} in \gls{TCGA} breast data, annotated for clinical factors and cancer gene mutations. Samples were separated by \textit{CDH1} expression status and sorted by the metagene. In both cases, the majority of genes were consistent with the direction of the metagene, with few very exceptions. \textit{BRCA1} and \textit{BRCA2} mutant samples had higher metagene expression than most samples for the ductal subtype, although this was not the case (for the lobular samples for which the metagene was lower). However, the metagene was higher for basal subtype and \acrshort{ER} negative samples.
 }
 \label{fig:metagene_expr_Gatza2014_BRCA}
 \end{minipage}
@@ -1178,7 +1178,7 @@ Mutations have different effects as shown by the following examples in cancer ge
 
 \clearpage
 \chapter{Intrinsic Subtyping} \label{appendix:intrinsic_subtypes}
-The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by \gls{UCSC} \citep{TCGA2012} that were derived from microarray analysis have been compared to the \gls{PAM50} results for performing subtyping from \gls{RNA-Seq} data \citep{Parker2009}. As shown in Table~\ref{tab:intrinsic_subtypes}, these subtypes were highly concordant for samples which had both procedures performed upon them ($\chi^2 = 1305.9$, $p = 2.73 \times 10^{-268}$). The main exception were the luminal A samples some of which were reclassified as luminal B or ``normal-like''.
+The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by \gls{UCSC} \citep{TCGA2012, UCSC2012} that were derived from microarray analysis have been compared to the \gls{PAM50} results for performing subtyping from \gls{RNA-Seq} data \citep{Parker2009}. As shown in Table~\ref{tab:intrinsic_subtypes}, these subtypes were highly concordant for samples which had both procedures performed upon them ($\chi^2 = 1305.9$, $p = 2.73 \times 10^{-268}$). The main exception were the luminal A samples some of which were reclassified as luminal B or ``normal-like''.
 
 \begin{table*}[!htb]
 \caption{Comparison of intrinsic subtypes}
@@ -1227,12 +1227,12 @@ The intrinsic subtypes of \gls{TCGA} breast samples were compared between those 
 }
 \end{table*} 
 
-The \gls{PAM50} subtypes are potentially more accurate given similarity of these subtypes and that the remainder of the subtypes were accurately recapitulated with \gls{RNA-Seq} data. Furthermore, \gls{UCSC} subtypes correctly identified $\sfrac{22}{22}$ normal samples as ``normal-like'' and \gls{PAM50} subtyping in \gls{RNA-Seq} data had a success rate of $\sfrac{112}{113}$ (including all of those identified from microarrays). Therefore the \gls{PAM50} subtypes (performed on a larger cohort of samples) are appropriate to use for further interpretation, superceeding the \gls{UCSC} subtypes available for a limited set of samples.
+The \gls{PAM50} subtypes could be more accurate given similarity of these subtypes and that the remainder of the subtypes were accurately recapitulated with \gls{RNA-Seq} data. Furthermore, \gls{UCSC} subtypes correctly identified $\sfrac{22}{22}$ normal samples as ``normal-like'' and \gls{PAM50} subtyping in \gls{RNA-Seq} data had a success rate of $\sfrac{112}{113}$ (including all of those identified from microarrays). Therefore the \gls{PAM50} subtypes (performed on a larger cohort of samples) are appropriate to use for further interpretation, superseding the \gls{UCSC} subtypes available for a limited set of samples.
 
 
 \FloatBarrier
 
-\chapter{Expression Analysis in Stomach Cancer}
+\chapter{Stomach Expression Analysis}
 \label{appendix:stad_exprSL}
 
 The following results are a replication of the \gls{TCGA} results (in Chapter~\ref{chap:SLIPT}) with stomach cancer data, using synthetic lethality (SLIPT) against \textit{CDH1}.
@@ -1383,7 +1383,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png}
    }
-    \caption[Synthetic lethal expression profiles of stomach samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in \gls{TCGA} stomach cancer dataset for gene expression of 4365 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \gls{SLIPT} prediction (with significant \gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably diffuse and \textit{CDH1} mutant samples have elevated expression in one or more distinct clusters, although there was less complexity and variation among candidate synthetic lethal partners than in breast data. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
+    \caption[Synthetic lethal expression profiles of stomach samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in \gls{TCGA} stomach cancer dataset for gene expression of 4365 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \gls{SLIPT} prediction (with significant \gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples. Notably, diffuse and \textit{CDH1} mutant samples had elevated expression in one or more distinct clusters, although there was less complexity and variation among candidate synthetic lethal partners than in breast data. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_stad}
@@ -1597,7 +1597,7 @@ Pathway over-representation analysis for Reactome pathways with the number of ge
 
 \section{Comparison to Primary Screen} \label{appendix:compare_exprSL_genes_stad}
 
-The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers were also compared to \gls{siRNA} primary screen data \citep{Telford2015}, as performed in Section~\ref{chapt3:primary_screen}. These are expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure~\ref{fig:Venn_allgenes_stad}. This may be affected by lower sample size for mutations in \gls{TCGA} data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
+The synthetic lethal partners with \textit{CDH1} expression in stomach cancers were also compared to \gls{siRNA} primary screen data \citep{Telford2015}, as performed in Section~\ref{chapt3:primary_screen}. These were expected to be more concordant with the experimental results performed on a null mutant, however this was not the case at the gene level: less genes overlapped with experimental candidates in Figure~\ref{fig:Venn_allgenes_stad}. This may be due to lower sample size for mutations in \gls{TCGA} data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
 
 
 
@@ -1607,7 +1607,7 @@ The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers w
   \resizebox{0.66 \columnwidth}{!}{
     \includegraphics{Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png}
    }
-    \caption[Comparison of SLIPT in stomach to \gls{siRNA}]{\small \textbf{Comparison of SLIPT in stomach to \gls{siRNA}.} Testing the overlap of gene candidates for \gls{E-cadherin} synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
+    \caption[Comparison of SLIPT in stomach to \gls{siRNA}]{\small \textbf{Comparison of SLIPT in stomach to \gls{siRNA}.} The overlap of gene candidates for \gls{E-cadherin} synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
 }
 \label{fig:Venn_allgenes_stad}
 %\end{mdframed}
@@ -1890,7 +1890,7 @@ The synthetic lethal partners with \textit{CDH1} expression in stoamch cancers w
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways are marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
+Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2011,7 +2011,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways are marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
+Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2026,7 +2026,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 
 \section{Metagene Analysis} \label{appendix:metagene_stad_exprSL}
 
-Metagene analysis was also performed for synthetic lethal candidates for \textit{CDH1} expression in stomach cancer.% These are described and compared to mutation analysis in Section~\ref{appendix:metagene_stad_mtSL}. 
+Metagenes used to detect synthetic lethal pathways with \textit{CDH1} in stomach cancer.% These were described and compared to mutation analysis in Section~\ref{appendix:metagene_stad_mtSL}. 
 
 \begin{table*}[!ht]
 \caption{Synthetic lethal metagenes against \textit{CDH1} in stomach cancer}
@@ -2105,7 +2105,7 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 \chapter{Stomach Mutation Analysis}
 \label{appendix:stad_mtSL}
 
-The following results are a replication of the \gls{TCGA} results (in Appendix~\ref{appendix:mtSL}) with stomach cancer data, using synthetic lethality (\acrshort{mtSLIPT}) against \textit{CDH1} mutation.
+The following results were a replication of the \gls{TCGA} results (in Appendix~\ref{appendix:mtSL}) with stomach cancer data, using synthetic lethality (\acrshort{mtSLIPT}) against \textit{CDH1} mutation.
 
 \section{Synthetic Lethal Genes and Pathways} \label{appendix:stad_mtSL_genes}
 
@@ -2256,7 +2256,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub_stad.png}
    }
-    \caption[Synthetic lethal expression profiles of stomach samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in \gls{TCGA} stomach cancer dataset for gene expression of 257 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \gls{SLIPT} prediction (with significant \gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \citep{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples, notably diffuse and \textit{CDH1} mutant samples have elevated expression in one or more distinct clusters, although there was less complexity and variation among candidate synthetic lethal partners than in breast data. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
+    \caption[Synthetic lethal expression profiles of stomach samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in \gls{TCGA} stomach cancer dataset for gene expression of 257 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \gls{SLIPT} prediction (with significant \gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \citep{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples. Notably, diffuse and \textit{CDH1} mutant samples had elevated expression in one or more distinct clusters, although there was less complexity and variation among candidate synthetic lethal partners than in breast data. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_stad_mtSL}
@@ -2466,7 +2466,7 @@ Pathway over-representation analysis for Reactome pathways with the number of ge
 
 \section{Comparison to Primary Screen} \label{appendix:compare_mtSL_genes_stad}
 
-The mutation synthetic lethal partners with \textit{CDH1} were also compared to \gls{siRNA} primary screen data \citep{Telford2015}, as performed in Section~\ref{chapt3:primary_screen}. These are expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure~\ref{fig:Venn_allgenes_stad_mtSL}. This may be affected by lower sample size for mutations in \gls{TCGA} data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
+The mutation synthetic lethal partners with \textit{CDH1} were also compared to \gls{siRNA} primary screen data \citep{Telford2015}, as performed in Section~\ref{chapt3:primary_screen}. These were expected to be more concordant with the experimental results performed on a null mutant, however this not the case at the gene level: less genes overlapped with experimental candidates in Figure~\ref{fig:Venn_allgenes_stad_mtSL}. This may be affected by lower sample size for mutations in \gls{TCGA} data or lower frequency (expected value) of \textit{CDH1} mutations compared to low expression. 
 
 \begin{figure}[!ht]
 %\begin{mdframed}
@@ -2748,7 +2748,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways are marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
+Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2868,7 +2868,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-%Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways are marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
+%Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2878,7 +2878,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 
 \section{Metagene Analysis} \label{appendix:metagene_stad_mtSL}
 
-Metagene analysis was also performed for synthetic lethal candidates for \textit{CDH1} mutation in stomach cancer. These are described and compared to expression analysis in Section~\ref{appendix:metagene_stad_exprSL}. 
+Metagene analysis was performed for synthetic lethal candidates for \textit{CDH1} mutation in stomach cancer. These were described and compared to expression analysis in Section~\ref{appendix:metagene_stad_exprSL}. 
 
 \begin{table*}[!ht]
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from \acrshort{mtSLIPT} in stomach cancer}
