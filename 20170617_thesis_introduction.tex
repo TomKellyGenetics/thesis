@@ -34,7 +34,16 @@
 \usepackage[round, sort]{natbib} %% Use Natural Sciences bibliography
 %\usepackage{apacite}
 %enable abbreviated in text citations
+\usepackage{etex}
 \usepackage{etoolbox}
+
+\makeatletter
+\patchcmd{\@afterheading}%
+    {\clubpenalty \@M}{\clubpenalties 3 \@M \@M 0}{}{}
+\patchcmd{\@afterheading}%
+    {\clubpenalty \@clubpenalty}{\clubpenalties 2 \@clubpenalty 0}{}{}
+\makeatother
+
 \newif\ifabbreviation
 \pretocmd{\thebibliography}{\abbreviationfalse}{}{}
 \AtBeginDocument{\abbreviationtrue}
