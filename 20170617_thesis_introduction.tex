@@ -26,6 +26,9 @@
 %%
 \usepackage[phd]{otagothesis}     %% Use Otago page layout
 
+\usepackage[UKenglish]{babel}% http://ctan.org/pkg/babel
+\usepackage[UKenglish]{isodate}% http://ctan.org/pkg/isodate
+
 %\usepackage[longnamesfirst,round]{natbib} %% Use Natural Sciences bibliography
 %\usepackage[numbers]{natbib} %% Use Natural Sciences bibliography
 \usepackage[round, sort]{natbib} %% Use Natural Sciences bibliography
@@ -44,8 +47,14 @@
 
 \usepackage{graphicx}             %% jpg, gif, tiff, and pdf graphics
 \usepackage{moreverb}             %% Verbatim Code Listings
-\usepackage{hyperref}             %% hyperlinks
-\usepackage{doi}  
+%\usepackage{hyperref}             %% hyperlinks
+\usepackage[colorlinks,
+           linkcolor={blue!50!black},
+           citecolor={blue!50!black},
+           urlcolor={blue!80!white}]{hyperref}
+           %allbordercolors={0 0 0},
+           %pdfborderstyle={/S/U/W 1}
+\usepackage{doi}    
 %\usepackage{color}
 \usepackage{xcolor}
 
