@@ -6,7 +6,7 @@ Synthetic lethal genetic interactions are re-emerging in the post-genomics era d
 %Methods \ Approach
 \textbf{Approach}
 
-A computational methodology, the Synthetic Lethal Prediction Tool (\acrshort{SLIPT}) has been developed to detect synthetic lethal interactions in gene expression data. This methodology was demonstrated on interactions with \textit{CDH1} in breast and stomach cancer data from The Cancer Genome Atlas (\acrshort{TCGA}) project. Synthetic lethal genes and pathways were further investigated with unsupervised clustering, gene set over-representation analysis, metagenes, and permutation resampling. In particular, analyses focused on comparing \acrshort{SLIPT} gene candidates to an experimental \acrshort{siRNA} screen \citet{Telford2015}. Network analysis methods were applied to the most supported pathways to test for pathway structure among between synthetic lethal candidates. Simulation and modelling was used to assess the statistical performance of \acrshort{SLIPT}, including simulated data with correlation structures derived from graph stuctures.
+A computational methodology, the Synthetic Lethal Prediction Tool (\acrshort{SLIPT}) has been developed to detect synthetic lethal interactions in gene expression data. This methodology was demonstrated on interactions with \textit{CDH1} in breast and stomach cancer data from The Cancer Genome Atlas (\acrshort{TCGA}) project. Synthetic lethal genes and pathways were further investigated with unsupervised clustering, gene set over-representation analysis, metagenes, and permutation resampling. In particular, analyses focused on comparing \acrshort{SLIPT} gene candidates to an experimental \acrshort{siRNA} screen \citet{Telford2015}. Network analysis methods were applied to the most supported pathways to test for pathway structure among between synthetic lethal candidates. Simulation and modelling was used to assess the statistical performance of \acrshort{SLIPT}, including simulated data with correlation structures derived from graph structures.
 
 %Results \ Findings
 \textbf{Findings}
@@ -15,7 +15,7 @@ A computational methodology, the Synthetic Lethal Prediction Tool (\acrshort{SLI
 Many candidate synthetic lethal partners of \textit{CDH1} were detected in both \acrshort{TCGA} breast cancer. These genes clustered into several distinct groups, with distinct biological functions and elevated expression in different clinical subtypes. While the number of genes detected by both approaches was not significant, these contained significantly enriched pathways. In particular, $G_{\alpha i}$ signalling, cytoplasmic microfibres, and extracellular fibrin clotting were robustly supported by both approaches, which is consistent with the known cytoskeletal and cell signalling roles of \gls{E-cadherin} and validation of \acrshort{GPCR} pathways performed by \citet{Telford2015}. Many of these pathways were replicated in stomach cancer data. The pathways supported only by \acrshort{SLIPT} included regulation of immune signalling and translational elongation which were not expected to be detected in an isogenic cell line model but are still candidates for further investigation. 
 
 %chapt 4
-Synthetic lethal candidates detected by \acrshort{SLIPT} and \acrshort{siRNA} were compared within graph structures of the candidate synthetic lethal pathways. These genes did not differ with respect to network metrics of importance or connectivity in the pathway. There was little support, across pathways, that \acrshort{SLIPT} gene candidates were consistently upstream or downstream of \acrshort{siRNA} gene candidates with pathways. 
+Synthetic lethal candidates detected by \acrshort{SLIPT} and \acrshort{siRNA} were compared within graph structures of the candidate synthetic lethal pathways. These genes did not differ with respect to network metrics of importance or connectivity in the pathway. There was little support, across pathways, that \acrshort{SLIPT} gene candidates were consistently upstream or downstream of \acrshort{siRNA} gene candidates within pathways. 
 
 %chapt 5
 
@@ -25,7 +25,7 @@ A model of synthetic lethality was used to simulate gene expression data with sy
 \clearpage
 \textbf{Summary}
 
-Thus my thesis has developed, evaluated, and refined a bioinformatics approach to discovery of synthetic lethal genes solely from gene expression data. This approach has been demonstrated to detect biologically informative and clinically relevant candidate partners for \textit{CDH1} in breast and stomach cancers. These investigations have also involved the development of network analysis and simulation procedures which may be more widely applicable.
+Thus this thesis has developed, evaluated, and refined a bioinformatics approach to discovery of synthetic lethal genes solely from gene expression data. This approach has been demonstrated to detect biologically informative and clinically relevant candidate partners for \textit{CDH1} in breast and stomach cancers. These investigations have also involved the development of network analysis and simulation procedures which may be more widely applicable.
 
 \iffalse
 \clearpage
@@ -46,6 +46,8 @@ Kelly, S. T., Single, A. B., Telford, B. J., Beetham, H. G, Godwin, T. D., Chen,
 
 Kelly, S. T., Chen, A., Guilford, P. J., and Black, M. A. (2017) Synthetic lethal interaction prediction of target pathways in \gls{E-cadherin} deficient breast cancers. Submitted to \textit{BMC \Glspl{genomic}}.
 \end{small}
+\fi
+
 \iffalse
 \textbf{Community Blog Posts}
 
@@ -58,6 +60,7 @@ Kelly, S. T., Black, M., A., Bae, S., Hayek, W., and Pawlik, A. Posted on the \t
 \url{https://software-carpentry.org/blog/2016/09/attendance-nz.html}
 \fi
 
+\iffalse
 \textbf{Conference Presentations}
 
 \begin{small}
@@ -124,7 +127,7 @@ RIKEN Division of \Gls{genomic} Technologies 2016 (Yokohama) October 20\textsupe
 %``Analysis of Synthetic Lethal Pathways in Breast Cancer: A PhD project on genetic interactions with CDH1 inactivation in \gls{TCGA} data''
 
 \end{small}
-
+\fi
 
 
 
@@ -164,7 +167,7 @@ Peris et al. (2014) Population structure and reticulate evolution of Saccharomyc
 
 
 
-
+\iffalse
 \textbf{Software Packages}
 
 Software packages in the R language have been released. Please refer to the appropriate GitHub repository for more information (including documentation, vignettes, and installation instructions), on the following account: \href{https://github.com/TomKellyGenetics}{https://github.com/TomKellyGenetics}
