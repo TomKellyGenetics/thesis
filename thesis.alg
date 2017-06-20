@@ -1,11 +1,16 @@
 ;; This logfile was generated automatically by `xindy'
-;; at 20.06.2017  11:06:21
-;; Indexstyle: "/tmp/peLoBLDtSx", Rawindex: "/tmp/qp2S2EI_Og", Output: "thesis.acr"
+;; at 20.06.2017  14:50:09
+;; Indexstyle: "/tmp/_5OKypQGr5", Rawindex: "/tmp/zqJGR0vHpU", Output: "thesis.acr"
 
 
 Building indexentry-tree:
 Hierdepth of index is :TREE
 
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
@@ -120,12 +125,17 @@ Letter-group: "ËÐ—»" -> "R"
 Letter-group: "æ¼Ú" -> "W"
 Letter-group: "—»Ú" -> "E"
 Letter-group: "†Ë€¼" -> "C"
+Letter-group: "¨††" -> "I"
+Letter-group: "ËÈÈ€" -> "R"
 Letter-group: "È€»50" -> "P"
-Letter-group: "Ú»»" -> "T"
+Letter-group: "†È»" -> "C"
 Letter-group: "—Ë" -> "E"
 Letter-group: "„¨ÃÈ€ë" -> "B"
+Letter-group: "„€Ð¤" -> "B"
+Letter-group: "†Èà" -> "C"
 Letter-group: "¼—Ð¨" -> "N"
 Letter-group: "¤È†" -> "H"
+Letter-group: "ÐÃ†®Ð" -> "S"
 Letter-group: "Ð´àË»" -> "S"
 Letter-group: "à†Ð†" -> "U"
 Letter-group: "ÈË" -> "P"
@@ -143,7 +153,7 @@ Letter-group: "È¨È_3" -> "P"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "€È" -> "A"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
-Letter-group: "„¨ÃÈ€ë" -> "B"
+Letter-group: "„€Ð¤" -> "B"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "††´—" -> "C"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
@@ -156,6 +166,8 @@ sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "Ã" -> "G"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "¤€†" -> "H"
+sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
+Letter-group: "¨††" -> "I"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
 Letter-group: "¬€®" -> "J"
 sort-indexentries: (FORWARD BACKWARD FORWARD FORWARD)
