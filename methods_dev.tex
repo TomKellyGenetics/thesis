@@ -260,7 +260,7 @@ The simulation procedure was performed with 20,000 total genes (as occurs in \gl
    %}
    }
    \end{center}
-   \caption[Performance of binomial simulations]{\small \textbf{Performance of binomial simulations.} Gene function was simulated by binomial sampling and tested for \glspl{synthetic lethal} by \gls{SLIPT}. Statistical performance declined with additional known \gls{synthetic lethal} partners but this was mitigated by increased sample sizes.}
+   \caption[Performance of binomial simulations]{\small \textbf{Performance of binomial simulations.} Gene function was simulated by binomial sampling and tested for \glspl{synthetic lethal} by \gls{SLIPT}. Statistical performance declined with additional \gls{synthetic lethal} partners but this was mitigated by increased sample sizes.}
 \label{fig:Binomial_AUC}
 %\end{mdframed}
 
@@ -341,7 +341,7 @@ The \gls{ROC} curves showed that \gls{SLIPT} is subject to a near equal trade-of
            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(3)".pdf}}
         }%
     \end{center}
-   \caption[Simulating \glslink{gene expression}{expression} with correlated gene blocks]{\small \textbf{Simulating \glslink{gene expression}{expression} with correlated gene blocks.} A $\Sigma$ matrix (a) was used generate a multivariate normal distribution with of 100 genes correlated blocks of genes (correlated by 0.8) with a comparable structure (b) to the input $\Sigma$, as shown by correlation on a red--green scale. The annotation bars for genes show the $\chi^2$ (in blue if the direction of \gls{SLIPT} is met or red otherwise) and the gene category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non synthetic lethal-correlated, and green for non synthetic lethal). The simulated \gls{gene expression} (c) and function (d) generated are ordered by $\chi^2$ showing the functional structure of \gls{synthetic lethal} genes and that they were among the strongest \gls{SLIPT} results.}
+   \caption[Simulating \glslink{gene expression}{expression} with correlated gene blocks]{\small \textbf{Simulating \glslink{gene expression}{expression} with correlated gene blocks.} A $\Sigma$ matrix (a) was used generate 100 genes with a multivariate normal distribution, including correlated blocks of genes ($r = 0.8$) with correlation (b) similar to $\Sigma$, on a red--to--green scale. The annotation for genes gives the $\chi^2$ (in blue for in the direction of \gls{SLIPT} or red otherwise) and the gene category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non synthetic lethal-correlated, and green for non synthetic lethal). The simulated \gls{gene expression} (c) and function (d) generated are ordered by $\chi^2$ showing the functional structure of \gls{synthetic lethal} genes and that they were among the strongest \gls{SLIPT} results.}
 %}
 \label{fig:simulation_May4SL}
 %\end{mdframed}
@@ -370,33 +370,33 @@ The \gls{ROC} curves showed that \gls{SLIPT} is subject to a near equal trade-of
            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(3)".pdf}}
         }%
     \end{center}
-   \caption[Simulating \glslink{gene expression}{expression} with correlated gene blocks]{\small \textbf{Simulating \glslink{gene expression}{expression} with correlated gene blocks.} Using the (a) $\Sigma$ matrix, sampling from a multivariate normal distribution with of 1000 genes produced (b) correlated blocks of genes (correlated by 0.8) on a red--green scale. The simulated \gls{gene expression} (c) and function (d) generated were ordered by $\chi^2$ and \gls{SLIPT} direction show that \gls{synthetic lethal} genes are among the strongest \gls{SLIPT} results with high specificity against many potential false positives. These are annotated for $\chi^2$ (on a red--green scale) and category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non synthetic lethal-correlated, and green for non synthetic lethal) for each gene.}
+   \caption[Simulating \glslink{gene expression}{expression} with correlated gene blocks]{\small \textbf{Simulating \glslink{gene expression}{expression} with correlated gene blocks.} Using the $\Sigma$ matrix~(a), sampling 1000 genes from a multivariate normal distribution produced (b) correlated blocks of genes (correlated by 0.8) on a red--to--green scale. The simulated \gls{gene expression} (c) and function (d) generated were ordered by $\chi^2$ and \gls{SLIPT} direction show that \gls{synthetic lethal} genes are among the strongest \gls{SLIPT} results with high specificity against many potential false positives. These are annotated for $log-\chi^2$ (on a red--to--green scale) and category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non synthetic lethal-correlated, and green for non synthetic lethal) for each gene.}
 %}
 \label{fig:simulation_May4SL1K}
 %\end{mdframed}
 \end{figure*}
 
-Correlation structures were added to the simulation procedure (as discussed in Section~\ref{methods:simulation_SL_expression}), using correlated blocks of genes with the $\Sigma$ parameter (in Figure~\ref{fig:simulation_May4SL:first}). These correlated blocks represent genes with correlated \glslink{gene expression}{expression}, such as co-regulation or biological pathways. The example (in Figure~\ref{fig:simulation_May4SL}) shows 4 \gls{synthetic lethal} genes (out of 100), each with 5 correlated genes that are not themselves \gls{synthetic lethal} partners of the query gene. These simulations address whether \gls{synthetic lethal} genes are distinguishable from correlated partners. The $\Sigma$ matrix produced a similar correlation structure (Figure~\ref{fig:simulation_May4SL:second}) and \glslink{gene expression}{expression} profiles (Figure~\ref{fig:simulation_May4SL:third}).  Apart from correlated blocks of genes ($r = 0.8$), the remaining genes had small variations due to random sampling. The structure of the dataset, particularly between \gls{synthetic lethal} genes and the query, was evident in the simulated \gls{gene expression} (Figure~\ref{fig:simulation_May4SL:third}) and function (Figure~\ref{fig:simulation_May4SL:fifth}). When these genes were ordered by the \gls{SLIPT} results, the \gls{synthetic lethal} genes were highly ranked, a the majority of them were distinguishable from highly correlated genes.
+Correlation structures were added to the simulation procedure (with the $\Sigma$ matrix, as discussed in Section~\ref{methods:simulation_SL_expression}), using correlated blocks of genes (as shown in Figure~\ref{fig:simulation_May4SL:first}). These correlated blocks represent genes with correlated \glslink{gene expression}{expression}, such as co-regulation or shared membership of biological pathways. The example (in Figure~\ref{fig:simulation_May4SL}) shows four \gls{synthetic lethal} genes (out of 100), each with five correlated genes that are not themselves \gls{synthetic lethal} partners of the query gene. These simulations address whether \gls{synthetic lethal} genes are distinguishable from correlated partners. The $\Sigma$ matrix produced a similar correlation structure (Figure~\ref{fig:simulation_May4SL:second}) and \glslink{gene expression}{expression} profiles (Figure~\ref{fig:simulation_May4SL:third}).  Apart from correlated blocks of genes ($r = 0.8$), the remaining genes had small variations due to random sampling. The structure of the dataset, particularly between \gls{synthetic lethal} genes and the query, was evident in the simulated \gls{gene expression} (Figure~\ref{fig:simulation_May4SL:third}) and function (Figure~\ref{fig:simulation_May4SL:fifth}). When these genes were ordered by the \gls{SLIPT} results, the \gls{synthetic lethal} genes were highly ranked, a the majority of them were distinguishable from highly correlated genes.
 
-The use of correlation structure was applied to larger datasets, such as 1000 genes shown in Figure~\ref{fig:simulation_May4SL1K}. \Gls{synthetic lethal} genes were highly ranked by \gls{SLIPT} and were often distinguishable from correlated genes. As previously discussed in Section~\ref{chapt2:simulation_mvtnorm}, these \gls{synthetic lethal} genes were still detectable among a larger number of non synthetic lethal genes and the \gls{SLIPT} methodology performed better on large datasets.
+The use of correlation structure was applied to larger datasets, such as the 1000 genes shown in Figure~\ref{fig:simulation_May4SL1K}. \Gls{synthetic lethal} genes were highly ranked by \gls{SLIPT} and were often distinguishable from correlated genes. As previously discussed in Section~\ref{chapt2:simulation_mvtnorm}, these \gls{synthetic lethal} genes were still detectable among a larger number of non synthetic lethal genes, and the \gls{SLIPT} methodology performed better on large datasets.
 
 
 \begin{figure*}[!tb]
 %\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
-         \begin{center}
+         \begin{raggedleft}
 %
         \subcaptionbox{Gene category in simulations}{%
             \label{fig:simulation_May4SLreps:first}
-            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".png}}
+            \includegraphics[width=0.4\textwidth]{{"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".pdf}}
         }%
         \subcaptionbox{Corresponding $\chi^2$ values}{%
             \label{fig:simulation_May4SLreps:second}
-            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(2)".png}}
+            \includegraphics[width=0.53333\textwidth]{{"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(2)".pdf}}
         }%
 
-    \end{center}
-   \caption[Synthetic lethal prediction across simulations]{\small \textbf{Synthetic lethal prediction across simulations.} The gene category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non synthetic lethal-correlated, and green for non synthetic lethal) ordered by $\chi^2$ signed by the \gls{SLIPT} directional condition is shown across simulations. For each of 1--10 SL partners, 10 simulations demonstrate that the increasing numbers of SL partners became harder detect. The $\chi^2$ values showed a threshold for SL and correlated genes when there are fewer of them, distinguishable from correlated genes in this case.}
+    \end{raggedleft}
+   \caption[Synthetic lethal prediction across simulations]{\small \textbf{Synthetic lethal prediction across simulations.} The gene category (a) ordered by $\chi^2$ and the \gls{SLIPT} directional condition is shown across simulations (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non synthetic lethal-correlated, and green for non synthetic lethal). For each number (1--10) of \gls{synthetic lethal} partners, 10 simulations show that the increasing numbers of \gls{synthetic lethal} partners became harder detect (i.e., red cells become interspersed in the columns of (a)). The log-$\chi^2$ values (b) showed a threshold for \gls{synthetic lethal} and correlated genes when there are fewer of them, distinguishable from correlated genes in this case.}
 %}
 \label{fig:simulation_May4SLreps}
 %\end{mdframed}
@@ -433,12 +433,12 @@ The use of correlation structure was applied to larger datasets, such as 1000 ge
 These plots (Figures~\ref{fig:simulation_May4SL} and~\ref{fig:simulation_May4SL1K}) used similar correlated blocks with a non synthetic lethal gene (true negative) and the query gene (which is not \gls{synthetic lethal} with itself). Neither of these were \gls{synthetic lethal} but they could potentially affect performance methodology, particularly the specificity, as correlated non synthetic lethal genes may be distinguishable from \gls{synthetic lethal} genes. The non synthetic lethal correlated block of genes had no impact on \gls{synthetic lethal} detection but the query correlated genes were important (as shown in Sections~\ref{chapt2:simulation_mvtnorm_query_cor} and and~\ref{chapt5:compare_chisq_query_cor}).
 
 %\subsection{Replication Simulation Heatmap}
-The simulations of \gls{gene expression} data (with 100 genes) with correlations structure were used to examine the variation between detection in different samples and varying the number of underlying \gls{synthetic lethal} partners. A small number of simulations (10 for each) are shown to demonstrate the variation between replicate simulations from iterative sampling from the same multivariate normal distribution (in Figure~\ref{fig:simulation_May4SLreps}). These simulations showed that \gls{synthetic lethal} genes were highly ranked by \gls{SLIPT} when there are few of them and these were consistent across replicate simulations. However, they were less consistent for higher numbers of \gls{synthetic lethal} partners to detect and were more difficult to distinguish from other genes, particularly those correlated with them. Similarly, the $\chi^2$ values showed clear thresholds for \gls{synthetic lethal} and correlated genes in simple simulations but these were more gradual for higher numbers of \gls{synthetic lethal} partners.
+The simulations of \gls{gene expression} data (with 100 genes) with correlations structure were used to examine the variation between detection in different samples and varying the number of underlying \gls{synthetic lethal} partners. A small number of simulations (10 for each) are shown to demonstrate the variation between replicate simulations from iterative sampling from the same multivariate normal distribution (in Figure~\ref{fig:simulation_May4SLreps}). These simulations showed that \gls{synthetic lethal} genes were highly ranked by \gls{SLIPT} when there are few of them and these were relatively consistent across replicate simulations. However, they were less consistent for higher numbers of \gls{synthetic lethal} partners to detect and were more difficult to distinguish from other genes, particularly those correlated with them. Similarly, the $\chi^2$ values showed clear thresholds for \gls{synthetic lethal} and correlated genes in simple simulations but these were more gradual for higher numbers of \gls{synthetic lethal} partners.
 
-\begin{figure*}[!tb]
+\begin{figure*}[!htb]
 %\begin{mdframed}
   \begin{center}
-  \resizebox{0.5 \textwidth}{!}{
+  \resizebox{0.65 \textwidth}{!}{
   %\fbox{
     \includegraphics{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150410y/SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Apry)_v_Cor(Aprxy)_Full"}}
    %}
@@ -451,7 +451,7 @@ The simulations of \gls{gene expression} data (with 100 genes) with correlations
 
 %query correlated
 %5 correlated genes
- \begin{figure*}[!hp]
+ \begin{figure*}[!htbp]
 %\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
@@ -478,15 +478,15 @@ The simulations of \gls{gene expression} data (with 100 genes) with correlations
 
 While the \gls{synthetic lethal} genes were detected in simple simulations (in Figure~\ref{fig:simulation_May4SLreps}), \gls{ROC} analysis was performed to determine whether they were robustly detectable and to make further comparisons. These results (in Figure~\ref{fig:simulation_Apr15ROC2}) were similar to simulations without correlation structure. As a binary classifier, \gls{SLIPT} had low sensitivity for higher numbers of \gls{synthetic lethal} partners to detect and high specificity with the vast majority of non synthetic lethal genes (for 20,000 genes). This was reflected in a similar reduction in statistical performance for higher numbers of \gls{synthetic lethal} partners and a higher performance with higher sample size. Overall, the statistical performance was no different to simulations without correlation structure (as shown in Figure~\ref{fig:mvtnorm_cor_compare}).
 
-\gls{SLIPT} was robust across correlation structures and applicable to gene expression data, with \glslink{graph}{pathway} structures and correlations. These correlation structures were not intended to model specific biological pathways or represent them but showed potential impact of correlation structure on the performance of \gls{SLIPT} using highly correlated ($r = 0.8$) gene blocks. More complex correlation structures, such as genes positively correlated with the query gene and derived from pathway \glslink{graph}{graph} structures (as described in~\ref{methods:graphsim}) were examined further in Sections~\ref{chapt2:simulation_mvtnorm_query_cor} and~\ref{chapt5:graphsim_performance} respectively.
+\gls{SLIPT} was robust across correlation structures and is applicable to gene expression data, with \glslink{graph}{pathway} structures and correlations. These correlation structures were not intended to model specific biological pathways or represent them but showed potential impact of correlation structure on the performance of \gls{SLIPT} using highly correlated ($r = 0.8$) gene blocks. More complex correlation structures, such as genes positively correlated with the query gene and derived from pathway \glslink{graph}{graph} structures (as described in~\ref{methods:graphsim}) were examined further in Sections~\ref{chapt2:simulation_mvtnorm_query_cor} and~\ref{chapt5:graphsim_performance} respectively.
 
-In particular, genes correlated with true \gls{synthetic lethal} genes had little impact on the performance of \gls{SLIPT} detection: \gls{synthetic lethal} genes were as distinguishable from true negative genes as without correlated genes. Genes correlated with \gls{synthetic lethal} partners did not interfere with the detection of true \gls{synthetic lethal} genes, although they were often ranked next below them and may still be biologically informative with related gene functions.
+In particular, genes correlated with true \gls{synthetic lethal} genes had little impact on the performance of \gls{SLIPT} detection: \gls{synthetic lethal} genes were as distinguishable from correlated genesas as they are from true negative genes. Genes correlated with \gls{synthetic lethal} partners did not interfere with the detection of true \gls{synthetic lethal} genes, although they were often ranked next below them and may support \gls{synthetic lethal} pathways by having related gene functions.
 
 %\FloatBarrier
 
 \subsubsection{Specificity with Query-Correlated Pathways}  \label{chapt2:simulation_mvtnorm_query_cor}
 
-Correlation structures were also considered for non synthetic lethal genes that were (positively) correlated genes with the query gene. Specifically, 5 highly correlated ($r = 0.8$) with the query gene were added (as described in Section~\ref{chapt2:simulation_mvtnorm_cor}). These simulations had similar performance (in Figure~\ref{fig:simulation_May15ROC2}) to those without these correlations with a higher specificity and a lower false positive rate (shown in Figure~\ref{fig:simulation_May15ROC:Perf}).
+Correlation structures were also considered for non synthetic lethal genes that were (positively) correlated genes with the query gene. Specifically, five highly correlated ($r = 0.8$) with the query gene were added (as described in Section~\ref{chapt2:simulation_mvtnorm_cor}). These simulations had similar performance (in Figure~\ref{fig:simulation_May15ROC2}) to those without these correlations with a higher specificity and a lower false positive rate (shown in Figure~\ref{fig:simulation_May15ROC:Perf}).
 
 
 %both have 5x5 cor genes (dir tested for May)
@@ -511,7 +511,7 @@ Correlation structures were also considered for non synthetic lethal genes that 
 %\subsubsection{Importance of Directional Testing}
 The directional criteria of the \gls{SLIPT} procedure was important in this case, enhancing its performance, particularly in distinguishing positively correlated non synthetic lethal genes. The multivariate normal simulations were performed, with 20,000 genes, including all of the correlation structures discussed (SL, non synthetic lethal, and query correlated genes). These simulations were compared for the direction \gls{SLIPT} and  the $\chi^2$ testing. There was a considerably higher statistical performance with \gls{SLIPT}, particularly increased sensitivity and lower false positive rate (as shown in Figure~\ref{fig:mvtnorm_dir_compare}).
 
-\begin{figure*}[!htb]
+\begin{figure*}[!tb]
 %\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
@@ -567,7 +567,7 @@ The directional criteria of the \gls{SLIPT} procedure was important in this case
 %\end{mdframed}
 \end{figure*}
 
-These results show that the performance of \gls{SLIPT} is appropriate for the analysis of \glslink{gene expression}{expression} datasets, where positively correlated genes are commonly occur, with the directional condition robustly improving the performance of \gls{SLIPT} across simulation parameters (compared to the $\chi^2$ test). Without assuming the underlying number of \gls{synthetic lethal} genes, \gls{SLIPT} will performed than the $\chi^2$ test alone, irrespective of significance threshold as shown by \gls{ROC} analysis (in Figure~\ref{fig:mvtnorm_dir_compare2}). The directional \gls{SLIPT} methodology outperformed the $\chi^2$ test at detecting \gls{synthetic lethal} partners with even up to 100 \gls{synthetic lethal} genes.
+These results show that the performance of \gls{SLIPT} is appropriate for the analysis of \glslink{gene expression}{expression} datasets, where positively correlated genes are commonly occur, with the directional condition robustly improving the performance of \gls{SLIPT} across simulation parameters (compared to the $\chi^2$ test). Without assuming the underlying number of \gls{synthetic lethal} genes, \gls{SLIPT} will performed than the $\chi^2$ test alone, irrespective of the significance threshold as shown by \gls{ROC} analysis (in Figure~\ref{fig:mvtnorm_dir_compare2}). The directional \gls{SLIPT} methodology outperformed the $\chi^2$ test at detecting \gls{synthetic lethal} partners with even up to 100 \gls{synthetic lethal} genes.
 
 Together these simulation results support the application of the \gls{SLIPT} methodology as it has been performed throughout Chapters~\ref{chap:SLIPT} and~\ref{chap:Pathways}. The methodology and simulation procedure were explored further in Chapter~\ref{chap:simulation}, with comparison to other \gls{synthetic lethal} detection approaches and the inclusion of \glslink{graph}{graph} structures.
 
