@@ -2,8 +2,7 @@
 \label{chap:methods_dev}
 %\section{Overview/meta-text}
 
-In this Chapter, I outline the rationale and development of various methods used throughout this thesis to examine \glspl{synthetic lethal} in \gls{gene expression} data, \glslink{graph}{graph} structures, models and simulations. Firstly, the \acrfull{SLIPT}, a \gls{bioinformatics} approach to triage \gls{synthetic lethal} candidate genes, will be described. This is one of the main research outputs of this thesis project and is supported by comparisons to an experimental screen from a related project and evaluation of performance on simulated data. These supporting findings will be covered in further chapters but simulation data is included to support the use and design of \gls{SLIPT}. This includes the construction of a statistical model of \glspl{synthetic lethal} in (continuous multivariate Gaussian) \gls{gene expression} data, which enables testing \gls{SLIPT} upon simulated data with known \gls{synthetic lethal} partners. Another key component of this simulation pipeline is the generation of simulated data from a known \glslink{graph}{graph} structure or simulated biological pathway (as applied in Chapter~\ref{chap:simulation
-}). The development of this simulation procedure and other statistical treatment of graph and \glslink{graph}{network} structures will also be covered. Various R packages have been developed to support this project, including the \texttt{slipt} package to implement the \gls{SLIPT} methodology. Additional R packages for handling \glslink{graph}{graph} structures, simulations, and custom plotting features will be described as research outputs of this thesis, methods applied throughout, and contributions of open-source software.
+In this Chapter, I outline the rationale and development of various methods used throughout this thesis to examine \glspl{synthetic lethal} in \gls{gene expression} data, \glslink{graph}{graph} structures, models and simulations. Firstly, the \acrfull{SLIPT}, a \gls{bioinformatics} approach to triage \gls{synthetic lethal} candidate genes, will be described. This is one of the main research outputs of this thesis project and is supported by comparisons to an experimental screen from a related project and evaluation of performance on simulated data. These supporting findings will be covered in further chapters but simulation data is included to support the use and design of \gls{SLIPT}. This includes the construction of a statistical model of \glspl{synthetic lethal} in (continuous multivariate Gaussian) \gls{gene expression} data, which enables testing \gls{SLIPT} upon simulated data with known \gls{synthetic lethal} partners. Another key component of this simulation pipeline is the generation of simulated data from a known \glslink{graph}{graph} structure or simulated biological pathway (as applied in Chapter~\ref{chap:simulation}). The development of this simulation procedure and other statistical treatment of graph and \glslink{graph}{network} structures will also be covered. Various R packages have been developed to support this project, including the \texttt{slipt} package to implement the \gls{SLIPT} methodology. Additional R packages for handling \glslink{graph}{graph} structures, simulations, and custom plotting features will be described as research outputs of this thesis, methods applied throughout, and contributions of open-source software.
 
 \section{A Synthetic Lethal Detection Methodology} \label{methods:SLIPT}
 %\subsection{Rationale and Design of Test}
@@ -133,12 +132,12 @@ While gene function was used as an intermediary step in modelling \gls{synthetic
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small Simulated \glslink{gene expression}{expression} matrix}{%
+        \subcaptionbox{Simulated \glslink{gene expression}{expression} matrix}{%
             \label{fig:simulate_function:first}
             %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat_inhibiting".png}}
             \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat".png}}
         }%
-        \subcaptionbox{\small Corresponding gene function calls}{%
+        \subcaptionbox{Corresponding gene function calls}{%
            \label{fig:simulate_function:second}
            %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_disc_mat".png}} %%check if same tree order (sample) as \glslink{gene expression}{expression}
            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_disc_mat".png}}
@@ -156,13 +155,13 @@ While gene function was used as an intermediary step in modelling \gls{synthetic
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-	\subcaptionbox{\small Simulated gene function with SL genes}{%
+	\subcaptionbox{Simulated gene function with SL genes}{%
             \label{fig:simulate_add_query:first}
             %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_SL_disc_mat".png}}
             %\includegraphics[width=0.5\textwidth,trim=4cm 2cm 0cm 0cm,clip]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL_disc_mat".png}}
             \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL_disc_mat".png}}
         }%
-        \subcaptionbox{\small Query gene added with SL condition}{%
+        \subcaptionbox{Query gene added with SL condition}{%
            \label{fig:simulate_add_query:second}
            %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_disc_query_mat_graph".png}} %%check if same tree order (sample) as \glslink{gene expression}{expression}
            %\includegraphics[width=0.5\textwidth,trim=4cm 2cm 0cm 0cm,clip]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_disc_query_mat_graph".png}}
@@ -183,13 +182,13 @@ While gene function was used as an intermediary step in modelling \gls{synthetic
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-	\subcaptionbox{\small Simulated gene function with SL genes}{%
+	\subcaptionbox{Simulated gene function with SL genes}{%
             \label{fig:simulate_add_query:first}
             %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_SL_disc_mat".png}}
             %\includegraphics[width=0.5\textwidth,trim=4cm 2cm 0cm 0cm,clip]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL_disc_mat".png}}
             \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_SL_disc_mat".png}}
         }%
-        \subcaptionbox{\small Query gene added with SL condition}{%
+        \subcaptionbox{Query gene added with SL condition}{%
            \label{fig:simulate_add_query:second}
            %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_disc_query_mat_graph".png}} %%check if same tree order (sample) as \glslink{gene expression}{expression}
            %\includegraphics[width=0.5\textwidth,trim=4cm 2cm 0cm 0cm,clip]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_disc_query_mat_graph".png}}
@@ -216,12 +215,12 @@ Once a simulated dataset has been generated, the samples were compared by gene f
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small Initial \glslink{gene expression}{expression} matrix}{%
+        \subcaptionbox{Initial \glslink{gene expression}{expression} matrix}{%
             \label{fig:simulate_SL:first}
             %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat_inhibiting".png}}
             \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat".png}}
         }%
-        \subcaptionbox{\small Simulated \gls{synthetic lethal} dataset}{%
+        \subcaptionbox{Simulated \gls{synthetic lethal} dataset}{%
            \label{fig:simulate_SL:second}
            %\includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_query_mat_graph".png}} %%check if same tree order (sample) as \glslink{gene expression}{expression}
            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_query_mat_graph".png}}
@@ -292,14 +291,14 @@ The multivariate normal simulation procedure was initially performed using the \
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small Statistical evaluation \label{fig:simulation_Apr15ROC:Perf}}{%
+        \subcaptionbox{Statistical evaluation \label{fig:simulation_Apr15ROC:Perf}}{%
             \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150410y/SL_Model_Apr15mvnormCor_1K_ROC1_samplesx_prop".png}}
         }%
-        \subcaptionbox{\small \gls{ROC} curves\label{fig:simulation_Apr15ROC:ROC}}{%
+        \subcaptionbox{\gls{ROC} curves\label{fig:simulation_Apr15ROC:ROC}}{%
             \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150410y/SL_Model_Apr15mvnormCor_1K_ROC2_samplesx_prop".png}}
         }%
         
-        \subcaptionbox{\small Statistical performance (\acrshort{AUROC}) \label{fig:simulation_Apr15ROC:AUC}}{%
+        \subcaptionbox{Statistical performance (\acrshort{AUROC}) \label{fig:simulation_Apr15ROC:AUC}}{%
            \includegraphics[width=0.65\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150410y/SL_Model_Apr15mvnormCor_1K_AUC_samplesx_prop".png}}
         }%
     \end{center}
@@ -327,17 +326,17 @@ The \gls{ROC} curves showed that \gls{SLIPT} is subject to a near equal trade-of
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small Input $\Sigma$ matrix parameter  \label{fig:simulation_May4SL:first}}{%
+        \subcaptionbox{Input $\Sigma$ matrix parameter  \label{fig:simulation_May4SL:first}}{%
             \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(1)".pdf}}
         }%
-        \subcaptionbox{\small Simulated correlation matrix \label{fig:simulation_May4SL:second}}{%
+        \subcaptionbox{Simulated correlation matrix \label{fig:simulation_May4SL:second}}{%
             \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(2)".pdf}}
         }%
         
-        \subcaptionbox{\small Simulated \gls{gene expression}  \label{fig:simulation_May4SL:third}}{%
+        \subcaptionbox{Simulated \gls{gene expression}  \label{fig:simulation_May4SL:third}}{%
            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(4)".pdf}}
         }%
-	\subcaptionbox{\small Simulated gene function \label{fig:simulation_May4SL:fifth}}{%
+	\subcaptionbox{Simulated gene function \label{fig:simulation_May4SL:fifth}}{%
            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(3)".pdf}}
         }%
     \end{center}
@@ -352,20 +351,20 @@ The \gls{ROC} curves showed that \gls{SLIPT} is subject to a near equal trade-of
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small Input $\Sigma$ matrix parameter}{%
+        \subcaptionbox{Input $\Sigma$ matrix parameter}{%
             \label{fig:simulation_May4SL1K:first}
             \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(1)".pdf}}
         }%
-        \subcaptionbox{\small Simulated correlation matrix}{%
+        \subcaptionbox{Simulated correlation matrix}{%
             \label{fig:simulation_May4SL1K:second}
             \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(2)".pdf}}
         }%
         
-        \subcaptionbox{\small Simulated \gls{gene expression}}{%
+        \subcaptionbox{Simulated \gls{gene expression}}{%
            \label{fig:simulation_May4SL1K:third}
            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(4)".pdf}}
         }%
-	\subcaptionbox{\small Simulated gene function}{%
+	\subcaptionbox{Simulated gene function}{%
            \label{fig:simulation_May4SL1K:fifth}
            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(3)".pdf}}
         }%
@@ -386,11 +385,11 @@ The use of correlation structure was applied to larger datasets, such as the 100
 %  \resizebox{\textwidth}{!}{
          \begin{raggedleft}
 %
-        \subcaptionbox{\small Gene category in simulations}{%
+        \subcaptionbox{Gene category in simulations}{%
             \label{fig:simulation_May4SLreps:first}
             \includegraphics[width=0.4\textwidth]{{"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(1)".pdf}}
         }%
-        \subcaptionbox{\small Corresponding $\chi^2$ values}{%
+        \subcaptionbox{Corresponding $\chi^2$ values}{%
             \label{fig:simulation_May4SLreps:second}
             \includegraphics[width=0.53333\textwidth]{{"SL_Model_May15mvnorm_heatmap_10XSL_cor_comp2(2)".pdf}}
         }%
@@ -409,16 +408,16 @@ The use of correlation structure was applied to larger datasets, such as the 100
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small Statistical evaluation}{%
+        \subcaptionbox{Statistical evaluation}{%
             \label{fig:simulation_Apr15ROC2:Perf}
             \includegraphics[width=0.475\textwidth]{{"SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png}}
         }%
-        \subcaptionbox{\small \gls{ROC} curves}{%
+        \subcaptionbox{\gls{ROC} curves}{%
             \label{fig:simulation_Apr15ROC2:ROC}
             \includegraphics[width=0.475\textwidth]{{"SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png}}
         }%
         
-        \subcaptionbox{\small Statistical performance (\acrshort{AUROC}) }{%
+        \subcaptionbox{Statistical performance (\acrshort{AUROC}) }{%
            \label{fig:simulation_Apr15ROC2:AUC}
            \includegraphics[width=0.65\textwidth]{{"SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png}}
         }%
@@ -456,16 +455,16 @@ The simulations of \gls{gene expression} data (with 100 genes) with correlations
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small Statistical evaluation \label{fig:simulation_May15ROC:Perf}}{%
+        \subcaptionbox{Statistical evaluation \label{fig:simulation_May15ROC:Perf}}{%
             
             \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}}
         }%
-        \subcaptionbox{\small \gls{ROC} curves}{%
+        \subcaptionbox{\gls{ROC} curves}{%
             \label{fig:simulation_May15ROC:ROC}
             \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png}}
         }%
         
-        \subcaptionbox{\small Statistical performance (\acrshort{AUROC})}{%
+        \subcaptionbox{Statistical performance (\acrshort{AUROC})}{%
            \label{fig:simulation_May15ROC:AUC}
            \includegraphics[width=0.65\textwidth]{{"SL_Model_May15mvnorm_dir_1K_AUC_samplesx_prop".png}}
         }%
@@ -516,13 +515,13 @@ The directional criteria of the \gls{SLIPT} procedure was important in this case
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small $\chi^2$ testing without direction}{%
+        \subcaptionbox{$\chi^2$ testing without direction}{%
             \label{fig:mvtnorm_dir_compare:perf_null}
             %\fbox{
             \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png}}
             %}
         }%
-        \subcaptionbox{\small \gls{SLIPT} with directional criteria}{%
+        \subcaptionbox{\gls{SLIPT} with directional criteria}{%
            \label{fig:mvtnorm_dir_compare:perf_dir}
             %\fbox{
            \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}}
@@ -541,13 +540,13 @@ The directional criteria of the \gls{SLIPT} procedure was important in this case
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small $\chi^2$ testing without direction}{%
+        \subcaptionbox{$\chi^2$ testing without direction}{%
             \label{fig:mvtnorm_dir_compare:ROC_null}
             \fbox{
             \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png}}
             }
         }%
-        \subcaptionbox{\small \gls{SLIPT} with directional criteria}{%
+        \subcaptionbox{\gls{SLIPT} with directional criteria}{%
            \label{fig:mvtnorm_dir_compare:ROC_dir}
             \fbox{
            \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png}}
@@ -555,7 +554,7 @@ The directional criteria of the \gls{SLIPT} procedure was important in this case
         }%
 
 
-        \subcaptionbox{\small Statistical performance (\acrshort{AUROC}) }{%
+        \subcaptionbox{Statistical performance (\acrshort{AUROC}) }{%
            \label{fig:mvtnorm_dir_compare:AUC}
            \includegraphics[width=0.6\textwidth]{{"SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Mayy)_v_Cor(Mayxy)_Full".png}}
         }%
@@ -605,12 +604,12 @@ This enabled modelling of \gls{synthetic lethal} partners within a biological pa
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small Activating \glslink{graph}{pathway} structure }{%
+        \subcaptionbox{Activating \glslink{graph}{pathway} structure }{%
             \fbox{
             \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph".png}}
             }
         }%
-        \subcaptionbox{\small Pathway structure with inhibitions \label{fig:simple_graph:second}}{%
+        \subcaptionbox{Pathway structure with inhibitions \label{fig:simple_graph:second}}{%
             \fbox{
            \includegraphics[width=0.45\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph_inhibiting".png}}
            }
@@ -630,24 +629,24 @@ The \glslink{graph}{graph} structure was constructed from which simulated data w
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small Activating \glslink{graph}{pathway} structure \label{fig:simulation_activating:first}}{%
+        \subcaptionbox{Activating \glslink{graph}{pathway} structure \label{fig:simulation_activating:first}}{%
             \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph".png}}
         }%
-        \subcaptionbox{\small Distance matrix \label{fig:simulation_activating:second}}{%
+        \subcaptionbox{Distance matrix \label{fig:simulation_activating:second}}{%
             \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/dist_mat".png}}
         }%
         
-        \subcaptionbox{\small $\Sigma$ (expected correlation) \label{fig:simulation_activating:third}}{%
+        \subcaptionbox{$\Sigma$ (expected correlation) \label{fig:simulation_activating:third}}{%
            \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_mat".png}}
         }%
-	\subcaptionbox{\small Simulated correlation\label{fig:simulation_activating:fifth}}{%
+	\subcaptionbox{Simulated correlation\label{fig:simulation_activating:fifth}}{%
            \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor_mat".png}}
         }%
         	
-	\subcaptionbox{\small Simulated \glslink{gene expression}{expression} data  \label{fig:simulation_activating:fourth}}{%
+	\subcaptionbox{Simulated \glslink{gene expression}{expression} data  \label{fig:simulation_activating:fourth}}{%
             \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat".png}}
         }%
-        \subcaptionbox{\small Simulated gene function calls \label{fig:simulation_activating:sixth}}{%
+        \subcaptionbox{Simulated gene function calls \label{fig:simulation_activating:sixth}}{%
            \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_disc_mat".png}}
         }%
     \end{center}
@@ -662,25 +661,25 @@ The \glslink{graph}{graph} structure was constructed from which simulated data w
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small Inhibiting pathway structure\label{fig:simulation_inhibiting:first}}{%
+        \subcaptionbox{Inhibiting pathway structure\label{fig:simulation_inhibiting:first}}{%
             \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph_inhibiting".png}}
         }%
-        \subcaptionbox{\small Distance matrix \label{fig:simulation_inhibiting:second}}{%
+        \subcaptionbox{Distance matrix \label{fig:simulation_inhibiting:second}}{%
             \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/dist_mat".png}}
         }%
         
-        \subcaptionbox{\small $\Sigma$ (expected correlation) \label{fig:simulation_inhibiting:third}}{%
+        \subcaptionbox{$\Sigma$ (expected correlation) \label{fig:simulation_inhibiting:third}}{%
            \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/sigma_mat_inhibiting".png}}
         }%
-	\subcaptionbox{\small Simulated correlation\label{fig:simulation_inhibiting:fifth}}{%
+	\subcaptionbox{Simulated correlation\label{fig:simulation_inhibiting:fifth}}{%
            \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_cor_mat_inhibiting".png}}
         }%
         
-        \subcaptionbox{\small Simulated \glslink{gene expression}{expression} data \label{fig:simulation_inhibiting:fourth}}{%
+        \subcaptionbox{Simulated \glslink{gene expression}{expression} data \label{fig:simulation_inhibiting:fourth}}{%
             
             \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_mat_inhibiting".png}}
         }%
-        \subcaptionbox{\small Simulated gene function calls \label{fig:simulation_inhibiting:sixth}}{%
+        \subcaptionbox{Simulated gene function calls \label{fig:simulation_inhibiting:sixth}}{%
            \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/expr_inhib_disc_mat".png}}
         }%
     \end{center}
@@ -719,11 +718,13 @@ These simulated datasets could then be used for simulating \gls{synthetic lethal
 
 \section{Customised Functions and Packages Developed} \label{methods:r_packages}
 
-Various R packages \citep{R_core} have been developed throughout this thesis using \texttt{devtools} \citep{devtools} and \texttt{roxygen} \citep{roxygen} to enable reproducibility of customised analysis and visualisation. Many of these have been documented, demonstrated in vignettes, and released on GitHub. %(\url{https://github.com/TomKellyGenetics}). %to enable the research community to access utilise them in their own analysis.
+Various R packages \citep{R_core} have been developed throughout this thesis using \texttt{devtools} \citep{devtools} and \texttt{roxygen} \citep{roxygen} to enable reproducibility of customised analysis and visualisation. Many of these have been documented, demonstrated in vignettes, and released on GitHub (\url{https://github.com/TomKellyGenetics})
+to enable the research community to utilise them in their own analysis.
 These are summarised in Table~\ref{tab:computers_r_packages_dev}, with the corresponding urls for their GitHub repository which contains instructions for installation with the \texttt{devtools} R package \citep{devtools} and links the relevant vignette(s).
 
 \subsection{Synthetic Lethal Interaction Prediction Tool}
-The statistical methodology for detection of \glspl{synthetic lethal} in \gls{gene expression} data (\gls{SLIPT}) is one of the main novel procedures developed in this thesis, as described in Section~\ref{methods:SLIPT}. The \texttt{slipt} R package has been prepared for release to accompany a publication demonstrating the applications of the methodology for identifying candidate interacting genes and pathways with \textit{CDH1} in breast cancer \citep{TCGA2012}.
+The statistical methodology for detection of \glspl{synthetic lethal} in \gls{gene expression} data (\gls{SLIPT}) is one of the main novel procedures developed in this thesis, as described in Section~\ref{methods:SLIPT}. The \texttt{slipt} R package has been prepared for release %(\url{https://github.com/TomKellyGenetics/slipt})
+to accompany a publication demonstrating the applications of the methodology for identifying candidate interacting genes and pathways with \textit{CDH1} in breast cancer \citep{TCGA2012}.
 
 \gls{SLIPT} can be used amenable to analysis of any effectively continuous measure of gene activity (e.g., \gls{microarray}, \gls{RNA-Seq}, protein abundance, or pathway \glspl{metagene}). Executing \texttt{slipt} is straightforward: the \texttt{prep\_data\_for\_SL} function scores samples as ``low'', ``medium'', or ``high'' for each gene, then the \texttt{detect\_SL} function tests a given query gene against all potential partners by performing the chi-squared test and directional conditions. This function returns a table summarising the observed and expected sample numbers used for the directional criteria, the $\chi^2$ values, and corresponding p-values including adjusting for multiple comparisons. The \texttt{count\_of\_SL} and \texttt{table\_of\_SL} functions serve to facilitate summary and extraction of the positive \gls{SLIPT} hits, respectively, from the table of predictions of \gls{synthetic lethal} partners.
 
@@ -734,16 +735,16 @@ The \gls{SLIPT} methodology in this package release was used in later analyses r
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
-        \subcaptionbox{\small Customised violin plot}{%
+        \subcaptionbox{Customised violin plot}{%
             \label{fig:vioplot:first}
             \includegraphics[width=0.45\textwidth]{{"vioplot1".png}}
         }%
-        \subcaptionbox{\small Split violin plot}{%
+        \subcaptionbox{Split violin plot}{%
             \label{fig:vioplot:second}
             \includegraphics[width=0.45\textwidth]{{"vioplot2".png}}
         }%
         \end{center}
-   \caption[Demonstration of violin plots with custom features]{\small \textbf{Demonstration of violin plots with custom features.} An example of the \texttt{iris} dataset is plotted to show the custom features of the \texttt{vioplotx} package including a) individual colour, shape and size parameters of each violin, scaling violin widths by area, and b) splitting violins to compare subsets of data.}
+   \caption[Demonstration of violin plots with custom features]{\small \textbf{Demonstration of violin plots with custom features.} An example of the \texttt{iris} dataset is plotted to show the custom features of the \texttt{vioplotx} package including (a) individual colour, shape and size parameters of each violin, scaling violin widths by area, and (b) splitting violins to compare subsets of data.}
 %}
 \label{fig:vioplot}
 %\end{mdframed}
@@ -764,21 +765,20 @@ The \gls{SLIPT} methodology in this package release was used in later analyses r
 \subsection{Data Visualisation} \label{methods:r_packages_vis}
 Customised data visualisations in R \citep{R_core} were developed to present data throughout this thesis. The \texttt{vioplotx} and \texttt{heatmap.2x} packages are enhancements of the \texttt{vioplot} package \citep{vioplot} and \texttt{heatmap.2} provided by the \texttt{gplots} package \citep{gplots}. 
 
-The \texttt{vioplotx} package provides an alternative visualisation (of continuous variables against categories) to the more familiar boxplot, showing variability of the data by the width of the plots. As demonstrated in Figure~\ref{fig:vioplot}, this version enabled separate plotting parameters for each violin with vector inputs for colour, shape, and size of various elements of the median point, central boxplot, borders, and fill colour for the violin. Scaling violin width to adjust violin area and splitting data by a second categorical variable was also enabled. This function was intended to be backwards compatible with the inputs of \texttt{vioplot} (applying scalar inputs across all violins) and \texttt{boxplot} (by enabling formula inputs as an S3 method). Each of these features has been demonstrated with examples in respective vignettes on the package \href{https://github.com/TomKellyGenetics/vioplotx}{GitHub repository}.
+The \texttt{vioplotx} package provides an alternative visualisation (of continuous variables against categories) to the more familiar boxplot, showing variability of the data by the width of the plots. As demonstrated in Figure~\ref{fig:vioplot}, this version enables separate plotting parameters for each violin with vector inputs for colour, shape, and size of various elements of the median point, central boxplot, borders, and fill colour for the violin. Scaling violin width to adjust violin area and splitting data by a second categorical variable is also enabled. This function is intended to be backwards compatible with the inputs of \texttt{vioplot} (applying scalar inputs across all violins) and \texttt{boxplot} (by enabling formula inputs as an S3 method). Each of these features has been demonstrated with examples in respective vignettes on the package \href{https://github.com/TomKellyGenetics/vioplotx}{GitHub repository} (\url{https://github.com/TomKellyGenetics/vioplotx}).
 
-The \texttt{heatmap.2x} provides extensions for annotation colour bars for both the rows and columns (as shown in Figure~\ref{fig:heatmap.2x}). Multiple bars were used on both axes with matrix inputs (rather than single vector for \texttt{heatmap.2}) which facilitates additional plotting of gene and sample characteristics for comparison with correlation matrices, \glslink{gene expression}{expression} profiles, or pathway \glspl{metagene}. The annotation bar inputs correspond to their orientation on the plot, each colour bar was provided as a column for the row annotation on the left of the heatmap and as a row for the column annotation on top of the heatmap. Row and column annotation bars were labelled with the column or row names respectively. Additional parameters enable resizing of these annotation bar labels and control of reordering columns for if samples have been ordered in advance (e.g., ranked by a \gls{metagene} or split into groups clustered separately).  These features were used through this thesis and have been provided in a package \href{https://github.com/TomKellyGenetics/heatmap.2x}{GitHub repository}.
-
+The \texttt{heatmap.2x} function provides extensions for annotation colour bars for both the rows and columns (as shown in Figure~\ref{fig:heatmap.2x}). Multiple bars are enabled on both axes with matrix inputs (rather than single vector for \texttt{heatmap.2}) which facilitates additional plotting of gene and sample characteristics for comparison with correlation matrices, \glslink{gene expression}{expression} profiles, or pathway \glspl{metagene}. The annotation bar inputs correspond to their orientation on the plot, each colour bar is provided as a column for the row annotation on the left of the heatmap and as a row for the column annotation on top of the heatmap. Row and column annotation bars are labelled with the column or row names respectively. Additional parameters enable resizing of these annotation bar labels and control of reordering columns for when samples have been ordered in advance (e.g., ranked by a \gls{metagene} or split into groups clustered separately).  These features were used through this thesis and have been provided in a package \href{https://github.com/TomKellyGenetics/heatmap.2x}{GitHub repository} (\url{https://github.com/TomKellyGenetics/heatmap.2x}).
 
 \FloatBarrier
 
 \subsection{Extensions to the iGraph Package} \label{methods:igraph_extensions}
-The following features were developed during this thesis using ``iGraph'' data objects, building upon the \texttt{igraph} package \citep{igraph}. These have been released as separate packages for each respective procedure and can be installed together as a collection of extensions to the \texttt{igraph} package.
+The following features were developed during this thesis using ``iGraph'' data objects, building upon the \texttt{igraph} package \citep{igraph}. These have been released as separate packages for each respective procedure and can be installed together as a collection of extensions to the \texttt{igraph} package (\url{https://github.com/TomKellyGenetics/igraph.extensions}).
 
 \subsubsection{Sampling Simulated Data from Graph Structures}
 The \texttt{graphsim} package implements the procedure for simulating \gls{gene expression} from \glslink{graph}{graph} structures (as described in Section~\ref{methods:graphsim}). By default, this derives a matrix with a geometrically decreasing weighting by distance (by \glspl{shortest path}) between each pair of \glslink{vertex}{nodes} with. An absolute decreasing weighting is also available with the option of to derive correlation structures from adjacency matrices or the number of \glslink{edge}{links} common partners (i.e., size of the shared ``neighbourhood'' \citep{Hell1976}) between each pair of \glslink{vertex}{nodes}. Functions to compute these are called directly by passing parameters to them when running the \texttt{generate\_expression} or \texttt{make\_sigma\_mat} commands. This package enables simulating \glslink{gene expression}{expression} data directly from a \glslink{graph}{graph} structure (with the intermediate steps automated) or generating $\Sigma$ parameters for \texttt{mvtnorm} from \glslink{graph}{graph} structures or matrices derived from them. These functions support assignment of activating or inhibiting relationships to each \glslink{edge}{edge} (with a \texttt{state} parameter).
 
 \subsubsection{Plotting Directed Graph Structures}
-The \texttt{plot.igraph} package provides the \texttt{plot\_directed} function, specifically developed for directed \glslink{graph}{graph} structures, to plot activating or inhibiting for each \glslink{edge}{edge} (as described in Section~\ref{methods:graphsim}). As shown in Figure~\ref{fig:simple_graph2}, this function supports separate plotting parameters for each \glslink{vertex}{node}, \glslink{vertex}{node} label, and \glslink{edge}{edge}. This included colours of \glslink{vertex}{node} fill, border, label text, and \glspl{edge} and size of \glslink{vertex}{nodes}, \glslink{edge}{edge} widths, arrowhead lengths, and font size of labels. The  \texttt{state} parameter for assigning activating or inhibiting to each \glslink{edge}{edge} determines whether \glspl{edge} were depicted with 30\textdegree\ or 90\textdegree\ arrowheads. Colours were assigned separately and so they may be customised. Vectorised parameters are applied across each \glslink{vertex}{node} or \glslink{edge}{edge}, whereas scalar parameters apply the same plotting parameters across them. The default layout function is \texttt{layout.fruchterman.reingold} but any layout function supported by \texttt{plot} function in \texttt{igraph} \citep{igraph} was compatible, such as \texttt{layout.kamada.kawai} used to implement the Kamada--Kawai algorithm \citep{Kamada1989} for graph plots throughout this thesis.
+The \texttt{plot.igraph} package provides the \texttt{plot\_directed} function, specifically developed for directed \glslink{graph}{graph} structures, to plot activating or inhibiting for each \glslink{edge}{edge} (as described in Section~\ref{methods:graphsim}). As shown in Figure~\ref{fig:simple_graph2}, this function supports separate plotting parameters for each \glslink{vertex}{node}, \glslink{vertex}{node} label, and \glslink{edge}{edge}. This includes colours of \glslink{vertex}{node} fill, border, label text, and \glspl{edge} and size of \glslink{vertex}{nodes}, \glslink{edge}{edge} widths, arrowhead lengths, and font size of labels. The  \texttt{state} parameter for assigning activating or inhibiting to each \glslink{edge}{edge} determines whether \glspl{edge} were depicted with 30\textdegree\ or 90\textdegree\ arrowheads. Colours are assigned separately so they may be customised. Vectorised parameters are applied across each \glslink{vertex}{node} or \glslink{edge}{edge}, whereas scalar parameters apply the same plotting parameters across them. The default layout function is \texttt{layout.fruchterman.reingold} but any layout function supported by \texttt{plot} function in \texttt{igraph} \citep{igraph} was compatible, such as \texttt{layout.kamada.kawai} used to implement the Kamada--Kawai algorithm \citep{Kamada1989} for graph plots throughout this thesis.
  
 
  \begin{figure*}[!htp]
@@ -798,13 +798,13 @@ The \texttt{plot.igraph} package provides the \texttt{plot\_directed} function, 
 \FloatBarrier
  
 \subsubsection{Computing Information Centrality} 
-The \glspl{shortest path} of a network were computed by the \texttt{igraph} package \citet{igraph} which can be extended to calculate the network efficiency but was not provided by the package itself (ss described in Section~\ref{methods:network_metrics}). The ``\gls{information centrality}'' of a \glslink{vertex}{vertex} is computed as the relative change in the network efficiency when the \glslink{vertex}{vertex} is removed. \Gls{information centrality} is calculated iteratively for each \glslink{vertex}{node} and the sum of \gls{information centrality} for each \glslink{vertex}{vertex} is the \gls{information centrality} for the network. These metrics were released in the \texttt{info.centrality} package.
+The \glspl{shortest path} of a network were computed by the \texttt{igraph} package \citep{igraph} which can be extended to calculate the network efficiency but was not provided by the package itself (ss described in Section~\ref{methods:network_metrics}). The ``\gls{information centrality}'' of a \glslink{vertex}{vertex} is computed as the relative change in the network efficiency when the \glslink{vertex}{vertex} is removed. \Gls{information centrality} is calculated iteratively for each \glslink{vertex}{node} and the sum of \gls{information centrality} for each \glslink{vertex}{vertex} is the \gls{information centrality} for the network. These metrics were released in the \texttt{info.centrality} package (\url{https://github.com/TomKellyGenetics/info.centrality}).
 
 \subsubsection{Testing Pathway Structure with Permutation Testing}
-A network-based procedure developed was used to compare of \gls{siRNA} and \gls{SLIPT} candidate genes in a \glslink{graph}{pathway} structure. Such \glslink{graph}{pathway} structure relationships were tested by computing the number of \glspl{shortest path} between two different groups of \glslink{vertex}{nodes} in either direction within a graph . This pathway relationship metric was implemented in the \texttt{pathway.structure.permutation} package with permutation testing (as described in sections~\ref{methods:pathway_str} and~\ref{methods:network_permutation}). 
+A network-based procedure developed was used to compare of \gls{siRNA} and \gls{SLIPT} candidate genes in a \glslink{graph}{pathway} structure. Such \glslink{graph}{pathway} structure relationships were tested by computing the number of \glspl{shortest path} between two different groups of \glslink{vertex}{nodes} in either direction within a graph . This pathway relationship metric was implemented in the \texttt{pathway.structure.permutation} package (\url{https://github.com/TomKellyGenetics/pathway.structure.permutation}) with permutation testing (as described in sections~\ref{methods:pathway_str} and~\ref{methods:network_permutation}). 
 
 \subsubsection{Metapackage to Install iGraph Functions}
-These features may be installed together with \texttt{igraph.extensions}, which can be accessed from a \href{https://github.com/TomKellyGenetics/igraph.extensions}{GitHub repository}. This meta-package installs \texttt{igraph} \citep{igraph} and the packages described in Section~\ref{methods:igraph_extensions} including their dependencies for matrix operations and statistical procedures: \texttt{Matrix}, \texttt{matrixcalc}, and \texttt{mvtnorm} \citep{Matrix, matrixcalc, Genz2009, mvtnorm}.
+These features may be installed together with \texttt{igraph.extensions}, which can be accessed from a \href{https://github.com/TomKellyGenetics/igraph.extensions}{GitHub repository} (\url{https://github.com/TomKellyGenetics/igraph.extensions}). This meta-package installs \texttt{igraph} \citep{igraph} and the packages described in Section~\ref{methods:igraph_extensions} including their dependencies for matrix operations and statistical procedures: \texttt{Matrix}, \texttt{matrixcalc}, and \texttt{mvtnorm} \citep{Matrix, matrixcalc, Genz2009, mvtnorm}.
 
 
 %simulation 2015 committee meeting
