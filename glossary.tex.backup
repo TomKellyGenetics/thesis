@@ -23,7 +23,7 @@
 \newglossaryentry{pan cancer}{%
   name=pan cancer,
   description={A focus on the molecular and genetic features across cancers in different tissues},
-  plural=pan cancer
+  plural=Pan Cancer
 }
 
 \newglossaryentry{RNA-Seq}{%
@@ -680,7 +680,7 @@
 
 \newacronym[description={Messenger RNA}]{mRNA}{mRNA}{messenger RNA}%
 
-\newacronym[description={Micro RNA}, plural=microRNAs,firstplural=microRNAs]{microRNA}{microRNA}{\glslink{microRNA-gls}{micro RNA}}%
+\newacronym[description={Micro RNA}, plural=microRNAs,firstplural=microRNAs]{microRNA}{microRNA}{micro RNA}%
 
 \newacronym[description={Short Interfering RNA}, plural=siRNAs,firstplural=siRNAs]{siRNA}{siRNA}{short interfering RNA}%
 
@@ -755,7 +755,7 @@
 
 \newacronym[description={Synthetic Lethal Interaction Prediction Tool}]{SLIPT}{SLIPT}{Synthetic Lethal Interaction Prediction Tool}%
 
-\newacronym[description={Data Mining Synthetic Lethal Identification Pipeline}]{DAISY}{DAISY}{DAta mIning SYnthetic lethal identification pipeline}%
+\newacronym[description={Data Mining Synthetic Lethal Identification Pipeline}]{DAISY}{DAISY}{``DAta mIning SYnthetic lethal identification pipeline''}%
 
 \newacronym[description={Bimodal Subsetting Expression}]{BiSEp}{BiSEp}{BImodal Subsetting ExPression}%
 
@@ -775,9 +775,13 @@
 
 \newacronym[description={Trimmed Mean of M values (normalisation}]{TMM}{TMM}{trimmed mean of M values}%
 
+\newacronym[description={Counts Per Million mapped reads}]{CPM}{CPM}{Counts per Million mapped reads}%
+
+\newacronym[description={Reads Per Kilobase per Million mapped reads}]{RPKM}{RPKM}{Reads Per Kilobase per Million mapped reads}%
+
 \newacronym[description={RNA-Seq by Expectation Maximization (normalisation}]{RSEM}{RSEM}{RNA-Seq by Expectation Maximization}%
 
-\newacronym[description={Area Under the Receiver Operating Characteristic (curve)}]{AUROC}{AUROC}{area under \gls{ROC}}%
+\newacronym[description={Area Under the Receiver Operating Characteristic (curve)}]{AUROC}{AUROC}{area under \acrlong{ROC}}%
 
 \newacronym[description={Reciever Operating Characteristic (curve)}]{ROC}{ROC}{receiver operating characteristic}%
 
@@ -785,7 +789,7 @@
 
 \newacronym[description={comprehensive R archive network}]{CRAN}{CRAN}{comprehensive R archive network}%
 
-\newacronym[description={Biological Pathway Exchange}]{BioPAX}{BioPAX}{Biological pathway exchange}%
+\newacronym[description={Biological Pathway Exchange}]{BioPAX}{BioPAX}{Biological PAthway eXchange}%
 
 \newacronym[description={Simple Linux Utility for Resource Management}]{Slurm}{Slurm}{Simple Linux Utility for Resource Management}%
 
@@ -808,6 +812,14 @@
 \newacronym[description={Synthetic Gene Array (technique)}, plural=SGAs,firstplural=synthetic gene arrays]{SGA}{SGA}{synthetic gene array}%
 
 \newacronym[description={Microsatellite Instability}]{MSI}{MSI}{microsatellite instability}%
+
+\newacronym[description={Immunohistochemistry}]{IHC}{IHC}{immunohistochemistry}%
+
+\newacronym[description={Bourne Again Shell}]{Bash}{Bash}{Bourne Again SHell}%
+
+\newacronym[description={Central Processing Unit}]{CPU}{CPU}{central processing unit}%
+
+
 
 %%linked entry
 \iffalse
