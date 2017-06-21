@@ -340,7 +340,7 @@ The \gls{ROC} curves showed that \gls{SLIPT} is subject to a near equal trade-of
            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_top(3)".pdf}}
         }%
     \end{center}
-   \caption[Simulating \glslink{gene expression}{expression} with correlated gene blocks]{\small \textbf{Simulating \glslink{gene expression}{expression} with correlated gene blocks.} A $\Sigma$ matrix (a) was used generate 100 genes with a multivariate normal distribution, including correlated blocks of genes ($r = 0.8$) with correlation (b) similar to $\Sigma$, on a red--to--green scale. The annotation for genes gives the $\chi^2$ (in blue for in the direction of \gls{SLIPT} or red otherwise) and the gene category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non synthetic lethal-correlated, and green for non synthetic lethal). The simulated \gls{gene expression} (c) and function (d) generated are ordered by $\chi^2$ showing the functional structure of \gls{synthetic lethal} genes and that they were among the strongest \gls{SLIPT} results.}
+   \caption[Simulating \glslink{gene expression}{expression} with correlated gene blocks]{\small \textbf{Simulating \glslink{gene expression}{expression} with correlated gene blocks.} A $\Sigma$ matrix (a) was used generate 100 genes with a multivariate normal distribution, including correlated blocks of genes ($r = 0.8$) with correlation (b) similar to $\Sigma$, on a red--to--green scale. The annotation for genes gives the $\chi^2$ (in blue for in the direction of \gls{SLIPT} or red otherwise) and the gene category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non synthetic lethal-correlated, and green for non synthetic lethal). The simulated \gls{gene expression} (c) and function (d) generated were ordered by $\chi^2$ showing the functional structure of \gls{synthetic lethal} genes and that they were among the strongest \gls{SLIPT} results.}
 %}
 \label{fig:simulation_May4SL}
 %\end{mdframed}
@@ -369,7 +369,7 @@ The \gls{ROC} curves showed that \gls{SLIPT} is subject to a near equal trade-of
            \includegraphics[width=0.35\textwidth]{{"SL_Model_May15mvnorm_heatmap_4SL_cor_comp_1K_top(3)".pdf}}
         }%
     \end{center}
-   \caption[Simulating \glslink{gene expression}{expression} with correlated gene blocks]{\small \textbf{Simulating \glslink{gene expression}{expression} with correlated gene blocks.} Using the $\Sigma$ matrix~(a), sampling 1000 genes from a multivariate normal distribution produced (b) correlated blocks of genes (correlated by 0.8) on a red--to--green scale. The simulated \gls{gene expression} (c) and function (d) generated were ordered by $\chi^2$ and \gls{SLIPT} direction show that \gls{synthetic lethal} genes are among the strongest \gls{SLIPT} results with high specificity against many potential false positives. These are annotated for $log-\chi^2$ (on a red--to--green scale) and category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non synthetic lethal-correlated, and green for non synthetic lethal) for each gene.}
+   \caption[Simulating \glslink{gene expression}{expression} with correlated gene blocks]{\small \textbf{Simulating \glslink{gene expression}{expression} with correlated gene blocks.} Using the $\Sigma$ matrix~(a), sampling 1000 genes from a multivariate normal distribution produced (b) correlated blocks of genes (correlated by 0.8) on a red--to--green scale. The simulated \gls{gene expression} (c) and function (d) generated were ordered by $\chi^2$ and \gls{SLIPT} direction show that \gls{synthetic lethal} genes are among the strongest \gls{SLIPT} results with high specificity against many potential false positives. These are annotated for log-$\chi^2$ (on a red--to--green scale) and category (blue for query, cyan for query-correlated, red for SL, orange for SL-correlated, forest green for non synthetic lethal-correlated, and green for non synthetic lethal) for each gene.}
 %}
 \label{fig:simulation_May4SL1K}
 %\end{mdframed}
@@ -410,16 +410,16 @@ The use of correlation structure was applied to larger datasets, such as the 100
 %
         \subcaptionbox{Statistical evaluation}{%
             \label{fig:simulation_Apr15ROC2:Perf}
-            \includegraphics[width=0.475\textwidth]{{"SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png}}
+            \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150410y/SL_Model_Apr15mvnorm_1K_ROC1_samplesx_prop".png}}
         }%
         \subcaptionbox{\gls{ROC} curves}{%
             \label{fig:simulation_Apr15ROC2:ROC}
-            \includegraphics[width=0.475\textwidth]{{"SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png}}
+            \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150410y/SL_Model_Apr15mvnorm_1K_ROC2_samplesx_prop".png}}
         }%
         
         \subcaptionbox{Statistical performance (\acrshort{AUROC}) }{%
            \label{fig:simulation_Apr15ROC2:AUC}
-           \includegraphics[width=0.65\textwidth]{{"SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png}}
+           \includegraphics[width=0.65\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150410y/SL_Model_Apr15mvnorm_1K_AUC_samplesx_prop".png}}
         }%
     \end{center}
    \caption[Performance with correlations]{\small \textbf{Performance with correlations.} Simulation of \glspl{synthetic lethal} was performed by sampling from a multivariate normal distribution (with correlation structure). Performance of \gls{SLIPT} declines for more \gls{synthetic lethal} partners but this is mitigated by increased sample sizes (darker colours). This generally occurs as the sensitivity decreases for a greater number of true positives to detect, leading to a trade-off in accuracy as seen in a trough for false positive rate and the \gls{ROC} curves.}
@@ -457,16 +457,16 @@ The simulations of \gls{gene expression} data (with 100 genes) with correlations
 %
         \subcaptionbox{Statistical evaluation \label{fig:simulation_May15ROC:Perf}}{%
             
-            \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}}
+            \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150507y/SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}}
         }%
         \subcaptionbox{\gls{ROC} curves}{%
             \label{fig:simulation_May15ROC:ROC}
-            \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png}}
+            \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150507y/SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png}}
         }%
         
         \subcaptionbox{Statistical performance (\acrshort{AUROC})}{%
            \label{fig:simulation_May15ROC:AUC}
-           \includegraphics[width=0.65\textwidth]{{"SL_Model_May15mvnorm_dir_1K_AUC_samplesx_prop".png}}
+           \includegraphics[width=0.65\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150507y/SL_Model_May15mvnorm_dir_1K_AUC_samplesx_prop".png}}
         }%
     \end{center}
    \caption[Performance with query correlations]{\small \textbf{Performance with query correlations.} Simulation of \glspl{synthetic lethal} was performed by sampling from a multivariate normal distribution (with correlation structure including correlated genes with non synthetic lethal and query genes). Performance of \gls{SLIPT} declined for more \gls{synthetic lethal} partners and is mitigated by increased sample sizes (darker colours) but the sensitivity remains higher for a greater number of true positives with corresponding improvements in \gls{ROC} curves.}
@@ -495,7 +495,7 @@ Correlation structures were also considered for non synthetic lethal genes that 
   \begin{center}
   \resizebox{0.5 \textwidth}{!}{
   \fbox{
-    \includegraphics{{"SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Apry)_v_Cor(Mayxy)_Full"}}
+    \includegraphics{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150507y/SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Apry)_v_Cor(Mayxy)_Full"}}
    }
    }
    \end{center}
@@ -508,7 +508,7 @@ Correlation structures were also considered for non synthetic lethal genes that 
 %\FloatBarrier
 
 %\subsubsection{Importance of Directional Testing}
-The directional criteria of the \gls{SLIPT} procedure was important in this case, enhancing its performance, particularly in distinguishing positively correlated non synthetic lethal genes. The multivariate normal simulations were performed, with 20,000 genes, including all of the correlation structures discussed (SL, non synthetic lethal, and query correlated genes). These simulations were compared for the direction \gls{SLIPT} and  the $\chi^2$ testing. There was a considerably higher statistical performance with \gls{SLIPT}, particularly increased sensitivity and lower false positive rate (as shown in Figure~\ref{fig:mvtnorm_dir_compare}).
+The directional criteria of the \gls{SLIPT} procedure was important in this case, enhancing its performance, particularly in distinguishing positively correlated non synthetic lethal genes. The multivariate normal simulations were performed, with 20,000 genes, including all of the correlation structures discussed (with synthetic lethal, non synthetic lethal, and query correlated genes). These simulations were compared for the direction \gls{SLIPT} and  the $\chi^2$ testing. There was a considerably higher statistical performance with \gls{SLIPT}, particularly increased sensitivity and lower false positive rate (as shown in Figure~\ref{fig:mvtnorm_dir_compare}).
 
 \begin{figure*}[!tb]
 %\begin{mdframed}
@@ -518,13 +518,13 @@ The directional criteria of the \gls{SLIPT} procedure was important in this case
         \subcaptionbox{$\chi^2$ testing without direction}{%
             \label{fig:mvtnorm_dir_compare:perf_null}
             %\fbox{
-            \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png}}
+            \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150507y/SL_Model_May15mvnorm_1K_ROC1_samplesx_prop".png}}
             %}
         }%
         \subcaptionbox{\gls{SLIPT} with directional criteria}{%
            \label{fig:mvtnorm_dir_compare:perf_dir}
             %\fbox{
-           \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}}
+           \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150507y/SL_Model_May15mvnorm_dir_1K_ROC1_samplesx_prop".png}}
            %}
         }%
 
@@ -542,21 +542,21 @@ The directional criteria of the \gls{SLIPT} procedure was important in this case
 %
         \subcaptionbox{$\chi^2$ testing without direction}{%
             \label{fig:mvtnorm_dir_compare:ROC_null}
-            \fbox{
-            \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png}}
-            }
+            %\fbox{
+            \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150507y/SL_Model_May15mvnorm_1K_ROC2_samplesx_prop".png}}
+            %}
         }%
         \subcaptionbox{\gls{SLIPT} with directional criteria}{%
            \label{fig:mvtnorm_dir_compare:ROC_dir}
-            \fbox{
-           \includegraphics[width=0.475\textwidth]{{"SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png}}
-           }
+            %\fbox{
+           \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150507y/SL_Model_May15mvnorm_dir_1K_ROC2_samplesx_prop".png}}
+           %}
         }%
 
 
         \subcaptionbox{Statistical performance (\acrshort{AUROC}) }{%
            \label{fig:mvtnorm_dir_compare:AUC}
-           \includegraphics[width=0.6\textwidth]{{"SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Mayy)_v_Cor(Mayxy)_Full".png}}
+           \includegraphics[width=0.6\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20150507y/SL_Model_Test_Graph_10K_Graph1_ROC_Compare_Mvtn(Mayy)_v_Cor(Mayxy)_Full".png}}
         }%
 %
     \end{center}
@@ -566,7 +566,7 @@ The directional criteria of the \gls{SLIPT} procedure was important in this case
 %\end{mdframed}
 \end{figure*}
 
-These results show that the performance of \gls{SLIPT} is appropriate for the analysis of \glslink{gene expression}{expression} datasets, where positively correlated genes are commonly occur, with the directional condition robustly improving the performance of \gls{SLIPT} across simulation parameters (compared to the $\chi^2$ test). Without assuming the underlying number of \gls{synthetic lethal} genes, \gls{SLIPT} will performed than the $\chi^2$ test alone, irrespective of the significance threshold as shown by \gls{ROC} analysis (in Figure~\ref{fig:mvtnorm_dir_compare2}). The directional \gls{SLIPT} methodology outperformed the $\chi^2$ test at detecting \gls{synthetic lethal} partners with even up to 100 \gls{synthetic lethal} genes.
+These results show that the performance of \gls{SLIPT} is appropriate for the analysis of \glslink{gene expression}{expression} datasets, where positively correlated genes commonly occur, with the directional condition robustly improving the performance of \gls{SLIPT} across simulation parameters (compared to the $\chi^2$ test). Without assuming the underlying number of \gls{synthetic lethal} genes, \gls{SLIPT} will performed than the $\chi^2$ test alone, irrespective of the significance threshold as shown by \gls{ROC} analysis (in Figure~\ref{fig:mvtnorm_dir_compare2}). The directional \gls{SLIPT} methodology outperformed the $\chi^2$ test at detecting \gls{synthetic lethal} partners with even up to 100 \gls{synthetic lethal} genes.
 
 Together these simulation results support the application of the \gls{SLIPT} methodology as it has been performed throughout Chapters~\ref{chap:SLIPT} and~\ref{chap:Pathways}. The methodology and simulation procedure were explored further in Chapter~\ref{chap:simulation}, with comparison to other \gls{synthetic lethal} detection approaches and the inclusion of \glslink{graph}{graph} structures.
 
