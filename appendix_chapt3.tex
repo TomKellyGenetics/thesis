@@ -227,7 +227,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png}
    }
-    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by \textit{CDH1} somatic mutation status) analysed in \gls{TCGA} breast cancer dataset for gene expression of 3743 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \acrshort{mtSLIPT} prediction (with significant \gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} mutant samples and often lowly expressing \textit{CDH1} wildtype samples (which were not tested for), although many of the \textit{CDH1} mutant samples had among the lowest \textit{CDH1} expression. In contrast to the expression analysis the (predominantly \textit{CDH1} wildtype) basal subtype and \acrshort{ER} negative samples have depleted expression among most candidate synthetic lethal partners. 
+    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by \textit{CDH1} somatic mutation status) analysed in \gls{TCGA} breast cancer dataset for gene expression of 3743 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \acrshort{mtSLIPT} prediction (with significant \gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} mutant samples and often lowly expressing \textit{CDH1}\gls{wild-type} samples (which were not tested for), although many of the \textit{CDH1} mutant samples had among the lowest \textit{CDH1} expression. In contrast to the expression analysis the (predominantly \textit{CDH1}\gls{wild-type}) basal subtype and \acrshort{ER} negative samples have depleted expression among most candidate synthetic lethal partners. 
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_mtSL}
@@ -896,7 +896,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
     \includegraphics{mtSLIPT_siRNA_vs_Correlation_with_CDH1.png}
    }
    \end{center}
-   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation.} The \acrshort{mtSLIPT} p-values were compared against Pearson's correlation of expression with \textit{CDH1}. Genes detected by SLIPT or \gls{siRNA} were coloured according to the legend. 
+   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation.} The \acrshort{mtSLIPT} p-values were compared against Pearson correlation of expression with \textit{CDH1}. Genes detected by SLIPT or \gls{siRNA} were coloured according to the legend. 
 }
 \label{fig:compare_points_correlation_mtSL}
 %\end{mdframed}
@@ -909,7 +909,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
     \includegraphics{vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf}
    }
    \end{center}
-   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation.}  Genes detected by \acrshort{mtSLIPT} against \textit{CDH1} mutation and \gls{siRNA} screening were compared against Pearson's correlation of expression with \textit{CDH1}. There were no differences in correlation between the gene groups. 
+   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation.}  Genes detected by \acrshort{mtSLIPT} against \textit{CDH1} mutation and \gls{siRNA} screening were compared against Pearson correlation of expression with \textit{CDH1}. There were no differences in correlation between the gene groups. 
 }
 \label{fig:compare_correlation_mtSL}
 %\end{mdframed}
@@ -922,7 +922,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
     \includegraphics{vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
    }
    \end{center}
-   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with \gls{siRNA} viability]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with \gls{siRNA} viability.}  Genes detected as candidate synthetic lethal partners by \acrshort{mtSLIPT} (in \gls{TCGA} breast cancer) expression analysis against \textit{CDH1} mutation and experimental screening (with \gls{siRNA}) were compared against the viability ratio of \textit{CDH1} mutant and wildtype cells in the primary \gls{siRNA} screen. There were clear no differences in viability between genes detected by \acrshort{mtSLIPT} and those not with the differences being primarily due to viability thresholds that were used to detect synthetic lethality by \citet{Telford2015}. 
+   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with \gls{siRNA} viability]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with \gls{siRNA} viability.}  Genes detected as candidate synthetic lethal partners by \acrshort{mtSLIPT} (in \gls{TCGA} breast cancer) expression analysis against \textit{CDH1} mutation and experimental screening (with \gls{siRNA}) were compared against the viability ratio of \textit{CDH1} mutant and\gls{wild-type} cells in the primary \gls{siRNA} screen. There were clear no differences in viability between genes detected by \acrshort{mtSLIPT} and those not with the differences being primarily due to viability thresholds that were used to detect synthetic lethality by \citet{Telford2015}. 
 }
 \label{fig:compare_viability_mtSL}
 %\end{mdframed}

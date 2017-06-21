@@ -44,7 +44,7 @@
 \chapter{Replicate Samples in \gls{TCGA} Breast}
 \label{appendix:replicate_samples}
 
-Replicate samples were picked where possible from the \gls{TCGA} breast cancer gene expression data to examine for sample quality. Independent samples of the same tumour are expected to have very high Pearson's correlation between their expression profiles unless there were issues with sample collection or preparation and are thus an indicator of sample quality. The log-transformed raw read counts for replicate samples were examined in Figures~\ref{fig:rep_cutcut}\nobreakdash--\ref{fig:rep_keepcut}. These were examined before normalisation which would be expected to increase sample concordance.
+Replicate samples were picked where possible from the \gls{TCGA} breast cancer gene expression data to examine for sample quality. Independent samples of the same tumour are expected to have very high Pearson correlation between their expression profiles unless there were issues with sample collection or preparation and are thus an indicator of sample quality. The log-transformed raw read counts for replicate samples were examined in Figures~\ref{fig:rep_cutcut}\nobreakdash--\ref{fig:rep_keepcut}. These were examined before normalisation which would be expected to increase sample concordance.
 
 Another consideration are the samples which were removed for quality concerns (in Section~\ref{methods:sample_qc}). While these were selected by unbiased hierarchical clustering (See Figure~\ref{fig:corr_map}), it is notable that many of the exluded (tumour) samples were performed in replicate despite relatively few replicate samples in the overall dataset. These samples correlate poorly with the rest of the dataset, in addition to with replicate samples.
 
@@ -54,7 +54,7 @@ Another consideration are the samples which were removed for quality concerns (i
   \resizebox{0.3\textwidth}{!}{
     \includegraphics{Rep_picking_CutCut2.pdf}
    }
-    \caption[Replicate excluded samples]{\small \textbf{Replicate excluded samples.} Both tumour samples of patient A2QH were excluded as they were poorly correlated with other samples, although they are highly similar to each other as shown by Pearson's correlation of log-raw counts.
+    \caption[Replicate excluded samples]{\small \textbf{Replicate excluded samples.} Both tumour samples of patient A2QH were excluded as they were poorly correlated with other samples, although they are highly similar to each other as shown by Pearson correlation of log-raw counts.
 }
 \label{fig:rep_cutcut}
 %\end{mdframed}
@@ -93,7 +93,7 @@ Another consideration are the samples which were removed for quality concerns (i
         }%
 %
     \end{center}
-    \caption[Replicate samples with all remaining]{\small \textbf{Replicate samples with all remaining.} Patient A26J was sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples.  In all cases, replicate samples remaining in the dataset were highly concordant as shown by Pearson's correlation of log-raw counts.
+    \caption[Replicate samples with all remaining]{\small \textbf{Replicate samples with all remaining.} Patient A26J was sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples.  In all cases, replicate samples remaining in the dataset were highly concordant as shown by Pearson correlation of log-raw counts.
 }
 \label{fig:rep_keepkeep}
 %\end{mdframed}
@@ -148,7 +148,7 @@ Another consideration are the samples which were removed for quality concerns (i
         }%
 %
     \end{center}
-    \caption[Replicate samples with some excluded]{\small \textbf{Replicate samples with some excluded.} Patients A0DB, A13D, A13E, and A26E were each sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples. In all cases, the replicate samples remaining in the dataset more were highly concordant (as shown by Pearson's correlation of log-raw counts) than those excluded from the analysis.
+    \caption[Replicate samples with some excluded]{\small \textbf{Replicate samples with some excluded.} Patients A0DB, A13D, A13E, and A26E were each sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples. In all cases, the replicate samples remaining in the dataset more were highly concordant (as shown by Pearson correlation of log-raw counts) than those excluded from the analysis.
 }
 %\end{mdframed}
 \end{figure}
@@ -182,7 +182,7 @@ Another consideration are the samples which were removed for quality concerns (i
         }%
 %
     \end{center}
-    \caption[Replicate samples with some excluded]{\small \textbf{Replicate samples with some excluded.} Patients A0DB, A13D, A13E, and A26E were each sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples. In all cases, the replicate samples remaining in the dataset more were highly concordant (as shown by Pearson's correlation of log-raw counts) than those excluded from the analysis.
+    \caption[Replicate samples with some excluded]{\small \textbf{Replicate samples with some excluded.} Patients A0DB, A13D, A13E, and A26E were each sampled 3 times and compared pairwise. Pairs of samples were also compared for other patients with replicate samples. In all cases, the replicate samples remaining in the dataset more were highly concordant (as shown by Pearson correlation of log-raw counts) than those excluded from the analysis.
 }
 \label{fig:rep_keepcut}
 %\end{mdframed}
