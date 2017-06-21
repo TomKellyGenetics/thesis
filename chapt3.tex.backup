@@ -1079,7 +1079,7 @@ The \gls{TCGA} breast cancer \glslink{gene expression}{expression} data was used
 These \gls{synthetic lethal} \glspl{metagene} differed to the over-represented \glspl{pathway} among \gls{synthetic lethal} gene candidates. However, there were some similarities to previous findings, as shown in Table~\ref{tab:metagene_SL}. In particular, translational \glspl{pathway} were replicated as observed in Table~\ref{tab:pathway_exprSL}. While the specific \glspl{pathway} differ, immune \glspl{pathway} (e.g., NF-$\kappa$B) were also supported by \gls{metagene} \gls{synthetic lethal} analysis.
 
 \begin{table*}[!ht]
-\caption{Examples of \glspl{metagene} \gls{synthetic lethal} candidates for \textit{CDH1} from SLIPT}
+\caption{Examples of candidate \glspl{metagene} \gls{synthetic lethal} for \textit{CDH1} from SLIPT}
 \label{tab:metagene_SL}
 \centering
 \resizebox{1 \textwidth}{!}{
@@ -1141,8 +1141,8 @@ These \gls{synthetic lethal} \glspl{metagene} differed to the over-represented \
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
-Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \gls{SLIPT} with observed and expected numbers of \gls{TCGA} breast cancer samples with low \glslink{gene expression}{expression} of both \textit{CDH1} and the \gls{metagene}.
+\raggedright %\small
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \gls{SLIPT} with observed and expected numbers of \gls{TCGA} breast cancer samples with low \glslink{gene expression}{expression} of both \textit{CDH1} and the \gls{metagene}. The most significant 26 pathways are reported to show the diversity of candidate synthetic lethal \gls{metagene} and demonstrate the highly significant results of \gls{SLIPT} when performed on \gls{pathway} \glspl{metagene}. \
 \end{tablenotes}
 \end{threeparttable}
 }
