@@ -1066,171 +1066,20 @@ DNA methylation data was also prepared for \gls{synthetic lethal} analysis but w
 
 \fi
 
-
-\section{Metagene Analysis}  \label{chapt3:metagene_results}
-%[include?]
-
-The gene signatures \citep{Gatza2011, Gatza2014} were used to demonstrate to utility of the \gls{metagene} approach for use on a wider range of \glspl{pathway} as was performed with the Reactome \citep{Reactome} \glspl{pathway} as an alternative approach to identification of \gls{synthetic lethal} \glspl{pathway}. \Glspl{metagene} serve as a summary of activity for each \glspl{pathway}. The direction of \glspl{metagene} (derived by the singular value matrix decomposition) is generally arbitrary but care has been taken to ensure that these occur in a direction which reflect overall activation of the \glspl{pathway} (as described in Section~\ref{methods:metagene}). \Glspl{metagene} were derived for well characterised gene signatures in breast cancer \citep{Gatza2011, Gatza2014} to verify that that these \glspl{pathway} signatures are consistent with expected molecular properties of each molecular subtype \citep{Perou2000, Parker2009}. This was performed by examining the \glspl{pathway} \glslink{gene expression}{expression} of these breast cancer gene signatures in \gls{TCGA} \glslink{gene expression}{expression} data. These \glspl{metagene} were also compared to \glslink{somatic}{somatic} \gls{mutation} to evaluate \gls{mutation} as a measure of gene activity in comparison to gene and protein \glslink{gene expression}{expression}.
-
-The gene signatures \citep{Gatza2011, Gatza2014} were used to demonstrate to utility of the \gls{metagene} approach for use on a wider range of \glspl{pathway}. Having established that \glspl{metagene} generated with this procedure reflect gene activity, the \gls{metagene} procedure (in Section~\ref{methods:metagene}) was then applied to the Reactome \glspl{pathway} \citep{Reactome}. These Reactome \glspl{metagene} were used for \gls{synthetic lethal} analysis of \glspl{pathway} with \gls{SLIPT}, directly using \glspl{pathway} activity for identifying \gls{synthetic lethal} \glspl{pathway} with \textit{CDH1}.
-
-\subsection{Pathway Expression} \label{chapt3:metagene_expression}
-
-Pathway \glspl{metagene} (generated as described in Section~\ref{methods:metagene}) for gene signatures of key processes in breast cancer \citep{Gatza2011} were used to check that \glspl{metagene} were generated in the correct direction to indicate \glspl{pathway} activation. Some of these gene signatures are plotted in Figure~\ref{fig:metagene_expr_Gatza2011} for comparison with clinical factors and \glslink{somatic}{somatic} \glspl{mutation}. The ``\glspl{intrinsic subtype}''  was computed by performing the \gls{PAM50} procedure \cite{Parker2009} for \gls{RNA-Seq} data which was highly concordant ($\chi^2 = 1305.9$, $p = 2.73 \times 10^{-268}$) with the subtypes provided by \gls{UCSC} \citep{UCSC2012} for \gls{TCGA} samples  \citep{TCGA2012} previously analysed by \glspl{microarray} (as shown in Appendix \ref{appendix:intrinsic_subtypes}). \glslink{somatic}{Somatic} \glspl{mutation} were reported for glslink{recurrent mutation}{recurrently mutated} genes in breast cancer, as reported by \gls{TCGA} \citep{TCGA2012}, related genes, and those previously discussed to be important in \gls{hereditary} breast cancers (\textit{BRCA1}, \textit{BRCA2}, and \textit{CDH1}).
-
-\begin{figure*}[!htp]
-\noindent\makebox[\textwidth][c]{%               %centering
-%\noindent\fbox{
-\begin{minipage}{1.00 \textwidth}  %frame beyond textwidth
-\begin{center}
-  \resizebox{1 \textwidth}{!}{
-    \includegraphics{CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr2.pdf} %original pdf, png for edited %1.png = Gatza 2011, 2.png = Cropped, 3.png = excl. PI3K
-   }
-   \end{center}
-   \caption[Pathway meta\gls{gene expression} profiles]{\small \textbf{Pathway meta\gls{gene expression} profiles.} Expression profiles for \gls{metagene} signatures from \citet{Gatza2011} in \gls{TCGA} breast data, annotated for clinical factors (with sample types and histological results coloured according to the legend) and cancer gene \glspl{mutation} (Negative values for \gls{mutation} are light grey with missing data in white). \Glspl{intrinsic subtype} are shown as derived from \gls{microarray} (\gls{UCSC}) and \gls{RNA-Seq} (\gls{PAM50}) data \citep{TCGA2012, Parker2009}. Samples were clustered independently for each \glspl{intrinsic subtype} and by \textit{CDH1} \glslink{gene expression}{expression} status. Pathway \glslink{gene expression}{expression} signatures are consistent with \glspl{mutation} and clinical subgroups.
-}
-\label{fig:metagene_expr_Gatza2011}
-\end{minipage}
-%} %close fbox
-} %close centering
-\end{figure*}
-
-These gene signatures reflect \glspl{intrinsic subtype}s as expected. In particular, the estrogen and progesterone receptor signatures are low in the predominantly \gls{ER}$^-$ and \gls{PR}$^-$ basal-like subtype tumours. These tumours also had the highest frequency of \textit{TP53} \glspl{mutation} and a corresponding reduction of p53 \gls{metagene} activity, as expected for loss of a \gls{tumour suppressor}. The luminal A and luminal B tumour subtypes are the most similar, which is reflected in these \glspl{metagene} signatures, although they are distinguishable molecular subtypes as shown by elevated \gls{PI3K}, AKT, RAS, and $\beta$-catenin signalling in luminal B tumours. However, these \glspl{pathway} were also elevated in basal-like and HER2-enriched subtypes and lowly expressed in the ``normal-like'' subtype (which contained the normal samples). These \glspl{intrinsic subtype} specific gene signature profiles were further supported with \glspl{metagene} for an extended set of signatures \citep{Gatza2014}, as shown in Figure~\ref{fig:metagene_expr_Gatza2014}.
-
-\textit{TP53} \glspl{mutation} were the most frequent and more common in the basal-like subtype. Similarly, \textit{GATA3} \glspl{mutation} were more common in luminal subtype tumours. \gls{PI3K} \glspl{mutation} were more frequent across breast tumours, although these were less common in the basal-like subtype despite an elevated \gls{metagene} (this discrepancy will the discussed further in Section~\ref{chapt3:metagene_mut}). \textit{CDH1} \glspl{mutation} similarly occurred across molecular subtypes with the exception of the basal-like subtype (as observed in \gls{gene expression} with Figure~\ref{fig:slipt_expr}). \textit{CDH1} low samples occurred in all subtypes but were predominantly of the lobular histological ubtype. Apart from these genes, \glspl{mutation} did not show clear specificity to a particular subtype and the variation between samples reflects the range of molecular cascades that can result in tumours with similar molecular profiles, supporting the use of \gls{gene expression} data for cancer diagnostics and identification of molecular targets. 
-
-The direction of each \gls{metagene} was consistent with the clinical characteristics, which formed a consensus of gene activity as shown for the \gls{PI3K} and \gls{ER} signatures \citep{Gatza2011} in Figures~\ref{fig:metagene_expr_Gatza2011_PI3K} and~\ref{fig:metagene_expr_Gatza2011_ER}, respectively.  Supporting data for p53 and BRCA \glspl{metagene} \citep{Gatza2011, Gatza2014} are given in the Appendix (Figures~\ref{fig:metagene_expr_Gatza2011_P53} and~\ref{fig:metagene_expr_Gatza2014_BRCA}). In each of the examples for gene signatures% for PI3K (Figure~\ref{fig:metagene_expr_Gatza2011_PI3K}), p53 (Figure~\ref{fig:metagene_expr_Gatza2011_P53}), estrogen receptor (Figure~\ref{fig:metagene_expr_Gatza2011_ER}), and BRCA (Figure~\ref{fig:metagene_expr_Gatza2014_BRCA}) genes \citep{Gatza2011, Gatza2014}
-, the \glslink{gene expression}{expression} of the majority of the genes were highly concordant with the \gls{metagene}, being either positively or negatively correlated. These were generally consistent with established clinical and molecular subtypes of breast cancer and the \glspl{recurrent mutation} shown. However, the \textit{PIK3CA} and \textit{PIK3R1} \gls{mutant} samples did not necessarily have elevated \gls{PI3K} \glspl{pathway} \gls{metagene} activity (as shown in Figure~\ref{fig:metagene_expr_Gatza2011_PI3K}).  
-
-
-\begin{figure*}[!htp]
-\noindent\makebox[\textwidth][c]{%               %centering
-%\noindent\fbox{
-\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
-\begin{center}
-  \resizebox{1 \textwidth}{!}{
-    \includegraphics{CDH1_Heatmaps_Gatza2011(PI3K)_Full_Metagene_mgorder.png} %original pdf, png for edited
-   }
-   \end{center}
-   \caption[Expression profiles for constituent genes of PI3K]{\small \textbf{Expression profiles for constituent genes of PI3K.} Expression profiles the genes contained in the \gls{PI3K} gene signature from \citet{Gatza2011} in \gls{TCGA} breast data, annotated for clinical factors and cancer gene \glspl{mutation}. Samples are separated by \textit{CDH1} \glslink{gene expression}{expression} status and sorted by the \gls{metagene}. In both cases, the majority of genes were consistent with the direction of the \gls{PI3K} \gls{metagene}, although considerable proportion were inversely correlated with the \gls{metagene}. Normal samples had low \gls{PI3K} meta\gls{gene expression} and \textit{TP53} \gls{mutant} samples had high \gls{PI3K} \glslink{gene expression}{expression}. Although, oncogenic \textit{PIK3CA} and \gls{tumour suppressor} \textit{PIK3R1} \glspl{mutation} across samples including those with low \gls{metagene} response.
-}
-\label{fig:metagene_expr_Gatza2011_PI3K}
-\end{minipage}
-%} %close fbox
-} %close centering
-\end{figure*}
-
-\begin{figure*}[!htp]
-\noindent\makebox[\textwidth][c]{%               %centering
-%\noindent\fbox{
-\begin{minipage}{1.15 \textwidth}  %frame beyond textwidth
-\begin{center}
-  \resizebox{1 \textwidth}{!}{
-    \includegraphics{CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.png} %original pdf, png for edited
-   }
-   \end{center}
-   \caption[Expression profiles for estrogen receptor related genes]{\small \textbf{Expression profiles for estrogen receptor related genes.} Expression profiles the genes contained in the estrogen receptor (ER) gene signature from \citet{Gatza2011} in \gls{TCGA} breast data, annotated for clinical factors and cancer gene \glspl{mutation}. Samples are separated by \textit{CDH1} \glslink{gene expression}{expression} status and sorted by the \gls{metagene}. In both cases, the majority of genes were consistent with the direction of the \gls{metagene}, with very few exceptions being inversely correlated. Estrogen receptor (by antibody staining) negative samples had low  meta\gls{gene expression}, as expected. These were more likely to be ductal and basal subtypes, lacking \textit{CDH1} or \textit{PIK3CA} \glspl{mutation}.
-}
-\label{fig:metagene_expr_Gatza2011_ER}
-\end{minipage}
-%} %close fbox
-} %close centering
-\end{figure*}
-
-
-%\FloatBarrier
-
-\subsection{Somatic Mutation}  \label{chapt3:metagene_mut}
-
-
-
-\begin{figure*}[!ht]
-%\begin{mdframed}
-        \begin{center}
-%
-        \subcaptionbox{\textit{PIK3CA}}{%
-           \includegraphics[width=0.35\textwidth]{metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA.pdf}
-        }%
-        \subcaptionbox{\textit{PIK3CA} or \textit{PIK3R1}}{%
-           \includegraphics[width=0.35\textwidth]{metagene(ranked)_vioplotx_Mutation_PI3K2011_PIK3CA_PIK3R1.pdf}
-        }
-        
-        \subcaptionbox{\textit{CDH1}}{%
-           \includegraphics[width=0.35\textwidth]{metagene(ranked)_vioplotx_Mutation_PI3K2011_CDH1.pdf}
-        }%
-        \subcaptionbox{\textit{TP53}}{%
-           \includegraphics[width=0.35\textwidth]{metagene(ranked)_vioplotx_Mutation_PI3K2011_TP53.pdf}
-        }
-    \end{center}
-    \caption[Somatic \gls{mutation} against the PI3K \gls{metagene}]{\small \textbf{Somatic \gls{mutation} against the \gls{PI3K} \gls{metagene}.} Mutations in \textit{PIK3CA}, \textit{PIK3R1}, \textit{CDH1}, and \textit{TP53} were examined in \gls{TCGA} breast cancer for their association with the \gls{PI3K} \citep{Gatza2011} \glspl{pathway} \gls{metagene}. The \glspl{tumour suppressor} \textit{CDH1} and \textit{TP53} showed an increase and decrease in the \gls{metagene} respectively, whereas \textit{PIK3CA} and \textit{PIK3R1} \glspl{mutation} had little effect on the \gls{metagene} levels.
-}
-\label{fig:mutation_expr_mg}
-%\end{mdframed}
-\end{figure*}
-
-It should be noted that \glspl{metagene}, while consistent with the consensus of constituent expressed genes, were not necessarily reflecting the \glslink{somatic}{somatic} \gls{mutation} status. The \gls{PI3K} \citep{Gatza2011} \gls{metagene} levels in particular, were not statistically significantly varying between \gls{mutant} and\gls{wild-type} \textit{PIK3CA} samples (shown in Figure~\ref{fig:mutation_expr_mg}). However, the \gls{PI3K} \gls{metagene} differed across \textit{CDH1} and \textit{TP53} \glspl{mutation}, remarkably in opposite directions considering that \gls{PI3K} is an oncogenic growth \glspl{pathway} and these are both most frequently \glspl{tumour suppressor} inactivated in cancers. This shows that \textit{CDH1} and \textit{TP53} deficient tumours have distinct molecular growth \glspl{pathway} and that \gls{synthetic lethal} interventions against loss of \textit{CDH1} function may not be applicable to other cancers with \glspl{driver mutation} such as \textit{TP53}, although these were kept in the analysis for comparison. These differences may be related to these \glspl{mutation} being more frequent in tumours with difference clinical characteristics (as observed in Section~\ref{chapt3:metagene_expression}).  Thus \glspl{mutation} do not necessarily have corresponding changes in \glspl{pathway} \glslink{gene expression}{expression}, particularly for \glspl{oncogene} which may change in function rather than being upregulated.
-
-
-While the more specific \textit{PIK3CA} \citep{Gatza2014} \gls{metagene} showed significant differences with \textit{PIK3CA} and \textit{PIK3R1} \glspl{mutation} (as shown in Figure~\ref{fig:mutation_expr_mg2}), this \gls{metagene} replicated stronger differences for \textit{CDH1} and \textit{TP53}.  These differences were less pronounced in the protein levels of p110$\alpha$ (enocded by \textit{PIK3CA}) and the downstream AKT gene (shown in Figures~\ref{fig:mutation_expr_prot} and~\ref{fig:mutation_expr_prot2} respectively). However, this may be due to this regulatory cascade (kinases) being transmitted as a change in protein state (phosphorylation) rather than changes in \glslink{gene expression}{expression} levels. Another consideration is that \glspl{mutation} at different loci have different effects on protein function, particularly for \glspl{oncogene}.
-
 \FloatBarrier
 
-\iffalse
-\subsection{Mutation locus}  \label{chapt3:metagene_mut_locus}
+\section{Synthetic Lethal Pathway Metagenes} \label{chapt3:metagene_SL}
 
-The gene locus distribution of \textit{PIK3CA} and its receptor \textit{PIK3R1} were consistent with oncogenic and \gls{tumour suppressor} \glspl{mutation}, as shown in Figure~\ref{fig:mutation_locus}. \textit{PIK3CA} has \glspl{recurrent mutation} in 2 hotspots, centered around the E545K and H1047R (shown in Figure~\ref{fig:mutation_locus:PIK3CA}), as expected for an \gls{oncogene}. This contrasts with the \glspl{tumour suppressor}, \textit{PIK3R1}, and \textit{CDH1} (shown in Figures~\ref{fig:mutation_locus:PIK3R1} and~\ref{fig:mutation_locus:CDH1} respectively), which have low frequency inactivating \glspl{mutation} spread across them. A notable exception is \textit{TP53} (shown in Figure~\ref{fig:mutation_locus:TP53}) which displays both inactivating \glspl{mutation} throughout and recurrent (oncogenic) \glspl{mutation} at high frequency, consistent with the complex role of \textit{TP53} in cancer biology which is outside of the scope of this thesis and shown for comparison. 
-
-
-\begin{figure*}[!ht]
-%\begin{mdframed}
-        \begin{center}
+\Glspl{metagene} are a one-dimensional summary of the activity for each biological \gls{pathway}. The direction of \glspl{metagene} (derived by the singular value matrix decomposition as described in Section~\ref{methods:metagene}) reflects overall activation of the \glspl{pathway}. This has been verified by examining the expression patterns of previously published gene signatures \citep{Gatza2011, Gatza2014} in Appendix~\ref{chapt3:metagene_results}.
 %
-        \subcaptionbox{\textit{PI3KCA} gene}{%
-            %\label{fig:simulate_function:first}
-            \includegraphics[width=0.3\textwidth]{geneexpr_vioplotx_Mutation_locus_PIK3CA.pdf}
-        }%
-        \subcaptionbox{\textit{PI3KCA} \gls{metagene}}{%
-            %\label{fig:simulate_function:first}
-            \includegraphics[width=0.3\textwidth]{metagene_vioplotx_Mutation_locus_PIK3CA.pdf}
-        }%
-        \subcaptionbox{\textit{PIK3R1} gene}{%
-           \includegraphics[width=0.3\textwidth]{geneexpr_vioplotx_Mutation_locus_PIK3R1.pdf}
-        }
-        
-        \subcaptionbox{\textit{PIK3CA} protein}{%
-           \includegraphics[width=0.3\textwidth]{protein_vioplotx_Mutation_locus_PIK3CA.pdf}
-        }%
-        \subcaptionbox{\textit{AKT} protein}{%
-           \includegraphics[width=0.3\textwidth]{protein_vioplotx_Mutation_locus_AKT.pdf}
-        }
-        
-        \subcaptionbox{\textit{CDH1} protein}{%
-           \includegraphics[width=0.3\textwidth]{protein_vioplotx_Mutation_locus_CDH1.pdf}
-        }%
-        \subcaptionbox{\textit{TP53} protein}{%
-           \includegraphics[width=0.3\textwidth]{protein_vioplotx_Mutation_locus_TP53.pdf}
-        }
-    \end{center}
-    \caption[Somatic \gls{mutation} locus against \glslink{gene expression}{expression}]{\small \textbf{Somatic \gls{mutation} locus against \glslink{gene expression}{expression}.} The recurrent E545K and H1047R \gls{oncogene} \glspl{mutation} in \textit{PIK3CA} were examined in \gls{TCGA} breast cancer to show the effect of \gls{mutation} locus on gene, \glspl{pathway}, and protein \glslink{gene expression}{expression}. While neither of these \glspl{mutation} had an impact of \textit{PIK3CA} \acrshort{mRNA} \glslink{gene expression}{expression}, E545K had specifically lower PI3K \citep{Gatza2011} \gls{metagene} levels and both \glspl{mutation} had higher \textit{PIK3R1} \acrshort{mRNA} \glslink{gene expression}{expression}. However, these differences were not reflected in the protein \glslink{gene expression}{expression} levels.
-}
-\label{fig:mutation_expr}
-%\end{mdframed}
-\end{figure*}
+Pathway \glspl{metagene} for Reactome \glspl{pathway} %(generated as described in Section~\ref{methods:metagene}) 
+were used for testing \gls{synthetic lethal} \glspl{pathway}. Since the \glspl{metagene} values are higher when the \glspl{pathway} as a whole is activated, they are suitable for \gls{SLIPT} analysis using low \gls{metagene} levels to represent less activated \glspl{pathway}. 
 
-These differences in gene locus may explain why \glspl{mutation} do not necessarily have corresponding changes in gene or meta\gls{gene expression}. Specfically, the recurrent E545K and H1047R \gls{oncogene} \glspl{mutation} in \textit{PIK3CA} did not affect \textit{PIK3CA} \acrshort{mRNA} \glslink{gene expression}{expression} but E545K had specifically lower PI3K \citep{Gatza2011} \gls{metagene} levels. Both \glspl{mutation} had higher \textit{PIK3R1} \acrshort{mRNA} \glslink{gene expression}{expression} but these differences differences were not reflected in the protein \glslink{gene expression}{expression} levels of p110$\alpha$ protein (encoded by \textit{PIK3CA}), its downstream target AKT, \gls{E-cadherin} (encoded by \text{CDH1}), or p53 (as ashown in Figure~\ref{fig:mutation_expr}).
-
-While the complex effects of \gls{mutation} in \glspl{oncogene} such as \textit{PIK3CA} are not necessarily detected in a \glspl{pathway} \gls{metagene}, these do capture the consensus of \glspl{pathway} \gls{gene expression} and account for other potential means of \glspl{pathway} activation. Thus \glspl{metagene} are sufficient as a measure of gene activity for the purposes of \gls{synthetic lethal} detection with \gls{SLIPT}. This approach is more applicable to \gls{tumour suppressor} genes with a relationship between \gls{gene expression} and activity (rather than activation at the protein level) but this is not a major concern since \glspl{synthetic lethal} is more clinically relevant for targeting \gls{tumour suppressor} \glspl{mutation} than \glspl{oncogene}.
-\fi
-
-
-\FloatBarrier
-
-\subsection{Synthetic Lethal Pathway Metagenes} \label{chapt3:metagene_SL}
-
-Pathway \glspl{metagene} for Reactome \glspl{pathway} (generated as described in Section~\ref{methods:metagene}) were also used for testing \gls{synthetic lethal} partner \glspl{pathway} with \textit{CDH1} by \gls{SLIPT}. Since the \glspl{metagene} have are higher when the \glspl{pathway} as a whole is activated, they are amenable to \gls{SLIPT} analysis using low \gls{metagene} levels for inactivated \glspl{pathway}. These \gls{synthetic lethal} \glspl{metagene} differed to the over-represented \glspl{pathway} among \gls{synthetic lethal} gene candidates. However, there were some similarities to previous findings, as shown in Tables~\ref{tab:metagene_SL}. In particular, translational \glspl{pathway} were replicated as observed in Table~\ref{tab:pathway_exprSL}. While the specific \glspl{pathway} differ, immune \glspl{pathway} (e.g., NF-$\kappa$B) were also supported by \gls{metagene} \gls{synthetic lethal} analysis.
+The \gls{TCGA} breast cancer \glslink{gene expression}{expression} data was used to generate \gls{pathway} \glspl{metagene} for each collection of genes in a \gls{pathway} from the Reactome database \citep{Reactome}. These metagenes were tested against the expression of \textit{CDH1} by \gls{SLIPT} to directly detect \gls{synthetic lethal} \glspl{pathway}.
+These \gls{synthetic lethal} \glspl{metagene} differed to the over-represented \glspl{pathway} among \gls{synthetic lethal} gene candidates. However, there were some similarities to previous findings, as shown in Table~\ref{tab:metagene_SL}. In particular, translational \glspl{pathway} were replicated as observed in Table~\ref{tab:pathway_exprSL}. While the specific \glspl{pathway} differ, immune \glspl{pathway} (e.g., NF-$\kappa$B) were also supported by \gls{metagene} \gls{synthetic lethal} analysis.
 
 \begin{table*}[!ht]
-\caption{Candidate \gls{synthetic lethal} \glspl{metagene} against \textit{CDH1} from SLIPT}
+\caption{Examples of candidate \glspl{metagene} \gls{synthetic lethal} for \textit{CDH1} from SLIPT}
 \label{tab:metagene_SL}
 \centering
 \resizebox{1 \textwidth}{!}{
@@ -1292,8 +1141,8 @@ Pathway \glspl{metagene} for Reactome \glspl{pathway} (generated as described in
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
-Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \gls{SLIPT} with observed and expected numbers of \gls{TCGA} breast cancer samples with low \glslink{gene expression}{expression} of both \textit{CDH1} and the \gls{metagene}.
+\raggedright %\small
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \gls{SLIPT} with observed and expected numbers of \gls{TCGA} breast cancer samples with low \glslink{gene expression}{expression} of both \textit{CDH1} and the \gls{metagene}. The most significant 26 pathways are reported to show the diversity of candidate synthetic lethal \gls{metagene} and demonstrate the highly significant results of \gls{SLIPT} when performed on \gls{pathway} \glspl{metagene}. \
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -1303,9 +1152,9 @@ Signalling \glspl{pathway} were more strongly supported by \acrshort{mtSLIPT} an
 
 The \gls{metagene} analyses differ more between expresssion and \textit{CDH1} \gls{mutation} than previous analyses, with more specific signalling \glspl{pathway} identified in the \gls{mutation} analysis. This supports the usage of a complete null \gls{mutant} model in experimental testing for \glspl{synthetic lethal} of signalling \glspl{pathway} against \text{CDH1} inactivation rather than a knockdown in \glslink{gene expression}{expression}. However, low \glslink{gene expression}{expression} of partners has been used in either case to be applicable to dose-dependent pharmacological inhibition and across genes where \glspl{mutation} have different functional consequences, including variants of unknown significance. 
 
-These results show an independent \glspl{pathway}-based approach to detecting \gls{synthetic lethal} gene functions interacting with \textit{CDH1}. The use of \gls{synthetic lethal} \glspl{metagene} replicates support for these \glspl{pathway} independent of \glspl{pathway} size (as genes are weighted equally). Along with the verifying that the direction of \glspl{metagene} recapitulates the activity of a \glspl{pathway}, these demonstrate that many of the \glspl{pathway} previously identified from over-represent\-ed \gls{synthetic lethal} genes (detected by \gls{SLIPT}) are \gls{synthetic lethal} \glspl{pathway} with their activity dependent on \gls{synthetic lethal} genes rather than containing \gls{synthetic lethal} genes as inhibitors or peripheral regulators of the \glspl{pathway}.
+These results show an alternative \glspl{pathway}-based approach to detecting \gls{synthetic lethal} gene functions interacting with \textit{CDH1}. The use of \gls{synthetic lethal} \glspl{metagene} replicates support for these \glspl{pathway} independent of \glspl{pathway} size (as genes are weighted equally). Having verified that the direction of \glspl{metagene} recapitulates the activity of a \glspl{pathway}, these demonstrate that many of the \glspl{pathway} previously identified (from \gls{SLIPT} candidate genes) are \gls{synthetic lethal} \glspl{pathway}, with their activity dependent on \gls{synthetic lethal} genes, rather than containing \gls{synthetic lethal} genes as inhibitors or peripheral regulators of the \glspl{pathway}.
 
-\subsection{Synthetic Lethality in Breast Cancer}
+%\subsection{Synthetic Lethality in Breast Cancer}
 
 The \gls{synthetic lethal} analysis against low \textit{CDH1} \glslink{gene expression}{expression} supports prior findings in translational and immune \glspl{pathway} even if they were not able to detected in an experimental screen \citep{Telford2015}. Together these findings support the role of \textit{CDH1} loss in cancer disrupting cell signalling with wider effects on protein translation and metabolism necessary for the proliferation of cancer cells. This is consistent with the \gls{GPCR} \glspl{pathway} such as G$_{\alpha s}$ signalling being supported by \gls{SLIPT} gene candidates and the experimental primary \gls{siRNA} screen, as shown by resampling in Section~\ref{chapt3:compare_pathway_perm}.
 
@@ -1733,7 +1582,7 @@ The DAISY methodology \cite{Jerby2014}, which took a similar query-based approac
 
 Genomics analyses are prone to false-positives and require statistical caution, particularly where working with gene-pairs scale sup the number of multiple tests drastically, at the expense of statistical power.  Experimental screens for \glspl{synthetic lethal} are also error-prone \citep{Lu2015, Fece2015, Lord2014}, especially with false-positives, raising the need for understanding the expected behaviour and number of functional relationships and genetic interactions in the \glspl{genome}, or in discovery of \gls{synthetic lethal} partners of a particular query gene. Thus analyses throughout this thesis have focused on querying for partners of a particular gene of interest. Statistical modelling and simulations (in Section~\ref{chapt2:simulation_2015} and Chapter~\ref{chap:simulation}) will further support the design decisions underlying \gls{SLIPT} analysis and its strengths over other approaches.
 
-\subsection{Synthetic Lethal Pathways for \gls{E-cadherin}}
+\subsection{Synthetic Lethal Pathways for E-cadherin}
 
 Specific genes were difficult to replicate across experiments. This is consistent with \gls{gene expression} profiles for \gls{synthetic lethal} partners reflecting the complexity of biological \glspl{pathway} which are subject to higher-order interactions and do not consistently compensate for loss of gene function across all samples \citep{Kelly2013, Jerby2014, Lu2015}. The predicted \gls{synthetic lethal} partners of \textit{CDH1} (with \gls{FDR} correction) were investigated with \gls{gene expression} profiles and clinical variables to find relationships in \gls{gene expression}, gene function, and clinical characteristics. The large number of genes detected indicates that \gls{synthetic lethal} detection is potentially error-prone, and that identifying genes relevant for clinical application will be difficult without a supporting biological \glspl{pathway} rationale. As such, investigations into the genes identified by \gls{SLIPT}, the correlation structure between them, and those which were validated by experimental screening \citep{Telford2015} focused at the \glspl{pathway} level throughout this Chapter. Similarly, comparisons across analyses were largely made at the \glspl{pathway} level, including comparisons between \glslink{gene expression}{expression} and \gls{mutation}, breast and stomach \gls{TCGA} datasets.%, and patient sample data with cell line \glslink{gene expression}{expression} profiles.
 
@@ -1747,7 +1596,7 @@ These \gls{synthetic lethal} \glspl{pathway} have potential clinical implication
 
 \subsection{Replication and Validation}
 
-\subsubsection{Integration with \gls{siRNA} Screening}
+\subsubsection{Integration with siRNA Screening}
 
 The \glspl{pathway} composition across computational and experimental \gls{synthetic lethal} candidates was informative with over-represent\-ation (Table~\ref{tab:Venn_over-representation}) and supported by resampling analysis (Table~\ref{tab:pathway_perm_overlap}), despite a modest intersection of genes between them (Figure~\ref{fig:Venn_allgenes}). Either approach may be significant for a \glspl{pathway} in this intersection without being supported by the other: resampling analysis may support \glspl{pathway} that were not over-represent\-ed due to small effect sizes, thus both tests are required for a candidate \glspl{pathway}.
 
