@@ -85,7 +85,7 @@ SLIPT expression analysis (described in Section~\ref{methods:SLIPT}) on \gls{TCG
 \begin{threeparttable}
 \begin{tabular}{>{\em}sl^c^c^c^c^c}
 \rowstyle{\bfseries}
- \em{Gene} & Observed & Expected & $\chi^2$ value & p-value & p-value (\gls{FDR}) \\ 
+ \em{Gene} & Observed\tnote{*}  & Expected\tnote{*} & $\chi^2$ value & p-value & p-value (\gls{FDR}) \\ 
   \hline
   \rowcolor{black!10}
 TFAP2B & 8 & 36.7 & 89.5 & $3.60 \times 10^{-20}$ & $8.37 \times 10^{-17}$ \\
@@ -141,7 +141,10 @@ TFAP2B & 8 & 36.7 & 89.5 & $3.60 \times 10^{-20}$ & $8.37 \times 10^{-17}$ \\
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by \acrshort{mtSLIPT} with observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} breast tumours with low expression of partner genes.
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \acrshort{mtSLIPT} in \gls{TCGA} in breast cancer expression and mutation data
+
+\item[*] Observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} breast tumours with low expression of partner genes
+
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -224,7 +227,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png}
    }
-    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by \textit{CDH1} somatic mutation status) analysed in \gls{TCGA} breast cancer dataset for gene expression of 3743 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \acrshort{mtSLIPT} prediction (with significant \gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} mutant samples and often lowly expressing \textit{CDH1} wildtype samples (which were not tested for), although many of the \textit{CDH1} mutant samples had among the lowest \textit{CDH1} expression. In contrast to the expression analysis the (predominantly \textit{CDH1} wildtype) basal subtype and \acrshort{ER} negative samples have depleted expression among most candidate synthetic lethal partners. 
+    \caption[Synthetic lethal expression profiles of analysed samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by \textit{CDH1} somatic mutation status) analysed in \gls{TCGA} breast cancer dataset for gene expression of 3743 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \acrshort{mtSLIPT} prediction (with significant \gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} mutant samples and often lowly expressing \textit{CDH1}\gls{wild-type} samples (which were not tested for), although many of the \textit{CDH1} mutant samples had among the lowest \textit{CDH1} expression. In contrast to the expression analysis the (predominantly \textit{CDH1}\gls{wild-type}) basal subtype and \acrshort{ER} negative samples have depleted expression among most candidate synthetic lethal partners. 
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_mtSL}
@@ -893,7 +896,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
     \includegraphics{mtSLIPT_siRNA_vs_Correlation_with_CDH1.png}
    }
    \end{center}
-   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation.} The \acrshort{mtSLIPT} p-values were compared against Pearson's correlation of expression with \textit{CDH1}. Genes detected by SLIPT or \gls{siRNA} were coloured according to the legend. 
+   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation.} The \acrshort{mtSLIPT} p-values were compared against Pearson correlation of expression with \textit{CDH1}. Genes detected by SLIPT or \gls{siRNA} were coloured according to the legend. 
 }
 \label{fig:compare_points_correlation_mtSL}
 %\end{mdframed}
@@ -906,7 +909,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
     \includegraphics{vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf}
    }
    \end{center}
-   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation.}  Genes detected by \acrshort{mtSLIPT} against \textit{CDH1} mutation and \gls{siRNA} screening were compared against Pearson's correlation of expression with \textit{CDH1}. There were no differences in correlation between the gene groups. 
+   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with correlation.}  Genes detected by \acrshort{mtSLIPT} against \textit{CDH1} mutation and \gls{siRNA} screening were compared against Pearson correlation of expression with \textit{CDH1}. There were no differences in correlation between the gene groups. 
 }
 \label{fig:compare_correlation_mtSL}
 %\end{mdframed}
@@ -919,7 +922,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
     \includegraphics{vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf}
    }
    \end{center}
-   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with \gls{siRNA} viability]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with \gls{siRNA} viability.}  Genes detected as candidate synthetic lethal partners by \acrshort{mtSLIPT} (in \gls{TCGA} breast cancer) expression analysis against \textit{CDH1} mutation and experimental screening (with \gls{siRNA}) were compared against the viability ratio of \textit{CDH1} mutant and wildtype cells in the primary \gls{siRNA} screen. There were clear no differences in viability between genes detected by \acrshort{mtSLIPT} and those not with the differences being primarily due to viability thresholds that were used to detect synthetic lethality by \citet{Telford2015}. 
+   \caption[Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with \gls{siRNA} viability]{\small \textbf{Compare \acrshort{mtSLIPT} and \gls{siRNA} genes with \gls{siRNA} viability.}  Genes detected as candidate synthetic lethal partners by \acrshort{mtSLIPT} (in \gls{TCGA} breast cancer) expression analysis against \textit{CDH1} mutation and experimental screening (with \gls{siRNA}) were compared against the viability ratio of \textit{CDH1} mutant and\gls{wild-type} cells in the primary \gls{siRNA} screen. There were clear no differences in viability between genes detected by \acrshort{mtSLIPT} and those not with the differences being primarily due to viability thresholds that were used to detect synthetic lethality by \citet{Telford2015}. 
 }
 \label{fig:compare_viability_mtSL}
 %\end{mdframed}
@@ -995,7 +998,7 @@ Metagene analysis was performed for synthetic lethal pathways against \textit{CD
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by \acrshort{mtSLIPT} with observed and expected numbers of mutant \textit{CDH1} \gls{TCGA} breast cancer tumours with low expression of partner metagenes.
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \acrshort{mtSLIPT} with observed and expected numbers of mutant \textit{CDH1} \gls{TCGA} breast cancer tumours with low expression of partner metagenes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -1220,7 +1223,7 @@ The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by \gls{UCS
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-The intrinsic subtypes of \gls{TCGA} breast samples were compared between those provided by \gls{UCSC} \citep{TCGA2012} from microarray expression to those derived from \acrshort{RNA}-Seq data \citep{Parker2009}. Comparisons between these were limited to samples for which both data types were available.
+The intrinsic subtypes of \gls{TCGA} breast samples were compared between those provided by \gls{UCSC} \citep{TCGA2012} from microarray expression to those derived from \gls{RNA-Seq} data \citep{Parker2009}. Comparisons between these were limited to samples for which both data types were available.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -1247,7 +1250,7 @@ The following results are a replication of the \gls{TCGA} results (in Chapter~\r
 \begin{threeparttable}
 \begin{tabular}{>{\em}sl^c^c^c^c^c}
 \rowstyle{\bfseries}
- \em{Gene} & Observed & Expected & $\chi^2$ value & p-value & p-value (\gls{FDR}) \\ 
+ \em{Gene} & Observed\tnote{*}  & Expected\tnote{*} & $\chi^2$ value & p-value & p-value (\gls{FDR}) \\ 
   \hline
   \rowcolor{black!10}
   PRAF2 & 17 & 50.4 & 121 & $3.54 \times 10^{-25}$ & $1.45 \times 10^{-21}$ \\ 
@@ -1303,7 +1306,9 @@ The following results are a replication of the \gls{TCGA} results (in Chapter~\r
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-SLIPT partners of \textit{CDH1} with observed and expected numbers of \gls{TCGA} stomach cancer samples with low expression of both genes.
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \gls{SLIPT} in \gls{TCGA} stomach cancer expression data
+
+\item[*] Observed and expected numbers of samples which had low \glslink{gene expression}{expression} of both genes
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2026,7 +2031,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 
 \section{Metagene Analysis} \label{appendix:metagene_stad_exprSL}
 
-Metagene analysis was performed for synthetic lethal pathways against \textit{CDH1} expression in stomach cancer.% These were described and compared to mutation analysis in Section~\ref{appendix:metagene_stad_mtSL}. 
+Metagenes used to detect synthetic lethal pathways with \textit{CDH1} in stomach cancer.% These were described and compared to mutation analysis in Section~\ref{appendix:metagene_stad_mtSL}. 
 
 \begin{table*}[!ht]
 \caption{Synthetic lethal metagenes against \textit{CDH1} in stomach cancer}
@@ -2092,7 +2097,7 @@ Metagene analysis was performed for synthetic lethal pathways against \textit{CD
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{TCGA} stomach cancer samples with low expression of both genes.
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{TCGA} stomach cancer samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2117,7 +2122,7 @@ The following results were a replication of the \gls{TCGA} results (in Appendix~
 \begin{threeparttable}
 \begin{tabular}{>{\em}sl^c^c^c^c^c}
 \rowstyle{\bfseries}
- \em{Gene} & Observed & Expected & $\chi^2$ value & p-value & p-value (\gls{FDR}) \\ 
+ \em{Gene} & Observed\tnote{*}  & Expected\tnote{*} & $\chi^2$ value & p-value & p-value (\gls{FDR}) \\ 
   \hline
   \rowcolor{black!10}
   OLFML1 & 5 & 10.1 & 29.2 & $4.53 \times 10^{-7}$ & $0.0031$ \\ 
@@ -2173,7 +2178,10 @@ The following results were a replication of the \gls{TCGA} results (in Appendix~
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-mtSLIPT partners with observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} stomach cancer samples with low  expression of partner genes.
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \acrshort{mtSLIPT} in \gls{TCGA} in stomach cancer expression and mutation data
+
+\item[*] Observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} stomach tumours with low expression of partner genes
+
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -2911,7 +2919,7 @@ Metagene analysis was performed for synthetic lethal candidates for \textit{CDH1
   \rowcolor{black!5}
   cGMP effects & 418457 & 8 & 10.1 & 19 & $7.46 \times 10^{-5}$ & $0.00651$ \\ 
   \rowcolor{black!10}
-  \begin{tabular}[c]{@{}l@{}}Regulation of cytoskeletal remodeling and cell spreading by IPP \\ complex components \end{tabular} & 446388 & 8 & 10.1 & 19 & $7.46 \times 10^{-5}$ & $0.00651$ \\ 
+  \begin{tabular}[c]{@{}l@{}}Regulation of cytoskeletal remodelling and cell spreading by IPP \\ complex components \end{tabular} & 446388 & 8 & 10.1 & 19 & $7.46 \times 10^{-5}$ & $0.00651$ \\ 
   \rowcolor{black!5}
   Fcgamma receptor (FCGR) dependent phagocytosis & 2029480 & 3 & 10.1 & 17.9 & $0.000127$ & $0.00651$ \\ 
   \rowcolor{black!10}
@@ -2944,7 +2952,7 @@ Metagene analysis was performed for synthetic lethal candidates for \textit{CDH1
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by \acrshort{mtSLIPT} with observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} stomach cancer samples  with low expression of partner metagenes.
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \acrshort{mtSLIPT} with observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} stomach cancer samples  with low expression of partner metagenes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3032,7 +3040,7 @@ Strongest candidate SL partners for \textit{CDH1} by \acrshort{mtSLIPT} with obs
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Genes with the most candidate SL partners SLIPT in \gls{TCGA} stomach expression data with the number of partner genes predicted by direction criteria and $\chi^2$ testing separately and combined as a \gls{SLIPT} analysis. Where specified, the p-values for the $\chi^2$ test were adjusted for multiple tests (\gls{FDR}).
+Genes with the most candidate \gls{synthetic lethal} partners SLIPT in \gls{TCGA} stomach expression data with the number of partner genes predicted by direction criteria and $\chi^2$ testing separately and combined as a \gls{SLIPT} analysis. Where specified, the p-values for the $\chi^2$ test were adjusted for multiple tests (\gls{FDR}).
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3174,7 +3182,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{CCLE} samples with low expression of both genes.
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{CCLE} samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3245,7 +3253,7 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{CCLE} breast samples with low expression of both genes.
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{CCLE} breast samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
@@ -3303,7 +3311,7 @@ Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and exp
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Strongest candidate SL partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{CCLE} stomach samples with low expression of both genes.
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{CCLE} stomach samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
 }
