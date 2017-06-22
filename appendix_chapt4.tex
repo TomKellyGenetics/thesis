@@ -547,17 +547,18 @@ Analysis of variance for \gls{PI3K} hierarchy score against \gls{synthetic letha
 
 \begin{figure*}[!htp]
 %\begin{mdframed}
-  \begin{center}
-  \resizebox{0.75 \textwidth}{!}{
-    %\input{{{"SL_Model.pdf_tex"}}
-   %\fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_mtSL".pdf}}
-   %}
-   }
-   \end{center}
-   \caption[Structure of synthetic lethality resampling]{\small \textbf{Structure of synthetic lethality resampling.} A null distribution (10,000 iterations) of the \gls{siRNA} genes upstream or downstream of \acrshort{mtSLIPT} genes (shown by the difference) in the PI3K pathway. The observed events (red) were compared to the the distribution (violet) and were not significant. Genes detected by both methods were fixed for the distribution (blue). The genes detected by both approaches were used. 
+   \begin{center}
+
+        \subcaptionbox{Resampling in G$_{\alpha i}$ \label{fig:mtSL_Pathway_GPCR_Perm}}{%
+            \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Downloads/Pathway_Structure/test_GPCR_mtSL".pdf}}
+        }%
+        \subcaptionbox{Resampling in PI3K  \label{fig:mtSL_Pathway_PI3K_Perm}}{%
+            \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_mtSL".pdf}}
+        }%
+    \end{center}
+   \caption[Structure of synthetic lethality resampling]{\small \textbf{Structure of synthetic lethality resampling.} A null distribution (10,000 iterations) of the \gls{siRNA} genes upstream or downstream of \acrshort{mtSLIPT} genes (shown by the difference) in the G$_{\alpha i}$ and \gls{PI3K} \glspl{pathway}. The observed events (red) were compared to the the distribution (violet) and were not significant. Genes detected by both methods were fixed for the distribution (blue). The genes detected by both approaches were used. 
 }
-\label{fig:mtSL_Pathway_PI3K_Perm}
+\label{fig:mtSL_Pathway_Perm}
 %\end{mdframed}
 \end{figure*}
 
