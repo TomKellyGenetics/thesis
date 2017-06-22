@@ -216,13 +216,13 @@
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_vertex_degree_stripchart2".pdf}}
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_vertex_degree_stripchart2".pdf}}
    }
    }
    \end{center}
    \caption[Synthetic lethality and vertex degree]{\small \textbf{Synthetic lethality and vertex degree.} The number of connected genes (\gls{vertex degree}) was compared (on a log-scale across genes deteced by \acrshort{mtSLIPT} and \gls{siRNA} screening in the Reactome \gls{PI3K} cascade pathway. There were very few differences in vertex degree between the groups, although genes detected by \gls{siRNA} included those with the fewest connections.
 }
-\label{fig:mtSL_Pathway_PI3K_Vertex_Degree}
+\label{fig:mtSL_Pathway_GPCR_Vertex_Degree}
 %\end{mdframed}
 \end{figure*}
 
@@ -234,13 +234,13 @@
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_Info_Centrality(Log)_stripchart2".pdf}}
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_Info_Centrality(Log)_stripchart2".pdf}}
    }
    }
    \end{center}
    \caption[Synthetic lethality and centrality]{\small \textbf{Synthetic lethality and centrality.}  The \gls{information centrality} was compared (on a log-scale across genes deteced by \acrshort{mtSLIPT} and \gls{siRNA} screening in the Reactome \gls{PI3K} cascade pathway. Genes detected by \acrshort{mtSLIPT} or \gls{siRNA} did not have higher connectivity than genes not detected by either approach. The gene with the highest centrality was detected by \gls{siRNA}.
 }
-\label{fig:mtSL_Pathway_PI3K_InfoCent}
+\label{fig:mtSL_Pathway_GPCR_InfoCent}
 %\end{mdframed}
 \end{figure*}
 
@@ -255,20 +255,20 @@
   \resizebox{0.95 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/Pi3K_network_pagerank_stripchart2".pdf}}
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_pagerank_stripchart2".pdf}}
    }
    }
    \end{center}
    \caption[Synthetic lethality and PageRank]{\small \textbf{Synthetic lethality and PageRank.}  The \gls{PageRank centrality} was compared (on a log-scale across genes deteced by \acrshort{mtSLIPT} and \gls{siRNA} screening in the Reactome PI3K cascade pathway. Genes detected by \gls{siRNA} had a more restricted range of centrality values than other genes not detected by either approach, although these groups also had fewer genes.
 }
-\label{fig:mtSL_Pathway_PI3K_PageRank}
+\label{fig:mtSL_Pathway_GPCR_PageRank}
 %\end{mdframed}
 \end{figure*}
 
 
 \begin{table*}[!htb]
 \caption{\acrshort{ANOVA} for synthetic lethality and vertex degree}
-\label{tab:mtSL_Pathway_PI3K_Vertex_Degree}
+\label{tab:mtSL_Pathway_GPCR_Vertex_Degree}
 \noindent\makebox[\textwidth][c]{%               %centering
 \resizebox{0.8 \textwidth}{!}{
 \begin{threeparttable}
@@ -296,7 +296,7 @@ Analysis of variance for \gls{vertex degree} against \gls{synthetic lethal} dete
 
 \begin{table*}[!htb]
 \caption{\acrshort{ANOVA} for synthetic lethality and information centrality}
-\label{tab:mtSL_Pathway_PI3K_InfoCent}
+\label{tab:mtSL_Pathway_GPCR_InfoCent}
 \noindent\makebox[\textwidth][c]{%               %centering
 \resizebox{0.8 \textwidth}{!}{
 \begin{threeparttable}
@@ -325,7 +325,7 @@ Analysis of variance for \gls{information centrality} against \gls{synthetic let
 
 \begin{table*}[!htb]
 \caption{\acrshort{ANOVA} for synthetic lethality and PageRank centrality}
-\label{tab:mtSL_Pathway_PI3K_PageRank}
+\label{tab:mtSL_Pathway_GPCR_PageRank}
 \noindent\makebox[\textwidth][c]{%               %centering
 \resizebox{0.8 \textwidth}{!}{
 \begin{threeparttable}
@@ -352,6 +352,7 @@ Analysis of variance for \gls{PageRank centrality} against \gls{synthetic lethal
 
 \FloatBarrier
 
+\iffalse
 \chapter{Information Centrality for Gene Essentiality}
 \label{appendix:infocent_essential}
 
@@ -448,13 +449,14 @@ Highest \gls{information centrality} for genes (proteins), cofactors, and minera
 \label{fig:infocent_reactome}
 %\end{mdframed}
 \end{figure*}
-
+\fi
 
 \chapter{Pathway Structure for Mutation SLIPT}
 \label{appendix:Pathway_Structure_mtSL}
 
 \FloatBarrier
 
+\iffalse
 \begin{figure*}[!htp]
 %\begin{mdframed}
   \begin{center}
@@ -497,6 +499,7 @@ Analysis of variance for \gls{PI3K} hierarchy score against \gls{synthetic letha
 }
 }
 \end{table*}
+\fi
 
 \iffalse
 \begin{figure*}[!h]
@@ -521,6 +524,7 @@ Analysis of variance for \gls{PI3K} hierarchy score against \gls{synthetic letha
 \end{figure*}
 \fi
 
+\iffalse
 \begin{figure*}[!htp]
 %\begin{mdframed}
   \begin{center}
@@ -553,6 +557,7 @@ Analysis of variance for \gls{PI3K} hierarchy score against \gls{synthetic letha
 \label{fig:mtSL_Pathway_PI3K_Distance_Vioplot}
 %\end{mdframed}
 \end{figure*}
+\fi
 
 \begin{figure*}[!htp]
 %\begin{mdframed}
