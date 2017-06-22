@@ -569,32 +569,32 @@ Analysis of variance for \gls{PI3K} hierarchy score against \gls{synthetic letha
 \noindent\makebox[\textwidth][c]{%               %centering
 \resizebox{1.2 \textwidth}{!}{
 \begin{threeparttable}
-\begin{tabular}{l|cc|cc|cccc|cc}
-\cline{2-11}
-                                          & \multicolumn{2}{c|}{\textbf{Graph}} & \multicolumn{2}{c|}{\textbf{States}} & \multicolumn{4}{c|}{\textbf{Observed}}        & \multicolumn{2}{c}{\textbf{Permutation p-value}}  \\
+\begin{tabular}{l|cc|cc|cccc|cc|c}
+\cline{2-12}
+                                          & \multicolumn{2}{c|}{\textbf{Graph}} & \multicolumn{2}{c|}{\textbf{States}} & \multicolumn{4}{c|}{\textbf{Observed}}        & \multicolumn{2}{c|}{\textbf{Permutation p-value}} & \multicolumn{1}{c}{\textbf{p-value (FDR)}} \\ %& \multicolumn{1}{c}{\textbf{Adj. p-value}\tnote{*}}
 \hline
-Pathway                                   & Nodes & Edges  & mtSL & \gls{siRNA} & Up   & Down & Up$-$Down & Up$/$Down           & Up$-$Down & Down$-$Up \\
+Pathway                                   & Nodes & Edges  & mtSL & \gls{siRNA} & Up   & Down & Up$-$Down & Up$/$Down           & Up$-$Down & Down$-$Up & Down$-$Up \\
 \hline
   \rowcolor{black!10}
-PI3K Cascade                              & 138   & 1495   & 42   & 25    & 131  & 123  & 8       & 1.065             & 0.4473 & 0.5466   \\
+PI3K Cascade                              & 138   & 1495   & 42   & 25    & 131  & 123  & 8       & 1.065             & 0.4473 & 0.5466 & 0.7263  \\
   \rowcolor{black!5}
-PI3K/AKT Signalling in Cancer              & 275   & 12882  & 56   & 44    & 478  & 440  & 38      & 1.086             & 0.4163 & 0.5810   \\
+PI3K/AKT Signalling in Cancer              & 275   & 12882  & 56   & 44    & 478  & 440  & 38      & 1.086             & 0.4163 & 0.5810 & 0.7263   \\
   \rowcolor{black!10}
-\textbf{G$_{\alpha i}$ Signalling}                  & 292   & 22003  & 57   & 58    & 543  & 866  & -323    & 0.627             & 0.9507 & 0.0488             \\  
+\textbf{G$_{\alpha i}$ Signalling}                  & 292   & 22003  & 57   & 58    & 543  & 866  & -323    & 0.627             & 0.9507 & 0.0488 & 0.488             \\  
   \rowcolor{black!5}
-GPCR downstream                           & 1270  & 142071 & 218  & 160   & 7632 & 6500 & 1132    & 1.174             & 0.1707 & 0.8291   \\
+GPCR downstream                           & 1270  & 142071 & 218  & 160   & 7632 & 6500 & 1132    & 1.174             & 0.1707 & 0.8291 & 0.8751  \\
   \rowcolor{black!10}
-Elastic fibre formation                   & 42    & 175    & 16   & 7     & 6    & 7    & -1      & 0.857             & 0.5512 & 0.3681   \\
+Elastic fibre formation                   & 42    & 175    & 16   & 7     & 6    & 7    & -1      & 0.857             & 0.5512 & 0.3681  & 0.7263  \\
   \rowcolor{black!5}
-Extracellular matrix                      & 299   & 3677   & 81   & 29    & 313  & 347  & -34     & 0.902             & 0.5762 & 0.4215   \\
+Extracellular matrix                      & 299   & 3677   & 81   & 29    & 313  & 347  & -34     & 0.902             & 0.5762 & 0.4215  & 0.7263  \\
   \rowcolor{black!10}
-Formation of Fibrin                       & 52    & 243    & 11   & 5     & 8    & 19   & -11     & 0.421             & 0.7993 & 0.1800   \\
+Formation of Fibrin                       & 52    & 243    & 11   & 5     & 8    & 19   & -11     & 0.421             & 0.7993 & 0.1800 & 0.6000 \\
   \rowcolor{black!5}
-Nonsense-Mediated Decay                   & 103   & 102    & 56   & 2     & 0    & 0    & 0       &                   & 0.197  & 0.1373   \\
+Nonsense-Mediated Decay                   & 103   & 102    & 56   & 2     & 0    & 0    & 0       &                   & 0.197  & 0.1373 & 0.6000  \\
   \rowcolor{black!10}
-3$^\prime$-UTR-mediated translational regulation & 107   & 2860   & 56   & 1     & 52   & 1    & 51      & 52                & 0.1210  & 0.8751   \\
+3$^\prime$-UTR-mediated translational regulation & 107   & 2860   & 56   & 1     & 52   & 1    & 51      & 52                & 0.1210  & 0.8751 & 0.8751  \\
   \rowcolor{black!5}
-Eukaryotic Translation Elongation         & 92    & 3746   & 57   & 0     & 0    & 0    & 0       &                   & 0.4952 & 0.4892   \\ 
+Eukaryotic Translation Elongation         & 92    & 3746   & 57   & 0     & 0    & 0    & 0       &                   & 0.4952 & 0.4892 &  0.7263  \\ 
 \hline
 \end{tabular}
 \begin{tablenotes}
