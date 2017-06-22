@@ -549,14 +549,14 @@ Analysis of variance for \gls{PI3K} hierarchy score against \gls{synthetic letha
 %\begin{mdframed}
    \begin{center}
 
-        \subcaptionbox{Resampling in G$_{\alpha i}$ \label{fig:mtSL_Pathway_GPCR_Perm}}{%
+        \subcaptionbox{Resampling in G$_{\alpha i}$ signalling \label{fig:mtSL_Pathway_GPCR_Perm}}{%
             \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Downloads/Pathway_Structure/test_GPCR_mtSL".pdf}}
         }%
-        \subcaptionbox{Resampling in PI3K  \label{fig:mtSL_Pathway_PI3K_Perm}}{%
+        \subcaptionbox{Resampling in the PI3K cascade  \label{fig:mtSL_Pathway_PI3K_Perm}}{%
             \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_mtSL".pdf}}
         }%
     \end{center}
-   \caption[Structure of synthetic lethality resampling]{\small \textbf{Structure of synthetic lethality resampling.} A null distribution (10,000 iterations) of the \gls{siRNA} genes upstream or downstream of \acrshort{mtSLIPT} genes (shown by the difference) in the G$_{\alpha i}$ and \gls{PI3K} \glspl{pathway}. The observed events (red) were compared to the the distribution (violet) and were not significant. Genes detected by both methods were fixed for the distribution (blue). The genes detected by both approaches were used. 
+   \caption[Structure of synthetic lethality resampling]{\small \textbf{Structure of synthetic lethality resampling.} A null distribution with 10,000 iterations of the number of \gls{siRNA} genes upstream or downstream of \acrshort{mtSLIPT} genes (depicted as the difference of these) in each \gls{pathway}. To assess significance, the observed events (with \glspl{shortest path}) were compared to the 90\% and 95\% intervals for the null distribution (shown in blue). Genes detected by both methods were not fixed to the same number as observed for the alternative null distribution (shown in violet), although the significance of the observed number of events (red) was changed in either case. The genes detected by both approaches were included in computing the number of \glspl{shortest path} (in either direction) between \gls{SLIPT} and \gls{siRNA} genes. The permutations show (a) a significant pathway relationship for G$_{\alpha i}$ signalling and (b) and non-significant relationship for the \gls{PI3K} cascade. 
 }
 \label{fig:mtSL_Pathway_Perm}
 %\end{mdframed}
