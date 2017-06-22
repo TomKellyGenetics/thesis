@@ -25,7 +25,7 @@ Pathway structures from the Reactome network (as described in Section~\ref{metho
 
 \FloatBarrier
 
-The \acrfull{PI3K} cascade signalling \gls{pathway} is important in cancer because it is involved in mediating signals between the \glspl{GPCR} and regulation of protein translation have both been strongly implicated to be \gls{synthetic lethal} \glspl{pathway} with loss of \textit{CDH1} function (in Chapter~\ref{chap:SLIPT}). These \glspl{pathway} have are all subject to dysregulation in cancer \citep{Dorsam2007, Courtney2010, Gao2015}. Thus the PI3K cascade will be examined along with the most supported \gls{synthetic lethal} \glspl{pathway} (as identified in Chapter~\ref{chap:SLIPT}). It also exhibited a relationship with \textit{CDH1} mutations in \gls{metagene} analyses (in Appendix~\ref{chapt3:metagene_results}).
+The \acrfull{PI3K} cascade signalling \gls{pathway} is important in cancer because it is involved in mediating signals between the \glspl{GPCR} and regulation of protein translation have both been strongly implicated to be \gls{synthetic lethal} \glspl{pathway} with loss of \textit{CDH1} function (in Chapter~\ref{chap:SLIPT}). These \glspl{pathway} have are all subject to dysregulation in cancer \citep{Dorsam2007, Courtney2010, Gao2015}. Thus the PI3K cascade will be examined along with the most supported \gls{synthetic lethal} \glspl{pathway} (as identified in Chapter~\ref{chap:SLIPT}). %It also exhibited a relationship with \textit{CDH1} mutations in \gls{metagene} analyses (in Appendix~\ref{chapt3:metagene_results}).
 
 The \gls{PI3K} \gls{pathway} is well characterised and has an established direction of signal transduction from extracellular stimuli (and membrane bound receptors) to the inner mechanisms of the cell, namely, the regulation of protein translation. The production of proteins is necessary for the growth of the cell so it is reasonable to suggest that these processes may be subject to (non-\gls{oncogene}) addiction in some cancer cells which rely upon them for sustained protein production and cell growth. This is also supported by the \glspl{oncogene} \textit{PIK3CA} and \textit{AKT1} being involved with the PI3K cascade and related PI3K/AKT \gls{pathway} which may be subject to \gls{oncogene addiction} when these proto-oncogenes are activated.
 
@@ -194,9 +194,10 @@ The results for the G$_{\alpha i}$ \gls{pathway} were very similar when testing 
 
 \FloatBarrier
 
-%\subsection{Gene Importance and Centrality}  \label{chapt4:Network_Centrality}
+\subsection{Gene Importance and Centrality}  \label{chapt4:Network_Centrality}
 
-\subsection{Gene Importance and Information Centrality}  \label{chapt4:Network_InfoCent}
+%\subsection{Gene Importance and Information Centrality}  \label{chapt4:Network_InfoCent}
+\subsubsection{Information Centrality}  \label{chapt4:Network_InfoCent}
 
 \Gls{information centrality} is a measure of the importance of \glslink{vertex}{nodes} in a network in terms of how vital they are to the transmission of information throughout the network. This applies well to biological \glspl{pathway}, partcularly gene regulation and cell signalling. The \glslink{vertex}{nodes} with the highest \gls{information centrality} are not necessarily the most connected, as they may also include \glslink{vertex}{nodes} that pass signals between highly connected network hubs. \Gls{information centrality} therefore provides a distinct metric for the connectivity of a gene in a \gls{pathway}, which has the added benefit of being directly related to the disruption of \gls{pathway} function were it to be inactivated or removed.
 %
@@ -256,7 +257,8 @@ Analysis of variance for \gls{information centrality} against \gls{synthetic let
 
 \FloatBarrier
 
-\subsection{Gene Importance and PageRank Centrality}  \label{chapt4:Network_PageRank}
+%\subsection{Gene Importance and PageRank Centrality}  \label{chapt4:Network_PageRank}
+\subsubsection{PageRank Centrality}  \label{chapt4:Network_PageRank}
 
 \FloatBarrier
 
