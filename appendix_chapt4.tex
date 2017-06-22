@@ -207,20 +207,20 @@
 
 \FloatBarrier
 
-\chapter{Pathway Connectivity for Mutation SLIPT}
+\chapter{Network Analysis for Mutation SLIPT}
 \label{appendix:connectivity_mtSL}
 
 \begin{figure*}[!htp]
 %\begin{mdframed}
   \begin{center}
-  \resizebox{0.95 \textwidth}{!}{
+  \resizebox{0.75 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \fbox{
     \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_vertex_degree_stripchart2".pdf}}
    }
    }
    \end{center}
-   \caption[Synthetic lethality and vertex degree]{\small \textbf{Synthetic lethality and vertex degree.} The number of connected genes (\gls{vertex degree}) was compared (on a log-scale across genes deteced by \acrshort{mtSLIPT} and \gls{siRNA} screening in the Reactome \gls{PI3K} cascade pathway. There were very few differences in vertex degree between the groups, although genes detected by \gls{siRNA} included those with the fewest connections.
+   \caption[Synthetic lethality and vertex degree]{\small \textbf{Synthetic lethality and vertex degree.} The number of connected genes (\gls{vertex degree}) was compared (on a log-scale) across genes detected by \acrshort{mtSLIPT} and \gls{siRNA} screening in the Reactome G$_{\alpha i}$ pathway. There were no differences in \glslink{vertex}{vertex} degree between the groups (shown in Table~\ref{tab:SL_Pathway_GPCR_Vertex_Degree}), although genes detected by \gls{siRNA} included those with the fewest connections. 
 }
 \label{fig:mtSL_Pathway_GPCR_Vertex_Degree}
 %\end{mdframed}
@@ -231,14 +231,15 @@
 \begin{figure*}[!htp]
 %\begin{mdframed}
   \begin{center}
-  \resizebox{0.95 \textwidth}{!}{
+  \resizebox{0.75 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \fbox{
     \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_Info_Centrality(Log)_stripchart2".pdf}}
    }
    }
    \end{center}
-   \caption[Synthetic lethality and centrality]{\small \textbf{Synthetic lethality and centrality.}  The \gls{information centrality} was compared (on a log-scale across genes deteced by \acrshort{mtSLIPT} and \gls{siRNA} screening in the Reactome \gls{PI3K} cascade pathway. Genes detected by \acrshort{mtSLIPT} or \gls{siRNA} did not have higher connectivity than genes not detected by either approach. The gene with the highest centrality was detected by \gls{siRNA}.
+   \caption[Synthetic lethality and centrality]{\small \textbf{Synthetic lethality and centrality.}  The \gls{information centrality} was compared (on a log-scale) across genes detected by \gls{SLIPT} and \gls{siRNA} screening in the Reactome G$_{\alpha i}$ pathway. Genes detected by \gls{SLIPT} or \gls{siRNA} did not have higher centrality than other genes (shown in Table~\ref{tab:mtSL_Pathway_GPCR_InfoCent}). %The gene with the highest \gls{centrality} was detected by both approaches.
+   Genes detected by \gls{SLIPT} spanned the range of \gls{centrality} values.
 }
 \label{fig:mtSL_Pathway_GPCR_InfoCent}
 %\end{mdframed}
@@ -252,14 +253,14 @@
 \begin{figure*}[!htp]
 %\begin{mdframed}
   \begin{center}
-  \resizebox{0.95 \textwidth}{!}{
+  \resizebox{0.75 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     \fbox{
     \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_pagerank_stripchart2".pdf}}
    }
    }
    \end{center}
-   \caption[Synthetic lethality and PageRank]{\small \textbf{Synthetic lethality and PageRank.}  The \gls{PageRank centrality} was compared (on a log-scale across genes deteced by \acrshort{mtSLIPT} and \gls{siRNA} screening in the Reactome PI3K cascade pathway. Genes detected by \gls{siRNA} had a more restricted range of centrality values than other genes not detected by either approach, although these groups also had fewer genes.
+   \caption[Synthetic lethality and PageRank]{\small \textbf{Synthetic lethality and PageRank.} The \gls{PageRank centrality} was compared (on a log-scale) across genes detected by \acrshort{mtSLIPT} and \gls{siRNA} screening in the Reactome G$_{\alpha i}$ pathway. Genes detected by with either \gls{synthetic lethal} detection approach had a more restricted range of \gls{centrality} values neither of these had a significant association with centrality (shown in Table~\ref{tab:mtSL_Pathway_GPCR_PageRank}).
 }
 \label{fig:mtSL_Pathway_GPCR_PageRank}
 %\end{mdframed}
