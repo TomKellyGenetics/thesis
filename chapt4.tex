@@ -134,7 +134,9 @@ Many of these \gls{SLIPT} candidate genes are also among the \gls{NMD} \gls{path
 
 \glsreset{ANOVA}
 
-Genes detected as \gls{synthetic lethal} partners of \textit{CDH1} with the \gls{SLIPT} computational approach and the \gls{siRNA} screen \citep{Telford2015} were compared across network metrics in the example of G$_{\alpha i}$ signalling, a \gls{GPCR} \gls{pathway}. This \gls{pathway} was used to demonstrate deeper network analysis approaches to \gls{synthetic lethal} candiates within complex \glspl{pathway} it was supported across analyses (in Chapter~\ref{chap:SLIPT}), with significant over-representation in both \gls{SLIPT} and \gls{siRNA} screening, and the genes differed considerably between \gls{synthetic lethal} detection methods (shown in Appendix Figures~\ref{fig:SL_Pathway_GPCR}).  These network metrics were used to measure whether the network properties differed between groups of genes detected by either or both approaches. These analyses serve to test both whether \gls{synthetic lethal} gene candidates had higher connectivity or importance in a network and whether either detection approach is biased towards genes with different network properties.  
+To demonstrate the network properties of \gls{synthetic lethal} candidates in a pathway, a network analsis was performed on the genes detected as \gls{synthetic lethal} partners of \textit{CDH1} with the \gls{SLIPT} computational approach and the \gls{siRNA} screen \citep{Telford2015} %were compared across network metrics 
+in %the example of 
+G$_{\alpha i}$ signalling, a \gls{GPCR} \gls{pathway}. This \gls{pathway} was used to demonstrate deeper network analysis approaches to \gls{synthetic lethal} candiates within complex \glspl{pathway}, as it was supported across analyses (in Chapter~\ref{chap:SLIPT}), with significant over-representation in both \gls{SLIPT} and \gls{siRNA} screening, and the genes differed considerably between \gls{synthetic lethal} detection methods (shown in Appendix Figures~\ref{fig:SL_Pathway_GPCR}).  These network metrics were used to measure whether the network properties differed between groups of genes detected by either or both approaches. These analyses serve to test both whether \gls{synthetic lethal} gene candidates had higher connectivity or importance in a network and whether either detection approach is biased towards genes with different network properties.  
 
 %(where the genes differed considerably between \gls{synthetic lethal} detection methods)
 
@@ -221,7 +223,7 @@ and Appendix Table~\ref{tab:mtSL_Pathway_GPCR_InfoCent}). Thus neither method wa
    %}
    }
    \end{center}
-   \caption[Synthetic lethality and centrality]{\small \textbf{Synthetic lethality and centrality.} The \gls{information centrality} was compared (on a log-scale) across genes detected by \gls{SLIPT} and \gls{siRNA} screening in the Reactome G$_{\alpha i}$ \gls{pathway}. Genes detected by \gls{SLIPT} or \gls{siRNA} did not have higher centrality than other genes (shown in Table~\ref{tab:SL_Pathway_GPCR_InfoCent}). %The gene with the highest \gls{centrality} was detected by both approaches.
+   \caption[Synthetic lethality and centrality]{\small \textbf{Synthetic lethality and centrality.} The \gls{information centrality} was compared (on a log-scale) across genes detected by \gls{SLIPT} and \gls{siRNA} screening in the Reactome G$_{\alpha i}$ \gls{pathway}. Genes detected by \gls{SLIPT} or \gls{siRNA} did not have higher \gls{centrality} than other genes (shown in Table~\ref{tab:SL_Pathway_GPCR_InfoCent}). %The gene with the highest \gls{centrality} was detected by both approaches.
    Genes detected by \gls{SLIPT} spanned the range of \gls{centrality} values.
 }
 \label{fig:SL_Pathway_GPCR_InfoCent}
@@ -266,7 +268,7 @@ Analysis of variance for \gls{information centrality} against \gls{synthetic let
 
 This distinction is immediately clear within the G$_{\alpha i}$ \gls{pathway} (shown in Figure~\ref{fig:SL_Pathway_GPCR_PageRank}), which differs considerably from the \gls{information centrality} scores (as shown in Figure~\ref{fig:SL_Pathway_GPCR_InfoCent}). 
 %Genes detected by \gls{SLIPT} span the complete range of \gls{PageRank centrality} values for this \gls{pathway}. 
-Genes detected by either \gls{synthetic lethal} approach did not include those with the highest PageRank centrality. There was a significant association between genes detected by \gls{SLIPT} (which had a lower median) with PageRank centrality (shown by Table~\ref{tab:SL_Pathway_GPCR_PageRank}). The genes detected by \gls{SLIPT} span the range of centrality values of \gls{siRNA} showing that both approaches were capable of detecting genes of moderately high centrality (as shown for information centrality) and that the lower centrality of \gls{SLIPT} candidates in G$_{\alpha i}$ \gls{pathway} may be due to \gls{synthetic lethal} partners being less critical to the \gls{pathway}, rather than a limitation of the methodology. 
+Genes detected by either \gls{synthetic lethal} approach did not include those with the highest PageRank centrality. There was a significant association between genes detected by \gls{SLIPT} (which had a lower median) with PageRank \gls{centrality} (shown by Table~\ref{tab:SL_Pathway_GPCR_PageRank}). The genes detected by \gls{SLIPT} span the range of \gls{centrality} values of \gls{siRNA} showing that both approaches were capable of detecting genes of moderately high \gls{centrality} (as shown for information centrality) and that the lower \gls{centrality} of \gls{SLIPT} candidates in the G$_{\alpha i}$ \gls{pathway} may be due to \gls{synthetic lethal} partners being less critical to the \gls{pathway}, rather than a limitation of the methodology. While it is expected that some \gls{synthetic lethal} genes will be important to the function of the \gls{pathway}, it is possible that with with high \gls{centrality} were avoided if they are essential to cellular viability.
 
 
 \begin{figure*}[!htb]
@@ -279,14 +281,14 @@ Genes detected by either \gls{synthetic lethal} approach did not include those w
    %}
    }
    \end{center}
-   \caption[Synthetic lethality and PageRank]{\small \textbf{Synthetic lethality and PageRank.} The \gls{PageRank centrality} was compared (on a log-scale) across genes detected by \acrshort{mtSLIPT} and \gls{siRNA} screening in the Reactome G$_{\alpha i}$ \gls{pathway}. Genes detected by with either \gls{synthetic lethal} detection approach had a more restricted range of \gls{centrality} values but only \gls{SLIPT} genes had a significant association with centrality (shown in Table~\ref{tab:SL_Pathway_GPCR_PageRank}).
+   \caption[Synthetic lethality and PageRank]{\small \textbf{Synthetic lethality and PageRank.} The \gls{PageRank centrality} was compared (on a log-scale) across genes detected by \acrshort{mtSLIPT} and \gls{siRNA} screening in the Reactome G$_{\alpha i}$ \gls{pathway}. Genes detected by with either \gls{synthetic lethal} detection approach had a more restricted range of \gls{centrality} values but only \gls{SLIPT} genes had a significant association with \gls{centrality} (shown in Table~\ref{tab:SL_Pathway_GPCR_PageRank}).
 }
 \label{fig:SL_Pathway_GPCR_PageRank}
 %\end{mdframed}
 \end{figure*} %\filbreak
 
 
-There was not a significant association between \gls{siRNA} candidates and PageRank centrality. Te significant result for \gls{SLIPT} was not replicated when testing \glspl{synthetic lethal} against \textit{CDH1} \gls{mutation} (shown in Appendix Figure~\ref{fig:mtSL_Pathway_GPCR_PageRank} and Appendix Table~\ref{tab:mtSL_Pathway_GPCR_PageRank}). However, this may be due to fewer genes being detected by \acrshort{mtSLIPT} and \gls{siRNA}.
+There was not a significant association between \gls{siRNA} candidates and PageRank centrality. The significant result for \gls{SLIPT} was not replicated when testing \glspl{synthetic lethal} against \textit{CDH1} \gls{mutation} (shown in Appendix Figure~\ref{fig:mtSL_Pathway_GPCR_PageRank} and Appendix Table~\ref{tab:mtSL_Pathway_GPCR_PageRank}). However, this may be due to fewer genes being detected by \acrshort{mtSLIPT} and \gls{siRNA}.
 
 \begin{table*}[!htb]
 \caption{\acrshort{ANOVA} for synthetic lethality and PageRank centrality}
