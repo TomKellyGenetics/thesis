@@ -556,7 +556,7 @@ Analysis of variance for \gls{PI3K} hierarchy score against \gls{synthetic letha
             \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_mtSL".pdf}}
         }%
     \end{center}
-   \caption[Structure of synthetic lethality resampling]{\small \textbf{Structure of synthetic lethality resampling.} A null distribution with 10,000 iterations of the number of \gls{siRNA} genes upstream or downstream of \acrshort{mtSLIPT} genes (depicted as the difference of these) in each \gls{pathway}. To assess significance, the observed events (with \glspl{shortest path}) were compared to the 90\% and 95\% intervals for the null distribution (shown in blue). Genes detected by both methods were not fixed to the same number as observed for the alternative null distribution (shown in violet), although the significance of the observed number of events (red) was changed in either case. The genes detected by both approaches were included in computing the number of \glspl{shortest path} (in either direction) between \gls{SLIPT} and \gls{siRNA} genes. The permutations show (a) a significant pathway relationship for G$_{\alpha i}$ signalling and (b) and non-significant relationship for the \gls{PI3K} cascade. 
+   \caption[Structure of synthetic lethality resampling]{\small \textbf{Structure of synthetic lethality resampling.} A null distribution with 10,000 iterations of the number of \gls{siRNA} genes upstream or downstream of \acrshort{mtSLIPT} genes (depicted as the difference of these) in each \gls{pathway}. To assess significance, the observed events (with \glspl{shortest path}) were compared to the 90\% and 95\% intervals for the null distribution (shown in blue). Genes detected by both methods were not fixed to the same number as observed for the alternative null distribution (shown in red), although the significance of the observed number of events (red) was changed in either case. The genes detected by both approaches were included in computing the number of \glspl{shortest path} (in either direction) between \gls{SLIPT} and \gls{siRNA} genes. The permutations show (a) a significant pathway relationship for G$_{\alpha i}$ signalling and (b) and non-significant relationship for the \gls{PI3K} cascade. 
 }
 \label{fig:mtSL_Pathway_Perm}
 %\end{mdframed}
@@ -571,9 +571,9 @@ Analysis of variance for \gls{PI3K} hierarchy score against \gls{synthetic letha
 \begin{threeparttable}
 \begin{tabular}{l|cc|cc|cccc|cc|c}
 \cline{2-12}
-                                          & \multicolumn{2}{c|}{\textbf{Graph}} & \multicolumn{2}{c|}{\textbf{States}} & \multicolumn{4}{c|}{\textbf{Observed}}        & \multicolumn{2}{c|}{\textbf{Permutation p-value}} & \multicolumn{1}{c}{\textbf{p-value (FDR)}} \\ %& \multicolumn{1}{c}{\textbf{Adj. p-value}\tnote{*}}
+                                          & \multicolumn{2}{c|}{\textbf{Graph}} & \multicolumn{2}{c|}{\textbf{Candidates}} & \multicolumn{4}{c|}{\textbf{Observed}}        & \multicolumn{2}{c|}{\textbf{Permutation p-value}} & \multicolumn{1}{c}{\textbf{p-value (FDR)}} \\ %& \multicolumn{1}{c}{\textbf{Adj. p-value}\tnote{*}}
 \hline
-Pathway                                   & Nodes & Edges  & mtSL & \gls{siRNA} & Up   & Down & Up$-$Down & Up$/$Down           & Up$-$Down & Down$-$Up & Down$-$Up \\
+P\textbf{Pathway}                                   & \textbf{Nodes} & \textbf{Edges}  & \textbf{SLIPT} & \textbf{siRNA} & \textbf{Up}\tnote{1}   & \textbf{Down}\tnote{2} & \textbf{Up$-$Down} & \textbf{Up$/$Down}           & \textbf{Up$-$Down} & \textbf{Down$-$Up} & \textbf{Down$-$Up} \\
 \hline
   \rowcolor{black!10}
 PI3K Cascade                              & 138   & 1495   & 42   & 25    & 131  & 123  & 8       & 1.065             & 0.4473 & 0.5466 & 0.7263  \\
@@ -599,7 +599,12 @@ Eukaryotic Translation Elongation         & 92    & 3746   & 57   & 0     & 0   
 \end{tabular}
 \begin{tablenotes}
 \raggedright \small
-Pathways in the Reactome network tested for structural relationships between \acrshort{mtSLIPT} and \gls{siRNA} genes by resampling. The raw p-value (computed without adjusting for multiple comparisons over pathways) is given for the difference in upstream and downstream paths from \acrshort{mtSLIPT} to \gls{siRNA} gene candidate partners of \texti{CDH1} with significant pathways highlighted in bold. Sampling was performed only in the target pathway and shortest paths were computed within it. Loops or paths in either direction that could not be resolved were excluded from the analysis. The gene detected by both \acrshort{mtSLIPT} and \gls{siRNA} (or resampling for them) were includued in the analysis and the number of these were fixed to the number observed.
+Pathways in the Reactome network tested for structural relationships between \acrshort{mtSLIPT} and \gls{siRNA} genes by resampling. The raw p-value (computed without adjusting for multiple comparisons over pathways) is given for the difference in upstream and downstream paths from \acrshort{mtSLIPT} to \gls{siRNA} gene candidate partners of \texti{CDH1} with significant pathways highlighted in bold. Sampling was performed only in the target pathway and shortest paths were computed within it. Loops or paths in either direction that could not be resolved were excluded from the analysis. The genes detected by both \acrshort{mtSLIPT} and \gls{siRNA} (or resampling for them) were included in the analysis and the number of these were fixed to the number observed.
+%\item[*] Adjusted p-values from the \gls{FDR} multiple comparison procedure
+
+\item[1] The number of paths where the \gls{siRNA} candidate was upstream of a \acrshort{mtSLIPT} candidate
+
+\item[2] The number of paths where the \gls{siRNA} candidate was downstream of a \acrshort{mtSLIPT} candidate
 \end{tablenotes}
 \end{threeparttable}
 }
