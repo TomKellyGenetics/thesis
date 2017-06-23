@@ -137,9 +137,9 @@ Together these results support the use of \gls{SLIPT}, particularly the use of q
 
 \subsection{Alternative Synthetic Lethal Detection Strategies}
 
-The \gls{SLIPT} approach (and $\chi^2$) to detect \glspl{synthetic lethal} from binning \glslink{gene expression}{expression} to estimate gene function also outperforms correlations which use continuous data directly. Correlation performing poorly as a \gls{synthetic lethal} detection strategy consistent with there not necessarily being a relationship between \gls{synthetic lethal} partners which can be in distinct biological pathways, expressed at different times or in different cell types. Nevertheless, correlation is among the alternative detection methods considered in further detail.
+The \gls{SLIPT} approach (and $\chi^2$) to detect \glspl{synthetic lethal} from binning \glslink{gene expression}{expression} to estimate gene function also outperformed correlations, which use continuous data directly. Correlation performing poorly as a \gls{synthetic lethal} detection strategy is consistent with there not necessarily being a relationship between \gls{synthetic lethal} partners, which can be in distinct biological pathways, expressed at different times or in different cell types. Nevertheless, correlation is among the alternative detection methods considered in further detail.
 
-The \gls{BiSEp} R package \citep{Wappett2014} for using bimodality to detect \glspl{synthetic lethal} \citep{Wappett2016} were also considered, along with a linear regression approach. These statistical methods span a range of computational approaches to detecting \glspl{synthetic lethal} and serve to compare alternatives to \gls{SLIPT}, supporting its design and application.
+The \gls{BiSEp} R package \citep{Wappett2014} for using bimodality to detect \glspl{synthetic lethal} \citep{Wappett2016} was also considered, along with a linear regression approach. These statistical methods span a range of computational approaches to detecting \glspl{synthetic lethal} and serve to compare alternatives to \gls{SLIPT}, supporting its design and application.
 %These investigations are intended not intended to be a comprehensive benchmarking of existing \gls{synthetic lethal} tools, implementing other \gls{synthetic lethal} detection software is out of the scope of this project.
 However, these comparisons are able provide supporting data from statistical modelling and simulations for the viability of the \gls{SLIPT} methodology for \gls{synthetic lethal} discovery in cancer (as demonstrated in Chapter~\ref{chap:SLIPT}) and further applications.
 
@@ -148,7 +148,8 @@ However, these comparisons are able provide supporting data from statistical mod
 
 \FloatBarrier
 
-As shown in Section~\ref{chapt5:compare_chisq}, negative (Pearson) correlation performed better than positive correlation, indicating the inverse relationships were more predictive of \glspl{synthetic lethal}. However, neither correlation approach performed as well as \gls{SLIPT} or the $\chi^2$ test as a predictor of \gls{synthetic lethal} gene partners. It is notable that negative correlation still often performed considerably better than random chance.
+As expected, negative (Pearson) correlation performed better than positive correlation at detecting \glspl{synthetic lethal} (shown in Section~\ref{chapt5:compare_chisq}). %, indicating the inverse relationships were more predictive of \glspl{synthetic lethal}.
+However, neither correlation approach performed as well as \gls{SLIPT} or the $\chi^2$ test as a predictor of \gls{synthetic lethal} gene partners. It is notable that negative correlation still often performed considerably better than random chance.
 
     \begin{figure*}[!htb]
     %\begin{mdframed}
@@ -157,13 +158,14 @@ As shown in Section~\ref{chapt5:compare_chisq}, negative (Pearson) correlation p
 	\includegraphics{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_Cor_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(1)_SLIPT_v_Cor".png}}
       }
       \end{center}
-      \caption[Performance of negative correlation and SLIPT]{\textbf{Performance of negative correlation and SLIPT}. \Gls{synthetic lethal} detection with \gls{SLIPT} was compared to negative (Pearson) correlation across parameters. SLIPT consistently outperformed correlation. Both approaches had lower performance for more \gls{synthetic lethal} partners and lower sample sizes. 10,000 simulations were performed with correlation structure as used in Section~\ref{chapt5:graphsim_performance_constructed}}
+      \caption[Performance of negative correlation and SLIPT]{\textbf{Performance of negative correlation and SLIPT}. \Gls{synthetic lethal} detection with \gls{SLIPT} was compared to negative (Pearson) correlation across parameters. SLIPT consistently outperformed correlation. Both approaches had lower performance for more \gls{synthetic lethal} partners and for lower sample sizes. 10,000 simulations were performed with correlation structure. % as used in Section~\ref{chapt5:graphsim_performance_constructed}
+      }
     \label{fig:simulation1205_randx_Graph4cfnCor}
     %\end{mdframed}
     \end{figure*}
     
     
-Negative correlation was compared directly to the \gls{SLIPT} methodology (as described in Section~\ref{methods:SLIPT}) across numbers of known \gls{synthetic lethal} partners and sample size (ranging from 500 to 5000). This comparison used 1000 simulations of a dataset with 20,000 genes and \gls{synthetic lethal} genes from within a network (sampled as in Section~\ref{methods:graphsim})) with a 0.8 correlation between adjacent genes. In a direct comparison of \gls{SLIPT} and negative correlation (shown in Figure~\ref{fig:simulation1205_randx_Graph4cfnCor}), \gls{SLIPT} consistently has higher performance in simulated data across parameter values and (inverse) correlation-based approaches perform modestly in comparison. Thus using thresholds to categorise \glslink{gene expression}{expression} data (as performed by \gls{SLIPT} and $\chi^2$) does not compromise the performance of these methods by losing continuous data that would be used for calculating correlations. Similarly, the slope of a linear regression did not perform as well at \gls{synthetic lethal} detection than \gls{SLIPT}.
+Negative correlation was compared directly to the \gls{SLIPT} methodology (as described in Section~\ref{methods:SLIPT}) across numbers of known \gls{synthetic lethal} partners and sample size (ranging from 500 to 5000). This comparison used 1000 simulations of a dataset with 20,000 genes and \gls{synthetic lethal} genes from within a network (sampled as in Section~\ref{methods:graphsim}) with a 0.8 correlation between adjacent genes. In a direct comparison of \gls{SLIPT} and negative correlation (shown in Figure~\ref{fig:simulation1205_randx_Graph4cfnCor}), \gls{SLIPT} consistently has higher performance in simulated data across parameter values and (inverse) correlation-based approaches perform modestly in comparison. Thus using thresholds to categorise \glslink{gene expression}{expression} data (as performed by \gls{SLIPT} and $\chi^2$) does not compromise the performance of these methods by losing continuous data that would be used for calculating correlations. %Similarly, the slope of a linear regression did not perform as well at \gls{synthetic lethal} detection than \gls{SLIPT}.
 %[Add Other Graphs to Appendix?]
 
 
