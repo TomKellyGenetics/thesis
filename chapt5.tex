@@ -688,15 +688,14 @@ The results with one \gls{synthetic lethal} partner were sufficient to show the 
 
 \FloatBarrier
 
-
-The high proportion of \gls{synthetic lethal} partners in small networks (and fewer true negatives) made it difficult to accurately assess the performance of \gls{SLIPT} with higher numbers of true partners to detect (as noted in Section~\ref{chapt5:graphsim_performance_simple}). The addition of more non-synthetic lethal genes in previous simulations increased the performance of \gls{SLIPT}, particularly the specificity to reduce the number of false positives (as shown in Sections~\ref{chapt2:simulation_2015} and~\ref{chapt5:compare_methods}). The \glslink{graph}{graph} structures (as used in Section~\ref{chapt5:graphsim_performance}) of genes with correlations from sampling a multivariate normal distribution were included in a larger simulated dataset of 20,000 genes. This simulation procedure enabled testing of the performance of \gls{SLIPT} when detecting \gls{synthetic lethal} partners within correlated \glslink{graph}{graph} structures (of a \gls{synthetic lethal} pathway) in the context of thousands of genes, as occurs in \glslink{gene expression}{expression} datasets. 
+The performance of \gls{SLIPT} with higher numbers of true partners to detect may have been affected by the high proportion of \gls{synthetic lethal} partners (i.e., fewer true negatives) in small networks (as noted in Section~\ref{chapt5:graphsim_performance_simple}). 
+The performance of \gls{SLIPT} increased with the addition of more non-synthetic lethal genes, particularly the specificity (as shown in Sections~\ref{chapt2:simulation_2015} and~\ref{chapt5:compare_methods}). 
+The correlated genes from \glslink{graph}{graph} structures (as used in Section~\ref{chapt5:graphsim_performance}) were included in a larger simulated dataset to assess the performance of \gls{SLIPT} for a \gls{synthetic lethal} pathway in the context of thousands of genes, as occurs in \glslink{gene expression}{expression} datasets. 
 
 %\subsubsection{Simple Graph Structures in a \Glspl{genome}}
 %\label{chapt5:graphsim_performance_20K_simple}
 
 %\FloatBarrier
-
-The simulations performed in Section~\ref{chapt5:graphsim_performance_simple} were replicated within a dataset of 20,000 genes with the remainder being composed of non-synthetic lethal genes without correlation structure. The aforementioned issue with specificity in a higher number of underlying \gls{synthetic lethal} genes did not occur in a simple \glslink{graph}{graph} structure (as shown in Figure~\ref{fig:simulation1207_randx_Graph1}). For such a small graph module of highly correlated genes within a \gls{gene expression} dataset, detection of \gls{synthetic lethal} genes within the network by \gls{SLIPT} and distinguishing these from the larger dataset had high performance across parameter values. In this case, a reduction in sensitivity resulted in poorer performance, a higher number of non-synthetic lethal genes were correctly identified, with a low false positive rate and high accuracy. Thus the use of stringent $\chi^2$ p-value thresholds (adjusted by \gls{FDR}) are suitable for testing for \glspl{synthetic lethal} in \gls{gene expression} data across the number of genes in human and cancer data.
 
 \begin{figure*}[!htbp]
 %\begin{mdframed}
@@ -729,9 +728,24 @@ The simulations performed in Section~\ref{chapt5:graphsim_performance_simple} we
 %\end{mdframed}
 \end{figure*}
 
-In a direct comparison with simulations in the \glslink{graph}{graph} structure alone (as performed in Section~\ref{chapt5:graphsim_performance_simple}), detection of \glspl{synthetic lethal} with \gls{SLIPT} performed consistently better in a larger dataset with many true negative genes to detect (as shown in Figure~\ref{fig:simulation1205_randx_Graph1cf20K}). The \gls{SLIPT} methodology as it has a high specificity and low false positive rate, which is desirable. \gls{SLIPT} is therefore applicable to large \gls{gene expression} datasets where these are important considerations since the number of negative genes to correctly identify often vastly outnumbers the number of positive genes to detect.
+
+The simulations performed in Section~\ref{chapt5:graphsim_performance_simple} were replicated within a dataset of 20,000 genes with the remainder being composed of non-synthetic lethal genes without correlation structure. The specificity in a higher number of \gls{synthetic lethal} genes did not affect performance in a simple \glslink{graph}{graph} structure (as shown in Figure~\ref{fig:simulation1207_randx_Graph1}). For a graph of highly correlated genes within a \gls{gene expression} dataset, \gls{SLIPT} had high the performance detecting of \gls{synthetic lethal} genes in the network within a larger dataset. In this case, a reduction in sensitivity resulted in poorer performance. A high number of non-synthetic lethal genes were correctly identified, with a low false positive rate and high accuracy. Thus the use of stringent $\chi^2$ p-value thresholds (adjusted by \gls{FDR}) are suitable for testing for \glspl{synthetic lethal} in \gls{gene expression} data across the number of genes in human and cancer data.
+
+In a direct comparison with simulations in the \glslink{graph}{graph} structure alone (as performed in Section~\ref{chapt5:graphsim_performance_simple}), detection of \glspl{synthetic lethal} with \gls{SLIPT} performed consistently better in a larger dataset with many true negative genes to detect (as shown in Figure~\ref{fig:simulation1205_randx_Graph1cf20K}). The \gls{SLIPT} methodology had a high specificity and low false positive rate, which is desirable. \gls{SLIPT} is therefore applicable to large \gls{gene expression} datasets, where these are important considerations since the number of negative genes often vastly outnumbers the number of positive genes to detect.
 
 %This finding was replicated across simple graph modules with similar results between \glspl{graph} with different directions (as shown in Figure~\ref{fig:simulation1205_randx_Graph1cf20K}). Higher performance of \gls{synthetic lethal} detection in an activating \glslink{graph}{graph} structure within the context of a larger \gls{gene expression} dataset by further replicated across the \glslink{graph}{graph} structures presented earlier (as shown in the Appendix by Figures~\ref{fig:simulation1207_randx_Graph2}\nobreakdash--\ref{fig:simulation1207_randx_Graph7}) and is not specific to the modules shown here.
+
+Performance was not necessarily higher with more non-synthetic lethal genes in an inhibiting \glslink{graph}{graph} structure. The performance of simulations of an entirely inhibiting \glslink{graph}{graph} structure did not improve within a larger dataset. Rather, the performance in the inhibiting \glslink{graph}{graph} structure was similar to simulations of the \glslink{graph}{graph} structure in isolation. Biological pathways commonly contain inhibiting relationships (and inverse correlations), although they are unlikely to occur across an entire pathway.
+%
+In \glslink{graph}{graph} structures with inhibitions included in a larger dataset, the performance of \gls{synthetic lethal} detection by \gls{SLIPT} was sometimes higher than in \glslink{graph}{graph} structure simulated alone (as shown in Figure~\ref{fig:simulation1205_randx_Graph4cf20K}). % the performance of an inhibitory \glslink{graph}{graph} structure was consistently elevated when included within a larger dataset.
+However, these did not perform as well as the equivalent \glslink{graph}{graph} structures without inhibitory relationships within a similar dataset.
+%
+It is expected that the findings based on these simulations of genes with \glslink{graph}{pathway} structures in smaller datasets (as described in Section~\ref{chapt5:graphsim_performance}) will be relevant to larger datasets. The simulation results in these inhibiting \glslink{graph}{graph} structures  perform comparably or higher with more non-synthetic lethal genes to distinguish from them even with inhibitory relationships within the \glslink{graph}{graph} structure 
+%Therefore the findings based on simulations of genes with \glslink{graph}{graph} structures in smaller datasets (as described in Section~\ref{chapt5:graphsim_performance}) will be relevant to larger datasets since the simulation results in these perform comparably or higher with more non-synthetic lethal genes to distinguish from them even with inhibitory relationships within the \glslink{graph}{graph} structure (as shown with supporting results Appendix Figures~\ref{fig:simulation1207_randx_Graph1i}\nobreakdash--\ref{fig:simulation1207_randx_Graph7i2}). Hence these findings will be relevant in the context of empirical \gls{gene expression} datasets with thousands of genes such as those in human and cancers.
+
+%\label{fig:simulation1207_randx_Graph4}
+%\label{fig:simulation1207_randx_Graph4i2}
+
 
 \begin{figure*}[!tb]
 %\begin{mdframed}
@@ -774,7 +788,6 @@ In a direct comparison with simulations in the \glslink{graph}{graph} structure 
 %\label{fig:simulation1207_randx_Graph3}
 %\label{fig:simulation1207_randx_Graph3i}
 
-This increase in performance with more non-synthetic lethal genes to detect does not necessarily apply in an inhibiting \glslink{graph}{graph} structure. This an important consideration since biological pathways commonly contain inhibiting relationships (and inverse correlations), although they are unlikely to occur across an entire pathway. While an increased performance for an activating graph was replicated, in this case, the performance of simulations of an entirely inhibiting \glslink{graph}{graph} structure did not improve within a larger dataset. Rather, the performance in the inhibiting \glslink{graph}{graph} structure was similar to simulations of the \glslink{graph}{graph} structure in isolation. 
 \iffalse
 \begin{figure*}[!tb]
 %\begin{mdframed}
@@ -811,14 +824,7 @@ This increase in performance with more non-synthetic lethal genes to detect does
 %\end{mdframed}
 \end{figure*}
 \fi
-It is expected that the findings based on these simulations of genes with \glslink{graph}{pathway} structures in smaller datasets (as described in Section~\ref{chapt5:graphsim_performance}) will be relevant to larger datasets. The simulation results in these inhibiting \glslink{graph}{graph} structures  perform comparably or higher with more non-synthetic lethal genes to distinguish from them even with inhibitory relationships within the \glslink{graph}{graph} structure 
-%Therefore the findings based on simulations of genes with \glslink{graph}{graph} structures in smaller datasets (as described in Section~\ref{chapt5:graphsim_performance}) will be relevant to larger datasets since the simulation results in these perform comparably or higher with more non-synthetic lethal genes to distinguish from them even with inhibitory relationships within the \glslink{graph}{graph} structure (as shown with supporting results Appendix Figures~\ref{fig:simulation1207_randx_Graph1i}\nobreakdash--\ref{fig:simulation1207_randx_Graph7i2}). Hence these findings will be relevant in the context of empirical \gls{gene expression} datasets with thousands of genes such as those in human and cancers.
 
-
-%\label{fig:simulation1207_randx_Graph4}
-%\label{fig:simulation1207_randx_Graph4i2}
-
-Performance of \gls{synthetic lethal} detection of \gls{SLIPT} in \glslink{graph}{graph} structures with inhibitions included in a larger dataset of non-synthetic lethal genes did not diminish to the level of the \glslink{graph}{graph} structure simulated alone. In some cases (as shown in Figure~\ref{fig:simulation1205_randx_Graph4cf20K}), the performance of an inhibitory \glslink{graph}{graph} structure was consistently elevated when included within a larger dataset. However, these did not perform as well as the equivalent \glslink{graph}{graph} structures without inhibitory relationships within a similar dataset.
 
 \begin{figure*}[!tb]
 %\begin{mdframed}
