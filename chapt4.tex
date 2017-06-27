@@ -75,7 +75,7 @@ Many of these genes are involved in the Extracellular Matrix \gls{pathway} (show
 
 \acrfull{GPCR} \glspl{pathway} are highly complex (as shown in Figure~\ref{fig:SL_Pathway_GPCR} and Appendix Figure~\ref{fig:SL_Pathway_GPCR_Downstream}). Many genes in these \glspl{pathway} were \gls{synthetic lethal} detected by either \gls{SLIPT} or \gls{siRNA} screening, including genes frequently detected by both approaches, consistent with these \glspl{pathway} being supported by prior analyses (in Sections~\ref{chapt3:compare_pathway} and~\ref{chapt3:compare_pathway_perm}). \Gls{synthetic lethal} candidates include the Phosphodiesterase (PDE) and Calmodulin genes (as discussed in Section~\ref{chapt4:SL_Genes_GPCR}) in addition to others such as the regulators of RGS, chemokine receptors (CXCR), Janus Kinase (JAK), and the Ras Homolog Family (RHO) genes. These are important regulatory signalling \glspl{pathway} necessary for cellular growth and cancer proliferation. Thus the \gls{GPCR} \glspl{pathway} (and downstream PI3K/AKT signals) are a potentially actionable vulnerability against \textit{CDH1} deficient cancers, particularly since many existing drug targets are in these signalling \glspl{pathway}, some of which have been experimentally validated \citep{Telford2015}. While statistically significant numbers of genes in \gls{GCPR} \glspl{pathway} were detected by both approaches (in Sections~\ref{chapt3:compare_pathway} and~\ref{chapt3:compare_pathway_perm}), the complexity of \gls{GPCR} networks (containing hundreds of genes) further support the needs for a rational network-based approach to the relationships between \gls{SLIPT} and experimental candidates.
 
-\begin{figure*}[!htb]
+\begin{figure*}[!tb]
 %\begin{mdframed}
   \begin{center}
   \resizebox{0.8 \textwidth}{!}{
@@ -123,7 +123,7 @@ Vertex degree (the number of connections) for each gene is a fundamental propert
 %The median connectivity of genes detected by both approaches was marginally higher. 
 There was no statistically significant effect of either computational or experimental \gls{synthetic lethal} detection method on \glslink{vertex}{vertex} degree, as determined by \gls{ANOVA} (shown by Table~\ref{tab:SL_Pathway_GPCR_Vertex_Degree}).
 
-\begin{figure*}[!htb]
+\begin{figure*}[!tb]
 %\begin{mdframed}
   \begin{center}
   \resizebox{0.75 \textwidth}{!}{
@@ -139,7 +139,7 @@ There was no statistically significant effect of either computational or experim
 %\end{mdframed}
 \end{figure*} \filbreak
 
-\begin{table*}[!htb]
+\begin{table*}[!tb]
 \caption{\acrshort{ANOVA} for synthetic lethality and vertex degree}
 \label{tab:SL_Pathway_GPCR_Vertex_Degree}
 \noindent\makebox[\textwidth][c]{%               %centering
@@ -187,7 +187,7 @@ Genes detected by \gls{SLIPT} span the complete range of \gls{PageRank centralit
 These findings were replicated (shown in Appendix Figure~\ref{fig:mtSL_Pathway_GPCR_InfoCent} %) when testing \glspl{synthetic lethal} against \textit{CDH1} \gls{mutation} (\acrshort{mtSLIPT}). The differences in network \gls{centrality} between gene groups detected by either method were not statistically significant as determined by \gls{ANOVA} (shown by Table~\ref{tab:SL_Pathway_GPCR_InfoCent}
 and Appendix Table~\ref{tab:mtSL_Pathway_GPCR_InfoCent}). Thus neither method was unable to detect \gls{synthetic lethal} genes in the G$_{\alpha i}$ \gls{pathway} with particular \gls{centrality} constraints but they were also not detecting genes with higher \gls{centrality} than expected by chance. 
 
-\begin{figure*}[!htb]
+\begin{figure*}[!tb]
 %\begin{mdframed}
   \begin{center}
   \resizebox{0.75 \textwidth}{!}{
@@ -204,7 +204,7 @@ and Appendix Table~\ref{tab:mtSL_Pathway_GPCR_InfoCent}). Thus neither method wa
 %\end{mdframed}
 \end{figure*} \filbreak
 
-\begin{table*}[!htb]
+\begin{table*}[!tb]
 \caption{\acrshort{ANOVA} for synthetic lethality and information centrality}
 \label{tab:SL_Pathway_GPCR_InfoCent}
 \noindent\makebox[\textwidth][c]{%               %centering
@@ -247,7 +247,7 @@ Genes detected by either \gls{synthetic lethal} approach did not include those w
 The genes detected by \gls{SLIPT} span the range of \gls{centrality} values of \gls{siRNA} showing that both approaches were capable of detecting genes of moderately high \gls{centrality} (as shown for information centrality) and that the lower \gls{centrality} of \gls{SLIPT} candidates in the G$_{\alpha i}$ \gls{pathway} may be due to \gls{synthetic lethal} partners being less critical to the \gls{pathway}, rather than a limitation of the methodology. While it is expected that some \gls{synthetic lethal} genes will be important to the function of the \gls{pathway}, it is possible that genes with high \gls{centrality} were avoided if they are \gls{essential} to cellular viability.
 
 
-\begin{figure*}[!htb]
+\begin{figure*}[!tb]
 %\begin{mdframed}
   \begin{center}
   \resizebox{0.75 \textwidth}{!}{
@@ -266,7 +266,7 @@ The genes detected by \gls{SLIPT} span the range of \gls{centrality} values of \
 
 There was not a significant association between \gls{siRNA} candidates and PageRank centrality. The significant result for \gls{SLIPT} was not replicated when testing \glspl{synthetic lethal} against \textit{CDH1} \gls{mutation} (shown in Appendix Figure~\ref{fig:mtSL_Pathway_GPCR_PageRank} and Appendix Table~\ref{tab:mtSL_Pathway_GPCR_PageRank}). However, this may be due to fewer genes being detected by \acrshort{mtSLIPT} and \gls{siRNA}.
 
-\begin{table*}[!htb]
+\begin{table*}[!tb]
 \caption{\acrshort{ANOVA} for synthetic lethality and PageRank centrality}
 \label{tab:SL_Pathway_GPCR_PageRank}
 \noindent\makebox[\textwidth][c]{%               %centering
@@ -309,7 +309,7 @@ Analysis of variance for \gls{PageRank centrality} against \gls{synthetic lethal
 
 A contextual hierarchy of genes in the G$_{\alpha i}$ \gls{pathway} was derived (as described in in Section~\ref{methods:pathway_rank}) to assign scores for their relative order in the \gls{pathway}. In the case of PI3K (shown in Figure~\ref{fig:SL_Pathway_PI3K_Ranking}), this orders genes from the upstream genes, which respond to signals from extracellular stimuli, to the downstream genes which transmit these to the \gls{gene expression} (translation) responses of the cell. The directionality of this \gls{pathway} is evident in transmitting signals from the PI3K complex, via AKT, PDE, and mTOR to the ribosomal regulatory proteins. This hierarchical procedure enables testing whether the biological context of a gene in a \gls{pathway} is relevant to detection as a \gls{synthetic lethal} candidate by either computational \gls{SLIPT} analysis or experimental \gls{siRNA} screening.
 
-\begin{figure*}[!htb]
+\begin{figure*}[!tb]
 %\begin{mdframed}
   \begin{center}
   \resizebox{1 \textwidth}{!}{
@@ -399,7 +399,7 @@ Furthermore the \gls{pathway} hierarchical scores did not exhibit different more
 
 %\FloatBarrier
 
-\begin{figure*}[!htb]
+\begin{figure*}[!tb]
 %\begin{mdframed}
   \begin{center}
   \resizebox{0.75 \textwidth}{!}{
@@ -442,8 +442,12 @@ A \glslink{graph}{pathway} structure method was devised to use \glslink{graph}{n
 
 Shortest paths in a \gls{pathway} network were used to devise a strategy to detect \glslink{graph}{pathway} structure between \gls{SLIPT} and \gls{siRNA} gene candidates partners of \textit{CDH1} (as described in Section~\ref{methods:pathway_str}). Thus we can determine whether individual \gls{SLIPT} genes have upstream or downstream \gls{siRNA} candidates (scored as ``up'' or ``down'' events respectively). This procedure enables the detection of directional relationships between \gls{SLIPT} and \gls{siRNA} gene candidates (e.g., if genes detected by \gls{siRNA} are more likely to be downstream of genes detected by \gls{SLIPT} in the same pathway). %(in contrast to the hierarchical approach).
 
+The total number of gene candidate pairs in either direction can be compared within a \gls{pathway} network to assess the overall directional relationships in a \gls{pathway}. This directionality is detectable by the difference between the number of \gls{SLIPT} candidate genes with upstream and downstream \gls{siRNA} gene partners. However, this measure alone is not sufficient to determine whether there is evidence of \glslink{graph}{pathway} structure between \gls{SLIPT} and \gls{siRNA} gene candidates partners of \textit{CDH1} in a \gls{pathway} network. Nevertheless, it does serve to measure the magnitude (and direction) of the consensus of directional relationships (upstream and downstream) between \gls{SLIPT} and \gls{siRNA} gene candidates partners. This measure of \glslink{graph}{pathway} structure can be used for testing for statistical significance of \glslink{graph}{pathway} structure by resampling, using a permutation procedure to test whether these relationships are detectable among randomly selected gene groups rather than the detected \gls{SLIPT} and \gls{siRNA} gene candidates partners (as described in Sections~\ref{methods:permutation} and~\ref{methods:network_permutation}).
 
-\begin{figure*}[!htb]
+This resampling procedure was performed for the G$_{\alpha i}$ and PI3K \glspl{pathway} to generate a null distribution for the difference in the number of ``up events'' and ``down events'' for these \gls{pathway} structures (as shown in Figures~\ref{fig:SL_Pathway_Pi3K} and~\ref{fig:SL_Pathway_GPCR}). The resulting null distributions (as shown in Figure~\ref{fig:SL_Pathway_Perm}) were used to detect whether genes detected by \gls{SLIPT} had significantly more upstream or downstream \gls{siRNA} candidates in either \gls{pathway}. It can be seen that \gls{siRNA} genes were significantly downstream of \gls{SLIPT} candidate genes by resampling for the G$_{\alpha i}$ signalling \gls{pathway} (Figure~\ref{fig:SL_Pathway_GPCR_Perm}). This demonstrates that \gls{pathway} relationships can be detected between \gls{synthetic lethal} candidates by this procedure and that \gls{siRNA} genes were downstream of gene detected by \gls{SLIPT} in an example of GPCR signalling expanding on support for \glspl{synthetic lethal} in this \gls{pathway} (as shown in Chapter~\ref{chap:SLIPT}). These structural relationships may also account for why each the computational and experimental approaches did not detect many of the same specific genes because they are detecting different parts of the \gls{pathway}.
+
+
+\begin{figure*}[!tb]
 %\begin{mdframed}
     \begin{center}
 %
@@ -454,15 +458,12 @@ Shortest paths in a \gls{pathway} network were used to devise a strategy to dete
             \includegraphics[width=0.475\textwidth]{{"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL".pdf}}
         }%
     \end{center}
-   \caption[Structure of synthetic lethality resampling]{\small \textbf{Structure of synthetic lethality resampling.} A null distribution with 10,000 iterations of the number of \gls{siRNA} genes upstream or downstream of \gls{SLIPT} genes (depicted as the difference of these) in each \gls{pathway}. To assess significance, the observed events (with \glspl{shortest path}) were compared to the 90\% and 95\% intervals for the null distribution (shown in blue). Genes detected by both methods were not fixed to the same number as observed for the alternative null distribution (shown in red), although the significance of the observed number of events (red) was changed in either case. The genes detected by both approaches were included in computing the number of \glspl{shortest path} (in either direction) between \gls{SLIPT} and \gls{siRNA} genes. The permutations show (a) a significant \gls{pathway} relationship for G$_{\alpha i}$ signalling and (b) and non-significant relationship for the PI3K cascade. 
+   \caption[Structure of synthetic lethality resampling]{\small \textbf{Structure of synthetic lethality resampling.} A null distribution with 10,000 iterations of the number of \gls{siRNA} genes upstream or downstream of \gls{SLIPT} genes (depicted as the difference of these) in each \gls{pathway}. To assess significance, the observed events (with \glspl{shortest path}) were compared to the 90\% and 95\% intervals for the null distribution (shown in blue). Genes detected by both methods were not fixed to the same number as observed for the alternative null distribution (shown in red), although the significance of the observed number of events (red) was changed in either case. The genes detected by both approaches were included in computing the number of \glspl{shortest path} (in either direction) between \gls{SLIPT} and \gls{siRNA} genes. The permutations show (a) significant \gls{pathway} relationships for G$_{\alpha i}$ signalling and (b) and non-significant relationships for the PI3K cascade. 
 }
 \label{fig:SL_Pathway_Perm}
 %\end{mdframed}
 \end{figure*}
 
-The total number of gene candidate pairs in either direction can be compared within a \gls{pathway} network to assess the overall directional relationships in a \gls{pathway}. This directionality is detectable by the difference between the number of \gls{SLIPT} candidate genes with upstream and downstream \gls{siRNA} gene partners. However, this measure alone is not sufficient to determine whether there is evidence of \glslink{graph}{pathway} structure between \gls{SLIPT} and \gls{siRNA} gene candidates partners of \textit{CDH1} in a \gls{pathway} network. Nevertheless, it does serve to measure the magnitude (and direction) of the consensus of directional relationships (upstream and downstream) between \gls{SLIPT} and \gls{siRNA} gene candidates partners. This measure of \glslink{graph}{pathway} structure can be used for testing for statistical significance of \glslink{graph}{pathway} structure by resampling, using a permutation procedure to test whether these relationships are detectable among randomly selected gene groups rather than the detected \gls{SLIPT} and \gls{siRNA} gene candidates partners (as described in Sections~\ref{methods:permutation} and~\ref{methods:network_permutation}).
-
-This resampling procedure was performed for the G$_{\alpha i}$ and PI3K \glspl{pathway} to generate a null distribution for the difference in the number of ``up events'' and ``down events'' for these \gls{pathway} structures (as shown in Figures~\ref{fig:SL_Pathway_Pi3K} and~\ref{fig:SL_Pathway_GPCR}). The resulting null distributions (as shown in Figure~\ref{fig:SL_Pathway_Perm}) were used to detect whether genes detected by \gls{SLIPT} had significantly more upstream or downstream \gls{siRNA} candidates in either \gls{pathway}. It can be seen that \gls{siRNA} genes were significantly downstream of \gls{SLIPT} candidate genes by resampling for the G$_{\alpha i}$ signalling \gls{pathway} (Figure~\ref{fig:SL_Pathway_GPCR_Perm}). This demonstrates that \gls{pathway} relationships can be detected between \gls{synthetic lethal} candidates by this procedure and that \gls{siRNA} genes were downstream of gene detected by \gls{SLIPT} in an example of GPCR signalling expanding on support for \glspl{synthetic lethal} in this \gls{pathway} (as shown in Chapter~\ref{chap:SLIPT}). These structural relationships may also account for why each the computational and experimental approaches did not detect many of the same specific genes because they are detecting different parts of the \gls{pathway}.
 
 In contrast, there was not significant evidence of such \gls{pathway} structure between \gls{siRNA} and \gls{SLIPT} candidate genes when resampling within the PI3K cascade \gls{pathway} (as shown in Figure~\ref{fig:SL_Pathway_PI3K_Perm}). This indicates that such relationships may be \gls{pathway} specific rather than a general property of these \gls{synthetic lethal} detection methods. These results were robustly reproducible, with similar findings (as shown in Appendix Figure~\ref{fig:mtSL_Pathway_Perm}) for each \gls{pathway} when testing for \glspl{synthetic lethal} against \textit{CDH1} \gls{mutation} (\acrshort{mtSLIPT}).
 
@@ -481,7 +482,7 @@ The resampling results across these \glspl{pathway} (as shown in Table~\ref{tab:
 
 Pathway structure was supported for the \gls{NMD} \gls{pathway} (which is consistent with \gls{siRNA} being downstream in Appendix Figure~\ref{fig:SL_Pathway_NMD}). However, this observation rests upon a single gene and was not replicated when testing \glspl{synthetic lethal} (\acrshort{mtSLIPT}) against \textit{CDH1} \gls{mutation} (as shown in Appendix Table~\ref{tab:pathway_str_mtSL}) nor was it supported by the related 3$^\prime$\gls{UTR} regulation and translational elongation \glspl{pathway}.
 
-\begin{table*}[!htb]
+\begin{table*}[!tb]
 \caption{Resampling for \glslink{graph}{pathway} structure of \gls{synthetic lethal} detection methods}
 \label{tab:pathway_str_exprSL}
 \noindent\makebox[\textwidth][c]{%               %centering
