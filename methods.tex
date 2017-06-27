@@ -215,7 +215,7 @@ A fundamental concept in network analysis is a ``\gls{shortest path}'', that is 
 
 Network \gls{centrality} is an alternative measure of the importance or influence of a \glslink{vertex}{node} to the \glslink{graph}{graph} structure \citep{Borgatti2005}. Various strategies are used to derive centrality,  typically based on how connected the \glslink{vertex}{node} is or the impact of \glslink{vertex}{node} removal on the connectivity of the network. One of the most notable is the ``\glslink{PageRank centrality}{PageRank}'' algorithm, a refinement of eigenvector \gls{centrality} based on the eigenvectors of the adjacency matrix \citep{Brin1998}. This is implemented in the \texttt{igraph} R package \citep{igraph}.
 
-Another network \gls{centrality} measure that has been previously applied to biological protein interaction networks \citep{Kranthi2013} is the ``\gls{information centrality}''. The \gls{information centrality} of a \glslink{vertex}{node} is the relative impact on efficiency (transmission of information via \glspl{shortest path}) of the network when the \glslink{vertex}{node} is removed. Te \gls{centrality} ($C$) \citep{Kranthi2013} for \glslink{vertex}{node} $n$ in graph $G$ is defined as: $$C_n = \frac{E(G)-E(G')}{E(G)}$$ where $G'$ is the subgraph with the \glslink{vertex}{node} removed and $E$ is the efficiency \citep{Latora2001}, derived from \glspl{shortest path} ($d_{ij}$ between \glslink{vertex}{nodes} $i$ and $j$). $$E(G) = \frac{2}{N(N-1} \sum_{i<j \in G}^{} \frac{1}{d_{ij}}$$ The efficiency of the network can be derived from \glspl{shortest path} implemented in the \texttt{igraph} R package and the iterative network \gls{centrality} computation of each \glslink{vertex}{node} has been released as an R package (\texttt{info.centrality}) and included in the \texttt{igraph.extensions} package.
+Another network \gls{centrality} measure that has been previously applied to biological protein interaction networks \citep{Kranthi2013} is the ``\gls{information centrality}''. The \gls{information centrality} of a \glslink{vertex}{node} is the relative impact on efficiency (transmission of information via \glspl{shortest path}) of the network when the \glslink{vertex}{node} is removed. Te \gls{centrality} ($C$) \citep{Kranthi2013} for \glslink{vertex}{node} $n$ in graph $G$ is defined as: $$C_n = \frac{E(G)-E(G')}{E(G)}$$ where $G'$ is the subgraph with the \glslink{vertex}{node} removed and $E$ is the efficiency \citep{Latora2001}, derived from \glspl{shortest path} ($d_{ij}$ between \glslink{vertex}{nodes} $i$ and $j$). $$E(G) = \frac{2}{N(N-1} \sum_{i<j \in G}^{} \frac{1}{d_{ij}}$$ The efficiency of a network can be derived from \glspl{shortest path} usingthe \texttt{igraph} R package and the network \gls{centrality} computation for each \glslink{vertex}{node} has been released as an R package (\texttt{info.centrality}) and included in the \texttt{igraph.extensions} package.
 
 \section{Implementation}
 %\subsection{Computational Tools and Enabling Biological Research (remove/state assumptions only)}
@@ -226,130 +226,7 @@ Another network \gls{centrality} measure that has been previously applied to bio
 
 \subsection{Computational Resources and Linux Utilities}
 
-Several computers were used to process and store data during this thesis (as summarised in Table~\ref{tab:computers}), running different versions of Linux operating systems, including a personal laptop computer, laboratory desktop machine, departmental server, and the New Zealand eScience Infrastructure Intel Pan high-performance computing cluster (a supercomputer based at the University of Auckland). Each of these systems support a 64-bit architecture. Current workflows on local machines use Elementary OS (based on the Ubuntu versions given in Table~\ref{tab:computers}) and the ZSH shell. However, Ubuntu OS and the Bash were used at the inception of this project and Bash continues to be used for running scripts. Various Linux applications and command-line utilities were used on these machines (as summarised in Table~\ref{tab:computers_linux}). As such, the workflows developed in this project should be backwards-compatible with Ubuntu Linux (and other derivatives). The majority of novel methodology and implementations were performed in R which is a cross-platform language, packages developed in R will be available for users of Linux, Mac, and Windows machines.  
-
-
-\begin{table}[!ht]
-\centering
-\caption{Computers used during thesis}
-\label{tab:computers}
-\makebox[\textwidth][c]{
-\resizebox{\textwidth}{!}{
-\begin{tabular}{r|l|l|l|l|}
-%\cline{2-5}
-\multicolumn{1}{r}{}                        & \multicolumn{1}{l}{\bfseries Viao Laptop}                                     & \multicolumn{1}{l}{\bfseries Lab Machine}                                   & \multicolumn{1}{l}{\bfseries Biochem Server}                                     & \multicolumn{1}{l}{\bfseries NeSI Pan Cluster}                               \\
-\cline{2-5}
-\rowcolor{black!10}
-\multicolumn{1}{r|}{\cellcolor{white}Operating System (OS)}  & \begin{tabular}[c]{@{}l@{}}Elementary OS\\ Freya 0.3.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Elementary OS\\ Loki 0.4\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Red Hat Enterprise\\ Maipo 7.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Cent OS\\ Final 6.4\end{tabular} \\ 
-%\cline{2-5}
-\rowcolor{black!5}
-\multicolumn{1}{r|}{\cellcolor{white}Upstream OS}            & \begin{tabular}[c]{@{}l@{}}Ubuntu LTS\\ Trusty 14.04\end{tabular}   & \begin{tabular}[c]{@{}l@{}}Ubuntu LTS\\ Xenial 16.04\end{tabular} &                                                                        &                                                             \\ 
-%\cline{2-5}
-\rowcolor{black!10}
-\multicolumn{1}{r|}{\cellcolor{white}Linux Kernel}           & 3.19.0-65-generic                                                   & 4.4.0-36-generic                                                  & 3.10.0-327.36.2.el7.x86\_64                                            & 2.6.32-504.16.2.el6.x86\_64                    \\
-%\cline{2-5}
-\rowcolor{black!5}
-\multicolumn{1}{r|}{\cellcolor{white}Shell: Bash}            & 4.3.11(1)                                                           & 4.3.46(1)                                                         & 4.2.46(1)                                                              & 4.2.1(1)                                       \\
-%\cline{2-5}
-\rowcolor{black!10}
-\multicolumn{1}{r|}{\cellcolor{white}Shell: zsh}             & 5.0.2                                                               & 5.1.1                                                             & 5.0.2                                                                  & 5.2                                            \\
-\cline{2-5}
-\end{tabular}
-}}
-\end{table}
-
-
-\begin{table}[!ht]
-\centering
-\caption{Linux utilities and applications used during thesis}
-\label{tab:computers_linux}
-
-\resizebox{\textwidth}{!}{
-\begin{tabular}{|ll|l|l|l|l|}
-%\cline{3-6}
-\multicolumn{1}{l}{\cellcolor{white}}                                 & \multicolumn{1}{l}{}                         & \multicolumn{1}{l}{\bfseries Viao Laptop}                           & \multicolumn{1}{l}{\bfseries Lab Machine}                         & \multicolumn{1}{l}{\bfseries Biochem Server}                           & \multicolumn{1}{l}{\bfseries NeSI Pan Cluster}                               \\
-\cline{2-6}
-\rowcolor{black!10}
-\multicolumn{1}{l}{\cellcolor{white}}                                 & \multicolumn{1}{|l|}{OS}                     & \begin{tabular}[c]{@{}l@{}}Elementary OS\\ Freya 0.3.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Elementary OS\\ Loki 0.4\end{tabular}  & \begin{tabular}[c]{@{}l@{}}Red Hat Enterprise\\ Maipo 7.2\end{tabular} & \begin{tabular}[c]{@{}l@{}}Cent OS\\ Final 6.4\end{tabular} \\
-%\cline{2-6}
-\rowcolor{black!5}
-\multicolumn{1}{l}{\cellcolor{white}}                                 & \multicolumn{1}{|l|}{Linux Kernel}           & 3.19.0-65-generic                                                   & 4.4.0-36-generic                                                  & 3.10.0-327.36.2.el7.x86\_64                                            & 2.6.32-504.16.2.el6.x86\_64                    \\
-\hline
-\rowcolor{black!10}
-\cellcolor{white} Scripting                                            & \multicolumn{1}{|l|}{Shell\: Bash}            & 4.3.11(1)                                                           & 4.3.46(1)                                                         & 4.2.46(1)                                                              & 4.2.1(1)                                       \\
-%\cline{2-6}
-\rowcolor{black!5}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{Shell\: zsh}             & 5.0.2                                                               & 5.1.1                                                             & 5.0.2                                                                  & 5.2                                            \\
-\hline
-\rowcolor{black!10}
-\cellcolor{white} Programming                                          & \multicolumn{1}{|l|}{Python}                 & 2.7.6                                                               & 2.7.12                                                            & 2.7.5                                                                  &                                                \\
-%\cline{2-6}
-\rowcolor{black!5}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{Java}                   & 1.8.0\_101                                                          & 9-ea                                                              & 1.8.0\_101                                                             &                                                \\
-%\cline{2-6}
-\rowcolor{black!10}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{C$++$}                  & 4.8.4                                                               & 5.4.0                                                             & 4.8.5                                                                  & 4.4.7                                          \\
-\hline
-\rowcolor{black!5}
-\cellcolor{white} Text Editor                                          & \multicolumn{1}{|l|}{nano}                   & 2.2.6                                                               & 2.5.3                                                             & 2.3.1                                                                  & 2.0.9                                          \\
-%\cline{2-6}
-\rowcolor{black!10}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{kile (\LaTeX)}          & 2.1.3                                                               & 2.1.3                                                             &                                                                        &                                                \\
-\hline
-\rowcolor{black!5}
-\cellcolor{white} Version Control                                      & \multicolumn{1}{|l|}{git}                    & 1.9.1                                                               & 2.11.0                                                            & 1.7.1                                                                  & 1.8.3.1                                        \\
-\hline
-\rowcolor{black!10}
-\cellcolor{white} Shell Utilities                                      & \multicolumn{1}{|l|}{sed}                    & 4.4.2                                                               & 4.4.2                                                             & 4.4.2                                                                  & 4.4.1                                          \\
-%\cline{2-6}
-\rowcolor{black!5}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{grep}                   & 2.16-1                                                              & 2.25-1                                                            & 2.20                                                                   & 2.6.3                                          \\
-%\cline{2-6}
-\rowcolor{black!10}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{nohup}                  & 8.21                                                                & 8.25                                                              & 8.22                                                                   & 8.4                                            \\
-\hline
-\rowcolor{black!5}
-\cellcolor{white} Typesetting                                          & \multicolumn{1}{|l|}{\TeX}                   & 3.1415926                                                           & 3.14159265                                                        &                                                                        &                                                \\
-%\cline{2-6}
-\rowcolor{black!10}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{TexLive (\LaTeX)}       & 2013                                                                & 2015                                                              &                                                                        &                                                \\
-%\cline{2-6}
-\rowcolor{black!5}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{PDF\TeX}                & 2.5-1                                                               & 2.6                                                               &                                                                        &                                                \\
-%\cline{2-6}
-\rowcolor{black!10}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{pandoc}                 & 1.12.2.1                                                            & 1.16.0.2                                                          &                                                                        &                                                \\
-\hline
-\rowcolor{black!5}
-\cellcolor{white} Remote Computing                                     & \multicolumn{1}{|l|}{Slurm scheduler}        &                                                                     &                                                                   &                                                                        & 16.05.6                                        \\
-%\cline{2-6}
-\rowcolor{black!10}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{OpenSSH}                & 7.2p2                                                               & 7.2p2                                                             & 6.6.1                                                                  & 5.3p1                                          \\
-%\cline{2-6}
-\rowcolor{black!5}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{OpenSSL}                & 1.0.2g                                                              & 1.0.2g                                                            & 1.0.01e-fips                                                           & 1.0.01e-fips                                   \\
-%\cline{2-6}
-\rowcolor{black!10}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{rsync}                  & 3.1.0p31                                                            & 3.1.1p31                                                          & 3.0.9p30                                                               &                                                \\
-%\cline{2-6}
-\rowcolor{black!5}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{Globus Online Transfer} &                                                                     &                                                                   & 3.1                                                                    & 3.1                                            \\
-%\cline{2-6}
-\rowcolor{black!10}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{Cisco AnyConnect VPN}   &                                                                     & 3.1.05170                                                         &                                                                        &                                                \\
-\hline
-\rowcolor{black!5}
-\cellcolor{white} Image Processing                                     & \multicolumn{1}{|l|}{Inkscape}               & 0.48.4                                                              & 0.91                                                              &                                                                        &                                                \\
-%\cline{2-6}
-\rowcolor{black!10}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{GIMP}                   & 2.8.10                                                              & 2.8.16                                                            &                                                                        &                                                \\
-%\cline{2-6}
-\rowcolor{black!5}
-\cellcolor{white}                                                      & \multicolumn{1}{|l|}{ImageMagick}            & 6.7.7.10-6                                                          &                                                                   &                                                                        &                                                \\
-\hline                                
-\end{tabular}
-}
-\end{table}
+Several computers were used to process and store data during this thesis (as summarised in Appendix Table~\ref{tab:computers}), running different versions of Linux operating systems, including a personal laptop computer, laboratory desktop machine, departmental server, and the New Zealand eScience Infrastructure Intel Pan high-performance computing cluster (a supercomputer based at the University of Auckland). Each of these systems support a 64-bit architecture. Current workflows on local machines use Elementary OS (based on the Ubuntu versions given in Appendix Table~\ref{tab:computers}) and the ZSH shell. However, Ubuntu OS and the Bash were used at the inception of this project and Bash continues to be used for running scripts. Various Linux applications and command-line utilities were used on these machines (shown in Appendix Table~\ref{tab:computers_linux}). As such, the workflows developed in this project should be backwards-compatible with Ubuntu Linux (and other derivatives). The majority of novel methodology and implementations were performed in R which is a cross-platform language, packages developed in R will be available for users of Linux, Mac, and Windows machines.  
 
 
 \FloatBarrier
@@ -361,7 +238,7 @@ The R programming language has been used for the majority of this thesis. Curren
 
 Various scripts and packages in this thesis were developed or run in previous versions of RStudio and R but these run without error in the current version of R (and the older versions on remote machines). The R packages which were used throughout this thesis (as detailed in Table~\ref{tab:computers_r_packages} with versions specified) were installed from the \acrfull{CRAN} \citep{CRAN}, Bioconductor \citep[][version 3.4; BiocInstaller 1.24.0]{Gentleman2004}, or GitHub (\url{https://github.com/}). These packages were not updated when they would change the functionality of scripts or functions in packages, in particular imported data from annotation packages (used to define gene sets) have been saved as local files to continue using stable versions of these \gls{pathway} data (across machines).
 
-This is a summary of the key packages which (in addition to their dependencies) have been used throughout this project. Where a package implementation has been central to the methods applied, they are described in more detail in the relevant Section. A full table of packages used in this thesis can be found in Appendix~\ref{appendix:software} (Table~\ref{tab:computers_r_packages_full}). The R packages developed during this thesis are given in Table~\ref{tab:computers_r_packages_dev} with the relevant Sections describing their implementation and use where appropriate, in addition to further details on these functions in Section~\ref{methods:r_packages}. 
+This is a summary of the key packages which (in addition to their dependencies) have been used throughout this project. Where a package implementation has been central to the methods applied, they are described in more detail in the relevant Section. A full table of packages used in this thesis can be found in Appendix Table~\ref{tab:computers_r_packages_full}. The R packages developed during this thesis are given in Table~\ref{tab:computers_r_packages_dev} with the relevant Sections describing their implementation and use where appropriate, in addition to further details on these functions in Section~\ref{methods:r_packages}. 
 
 \begin{table}[!ht]
 \centering
@@ -514,12 +391,6 @@ grDevices    & 3.3.2          & 3.3.2 & base            \\
 cluster      & 2.0.5          & 3.3.1 & base            \\
 %\hline  
 \rowcolor{black!5}
-graphics     & 3.3.2          & 3.3.2 & base            \\
-%\hline  
-\rowcolor{black!10}
-grDevices    & 3.3.2          & 3.3.2 & base            \\
-%\hline  
-\rowcolor{black!5}
 Matrix       & 1.2-8          & 3.3.1 & base            \\
 %\hline  
 \rowcolor{black!10}
@@ -565,7 +436,7 @@ visualisation                  & \texttt{vioplotx}                          & \b
 }
 \end{table}
 
-\FloatBarrier
+%\FloatBarrier
 
 \subsection{High Performance and Parallel Computing} \label{methods:HPC}
 \glsreset{HPC}
@@ -574,7 +445,7 @@ visualisation                  & \texttt{vioplotx}                          & \b
 
 Another enabling technology for \gls{bioinformatics} is parallel computing, performing independent operations using separate \gls{CPU} cores: this ``multithreading'' is widely used to increase the time to compute results. \Gls{bioinformatics} is particularly amenable to this since performing multiple iterations of a simulation or testing separate genes is often ``embarrassingly parallel'', as \glspl{CPU} completely independent of each other. %As such, parallel computing is offered by many high-performance ``supercomputers'', including national research infrastructure.
 
-\Gls{NeSI} is a \gls{HPC} organisation providing the Intel Pan cluster or ``supercomputer'', hosted by the University of Auckland \citep{NeSI}. The Pan cluster used throughout this thesis project to optimise and perform computations which would have otherwise been infeasible in the timeframe of thesis. Such technological developments and infrastructure initiatives have enabled \gls{bioinformatics} research including this project.  High performance computing on the Pan cluster was used extensively in this project including for resampling analysis (in Sections~\ref{methods:permutation} and~\ref{methods:network_permutation}), calculating \gls{information centrality} (in Section~\ref{methods:network_metrics}), and in simulations (in Sections~\ref{methods:simulation},~\ref{methods:simulation_SL_expression}, and~\ref{methods:graphsim})
+\Gls{NeSI} is a \gls{HPC} organisation providing the Intel Pan cluster or ``supercomputer'' at the University of Auckland \citep{NeSI}. The cluster was used throughout this thesis project to optimise and perform computations which would have otherwise been infeasible. High performance computing on the Pan cluster was used extensively in this project including for resampling analysis (in Sections~\ref{methods:permutation} and~\ref{methods:network_permutation}), calculating \gls{information centrality} (in Section~\ref{methods:network_metrics}), and in simulations (in Sections~\ref{methods:simulation},~\ref{methods:simulation_SL_expression}, and~\ref{methods:graphsim})
 
 Scripts and data were transferred between the Pan cluster and University of Otago computing resources by \texttt{rsync} or the Globus file transfer service \citep{Globus}. R scripts \citep{R_core} were run in parallel with the ``simple network of workstations'' \texttt{snow} R package \citet{snow}. This utilised the ``message passing interface'' \citep{Rmpi} when it was feasible with memory requirements to run in parallel across multiple compute \glslink{vertex}{nodes}, otherwise \gls{SOCKS} was used to access multiple cores within an instance of R and pass input data to them. R jobs were submitted to queue for available resources and run on the Pan cluster via the \gls{Slurm} workload manager \citep{slurm}.  \gls{Slurm} array job submission and independent running of different parameters (with arguments passed to R from the shell) were used to run memory-intensive job or scripts across many parameters simultaneously. In some cases, this submission was automated across a range of parameters with Bash scripts.
 
