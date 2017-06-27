@@ -197,7 +197,7 @@ While gene function was used as an intermediary step in modelling \gls{synthetic
 %
     \end{center}
    %\caption[Simulating \gls{synthetic lethal} gene function]{\small \textbf{\textbf{Simulating \gls{synthetic lethal} gene function.}} Simulated data with samples (columns) and genes (rows) in a discrete matrix of gene function (shaded in black for sample with functional gene levels). Genes A and I are selected to be \gls{synthetic lethal} partners of a ``Query'' gene, which of these genes will be the true partner in each sample is selected randomly and indicated in green which samples are considered for the purposes of simulating \glspl{synthetic lethal} (shaded in forest green for samples with functional gene levels). Note that samples are ordered such that either the query gene or selected partner are functional in any particular sample.}
-   \caption[Simulating \gls{synthetic lethal} gene function]{\small \textbf{\textbf{Simulating \gls{synthetic lethal} gene function.}} In a discrete simulated gene function dataset (shaded for functional levels and pale otherwise) with samples (columns) and genes (rows), genes A and I are SL partners of a ``Query'' gene. A partner was selected (highlighted in green) randomly in each sample for simulating \glspl{synthetic lethal}, then ordered such that the query gene or an SL partner were functional in each sample.
+   \caption[Simulating \gls{synthetic lethal} gene function]{\small \textbf{\textbf{Simulating \gls{synthetic lethal} gene function.}} In a discrete simulated gene function dataset (shaded for functional levels and pale otherwise) with samples (columns) and genes (rows), genes A and I were SL partners of a ``Query'' gene. A partner was selected (highlighted in green) randomly in each sample for simulating \glspl{synthetic lethal}, then ordered such that the query gene or an SL partner were functional in each sample.
    }
 %}
 \label{fig:simulate_add_query}
@@ -733,24 +733,24 @@ to accompany a publication demonstrating the applications of the methodology for
 The \gls{SLIPT} methodology in this package release was used in later analyses rather than the corresponding source R code, including use on remote machines and upon simulated data. In particular, the functions in the package facilitate alterations to parameters, such as the proportion of samples called as exhibiting low or high gene activity (as shown in Section~\ref{chapt5:compare_chisq}). This release supports reproducible research and enables wider use of \gls{SLIPT} in future investigations into other disease genes.
 
 \subsection{Data Visualisation} \label{methods:r_packages_vis}
-Customised data visualisations in R \citep{R_core} were developed to present data throughout this thesis. The \texttt{vioplotx} and \texttt{heatmap.2x} packages are enhancements of the \texttt{vioplot} package \citep{vioplot} and \texttt{heatmap.2} provided by the \texttt{gplots} package \citep{gplots}. 
+Customised data visualisations in R \citep{R_core} were developed to present data throughout this thesis. %The \texttt{vioplotx} and \texttt{heatmap.2x} packages are enhancements of the \texttt{vioplot} package \citep{vioplot} and \texttt{heatmap.2} provided by the \texttt{gplots} package \citep{gplots}. 
+%
+The \texttt{vioplotx} package provides an alternative visualisation (of continuous variables against categories) to the more familiar boxplot, showing variability of the data by the width of the plots. As demonstrated in Figure~\ref{fig:vioplot}, this version enables separate plotting parameters for each violin with vector inputs for colour, shape, and size of various elements of the median point, central boxplot, borders, and fill colour for the violin. Scaling violin width to adjust violin area and splitting data by a second categorical variable is also enabled. This function is intended to be backwards compatible with the \texttt{vioplot} package \citep{vioplot}  (applying scalar inputs across all violins) and \texttt{boxplot} (by enabling formula inputs as an S3 method). Each of these features has been demonstrated with examples in respective vignettes on the package \href{https://github.com/TomKellyGenetics/vioplotx}{GitHub repository} (\url{https://github.com/TomKellyGenetics/vioplotx}).
 
-The \texttt{vioplotx} package provides an alternative visualisation (of continuous variables against categories) to the more familiar boxplot, showing variability of the data by the width of the plots. As demonstrated in Figure~\ref{fig:vioplot}, this version enables separate plotting parameters for each violin with vector inputs for colour, shape, and size of various elements of the median point, central boxplot, borders, and fill colour for the violin. Scaling violin width to adjust violin area and splitting data by a second categorical variable is also enabled. This function is intended to be backwards compatible with the inputs of \texttt{vioplot} (applying scalar inputs across all violins) and \texttt{boxplot} (by enabling formula inputs as an S3 method). Each of these features has been demonstrated with examples in respective vignettes on the package \href{https://github.com/TomKellyGenetics/vioplotx}{GitHub repository} (\url{https://github.com/TomKellyGenetics/vioplotx}).
+The \texttt{heatmap.2x} function provides extensions for annotation colour bars for both the rows and columns (as shown in Figure~\ref{fig:heatmap.2x}). Multiple bars are enabled on both axes with matrix inputs (rather than single vector for \texttt{heatmap.2} \citep{gplots}) which facilitates additional plotting of gene and sample characteristics for comparison with correlation matrices, \glslink{gene expression}{expression} profiles, or pathway \glspl{metagene}. The annotation bar inputs correspond to their orientation on the plot, each colour bar is provided as a column for the row annotation on the left of the heatmap and as a row for the column annotation on top of the heatmap. Row and column annotation bars are labelled with the column or row names respectively. Additional parameters enable resizing of these annotation bar labels and control of reordering columns for when samples have been ordered in advance (e.g., ranked by a \gls{metagene} or split into groups clustered separately).  These features were used through this thesis and have been provided in a package \href{https://github.com/TomKellyGenetics/heatmap.2x}{GitHub repository} (\url{https://github.com/TomKellyGenetics/heatmap.2x}).
 
-The \texttt{heatmap.2x} function provides extensions for annotation colour bars for both the rows and columns (as shown in Figure~\ref{fig:heatmap.2x}). Multiple bars are enabled on both axes with matrix inputs (rather than single vector for \texttt{heatmap.2}) which facilitates additional plotting of gene and sample characteristics for comparison with correlation matrices, \glslink{gene expression}{expression} profiles, or pathway \glspl{metagene}. The annotation bar inputs correspond to their orientation on the plot, each colour bar is provided as a column for the row annotation on the left of the heatmap and as a row for the column annotation on top of the heatmap. Row and column annotation bars are labelled with the column or row names respectively. Additional parameters enable resizing of these annotation bar labels and control of reordering columns for when samples have been ordered in advance (e.g., ranked by a \gls{metagene} or split into groups clustered separately).  These features were used through this thesis and have been provided in a package \href{https://github.com/TomKellyGenetics/heatmap.2x}{GitHub repository} (\url{https://github.com/TomKellyGenetics/heatmap.2x}).
-
-\begin{figure*}[!p]
+\begin{figure*}[!thb]
 %\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
 %
         \subcaptionbox{Customised violin plot}{%
             \label{fig:vioplot:first}
-            \includegraphics[width=0.45\textwidth]{{"vioplot1".png}}
+            \includegraphics[width=0.35\textwidth]{{"vioplot1".png}}
         }%
         \subcaptionbox{Split violin plot}{%
             \label{fig:vioplot:second}
-            \includegraphics[width=0.45\textwidth]{{"vioplot2".png}}
+            \includegraphics[width=0.35\textwidth]{{"vioplot2".png}}
         }%
         \end{center}
    \caption[Demonstration of violin plots with custom features]{\small \textbf{Demonstration of violin plots with custom features.} An example of the \texttt{iris} dataset is plotted to show the custom features of the \texttt{vioplotx} package including (a) individual colour, shape and size parameters of each violin, scaling violin widths by area, and (b) splitting violins to compare subsets of data.}
@@ -759,11 +759,11 @@ The \texttt{heatmap.2x} function provides extensions for annotation colour bars 
 %\end{mdframed}
 \end{figure*}
 
-\begin{figure*}[!p]
+\begin{figure*}[!thb]
 %\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
-            \includegraphics[width=0.9 \textwidth]{{"heatmap2x".png}}
+            \includegraphics[width=0.75 \textwidth]{{"heatmap2x".png}}
         \end{center}
    \caption[Demonstration of annotated heatmap]{\small \textbf{Demonstration of annotated heatmap}. The example heatmap depicts the additional row and column annotation bars enabled by \texttt{heatmap.2x}, extending the features of \texttt{gplots} with backwards compatible inputs.}
 %}
@@ -783,12 +783,12 @@ The \texttt{graphsim} package implements the procedure for simulating \gls{gene 
 The \texttt{plot.igraph} package provides the \texttt{plot\_directed} function, specifically developed for directed \glslink{graph}{graph} structures, to plot activating or inhibiting for each \glslink{edge}{edge} (as described in Section~\ref{methods:graphsim}). As shown in Figure~\ref{fig:simple_graph2}, this function supports separate plotting parameters for each \glslink{vertex}{node}, \glslink{vertex}{node} label, and \glslink{edge}{edge}. This includes colours of \glslink{vertex}{node} fill, border, label text, and \glspl{edge} and size of \glslink{vertex}{nodes}, \glslink{edge}{edge} widths, arrowhead lengths, and font size of labels. The  \texttt{state} parameter for assigning activating or inhibiting to each \glslink{edge}{edge} determines whether \glspl{edge} were depicted with 30\textdegree\ or 90\textdegree\ arrowheads. Colours are assigned separately so they may be customised. Vectorised parameters are applied across each \glslink{vertex}{node} or \glslink{edge}{edge}, whereas scalar parameters apply the same plotting parameters across them. The default layout function is \texttt{layout.fruchterman.reingold} but any layout function supported by \texttt{plot} function in \texttt{igraph} \citep{igraph} was compatible, such as \texttt{layout.kamada.kawai} used to implement the Kamada--Kawai algorithm \citep{Kamada1989} for graph plots throughout this thesis.
  
 
- \begin{figure*}[!htp]
+ \begin{figure*}[!htb]
 %\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
          \fbox{
-          \includegraphics[width=0.5\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph_inhibiting".png}}
+          \includegraphics[width=0.35\textwidth]{{"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/graph_sim_method/simple_graph_inhibiting".png}}
 	  }
 	  \end{center}
    \caption[Simulating \glslink{graph}{graph} structures]{\small \textbf{\textbf{Simulating \glslink{graph}{graph} structures.}} An example \glslink{graph}{graph} structure which has been used throughout demonstrating the simulation procedure from \glslink{graph}{graph} structures. Activating \glslink{edge}{links} are denoted by blue arrows and inhibiting \glslink{edge}{links} by red \glspl{edge}.}
@@ -797,7 +797,7 @@ The \texttt{plot.igraph} package provides the \texttt{plot\_directed} function, 
 %\end{mdframed}
 \end{figure*}
 
-\FloatBarrier
+%\FloatBarrier
  
 \subsubsection{Computing Information Centrality} 
 The \glspl{shortest path} of a network were computed by the \texttt{igraph} package \citep{igraph} which can be extended to calculate the network efficiency but was not provided by the package itself (ss described in Section~\ref{methods:network_metrics}). The ``\gls{information centrality}'' of a \glslink{vertex}{vertex} is computed as the relative change in the network efficiency when the \glslink{vertex}{vertex} is removed. \Gls{information centrality} is calculated iteratively for each \glslink{vertex}{node} and the sum of \gls{information centrality} for each \glslink{vertex}{vertex} is the \gls{information centrality} for the network. These metrics were released in the \texttt{info.centrality} package (\url{https://github.com/TomKellyGenetics/info.centrality}).
