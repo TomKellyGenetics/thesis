@@ -51,7 +51,7 @@
 \contentsline {subsection}{\numberline {2.2.2}Sample Triage}{40}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Metagenes and the Singular Value Decomposition}{41}{subsection.2.2.3}
 \contentsline {subsection}{\numberline {2.2.4}Candidate Triage and Integration with Screen Data}{43}{subsection.2.2.4}
-\contentsline {section}{\numberline {2.3}Techniques}{43}{section.2.3}
+\contentsline {section}{\numberline {2.3}Techniques}{44}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Statistical Procedures and Tests}{44}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Gene Set Over-representation Analysis}{45}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Clustering}{45}{subsection.2.3.3}
@@ -132,63 +132,64 @@
 \contentsline {chapter}{\numberline {6}Simulation and Modelling of Synthetic Lethal Pathways}{147}{chapter.6}
 \contentsline {section}{\numberline {6.1}Synthetic Lethal Detection Methods}{148}{section.6.1}
 \contentsline {subsection}{\numberline {6.1.1}Performance of SLIPT and $\chi ^2$ across Quantiles}{149}{subsection.6.1.1}
-\contentsline {subsubsection}{\numberline {6.1.1.1}Correlated Query Genes affects Specificity}{152}{subsubsection.6.1.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Alternative Synthetic Lethal Detection Strategies}{154}{subsection.6.1.2}
-\contentsline {subsubsection}{\numberline {6.1.2.1}Correlation for Synthetic Lethal Detection}{155}{subsubsection.6.1.2.1}
-\contentsline {subsubsection}{\numberline {6.1.2.2}Testing for Bimodality with BiSEp}{156}{subsubsection.6.1.2.2}
-\contentsline {section}{\numberline {6.2}Simulations with Graph Structures}{157}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Performance over Graph Structures}{158}{subsection.6.2.1}
-\contentsline {subsubsection}{\numberline {6.2.1.1}Simple Graph Structures}{158}{subsubsection.6.2.1.1}
-\contentsline {subsubsection}{\numberline {6.2.1.2}Constructed Graph Structures}{161}{subsubsection.6.2.1.2}
-\contentsline {subsection}{\numberline {6.2.2}Performance with Inhibitions}{163}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Synthetic Lethality across Graph Structures}{169}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Performance within a Large Simulated Datasets}{172}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Simulations in More Complex Graph Structures}{176}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Simulations over Pathway-based Graphs}{177}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Pathway Structures in a Large Simulated Datasets}{180}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Discussion}{183}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Simulation Procedure}{183}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Comparing Methods with Simulated Data}{184}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Design and Performance of SLIPT}{185}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Simulations from Graph Structures}{187}{subsection.6.4.4}
-\contentsline {section}{\numberline {6.5}Summary}{188}{section.6.5}
-\contentsline {chapter}{\numberline {7}Discussion}{189}{chapter.7}
-\contentsline {section}{\numberline {7.1}Synthetic Lethality and \textit {CDH1} Biology}{189}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Established Functions of \textit {CDH1}}{190}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}The Molecular Role of \textit {CDH1} in Cancer}{190}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Significance}{191}{section.7.2}
-\contentsline {subsection}{\numberline {7.2.1}Synthetic Lethality in the Genomic Era}{191}{subsection.7.2.1}
-\contentsline {subsection}{\numberline {7.2.2}Clinical Interventions based on Synthetic Lethality}{193}{subsection.7.2.2}
-\contentsline {section}{\numberline {7.3}Future Directions}{194}{section.7.3}
-\contentsline {section}{\numberline {7.4}Conclusions}{196}{section.7.4}
-\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{198}{section.7.4}
-\contentsline {chapter}{\numberline {A}Sample Quality}{222}{appendix.A}
-\contentsline {section}{\numberline {A.1}Sample Correlation}{222}{section.A.1}
-\contentsline {section}{\numberline {A.2}Replicate Samples in TCGA Breast Cancer Data}{224}{section.A.2}
-\contentsline {chapter}{\numberline {B}Software Used for Thesis}{228}{appendix.B}
-\contentsline {chapter}{\numberline {C}Mutation Analysis in Breast Cancer}{237}{appendix.C}
-\contentsline {section}{\numberline {C.1}Synthetic Lethal Genes and Pathways}{237}{section.C.1}
-\contentsline {section}{\numberline {C.2}Synthetic Lethal Expression Profiles}{240}{section.C.2}
-\contentsline {section}{\numberline {C.3}Comparison to Primary Screen}{243}{section.C.3}
-\contentsline {subsection}{\numberline {C.3.1}Resampling Analysis}{245}{subsection.C.3.1}
-\contentsline {section}{\numberline {C.4}Compare SLIPT genes}{247}{section.C.4}
-\contentsline {chapter}{\numberline {D}Metagene Analysis}{249}{appendix.D}
-\contentsline {section}{\numberline {D.1}Pathway Signature Expression}{249}{section.D.1}
-\contentsline {section}{\numberline {D.2}Synthetic Lethal Reactome Metagenes}{253}{section.D.2}
-\contentsline {chapter}{\numberline {E}Intrinsic Subtyping}{254}{appendix.E}
-\contentsline {chapter}{\numberline {F}Stomach Expression Analysis}{256}{appendix.F}
-\contentsline {section}{\numberline {F.1}Synthetic Lethal Genes and Pathways}{256}{section.F.1}
-\contentsline {section}{\numberline {F.2}Comparison to Primary Screen}{260}{section.F.2}
-\contentsline {subsection}{\numberline {F.2.1}Resampling Analysis}{262}{subsection.F.2.1}
-\contentsline {section}{\numberline {F.3}Metagene Analysis}{264}{section.F.3}
-\contentsline {chapter}{\numberline {G}Synthetic Lethal Genes in Pathways}{265}{appendix.G}
-\contentsline {chapter}{\numberline {H}Network Analysis for Mutation SLIPT}{272}{appendix.H}
-\contentsline {chapter}{\numberline {I}Pathway Structure for Mutation SLIPT}{275}{appendix.I}
-\contentsline {chapter}{\numberline {J}Performance of SLIPT and $\chi ^2$}{277}{appendix.J}
-\contentsline {section}{\numberline {J.1}Correlated Query Genes affects Specificity}{283}{section.J.1}
-\contentsline {chapter}{\numberline {K}Simulations on Graph Structures}{289}{appendix.K}
-\contentsline {subsection}{\numberline {K.0.1}Simulations from Inhibiting Graph Structures}{290}{subsection.K.0.1}
-\contentsline {section}{\numberline {K.1}Simulation across Graph Structures}{293}{section.K.1}
-\contentsline {section}{\numberline {K.2}Simulations from Complex Graph Structures}{297}{section.K.2}
-\contentsline {subsection}{\numberline {K.2.1}Simulations from Complex Inhibiting Graphs}{300}{subsection.K.2.1}
-\contentsline {section}{\numberline {K.3}Simulations from Pathway Graph Structures}{306}{section.K.3}
+\contentsline {subsubsection}{\numberline {6.1.1.1}Correlated Query Genes affects Specificity}{151}{subsubsection.6.1.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Alternative Synthetic Lethal Detection Strategies}{153}{subsection.6.1.2}
+\contentsline {subsubsection}{\numberline {6.1.2.1}Correlation for Synthetic Lethal Detection}{154}{subsubsection.6.1.2.1}
+\contentsline {subsubsection}{\numberline {6.1.2.2}Testing for Bimodality with BiSEp}{154}{subsubsection.6.1.2.2}
+\contentsline {section}{\numberline {6.2}Simulations with Graph structures}{156}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Performance over Graph structures}{157}{subsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.1.1}Simple Graph structures}{157}{subsubsection.6.2.1.1}
+\contentsline {subsubsection}{\numberline {6.2.1.2}Constructed Graph structures}{160}{subsubsection.6.2.1.2}
+\contentsline {subsection}{\numberline {6.2.2}Performance with Inhibitions}{160}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Synthetic Lethality across Graph structures}{166}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Performance within a Large Simulated Dataset}{169}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Simulations in More Complex Graph structures}{173}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Simulations over Pathway-based Graphs}{174}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Pathway Structures in a Large Simulated Dataset}{176}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Discussion}{178}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Simulation Procedure}{178}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Comparing Methods with Simulated Data}{179}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Design and Performance of SLIPT}{180}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Simulations from Graph structures}{182}{subsection.6.4.4}
+\contentsline {section}{\numberline {6.5}Summary}{183}{section.6.5}
+\contentsline {chapter}{\numberline {7}Discussion}{185}{chapter.7}
+\contentsline {section}{\numberline {7.1}Synthetic Lethality and \textit {CDH1} Biology}{185}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Established Functions of \textit {CDH1}}{186}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}The Molecular Role of \textit {CDH1} in Cancer}{186}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Significance}{187}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Synthetic Lethality in the Genomic Era}{187}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Clinical Interventions based on Synthetic Lethality}{189}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Future Directions}{190}{section.7.3}
+\contentsline {section}{\numberline {7.4}Conclusions}{192}{section.7.4}
+\contentsline {chapter}{\hbox to\@tempdima {\hfil }Bibliography}{194}{section.7.4}
+\contentsline {chapter}{\numberline {A}Sample Quality}{218}{appendix.A}
+\contentsline {section}{\numberline {A.1}Sample Correlation}{218}{section.A.1}
+\contentsline {section}{\numberline {A.2}Replicate Samples in TCGA Breast Cancer Data}{220}{section.A.2}
+\contentsline {chapter}{\numberline {B}Software Used for Thesis}{224}{appendix.B}
+\contentsline {chapter}{\numberline {C}Mutation Analysis in Breast Cancer}{233}{appendix.C}
+\contentsline {section}{\numberline {C.1}Synthetic Lethal Genes and Pathways}{233}{section.C.1}
+\contentsline {section}{\numberline {C.2}Synthetic Lethal Expression Profiles}{236}{section.C.2}
+\contentsline {section}{\numberline {C.3}Comparison to Primary Screen}{239}{section.C.3}
+\contentsline {subsection}{\numberline {C.3.1}Resampling Analysis}{241}{subsection.C.3.1}
+\contentsline {section}{\numberline {C.4}Compare SLIPT genes}{243}{section.C.4}
+\contentsline {chapter}{\numberline {D}Metagene Analysis}{245}{appendix.D}
+\contentsline {section}{\numberline {D.1}Pathway Signature Expression}{245}{section.D.1}
+\contentsline {section}{\numberline {D.2}Synthetic Lethal Reactome Metagenes}{249}{section.D.2}
+\contentsline {chapter}{\numberline {E}Intrinsic Subtyping}{250}{appendix.E}
+\contentsline {chapter}{\numberline {F}Stomach Expression Analysis}{252}{appendix.F}
+\contentsline {section}{\numberline {F.1}Synthetic Lethal Genes and Pathways}{252}{section.F.1}
+\contentsline {section}{\numberline {F.2}Comparison to Primary Screen}{256}{section.F.2}
+\contentsline {subsection}{\numberline {F.2.1}Resampling Analysis}{258}{subsection.F.2.1}
+\contentsline {section}{\numberline {F.3}Metagene Analysis}{260}{section.F.3}
+\contentsline {chapter}{\numberline {G}Synthetic Lethal Genes in Pathways}{261}{appendix.G}
+\contentsline {chapter}{\numberline {H}Network Analysis for Mutation SLIPT}{268}{appendix.H}
+\contentsline {chapter}{\numberline {I}Pathway Structure for Mutation SLIPT}{271}{appendix.I}
+\contentsline {chapter}{\numberline {J}Performance of SLIPT and $\chi ^2$}{273}{appendix.J}
+\contentsline {section}{\numberline {J.1}Correlated Query Genes affects Specificity}{279}{section.J.1}
+\contentsline {chapter}{\numberline {K}Simulations on Graph Structures}{285}{appendix.K}
+\contentsline {section}{\numberline {K.1}Simulations from Inhibiting Graph Structures}{286}{section.K.1}
+\contentsline {section}{\numberline {K.2}Simulation across Graph Structures}{289}{section.K.2}
+\contentsline {section}{\numberline {K.3}Simulations within a Large Simulated Dataset}{293}{section.K.3}
+\contentsline {section}{\numberline {K.4}Simulations from Complex Graph Structures}{294}{section.K.4}
+\contentsline {section}{\numberline {K.5}Simulations from Complex Inhibiting Graphs}{297}{section.K.5}
+\contentsline {section}{\numberline {K.6}Simulations from Pathway Graph Structures}{303}{section.K.6}
