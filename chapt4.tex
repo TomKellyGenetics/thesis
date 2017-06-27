@@ -4,7 +4,8 @@
 Having identified key \glspl{pathway} implicated in \gls{synthetic lethal} genetic interactions with \textit{CDH1} (in Chapter~\ref{chap:SLIPT}), these were investigated in this Chapter for the \gls{synthetic lethal} genes within them, and for their relationships to \glslink{graph}{pathway} structure. This chapter will focus on the Reactome biological \glspl{pathway} detected across analyses in Chapter~\ref{chap:SLIPT}. 
 %
 %The \gls{synthetic lethal} genes identified were further examined within the context of biological \glspl{pathway}. 
-Specifically, investigations were performed to determine whether \gls{synthetic lethal} candidates, detected by \gls{SLIPT} or \gls{siRNA}, exhibited differences with respect to metrics of \glslink{graph}{pathway} structure of network connectivity and importance (as described in Sections~\ref{methods:network_metrics} and~\ref{methods:igraph_extensions}). The relationships between \gls{synthetic lethal} candidates, detected by either approach, were also examined to determine whether \gls{SLIPT} candidate genes were upstream or downstream \gls{siRNA} candidate genes. These directional relationships were tested by resampling (as described in Sections~\ref{methods:pathway_str} and~\ref{methods:network_permutation}) and comparisons to the \gls{pathway} hierarchical score based on biological context (as derived in Section~\ref{methods:pathway_rank}). 
+Specifically, investigations were performed to determine whether \gls{synthetic lethal} candidates, detected by \gls{SLIPT} or \gls{siRNA}, exhibited differences with respect to metrics of \glslink{graph}{pathway} structure of network connectivity and importance (as described in Sections~\ref{methods:network_metrics} and~\ref{methods:igraph_extensions}). The relationships between \gls{synthetic lethal} candidates, detected by either approach, were also examined to determine whether \gls{SLIPT} candidate genes were upstream or downstream \gls{siRNA} candidate genes %. These directional relationships were tested
+by resampling (as described in Sections~\ref{methods:pathway_str} and~\ref{methods:network_permutation}). % and comparisons to the \gls{pathway} hierarchical score based on biological context (as derived in Section~\ref{methods:pathway_rank}). 
 %
 %The \gls{pathway} relationships between \gls{SLIPT} and \gls{siRNA} \gls{synthetic lethal} gene candidate partners for \textit{CDH1} were examined within the biological \glspl{pathway} identified previously (in Chapter~\ref{chap:SLIPT}).
 Together these investigations into structural relationships demonstrate how a combination of network biology and statistical techniques can be performed with genes identified by a \gls{bioinformatics} analysis.
@@ -32,7 +33,7 @@ The PI3K \gls{pathway} is well characterised and has an established direction of
 \begin{figure*}[!tb]
 %\begin{mdframed}
   \begin{center}
-  \resizebox{1 \textwidth}{!}{
+  \resizebox{0.8 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     %\fbox{
     \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3k_exprSL2".pdf}}
@@ -54,57 +55,30 @@ This disparity between \gls{SLIPT} and \gls{siRNA} gene candidates \gls{syntheti
 
 \subsection{The Extracellular Matrix}  \label{chapt4:SL_Genes_ECM}
 
-The extracellular \glspl{pathway} ``elastic fibre formation'' and ``fibrin clot formation'' (shown in Figures~\ref{fig:SL_Pathway_ElasticFibre} and~\ref{fig:SL_Pathway_FibrinFormation} respectively) were both supported across analyses (in Chapter~\ref{chap:SLIPT}). These \glspl{pathway} were identified by both \gls{SLIPT} (for \gls{TCGA} breast cancer) and \gls{siRNA} gene candidates as they had significant over-representation and resampling analyses.
+The extracellular \glspl{pathway} ``elastic fibre formation'' and ``fibrin clot formation'' (shown in Appendix Figures~\ref{fig:SL_Pathway_ElasticFibre} and~\ref{fig:SL_Pathway_FibrinFormation} respectively) were both supported across analyses (in Chapter~\ref{chap:SLIPT}). These \glspl{pathway} were identified by both \gls{SLIPT} (for \gls{TCGA} breast cancer) and \gls{siRNA} gene candidates as they had significant over-representation and resampling analyses.
 
-\begin{figure*}[!tb]
-%\begin{mdframed}
-  \begin{center}
-  \resizebox{1 \textwidth}{!}{
-    %\input{{{"SL_Model.pdf_tex"}}
-    %\fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_ElasticFibre_exprSL2".pdf}}
-   %}
-   }
-   \end{center}
-   \caption[Synthetic lethality in Elastic Fibre Formation]{\small \textbf{Synthetic lethality in Elastic Fibre Formation.} The Reactome Elastic Fibre Formation \gls{pathway} with \gls{synthetic lethal} candidates coloured as shown in the legend.
-}
-\label{fig:SL_Pathway_ElasticFibre}
-%\end{mdframed}
-\end{figure*}
+%\label{fig:SL_Pathway_ElasticFibre}
 
-Particularly for elastic fibres (Figure~\ref{fig:SL_Pathway_ElasticFibre}), the vast majority of genes were detected by either approach, in addition to a significant proportion of genes detected by both approaches (as determined in Section~\ref{chapt3:compare_pathway}). The genes detected by both approaches also appeared to have a non-random distribution in the network, with \textit{TFGB1}, \textit{ITGB8}, and \textit{MFAP2} exhibiting high connectivity, and having a central role in their respective \gls{pathway} modules. In addition to a structural role in the extracellular matrix and connective tissue (including the tumour microenvironment), these proteins including Furin, TGF$\beta$, and BMP, are also involved in responses to endocrine signals and interact with the cellular receptors for signalling \glspl{pathway}. Therefore it is plausible that \textit{CDH1} deficient tumours will be subject to \gls{non-oncogene addiction} to the extracellular environment and growth signals arising from this \gls{pathway}. The \glslink{graph}{pathway} structure also indicated that the genes detected by \gls{siRNA} (or by both approaches) may be be downstream of those detected by \gls{SLIPT}, in addition to whether connectivity or \gls{centrality} is higher for \gls{synthetic lethal} candidates than other genes in the \gls{pathway}.
+Particularly for elastic fibres (Appendix Figure~\ref{fig:SL_Pathway_ElasticFibre}), the vast majority of genes were detected by either approach, in addition to a significant proportion of genes detected by both approaches (as determined in Section~\ref{chapt3:compare_pathway}). The genes detected by both approaches also appeared to have a non-random distribution in the network, with \textit{TFGB1}, \textit{ITGB8}, and \textit{MFAP2} exhibiting high connectivity, and having a central role in their respective \gls{pathway} modules. In addition to a structural role in the extracellular matrix and connective tissue (including the tumour microenvironment), these proteins including Furin, TGF$\beta$, and BMP, are also involved in responses to endocrine signals and interact with the cellular receptors for signalling \glspl{pathway}. Therefore it is plausible that \textit{CDH1} deficient tumours will be subject to \gls{non-oncogene addiction} to the extracellular environment and growth signals arising from this \gls{pathway}. The \glslink{graph}{pathway} structure also indicated that the genes detected by \gls{siRNA} (or by both approaches) may be be downstream of those detected by \gls{SLIPT}, in addition to whether connectivity or \gls{centrality} is higher for \gls{synthetic lethal} candidates than other genes in the \gls{pathway}.
 
-Genes detected as \gls{synthetic lethal} partners of \textit{CDH1} by \gls{SLIPT} or \gls{siRNA} screening were also common in the Fibrin clot formation \gls{pathway} (shown in Figure~\ref{fig:SL_Pathway_FibrinFormation}). This is consistent with the established pleiotropic role of \textit{CDH1} in regulating fibrin clotting. It is also notable that the genes detected by either method appear to be highly connected such as \textit{C1QBP} \textit{KNG1}, \textit{F8}, \textit{F10}, \textit{F12}, \textit{F13A}, and \textit{PROC} (including many of the coagulation factors). \Gls{synthetic lethal} candidates also include \textit{SERPINE2} and \textit{PRCP}, which only affect downstream genes, in addition to \textit{PROCR} and \textit{VWF}, which are only affected by upstream genes. 
+Genes detected as \gls{synthetic lethal} partners of \textit{CDH1} by \gls{SLIPT} or \gls{siRNA} screening were also common in the Fibrin clot formation \gls{pathway} (shown in Appendix  Figure~\ref{fig:SL_Pathway_FibrinFormation}). This is consistent with the established pleiotropic role of \textit{CDH1} in regulating fibrin clotting. It is also notable that the genes detected by either method appear to be highly connected such as \textit{C1QBP} \textit{KNG1}, \textit{F8}, \textit{F10}, \textit{F12}, \textit{F13A}, and \textit{PROC} (including many of the coagulation factors). \Gls{synthetic lethal} candidates also include \textit{SERPINE2} and \textit{PRCP}, which only affect downstream genes, in addition to \textit{PROCR} and \textit{VWF}, which are only affected by upstream genes. 
 
-\begin{figure*}[!tb]
-%\begin{mdframed}
-  \begin{center}
-  \resizebox{1 \textwidth}{!}{
-    %\input{{{"SL_Model.pdf_tex"}}
-    %\fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_FibrinFormation_exprSL2".pdf}}
-   %}
-   }
-   \end{center}
-   \caption[Synthetic lethality in Fibrin Clot Formation]{\small \textbf{Synthetic lethality in Fibrin Clot Formation.} The Reactome Fibrin Clot Formation \gls{pathway} with \gls{synthetic lethal} candidates coloured as shown in the legend.
-}
-\label{fig:SL_Pathway_FibrinFormation}
-%\end{mdframed}
-\end{figure*}
+%\label{fig:SL_Pathway_FibrinFormation}
 
 
-Many of these genes are involved in the larger Extracellular Matrix \gls{pathway} (shown in Appendix Figure~\ref{fig:SL_Pathway_ExtracellularMatrix}), including many of the \gls{synthetic lethal} candidates discussed for elastic fibres. The number of \gls{SLIPT} candidate genes outnumbers those identified by \gls{siRNA}, as expected from an isolated cell model. However, the endocrine response genes (e.g., \textit{TGFB1} and \textit{LTBP4}) which are potentially artifacts of the cell line growth process were replicated with \gls{SLIPT} analysis in patient tumours (TCGA breast cancer data). There is also additional support for \gls{synthetic lethal} genes (e.g., \textit{ITGB2}, \textit{MFAP2}, and \textit{SPARC}) being highly connected networks hubs of the \gls{pathway}. The complexity of the extracellular matrix \gls{pathway} lends credence to the need for formal network analysis approaches to interpret the \glslink{graph}{pathway} structure of \gls{synthetic lethal} candidates. Furthermore, statistical approaches are needed to determine whether the apparent structural relationships between \gls{synthetic lethal} candidates could have occurred by chance 
 
-\FloatBarrier
+Many of these genes are involved in the Extracellular Matrix \gls{pathway} (shown in Appendix Figure~\ref{fig:SL_Pathway_ExtracellularMatrix}), including many of the \gls{synthetic lethal} candidates discussed for elastic fibres. The number of \gls{SLIPT} candidate genes outnumbers those identified by \gls{siRNA}, as expected from an isolated cell model. However, the endocrine response genes (e.g., \textit{TGFB1} and \textit{LTBP4}) which are potentially artifacts of the cell line growth process were replicated with \gls{SLIPT} analysis in patient tumours (TCGA breast cancer data). There is also additional support for \gls{synthetic lethal} genes (e.g., \textit{ITGB2}, \textit{MFAP2}, and \textit{SPARC}) being highly connected networks hubs of the \gls{pathway}. The complexity of the extracellular matrix \gls{pathway} lends credence to the need for formal network analysis approaches to interpret the \glslink{graph}{pathway} structure of \gls{synthetic lethal} candidates. Furthermore, statistical approaches are needed to determine whether the apparent structural relationships between \gls{synthetic lethal} candidates could have occurred by chance 
+
+%\FloatBarrier
 
 \subsection{G Protein Coupled Receptors}  \label{chapt4:SL_Genes_GPCR}
 
-\acrfull{GPCR} \glspl{pathway} are highly complex (as shown in Figure~\ref{fig:SL_Pathway_GPCR} and Appendix Figure~\ref{fig:SL_Pathway_GPCR_Downstream}). Many of genes in these \glspl{pathway} were \gls{synthetic lethal} candidates, detected by either \gls{SLIPT} or \gls{siRNA} screening, including genes frequently detected by both approaches, consistent with these \glspl{pathway} being supported by prior analyses (in Sections~\ref{chapt3:compare_pathway} and~\ref{chapt3:compare_pathway_perm}). \Gls{synthetic lethal} candidates include the Phosphodiesterase (PDE) and Calmodulin genes (as discussed in Section~\ref{chapt4:SL_Genes_GPCR}) in addition to others such as the regulators of RGS, chemokine receptors (CXCR), Janus Kinase (JAK), and the Ras Homolog Family (RHO) genes. These are important regulatory signalling \glspl{pathway} necessary for cellular growth and cancer proliferation. Thus the \gls{GPCR} \glspl{pathway} (and downstream PI3K/AKT signals) are a potentially actionable vulnerability against \textit{CDH1} deficient cancers, particularly since many existing drug targets are in these signalling \glspl{pathway}, some of which have been experimentally validated \citep{Telford2015}. While statistically significant numbers of genes in \gls{GCPR} \glspl{pathway} were detected by both approaches (in Sections~\ref{chapt3:compare_pathway} and~\ref{chapt3:compare_pathway_perm}), the complexity of \gls{GPCR} networks (containing hundreds of genes) further support the needs for a rational network-based approach to the relationships between \gls{SLIPT} and experimental candidates.
+\acrfull{GPCR} \glspl{pathway} are highly complex (as shown in Figure~\ref{fig:SL_Pathway_GPCR} and Appendix Figure~\ref{fig:SL_Pathway_GPCR_Downstream}). Many genes in these \glspl{pathway} were \gls{synthetic lethal} detected by either \gls{SLIPT} or \gls{siRNA} screening, including genes frequently detected by both approaches, consistent with these \glspl{pathway} being supported by prior analyses (in Sections~\ref{chapt3:compare_pathway} and~\ref{chapt3:compare_pathway_perm}). \Gls{synthetic lethal} candidates include the Phosphodiesterase (PDE) and Calmodulin genes (as discussed in Section~\ref{chapt4:SL_Genes_GPCR}) in addition to others such as the regulators of RGS, chemokine receptors (CXCR), Janus Kinase (JAK), and the Ras Homolog Family (RHO) genes. These are important regulatory signalling \glspl{pathway} necessary for cellular growth and cancer proliferation. Thus the \gls{GPCR} \glspl{pathway} (and downstream PI3K/AKT signals) are a potentially actionable vulnerability against \textit{CDH1} deficient cancers, particularly since many existing drug targets are in these signalling \glspl{pathway}, some of which have been experimentally validated \citep{Telford2015}. While statistically significant numbers of genes in \gls{GCPR} \glspl{pathway} were detected by both approaches (in Sections~\ref{chapt3:compare_pathway} and~\ref{chapt3:compare_pathway_perm}), the complexity of \gls{GPCR} networks (containing hundreds of genes) further support the needs for a rational network-based approach to the relationships between \gls{SLIPT} and experimental candidates.
 
-\begin{figure*}[!htbp]
+\begin{figure*}[!htb]
 %\begin{mdframed}
   \begin{center}
-  \resizebox{1 \textwidth}{!}{
+  \resizebox{0.8 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     %\fbox{
     \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_GPCR_exprSL2".png}}
@@ -152,7 +126,7 @@ There was no statistically significant effect of either computational or experim
 \begin{figure*}[!htb]
 %\begin{mdframed}
   \begin{center}
-  \resizebox{0.95 \textwidth}{!}{
+  \resizebox{0.75 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     %\fbox{
     \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_network_vertex_degree_stripchart2".pdf}}
@@ -169,7 +143,7 @@ There was no statistically significant effect of either computational or experim
 \caption{\acrshort{ANOVA} for synthetic lethality and vertex degree}
 \label{tab:SL_Pathway_GPCR_Vertex_Degree}
 \noindent\makebox[\textwidth][c]{%               %centering
-\resizebox{0.8 \textwidth}{!}{
+\resizebox{0.75 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccccc}
 \hline
@@ -216,7 +190,7 @@ and Appendix Table~\ref{tab:mtSL_Pathway_GPCR_InfoCent}). Thus neither method wa
 \begin{figure*}[!htb]
 %\begin{mdframed}
   \begin{center}
-  \resizebox{0.95 \textwidth}{!}{
+  \resizebox{0.75 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     %\fbox{
     \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_network_Info_Centrality(Log)_stripchart2".pdf}}
@@ -234,7 +208,7 @@ and Appendix Table~\ref{tab:mtSL_Pathway_GPCR_InfoCent}). Thus neither method wa
 \caption{\acrshort{ANOVA} for synthetic lethality and information centrality}
 \label{tab:SL_Pathway_GPCR_InfoCent}
 \noindent\makebox[\textwidth][c]{%               %centering
-\resizebox{0.8 \textwidth}{!}{
+\resizebox{0.75 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccccc}
 \hline
@@ -276,7 +250,7 @@ The genes detected by \gls{SLIPT} span the range of \gls{centrality} values of \
 \begin{figure*}[!htb]
 %\begin{mdframed}
   \begin{center}
-  \resizebox{0.95 \textwidth}{!}{
+  \resizebox{0.75 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     %\fbox{
     \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_network_pagerank_stripchart2".pdf}}
@@ -296,7 +270,7 @@ There was not a significant association between \gls{siRNA} candidates and PageR
 \caption{\acrshort{ANOVA} for synthetic lethality and PageRank centrality}
 \label{tab:SL_Pathway_GPCR_PageRank}
 \noindent\makebox[\textwidth][c]{%               %centering
-\resizebox{0.8 \textwidth}{!}{
+\resizebox{0.75 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccccc}
 \hline
@@ -590,11 +564,12 @@ A measure of \glslink{graph}{pathway} structure between individual \gls{SLIPT} a
 
 \section{Summary}
 
-Together these analyses of biological \glspl{pathway}, network metrics, and statistical procedures devised specifically for this purpose were applied to Reactome \glslink{graph}{pathway} structures to test whether structural relationships existed between \gls{synthetic lethal} candidates. Of particular interest was whether these relationships related to the differences between the computational (\gls{SLIPT}) and experimental (\gls{siRNA}) \gls{synthetic lethal} candidate partners of \textit{CDH1} (in the \glspl{pathway} discussed in Chapter~\ref{chap:SLIPT}).
+Together these analyses of biological \glspl{pathway}, network metrics, and statistical procedures devised specifically for this purpose were applied to Reactome \glslink{graph}{pathway} structures to test whether structural relationships existed between \gls{synthetic lethal} candidates. In particular, whether these relationships related to the differences between the computational (\gls{SLIPT}) and experimental (\gls{siRNA}) \gls{synthetic lethal} candidate partners of \textit{CDH1} (in the \glspl{pathway} discussed in Chapter~\ref{chap:SLIPT}).
 
-While biologically relevant relationships were observed in specific \glspl{pathway}, there were few detectable structural relationships between \gls{SLIPT} and \gls{siRNA} gene candidates, apart from structural relationships specific to G$_{\alpha i}$ signalling. In this \gls{pathway}, \gls{synthetic lethal} candidates did not exhibit significant differences in network connectivity or \gls{centrality} measures. These network analyses were also unable to ascertain whether the candidates detected by either method stratified into upstream and downstream genes on the \gls{pathway}. % and they likely do not.
-
-A statistical resampling procedure was applied to \gls{shortest path} analysis to test whether pairs of \gls{SLIPT} and \gls{siRNA} gene candidates were more likely to be upstream or downstream of each other. This approach did not detect many structural relationships in the \gls{synthetic lethal} \glspl{pathway} identified in Chapter~\ref{chap:SLIPT}. Overall, support for \glslink{graph}{pathway} structure between \gls{SLIPT} and \gls{siRNA} gene candidates was weak and the direction was inconsistent across \glspl{pathway}. Therefore \glslink{graph}{pathway} structure does not appear to generally account for the differences between the \gls{SLIPT} and \gls{siRNA} gene candidates, although it may apply in specific \glspl{pathway} as demonstrated with G$_{\alpha i}$ signalling. It was possible to detect some \gls{pathway} relationships between candidate genes in \gls{synthetic lethal} \glspl{pathway}, in addition to the significantly over-represented genes shared between \gls{SLIPT} and \gls{siRNA} (as identified in  Chapter~\ref{chap:SLIPT}).
+There were few detectable structural relationships between \gls{SLIPT} and \gls{siRNA} gene candidates with respect to network connectivity or \gls{centrality} measures G$_{\alpha i}$ signalling. Since network analyses were unable to ascertain whether the candidates detected by either method stratified into upstream and downstream genes, % and they likely do not.
+%
+a statistical resampling procedure was applied for \gls{shortest path} analysis between pairs of \gls{SLIPT} and \gls{siRNA} gene candidates. % were more likely to be upstream or downstream of each other.
+This approach did not detect many structural relationships in the \gls{synthetic lethal} \glspl{pathway} identified in Chapter~\ref{chap:SLIPT}. Overall, support for \glslink{graph}{pathway} structure between \gls{SLIPT} and \gls{siRNA} gene candidates was weak and the direction was inconsistent across \glspl{pathway}. Therefore \glslink{graph}{pathway} structure does not appear to generally account for the differences between the \gls{SLIPT} and \gls{siRNA} gene candidates. However, it may apply in specific \glspl{pathway}, as demonstrated with G$_{\alpha i}$ signalling. It was possible to detect some \gls{pathway} relationships between candidate genes in \gls{synthetic lethal} \glspl{pathway}, in addition to the significantly over-represented genes shared between \gls{SLIPT} and \gls{siRNA} (as identified in  Chapter~\ref{chap:SLIPT}).
 
 Furthermore, the resampling procedure demonstrated in this chapter is more widely applicable to gene states in \glslink{graph}{network} structures and may be of further utility in the analysis of biological \glspl{pathway} or networks. This approach was able to quantify structural relationships that were otherwise difficult to interpret and to conclusively exclude many potential relationships. In this respect, the network resampling methodology may also be applicable to triage of \glslink{targeted therapy}{therapeutic targets} for experimental validation.
 
