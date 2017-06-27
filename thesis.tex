@@ -36,11 +36,13 @@
 \usepackage{etex}
 \usepackage{etoolbox}
 
-\makeatletter
-\patchcmd{\@afterheading}%
-    {\clubpenalty \@M}{\clubpenalties 3 \@M \@M 0}{}{}
-\patchcmd{\@afterheading}%
-    {\clubpenalty \@clubpenalty}{\clubpenalties 2 \@clubpenalty 0}{}{}
+%%remove orphan rows/headers
+%\makeatletter
+%\patchcmd{\@afterheading}%
+%    {\clubpenalty \@M}{\clubpenalties 3 \@M \@M 0}{}{}
+%\patchcmd{\@afterheading}%
+%    {\clubpenalty \@clubpenalty}{\clubpenalties 2 \@clubpenalty 0}{}{}
+
 \makeatother
 \newif\ifabbreviation
 \pretocmd{\thebibliography}{\abbreviationfalse}{}{}
