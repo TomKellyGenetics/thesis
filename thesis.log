@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.6.13)  28 JUN 2017 10:48
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2017.6.13)  28 JUN 2017 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3111,25 +3111,29 @@ Package pdftex.def Info: sample_size_dist_exprSL_1M_Pub.png used on input line
 762.
 (pdftex.def)             Requested size: 802.99805pt x 802.99805pt.
  [107 <./sample_size_dist_exprSL_1M_Pub.png>] [108] [109] [110] [111] [112] [11
-3] [114] [115] [116] [117]
-Overfull \hbox (0.90825pt too wide) in paragraph at lines 1606--1607
-[]\OT1/cmr/m/n/12 The [][][]path-ways[][] de-tec-ted by both over-represent-ati
-on and res-ampling are the strongest
- []
+3] [114] [115]
+! Undefined control sequence.
+l.1590 ...ity of biological \glspl{pathway} \ceitp
+                                                  {Perou2000}, which are sub...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-[118] [119] [120])
+[116] [117] [118] [119])
 \openout2 = `chapt4.aux'.
 
  (./chapt4.tex
 Chapter 5.
-[121
+[120
 
 
 
 
 ]
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3k_exprSL2".pdf, id=1
-0224, 1192.455pt x 1192.455pt>
+0191, 1192.455pt x 1192.455pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3k_exprSL2".pdf 
 Graphic file (type pdf)
 
@@ -3138,8 +3142,8 @@ Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot
 _Pi3k_exprSL2".pdf used on input line 41.
 (pdftex.def)             Requested size: 1192.4521pt x 1192.4521pt.
 
-[122] [123 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3k_exprSL2.
-pdf>] [124]
+[121] [122 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3k_exprSL2.
+pdf>] [123]
 
 ! Package glossaries Error: Glossary entry `GCPR' has not been defined.
 
@@ -3154,7 +3158,7 @@ You need to define a glossary entry before you can use it.
 
 
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_GPCR_exprSL2".png, id=1
-0346, 1241.63875pt x 1241.63875pt>
+0313, 1241.63875pt x 1241.63875pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_GPCR_exprSL2".png 
 Graphic file (type png)
 
@@ -3163,10 +3167,10 @@ Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot
 _GPCR_exprSL2".png used on input line 86.
 (pdftex.def)             Requested size: 1241.63573pt x 1241.63573pt.
 
-[125] [126 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_GPCR_exprSL2.
-png (PNG copy)>] [127]
+[124] [125 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_GPCR_exprSL2.
+png (PNG copy)>] [126]
 <"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_network_ver
-tex_degree_stripchart2".pdf, id=10434, 578.16pt x 385.44pt>
+tex_degree_stripchart2".pdf, id=10401, 578.16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_networ
 k_vertex_degree_stripchart2".pdf Graphic file (type pdf)
 
@@ -3175,10 +3179,10 @@ _vertex_degree_stripchart2".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/Centrality
 _exprSL/GPCR_network_vertex_degree_stripchart2".pdf used on input line 134.
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
- [128 </home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_networ
+ [127 </home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_networ
 k_vertex_degree_stripchart2.pdf>]
 <"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_network_Inf
-o_Centrality(Log)_stripchart2".pdf, id=10504, 578.16pt x 385.44pt>
+o_Centrality(Log)_stripchart2".pdf, id=10470, 578.16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_networ
 k_Info_Centrality(Log)_stripchart2".pdf Graphic file (type pdf)
 
@@ -3188,10 +3192,10 @@ Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/Centrality
 _exprSL/GPCR_network_Info_Centrality(Log)_stripchart2".pdf used on input line 1
 98.
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
- [129] [130 </home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_
+ [128] [129 </home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_
 network_Info_Centrality(Log)_stripchart2.pdf>]
 <"/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_network_pag
-erank_stripchart2".pdf, id=10572, 578.16pt x 385.44pt>
+erank_stripchart2".pdf, id=10539, 578.16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_networ
 k_pagerank_stripchart2".pdf Graphic file (type pdf)
 
@@ -3200,9 +3204,9 @@ _pagerank_stripchart2".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/Centrality
 _exprSL/GPCR_network_pagerank_stripchart2".pdf used on input line 258.
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
- [131 </home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_networ
-k_pagerank_stripchart2.pdf>] [132]
-<"/home/tomkelly/Downloads/Pathway_Structure/test_GPCR_exprSL".pdf, id=10704, 5
+ [130 </home/tomkelly/Downloads/Pathway_Structure/Centrality_exprSL/GPCR_networ
+k_pagerank_stripchart2.pdf>] [131]
+<"/home/tomkelly/Downloads/Pathway_Structure/test_GPCR_exprSL".pdf, id=10670, 5
 78.16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/test_GPCR_exprSL".pdf Graphic
  file (type pdf)
@@ -3212,7 +3216,7 @@ Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/test_GPCR_
 exprSL".pdf used on input line 456.
 (pdftex.def)             Requested size: 209.4861pt x 139.65225pt.
 
-<"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL".pdf, id=10705, 5
+<"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL".pdf, id=10671, 5
 78.16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL".pdf Graphic
  file (type pdf)
@@ -3222,14 +3226,14 @@ Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_
 exprSL".pdf used on input line 459.
 (pdftex.def)             Requested size: 209.4861pt x 139.65225pt.
 
-[133] [134 </home/tomkelly/Downloads/Pathway_Structure/test_GPCR_exprSL.pdf> </
-home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL.pdf>] [135] [136]
-[137] [138] [139])
+[132] [133 </home/tomkelly/Downloads/Pathway_Structure/test_GPCR_exprSL.pdf> </
+home/tomkelly/Downloads/Pathway_Structure/test_PI3K_exprSL.pdf>] [134] [135]
+[136] [137] [138])
 \openout2 = `chapt5.aux'.
 
  (./chapt5.tex
 Chapter 6.
-[140
+[139
 
 
 
@@ -3251,9 +3255,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 27.
 
-[141]
+[140]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(5)".png, id=11094, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(5)".png, id=11061, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(5)".png Graphic file (type png)
 
@@ -3265,7 +3269,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png, id=11095, 602.25pt x 602.
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png, id=11062, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png Graphic file (type pn
@@ -3277,9 +3281,9 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161108/SL_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png us
 ed on input line 48.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
- [142]
+ [141]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png, id=11125, 602.25pt x 602.2
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png, id=11091, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png Graphic file (type png
@@ -3291,14 +3295,14 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161107/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png use
 d on input line 71.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
- [143 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
+ [142 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(5).png (PNG copy)> </home/tomkelly/Docum
 ents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Graph_10K_Graph5_ROC_SLI
-PT_v_ChiSq_v_nCor_Ally(5).png (PNG copy)>] [144 </home/tomkelly/Documents/PhD O
+PT_v_ChiSq_v_nCor_Ally(5).png (PNG copy)>] [143 </home/tomkelly/Documents/PhD O
 tago Uni/SL_Model/RUN_20161107/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_
 v_nCor_Ally(5).png (PNG copy)>]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png, id=11153, 602.2
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png, id=11119, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png Graphic fil
@@ -3312,7 +3316,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png, id=11154, 602.25
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png, id=11120, 602.25
 pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5)".png Graphic file
@@ -3324,12 +3328,12 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161107_query_cor/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5
 )".png used on input line 117.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
- [145 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
+ [144 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5).png (PNG copy)> 
 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mode
-l_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5).png (PNG copy)>] [146]
+l_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5).png (PNG copy)>] [145]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_Cor_randx/SL_Mod
-el_Test_Graph_10K_Graph4_ROC_Compare(1)_SLIPT_v_Cor".png, id=11232, 602.25pt x 
+el_Test_Graph_10K_Graph4_ROC_Compare(1)_SLIPT_v_Cor".png, id=11199, 602.25pt x 
 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_Cor_randx/S
 L_Model_Test_Graph_10K_Graph4_ROC_Compare(1)_SLIPT_v_Cor".png Graphic file (typ
@@ -3341,10 +3345,10 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_Cor_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(1)_SLIPT_v_Cor".pn
 g used on input line 165.
 (pdftex.def)             Requested size: 602.24852pt x 602.24852pt.
- [147] [148 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_Cor_r
+ [146] [147 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_Cor_r
 andx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(1)_SLIPT_v_Cor.png (PNG copy)>]
- [149]
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf, id=11359, 578.16
+ [148]
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf, id=11325, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf Graphic file
  (type pdf)
@@ -3354,7 +3358,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 1".pdf used on input line 278.
 (pdftex.def)             Requested size: 110.25443pt x 110.24852pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf, id=11360, 578.16
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf, id=11326, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2".pdf Graphic file
  (type pdf)
@@ -3365,7 +3369,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 110.25443pt x 110.24852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph1_ROC1_samplesx".png, id=11367, 602.25pt x 602.25pt>
+est_Graph_10K_Graph1_ROC1_samplesx".png, id=11333, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph1_ROC1_samplesx".png Graphic file (type png)
 
@@ -3377,7 +3381,7 @@ ine 323.
 (pdftex.def)             Requested size: 154.35889pt x 154.35742pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph1_ROC2_samplesx".png, id=11368, 602.25pt x 602.25pt>
+est_Graph_10K_Graph1_ROC2_samplesx".png, id=11334, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph1_ROC2_samplesx".png Graphic file (type png)
 
@@ -3396,7 +3400,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph1_AUC_samplesx".png, id=11371, 602.25pt x 602.25pt>
+est_Graph_10K_Graph1_AUC_samplesx".png, id=11337, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph1_AUC_samplesx".png Graphic file (type png)
 
@@ -3406,7 +3410,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph1_AUC_samplesx".png used on input li
 ne 335.
 (pdftex.def)             Requested size: 220.50885pt x 220.51323pt.
- [150]
+ [149]
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf Graphic file
  (type pdf)
 
@@ -3423,7 +3427,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph1_ROC_Compare_Graph2(1)".pdf, id=11409, 578.16pt x 578.16pt>
+est_Graph_10K_Graph1_ROC_Compare_Graph2(1)".pdf, id=11375, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph1_ROC_Compare_Graph2(1)".pdf Graphic file (type pdf)
 
@@ -3435,7 +3439,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 220.50885pt x 220.50587pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4_ROC1_samplesx".png, id=11421, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4_ROC1_samplesx".png, id=11387, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC1_samplesx".png Graphic file (type png)
 
@@ -3447,7 +3451,7 @@ ine 392.
 (pdftex.def)             Requested size: 154.35889pt x 154.35742pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4_ROC2_samplesx".png, id=11422, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4_ROC2_samplesx".png, id=11388, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC2_samplesx".png Graphic file (type png)
 
@@ -3458,7 +3462,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 ine 395.
 (pdftex.def)             Requested size: 154.35889pt x 154.35742pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf, id=11425, 578.16
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf, id=11391, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4".pdf Graphic file
  (type pdf)
@@ -3469,7 +3473,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4_AUC_samplesx".png, id=11426, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4_AUC_samplesx".png, id=11392, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4_AUC_samplesx".png Graphic file (type png)
 
@@ -3479,17 +3483,17 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph4_AUC_samplesx".png used on input li
 ne 404.
 (pdftex.def)             Requested size: 220.50885pt x 220.51323pt.
- [151 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1.pdf> </home/tomke
-lly/Documents/PhD Otago Uni/SL_Model/Graph2.pdf>] [152 </home/tomkelly/Document
+ [150 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1.pdf> </home/tomke
+lly/Documents/PhD Otago Uni/SL_Model/Graph2.pdf>] [151 </home/tomkelly/Document
 s/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph1_ROC1
 _samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_
 20161205_randx/SL_Model_Test_Graph_10K_Graph1_ROC2_samplesx.png (PNG copy)> </h
 ome/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_
-Graph_10K_Graph1_AUC_samplesx.png (PNG copy)>] [153 </home/tomkelly/Documents/P
+Graph_10K_Graph1_AUC_samplesx.png (PNG copy)>] [152 </home/tomkelly/Documents/P
 hD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph1_ROC_Com
 pare_Graph2(1).pdf>]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph1i_ROC1_samplesx".png, id=11494, 602.25pt x 602.25pt>
+est_Graph_10K_Graph1i_ROC1_samplesx".png, id=11460, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph1i_ROC1_samplesx".png Graphic file (type png)
 
@@ -3501,7 +3505,7 @@ line 433.
 (pdftex.def)             Requested size: 154.35889pt x 154.35742pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph1i_ROC2_samplesx".png, id=11495, 602.25pt x 602.25pt>
+est_Graph_10K_Graph1i_ROC2_samplesx".png, id=11461, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph1i_ROC2_samplesx".png Graphic file (type png)
 
@@ -3512,7 +3516,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 line 436.
 (pdftex.def)             Requested size: 154.35889pt x 154.35742pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1i".pdf, id=11498, 578.1
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1i".pdf, id=11464, 578.1
 6pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1i".pdf Graphic fil
 e (type pdf)
@@ -3523,7 +3527,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph1i_AUC_samplesx".png, id=11499, 602.25pt x 602.25pt>
+est_Graph_10K_Graph1i_AUC_samplesx".png, id=11465, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph1i_AUC_samplesx".png Graphic file (type png)
 
@@ -3533,12 +3537,12 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph1i_AUC_samplesx".png used on input l
 ine 445.
 (pdftex.def)             Requested size: 220.50885pt x 220.51323pt.
- [154 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
+ [153 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documen
 ts/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph4_ROC
 2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Gra
 ph4.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL
-_Model_Test_Graph_10K_Graph4_AUC_samplesx.png (PNG copy)>] [155 </home/tomkelly
+_Model_Test_Graph_10K_Graph4_AUC_samplesx.png (PNG copy)>] [154 </home/tomkelly
 /Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Gr
 aph1i_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_
 Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph1i_ROC2_samplesx.png (PNG
@@ -3560,7 +3564,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph1_ROC_Compare(1)".pdf, id=11551, 578.16pt x 578.16pt>
+est_Graph_10K_Graph1_ROC_Compare(1)".pdf, id=11518, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph1_ROC_Compare(1)".pdf Graphic file (type pdf)
 
@@ -3583,7 +3587,7 @@ control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
 
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf, id=11563, 578.
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf, id=11530, 578.
 16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2".pdf Graphic fi
 le (type pdf)
@@ -3640,7 +3644,7 @@ If that doesn't work, type  X <return>  to quit.
 
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4i2_AUC_samplesx".png, id=11564, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4i2_AUC_samplesx".png, id=11531, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4i2_AUC_samplesx".png Graphic file (type png)
 
@@ -3696,11 +3700,11 @@ section about errors.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-[156]
+[155]
 Overfull \vbox (50.04178pt too high) has occurred while \output is active []
 
 
-[157 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mod
+[156 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mod
 el_Test_Graph_10K_Graph1_ROC_Compare(1).pdf> </home/tomkelly/Documents/PhD Otag
 o Uni/SL_Model/Graph4i2.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/R
 UN_20161205_randx/SL_Model_Test_Graph_10K_Graph4i2_AUC_samplesx.png (PNG copy)>
@@ -3784,7 +3788,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 4".pdf used on input line 537.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i".pdf, id=11596, 578.1
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i".pdf, id=11562, 578.1
 6pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i".pdf Graphic fil
 e (type pdf)
@@ -3802,7 +3806,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph4_ROC_Compare(1)".pdf, id=11597, 578.16pt x 578.16pt>
+est_Graph_10K_Graph4_ROC_Compare(1)".pdf, id=11563, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC_Compare(1)".pdf Graphic file (type pdf)
 
@@ -3814,7 +3818,7 @@ line 551.
 (pdftex.def)             Requested size: 209.4861pt x 209.47838pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph4_ROC_Compare(4)".pdf, id=11598, 578.16pt x 578.16pt>
+est_Graph_10K_Graph4_ROC_Compare(4)".pdf, id=11564, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC_Compare(4)".pdf Graphic file (type pdf)
 
@@ -3824,11 +3828,11 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(4)".pdf used on input 
 line 555.
 (pdftex.def)             Requested size: 209.4861pt x 209.47838pt.
- [158] [159 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i.pdf> </hom
+ [157] [158 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i.pdf> </hom
 e/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Gr
 aph_10K_Graph4_ROC_Compare(1).pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_M
 odel/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(4).pdf>]
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D".pdf, id=11669, 578.1
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D".pdf, id=11636, 578.1
 6pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D".pdf Graphic fil
 e (type pdf)
@@ -3838,7 +3842,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 4D".pdf used on input line 591.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD".pdf, id=11670, 578.
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD".pdf, id=11637, 578.
 16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4iD".pdf Graphic fi
 le (type pdf)
@@ -3849,7 +3853,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf, id=11671, 578.16pt
+del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf, id=11638, 578.16pt
  x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(4)".pdf Graphic file (
@@ -3863,7 +3867,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 209.4861pt x 209.47838pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf, id=11672, 578.16p
+del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf, id=11639, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)".pdf Graphic file 
@@ -3875,13 +3879,13 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(4)
 ".pdf used on input line 602.
 (pdftex.def)             Requested size: 209.4861pt x 209.47838pt.
- [160]
-[161 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D.pdf> </home/tomke
+ [159]
+[160 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4D.pdf> </home/tomke
 lly/Documents/PhD Otago Uni/SL_Model/Graph4iD.pdf> </home/tomkelly/Documents/Ph
 D Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4_ROC_
 samples_SLstry_vioplot(4).pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model
 //RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_viop
-lot(4).pdf>] [162]
+lot(4).pdf>] [161]
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph1".pdf Graphic file
  (type pdf)
 
@@ -3898,7 +3902,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph1_ROC_Compare(2)".pdf, id=11810, 578.16pt x 578.16pt>
+est_Graph_10K_Graph1_ROC_Compare(2)".pdf, id=11776, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph1_ROC_Compare(2)".pdf Graphic file (type pdf)
 
@@ -3910,7 +3914,7 @@ line 746.
 (pdftex.def)             Requested size: 209.4861pt x 209.47838pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph2_ROC_Compare(2)".pdf, id=11811, 578.16pt x 578.16pt>
+est_Graph_10K_Graph2_ROC_Compare(2)".pdf, id=11777, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph2_ROC_Compare(2)".pdf Graphic file (type pdf)
 
@@ -3936,7 +3940,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph4_ROC_Compare(2)".pdf, id=11820, 578.16pt x 578.16pt>
+est_Graph_10K_Graph4_ROC_Compare(2)".pdf, id=11786, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC_Compare(2)".pdf Graphic file (type pdf)
 
@@ -3948,7 +3952,7 @@ line 825.
 (pdftex.def)             Requested size: 209.4861pt x 209.47838pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Graph4_ROC_Compare(5)".pdf, id=11821, 578.16pt x 578.16pt>
+est_Graph_10K_Graph4_ROC_Compare(5)".pdf, id=11787, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Graph4_ROC_Compare(5)".pdf Graphic file (type pdf)
 
@@ -3958,15 +3962,15 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(5)".pdf used on input 
 line 829.
 (pdftex.def)             Requested size: 209.4861pt x 209.47838pt.
- [163] [164 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx
+ [162] [163 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx
 /SL_Model_Test_Graph_10K_Graph1_ROC_Compare(2).pdf> </home/tomkelly/Documents/P
 hD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph2_ROC_Com
-pare(2).pdf>] [165 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2016120
+pare(2).pdf>] [164 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2016120
 7_randx/SL_Model_Test_Graph_10K_Graph4_ROC_Compare(2).pdf> </home/tomkelly/Docu
 ments/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_10K_Graph4_
-ROC_Compare(5).pdf>] [166]
+ROC_Compare(5).pdf>] [165]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_pi3k_ROC1_samplesx".png, id=11965, 602.25pt x 602.25pt>
+est_Graph_10K_pi3k_ROC1_samplesx".png, id=11931, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_pi3k_ROC1_samplesx".png Graphic file (type png)
 
@@ -3978,7 +3982,7 @@ e 889.
 (pdftex.def)             Requested size: 154.35889pt x 154.35742pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_pi3k_ROC2_samplesx".png, id=11966, 602.25pt x 602.25pt>
+est_Graph_10K_pi3k_ROC2_samplesx".png, id=11932, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_pi3k_ROC2_samplesx".png Graphic file (type png)
 
@@ -3989,7 +3993,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 e 893.
 (pdftex.def)             Requested size: 154.35889pt x 154.35742pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf, id=11969, 11
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf, id=11935, 11
 56.32pt x 1156.32pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_pi3k".pdf Graphic 
 file (type pdf)
@@ -4000,7 +4004,7 @@ _pi3k".pdf used on input line 900.
 (pdftex.def)             Requested size: 209.4861pt x 209.46956pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_pi3k_AUC_samplesx_prop".png, id=11970, 602.25pt x 602.25pt>
+est_Graph_10K_pi3k_AUC_samplesx_prop".png, id=11936, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_pi3k_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -4010,7 +4014,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_pi3k_AUC_samplesx_prop".png used on input
  line 904.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
- [167] [168 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx
+ [166] [167 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx
 /SL_Model_Test_Graph_10K_pi3k_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Doc
 uments/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_pi3k_R
 OC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/G
@@ -4024,7 +4028,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 _pi3k".pdf used on input line 935.
 (pdftex.def)             Requested size: 132.30666pt x 132.29471pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_Gai".pdf, id=12026, 115
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_Gai".pdf, id=11992, 115
 6.32pt x 1156.32pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_Gai".pdf Graphic f
 ile (type pdf)
@@ -4035,7 +4039,7 @@ _Gai".pdf used on input line 938.
 (pdftex.def)             Requested size: 132.30666pt x 132.29471pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_pi3k_ROC_Compare(2)".pdf, id=12027, 578.16pt x 578.16pt>
+est_Graph_10K_pi3k_ROC_Compare(2)".pdf, id=11993, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_pi3k_ROC_Compare(2)".pdf Graphic file (type pdf)
 
@@ -4047,7 +4051,7 @@ ne 947.
 (pdftex.def)             Requested size: 209.4861pt x 209.47838pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_10K_Gai_ROC_Compare(2)".pdf, id=12028, 578.16pt x 578.16pt>
+est_Graph_10K_Gai_ROC_Compare(2)".pdf, id=11994, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_10K_Gai_ROC_Compare(2)".pdf Graphic file (type pdf)
 
@@ -4057,32 +4061,32 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_10K_Gai_ROC_Compare(2)".pdf used on input lin
 e 950.
 (pdftex.def)             Requested size: 209.4861pt x 209.47838pt.
- [169] [170 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_Gai.pdf> </h
+ [168] [169 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph_Gai.pdf> </h
 ome/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_
 Graph_10K_pi3k_ROC_Compare(2).pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_M
-odel/RUN_20161207_randx/SL_Model_Test_Graph_10K_Gai_ROC_Compare(2).pdf>] [171] 
-[172] [173] [174] [175] [176]
-[177])
+odel/RUN_20161207_randx/SL_Model_Test_Graph_10K_Gai_ROC_Compare(2).pdf>] [170] 
+[171] [172] [173] [174] [175]
+[176])
 \openout2 = `chapt6.aux'.
 
  (./chapt6.tex
 Chapter 7.
-[178
+[177
 
 
 
 
-] [179] [180] [181] [182] [183] [184] [185]) [186]
+] [178] [179] [180] [181] [182] [183] [184]) [185]
 \openout2 = `conclusion.aux'.
 
  (./conclusion.tex)
-(./thesis.bbl [187
+(./thesis.bbl [186
 
 
 
 
 
-] [188] [189] [190] [191] [192] [193]
+] [187] [188] [189] [190] [191] [192]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 542.
 
 
@@ -4091,19 +4095,19 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 542.
- [194] [195] [196]
-[197] [198] [199] [200] [201] [202] [203] [204] [205]
+ [193] [194] [195]
+[196] [197] [198] [199] [200] [201] [202] [203] [204]
 Underfull \hbox (badness 4168) in paragraph at lines 1415--1420
 \OT1/cmtt/m/n/12 / / www . cancer . gov / about-[]cancer / causes-[]prevention 
 / genetics$[][]\OT1/cmr/m/n/12 .  Pub-lished:
  []
 
-[206] [207] [208] [209]) [210]
+[205] [206] [207] [208]) [209]
 \openout2 = `appendix_methods.aux'.
 
  (./appendix_methods.tex
 Appendix A.
-<Raw(log)_Corr_eudist_Cut_part_Pub.png, id=12810, 752.8125pt x 752.8125pt>
+<Raw(log)_Corr_eudist_Cut_part_Pub.png, id=12777, 752.8125pt x 752.8125pt>
 File: Raw(log)_Corr_eudist_Cut_part_Pub.png Graphic file (type png)
 
 <use Raw(log)_Corr_eudist_Cut_part_Pub.png>
@@ -4111,194 +4115,194 @@ Package pdftex.def Info: Raw(log)_Corr_eudist_Cut_part_Pub.png used on input li
 ne 29.
 (pdftex.def)             Requested size: 752.81065pt x 752.81065pt.
 
-<Raw(log)_Corr_eudist_Ann_Pub.png, id=12813, 1606.0pt x 1606.0pt>
+<Raw(log)_Corr_eudist_Ann_Pub.png, id=12780, 1606.0pt x 1606.0pt>
 File: Raw(log)_Corr_eudist_Ann_Pub.png Graphic file (type png)
 
 <use Raw(log)_Corr_eudist_Ann_Pub.png>
 Package pdftex.def Info: Raw(log)_Corr_eudist_Ann_Pub.png used on input line 44
 .
 (pdftex.def)             Requested size: 1605.99611pt x 1605.99611pt.
- [211
+ [210
 
 
- <./Raw(log)_Corr_eudist_Cut_part_Pub.png>] [212 <./Raw(log)_Corr_eudist_Ann_Pu
+ <./Raw(log)_Corr_eudist_Cut_part_Pub.png>] [211 <./Raw(log)_Corr_eudist_Ann_Pu
 b.png>]
 Overfull \hbox (12.94603pt too wide) in paragraph at lines 53--53
  |[]\OT1/cmr/bx/n/17.28 Replicate Samples in TCGA Breast Can-cer Data| 
  []
 
-<Rep_picking_CutCut2.pdf, id=12835, 289.08pt x 289.08pt>
+<Rep_picking_CutCut2.pdf, id=12803, 289.08pt x 289.08pt>
 File: Rep_picking_CutCut2.pdf Graphic file (type pdf)
 
 <use Rep_picking_CutCut2.pdf>
 Package pdftex.def Info: Rep_picking_CutCut2.pdf used on input line 65.
 (pdftex.def)             Requested size: 289.07928pt x 289.07928pt.
 
-<Rep_picking_KeepKeep(1).pdf, id=12836, 289.08pt x 289.08pt>
+<Rep_picking_KeepKeep(1).pdf, id=12804, 289.08pt x 289.08pt>
 File: Rep_picking_KeepKeep(1).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepKeep(1).pdf>
 Package pdftex.def Info: Rep_picking_KeepKeep(1).pdf used on input line 79.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepKeep(2).pdf, id=12837, 289.08pt x 289.08pt>
+<Rep_picking_KeepKeep(2).pdf, id=12805, 289.08pt x 289.08pt>
 File: Rep_picking_KeepKeep(2).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepKeep(2).pdf>
 Package pdftex.def Info: Rep_picking_KeepKeep(2).pdf used on input line 83.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepKeep(3).pdf, id=12838, 289.08pt x 289.08pt>
+<Rep_picking_KeepKeep(3).pdf, id=12806, 289.08pt x 289.08pt>
 File: Rep_picking_KeepKeep(3).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepKeep(3).pdf>
 Package pdftex.def Info: Rep_picking_KeepKeep(3).pdf used on input line 87.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepKeep(4).pdf, id=12839, 289.08pt x 289.08pt>
+<Rep_picking_KeepKeep(4).pdf, id=12807, 289.08pt x 289.08pt>
 File: Rep_picking_KeepKeep(4).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepKeep(4).pdf>
 Package pdftex.def Info: Rep_picking_KeepKeep(4).pdf used on input line 94.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepKeep(5).pdf, id=12840, 289.08pt x 289.08pt>
+<Rep_picking_KeepKeep(5).pdf, id=12808, 289.08pt x 289.08pt>
 File: Rep_picking_KeepKeep(5).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepKeep(5).pdf>
 Package pdftex.def Info: Rep_picking_KeepKeep(5).pdf used on input line 98.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepKeep(6).pdf, id=12841, 289.08pt x 289.08pt>
+<Rep_picking_KeepKeep(6).pdf, id=12809, 289.08pt x 289.08pt>
 File: Rep_picking_KeepKeep(6).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepKeep(6).pdf>
 Package pdftex.def Info: Rep_picking_KeepKeep(6).pdf used on input line 102.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
- [213
+ [212
 
  <./Rep_picking_CutCut2.pdf>]
-<Rep_picking_KeepCut(1).pdf, id=12854, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(1).pdf, id=12822, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(1).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(1).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(1).pdf used on input line 120.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(2).pdf, id=12855, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(2).pdf, id=12823, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(2).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(2).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(2).pdf used on input line 124.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(3).pdf, id=12856, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(3).pdf, id=12824, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(3).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(3).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(3).pdf used on input line 128.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(4).pdf, id=12857, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(4).pdf, id=12825, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(4).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(4).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(4).pdf used on input line 135.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(5).pdf, id=12858, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(5).pdf, id=12826, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(5).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(5).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(5).pdf used on input line 139.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(6).pdf, id=12859, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(6).pdf, id=12827, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(6).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(6).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(6).pdf used on input line 143.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(7).pdf, id=12860, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(7).pdf, id=12828, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(7).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(7).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(7).pdf used on input line 150.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(8).pdf, id=12861, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(8).pdf, id=12829, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(8).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(8).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(8).pdf used on input line 154.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(9).pdf, id=12862, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(9).pdf, id=12830, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(9).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(9).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(9).pdf used on input line 158.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(10).pdf, id=12863, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(10).pdf, id=12831, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(10).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(10).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(10).pdf used on input line 174.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(11).pdf, id=12864, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(11).pdf, id=12832, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(11).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(11).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(11).pdf used on input line 178.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(12).pdf, id=12865, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(12).pdf, id=12833, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(12).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(12).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(12).pdf used on input line 182.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(13).pdf, id=12866, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(13).pdf, id=12834, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(13).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(13).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(13).pdf used on input line 189.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
-<Rep_picking_KeepCut(14).pdf, id=12867, 289.08pt x 289.08pt>
+<Rep_picking_KeepCut(14).pdf, id=12835, 289.08pt x 289.08pt>
 File: Rep_picking_KeepCut(14).pdf Graphic file (type pdf)
 
 <use Rep_picking_KeepCut(14).pdf>
 Package pdftex.def Info: Rep_picking_KeepCut(14).pdf used on input line 193.
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
- [214 <./Rep_picking_KeepKeep(1).pdf> <./Rep_picking_KeepKeep(2).pdf> <./Rep_pi
+ [213 <./Rep_picking_KeepKeep(1).pdf> <./Rep_picking_KeepKeep(2).pdf> <./Rep_pi
 cking_KeepKeep(3).pdf> <./Rep_picking_KeepKeep(4).pdf> <./Rep_picking_KeepKeep(
 5).pdf> <./Rep_picking_KeepKeep(6).pdf>]
-[215 <./Rep_picking_KeepCut(1).pdf> <./Rep_picking_KeepCut(2).pdf> <./Rep_picki
+[214 <./Rep_picking_KeepCut(1).pdf> <./Rep_picking_KeepCut(2).pdf> <./Rep_picki
 ng_KeepCut(3).pdf> <./Rep_picking_KeepCut(4).pdf> <./Rep_picking_KeepCut(5).pdf
 > <./Rep_picking_KeepCut(6).pdf> <./Rep_picking_KeepCut(7).pdf> <./Rep_picking_
-KeepCut(8).pdf> <./Rep_picking_KeepCut(9).pdf>] [216 <./Rep_picking_KeepCut(10)
+KeepCut(8).pdf> <./Rep_picking_KeepCut(9).pdf>] [215 <./Rep_picking_KeepCut(10)
 .pdf> <./Rep_picking_KeepCut(11).pdf> <./Rep_picking_KeepCut(12).pdf> <./Rep_pi
 cking_KeepCut(13).pdf> <./Rep_picking_KeepCut(14).pdf>]
 Appendix B.
-[217
+[216
 
-] [218] [219] [220] [221] [222] [223] [224] [225]) [226]
+] [217] [218] [219] [220] [221] [222] [223] [224]) [225]
 \openout2 = `appendix_chapt3.aux'.
 
 
 (./appendix_chapt3.tex
 Appendix C.
-[227
+[226
 
 
 
-] [228] [229]
-<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png, id=13295, 146
+] [227] [228]
+<CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png, id=13263, 146
 1.46pt x 1461.46pt>
 File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png Graphic f
 ile (type png)
@@ -4307,16 +4311,16 @@ ile (type png)
 Package pdftex.def Info: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordist
 x_Pub.png used on input line 229.
 (pdftex.def)             Requested size: 1461.45645pt x 1461.45645pt.
- [230
+ [229
 
 ]
-[231 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png (PNG co
+[230 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_mtSL_cordistx_Pub.png (PNG co
 py)>]
 
 LaTeX Warning: Float too large for page by 16.67284pt on input line 433.
 
-[232]
-<Venn_mtSL_siRNA_allgenes_reduced_Pub.png, id=13346, 540.0175pt x 449.68pt>
+[231]
+<Venn_mtSL_siRNA_allgenes_reduced_Pub.png, id=13313, 540.0175pt x 449.68pt>
 File: Venn_mtSL_siRNA_allgenes_reduced_Pub.png Graphic file (type png)
 
 <use Venn_mtSL_siRNA_allgenes_reduced_Pub.png>
@@ -4327,13 +4331,13 @@ Package pdftex.def Info: Venn_mtSL_siRNA_allgenes_reduced_Pub.png used on input
 
 LaTeX Warning: Float too large for page by 1.7224pt on input line 600.
 
-[233
+[232
 
 
- <./Venn_mtSL_siRNA_allgenes_reduced_Pub.png>] [234] [235
+ <./Venn_mtSL_siRNA_allgenes_reduced_Pub.png>] [233] [234
 
-] [236]
-<mtSLIPT_siRNA_vs_Correlation_with_CDH1.png, id=13408, 803.0pt x 401.5pt>
+] [235]
+<mtSLIPT_siRNA_vs_Correlation_with_CDH1.png, id=13376, 803.0pt x 401.5pt>
 File: mtSLIPT_siRNA_vs_Correlation_with_CDH1.png Graphic file (type png)
 
 <use mtSLIPT_siRNA_vs_Correlation_with_CDH1.png>
@@ -4341,7 +4345,7 @@ Package pdftex.def Info: mtSLIPT_siRNA_vs_Correlation_with_CDH1.png used on inp
 ut line 897.
 (pdftex.def)             Requested size: 802.99805pt x 401.49901pt.
 
-<vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf, id=13417, 578.16pt x
+<vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf, id=13385, 578.16pt x
  385.44pt>
 File: vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.pdf Graphic file (ty
 pe pdf)
@@ -4350,7 +4354,7 @@ Package pdftex.def Info: vioplotx_mtSLIPT_siRNA_vs_CDH1_Correlation_with_CDH1.p
 df used on input line 910.
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
 
-<vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf, id=13426, 578.16pt x 
+<vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf, id=13394, 578.16pt x 
 385.44pt>
 File: vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pdf Graphic file (typ
 e pdf)
@@ -4359,18 +4363,18 @@ Package pdftex.def Info: vioplotx_mtSLIPT_siRNA_vs_Viability_Ratio_with_CDH1.pd
 f used on input line 923.
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
 
-[237
+[236
 
  <./mtSLIPT_siRNA_vs_Correlation_with_CDH1.png (PNG copy)> <./vioplotx_mtSLIPT_
-siRNA_vs_CDH1_Correlation_with_CDH1.pdf>] [238 <./vioplotx_mtSLIPT_siRNA_vs_Via
+siRNA_vs_CDH1_Correlation_with_CDH1.pdf>] [237 <./vioplotx_mtSLIPT_siRNA_vs_Via
 bility_Ratio_with_CDH1.pdf>]
 Appendix D.
-[239
+[238
 
 
 ]
 <CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr2.pdf,
- id=13542, 867.24pt x 867.24pt>
+ id=13510, 867.24pt x 867.24pt>
 File: CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_corr2
 .pdf Graphic file (type pdf)
 
@@ -4380,7 +4384,7 @@ Package pdftex.def Info: CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_
 and_CDH1_Stat_corr2.pdf used on input line 964.
 (pdftex.def)             Requested size: 867.2379pt x 867.2379pt.
 
-<CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.png, id=13599, 867.24pt x 77
+<CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.png, id=13567, 867.24pt x 77
 3.289pt>
 File: CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.png Graphic file (type 
 png)
@@ -4388,21 +4392,21 @@ png)
 Package pdftex.def Info: CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.png 
 used on input line 988.
 (pdftex.def)             Requested size: 867.2379pt x 773.28712pt.
- [240]
-[241 <./CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_cor
-r2.pdf>] [242 <./CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.png>]
-[243]
+ [239]
+[240 <./CDH1_Heatmaps_Gatza2011(ranked)_Full_split_by_Subtype_and_CDH1_Stat_cor
+r2.pdf>] [241 <./CDH1_Heatmaps_Gatza2011(ER)_Full_Metagene_mgorder.png>]
+[242]
 Appendix E.
-[244
+[243
 
 
-] [245]
+] [244]
 Appendix F.
-[246
+[245
 
 ]
 <CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png, id=138
-96, 1461.46pt x 1461.46pt>
+63, 1461.46pt x 1461.46pt>
 File: CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png Gr
 aphic file (type png)
 
@@ -4585,9 +4589,9 @@ you left one out. Proceed, with fingers crossed.
 
 LaTeX Warning: Float too large for page by 10.54477pt on input line 1766.
 
-[247] [248 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_sta
-d.png (PNG copy)>] [249]
-<Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png, id=13938, 540.0175pt x 449.68
+[246] [247 <./CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_sta
+d.png (PNG copy)>] [248]
+<Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png, id=13906, 540.0175pt x 449.68
 pt>
 File: Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png Graphic file (type png)
  <use Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png>
@@ -4598,9 +4602,9 @@ n input line 1784.
 
 LaTeX Warning: Float too large for page by 1.7224pt on input line 1938.
 
-[250
+[249
 
- <./Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png>] [251] [252] [253])
+ <./Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png>] [250] [251] [252])
 ! Incomplete \iffalse; all text was ignored after line 3134.
 <inserted text> 
                 \fi 
@@ -4610,14 +4614,14 @@ The file ended while I was skipping conditional text.
 This kind of error happens when you say `\if...' and forget
 the matching `\fi'. I've inserted a `\fi'; this might work.
 
-[254]
+[253]
 \openout2 = `appendix_chapt4.aux'.
 
  (./appendix_chapt4.tex
 Appendix G.
 
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3kAkt_exprSL2".png, i
-d=13989, 1241.63875pt x 1241.63875pt>
+d=13956, 1241.63875pt x 1241.63875pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3kAkt_exprSL2".p
 ng Graphic file (type png)
 
@@ -4628,7 +4632,7 @@ _Pi3kAkt_exprSL2".png used on input line 49.
 (pdftex.def)             Requested size: 1241.63573pt x 1241.63573pt.
 
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3kAktCancer_exprSL2".
-png, id=13990, 1241.63875pt x 1241.63875pt>
+png, id=13957, 1241.63875pt x 1241.63875pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3kAktCancer_expr
 SL2".png Graphic file (type png)
 
@@ -4639,7 +4643,7 @@ _Pi3kAktCancer_exprSL2".png used on input line 65.
 (pdftex.def)             Requested size: 1241.63573pt x 1241.63573pt.
 
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_ElasticFibre_exprSL2".p
-df, id=13991, 1192.455pt x 1192.455pt>
+df, id=13958, 1192.455pt x 1192.455pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_ElasticFibre_exprS
 L2".pdf Graphic file (type pdf)
 
@@ -4650,7 +4654,7 @@ _ElasticFibre_exprSL2".pdf used on input line 81.
 (pdftex.def)             Requested size: 1192.4521pt x 1192.4521pt.
 
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_FibrinFormation_exprSL2
-".pdf, id=13996, 1192.455pt x 1192.455pt>
+".pdf, id=13963, 1192.455pt x 1192.455pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_FibrinFormation_ex
 prSL2".pdf Graphic file (type pdf)
 
@@ -4661,7 +4665,7 @@ _FibrinFormation_exprSL2".pdf used on input line 98.
 (pdftex.def)             Requested size: 1192.4521pt x 1192.4521pt.
 
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_ExtracellularMatrix_exp
-rSL2".pdf, id=14001, 1192.455pt x 1192.455pt>
+rSL2".pdf, id=13968, 1192.455pt x 1192.455pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_ExtracellularMatri
 x_exprSL2".pdf Graphic file (type pdf)
 
@@ -4672,7 +4676,7 @@ _ExtracellularMatrix_exprSL2".pdf used on input line 116.
 (pdftex.def)             Requested size: 1192.4521pt x 1192.4521pt.
 
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_GPCR_Downstream_exprSL2
-".png, id=14002, 1241.63875pt x 1241.63875pt>
+".png, id=13969, 1241.63875pt x 1241.63875pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_GPCR_Downstream_ex
 prSL2".png Graphic file (type png)
 
@@ -4683,7 +4687,7 @@ _GPCR_Downstream_exprSL2".png used on input line 134.
 (pdftex.def)             Requested size: 1241.63573pt x 1241.63573pt.
 
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_TranslationElongation_e
-xprSL2".png, id=14005, 1241.63875pt x 1241.63875pt>
+xprSL2".png, id=13972, 1241.63875pt x 1241.63875pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_TranslationElongat
 ion_exprSL2".png Graphic file (type png)
 
@@ -4693,8 +4697,8 @@ Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot
 _TranslationElongation_exprSL2".png used on input line 150.
 (pdftex.def)             Requested size: 1241.63573pt x 1241.63573pt.
 
-<"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_NMD_exprSL2".pdf, id=14
-006, 1192.455pt x 1445.4pt>
+<"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_NMD_exprSL2".pdf, id=13
+973, 1192.455pt x 1445.4pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_NMD_exprSL2".pdf G
 raphic file (type pdf)
 
@@ -4704,7 +4708,7 @@ _NMD_exprSL2".pdf used on input line 167.
 (pdftex.def)             Requested size: 1192.4521pt x 1445.39648pt.
 
 <"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Three_prime_UTR_exprSL2
-".png, id=14009, 1241.63875pt x 1241.63875pt>
+".png, id=13976, 1241.63875pt x 1241.63875pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot_Three_prime_UTR_ex
 prSL2".png Graphic file (type png)
 
@@ -4713,25 +4717,25 @@ rSL2".png>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/graph_plot
 _Three_prime_UTR_exprSL2".png used on input line 183.
 (pdftex.def)             Requested size: 1241.63573pt x 1241.63573pt.
- [255
+ [254
 
 
 
  </home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3kAkt_exprSL2.png (PN
-G copy)>] [256 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3kAktCa
-ncer_exprSL2.png (PNG copy)>] [257 </home/tomkelly/Downloads/Pathway_Structure/
-graph_plot_ElasticFibre_exprSL2.pdf>] [258 </home/tomkelly/Downloads/Pathway_St
-ructure/graph_plot_FibrinFormation_exprSL2.pdf>] [259 </home/tomkelly/Downloads
+G copy)>] [255 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_Pi3kAktCa
+ncer_exprSL2.png (PNG copy)>] [256 </home/tomkelly/Downloads/Pathway_Structure/
+graph_plot_ElasticFibre_exprSL2.pdf>] [257 </home/tomkelly/Downloads/Pathway_St
+ructure/graph_plot_FibrinFormation_exprSL2.pdf>] [258 </home/tomkelly/Downloads
 /Pathway_Structure/graph_plot_ExtracellularMatrix_exprSL2.pdf>]
-[260 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_GPCR_Downstream_exp
-rSL2.png (PNG copy)>] [261 </home/tomkelly/Downloads/Pathway_Structure/graph_pl
-ot_TranslationElongation_exprSL2.png (PNG copy)>] [262 </home/tomkelly/Download
-s/Pathway_Structure/graph_plot_NMD_exprSL2.pdf>] [263 </home/tomkelly/Downloads
+[259 </home/tomkelly/Downloads/Pathway_Structure/graph_plot_GPCR_Downstream_exp
+rSL2.png (PNG copy)>] [260 </home/tomkelly/Downloads/Pathway_Structure/graph_pl
+ot_TranslationElongation_exprSL2.png (PNG copy)>] [261 </home/tomkelly/Download
+s/Pathway_Structure/graph_plot_NMD_exprSL2.pdf>] [262 </home/tomkelly/Downloads
 /Pathway_Structure/graph_plot_Three_prime_UTR_exprSL2.png (PNG copy)>]
 Appendix H.
 
 <"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_verte
-x_degree_stripchart2".pdf, id=14073, 578.16pt x 385.44pt>
+x_degree_stripchart2".pdf, id=14041, 578.16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_
 vertex_degree_stripchart2".pdf Graphic file (type pdf)
 
@@ -4742,7 +4746,7 @@ _mtSL/GPCR_network_vertex_degree_stripchart2".pdf used on input line 204.
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
 
 <"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_Info_
-Centrality(Log)_stripchart2".pdf, id=14086, 578.16pt x 385.44pt>
+Centrality(Log)_stripchart2".pdf, id=14054, 578.16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_
 Info_Centrality(Log)_stripchart2".pdf Graphic file (type pdf)
 
@@ -4754,7 +4758,7 @@ _mtSL/GPCR_network_Info_Centrality(Log)_stripchart2".pdf used on input line 222
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
 
 <"/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_pager
-ank_stripchart2".pdf, id=14103, 578.16pt x 385.44pt>
+ank_stripchart2".pdf, id=14071, 578.16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_
 pagerank_stripchart2".pdf Graphic file (type pdf)
 
@@ -4763,17 +4767,17 @@ agerank_stripchart2".pdf>
 Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/Centrality
 _mtSL/GPCR_network_pagerank_stripchart2".pdf used on input line 244.
 (pdftex.def)             Requested size: 578.15858pt x 385.43906pt.
- [264
+ [263
 
 
  </home/tomkelly/Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_verte
-x_degree_stripchart2.pdf>] [265 </home/tomkelly/Downloads/Pathway_Structure/Cen
+x_degree_stripchart2.pdf>] [264 </home/tomkelly/Downloads/Pathway_Structure/Cen
 trality_mtSL/GPCR_network_Info_Centrality(Log)_stripchart2.pdf> </home/tomkelly
 /Downloads/Pathway_Structure/Centrality_mtSL/GPCR_network_pagerank_stripchart2.
-pdf>] [266]
+pdf>] [265]
 Appendix I.
 
-<"/home/tomkelly/Downloads/Pathway_Structure/test_GPCR_mtSL".pdf, id=14163, 578
+<"/home/tomkelly/Downloads/Pathway_Structure/test_GPCR_mtSL".pdf, id=14131, 578
 .16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/test_GPCR_mtSL".pdf Graphic f
 ile (type pdf)
@@ -4783,7 +4787,7 @@ Package pdftex.def Info: "/home/tomkelly/Downloads/Pathway_Structure/test_GPCR_
 mtSL".pdf used on input line 552.
 (pdftex.def)             Requested size: 209.4861pt x 139.65225pt.
 
-<"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_mtSL".pdf, id=14164, 578
+<"/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_mtSL".pdf, id=14132, 578
 .16pt x 385.44pt>
 File: "/home/tomkelly/Downloads/Pathway_Structure/test_PI3K_mtSL".pdf Graphic f
 ile (type pdf)
@@ -4804,10 +4808,10 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-[267
+[266
 
  </home/tomkelly/Downloads/Pathway_Structure/test_GPCR_mtSL.pdf> </home/tomkell
-y/Downloads/Pathway_Structure/test_PI3K_mtSL.pdf>]) [268]
+y/Downloads/Pathway_Structure/test_PI3K_mtSL.pdf>]) [267]
 \openout2 = `appendix_chapt5.aux'.
 
 
@@ -4831,7 +4835,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(1)".png, id=14210, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(1)".png, id=14178, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(1)".png Graphic file (type png)
 
@@ -4843,7 +4847,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(2)".png, id=14211, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(2)".png, id=14179, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(2)".png Graphic file (type png)
 
@@ -4855,7 +4859,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(3)".png, id=14212, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(3)".png, id=14180, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(3)".png Graphic file (type png)
 
@@ -4867,7 +4871,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(4)".png, id=14213, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(4)".png, id=14181, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(4)".png Graphic file (type png)
 
@@ -4888,7 +4892,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(6)".png, id=14214, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(6)".png, id=14182, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(6)".png Graphic file (type png)
 
@@ -4900,7 +4904,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(7)".png, id=14215, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(7)".png, id=14183, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(7)".png Graphic file (type png)
 
@@ -4912,7 +4916,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(8)".png, id=14216, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(8)".png, id=14184, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(8)".png Graphic file (type png)
 
@@ -4924,7 +4928,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(9)".png, id=14217, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(9)".png, id=14185, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(9)".png Graphic file (type png)
 
@@ -4936,7 +4940,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(10)".png, id=14218, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(10)".png, id=14186, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(10)".png Graphic file (type png)
 
@@ -4948,7 +4952,7 @@ t line 75.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(15)".png, id=14219, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(15)".png, id=14187, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(15)".png Graphic file (type png)
 
@@ -4960,7 +4964,7 @@ t line 79.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(20)".png, id=14220, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(20)".png, id=14188, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(20)".png Graphic file (type png)
 
@@ -4972,7 +4976,7 @@ t line 83.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(30)".png, id=14221, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(30)".png, id=14189, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(30)".png Graphic file (type png)
 
@@ -4984,7 +4988,7 @@ t line 88.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(40)".png, id=14222, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(40)".png, id=14190, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(40)".png Graphic file (type png)
 
@@ -4996,7 +5000,7 @@ t line 92.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_Cor_v_nCor_All(50)".png, id=14223, 602.25pt x 602.25pt>
+aph_10K_Graph5_ROC_Cor_v_nCor_All(50)".png, id=14191, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_Cor_v_nCor_All(50)".png Graphic file (type png)
 
@@ -5008,7 +5012,7 @@ t line 96.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1)".png, id=14230, 602.25pt x 602.
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1)".png, id=14198, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1)".png Graphic file (type pn
@@ -5022,7 +5026,7 @@ ed on input line 111.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2)".png, id=14231, 602.25pt x 602.
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2)".png, id=14199, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2)".png Graphic file (type pn
@@ -5036,7 +5040,7 @@ ed on input line 115.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(3)".png, id=14232, 602.25pt x 602.
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(3)".png, id=14200, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(3)".png Graphic file (type pn
@@ -5050,7 +5054,7 @@ ed on input line 119.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(4)".png, id=14233, 602.25pt x 602.
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(4)".png, id=14201, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(4)".png Graphic file (type pn
@@ -5074,7 +5078,7 @@ ed on input line 128.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(6)".png, id=14234, 602.25pt x 602.
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(6)".png, id=14202, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(6)".png Graphic file (type pn
@@ -5088,7 +5092,7 @@ ed on input line 132.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7)".png, id=14235, 602.25pt x 602.
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7)".png, id=14203, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7)".png Graphic file (type pn
@@ -5102,7 +5106,7 @@ ed on input line 137.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8)".png, id=14236, 602.25pt x 602.
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8)".png, id=14204, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8)".png Graphic file (type pn
@@ -5116,7 +5120,7 @@ ed on input line 141.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9)".png, id=14237, 602.25pt x 602.
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9)".png, id=14205, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9)".png Graphic file (type pn
@@ -5130,7 +5134,7 @@ ed on input line 145.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10)".png, id=14238, 602.25pt x 602
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10)".png, id=14206, 602.25pt x 602
 .25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10)".png Graphic file (type p
@@ -5144,7 +5148,7 @@ sed on input line 158.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)".png, id=14239, 602.25pt x 602
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)".png, id=14207, 602.25pt x 602
 .25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)".png Graphic file (type p
@@ -5158,7 +5162,7 @@ sed on input line 162.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(20)".png, id=14240, 602.25pt x 602
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(20)".png, id=14208, 602.25pt x 602
 .25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(20)".png Graphic file (type p
@@ -5172,7 +5176,7 @@ sed on input line 166.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30)".png, id=14241, 602.25pt x 602
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30)".png, id=14209, 602.25pt x 602
 .25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30)".png Graphic file (type p
@@ -5186,7 +5190,7 @@ sed on input line 171.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40)".png, id=14242, 602.25pt x 602
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40)".png, id=14210, 602.25pt x 602
 .25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40)".png Graphic file (type p
@@ -5200,7 +5204,7 @@ sed on input line 175.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Gr
-aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png, id=14243, 602.25pt x 602
+aph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png, id=14211, 602.25pt x 602
 .25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Te
 st_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png Graphic file (type p
@@ -5214,7 +5218,7 @@ sed on input line 179.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1)".png, id=14250, 602.25pt x 602.2
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1)".png, id=14218, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1)".png Graphic file (type png
@@ -5228,7 +5232,7 @@ d on input line 195.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2)".png, id=14251, 602.25pt x 602.2
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2)".png, id=14219, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2)".png Graphic file (type png
@@ -5242,7 +5246,7 @@ d on input line 199.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(3)".png, id=14252, 602.25pt x 602.2
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(3)".png, id=14220, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(3)".png Graphic file (type png
@@ -5256,7 +5260,7 @@ d on input line 203.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(4)".png, id=14253, 602.25pt x 602.2
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(4)".png, id=14221, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(4)".png Graphic file (type png
@@ -5280,7 +5284,7 @@ d on input line 212.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(6)".png, id=14254, 602.25pt x 602.2
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(6)".png, id=14222, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(6)".png Graphic file (type png
@@ -5294,7 +5298,7 @@ d on input line 216.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7)".png, id=14255, 602.25pt x 602.2
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7)".png, id=14223, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7)".png Graphic file (type png
@@ -5308,7 +5312,7 @@ d on input line 221.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8)".png, id=14256, 602.25pt x 602.2
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8)".png, id=14224, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8)".png Graphic file (type png
@@ -5322,7 +5326,7 @@ d on input line 225.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9)".png, id=14257, 602.25pt x 602.2
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9)".png, id=14225, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9)".png Graphic file (type png
@@ -5336,7 +5340,7 @@ d on input line 229.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10)".png, id=14258, 602.25pt x 602.
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10)".png, id=14226, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10)".png Graphic file (type pn
@@ -5350,7 +5354,7 @@ ed on input line 242.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)".png, id=14259, 602.25pt x 602.
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)".png, id=14227, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)".png Graphic file (type pn
@@ -5364,7 +5368,7 @@ ed on input line 246.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(20)".png, id=14260, 602.25pt x 602.
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(20)".png, id=14228, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(20)".png Graphic file (type pn
@@ -5378,7 +5382,7 @@ ed on input line 250.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30)".png, id=14261, 602.25pt x 602.
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30)".png, id=14229, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30)".png Graphic file (type pn
@@ -5392,7 +5396,7 @@ ed on input line 255.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40)".png, id=14262, 602.25pt x 602.
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40)".png, id=14230, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40)".png Graphic file (type pn
@@ -5406,7 +5410,7 @@ ed on input line 259.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Gr
-aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png, id=14263, 602.25pt x 602.
+aph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png, id=14231, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Te
 st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png Graphic file (type pn
@@ -5418,7 +5422,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161107/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png us
 ed on input line 263.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
- [269
+ [268
 
 
 
@@ -5432,13 +5436,13 @@ h_10K_Graph5_ROC_Cor_v_nCor_All(4).png (PNG copy)> </home/tomkelly/Documents/Ph
 D Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor
 _All(6).png (PNG copy)>]
 
-LaTeX Warning: Text page 270 contains only floats.
+LaTeX Warning: Text page 269 contains only floats.
 
 
 Overfull \vbox (7.24759pt too high) has occurred while \output is active []
 
 
-[270 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Tes
+[269 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Tes
 t_Graph_10K_Graph5_ROC_Cor_v_nCor_All(7).png (PNG copy)> </home/tomkelly/Docume
 nts/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Graph_10K_Graph5_ROC_Cor_
 v_nCor_All(8).png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/
@@ -5453,7 +5457,7 @@ _Graph_10K_Graph5_ROC_Cor_v_nCor_All(30).png (PNG copy)> </home/tomkelly/Docume
 nts/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Graph_10K_Graph5_ROC_Cor_
 v_nCor_All(40).png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model
 /RUN_20161108/SL_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(50).png (PNG co
-py)>] [271 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Mod
+py)>] [270 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Mod
 el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1).png (PNG copy)> </hom
 e/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Graph_10
 K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2).png (PNG copy)> </home/tomkelly/Docum
@@ -5467,7 +5471,7 @@ l_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7).png (PNG copy)> </home
 /tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Graph_10K
 _Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8).png (PNG copy)> </home/tomkelly/Docume
 nts/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Graph_10K_Graph5_ROC_SLIP
-T_v_ChiSq_v_nCor_Ally(9).png (PNG copy)>] [272 </home/tomkelly/Documents/PhD Ot
+T_v_ChiSq_v_nCor_Ally(9).png (PNG copy)>] [271 </home/tomkelly/Documents/PhD Ot
 ago Uni/SL_Model/RUN_20161108/SL_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_
 v_nCor_Ally(10).png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Mode
 l/RUN_20161108/SL_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)
@@ -5478,7 +5482,7 @@ raph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30).png (PNG copy)> </home/tomkel
 ly/Documents/PhD Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Graph_10K_Graph5
 _ROC_SLIPT_v_ChiSq_v_nCor_Ally(40).png (PNG copy)> </home/tomkelly/Documents/Ph
 D Otago Uni/SL_Model/RUN_20161108/SL_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_Ch
-iSq_v_nCor_Ally(50).png (PNG copy)>] [273 </home/tomkelly/Documents/PhD Otago U
+iSq_v_nCor_Ally(50).png (PNG copy)>] [272 </home/tomkelly/Documents/PhD Otago U
 ni/SL_Model/RUN_20161107/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor
 _Ally(1).png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161107/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2).png (PNG
@@ -5492,7 +5496,7 @@ Model/RUN_20161107/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(
 7).png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2016110
 7/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8).png (PNG copy)
 > </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_G
-raph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9).png (PNG copy)>] [274 </home/to
+raph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9).png (PNG copy)>] [273 </home/to
 mkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Graph_1K_Gra
 ph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10).png (PNG copy)> </home/tomkelly/Documents
 /PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_
@@ -5505,7 +5509,7 @@ st_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40).png (PNG copy)> </home/tom
 kelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107/SL_Model_Test_Graph_1K_Grap
 h5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50).png (PNG copy)>]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(1)".png, id=14296, 602.25pt x 602.2
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(1)".png, id=14263, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(1)".png Graphic file (type png
@@ -5519,7 +5523,7 @@ d on input line 284.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(2)".png, id=14297, 602.25pt x 602.2
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(2)".png, id=14264, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(2)".png Graphic file (type png
@@ -5533,7 +5537,7 @@ d on input line 288.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(3)".png, id=14298, 602.25pt x 602.2
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(3)".png, id=14265, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(3)".png Graphic file (type png
@@ -5547,7 +5551,7 @@ d on input line 292.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(4)".png, id=14299, 602.25pt x 602.2
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(4)".png, id=14266, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(4)".png Graphic file (type png
@@ -5561,7 +5565,7 @@ d on input line 297.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(5)".png, id=14300, 602.25pt x 602.2
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(5)".png, id=14267, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(5)".png Graphic file (type png
@@ -5575,7 +5579,7 @@ d on input line 301.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(6)".png, id=14301, 602.25pt x 602.2
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(6)".png, id=14268, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(6)".png Graphic file (type png
@@ -5589,7 +5593,7 @@ d on input line 305.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(7)".png, id=14302, 602.25pt x 602.2
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(7)".png, id=14269, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(7)".png Graphic file (type png
@@ -5603,7 +5607,7 @@ d on input line 310.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(8)".png, id=14303, 602.25pt x 602.2
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(8)".png, id=14270, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(8)".png Graphic file (type png
@@ -5617,7 +5621,7 @@ d on input line 314.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(9)".png, id=14304, 602.25pt x 602.2
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(9)".png, id=14271, 602.25pt x 602.2
 5pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(9)".png Graphic file (type png
@@ -5631,7 +5635,7 @@ d on input line 318.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(10)".png, id=14305, 602.25pt x 602.
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(10)".png, id=14272, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(10)".png Graphic file (type pn
@@ -5645,7 +5649,7 @@ ed on input line 331.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(15)".png, id=14306, 602.25pt x 602.
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(15)".png, id=14273, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(15)".png Graphic file (type pn
@@ -5659,7 +5663,7 @@ ed on input line 335.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(20)".png, id=14307, 602.25pt x 602.
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(20)".png, id=14274, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(20)".png Graphic file (type pn
@@ -5673,7 +5677,7 @@ ed on input line 339.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(30)".png, id=14308, 602.25pt x 602.
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(30)".png, id=14275, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(30)".png Graphic file (type pn
@@ -5687,7 +5691,7 @@ ed on input line 344.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(40)".png, id=14309, 602.25pt x 602.
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(40)".png, id=14276, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(40)".png Graphic file (type pn
@@ -5701,7 +5705,7 @@ ed on input line 348.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(50)".png, id=14310, 602.25pt x 602.
+el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(50)".png, id=14277, 602.25pt x 602.
 25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(50)".png Graphic file (type pn
@@ -5715,7 +5719,7 @@ ed on input line 352.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1)".png, id=14317, 602.2
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1)".png, id=14284, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1)".png Graphic fil
@@ -5729,7 +5733,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2)".png, id=14318, 602.2
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2)".png, id=14285, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2)".png Graphic fil
@@ -5743,7 +5747,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(3)".png, id=14319, 602.2
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(3)".png, id=14286, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(3)".png Graphic fil
@@ -5757,7 +5761,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(4)".png, id=14320, 602.2
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(4)".png, id=14287, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(4)".png Graphic fil
@@ -5781,7 +5785,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(6)".png, id=14321, 602.2
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(6)".png, id=14288, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(6)".png Graphic fil
@@ -5795,7 +5799,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7)".png, id=14322, 602.2
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7)".png, id=14289, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7)".png Graphic fil
@@ -5809,7 +5813,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8)".png, id=14323, 602.2
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8)".png, id=14290, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8)".png Graphic fil
@@ -5823,7 +5827,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9)".png, id=14324, 602.2
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9)".png, id=14291, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9)".png Graphic fil
@@ -5837,7 +5841,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10)".png, id=14325, 602.
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10)".png, id=14292, 602.
 25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10)".png Graphic fi
@@ -5851,7 +5855,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)".png, id=14326, 602.
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)".png, id=14293, 602.
 25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)".png Graphic fi
@@ -5865,7 +5869,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(20)".png, id=14327, 602.
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(20)".png, id=14294, 602.
 25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(20)".png Graphic fi
@@ -5879,7 +5883,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30)".png, id=14328, 602.
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30)".png, id=14295, 602.
 25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30)".png Graphic fi
@@ -5893,7 +5897,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40)".png, id=14329, 602.
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40)".png, id=14296, 602.
 25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40)".png Graphic fi
@@ -5907,7 +5911,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
-el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png, id=14330, 602.
+el_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png, id=14297, 602.
 25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png Graphic fi
@@ -5921,7 +5925,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1)".png, id=14337, 602.25
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1)".png, id=14304, 602.25
 pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1)".png Graphic file
@@ -5935,7 +5939,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2)".png, id=14338, 602.25
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2)".png, id=14305, 602.25
 pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2)".png Graphic file
@@ -5949,7 +5953,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(3)".png, id=14339, 602.25
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(3)".png, id=14306, 602.25
 pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(3)".png Graphic file
@@ -5963,7 +5967,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(4)".png, id=14340, 602.25
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(4)".png, id=14307, 602.25
 pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(4)".png Graphic file
@@ -5987,7 +5991,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(6)".png, id=14341, 602.25
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(6)".png, id=14308, 602.25
 pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(6)".png Graphic file
@@ -6001,7 +6005,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7)".png, id=14342, 602.25
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7)".png, id=14309, 602.25
 pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(7)".png Graphic file
@@ -6015,7 +6019,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8)".png, id=14343, 602.25
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8)".png, id=14310, 602.25
 pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(8)".png Graphic file
@@ -6029,7 +6033,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9)".png, id=14344, 602.25
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9)".png, id=14311, 602.25
 pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(9)".png Graphic file
@@ -6043,7 +6047,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10)".png, id=14345, 602.2
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10)".png, id=14312, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(10)".png Graphic fil
@@ -6057,7 +6061,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)".png, id=14346, 602.2
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)".png, id=14313, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(15)".png Graphic fil
@@ -6071,7 +6075,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(20)".png, id=14347, 602.2
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(20)".png, id=14314, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(20)".png Graphic fil
@@ -6085,7 +6089,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30)".png, id=14348, 602.2
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30)".png, id=14315, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(30)".png Graphic fil
@@ -6099,7 +6103,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40)".png, id=14349, 602.2
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40)".png, id=14316, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40)".png Graphic fil
@@ -6113,7 +6117,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mod
-el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png, id=14350, 602.2
+el_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png, id=14317, 602.2
 5pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/S
 L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50)".png Graphic fil
@@ -6125,7 +6129,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161107_query_cor/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(5
 0)".png used on input line 520.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
- [275
+ [274
 
  </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Mod
 el_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(1).png (PNG copy)> </home/tomkelly/
@@ -6144,7 +6148,7 @@ nts/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Model_Test_Graph_10K_Graph
 All(8).png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201
 61108_query_cor/SL_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(9).png (PNG c
 opy)>]
-[276 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL
+[275 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL
 _Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(10).png (PNG copy)> </home/tomk
 elly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Model_Test_Grap
 h_10K_Graph5_ROC_Cor_v_nCor_All(15).png (PNG copy)> </home/tomkelly/Documents/P
@@ -6154,7 +6158,7 @@ Model/RUN_20161108_query_cor/SL_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(
 30).png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201611
 08_query_cor/SL_Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(40).png (PNG cop
 y)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_
-Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(50).png (PNG copy)>] [277 </home
+Model_Test_Graph_10K_Graph5_ROC_Cor_v_nCor_All(50).png (PNG copy)>] [276 </home
 /tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Model_Test
 _Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1).png (PNG copy)> </home/tomke
 lly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/SL_Model_Test_Graph
@@ -6170,7 +6174,7 @@ ChiSq_v_nCor_Ally(7).png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL
 _Model/RUN_20161108_query_cor/SL_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_
 v_nCor_Ally(8).png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model
 /RUN_20161108_query_cor/SL_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor
-_Ally(9).png (PNG copy)>] [278 </home/tomkelly/Documents/PhD Otago Uni/SL_Model
+_Ally(9).png (PNG copy)>] [277 </home/tomkelly/Documents/PhD Otago Uni/SL_Model
 /RUN_20161108_query_cor/SL_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor
 _Ally(10).png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_
 20161108_query_cor/SL_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally
@@ -6182,7 +6186,7 @@ PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_
 cor/SL_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(40).png (PNG c
 opy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161108_query_cor/S
 L_Model_Test_Graph_10K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50).png (PNG copy)>
-] [279 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/
+] [278 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/
 SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(1).png (PNG copy)> 
 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161107_query_cor/SL_Mode
 l_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(2).png (PNG copy)> </home/
@@ -6197,7 +6201,7 @@ LIPT_v_ChiSq_v_nCor_Ally(7).png (PNG copy)> </home/tomkelly/Documents/PhD Otago
  Uni/SL_Model/RUN_20161107_query_cor/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_
 ChiSq_v_nCor_Ally(8).png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL
 _Model/RUN_20161107_query_cor/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v
-_nCor_Ally(9).png (PNG copy)>] [280 </home/tomkelly/Documents/PhD Otago Uni/SL_
+_nCor_Ally(9).png (PNG copy)>] [279 </home/tomkelly/Documents/PhD Otago Uni/SL_
 Model/RUN_20161107_query_cor/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_
 nCor_Ally(10).png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/
 RUN_20161107_query_cor/SL_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_A
@@ -6212,7 +6216,7 @@ L_Model_Test_Graph_1K_Graph5_ROC_SLIPT_v_ChiSq_v_nCor_Ally(50).png (PNG copy)>]
 Appendix K.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph2_ROC1_samplesx".png, id=14383, 602.25pt x 602.25pt>
+est_Graph_10K_Graph2_ROC1_samplesx".png, id=14351, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph2_ROC1_samplesx".png Graphic file (type png)
 
@@ -6224,7 +6228,7 @@ ine 834.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph2_ROC2_samplesx".png, id=14384, 602.25pt x 602.25pt>
+est_Graph_10K_Graph2_ROC2_samplesx".png, id=14352, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph2_ROC2_samplesx".png Graphic file (type png)
 
@@ -6243,7 +6247,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 88.2022pt x 88.20235pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph2_AUC_samplesx".png, id=14387, 602.25pt x 602.25pt>
+est_Graph_10K_Graph2_AUC_samplesx".png, id=14355, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph2_AUC_samplesx".png Graphic file (type png)
 
@@ -6255,7 +6259,7 @@ ne 846.
 (pdftex.def)             Requested size: 176.40439pt x 176.40323pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph2i_ROC1_samplesx".png, id=14392, 602.25pt x 602.25pt>
+est_Graph_10K_Graph2i_ROC1_samplesx".png, id=14360, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph2i_ROC1_samplesx".png Graphic file (type png)
 
@@ -6267,7 +6271,7 @@ line 1067.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph2i_ROC2_samplesx".png, id=14393, 602.25pt x 602.25pt>
+est_Graph_10K_Graph2i_ROC2_samplesx".png, id=14361, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph2i_ROC2_samplesx".png Graphic file (type png)
 
@@ -6278,7 +6282,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 line 1070.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2i".pdf, id=14396, 578.1
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2i".pdf, id=14364, 578.1
 6pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph2i".pdf Graphic fil
 e (type pdf)
@@ -6289,7 +6293,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph2i_AUC_samplesx".png, id=14397, 602.25pt x 602.25pt>
+est_Graph_10K_Graph2i_AUC_samplesx".png, id=14365, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph2i_AUC_samplesx".png Graphic file (type png)
 
@@ -6299,7 +6303,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph2i_AUC_samplesx".png used on input l
 ine 1079.
 (pdftex.def)             Requested size: 264.61331pt x 264.62323pt.
- [281
+ [280
 
 
  </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
@@ -6308,7 +6312,7 @@ D Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph2_ROC2_sam
 plesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2016
 1205_randx/SL_Model_Test_Graph_10K_Graph2_AUC_samplesx.png (PNG copy)>]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4i_ROC1_samplesx".png, id=14406, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4i_ROC1_samplesx".png, id=14374, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4i_ROC1_samplesx".png Graphic file (type png)
 
@@ -6320,7 +6324,7 @@ line 1129.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4i_ROC2_samplesx".png, id=14407, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4i_ROC2_samplesx".png, id=14375, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4i_ROC2_samplesx".png Graphic file (type png)
 
@@ -6339,7 +6343,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4i_AUC_samplesx".png, id=14410, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4i_AUC_samplesx".png, id=14378, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4i_AUC_samplesx".png Graphic file (type png)
 
@@ -6351,7 +6355,7 @@ ine 1142.
 (pdftex.def)             Requested size: 264.61331pt x 264.62323pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4i2_ROC1_samplesx".png, id=14415, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4i2_ROC1_samplesx".png, id=14383, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4i2_ROC1_samplesx".png Graphic file (type png)
 
@@ -6363,7 +6367,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph4i2_ROC2_samplesx".png, id=14416, 602.25pt x 602.25pt>
+est_Graph_10K_Graph4i2_ROC2_samplesx".png, id=14384, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph4i2_ROC2_samplesx".png Graphic file (type png)
 
@@ -6389,29 +6393,29 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph4i2_AUC_samplesx".png used on input 
 line 1172.
 (pdftex.def)             Requested size: 264.61331pt x 264.62323pt.
- [282 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
+ [281 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph2i_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Docume
 nts/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph2i_R
 OC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/G
 raph2i.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx
 /SL_Model_Test_Graph_10K_Graph2i_AUC_samplesx.png (PNG copy)>]
 
-LaTeX Warning: Text page 283 contains only floats.
+LaTeX Warning: Text page 282 contains only floats.
 
-[283 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mod
+[282 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mod
 el_Test_Graph_10K_Graph4i_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documen
 ts/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph4i_RO
 C2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RU
 N_20161205_randx/SL_Model_Test_Graph_10K_Graph4i_AUC_samplesx.png (PNG copy)>]
 
-LaTeX Warning: Text page 284 contains only floats.
+LaTeX Warning: Text page 283 contains only floats.
 
-[284 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mod
+[283 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mod
 el_Test_Graph_10K_Graph4i2_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Docume
 nts/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph4i2_
 ROC2_samplesx.png (PNG copy)>]
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4_coloured".pdf, id=1444
-1, 578.16pt x 578.16pt>
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4_coloured".pdf, id=1440
+9, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4_coloured".pdf Gra
 phic file (type pdf)
 
@@ -6421,7 +6425,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(1)".pdf, id=14442, 578.16pt
+del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(1)".pdf, id=14410, 578.16pt
  x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(1)".pdf Graphic file (
@@ -6435,7 +6439,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(2)".pdf, id=14443, 578.16pt
+del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(2)".pdf, id=14411, 578.16pt
  x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(2)".pdf Graphic file (
@@ -6449,7 +6453,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(3)".pdf, id=14444, 578.16pt
+del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(3)".pdf, id=14412, 578.16pt
  x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(3)".pdf Graphic file (
@@ -6473,7 +6477,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(5)".pdf, id=14445, 578.16pt
+del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(5)".pdf, id=14413, 578.16pt
  x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(5)".pdf Graphic file (
@@ -6487,7 +6491,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(6)".pdf, id=14446, 578.16pt
+del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(6)".pdf, id=14414, 578.16pt
  x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(6)".pdf Graphic file (
@@ -6501,7 +6505,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(7)".pdf, id=14447, 578.16pt
+del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(7)".pdf, id=14415, 578.16pt
  x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(7)".pdf Graphic file (
@@ -6515,7 +6519,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(9)".pdf, id=14448, 578.16pt
+del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(9)".pdf, id=14416, 578.16pt
  x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(9)".pdf Graphic file (
@@ -6529,7 +6533,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(8)".pdf, id=14449, 578.16pt
+del_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(8)".pdf, id=14417, 578.16pt
  x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(8)".pdf Graphic file (
@@ -6543,7 +6547,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i_coloured".pdf, id=144
-52, 578.16pt x 578.16pt>
+20, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i_coloured".pdf Gr
 aphic file (type pdf)
 
@@ -6553,7 +6557,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(1)".pdf, id=14453, 578.16p
+del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(1)".pdf, id=14421, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(1)".pdf Graphic file 
@@ -6567,7 +6571,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(2)".pdf, id=14454, 578.16p
+del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(2)".pdf, id=14422, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(2)".pdf Graphic file 
@@ -6581,7 +6585,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(3)".pdf, id=14455, 578.16p
+del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(3)".pdf, id=14423, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(3)".pdf Graphic file 
@@ -6605,7 +6609,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(5)".pdf, id=14456, 578.16p
+del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(5)".pdf, id=14424, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(5)".pdf Graphic file 
@@ -6619,7 +6623,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(6)".pdf, id=14457, 578.16p
+del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(6)".pdf, id=14425, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(6)".pdf Graphic file 
@@ -6633,7 +6637,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(7)".pdf, id=14458, 578.16p
+del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(7)".pdf, id=14426, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(7)".pdf Graphic file 
@@ -6647,7 +6651,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(9)".pdf, id=14459, 578.16p
+del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(9)".pdf, id=14427, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(9)".pdf Graphic file 
@@ -6661,7 +6665,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(8)".pdf, id=14460, 578.16p
+del_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(8)".pdf, id=14428, 578.16p
 t x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(8)".pdf Graphic file 
@@ -6718,7 +6722,7 @@ my insertion and my current dilemma will both disappear.
 
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2_coloured".pdf, id=14
-463, 578.16pt x 578.16pt>
+431, 578.16pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2_coloured".pdf G
 raphic file (type pdf)
 
@@ -6728,7 +6732,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(1)".pdf, id=14464, 578.16
+del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(1)".pdf, id=14432, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(1)".pdf Graphic file
@@ -6742,7 +6746,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 154.35889pt x 154.35852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(2)".pdf, id=14465, 578.16
+del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(2)".pdf, id=14433, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(2)".pdf Graphic file
@@ -6756,7 +6760,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(3)".pdf, id=14466, 578.16
+del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(3)".pdf, id=14434, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(3)".pdf Graphic file
@@ -6770,7 +6774,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(4)".pdf, id=14467, 578.16
+del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(4)".pdf, id=14435, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(4)".pdf Graphic file
@@ -6784,7 +6788,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(5)".pdf, id=14468, 578.16
+del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(5)".pdf, id=14436, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(5)".pdf Graphic file
@@ -6798,7 +6802,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(6)".pdf, id=14469, 578.16
+del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(6)".pdf, id=14437, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(6)".pdf Graphic file
@@ -6812,7 +6816,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(7)".pdf, id=14470, 578.16
+del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(7)".pdf, id=14438, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(7)".pdf Graphic file
@@ -6826,7 +6830,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(9)".pdf, id=14471, 578.16
+del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(9)".pdf, id=14439, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(9)".pdf Graphic file
@@ -6840,7 +6844,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mo
-del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(8)".pdf, id=14472, 578.16
+del_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(8)".pdf, id=14440, 578.16
 pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/
 SL_Model_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(8)".pdf Graphic file
@@ -6852,7 +6856,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_
 20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(8
 )".pdf used on input line 1353.
 (pdftex.def)             Requested size: 99.23167pt x 99.22984pt.
- [285 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4_coloured.pdf> </h
+ [284 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4_coloured.pdf> </h
 ome/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_
 Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(1).pdf> </home/tomkelly/Documen
 ts/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4
@@ -6860,14 +6864,14 @@ _ROC_samples_SLstry_vioplot(2).pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_
 Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_
 vioplot(3).pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_
 Str_randx/SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(5).pdf>] [28
-6 </home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_M
+5 </home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_M
 odel_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(6).pdf> </home/tomkelly/Do
 cuments/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_G
 raph4_ROC_samples_SLstry_vioplot(7).pdf> </home/tomkelly/Documents/PhD Otago Un
 i/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4_ROC_samples_SL
 stry_vioplot(9).pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_2016
 1206_Str_randx/SL_Model_Test_Graph_1K_Graph4_ROC_samples_SLstry_vioplot(8).pdf>
-] [287 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i_coloured.pdf> <
+] [286 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i_coloured.pdf> <
 /home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Mode
 l_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(1).pdf> </home/tomkelly/Docu
 ments/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Gra
@@ -6883,7 +6887,7 @@ Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Graph4i_ROC_samples
 _SLstry_vioplot(9).pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_2
 0161206_Str_randx/SL_Model_Test_Graph_1K_Graph4i_ROC_samples_SLstry_vioplot(8).
 pdf>]
-[288 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2_coloured.pdf> </
+[287 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph4i2_coloured.pdf> </
 home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model
 _Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(1).pdf> </home/tomkelly/Docu
 ments/PhD Otago Uni/SL_Model//RUN_20161206_Str_randx/SL_Model_Test_Graph_1K_Gra
@@ -6901,7 +6905,7 @@ amples_SLstry_vioplot(7).pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/
 lot(9).pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model//RUN_20161206_Str_
 randx/SL_Model_Test_Graph_1K_Graph4i2_ROC_samples_SLstry_vioplot(8).pdf>]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph1_ROC1_samplesx".png, id=14660, 602.25pt x 602.25pt>
+est_Graph_1K_Graph1_ROC1_samplesx".png, id=14627, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph1_ROC1_samplesx".png Graphic file (type png)
 
@@ -6913,7 +6917,7 @@ ne 1375.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph1_ROC2_samplesx".png, id=14661, 602.25pt x 602.25pt>
+est_Graph_1K_Graph1_ROC2_samplesx".png, id=14628, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph1_ROC2_samplesx".png Graphic file (type png)
 
@@ -6932,7 +6936,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 132.30666pt x 132.30353pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Graph1_AUC_samplesx".png, id=14664, 602.25pt x 602.25pt>
+est_Graph_1K_Graph1_AUC_samplesx".png, id=14631, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Graph1_AUC_samplesx".png Graphic file (type png)
 
@@ -6942,7 +6946,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Graph1_AUC_samplesx".png used on input lin
 e 1390.
 (pdftex.def)             Requested size: 220.50885pt x 220.51323pt.
- [289
+ [288
 
  </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
 est_Graph_1K_Graph1_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD
@@ -6950,7 +6954,7 @@ est_Graph_1K_Graph1_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD
 esx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_201612
 07_randx/SL_Model_Test_Graph_1K_Graph1_AUC_samplesx.png (PNG copy)>]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph6_ROC1_samplesx".png, id=14678, 602.25pt x 602.25pt>
+est_Graph_10K_Graph6_ROC1_samplesx".png, id=14646, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph6_ROC1_samplesx".png Graphic file (type png)
 
@@ -6962,7 +6966,7 @@ ine 2006.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph6_ROC2_samplesx".png, id=14679, 602.25pt x 602.25pt>
+est_Graph_10K_Graph6_ROC2_samplesx".png, id=14647, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph6_ROC2_samplesx".png Graphic file (type png)
 
@@ -6973,7 +6977,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 ine 2009.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph6".pdf, id=14682, 1156.3
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph6".pdf, id=14650, 1156.3
 2pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph6".pdf Graphic file
  (type pdf)
@@ -6984,7 +6988,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 209.4861pt x 104.73477pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph6_AUC_samplesx".png, id=14683, 602.25pt x 602.25pt>
+est_Graph_10K_Graph6_AUC_samplesx".png, id=14651, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph6_AUC_samplesx".png Graphic file (type png)
 
@@ -6996,7 +7000,7 @@ ne 2018.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph7_ROC1_samplesx".png, id=14688, 602.25pt x 602.25pt>
+est_Graph_10K_Graph7_ROC1_samplesx".png, id=14656, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph7_ROC1_samplesx".png Graphic file (type png)
 
@@ -7008,7 +7012,7 @@ ine 2034.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph7_ROC2_samplesx".png, id=14689, 602.25pt x 602.25pt>
+est_Graph_10K_Graph7_ROC2_samplesx".png, id=14657, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph7_ROC2_samplesx".png Graphic file (type png)
 
@@ -7019,7 +7023,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 ine 2037.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7".pdf, id=14692, 1156.3
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7".pdf, id=14660, 1156.3
 2pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7".pdf Graphic file
  (type pdf)
@@ -7040,7 +7044,7 @@ deleted material, e.g., by typing `I$}'.
 
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph7_AUC_samplesx".png, id=14693, 602.25pt x 602.25pt>
+est_Graph_10K_Graph7_AUC_samplesx".png, id=14661, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph7_AUC_samplesx".png Graphic file (type png)
 
@@ -7052,7 +7056,7 @@ ne 2047.
 (pdftex.def)             Requested size: 220.50885pt x 220.51323pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph5_ROC1_samplesx".png, id=14698, 602.25pt x 602.25pt>
+est_Graph_10K_Graph5_ROC1_samplesx".png, id=14666, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph5_ROC1_samplesx".png Graphic file (type png)
 
@@ -7064,7 +7068,7 @@ ine 2063.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph5_ROC2_samplesx".png, id=14699, 602.25pt x 602.25pt>
+est_Graph_10K_Graph5_ROC2_samplesx".png, id=14667, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph5_ROC2_samplesx".png Graphic file (type png)
 
@@ -7075,7 +7079,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 ine 2066.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5".pdf, id=14702, 1156.3
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5".pdf, id=14670, 1156.3
 2pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5".pdf Graphic file
  (type pdf)
@@ -7086,7 +7090,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 198.45662pt x 99.22102pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph5_AUC_samplesx_prop".png, id=14703, 602.25pt x 602.25pt>
+est_Graph_10K_Graph5_AUC_samplesx_prop".png, id=14671, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph5_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -7096,20 +7100,20 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph5_AUC_samplesx_prop".png used on inp
 ut line 2077.
 (pdftex.def)             Requested size: 220.50885pt x 220.51323pt.
- [290
+ [289
 
  </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
 est_Graph_10K_Graph6_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/Ph
 D Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph6_ROC2_sam
 plesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph6.p
 df> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mode
-l_Test_Graph_10K_Graph6_AUC_samplesx.png (PNG copy)>] [291 </home/tomkelly/Docu
+l_Test_Graph_10K_Graph6_AUC_samplesx.png (PNG copy)>] [290 </home/tomkelly/Docu
 ments/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph7_
 ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/
 RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph7_ROC2_samplesx.png (PNG copy)>
  </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7.pdf> </home/tomkelly/D
 ocuments/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Grap
-h7_AUC_samplesx.png (PNG copy)>] [292 </home/tomkelly/Documents/PhD Otago Uni/S
+h7_AUC_samplesx.png (PNG copy)>] [291 </home/tomkelly/Documents/PhD Otago Uni/S
 L_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph5_ROC1_samplesx.png (PN
 G copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL
 _Model_Test_Graph_10K_Graph5_ROC2_samplesx.png (PNG copy)> </home/tomkelly/Docu
@@ -7117,7 +7121,7 @@ ments/PhD Otago Uni/SL_Model/Graph5.pdf> </home/tomkelly/Documents/PhD Otago Un
 i/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph5_AUC_samplesx_prop.
 png (PNG copy)>]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph6i_ROC1_samplesx".png, id=14735, 602.25pt x 602.25pt>
+est_Graph_10K_Graph6i_ROC1_samplesx".png, id=14703, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph6i_ROC1_samplesx".png Graphic file (type png)
 
@@ -7129,7 +7133,7 @@ line 2102.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph6i_ROC2_samplesx".png, id=14736, 602.25pt x 602.25pt>
+est_Graph_10K_Graph6i_ROC2_samplesx".png, id=14704, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph6i_ROC2_samplesx".png Graphic file (type png)
 
@@ -7140,7 +7144,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 line 2105.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph6i".pdf, id=14739, 1156.
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph6i".pdf, id=14707, 1156.
 32pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph6i".pdf Graphic fil
 e (type pdf)
@@ -7151,7 +7155,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 209.4861pt x 104.73477pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph6i_AUC_samplesx_prop".png, id=14740, 602.25pt x 602.25pt>
+est_Graph_10K_Graph6i_AUC_samplesx_prop".png, id=14708, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph6i_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -7163,7 +7167,7 @@ put line 2115.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph6i2_ROC1_samplesx".png, id=14745, 602.25pt x 602.25pt>
+est_Graph_10K_Graph6i2_ROC1_samplesx".png, id=14713, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph6i2_ROC1_samplesx".png Graphic file (type png)
 
@@ -7175,7 +7179,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph6i2_ROC2_samplesx".png, id=14746, 602.25pt x 602.25pt>
+est_Graph_10K_Graph6i2_ROC2_samplesx".png, id=14714, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph6i2_ROC2_samplesx".png Graphic file (type png)
 
@@ -7186,7 +7190,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
  line 2135.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph6i2".pdf, id=14749, 1156
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph6i2".pdf, id=14717, 1156
 .32pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph6i2".pdf Graphic fi
 le (type pdf)
@@ -7197,7 +7201,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 198.45662pt x 99.22102pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph6i2_AUC_samplesx_prop".png, id=14750, 602.25pt x 602.25pt>
+est_Graph_10K_Graph6i2_AUC_samplesx_prop".png, id=14718, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph6i2_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -7209,7 +7213,7 @@ nput line 2146.
 (pdftex.def)             Requested size: 220.50885pt x 220.51323pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph7i_ROC1_samplesx".png, id=14755, 602.25pt x 602.25pt>
+est_Graph_10K_Graph7i_ROC1_samplesx".png, id=14723, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph7i_ROC1_samplesx".png Graphic file (type png)
 
@@ -7221,7 +7225,7 @@ line 2163.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph7i_ROC2_samplesx".png, id=14756, 602.25pt x 602.25pt>
+est_Graph_10K_Graph7i_ROC2_samplesx".png, id=14724, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph7i_ROC2_samplesx".png Graphic file (type png)
 
@@ -7232,7 +7236,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 line 2166.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7i".pdf, id=14759, 1156.
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7i".pdf, id=14727, 1156.
 32pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7i".pdf Graphic fil
 e (type pdf)
@@ -7243,7 +7247,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 220.50885pt x 110.24852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph7i_AUC_samplesx_prop".png, id=14760, 602.25pt x 602.25pt>
+est_Graph_10K_Graph7i_AUC_samplesx_prop".png, id=14728, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph7i_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -7255,7 +7259,7 @@ put line 2177.
 (pdftex.def)             Requested size: 198.45662pt x 198.45824pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph7i2_ROC1_samplesx".png, id=14765, 602.25pt x 602.25pt>
+est_Graph_10K_Graph7i2_ROC1_samplesx".png, id=14733, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph7i2_ROC1_samplesx".png Graphic file (type png)
 
@@ -7267,7 +7271,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph7i2_ROC2_samplesx".png, id=14766, 602.25pt x 602.25pt>
+est_Graph_10K_Graph7i2_ROC2_samplesx".png, id=14734, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph7i2_ROC2_samplesx".png Graphic file (type png)
 
@@ -7278,7 +7282,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
  line 2198.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7i2".pdf, id=14769, 1156
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7i2".pdf, id=14737, 1156
 .32pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7i2".pdf Graphic fi
 le (type pdf)
@@ -7289,7 +7293,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 220.50885pt x 110.24852pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph7i2_AUC_samplesx_prop".png, id=14770, 602.25pt x 602.25pt>
+est_Graph_10K_Graph7i2_AUC_samplesx_prop".png, id=14738, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph7i2_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -7301,7 +7305,7 @@ nput line 2209.
 (pdftex.def)             Requested size: 198.45662pt x 198.45824pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph5i_ROC1_samplesx".png, id=14775, 602.25pt x 602.25pt>
+est_Graph_10K_Graph5i_ROC1_samplesx".png, id=14743, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph5i_ROC1_samplesx".png Graphic file (type png)
 
@@ -7313,7 +7317,7 @@ line 2226.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph5i_ROC2_samplesx".png, id=14776, 602.25pt x 602.25pt>
+est_Graph_10K_Graph5i_ROC2_samplesx".png, id=14744, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph5i_ROC2_samplesx".png Graphic file (type png)
 
@@ -7324,7 +7328,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 line 2229.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5i".pdf, id=14779, 1156.
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5i".pdf, id=14747, 1156.
 32pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5i".pdf Graphic fil
 e (type pdf)
@@ -7335,7 +7339,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 198.45662pt x 99.22102pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph5i_AUC_samplesx_prop".png, id=14780, 602.25pt x 602.25pt>
+est_Graph_10K_Graph5i_AUC_samplesx_prop".png, id=14748, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph5i_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -7347,7 +7351,7 @@ put line 2240.
 (pdftex.def)             Requested size: 220.50885pt x 220.51323pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph5i2_ROC1_samplesx".png, id=14785, 602.25pt x 602.25pt>
+est_Graph_10K_Graph5i2_ROC1_samplesx".png, id=14753, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph5i2_ROC1_samplesx".png Graphic file (type png)
 
@@ -7359,7 +7363,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph5i2_ROC2_samplesx".png, id=14786, 602.25pt x 602.25pt>
+est_Graph_10K_Graph5i2_ROC2_samplesx".png, id=14754, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph5i2_ROC2_samplesx".png Graphic file (type png)
 
@@ -7370,7 +7374,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
  line 2260.
 (pdftex.def)             Requested size: 132.30666pt x 132.30241pt.
 
-<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5i2".pdf, id=14789, 1156
+<"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5i2".pdf, id=14757, 1156
 .32pt x 578.16pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5i2".pdf Graphic fi
 le (type pdf)
@@ -7381,7 +7385,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph
 (pdftex.def)             Requested size: 198.45662pt x 99.22102pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Graph5i2_AUC_samplesx_prop".png, id=14790, 602.25pt x 602.25pt>
+est_Graph_10K_Graph5i2_AUC_samplesx_prop".png, id=14758, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Graph5i2_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -7391,7 +7395,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161205_randx/SL_Model_Test_Graph_10K_Graph5i2_AUC_samplesx_prop".png used on i
 nput line 2272.
 (pdftex.def)             Requested size: 220.50885pt x 220.51323pt.
- [293
+ [292
 
  </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
 est_Graph_10K_Graph6i_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/P
@@ -7400,32 +7404,32 @@ amplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph6
 i.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_M
 odel_Test_Graph_10K_Graph6i_AUC_samplesx_prop.png (PNG copy)>]
 
-LaTeX Warning: Text page 294 contains only floats.
+LaTeX Warning: Text page 293 contains only floats.
 
-[294 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mod
+[293 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mod
 el_Test_Graph_10K_Graph6i2_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Docume
 nts/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph6i2_
 ROC2_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/
 Graph6i2.pdf> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_ran
-dx/SL_Model_Test_Graph_10K_Graph6i2_AUC_samplesx_prop.png (PNG copy)>] [295 </h
+dx/SL_Model_Test_Graph_10K_Graph6i2_AUC_samplesx_prop.png (PNG copy)>] [294 </h
 ome/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_
 Graph_10K_Graph7i_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD O
 tago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph7i_ROC2_sampl
 esx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7i.pd
 f> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model
-_Test_Graph_10K_Graph7i_AUC_samplesx_prop.png (PNG copy)>] [296 </home/tomkelly
+_Test_Graph_10K_Graph7i_AUC_samplesx_prop.png (PNG copy)>] [295 </home/tomkelly
 /Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Gr
 aph7i2_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL
 _Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph7i2_ROC2_samplesx.png (P
 NG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph7i2.pdf> </home
 /tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Gra
-ph_10K_Graph7i2_AUC_samplesx_prop.png (PNG copy)>] [297 </home/tomkelly/Documen
+ph_10K_Graph7i2_AUC_samplesx_prop.png (PNG copy)>] [296 </home/tomkelly/Documen
 ts/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph5i_RO
 C1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RU
 N_20161205_randx/SL_Model_Test_Graph_10K_Graph5i_ROC2_samplesx.png (PNG copy)> 
 </home/tomkelly/Documents/PhD Otago Uni/SL_Model/Graph5i.pdf> </home/tomkelly/D
 ocuments/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Grap
-h5i_AUC_samplesx_prop.png (PNG copy)>] [298 </home/tomkelly/Documents/PhD Otago
+h5i_AUC_samplesx_prop.png (PNG copy)>] [297 </home/tomkelly/Documents/PhD Otago
  Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph5i2_ROC1_samplesx
 .png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_
 randx/SL_Model_Test_Graph_10K_Graph5i2_ROC2_samplesx.png (PNG copy)> </home/tom
@@ -7433,7 +7437,7 @@ kelly/Documents/PhD Otago Uni/SL_Model/Graph5i2.pdf> </home/tomkelly/Documents/
 PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Graph5i2_AUC_
 samplesx_prop.png (PNG copy)>]
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Gai_ROC1_samplesx".png, id=14851, 602.25pt x 602.25pt>
+est_Graph_10K_Gai_ROC1_samplesx".png, id=14819, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Gai_ROC1_samplesx".png Graphic file (type png)
 
@@ -7445,7 +7449,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Gai_ROC2_samplesx".png, id=14852, 602.25pt x 602.25pt>
+est_Graph_10K_Gai_ROC2_samplesx".png, id=14820, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Gai_ROC2_samplesx".png Graphic file (type png)
 
@@ -7464,7 +7468,7 @@ _Gai".pdf used on input line 2374.
 (pdftex.def)             Requested size: 209.4861pt x 209.46956pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
-est_Graph_10K_Gai_AUC_samplesx_prop".png, id=14855, 602.25pt x 602.25pt>
+est_Graph_10K_Gai_AUC_samplesx_prop".png, id=14823, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Mo
 del_Test_Graph_10K_Gai_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -7476,7 +7480,7 @@ line 2378.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_pi3k_ROC1_samplesx".png, id=14858, 602.25pt x 602.25pt>
+est_Graph_1K_pi3k_ROC1_samplesx".png, id=14826, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_pi3k_ROC1_samplesx".png Graphic file (type png)
 
@@ -7488,7 +7492,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_pi3k_ROC2_samplesx".png, id=14859, 602.25pt x 602.25pt>
+est_Graph_1K_pi3k_ROC2_samplesx".png, id=14827, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_pi3k_ROC2_samplesx".png Graphic file (type png)
 
@@ -7507,7 +7511,7 @@ _pi3k".pdf used on input line 2405.
 (pdftex.def)             Requested size: 209.4861pt x 209.46956pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_pi3k_AUC_samplesx_prop".png, id=14862, 602.25pt x 602.25pt>
+est_Graph_1K_pi3k_AUC_samplesx_prop".png, id=14830, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_pi3k_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -7519,7 +7523,7 @@ line 2409.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Gai_ROC1_samplesx".png, id=14871, 602.25pt x 602.25pt>
+est_Graph_1K_Gai_ROC1_samplesx".png, id=14839, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Gai_ROC1_samplesx".png Graphic file (type png)
 
@@ -7531,7 +7535,7 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Gai_ROC2_samplesx".png, id=14872, 602.25pt x 602.25pt>
+est_Graph_1K_Gai_ROC2_samplesx".png, id=14840, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Gai_ROC2_samplesx".png Graphic file (type png)
 
@@ -7550,7 +7554,7 @@ _Gai".pdf used on input line 2436.
 (pdftex.def)             Requested size: 209.4861pt x 209.46956pt.
 
 <"/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_T
-est_Graph_1K_Gai_AUC_samplesx_prop".png, id=14875, 602.25pt x 602.25pt>
+est_Graph_1K_Gai_AUC_samplesx_prop".png, id=14843, 602.25pt x 602.25pt>
 File: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Mo
 del_Test_Graph_1K_Gai_AUC_samplesx_prop".png Graphic file (type png)
 
@@ -7560,18 +7564,18 @@ Package pdftex.def Info: "/home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_2
 0161207_randx/SL_Model_Test_Graph_1K_Gai_AUC_samplesx_prop".png used on input l
 ine 2440.
 (pdftex.def)             Requested size: 209.4861pt x 209.48573pt.
-) [299
+) [298
 
  </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_randx/SL_Model_T
 est_Graph_10K_Gai_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD O
 tago Uni/SL_Model/RUN_20161205_randx/SL_Model_Test_Graph_10K_Gai_ROC2_samplesx.
 png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161205_r
-andx/SL_Model_Test_Graph_10K_Gai_AUC_samplesx_prop.png (PNG copy)>] [300 </home
+andx/SL_Model_Test_Graph_10K_Gai_AUC_samplesx_prop.png (PNG copy)>] [299 </home
 /tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Gra
 ph_1K_pi3k_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Un
 i/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_pi3k_ROC2_samplesx.png (PN
 G copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL
-_Model_Test_Graph_1K_pi3k_AUC_samplesx_prop.png (PNG copy)>] [301 </home/tomkel
+_Model_Test_Graph_1K_pi3k_AUC_samplesx_prop.png (PNG copy)>] [300 </home/tomkel
 ly/Documents/PhD Otago Uni/SL_Model/RUN_20161207_randx/SL_Model_Test_Graph_1K_G
 ai_ROC1_samplesx.png (PNG copy)> </home/tomkelly/Documents/PhD Otago Uni/SL_Mod
 el/RUN_20161207_randx/SL_Model_Test_Graph_1K_Gai_ROC2_samplesx.png (PNG copy)> 
@@ -7597,9 +7601,9 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 43922 strings out of 494724
- 921724 string characters out of 6174697
- 1078609 words of memory out of 5000000
+ 43921 strings out of 494724
+ 921716 string characters out of 6174697
+ 1078669 words of memory out of 5000000
  44811 multiletter control sequences out of 15000+600000
  28002 words of font info for 105 fonts, out of 8000000 for 9000
  102 hyphenation exceptions out of 8191
@@ -7830,10 +7834,10 @@ type1/wadalab/JIS/dgjkc.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dgjkd.pfb
 pe1/wadalab/JIS/dgjkk.pfb></usr/share/texmf/fonts/type1/wadalab/JIS/dgjsy.pfb><
 /usr/share/texmf/fonts/type1/public/tex-gyre/qhvb.pfb></usr/share/texmf/fonts/t
 ype1/public/tex-gyre/qhvr.pfb>
-Output written on thesis.pdf (320 pages, 23678119 bytes).
+Output written on thesis.pdf (319 pages, 23673950 bytes).
 PDF statistics:
- 15213 PDF objects out of 15390 (max. 8388607)
- 12616 compressed objects within 127 object streams
- 1068 named destinations out of 1200 (max. 500000)
+ 15180 PDF objects out of 15390 (max. 8388607)
+ 12585 compressed objects within 126 object streams
+ 1067 named destinations out of 1200 (max. 500000)
  3213 words of extra memory for PDF output out of 10000 (max. 10000000)
 
