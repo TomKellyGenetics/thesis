@@ -78,12 +78,15 @@ These results are shown in both a bargraph and lineplot to show the individual r
 
 The \gls{synthetic lethal} detection procedures were also tested with 1000 simulations of a larger dataset of 20,000 genes and 1000 samples. While fewer simulations gives a less accurate \gls{ROC} result, this is sufficient to replicate the above findings with a feasible number of genes in a human \gls{gene expression} dataset and assess the impact of a higher proportion of non-synthetic lethal genes (potential false positives). Simulated datasets of this size were also used in Section~ \ref{chapt2:simulation_mvtnorm} to test the specificity in a number of genes similar to that in experimental datasets for cancer \glspl{genome}. As shown in Figure~\ref{fig:simulation1107_Graph5All5SL}, the above findings were replicated in  simulations of a larger dataset with 20,000 genes. These were also robustly replicated across varying numbers of underlying \gls{synthetic lethal} genes (as shown in Appendix Figure~\ref{fig:simulation1107_Graph5Alllineplot}).
 
-\FloatBarrier
+%\FloatBarrier
     
 \subsubsection{Correlated Query Genes affects Specificity}
 \label{chapt5:compare_chisq_query_cor}
 
-\FloatBarrier
+%\FloatBarrier
+
+   
+As discussed in Section~\ref{chapt2:simulation_mvtnorm_query_cor}, positively correlated genes (with the query gene) have an impact on the performance of \gls{synthetic lethal} detection. \gls{SLIPT} was able to distinguish these correlated genes from \gls{synthetic lethal} partners and hence is likely to have a higher specificity in datasets which include positively correlated genes with the query gene (as expected in \gls{gene expression} data). The \gls{synthetic lethal} detection procedures were compared with 10,000 simulations of a small dataset of 100 genes (with 5 correlated with the query gene) and 1000 samples otherwise without correlation structure between genes. As shown in Figure~\ref{fig:simulation1108_query_cor_Graph5All5SL:lineplot}, this specificity is reflected in the increased \gls{AUROC} performance values for \gls{SLIPT} (in contrast to Figure \ref{fig:simulation1108_Graph5All5SL}). This specificity can be attributed to the directional criteria (as described in Section~\ref{methods:SLIPT}) since the $\chi^2$-test alone performs comparatively poorly with positively correlated genes.
 
     \begin{figure*}[!tb]
     %\begin{mdframed}
@@ -123,9 +126,7 @@ The \gls{synthetic lethal} detection procedures were also tested with 1000 simul
     %\end{mdframed}
     \end{figure*}
     
-    
-As discussed in Section~\ref{chapt2:simulation_mvtnorm_query_cor}, positively correlated genes (with the query gene) have an impact on the performance of \gls{synthetic lethal} detection. \gls{SLIPT} was able to distinguish these correlated genes from \gls{synthetic lethal} partners and hence is likely to have a higher specificity in datasets which include positively correlated genes with the query gene (as expected in \gls{gene expression} data). The \gls{synthetic lethal} detection procedures were compared with 10,000 simulations of a small dataset of 100 genes (with 5 correlated with the query gene) and 1000 samples otherwise without correlation structure between genes. As shown in Figure~\ref{fig:simulation1108_query_cor_Graph5All5SL:lineplot}, this specificity is reflected in the increased \gls{AUROC} performance values for \gls{SLIPT} (in contrast to Figure \ref{fig:simulation1108_Graph5All5SL}). This specificity can be attributed to the directional criteria (as described in Section~\ref{methods:SLIPT}) since the $\chi^2$-test alone performs comparatively poorly with positively correlated genes.
-    
+
 The \gls{synthetic lethal} detection procedures were also compared with 1000 simulations of a larger dataset of 20,000 genes (with 1000 correlated with the query gene) and 1000 samples otherwise without correlation structure between genes. This simulation increases the number of genes (and proportion of negative genes) to those comparable with a human \gls{gene expression} dataset while maintaining a comparable 5\% of positively correlated genes. As shown in Figure~\ref{fig:simulation1107_query_cor_Graph5All5SL:lineplot}, \gls{SLIPT} outperformed $\chi^2$ or negative correlation and was optimal at the $\sfrac{1}{3}$-quantile. The difference between \gls{SLIPT} and $\chi^2$ was less pronounced in a larger dataset, with many weakly correlated genes. The greater specificity of \gls{SLIPT} than the $\chi^2$-test, to distinguish positively correlated non-synthetic lethal genes, was not as evident with a large number of negative genes (as potential false positives). However, specificity is important in large-scale \glspl{genomic} analysis with many potential false positives.
 %  
 %Nevertheless, 
@@ -182,7 +183,7 @@ Extensive attempts were also made to compare \gls{SLIPT} to the \gls{BiSEp} meth
 
 The \gls{BiSEp} package is designed for global testing of all potential gene pairs in the \glspl{genome} for \glspl{synthetic lethal} rather than focusing on the search space of  potential partners of the query gene. This approach was unable to detect \gls{synthetic lethal} gene pairs in the \gls{TCGA} breast cancer \glslink{gene expression}{expression} dataset \citep{TCGA2012}. However, this may be due to stringent thresholds under the multiple testing of millions of potential gene pairs.
 
-For a direct comparison with the query-based \gls{SLIPT} approach, the source code of the \gls{BiSEp} R functions was modified to test solely for the partners of a specific gene. This approach was still unable to detect \gls{synthetic lethal} partners of \textit{CDH1} in \gls{TCGA} breast cancer \glslink{gene expression}{expression} data \citep{TCGA2012}, even with the detection thresholds for bimodality and significance greatly relaxed from those which the package defaults to.
+For a direct comparison with the query-based \gls{SLIPT} approach, the source code of the \gls{BiSEp} R functions was modified to test solely for the partners of a specific gene. This approach was still unable to detect \gls{synthetic lethal} partners of \textit{CDH1} in \gls{TCGA} breast cancer \glslink{gene expression}{expression} data \citep{TCGA2012}, even with the detection thresholds for bimodality and significance greatly relaxed from those the package defaults to.
 
 To circumvent multiple testing issues, \gls{BiSEp} only tests gene pairs for \glspl{synthetic lethal} between genes with a detectable bimodal distribution. However, even with relaxed thresholds, bimodal distributions were not detectable in the normalised \gls{TCGA} data \citep{TCGA2012}. Such normalisation \cite{limma} is standard practice for \glslink{gene expression}{expression} datasets generated from \glspl{microarray} or \gls{RNA-Seq} and therefore \gls{BiSEp} may not be appropriate to apply to this data. However, it is noted that \gls{BiSEp} may also use other data types such as \acrshort{DNA} copy number or cell line data for which it may be more applicable \citep{Wappett2016}.
 
@@ -266,7 +267,7 @@ Simple and more complex constructed \glslink{graph}{graph} structures were used 
 
 Simple pathway modules were used to test the effect of \glslink{graph}{pathway} structure on the performance of detecting \gls{synthetic lethal} partners within \glslink{graph}{graph} structures. For an intial comparison, the \glslink{graph}{graph} structures (shown by Figure~\ref{fig:simple_graph1}) were used where a gene has one upstream regulator and two downstream (Figure~\ref{fig:simple_graph2:first}) or a gene has two upstream regulators and one downstream gene (Figure~\ref{fig:simple_graph2:first}). \gls{SLIPT} had a high performance in these simulations, detecting randomly selected \gls{synthetic lethal} partners in both of these small simple networks (shown in Figure~\ref{fig:simulation1205_randx_Graph1} and Appendix Figure~\ref{fig:simulation1205_randx_Graph2}). 
 
-\begin{figure*}[!tb]
+\begin{figure*}[!htb]
 %\begin{mdframed}
 %  \resizebox{\textwidth}{!}{
          \begin{center}
