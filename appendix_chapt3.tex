@@ -77,78 +77,7 @@ This analysis was replicated on a (smaller) stomach cancer dataset but it was le
 
 SLIPT expression analysis (described in Section~\ref{methods:SLIPT}) on \gls{TCGA} breast cancer data ($n = 969$) found the following genes and pathways, described in Sections~\ref{chapt3:exprSL_genes} and~\ref{chapt3:exprSL_pathways}.
 
-\begin{table*}[!ht]
-\caption{Candidate synthetic lethal gene partners of \textit{CDH1} from mtSLIPT}
-\label{tab:gene_mtSL}
-\centering
-\resizebox{0.8 \textwidth}{!}{
-\begin{threeparttable}
-\begin{tabular}{>{\em}sl^c^c^c^c^c}
-\rowstyle{\bfseries}
- \em{Gene} & Observed\tnote{*}  & Expected\tnote{*} & $\chi^2$ value & p-value & p-value (\gls{FDR}) \\ 
-  \hline
-  \rowcolor{black!10}
-TFAP2B & 8 & 36.7 & 89.5 & $3.60 \times 10^{-20}$ & $8.37 \times 10^{-17}$ \\
-  \rowcolor{black!5}
-  ZNF423 & 15 & 36.7 & 78.8 & $7.89 \times 10^{-18}$ & $1.22 \times 10^{-14}$ \\ 
-  \rowcolor{black!10}
-  CALCOCO1 & 11 & 36.7 & 76.8 & $2.09 \times 10^{-17}$ & $2.59 \times 10^{-14}$ \\ 
-  \rowcolor{black!5}
-  RBM5 & 13 & 36.7 & 75.7 & $3.65 \times 10^{-17}$ & $4.00 \times 10^{-14}$ \\ 
-  \rowcolor{black!10}
-  BTG2 & 7 & 36.7 & 71.7 & $2.72 \times 10^{-16}$ & $1.81 \times 10^{-13}$ \\ 
-  \rowcolor{black!5}
-  RXRA & 6 & 36.7 & 70.5 & $5.00 \times 10^{-16}$ & $2.97 \times 10^{-13}$ \\ 
-  \rowcolor{black!10}
-  SLC27A1 & 11 & 36.7 & 70.3 & $5.42 \times 10^{-16}$ & $2.97 \times 10^{-13}$ \\ 
-  \rowcolor{black!5}
-  MEF2D & 12 & 36.7 & 69.6 & $7.86 \times 10^{-16}$ & $3.95 \times 10^{-13}$ \\ 
-  \rowcolor{black!10}
-  NISCH & 12 & 36.7 & 69.6 & $7.86 \times 10^{-16}$ & $3.95 \times 10^{-13}$ \\ 
-  \rowcolor{black!5}
-  AVPR2 & 9 & 36.7 & 69.2 & $9.36 \times 10^{-16}$ & $4.58 \times 10^{-13}$ \\ 
-  \rowcolor{black!10}
-  CRY2 & 13 & 36.7 & 68.9 & $1.07 \times 10^{-15}$ & $4.98 \times 10^{-13}$ \\ 
-  \rowcolor{black!5}
-  RAPGEF3 & 13 & 36.7 & 68.9 & $1.07 \times 10^{-15}$ & $4.98 \times 10^{-13}$ \\ 
-  \rowcolor{black!10}
-  NRIP2 & 10 & 36.7 & 68.2 & $1.58 \times 10^{-15}$ & $7.18 \times 10^{-13}$ \\ 
-  \rowcolor{black!5}
-  DARC & 12 & 36.7 & 66.4 & $3.76 \times 10^{-15}$ & $1.54 \times 10^{-12}$ \\ 
-  \rowcolor{black!10}
-  SFRS5 & 12 & 36.7 & 66.4 & $3.76 \times 10^{-15}$ & $1.54 \times 10^{-12}$ \\ 
-  \rowcolor{black!5}
-  NOSTRIN & 5 & 36.7 & 65.1 & $7.40 \times 10^{-15}$ & $2.70 \times 10^{-12}$ \\ 
-  \rowcolor{black!10}
-  KIF13B & 12 & 36.7 & 63.4 & $1.69 \times 10^{-14}$ & $5.16 \times 10^{-12}$ \\ 
-  \rowcolor{black!5}
-  TENC1 & 10 & 36.7 & 62.5 & $2.67 \times 10^{-14}$ & $7.40 \times 10^{-12}$ \\ 
-  \rowcolor{black!10}
-  MFAP4 & 12 & 36.7 & 60.5 & $7.17 \times 10^{-14}$ & $1.67 \times 10^{-11}$ \\ 
-  \rowcolor{black!5}
-  ELN & 13 & 36.7 & 59.7 & $1.07 \times 10^{-13}$ & $2.32 \times 10^{-11}$ \\ 
-  \rowcolor{black!10}
-  SGK223 & 14 & 36.7 & 59 & $1.51 \times 10^{-13}$ & $3.05 \times 10^{-11}$ \\ 
-  \rowcolor{black!5}
-  KIF12 & 11 & 36.7 & 58.8 & $1.74 \times 10^{-13}$ & $3.34 \times 10^{-11}$ \\ 
-  \rowcolor{black!10}
-  SELP & 11 & 36.7 & 58.8 & $1.74 \times 10^{-13}$ & $3.34 \times 10^{-11}$ \\ 
-  \rowcolor{black!5}
-  CIRBP & 9 & 36.7 & 58.7 & $1.83 \times 10^{-13}$ & $3.41 \times 10^{-11}$ \\ 
-  \rowcolor{black!10}
-  CTDSP1 & 9 & 36.7 & 58.7 & $1.83 \times 10^{-13}$ & $3.41 \times 10^{-11}$ \\
-   \hline
-\end{tabular}
-\begin{tablenotes}
-\raggedright \small
-Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \acrshort{mtSLIPT} in \gls{TCGA} in breast cancer expression and mutation data
 
-\item[*] Observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} breast tumours with low expression of partner genes
-
-\end{tablenotes}
-\end{threeparttable}
-}
-\end{table*}
 
 
 \begin{table*}[!ht]
@@ -725,7 +654,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 }
 \end{table*}
 
-
+\iffalse
 \begin{table*}[!htp]
 \caption{Pathways for \textit{CDH1} partners from \acrshort{mtSLIPT} and \gls{siRNA} primary screen}
 \label{tab:pathway_perm_overlap_mtSL}
@@ -845,6 +774,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 \end{threeparttable}
 }
 \end{table*}
+\fi 
 
 \iffalse
 \begin{table}
@@ -1405,6 +1335,7 @@ The \gls{PAM50} subtypes could be more accurate given similarity of these subtyp
 
 \FloatBarrier
 
+\iffalse
 \chapter{Stomach Expression Analysis}
 \label{appendix:stad_exprSL}
 

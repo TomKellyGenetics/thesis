@@ -83,7 +83,80 @@ Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \gls{SL
 }
 \end{table*}
 
-The modified \acrshort{mtSLIPT} methodology (as described in Section~\ref{methods:SLIPT}) was also applied to the normalised \gls{TCGA} breast cancer \gls{gene expression} dataset, against \glslink{somatic}{somatic} loss of function \glspl{mutation} in \textit{CDH1}. As shown in  Appendix Table~\ref{tab:gene_mtSL}, the most significant genes also had strong evidence of \glslink{gene expression}{expression} associated with \textit{CDH1} \glspl{mutation} (high $\chi^2$ values) with fewer samples with \textit{CDH1} exhibiting low \glslink{gene expression}{expression} each candidate gene than expected statistically. These genes were not as strongly supported as the \glslink{gene expression}{expression} analysis (in Table~\ref{tab:gene_SL}), however, nor were as many genes detected. This is perhaps unsurprising due to the lower sample size with matching \glslink{somatic}{somatic} \gls{mutation} data and the lower frequency of \textit{CDH1} \glspl{mutation} compared to low \glslink{gene expression}{expression} defined by $\sfrac{1}{3}$ quantiles.
+The modified \acrshort{mtSLIPT} methodology (as described in Section~\ref{methods:SLIPT}) was also applied to the normalised \gls{TCGA} breast cancer \gls{gene expression} dataset, against \glslink{somatic}{somatic} loss of function \glspl{mutation} in \textit{CDH1}. As shown in  Table~\ref{tab:gene_mtSL}, the most significant genes also had strong evidence of \glslink{gene expression}{expression} associated with \textit{CDH1} \glspl{mutation} (high $\chi^2$ values) with fewer samples with \textit{CDH1} exhibiting low \glslink{gene expression}{expression} each candidate gene than expected statistically. These genes were not as strongly supported as the \glslink{gene expression}{expression} analysis (in Table~\ref{tab:gene_SL}), however, nor were as many genes detected. This is perhaps unsurprising due to the lower sample size with matching \glslink{somatic}{somatic} \gls{mutation} data and the lower frequency of \textit{CDH1} \glspl{mutation} compared to low \glslink{gene expression}{expression} defined by $\sfrac{1}{3}$ quantiles.
+
+\begin{table*}[!ht]
+\caption{Candidate synthetic lethal gene partners of \textit{CDH1} from mtSLIPT}
+\label{tab:gene_mtSL}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{>{\em}sl^c^c^c^c^c}
+\rowstyle{\bfseries}
+ \em{Gene} & Observed\tnote{*}  & Expected\tnote{*} & $\chi^2$ value & p-value & p-value (\gls{FDR}) \\ 
+  \hline
+  \rowcolor{black!10}
+TFAP2B & 8 & 36.7 & 89.5 & $3.60 \times 10^{-20}$ & $8.37 \times 10^{-17}$ \\
+  \rowcolor{black!5}
+  ZNF423 & 15 & 36.7 & 78.8 & $7.89 \times 10^{-18}$ & $1.22 \times 10^{-14}$ \\ 
+  \rowcolor{black!10}
+  CALCOCO1 & 11 & 36.7 & 76.8 & $2.09 \times 10^{-17}$ & $2.59 \times 10^{-14}$ \\ 
+  \rowcolor{black!5}
+  RBM5 & 13 & 36.7 & 75.7 & $3.65 \times 10^{-17}$ & $4.00 \times 10^{-14}$ \\ 
+  \rowcolor{black!10}
+  BTG2 & 7 & 36.7 & 71.7 & $2.72 \times 10^{-16}$ & $1.81 \times 10^{-13}$ \\ 
+  \rowcolor{black!5}
+  RXRA & 6 & 36.7 & 70.5 & $5.00 \times 10^{-16}$ & $2.97 \times 10^{-13}$ \\ 
+  \rowcolor{black!10}
+  SLC27A1 & 11 & 36.7 & 70.3 & $5.42 \times 10^{-16}$ & $2.97 \times 10^{-13}$ \\ 
+  \rowcolor{black!5}
+  MEF2D & 12 & 36.7 & 69.6 & $7.86 \times 10^{-16}$ & $3.95 \times 10^{-13}$ \\ 
+  \rowcolor{black!10}
+  NISCH & 12 & 36.7 & 69.6 & $7.86 \times 10^{-16}$ & $3.95 \times 10^{-13}$ \\ 
+  \rowcolor{black!5}
+  AVPR2 & 9 & 36.7 & 69.2 & $9.36 \times 10^{-16}$ & $4.58 \times 10^{-13}$ \\ 
+  \rowcolor{black!10}
+  CRY2 & 13 & 36.7 & 68.9 & $1.07 \times 10^{-15}$ & $4.98 \times 10^{-13}$ \\ 
+  \rowcolor{black!5}
+  RAPGEF3 & 13 & 36.7 & 68.9 & $1.07 \times 10^{-15}$ & $4.98 \times 10^{-13}$ \\ 
+  \rowcolor{black!10}
+  NRIP2 & 10 & 36.7 & 68.2 & $1.58 \times 10^{-15}$ & $7.18 \times 10^{-13}$ \\ 
+  \rowcolor{black!5}
+  DARC & 12 & 36.7 & 66.4 & $3.76 \times 10^{-15}$ & $1.54 \times 10^{-12}$ \\ 
+  \rowcolor{black!10}
+  SFRS5 & 12 & 36.7 & 66.4 & $3.76 \times 10^{-15}$ & $1.54 \times 10^{-12}$ \\ 
+  \rowcolor{black!5}
+  NOSTRIN & 5 & 36.7 & 65.1 & $7.40 \times 10^{-15}$ & $2.70 \times 10^{-12}$ \\ 
+  \rowcolor{black!10}
+  KIF13B & 12 & 36.7 & 63.4 & $1.69 \times 10^{-14}$ & $5.16 \times 10^{-12}$ \\ 
+  \rowcolor{black!5}
+  TENC1 & 10 & 36.7 & 62.5 & $2.67 \times 10^{-14}$ & $7.40 \times 10^{-12}$ \\ 
+  \rowcolor{black!10}
+  MFAP4 & 12 & 36.7 & 60.5 & $7.17 \times 10^{-14}$ & $1.67 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  ELN & 13 & 36.7 & 59.7 & $1.07 \times 10^{-13}$ & $2.32 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  SGK223 & 14 & 36.7 & 59 & $1.51 \times 10^{-13}$ & $3.05 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  KIF12 & 11 & 36.7 & 58.8 & $1.74 \times 10^{-13}$ & $3.34 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  SELP & 11 & 36.7 & 58.8 & $1.74 \times 10^{-13}$ & $3.34 \times 10^{-11}$ \\ 
+  \rowcolor{black!5}
+  CIRBP & 9 & 36.7 & 58.7 & $1.83 \times 10^{-13}$ & $3.41 \times 10^{-11}$ \\ 
+  \rowcolor{black!10}
+  CTDSP1 & 9 & 36.7 & 58.7 & $1.83 \times 10^{-13}$ & $3.41 \times 10^{-11}$ \\
+   \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \acrshort{mtSLIPT} in \gls{TCGA} in breast cancer expression and mutation data
+
+\item[*] Observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} breast tumours with low expression of partner genes
+
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
 
 The \acrshort{mtSLIPT} candidates had more genes involved in cell and gene regulation, particularly \acrshort{DNA} and \acrshort{RNA} binding factors. The strongest candidates also included microtubule (\textit{KIF12}), microfibril (\textit{MFAP4}), and cell adhesion (\textit{TENC1}) genes consistent with the established cytoskeletal role of \textit{CDH1}. The elastin gene (\textit{ELN}) was notably strongly supported by both \glslink{gene expression}{expression} and \gls{mutation} \gls{SLIPT} analysis of \text{CDH1} supporting interactions with extracellular proteins and the tumour microenvironment.
 
@@ -1023,6 +1096,126 @@ Of the highest over-represented \glspl{pathway} in the intersection, only G$_{\a
 
 Many of the \glspl{pathway} supported in the intersection by permutation analysis were also replicated in the \acrshort{mtSLIPT} analysis of partners tested with \textit{CDH1} \gls{mutation} (in Table~\ref{tab:pathway_perm_overlap_mtSL}), including G$_{\alpha s}$, elastic fibres, HS-GAG, and energy metabolism. While there were differences between the \glspl{pathway} identified by over-representation analysis, those replicated by permutation were highly concordant, supporting the combined use of these \glspl{pathway} approaches to identify \gls{synthetic lethal} gene functions and targets. 
 
+\begin{table*}[!htp]
+\caption{Pathways for \textit{CDH1} partners from \acrshort{mtSLIPT} and \gls{siRNA} primary screen}
+\label{tab:pathway_perm_overlap_mtSL}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{sl^c^c}
+\rowstyle{\bfseries}
+ Reactome Pathway & Over-representation & Permutation \\ 
+  \hline
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Visual phototransduction & $1.2 \times 10^{-9}$ & $0.86279$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  \textbf{G$_{\alpha s}$ signalling events} & $2.9 \times 10^{-7}$ & $0.023066$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Retinoid metabolism and transport & $2.9 \times 10^{-7}$ & $0.299$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Acyl chain remodelling of PS & $1.1 \times 10^{-5}$ & $0.42584$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Transcriptional regulation of white adipocyte differentiation & $1.1 \times 10^{-5}$ & $0.53928$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Chemokine receptors bind chemokines & $1.1 \times 10^{-5}$ & $0.95259$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  \textit{Signalling by NOTCH4} & $1.2 \times 10^{-5}$ & $0.079229$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Defective EXT2 causes exostoses 2 & $1.2 \times 10^{-5}$ & $0.22292$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Defective EXT1 causes exostoses 1, TRPS2 and CHDS & $1.2 \times 10^{-5}$ & $0.22292$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Platelet activation, signalling and aggregation & $1.2 \times 10^{-5}$ & $0.48853$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Serotonin receptors & $1.4 \times 10^{-5}$ & $0.34596$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Nicotinamide salvaging & $1.4 \times 10^{-5}$ & $0.70881$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Phase 1 - Functionalization of compounds & $2 \times 10^{-5}$ & $0.31142$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Amine ligand-binding receptors & $2.5 \times 10^{-5}$ & $0.34934$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Acyl chain remodelling of PE & $3.8 \times 10^{-5}$ & $0.42615$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Signalling by GPCR & $3.8 \times 10^{-5}$ & $0.93888$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  \textbf{Molecules associated with elastic fibres} & $3.9 \times 10^{-5}$ & $0.017982$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  DAP12 interactions & $3.9 \times 10^{-5}$ & $0.71983$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Beta defensins & $3.9 \times 10^{-5}$ & $0.91458$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Cytochrome P$_{450}$ - arranged by substrate type & $4.7 \times 10^{-5}$ & $0.83493$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  GPCR ligand binding & $5.7 \times 10^{-5}$ & $0.95258$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Acyl chain remodelling of PC & $6.1 \times 10^{-5}$ & $0.42584$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Response to elevated platelet cytosolic Ca$^{2+}$ & $6.4 \times 10^{-5}$ & $0.54046$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  \textbf{Arachidonic acid metabolism} & $6.7 \times 10^{-5}$ & $0.026696$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Defective B4GALT7 causes EDS, progeroid type & $7.3 \times 10^{-5}$ & $0.24921$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Defective B3GAT3 causes JDSSDHD & $7.3 \times 10^{-5}$ & $0.24921$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Hydrolysis of LPC & $7.3 \times 10^{-5}$ & $0.80663$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  \textbf{Elastic fibre formation} & $7.4 \times 10^{-5}$ & $0.0058768$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+ \textbf{ HS-GAG degradation} & $9.4 \times 10^{-5}$ & $0.0083179$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  \textit{Bile acid and bile salt metabolism} & $9.4 \times 10^{-5}$ & $0.079905$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Netrin-1 signalling & $0.00011$ & $0.92216$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  \textbf{Integration of energy metabolism} & $0.00011$ & $0.011152$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Dectin-2 family & $0.00012$ & $0.10385$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Platelet sensitization by LDL & $0.00012$ & $0.34596$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  DAP12 signalling & $0.00012$ & $0.62787$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Defensins & $0.00012$ & $0.77542$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  GPCR downstream signalling & $0.00012$ & $0.79454$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  \textit{Diseases associated with glycosaminoglycan metabolism} & $0.00013$ & $0.065927$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  \textit{Diseases of glycosylation} & $0.00013$ & $0.065927$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Signalling by Retinoic Acid & $0.00013$ & $0.22292$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Signalling by Leptin & $0.00013$ & $0.34596$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Signalling by SCF-KIT & $0.00013$ & $0.70881$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Opioid Signalling & $0.00013$ & $0.96053$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Signalling by NOTCH & $0.00015$ & $0.26884$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Platelet homeostasis & $0.00015$ & $0.4878$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Signalling by NOTCH1 & $0.00016$ & $0.13043$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Class B/2 (Secretin family receptors) & $0.00016$ & $0.13994$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  \textit{Diseases of Immune System} & $0.0002$ & $0.0795$ \\ 
+    \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  \textit{Diseases associated with the TLR signalling cascade} & $0.0002$ & $0.0795$ \\ 
+    \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  A tetrasaccharide linker sequence is required for GAG synthesis & $0.0002$ & $0.42615$ \\
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
 While this indicates that G$_{\alpha s}$ and \gls{GPCR} class A/1 signalling events were significantly detected by both approaches, \gls{GPCR} signalling \glspl{pathway} overall were not. It is likely that \glspl{GPCR} were primarily over-represented in the intersection with the experimental candidates due to strong over-represent\-ation of these \glspl{pathway} in experimental candidates, rather than detection by \gls{SLIPT}, which may be driven by these more specific constituent \glspl{pathway}. 
 
 %% remove paragraph?
@@ -1181,26 +1374,155 @@ Globally predicting \gls{gene expression} across all genes from \acrshort{DNA} c
 
 \section{Replication in Stomach Cancer} \label{chapt3:stad_replication}
 
-\textit{CDH1} is also important in stomach cancer biology as a \glslink{driver mutation}{driver} \gls{tumour suppressor} gene, including as a \gls{germline} \gls{mutation} in many cases of \gls{hereditary} diffuse gastric cancer. The \gls{synthetic lethal} analysis of genes and \glspl{pathway} (previously identified for \gls{TCGA} breast cancer data) was replicated in \gls{TCGA} stomach cancer. The accompanying data for \gls{SLIPT} analysis against \textit{CDH1} \glslink{gene expression}{expression} is provided in Appendix~\ref{appendix:stad_exprSL}.
+\textit{CDH1} is also important in stomach cancer biology as a \glslink{driver mutation}{driver} \gls{tumour suppressor} gene, including as a \gls{germline} \gls{mutation} in many cases of \gls{hereditary} diffuse gastric cancer. The \gls{synthetic lethal} analysis of genes and \glspl{pathway} (previously identified for \gls{TCGA} breast cancer data) was replicated in \gls{TCGA} stomach cancer. %\textcolor{red}{Most of the} accompanying data for \gls{SLIPT} analysis against \textit{CDH1} \glslink{gene expression}{expression} is provided in Appendix~\ref{appendix:stad_exprSL}.
 
 While the sample size was lower for \gls{TCGA} stomach cancer (particularly for \glspl{mutation}), the results serve to support the findings in breast cancer in an independent patient cohort and tissue samples. The molecular profiling, including \gls{RNA-Seq} \glslink{gene expression}{expression}, were performed by \gls{TCGA} using the sample procedures as for breast cancer and the findings reported here were performed useing data analysis techniques identical to those presented previously. These procedures should ensure as close a comparison as feasible across both of the cancer types most relevant to \gls{HDGC} and recurrent \textit{CDH1} \glspl{mutation}.
 
-The strongest \gls{SLIPT} genes for stomach cancer (shown in Table~\ref{tab:gene_stad_SL}) did not necessarily directly correspond to those observed in breast cancer (shown in Appendix Table~\ref{tab:gene_SL}). However, several gene functions were replicated in stomach cancer. Together, these gene candidates indicate widespread functions of \textit{CDH1} and strongly detectable \glspl{synthetic lethal} with many genes, using a strategy that can be applied across cancer types. More specifically, the signalling genes included \gls{GPCR} signalling genes, which was one of the most supported \gls{synthetic lethal} \glspl{pathway} in breast cancer analysis and the experimental screen \citep{Telford2015}.%, and has many actionable drug targets which have been applied to other diseases.
+The strongest \gls{SLIPT} genes for stomach cancer (shown in Table~\ref{tab:gene_stad_SL}) did not necessarily directly correspond to those observed in breast cancer (shown in Table~\ref{tab:gene_SL}). However, several gene functions were replicated in stomach cancer. Together, these gene candidates indicate widespread functions of \textit{CDH1} and strongly detectable \glspl{synthetic lethal} with many genes, using a strategy that can be applied across cancer types. More specifically, the signalling genes included \gls{GPCR} signalling genes, which was one of the most supported \gls{synthetic lethal} \glspl{pathway} in breast cancer analysis and the experimental screen \citep{Telford2015}.%, and has many actionable drug targets which have been applied to other diseases.
 These findings were further supported by the \glspl{pathway} over-represented in \gls{SLIPT} candidates from \gls{TCGA} stomach cancer (shown in Appendix Table~\ref{tab:pathway_stad_exprSL}) which replicated the translational and immune \glspl{pathway} observed in \gls{TCGA} breast cancer (shown in Table~\ref{tab:pathway_exprSL}) and further supported GCPR signalling \glspl{pathway}, including the class A/1 receptors. The extracellular matrix was also detected at the \gls{pathway} level in stomach cancer, including elastic fibres, glycosylation, collagen, and integrin cell-surface interactions. 
 While fewer \glspl{pathway} were supported by resampling for the intersection of \gls{SLIPT} and experimental screen candidate partners in stomach cancer than breast cancer, many of those detected (shown in Appendix Table~\ref{tab:pathway_perm_overlap_stad}) replicate those detected in breast cancer (shown in Table~\ref{tab:pathway_perm_overlap}). The \glspl{pathway} detected by both permutation and over-representation analysis were more likely to be replicated across stomach and breast cancer than those detected by over-representation alone, supporting the use of this procedure to detect \gls{synthetic lethal} \glspl{pathway} applicable across cancer types. The include G$_{\alpha s}$ signalling and elastic fibre formation as discussed for breast cancer (in Section~\ref{chapt3:compare_pathway_perm}).
 
-\iffalse
+
 \subsection{Synthetic Lethal Genes and Pathways} \label{chapt3:stad_SL_genes}
 
 The strongest \gls{SLIPT} genes for stomach cancer (shown in Table~\ref{tab:gene_stad_SL}) did not necessarily directly correspond to those observed in breast cancer (shown in Table~\ref{tab:gene_SL}). However, several gene functions were replicated in stomach cancer. Cell membrane genes including \textit{EMP3}, \textit{GYPC},  \textit{LGALS1}, \textit{PRR24},  and \textit{FUNCD2} were among the strongest SL candidates. Similarly, cell signalling genes including \textit{PLEKHO1}, \textit{RARRES2}, \textit{VEGFB}, \textit{HSPB2}, and \textit{CREM} were detected in stomach cancers. It is notable that several of these genes (\textit{EMP3}, \textit{PLEKHO1}, and \textit{FUNCD2}) have a known role in cancer. Together these genes support the roles of \textit{CDH1} in cell membrane and signalling functions (of epithelial tissues) which are perturbed in both breast and stomach cancers.
 
-The strongest \acrshort{mtSLIPT} genes tested against \textit{CDH1} mutatoin for stomach cancer (shown in Table~\ref{tab:gene_stad_mtSL}) supported similar gene functions. Membrane and cell-adhesion genes including \textit{KFBP6},\textit{THY1},\textit{CLELC2B}, \textit{NISCH}, \textit{TSPAN1},and \textit{KCTD12} and signalling genes including \textit{ZEB2}, \textit{CCND2}, \textit{NEURL1B}, \textit{KFBP6}, and \textit{OGN} were detected. Similarly, these include cancer genes such as \textit{VIM},\textit{ZEB2},\textit{BCL2},\textit{THY1}, and \textit{RUNX1T1}. The \acrshort{mtSLIPT} procedure also replicated several of the strongest candidates in breast cancer (shown in Table~\ref{tab:gene_mtSL}) such as \textit{NRIP2} and \textit{NISCH}.
+\begin{table*}[!ht]
+\caption{Synthetic lethal gene partners of \textit{CDH1} from SLIPT in stomach cancer}
+\label{tab:gene_stad_SL}
+\centering
+\resizebox{0.6 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{>{\em}sl^c^c^c^c^c}
+\rowstyle{\bfseries}
+ \em{Gene} & Observed\tnote{*}  & Expected\tnote{*} & $\chi^2$ value & p-value & p-value (\gls{FDR}) \\ 
+  \hline
+  \rowcolor{black!10}
+  PRAF2 & 17 & 50.4 & 121 & $3.54 \times 10^{-25}$ & $1.45 \times 10^{-21}$ \\ 
+  \rowcolor{black!5}
+  EMP3 & 17 & 50.4 & 115 & $5.06 \times 10^{-24}$ & $1.48 \times 10^{-20}$ \\ 
+  \rowcolor{black!10}
+  PLEKHO1 & 22 & 50.4 & 112 & $2.14 \times 10^{-23}$ & $4.75 \times 10^{-20}$ \\ 
+  \rowcolor{black!5}
+  SELM & 20 & 50.4 & 111 & $5.13 \times 10^{-23}$ & $8.09 \times 10^{-20}$ \\ 
+  \rowcolor{black!10}
+  GYPC & 20 & 50.4 & 110 & $5.77 \times 10^{-23}$ & $8.45 \times 10^{-20}$ \\ 
+  \rowcolor{black!5}
+  COX7A1 & 18 & 50.4 & 109 & $1.15 \times 10^{-22}$ & $1.39 \times 10^{-19}$ \\ 
+  \rowcolor{black!10}
+  TNFSF12 & 20 & 50.4 & 106 & $4.06 \times 10^{-22}$ & $4.38 \times 10^{-19}$ \\ 
+  \rowcolor{black!5}
+  SEPT4 & 17 & 50.4 & 106 & $6.58 \times 10^{-22}$ & $5.91 \times 10^{-19}$ \\ 
+  \rowcolor{black!10}
+  LGALS1 & 19 & 50.4 & 105 & $6.64 \times 10^{-22}$ & $5.91 \times 10^{-19}$ \\ 
+  \rowcolor{black!5}
+  RARRES2 & 27 & 50.4 & 105 & $8.02 \times 10^{-22}$ & $6.85 \times 10^{-19}$ \\ 
+  \rowcolor{black!10}
+  VEGFB & 16 & 50.4 & 104 & $1.19 \times 10^{-21}$ & $9.74 \times 10^{-19}$ \\ 
+  \rowcolor{black!5}
+  PRR24 & 22 & 50.4 & 102 & $2.96 \times 10^{-21}$ & $2.02 \times 10^{-18}$ \\ 
+  \rowcolor{black!10}
+  SYNC & 19 & 50.4 & 102 & $3.73 \times 10^{-21}$ & $2.39 \times 10^{-18}$ \\ 
+  \rowcolor{black!5}
+  MAGEH1 & 17 & 50.4 & 100 & $9.52 \times 10^{-21}$ & $5.01 \times 10^{-18}$ \\ 
+  \rowcolor{black!10}
+  HSPB2 & 23 & 50.4 & 99.6 & $1.19 \times 10^{-20}$ & $5.82 \times 10^{-18}$ \\ 
+  \rowcolor{black!5}
+  SMARCD3 & 19 & 50.4 & 99 & $1.59 \times 10^{-20}$ & $7.57 \times 10^{-18}$ \\ 
+  \rowcolor{black!10}
+  CREM & 13 & 50.4 & 98.1 & $2.48 \times 10^{-20}$ & $1.13 \times 10^{-17}$ \\ 
+  \rowcolor{black!5}
+  GNG11 & 20 & 50.4 & 97.3 & $3.68 \times 10^{-20}$ & $1.59 \times 10^{-17}$ \\ 
+  \rowcolor{black!10}
+  GNAI2 & 17 & 50.4 & 96.4 & $5.75 \times 10^{-20}$ & $2.36 \times 10^{-17}$ \\ 
+  \rowcolor{black!5}
+  FUNDC2 & 22 & 50.4 & 95.9 & $7.39 \times 10^{-20}$ & $2.91 \times 10^{-17}$ \\ 
+  \rowcolor{black!10}
+  CNRIP1 & 21 & 50.4 & 95.3 & $1.0 \times 10^{-19}$ & $3.66 \times 10^{-17}$ \\ 
+  \rowcolor{black!5}
+  CALHM2 & 22 & 50.4 & 93.1 & $2.94 \times 10^{-19}$ & $1.06 \times 10^{-16}$ \\ 
+  \rowcolor{black!10}
+  ARID5A & 18 & 50.4 & 92.7 & $3.47 \times 10^{-19}$ & $1.22 \times 10^{-16}$ \\ 
+  \rowcolor{black!5}
+  ST3GAL3 & 27 & 50.4 & 92.2 & $4.49 \times 10^{-19}$ & $1.56 \times 10^{-16}$ \\ 
+  \rowcolor{black!10}
+  LOC339524 & 21 & 50.4 & 92.1 & $4.8 \times 10^{-19}$ & $1.59 \times 10^{-16}$ \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \gls{SLIPT} in \gls{TCGA} stomach cancer expression data
 
-Together, these gene candidates indicate widespread functions of \textit{CDH1} and strongly detectable \glspl{synthetic lethal} with many genes from a strategy that can be applied across cancer types. More specifically, the signalling genes included \gls{GPCR} signalling genes (e.g., \textit{GNG11}, \textit{GNAI1}, \textit{DZIP1}, \textit{PTGFR}, and \textit{KCTD12}), a growth signalling \glspl{pathway} which was one of the most supported \gls{synthetic lethal} \glspl{pathway} in breast cancer analysis, the experimental screen \citep{Telford2015}, and has many actionable drug targets which have been applied to other diseases.
+\item[*] Observed and expected numbers of samples which had low \glslink{gene expression}{expression} of both genes
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
 
-These findings were further supported by the \glspl{pathway} over-represented in \gls{SLIPT} candidates from \gls{TCGA} stomach cancer (shown in Table~\ref{tab:pathway_stad_exprSL}) which were replicated the translational and immune \glspl{pathway} observed in \gls{TCGA} breast cancer (shown in Table~\ref{tab:pathway_exprSL}). Further support for GCPR signalling \glspl{pathway} including the class A/1 receptors. The extracellular matrix was also detected at the \gls{pathway} level in stomach cancer \gls{SLIPT} candidates and replicated in \acrshort{mtSLIPT} analysis for \textit{CDH1} \gls{mutation} (shown in Table~\ref{tab:pathway_stad_mtSL}), including elastic fibres, glycosylation, collagen, and integrin cell-surface interactions. Thus there was strong evidence for the role of extracellular matrix \glspl{pathway} and the tumour microenvironment in \textit{CDH1}-deficient stomach cancers, in addition to cell signalling and translation \glspl{pathway} important in tumour growth across breast and stomach cancer.
+%The strongest \acrshort{mtSLIPT} genes tested against \textit{CDH1} mutatoin for stomach cancer (shown in Table~\ref{tab:gene_stad_mtSL}) supported similar gene functions. Membrane and cell-adhesion genes including \textit{KFBP6},\textit{THY1},\textit{CLELC2B}, \textit{NISCH}, \textit{TSPAN1},and \textit{KCTD12} and signalling genes including \textit{ZEB2}, \textit{CCND2}, \textit{NEURL1B}, \textit{KFBP6}, and \textit{OGN} were detected. Similarly, these include cancer genes such as \textit{VIM},\textit{ZEB2},\textit{BCL2},\textit{THY1}, and \textit{RUNX1T1}. The \acrshort{mtSLIPT} procedure also replicated several of the strongest candidates in breast cancer (shown in Table~\ref{tab:gene_mtSL}) such as \textit{NRIP2} and \textit{NISCH}.
 
+%Together, these gene candidates indicate widespread functions of \textit{CDH1} and strongly detectable \glspl{synthetic lethal} with many genes from a strategy that can be applied across cancer types. More specifically, the signalling genes included \gls{GPCR} signalling genes (e.g., \textit{GNG11}, \textit{GNAI1}, \textit{DZIP1}, \textit{PTGFR}, and \textit{KCTD12}), a growth signalling \glspl{pathway} which was one of the most supported \gls{synthetic lethal} \glspl{pathway} in breast cancer analysis, the experimental screen \citep{Telford2015}, and has many actionable drug targets which have been applied to other diseases.
 
+These findings were further supported by the \glspl{pathway} over-represented in \gls{SLIPT} candidates from \gls{TCGA} stomach cancer (shown in Table~\ref{tab:pathway_stad_exprSL}) which were replicated the translational and immune \glspl{pathway} observed in \gls{TCGA} breast cancer (shown in Table~\ref{tab:pathway_exprSL}). There was further support for GCPR signalling \glspl{pathway} including the class A/1 receptors in \textit{CDH1}-deficient stomach cancers, in addition to cell signalling and translation \glspl{pathway} important in tumour growth across breast and stomach cancer. %The extracellular matrix was also detected at the \gls{pathway} level in stomach cancer \gls{SLIPT} candidates and replicated in \acrshort{mtSLIPT} analysis for \textit{CDH1} \gls{mutation} (shown in Table~\ref{tab:pathway_stad_mtSL}), including elastic fibres, glycosylation, collagen, and integrin cell-surface interactions. Thus there was strong evidence for the role of extracellular matrix \glspl{pathway} and the tumour microenvironment in \textit{CDH1}-deficient stomach cancers, in addition to cell signalling and translation \glspl{pathway} important in tumour growth across breast and stomach cancer.
+
+\begin{table*}[!ht]
+\caption{Pathways for \textit{CDH1} partners from SLIPT in stomach cancer}
+\label{tab:pathway_stad_exprSL}
+\centering
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccc}
+  \cellcolor{white} \textbf{Pathways Over-represented} & \textbf{Pathway Size} & \textbf{SL Genes} & \textbf{p-value (\gls{FDR})} \\
+  \hline
+  \rowcolor{black!10}
+  Extracellular matrix organization & 241 & 104 & $7.5 \times 10^{-140}$ \\ 
+  \rowcolor{black!5}
+  Hemostasis & 445 & 138 & $1.8 \times 10^{-121}$ \\ 
+  \rowcolor{black!10}
+  Developmental Biology & 432 & 125 & $9.2 \times 10^{-107}$ \\ 
+  \rowcolor{black!5}
+  Axon guidance & 289 &  94 & $1.5 \times 10^{-102}$ \\ 
+  \rowcolor{black!10}
+  Eukaryotic Translation Termination &  84 &  49 & $1.9 \times 10^{-99}$ \\ 
+  \rowcolor{black!5}
+  GPCR ligand binding & 373 & 108 & $3.8 \times 10^{-99}$ \\ 
+  \rowcolor{black!10}
+  Viral \acrshort{mRNA} Translation &  82 &  48 & $3.3 \times 10^{-98}$ \\ 
+  \rowcolor{black!5}
+  Formation of a pool of free 40S subunits &  94 &  51 & $3.3 \times 10^{-98}$ \\ 
+  \rowcolor{black!10}
+  Eukaryotic Translation Elongation &  87 &  49 & $1.6 \times 10^{-97}$ \\ 
+  \rowcolor{black!5}
+  Peptide chain elongation &  84 &  48 & $7.2 \times 10^{-97}$ \\ 
+  \rowcolor{black!10}
+  Class A/1 (Rhodopsin-like receptors) & 289 &  90 & $2.7 \times 10^{-96}$ \\ 
+  \rowcolor{black!5}
+  Nonsense Mediated Decay independent of the Exon Junction Complex &  89 &  49 & $3.0 \times 10^{-96}$ \\ 
+  \rowcolor{black!10}
+  Infectious disease & 349 & 100 & $2.6 \times 10^{-94}$ \\ 
+  \rowcolor{black!5}
+  GTP hydrolysis and joining of the 60S ribosomal subunit & 105 &  52 & $3.4 \times 10^{-94}$ \\ 
+  \rowcolor{black!10}
+  L13a-mediated translational silencing of Ceruloplasmin expression & 104 &  51 & $2.8 \times 10^{-92}$ \\ 
+  \rowcolor{black!5}
+  3' -UTR-mediated translational regulation & 104 &  51 & $2.8 \times 10^{-92}$ \\ 
+  \rowcolor{black!10}
+  Neuronal System & 272 &  84 & $8.4 \times 10^{-92}$ \\ 
+  \rowcolor{black!5}
+  SRP-dependent cotranslational protein targeting to membrane & 105 &  51 & $9.5 \times 10^{-92}$ \\ 
+  \rowcolor{black!10}
+  Eukaryotic Translation Initiation & 112 &  52 & $2.0 \times 10^{-90}$ \\ 
+  \rowcolor{black!5}
+  Cap-dependent Translation Initiation & 112 &  52 & $2.0 \times 10^{-90}$ \\ 
+   \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Gene set over-representation analysis (hypergeometric test) for Reactome pathways in \gls{SLIPT} partners for \textit{CDH1}.
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
 
 
 %%appendix
@@ -1209,8 +1531,7 @@ These findings were further supported by the \glspl{pathway} over-represented in
 
 \subsection{Synthetic Lethal Expression Profiles} \label{chapt3:stad_SL_clusters}
 
-%The \glslink{gene expression}{expression} profiles of candidate \gls{synthetic lethal} partners detected by \gls{SLIPT} and \acrshort{mtSLIPT} in stomach cancer were plotted against clinical characteristics as described for breast cancer data in Section~\ref{chapt3:exprSL_clusters} (shown in Figures~\ref{fig:slipt_expr_stad} and~\ref{fig:slipt_expr_stad_mtSL} respectively). As expected the majority of \textit{CDH1} \gls{mutant} samples had low \glslink{gene expression}{expression} of \textit{CDH1} and were the diffuse type of stomach cancer.
-
+The \glslink{gene expression}{expression} profiles of candidate \gls{synthetic lethal} partners detected by \gls{SLIPT} in stomach cancer were plotted against clinical characteristics as described for breast cancer data in Section~\ref{chapt3:exprSL_clusters} (shown in Figure~\ref{fig:slipt_expr_stad}). As expected the majority of \textit{CDH1} \gls{mutant} samples had low \glslink{gene expression}{expression} of \textit{CDH1} and were the diffuse type of stomach cancer.
 
 \begin{figure*}[!ht]
 %\begin{mdframed}
@@ -1218,14 +1539,209 @@ These findings were further supported by the \glspl{pathway} over-represented in
   \resizebox{0.99 \textwidth}{!}{
     \includegraphics{CDH1_Heatmaps_Genes_Split_By_CDH1_z-trans_exprSL_cordistx_Pub_stad.png}
    }
-    \caption[Synthetic lethal \glslink{gene expression}{expression} profiles of stomach samples]{\small \textbf{Synthetic lethal \glslink{gene expression}{expression} profiles of analysed samples.} \Gls{gene expression} profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} \glslink{gene expression}{expression}) analysed in \gls{TCGA} stomach cancer dataset for \gls{gene expression} of 4365 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \gls{SLIPT} prediction (with significant \gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the \gls{synthetic lethal} candidates in \textit{CDH1} low samples, notably diffuse and \textit{CDH1} \gls{mutant} samples have elevated \glslink{gene expression}{expression} in one or more distinct clusters, although there was less complexity and variation among candidate \gls{synthetic lethal} partners than in breast data. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} \glspl{mutation}.
+    \caption[Synthetic lethal expression profiles of stomach samples]{\small \textbf{Synthetic lethal expression profiles of analysed samples.} Gene expression profile heatmap (correlation distance) of all samples (separated by the $\sfrac{1}{3}$ quantile of \textit{CDH1} expression) analysed in \gls{TCGA} stomach cancer dataset for gene expression of 4365 candidate partners of \gls{E-cadherin} (\textit{CDH1}) from \gls{SLIPT} prediction (with significant \gls{FDR} adjusted $p < 0.05$). Deeply clustered, inter-correlated genes form several main groups, each containing genes that were SL candidates or toxic in an \gls{siRNA} screen \cite{Telford2015}. Clusters had different sample groups highly expressing the synthetic lethal candidates in \textit{CDH1} low samples. Notably, diffuse and \textit{CDH1} mutant samples had elevated expression in one or more distinct clusters, although there was less complexity and variation among candidate synthetic lethal partners than in breast data. \textit{CDH1} low samples also contained most of samples with \textit{CDH1} mutations.
    %This suggests that multiple targets may be needed to target \textit{CDH1} deficiency across genetic backgrounds and that combination therapy may be more effective. 
 }
 \label{fig:slipt_expr_stad}
 %\end{mdframed}
 \end{figure*}
 
-%The \gls{SLIPT} partners of \textit{CDH1} exhibited similar clustering in staomch cancer to breast cancer, replicating the diverse roles of elevated partner genes in different clinical samples. Specifically (as shown in Figure~\ref{fig:slipt_expr_stad}), the diffuse type stomach cancers had higher \glslink{gene expression}{expression} of the candidate \gls{synthetic lethal} partners (where \textit{CDH1} has a role as a \gls{driver mutation}), despite an unbiased clustering. This is consistent with compensating \glslink{gene expression}{expression} of \gls{synthetic lethal} partners under loss of \textit{CDH1}, as suggested by \citet{Lu2015}. The \glspl{pathway} composition of gene clusters for stomach cancer (shown in Table~\ref{tab:pathway_clusters_stad}) was also highly concordant with breast cancer findings (shown in Table~\ref{tab:pathway_clusters}). These included replicated of translation (Cluster 1), immune functions (Cluster 2), G$_{\alpha s}$ signalling (Cluster 3), and further support for the roles of \glspl{GPCR} and the extracellular matrix (Cluster 4) in the \gls{synthetic lethal} partners and functions of \textit{CDH1}, replicated across stomach and breast cancers. Clusters 1 and 4, which had particularly high \glslink{gene expression}{expression} of \gls{SLIPT} candidate partner genes in the diffuse subtype, also had the most significant over-representation of \glspl{pathway}.
+The \gls{SLIPT} partners of \textit{CDH1} exhibited similar clustering in staomch cancer to breast cancer, replicating the diverse roles of elevated partner genes in different clinical samples. Specifically (as shown in Figure~\ref{fig:slipt_expr_stad}), the diffuse type stomach cancers had higher \glslink{gene expression}{expression} of the candidate \gls{synthetic lethal} partners (where \textit{CDH1} has a role as a \gls{driver mutation}), despite an unbiased clustering. This is consistent with compensating \glslink{gene expression}{expression} of \gls{synthetic lethal} partners under loss of \textit{CDH1}, as suggested by \citet{Lu2015}. The \glspl{pathway} composition of gene clusters for stomach cancer (shown in Table~\ref{tab:pathway_clusters_stad}) was also highly concordant with breast cancer findings (shown in Table~\ref{tab:pathway_clusters}). These included replicated of translation (Cluster 1), immune functions (Cluster 2), G$_{\alpha s}$ signalling (Cluster 3), and further support for the roles of \glspl{GPCR} and the extracellular matrix (Cluster 4) in the \gls{synthetic lethal} partners and functions of \textit{CDH1}, replicated across stomach and breast cancers. Clusters 1 and 4, which had particularly high \glslink{gene expression}{expression} of \gls{SLIPT} candidate partner genes in the diffuse subtype, also had the most significant over-representation of \glspl{pathway}.
+
+\begin{table*}[!hp]
+\caption{Pathways for clusters of \textit{CDH1} partners in stomach SLIPT}
+\label{tab:pathway_clusters_stad}
+\centering
+%\begin{tiny}
+%\makebox[\textwidth][c]{
+\resizebox{0.75 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccc}
+%\caption{Pathways for clusters of \textit{CDH1} partners from SLIPT}
+%\label{tab:pathway_clusters}
+  \large{\textbf{Pathways Over-represented in Cluster 1}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
+  \hline
+  \rowcolor{Cluster_Blue!20}
+  Viral \acrshort{mRNA} Translation &  82 &  48 & $1.3 \times 10^{-97}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  Formation of a pool of free 40S subunits &  94 &  51 & $1.3 \times 10^{-97}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Eukaryotic Translation Elongation &  87 &  49 & $4.8 \times 10^{-97}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  Peptide chain elongation &  84 &  48 & $1.4 \times 10^{-96}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Eukaryotic Translation Termination &  84 &  48 & $1.4 \times 10^{-96}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  GTP hydrolysis and joining of the 60S ribosomal subunit & 105 &  52 & $7.9 \times 10^{-94}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Nonsense Mediated Decay independent of the Exon Junction Complex &  89 &  48 & $3.1 \times 10^{-93}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  L13a-mediated translational silencing of Ceruloplasmin expression & 104 &  51 & $5.1 \times 10^{-92}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  3' -UTR-mediated translational regulation & 104 &  51 & $5.1 \times 10^{-92}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  SRP-dependent cotranslational protein targeting to membrane & 105 &  51 & $1.7 \times 10^{-91}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Eukaryotic Translation Initiation & 112 &  52 & $3.3 \times 10^{-90}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  Cap-dependent Translation Initiation & 112 &  52 & $3.3 \times 10^{-90}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Translation & 142 &  56 & $3.6 \times 10^{-85}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  Nonsense-Mediated Decay & 104 &  48 & $1.2 \times 10^{-84}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Nonsense Mediated Decay enhanced by the Exon Junction Complex & 104 &  48 & $1.2 \times 10^{-84}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  Influenza Viral \acrshort{RNA} Transcription and Replication & 109 &  48 & $4.1 \times 10^{-82}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Influenza Life Cycle & 113 &  48 & $3.4 \times 10^{-80}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  Influenza Infection & 118 &  48 & $6.4 \times 10^{-78}$ \\ 
+%  \rowcolor{Cluster_Blue!20}
+%  Infectious disease & 349 &  68 & $1.8 \times 10^{-50}$ \\ 
+%  \rowcolor{Cluster_Blue!15}
+%  Formation of the ternary complex, and subsequently, the 43S complex &  48 &  21 & $3.7 \times 10^{-43}$ \\ 
+  \hline
+%  \\
+  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 2}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
+  \hline
+  \rowcolor{Cluster_Green!20}
+  Immunoregulatory interactions between a Lymphoid and a non-Lymphoid cell &  65 &  12 & $1.3 \times 10^{-15}$ \\ 
+  \rowcolor{Cluster_Green!15}
+  Phosphorylation of CD3 and TCR zeta chains &  18 &   6 & $1.7 \times 10^{-12}$ \\ 
+  \rowcolor{Cluster_Green!20}
+  Generation of second messenger molecules &  29 &   7 & $2.7 \times 10^{-12}$ \\ 
+  \rowcolor{Cluster_Green!15}
+  PD-1 signalling &  21 & $  6 & 7.4 \times 10^{-12}$ \\ 
+  \rowcolor{Cluster_Green!20}
+  TCR signalling &  62 & $  9 & 4.3 \times 10^{-11}$ \\ 
+  \rowcolor{Cluster_Green!15}
+  Translocation of ZAP-70 to Immunological synapse &  16 & $  5 & 1.1 \times 10^{-10}$ \\ 
+  \rowcolor{Cluster_Green!20}
+  Interferon alpha/beta signalling &  68 & $  9 & 1.6 \times 10^{-10}$ \\ 
+  \rowcolor{Cluster_Green!15}
+  Initial triggering of complement &  17 & $  5 & 1.6 \times 10^{-10}$ \\ 
+  \rowcolor{Cluster_Green!20}
+  IKK complex recruitment mediated by RIP1 &  19 & $  5 & 5.1 \times 10^{-10}$ \\ 
+  \rowcolor{Cluster_Green!15}
+  TRIF-mediated programmed cell death &  10 & $  4 & 6.2 \times 10^{-10}$ \\ 
+  \rowcolor{Cluster_Green!20}
+  Creation of C4 and C2 activators &  11 & $  4 & 1.3 \times 10^{-9}$ \\ 
+  \rowcolor{Cluster_Green!15}
+  RHO GTPases Activate NADPH Oxidases &  11 & $  4 & 1.3 \times 10^{-9}$ \\ 
+  \rowcolor{Cluster_Green!20}
+  Interferon Signalling & 175 &  15 & $2.3 \times 10^{-9}$ \\ 
+  \rowcolor{Cluster_Green!15}
+  Chemokine receptors bind chemokines &  52 &   7 & $4.0 \times 10^{-9}$ \\ 
+  \rowcolor{Cluster_Green!20}
+  Interferon gamma signalling &  74 &   8 & $1.6 \times 10^{-8}$ \\ 
+  \rowcolor{Cluster_Green!15}
+  TRAF6 mediated induction of TAK1 complex &  15 &   4 & $1.6 \times 10^{-8}$ \\ 
+  \rowcolor{Cluster_Green!20}
+  Activation of IRF3/IRF7 mediated by TBK1/IKK epsilon &  16 &   4 & $2.7 \times 10^{-8}$ \\ 
+  \rowcolor{Cluster_Green!15}
+  Downstream TCR signalling &  45 &   6 & $3.5 \times 10^{-8}$ \\ 
+%  \rowcolor{Cluster_Green!20}
+%  Ligand-dependent caspase activation &  17 &   4 & $4.2 \times 10^{-8}$ \\ 
+%  \rowcolor{Cluster_Green!15}
+%  Complement cascade &  34 &   5 & $1.3 \times 10^{-7}$ \\ 
+  \hline
+%  \\
+  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 3}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
+  \hline
+  \rowcolor{Cluster_Orange!30}
+  Uptake and actions of bacterial toxins &  22 &   4 & $3.5 \times 10^{-6}$ \\ 
+  \rowcolor{Cluster_Orange!20}
+  Neurotoxicity of clostridium toxins &  10 &   3 & $3.5 \times 10^{-6}$ \\ 
+  \rowcolor{Cluster_Orange!30}
+  Activation of PPARGC1A (PGC-1alpha) by phosphorylation &  10 &   3 & $3.5 \times 10^{-6}$ \\ 
+  \rowcolor{Cluster_Orange!20}
+  SMAD2/SMAD3:SMAD4 heterotrimer regulates transcription &  28 &   4 & $1.4 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!30}
+  Assembly of the primary cilium & 149 &  10 & $2.5 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!20}
+  Serotonin Neurotransmitter Release Cycle &  15 &   3 & $2.5 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!30}
+  Glycosaminoglycan metabolism & 114 &   8 & $3.3 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!20}
+  Platelet homeostasis &  54 &   5 & $3.3 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!30}
+  Norepinephrine Neurotransmitter Release Cycle &  17 &   3 & $3.3 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!20}
+  Acetylcholine Neurotransmitter Release Cycle &  17 &   3 & $3.3 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!30}
+  G$_{\alpha s}$ signalling events & 100 &   7 & $5.5 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!20}
+  GABA synthesis, release, reuptake and degradation &  19 &   3 & $5.6 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!30}
+  deactivation of the beta-catenin transactivating complex &  39 &   4 & $6.7 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!20}
+  Dopamine Neurotransmitter Release Cycle &  20 &   3 & $6.7 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!30}
+  IRS-related events triggered by IGF1R &  83 &   6 & $7.1 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!20}
+  Generic Transcription Pathway & 186 &  11 & $7.1 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!30}
+  Termination of O-glycan biosynthesis &  21 &   3 & $7.4 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Orange!20}
+  Kinesins &  22 &   3 & $8.5 \times 10^{-5}$ \\ 
+%  \rowcolor{Cluster_Orange!30}
+%  Signalling by Type 1 Insulin-like Growth Factor 1 Receptor (IGF1R) &  86 &   6 & $8.5 \times 10^{-5}$ \\ 
+%  \rowcolor{Cluster_Orange!20}
+%  IGF1R signalling cascade &  86 &   6 & $8.5 \times 10^{-5}$ \\
+  \hline
+%  \\ 
+  \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 4}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
+  \hline 
+  \rowcolor{Cluster_Red!20}
+  Extracellular matrix organization & 241 &  97 & $8.8 \times 10^{-126}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Axon guidance & 289 &  75 & $8.3 \times 10^{-72}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Hemostasis & 445 & 101 & $8.3 \times 10^{-72}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Developmental Biology & 432 &  95 & $3.0 \times 10^{-67}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Response to elevated platelet cytosolic Ca$^{2+}$ &  84 &  37 & $5.8 \times 10^{-67}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Platelet degranulation &  79 &  36 & $5.8 \times 10^{-67}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Degradation of the extracellular matrix & 104 &  39 & $6.7 \times 10^{-63}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Platelet activation, signalling and aggregation & 186 &  52 & $6.6 \times 10^{-62}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  ECM proteoglycans &  66 &  31 & $8.1 \times 10^{-61}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Neuronal System & 272 &  64 & $5.1 \times 10^{-60}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Signalling by PDGF & 173 &  47 & $9.7 \times 10^{-57}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Integrin cell surface interactions &  82 &  31 & $1.9 \times 10^{-53}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Collagen biosynthesis and modifying enzymes &  56 &  26 & $1.1 \times 10^{-52}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Collagen formation &  67 &  28 & $1.4 \times 10^{-52}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Class A/1 (Rhodopsin-like receptors) & 289 &  61 & $2.3 \times 10^{-52}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  GPCR ligand binding & 373 &  73 & $2.8 \times 10^{-52}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Elastic fibre formation &  38 &  22 & $4.7 \times 10^{-52}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Non-integrin membrane-ECM interactions &  53 &  24 & $7.0 \times 10^{-49}$ \\ 
+%  \rowcolor{Cluster_Red!20}
+%  Glycosaminoglycan metabolism & 114 &  33 & $4.7 \times 10^{-47}$ \\ 
+%  \rowcolor{Cluster_Red!15}
+%  Platelet homeostasis &  54 &  23 & $1.0 \times 10^{-45}$ \\ 
+ \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright %\small
+Pathway over-representation analysis for Reactome pathways with the number of genes in each pathway (Pathway Size), number of genes within the pathway identified (Cluster Genes), and the pathway over-representation p-value (adjusted by \gls{FDR}) from the hypergeometric test.  
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
 
 %There was less variation between the \glslink{gene expression}{expression} profiles of \acrshort{mtSLIPT} partners of \textit{CDH1} in stomach cancer, although clusters were still detectable (as shown in Figure~\ref{fig:slipt_expr_stad_mtSL}). While the genes and \glspl{pathway} detected was lewss significant (due to lower sample size), the composition of clusters was further indicative for the roles of extracellular matrix (including elastic fibres), immune functions, and the cell signalling.
 
@@ -1235,33 +1751,500 @@ These findings were further supported by the \glspl{pathway} over-represented in
 
 The number of genes detected by both \gls{SLIPT} in \gls{TCGA} stomach cancer data and \gls{siRNA} in breast cell lines (shown in Figure~\ref{fig:Venn_allgenes_stad}) was also not a significant overlap (as observed for breast cancer in Figure~\ref{fig:Venn_allgenes}). This was particularly the case of \acrshort{mtSLIPT} against \textit{CDH1} \gls{mutation} in stomach cancer which detected very few genes (as shown in Figure~\ref{fig:Venn_allgenes_stad_mtSL}) due to low sample size and \gls{mutation} frequency.
 
+\begin{figure}[!ht]
+%\begin{mdframed}
+  \centering
+  \resizebox{0.66 \columnwidth}{!}{
+    \includegraphics{Venn_exprSL_siRNA_allgenes_reduced_Pub_stad.png}
+   }
+    \caption[Comparison of SLIPT in stomach to \gls{siRNA}]{\small \textbf{Comparison of SLIPT in stomach to \gls{siRNA}.} The overlap of gene candidates for \gls{E-cadherin} synthetic lethal partners between computational (SLIPT) and experimental screening (siRNA) approaches. The $\chi^2$ test suggests that the overlap is no more than would be expected by chance ($p = 0.281$). %A Venn diagram of all 16298 genes tested by both approaches.
+}
+\label{fig:Venn_allgenes_stad}
+%\end{mdframed}
+\end{figure}
+
 This smaller overlap can also be attributed to the tissue-specific differences between the stomach cancers and the breast cells used for the experimental model \citep{Chen2014}. Nevertheless, many genes were detected across \gls{SLIPT} in stomach cancers and the experimental screen \citep{Telford2015} and the \glspl{pathway} detected were consistent with prior observations in breast cancer. Despite differences in the specific genes detected, the functions of \textit{CDH1} were conserved across epithetial cancers in different tissues and \gls{synthetic lethal} inhibition of interacting \glspl{pathway} may be effective against molecular targets such as \textit{CDH1} inactivation across tissue types.
 
 However, the \glspl{pathway} composition of \gls{SLIPT}-specific genes and those replicated with the \gls{siRNA} primary screen \citep{Telford2015} were highly concordant between the \glspl{pathway} identified by \gls{SLIPT} in \gls{TCGA} stomach cancer (shown in Table~\ref{tab:Venn_over-representation_stad}) and \glspl{pathway} previously identified in \gls{TCGA} breast cancer (shown in Table~\ref{tab:Venn_over-representation}). In both cases, translation and immune \glspl{pathway} were highly over-represented in \gls{SLIPT}-specific genes, which I would not expect to be detected by \gls{siRNA} screening in cell lines, as discussed in Section~\ref{chapt3:compare_pathway}. In addition, the extracellular matrix was supported by in stomach cancer. While the \glspl{pathway} identified by specifically by \gls{SLIPT} in stomach cancer or \gls{siRNA} screening were similar to those observed for breast cancer (in Table~\ref{tab:Venn_over-representation}), the \glspl{pathway} over-represented in the intersection for stomach cancer \gls{SLIPT} candidates and the \gls{siRNA} primary screen \citep{Telford2015} also had a clear over-representation of signalling \glspl{pathway}, although they differed from those observed in breast cancer \gls{SLIPT} candidates. \gls{GPCR} signalling was supported in genes detected in both \gls{TCGA} stomach cancer and screening, including G$_{\alpha q}$, G$_{\alpha s}$, serotonin receptors, and class A signalling (shown in more detail in Table~\ref{tab:pathway_perm_overlap_stad}). In addition MAPK and NOTCH signalling \glspl{pathway} were detected. These replicate the findings in breast cancer and show consistent detection of signalling \glspl{pathway} in stomach cancer despite less genes being detected by \gls{SLIPT} and patient samples differing from the tissue in which the experiments were conducted.
 
-Similarly, the \gls{SLIPT}-specific gene candidates against \textit{CDH1} \gls{mutation} (shown in Table~\ref{tab:Venn_over-representation_stad_mtSL}) replicated \glspl{pathway} observed in breast cancer (shown in Table~\ref{tab:Venn_over-representation_mtSL}), despite a lower number of genes detected. In particular, the extracellular matrix and elastic fibres were over-represented. While the number of genes overlapping with the \gls{siRNA} was too low to be amenable to \glspl{pathway} analysis, there is further indication that members of these genes replicated across \gls{mutation} \gls{SLIPT} analyses include cell-membrane, elastic fibre, and \gls{GPCR} signalling genes. 
+
+\begin{table*}[!hp]
+\caption{Pathways for \textit{CDH1} partners from SLIPT and \gls{siRNA}}
+\label{tab:Venn_over-representation_stad}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{tabular}{sl^c^c^c}
+\rowstyle{\bfseries}
+  Predicted only by SLIPT (3392 genes) & Pathway Size & Genes Identified & p-value (\gls{FDR}) \\ 
+  \hline
+  \rowcolor{Cluster_Red!20}
+  Extracellular matrix organization & 238 &  90 & $3.4 \times 10^{-107}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Eukaryotic Translation Termination &  79 &  46 & $7.6 \times 10^{-91}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Viral \acrshort{mRNA} Translation &  77 &  45 & $1.2 \times 10^{-89}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Eukaryotic Translation Elongation &  82 &  46 & $5.8 \times 10^{-89}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Peptide chain elongation &  79 &  45 & $2.1 \times 10^{-88}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Nonsense Mediated Decay independent of the Exon Junction Complex &  84 &  46 & $9.4 \times 10^{-88}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Formation of a pool of free 40S subunits &  89 &  47 & $3.3 \times 10^{-87}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  GTP hydrolysis and joining of the 60S ribosomal subunit & 100 &  48 & $3.2 \times 10^{-83}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Axon guidance & 284 &  84 & $3.9 \times 10^{-82}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Developmental Biology & 426 & 111 & $4.2 \times 10^{-82}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  L13a-mediated translational silencing of Ceruloplasmin expression &  99 &  47 & $1.4 \times 10^{-81}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  3' -UTR-mediated translational regulation &  99 &  47 & $1.4 \times 10^{-81}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  SRP-dependent cotranslational protein targeting to membrane &  99 &  47 & $1.4 \times 10^{-81}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Nonsense-Mediated Decay &  99 &  47 & $1.4 \times 10^{-81}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Nonsense Mediated Decay enhanced by the Exon Junction Complex &  99 &  47 & $1.4 \times 10^{-81}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Hemostasis & 438 & 112 & $1.2 \times 10^{-80}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Eukaryotic Translation Initiation & 107 &  48 & $8.0 \times 10^{-80}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Cap-dependent Translation Initiation & 107 &  48 & $8.0 \times 10^{-80}$ \\ 
+  \rowcolor{Cluster_Red!20}
+  Infectious disease & 338 &  90 & $1.6 \times 10^{-76}$ \\ 
+  \rowcolor{Cluster_Red!15}
+  Neuronal System & 267 &  77 & $1.6 \times 10^{-76}$ \\ 
+  \hline
+  \\
+  \rowstyle{\bfseries}
+  Detected only by \gls{siRNA} screen (1803 genes) & Pathway Size & Genes Identified & p-value (\gls{FDR}) \\ 
+  \hline
+  \rowcolor{Cluster_Blue!20}
+  Class A/1 (Rhodopsin-like receptors) & 282 &  62 & $8.1 \times 10^{-50}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  GPCR ligand binding & 363 &  71 & $4.9 \times 10^{-46}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Peptide ligand-binding receptors & 175 &  38 & $7.9 \times 10^{-38}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  G$_{\alpha i}$ signalling events & 184 &  37 & $1.1 \times 10^{-34}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Gastrin-CREB signalling pathway via PKC and MAPK & 180 &  35 & $1.4 \times 10^{-32}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  G$_{\alpha q}$ signalling events & 159 &  32 & $4.8 \times 10^{-32}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  DAP12 interactions & 159 &  29 & $1.4 \times 10^{-27}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  Downstream signal transduction & 146 &  26 & $2.4 \times 10^{-25}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  DAP12 signalling & 149 &  26 & $6.4 \times 10^{-25}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  VEGFA-VEGFR2 Pathway &  91 &  19 & $8.1 \times 10^{-24}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Signalling by PDGF & 172 &  27 & $5.7 \times 10^{-23}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  Signalling by ERBB2 & 146 &  24 & $1.4 \times 10^{-22}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Signalling by VEGF &  99 &  19 & $2.0 \times 10^{-22}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  Visual phototransduction &  85 &  17 & $1.3 \times 10^{-21}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Downstream signalling of activated FGFR1 & 134 &  22 & $1.3 \times 10^{-21}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  Downstream signalling of activated FGFR2 & 134 &  22 & $1.3 \times 10^{-21}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Downstream signalling of activated FGFR3 & 134 &  22 & $1.3 \times 10^{-21}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  Downstream signalling of activated FGFR4 & 134 &  22 & $1.3 \times 10^{-21}$ \\ 
+  \rowcolor{Cluster_Blue!20}
+  Signalling by FGFR & 146 &  23 & $2.0 \times 10^{-21}$ \\ 
+  \rowcolor{Cluster_Blue!15}
+  Signalling by FGFR1 & 146 &  23 & $2.0 \times 10^{-21}$ \\ 
+  \hline
+  \\
+  \rowstyle{\bfseries}
+  Intersection of SLIPT and \gls{siRNA} screen (547 genes) & Pathway Size & Genes Identified & p-value (\gls{FDR}) \\ 
+  \hline
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}
+  Class A/1 (Rhodopsin-like receptors) & 282 &  25 & $3.9 \times 10^{-9}$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}
+  Platelet activation, signalling and aggregation & 182 &  17 & $3.9 \times 10^{-9}$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}
+  Response to elevated platelet cytosolic Ca$2^+$ &  82 &   9 & $5.5 \times 10^{-8}$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}
+  Platelet homeostasis &  53 &   7 & $5.7 \times 10^{-8}$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}
+  Nucleotide-like (purinergic) receptors &  16 &   4 & $1.8 \times 10^{-7}$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}
+  Platelet degranulation &  77 &   8 & $2.8 \times 10^{-7}$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}
+  Peptide ligand-binding receptors & 175 &  14 & $3.8 \times 10^{-7}$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}
+  Molecules associated with elastic fibres &  34 &   5 & $7.1 \times 10^{-7}$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}
+  Amine ligand-binding receptors &  35 &   5 & $8.6 \times 10^{-7}$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}
+  G$_{\alpha i}$ signalling events & 184 &  14 & $9.8 \times 10^{-7}$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}
+  GPCR ligand binding & 363 &  27 & $1.1 \times 10^{-6}$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}
+  Elastic fibre formation &  38 &   5 & $1.5 \times 10^{-6}$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}
+  G$_{\alpha q}$ signalling events & 159 &  12 & $1.9 \times 10^{-6}$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}
+  Serotonin receptors &  12 &   3 & $3.8 \times 10^{-6}$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}
+  P2Y receptors &  12 &   3 & $3.8 \times 10^{-6}$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}
+  Signal amplification &  16 &   3 & $2.3 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}
+  Gastrin-CREB signalling pathway via PKC and MAPK & 180 &  12 & $2.3 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}
+  Complement cascade &  33 &   4 & $2.4 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20}
+  Glycosaminoglycan metabolism & 110 &   8 & $2.5 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15}
+  Glycogen breakdown (glycogenolysis) &  17 &   3 & $2.7 \times 10^{-5}$ \\ 
+  \hline
+\end{tabular}
+}
+\end{table*}
+
+
+%Similarly, the \gls{SLIPT}-specific gene candidates against \textit{CDH1} \gls{mutation} (shown in Table~\ref{tab:Venn_over-representation_stad_mtSL}) replicated \glspl{pathway} observed in breast cancer (shown in Table~\ref{tab:Venn_over-representation_mtSL}), despite a lower number of genes detected. In particular, the extracellular matrix and elastic fibres were over-represented. While the number of genes overlapping with the \gls{siRNA} was too low to be amenable to \glspl{pathway} analysis, there is further indication that members of these genes replicated across \gls{mutation} \gls{SLIPT} analyses include cell-membrane, elastic fibre, and \gls{GPCR} signalling genes. 
 
 \FloatBarrier
 
 \subsubsection{Resampling Analysis}  \label{chapt3:compare_pathway_perm_stad_SL}
 
-Similarly, resampling for \gls{SLIPT} specific candidates (shown in Tables~\ref{tab:pathway_perm_stad} and~\ref{tab:pathway_perm_stad_mtSL}) replicated many of the most highly over-represented \glspl{pathway} in stomach cancer. These include translational, immune, \gls{GPCR} signalling, and elastic fibres, consistent with previous analyses in breast cancer (shown in Tables~\ref{tab:pathway_perm} and~\ref{tab:pathway_perm_mtSL}).
+Similarly, resampling for \gls{SLIPT} specific candidates (shown in Table~\ref{tab:pathway_perm_stad}) replicated many of the most highly over-represented \glspl{pathway} in stomach cancer. These include translational, immune, \gls{GPCR} signalling, and elastic fibres, consistent with previous analyses in breast cancer (shown in Tables~\ref{tab:pathway_perm} and~\ref{tab:pathway_perm_mtSL}).
 
-While fewer \glspl{pathway} were supported by resampling for the intersection of \gls{SLIPT} and experimental screen \citep{Telford2015} candidate partners in stomach cancer than breast cancer, many of those detected (shown in Table~\ref{tab:pathway_perm_overlap_stad}) replicate those detected in breast cancer (shown in Tables~\ref{tab:pathway_perm_overlap} and~\ref{tab:pathway_perm_overlap_mtSL}). The \glspl{pathway} detected by both permutation and over-representation were more likely to be replicated across stomach and breast cancer than those detected by over-representation alone, supporting the use of this procedure to detect \gls{synthetic lethal} \glspl{pathway} applicable across cancer types. The include G$_{\alpha s}$ signalling and elastic fibre formation as discussed for breast cancer (in Section~\ref{chapt3:compare_pathway_perm}).
+While fewer \glspl{pathway} were supported by resampling for the intersection of \gls{SLIPT} and experimental screen \citep{Telford2015} candidate partners in stomach cancer than breast cancer, many of those detected (shown in Table~\ref{tab:pathway_perm_overlap_stad}) replicate those detected in breast cancer (shown in Table~\ref{tab:pathway_perm_overlap}). The \glspl{pathway} detected by both permutation and over-representation were more likely to be replicated across stomach and breast cancer than those detected by over-representation alone, supporting the use of this procedure to detect \gls{synthetic lethal} \glspl{pathway} applicable across cancer types. The include G$_{\alpha s}$ signalling and elastic fibre formation as discussed for breast cancer (in Section~\ref{chapt3:compare_pathway_perm}).
 
-While many \glspl{pathway} were detected by resampling for \acrshort{mtSLIPT} against \textit{CDH1} \gls{mutation} in stomach cancer (shown in Table~\ref{tab:pathway_perm_overlap_stad_mtSL}), there were not enough genes detected by both \acrshort{mtSLIPT} and the \gls{siRNA} primary screen to determine over-represented \glspl{pathway}. Therefore this may be due to small numbers of genes which does not constitute support for \glspl{pathway} composition. However, this under-powered analysis does not preclude the replicated \gls{synthetic lethal} \glspl{pathway} detected across \gls{SLIPT} \glslink{gene expression}{expression} analyses in \gls{TCGA} breast and stomach cancer data with an accompanying \gls{siRNA} primary screen \citep{Telford2015}. Rather this further supports the use of \gls{SLIPT} to test against low \glslink{gene expression}{expression} of query genes as measure of gene inactivation to avoid this issue, despite \gls{mutation} (which often produces similar results) being more indicative of complete gene inactivation.
+\begin{table*}[!htp]
+\caption{Pathways for \textit{CDH1} partners from SLIPT in stomach cancer}
+\label{tab:pathway_perm_stad}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{sl^c^c}
+\rowstyle{\bfseries}
+  Reactome Pathway & Over-representation & Permutation \\ 
+  \hline
+  \rowcolor{Cluster_Red!20} 
+  \textit{Extracellular matrix organization} & $7.5 \times 10^{-140}$ & $0.070215$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  Hemostasis & $1.8 \times 10^{-121}$ & $0.25804$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Developmental Biology & $9.2 \times 10^{-107}$ & $0.53032$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  Axon guidance & $1.5 \times 10^{-102}$ & $0.6704$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  \textbf{Eukaryotic Translation Termination} & $1.9 \times 10^{-99}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  GPCR ligand binding & $3.8 \times 10^{-99}$ & $0.54914$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  \textbf{Viral \acrshort{mRNA} Translation} & $3.3 \times 10^{-98}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  \textbf{Formation of a pool of free 40S subunits} & $3.3 \times 10^{-98}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  \textbf{Eukaryotic Translation Elongation} & $1.6 \times 10^{-97}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  \textbf{Peptide chain elongation} & $7.2 \times 10^{-97}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Class A/1 (Rhodopsin-like receptors) & $2.7 \times 10^{-96}$ & $0.58174$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  \textbf{Nonsense Mediated Decay independent of the Exon Junction Complex} & $3 \times 10^{-96}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Infectious disease & $2.6 \times 10^{-94}$ & $0.25484$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  \textbf{GTP hydrolysis and joining of the 60S ribosomal subunit} & $3.4 \times 10^{-94}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  \textbf{L13a-mediated translational silencing of Ceruloplasmin expression} & $2.8 \times 10^{-92}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  \textbf{3' -UTR-mediated translational regulation} & $2.8 \times 10^{-92}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Neuronal System & $8.4 \times 10^{-92}$ & $0.53433$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  \textbf{SRP-dependent cotranslational protein targeting to membrane} & $9.5 \times 10^{-92}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  \textbf{Eukaryotic Translation Initiation} & $2.0 \times 10^{-90}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  \textbf{Cap-dependent Translation Initiation} & $2.0 \times 10^{-90}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  \textbf{Nonsense-Mediated Decay} & $7.4 \times 10^{-90}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  \textbf{Nonsense Mediated Decay enhanced by the Exon Junction Complex} & $7.4 \times 10^{-90}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Adaptive Immune System & $8.1 \times 10^{-88}$ & $0.14116$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  \textbf{Translation} & $1.3 \times 10^{-87}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Platelet activation, signalling and aggregation & $1.3 \times 10^{-86}$ & $0.28959$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  \textbf{Influenza Infection} & $1 \times 10^{-82}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  \textbf{Influenza Viral \acrshort{RNA} Transcription and Replication} & $2.4 \times 10^{-82}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  \textbf{Influenza Life Cycle} & $2 \times 10^{-80}$ & $>1.031 \times 10^{-5}$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Response to elevated platelet cytosolic Ca$2^+$ & $4.9 \times 10^{-78}$ & $0.50817$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  Signalling by NGF & $1.6 \times 10^{-75}$ & $0.38518$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Rho GTPase cycle & $5.1 \times 10^{-75}$ & $0.14864$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  Signalling by PDGF & $7.4 \times 10^{-74}$ & $0.40493$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  \textit{Signalling by Rho GTPases} & $5.1 \times 10^{-73}$ & $0.077217$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  Glycosaminoglycan metabolism & $1.4 \times 10^{-68}$ & $0.52984$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  G$_{\alpha i}$ signalling events & $1.8 \times 10^{-66}$ & $0.9254$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  Metabolism of carbohydrates & $1.1 \times 10^{-65}$ & $0.39501$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  \textbf{G$_{\alpha s}$ signalling events} & $2.7 \times 10^{-65}$ & $0.0050293$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  Potassium Channels & $2.7 \times 10^{-65}$ & $0.53359$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Transmission across Chemical Synapses & $1.8 \times 10^{-64}$ & $0.81833$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  ECM proteoglycans & $3.4 \times 10^{-64}$ & $0.083482$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Peptide ligand-binding receptors & $4.8 \times 10^{-64}$ & $0.62817$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  Degradation of the extracellular matrix & $1.1 \times 10^{-63}$ & $0.80879$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Platelet homeostasis & $5.3 \times 10^{-63}$ & $0.53134$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  NGF signalling via TRKA from the plasma membrane & $6.1 \times 10^{-63}$ & $0.5717$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Integration of energy metabolism & $4.5 \times 10^{-61}$ & $0.10889$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  Collagen formation & $5.4 \times 10^{-61}$ & $0.29896$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  Integrin cell surface interactions & $7 \times 10^{-59}$ & $0.18167$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  Collagen biosynthesis and modifying enzymes & $7 \times 10^{-59}$ & $0.30208$ \\ 
+  \rowcolor{Cluster_Red!20} 
+  \begin{tabular}[c]{@{}l@{}}Neurotransmitter Receptor Binding And Downstream Transmission\\ In The  Postsynaptic Cell \end{tabular} & $8.7 \times 10^{-57}$ & $0.82522$ \\ 
+  \rowcolor{Cluster_Red!15} 
+  Signalling by Wnt & $8.7 \times 10^{-57}$ & $0.25468$ \\ 
+ \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+\begin{table*}[!htp]
+\caption{Pathways for \textit{CDH1} partners from SLIPT in stomach and \gls{siRNA}}
+\label{tab:pathway_perm_overlap_stad}
+\centering
+\resizebox{0.8 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{sl^c^c}
+\rowstyle{\bfseries}
+  Reactome Pathway & Over-representation & Permutation \\ 
+  \hline
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Platelet activation, signalling and aggregation & $3.9 \times 10^{-9}$ & $0.49557$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Class A/1 (Rhodopsin-like receptors) & $3.9 \times 10^{-9}$ & $0.98432$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Response to elevated platelet cytosolic Ca$2^+$ & $5.5 \times 10^{-8}$ & $0.54349$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Platelet homeostasis & $5.7 \times 10^{-8}$ & $0.45017$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Nucleotide-like (purinergic) receptors & $1.8 \times 10^{-7}$ & $0.36966$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Peptide ligand-binding receptors & $3.8 \times 10^{-7}$ & $0.91294$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  \textbf{Molecules associated with elastic fibres} & $7.1 \times 10^{-7}$ & $0.0025868$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Amine ligand-binding receptors & $8.6 \times 10^{-7}$ & $0.43303$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  G$_{\alpha i}$ signalling events & $9.8 \times 10^{-7}$ & $0.99626$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  GPCR ligand binding & $1.1 \times 10^{-6}$ & $0.97733$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  \textbf{Elastic fibre formation} & $1.5 \times 10^{-6}$ & $0.0025868$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  G$_{\alpha q}$ signalling events & $1.9 \times 10^{-6}$ & $0.86089$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  P2Y receptors & $3.8 \times 10^{-6}$ & $0.18795$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Serotonin receptors & $3.8 \times 10^{-6}$ & $0.37853$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Signal amplification & $2.3 \times 10^{-5}$ & $0.47856$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Gastrin-CREB signalling pathway via PKC and MAPK & $2.3 \times 10^{-5}$ & $0.98567$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  \textbf{Complement cascade} & $2.4 \times 10^{-5}$ & $>3.4628 \times 10^{-6}$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Glycosaminoglycan metabolism & $2.5 \times 10^{-5}$ & $0.38953$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Glycogen breakdown (glycogenolysis) & $2.7 \times 10^{-5}$ & $0.83772$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Defective B4GALT7 causes EDS, progeroid type & $4.9 \times 10^{-5}$ & $0.10792$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Defective B3GAT3 causes JDSSDHD & $4.9 \times 10^{-5}$ & $0.10792$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Role of LAT2/NTAL/LAB on calcium mobilization & $5.6 \times 10^{-5}$ & $0.35373$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Cell surface interactions at the vascular wall & $5.6 \times 10^{-5}$ & $0.47642$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  \textbf{G$_{\alpha s}$ signalling events} & $6 \times 10^{-5}$ & $0.019858$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Signalling by NOTCH & $6 \times 10^{-5}$ & $0.19008$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  A tetrasaccharide linker sequence is required for GAG synthesis & $0.00017$ & $0.47642$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  \textbf{Extracellular matrix organization} & $0.00018$ & $0.0047308$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Collagen formation & $0.00018$ & $0.19245$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Effects of PIP2 hydrolysis & $0.0002$ & $0.37779$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Syndecan interactions & $0.0002$ & $0.37779$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  \textbf{Diseases associated with glycosaminoglycan metabolism} & $0.00023$ & $0.01028$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  \textbf{Diseases of glycosylation} & $0.00023$ & $0.01028$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  \textit{Chondroitin sulfate/dermatan sulfate metabolism} & $0.00023$ & $0.085541$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Integrin alphaIIb beta3 signalling & $0.00028$ & $0.76936$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Keratan sulfate biosynthesis & $0.00034$ & $0.68744$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Rho GTPase cycle & $0.00034$ & $0.15675$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Creation of C4 and C2 activators & $0.00035$ & $0.12275$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Abacavir transport and metabolism & $0.00035$ & $0.12443$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Amine compound SLC transporters & $0.00037$ & $0.69773$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  FCERI mediated NF-kB activation & $0.00037$ & $0.69846$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Fc epsilon receptor (FCERI) signalling & $0.00056$ & $0.43303$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Defective EXT2 causes exostoses 2 & $0.00067$ & $0.16053$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Defective EXT1 causes exostoses 1, TRPS2 and CHDS & $0.00067$ & $0.16053$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  \textit{Collagen biosynthesis and modifying enzymes} & $0.00071$ & $0.052911$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Keratan sulfate/keratin metabolism & $0.00073$ & $0.46533$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  G alpha (12/13) signalling events & $0.00078$ & $0.59164$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  \textbf{SEMA3A-Plexin repulsion signalling by inhibiting Integrin adhesion} & $0.00084$ & $0.038504$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  Signal attenuation & $0.00084$ & $0.37779$ \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  Eicosanoid ligand-binding receptors & $0.0011$ & $0.11117$ \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  SOS-mediated signalling & $0.0011$ & $0.25387$ \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}  
+
+%While many \glspl{pathway} were detected by resampling for \acrshort{mtSLIPT} against \textit{CDH1} \gls{mutation} in stomach cancer (shown in Table~\ref{tab:pathway_perm_overlap_stad_mtSL}), there were not enough genes detected by both \acrshort{mtSLIPT} and the \gls{siRNA} primary screen to determine over-represented \glspl{pathway}. Therefore this may be due to small numbers of genes which does not constitute support for \glspl{pathway} composition. However, this under-powered analysis does not preclude the replicated \gls{synthetic lethal} \glspl{pathway} detected across \gls{SLIPT} \glslink{gene expression}{expression} analyses in \gls{TCGA} breast and stomach cancer data with an accompanying \gls{siRNA} primary screen \citep{Telford2015}. Rather this further supports the use of \gls{SLIPT} to test against low \glslink{gene expression}{expression} of query genes as measure of gene inactivation to avoid this issue, despite \gls{mutation} (which often produces similar results) being more indicative of complete gene inactivation.
 
 \FloatBarrier
 
 \subsection{Metagene Analysis} \label{chapt3:metagene_stad_SL}
 
 \Gls{metagene} analysis (as conducted in Section~\ref{chapt3:metagene_SL}) was also performed for \gls{TCGA} stomach cancer \glslink{gene expression}{expression} data, using Reactome \glspl{pathway}. These results (as shown in Table~\ref{tab:metagene_stad_SL}) provided further support for signalling and extracellular processes as \gls{synthetic lethal} \glspl{pathway} across stomach and breast cancer. Namely, cell-cell communication, VEGF signalling, and various \gls{GPCR} \glspl{pathway} were detected.  
-
-Signalling and immune \glspl{pathway} were also supported by \acrshort{mtSLIPT} analysis of \gls{metagene} \glspl{pathway} \glslink{gene expression}{expression} against \textit{CDH1} \gls{mutation}, as shown in Table~\ref{tab:metagene_stad_mtSL}. However, these results were generally less statistically significant than \glslink{gene expression}{expression} analyses. Signalling \glspl{pathway} detected as \gls{synthetic lethal} \glspl{metagene} include prostacyclin, SCF-KIT, ERK, MAPK, NGF, VEGF, and PI3K/AKT. The innate immune response, the inflammasome, and integrin signalling were also implicated to be \gls{synthetic lethal} with \textit{CDH1 \glspl{mutation}}. Cell surface interactions, cholesterol biosynthesis, and platelet homeostasis also support the role of extracellular processes in proliferation of \textit{CDH1}-deficient cancers and interactions of \textit{CDH1} with the extracellular environment that was not tested in the cell line experimental screen.
+%
+%Signalling and immune \glspl{pathway} were also supported by \acrshort{mtSLIPT} analysis of \gls{metagene} \glspl{pathway} \glslink{gene expression}{expression} against \textit{CDH1} \gls{mutation}, as shown in Table~\ref{tab:metagene_stad_mtSL}. However, these results were generally less statistically significant than \glslink{gene expression}{expression} analyses. Signalling \glspl{pathway} detected as \gls{synthetic lethal} \glspl{metagene} include prostacyclin, SCF-KIT, ERK, MAPK, NGF, VEGF, and PI3K/AKT. The innate immune response, the inflammasome, and integrin signalling were also implicated to be \gls{synthetic lethal} with \textit{CDH1 \glspl{mutation}}. Cell surface interactions, cholesterol biosynthesis, and platelet homeostasis also
+These results support the role of extracellular processes in proliferation of \textit{CDH1}-deficient cancers and interactions of \textit{CDH1} with the extracellular environment that was not tested in the cell line experimental screen in addition to the signalling pathways that were identified.
 
 %%appendix
 %\label{tab:metagene_stad_mtSL}
-\fi
+\begin{table*}[!ht]
+\caption{Synthetic lethal metagenes against \textit{CDH1} in stomach cancer}
+\label{tab:metagene_stad_SL}
+\centering
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{sl^l^c^c^c^c^c}
+\rowstyle{\bfseries}
+ Pathway & ID & Observed & Expected & $\chi^2$value & p-value & p-value (\gls{FDR}) \\
+  \hline
+  \rowcolor{black!10}
+  Cell-Cell communication & 1500931 & 18 & 50.4 & 110 & $7.43 \times 10^{-23}$ & $1.53 \times 10^{-20}$ \\ 
+  \rowcolor{black!5}
+  VEGFR2 mediated vascular permeability & 5218920 & 19 & 50.4 & 109 & $1.36 \times 10^{-22}$ & $2.49 \times 10^{-20}$ \\ 
+  \rowcolor{black!10}
+  Sema4D in semaphorin signalling & 400685 & 20 & 50.4 & 104 & $1.62 \times 10^{-21}$ & $2.12 \times 10^{-19}$ \\ 
+  \rowcolor{black!5}
+  Ion transport by P-type ATPases & 936837 & 17 & 50.4 & 100 & $8.29 \times 10^{-21}$ & $8.06 \times 10^{-19}$ \\ 
+  \rowcolor{black!10}
+  Sialic acid metabolism & 4085001 & 19 & 50.4 & 95.3 & $9.95 \times 10^{-20}$ & $7.82 \times 10^{-18}$ \\ 
+  \rowcolor{black!5}
+  Synthesis of pyrophosphates in the cytosol & 1855167 & 26 & 50.4 & 94 & $1.86 \times 10^{-19}$ & $1.23 \times 10^{-17}$ \\ 
+  \rowcolor{black!10}
+  Keratan sulfate/keratin metabolism & 1638074 & 25 & 50.4 & 93.5 & $2.36 \times 10^{-19}$ & $1.44 \times 10^{-17}$ \\ 
+  \rowcolor{black!5}
+  Ion channel transport & 983712 & 19 & 50.4 & 92.8 & $3.37 \times 10^{-19}$ & $1.99 \times 10^{-17}$ \\ 
+  \rowcolor{black!10}
+  Keratan sulfate biosynthesis & 2022854 & 26 & 50.4 & 91.4 & $6.79 \times 10^{-19}$ & $3.62 \times 10^{-17}$ \\ 
+  \rowcolor{black!5}
+  Arachidonic acid metabolism & 2142753 & 22 & 50.4 & 90.6 & $9.81 \times 10^{-19}$ & $5.07 \times 10^{-17}$ \\ 
+  \rowcolor{black!10}
+  RHO GTPases activate CIT & 5625900 & 22 & 50.4 & 87 & $5.80 \times 10^{-18}$ & $2.66 \times 10^{-16}$ \\ 
+  \rowcolor{black!5}
+  Stimuli-sensing channels & 2672351 & 25 & 50.4 & 85.8 & $1.03 \times 10^{-17}$ & $4.58 \times 10^{-16}$ \\ 
+  \rowcolor{black!10}
+  Synthesis of PI & 1483226 & 19 & 50.4 & 85.6 & $1.15 \times 10^{-17}$ & $4.89 \times 10^{-16}$ \\ 
+  \rowcolor{black!5}
+  G-protein activation & 202040 & 19 & 50.4 & 85.3 & $1.34 \times 10^{-17}$ & $5.53 \times 10^{-16}$ \\ 
+  \rowcolor{black!10}
+  NrCAM interactions & 447038 & 22 & 50.4 & 84.3 & $2.1 \times 10^{-17}$ & $8.27 \times 10^{-16}$ \\ 
+  \rowcolor{black!5}
+  Inwardly rectifying $K^+$ channels & 1296065 & 24 & 50.4 & 83.5 & $3.19 \times 10^{-17}$ & $1.22 \times 10^{-15}$ \\ 
+  \rowcolor{black!10}
+  Calcitonin-like ligand receptors & 419812 & 20 & 50.4 & 82.2 & $6.07 \times 10^{-17}$ & $2.13 \times 10^{-15}$ \\ 
+  \rowcolor{black!5}
+  Prostacyclin signalling through prostacyclin receptor & 392851 & 24 & 50.4 & 81.8 & $7.27 \times 10^{-17}$ & $2.5 \times 10^{-15}$ \\ 
+  \rowcolor{black!10}
+  Presynaptic function of Kainate receptors & 500657 & 26 & 50.4 & 79.7 & $2.00 \times 10^{-16}$ & $6.34 \times 10^{-15}$ \\ 
+  \rowcolor{black!5}
+  ADP signalling through P2Y purinoceptor 12 & 392170 & 23 & 50.4 & 79.2 & $2.57 \times 10^{-16}$ & $7.71 \times 10^{-15}$ \\ 
+  \rowcolor{black!10}
+  regulation of FZD by ubiquitination & 4641263 & 22 & 50.4 & 78.8 & $3.15 \times 10^{-16}$ & $9.3 \times 10^{-15}$ \\ 
+  \rowcolor{black!5}
+  Toxicity of tetanus toxin (TeNT) & 5250982 & 27 & 50.4 & 78.7 & $3.36 \times 10^{-16}$ & $9.75 \times 10^{-15}$ \\ 
+  \rowcolor{black!10}
+  Gap junction degradation & 190873 & 21 & 50.4 & 78.5 & $3.66 \times 10^{-16}$ & $1.04 \times 10^{-14}$ \\ 
+  \rowcolor{black!5}
+  Nephrin interactions & 373753 & 25 & 50.4 & 78.2 & $4.21 \times 10^{-16}$ & $1.14 \times 10^{-14}$ \\ 
+  \rowcolor{black!10}
+  GABA synthesis, release, reuptake and degradation & 888590 & 26 & 50.4 & 77 & $7.69 \times 10^{-16}$ & $1.95 \times 10^{-14}$ \\ 
+  \hline
+\end{tabular}
+\begin{tablenotes}
+\raggedright \small
+Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{TCGA} stomach cancer samples with low expression of both genes.
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
 
 \FloatBarrier
 
