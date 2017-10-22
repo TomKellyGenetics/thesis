@@ -19,7 +19,7 @@
 \contentsline {subsection}{\numberline {1.1.5}Systems and Network Biology}{11}{subsection.1.1.5}
 \contentsline {section}{\numberline {1.2}Synthetic Lethal Cancer Medicine}{12}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Synthetic Lethal Genetic Interactions}{12}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Synthetic Lethal Concepts in Genetics}{13}{subsection.1.2.2}
+\contentsline {subsection}{\numberline {1.2.2}Synthetic Lethal Concepts in Genetics}{14}{subsection.1.2.2}
 \contentsline {subsection}{\numberline {1.2.3}Synthetic Lethality in Model Systems}{14}{subsection.1.2.3}
 \contentsline {subsubsection}{\numberline {1.2.3.1}Synthetic Lethal Pathways and Networks}{15}{subsubsection.1.2.3.1}
 \contentsline {subsubsection}{\numberline {1.2.3.2}Evolution of Synthetic Lethality}{15}{subsubsection.1.2.3.2}
@@ -30,15 +30,15 @@
 \contentsline {subsection}{\numberline {1.2.7}Computational Prediction of Synthetic Lethality}{22}{subsection.1.2.7}
 \contentsline {subsubsection}{\numberline {1.2.7.1}Bioinformatics Approaches to Genetic Interactions}{22}{subsubsection.1.2.7.1}
 \contentsline {subsubsection}{\numberline {1.2.7.2}Comparative Genomics}{23}{subsubsection.1.2.7.2}
-\contentsline {subsubsection}{\numberline {1.2.7.3}Analysis and Modelling of Protein Data}{26}{subsubsection.1.2.7.3}
+\contentsline {subsubsection}{\numberline {1.2.7.3}Analysis and Modelling of Protein Data}{25}{subsubsection.1.2.7.3}
 \contentsline {subsubsection}{\numberline {1.2.7.4}Differential Gene Expression}{27}{subsubsection.1.2.7.4}
 \contentsline {subsubsection}{\numberline {1.2.7.5}Data Mining and Machine Learning}{28}{subsubsection.1.2.7.5}
 \contentsline {subsubsection}{\numberline {1.2.7.6}Mutual Exclusivity and Bimodality}{31}{subsubsection.1.2.7.6}
 \contentsline {subsubsection}{\numberline {1.2.7.7}Rationale for Further Development}{32}{subsubsection.1.2.7.7}
 \contentsline {section}{\numberline {1.3}E-cadherin as a Synthetic Lethal Target}{32}{section.1.3}
-\contentsline {subsection}{\numberline {1.3.1}The \textit {CDH1} gene and its Biological Functions}{33}{subsection.1.3.1}
-\contentsline {subsection}{\numberline {1.3.2}Hereditary Diffuse Gastric (and Lobular Breast) Cancer}{34}{subsection.1.3.2}
-\contentsline {subsection}{\numberline {1.3.3}Cell Line Models of \textit {CDH1} Null Mutations}{35}{subsection.1.3.3}
+\contentsline {subsection}{\numberline {1.3.1}The \textit {CDH1} gene and its Biological Functions}{32}{subsection.1.3.1}
+\contentsline {subsection}{\numberline {1.3.2}Hereditary Diffuse Gastric (and Lobular Breast) Cancer}{33}{subsection.1.3.2}
+\contentsline {subsection}{\numberline {1.3.3}Cell Line Models of \textit {CDH1} Null Mutations}{34}{subsection.1.3.3}
 \contentsline {section}{\numberline {1.4}Summary and Research Direction of Thesis}{35}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Thesis Aims}{36}{subsection.1.4.1}
 \contentsline {chapter}{\numberline {2}Methods and Resources}{37}{chapter.2}
@@ -106,11 +106,11 @@
 \contentsline {subsection}{\numberline {4.2.6}Integrating Synthetic Lethal Pathways and Screens}{111}{subsection.4.2.6}
 \contentsline {section}{\numberline {4.3}Synthetic Lethal Pathway Metagenes}{113}{section.4.3}
 \contentsline {section}{\numberline {4.4}Replication in Stomach Cancer}{115}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Synthetic Lethal Genes and Pathways}{116}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Synthetic Lethal Expression Profiles}{118}{subsection.4.4.2}
-\contentsline {subsection}{\numberline {4.4.3}Comparison to Primary Screen}{122}{subsection.4.4.3}
-\contentsline {subsubsection}{\numberline {4.4.3.1}Resampling Analysis}{125}{subsubsection.4.4.3.1}
-\contentsline {subsection}{\numberline {4.4.4}Metagene Analysis}{128}{subsection.4.4.4}
+\contentsline {subsection}{\numberline {4.4.1}\leavevmode {\color {red}Synthetic Lethal Genes and Pathways}}{116}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}\leavevmode {\color {red}Synthetic Lethal Expression Profiles}}{118}{subsection.4.4.2}
+\contentsline {subsection}{\numberline {4.4.3}\leavevmode {\color {red}Comparison to Primary Screen}}{122}{subsection.4.4.3}
+\contentsline {subsubsection}{\numberline {4.4.3.1}\leavevmode {\color {red}Resampling Analysis}}{125}{subsubsection.4.4.3.1}
+\contentsline {subsection}{\numberline {4.4.4}\leavevmode {\color {red}Metagene Analysis}}{128}{subsection.4.4.4}
 \contentsline {section}{\numberline {4.5}Discussion}{128}{section.4.5}
 \contentsline {subsection}{\numberline {4.5.1}Strengths of the SLIPT Methodology}{128}{subsection.4.5.1}
 \contentsline {subsection}{\numberline {4.5.2}Synthetic Lethal Pathways for E-cadherin}{130}{subsection.4.5.2}
@@ -147,16 +147,16 @@
 \contentsline {subsubsection}{\numberline {6.2.1.2}Constructed Graph structures}{165}{subsubsection.6.2.1.2}
 \contentsline {subsection}{\numberline {6.2.2}Performance with Inhibitions}{167}{subsection.6.2.2}
 \contentsline {subsection}{\numberline {6.2.3}Synthetic Lethality across Graph structures}{172}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Performance within a Large Simulated Dataset}{174}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Simulations in More Complex Graph structures}{178}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Simulations over Pathway-based Graphs}{179}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Pathway Structures in a Large Simulated Dataset}{181}{subsection.6.3.2}
-\contentsline {section}{\numberline {6.4}Discussion}{183}{section.6.4}
-\contentsline {subsection}{\numberline {6.4.1}Simulation Procedure}{183}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Comparing Methods with Simulated Data}{184}{subsection.6.4.2}
-\contentsline {subsection}{\numberline {6.4.3}Design and Performance of SLIPT}{185}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Simulations from Graph structures}{187}{subsection.6.4.4}
-\contentsline {section}{\numberline {6.5}Summary}{188}{section.6.5}
+\contentsline {subsection}{\numberline {6.2.4}Performance within a Large Simulated Dataset}{175}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Simulations in More Complex Graph structures}{179}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Simulations over Pathway-based Graphs}{180}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Pathway Structures in a Large Simulated Dataset}{182}{subsection.6.3.2}
+\contentsline {section}{\numberline {6.4}Discussion}{184}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Simulation Procedure}{184}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Comparing Methods with Simulated Data}{185}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Design and Performance of SLIPT}{186}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}Simulations from Graph structures}{188}{subsection.6.4.4}
+\contentsline {section}{\numberline {6.5}Summary}{189}{section.6.5}
 \contentsline {chapter}{\numberline {7}Discussion}{190}{chapter.7}
 \contentsline {section}{\numberline {7.1}Synthetic Lethality and \textit {CDH1} Biology}{190}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Established Functions of \textit {CDH1}}{191}{subsection.7.1.1}

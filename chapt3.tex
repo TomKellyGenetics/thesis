@@ -1383,7 +1383,7 @@ These findings were further supported by the \glspl{pathway} over-represented in
 While fewer \glspl{pathway} were supported by resampling for the intersection of \gls{SLIPT} and experimental screen candidate partners in stomach cancer than breast cancer, many of those detected (shown in Appendix Table~\ref{tab:pathway_perm_overlap_stad}) replicate those detected in breast cancer (shown in Table~\ref{tab:pathway_perm_overlap}). The \glspl{pathway} detected by both permutation and over-representation analysis were more likely to be replicated across stomach and breast cancer than those detected by over-representation alone, supporting the use of this procedure to detect \gls{synthetic lethal} \glspl{pathway} applicable across cancer types. The include G$_{\alpha s}$ signalling and elastic fibre formation as discussed for breast cancer (in Section~\ref{chapt3:compare_pathway_perm}).
 
 
-\subsection{Synthetic Lethal Genes and Pathways} \label{chapt3:stad_SL_genes}
+\subsection{\textcolor{red}{Synthetic Lethal Genes and Pathways}} \label{chapt3:stad_SL_genes}
 
 The strongest \gls{SLIPT} genes for stomach cancer (shown in Table~\ref{tab:gene_stad_SL}) did not necessarily directly correspond to those observed in breast cancer (shown in Table~\ref{tab:gene_SL}). However, several gene functions were replicated in stomach cancer. Cell membrane genes including \textit{EMP3}, \textit{GYPC},  \textit{LGALS1}, \textit{PRR24},  and \textit{FUNCD2} were among the strongest SL candidates. Similarly, cell signalling genes including \textit{PLEKHO1}, \textit{RARRES2}, \textit{VEGFB}, \textit{HSPB2}, and \textit{CREM} were detected in stomach cancers. It is notable that several of these genes (\textit{EMP3}, \textit{PLEKHO1}, and \textit{FUNCD2}) have a known role in cancer. Together these genes support the roles of \textit{CDH1} in cell membrane and signalling functions (of epithelial tissues) which are perturbed in both breast and stomach cancers.
 
@@ -1529,7 +1529,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 \FloatBarrier
 
-\subsection{Synthetic Lethal Expression Profiles} \label{chapt3:stad_SL_clusters}
+\subsection{\textcolor{red}{Synthetic Lethal Expression Profiles}} \label{chapt3:stad_SL_clusters}
 
 The \glslink{gene expression}{expression} profiles of candidate \gls{synthetic lethal} partners detected by \gls{SLIPT} in stomach cancer were plotted against clinical characteristics as described for breast cancer data in Section~\ref{chapt3:exprSL_clusters} (shown in Figure~\ref{fig:slipt_expr_stad}). As expected the majority of \textit{CDH1} \gls{mutant} samples had low \glslink{gene expression}{expression} of \textit{CDH1} and were the diffuse type of stomach cancer.
 
@@ -1747,9 +1747,12 @@ Pathway over-representation analysis for Reactome pathways with the number of ge
 
 \FloatBarrier
 
-\subsection{Comparison to Primary Screen} \label{chapt3:compare_SL_genes_stad}
+\subsection{\textcolor{red}{Comparison to Primary Screen}} \label{chapt3:compare_SL_genes_stad}
 
-The number of genes detected by both \gls{SLIPT} in \gls{TCGA} stomach cancer data and \gls{siRNA} in breast cell lines (shown in Figure~\ref{fig:Venn_allgenes_stad}) was also not a significant overlap (as observed for breast cancer in Figure~\ref{fig:Venn_allgenes}). This was particularly the case of \acrshort{mtSLIPT} against \textit{CDH1} \gls{mutation} in stomach cancer which detected very few genes (as shown in Figure~\ref{fig:Venn_allgenes_stad_mtSL}) due to low sample size and \gls{mutation} frequency.
+The number of genes detected by both \gls{SLIPT} in \gls{TCGA} stomach cancer data and \gls{siRNA} in breast cell lines (shown in Figure~\ref{fig:Venn_allgenes_stad}) was also not a significant overlap (as observed for breast cancer in Figure~\ref{fig:Venn_allgenes}). %This was particularly the case of \acrshort{mtSLIPT} against \textit{CDH1} \gls{mutation} in stomach cancer which detected very few genes (as shown in Figure~\ref{fig:Venn_allgenes_stad_mtSL}) due to low sample size and \gls{mutation} frequency.
+\gls{SLIPT} against \textit{CDH1} in stomach cancer detected fewer genes due to low sample size and \gls{mutation} frequency compared to the breast cancer analysis.
+%
+This smaller overlap can also be attributed to the tissue-specific differences between the stomach cancers and the breast cells used for the experimental model \citep{Chen2014}. Nevertheless, many genes were detected across \gls{SLIPT} in stomach cancers and the experimental screen \citep{Telford2015} and the \glspl{pathway} detected were consistent with prior observations in breast cancer. Despite differences in the specific genes detected, the functions of \textit{CDH1} were conserved across epithetial cancers in different tissues and \gls{synthetic lethal} inhibition of interacting \glspl{pathway} may be effective against molecular targets such as \textit{CDH1} inactivation across tissue types.
 
 \begin{figure}[!ht]
 %\begin{mdframed}
@@ -1763,7 +1766,6 @@ The number of genes detected by both \gls{SLIPT} in \gls{TCGA} stomach cancer da
 %\end{mdframed}
 \end{figure}
 
-This smaller overlap can also be attributed to the tissue-specific differences between the stomach cancers and the breast cells used for the experimental model \citep{Chen2014}. Nevertheless, many genes were detected across \gls{SLIPT} in stomach cancers and the experimental screen \citep{Telford2015} and the \glspl{pathway} detected were consistent with prior observations in breast cancer. Despite differences in the specific genes detected, the functions of \textit{CDH1} were conserved across epithetial cancers in different tissues and \gls{synthetic lethal} inhibition of interacting \glspl{pathway} may be effective against molecular targets such as \textit{CDH1} inactivation across tissue types.
 
 However, the \glspl{pathway} composition of \gls{SLIPT}-specific genes and those replicated with the \gls{siRNA} primary screen \citep{Telford2015} were highly concordant between the \glspl{pathway} identified by \gls{SLIPT} in \gls{TCGA} stomach cancer (shown in Table~\ref{tab:Venn_over-representation_stad}) and \glspl{pathway} previously identified in \gls{TCGA} breast cancer (shown in Table~\ref{tab:Venn_over-representation}). In both cases, translation and immune \glspl{pathway} were highly over-represented in \gls{SLIPT}-specific genes, which I would not expect to be detected by \gls{siRNA} screening in cell lines, as discussed in Section~\ref{chapt3:compare_pathway}. In addition, the extracellular matrix was supported by in stomach cancer. While the \glspl{pathway} identified by specifically by \gls{SLIPT} in stomach cancer or \gls{siRNA} screening were similar to those observed for breast cancer (in Table~\ref{tab:Venn_over-representation}), the \glspl{pathway} over-represented in the intersection for stomach cancer \gls{SLIPT} candidates and the \gls{siRNA} primary screen \citep{Telford2015} also had a clear over-representation of signalling \glspl{pathway}, although they differed from those observed in breast cancer \gls{SLIPT} candidates. \gls{GPCR} signalling was supported in genes detected in both \gls{TCGA} stomach cancer and screening, including G$_{\alpha q}$, G$_{\alpha s}$, serotonin receptors, and class A signalling (shown in more detail in Table~\ref{tab:pathway_perm_overlap_stad}). In addition MAPK and NOTCH signalling \glspl{pathway} were detected. These replicate the findings in breast cancer and show consistent detection of signalling \glspl{pathway} in stomach cancer despite less genes being detected by \gls{SLIPT} and patient samples differing from the tissue in which the experiments were conducted.
 
@@ -1917,7 +1919,7 @@ However, the \glspl{pathway} composition of \gls{SLIPT}-specific genes and those
 
 \FloatBarrier
 
-\subsubsection{Resampling Analysis}  \label{chapt3:compare_pathway_perm_stad_SL}
+\subsubsection{\textcolor{red}{Resampling Analysis}}  \label{chapt3:compare_pathway_perm_stad_SL}
 
 Similarly, resampling for \gls{SLIPT} specific candidates (shown in Table~\ref{tab:pathway_perm_stad}) replicated many of the most highly over-represented \glspl{pathway} in stomach cancer. These include translational, immune, \gls{GPCR} signalling, and elastic fibres, consistent with previous analyses in breast cancer (shown in Tables~\ref{tab:pathway_perm} and~\ref{tab:pathway_perm_mtSL}).
 
@@ -2167,7 +2169,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 
 \FloatBarrier
 
-\subsection{Metagene Analysis} \label{chapt3:metagene_stad_SL}
+\subsection{\textcolor{red}{Metagene Analysis}} \label{chapt3:metagene_stad_SL}
 
 \Gls{metagene} analysis (as conducted in Section~\ref{chapt3:metagene_SL}) was also performed for \gls{TCGA} stomach cancer \glslink{gene expression}{expression} data, using Reactome \glspl{pathway}. These results (as shown in Table~\ref{tab:metagene_stad_SL}) provided further support for signalling and extracellular processes as \gls{synthetic lethal} \glspl{pathway} across stomach and breast cancer. Namely, cell-cell communication, VEGF signalling, and various \gls{GPCR} \glspl{pathway} were detected.  
 %
