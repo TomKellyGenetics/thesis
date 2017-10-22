@@ -412,7 +412,8 @@ stats        & 3.3.2          & 3.3.2 & base            \\
 \centering
 \caption{R packages developed during thesis}
 \label{tab:computers_r_packages_dev}
-\resizebox{\textwidth}{!}{
+\makebox[\textwidth][c]{
+\resizebox{1.25 \textwidth}{!}{
 \begin{tabular}{|l|llc|}
 %\cline{2-4}
 \multicolumn{1}{l}{}           & \multicolumn{1}{l}{\bfseries Package Name} & \multicolumn{1}{l}{\bfseries Description                                                   and GitHub Repository}                                                                   & \multicolumn{1}{c}{\bfseries Section} \\
@@ -437,13 +438,13 @@ visualisation                  & \texttt{vioplotx}                          & \b
 %\cline{2-4}
 
 \rowcolor{black!10} \cellcolor{white}
-                               & \texttt{pathway.structure.permutation}   & \begin{tabular}[c]{@{}l@{}}Testing \glslink{graph}{pathway} structure with resampling analysis              \\ \url{https://github.com/TomKellyGenetics/pathway.structure.permutation} \end{tabular} & \ref{methods:network_permutation}  \\
+                               & \texttt{pathway.structure.permutation}   & \begin{tabular}[c]{@{}l@{}}Testing \glslink{graph}{pathway} structure with resampling analysis              \\ \url{https://github.com/TomKellyGenetics/} \\ \textcolor{blue!80!white}{\texttt{pathway.structure.permutation}} \end{tabular} & \ref{methods:network_permutation}  \\
 %\cline{2-4}
 \rowcolor{black!5} \cellcolor{white}
                                & \texttt{graphsim}                        & \begin{tabular}[c]{@{}l@{}}Generating simulated \glslink{gene expression}{expression} from \glslink{graph}{graph} structures           \\ \url{https://github.com/TomKellyGenetics/graphsim}                      \end{tabular} & \ref{methods:graphsim}\\
 \hline 
 \end{tabular} 
-}
+}}
 \end{table}
 
 %\FloatBarrier
