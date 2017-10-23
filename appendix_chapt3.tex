@@ -132,7 +132,7 @@ SLIPT expression analysis (described in Section~\ref{methods:SLIPT}) on \gls{TCG
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Gene set over-representation analysis (hypergeometric test) for Reactome pathways in \acrshort{mtSLIPT} partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
@@ -143,14 +143,14 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 The genes and pathways identified in Tables~\ref{tab:gene_mtSL} and~\ref{tab:pathway_mtSL} were derived from comparing the expression profiles of potential partners to the mutation status of \textit{CDH1} (as shown in Figure~\ref{fig:SLIPT_Method_mtSL}). The following analysis was limited to the samples for which both expression and somatic mutation data were available from \gls{TCGA}.
 
-\FloatBarrier
+%\FloatBarrier
 
 %\clearpage
 \section{Synthetic Lethal Expression Profiles} \label{appendix:mtSL_clusters}
 
-Similar to the analysis of synthetic lethal partners against low \textit{CDH1} expression in~\ref{chapt3:exprSL_clusters}, the partners detected from \textit{CDH1} mutation were also examined for their expression profiles and the pathway composition of gene clusters. Hierachical clustering was performed on \acrshort{mtSLIPT} partners for \textit{CDH1} as showing in Figure~\ref{fig:slipt_expr_mtSL}. Over-representation for Reactome pathways for each of the gene clusters identified is given in Table~\ref{tab:pathway_clusters_mtSL}.
+Similar to the analysis of synthetic lethal partners against low \textit{CDH1} expression in Section~\ref{chapt3:exprSL_clusters}, the partners detected from \textit{CDH1} mutation were also examined for their expression profiles and the pathway composition of gene clusters. Hierachical clustering was performed on \acrshort{mtSLIPT} partners for \textit{CDH1} as shown in Figure~\ref{fig:slipt_expr_mtSL}. Over-representation for Reactome pathways for each of the gene clusters identified is given in Table~\ref{tab:pathway_clusters_mtSL}.
 
-\begin{figure*}[!ht]
+\begin{figure*}[!htp]
 %\begin{mdframed}
   \centering
   \resizebox{0.99 \textwidth}{!}{
@@ -172,7 +172,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
 \centering
 %\begin{tiny}
 %\makebox[\textwidth][c]{
-\resizebox{0.75 \textwidth}{!}{
+\resizebox{1 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccc}
 %\caption{Pathways for clusters of \textit{CDH1} partners from SLIPT}
@@ -220,7 +220,7 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
 %  \rowcolor{Cluster_Blue!15} 
 %  Downstream signal transduction & 143 &  11 & $5.6 \times 10^{-7}$ \\ 
   \hline
-%  \\
+  \\
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 2}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Green!20}
@@ -264,7 +264,26 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
 %  \rowcolor{Cluster_Green!15} 
 %  Binding and Uptake of Ligands by Scavenger Receptors &  40 &   8 & $8.2 \times 10^{-13}$ \\ 
   \hline
-%  \\
+\end{tabular}
+\begin{tablenotes}
+\raggedright %\small
+Pathway over-representation analysis for Reactome pathways with the number of genes in each pathway (Pathway Size), number of genes within the pathway identified (Cluster Genes), and the pathway over-representation p-value (adjusted by \gls{FDR}) from the hypergeometric test.  
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+\begin{table*}[!ht]
+%\caption{Pathways for clusters of \textit{CDH1} partners from SLIPT}
+Table~\ref{tab:pathway_clusters_mtSL}: Pathways for clusters of \textit{CDH1} partners from mtSLIPT
+%\label{tab:pathway_clusters}
+\centering
+%\begin{tiny}
+%\makebox[\textwidth][c]{
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccc}
+  \\
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 3}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Orange!30}
@@ -302,13 +321,13 @@ Similar to the analysis of synthetic lethal partners against low \textit{CDH1} e
   \rowcolor{Cluster_Orange!30} 
   Influenza Infection & 117 &  53 & $6.2 \times 10^{-88}$ \\ 
   \rowcolor{Cluster_Orange!20} 
-  Translation & 141 &  55 & $3 \times 10^{-81}$ \\ 
+  Translation & 141 &  55 & $3.0 \times 10^{-81}$ \\ 
 %  \rowcolor{Cluster_Orange!30} 
 %  Formation of the ternary complex, and subsequently, the 43S complex &  47 &  23 & $2.3 \times 10^{-48}$ \\ 
 %  \rowcolor{Cluster_Orange!20} 
 %  Translation initiation complex formation &  54 &  23 & $9.1 \times 10^{-45}$ \\ 
   \hline
-%  \\ 
+  \\ 
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 4}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
   \hline 
   \rowcolor{Cluster_Red!20}
@@ -388,7 +407,7 @@ Despite a lower sample size (and low number of a predicted partners) for mutatio
 \caption{Pathways for \textit{CDH1} partners from \acrshort{mtSLIPT} and \gls{siRNA}}
 \label{tab:Venn_over-representation_mtSL}
 \centering
-\resizebox{0.8 \textwidth}{!}{
+\resizebox{1 \textwidth}{!}{
 \begin{tabular}{sl^c^c^c}
 \rowstyle{\bfseries}
   Predicted only by SLIPT (2901 genes) & Pathway Size & Genes Identified & p-value (\gls{FDR}) \\ 
@@ -647,7 +666,7 @@ Despite a lower sample size (and low number of a predicted partners) for mutatio
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
@@ -768,7 +787,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
@@ -1097,7 +1116,8 @@ Metagene analysis was performed for synthetic lethal pathways against \textit{CD
 \caption{Candidate synthetic lethal metagenes against \textit{CDH1} from mtSLIPT}
 \label{tab:metagene_mtSL}
 \centering
-\resizebox{1 \textwidth}{!}{
+\makebox[1 \textwidth][c]{ 
+\resizebox{1.25 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{sl^l^c^c^c^c^c}
 \rowstyle{\bfseries}
@@ -1156,11 +1176,11 @@ Metagene analysis was performed for synthetic lethal pathways against \textit{CD
    \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \acrshort{mtSLIPT} with observed and expected numbers of mutant \textit{CDH1} \gls{TCGA} breast cancer tumours with low expression of partner metagenes.
 \end{tablenotes}
 \end{threeparttable}
-}
+}}
 \end{table*}
 
 \iffalse
@@ -1322,7 +1342,7 @@ The intrinsic subtypes for \gls{TCGA} breast cancer samples provided by \gls{UCS
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 The intrinsic subtypes of \gls{TCGA} breast samples were compared between those provided by \gls{UCSC} \citep{TCGA2012} from microarray expression to those derived from \gls{RNA-Seq} data \citep{Parker2009}. Comparisons between these were limited to samples for which both data types were available.
 \end{tablenotes}
 \end{threeparttable}
@@ -1406,7 +1426,7 @@ The following results are a replication of the \gls{TCGA} results (in Chapter~\r
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \gls{SLIPT} in \gls{TCGA} stomach cancer expression data
 
 \item[*] Observed and expected numbers of samples which had low \glslink{gene expression}{expression} of both genes
@@ -1468,7 +1488,7 @@ Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \gls{SL
    \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Gene set over-representation analysis (hypergeometric test) for Reactome pathways in \gls{SLIPT} partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
@@ -1995,7 +2015,7 @@ The synthetic lethal partners with \textit{CDH1} expression in stomach cancers w
  \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
@@ -2116,7 +2136,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
@@ -2197,7 +2217,7 @@ Metagenes used to detect synthetic lethal pathways with \textit{CDH1} in stomach
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{TCGA} stomach cancer samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
@@ -2278,7 +2298,7 @@ The following results were a replication of the \gls{TCGA} results (in Appendix~
    \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \acrshort{mtSLIPT} in \gls{TCGA} in stomach cancer expression and mutation data
 
 \item[*] Observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} stomach tumours with low expression of partner genes
@@ -2343,7 +2363,7 @@ Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \acrsho
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Gene set over-representation analysis (hypergeometric test) for Reactome pathways in \acrshort{mtSLIPT} partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
@@ -2856,7 +2876,7 @@ The mutation synthetic lethal partners with \textit{CDH1} were also compared to 
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
@@ -2976,7 +2996,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 %Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
@@ -3052,7 +3072,7 @@ Metagene analysis was performed for synthetic lethal candidates for \textit{CDH1
    \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \acrshort{mtSLIPT} with observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} stomach cancer samples  with low expression of partner metagenes.
 \end{tablenotes}
 \end{threeparttable}
@@ -3140,7 +3160,7 @@ Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by \acrsho
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Genes with the most candidate \gls{synthetic lethal} partners SLIPT in \gls{TCGA} stomach expression data with the number of partner genes predicted by direction criteria and $\chi^2$ testing separately and combined as a \gls{SLIPT} analysis. Where specified, the p-values for the $\chi^2$ test were adjusted for multiple tests (\gls{FDR}).
 \end{tablenotes}
 \end{threeparttable}
@@ -3206,7 +3226,7 @@ Genes with the most candidate \gls{synthetic lethal} partners SLIPT in \gls{TCGA
    \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Gene set over-representation analysis (hypergeometric test) for Reactome pathways in the top 500 ``hub'' genes with the most candidate synthetic lethal partners by \gls{SLIPT} analysis of \gls{TCGA} stomach expression data.
 \end{tablenotes}
 \end{threeparttable}
@@ -3282,7 +3302,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT with observed and expected numbers of CCLE samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
@@ -3353,7 +3373,7 @@ Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT w
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT with observed and expected numbers of CCLE breast samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
@@ -3411,7 +3431,7 @@ Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT w
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT with observed and expected numbers of CCLE stomach samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
@@ -3474,7 +3494,7 @@ Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT w
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
@@ -3535,7 +3555,7 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Gene set over-representation analysis (hypergeometric test) for Reactome pathways in SLIPT partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}

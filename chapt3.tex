@@ -74,7 +74,7 @@ TRIP10 & 62 & 130 & 162 & $5.65 \times 10^{-34}$ & $1.84 \times 10^{-31}$ \\
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} \textcolor{red}{of 5165 genes detected} by \gls{SLIPT} in \gls{TCGA} breast cancer expression data
 
 \item[*] Observed and expected numbers of samples which had low \glslink{gene expression}{expression} of both genes
@@ -148,7 +148,7 @@ TFAP2B & 8 & 36.7 & 89.5 & $3.60 \times 10^{-20}$ & $8.37 \times 10^{-17}$ \\
    \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} \textcolor{red}{of 3743 genes detected} by \acrshort{mtSLIPT} in \gls{TCGA} in breast cancer expression and mutation data
 
 \item[*] Observed and expected numbers of \textit{CDH1} mutant \gls{TCGA} breast tumours with low expression of partner genes
@@ -221,7 +221,7 @@ Immune \glspl{pathway}, including the adaptive immune system and responses to in
    \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Gene set over-representation analysis (hypergeometric test) for Reactome \glspl{pathway} in \gls{SLIPT} partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
@@ -281,7 +281,7 @@ Together these results support the use of low \textit{CDH1} \glslink{gene expres
 \centering
 %\begin{tiny}
 %\makebox[\textwidth][c]{
-\resizebox{0.75 \textwidth}{!}{
+\resizebox{1 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccc}
 %\caption{Pathway composition for clusters of \textit{CDH1} partners from SLIPT}
@@ -329,7 +329,7 @@ Together these results support the use of low \textit{CDH1} \glslink{gene expres
 %  \rowcolor{Cluster_Blue!15} 
 %  ECM proteoglycans &  66 &   6 & $6.3 \times 10^{-6}$ \\ 
   \hline
-  %\\
+  \\
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 2}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Green!20}
@@ -373,7 +373,7 @@ Together these results support the use of low \textit{CDH1} \glslink{gene expres
 %  \rowcolor{Cluster_Green!15} 
 %  Formation of the ternary complex, and subsequently, the 43S complex &  47 &  33 & $6.8 \times 10^{-80}$ \\
   \hline
-  %\\
+  \\
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 3}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Orange!30}
@@ -417,7 +417,27 @@ Together these results support the use of low \textit{CDH1} \glslink{gene expres
 %  \rowcolor{Cluster_Orange!20} 
 %  Antigen activates B Cell Receptor leading to generation of second messengers &  32 &  12 & $7.2 \times 10^{-25}$ \\
    \hline
-  %\\ 
+\end{tabular}
+\begin{tablenotes}
+\raggedright %\small
+%Pathway over-representation analysis for Reactome \glspl{pathway} with the number of genes in each \glspl{pathway} (Pathway Size), number of genes within the \glspl{pathway} identified (Cluster Genes), and the \gls{pathway} over-representation p-value (adjusted by \gls{FDR}) from the hypergeometric test.  
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+\begin{table*}[!ht]
+%\caption{Pathways for clusters of \textit{CDH1} partners from SLIPT}
+Table~\ref{tab:pathway_clusters}: Pathways for clusters of \textit{CDH1} partners from SLIPT
+%\label{tab:pathway_clusters}
+\centering
+%\begin{tiny}
+%\makebox[\textwidth][c]{
+\resizebox{1 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccc}
+  \\ 
+  \hline  
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 4}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
   \hline 
   \rowcolor{Cluster_Red!20}
@@ -651,7 +671,7 @@ association between \gls{SLIPT} candidates and stronger validations of \gls{siRN
 \cellcolor{white}                                                           & \multicolumn{1}{r|}{\cellcolor{white} \bfseries Total}            & \multicolumn{1}{c}{280} & \multicolumn{1}{c}{136} & \multicolumn{1}{c}{52} & \multicolumn{1}{c}{18} & \multicolumn{1}{c|}{6}   & \multicolumn{1}{l|}{482}                  \\ \cline{3-8} 
 \end{tabular} 
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 \item[*] Number of \glspl{siRNA} (targeting the same gene) to successfully reproduce \glspl{synthetic lethal} in MCF10A cells \citep{Telford2015}
 
 \end{tablenotes}
@@ -849,7 +869,7 @@ While the number of \gls{siRNA} candidate genes also detected by \gls{SLIPT} was
 \caption{Pathways for \textit{CDH1} partners from SLIPT}
 \label{tab:pathway_perm}
 \centering
-\resizebox{0.9 \textwidth}{!}{
+\resizebox{1 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{sl^c^c}
 \rowstyle{\bfseries}
@@ -960,7 +980,7 @@ While the number of \gls{siRNA} candidate genes also detected by \gls{SLIPT} was
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across \glspl{pathway} (\gls{FDR}). Significant \glspl{pathway} are marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
@@ -1080,7 +1100,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across \glspl{pathway} (\gls{FDR}). Significant \glspl{pathway} are marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
@@ -1210,7 +1230,7 @@ Many of the \glspl{pathway} supported in the intersection by permutation analysi
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
@@ -1389,11 +1409,11 @@ While fewer \glspl{pathway} were supported by resampling for the intersection of
 
 The strongest \gls{SLIPT} genes for stomach cancer (shown in Table~\ref{tab:gene_stad_SL}) did not necessarily directly correspond to those observed in breast cancer (shown in Table~\ref{tab:gene_SL}). However, several gene functions were replicated in stomach cancer. Cell membrane genes including \textit{EMP3}, \textit{GYPC},  \textit{LGALS1}, \textit{PRR24},  and \textit{FUNCD2} were among the strongest SL candidates. Similarly, cell signalling genes including \textit{PLEKHO1}, \textit{RARRES2}, \textit{VEGFB}, \textit{HSPB2}, and \textit{CREM} were detected in stomach cancers. It is notable that several of these genes (\textit{EMP3}, \textit{PLEKHO1}, and \textit{FUNCD2}) have a known role in cancer. Together these genes support the roles of \textit{CDH1} in cell membrane and signalling functions (of epithelial tissues) which are perturbed in both breast and stomach cancers.
 
-\begin{table*}[!ht]
+\begin{table*}[!htbp]
 \caption{Synthetic lethal gene partners of \textit{CDH1} from SLIPT in stomach cancer}
 \label{tab:gene_stad_SL}
 \centering
-\resizebox{0.6 \textwidth}{!}{
+\resizebox{0.8 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{>{\em}sl^c^c^c^c^c}
 \rowstyle{\bfseries}
@@ -1452,7 +1472,7 @@ The strongest \gls{SLIPT} genes for stomach cancer (shown in Table~\ref{tab:gene
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} \textcolor{red}{of 4365 genes detected} by \gls{SLIPT} in \gls{TCGA} stomach cancer expression data
 
 \item[*] Observed and expected numbers of samples which had low \glslink{gene expression}{expression} of both genes
@@ -1467,7 +1487,7 @@ Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} \textcolor
 
 These findings were further supported by the \glspl{pathway} over-represented in \gls{SLIPT} candidates from \gls{TCGA} stomach cancer (shown in Table~\ref{tab:pathway_stad_exprSL}) which were replicated the translational and immune \glspl{pathway} observed in \gls{TCGA} breast cancer (shown in Table~\ref{tab:pathway_exprSL}). There was further support for GCPR signalling \glspl{pathway} including the class A/1 receptors in \textit{CDH1}-deficient stomach cancers, in addition to cell signalling and translation \glspl{pathway} important in tumour growth across breast and stomach cancer. %The extracellular matrix was also detected at the \gls{pathway} level in stomach cancer \gls{SLIPT} candidates and replicated in \acrshort{mtSLIPT} analysis for \textit{CDH1} \gls{mutation} (shown in Table~\ref{tab:pathway_stad_mtSL}), including elastic fibres, glycosylation, collagen, and integrin cell-surface interactions. Thus there was strong evidence for the role of extracellular matrix \glspl{pathway} and the tumour microenvironment in \textit{CDH1}-deficient stomach cancers, in addition to cell signalling and translation \glspl{pathway} important in tumour growth across breast and stomach cancer.
 
-\begin{table*}[!ht]
+\begin{table*}[!htbp]
 \caption{Pathways for \textit{CDH1} partners from SLIPT in stomach cancer}
 \label{tab:pathway_stad_exprSL}
 \centering
@@ -1519,7 +1539,7 @@ These findings were further supported by the \glspl{pathway} over-represented in
    \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Gene set over-representation analysis (hypergeometric test) for Reactome pathways in \gls{SLIPT} partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
@@ -1529,13 +1549,18 @@ Gene set over-representation analysis (hypergeometric test) for Reactome pathway
 
 %%appendix
 
-\FloatBarrier
+%\FloatBarrier
 
 \subsection{\textcolor{red}{Synthetic Lethal Expression Profiles}} \label{chapt3:stad_SL_clusters}
 
 The \glslink{gene expression}{expression} profiles of candidate \gls{synthetic lethal} partners detected by \gls{SLIPT} in stomach cancer were plotted against clinical characteristics as described for breast cancer data in Section~\ref{chapt3:exprSL_clusters} (shown in Figure~\ref{fig:slipt_expr_stad}). As expected the majority of \textit{CDH1} \gls{mutant} samples had low \glslink{gene expression}{expression} of \textit{CDH1} and were the diffuse type of stomach cancer.
 
-\begin{figure*}[!ht]
+The \gls{SLIPT} partners of \textit{CDH1} exhibited similar clustering in staomch cancer to breast cancer, replicating the diverse roles of elevated partner genes in different clinical samples. Specifically (as shown in Figure~\ref{fig:slipt_expr_stad}), the diffuse type stomach cancers had higher \glslink{gene expression}{expression} of the candidate \gls{synthetic lethal} partners (where \textit{CDH1} has a role as a \gls{driver mutation}), despite an unbiased clustering. This is consistent with compensating \glslink{gene expression}{expression} of \gls{synthetic lethal} partners under loss of \textit{CDH1}, as suggested by \citet{Lu2015}. The \glspl{pathway} composition of gene clusters for stomach cancer (shown in Table~\ref{tab:pathway_clusters_stad}) was also highly concordant with breast cancer findings (shown in Table~\ref{tab:pathway_clusters}). These included replicated of translation (Cluster 1), immune functions (Cluster 2), G$_{\alpha s}$ signalling (Cluster 3), and further support for the roles of \glspl{GPCR} and the extracellular matrix (Cluster 4) in the \gls{synthetic lethal} partners and functions of \textit{CDH1}, replicated across stomach and breast cancers. Clusters 1 and 4, which had particularly high \glslink{gene expression}{expression} of \gls{SLIPT} candidate partner genes in the diffuse subtype, also had the most significant over-representation of \glspl{pathway}.
+
+\FloatBarrier
+
+
+\begin{figure*}[!htbp]
 %\begin{mdframed}
   \centering
   \resizebox{0.99 \textwidth}{!}{
@@ -1548,15 +1573,13 @@ The \glslink{gene expression}{expression} profiles of candidate \gls{synthetic l
 %\end{mdframed}
 \end{figure*}
 
-The \gls{SLIPT} partners of \textit{CDH1} exhibited similar clustering in staomch cancer to breast cancer, replicating the diverse roles of elevated partner genes in different clinical samples. Specifically (as shown in Figure~\ref{fig:slipt_expr_stad}), the diffuse type stomach cancers had higher \glslink{gene expression}{expression} of the candidate \gls{synthetic lethal} partners (where \textit{CDH1} has a role as a \gls{driver mutation}), despite an unbiased clustering. This is consistent with compensating \glslink{gene expression}{expression} of \gls{synthetic lethal} partners under loss of \textit{CDH1}, as suggested by \citet{Lu2015}. The \glspl{pathway} composition of gene clusters for stomach cancer (shown in Table~\ref{tab:pathway_clusters_stad}) was also highly concordant with breast cancer findings (shown in Table~\ref{tab:pathway_clusters}). These included replicated of translation (Cluster 1), immune functions (Cluster 2), G$_{\alpha s}$ signalling (Cluster 3), and further support for the roles of \glspl{GPCR} and the extracellular matrix (Cluster 4) in the \gls{synthetic lethal} partners and functions of \textit{CDH1}, replicated across stomach and breast cancers. Clusters 1 and 4, which had particularly high \glslink{gene expression}{expression} of \gls{SLIPT} candidate partner genes in the diffuse subtype, also had the most significant over-representation of \glspl{pathway}.
-
-\begin{table*}[!hp]
+\begin{table*}[!htbp]
 \caption{Pathways for clusters of \textit{CDH1} partners in stomach SLIPT}
 \label{tab:pathway_clusters_stad}
 \centering
 %\begin{tiny}
 %\makebox[\textwidth][c]{
-\resizebox{0.75 \textwidth}{!}{
+\resizebox{0.9 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{lccc}
 %\caption{Pathways for clusters of \textit{CDH1} partners from SLIPT}
@@ -1604,7 +1627,7 @@ The \gls{SLIPT} partners of \textit{CDH1} exhibited similar clustering in staomc
 %  \rowcolor{Cluster_Blue!15}
 %  Formation of the ternary complex, and subsequently, the 43S complex &  48 &  21 & $3.7 \times 10^{-43}$ \\ 
   \hline
-%  \\
+  \\
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 2}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Green!20}
@@ -1648,7 +1671,7 @@ The \gls{SLIPT} partners of \textit{CDH1} exhibited similar clustering in staomc
 %  \rowcolor{Cluster_Green!15}
 %  Complement cascade &  34 &   5 & $1.3 \times 10^{-7}$ \\ 
   \hline
-%  \\
+  \\
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 3}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
   \hline
   \rowcolor{Cluster_Orange!30}
@@ -1692,7 +1715,26 @@ The \gls{SLIPT} partners of \textit{CDH1} exhibited similar clustering in staomc
 %  \rowcolor{Cluster_Orange!20}
 %  IGF1R signalling cascade &  86 &   6 & $8.5 \times 10^{-5}$ \\
   \hline
-%  \\ 
+  \end{tabular}
+\begin{tablenotes}
+\raggedright %\small
+Pathway over-representation analysis for Reactome pathways with the number of genes in each pathway (Pathway Size), number of genes within the pathway identified (Cluster Genes), and the pathway over-representation p-value (adjusted by \gls{FDR}) from the hypergeometric test.  
+\end{tablenotes}
+\end{threeparttable}
+}
+\end{table*}
+
+\begin{table*}[!htb]
+%\caption{Pathways for clusters of \textit{CDH1} partners from SLIPT}
+Table~\ref{tab:pathway_clusters_stad}: Pathways for clusters of \textit{CDH1} partners in stomach SLIPT
+%\label{tab:pathway_clusters}
+\centering
+%\begin{tiny}
+%\makebox[\textwidth][c]{
+\resizebox{0.9 \textwidth}{!}{
+\begin{threeparttable}
+\begin{tabular}{lccc}
+  \\ 
   \cellcolor{white} \large{\textbf{Pathways Over-represented in Cluster 4}} & \large{\textbf{Pathway Size}} & \large{\textbf{Cluster Genes}} & \large{\textbf{p-value (\gls{FDR})}} \\ %(833 genes)  
   \hline 
   \rowcolor{Cluster_Red!20}
@@ -1927,11 +1969,11 @@ Similarly, resampling for \gls{SLIPT} specific candidates (shown in Table~\ref{t
 
 While fewer \glspl{pathway} were supported by resampling for the intersection of \gls{SLIPT} and experimental screen \citep{Telford2015} candidate partners in stomach cancer than breast cancer, many of those detected (shown in Table~\ref{tab:pathway_perm_overlap_stad}) replicate those detected in breast cancer (shown in Table~\ref{tab:pathway_perm_overlap}). The \glspl{pathway} detected by both permutation and over-representation were more likely to be replicated across stomach and breast cancer than those detected by over-representation alone, supporting the use of this procedure to detect \gls{synthetic lethal} \glspl{pathway} applicable across cancer types. The include G$_{\alpha s}$ signalling and elastic fibre formation as discussed for breast cancer (in Section~\ref{chapt3:compare_pathway_perm}).
 
-\begin{table*}[!htp]
+\begin{table*}[!htbp]
 \caption{Pathways for \textit{CDH1} partners from SLIPT in stomach cancer}
 \label{tab:pathway_perm_stad}
 \centering
-\resizebox{0.8 \textwidth}{!}{
+\resizebox{0.9 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{sl^c^c}
 \rowstyle{\bfseries}
@@ -2013,34 +2055,34 @@ While fewer \glspl{pathway} were supported by resampling for the intersection of
   \textbf{G$_{\alpha s}$ signalling events} & $2.7 \times 10^{-65}$ & $0.0050293$ \\ 
   \rowcolor{Cluster_Red!15} 
   Potassium Channels & $2.7 \times 10^{-65}$ & $0.53359$ \\ 
-  \rowcolor{Cluster_Red!20} 
-  Transmission across Chemical Synapses & $1.8 \times 10^{-64}$ & $0.81833$ \\ 
-  \rowcolor{Cluster_Red!15} 
-  ECM proteoglycans & $3.4 \times 10^{-64}$ & $0.083482$ \\ 
-  \rowcolor{Cluster_Red!20} 
-  Peptide ligand-binding receptors & $4.8 \times 10^{-64}$ & $0.62817$ \\ 
-  \rowcolor{Cluster_Red!15} 
-  Degradation of the extracellular matrix & $1.1 \times 10^{-63}$ & $0.80879$ \\ 
-  \rowcolor{Cluster_Red!20} 
-  Platelet homeostasis & $5.3 \times 10^{-63}$ & $0.53134$ \\ 
-  \rowcolor{Cluster_Red!15} 
-  NGF signalling via TRKA from the plasma membrane & $6.1 \times 10^{-63}$ & $0.5717$ \\ 
-  \rowcolor{Cluster_Red!20} 
-  Integration of energy metabolism & $4.5 \times 10^{-61}$ & $0.10889$ \\ 
-  \rowcolor{Cluster_Red!15} 
-  Collagen formation & $5.4 \times 10^{-61}$ & $0.29896$ \\ 
-  \rowcolor{Cluster_Red!20} 
-  Integrin cell surface interactions & $7 \times 10^{-59}$ & $0.18167$ \\ 
-  \rowcolor{Cluster_Red!15} 
-  Collagen biosynthesis and modifying enzymes & $7 \times 10^{-59}$ & $0.30208$ \\ 
-  \rowcolor{Cluster_Red!20} 
-  \begin{tabular}[c]{@{}l@{}}Neurotransmitter Receptor Binding And Downstream Transmission\\ In The  Postsynaptic Cell \end{tabular} & $8.7 \times 10^{-57}$ & $0.82522$ \\ 
-  \rowcolor{Cluster_Red!15} 
-  Signalling by Wnt & $8.7 \times 10^{-57}$ & $0.25468$ \\ 
+  %\rowcolor{Cluster_Red!20} 
+  %Transmission across Chemical Synapses & $1.8 \times 10^{-64}$ & $0.81833$ \\ 
+  %\rowcolor{Cluster_Red!15} 
+  %ECM proteoglycans & $3.4 \times 10^{-64}$ & $0.083482$ \\ 
+  %\rowcolor{Cluster_Red!20} 
+  %Peptide ligand-binding receptors & $4.8 \times 10^{-64}$ & $0.62817$ \\ 
+  %\rowcolor{Cluster_Red!15} 
+  %Degradation of the extracellular matrix & $1.1 \times 10^{-63}$ & $0.80879$ \\ 
+  %\rowcolor{Cluster_Red!20} 
+  %Platelet homeostasis & $5.3 \times 10^{-63}$ & $0.53134$ \\ 
+  %\rowcolor{Cluster_Red!15} 
+  %NGF signalling via TRKA from the plasma membrane & $6.1 \times 10^{-63}$ & $0.5717$ \\ 
+  %\rowcolor{Cluster_Red!20} 
+  %Integration of energy metabolism & $4.5 \times 10^{-61}$ & $0.10889$ \\ 
+  %\rowcolor{Cluster_Red!15} 
+  %Collagen formation & $5.4 \times 10^{-61}$ & $0.29896$ \\ 
+  %\rowcolor{Cluster_Red!20} 
+  %Integrin cell surface interactions & $7 \times 10^{-59}$ & $0.18167$ \\ 
+  %\rowcolor{Cluster_Red!15} 
+  %Collagen biosynthesis and modifying enzymes & $7 \times 10^{-59}$ & $0.30208$ \\ 
+  %\rowcolor{Cluster_Red!20} 
+  %\begin{tabular}[c]{@{}l@{}}Neurotransmitter Receptor Binding And Downstream Transmission\\ In The  Postsynaptic Cell \end{tabular} & $8.7 \times 10^{-57}$ & $0.82522$ \\ 
+  %\rowcolor{Cluster_Red!15} 
+  %Signalling by Wnt & $8.7 \times 10^{-57}$ & $0.25468$ \\ 
  \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
@@ -2051,7 +2093,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
 \caption{Pathways for \textit{CDH1} partners from SLIPT in stomach and \gls{siRNA}}
 \label{tab:pathway_perm_overlap_stad}
 \centering
-\resizebox{0.8 \textwidth}{!}{
+\resizebox{0.9 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{sl^c^c}
 \rowstyle{\bfseries}
@@ -2160,7 +2202,7 @@ Over-representation (hypergeometric test) and Permutation p-values adjusted for 
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Over-representation (hypergeometric test) and Permutation p-values adjusted for multiple tests across pathways (\gls{FDR}). Significant pathways were marked in bold (\gls{FDR} $ < 0.05$) and italics (\gls{FDR} $ < 0.1$).
 \end{tablenotes}
 \end{threeparttable}
@@ -2184,7 +2226,8 @@ These results support the role of extracellular processes in proliferation of \t
 \caption{Synthetic lethal metagenes against \textit{CDH1} in stomach cancer}
 \label{tab:metagene_stad_SL}
 \centering
-\resizebox{1 \textwidth}{!}{
+\makebox[1 \textwidth][c]{ 
+\resizebox{1.25 \textwidth}{!}{
 \begin{threeparttable}
 \begin{tabular}{sl^l^c^c^c^c^c}
 \rowstyle{\bfseries}
@@ -2243,11 +2286,11 @@ These results support the role of extracellular processes in proliferation of \t
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Strongest candidate \gls{synthetic lethal} partners for \textit{CDH1} by SLIPT with observed and expected numbers of \gls{TCGA} stomach cancer samples with low expression of both genes.
 \end{tablenotes}
 \end{threeparttable}
-}
+}}
 \end{table*}
 
 \FloatBarrier
@@ -2335,7 +2378,7 @@ The genes with the most \gls{synthetic lethal} interactions by this \gls{SLIPT} 
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Genes with the most candidate \gls{synthetic lethal} partners \gls{SLIPT} in \gls{TCGA} breast \glslink{gene expression}{expression} data with the number of partner genes predicted by direction criteria and $\chi^2$ testing separately and combined as a \gls{SLIPT} analysis. Where specified, the p-values for the $\chi^2$ test were adjusted for multiple tests (\gls{FDR}).
 \end{tablenotes}
 \end{threeparttable}
@@ -2408,7 +2451,7 @@ Pathways over-represented among \gls{TCGA} breast cancer hub genes (as shown in 
    \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Gene set over-representation analysis (hypergeometric test) for Reactome \glspl{pathway} in the top 500 ``hub'' genes with the most candidate \gls{synthetic lethal} partners by \gls{SLIPT} analysis of \gls{TCGA} breast \glslink{gene expression}{expression} data.
 \end{tablenotes}
 \end{threeparttable}
@@ -2478,7 +2521,7 @@ Pathway over-representation for \gls{synthetic lethal} hub genes was replicated 
    \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Gene set over-representation analysis (hypergeometric test) for Reactome \glspl{pathway} in \gls{SLIPT} partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
@@ -2544,7 +2587,7 @@ Synthetic lethal gene candidates were detectable by \gls{SLIPT} across each of t
   \hline
 \end{tabular}
 \begin{tablenotes}
-\raggedright \small
+\raggedright %\small
 Gene set over-representation analysis (hypergeometric test) for Reactome \glspl{pathway} in \gls{SLIPT} partners for \textit{CDH1}.
 \end{tablenotes}
 \end{threeparttable}
