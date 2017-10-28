@@ -691,9 +691,57 @@ The \glslink{graph}{graph} structure was constructed \textcolor{red}{to be used 
 %\end{mdframed}
 \end{figure*}
 
-The simulation procedure was designed to use such \glslink{graph}{graph} structures to inform development of a ``Sigma'' variance-covariance matrix ($\Sigma$) for sampling from a multivariate normal distribution (using the \texttt{mvtnorm} R package). Given a \glslink{graph}{graph} structure (or adjacency matrix), such as Figure~\ref{fig:simulation_activating:first}, a relation matrix was calculated based on distance such that nearer \glslink{vertex}{nodes} are given higher weight than farther \glslink{vertex}{nodes}. Throughout this thesis, a geometrically decreasing (relative) distance weighting was used, with each more distant \glslink{vertex}{node} being related by $\sfrac{1}{2}$ compared to the next nearest, as shown in Figure~\ref{fig:simulation_activating:second}. An arithmetically decreasing (absolute) distance weighting is also supported in the \texttt{graphsim} R package release of this procedure.
+The simulation procedure was designed to use such \glslink{graph}{graph} structures to inform development of a ``Sigma'' variance-covariance matrix ($\Sigma$) for sampling from a multivariate normal distribution (using the \texttt{mvtnorm} R package). \textcolor{red}{This procedure uses} a \glslink{graph}{graph} structure (or adjacency matrix \textcolor{red}{$A_{ij}$}), such as Figure~\ref{fig:simulation_activating:first}. \textcolor{red}{
+%
+\[
+A_{ij} = 
+\begin{dcases*}
+   1                         & if genes $i$ and $j$ are adjacent \\
+   0                         & otherwise
+\end{dcases*}
+\]
+%
+A} relation matrix \textcolor{red}{$R_{ij}$} was calculated based on distance such that nearer \glslink{vertex}{nodes} are given higher weight than farther \glslink{vertex}{nodes}. Throughout this thesis, a geometrically decreasing (relative) distance weighting was used \textcolor{red}{
+%
+\[
+R_{ij} = 
+\begin{dcases*}
+   1                            & if genes $i$ and $j$ are adjacent \\
+   (\sfrac{1}{2})^{d_{ij}}   & if a path can be found  between genes $i$ and $j$ \\
+   0                            & if no path exists between genes $i$ and $j$ 
+\end{dcases*}
+\]
+%
+where $d_{ij}$ is the shortest path length between genes $i$ and $j$ in graph $G$. Thus} with each more distant \glslink{vertex}{node} being related by $\sfrac{1}{2}$ compared to the next nearest, as shown in Figure~\ref{fig:simulation_activating:second}.
+An arithmetically decreasing (absolute) distance weighting is also supported in the \texttt{graphsim} R package release of this procedure. \textcolor{red}{
+%
+\[
+R_{ij} = 
+\begin{dcases*}
+   1                            & if genes $i$ and $j$ are adjacent \\
+   1-\frac{d_{ij}}{diam(G)}     & if a path can be found  between genes $i$ and $j$ \\
+   0                            & if no path exists between genes $i$ and $j$ 
+\end{dcases*}
+\]
+%
+}
 
-A $\Sigma$ matrix can be derived from this distance weighting matrix, creating a matrix (with a diagonal of $1$) where each \glslink{vertex}{node} has a variance and standard deviation of 1. Thus covariances between adjacent \glslink{vertex}{nodes} were assigned by a correlation parameter and the remaining matrix based on weighting these correlations by the geometrically weighted distance matrix (or the nearest ``positive definite'' matrix for $\Sigma$ weighted for negatively correlated inhibitions). Throughout this thesis, the correlation parameter was $0.8$, unless otherwise specified (as used for the example in Figure~\ref{fig:simulation_activating:third}). This $\Sigma$ matrix was then used to sample from a multivariate normal distribution such that each gene had a mean of $0$, standard deviation $1$, and covariance within the range $[0,1]$ such that they are correlations. This procedure generated a simulated (continuous normally distributed) \glslink{gene expression}{expression} profile for each \glslink{vertex}{node} (as shown in Figure~\ref{fig:simulation_activating:fourth}) with corresponding correlation structure (Figure~\ref{fig:simulation_activating:fifth}). The simulated correlation structure closely resembled the expected correlation structure (Sigma in~\ref{fig:simulation_activating:third}) even for the relatively modest sample size ($N=100$) illustrated in~\ref{fig:simulation_activating}. Once a simulated \gls{gene expression} dataset has been generated (as in Figure~\ref{fig:simulation_activating:fourth}), then a discrete matrix of gene function was constructed with a functional threshold quantile to simulate functional relationships of \glspl{synthetic lethal} (as shown in Figure~\ref{fig:SL_Model_Expression}). Throughout this thesis, this threshold is the 0.3 quantile (as discussed in Section~\ref{methods:SL_Model}) which generates functional discrete matrices such as those used for \gls{synthetic lethal} simulation in Section~\ref{methods:simulating_SL} (as shown Figure~\ref{fig:simulation_activating:sixth}).
+
+A $\Sigma$ matrix can be derived from this distance weighting matrix \textcolor{red}{
+%
+\[
+\Sigma_{ij} = 
+\begin{dcases*}
+   1                            & if $i=j$ so a gene is correlated with itself \\
+   correlation$\times R_{ij}$  & otherwise
+\end{dcases*}
+\]
+%
+}
+%
+creating a matrix (with a diagonal of $1$) where each \glslink{vertex}{node} has a variance and standard deviation of 1. Thus covariances between adjacent \glslink{vertex}{nodes} were assigned by a correlation parameter and the remaining matrix based on weighting these correlations by the geometrically weighted distance matrix (or the nearest ``positive definite'' matrix for $\Sigma$ weighted for negatively correlated inhibitions). \textcolor{red}{Computing the nearest positive definite matrix was necessary to ensure that the variance-covariance matrix could be inverted when used as a parameter in multivariate normal simulations. Matrices that could not be inverted occurred rarely with the graph structures used but was include for robustly applicable functions in the R software release. The nearest positive definite matrix was computed using the \texttt{nearPD} function of the \texttt{Matrix} R package \citep{Matrix} to perform Higham's algorithm \citep{Higham2002}, a procedure designed for variance-covariance matrices.}
+
+Throughout this thesis, the correlation parameter was $0.8$, unless otherwise specified (as used for the example in Figure~\ref{fig:simulation_activating:third}). This $\Sigma$ matrix was then used to sample from a multivariate normal distribution such that each gene had a mean of $0$, standard deviation $1$, and covariance within the range $[0,1]$ such that they are correlations. This procedure generated a simulated (continuous normally distributed) \glslink{gene expression}{expression} profile for each \glslink{vertex}{node} (as shown in Figure~\ref{fig:simulation_activating:fourth}) with corresponding correlation structure (Figure~\ref{fig:simulation_activating:fifth}). The simulated correlation structure closely resembled the expected correlation structure (Sigma in~\ref{fig:simulation_activating:third}) even for the relatively modest sample size ($N=100$) illustrated in~\ref{fig:simulation_activating}. Once a simulated \gls{gene expression} dataset has been generated (as in Figure~\ref{fig:simulation_activating:fourth}), then a discrete matrix of gene function was constructed with a functional threshold quantile to simulate functional relationships of \glspl{synthetic lethal} (as shown in Figure~\ref{fig:SL_Model_Expression}). Throughout this thesis, this threshold is the 0.3 quantile (as discussed in Section~\ref{methods:SL_Model}) which generates functional discrete matrices such as those used for \gls{synthetic lethal} simulation in Section~\ref{methods:simulating_SL} (as shown Figure~\ref{fig:simulation_activating:sixth}).
 
 The simulation procedure (depicted in Figure~\ref{fig:simulation_activating}) can be used for pathways containing inhibition \glslink{edge}{links} (as shown in Figure~\ref{fig:simulation_inhibiting}) with several refinements. With the inhibition \glslink{edge}{links} (as shown in Figure~\ref{fig:simulation_inhibiting:first}), distances were calculated in the same manner as before (Figure~\ref{fig:simulation_inhibiting:second}) with inhibitions accounted for by iteratively multiplying downstream \glslink{vertex}{nodes} by $-1$ to form blocks of negative correlations (as shown in Figures~\ref{fig:simulation_inhibiting:third} and~\ref{fig:simulation_inhibiting:fifth}). A multivariate normal distribution with these negative correlations can be sampled to generate simulated data (as shown in Figures~\ref{fig:simulation_inhibiting:fourth} and~\ref{fig:simulation_inhibiting:sixth}).  
 

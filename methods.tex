@@ -209,8 +209,16 @@ Graph theory is a branch of pure mathematics which deals with the properties of 
 Applications vary depending on the situation modelled, particularly in how the \glspl{edge} between \glspl{vertex} are defined, whether they are directed or weighted, and whether multiple redundant \glspl{edge} between a pair of \glspl{vertex} (referred to as `parallel \glspl{edge}`) or \glspl{edge} connecting a \glslink{vertex}{vertex} to itself (referred to as `loops`) are permitted in the model. Networks are defined such that the \glspl{edge} represent a relationship between the \glspl{vertex} and may be directed, weighted, or contain parallel \glspl{edge} or loops depending on the application \citep{vanSteen2010}. Unless otherwise stated, \glslink{graph}{graph} structures and networks in this thesis will be unweighted and have no parallel \glspl{edge} or loops. Where a directional relationship is known or modelled, it will be represented with a directed \glslink{edge}{edge} in a directed graph.
 
 \subsection{Sourcing Graph Structure Data} \label{methods:graph_data}
-Pathway Commons interaction data was sourced using the \gls{BioPAX} with the paxtools-4.3.0 Java application on October 6\textsuperscript{th} 2015 \citep{PathwayCommons, paxtools}. This utility was used to import`sif' format interaction data into R \citep{R_core} and extract the human Reactome (version 52) dataset of interactions was imported \citep{Reactome}, matching those used for \gls{pathway} enrichment analysis. These interactions were used to construct an adjacency matrix for the Reactome network and subnetworks corresponding to each relevant biological \gls{pathway}. 
-
+Pathway Commons interaction data was sourced using the \gls{BioPAX} with the paxtools-4.3.0 Java application on October 6\textsuperscript{th} 2015 \citep{PathwayCommons, paxtools}. This utility was used to import`sif' format interaction data into R \citep{R_core} and extract the human Reactome (version 52) dataset of interactions was imported \citep{Reactome}, matching those used for \gls{pathway} enrichment analysis. These interactions were used to construct an adjacency matrix \textcolor{red}{($A_{ij}$ for row $i$ and column $j$)} for the Reactome network and subnetworks corresponding to each relevant biological \gls{pathway}. 
+\textcolor{red}{
+\[
+A_{ij} = 
+\begin{dcases*}
+   1                         & if genes $i$ and $j$ are adjacent \\
+   0                         & otherwise
+\end{dcases*}
+\]
+}
 \subsection{Constructing Pathway Subgraphs} \label{methods:subgraphs}
 Subgraphs for each relevant \gls{pathway} were constructed by matching the \glslink{vertex}{nodes} in the complete Reactome network to the \gls{pathway} gene sets (as derived in Section~\ref{methods:gene_set}). A subgraph with adjacent \glslink{vertex}{nodes} was constructed by adding \glslink{vertex}{nodes} which have an \glslink{edge}{edge} with a gene in the \gls{pathway} gene set. The \glspl{pathway} these adjacent \glslink{vertex}{nodes} belong to were added to form a ``meta-\gls{pathway}'' to account for the possibility for \glslink{vertex}{nodes} within the \gls{pathway} being linked by the surrounding \glslink{graph}{graph} structure.
 
