@@ -13,8 +13,25 @@
 %% Section for each library and a subsection for each file.
 %%
 
-\chapter{Sample Quality}
+\chapter{Data Quality}
 \label{appendix:sample_checking}
+
+\section{\textcolor{red}{Pathway Overlap}}
+\label{appendix:pathway_overlap}
+
+\begin{figure*}[!ht]
+%\begin{mdframed}
+  \begin{center}
+  \resizebox{0.667 \textwidth}{!}{
+    \includegraphics{Reactome_pathways_overlap.png}
+   }
+   \end{center}
+   \caption[Pathway overlap between the Reactome pathways]{\small \textbf{Pathway overlap between the Reactome pathways.} Matrix heatmap (Euclidean distance) of pathways in the Reactome dataset against each other for their overlap with each other as proportions of each pathway (on a blue--red scale). The 1050 pathways consisting of 10--500 genes that were used for over-representation and permutation analysis were compared. The majority of pathways do not overlap but some do considerably.}
+\label{fig:pathway_overlap}
+%\end{mdframed}
+\end{figure*}
+
+\FloatBarrier
 
 \section{Sample Correlation}
 \label{appendix:sample_correlation}
@@ -47,7 +64,6 @@
 \label{fig:corr_map_part}
 %\end{mdframed}
 \end{figure*}
-
 
 \clearpage
 
