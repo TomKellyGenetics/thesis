@@ -495,7 +495,7 @@ Identifying specific target genes may contribute to overcoming such challenges, 
 
 Synthetic lethal screens have been conducted for \glspl{cancer gene} in a variety of \glspl{cancer}.  These have found \glspl{synthetic lethal} of \textit{PIM1} over-expression with \textit{PLK1} inhibition  in prostate cells \citep{vanderMeer2014}, \textit{FH} null mutations (involved in hereditary leiomyomatosis and renal cell cancer ) with inhibition of adenylate cyclases \citep{Boettcher2014}, and \textit{WEE1} inhibitor treatment with knockdown of checkpoint kinases, Fanconi anaemia, and homologous recombination in colorectal cells \citep{Aarts2015}. These results include genes that have been found to be co-expressed in cancers, are consistent with those identified in the literature, and that were successfully validated with \gls{RNAi} and drug experiments. These findings demonstrate that \gls{synthetic lethal} screening can identify partner genes with clinical relevance as biomarkers, therapeutic targets, or conferring sensitivity to existing treatments. These are of particular importance for familial cancer syndromes \textcolor{red}{where treatments with adverse effects are unsuitable for outwardly healthy patients with high cancer risk} \citep{Boettcher2014, Telford2015}.
 
-\Gls{HDGC} is a cancer syndrome involving predisposition to early-onset malignant stomach and breast cancers that has been attributed to inactivating \glspl{mutation} in \gls{E-cadherin}, encoded by \textit{CDH1} (as discussed in Section~\ref{CDH1_section}). \citet{Telford2015} performed an \gls{RNAi} screen on MCF10A breast cells for \glspl{synthetic lethal} with \textit{CDH1}. In conjunction with a drug compound screen, inhibitors of JAK, HDAC, PI3K, aurora kinase, and tyrosine kinases were demonstrated to be \gls{synthetic lethal} with \textit{CDH1}. Therefore the \gls{synthetic lethal} strategy shows potential to achieve clinical impact against \gls{HDGC} %, with an interest in interventions with low adverse effects for  \gls{chemoprevention}, including repurposing existing approved drugs for activity against \textit{CDH1}-deficient cancers.  
+\Gls{HDGC} is a cancer syndrome involving predisposition to early-onset malignant stomach and breast cancers that has been attributed to inactivating \glspl{mutation} in \gls{E-cadherin}, encoded by \textit{CDH1} (as discussed in Section~\ref{CDH1_section}). \citet{Telford2015} performed an \gls{RNAi} screen on MCF10A breast cells for \glspl{synthetic lethal} with \textit{CDH1}. \textcolor{red}{This screen was performed in isogenic cell lines as described in Section~\ref{HDGC_Model} and consisted of a primary siRNA screen of four pooled siRNAs for each gene followed by a secondary screen on those with the highest ratio of viability between \textit{CDH1} wild-type and null mutant cells of each of the independently targeting siRNAs to reduce false-positives due to off-target effects. Synthetic lethal candidates with specific inhibition of \textit{CDH1} null cells were identified from the primary screen based on thresholds of viability ratio and wild-type viability under siRNA treatment.} In conjunction with a drug compound screen, inhibitors of JAK, HDAC, PI3K, aurora kinase, and tyrosine kinases were demonstrated to be \gls{synthetic lethal} with \textit{CDH1}. Therefore the \gls{synthetic lethal} strategy shows potential to achieve clinical impact against \gls{HDGC} %, with an interest in interventions with low adverse effects for  \gls{chemoprevention}, including repurposing existing approved drugs for activity against \textit{CDH1}-deficient cancers.  
  by the identification of compounds suitable for use in \gls{chemoprevention}.
 
 \glsreset{JAK}
@@ -900,7 +900,7 @@ Somatic \gls{mutation}
  &
 \begin{tabular}{@{\hskip0pt}l@{\hskip0pt}}
 Kelly, S. T., Guilford, P. J., and Black, M. A. \\
-Dissertation (Kelly, 2013) and developed here \\
+Honours Dissertation \citep{Kelly2013} and developed here \\
 \end{tabular}
 &
 SLIPT\\
@@ -1045,6 +1045,10 @@ Large scale, computational approaches have yet to determine whether \gls{synthet
 
 Many of the approaches discussed here aimed to identify the strongest \gls{synthetic lethal} pairs across the yeast or human \glspl{genome} \citep{Lu2015, Wappett2016, Deshpande2013, Wu2014}, which may not be an ideal strategy to identify interactions in particular functions or relevance to particular cancers. These demonstrate a need for computational approaches to prioritise candidate gene pairs for validation. This thesis will focus on the interactions with \textit{CDH1} with importance in breast and stomach cancers, although these partners may be applicable in other cancers. As such, this thesis presents a query-based method, amenable to identification of candidate partners for a selected gene of functional or translational importance such as \textit{CDH1}.
 
+\textcolor{red}{
+I have previously conducted an Honours project \citep{Kelly2013} into synthetic lethality in microarray cancer gene expression datasets from the cancer genome altas \citep{TCGA2013PAN} and a breast cancer cohort \citep{Soon2011}. Many synthetic lethal interactions were identified for \textit{CDH1} and this was shown to be typical across genes test rather than specific to \textit{CDH1}. This project successfully identified known synthetic lethal interactions between \textit{BRCA1} and \textit{PARP1}; \textit{BRCA2} and \textit{PARP1}; and \textit{CDH1} and \textit{JAK2} \citep{Bryant2005, Farmer2005, Telford2015}. The methodology used in the Honours project was refined and the analysis that will be presented in this thesis will analyse synthetic lethality with \textit{CDH1} with a focus on biological pathways and RNA-Seq gene expression data.  
+}
+
 %%describe Honours results here
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1118,6 +1122,8 @@ These cancer \glspl{driver mutation} have distinct molecular features, leading t
 \fi
 
 \subsection{Cell Line Models of \textit{CDH1} Null Mutations}
+\label{HDGC_Model}
+
 Previous work published by members of our research group used a model of  homozygous \textit{CDH1}$^{-/-}$ null \gls{mutation} in non-malignant MCF10A breast cells to show that loss of \textit{CDH1} alone was not sufficient to induce \gls{EMT} %with compensatory changes in the \glslink{gene expression}{expression} of other cell adhesion genes 
 \citep{Chen2014}. However, \textit{CDH1}-deficient cells did manifest changes in morphology, migration, and weaker cell adhesion \citep{Chen2014}.
 %
