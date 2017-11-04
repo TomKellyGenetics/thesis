@@ -40,6 +40,7 @@
 
 %\makebox[\textwidth][c]{
 %\resizebox{\textwidth}{!}{
+{\small
 \begin{longtable}{>{\em}l>{\em}l>{\em}l>{\em}l>{\em}l>{\em}l}
 \caption{Synthetic lethal candidate genes in the PI3K cascade}
 \label{tab:SL_Pathway_Pi3K}
@@ -148,6 +149,7 @@
   SYNJ2 & TIRAP & TRIO & WASL & WAS & \\ 
    \hline
 \end{longtable}
+} % small
 %} %resize
 %} %centre
 
@@ -169,6 +171,7 @@
 
 %\makebox[\textwidth][c]{
 %\resizebox{\textwidth}{!}{
+{\small
 \begin{longtable}{>{\em}l>{\em}l>{\em}l>{\em}l>{\em}l>{\em}l}
 \caption{Synthetic lethal candidate genes in the PI3K/AKT pathway}
 \label{tab:SL_Pathway_Pi3kAkt}
@@ -285,6 +288,7 @@
   SYNJ2 & TIRAP & TRIO & WASL & WAS & \\ 
    \hline
 \end{longtable}
+} %small
 %} %resize
 %} %centre
 
@@ -306,6 +310,7 @@
 
 %\makebox[\textwidth][c]{
 %\resizebox{\textwidth}{!}{
+{\small
 \begin{longtable}{>{\em}l>{\em}l>{\em}l>{\em}l>{\em}l>{\em}l}
 \caption{Synthetic lethal candidate genes in the PI3K/AKT pathway in cancer}
 \label{tab:SL_Pathway_Pi3kAktCancer}
@@ -398,6 +403,7 @@
   SYNJ2 & TIRAP & TRIO & WASL & WAS & \\ 
    \hline
 \end{longtable}
+} %small
 %} %resize
 %} %centre
 
@@ -437,7 +443,7 @@
 %\end{mdframed}
 \end{figure*}
 
-
+\FloatBarrier
 
 \begin{figure*}[!htp]
 %\begin{mdframed}
@@ -445,22 +451,154 @@
   \resizebox{0.8 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     %\fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_ExtracellularMatrix_exprSL2".pdf}}
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_ExtracellularMatrix_exprSL2_no_names".pdf}}
    %}
    }
    \end{center}
-   \caption[Synthetic lethality in the Extracellular Matrix]{\small \textbf{Synthetic lethality in the Extracellular Matrix.} The Reactome Extracellular Matrix pathway with synthetic lethal candidates, coloured as shown in the legend.
+   \caption[Synthetic lethality in the Extracellular Matrix]{\small \textbf{Synthetic lethality in the Extracellular Matrix.} The Reactome Extracellular Matrix pathway with synthetic lethal candidates, coloured as shown in the legend.   \textcolor{red}{The genes in this pathway are detailed in Appendix Table~\ref{tab:SL_Pathway_ExtracellularMatrix}}.
 }
 \label{fig:SL_Pathway_ExtracellularMatrix}
 %\end{mdframed}
 \end{figure*}
 
+\clearpage
+
+%\makebox[\textwidth][c]{
+%\resizebox{\textwidth}{!}{
+{\small
+\begin{longtable}{>{\em}l>{\em}l>{\em}l>{\em}l>{\em}l>{\em}l}
+\caption{Synthetic lethality in the Extracellular Matrix}
+\label{tab:SL_Pathway_ExtracellularMatrix}
+  \\
+  \multicolumn{6}{l}{\normalfont Predicted only by \gls{SLIPT}} \\
+  \hline
+  \rowcolor{Cluster_Red!20} 
+  BSG & COL12A1 & COL17A1 & COL28A1 & FBN1 & FBN3 \\ 
+  \rowcolor{Cluster_Red!15} 
+  FN1 & IBSP & ITGB4 & ITGB6 & LAMC2 & PIP5K1A \\ 
+  \rowcolor{Cluster_Red!20} 
+  PLOD2 & SLC8A2 & VCAN & NID2 &  &  \\ 
+   \hline
+   \\
+  \multicolumn{6}{l}{\normalfont Detected only by \gls{siRNA} screen} \\
+  \hline
+  \rowcolor{Cluster_Blue!20}
+  A2M & ADAM15 & ADAMTS16 & ADAMTS1 & ADAMTS3 & ADAMTS4 \\ 
+  \rowcolor{Cluster_Blue!20}
+  ADAMTS5 & ADAMTS8 & ADAMTS9 & ASPN & BGN & BMP1 \\ 
+  \rowcolor{Cluster_Blue!15}
+  BMP2 & CMA1 & COL11A2 & COL14A1 & COL15A1 & COL16A1 \\ 
+  \rowcolor{Cluster_Blue!20}
+  COL18A1 & COL19A1 & COL20A1 & COL25A1 & COL4A2 & COL4A3 \\ 
+  \rowcolor{Cluster_Blue!15}
+  COL4A4 & COL5A3 & COL6A1 & COL6A2 & COL9A2 & COL9A3 \\ 
+  \rowcolor{Cluster_Blue!20}
+  CRTAP & CTSD & CTSG & CTSK & CTSL1 & CTSS \\ 
+  \rowcolor{Cluster_Blue!15}
+  DCN & DMD & DVL1 & DVL2 & EFEMP1 & EFEMP2 \\ 
+  \rowcolor{Cluster_Blue!20}
+  ELANE & ELN & FBLN1 & FBLN2 & FBLN5 & FGF2 \\ 
+  \rowcolor{Cluster_Blue!15}
+  FMOD & FURIN & GNAI1 & GNAI2 & ICAM1 & ICAM2 \\ 
+  \rowcolor{Cluster_Blue!20}
+  ICAM3 & ICAM4 & ITGA10 & ITGA5 & ITGA7 & ITGA9 \\ 
+  \rowcolor{Cluster_Blue!15}
+  ITGAE & ITGAM & ITGAX & ITGB2 & ITGB5 & ITGB7 \\ 
+  \rowcolor{Cluster_Blue!20}
+  JAM2 & KLK7 & LAMA4 & LAMB1 & LAMB3 & LOXL1 \\ 
+  \rowcolor{Cluster_Blue!15}
+  LOXL3 & LOXL4 & LOX & LTBP2 & LTBP3 & MFAP4 \\ 
+  \rowcolor{Cluster_Blue!20}
+  MFAP5 & MMP19 & MMP20 & MMP2 & MMP3 & MMP7 \\ 
+  \rowcolor{Cluster_Blue!15}
+  MMP8 & NCAM1 & PCOLCE2 & PCOLCE & PIP4K2A & PIP5K1B \\ 
+  \rowcolor{Cluster_Blue!20}
+  PLOD1 & PLOD3 & PPIB & SDC2 & SLC24A4 & SLC8A3 \\ 
+  \rowcolor{Cluster_Blue!15}
+  TGFB2 & TIMP2 & TLL1 & TNC & TNXB & TPSAB1 \\ 
+  \rowcolor{Cluster_Blue!20}
+  MATN4 & MUSK & PTPRS & GDF5 & SPARC & SERPINH1 \\ 
+  \rowcolor{Cluster_Blue!15}
+  NRXN1 & JAM3 & MADCAM1 & VCAM1 & NTN4 & TIMP1 \\ 
+   \hline
+   \\
+  \multicolumn{6}{l}{\normalfont Intersection of \gls{SLIPT} and \gls{siRNA} screen} \\
+  \hline
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  CD151 & COL23A1 & COL27A1 & COL9A1 & HSPG2 & ITGB8 \\ 
+  \rowcolor{Cluster_Red!15!Cluster_Blue!15} 
+  LTBP4 & MFAP2 & PRKCA & SDC3 & TGFB1 & TNN \\ 
+  \rowcolor{Cluster_Red!20!Cluster_Blue!20} 
+  PECAM1 &  &  &  &  &  \\
+   \hline
+   \\
+  \multicolumn{6}{l}{\normalfont Not detected by \gls{SLIPT} or \gls{siRNA} screen} \\
+  \hline
+  \rowcolor{black!10}
+  ACAN & ACTN1 & ADAM10 & ADAM17 & ADAM9 & ADAMTS14 \\
+  \rowcolor{black!5}
+  ADAMTS18 & ADAMTS2 & AGRN & BCAN & BMP10 & BMP4 \\
+  \rowcolor{black!10}
+  BMP7 & CACNA1C & CACNA1D & CACNA2D2 & CACNB2 & CACNB3 \\
+  \rowcolor{black!5}
+  CAPN1 & CAPNS1 & CASK & CASP3 & CD44 & CD47 \\
+  \rowcolor{black!10}
+  CDH1 & CEACAM1 & CEACAM6 & CEACAM8 & COL10A1 & COL11A1 \\
+  \rowcolor{black!5}
+  COL13A1 & COL1A1 & COL1A2 & COL21A1 & COL22A1 & COL24A1 \\
+  \rowcolor{black!10}
+  COL26A1 & COL2A1 & COL3A1 & COL4A1 & COL4A5 & COL4A6 \\
+  \rowcolor{black!5}
+  COL5A1 & COL5A2 & COL6A3 & COL7A1 & COL8A1 & COL8A2 \\
+  \rowcolor{black!10}
+  COLGALT1 & COLGALT2 & COMP & NULL & CTRB2 & CTSB \\
+  \rowcolor{black!5}
+  CTSL2 & DAG1 & DMP1 & DSPP & DST & DVL3 \\
+  \rowcolor{black!10}
+  F11R & FBN2 & FGA & FGB & FGG & GRIA1 \\
+  \rowcolor{black!5}
+  GRIA2 & GRIA3 & GRIA4 & ITGA11 & ITGA1 & ITGA2B \\
+  \rowcolor{black!10}
+  ITGA2 & ITGA3 & ITGA4 & ITGA6 & ITGA8 & ITGAD \\
+  \rowcolor{black!5}
+  ITGAL & ITGAV & ITGB1 & ITGB3 & KLK2 & KLKB1 \\
+  \rowcolor{black!10}
+  LAMA1 & LAMA2 & LAMA3 & LAMA5 & LAMB2 & LAMC1 \\ 
+  \rowcolor{black!5}
+  LAMC3 & P3H1 & P3H2 & P3H3 & LOXL2 & LRP4 \\ 
+  \rowcolor{black!10}
+  LTBP1 & LUM & MATN1 & MATN3 & MFAP1 & MFAP3 \\ 
+  \rowcolor{black!5}
+  MMP10 & MMP11 & MMP12 & MMP13 & MMP14 & MMP15 \\ 
+  \rowcolor{black!10}
+  MMP16 & MMP17 & MMP1 & MMP24 & MMP9 & NCAN \\ 
+  \rowcolor{black!5}
+  NCSTN & NID1 & P4HB & PDGFA & PDGFB & PIP4K2B \\ 
+  \rowcolor{black!10}
+  PIP5K1C & PIP5KL1 & PLG & PRSS1 & PRSS2 & PSEN1 \\ 
+  \rowcolor{black!5}
+  PTEN & SDC1 & SDC4 & SERPINE1 & SLC24A1 & SLC24A2 \\ 
+  \rowcolor{black!10}
+  SLC24A3 & SLC24A5 & SLC8B1 & SLC8A1 & TLL2 & TNR \\ 
+  \rowcolor{black!5}
+  HAPLN1 & TGFB3 & PLEC & SPP1 & VTN & TTR \\ 
+  \rowcolor{black!10}
+  MMP25 & KDR & THBS1 & TRAPPC4 &  &  \\ 
+   \hline
+\end{longtable}
+} % small
+%} %resize
+%} %centre
+
 %\label{fig:SL_Pathway_GPCR}
 
 \FloatBarrier
 
+\clearpage
+
 %\makebox[\textwidth][c]{
 %\resizebox{\textwidth}{!}{
+{\small
 \begin{longtable}{>{\em}l>{\em}l>{\em}l>{\em}l>{\em}l>{\em}l}
 \caption{Synthetic lethality in the G$_{\alpha i}$ signalling Pathway}
 \label{tab:SL_Pathway_GPCR}
@@ -583,8 +721,11 @@
   RAPGEF4 & TAS2R9 &  &  &  & \\  
    \hline
 \end{longtable}
+} % small
 %} %resize
 %} %centre
+
+\FloatBarrier
 
 \begin{figure*}[!htp]
 %\begin{mdframed}
@@ -592,7 +733,7 @@
   \resizebox{0.8 \textwidth}{!}{
     %\input{{{"SL_Model.pdf_tex"}}
     %\fbox{
-    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_GPCR_Downstream_exprSL2".png}}
+    \includegraphics{{"/home/tomkelly/Downloads/Pathway_Structure/graph_plot_GPCR_Downstream_exprSL2_no_names".png}}
    %}
    }
    \end{center}
@@ -602,8 +743,12 @@
 %\end{mdframed}
 \end{figure*}
 
+
+\clearpage
+
 %\makebox[\textwidth][c]{
 %\resizebox{\textwidth}{!}{
+{\small
 \begin{longtable}{>{\em}l>{\em}l>{\em}l>{\em}l>{\em}l>{\em}l}
 \caption{Synthetic lethal candidate genes in the GPCR Downstream pathway}
 \label{tab:SL_Pathway_GPCR_Downstream}
@@ -1048,6 +1193,7 @@
   GK & PLD6 & AMPD3 & NT5C1B & ROCK2 &  \\ 
    \hline
 \end{longtable}
+} %small font
 %} %resize
 %} %centre
 
