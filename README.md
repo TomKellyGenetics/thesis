@@ -1,4 +1,4 @@
-#A Bioinformatics Approach to Synthetic Lethal Interactions in Cancer with Gene Expression Data
+# A Bioinformatics Approach to Synthetic Lethal Interactions in Cancer with Gene Expression Data
 
 ### S. Thomas Kelly
 
@@ -7,7 +7,8 @@ Thesis prepared in LaTeX for submission to the University of Otago (in Genetics)
 ## Cite this item
 
 Kelly, S. T. (2017). A Bioinformatics Approach to Synthetic Lethal Interactions in Cancer with Gene Expression Data (Thesis, Doctor of Philosophy). University of Otago. Retrieved from http://hdl.handle.net/10523/7699
-Permanent link to OUR Archive version: http://hdl.handle.net/10523/7699
+
+Permanent link to OUR Archive version: [http://hdl.handle.net/10523/7699](http://hdl.handle.net/10523/7699)
 
 Submission of manuscripts for publication from this thesis are ongoing.
 
